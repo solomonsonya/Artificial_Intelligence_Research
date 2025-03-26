@@ -1,0 +1,505 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x7b200 0x140001000  0x7c000 -r-x .text
+1   0x0007b600   0x1a00 0x14007d000   0x2000 -r-- .rdata
+2   0x0007d000    0x200 0x14007f000   0x1000 -rw- .data
+3   0x0007d200    0x600 0x140080000   0x1000 -r-- .pdata
+4   0x0007d800    0x200 0x140081000   0x1000 -r-- .00cfg
+5   0x0007da00    0x200 0x140082000   0x1000 -r-- .gehcont
+6   0x0007dc00    0x200 0x140083000   0x1000 -r-- .rsrc
+7   0x0007de00    0x200 0x140084000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x14007b630 paddr=0x0007aa30 haddr=0x000000a0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib                               name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x14007d870 NONE FUNC KERNEL32.dll                      CreateMutexA
+2   0x14007d878 NONE FUNC KERNEL32.dll                      GetCurrentProcess
+3   0x14007d880 NONE FUNC KERNEL32.dll                      GetCurrentProcessId
+4   0x14007d888 NONE FUNC KERNEL32.dll                      GetCurrentThreadId
+5   0x14007d890 NONE FUNC KERNEL32.dll                      GetLastError
+6   0x14007d898 NONE FUNC KERNEL32.dll                      GetModuleHandleW
+7   0x14007d8a0 NONE FUNC KERNEL32.dll                      GetStartupInfoW
+8   0x14007d8a8 NONE FUNC KERNEL32.dll                      GetSystemTimeAsFileTime
+9   0x14007d8b0 NONE FUNC KERNEL32.dll                      InitializeSListHead
+10  0x14007d8b8 NONE FUNC KERNEL32.dll                      IsDebuggerPresent
+11  0x14007d8c0 NONE FUNC KERNEL32.dll                      IsProcessorFeaturePresent
+12  0x14007d8c8 NONE FUNC KERNEL32.dll                      QueryPerformanceCounter
+13  0x14007d8d0 NONE FUNC KERNEL32.dll                      RtlCaptureContext
+14  0x14007d8d8 NONE FUNC KERNEL32.dll                      RtlLookupFunctionEntry
+15  0x14007d8e0 NONE FUNC KERNEL32.dll                      RtlVirtualUnwind
+16  0x14007d8e8 NONE FUNC KERNEL32.dll                      SetUnhandledExceptionFilter
+17  0x14007d8f0 NONE FUNC KERNEL32.dll                      Sleep
+18  0x14007d8f8 NONE FUNC KERNEL32.dll                      TerminateProcess
+19  0x14007d900 NONE FUNC KERNEL32.dll                      UnhandledExceptionFilter
+116 0x14007d910 NONE FUNC WS2_32.dll                        WSACleanup
+111 0x14007d918 NONE FUNC WS2_32.dll                        WSAGetLastError
+115 0x14007d920 NONE FUNC WS2_32.dll                        WSAStartup
+3   0x14007d928 NONE FUNC WS2_32.dll                        closesocket
+4   0x14007d930 NONE FUNC WS2_32.dll                        connect
+52  0x14007d938 NONE FUNC WS2_32.dll                        gethostbyname
+9   0x14007d940 NONE FUNC WS2_32.dll                        htons
+12  0x14007d948 NONE FUNC WS2_32.dll                        inet_ntoa
+13  0x14007d950 NONE FUNC WS2_32.dll                        inet_pton
+16  0x14007d958 NONE FUNC WS2_32.dll                        recv
+19  0x14007d960 NONE FUNC WS2_32.dll                        send
+23  0x14007d968 NONE FUNC WS2_32.dll                        socket
+1   0x14007d978 NONE FUNC MSVCP140.dll                      sym.imp.void __cdecl std::_Throw_C_error(int)
+2   0x14007d980 NONE FUNC MSVCP140.dll                      sym.imp.void __cdecl std::_Throw_Cpp_error(int)
+3   0x14007d988 NONE FUNC MSVCP140.dll                      _Cnd_do_broadcast_at_thread_exit
+4   0x14007d990 NONE FUNC MSVCP140.dll                      _Thrd_detach
+1   0x14007d9a0 NONE FUNC VCRUNTIME140.dll                  _CxxThrowException
+2   0x14007d9a8 NONE FUNC VCRUNTIME140.dll                  __C_specific_handler
+3   0x14007d9b0 NONE FUNC VCRUNTIME140.dll                  __CxxFrameHandler3
+4   0x14007d9b8 NONE FUNC VCRUNTIME140.dll                  __current_exception
+5   0x14007d9c0 NONE FUNC VCRUNTIME140.dll                  __current_exception_context
+6   0x14007d9c8 NONE FUNC VCRUNTIME140.dll                  __std_exception_copy
+7   0x14007d9d0 NONE FUNC VCRUNTIME140.dll                  __std_exception_destroy
+8   0x14007d9d8 NONE FUNC VCRUNTIME140.dll                  __std_terminate
+9   0x14007d9e0 NONE FUNC VCRUNTIME140.dll                  memset
+1   0x14007d9f0 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _beginthreadex
+2   0x14007d9f8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _c_exit
+3   0x14007da00 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _cexit
+4   0x14007da08 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _configure_narrow_argv
+5   0x14007da10 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _crt_atexit
+6   0x14007da18 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _exit
+7   0x14007da20 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _get_narrow_winmain_command_line
+8   0x14007da28 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initialize_narrow_environment
+9   0x14007da30 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initialize_onexit_table
+10  0x14007da38 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initterm
+11  0x14007da40 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initterm_e
+12  0x14007da48 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _register_onexit_function
+13  0x14007da50 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _register_thread_local_exe_atexit_callback
+14  0x14007da58 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _seh_filter_exe
+15  0x14007da60 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _set_app_type
+16  0x14007da68 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll exit
+17  0x14007da70 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll terminate
+1   0x14007da80 NONE FUNC api-ms-win-crt-time-l1-1-0.dll    _time64
+2   0x14007da88 NONE FUNC api-ms-win-crt-time-l1-1-0.dll    clock
+1   0x14007da98 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll    _callnewh
+2   0x14007daa0 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll    _set_new_mode
+3   0x14007daa8 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll    free
+4   0x14007dab0 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll    malloc
+1   0x14007dac0 NONE FUNC api-ms-win-crt-utility-l1-1-0.dll rand
+2   0x14007dac8 NONE FUNC api-ms-win-crt-utility-l1-1-0.dll srand
+1   0x14007dad8 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll   __p__commode
+2   0x14007dae0 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll   _set_fmode
+1   0x14007daf0 NONE FUNC api-ms-win-crt-math-l1-1-0.dll    __setusermatherr
+1   0x14007db00 NONE FUNC api-ms-win-crt-locale-l1-1-0.dll  _configthreadlocale
+
+[Symbols]
+
+nth paddr      vaddr       bind type size lib                               name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0007be70 0x14007d870 NONE FUNC 0    KERNEL32.dll                      imp.CreateMutexA
+2   0x0007be78 0x14007d878 NONE FUNC 0    KERNEL32.dll                      imp.GetCurrentProcess
+3   0x0007be80 0x14007d880 NONE FUNC 0    KERNEL32.dll                      imp.GetCurrentProcessId
+4   0x0007be88 0x14007d888 NONE FUNC 0    KERNEL32.dll                      imp.GetCurrentThreadId
+5   0x0007be90 0x14007d890 NONE FUNC 0    KERNEL32.dll                      imp.GetLastError
+6   0x0007be98 0x14007d898 NONE FUNC 0    KERNEL32.dll                      imp.GetModuleHandleW
+7   0x0007bea0 0x14007d8a0 NONE FUNC 0    KERNEL32.dll                      imp.GetStartupInfoW
+8   0x0007bea8 0x14007d8a8 NONE FUNC 0    KERNEL32.dll                      imp.GetSystemTimeAsFileTime
+9   0x0007beb0 0x14007d8b0 NONE FUNC 0    KERNEL32.dll                      imp.InitializeSListHead
+10  0x0007beb8 0x14007d8b8 NONE FUNC 0    KERNEL32.dll                      imp.IsDebuggerPresent
+11  0x0007bec0 0x14007d8c0 NONE FUNC 0    KERNEL32.dll                      imp.IsProcessorFeaturePresent
+12  0x0007bec8 0x14007d8c8 NONE FUNC 0    KERNEL32.dll                      imp.QueryPerformanceCounter
+13  0x0007bed0 0x14007d8d0 NONE FUNC 0    KERNEL32.dll                      imp.RtlCaptureContext
+14  0x0007bed8 0x14007d8d8 NONE FUNC 0    KERNEL32.dll                      imp.RtlLookupFunctionEntry
+15  0x0007bee0 0x14007d8e0 NONE FUNC 0    KERNEL32.dll                      imp.RtlVirtualUnwind
+16  0x0007bee8 0x14007d8e8 NONE FUNC 0    KERNEL32.dll                      imp.SetUnhandledExceptionFilter
+17  0x0007bef0 0x14007d8f0 NONE FUNC 0    KERNEL32.dll                      imp.Sleep
+18  0x0007bef8 0x14007d8f8 NONE FUNC 0    KERNEL32.dll                      imp.TerminateProcess
+19  0x0007bf00 0x14007d900 NONE FUNC 0    KERNEL32.dll                      imp.UnhandledExceptionFilter
+116 0x0007bf10 0x14007d910 NONE FUNC 0    WS2_32.dll                        imp.WSACleanup
+111 0x0007bf18 0x14007d918 NONE FUNC 0    WS2_32.dll                        imp.WSAGetLastError
+115 0x0007bf20 0x14007d920 NONE FUNC 0    WS2_32.dll                        imp.WSAStartup
+3   0x0007bf28 0x14007d928 NONE FUNC 0    WS2_32.dll                        imp.closesocket
+4   0x0007bf30 0x14007d930 NONE FUNC 0    WS2_32.dll                        imp.connect
+52  0x0007bf38 0x14007d938 NONE FUNC 0    WS2_32.dll                        imp.gethostbyname
+9   0x0007bf40 0x14007d940 NONE FUNC 0    WS2_32.dll                        imp.htons
+12  0x0007bf48 0x14007d948 NONE FUNC 0    WS2_32.dll                        imp.inet_ntoa
+13  0x0007bf50 0x14007d950 NONE FUNC 0    WS2_32.dll                        imp.inet_pton
+16  0x0007bf58 0x14007d958 NONE FUNC 0    WS2_32.dll                        imp.recv
+19  0x0007bf60 0x14007d960 NONE FUNC 0    WS2_32.dll                        imp.send
+23  0x0007bf68 0x14007d968 NONE FUNC 0    WS2_32.dll                        imp.socket
+1   0x0007bf78 0x14007d978 NONE FUNC 0    MSVCP140.dll                      void __cdecl std::_Throw_C_error(int)
+2   0x0007bf80 0x14007d980 NONE FUNC 0    MSVCP140.dll                      void __cdecl std::_Throw_Cpp_error(int)
+3   0x0007bf88 0x14007d988 NONE FUNC 0    MSVCP140.dll                      imp._Cnd_do_broadcast_at_thread_exit
+4   0x0007bf90 0x14007d990 NONE FUNC 0    MSVCP140.dll                      imp._Thrd_detach
+1   0x0007bfa0 0x14007d9a0 NONE FUNC 0    VCRUNTIME140.dll                  imp._CxxThrowException
+2   0x0007bfa8 0x14007d9a8 NONE FUNC 0    VCRUNTIME140.dll                  imp.__C_specific_handler
+3   0x0007bfb0 0x14007d9b0 NONE FUNC 0    VCRUNTIME140.dll                  imp.__CxxFrameHandler3
+4   0x0007bfb8 0x14007d9b8 NONE FUNC 0    VCRUNTIME140.dll                  imp.__current_exception
+5   0x0007bfc0 0x14007d9c0 NONE FUNC 0    VCRUNTIME140.dll                  imp.__current_exception_context
+6   0x0007bfc8 0x14007d9c8 NONE FUNC 0    VCRUNTIME140.dll                  imp.__std_exception_copy
+7   0x0007bfd0 0x14007d9d0 NONE FUNC 0    VCRUNTIME140.dll                  imp.__std_exception_destroy
+8   0x0007bfd8 0x14007d9d8 NONE FUNC 0    VCRUNTIME140.dll                  imp.__std_terminate
+9   0x0007bfe0 0x14007d9e0 NONE FUNC 0    VCRUNTIME140.dll                  imp.memset
+1   0x0007bff0 0x14007d9f0 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._beginthreadex
+2   0x0007bff8 0x14007d9f8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._c_exit
+3   0x0007c000 0x14007da00 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._cexit
+4   0x0007c008 0x14007da08 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._configure_narrow_argv
+5   0x0007c010 0x14007da10 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._crt_atexit
+6   0x0007c018 0x14007da18 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._exit
+7   0x0007c020 0x14007da20 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._get_narrow_winmain_command_line
+8   0x0007c028 0x14007da28 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initialize_narrow_environment
+9   0x0007c030 0x14007da30 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initialize_onexit_table
+10  0x0007c038 0x14007da38 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initterm
+11  0x0007c040 0x14007da40 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initterm_e
+12  0x0007c048 0x14007da48 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._register_onexit_function
+13  0x0007c050 0x14007da50 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._register_thread_local_exe_atexit_callback
+14  0x0007c058 0x14007da58 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._seh_filter_exe
+15  0x0007c060 0x14007da60 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._set_app_type
+16  0x0007c068 0x14007da68 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp.exit
+17  0x0007c070 0x14007da70 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp.terminate
+1   0x0007c080 0x14007da80 NONE FUNC 0    api-ms-win-crt-time-l1-1-0.dll    imp._time64
+2   0x0007c088 0x14007da88 NONE FUNC 0    api-ms-win-crt-time-l1-1-0.dll    imp.clock
+1   0x0007c098 0x14007da98 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll    imp._callnewh
+2   0x0007c0a0 0x14007daa0 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll    imp._set_new_mode
+3   0x0007c0a8 0x14007daa8 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll    imp.free
+4   0x0007c0b0 0x14007dab0 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll    imp.malloc
+1   0x0007c0c0 0x14007dac0 NONE FUNC 0    api-ms-win-crt-utility-l1-1-0.dll imp.rand
+2   0x0007c0c8 0x14007dac8 NONE FUNC 0    api-ms-win-crt-utility-l1-1-0.dll imp.srand
+1   0x0007c0d8 0x14007dad8 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll   imp.__p__commode
+2   0x0007c0e0 0x14007dae0 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll   imp._set_fmode
+1   0x0007c0f0 0x14007daf0 NONE FUNC 0    api-ms-win-crt-math-l1-1-0.dll    imp.__setusermatherr
+1   0x0007c100 0x14007db00 NONE FUNC 0    api-ms-win-crt-locale-l1-1-0.dll  imp._configthreadlocale
+[Strings]
+nth paddr      vaddr       len size section type  string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0007b608 0x14007d008 4   5    .rdata  ascii &:R%
+1   0x0007b616 0x14007d016 4   5    .rdata  ascii \b^:\
+2   0x0007b61b 0x14007d01b 5   6    .rdata  ascii +\v^\nE
+3   0x0007b9d4 0x14007d3d4 13  14   .rdata  ascii 195.133.18.27
+4   0x0007b9e8 0x14007d3e8 17  18   .rdata  ascii Unknown exception
+5   0x0007ba00 0x14007d400 14  15   .rdata  ascii bad allocation
+6   0x0007ba10 0x14007d410 20  21   .rdata  ascii bad array new length
+7   0x0007ba44 0x14007d444 6   7    .rdata  ascii RSDSTa
+8   0x0007ba50 0x14007d450 8   9    .rdata  ascii LLD PDB.
+9   0x0007ba5c 0x14007d45c 37  38   .rdata  ascii E:\code\Client\x64\Release\Client.pdb
+10  0x0007c112 0x14007db12 12  13   .rdata  ascii CreateMutexA
+11  0x0007c122 0x14007db22 17  18   .rdata  ascii GetCurrentProcess
+12  0x0007c136 0x14007db36 19  20   .rdata  ascii GetCurrentProcessId
+13  0x0007c14c 0x14007db4c 18  19   .rdata  ascii GetCurrentThreadId
+14  0x0007c162 0x14007db62 12  13   .rdata  ascii GetLastError
+15  0x0007c172 0x14007db72 16  17   .rdata  ascii GetModuleHandleW
+16  0x0007c186 0x14007db86 15  16   .rdata  ascii GetStartupInfoW
+17  0x0007c198 0x14007db98 23  24   .rdata  ascii GetSystemTimeAsFileTime
+18  0x0007c1b2 0x14007dbb2 19  20   .rdata  ascii InitializeSListHead
+19  0x0007c1c8 0x14007dbc8 17  18   .rdata  ascii IsDebuggerPresent
+20  0x0007c1dc 0x14007dbdc 25  26   .rdata  ascii IsProcessorFeaturePresent
+21  0x0007c1f8 0x14007dbf8 23  24   .rdata  ascii QueryPerformanceCounter
+22  0x0007c212 0x14007dc12 17  18   .rdata  ascii RtlCaptureContext
+23  0x0007c226 0x14007dc26 22  23   .rdata  ascii RtlLookupFunctionEntry
+24  0x0007c240 0x14007dc40 16  17   .rdata  ascii RtlVirtualUnwind
+25  0x0007c254 0x14007dc54 27  28   .rdata  ascii SetUnhandledExceptionFilter
+26  0x0007c272 0x14007dc72 5   6    .rdata  ascii Sleep
+27  0x0007c27a 0x14007dc7a 16  17   .rdata  ascii TerminateProcess
+28  0x0007c28e 0x14007dc8e 24  25   .rdata  ascii UnhandledExceptionFilter
+29  0x0007c2aa 0x14007dcaa 9   10   .rdata  ascii inet_pton
+30  0x0007c2b6 0x14007dcb6 27  28   .rdata  ascii ?_Throw_C_error@std@@YAXH@Z
+31  0x0007c2d4 0x14007dcd4 29  30   .rdata  ascii ?_Throw_Cpp_error@std@@YAXH@Z
+32  0x0007c2f4 0x14007dcf4 32  33   .rdata  ascii _Cnd_do_broadcast_at_thread_exit
+33  0x0007c318 0x14007dd18 12  13   .rdata  ascii _Thrd_detach
+34  0x0007c328 0x14007dd28 18  19   .rdata  ascii _CxxThrowException
+35  0x0007c33e 0x14007dd3e 20  21   .rdata  ascii __C_specific_handler
+36  0x0007c356 0x14007dd56 18  19   .rdata  ascii __CxxFrameHandler3
+37  0x0007c36c 0x14007dd6c 19  20   .rdata  ascii __current_exception
+38  0x0007c382 0x14007dd82 27  28   .rdata  ascii __current_exception_context
+39  0x0007c3a0 0x14007dda0 20  21   .rdata  ascii __std_exception_copy
+40  0x0007c3b8 0x14007ddb8 23  24   .rdata  ascii __std_exception_destroy
+41  0x0007c3d2 0x14007ddd2 15  16   .rdata  ascii __std_terminate
+42  0x0007c3e4 0x14007dde4 6   7    .rdata  ascii memset
+43  0x0007c3ee 0x14007ddee 14  15   .rdata  ascii _beginthreadex
+44  0x0007c400 0x14007de00 7   8    .rdata  ascii _c_exit
+45  0x0007c40a 0x14007de0a 6   7    .rdata  ascii _cexit
+46  0x0007c414 0x14007de14 22  23   .rdata  ascii _configure_narrow_argv
+47  0x0007c42e 0x14007de2e 11  12   .rdata  ascii _crt_atexit
+48  0x0007c43c 0x14007de3c 5   6    .rdata  ascii _exit
+49  0x0007c444 0x14007de44 32  33   .rdata  ascii _get_narrow_winmain_command_line
+50  0x0007c468 0x14007de68 30  31   .rdata  ascii _initialize_narrow_environment
+51  0x0007c48a 0x14007de8a 24  25   .rdata  ascii _initialize_onexit_table
+52  0x0007c4a6 0x14007dea6 9   10   .rdata  ascii _initterm
+53  0x0007c4b2 0x14007deb2 11  12   .rdata  ascii _initterm_e
+54  0x0007c4c0 0x14007dec0 25  26   .rdata  ascii _register_onexit_function
+55  0x0007c4dc 0x14007dedc 42  43   .rdata  ascii _register_thread_local_exe_atexit_callback
+56  0x0007c50a 0x14007df0a 15  16   .rdata  ascii _seh_filter_exe
+57  0x0007c51c 0x14007df1c 13  14   .rdata  ascii _set_app_type
+58  0x0007c52c 0x14007df2c 4   5    .rdata  ascii exit
+59  0x0007c534 0x14007df34 9   10   .rdata  ascii terminate
+60  0x0007c540 0x14007df40 7   8    .rdata  ascii _time64
+61  0x0007c54a 0x14007df4a 5   6    .rdata  ascii clock
+62  0x0007c552 0x14007df52 9   10   .rdata  ascii _callnewh
+63  0x0007c55e 0x14007df5e 13  14   .rdata  ascii _set_new_mode
+64  0x0007c56e 0x14007df6e 4   5    .rdata  ascii free
+65  0x0007c576 0x14007df76 6   7    .rdata  ascii malloc
+66  0x0007c580 0x14007df80 4   5    .rdata  ascii rand
+67  0x0007c588 0x14007df88 5   6    .rdata  ascii srand
+68  0x0007c590 0x14007df90 12  13   .rdata  ascii __p__commode
+69  0x0007c5a0 0x14007dfa0 10  11   .rdata  ascii _set_fmode
+70  0x0007c5ae 0x14007dfae 16  17   .rdata  ascii __setusermatherr
+71  0x0007c5c2 0x14007dfc2 19  20   .rdata  ascii _configthreadlocale
+72  0x0007c5d6 0x14007dfd6 12  13   .rdata  ascii KERNEL32.dll
+73  0x0007c5e3 0x14007dfe3 10  11   .rdata  ascii WS2_32.dll
+74  0x0007c5ee 0x14007dfee 12  13   .rdata  ascii MSVCP140.dll
+75  0x0007c5fb 0x14007dffb 16  17   .rdata  ascii VCRUNTIME140.dll
+76  0x0007c60c 0x14007e00c 33  34   .rdata  ascii api-ms-win-crt-runtime-l1-1-0.dll
+77  0x0007c62e 0x14007e02e 30  31   .rdata  ascii api-ms-win-crt-time-l1-1-0.dll
+78  0x0007c64d 0x14007e04d 30  31   .rdata  ascii api-ms-win-crt-heap-l1-1-0.dll
+79  0x0007c66c 0x14007e06c 33  34   .rdata  ascii api-ms-win-crt-utility-l1-1-0.dll
+80  0x0007c68e 0x14007e08e 31  32   .rdata  ascii api-ms-win-crt-stdio-l1-1-0.dll
+81  0x0007c6ae 0x14007e0ae 30  31   .rdata  ascii api-ms-win-crt-math-l1-1-0.dll
+82  0x0007c6cd 0x14007e0cd 32  33   .rdata  ascii api-ms-win-crt-locale-l1-1-0.dll
+83  0x0007c72c 0x14007e12c 4   5    .rdata  ascii \vB\a`
+84  0x0007c788 0x14007e188 9   10   .rdata  ascii \f0\vP\np\t`\b
+85  0x0007c7a0 0x14007e1a0 9   10   .rdata  ascii \f0\vP\np\t`\b
+86  0x0007c7ce 0x14007e1ce 7   8    .rdata  ascii \f0\vp\n`\t
+87  0x0007c7ee 0x14007e1ee 7   8    .rdata  ascii \f0\vp\n`\t
+88  0x0007c808 0x14007e208 7   8    .rdata  ascii \f0\vp\n`\t
+89  0x0007c81c 0x14007e21c 8   9    .rdata  ascii \rB\t0\bp\a`
+90  0x0007c848 0x14007e248 8   9    .rdata  ascii \rb\t0\bp\a`
+91  0x0007c8a1 0x14007e2a1 10  11   .rdata  ascii R\f0\vP\np\t`\b
+92  0x0007c8bb 0x14007e2bb 8   9    .rdata  ascii B\f0\vp\n`\t
+93  0x0007c9cb 0x14007e3cb 8   9    .rdata  ascii b\f0\vp\n`\t
+94  0x0007ca08 0x14007e408 6   7    .rdata  ascii \f2\bp\a`
+95  0x0007ca5e 0x14007e45e 9   10   .rdata  ascii \f0\vP\np\t`\b
+96  0x0007ca74 0x14007e474 4   5    .rdata  ascii \vR\a0
+97  0x0007ca86 0x14007e486 9   10   .rdata  ascii \f0\vP\np\t`\b
+98  0x0007caa8 0x14007e4a8 8   9    .rdata  ascii \rb\t0\bp\a`
+99  0x0007cabe 0x14007e4be 9   10   .rdata  ascii \f0\vP\np\t`\b
+100 0x0007cad5 0x14007e4d5 10  11   .rdata  ascii r\f0\vP\np\t`\b
+101 0x0007caf5 0x14007e4f5 10  11   .rdata  ascii b\f0\vP\np\t`\b
+102 0x0007cb14 0x14007e514 7   8    .rdata  ascii \f0\vp\n`\t
+103 0x0007cb2a 0x14007e52a 9   10   .rdata  ascii \f0\vP\np\t`\b
+104 0x0007cb44 0x14007e544 4   5    .rdata  ascii \b0\ap
+105 0x0007cb5d 0x14007e55d 8   9    .rdata  ascii b\r0\fp\v`\n
+106 0x0007cb71 0x14007e571 8   9    .rdata  ascii b\r0\fp\v`\n
+107 0x0007cb85 0x14007e585 8   9    .rdata  ascii b\r0\fp\v`\n
+108 0x0007cb99 0x14007e599 8   9    .rdata  ascii b\r0\fp\v`\n
+109 0x0007cc3f 0x14007e63f 8   9    .rdata  ascii "\f0\vp\n`\t
+110 0x0007cc66 0x14007e666 9   10   .rdata  ascii \f0\vP\np\t`\b
+111 0x0007cc80 0x14007e680 9   10   .rdata  ascii \f0\vP\np\t`\b
+112 0x0007cc9a 0x14007e69a 7   8    .rdata  ascii \f0\vp\n`\t
+113 0x0007ccb4 0x14007e6b4 7   8    .rdata  ascii \f0\vp\n`\t
+114 0x0007ccce 0x14007e6ce 7   8    .rdata  ascii \f0\vp\n`\t
+0   0x0007d048 0x14007f048 19  20   .data   ascii .?AVbad_alloc@std@@
+1   0x0007d070 0x14007f070 19  20   .data   ascii .?AVexception@std@@
+2   0x0007d098 0x14007f098 30  31   .data   ascii .?AVbad_array_new_length@std@@
+3   0x0007d0c8 0x14007f0c8 15  16   .data   ascii .?AVtype_info@@
+0   0x0007dc60 0x140083060 323 324  .rsrc   ascii <?xml version="1.0" standalone="yes"?>\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1"\n          manifestVersion="1.0">\n  <trustInfo>\n    <security>\n      <requestedPrivileges>\n         <requestedExecutionLevel level='asInvoker' uiAccess='false'/>\n      </requestedPrivileges>\n    </security>\n  </trustInfo>\n</assembly>\n
+arch     x86
+baddr    0x140000000
+binsz    516096
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x00081a38
+compiled Wed Dec 29 11:26:23 2021
+crypto   false
+dbg_file E:\code\Client\x64\Release\Client.pdb
+endian   little
+havecode true
+hdr.csum 0x00000000
+guid     C9BE6154C5EF9F444C4C44205044422E1
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  false
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x8
+  TimeDateStamp : 0x61cc45df
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x22
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x7b200
+  SizeOfInitializedData : 0x2a00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x7b630
+  BaseOfCode : 0x1000
+  ImageBase : 0x140000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x85000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8160
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x7d4e0
+  Size : 0xf0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x83000
+  Size : 0x1a8
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x80000
+  Size : 0x4d4
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x84000
+  Size : 0x5c
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x7d428
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x7d090
+  Size : 0x138
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x7d870
+  Size : 0x2a0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+ws2_32.dll
+msvcp140.dll
+vcruntime140.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-time-l1-1-0.dll
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-utility-l1-1-0.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+
+11 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00000003 0x0007bf28 SET_64 WS2_32.dll_closesocket
+0x00000004 0x0007bf30 SET_64 WS2_32.dll_connect
+0x00000009 0x0007bf40 SET_64 WS2_32.dll_htons
+0x0000000c 0x0007bf48 SET_64 WS2_32.dll_inet_ntoa
+0x00000010 0x0007bf58 SET_64 WS2_32.dll_recv
+0x00000013 0x0007bf60 SET_64 WS2_32.dll_send
+0x00000017 0x0007bf68 SET_64 WS2_32.dll_socket
+0x00000034 0x0007bf38 SET_64 WS2_32.dll_gethostbyname
+0x0000006f 0x0007bf18 SET_64 WS2_32.dll_WSAGetLastError
+0x00000073 0x0007bf20 SET_64 WS2_32.dll_WSAStartup
+0x00000074 0x0007bf10 SET_64 WS2_32.dll_WSACleanup
+0x0007db10 0x0007be70 SET_64 KERNEL32.dll_CreateMutexA
+0x0007db20 0x0007be78 SET_64 KERNEL32.dll_GetCurrentProcess
+0x0007db34 0x0007be80 SET_64 KERNEL32.dll_GetCurrentProcessId
+0x0007db4a 0x0007be88 SET_64 KERNEL32.dll_GetCurrentThreadId
+0x0007db60 0x0007be90 SET_64 KERNEL32.dll_GetLastError
+0x0007db70 0x0007be98 SET_64 KERNEL32.dll_GetModuleHandleW
+0x0007db84 0x0007bea0 SET_64 KERNEL32.dll_GetStartupInfoW
+0x0007db96 0x0007bea8 SET_64 KERNEL32.dll_GetSystemTimeAsFileTime
+0x0007dbb0 0x0007beb0 SET_64 KERNEL32.dll_InitializeSListHead
+0x0007dbc6 0x0007beb8 SET_64 KERNEL32.dll_IsDebuggerPresent
+0x0007dbda 0x0007bec0 SET_64 KERNEL32.dll_IsProcessorFeaturePresent
+0x0007dbf6 0x0007bec8 SET_64 KERNEL32.dll_QueryPerformanceCounter
+0x0007dc10 0x0007bed0 SET_64 KERNEL32.dll_RtlCaptureContext
+0x0007dc24 0x0007bed8 SET_64 KERNEL32.dll_RtlLookupFunctionEntry
+0x0007dc3e 0x0007bee0 SET_64 KERNEL32.dll_RtlVirtualUnwind
+0x0007dc52 0x0007bee8 SET_64 KERNEL32.dll_SetUnhandledExceptionFilter
+0x0007dc70 0x0007bef0 SET_64 KERNEL32.dll_Sleep
+0x0007dc78 0x0007bef8 SET_64 KERNEL32.dll_TerminateProcess
+0x0007dc8c 0x0007bf00 SET_64 KERNEL32.dll_UnhandledExceptionFilter
+0x0007dca8 0x0007bf50 SET_64 WS2_32.dll_inet_pton
+0x0007dcb4 0x0007bf78 SET_64 MSVCP140.dll_void __cdecl std::_Throw_C_error(int)
+0x0007dcd2 0x0007bf80 SET_64 MSVCP140.dll_void __cdecl std::_Throw_Cpp_error(int)
+0x0007dcf2 0x0007bf88 SET_64 MSVCP140.dll__Cnd_do_broadcast_at_thread_exit
+0x0007dd16 0x0007bf90 SET_64 MSVCP140.dll__Thrd_detach
+0x0007dd26 0x0007bfa0 SET_64 VCRUNTIME140.dll__CxxThrowException
+0x0007dd3c 0x0007bfa8 SET_64 VCRUNTIME140.dll___C_specific_handler
+0x0007dd54 0x0007bfb0 SET_64 VCRUNTIME140.dll___CxxFrameHandler3
+0x0007dd6a 0x0007bfb8 SET_64 VCRUNTIME140.dll___current_exception
+0x0007dd80 0x0007bfc0 SET_64 VCRUNTIME140.dll___current_exception_context
+0x0007dd9e 0x0007bfc8 SET_64 VCRUNTIME140.dll___std_exception_copy
+0x0007ddb6 0x0007bfd0 SET_64 VCRUNTIME140.dll___std_exception_destroy
+0x0007ddd0 0x0007bfd8 SET_64 VCRUNTIME140.dll___std_terminate
+0x0007dde2 0x0007bfe0 SET_64 VCRUNTIME140.dll_memset
+0x0007ddec 0x0007bff0 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__beginthreadex
+0x0007ddfe 0x0007bff8 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__c_exit
+0x0007de08 0x0007c000 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__cexit
+0x0007de12 0x0007c008 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__configure_narrow_argv
+0x0007de2c 0x0007c010 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__crt_atexit
+0x0007de3a 0x0007c018 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__exit
+0x0007de42 0x0007c020 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__get_narrow_winmain_command_line
+0x0007de66 0x0007c028 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initialize_narrow_environment
+0x0007de88 0x0007c030 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initialize_onexit_table
+0x0007dea4 0x0007c038 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initterm
+0x0007deb0 0x0007c040 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initterm_e
+0x0007debe 0x0007c048 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__register_onexit_function
+0x0007deda 0x0007c050 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__register_thread_local_exe_atexit_callback
+0x0007df08 0x0007c058 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__seh_filter_exe
+0x0007df1a 0x0007c060 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__set_app_type
+0x0007df2a 0x0007c068 SET_64 api-ms-win-crt-runtime-l1-1-0.dll_exit
+0x0007df32 0x0007c070 SET_64 api-ms-win-crt-runtime-l1-1-0.dll_terminate
+0x0007df3e 0x0007c080 SET_64 api-ms-win-crt-time-l1-1-0.dll__time64
+0x0007df48 0x0007c088 SET_64 api-ms-win-crt-time-l1-1-0.dll_clock
+0x0007df50 0x0007c098 SET_64 api-ms-win-crt-heap-l1-1-0.dll__callnewh
+0x0007df5c 0x0007c0a0 SET_64 api-ms-win-crt-heap-l1-1-0.dll__set_new_mode
+0x0007df6c 0x0007c0a8 SET_64 api-ms-win-crt-heap-l1-1-0.dll_free
+0x0007df74 0x0007c0b0 SET_64 api-ms-win-crt-heap-l1-1-0.dll_malloc
+0x0007df7e 0x0007c0c0 SET_64 api-ms-win-crt-utility-l1-1-0.dll_rand
+0x0007df86 0x0007c0c8 SET_64 api-ms-win-crt-utility-l1-1-0.dll_srand
+0x0007df8e 0x0007c0d8 SET_64 api-ms-win-crt-stdio-l1-1-0.dll___p__commode
+0x0007df9e 0x0007c0e0 SET_64 api-ms-win-crt-stdio-l1-1-0.dll__set_fmode
+0x0007dfac 0x0007c0f0 SET_64 api-ms-win-crt-math-l1-1-0.dll___setusermatherr
+0x0007dfc0 0x0007c100 SET_64 api-ms-win-crt-locale-l1-1-0.dll__configthreadlocale
+
+
+73 relocations
+516096
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

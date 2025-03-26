@@ -1,0 +1,333 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x5400 0x00401000  0x6000 -r-x .text
+1   0x00005800   0x200 0x00407000  0x1000 -rw- .data
+2   0x00005a00   0x600 0x00408000  0x1000 -rw- .idata
+3   0x00006000   0x800 0x00409000  0x1000 -r-- .rdata
+4   0x00000000     0x0 0x0040a000  0x3000 -rw- .bss
+5   0x00006800   0x600 0x0040d000  0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401280 paddr=0x00000680 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x004032aa paddr=0x000026aa
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00408140 NONE FUNC ADVAPI32.DLL RegCloseKey
+2   0x00408144 NONE FUNC ADVAPI32.DLL RegOpenKeyExA
+3   0x00408148 NONE FUNC ADVAPI32.DLL RegOpenKeyExW
+4   0x0040814c NONE FUNC ADVAPI32.DLL RegOpenKeyW
+5   0x00408150 NONE FUNC ADVAPI32.DLL RegQueryValueExW
+6   0x00408154 NONE FUNC ADVAPI32.DLL RegQueryValueW
+7   0x00408158 NONE FUNC ADVAPI32.DLL RegSetValueA
+8   0x0040815c NONE FUNC ADVAPI32.DLL RegSetValueExW
+9   0x00408160 NONE FUNC ADVAPI32.DLL RegSetValueW
+1   0x0040816c NONE FUNC KERNEL32.dll CloseHandle
+2   0x00408170 NONE FUNC KERNEL32.dll CreateFileW
+3   0x00408174 NONE FUNC KERNEL32.dll EnterCriticalSection
+4   0x00408178 NONE FUNC KERNEL32.dll ExitProcess
+5   0x0040817c NONE FUNC KERNEL32.dll InitializeCriticalSection
+6   0x00408180 NONE FUNC KERNEL32.dll LeaveCriticalSection
+7   0x00408184 NONE FUNC KERNEL32.dll ReadFile
+8   0x00408188 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+9   0x0040818c NONE FUNC KERNEL32.dll TlsAlloc
+10  0x00408190 NONE FUNC KERNEL32.dll TlsFree
+11  0x00408194 NONE FUNC KERNEL32.dll TlsGetValue
+12  0x00408198 NONE FUNC KERNEL32.dll TlsSetValue
+13  0x0040819c NONE FUNC KERNEL32.dll WriteFile
+1   0x004081a8 NONE FUNC msvcrt.dll   __getmainargs
+2   0x004081ac NONE FUNC msvcrt.dll   __p__environ
+3   0x004081b0 NONE FUNC msvcrt.dll   __p__fmode
+4   0x004081b4 NONE FUNC msvcrt.dll   __set_app_type
+5   0x004081b8 NONE FUNC msvcrt.dll   _cexit
+6   0x004081bc NONE FUNC msvcrt.dll   _iob
+7   0x004081c0 NONE FUNC msvcrt.dll   _onexit
+8   0x004081c4 NONE FUNC msvcrt.dll   _setmode
+9   0x004081c8 NONE FUNC msvcrt.dll   abort
+10  0x004081cc NONE FUNC msvcrt.dll   atexit
+11  0x004081d0 NONE FUNC msvcrt.dll   clock
+12  0x004081d4 NONE FUNC msvcrt.dll   free
+13  0x004081d8 NONE FUNC msvcrt.dll   localtime
+14  0x004081dc NONE FUNC msvcrt.dll   malloc
+15  0x004081e0 NONE FUNC msvcrt.dll   memcpy
+16  0x004081e4 NONE FUNC msvcrt.dll   mktime
+17  0x004081e8 NONE FUNC msvcrt.dll   signal
+18  0x004081ec NONE FUNC msvcrt.dll   sprintf
+19  0x004081f0 NONE FUNC msvcrt.dll   sscanf
+20  0x004081f4 NONE FUNC msvcrt.dll   strcpy
+21  0x004081f8 NONE FUNC msvcrt.dll   strftime
+22  0x004081fc NONE FUNC msvcrt.dll   time
+23  0x00408200 NONE FUNC msvcrt.dll   wcscpy
+1   0x0040820c NONE FUNC USER32.dll   MessageBoxW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00005b40 0x00408140 NONE FUNC 0    ADVAPI32.DLL imp.RegCloseKey
+2   0x00005b44 0x00408144 NONE FUNC 0    ADVAPI32.DLL imp.RegOpenKeyExA
+3   0x00005b48 0x00408148 NONE FUNC 0    ADVAPI32.DLL imp.RegOpenKeyExW
+4   0x00005b4c 0x0040814c NONE FUNC 0    ADVAPI32.DLL imp.RegOpenKeyW
+5   0x00005b50 0x00408150 NONE FUNC 0    ADVAPI32.DLL imp.RegQueryValueExW
+6   0x00005b54 0x00408154 NONE FUNC 0    ADVAPI32.DLL imp.RegQueryValueW
+7   0x00005b58 0x00408158 NONE FUNC 0    ADVAPI32.DLL imp.RegSetValueA
+8   0x00005b5c 0x0040815c NONE FUNC 0    ADVAPI32.DLL imp.RegSetValueExW
+9   0x00005b60 0x00408160 NONE FUNC 0    ADVAPI32.DLL imp.RegSetValueW
+1   0x00005b6c 0x0040816c NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+2   0x00005b70 0x00408170 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+3   0x00005b74 0x00408174 NONE FUNC 0    KERNEL32.dll imp.EnterCriticalSection
+4   0x00005b78 0x00408178 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+5   0x00005b7c 0x0040817c NONE FUNC 0    KERNEL32.dll imp.InitializeCriticalSection
+6   0x00005b80 0x00408180 NONE FUNC 0    KERNEL32.dll imp.LeaveCriticalSection
+7   0x00005b84 0x00408184 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+8   0x00005b88 0x00408188 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+9   0x00005b8c 0x0040818c NONE FUNC 0    KERNEL32.dll imp.TlsAlloc
+10  0x00005b90 0x00408190 NONE FUNC 0    KERNEL32.dll imp.TlsFree
+11  0x00005b94 0x00408194 NONE FUNC 0    KERNEL32.dll imp.TlsGetValue
+12  0x00005b98 0x00408198 NONE FUNC 0    KERNEL32.dll imp.TlsSetValue
+13  0x00005b9c 0x0040819c NONE FUNC 0    KERNEL32.dll imp.WriteFile
+1   0x00005ba8 0x004081a8 NONE FUNC 0    msvcrt.dll   imp.__getmainargs
+2   0x00005bac 0x004081ac NONE FUNC 0    msvcrt.dll   imp.__p__environ
+3   0x00005bb0 0x004081b0 NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+4   0x00005bb4 0x004081b4 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+5   0x00005bb8 0x004081b8 NONE FUNC 0    msvcrt.dll   imp._cexit
+6   0x00005bbc 0x004081bc NONE FUNC 0    msvcrt.dll   imp._iob
+7   0x00005bc0 0x004081c0 NONE FUNC 0    msvcrt.dll   imp._onexit
+8   0x00005bc4 0x004081c4 NONE FUNC 0    msvcrt.dll   imp._setmode
+9   0x00005bc8 0x004081c8 NONE FUNC 0    msvcrt.dll   imp.abort
+10  0x00005bcc 0x004081cc NONE FUNC 0    msvcrt.dll   imp.atexit
+11  0x00005bd0 0x004081d0 NONE FUNC 0    msvcrt.dll   imp.clock
+12  0x00005bd4 0x004081d4 NONE FUNC 0    msvcrt.dll   imp.free
+13  0x00005bd8 0x004081d8 NONE FUNC 0    msvcrt.dll   imp.localtime
+14  0x00005bdc 0x004081dc NONE FUNC 0    msvcrt.dll   imp.malloc
+15  0x00005be0 0x004081e0 NONE FUNC 0    msvcrt.dll   imp.memcpy
+16  0x00005be4 0x004081e4 NONE FUNC 0    msvcrt.dll   imp.mktime
+17  0x00005be8 0x004081e8 NONE FUNC 0    msvcrt.dll   imp.signal
+18  0x00005bec 0x004081ec NONE FUNC 0    msvcrt.dll   imp.sprintf
+19  0x00005bf0 0x004081f0 NONE FUNC 0    msvcrt.dll   imp.sscanf
+20  0x00005bf4 0x004081f4 NONE FUNC 0    msvcrt.dll   imp.strcpy
+21  0x00005bf8 0x004081f8 NONE FUNC 0    msvcrt.dll   imp.strftime
+22  0x00005bfc 0x004081fc NONE FUNC 0    msvcrt.dll   imp.time
+23  0x00005c00 0x00408200 NONE FUNC 0    msvcrt.dll   imp.wcscpy
+1   0x00005c0c 0x0040820c NONE FUNC 0    USER32.dll   imp.MessageBoxW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00005838 0x00407038 4   6    .data   utf8    ͶI^Z blocks=Greek and Coptic,Basic Latin
+1   0x00005844 0x00407044 4   5    .data   ascii   lA}z
+2   0x00005877 0x00407077 4   6    .data   utf8    =0ַW blocks=Basic Latin,Hebrew
+0   0x00006020 0x00409020 6   7    .rdata  ascii   +UUUUU
+1   0x00006038 0x00409038 6   7    .rdata  ascii   +UUUUU
+2   0x00006074 0x00409074 5   6    .rdata  ascii   `6p>;
+3   0x000060ae 0x004090ae 4   5    .rdata  ascii   w-*#
+4   0x000060b3 0x004090b3 4   8    .rdata  utf8    ݚ蹓\bA blocks=Arabic Supplement,CJK Unified Ideographs,Basic Latin
+5   0x000060df 0x004090df 5   6    .rdata  ascii   U8~L?
+6   0x0000611e 0x0040911e 8   9    .rdata  ascii    A+UUUUU
+7   0x0000616e 0x0040916e 8   9    .rdata  ascii    A+UUUUU
+8   0x000061ae 0x004091ae 8   9    .rdata  ascii    A+UUUUU
+9   0x000061d0 0x004091d0 6   7    .rdata  ascii   +UUUUU
+10  0x000061f0 0x004091f0 6   7    .rdata  ascii   +UUUUU
+11  0x00006210 0x00409210 6   7    .rdata  ascii   +UUUUU
+12  0x0000623e 0x0040923e 8   9    .rdata  ascii    A+UUUUU
+13  0x00006260 0x00409260 6   7    .rdata  ascii   +UUUUU
+14  0x00006280 0x00409280 6   7    .rdata  ascii   +UUUUU
+15  0x000062a0 0x004092a0 6   7    .rdata  ascii   +UUUUU
+16  0x000062c1 0x004092c1 4   5    .rdata  ascii   ={9A
+17  0x0000633d 0x0040933d 4   5    .rdata  ascii   ={9Z
+18  0x00006349 0x00409349 4   5    .rdata  ascii   g/\at
+19  0x000063b9 0x004093b9 4   6    .rdata  utf8    ={9ʞ blocks=Basic Latin,IPA Extensions
+20  0x000063c4 0x004093c4 4   5    .rdata  ascii   \eg/\a
+21  0x00006440 0x00409440 4   5    .rdata  ascii   jg/\a
+22  0x000064bc 0x004094bc 4   7    .rdata  utf8    ug/\a
+23  0x00006538 0x00409538 4   5    .rdata  ascii   )g/\a
+24  0x000065a8 0x004095a8 4   5    .rdata  ascii   p={9
+25  0x00006623 0x00409623 5   6    .rdata  ascii   r)={9
+26  0x00006630 0x00409630 5   7    .rdata  utf8    Cg/\aٳ blocks=Basic Latin,Arabic
+27  0x000066ac 0x004096ac 4   5    .rdata  ascii   Tg/\a
+28  0x000066c8 0x004096c8 6   7    .rdata  ascii   +UUUUU
+29  0x000066e8 0x004096e8 6   7    .rdata  ascii   +UUUUU
+30  0x0000670e 0x0040970e 8   9    .rdata  ascii    A+UUUUU
+31  0x00006728 0x00409728 6   7    .rdata  ascii   +UUUUU
+32  0x00006748 0x00409748 6   7    .rdata  ascii   +UUUUU
+33  0x00006768 0x00409768 6   7    .rdata  ascii   +UUUUU
+34  0x00006788 0x00409788 6   7    .rdata  ascii   +UUUUU
+35  0x000067a8 0x004097a8 6   7    .rdata  ascii   +UUUUU
+36  0x000067ce 0x004097ce 8   9    .rdata  ascii    A+UUUUU
+0   0x00006bd6 0x0040d3d6 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00006c32 0x0040d432 14  30   .rsrc   utf16le StringFileInfo
+2   0x00006c56 0x0040d456 8   18   .rsrc   utf16le 000004b0
+3   0x00006c6e 0x0040d46e 11  24   .rsrc   utf16le CompanyName
+4   0x00006c88 0x0040d488 21  44   .rsrc   utf16le Rising Solutions Ltd.
+5   0x00006cba 0x0040d4ba 11  24   .rsrc   utf16le FileVersion
+6   0x00006cd4 0x0040d4d4 10  22   .rsrc   utf16le 1, 0, 0, 1
+7   0x00006cf2 0x0040d4f2 14  30   .rsrc   utf16le LegalCopyright
+8   0x00006d10 0x0040d510 41  84   .rsrc   utf16le Copyright (c) 2012, Rising Solutions Ltd.
+9   0x00006d6a 0x0040d56a 14  30   .rsrc   utf16le ProductVersion
+10  0x00006d88 0x0040d588 10  22   .rsrc   utf16le 1, 0, 0, 1
+11  0x00006da8 0x0040d5a8 10  22   .rsrc   utf16le arFileInfo
+12  0x00006dc6 0x0040d5c6 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x400000
+binsz    222289
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00043a68
+compiled Sat Mar 24 12:20:20 2012
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00043a68
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x4f6dbc04
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x30f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x38
+  SizeOfCode : 0x5400
+  SizeOfInitializedData : 0x1600
+  SizeOfUninitializedData : 0x2a00
+  AddressOfEntryPoint : 0x1280
+  BaseOfCode : 0x1000
+  BaseOfData : 0x7000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xe000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x43a68
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x8000
+  Size : 0x580
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xd000
+  Size : 0x5e5
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+kernel32.dll
+msvcrt.dll
+user32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00008214 0x00005b40 SET_32 ADVAPI32.DLL_RegCloseKey
+0x00008222 0x00005b44 SET_32 ADVAPI32.DLL_RegOpenKeyExA
+0x00008232 0x00005b48 SET_32 ADVAPI32.DLL_RegOpenKeyExW
+0x00008242 0x00005b4c SET_32 ADVAPI32.DLL_RegOpenKeyW
+0x00008250 0x00005b50 SET_32 ADVAPI32.DLL_RegQueryValueExW
+0x00008264 0x00005b54 SET_32 ADVAPI32.DLL_RegQueryValueW
+0x00008276 0x00005b58 SET_32 ADVAPI32.DLL_RegSetValueA
+0x00008286 0x00005b5c SET_32 ADVAPI32.DLL_RegSetValueExW
+0x00008298 0x00005b60 SET_32 ADVAPI32.DLL_RegSetValueW
+0x000082a8 0x00005b6c SET_32 KERNEL32.dll_CloseHandle
+0x000082b6 0x00005b70 SET_32 KERNEL32.dll_CreateFileW
+0x000082c4 0x00005b74 SET_32 KERNEL32.dll_EnterCriticalSection
+0x000082dc 0x00005b78 SET_32 KERNEL32.dll_ExitProcess
+0x000082ea 0x00005b7c SET_32 KERNEL32.dll_InitializeCriticalSection
+0x00008306 0x00005b80 SET_32 KERNEL32.dll_LeaveCriticalSection
+0x0000831e 0x00005b84 SET_32 KERNEL32.dll_ReadFile
+0x0000832a 0x00005b88 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x00008348 0x00005b8c SET_32 KERNEL32.dll_TlsAlloc
+0x00008354 0x00005b90 SET_32 KERNEL32.dll_TlsFree
+0x0000835e 0x00005b94 SET_32 KERNEL32.dll_TlsGetValue
+0x0000836c 0x00005b98 SET_32 KERNEL32.dll_TlsSetValue
+0x0000837a 0x00005b9c SET_32 KERNEL32.dll_WriteFile
+0x00008386 0x00005ba8 SET_32 msvcrt.dll___getmainargs
+0x00008396 0x00005bac SET_32 msvcrt.dll___p__environ
+0x000083a6 0x00005bb0 SET_32 msvcrt.dll___p__fmode
+0x000083b4 0x00005bb4 SET_32 msvcrt.dll___set_app_type
+0x000083c6 0x00005bb8 SET_32 msvcrt.dll__cexit
+0x000083d0 0x00005bbc SET_32 msvcrt.dll__iob
+0x000083d8 0x00005bc0 SET_32 msvcrt.dll__onexit
+0x000083e2 0x00005bc4 SET_32 msvcrt.dll__setmode
+0x000083ee 0x00005bc8 SET_32 msvcrt.dll_abort
+0x000083f6 0x00005bcc SET_32 msvcrt.dll_atexit
+0x00008400 0x00005bd0 SET_32 msvcrt.dll_clock
+0x00008408 0x00005bd4 SET_32 msvcrt.dll_free
+0x00008410 0x00005bd8 SET_32 msvcrt.dll_localtime
+0x0000841c 0x00005bdc SET_32 msvcrt.dll_malloc
+0x00008426 0x00005be0 SET_32 msvcrt.dll_memcpy
+0x00008430 0x00005be4 SET_32 msvcrt.dll_mktime
+0x0000843a 0x00005be8 SET_32 msvcrt.dll_signal
+0x00008444 0x00005bec SET_32 msvcrt.dll_sprintf
+0x0000844e 0x00005bf0 SET_32 msvcrt.dll_sscanf
+0x00008458 0x00005bf4 SET_32 msvcrt.dll_strcpy
+0x00008462 0x00005bf8 SET_32 msvcrt.dll_strftime
+0x0000846e 0x00005bfc SET_32 msvcrt.dll_time
+0x00008476 0x00005c00 SET_32 msvcrt.dll_wcscpy
+0x00008480 0x00005c0c SET_32 USER32.dll_MessageBoxW
+
+
+46 relocations
+222289
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

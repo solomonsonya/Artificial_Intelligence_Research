@@ -1,0 +1,330 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1a00 0x6bac1000  0x2000 -r-x .text
+1   0x00001e00   0x600 0x6bac3000  0x1000 -rw- .data
+2   0x00002400   0x200 0x6bac4000  0x1000 -r-- .rdata
+3   0x00000000     0x0 0x6bac5000  0x1000 -rw- .bss
+4   0x00002600   0x200 0x6bac6000  0x1000 -r-- .edata
+5   0x00002800   0x800 0x6bac7000  0x1000 -rw- .idata
+6   0x00003000   0x200 0x6bac8000  0x1000 -rw- .CRT
+7   0x00003200   0x200 0x6bac9000  0x1000 -rw- .tls
+8   0x00003400   0x600 0x6baca000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x6bac1420 paddr=0x00000820 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x6bac19b0 paddr=0x00000db0 hpaddr=0x00003018 type=tls
+vaddr=0x6bac1960 paddr=0x00000d60 hpaddr=0x0000301c type=tls
+
+2 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x6bac7114 NONE FUNC KERNEL32.dll CreateProcessA
+2   0x6bac7118 NONE FUNC KERNEL32.dll CreateThread
+3   0x6bac711c NONE FUNC KERNEL32.dll DeleteCriticalSection
+4   0x6bac7120 NONE FUNC KERNEL32.dll EnterCriticalSection
+5   0x6bac7124 NONE FUNC KERNEL32.dll FreeLibrary
+6   0x6bac7128 NONE FUNC KERNEL32.dll GetCurrentProcess
+7   0x6bac712c NONE FUNC KERNEL32.dll GetCurrentProcessId
+8   0x6bac7130 NONE FUNC KERNEL32.dll GetCurrentThreadId
+9   0x6bac7134 NONE FUNC KERNEL32.dll GetEnvironmentVariableA
+10  0x6bac7138 NONE FUNC KERNEL32.dll GetLastError
+11  0x6bac713c NONE FUNC KERNEL32.dll GetModuleHandleA
+12  0x6bac7140 NONE FUNC KERNEL32.dll GetProcAddress
+13  0x6bac7144 NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+14  0x6bac7148 NONE FUNC KERNEL32.dll GetThreadContext
+15  0x6bac714c NONE FUNC KERNEL32.dll GetTickCount
+16  0x6bac7150 NONE FUNC KERNEL32.dll GetVersionExA
+17  0x6bac7154 NONE FUNC KERNEL32.dll InitializeCriticalSection
+18  0x6bac7158 NONE FUNC KERNEL32.dll LeaveCriticalSection
+19  0x6bac715c NONE FUNC KERNEL32.dll LoadLibraryA
+20  0x6bac7160 NONE FUNC KERNEL32.dll LoadLibraryW
+21  0x6bac7164 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+22  0x6bac7168 NONE FUNC KERNEL32.dll ResumeThread
+23  0x6bac716c NONE FUNC KERNEL32.dll SetThreadContext
+24  0x6bac7170 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+25  0x6bac7174 NONE FUNC KERNEL32.dll Sleep
+26  0x6bac7178 NONE FUNC KERNEL32.dll TerminateProcess
+27  0x6bac717c NONE FUNC KERNEL32.dll TlsGetValue
+28  0x6bac7180 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+29  0x6bac7184 NONE FUNC KERNEL32.dll VirtualAllocEx
+30  0x6bac7188 NONE FUNC KERNEL32.dll VirtualProtect
+31  0x6bac718c NONE FUNC KERNEL32.dll VirtualProtectEx
+32  0x6bac7190 NONE FUNC KERNEL32.dll VirtualQuery
+33  0x6bac7194 NONE FUNC KERNEL32.dll WriteProcessMemory
+1   0x6bac719c NONE FUNC msvcrt.dll   __dllonexit
+2   0x6bac71a0 NONE FUNC msvcrt.dll   _amsg_exit
+3   0x6bac71a4 NONE FUNC msvcrt.dll   _initterm
+4   0x6bac71a8 NONE FUNC msvcrt.dll   _iob
+5   0x6bac71ac NONE FUNC msvcrt.dll   _lock
+6   0x6bac71b0 NONE FUNC msvcrt.dll   _onexit
+7   0x6bac71b4 NONE FUNC msvcrt.dll   _snprintf
+8   0x6bac71b8 NONE FUNC msvcrt.dll   _unlock
+9   0x6bac71bc NONE FUNC msvcrt.dll   _winmajor
+10  0x6bac71c0 NONE FUNC msvcrt.dll   abort
+11  0x6bac71c4 NONE FUNC msvcrt.dll   calloc
+12  0x6bac71c8 NONE FUNC msvcrt.dll   exit
+13  0x6bac71cc NONE FUNC msvcrt.dll   free
+14  0x6bac71d0 NONE FUNC msvcrt.dll   fwrite
+15  0x6bac71d4 NONE FUNC msvcrt.dll   malloc
+16  0x6bac71d8 NONE FUNC msvcrt.dll   memcpy
+17  0x6bac71dc NONE FUNC msvcrt.dll   strlen
+18  0x6bac71e0 NONE FUNC msvcrt.dll   strncmp
+19  0x6bac71e4 NONE FUNC msvcrt.dll   vfprintf
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000009d3 0x6bac15d3 GLOBAL FUNC 0    temp.dll     DllGetClassObject
+2   0x0000092f 0x6bac152f GLOBAL FUNC 0    temp.dll     DllMain
+3   0x000009c5 0x6bac15c5 GLOBAL FUNC 0    temp.dll     DllRegisterServer
+4   0x000009cc 0x6bac15cc GLOBAL FUNC 0    temp.dll     DllUnregisterServer
+5   0x000009e8 0x6bac15e8 GLOBAL FUNC 0    temp.dll     StartW
+1   0x00002914 0x6bac7114 NONE   FUNC 0    KERNEL32.dll imp.CreateProcessA
+2   0x00002918 0x6bac7118 NONE   FUNC 0    KERNEL32.dll imp.CreateThread
+3   0x0000291c 0x6bac711c NONE   FUNC 0    KERNEL32.dll imp.DeleteCriticalSection
+4   0x00002920 0x6bac7120 NONE   FUNC 0    KERNEL32.dll imp.EnterCriticalSection
+5   0x00002924 0x6bac7124 NONE   FUNC 0    KERNEL32.dll imp.FreeLibrary
+6   0x00002928 0x6bac7128 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+7   0x0000292c 0x6bac712c NONE   FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+8   0x00002930 0x6bac7130 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+9   0x00002934 0x6bac7134 NONE   FUNC 0    KERNEL32.dll imp.GetEnvironmentVariableA
+10  0x00002938 0x6bac7138 NONE   FUNC 0    KERNEL32.dll imp.GetLastError
+11  0x0000293c 0x6bac713c NONE   FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+12  0x00002940 0x6bac7140 NONE   FUNC 0    KERNEL32.dll imp.GetProcAddress
+13  0x00002944 0x6bac7144 NONE   FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+14  0x00002948 0x6bac7148 NONE   FUNC 0    KERNEL32.dll imp.GetThreadContext
+15  0x0000294c 0x6bac714c NONE   FUNC 0    KERNEL32.dll imp.GetTickCount
+16  0x00002950 0x6bac7150 NONE   FUNC 0    KERNEL32.dll imp.GetVersionExA
+17  0x00002954 0x6bac7154 NONE   FUNC 0    KERNEL32.dll imp.InitializeCriticalSection
+18  0x00002958 0x6bac7158 NONE   FUNC 0    KERNEL32.dll imp.LeaveCriticalSection
+19  0x0000295c 0x6bac715c NONE   FUNC 0    KERNEL32.dll imp.LoadLibraryA
+20  0x00002960 0x6bac7160 NONE   FUNC 0    KERNEL32.dll imp.LoadLibraryW
+21  0x00002964 0x6bac7164 NONE   FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+22  0x00002968 0x6bac7168 NONE   FUNC 0    KERNEL32.dll imp.ResumeThread
+23  0x0000296c 0x6bac716c NONE   FUNC 0    KERNEL32.dll imp.SetThreadContext
+24  0x00002970 0x6bac7170 NONE   FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+25  0x00002974 0x6bac7174 NONE   FUNC 0    KERNEL32.dll imp.Sleep
+26  0x00002978 0x6bac7178 NONE   FUNC 0    KERNEL32.dll imp.TerminateProcess
+27  0x0000297c 0x6bac717c NONE   FUNC 0    KERNEL32.dll imp.TlsGetValue
+28  0x00002980 0x6bac7180 NONE   FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+29  0x00002984 0x6bac7184 NONE   FUNC 0    KERNEL32.dll imp.VirtualAllocEx
+30  0x00002988 0x6bac7188 NONE   FUNC 0    KERNEL32.dll imp.VirtualProtect
+31  0x0000298c 0x6bac718c NONE   FUNC 0    KERNEL32.dll imp.VirtualProtectEx
+32  0x00002990 0x6bac7190 NONE   FUNC 0    KERNEL32.dll imp.VirtualQuery
+33  0x00002994 0x6bac7194 NONE   FUNC 0    KERNEL32.dll imp.WriteProcessMemory
+1   0x0000299c 0x6bac719c NONE   FUNC 0    msvcrt.dll   imp.__dllonexit
+2   0x000029a0 0x6bac71a0 NONE   FUNC 0    msvcrt.dll   imp._amsg_exit
+3   0x000029a4 0x6bac71a4 NONE   FUNC 0    msvcrt.dll   imp._initterm
+4   0x000029a8 0x6bac71a8 NONE   FUNC 0    msvcrt.dll   imp._iob
+5   0x000029ac 0x6bac71ac NONE   FUNC 0    msvcrt.dll   imp._lock
+6   0x000029b0 0x6bac71b0 NONE   FUNC 0    msvcrt.dll   imp._onexit
+7   0x000029b4 0x6bac71b4 NONE   FUNC 0    msvcrt.dll   imp._snprintf
+8   0x000029b8 0x6bac71b8 NONE   FUNC 0    msvcrt.dll   imp._unlock
+9   0x000029bc 0x6bac71bc NONE   FUNC 0    msvcrt.dll   imp._winmajor
+10  0x000029c0 0x6bac71c0 NONE   FUNC 0    msvcrt.dll   imp.abort
+11  0x000029c4 0x6bac71c4 NONE   FUNC 0    msvcrt.dll   imp.calloc
+12  0x000029c8 0x6bac71c8 NONE   FUNC 0    msvcrt.dll   imp.exit
+13  0x000029cc 0x6bac71cc NONE   FUNC 0    msvcrt.dll   imp.free
+14  0x000029d0 0x6bac71d0 NONE   FUNC 0    msvcrt.dll   imp.fwrite
+15  0x000029d4 0x6bac71d4 NONE   FUNC 0    msvcrt.dll   imp.malloc
+16  0x000029d8 0x6bac71d8 NONE   FUNC 0    msvcrt.dll   imp.memcpy
+17  0x000029dc 0x6bac71dc NONE   FUNC 0    msvcrt.dll   imp.strlen
+18  0x000029e0 0x6bac71e0 NONE   FUNC 0    msvcrt.dll   imp.strncmp
+19  0x000029e4 0x6bac71e4 NONE   FUNC 0    msvcrt.dll   imp.vfprintf
+[Strings]
+nth paddr      vaddr      len  size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001e00 0x6bac3000 1024 1025 .data   ascii   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+0   0x00002400 0x6bac4000 13   14   .rdata  ascii   libgcj-12.dll
+1   0x0000240e 0x6bac400e 19   20   .rdata  ascii   _Jv_RegisterClasses
+2   0x00002424 0x6bac4024 6    7    .rdata  ascii   windir
+3   0x0000242b 0x6bac402b 14   15   .rdata  ascii   %s\System32\%s
+4   0x0000243a 0x6bac403a 12   13   .rdata  ascii   rundll32.exe
+5   0x00002448 0x6bac4048 12   13   .rdata  ascii   mingwm10.dll
+6   0x00002455 0x6bac4055 26   27   .rdata  ascii   __mingwthr_remove_key_dtor
+7   0x00002470 0x6bac4070 19   20   .rdata  ascii   __mingwthr_key_dtor
+8   0x00002487 0x6bac4087 28   29   .rdata  ascii   kMingw-w64 runtime failure:\n
+9   0x000024a4 0x6bac40a4 31   32   .rdata  ascii   Address %p has no image-section
+10  0x000024c4 0x6bac40c4 48   49   .rdata  ascii     VirtualQuery failed for %d bytes at address %p
+11  0x000024f8 0x6bac40f8 38   39   .rdata  ascii     VirtualProtect failed with code 0x%x
+12  0x00002520 0x6bac4120 49   50   .rdata  ascii     Unknown pseudo relocation protocol version %d.\n
+13  0x00002554 0x6bac4154 41   42   .rdata  ascii     Unknown pseudo relocation bit size %d.\n
+14  0x00002588 0x6bac4188 10   22   .rdata  utf16le msvcrt.dll
+arch     x86
+baddr    0x6bac0000
+binsz    14848
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000b546
+compiled Sat Apr  7 02:14:33 2018
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0000b546
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x9
+  TimeDateStamp : 0x5ac82989
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x230e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x16
+  SizeOfCode : 0x1a00
+  SizeOfInitializedData : 0x3600
+  SizeOfUninitializedData : 0x400
+  AddressOfEntryPoint : 0x1420
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3000
+  ImageBase : 0x6bac0000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xb546
+  Subsystem : 0x3
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x6000
+  Size : 0xb0
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x7000
+  Size : 0x630
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0xa000
+  Size : 0x494
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x9000
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x7114
+  Size : 0xd8
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000071ec 0x00002914 SET_32 KERNEL32.dll_CreateProcessA
+0x000071fe 0x00002918 SET_32 KERNEL32.dll_CreateThread
+0x0000720e 0x0000291c SET_32 KERNEL32.dll_DeleteCriticalSection
+0x00007226 0x00002920 SET_32 KERNEL32.dll_EnterCriticalSection
+0x0000723e 0x00002924 SET_32 KERNEL32.dll_FreeLibrary
+0x0000724c 0x00002928 SET_32 KERNEL32.dll_GetCurrentProcess
+0x00007260 0x0000292c SET_32 KERNEL32.dll_GetCurrentProcessId
+0x00007276 0x00002930 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x0000728c 0x00002934 SET_32 KERNEL32.dll_GetEnvironmentVariableA
+0x000072a6 0x00002938 SET_32 KERNEL32.dll_GetLastError
+0x000072b6 0x0000293c SET_32 KERNEL32.dll_GetModuleHandleA
+0x000072ca 0x00002940 SET_32 KERNEL32.dll_GetProcAddress
+0x000072dc 0x00002944 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x000072f6 0x00002948 SET_32 KERNEL32.dll_GetThreadContext
+0x0000730a 0x0000294c SET_32 KERNEL32.dll_GetTickCount
+0x0000731a 0x00002950 SET_32 KERNEL32.dll_GetVersionExA
+0x0000732a 0x00002954 SET_32 KERNEL32.dll_InitializeCriticalSection
+0x00007346 0x00002958 SET_32 KERNEL32.dll_LeaveCriticalSection
+0x0000735e 0x0000295c SET_32 KERNEL32.dll_LoadLibraryA
+0x0000736e 0x00002960 SET_32 KERNEL32.dll_LoadLibraryW
+0x0000737e 0x00002964 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x00007398 0x00002968 SET_32 KERNEL32.dll_ResumeThread
+0x000073a8 0x0000296c SET_32 KERNEL32.dll_SetThreadContext
+0x000073bc 0x00002970 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x000073da 0x00002974 SET_32 KERNEL32.dll_Sleep
+0x000073e2 0x00002978 SET_32 KERNEL32.dll_TerminateProcess
+0x000073f6 0x0000297c SET_32 KERNEL32.dll_TlsGetValue
+0x00007404 0x00002980 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x00007420 0x00002984 SET_32 KERNEL32.dll_VirtualAllocEx
+0x00007432 0x00002988 SET_32 KERNEL32.dll_VirtualProtect
+0x00007444 0x0000298c SET_32 KERNEL32.dll_VirtualProtectEx
+0x00007458 0x00002990 SET_32 KERNEL32.dll_VirtualQuery
+0x00007468 0x00002994 SET_32 KERNEL32.dll_WriteProcessMemory
+0x0000747e 0x0000299c SET_32 msvcrt.dll___dllonexit
+0x0000748c 0x000029a0 SET_32 msvcrt.dll__amsg_exit
+0x0000749a 0x000029a4 SET_32 msvcrt.dll__initterm
+0x000074a6 0x000029a8 SET_32 msvcrt.dll__iob
+0x000074ae 0x000029ac SET_32 msvcrt.dll__lock
+0x000074b6 0x000029b0 SET_32 msvcrt.dll__onexit
+0x000074c0 0x000029b4 SET_32 msvcrt.dll__snprintf
+0x000074cc 0x000029b8 SET_32 msvcrt.dll__unlock
+0x000074d6 0x000029bc SET_32 msvcrt.dll__winmajor
+0x000074e2 0x000029c0 SET_32 msvcrt.dll_abort
+0x000074ea 0x000029c4 SET_32 msvcrt.dll_calloc
+0x000074f4 0x000029c8 SET_32 msvcrt.dll_exit
+0x000074fc 0x000029cc SET_32 msvcrt.dll_free
+0x00007504 0x000029d0 SET_32 msvcrt.dll_fwrite
+0x0000750e 0x000029d4 SET_32 msvcrt.dll_malloc
+0x00007518 0x000029d8 SET_32 msvcrt.dll_memcpy
+0x00007522 0x000029dc SET_32 msvcrt.dll_strlen
+0x0000752c 0x000029e0 SET_32 msvcrt.dll_strncmp
+0x00007536 0x000029e4 SET_32 msvcrt.dll_vfprintf
+
+
+52 relocations
+14848
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,178 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb1800 0x00401000  0xb2000 -r-x .text
+1   0x000b1e00    0x200 0x004b3000   0x1000 -r-- .rdata
+2   0x000b2000    0x800 0x004b4000   0x1000 -rwx .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004010a0 paddr=0x000006a0 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b3000 NONE FUNC ntdll.dll    RtlxUnicodeStringToAnsiSize
+2   0x004b3004 NONE FUNC ntdll.dll    RtlFreeThreadActivationContextStack
+1   0x004b300c NONE FUNC user32.dll   GetKBCodePage
+2   0x004b3010 NONE FUNC user32.dll   FreeDDElParam
+1   0x004b3018 NONE FUNC advapi32.dll QueryServiceStatusEx
+2   0x004b301c NONE FUNC advapi32.dll ReadEncryptedFileRaw
+1   0x004b3024 NONE FUNC oleaut32.dll VarUI4FromI1
+1   0x004b302c NONE FUNC kernel32.dll GetCommandLineW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b1e00 0x004b3000 NONE FUNC 0    ntdll.dll    imp.RtlxUnicodeStringToAnsiSize
+2   0x000b1e04 0x004b3004 NONE FUNC 0    ntdll.dll    imp.RtlFreeThreadActivationContextStack
+1   0x000b1e0c 0x004b300c NONE FUNC 0    user32.dll   imp.GetKBCodePage
+2   0x000b1e10 0x004b3010 NONE FUNC 0    user32.dll   imp.FreeDDElParam
+1   0x000b1e18 0x004b3018 NONE FUNC 0    advapi32.dll imp.QueryServiceStatusEx
+2   0x000b1e1c 0x004b301c NONE FUNC 0    advapi32.dll imp.ReadEncryptedFileRaw
+1   0x000b1e24 0x004b3024 NONE FUNC 0    oleaut32.dll imp.VarUI4FromI1
+1   0x000b1e2c 0x004b302c NONE FUNC 0    kernel32.dll imp.GetCommandLineW
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b1ee2 0x004b30e2 27  28   .rdata  ascii RtlxUnicodeStringToAnsiSize
+1   0x000b1f00 0x004b3100 35  36   .rdata  ascii RtlFreeThreadActivationContextStack
+2   0x000b1f24 0x004b3124 9   10   .rdata  ascii ntdll.dll
+3   0x000b1f30 0x004b3130 13  14   .rdata  ascii GetKBCodePage
+4   0x000b1f40 0x004b3140 13  14   .rdata  ascii FreeDDElParam
+5   0x000b1f4e 0x004b314e 10  11   .rdata  ascii user32.dll
+6   0x000b1f5b 0x004b315b 20  21   .rdata  ascii QueryServiceStatusEx
+7   0x000b1f72 0x004b3172 20  21   .rdata  ascii ReadEncryptedFileRaw
+8   0x000b1f87 0x004b3187 12  13   .rdata  ascii advapi32.dll
+9   0x000b1f96 0x004b3196 12  13   .rdata  ascii VarUI4FromI1
+10  0x000b1fa3 0x004b31a3 12  13   .rdata  ascii oleaut32.dll
+11  0x000b1fb2 0x004b31b2 15  16   .rdata  ascii GetCommandLineW
+12  0x000b1fc2 0x004b31c2 12  13   .rdata  ascii kernel32.dll
+arch     x86
+baddr    0x400000
+binsz    731136
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000b4236
+compiled Tue Jul 28 15:16:58 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x55b79cea
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb1800
+  SizeOfInitializedData : 0x400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x10a0
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb5000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb3034
+  Size : 0x78
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb3000
+  Size : 0x34
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntdll.dll
+user32.dll
+advapi32.dll
+oleaut32.dll
+kernel32.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b30e0 0x000b1e00 SET_32 ntdll.dll_RtlxUnicodeStringToAnsiSize
+0x000b30fe 0x000b1e04 SET_32 ntdll.dll_RtlFreeThreadActivationContextStack
+0x000b312e 0x000b1e0c SET_32 user32.dll_GetKBCodePage
+0x000b313e 0x000b1e10 SET_32 user32.dll_FreeDDElParam
+0x000b3159 0x000b1e18 SET_32 advapi32.dll_QueryServiceStatusEx
+0x000b3170 0x000b1e1c SET_32 advapi32.dll_ReadEncryptedFileRaw
+0x000b3194 0x000b1e24 SET_32 oleaut32.dll_VarUI4FromI1
+0x000b31b0 0x000b1e2c SET_32 kernel32.dll_GetCommandLineW
+
+
+8 relocations
+731136
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,197 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400    0x0 0x00401000  0x5000 -rwx UPX0
+1   0x00000400  0xa00 0x00406000  0x1000 -rwx UPX1
+2   0x00000e00  0xa00 0x00407000  0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00406710 paddr=0x00000b10 haddr=0x000000e0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004078d4 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x004078d8 NONE FUNC KERNEL32.DLL ExitProcess
+3   0x004078dc NONE FUNC KERNEL32.DLL GetProcAddress
+4   0x004078e0 NONE FUNC KERNEL32.DLL VirtualProtect
+100 0x004078e8 NONE FUNC MSVBVM60.DLL ThunRTMain
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000016d4 0x004078d4 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x000016d8 0x004078d8 NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+3   0x000016dc 0x004078dc NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+4   0x000016e0 0x004078e0 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+100 0x000016e8 0x004078e8 NONE FUNC 0    MSVBVM60.DLL imp.ThunRTMain
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000f4c 0x0040714c 4   20   .rsrc   utf32le ( @𐀁 blocks=Basic Latin,Linear B Syllabary
+1   0x00001173 0x00407373 4   5    .rsrc   ascii   \awwp
+2   0x000014aa 0x004076aa 4   5    .rsrc   ascii   1u  
+3   0x000014c6 0x004076c6 4   5    .rsrc   ascii   3uPA
+4   0x000014d2 0x004076d2 15  32   .rsrc   utf16le VS_VERSION_INFO
+5   0x0000152e 0x0040772e 11  24   .rsrc   utf16le VarFileInfo
+6   0x0000154e 0x0040774e 11  24   .rsrc   utf16le Translation
+7   0x00001572 0x00407772 14  30   .rsrc   utf16le StringFileInfo
+8   0x00001596 0x00407796 8   18   .rsrc   utf16le 040904B0
+9   0x000015ae 0x004077ae 11  24   .rsrc   utf16le ProductName
+10  0x000015c8 0x004077c8 8   18   .rsrc   utf16le Project1
+11  0x000015e2 0x004077e2 11  24   .rsrc   utf16le FileVersion
+12  0x000015fc 0x004077fc 4   10   .rsrc   utf16le 1.00
+13  0x0000160e 0x0040780e 14  30   .rsrc   utf16le ProductVersion
+14  0x0000162c 0x0040782c 4   10   .rsrc   utf16le 1.00
+15  0x0000163e 0x0040783e 12  26   .rsrc   utf16le InternalName
+16  0x00001666 0x00407866 16  34   .rsrc   utf16le OriginalFilename
+17  0x00001688 0x00407888 6   14   .rsrc   utf16le in.exe
+18  0x000016f0 0x004078f0 12  13   .rsrc   ascii   KERNEL32.DLL
+19  0x000016fd 0x004078fd 12  13   .rsrc   ascii   MSVBVM60.DLL
+20  0x0000170c 0x0040790c 11  12   .rsrc   ascii   ExitProcess
+21  0x0000171a 0x0040791a 14  15   .rsrc   ascii   GetProcAddress
+22  0x0000172a 0x0040792a 12  13   .rsrc   ascii   LoadLibraryA
+23  0x00001738 0x00407938 14  15   .rsrc   ascii   VirtualProtect
+arch     x86
+baddr    0x400000
+binsz    6144
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000fbb0
+compiled Mon Mar 14 02:56:17 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     vb
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x622eaed1
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x5000
+  AddressOfEntryPoint : 0x6710
+  BaseOfCode : 0x6000
+  BaseOfData : 0x7000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x8000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 13 Name: VisualBasic60 Version: 8169 Times: 1
+  Product: 9 Name: Utc12_Basic Version: 8041 Times: 1
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x7898
+  Size : 0xb0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x7000
+  Size : 0x898
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvbvm60.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000790a 0x000016d8 SET_32 KERNEL32.DLL_ExitProcess
+0x00007918 0x000016dc SET_32 KERNEL32.DLL_GetProcAddress
+0x00007928 0x000016d4 SET_32 KERNEL32.DLL_LoadLibraryA
+0x00007936 0x000016e0 SET_32 KERNEL32.DLL_VirtualProtect
+0x80000064 0x000016e8 SET_32 MSVBVM60.DLL_ThunRTMain
+
+
+5 relocations
+6144
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.0.0
+  ProductVersion: 1.0.0.0
+  FileFlagsMask: 0x0
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  ProductName: Project1
+  FileVersion: 1.00
+  ProductVersion: 1.00
+  InternalName: in
+  OriginalFilename: in.exe
+Section to Segment mapping:
+Segment Section
+---------------
+
+

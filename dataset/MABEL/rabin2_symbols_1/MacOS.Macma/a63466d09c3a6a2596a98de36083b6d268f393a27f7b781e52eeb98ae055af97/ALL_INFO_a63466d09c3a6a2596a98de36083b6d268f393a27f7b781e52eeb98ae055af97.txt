@@ -1,0 +1,377 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000b60  0x2edf 0x100000b60  0x2edf -r-x 0.__TEXT.__text
+1   0x00003a40    0xb4 0x100003a40    0xb4 -r-x 1.__TEXT.__stubs
+2   0x00003af4   0x13c 0x100003af4   0x13c -r-x 2.__TEXT.__stub_helper
+3   0x00003c30    0x28 0x100003c30    0x28 -r-x 3.__TEXT.__const
+4   0x00003c58    0x7d 0x100003c58    0x7d -r-x 4.__TEXT.__objc_methname
+5   0x00003cd5    0x20 0x100003cd5    0x20 -r-x 5.__TEXT.__cstring
+6   0x00003cf8    0x50 0x100003cf8    0x50 -r-x 6.__TEXT.__unwind_info
+7   0x00003d48   0x2b0 0x100003d48   0x2b0 -r-x 7.__TEXT.__eh_frame
+8   0x00004000    0x28 0x100004000    0x28 -rw- 8.__DATA.__program_vars
+9   0x00004028    0x28 0x100004028    0x28 -rw- 9.__DATA.__got
+10  0x00004050    0x10 0x100004050    0x10 -rw- 10.__DATA.__nl_symbol_ptr
+11  0x00004060    0xf0 0x100004060    0xf0 -rw- 11.__DATA.__la_symbol_ptr
+12  0x00004150     0x8 0x100004150     0x8 -rw- 12.__DATA.__objc_imageinfo
+13  0x00004158    0x48 0x100004158    0x48 -rw- 13.__DATA.__objc_selrefs
+14  0x000041a0    0x20 0x1000041a0    0x20 -rw- 14.__DATA.__objc_classrefs
+15  0x000041c0    0x40 0x1000041c0    0x40 -rw- 15.__DATA.__data
+16  0x00000000     0x0 0x100004200    0x20 -rw- 16.__DATA.__common
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x4000 0x100000000  0x4000 -r-x __TEXT
+1   0x00004000  0x1000 0x100004000  0x1000 -rw- __DATA
+2   0x00005000  0x1000 0x100005000  0x1000 -r-- __LINKEDIT
+
+[Entrypoints]
+vaddr=0x100000b60 paddr=0x00000b60 haddr=0x00000800 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x100001180 paddr=0x100001180
+[Imports]
+nth vaddr       bind type       lib name
+――――――――――――――――――――――――――――――――――――――――
+0   0x100003adc NONE FUNC           CFDictionaryCreateMutable
+1   0x100003ae2 NONE FUNC           CFDictionarySetValue
+2   0x100003ae8 NONE FUNC           CFNumberCreate
+3   0x100003aee NONE FUNC           CFRelease
+4   0x100003a40 NONE FUNC           CGBitmapContextCreate
+5   0x100003a46 NONE FUNC           CGBitmapContextCreateImage
+6   0x100003a4c NONE FUNC           CGColorSpaceCreateDeviceRGB
+7   0x100003a52 NONE FUNC           CGColorSpaceRelease
+8   0x100003a58 NONE FUNC           CGContextDrawImage
+9   0x100003a5e NONE FUNC           CGContextRelease
+10  0x100003a82 NONE FUNC           CGImageDestinationAddImage
+11  0x100003a88 NONE FUNC           CGImageDestinationCreateWithURL
+12  0x100003a8e NONE FUNC           CGImageDestinationFinalize
+13  0x100003a64 NONE FUNC           CGImageGetHeight
+14  0x100003a6a NONE FUNC           CGImageGetWidth
+15  0x100003a70 NONE FUNC           CGImageRelease
+16  0x100003a76 NONE FUNC           CGWindowListCreate
+17  0x100003a7c NONE FUNC           CGWindowListCreateImageFromArray
+18  0x00000000  NONE OBJC_CLASS     NSFileManager
+19  0x00000000  NONE OBJC_CLASS     NSScreen
+20  0x00000000  NONE OBJC_CLASS     NSString
+21  0x00000000  NONE OBJC_CLASS     NSURL
+22  0x100003a94 NONE FUNC           __error
+23  0x100003a9a NONE FUNC           __sprintf_chk
+24  0x100003aa0 NONE FUNC           __stack_chk_fail
+25  0x00000000  NONE FUNC           __stack_chk_guard
+26  0x100003aa6 NONE FUNC           close
+27  0x100003aac NONE FUNC           exit
+28  0x00000000  NONE FUNC           kCFTypeDictionaryKeyCallBacks
+29  0x00000000  NONE FUNC           kCFTypeDictionaryValueCallBacks
+30  0x00000000  NONE FUNC           kCGImageDestinationLossyCompressionQuality
+31  0x00000000  NONE FUNC           kUTTypeJPEG
+32  0x100003ab2 NONE FUNC           memset
+33  0x100003ad0 NONE FUNC           objc_msgSend
+34  0x100003ad6 NONE FUNC           objc_msgSend_stret
+35  0x100003ab8 NONE FUNC           open
+36  0x100003abe NONE FUNC           printf
+37  0x100003ac4 NONE FUNC           read
+38  0x100003aca NONE FUNC           strerror
+39  0x00000000  NONE FUNC           dyld_stub_binder
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00003860 0x100003860 GLOBAL FUNC 0        _BufferMD5
+1   0x00003530 0x100003530 GLOBAL FUNC 0        _FileMD5
+2   0x00003560 0x100003560 GLOBAL FUNC 0        _FileMD5InSize
+3   0x00003310 0x100003310 GLOBAL FUNC 0        _MD5Final
+4   0x00001390 0x100001390 GLOBAL FUNC 0        _MD5Init
+5   0x000013f0 0x1000013f0 GLOBAL FUNC 0        _MD5Update
+6   0x00004200 0x100004200 GLOBAL FUNC 0        _NXArgc
+7   0x00004208 0x100004208 GLOBAL FUNC 0        _NXArgv
+8   0x00004218 0x100004218 GLOBAL FUNC 0        ___progname
+9   0x00000000 0x100000000 GLOBAL FUNC 0        __mh_execute_header
+10  0x00001010 0x100001010 GLOBAL FUNC 0        _captureScreen
+11  0x00004210 0x100004210 GLOBAL FUNC 0        _environ
+12  0x00001180 0x100001180 GLOBAL FUNC 0        _main
+13  0x00000c80 0x100000c80 GLOBAL FUNC 0        _processImage
+14  0x00000ba0 0x100000ba0 GLOBAL FUNC 0        _savePhoto
+15  0x00000b60 0x100000b60 GLOBAL FUNC 0        start
+16  0x00000fa0 0x100000fa0 LOCAL  FUNC 0        _CGRectMake
+17  0x00001530 0x100001530 LOCAL  FUNC 0        _MD5_memcpy
+18  0x00001580 0x100001580 LOCAL  FUNC 0        _MD5Transform
+19  0x000033f0 0x1000033f0 LOCAL  FUNC 0        _Encode
+20  0x000034e0 0x1000034e0 LOCAL  FUNC 0        _MD5_memset
+21  0x00003990 0x100003990 LOCAL  FUNC 0        _Decode
+22  0x00004000 0x100004000 LOCAL  FUNC 0        _pvars
+23  0x000041c0 0x1000041c0 LOCAL  FUNC 0        _PADDING
+24  0x00003adc 0x100003adc LOCAL  FUNC 0        imp.CFDictionaryCreateMutable
+25  0x00003ae2 0x100003ae2 LOCAL  FUNC 0        imp.CFDictionarySetValue
+26  0x00003ae8 0x100003ae8 LOCAL  FUNC 0        imp.CFNumberCreate
+27  0x00003aee 0x100003aee LOCAL  FUNC 0        imp.CFRelease
+28  0x00003a40 0x100003a40 LOCAL  FUNC 0        imp.CGBitmapContextCreate
+29  0x00003a46 0x100003a46 LOCAL  FUNC 0        imp.CGBitmapContextCreateImage
+30  0x00003a4c 0x100003a4c LOCAL  FUNC 0        imp.CGColorSpaceCreateDeviceRGB
+31  0x00003a52 0x100003a52 LOCAL  FUNC 0        imp.CGColorSpaceRelease
+32  0x00003a58 0x100003a58 LOCAL  FUNC 0        imp.CGContextDrawImage
+33  0x00003a5e 0x100003a5e LOCAL  FUNC 0        imp.CGContextRelease
+34  0x00003a82 0x100003a82 LOCAL  FUNC 0        imp.CGImageDestinationAddImage
+35  0x00003a88 0x100003a88 LOCAL  FUNC 0        imp.CGImageDestinationCreateWithURL
+36  0x00003a8e 0x100003a8e LOCAL  FUNC 0        imp.CGImageDestinationFinalize
+37  0x00003a64 0x100003a64 LOCAL  FUNC 0        imp.CGImageGetHeight
+38  0x00003a6a 0x100003a6a LOCAL  FUNC 0        imp.CGImageGetWidth
+39  0x00003a70 0x100003a70 LOCAL  FUNC 0        imp.CGImageRelease
+40  0x00003a76 0x100003a76 LOCAL  FUNC 0        imp.CGWindowListCreate
+41  0x00003a7c 0x100003a7c LOCAL  FUNC 0        imp.CGWindowListCreateImageFromArray
+42  0x00003a94 0x100003a94 LOCAL  FUNC 0        imp.__error
+43  0x00003a9a 0x100003a9a LOCAL  FUNC 0        imp.__sprintf_chk
+44  0x00003aa0 0x100003aa0 LOCAL  FUNC 0        imp.__stack_chk_fail
+45  0x00003aa6 0x100003aa6 LOCAL  FUNC 0        imp.close
+46  0x00003aac 0x100003aac LOCAL  FUNC 0        imp.exit
+47  0x00003ab2 0x100003ab2 LOCAL  FUNC 0        imp.memset
+48  0x00003ad0 0x100003ad0 LOCAL  FUNC 0        imp.objc_msgSend
+49  0x00003ad6 0x100003ad6 LOCAL  FUNC 0        imp.objc_msgSend_stret
+50  0x00003ab8 0x100003ab8 LOCAL  FUNC 0        imp.open
+51  0x00003abe 0x100003abe LOCAL  FUNC 0        imp.printf
+52  0x00003ac4 0x100003ac4 LOCAL  FUNC 0        imp.read
+53  0x00003aca 0x100003aca LOCAL  FUNC 0        imp.strerror
+54  0x00000b60 0x100000b60 LOCAL  FUNC 0        func.100000b60
+55  0x00000ba0 0x100000ba0 LOCAL  FUNC 0        func.100000ba0
+56  0x00000c80 0x100000c80 LOCAL  FUNC 0        func.100000c80
+57  0x00000fa0 0x100000fa0 LOCAL  FUNC 0        func.100000fa0
+58  0x00001010 0x100001010 LOCAL  FUNC 0        func.100001010
+59  0x00001180 0x100001180 LOCAL  FUNC 0        func.100001180
+60  0x00001390 0x100001390 LOCAL  FUNC 0        func.100001390
+61  0x000013f0 0x1000013f0 LOCAL  FUNC 0        func.1000013f0
+62  0x00001530 0x100001530 LOCAL  FUNC 0        func.100001530
+63  0x00001580 0x100001580 LOCAL  FUNC 0        func.100001580
+64  0x00003310 0x100003310 LOCAL  FUNC 0        func.100003310
+65  0x000033f0 0x1000033f0 LOCAL  FUNC 0        func.1000033f0
+66  0x000034e0 0x1000034e0 LOCAL  FUNC 0        func.1000034e0
+67  0x00003530 0x100003530 LOCAL  FUNC 0        func.100003530
+68  0x00003560 0x100003560 LOCAL  FUNC 0        func.100003560
+69  0x00003860 0x100003860 LOCAL  FUNC 0        func.100003860
+70  0x00003990 0x100003990 LOCAL  FUNC 0        func.100003990
+[Strings]
+nth paddr      vaddr       len size section                  type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00003c58 0x100003c58 7   8    4.__TEXT.__objc_methname ascii screens
+1   0x00003c60 0x100003c60 11  12   4.__TEXT.__objc_methname ascii firstObject
+2   0x00003c6c 0x100003c6c 5   6    4.__TEXT.__objc_methname ascii frame
+3   0x00003c72 0x100003c72 16  17   4.__TEXT.__objc_methname ascii fileURLWithPath:
+4   0x00003c83 0x100003c83 5   6    4.__TEXT.__objc_methname ascii alloc
+5   0x00003c89 0x100003c89 19  20   4.__TEXT.__objc_methname ascii initWithUTF8String:
+6   0x00003c9d 0x100003c9d 10  11   4.__TEXT.__objc_methname ascii floatValue
+7   0x00003ca8 0x100003ca8 14  15   4.__TEXT.__objc_methname ascii defaultManager
+8   0x00003cb7 0x100003cb7 29  30   4.__TEXT.__objc_methname ascii fileExistsAtPath:isDirectory:
+0   0x00003cd5 0x100003cd5 4   5    5.__TEXT.__cstring       ascii %02x
+1   0x00003cda 0x100003cda 26  27   5.__TEXT.__cstring       ascii open file %s fail: %s(%d)\n
+arch     x86
+baddr    0x100000000
+binsz    24228
+bintype  mach0
+bits     64
+canary   true
+class    MACH064
+compiler clang
+crypto   false
+endian   little
+havecode true
+intrp    /usr/lib/dyld
+laddr    0x0
+lang     objc
+linenum  false
+lsyms    false
+machine  x86 64 all
+nx       false
+os       macos
+pic      true
+relocs   false
+sanitize false
+static   false
+stripped false
+subsys   darwin
+va       true
+pf.mach0_header @ 0x100000000
+0x100000000  Magic       0xfeedfacf
+0x100000004  CpuType     0x1000007
+0x100000008  CpuSubType  0x80000003
+0x10000000c  FileType    0x2
+0x100000010  nCmds       20
+0x100000014  sizeOfCmds  2704
+0x100000018  Flags       0x200085
+pf.mach0_segment64 @ 0x100000020
+0x100000020  cmd       0 0x19 LC_SEGMENT_64
+0x100000024  cmdsize     72
+0x100000028  name        __PAGEZERO
+pf.mach0_segment64 @ 0x100000068
+0x100000068  cmd       1 0x19 LC_SEGMENT_64
+0x10000006c  cmdsize     712
+0x100000070  name        __TEXT
+pf.mach0_section64 @ 0x1000000b0
+pf.mach0_section64 @ 0x100000100
+pf.mach0_section64 @ 0x100000150
+pf.mach0_section64 @ 0x1000001a0
+pf.mach0_section64 @ 0x1000001f0
+pf.mach0_section64 @ 0x100000240
+pf.mach0_section64 @ 0x100000290
+pf.mach0_section64 @ 0x1000002e0
+pf.mach0_segment64 @ 0x100000330
+0x100000330  cmd       2 0x19 LC_SEGMENT_64
+0x100000334  cmdsize     792
+0x100000338  name        __DATA
+pf.mach0_section64 @ 0x100000378
+pf.mach0_section64 @ 0x1000003c8
+pf.mach0_section64 @ 0x100000418
+pf.mach0_section64 @ 0x100000468
+pf.mach0_section64 @ 0x1000004b8
+pf.mach0_section64 @ 0x100000508
+pf.mach0_section64 @ 0x100000558
+pf.mach0_section64 @ 0x1000005a8
+pf.mach0_section64 @ 0x1000005f8
+pf.mach0_segment64 @ 0x100000648
+0x100000648  cmd       3 0x19 LC_SEGMENT_64
+0x10000064c  cmdsize     72
+0x100000650  name        __LINKEDIT
+pf.mach0_dyld_info_only_command @ 0x100000690
+0x100000690  cmd       4 0x80000022 LC_DYLD_INFO_ONLY
+0x100000694  cmdsize     48
+pf.mach0_symtab_command @ 0x1000006c0
+0x1000006c0  cmd       5 0x2 LC_SYMTAB
+0x1000006c4  cmdsize     24
+pf.mach0_dysymtab_command @ 0x1000006d8
+0x1000006d8  cmd       6 0xb LC_DYSYMTAB
+0x1000006dc  cmdsize     80
+pf.mach0_load_dylinker_command @ 0x100000728
+0x100000728  cmd       7 0xe LC_LOAD_DYLINKER
+0x10000072c  cmdsize     32
+pf.mach0_uuid_command @ 0x100000748
+0x100000748  cmd       8 0x1b LC_UUID
+0x10000074c  cmdsize     24
+0x100000750  uuid        1dc7eca47be7317b88ee46cf0b5313be
+pf.mach0_version_min_command @ 0x100000760
+0x100000760  cmd       9 0x24 LC_VERSION_MIN_MACOSX
+0x100000764  cmdsize     16
+pf.mach0_unixthread_command @ 0x100000770
+0x100000770  cmd      10 0x5 LC_UNIXTHREAD
+0x100000774  cmdsize     184
+pf.mach0_dylib_command @ 0x100000828
+0x100000828  cmd      11 0xc LC_LOAD_DYLIB
+0x10000082c  cmdsize     96
+0x100000838  current     1349.0.0
+0x10000083c  compat      300.0.0
+0x100000840  load_dylib  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+pf.mach0_dylib_command @ 0x100000888
+0x100000888  cmd      12 0xc LC_LOAD_DYLIB
+0x10000088c  cmdsize     112
+0x100000898  current     1070.0.0
+0x10000089c  compat      1.0.0
+0x1000008a0  load_dylib  /System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices
+pf.mach0_dylib_command @ 0x1000008f8
+0x1000008f8  cmd      13 0xc LC_LOAD_DYLIB
+0x1000008fc  cmdsize     104
+0x100000908  current     775.8.0
+0x10000090c  compat      1.0.0
+0x100000910  load_dylib  /System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
+pf.mach0_dylib_command @ 0x100000960
+0x100000960  cmd      14 0xc LC_LOAD_DYLIB
+0x100000964  cmdsize     88
+0x100000970  current     1504.0.0
+0x100000974  compat      45.0.0
+0x100000978  load_dylib  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+pf.mach0_dylib_command @ 0x1000009b8
+0x1000009b8  cmd      15 0xc LC_LOAD_DYLIB
+0x1000009bc  cmdsize     56
+0x1000009c8  current     1238.0.0
+0x1000009cc  compat      1.0.0
+0x1000009d0  load_dylib  /usr/lib/libSystem.B.dylib
+pf.mach0_dylib_command @ 0x1000009f0
+0x1000009f0  cmd      16 0xc LC_LOAD_DYLIB
+0x1000009f4  cmdsize     104
+0x100000a00  current     1348.1.0
+0x100000a04  compat      150.0.0
+0x100000a08  load_dylib  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+pf.mach0_dylib_command @ 0x100000a58
+0x100000a58  cmd      17 0xc LC_LOAD_DYLIB
+0x100000a5c  cmdsize     56
+0x100000a68  current     228.0.0
+0x100000a6c  compat      1.0.0
+0x100000a70  load_dylib  /usr/lib/libobjc.A.dylib
+pf.mach0_function_starts_command @ 0x100000a90
+0x100000a90  cmd      18 0x26 LC_FUNCTION_STARTS
+0x100000a94  cmdsize     16
+pf.mach0_data_in_code_command @ 0x100000aa0
+0x100000aa0  cmd      19 0x29 LC_DATA_IN_CODE
+0x100000aa4  cmdsize     16
+[Linked libraries]
+/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices
+/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
+/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+/usr/lib/libSystem.B.dylib
+/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+/usr/lib/libobjc.A.dylib
+
+7 libraries
+[Relocations]
+
+vaddr       paddr      type   name
+――――――――――――――――――――――――――――――――――
+0x00000000  0x00000000 SET_64 NSFileManager
+0x100004028 0x00004028 SET_64 __stack_chk_guard
+0x100004030 0x00004030 SET_64 kCFTypeDictionaryKeyCallBacks
+0x100004038 0x00004038 SET_64 kCFTypeDictionaryValueCallBacks
+0x100004040 0x00004040 SET_64 kCGImageDestinationLossyCompressionQuality
+0x100004048 0x00004048 SET_64 kUTTypeJPEG
+0x100004050 0x00004050 SET_64 dyld_stub_binder
+0x100004060 0x00004060 SET_64 CGBitmapContextCreate
+0x100004068 0x00004068 SET_64 CGBitmapContextCreateImage
+0x100004070 0x00004070 SET_64 CGColorSpaceCreateDeviceRGB
+0x100004078 0x00004078 SET_64 CGColorSpaceRelease
+0x100004080 0x00004080 SET_64 CGContextDrawImage
+0x100004088 0x00004088 SET_64 CGContextRelease
+0x100004090 0x00004090 SET_64 CGImageGetHeight
+0x100004098 0x00004098 SET_64 CGImageGetWidth
+0x1000040a0 0x000040a0 SET_64 CGImageRelease
+0x1000040a8 0x000040a8 SET_64 CGWindowListCreate
+0x1000040b0 0x000040b0 SET_64 CGWindowListCreateImageFromArray
+0x1000040b8 0x000040b8 SET_64 CGImageDestinationAddImage
+0x1000040c0 0x000040c0 SET_64 CGImageDestinationCreateWithURL
+0x1000040c8 0x000040c8 SET_64 CGImageDestinationFinalize
+0x1000040d0 0x000040d0 SET_64 __error
+0x1000040d8 0x000040d8 SET_64 __sprintf_chk
+0x1000040e0 0x000040e0 SET_64 __stack_chk_fail
+0x1000040e8 0x000040e8 SET_64 close
+0x1000040f0 0x000040f0 SET_64 exit
+0x1000040f8 0x000040f8 SET_64 memset
+0x100004100 0x00004100 SET_64 open
+0x100004108 0x00004108 SET_64 printf
+0x100004110 0x00004110 SET_64 read
+0x100004118 0x00004118 SET_64 strerror
+0x100004120 0x00004120 SET_64 objc_msgSend
+0x100004128 0x00004128 SET_64 objc_msgSend_stret
+0x100004130 0x00004130 SET_64 CFDictionaryCreateMutable
+0x100004138 0x00004138 SET_64 CFDictionarySetValue
+0x100004140 0x00004140 SET_64 CFNumberCreate
+0x100004148 0x00004148 SET_64 CFRelease
+0x1000041a0 0x000041a0 SET_64 NSScreen
+0x1000041a8 0x000041a8 SET_64 NSURL
+0x1000041b0 0x000041b0 SET_64 NSString
+0x1000041b8 0x000041b8 SET_64 NSFileManager
+
+
+41 relocations
+24228
+Section to Segment mapping:
+Segment    Section
+------------------
+__TEXT     0.__TEXT.__text 1.__TEXT.__stubs 2.__TEXT.__stub_helper 3.__TEXT.__const 4.__TEXT.__objc_methname 5.__TEXT.__cstring 6.__TEXT.__unwind_info 7.__TEXT.__eh_frame 
+__DATA     8.__DATA.__program_vars 9.__DATA.__got 10.__DATA.__nl_symbol_ptr 11.__DATA.__la_symbol_ptr 12.__DATA.__objc_imageinfo 13.__DATA.__objc_selrefs 14.__DATA.__objc_classrefs 15.__DATA.__data 16.__DATA.__common 
+__LINKEDIT 
+
+

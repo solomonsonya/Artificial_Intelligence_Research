@@ -1,0 +1,322 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400    0x200 0x00401000   0x1000 -r-x .text
+1   0x00000600    0x200 0x00402000   0x1000 -r-- .rdata
+2   0x00000800  0x16e00 0x00403000  0x17000 -r-- .rsrc
+3   0x00017600    0x200 0x0041a000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401020 paddr=0x00000420 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401000 paddr=0x00000400
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00402014 NONE FUNC PCICL32.dll  _NSMClient32@8
+1   0x00402000 NONE FUNC KERNEL32.dll GetCommandLineW
+2   0x00402004 NONE FUNC KERNEL32.dll ExitProcess
+3   0x00402008 NONE FUNC KERNEL32.dll GetModuleHandleW
+4   0x0040200c NONE FUNC KERNEL32.dll GetStartupInfoW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000614 0x00402014 NONE FUNC 0    PCICL32.dll  imp._NSMClient32@8
+1   0x00000600 0x00402000 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineW
+2   0x00000604 0x00402004 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+3   0x00000608 0x00402008 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleW
+4   0x0000060c 0x0040200c NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoW
+[Strings]
+nth paddr      vaddr      len  size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000696 0x00402096 14   15   .rdata  ascii   _NSMClient32@8
+1   0x000006a6 0x004020a6 11   12   .rdata  ascii   PCICL32.dll
+2   0x000006b4 0x004020b4 11   12   .rdata  ascii   ExitProcess
+3   0x000006c2 0x004020c2 16   17   .rdata  ascii   GetModuleHandleW
+4   0x000006d6 0x004020d6 15   16   .rdata  ascii   GetStartupInfoW
+5   0x000006e8 0x004020e8 15   16   .rdata  ascii   GetCommandLineW
+6   0x000006f8 0x004020f8 12   13   .rdata  ascii   KERNEL32.dll
+7   0x00000708 0x00402108 7    9    .rdata  utf8    RSDS5˄N blocks=Basic Latin,Spacing Modifier Letters
+8   0x00000720 0x00402120 61   62   .rdata  ascii   E:\nsmsrc\nsm\1280\1280\client32\release_unicode\client32.pdb
+0   0x00000efb 0x004036fb 21   22   .rsrc   ascii   7>=>>>>>>=>>>>>>>>>>E
+1   0x00000f11 0x00403711 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+2   0x00000f1c 0x0040371c 20   21   .rsrc   ascii   4404000040+0*4040-0>
+3   0x00000f31 0x00403731 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+4   0x00000f3c 0x0040373c 20   21   .rsrc   ascii   4040-cj6**>kH'0-fh4>
+5   0x00000f51 0x00403751 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+6   0x00000f5c 0x0040375c 6    7    .rsrc   ascii   4400*t
+7   0x00000f63 0x00403763 4    5    .rsrc   ascii   9'-t
+8   0x00000f69 0x00403769 4    5    .rsrc   ascii   9'0z
+9   0x00000f71 0x00403771 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+10  0x00000f7c 0x0040377c 6    7    .rsrc   ascii   404-*j
+11  0x00000f89 0x00403789 7    8    .rsrc   ascii   h'*x{6;
+12  0x00000f91 0x00403791 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+13  0x00000f9c 0x0040379c 6    7    .rsrc   ascii   4400*t
+14  0x00000faa 0x004037aa 6    7    .rsrc   ascii   C#x}6;
+15  0x00000fb1 0x004037b1 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+16  0x00000fbc 0x004037bc 6    7    .rsrc   ascii   4-4-*j
+17  0x00000fca 0x004037ca 6    7    .rsrc   ascii   z-t{6;
+18  0x00000fd1 0x004037d1 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+19  0x00000fdc 0x004037dc 8    9    .rsrc   ascii   4440*r{G
+20  0x00000fe5 0x004037e5 5    6    .rsrc   ascii   z**'f
+21  0x00000feb 0x004037eb 5    6    .rsrc   ascii   `tz6;
+22  0x00000ff1 0x004037f1 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+23  0x00000ffc 0x004037fc 6    7    .rsrc   ascii   44-0*j
+24  0x00001005 0x00403805 5    6    .rsrc   ascii   A'6)6
+25  0x00001011 0x00403811 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+26  0x0000101c 0x0040381c 6    7    .rsrc   ascii   4-4-*j
+27  0x00001024 0x00403824 7    8    .rsrc   ascii   c'006"I
+28  0x00001031 0x00403831 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+29  0x0000103c 0x0040383c 6    7    .rsrc   ascii   4440*j
+30  0x00001043 0x00403843 9    10   .rsrc   ascii   }6*4000*r
+31  0x00001051 0x00403851 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+32  0x0000105c 0x0040385c 6    7    .rsrc   ascii   44-0*h
+33  0x00001063 0x00403863 9    10   .rsrc   ascii   E'40404'>
+34  0x00001071 0x00403871 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+35  0x0000107c 0x0040387c 20   21   .rsrc   ascii   4-44->@-+040401*@>0>
+36  0x00001091 0x00403891 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+37  0x0000109c 0x0040389c 20   21   .rsrc   ascii   44404*(060040406)*4>
+38  0x000010b1 0x004038b1 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+39  0x000010bc 0x004038bc 20   21   .rsrc   ascii   44-4044004004000040=
+40  0x000010d1 0x004038d1 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+41  0x000010dc 0x004038dc 20   21   .rsrc   ascii   4-40404040400404004>
+42  0x000010f1 0x004038f1 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+43  0x000010fc 0x004038fc 20   21   .rsrc   ascii   4440040404040040400>
+44  0x00001111 0x00403911 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+45  0x0000111c 0x0040391c 20   21   .rsrc   ascii   44-4004040404004040>
+46  0x00001131 0x00403931 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+47  0x0000113c 0x0040393c 20   21   .rsrc   ascii   4-40400404040400404>
+48  0x00001151 0x00403951 10   11   .rsrc   ascii   \v\v\v\v\v\v\v\v\v\t
+49  0x0000115c 0x0040395c 20   21   .rsrc   ascii   4440040040404040040>
+50  0x00001171 0x00403971 10   11   .rsrc   ascii   \v\v\v\v\f\v\f\v\v\t
+51  0x0000117c 0x0040397c 20   21   .rsrc   ascii   44-4004004040404004>
+52  0x00001191 0x00403991 10   11   .rsrc   ascii   \v\f\v\a\a\a\a\v\v\t
+53  0x0000119c 0x0040399c 20   21   .rsrc   ascii   4-40400400404040400>
+54  0x000011bc 0x004039bc 20   21   .rsrc   ascii   4440040040040404040>
+55  0x000011d3 0x004039d3 5    6    .rsrc   ascii   Sq^oo
+56  0x000011dc 0x004039dc 20   21   .rsrc   ascii   44-4004004004040404>
+57  0x000011f3 0x004039f3 6    7    .rsrc   ascii   omXY^]
+58  0x000011fc 0x004039fc 20   21   .rsrc   ascii   4040400400400404040>
+59  0x00001217 0x00403a17 4    5    .rsrc   ascii   \v\a\W
+60  0x0000121c 0x00403a1c 20   21   .rsrc   ascii   44-4040040040040404>
+61  0x00001234 0x00403a34 4    5    .rsrc   ascii   \v\a\v\a
+62  0x0000123c 0x00403a3c 20   21   .rsrc   ascii   4040404004004004040=
+63  0x00001254 0x00403a54 4    5    .rsrc   ascii   \v\v\v\v
+64  0x0000125c 0x00403a5c 20   21   .rsrc   ascii   44-4040400400400404>
+65  0x0000127c 0x00403a7c 20   21   .rsrc   ascii   4-40404040040040040=
+66  0x00001291 0x00403a91 8    9    .rsrc   ascii   mq\^^^^\
+67  0x0000129c 0x00403a9c 20   21   .rsrc   ascii   4440040404004004004>
+68  0x000012b2 0x00403ab2 8    9    .rsrc   ascii   SLLQLOSL
+69  0x000012bc 0x00403abc 21   22   .rsrc   ascii   44-4004040400400400>J
+70  0x000012db 0x00403adb 21   22   .rsrc   ascii   7===>==>=>=>==>==>=>C
+71  0x000017ae 0x00403fae 9    10   .rsrc   ascii   1,+///*//
+72  0x000017c2 0x00403fc2 5    6    .rsrc   ascii    (+(/
+73  0x000017cb 0x00403fcb 7    8    .rsrc   ascii   G8\n!CJ(
+74  0x000017d3 0x00403fd3 4    5    .rsrc   ascii   ;K+*
+75  0x000017e3 0x00403fe3 4    5    .rsrc   ascii   >V,*
+76  0x000017eb 0x00403feb 12   13   .rsrc   ascii   P6\fTLDW*3S.*
+77  0x000017fb 0x00403ffb 12   13   .rsrc   ascii   P7:Y/(WB;O,*
+78  0x0000180b 0x0040400b 4    5    .rsrc   ascii   IHX@
+79  0x00001813 0x00404013 4    5    .rsrc   ascii   KN.*
+80  0x0000183b 0x0040403b 7    8    .rsrc   ascii   G:\v!%&&
+81  0x00001843 0x00404043 4    5    .rsrc   ascii   AD(+
+82  0x0000184d 0x0040404d 5    6    .rsrc   ascii   \r(&&&
+83  0x0000187e 0x0040407e 9    10   .rsrc   ascii   ./,/,////
+84  0x000019b4 0x004041b4 4    7    .rsrc   utf8    wwx冊 blocks=Basic Latin,CJK Unified Ideographs
+85  0x000117b4 0x00413fb4 4    7    .rsrc   utf8    wwx冊 blocks=Basic Latin,CJK Unified Ideographs
+86  0x00016c14 0x00419414 34   70   .rsrc   utf16le !Copyright (c) 2020 NetSupport Ltd
+87  0x00016cda 0x004194da 15   32   .rsrc   utf16le VS_VERSION_INFO
+88  0x00016d36 0x00419536 14   30   .rsrc   utf16le StringFileInfo
+89  0x00016d5a 0x0041955a 8    18   .rsrc   utf16le 080904b0
+90  0x00016d72 0x00419572 8    18   .rsrc   utf16le Comments
+91  0x00016d8a 0x0041958a 11   24   .rsrc   utf16le CompanyName
+92  0x00016da4 0x004195a4 14   30   .rsrc   utf16le NetSupport Ltd
+93  0x00016dca 0x004195ca 15   32   .rsrc   utf16le FileDescription
+94  0x00016dec 0x004195ec 29   60   .rsrc   utf16le NetSupport Client Application
+95  0x00016e2e 0x0041962e 11   24   .rsrc   utf16le FileVersion
+96  0x00016e48 0x00419648 6    14   .rsrc   utf16le V12.80
+97  0x00016e5e 0x0041965e 12   26   .rsrc   utf16le InternalName
+98  0x00016e78 0x00419678 8    18   .rsrc   utf16le client32
+99  0x00016e92 0x00419692 14   30   .rsrc   utf16le LegalCopyright
+100 0x00016eb0 0x004196b0 34   70   .rsrc   utf16le Copyright (c) 2020, NetSupport Ltd
+101 0x00016f00 0x00419700 14   30   .rsrc   utf16le egalTrademarks
+102 0x00016f26 0x00419726 16   34   .rsrc   utf16le OriginalFilename
+103 0x00016f48 0x00419748 12   26   .rsrc   utf16le client32.exe
+104 0x00016f6a 0x0041976a 12   26   .rsrc   utf16le PrivateBuild
+105 0x00016f84 0x00419784 6    14   .rsrc   utf16le V12.80
+106 0x00016f9a 0x0041979a 11   24   .rsrc   utf16le ProductName
+107 0x00016fb4 0x004197b4 25   52   .rsrc   utf16le NetSupport Remote Control
+108 0x00016fee 0x004197ee 14   30   .rsrc   utf16le ProductVersion
+109 0x0001700c 0x0041980c 6    14   .rsrc   utf16le V12.80
+110 0x00017024 0x00419824 11   24   .rsrc   utf16le pecialBuild
+111 0x00017042 0x00419842 11   24   .rsrc   utf16le VarFileInfo
+112 0x00017062 0x00419862 11   24   .rsrc   utf16le Translation
+113 0x00017080 0x00419880 1408 1408 .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n<assemblyIdentity\r\n    version="10.0.0.0"\r\n    processorArchitecture="X86"\r\n    name="NetSupport Client"\r\n    type="win32"\r\n/>\r\n<description>NetSupport Manager Remote Control.</description>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n<dependency>\r\n    <dependentAssembly>\r\n        <assemblyIdentity\r\n            type="win32"\r\n            name="Microsoft.Windows.Common-Controls"\r\n            version="6.0.0.0"\r\n            processorArchitecture="X86"\r\n            publicKeyToken="6595b64144ccf1df"\r\n            language="*"\r\n        />\r\n    </dependentAssembly>\r\n</dependency>\r\n</assembly>\r\n\r\nPADPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGX
+arch     x86
+baddr    0x400000
+binsz    112176
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000236ac
+compiled Mon Jan 27 14:07:56 2020
+crypto   false
+dbg_file E:\nsmsrc\nsm\1280\1280\client32\release_unicode\client32.pdb
+endian   little
+havecode true
+hdr.csum 0x000236ac
+guid     4E84CB3574BD4E2F824437919C3472B61
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5e2eeebc
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x200
+  SizeOfInitializedData : 0x17200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1020
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x1b000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x236ac
+  Subsystem : 0x2
+  DllCharacteristics : 0x8540
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 30319 Times: 1
+  Product: 154 Name: Cvtres1000 Version: 30319 Times: 1
+  Product: 171 Name: Utc1600_CPP Version: 30319 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 5
+  Product: 156 Name: Implib1000 Version: 30319 Times: 3
+  Product: 147 Name: Implib900 Version: 30729 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x203c
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x3000
+  Size : 0x16c08
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x17800
+  Size : 0x3e30
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x1a000
+  Size : 0x14
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x2020
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+pcicl32.dll
+kernel32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00002094 0x00000614 SET_32 PCICL32.dll__NSMClient32@8
+0x000020b2 0x00000604 SET_32 KERNEL32.dll_ExitProcess
+0x000020c0 0x00000608 SET_32 KERNEL32.dll_GetModuleHandleW
+0x000020d4 0x0000060c SET_32 KERNEL32.dll_GetStartupInfoW
+0x000020e6 0x00000600 SET_32 KERNEL32.dll_GetCommandLineW
+
+
+5 relocations
+112176
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 12.80.0.400
+  ProductVersion: 12.80.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: 
+  CompanyName: NetSupport Ltd
+  FileDescription: NetSupport Client Application
+  FileVersion: V12.80
+  InternalName: client32
+  LegalCopyright: Copyright (c) 2020, NetSupport Ltd
+  LegalTrademarks: 
+  OriginalFilename: client32.exe
+  PrivateBuild: V12.80
+  ProductName: NetSupport Remote Control
+  ProductVersion: V12.80
+  SpecialBuild: 
+Section to Segment mapping:
+Segment Section
+---------------
+
+

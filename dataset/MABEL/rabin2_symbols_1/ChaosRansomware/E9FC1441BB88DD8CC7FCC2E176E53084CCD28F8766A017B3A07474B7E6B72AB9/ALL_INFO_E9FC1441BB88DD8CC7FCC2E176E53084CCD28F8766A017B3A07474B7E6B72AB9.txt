@@ -1,0 +1,1770 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000      0x0 0x00000000      0x0 ---- 
+1   0x000000d4     0x20 0x080480d4     0x20 -r-- .note.ABI-tag
+2   0x000000f4     0x30 0x080480f4     0x30 -r-x .init
+3   0x00000130  0x67c9c 0x08048130  0x67c9c -r-x .text
+4   0x00067dd0    0xc32 0x080afdd0    0xc32 -r-x __libc_freeres_fn
+5   0x00068a10     0x47 0x080b0a10     0x47 -r-x __libc_thread_freeres_fn
+6   0x00068a58     0x1c 0x080b0a58     0x1c -r-x .fini
+7   0x00068a80  0x17c44 0x080b0a80  0x17c44 -r-- .rodata
+8   0x000806c4     0x44 0x080c86c4     0x44 -r-- __libc_subfreeres
+9   0x00080708      0x4 0x080c8708      0x4 -r-- __libc_atexit
+10  0x0008070c      0x4 0x080c870c      0x4 -r-- __libc_thread_subfreeres
+11  0x00080710   0x4ff8 0x080c8710   0x4ff8 -r-- .eh_frame
+12  0x00085708    0x111 0x080cd708    0x111 -r-- .gcc_except_table
+13  0x0008581c     0x14 0x080ce81c     0x14 -rw- .tdata
+14  0x00085830      0x0 0x080ce830     0x18 -rw- .tbss
+15  0x00085830      0x8 0x080ce830      0x8 -rw- .ctors
+16  0x00085838      0xc 0x080ce838      0xc -rw- .dtors
+17  0x00085844      0x4 0x080ce844      0x4 -rw- .jcr
+18  0x00085848     0x2c 0x080ce848     0x2c -rw- .data.rel.ro
+19  0x00085874      0x8 0x080ce874      0x8 -rw- .got
+20  0x0008587c      0xc 0x080ce87c      0xc -rw- .got.plt
+21  0x000858a0   0x2fc0 0x080ce8a0   0x2fc0 -rw- .data
+22  0x00088860      0x0 0x080d1860   0x43e0 -rw- .bss
+23  0x00088860      0x0 0x080d5c40     0x1c -rw- __libc_freeres_ptrs
+24  0x00088860   0x379e 0x00000000   0x379e ---- .comment
+25  0x0008bffe    0x116 0x00000000    0x116 ---- .shstrtab
+
+[Segments]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x85819 0x08048000  0x85819 -r-x LOAD0
+1   0x0008581c   0x3044 0x080ce81c   0x7440 -rw- LOAD1
+2   0x000000d4     0x20 0x080480d4     0x20 -r-- NOTE
+3   0x0008581c     0x14 0x080ce81c     0x2c -r-- TLS
+4   0x00000000      0x0 0x00000000      0x0 -rw- GNU_STACK
+5   0x00000000     0x34 0x08048000     0x34 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x08048130 paddr=0x00000130 haddr=0x00000018 hvaddr=0x08048018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x0804e8e7 paddr=0x000068e7
+[Imports]
+nth vaddr bind type lib name
+――――――――――――――――――――――――――――
+
+[Symbols]
+
+nth paddr vaddr bind type size lib name
+―――――――――――――――――――――――――――――――――――――――
+[Strings]
+nth  paddr      vaddr      len  size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0    0x00068a88 0x080b0a88 13   14   .rodata ascii   j0DtFt1LTvbIU
+1    0x00068a96 0x080b0a96 6    7    .rodata ascii   socket
+2    0x00068a9d 0x080b0a9d 7    8    .rodata ascii   connect
+3    0x00068aa5 0x080b0aa5 7    8    .rodata ascii   openpty
+4    0x00068aad 0x080b0aad 7    8    .rodata ascii   ttyname
+5    0x00068ab5 0x080b0ab5 6    7    .rodata ascii   malloc
+6    0x00068abc 0x080b0abc 5    6    .rodata ascii   ioctl
+7    0x00068ac2 0x080b0ac2 4    5    .rodata ascii   fork
+8    0x00068ac7 0x080b0ac7 6    7    .rodata ascii   setsid
+9    0x00068ad3 0x080b0ad3 9    10   .rodata ascii   /dev/null
+10   0x00068add 0x080b0add 4    5    .rodata ascii   open
+11   0x00068ae4 0x080b0ae4 52   53   .rodata ascii   error: you need to be root (your uid: %d) to run me\n
+12   0x00068b1b 0x080b0b1b 19   20   .rodata ascii   /var/run/syslog.pid
+13   0x00068b31 0x080b0b31 17   18   .rodata ascii   cannot log pid %d
+14   0x00068b47 0x080b0b47 14   15   .rodata ascii   /usr/sbin/sshd
+15   0x00068b56 0x080b0b56 26   27   .rodata ascii   /proc/sys/kernel/osrelease
+16   0x00068b71 0x080b0b71 22   23   .rodata ascii   FATAL: kernel too old\n
+17   0x00068b88 0x080b0b88 39   40   .rodata ascii   FATAL: cannot determine kernel version\n
+18   0x00068bb0 0x080b0bb0 9    10   .rodata ascii   /dev/full
+19   0x00068bba 0x080b0bba 9    10   .rodata ascii   /dev/null
+20   0x00068bc4 0x080b0bc4 60   61   .rodata ascii   set_thread_area failed when setting up thread-local storage\n
+21   0x00068c01 0x080b0c01 12   13   .rodata ascii   cxa_atexit.c
+22   0x00068c0e 0x080b0c0e 16   17   .rodata ascii   l != ((void *)0)
+23   0x00068c1f 0x080b0c1f 12   13   .rodata ascii   __new_exitfn
+24   0x00068c44 0x080b0c44 4    5    .rodata ascii   UUUU
+25   0x00068c4b 0x080b0c4b 5    6    .rodata ascii   ?3333
+26   0x00068c84 0x080b0c84 4    5    .rodata ascii   ^Cy\r
+27   0x00068c93 0x080b0c93 5    6    .rodata ascii   \v,d!\v
+28   0x00068ca3 0x080b0ca3 6    7    .rodata ascii   \t^B{\tI
+29   0x00068cc3 0x080b0cc3 5    6    .rodata ascii   \a\auP\a
+30   0x00068d06 0x080b0d06 10   11   .rodata ascii   fxprintf.c
+31   0x00068d11 0x080b0d11 25   26   .rodata ascii   (((fmt[i]) & ~0x7f) == 0)
+32   0x00068d2b 0x080b0d2b 10   11   .rodata ascii   __fxprintf
+33   0x00068d36 0x080b0d36 10   11   .rodata ascii   wfileops.c
+34   0x00068d41 0x080b0d41 27   28   .rodata ascii   status == __codecvt_partial
+35   0x00068d5d 0x080b0d5d 19   20   .rodata ascii   _IO_wfile_underflow
+36   0x00068db6 0x080b0db6 4    5    .rodata ascii   \a\bP5
+37   0x00068e16 0x080b0e16 4    5    .rodata ascii   \a\bP5
+38   0x00068e76 0x080b0e76 4    5    .rodata ascii   \a\bP5
+39   0x00068e93 0x080b0e93 19   20   .rodata ascii   \bLIBC_FATAL_STDERR_
+40   0x00068ea7 0x080b0ea7 8    9    .rodata ascii   /dev/tty
+41   0x00068eb0 0x080b0eb0 29   30   .rodata ascii   ======= Backtrace: =========\n
+42   0x00068ece 0x080b0ece 29   30   .rodata ascii   ======= Memory map: ========\n
+43   0x00068eec 0x080b0eec 15   16   .rodata ascii   /proc/self/maps
+44   0x00068efc 0x080b0efc 5    6    .rodata ascii   ,ccs=
+45   0x00068f02 0x080b0f02 21   22   .rodata ascii   fcts.towc_nsteps == 1
+46   0x00068f18 0x080b0f18 21   22   .rodata ascii   fcts.tomb_nsteps == 1
+47   0x00068f2e 0x080b0f2e 18   19   .rodata ascii   _IO_new_file_fopen
+48   0x00068f96 0x080b0f96 4    5    .rodata ascii   \a\bP5
+49   0x00068ff6 0x080b0ff6 4    5    .rodata ascii   \a\bP5
+50   0x00069056 0x080b1056 4    5    .rodata ascii   \a\bP5
+51   0x00069073 0x080b1073 10   11   .rodata ascii   \b<unknown>
+52   0x0006907e 0x080b107e 28   29   .rodata ascii   corrupted double-linked list
+53   0x0006909b 0x080b109b 28   29   .rodata ascii   malloc: top chunk is corrupt
+54   0x000690b8 0x080b10b8 29   30   .rodata ascii   malloc: using debugging hooks
+55   0x000690d6 0x080b10d6 8    9    .rodata ascii   TOP_PAD_
+56   0x000690df 0x080b10df 8    9    .rodata ascii   PERTURB_
+57   0x000690e8 0x080b10e8 9    10   .rodata ascii   MMAP_MAX_
+58   0x000690f2 0x080b10f2 15   16   .rodata ascii   TRIM_THRESHOLD_
+59   0x00069102 0x080b1102 15   16   .rodata ascii   MMAP_THRESHOLD_
+60   0x00069112 0x080b1112 23   24   .rodata ascii   free(): invalid pointer
+61   0x0006912a 0x080b112a 20   21   .rodata ascii   free(): invalid size
+62   0x0006913f 0x080b113f 27   28   .rodata ascii   malloc(): memory corruption
+63   0x0006915b 0x080b115b 26   27   .rodata ascii   realloc(): invalid pointer
+64   0x00069176 0x080b1176 27   28   .rodata ascii   realloc(): invalid old size
+65   0x00069192 0x080b1192 28   29   .rodata ascii   realloc(): invalid next size
+66   0x000691af 0x080b11af 10   11   .rodata ascii   Arena %d:\n
+67   0x000691ba 0x080b11ba 24   25   .rodata ascii   system bytes     = %10u\n
+68   0x000691d3 0x080b11d3 24   25   .rodata ascii   in use bytes     = %10u\n
+69   0x000691ec 0x080b11ec 20   21   .rodata ascii   Total (incl. mmap):\n
+70   0x00069201 0x080b1201 24   25   .rodata ascii   max mmap regions = %10u\n
+71   0x0006921a 0x080b121a 25   26   .rodata ascii   max mmap bytes   = %10lu\n
+72   0x00069234 0x080b1234 40   41   .rodata ascii   *** glibc detected *** %s: %s: 0x%s ***\n
+73   0x00069260 0x080b1260 31   32   .rodata ascii   munmap_chunk(): invalid pointer
+74   0x00069280 0x080b1280 32   33   .rodata ascii   free(): invalid next size (fast)
+75   0x000692a4 0x080b12a4 34   35   .rodata ascii   free(): invalid next size (normal)
+76   0x000692c8 0x080b12c8 35   36   .rodata ascii   double free or corruption (fasttop)
+77   0x000692ec 0x080b12ec 31   32   .rodata ascii   double free or corruption (top)
+78   0x0006930c 0x080b130c 31   32   .rodata ascii   double free or corruption (out)
+79   0x0006932c 0x080b132c 33   34   .rodata ascii   double free or corruption (!prev)
+80   0x00069350 0x080b1350 34   35   .rodata ascii   malloc(): memory corruption (fast)
+81   0x00069393 0x080b1393 15   16   .rodata ascii   \bUnknown error 
+82   0x000693a3 0x080b13a3 24   25   .rodata ascii   ANSI_X3.4-1968//TRANSLIT
+83   0x0006945c 0x080b145c 46   47   .rodata ascii   ../nptl/sysdeps/unix/sysv/linux/i386/../fork.c
+84   0x0006948c 0x080b148c 551  552  .rodata ascii   ({ __typeof (self->tid) __value; if (sizeof (__value) == 1) asm volatile ("movb %%gs:%P2,%b0" : "=q" (__value) : "0" (0), "i" (__builtin_offsetof (struct pthread, tid))); else if (sizeof (__value) == 4) asm volatile ("movl %%gs:%P1,%0" : "=r" (__value) : "i" (__builtin_offsetof (struct pthread, tid))); else { if (sizeof (__value) != 8) abort (); asm volatile ("movl %%gs:%P1,%%eax\n\t" "movl %%gs:%P2,%%edx" : "=A" (__value) : "i" (__builtin_offsetof (struct pthread, tid)), "i" (__builtin_offsetof (struct pthread, tid) + 4)); } __value; }) != ppid
+85   0x000696b4 0x080b16b4 682  683  .rodata ascii   ({ __typeof (({ struct pthread *__self; asm ("movl %%gs:%c1,%0" : "=r" (__self) : "i" (__builtin_offsetof (struct pthread, header.self))); __self;})->tid) __value; if (sizeof (__value) == 1) asm volatile ("movb %%gs:%P2,%b0" : "=q" (__value) : "0" (0), "i" (__builtin_offsetof (struct pthread, tid))); else if (sizeof (__value) == 4) asm volatile ("movl %%gs:%P1,%0" : "=r" (__value) : "i" (__builtin_offsetof (struct pthread, tid))); else { if (sizeof (__value) != 8) abort (); asm volatile ("movl %%gs:%P1,%%eax\n\t" "movl %%gs:%P2,%%edx" : "=A" (__value) : "i" (__builtin_offsetof (struct pthread, tid)), "i" (__builtin_offsetof (struct pthread, tid) + 4)); } __value; }) == ppid
+86   0x0006995f 0x080b195f 11   12   .rodata ascii   __libc_fork
+87   0x0006996b 0x080b196b 5    6    .rodata ascii   stdin
+88   0x00069971 0x080b1971 6    7    .rodata ascii   stdout
+89   0x00069978 0x080b1978 6    7    .rodata ascii   stderr
+90   0x0006997f 0x080b197f 8    9    .rodata ascii   /dev/pts
+91   0x00069988 0x080b1988 4    5    .rodata ascii   /dev
+92   0x0006998d 0x080b198d 8    9    .rodata ascii   /dev/log
+93   0x00069996 0x080b1996 4    5    .rodata ascii   <%d>
+94   0x0006999b 0x080b199b 9    10   .rodata ascii   %h %e %T 
+95   0x000699a5 0x080b19a5 4    5    .rodata ascii   [%d]
+96   0x000699aa 0x080b19aa 12   13   .rodata ascii   /dev/console
+97   0x000699b7 0x080b19b7 4    5    .rodata ascii   %s\r\n
+98   0x000699bc 0x080b19bc 37   38   .rodata ascii   syslog: unknown facility/priority: %x
+99   0x000699f0 0x080b19f0 23   24   .rodata ascii   stack smashing detected
+100  0x00069a08 0x080b1a08 26   27   .rodata ascii   *** %s ***: %s terminated\n
+101  0x00069a23 0x080b1a23 9    10   .rodata ascii   /dev/ptmx
+102  0x00069a2d 0x080b1a2d 5    6    .rodata ascii   /dev/
+103  0x00069a33 0x080b1a33 16   17   .rodata ascii   pqrstuvwxyzabcde
+104  0x00069a44 0x080b1a44 16   17   .rodata ascii   0123456789abcdef
+105  0x00069a55 0x080b1a55 17   18   .rodata ascii   /usr/lib/pt_chown
+106  0x00069a67 0x080b1a67 25   26   .rodata ascii   ../sysdeps/unix/grantpt.c
+107  0x00069a81 0x080b1a81 14   15   .rodata ascii   __unix_grantpt
+108  0x00069a90 0x080b1a90 58   59   .rodata ascii   ! "getpt: internal error: invalid exit code from pt_chown"
+109  0x00069b5b 0x080b1b5b 9    10   .rodata ascii   \b/var/tmp
+110  0x00069b65 0x080b1b65 12   13   .rodata ascii   /var/profile
+111  0x00069bc8 0x080b1bc8 4    5    .rodata ascii   apic
+112  0x00069be0 0x080b1be0 4    5    .rodata ascii   mtrr
+113  0x00069bf8 0x080b1bf8 4    5    .rodata ascii   cmov
+114  0x00069c08 0x080b1c08 5    6    .rodata ascii   pse36
+115  0x00069c18 0x080b1c18 7    8    .rodata ascii   clflush
+116  0x00069c30 0x080b1c30 4    5    .rodata ascii   acpi
+117  0x00069c40 0x080b1c40 4    5    .rodata ascii   fxsr
+118  0x00069c50 0x080b1c50 4    5    .rodata ascii   sse2
+119  0x00069c70 0x080b1c70 4    5    .rodata ascii   ia64
+120  0x00069c80 0x080b1c80 4    5    .rodata ascii   i386
+121  0x00069c85 0x080b1c85 4    5    .rodata ascii   i486
+122  0x00069c8a 0x080b1c8a 4    5    .rodata ascii   i586
+123  0x00069c8f 0x080b1c8f 4    5    .rodata ascii   i686
+124  0x00069ca0 0x080b1ca0 10   11   .rodata ascii   GCONV_PATH
+125  0x00069cab 0x080b1cab 11   12   .rodata ascii   GETCONF_DIR
+126  0x00069cb7 0x080b1cb7 11   12   .rodata ascii   HOSTALIASES
+127  0x00069cc3 0x080b1cc3 8    9    .rodata ascii   LD_AUDIT
+128  0x00069ccc 0x080b1ccc 8    9    .rodata ascii   LD_DEBUG
+129  0x00069cd5 0x080b1cd5 15   16   .rodata ascii   LD_DEBUG_OUTPUT
+130  0x00069ce5 0x080b1ce5 15   16   .rodata ascii   LD_DYNAMIC_WEAK
+131  0x00069cf5 0x080b1cf5 15   16   .rodata ascii   LD_LIBRARY_PATH
+132  0x00069d05 0x080b1d05 14   15   .rodata ascii   LD_ORIGIN_PATH
+133  0x00069d14 0x080b1d14 10   11   .rodata ascii   LD_PRELOAD
+134  0x00069d1f 0x080b1d1f 10   11   .rodata ascii   LD_PROFILE
+135  0x00069d2a 0x080b1d2a 12   13   .rodata ascii   LD_SHOW_AUXV
+136  0x00069d37 0x080b1d37 16   17   .rodata ascii   LD_USE_LOAD_BIAS
+137  0x00069d48 0x080b1d48 11   12   .rodata ascii   LOCALDOMAIN
+138  0x00069d54 0x080b1d54 7    8    .rodata ascii   LOCPATH
+139  0x00069d5c 0x080b1d5c 12   13   .rodata ascii   MALLOC_TRACE
+140  0x00069d69 0x080b1d69 8    9    .rodata ascii   NIS_PATH
+141  0x00069d72 0x080b1d72 7    8    .rodata ascii   NLSPATH
+142  0x00069d7a 0x080b1d7a 16   17   .rodata ascii   RESOLV_HOST_CONF
+143  0x00069d8b 0x080b1d8b 11   12   .rodata ascii   RES_OPTIONS
+144  0x00069d97 0x080b1d97 6    7    .rodata ascii   TMPDIR
+145  0x00069d9e 0x080b1d9e 5    6    .rodata ascii   TZDIR
+146  0x00069da4 0x080b1da4 20   21   .rodata ascii   LD_AOUT_LIBRARY_PATH
+147  0x00069db9 0x080b1db9 15   16   .rodata ascii   LD_AOUT_PRELOAD
+148  0x00069dca 0x080b1dca 7    8    .rodata ascii   LD_WARN
+149  0x00069dd2 0x080b1dd2 15   16   .rodata ascii   LD_LIBRARY_PATH
+150  0x00069de2 0x080b1de2 11   12   .rodata ascii   LD_BIND_NOW
+151  0x00069dee 0x080b1dee 11   12   .rodata ascii   LD_BIND_NOT
+152  0x00069dfa 0x080b1dfa 15   16   .rodata ascii   LD_DYNAMIC_WEAK
+153  0x00069e0a 0x080b1e0a 17   18   .rodata ascii   LD_PROFILE_OUTPUT
+154  0x00069e1c 0x080b1e1c 15   16   .rodata ascii   /etc/suid-debug
+155  0x00069e2c 0x080b1e2c 13   14   .rodata ascii   MALLOC_CHECK_
+156  0x00069e3a 0x080b1e3a 16   17   .rodata ascii   LD_ASSUME_KERNEL
+157  0x00069e4b 0x080b1e4b 10   11   .rodata ascii   gconv_db.c
+158  0x00069e58 0x080b1e58 15   16   .rodata ascii   free_derivation
+159  0x00069e68 0x080b1e68 9    10   .rodata ascii   gen_steps
+160  0x00069e72 0x080b1e72 20   21   .rodata ascii   __gconv_release_step
+161  0x00069e88 0x080b1e88 47   48   .rodata ascii   deriv->steps[cnt].__shlib_handle != ((void *)0)
+162  0x00069eb8 0x080b1eb8 35   36   .rodata ascii   step->__shlib_handle != ((void *)0)
+163  0x00069edc 0x080b1edc 30   31   .rodata ascii   step->__end_fct == ((void *)0)
+164  0x00069efc 0x080b1efc 46   47   .rodata ascii   result[step_cnt].__shlib_handle != ((void *)0)
+165  0x00069f2b 0x080b1f2b 12   13   .rodata ascii   gconv_conf.c
+166  0x00069f38 0x080b1f38 19   20   .rodata ascii   elem != ((void *)0)
+167  0x00069f4c 0x080b1f4c 18   19   .rodata ascii   cwd != ((void *)0)
+168  0x00069f62 0x080b1f62 5    6    .rodata ascii   alias
+169  0x00069f68 0x080b1f68 6    7    .rodata ascii   module
+170  0x00069f6f 0x080b1f6f 15   16   .rodata ascii   ISO-10646/UCS4/
+171  0x00069f7f 0x080b1f7f 15   16   .rodata ascii   =INTERNAL->ucs4
+172  0x00069f8f 0x080b1f8f 15   16   .rodata ascii   =ucs4->INTERNAL
+173  0x00069f9f 0x080b1f9f 9    10   .rodata ascii   UCS-4LE//
+174  0x00069fa9 0x080b1fa9 17   18   .rodata ascii   =INTERNAL->ucs4le
+175  0x00069fbb 0x080b1fbb 17   18   .rodata ascii   =ucs4le->INTERNAL
+176  0x00069fcd 0x080b1fcd 15   16   .rodata ascii   ISO-10646/UTF8/
+177  0x00069fdd 0x080b1fdd 15   16   .rodata ascii   =INTERNAL->utf8
+178  0x00069fed 0x080b1fed 15   16   .rodata ascii   =utf8->INTERNAL
+179  0x00069ffd 0x080b1ffd 15   16   .rodata ascii   ISO-10646/UCS2/
+180  0x0006a00d 0x080b200d 15   16   .rodata ascii   =ucs2->INTERNAL
+181  0x0006a01d 0x080b201d 15   16   .rodata ascii   =INTERNAL->ucs2
+182  0x0006a02d 0x080b202d 16   17   .rodata ascii   ANSI_X3.4-1968//
+183  0x0006a03e 0x080b203e 16   17   .rodata ascii   =ascii->INTERNAL
+184  0x0006a04f 0x080b204f 16   17   .rodata ascii   =INTERNAL->ascii
+185  0x0006a060 0x080b2060 12   13   .rodata ascii   UNICODEBIG//
+186  0x0006a06d 0x080b206d 22   23   .rodata ascii   =ucs2reverse->INTERNAL
+187  0x0006a084 0x080b2084 22   23   .rodata ascii   =INTERNAL->ucs2reverse
+188  0x0006a09f 0x080b209f 16   17   .rodata ascii   __gconv_get_path
+189  0x0006a0e0 0x080b20e0 6    7    .rodata ascii   UCS4//
+190  0x0006a0e7 0x080b20e7 15   16   .rodata ascii   ISO-10646/UCS4/
+191  0x0006a0f7 0x080b20f7 7    8    .rodata ascii   UCS-4//
+192  0x0006a0ff 0x080b20ff 15   16   .rodata ascii   ISO-10646/UCS4/
+193  0x0006a10f 0x080b210f 9    10   .rodata ascii   UCS-4BE//
+194  0x0006a119 0x080b2119 15   16   .rodata ascii   ISO-10646/UCS4/
+195  0x0006a129 0x080b2129 8    9    .rodata ascii   CSUCS4//
+196  0x0006a132 0x080b2132 15   16   .rodata ascii   ISO-10646/UCS4/
+197  0x0006a142 0x080b2142 11   12   .rodata ascii   ISO-10646//
+198  0x0006a14e 0x080b214e 15   16   .rodata ascii   ISO-10646/UCS4/
+199  0x0006a15e 0x080b215e 14   15   .rodata ascii   10646-1:1993//
+200  0x0006a16d 0x080b216d 15   16   .rodata ascii   ISO-10646/UCS4/
+201  0x0006a17d 0x080b217d 18   19   .rodata ascii   10646-1:1993/UCS4/
+202  0x0006a190 0x080b2190 15   16   .rodata ascii   ISO-10646/UCS4/
+203  0x0006a1a0 0x080b21a0 13   14   .rodata ascii   OSF00010104//
+204  0x0006a1ae 0x080b21ae 15   16   .rodata ascii   ISO-10646/UCS4/
+205  0x0006a1be 0x080b21be 13   14   .rodata ascii   OSF00010105//
+206  0x0006a1cc 0x080b21cc 15   16   .rodata ascii   ISO-10646/UCS4/
+207  0x0006a1dc 0x080b21dc 13   14   .rodata ascii   OSF00010106//
+208  0x0006a1ea 0x080b21ea 15   16   .rodata ascii   ISO-10646/UCS4/
+209  0x0006a1fa 0x080b21fa 9    10   .rodata ascii   WCHAR_T//
+210  0x0006a204 0x080b2204 8    9    .rodata ascii   INTERNAL
+211  0x0006a20d 0x080b220d 6    7    .rodata ascii   UTF8//
+212  0x0006a214 0x080b2214 15   16   .rodata ascii   ISO-10646/UTF8/
+213  0x0006a224 0x080b2224 7    8    .rodata ascii   UTF-8//
+214  0x0006a22c 0x080b222c 15   16   .rodata ascii   ISO-10646/UTF8/
+215  0x0006a23c 0x080b223c 12   13   .rodata ascii   ISO-IR-193//
+216  0x0006a249 0x080b2249 15   16   .rodata ascii   ISO-10646/UTF8/
+217  0x0006a259 0x080b2259 13   14   .rodata ascii   OSF05010001//
+218  0x0006a267 0x080b2267 15   16   .rodata ascii   ISO-10646/UTF8/
+219  0x0006a277 0x080b2277 16   17   .rodata ascii   ISO-10646/UTF-8/
+220  0x0006a288 0x080b2288 15   16   .rodata ascii   ISO-10646/UTF8/
+221  0x0006a298 0x080b2298 6    7    .rodata ascii   UCS2//
+222  0x0006a29f 0x080b229f 15   16   .rodata ascii   ISO-10646/UCS2/
+223  0x0006a2af 0x080b22af 7    8    .rodata ascii   UCS-2//
+224  0x0006a2b7 0x080b22b7 15   16   .rodata ascii   ISO-10646/UCS2/
+225  0x0006a2c7 0x080b22c7 13   14   .rodata ascii   OSF00010100//
+226  0x0006a2d5 0x080b22d5 15   16   .rodata ascii   ISO-10646/UCS2/
+227  0x0006a2e5 0x080b22e5 13   14   .rodata ascii   OSF00010101//
+228  0x0006a2f3 0x080b22f3 15   16   .rodata ascii   ISO-10646/UCS2/
+229  0x0006a303 0x080b2303 13   14   .rodata ascii   OSF00010102//
+230  0x0006a311 0x080b2311 15   16   .rodata ascii   ISO-10646/UCS2/
+231  0x0006a321 0x080b2321 11   12   .rodata ascii   ANSI_X3.4//
+232  0x0006a32d 0x080b232d 16   17   .rodata ascii   ANSI_X3.4-1968//
+233  0x0006a33e 0x080b233e 10   11   .rodata ascii   ISO-IR-6//
+234  0x0006a349 0x080b2349 16   17   .rodata ascii   ANSI_X3.4-1968//
+235  0x0006a35a 0x080b235a 16   17   .rodata ascii   ANSI_X3.4-1986//
+236  0x0006a36b 0x080b236b 16   17   .rodata ascii   ANSI_X3.4-1968//
+237  0x0006a37c 0x080b237c 18   19   .rodata ascii   ISO_646.IRV:1991//
+238  0x0006a38f 0x080b238f 16   17   .rodata ascii   ANSI_X3.4-1968//
+239  0x0006a3a0 0x080b23a0 7    8    .rodata ascii   ASCII//
+240  0x0006a3a8 0x080b23a8 16   17   .rodata ascii   ANSI_X3.4-1968//
+241  0x0006a3b9 0x080b23b9 11   12   .rodata ascii   ISO646-US//
+242  0x0006a3c5 0x080b23c5 16   17   .rodata ascii   ANSI_X3.4-1968//
+243  0x0006a3d6 0x080b23d6 10   11   .rodata ascii   US-ASCII//
+244  0x0006a3e1 0x080b23e1 16   17   .rodata ascii   ANSI_X3.4-1968//
+245  0x0006a3f2 0x080b23f2 4    5    .rodata ascii   US//
+246  0x0006a3f7 0x080b23f7 16   17   .rodata ascii   ANSI_X3.4-1968//
+247  0x0006a408 0x080b2408 8    9    .rodata ascii   IBM367//
+248  0x0006a411 0x080b2411 16   17   .rodata ascii   ANSI_X3.4-1968//
+249  0x0006a422 0x080b2422 7    8    .rodata ascii   CP367//
+250  0x0006a42a 0x080b242a 16   17   .rodata ascii   ANSI_X3.4-1968//
+251  0x0006a43b 0x080b243b 9    10   .rodata ascii   CSASCII//
+252  0x0006a445 0x080b2445 16   17   .rodata ascii   ANSI_X3.4-1968//
+253  0x0006a456 0x080b2456 13   14   .rodata ascii   OSF00010020//
+254  0x0006a464 0x080b2464 16   17   .rodata ascii   ANSI_X3.4-1968//
+255  0x0006a475 0x080b2475 15   16   .rodata ascii   UNICODELITTLE//
+256  0x0006a485 0x080b2485 15   16   .rodata ascii   ISO-10646/UCS2/
+257  0x0006a495 0x080b2495 9    10   .rodata ascii   UCS-2LE//
+258  0x0006a49f 0x080b249f 15   16   .rodata ascii   ISO-10646/UCS2/
+259  0x0006a4af 0x080b24af 9    10   .rodata ascii   UCS-2BE//
+260  0x0006a4b9 0x080b24b9 12   13   .rodata ascii   UNICODEBIG//
+261  0x0006a4c7 0x080b24c7 15   16   .rodata ascii   gconv_builtin.c
+262  0x0006a4d7 0x080b24d7 25   26   .rodata ascii   __gconv_get_builtin_trans
+263  0x0006a4f4 0x080b24f4 36   37   .rodata ascii   cnt < sizeof (map) / sizeof (map[0])
+264  0x0006a552 0x080b2552 4    5    .rodata ascii   \v\b`6
+265  0x0006a562 0x080b2562 4    5    .rodata ascii   \v\b`d
+266  0x0006a580 0x080b2580 4    5    .rodata ascii   \r \v\b
+267  0x0006a5a0 0x080b25a0 4    5    .rodata ascii   > \v\b
+268  0x0006a5b0 0x080b25b0 4    5    .rodata ascii   O \v\b
+269  0x0006a5c0 0x080b25c0 6    7    .rodata ascii   m \v\b C
+270  0x0006a5d1 0x080b25d1 5    6    .rodata ascii    \v\b0;
+271  0x0006a5e0 0x080b25e0 19   20   .rodata ascii   ../iconv/skeleton.c
+272  0x0006a5f4 0x080b25f4 26   27   .rodata ascii   outbufstart == ((void *)0)
+273  0x0006a60f 0x080b260f 15   16   .rodata ascii   ../iconv/loop.c
+274  0x0006a61f 0x080b261f 20   21   .rodata ascii   inend != &bytebuf[4]
+275  0x0006a634 0x080b2634 18   19   .rodata ascii   inend - inptr <= 7
+276  0x0006a647 0x080b2647 19   20   .rodata ascii   inend - *inptrp < 4
+277  0x0006a65b 0x080b265b 14   15   .rodata ascii   gconv_simple.c
+278  0x0006a66a 0x080b266a 21   22   .rodata ascii   *outptrp + 4 > outend
+279  0x0006a680 0x080b2680 20   21   .rodata ascii   inend != &bytebuf[6]
+280  0x0006a695 0x080b2695 16   17   .rodata ascii   outbuf == outerr
+281  0x0006a6a6 0x080b26a6 25   26   .rodata ascii   internal_ucs2_loop_single
+282  0x0006a6c0 0x080b26c0 25   26   .rodata ascii   ucs2_internal_loop_single
+283  0x0006a6da 0x080b26da 25   26   .rodata ascii   utf8_internal_loop_single
+284  0x0006a6f4 0x080b26f4 25   26   .rodata ascii   internal_utf8_loop_single
+285  0x0006a70e 0x080b270e 26   27   .rodata ascii   internal_ascii_loop_single
+286  0x0006a729 0x080b2729 20   21   .rodata ascii   ucs4le_internal_loop
+287  0x0006a740 0x080b2740 38   39   .rodata ascii   inptr - bytebuf > (state->__count & 7)
+288  0x0006a768 0x080b2768 37   38   .rodata ascii   inend - inptr > (state->__count & ~7)
+289  0x0006a790 0x080b2790 30   31   .rodata ascii   nstatus == __GCONV_FULL_OUTPUT
+290  0x0006a7c0 0x080b27c0 38   39   .rodata ascii   __gconv_transform_internal_ucs2reverse
+291  0x0006a800 0x080b2800 32   33   .rodata ascii   internal_ucs2reverse_loop_single
+292  0x0006a840 0x080b2840 38   39   .rodata ascii   __gconv_transform_ucs2reverse_internal
+293  0x0006a880 0x080b2880 32   33   .rodata ascii   ucs2reverse_internal_loop_single
+294  0x0006a8c0 0x080b28c0 31   32   .rodata ascii   __gconv_transform_internal_ucs2
+295  0x0006a8e0 0x080b28e0 31   32   .rodata ascii   __gconv_transform_ucs2_internal
+296  0x0006a900 0x080b2900 31   32   .rodata ascii   __gconv_transform_utf8_internal
+297  0x0006a920 0x080b2920 31   32   .rodata ascii   __gconv_transform_internal_utf8
+298  0x0006a940 0x080b2940 32   33   .rodata ascii   __gconv_transform_internal_ascii
+299  0x0006a980 0x080b2980 32   33   .rodata ascii   __gconv_transform_ascii_internal
+300  0x0006a9c0 0x080b29c0 33   34   .rodata ascii   __gconv_transform_ucs4le_internal
+301  0x0006aa00 0x080b2a00 33   34   .rodata ascii   __gconv_transform_internal_ucs4le
+302  0x0006aa40 0x080b2a40 31   32   .rodata ascii   __gconv_transform_ucs4_internal
+303  0x0006aa60 0x080b2a60 31   32   .rodata ascii   __gconv_transform_internal_ucs4
+304  0x0006aa85 0x080b2a85 10   11   .rodata ascii   GCONV_PATH
+305  0x0006aa90 0x080b2a90 34   35   .rodata ascii   /usr/lib/gconv/gconv-modules.cache
+306  0x0006aab3 0x080b2ab3 10   11   .rodata ascii   gconv_dl.c
+307  0x0006aabe 0x080b2abe 16   17   .rodata ascii   obj->counter > 0
+308  0x0006aacf 0x080b2acf 28   29   .rodata ascii   found->handle == ((void *)0)
+309  0x0006aaec 0x080b2aec 10   11   .rodata ascii   gconv_init
+310  0x0006aaf7 0x080b2af7 9    10   .rodata ascii   gconv_end
+311  0x0006ab01 0x080b2b01 16   17   .rodata ascii   do_release_shlib
+312  0x0006ab12 0x080b2b12 18   19   .rodata ascii   __gconv_find_shlib
+313  0x0006ab25 0x080b2b25 7    8    .rodata ascii   LOCPATH
+314  0x0006ab40 0x080b2b40 10   11   .rodata ascii   LC_COLLATE
+315  0x0006ab4b 0x080b2b4b 8    9    .rodata ascii   LC_CTYPE
+316  0x0006ab54 0x080b2b54 11   12   .rodata ascii   LC_MONETARY
+317  0x0006ab60 0x080b2b60 10   11   .rodata ascii   LC_NUMERIC
+318  0x0006ab6b 0x080b2b6b 7    8    .rodata ascii   LC_TIME
+319  0x0006ab73 0x080b2b73 11   12   .rodata ascii   LC_MESSAGES
+320  0x0006ab7f 0x080b2b7f 8    9    .rodata ascii   LC_PAPER
+321  0x0006ab88 0x080b2b88 7    8    .rodata ascii   LC_NAME
+322  0x0006ab90 0x080b2b90 10   11   .rodata ascii   LC_ADDRESS
+323  0x0006ab9b 0x080b2b9b 12   13   .rodata ascii   LC_TELEPHONE
+324  0x0006aba8 0x080b2ba8 14   15   .rodata ascii   LC_MEASUREMENT
+325  0x0006abb7 0x080b2bb7 17   18   .rodata ascii   LC_IDENTIFICATION
+326  0x0006abd0 0x080b2bd0 12   13   .rodata ascii   ?HP[hw\b\n\a\n\v\v
+327  0x0006abdd 0x080b2bdd 4    5    .rodata ascii   \b\a\n\f
+328  0x0006ac74 0x080b2c74 6    7    .rodata ascii   LC_ALL
+329  0x0006ac7b 0x080b2c7b 4    5    .rodata ascii   LANG
+330  0x0006ac80 0x080b2c80 12   13   .rodata ascii   findlocale.c
+331  0x0006ac8d 0x080b2c8d 29   30   .rodata ascii   locale_codeset != ((void *)0)
+332  0x0006acab 0x080b2cab 15   16   .rodata ascii   /usr/lib/locale
+333  0x0006acbb 0x080b2cbb 15   16   .rodata ascii   _nl_find_locale
+334  0x0006ace1 0x080b2ce1 11   12   .rodata ascii   Q\v\b S\f\b Y\f\b
+335  0x0006aced 0x080b2ced 7    8    .rodata ascii   ^\f\b@R\f\b
+336  0x0006acfd 0x080b2cfd 7    8    .rodata ascii   [\f\b@[\f\b
+337  0x0006ad05 0x080b2d05 7    8    .rodata ascii   [\f\b@\\f\b
+338  0x0006ad0d 0x080b2d0d 7    8    .rodata ascii   \\f\b@^\f\b
+339  0x0006ad54 0x080b2d54 12   13   .rodata ascii   loadlocale.c
+340  0x0006ad61 0x080b2d61 22   23   .rodata ascii   category == __LC_CTYPE
+341  0x0006ad78 0x080b2d78 22   23   .rodata ascii   _nl_intern_locale_data
+342  0x0006ad90 0x080b2d90 82   83   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_NUMERIC) / sizeof (_nl_value_type_LC_NUMERIC[0]))
+343  0x0006ade4 0x080b2de4 76   77   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_TIME) / sizeof (_nl_value_type_LC_TIME[0]))
+344  0x0006ae34 0x080b2e34 82   83   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_COLLATE) / sizeof (_nl_value_type_LC_COLLATE[0]))
+345  0x0006ae88 0x080b2e88 84   85   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_MONETARY) / sizeof (_nl_value_type_LC_MONETARY[0]))
+346  0x0006aee0 0x080b2ee0 84   85   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_MESSAGES) / sizeof (_nl_value_type_LC_MESSAGES[0]))
+347  0x0006af38 0x080b2f38 78   79   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_PAPER) / sizeof (_nl_value_type_LC_PAPER[0]))
+348  0x0006af88 0x080b2f88 76   77   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_NAME) / sizeof (_nl_value_type_LC_NAME[0]))
+349  0x0006afd8 0x080b2fd8 82   83   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_ADDRESS) / sizeof (_nl_value_type_LC_ADDRESS[0]))
+350  0x0006b02c 0x080b302c 86   87   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_TELEPHONE) / sizeof (_nl_value_type_LC_TELEPHONE[0]))
+351  0x0006b084 0x080b3084 90   91   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_MEASUREMENT) / sizeof (_nl_value_type_LC_MEASUREMENT[0]))
+352  0x0006b0e0 0x080b30e0 96   97   .rodata ascii   cnt < (sizeof (_nl_value_type_LC_IDENTIFICATION) / sizeof (_nl_value_type_LC_IDENTIFICATION[0]))
+353  0x0006b1e0 0x080b31e0 16   17   .rodata ascii    2\v\b<3\v\b`3\v\b 5\v\b
+354  0x0006b1f1 0x080b31f1 7    8    .rodata ascii   5\v\b86\v\b
+355  0x0006b1fc 0x080b31fc 8    9    .rodata ascii   L6\v\bX6\v\b
+356  0x0006b29c 0x080b329c 10   44   .rodata utf32le \b\b\b\b\b\b\b\b\b\b
+357  0x0006b318 0x080b3318 4    20   .rodata utf32le \b\b\b\b
+358  0x0006b4d0 0x080b34d0 9    40   .rodata utf32le \b\b\b\b\b\b\n\b\b
+359  0x0006b528 0x080b3528 4    20   .rodata utf32le \b\b\b\b
+360  0x0006b544 0x080b3544 4    20   .rodata utf32le \b\b\b\b
+361  0x0006b558 0x080b3558 4    20   .rodata utf32le \b\b\b\b
+362  0x0006b720 0x080b3720 13   14   .rodata ascii   loadarchive.c
+363  0x0006b72e 0x080b372e 22   23   .rodata ascii   archmapped == &headmap
+364  0x0006b745 0x080b3745 26   27   .rodata ascii   ((((ps) - 1) & (ps)) == 0)
+365  0x0006b760 0x080b3760 20   21   .rodata ascii   last->next == mapped
+366  0x0006b775 0x080b3775 24   25   .rodata ascii   ranges[cnt].from >= from
+367  0x0006b78e 0x080b378e 22   23   .rodata ascii   _nl_archive_subfreeres
+368  0x0006b7a5 0x080b37a5 28   29   .rodata ascii   _nl_load_locale_from_archive
+369  0x0006b7c4 0x080b37c4 30   31   .rodata ascii   /usr/lib/locale/locale-archive
+370  0x0006c11c 0x080b411c 7    32   .rodata utf32le \a\b\t\n\v\f\r
+371  0x0006c180 0x080b4180 95   384  .rodata utf32le  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+372  0x0006c71c 0x080b471c 7    32   .rodata utf32le \a\b\t\n\v\f\r
+373  0x0006c780 0x080b4780 95   384  .rodata utf32le  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+374  0x0006d06c 0x080b506c 26   108  .rodata utf32le                           
+375  0x0006d120 0x080b5120 6    28   .rodata utf32le HHHHHI
+376  0x0006d15c 0x080b515c 5    6    .rodata ascii   upper
+377  0x0006d162 0x080b5162 5    6    .rodata ascii   lower
+378  0x0006d168 0x080b5168 5    6    .rodata ascii   alpha
+379  0x0006d16e 0x080b516e 5    6    .rodata ascii   digit
+380  0x0006d174 0x080b5174 6    7    .rodata ascii   xdigit
+381  0x0006d17b 0x080b517b 5    6    .rodata ascii   space
+382  0x0006d181 0x080b5181 5    6    .rodata ascii   print
+383  0x0006d187 0x080b5187 5    6    .rodata ascii   graph
+384  0x0006d18d 0x080b518d 5    6    .rodata ascii   blank
+385  0x0006d193 0x080b5193 5    6    .rodata ascii   cntrl
+386  0x0006d199 0x080b5199 5    6    .rodata ascii   punct
+387  0x0006d19f 0x080b519f 5    6    .rodata ascii   alnum
+388  0x0006d1a6 0x080b51a6 7    8    .rodata ascii   toupper
+389  0x0006d1ae 0x080b51ae 7    8    .rodata ascii   tolower
+390  0x0006d20c 0x080b520c 4    5    .rodata ascii   \Q\v\b
+391  0x0006d225 0x080b5225 4    5    .rodata ascii   G\v\bG
+392  0x0006d239 0x080b5239 7    8    .rodata ascii   ;\f\bQ \f\b
+393  0x0006d24d 0x080b524d 7    8    .rodata ascii   .\f\bE&\v\b
+394  0x0006d28d 0x080b528d 7    8    .rodata ascii   ;\f\bQ \f\b
+395  0x0006d2a1 0x080b52a1 7    8    .rodata ascii   .\f\bE&\v\b
+396  0x0006d2b0 0x080b52b0 11   48   .rodata utf32le 0123456789Չ blocks=Basic Latin,Armenian
+397  0x0006d300 0x080b5300 4    5    .rodata ascii    K\v\b
+398  0x0006d309 0x080b5309 7    8    .rodata ascii   K\v\b@L\v\b
+399  0x0006d315 0x080b5315 7    8    .rodata ascii   M\v\b`M\v\b
+400  0x0006d31d 0x080b531d 7    8    .rodata ascii   M\v\b N\v\b
+401  0x0006d329 0x080b5329 7    8    .rodata ascii   N\v\b@O\v\b
+402  0x0006d331 0x080b5331 7    8    .rodata ascii   O\v\b@P\v\b
+403  0x0006d380 0x080b5380 48   196  .rodata utf32le  "$&(*,.02468:<>@BDFHJLNPRTVXZ\^`bdfhjlnprtvxz|~
+404  0x00071304 0x080b9304 22   92   .rodata utf32le %,37:>BFJNRVZ^aeimquy}
+405  0x00072898 0x080ba898 5    24   .rodata utf32le  1/4 
+406  0x000728b4 0x080ba8b4 5    24   .rodata utf32le  1/2 
+407  0x000728d0 0x080ba8d0 5    24   .rodata utf32le  3/4 
+408  0x00072e0c 0x080bae0c 4    20   .rodata utf32le (TM)
+409  0x00072ef8 0x080baef8 5    24   .rodata utf32le  1/3 
+410  0x00072f14 0x080baf14 5    24   .rodata utf32le  2/3 
+411  0x00072f30 0x080baf30 5    24   .rodata utf32le  1/5 
+412  0x00072f4c 0x080baf4c 5    24   .rodata utf32le  2/5 
+413  0x00072f68 0x080baf68 5    24   .rodata utf32le  3/5 
+414  0x00072f84 0x080baf84 5    24   .rodata utf32le  4/5 
+415  0x00072fa0 0x080bafa0 5    24   .rodata utf32le  1/6 
+416  0x00072fbc 0x080bafbc 5    24   .rodata utf32le  5/6 
+417  0x00072fd8 0x080bafd8 5    24   .rodata utf32le  1/8 
+418  0x00072ff4 0x080baff4 5    24   .rodata utf32le  3/8 
+419  0x00073010 0x080bb010 5    24   .rodata utf32le  5/8 
+420  0x0007302c 0x080bb02c 5    24   .rodata utf32le  7/8 
+421  0x000730cc 0x080bb0cc 4    20   .rodata utf32le VIII
+422  0x000731c4 0x080bb1c4 4    20   .rodata utf32le viii
+423  0x000736b0 0x080bb6b0 4    20   .rodata utf32le (10)
+424  0x000736c8 0x080bb6c8 4    20   .rodata utf32le (11)
+425  0x000736e0 0x080bb6e0 4    20   .rodata utf32le (12)
+426  0x000736f8 0x080bb6f8 4    20   .rodata utf32le (13)
+427  0x00073710 0x080bb710 4    20   .rodata utf32le (14)
+428  0x00073728 0x080bb728 4    20   .rodata utf32le (15)
+429  0x00073740 0x080bb740 4    20   .rodata utf32le (16)
+430  0x00073758 0x080bb758 4    20   .rodata utf32le (17)
+431  0x00073770 0x080bb770 4    20   .rodata utf32le (18)
+432  0x00073788 0x080bb788 4    20   .rodata utf32le (19)
+433  0x000737a0 0x080bb7a0 4    20   .rodata utf32le (20)
+434  0x0007386c 0x080bb86c 4    20   .rodata utf32le (10)
+435  0x00073884 0x080bb884 4    20   .rodata utf32le (11)
+436  0x0007389c 0x080bb89c 4    20   .rodata utf32le (12)
+437  0x000738b4 0x080bb8b4 4    20   .rodata utf32le (13)
+438  0x000738cc 0x080bb8cc 4    20   .rodata utf32le (14)
+439  0x000738e4 0x080bb8e4 4    20   .rodata utf32le (15)
+440  0x000738fc 0x080bb8fc 4    20   .rodata utf32le (16)
+441  0x00073914 0x080bb914 4    20   .rodata utf32le (17)
+442  0x0007392c 0x080bb92c 4    20   .rodata utf32le (18)
+443  0x00073944 0x080bb944 4    20   .rodata utf32le (19)
+444  0x0007395c 0x080bb95c 4    20   .rodata utf32le (20)
+445  0x000741ec 0x080bc1ec 4    20   .rodata utf32le (21)
+446  0x00074204 0x080bc204 4    20   .rodata utf32le (22)
+447  0x0007421c 0x080bc21c 4    20   .rodata utf32le (23)
+448  0x00074234 0x080bc234 4    20   .rodata utf32le (24)
+449  0x0007424c 0x080bc24c 4    20   .rodata utf32le (25)
+450  0x00074264 0x080bc264 4    20   .rodata utf32le (26)
+451  0x0007427c 0x080bc27c 4    20   .rodata utf32le (27)
+452  0x00074294 0x080bc294 4    20   .rodata utf32le (28)
+453  0x000742ac 0x080bc2ac 4    20   .rodata utf32le (29)
+454  0x000742c4 0x080bc2c4 4    20   .rodata utf32le (30)
+455  0x000742dc 0x080bc2dc 4    20   .rodata utf32le (31)
+456  0x000742f4 0x080bc2f4 4    20   .rodata utf32le (32)
+457  0x0007430c 0x080bc30c 4    20   .rodata utf32le (33)
+458  0x00074324 0x080bc324 4    20   .rodata utf32le (34)
+459  0x0007433c 0x080bc33c 4    20   .rodata utf32le (35)
+460  0x00074354 0x080bc354 4    20   .rodata utf32le (36)
+461  0x0007436c 0x080bc36c 4    20   .rodata utf32le (37)
+462  0x00074384 0x080bc384 4    20   .rodata utf32le (38)
+463  0x0007439c 0x080bc39c 4    20   .rodata utf32le (39)
+464  0x000743b4 0x080bc3b4 4    20   .rodata utf32le (40)
+465  0x000743cc 0x080bc3cc 4    20   .rodata utf32le (41)
+466  0x000743e4 0x080bc3e4 4    20   .rodata utf32le (42)
+467  0x000743fc 0x080bc3fc 4    20   .rodata utf32le (43)
+468  0x00074414 0x080bc414 4    20   .rodata utf32le (44)
+469  0x0007442c 0x080bc42c 4    20   .rodata utf32le (45)
+470  0x00074444 0x080bc444 4    20   .rodata utf32le (46)
+471  0x0007445c 0x080bc45c 4    20   .rodata utf32le (47)
+472  0x00074474 0x080bc474 4    20   .rodata utf32le (48)
+473  0x0007448c 0x080bc48c 4    20   .rodata utf32le (49)
+474  0x000744a4 0x080bc4a4 4    20   .rodata utf32le (50)
+475  0x000745b8 0x080bc5b8 4    20   .rodata utf32le kcal
+476  0x00074730 0x080bc730 4    20   .rodata utf32le mm^2
+477  0x00074748 0x080bc748 4    20   .rodata utf32le cm^2
+478  0x00074774 0x080bc774 4    20   .rodata utf32le km^2
+479  0x0007478c 0x080bc78c 4    20   .rodata utf32le mm^3
+480  0x000747a4 0x080bc7a4 4    20   .rodata utf32le cm^3
+481  0x000747d0 0x080bc7d0 4    20   .rodata utf32le km^3
+482  0x000747fc 0x080bc7fc 5    24   .rodata utf32le m/s^2
+483  0x00074878 0x080bc878 5    24   .rodata utf32le rad/s
+484  0x00074894 0x080bc894 7    32   .rodata utf32le rad/s^2
+485  0x000749b8 0x080bc9b8 4    20   .rodata utf32le a.m.
+486  0x00074a00 0x080bca00 4    20   .rodata utf32le C/kg
+487  0x00074b38 0x080bcb38 4    20   .rodata utf32le p.m.
+488  0x00077364 0x080bf364 4    5    .rodata ascii   libc
+489  0x00077369 0x080bf369 5    6    .rodata ascii   POSIX
+490  0x0007736f 0x080bf36f 14   15   .rodata ascii   ANSI_X3.4-1968
+491  0x00077381 0x080bf381 11   12   .rodata ascii   Q\v\b S\f\b Y\f\b
+492  0x0007738d 0x080bf38d 7    8    .rodata ascii   ^\f\b@R\f\b
+493  0x0007739d 0x080bf39d 7    8    .rodata ascii   [\f\b@[\f\b
+494  0x000773a5 0x080bf3a5 7    8    .rodata ascii   [\f\b@\\f\b
+495  0x000773ad 0x080bf3ad 7    8    .rodata ascii   \\f\b@^\f\b
+496  0x000773f2 0x080bf3f2 20   21   .rodata ascii   \f\bUnexpected error.\n
+497  0x00077408 0x080bf408 38   39   .rodata ascii   %s%s%s:%u: %s%sAssertion `%s' failed.\n
+498  0x0007745b 0x080bf45b 15   16   .rodata ascii   \bOUTPUT_CHARSET
+499  0x0007746b 0x080bf46b 8    9    .rodata ascii   charset=
+500  0x00077474 0x080bf474 8    9    .rodata ascii   LANGUAGE
+501  0x0007747d 0x080bf47d 8    9    .rodata ascii   messages
+502  0x00077486 0x080bf486 17   18   .rodata ascii   /usr/share/locale
+503  0x000774b2 0x080bf4b2 26   27   .rodata ascii   /usr/share/locale-langpack
+504  0x00077862 0x080bf862 4    5    .rodata ascii   \a\b\t\v
+505  0x0007788c 0x080bf88c 7    16   .rodata utf16le \t\b\t\n\v\f\r
+506  0x000778be 0x080bf8be 6    14   .rodata utf16le \a\b\t\b\t\f
+507  0x0007791c 0x080bf91c 6    14   .rodata utf16le \b\t\n\v\f\r
+508  0x00077936 0x080bf936 6    14   .rodata utf16le \b\t\n\v\f\r
+509  0x0007794a 0x080bf94a 6    14   .rodata utf16le \b\t\n\v\f\r
+510  0x00077958 0x080bf958 4    10   .rodata utf16le \n\v\f\r
+511  0x000779f4 0x080bf9f4 7    8    .rodata ascii   plural=
+512  0x000779fc 0x080bf9fc 9    10   .rodata ascii   nplurals=
+513  0x00077b34 0x080bfb34 4    5    .rodata ascii   {fG5
+514  0x00077c20 0x080bfc20 36   37   .rodata ascii   0123456789abcdefghijklmnopqrstuvwxyz
+515  0x00077c60 0x080bfc60 47   48   .rodata ascii   0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZto_outpunct
+516  0x00077c90 0x080bfc90 21   22   .rodata ascii   ../locale/outdigits.h
+517  0x00077ca6 0x080bfca6 16   17   .rodata ascii   0 <= n && n <= 9
+518  0x00077cb7 0x080bfcb7 10   11   .rodata ascii   vfprintf.c
+519  0x00077cc2 0x080bfcc2 26   27   .rodata ascii   ((&mbstate)->__count == 0)
+520  0x00077cdd 0x080bfcdd 14   15   .rodata ascii   s->_flags2 & 4
+521  0x00077cec 0x080bfcec 5    6    .rodata ascii   (nil)
+522  0x00077cf2 0x080bfcf2 6    7    .rodata ascii   (null)
+523  0x00077cf9 0x080bfcf9 21   22   .rodata ascii   _IO_vfprintf_internal
+524  0x00077d0f 0x080bfd0f 14   15   .rodata ascii   outdigit_value
+525  0x00077d20 0x080bfd20 40   41   .rodata ascii   *** %n in writable segment detected ***\n
+526  0x00077d4c 0x080bfd4c 33   34   .rodata ascii   *** invalid %N$ use detected ***\n
+527  0x00077d80 0x080bfd80 56   57   .rodata ascii   J\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\bJ\a\a\b
+528  0x00077dea 0x080bfdea 14   15   .rodata ascii   \a\bJ\a\a\bJ\a\a\bJ\a\a\b
+529  0x00077e37 0x080bfe37 5    6    .rodata ascii   \bX\t\a\b
+530  0x00077e3d 0x080bfe3d 4    5    .rodata ascii   \t\a\b*
+531  0x00077eab 0x080bfeab 6    7    .rodata ascii   \b(\b\a\bp
+532  0x00077eb7 0x080bfeb7 5    6    .rodata ascii   \bX\t\a\b
+533  0x00077ebd 0x080bfebd 4    5    .rodata ascii   \t\a\b*
+534  0x00077f37 0x080bff37 5    6    .rodata ascii   \bX\t\a\b
+535  0x00077f3d 0x080bff3d 4    5    .rodata ascii   \t\a\b*
+536  0x00077fad 0x080bffad 15   16   .rodata ascii   \a\a\b(\b\a\bt\b\a\bX\t\a\b
+537  0x00077fbd 0x080bffbd 4    5    .rodata ascii   \t\a\b*
+538  0x00077fed 0x080bffed 8    9    .rodata ascii   \b\a\b\f\t\a\bp
+539  0x0007802d 0x080c002d 15   16   .rodata ascii   \a\a\b(\b\a\bt\b\a\bX\t\a\b
+540  0x0007803d 0x080c003d 4    5    .rodata ascii   \t\a\b*
+541  0x0007806d 0x080c006d 8    9    .rodata ascii   \b\a\b\f\t\a\bp
+542  0x00078095 0x080c0095 7    8    .rodata ascii   \v\a\b%\f\a\b
+543  0x0007809d 0x080c009d 7    8    .rodata ascii   \f\a\b7\r\a\b
+544  0x000780ad 0x080c00ad 15   16   .rodata ascii   \a\a\b(\b\a\bt\b\a\bX\t\a\b
+545  0x000780bd 0x080c00bd 4    5    .rodata ascii   \t\a\b*
+546  0x000780ed 0x080c00ed 11   12   .rodata ascii   \b\a\b\f\t\a\bt\f\a\b
+547  0x00078144 0x080c0144 9    40   .rodata utf32le \b\b\b\b\b\b\b\b\b
+548  0x00078324 0x080c0324 6    28   .rodata utf32le 0.0001
+549  0x00078340 0x080c0340 30   31   .rodata ascii   ../stdio-common/printf_fphex.c
+550  0x00078360 0x080c0360 38   39   .rodata ascii   *decimal != '\0' && decimalwc != L'\0'
+551  0x00078387 0x080c0387 14   15   .rodata ascii   __printf_fphex
+552  0x00078396 0x080c0396 23   24   .rodata ascii   ../locale/outdigitswc.h
+553  0x000783ae 0x080c03ae 13   14   .rodata ascii   _IO_vfwprintf
+554  0x000783bc 0x080c03bc 16   17   .rodata ascii   outdigitwc_value
+555  0x000783d0 0x080c03d0 5    24   .rodata utf32le (nil)
+556  0x000783e8 0x080c03e8 6    28   .rodata utf32le (null)
+557  0x0007847a 0x080c047a 6    8    .rodata utf8    \a\b΅\a\b1 blocks=Basic Latin,Greek and Coptic
+558  0x0007854a 0x080c054a 6    8    .rodata utf8    \a\b͖\a\b! blocks=Basic Latin,Combining Diacritical Marks
+559  0x0007864e 0x080c064e 6    8    .rodata utf8    \a\b͖\a\by blocks=Basic Latin,Combining Diacritical Marks
+560  0x000786ce 0x080c06ce 6    8    .rodata utf8    \a\b͖\a\by blocks=Basic Latin,Combining Diacritical Marks
+561  0x0007874e 0x080c074e 6    8    .rodata utf8    \a\b͖\a\by blocks=Basic Latin,Combining Diacritical Marks
+562  0x00078792 0x080c0792 5    7    .rodata utf8    \a\bƋ\a\b blocks=Basic Latin,Latin Extended-B
+563  0x000787e4 0x080c07e4 9    40   .rodata utf32le \b\b\b\b\b\b\b\b\b
+564  0x0007892d 0x080c092d 5    6    .rodata ascii   r\a\b@I
+565  0x00078974 0x080c0974 7    8    .rodata ascii   Success
+566  0x0007897c 0x080c097c 23   24   .rodata ascii   Operation not permitted
+567  0x00078994 0x080c0994 25   26   .rodata ascii   No such file or directory
+568  0x000789ae 0x080c09ae 15   16   .rodata ascii   No such process
+569  0x000789be 0x080c09be 23   24   .rodata ascii   Interrupted system call
+570  0x000789d6 0x080c09d6 18   19   .rodata ascii   Input/output error
+571  0x000789e9 0x080c09e9 25   26   .rodata ascii   No such device or address
+572  0x00078a03 0x080c0a03 22   23   .rodata ascii   Argument list too long
+573  0x00078a1a 0x080c0a1a 17   18   .rodata ascii   Exec format error
+574  0x00078a2c 0x080c0a2c 19   20   .rodata ascii   Bad file descriptor
+575  0x00078a40 0x080c0a40 18   19   .rodata ascii   No child processes
+576  0x00078a53 0x080c0a53 22   23   .rodata ascii   Cannot allocate memory
+577  0x00078a6a 0x080c0a6a 17   18   .rodata ascii   Permission denied
+578  0x00078a7c 0x080c0a7c 11   12   .rodata ascii   Bad address
+579  0x00078a88 0x080c0a88 21   22   .rodata ascii   Block device required
+580  0x00078a9e 0x080c0a9e 23   24   .rodata ascii   Device or resource busy
+581  0x00078ab6 0x080c0ab6 11   12   .rodata ascii   File exists
+582  0x00078ac2 0x080c0ac2 25   26   .rodata ascii   Invalid cross-device link
+583  0x00078adc 0x080c0adc 14   15   .rodata ascii   No such device
+584  0x00078aeb 0x080c0aeb 15   16   .rodata ascii   Not a directory
+585  0x00078afb 0x080c0afb 14   15   .rodata ascii   Is a directory
+586  0x00078b0a 0x080c0b0a 16   17   .rodata ascii   Invalid argument
+587  0x00078b1b 0x080c0b1b 29   30   .rodata ascii   Too many open files in system
+588  0x00078b39 0x080c0b39 19   20   .rodata ascii   Too many open files
+589  0x00078b4d 0x080c0b4d 14   15   .rodata ascii   Text file busy
+590  0x00078b5c 0x080c0b5c 14   15   .rodata ascii   File too large
+591  0x00078b6b 0x080c0b6b 23   24   .rodata ascii   No space left on device
+592  0x00078b83 0x080c0b83 12   13   .rodata ascii   Illegal seek
+593  0x00078b90 0x080c0b90 21   22   .rodata ascii   Read-only file system
+594  0x00078ba6 0x080c0ba6 14   15   .rodata ascii   Too many links
+595  0x00078bb5 0x080c0bb5 11   12   .rodata ascii   Broken pipe
+596  0x00078bc1 0x080c0bc1 29   30   .rodata ascii   Numerical result out of range
+597  0x00078bdf 0x080c0bdf 25   26   .rodata ascii   Resource deadlock avoided
+598  0x00078bf9 0x080c0bf9 18   19   .rodata ascii   File name too long
+599  0x00078c0c 0x080c0c0c 18   19   .rodata ascii   No locks available
+600  0x00078c1f 0x080c0c1f 24   25   .rodata ascii   Function not implemented
+601  0x00078c38 0x080c0c38 19   20   .rodata ascii   Directory not empty
+602  0x00078c4c 0x080c0c4c 26   27   .rodata ascii   No message of desired type
+603  0x00078c67 0x080c0c67 18   19   .rodata ascii   Identifier removed
+604  0x00078c7a 0x080c0c7a 27   28   .rodata ascii   Channel number out of range
+605  0x00078c96 0x080c0c96 24   25   .rodata ascii   Level 2 not synchronized
+606  0x00078caf 0x080c0caf 14   15   .rodata ascii   Level 3 halted
+607  0x00078cbe 0x080c0cbe 13   14   .rodata ascii   Level 3 reset
+608  0x00078ccc 0x080c0ccc 24   25   .rodata ascii   Link number out of range
+609  0x00078ce5 0x080c0ce5 28   29   .rodata ascii   Protocol driver not attached
+610  0x00078d02 0x080c0d02 26   27   .rodata ascii   No CSI structure available
+611  0x00078d1d 0x080c0d1d 14   15   .rodata ascii   Level 2 halted
+612  0x00078d2c 0x080c0d2c 16   17   .rodata ascii   Invalid exchange
+613  0x00078d3d 0x080c0d3d 26   27   .rodata ascii   Invalid request descriptor
+614  0x00078d58 0x080c0d58 13   14   .rodata ascii   Exchange full
+615  0x00078d66 0x080c0d66 8    9    .rodata ascii   No anode
+616  0x00078d6f 0x080c0d6f 20   21   .rodata ascii   Invalid request code
+617  0x00078d84 0x080c0d84 12   13   .rodata ascii   Invalid slot
+618  0x00078d91 0x080c0d91 20   21   .rodata ascii   Bad font file format
+619  0x00078da6 0x080c0da6 19   20   .rodata ascii   Device not a stream
+620  0x00078dba 0x080c0dba 17   18   .rodata ascii   No data available
+621  0x00078dcc 0x080c0dcc 13   14   .rodata ascii   Timer expired
+622  0x00078dda 0x080c0dda 24   25   .rodata ascii   Out of streams resources
+623  0x00078df3 0x080c0df3 29   30   .rodata ascii   Machine is not on the network
+624  0x00078e11 0x080c0e11 21   22   .rodata ascii   Package not installed
+625  0x00078e27 0x080c0e27 16   17   .rodata ascii   Object is remote
+626  0x00078e38 0x080c0e38 21   22   .rodata ascii   Link has been severed
+627  0x00078e4e 0x080c0e4e 15   16   .rodata ascii   Advertise error
+628  0x00078e5e 0x080c0e5e 13   14   .rodata ascii   Srmount error
+629  0x00078e6c 0x080c0e6c 27   28   .rodata ascii   Communication error on send
+630  0x00078e88 0x080c0e88 14   15   .rodata ascii   Protocol error
+631  0x00078e97 0x080c0e97 18   19   .rodata ascii   Multihop attempted
+632  0x00078eaa 0x080c0eaa 18   19   .rodata ascii   RFS specific error
+633  0x00078ebd 0x080c0ebd 11   12   .rodata ascii   Bad message
+634  0x00078ec9 0x080c0ec9 26   27   .rodata ascii   Name not unique on network
+635  0x00078ee4 0x080c0ee4 28   29   .rodata ascii   File descriptor in bad state
+636  0x00078f01 0x080c0f01 22   23   .rodata ascii   Remote address changed
+637  0x00078f18 0x080c0f18 18   19   .rodata ascii   Streams pipe error
+638  0x00078f2b 0x080c0f2b 14   15   .rodata ascii   Too many users
+639  0x00078f3a 0x080c0f3a 28   29   .rodata ascii   Destination address required
+640  0x00078f57 0x080c0f57 16   17   .rodata ascii   Message too long
+641  0x00078f68 0x080c0f68 22   23   .rodata ascii   Protocol not available
+642  0x00078f7f 0x080c0f7f 22   23   .rodata ascii   Protocol not supported
+643  0x00078f96 0x080c0f96 25   26   .rodata ascii   Socket type not supported
+644  0x00078fb0 0x080c0fb0 23   24   .rodata ascii   Operation not supported
+645  0x00078fc8 0x080c0fc8 29   30   .rodata ascii   Protocol family not supported
+646  0x00078fe6 0x080c0fe6 22   23   .rodata ascii   Address already in use
+647  0x00078ffd 0x080c0ffd 15   16   .rodata ascii   Network is down
+648  0x0007900d 0x080c100d 22   23   .rodata ascii   Network is unreachable
+649  0x00079024 0x080c1024 24   25   .rodata ascii   Connection reset by peer
+650  0x0007903d 0x080c103d 25   26   .rodata ascii   No buffer space available
+651  0x00079057 0x080c1057 20   21   .rodata ascii   Connection timed out
+652  0x0007906c 0x080c106c 18   19   .rodata ascii   Connection refused
+653  0x0007907f 0x080c107f 12   13   .rodata ascii   Host is down
+654  0x0007908c 0x080c108c 16   17   .rodata ascii   No route to host
+655  0x0007909d 0x080c109d 29   30   .rodata ascii   Operation already in progress
+656  0x000790bb 0x080c10bb 25   26   .rodata ascii   Operation now in progress
+657  0x000790d5 0x080c10d5 21   22   .rodata ascii   Stale NFS file handle
+658  0x000790eb 0x080c10eb 24   25   .rodata ascii   Structure needs cleaning
+659  0x00079104 0x080c1104 27   28   .rodata ascii   Not a XENIX named type file
+660  0x00079120 0x080c1120 29   30   .rodata ascii   No XENIX semaphores available
+661  0x0007913e 0x080c113e 20   21   .rodata ascii   Is a named type file
+662  0x00079153 0x080c1153 16   17   .rodata ascii   Remote I/O error
+663  0x00079164 0x080c1164 19   20   .rodata ascii   Disk quota exceeded
+664  0x00079178 0x080c1178 15   16   .rodata ascii   No medium found
+665  0x00079188 0x080c1188 17   18   .rodata ascii   Wrong medium type
+666  0x0007919a 0x080c119a 18   19   .rodata ascii   Operation canceled
+667  0x000791ad 0x080c11ad 26   27   .rodata ascii   Required key not available
+668  0x000791c8 0x080c11c8 15   16   .rodata ascii   Key has expired
+669  0x000791d8 0x080c11d8 20   21   .rodata ascii   Key has been revoked
+670  0x000791ed 0x080c11ed 27   28   .rodata ascii   Key was rejected by service
+671  0x00079209 0x080c1209 10   11   .rodata ascii   Owner died
+672  0x00079214 0x080c1214 21   22   .rodata ascii   State not recoverable
+673  0x0007922c 0x080c122c 32   33   .rodata ascii   Resource temporarily unavailable
+674  0x00079250 0x080c1250 30   31   .rodata ascii   Inappropriate ioctl for device
+675  0x00079270 0x080c1270 32   33   .rodata ascii   Numerical argument out of domain
+676  0x00079294 0x080c1294 33   34   .rodata ascii   Too many levels of symbolic links
+677  0x000792b8 0x080c12b8 37   38   .rodata ascii   Value too large for defined data type
+678  0x000792e0 0x080c12e0 38   39   .rodata ascii   Can not access a needed shared library
+679  0x00079308 0x080c1308 36   37   .rodata ascii   Accessing a corrupted shared library
+680  0x00079330 0x080c1330 31   32   .rodata ascii   .lib section in a.out corrupted
+681  0x00079350 0x080c1350 47   48   .rodata ascii   Attempting to link in too many shared libraries
+682  0x00079380 0x080c1380 37   38   .rodata ascii   Cannot exec a shared library directly
+683  0x000793a8 0x080c13a8 49   50   .rodata ascii   Invalid or incomplete multibyte or wide character
+684  0x000793dc 0x080c13dc 43   44   .rodata ascii   Interrupted system call should be restarted
+685  0x00079408 0x080c1408 30   31   .rodata ascii   Socket operation on non-socket
+686  0x00079428 0x080c1428 30   31   .rodata ascii   Protocol wrong type for socket
+687  0x00079448 0x080c1448 40   41   .rodata ascii   Address family not supported by protocol
+688  0x00079474 0x080c1474 31   32   .rodata ascii   Cannot assign requested address
+689  0x00079494 0x080c1494 35   36   .rodata ascii   Network dropped connection on reset
+690  0x000794b8 0x080c14b8 32   33   .rodata ascii   Software caused connection abort
+691  0x000794dc 0x080c14dc 39   40   .rodata ascii   Transport endpoint is already connected
+692  0x00079504 0x080c1504 35   36   .rodata ascii   Transport endpoint is not connected
+693  0x00079528 0x080c1528 45   46   .rodata ascii   Cannot send after transport endpoint shutdown
+694  0x00079558 0x080c1558 34   35   .rodata ascii   Too many references: cannot splice
+695  0x00079580 0x080c1580 8    9    .rodata ascii   t\t\f\b|\t\f\b
+696  0x000795a1 0x080c15a1 12   13   .rodata ascii   \n\f\b,\n\f\b@\n\f\b,
+697  0x000795ae 0x080c15ae 14   15   .rodata ascii   \f\bS\n\f\bj\n\f\b|\n\f\b
+698  0x000795d5 0x080c15d5 16   17   .rodata ascii   \n\f\b\n\v\f\b\e\v\f\b9\v\f\bP
+699  0x000795e6 0x080c15e6 14   15   .rodata ascii   \f\bM\v\f\b\\v\f\bk\v\f\b
+700  0x00079601 0x080c1601 4    5    .rodata ascii   \v\f\bp
+701  0x00079611 0x080c1611 7    8    .rodata ascii   \v\f\b\f\f\f\b
+702  0x00079619 0x080c1619 7    8    .rodata ascii   \f\f\b8\f\f\b
+703  0x00079628 0x080c1628 12   13   .rodata ascii   L\f\f\bg\f\f\bz\f\f\b
+704  0x0007964d 0x080c164d 23   24   .rodata ascii   \r\f\b,\r\f\b=\r\f\bX\r\f\bf\r\f\bo\r\f\b
+705  0x00079794 0x080c1794 4    6    .rodata utf8    ¹\a\b~ blocks=Latin-1 Supplement,Basic Latin
+706  0x000798b2 0x080c18b2 5    7    .rodata utf8    \a\bϺ\a\b blocks=Basic Latin,Greek and Coptic
+707  0x000799d6 0x080c19d6 5    7    .rodata utf8    \a\bҾ\a\b blocks=Basic Latin,Cyrillic
+708  0x000799e2 0x080c19e2 5    7    .rodata utf8    \a\bȾ\a\b blocks=Basic Latin,Latin Extended-B
+709  0x000799f2 0x080c19f2 5    7    .rodata utf8    \a\b¾\a\b blocks=Basic Latin,Latin-1 Supplement
+710  0x00079aee 0x080c1aee 6    8    .rodata utf8    \a\bſ\a\b\t blocks=Basic Latin,Latin Extended-A
+711  0x00079af6 0x080c1af6 6    8    .rodata utf8    \a\bڿ\a\b\t blocks=Basic Latin,Arabic
+712  0x00079c1a 0x080c1c1a 34   35   .rodata ascii   \a\b                0000000000000000
+713  0x00079c40 0x080c1c40 32   132  .rodata utf32le                 0000000000000000
+714  0x00079cc4 0x080c1cc4 5    6    .rodata ascii   ide.c
+715  0x00079cca 0x080c1cca 9    10   .rodata ascii   _IO_fwide
+716  0x00079d58 0x080c1d58 4    5    .rodata ascii   `6\t\b
+717  0x00079d92 0x080c1d92 4    5    .rodata ascii   \a\bPI
+718  0x00079dd3 0x080c1dd3 9    10   .rodata ascii   \bstrops.c
+719  0x00079ddd 0x080c1ddd 16   17   .rodata ascii   offset >= oldend
+720  0x00079dee 0x080c1dee 15   16   .rodata ascii   enlarge_userbuf
+721  0x00079e12 0x080c1e12 4    5    .rodata ascii   \a\bPI
+722  0x00079e53 0x080c1e53 10   11   .rodata ascii   \bwcrtomb.c
+723  0x00079e5e 0x080c1e5e 9    10   .rodata ascii   __wcrtomb
+724  0x00079e68 0x080c1e68 159  160  .rodata ascii   status == __GCONV_OK || status == __GCONV_EMPTY_INPUT || status == __GCONV_ILLEGAL_INPUT || status == __GCONV_INCOMPLETE_INPUT || status == __GCONV_FULL_OUTPUT
+725  0x00079f08 0x080c1f08 11   12   .rodata ascii   wcsrtombs.c
+726  0x00079f14 0x080c1f14 25   26   .rodata ascii   data.__outbuf[-1] == '\0'
+727  0x00079f2e 0x080c1f2e 11   12   .rodata ascii   __wcsrtombs
+728  0x00079f3c 0x080c1f3c 38   39   .rodata ascii   data.__outbuf != (unsigned char *) dst
+729  0x00079f64 0x080c1f64 31   32   .rodata ascii   ((data.__statep)->__count == 0)
+730  0x00079f84 0x080c1f84 12   13   .rodata ascii   mbsnrtowcs.c
+731  0x00079f91 0x080c1f91 10   11   .rodata ascii   result > 0
+732  0x00079f9c 0x080c1f9c 12   13   .rodata ascii   __mbsnrtowcs
+733  0x00079fa9 0x080c1fa9 13   14   .rodata ascii   mbsrtowcs_l.c
+734  0x00079fb7 0x080c1fb7 13   14   .rodata ascii   __mbsrtowcs_l
+735  0x00079fc8 0x080c1fc8 40   41   .rodata ascii   ((wchar_t *) data.__outbuf)[-1] == L'\0'
+736  0x00079ff5 0x080c1ff5 10   11   .rodata ascii   %[^0-9,+-]
+737  0x0007a000 0x080c2000 11   12   .rodata ascii   %hu:%hu:%hu
+738  0x0007a00c 0x080c200c 14   15   .rodata ascii   M%hu.%hu.%hu%n
+739  0x0007a01e 0x080c201e 14   15   .rodata ascii   /etc/localtime
+740  0x0007a02d 0x080c202d 9    10   .rodata ascii   Universal
+741  0x0007a03b 0x080c203b 8    9    .rodata ascii   tzfile.c
+742  0x0007a044 0x080c2044 14   15   .rodata ascii   num_types == 2
+743  0x0007a053 0x080c2053 14   15   .rodata ascii   num_types == 1
+744  0x0007a066 0x080c2066 5    6    .rodata ascii   TZDIR
+745  0x0007a06c 0x080c206c 4    5    .rodata ascii   TZif
+746  0x0007a071 0x080c2071 10   11   .rodata ascii   posixrules
+747  0x0007a07c 0x080c207c 16   17   .rodata ascii   __tzfile_compute
+748  0x0007a08d 0x080c208d 13   14   .rodata ascii   __tzfile_read
+749  0x0007a09b 0x080c209b 19   20   .rodata ascii   /usr/share/zoneinfo
+750  0x0007a0b0 0x080c20b0 2044 2044 .rodata ascii   __extension__ ({ size_t __s1_len, __s2_len; (__builtin_constant_p (&zone_names[info->idx]) && __builtin_constant_p (__tzname[tp->tm_isdst]) && (__s1_len = strlen (&zone_names[info->idx]), __s2_len = strlen (__tzname[tp->tm_isdst]), (!((size_t)(const void *)((&zone_names[info->idx]) + 1) - (size_t)(const void *)(&zone_names[info->idx]) == 1) || __s1_len >= 4) && (!((size_t)(const void *)((__tzname[tp->tm_isdst]) + 1) - (size_t)(const void *)(__tzname[tp->tm_isdst]) == 1) || __s2_len >= 4)) ? __builtin_strcmp (&zone_names[info->idx], __tzname[tp->tm_isdst]) : (__builtin_constant_p (&zone_names[info->idx]) && ((size_t)(const void *)((&zone_names[info->idx]) + 1) - (size_t)(const void *)(&zone_names[info->idx]) == 1) && (__s1_len = strlen (&zone_names[info->idx]), __s1_len < 4) ? (__builtin_constant_p (__tzname[tp->tm_isdst]) && ((size_t)(const void *)((__tzname[tp->tm_isdst]) + 1) - (size_t)(const void *)(__tzname[tp->tm_isdst]) == 1) ? __builtin_strcmp (&zone_names[info->idx], __tzname[tp->tm_isdst]) : (__extension__ ({ __const unsigned char *__s2 = (__const unsigned char *) (__const char *) (__tzname[tp->tm_isdst]); register int __result = (((__const unsigned char *) (__const char *) (&zone_names[info->idx]))[0] - __s2[0]); if (__s1_len > 0 && __result == 0) { __result = (((__const unsigned char *) (__const char *) (&zone_names[info->idx]))[1] - __s2[1]); if (__s1_len > 1 && __result == 0) { __result = (((__const unsigned char *) (__const char *) (&zone_names[info->idx]))[2] - __s2[2]); if (__s1_len > 2 && __result == 0) __result = (((__const unsigned char *) (__const char *) (&zone_names[info->idx]))[3] - __s2[3]); } } __result; }))) : (__builtin_constant_p (__tzname[tp->tm_isdst]) && ((size_t)(const void *)((__tzname[tp->tm_isdst]) + 1) - (size_t)(const void *)(__tzname[tp->tm_isdst]) == 1) && (__s2_len = strlen (__tzname[tp->tm_isdst]), __s2_len < 4) ? (__builtin_constant_p (&zone_names[info->idx]) && ((size_t)(const void *)((&zone_names[info->idx]) + 1) - (size_t)(const void *)(&zone_names[info->idx]) == 1
+751  0x0007a8ac 0x080c28ac 795  796  .rodata ascii   ) ? __builtin_strcmp (&zone_names[info->idx], __tzname[tp->tm_isdst]) : (__extension__ ({ __const unsigned char *__s1 = (__const unsigned char *) (__const char *) (&zone_names[info->idx]); register int __result = __s1[0] - ((__const unsigned char *) (__const char *) (__tzname[tp->tm_isdst]))[0]; if (__s2_len > 0 && __result == 0) { __result = (__s1[1] - ((__const unsigned char *) (__const char *) (__tzname[tp->tm_isdst]))[1]); if (__s2_len > 1 && __result == 0) { __result = (__s1[2] - ((__const unsigned char *) (__const char *) (__tzname[tp->tm_isdst]))[2]); if (__s2_len > 2 && __result == 0) __result = (__s1[3] - ((__const unsigned char *) (__const char *) (__tzname[tp->tm_isdst]))[3]); } } __result; }))) : __builtin_strcmp (&zone_names[info->idx], __tzname[tp->tm_isdst])))); }) == 0
+752  0x0007abc8 0x080c2bc8 5    6    .rodata ascii   %H:%M
+753  0x0007abce 0x080c2bce 8    9    .rodata ascii   %H:%M:%S
+754  0x0007abd7 0x080c2bd7 8    9    .rodata ascii   %m/%d/%y
+755  0x0007abe0 0x080c2be0 8    9    .rodata ascii   %Y-%m-%d
+756  0x0007abe9 0x080c2be9 11   12   .rodata ascii   %I:%M:%S %p
+757  0x0007acf9 0x080c2cf9 15   16   .rodata ascii   &\b\b66\b\b~2\b\bm3\b\b
+758  0x0007ad19 0x080c2d19 7    8    .rodata ascii   5\b\bL5\b\b
+759  0x0007ad29 0x080c2d29 7    8    .rodata ascii   &\b\by5\b\b
+760  0x0007ad35 0x080c2d35 7    8    .rodata ascii   &\b\b=+\b\b
+761  0x0007ad3d 0x080c2d3d 15   16   .rodata ascii   &\b\b=,\b\bG-\b\bs-\b\b
+762  0x0007ad55 0x080c2d55 11   12   .rodata ascii   -\b\b0.\b\ba.\b\b
+763  0x0007ad81 0x080c2d81 7    8    .rodata ascii   0\b\bl1\b\b
+764  0x0007ad9d 0x080c2d9d 11   12   .rodata ascii   &\b\b\e2\b\bQ2\b\b
+765  0x0007adad 0x080c2dad 7    8    .rodata ascii   8\b\b(9\b\b
+766  0x0007adc5 0x080c2dc5 7    8    .rodata ascii   9\b\bn:\b\b
+767  0x0007add5 0x080c2dd5 11   12   .rodata ascii   7\b\b%7\b\bV7\b\b
+768  0x0007ade1 0x080c2de1 13   14   .rodata ascii   7\b\bgetgrnam_r
+769  0x0007adef 0x080c2def 11   12   .rodata ascii   GETCONF_DIR
+770  0x0007adfb 0x080c2dfb 16   17   .rodata ascii   /usr/lib/getconf
+771  0x0007ae0c 0x080c2e0c 17   18   .rodata ascii   ! "cannot happen"
+772  0x0007ae1e 0x080c2e1e 11   12   .rodata ascii   offset == 2
+773  0x0007ae2a 0x080c2e2a 28   29   .rodata ascii   /proc/sys/kernel/ngroups_max
+774  0x0007ae47 0x080c2e47 10   11   .rodata ascii   LP64_OFF64
+775  0x0007ae52 0x080c2e52 12   13   .rodata ascii   LPBIG_OFFBIG
+776  0x0007ae5f 0x080c2e5f 26   27   .rodata ascii   /proc/sys/kernel/rtsig-max
+777  0x0007ae7a 0x080c2e7a 11   12   .rodata ascii   handle_i486
+778  0x0007ae86 0x080c2e86 16   17   .rodata ascii   intel_check_word
+779  0x0007ae97 0x080c2e97 10   11   .rodata ascii   handle_amd
+780  0x0007aea4 0x080c2ea4 41   42   .rodata ascii   ../sysdeps/unix/sysv/linux/i386/sysconf.c
+781  0x0007aee1 0x080c2ee1 15   16   .rodata ascii   T\b\bhT\b\bcT\b\bMT\b\b
+782  0x0007aef1 0x080c2ef1 7    8    .rodata ascii   T\b\b8T\b\b
+783  0x0007af01 0x080c2f01 7    8    .rodata ascii   T\b\b T\b\b
+784  0x0007af09 0x080c2f09 7    8    .rodata ascii   T\b\b T\b\b
+785  0x0007af11 0x080c2f11 7    8    .rodata ascii   T\b\b T\b\b
+786  0x0007af19 0x080c2f19 27   28   .rodata ascii   T\b\b T\b\b T\b\b T\b\b T\b\b T\b\b T\b\b
+787  0x0007af35 0x080c2f35 11   12   .rodata ascii   T\b\b%U\b\b!U\b\b
+788  0x0007af41 0x080c2f41 11   12   .rodata ascii   U\b\b%U\b\b!U\b\b
+789  0x0007af79 0x080c2f79 7    8    .rodata ascii   Y\b\b\fZ\b\b
+790  0x0007afc9 0x080c2fc9 11   12   .rodata ascii   Z\b\b7X\b\b7X\b\b
+791  0x0007afd5 0x080c2fd5 15   16   .rodata ascii   Y\b\bKY\b\b7X\b\bVZ\b\b
+792  0x0007afe9 0x080c2fe9 23   24   .rodata ascii   Z\b\b\Y\b\b7X\b\bKY\b\b7X\b\b7X\b\b
+793  0x0007b001 0x080c3001 7    8    .rodata ascii   Y\b\bfY\b\b
+794  0x0007b015 0x080c3015 11   12   .rodata ascii   W\b\b\Y\b\bfY\b\b
+795  0x0007b021 0x080c3021 7    8    .rodata ascii   Y\b\bfY\b\b
+796  0x0007b031 0x080c3031 11   12   .rodata ascii   Z\b\b7X\b\b7X\b\b
+797  0x0007b041 0x080c3041 59   60   .rodata ascii   Z\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\buY\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b
+798  0x0007b081 0x080c3081 19   20   .rodata ascii   Z\b\buY\b\buY\b\buZ\b\b\Y\b\b
+799  0x0007b095 0x080c3095 15   16   .rodata ascii   Y\b\buY\b\b\t[\b\b7X\b\b
+800  0x0007b0b9 0x080c30b9 11   12   .rodata ascii   Z\b\b/Z\b\b<Z\b\b
+801  0x0007b0c5 0x080c30c5 11   12   .rodata ascii   Z\b\beZ\b\bKY\b\b
+802  0x0007b0ed 0x080c30ed 11   12   .rodata ascii   Z\b\b7X\b\b7X\b\b
+803  0x0007b10d 0x080c310d 7    8    .rodata ascii   Y\b\bKY\b\b
+804  0x0007b115 0x080c3115 11   12   .rodata ascii   Z\b\b\Y\b\b\Y\b\b
+805  0x0007b135 0x080c3135 7    8    .rodata ascii   Y\b\bLZ\b\b
+806  0x0007b13d 0x080c313d 15   16   .rodata ascii   Y\b\b7X\b\b7X\b\b%Z\b\b
+807  0x0007b14d 0x080c314d 23   24   .rodata ascii   Z\b\bfY\b\bKY\b\bKY\b\bKY\b\bKY\b\b
+808  0x0007b169 0x080c3169 11   12   .rodata ascii   X\b\b)Y\b\b:Y\b\b
+809  0x0007b185 0x080c3185 15   16   .rodata ascii   Z\b\b7X\b\b7X\b\b7X\b\b
+810  0x0007b195 0x080c3195 63   64   .rodata ascii   Z\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b
+811  0x0007b1dd 0x080c31dd 7    8    .rodata ascii   X\b\b7X\b\b
+812  0x0007b1e5 0x080c31e5 7    8    .rodata ascii   X\b\b7X\b\b
+813  0x0007b1ed 0x080c31ed 19   20   .rodata ascii   Z\b\b7X\b\b7X\b\b7X\b\b7X\b\b
+814  0x0007b201 0x080c3201 47   48   .rodata ascii   Z\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b7X\b\b
+815  0x0007b235 0x080c3235 11   12   .rodata ascii   X\b\b)Y\b\b:Y\b\b
+816  0x0007b241 0x080c3241 75   76   .rodata ascii   Z\b\b7X\b\b7X\b\b7X\b\b7X\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\bUY\b\b
+817  0x0007b350 0x080c3350 4    20   .rodata utf32le  \b¹䀀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs Extension A
+818  0x0007b364 0x080c3364 4    20   .rodata utf32le  \n¼  blocks=Basic Latin,Latin-1 Supplement,General Punctuation
+819  0x0007b378 0x080c3378 4    20   .rodata utf32le  \f¼䀀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs Extension A
+820  0x0007b3a0 0x080c33a0 8    36   .rodata utf32le @#Â􀀀\b@%Â blocks=Basic Latin,Latin-1 Supplement,Supplementary Private Use Area-B
+821  0x0007b3c4 0x080c33c4 4    20   .rodata utf32le \b@)Â blocks=Basic Latin,Latin-1 Supplement
+822  0x0007b3d8 0x080c33d8 15   64   .rodata utf32le \b@,¼耀\b@0¹耀\b@9¿𠀀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs,CJK Unified Ideographs Extension B
+823  0x0007b42c 0x080c342c 4    20   .rodata utf32le @;¿𠀀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs Extension B
+824  0x0007b47c 0x080c347c 4    20   .rodata utf32le @A¿𠀀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs Extension B
+825  0x0007b4b8 0x080c34b8 4    20   .rodata utf32le  D¿􀀀 blocks=Basic Latin,Latin-1 Supplement,Supplementary Private Use Area-B
+826  0x0007b504 0x080c3504 4    20   .rodata utf32le \b@H¿ blocks=Basic Latin,Latin-1 Supplement
+827  0x0007b518 0x080c3518 4    20   .rodata utf32le \f@I¿ blocks=Basic Latin,Latin-1 Supplement
+828  0x0007b540 0x080c3540 4    20   .rodata utf32le \f@KÂ blocks=Basic Latin,Latin-1 Supplement
+829  0x0007b568 0x080c3568 4    20   .rodata utf32le \f@MÂ blocks=Basic Latin,Latin-1 Supplement
+830  0x0007b594 0x080c3594 9    40   .rodata utf32le @`¼䀀\b@f¼  blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs Extension A,General Punctuation
+831  0x0007b5bc 0x080c35bc 4    20   .rodata utf32le @g¼䀀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs Extension A
+832  0x0007b5d0 0x080c35d0 4    20   .rodata utf32le @h¼耀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs
+833  0x0007b5e4 0x080c35e4 13   56   .rodata utf32le @x¿􀀀\b@y¿𠀀\b@z¿ blocks=Basic Latin,Latin-1 Supplement,Supplementary Private Use Area-B,CJK Unified Ideographs Extension B
+834  0x0007b61c 0x080c361c 4    20   .rodata utf32le \b@{¿ blocks=Basic Latin,Latin-1 Supplement
+835  0x0007b630 0x080c3630 9    40   .rodata utf32le \b@|¿􀀀\b@}¿ blocks=Basic Latin,Latin-1 Supplement,Supplementary Private Use Area-B
+836  0x0007b6ec 0x080c36ec 35   36   .rodata ascii   ../sysdeps/unix/sysv/linux/getcwd.c
+837  0x0007b710 0x080c3710 53   54   .rodata ascii   __libc_errno != 34 || buf != ((void *)0) || size != 0
+838  0x0007b746 0x080c3746 8    9    .rodata ascii   __getcwd
+839  0x0007b74f 0x080c374f 13   14   .rodata ascii   /proc/meminfo
+840  0x0007b75d 0x080c375d 15   16   .rodata ascii   MemFree: %ld kB
+841  0x0007b76d 0x080c376d 16   17   .rodata ascii   MemTotal: %ld kB
+842  0x0007b77e 0x080c377e 10   11   .rodata ascii   /proc/stat
+843  0x0007b789 0x080c3789 13   14   .rodata ascii   /proc/cpuinfo
+844  0x0007b797 0x080c3797 9    10   .rodata ascii   processor
+845  0x0007b7a1 0x080c37a1 23   24   .rodata ascii   /sys/devices/system/cpu
+846  0x0007b7b9 0x080c37b9 18   19   .rodata ascii   libnss_%s.so.%d.%d
+847  0x0007b7cc 0x080c37cc 7    8    .rodata ascii   SUCCESS
+848  0x0007b7d4 0x080c37d4 7    8    .rodata ascii   UNAVAIL
+849  0x0007b7dc 0x080c37dc 8    9    .rodata ascii   NOTFOUND
+850  0x0007b7e5 0x080c37e5 8    9    .rodata ascii   TRYAGAIN
+851  0x0007b7ee 0x080c37ee 6    7    .rodata ascii   RETURN
+852  0x0007b7f5 0x080c37f5 8    9    .rodata ascii   CONTINUE
+853  0x0007b7fe 0x080c37fe 28   29   .rodata ascii   illegal status in __nss_next
+854  0x0007b81b 0x080c381b 18   19   .rodata ascii   /etc/nsswitch.conf
+855  0x0007b82e 0x080c382e 27   28   .rodata ascii   nis [NOTFOUND=return] files
+856  0x0007b84a 0x080c384a 17   18   .rodata ascii   libnss_files.so.2
+857  0x0007b860 0x080c3860 7    8    .rodata ascii   aliases
+858  0x0007b870 0x080c3870 6    7    .rodata ascii   ethers
+859  0x0007b880 0x080c3880 5    6    .rodata ascii   group
+860  0x0007b88d 0x080c388d 8    9    .rodata ascii   [\r\bhosts
+861  0x0007b8a0 0x080c38a0 8    9    .rodata ascii   netgroup
+862  0x0007b8b0 0x080c38b0 8    9    .rodata ascii   networks
+863  0x0007b8c0 0x080c38c0 6    7    .rodata ascii   passwd
+864  0x0007b8d0 0x080c38d0 9    10   .rodata ascii   protocols
+865  0x0007b8e0 0x080c38e0 9    10   .rodata ascii   publickey
+866  0x0007b900 0x080c3900 8    9    .rodata ascii   services
+867  0x0007b910 0x080c3910 6    7    .rodata ascii   shadow
+868  0x0007b920 0x080c3920 30   31   .rodata ascii   compat [NOTFOUND=return] files
+869  0x0007b93f 0x080c393f 5    6    .rodata ascii   group
+870  0x0007b945 0x080c3945 6    7    .rodata ascii   passwd
+871  0x0007b94c 0x080c394c 14   15   .rodata ascii   nscd_getgr_r.c
+872  0x0007b95b 0x080c395b 12   13   .rodata ascii   nscd_getgr_r
+873  0x0007b968 0x080c3968 49   50   .rodata ascii   ((uintptr_t) len & (__alignof__ (*len) - 1)) == 0
+874  0x0007b99a 0x080c399a 5    6    .rodata ascii   hosts
+875  0x0007b9a0 0x080c39a0 8    9    .rodata ascii   services
+876  0x0007b9a9 0x080c39a9 13   14   .rodata ascii   nscd_helper.c
+877  0x0007b9b7 0x080c39b7 20   21   .rodata ascii   mapped->counter == 0
+878  0x0007b9cc 0x080c39cc 12   13   .rodata ascii   __nscd_unmap
+879  0x0007b9d9 0x080c39d9 6    7    .rodata ascii   ORIGIN
+880  0x0007b9e0 0x080c39e0 8    9    .rodata ascii   PLATFORM
+881  0x0007b9ed 0x080c39ed 27   28   .rodata ascii   cannot allocate name record
+882  0x0007ba09 0x080c3a09 9    10   .rodata ascii   dl-load.c
+883  0x0007ba13 0x080c3a13 20   21   .rodata ascii   lastp != ((void *)0)
+884  0x0007ba28 0x080c3a28 13   14   .rodata ascii    search path=
+885  0x0007ba3a 0x080c3a3a 20   21   .rodata ascii   \t\t(%s from file %s)\n
+886  0x0007ba4f 0x080c3a4f 7    8    .rodata ascii   \t\t(%s)\n
+887  0x0007ba57 0x080c3a57 24   25   .rodata ascii   l->l_next == ((void *)0)
+888  0x0007ba70 0x080c3a70 14   15   .rodata ascii   file too short
+889  0x0007ba7f 0x080c3a7f 21   22   .rodata ascii   cannot read file data
+890  0x0007ba95 0x080c3a95 18   19   .rodata ascii   invalid ELF header
+891  0x0007baa8 0x080c3aa8 23   24   .rodata ascii   ELF file OS ABI invalid
+892  0x0007bac0 0x080c3ac0 28   29   .rodata ascii   ELF file ABI version invalid
+893  0x0007badd 0x080c3add 14   15   .rodata ascii   internal error
+894  0x0007baec 0x080c3aec 17   18   .rodata ascii     trying file=%s\n
+895  0x0007bafe 0x080c3afe 25   26   .rodata ascii   cannot stat shared object
+896  0x0007bb18 0x080c3b18 20   21   .rodata ascii   r->r_state == RT_ADD
+897  0x0007bb2d 0x080c3b2d 26   27   .rodata ascii   cannot map zero-fill pages
+898  0x0007bb48 0x080c3b48 14   15   .rodata ascii   dynamic-link.h
+899  0x0007bb57 0x080c3b57 28   29   .rodata ascii   cannot close file descriptor
+900  0x0007bb74 0x080c3b74 24   25   .rodata ascii   cannot create searchlist
+901  0x0007bb8d 0x080c3b8d 18   19   .rodata ascii   system search path
+902  0x0007bba0 0x080c3ba0 24   25   .rodata ascii   pelem->dirname[0] == '/'
+903  0x0007bbbc 0x080c3bbc 22   23   .rodata ascii   (l)->l_name[0] == '\0'
+904  0x0007bbd3 0x080c3bd3 5    6    .rodata ascii   RPATH
+905  0x0007bbd9 0x080c3bd9 7    8    .rodata ascii   RUNPATH
+906  0x0007bbe1 0x080c3be1 9    10   .rodata ascii   nsid >= 0
+907  0x0007bbeb 0x080c3beb 8    9    .rodata ascii   nsid < 1
+908  0x0007bbf4 0x080c3bf4 27   28   .rodata ascii   wrong ELF class: ELFCLASS64
+909  0x0007bc10 0x080c3c10 27   28   .rodata ascii   expand_dynamic_string_token
+910  0x0007bc2c 0x080c3c2c 14   15   .rodata ascii   _dl_map_object
+911  0x0007bc3b 0x080c3c3b 18   19   .rodata ascii   add_name_to_object
+912  0x0007bc4e 0x080c3c4e 22   23   .rodata ascii   _dl_map_object_from_fd
+913  0x0007bc65 0x080c3c65 20   21   .rodata ascii   elf_get_dynamic_info
+914  0x0007bc7a 0x080c3c7a 14   15   .rodata ascii   _dl_init_paths
+915  0x0007bc8c 0x080c3c8c 35   36   .rodata ascii   cannot create cache for search path
+916  0x0007bcb0 0x080c3cb0 40   41   .rodata ascii   ELF file data encoding not little-endian
+917  0x0007bcdc 0x080c3cdc 49   50   .rodata ascii   ELF file version ident does not match current one
+918  0x0007bd10 0x080c3d10 43   44   .rodata ascii   ELF file version does not match current one
+919  0x0007bd3c 0x080c3d3c 37   38   .rodata ascii   only ET_DYN and ET_EXEC can be loaded
+920  0x0007bd64 0x080c3d64 42   43   .rodata ascii   ELF file's phentsize not the expected size
+921  0x0007bd90 0x080c3d90 36   37   .rodata ascii   file=%s [%lu];  generating link map\n
+922  0x0007bdb8 0x080c3db8 38   39   .rodata ascii   cannot create shared object descriptor
+923  0x0007bde0 0x080c3de0 52   53   .rodata ascii   ELF load command address/offset not properly aligned
+924  0x0007be18 0x080c3e18 34   35   .rodata ascii   cannot dynamically load executable
+925  0x0007be3c 0x080c3e3c 32   33   .rodata ascii   cannot change memory protections
+926  0x0007be60 0x080c3e60 43   44   .rodata ascii   ELF load command alignment not page-aligned
+927  0x0007be8c 0x080c3e8c 54   55   .rodata ascii   cannot allocate TLS data structures for initial thread
+928  0x0007bec4 0x080c3ec4 36   37   .rodata ascii   object file has no loadable segments
+929  0x0007beec 0x080c3eec 40   41   .rodata ascii   failed to map segment from shared object
+930  0x0007bf18 0x080c3f18 34   35   .rodata ascii   object file has no dynamic section
+931  0x0007bf3c 0x080c3f3c 55   56   .rodata ascii   info[20]->d_un.d_val == 17 || info[20]->d_un.d_val == 7
+932  0x0007bf74 0x080c3f74 42   43   .rodata ascii   info[9]->d_un.d_val == sizeof (Elf32_Rela)
+933  0x0007bfa0 0x080c3fa0 42   43   .rodata ascii   info[19]->d_un.d_val == sizeof (Elf32_Rel)
+934  0x0007bfcc 0x080c3fcc 34   35   .rodata ascii   shared object cannot be dlopen()ed
+935  0x0007bff0 0x080c3ff0 41   42   .rodata ascii   cannot allocate memory for program header
+936  0x0007c01c 0x080c401c 56   57   .rodata ascii   cannot enable executable stack as shared object requires
+937  0x0007c058 0x080c4058 99   100  .rodata ascii     dynamic: 0x%0*lx  base: 0x%0*lx   size: 0x%0*Zx\n    entry: 0x%0*lx  phdr: 0x%0*lx  phnum:   %*u\n\n
+938  0x0007c0bc 0x080c40bc 31   32   .rodata ascii   cannot create search path array
+939  0x0007c0dc 0x080c40dc 32   33   .rodata ascii   cannot create RUNPATH/RPATH copy
+940  0x0007c100 0x080c4100 36   37   .rodata ascii   \nfile=%s [%lu];  needed by %s [%lu]\n
+941  0x0007c128 0x080c4128 33   34   .rodata ascii   find library=%s [%lu]; searching\n
+942  0x0007c14c 0x080c414c 30   31   .rodata ascii   cannot open shared object file
+943  0x0007c180 0x080c4180 5    6    .rodata ascii   /lib/
+944  0x0007c186 0x080c4186 9    10   .rodata ascii   /usr/lib/
+945  0x0007c190 0x080c4190 20   21   .rodata ascii   /lib/i486-linux-gnu/
+946  0x0007c1a5 0x080c41a5 24   25   .rodata ascii   /usr/lib/i486-linux-gnu/
+947  0x0007c1f0 0x080c41f0 16   17   .rodata ascii   /etc/ld.so.cache
+948  0x0007c201 0x080c4201 17   18   .rodata ascii    search cache=%s\n
+949  0x0007c213 0x080c4213 11   12   .rodata ascii   ld.so-1.7.0
+950  0x0007c21f 0x080c421f 20   21   .rodata ascii   glibc-ld.so.cache1.1
+951  0x0007c234 0x080c4234 10   11   .rodata ascii   dl-cache.c
+952  0x0007c23f 0x080c423f 20   21   .rodata ascii   cache != ((void *)0)
+953  0x0007c254 0x080c4254 18   19   .rodata ascii   /etc/ld.so.nohwcap
+954  0x0007c267 0x080c4267 21   22   .rodata ascii   _dl_load_cache_lookup
+955  0x0007c27d 0x080c427d 11   12   .rodata ascii   dl-lookup.c
+956  0x0007c289 0x080c4289 11   12   .rodata ascii   do-lookup.h
+957  0x0007c295 0x080c4295 22   23   .rodata ascii   version != ((void *)0)
+958  0x0007c2ac 0x080c42ac 21   22   .rodata ascii    (no version symbols)
+959  0x0007c2c2 0x080c42c2 7    8    .rodata ascii   symbol 
+960  0x0007c2ca 0x080c42ca 10   11   .rodata ascii   , version 
+961  0x0007c2d5 0x080c42d5 21   22   .rodata ascii    not defined in file 
+962  0x0007c2eb 0x080c42eb 25   26   .rodata ascii    with link time reference
+963  0x0007c305 0x080c4305 14   15   .rodata ascii   <main program>
+964  0x0007c314 0x080c4314 16   17   .rodata ascii   relocation error
+965  0x0007c325 0x080c4325 19   20   .rodata ascii   symbol lookup error
+966  0x0007c339 0x080c4339 9    10   .rodata ascii   protected
+967  0x0007c343 0x080c4343 6    7    .rodata ascii   normal
+968  0x0007c34a 0x080c434a 6    7    .rodata ascii    [%s]\n
+969  0x0007c351 0x080c4351 14   15   .rodata ascii   _dl_setup_hash
+970  0x0007c360 0x080c4360 18   19   .rodata ascii   undefined symbol: 
+971  0x0007c373 0x080c4373 19   20   .rodata ascii   _dl_lookup_symbol_x
+972  0x0007c387 0x080c4387 11   12   .rodata ascii   check_match
+973  0x0007c394 0x080c4394 44   45   .rodata ascii   (bitmask_nwords & (bitmask_nwords - 1)) == 0
+974  0x0007c3c4 0x080c43c4 79   80   .rodata ascii   version->filename == ((void *)0) || ! _dl_name_match_p (version->filename, map)
+975  0x0007c414 0x080c4414 36   37   .rodata ascii   symbol=%s;  lookup in file=%s [%lu]\n
+976  0x0007c43c 0x080c443c 92   93   .rodata ascii   version == ((void *)0) || (flags & ~(DL_LOOKUP_ADD_DEPENDENCY | DL_LOOKUP_GSCOPE_LOCK)) == 0
+977  0x0007c49c 0x080c449c 61   62   .rodata ascii   \nfile=%s [%lu];  needed by %s [%lu] (relocation dependency)\n\n
+978  0x0007c4dc 0x080c44dc 49   50   .rodata ascii   binding file %s [%lu] to %s [%lu]: %s symbol `%s'
+979  0x0007c510 0x080c4510 42   43   .rodata ascii   cannot allocate memory in static TLS block
+980  0x0007c53c 0x080c453c 43   44   .rodata ascii   cannot make segment writable for relocation
+981  0x0007c568 0x080c4568 73   74   .rodata ascii   %s: Symbol `%s' has different size in shared object, consider re-linking\n
+982  0x0007c5b4 0x080c45b4 33   34   .rodata ascii   %s: no PLTREL found in object %s\n
+983  0x0007c5d8 0x080c45d8 53   54   .rodata ascii   %s: out of memory to store relocation results for %s\n
+984  0x0007c610 0x080c4610 39   40   .rodata ascii   cannot restore segment prot after reloc
+985  0x0007c638 0x080c4638 35   36   .rodata ascii   map->l_tls_modid <= dtv[-1].counter
+986  0x0007c65c 0x080c465c 7    8    .rodata ascii    (lazy)
+987  0x0007c664 0x080c4664 29   30   .rodata ascii   \nrelocation processing: %s%s\n
+988  0x0007c682 0x080c4682 28   29   .rodata ascii   ../sysdeps/i386/dl-machine.h
+989  0x0007c69f 0x080c469f 29   30   .rodata ascii   ((reloc->r_info) & 0xff) == 8
+990  0x0007c6bd 0x080c46bd 22   23   .rodata ascii   <program name unknown>
+991  0x0007c6d4 0x080c46d4 10   11   .rodata ascii   dl-reloc.c
+992  0x0007c6df 0x080c46df 24   25   .rodata ascii   elf_machine_rel_relative
+993  0x0007c6f8 0x080c46f8 28   29   .rodata ascii   _dl_nothread_init_static_tls
+994  0x0007c97e 0x080c497e 26   27   .rodata ascii   \b\bunexpected reloc type 0x
+995  0x0007c9a0 0x080c49a0 28   29   .rodata ascii   unexpected PLT reloc type 0x
+996  0x0007c9c0 0x080c49c0 58   59   .rodata ascii   cannot apply additional memory protection after relocation
+997  0x0007ca00 0x080c4a00 21   22   .rodata ascii   DYNAMIC LINKER BUG!!!
+998  0x0007ca16 0x080c4a16 19   20   .rodata ascii   %s: %s: %s%s%s%s%s\n
+999  0x0007ca2a 0x080c4a2a 9    10   .rodata ascii   continued
+1000 0x0007ca34 0x080c4a34 5    6    .rodata ascii   fatal
+1001 0x0007ca3a 0x080c4a3a 23   24   .rodata ascii   %s: error: %s: %s (%s)\n
+1002 0x0007ca52 0x080c4a52 13   14   .rodata ascii   out of memory
+1003 0x0007ca60 0x080c4a60 36   37   .rodata ascii   error while loading shared libraries
+1004 0x0007ca85 0x080c4a85 9    10   .rodata ascii   dl-misc.c
+1005 0x0007ca8f 0x080c4a8f 9    10   .rodata ascii   niov < 64
+1006 0x0007ca99 0x080c4a99 28   29   .rodata ascii   ! "invalid format specifier"
+1007 0x0007cab6 0x080c4ab6 18   19   .rodata ascii   _dl_debug_vdprintf
+1008 0x0007cacc 0x080c4acc 31   32   .rodata ascii   pid >= 0 && sizeof (pid_t) <= 4
+1009 0x0007caec 0x080c4aec 8    9    .rodata ascii   dl-tls.c
+1010 0x0007caf5 0x080c4af5 8    9    .rodata ascii   idx == 0
+1011 0x0007cafe 0x080c4afe 6    7    .rodata ascii   dlopen
+1012 0x0007cb05 0x080c4b05 23   24   .rodata ascii   map->l_tls_modid == cnt
+1013 0x0007cb1d 0x080c4b1d 20   21   .rodata ascii   listp != ((void *)0)
+1014 0x0007cb32 0x080c4b32 19   20   .rodata ascii   _dl_add_to_slotinfo
+1015 0x0007cb46 0x080c4b46 21   22   .rodata ascii   _dl_allocate_tls_init
+1016 0x0007cb5c 0x080c4b5c 18   19   .rodata ascii   _dl_next_tls_modid
+1017 0x0007cb70 0x080c4b70 33   34   .rodata ascii   cannot create TLS data structures
+1018 0x0007cb94 0x080c4b94 33   34   .rodata ascii   result <= _dl_tls_max_dtv_idx + 1
+1019 0x0007cbb8 0x080c4bb8 33   34   .rodata ascii   result == _dl_tls_max_dtv_idx + 1
+1020 0x0007cbdc 0x080c4bdc 49   50   .rodata ascii   map->l_tls_blocksize >= map->l_tls_initimage_size
+1021 0x0007cc10 0x080c4c10 50   51   .rodata ascii   (size_t) map->l_tls_offset >= map->l_tls_blocksize
+1022 0x0007cc43 0x080c4c43 14   15   .rodata ascii   /proc/self/exe
+1023 0x0007cc52 0x080c4c52 17   18   .rodata ascii   linkval[0] == '/'
+1024 0x0007cc64 0x080c4c64 14   15   .rodata ascii   _dl_get_origin
+1025 0x0007cc74 0x080c4c74 38   39   .rodata ascii   ../sysdeps/unix/sysv/linux/dl-origin.c
+1026 0x0007cc9b 0x080c4c9b 25   26   .rodata ascii   invalid mode for dlopen()
+1027 0x0007ccb5 0x080c4cb5 9    10   .rodata ascii   dl-open.c
+1028 0x0007ccbf 0x080c4cbf 26   27   .rodata ascii   cannot extend global scope
+1029 0x0007ccda 0x080c4cda 13   14   .rodata ascii   ns == l->l_ns
+1030 0x0007cce8 0x080c4ce8 14   15   .rodata ascii   mode & 0x00004
+1031 0x0007ccf7 0x080c4cf7 24   25   .rodata ascii   cannot create scope list
+1032 0x0007cd10 0x080c4d10 26   27   .rodata ascii   imap->l_need_tls_init == 0
+1033 0x0007cd2b 0x080c4d2b 8    9    .rodata ascii   _dl_open
+1034 0x0007cd34 0x080c4d34 14   15   .rodata ascii   dl_open_worker
+1035 0x0007cd44 0x080c4d44 42   43   .rodata ascii   no more namespaces available for dlmopen()
+1036 0x0007cd70 0x080c4d70 37   38   .rodata ascii   invalid target namespace in dlmopen()
+1037 0x0007cd98 0x080c4d98 61   62   .rodata ascii   _dl_debug_initialize (0, args.nsid)->r_state == RT_CONSISTENT
+1038 0x0007cdd8 0x080c4dd8 62   63   .rodata ascii   _dl_debug_initialize (0, args->nsid)->r_state == RT_CONSISTENT
+1039 0x0007ce18 0x080c4e18 44   45   .rodata ascii   opening file=%s [%lu]; direct_opencount=%u\n\n
+1040 0x0007ce48 0x080c4e48 52   53   .rodata ascii   TLS generation counter wrapped!  Please report this.
+1041 0x0007ce7d 0x080c4e7d 10   11   .rodata ascii   dl-close.c
+1042 0x0007ce88 0x080c4e88 17   18   .rodata ascii   ! should_be_there
+1043 0x0007ce9a 0x080c4e9a 27   28   .rodata ascii   old_map->l_tls_modid == idx
+1044 0x0007ceb6 0x080c4eb6 14   15   .rodata ascii   idx == nloaded
+1045 0x0007cec5 0x080c4ec5 18   19   .rodata ascii   imap->l_ns == nsid
+1046 0x0007ced8 0x080c4ed8 25   26   .rodata ascii   \ncalling fini: %s [%lu]\n\n
+1047 0x0007cef2 0x080c4ef2 18   19   .rodata ascii   tmap->l_ns == nsid
+1048 0x0007cf05 0x080c4f05 7    8    .rodata ascii   dlclose
+1049 0x0007cf0d 0x080c4f0d 25   26   .rodata ascii   imap->l_type == lt_loaded
+1050 0x0007cf27 0x080c4f27 18   19   .rodata ascii   map->l_init_called
+1051 0x0007cf3a 0x080c4f3a 22   23   .rodata ascii   shared object not open
+1052 0x0007cf51 0x080c4f51 9    10   .rodata ascii   _dl_close
+1053 0x0007cf5b 0x080c4f5b 16   17   .rodata ascii   _dl_close_worker
+1054 0x0007cf6c 0x080c4f6c 15   16   .rodata ascii   remove_slotinfo
+1055 0x0007cf7c 0x080c4f7c 38   39   .rodata ascii   \nclosing file=%s; direct_opencount=%u\n
+1056 0x0007cfa4 0x080c4fa4 43   44   .rodata ascii   (*lp)->l_idx >= 0 && (*lp)->l_idx < nloaded
+1057 0x0007cfd0 0x080c4fd0 41   42   .rodata ascii   jmap->l_idx >= 0 && jmap->l_idx < nloaded
+1058 0x0007cffc 0x080c4ffc 64   65   .rodata ascii   imap->l_type == lt_loaded && (imap->l_flags_1 & 0x00000008) == 0
+1059 0x0007d040 0x080c5040 37   38   .rodata ascii   \nfile=%s [%lu];  destroying link map\n
+1060 0x0007d068 0x080c5068 109  110  .rodata ascii   TLS generation counter wrapped!  Please report as described in <http://www.gnu.org/software/libc/bugs.html>.\n
+1061 0x0007d0d6 0x080c50d6 13   14   .rodata ascii   _dl_open_hook
+1062 0x0007d0e4 0x080c50e4 13   14   .rodata ascii   GLIBC_PRIVATE
+1063 0x0007d0f2 0x080c50f2 6    7    .rodata ascii   IGNORE
+1064 0x0007d0fd 0x080c50fd 10   11   .rodata ascii    \v\bgconv.c
+1065 0x0007d108 0x080c5108 27   28   .rodata ascii   irreversible != ((void *)0)
+1066 0x0007d124 0x080c5124 7    8    .rodata ascii   __gconv
+1067 0x0007d12c 0x080c512c 47   48   .rodata ascii   outbuf != ((void *)0) && *outbuf != ((void *)0)
+1068 0x0007d15c 0x080c515c 19   20   .rodata ascii   gconv_trans_context
+1069 0x0007d170 0x080c5170 11   12   .rodata ascii   gconv_trans
+1070 0x0007d17c 0x080c517c 16   17   .rodata ascii   gconv_trans_init
+1071 0x0007d18d 0x080c518d 15   16   .rodata ascii   gconv_trans_end
+1072 0x0007d19d 0x080c519d 13   14   .rodata ascii   gconv_trans.c
+1073 0x0007d1ab 0x080c51ab 26   27   .rodata ascii   trans->name != ((void *)0)
+1074 0x0007d1c6 0x080c51c6 21   22   .rodata ascii   __gconv_translit_find
+1075 0x0007d1dc 0x080c51dc 5    6    .rodata ascii   ^[yY]
+1076 0x0007d1e2 0x080c51e2 5    6    .rodata ascii   ^[nN]
+1077 0x0007d229 0x080c5229 12   13   .rodata ascii   Q\f\bQT\f\bQT\f\bo
+1078 0x0007d264 0x080c5264 61   62   .rodata ascii   QT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\bV
+1079 0x0007d2a2 0x080c52a2 92   93   .rodata ascii   \v\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\bQT\f\bQT\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\b8R\f\bu'
+1080 0x0007d345 0x080c5345 12   13   .rodata ascii   S\f\bQT\f\bQT\f\b.
+1081 0x0007d35a 0x080c535a 5    6    .rodata ascii   \v\bSun
+1082 0x0007d378 0x080c5378 6    7    .rodata ascii   Sunday
+1083 0x0007d37f 0x080c537f 6    7    .rodata ascii   Monday
+1084 0x0007d386 0x080c5386 7    8    .rodata ascii   Tuesday
+1085 0x0007d38e 0x080c538e 9    10   .rodata ascii   Wednesday
+1086 0x0007d398 0x080c5398 8    9    .rodata ascii   Thursday
+1087 0x0007d3a1 0x080c53a1 6    7    .rodata ascii   Friday
+1088 0x0007d3a8 0x080c53a8 8    9    .rodata ascii   Saturday
+1089 0x0007d3e1 0x080c53e1 7    8    .rodata ascii   January
+1090 0x0007d3e9 0x080c53e9 8    9    .rodata ascii   February
+1091 0x0007d3f2 0x080c53f2 5    6    .rodata ascii   March
+1092 0x0007d3f8 0x080c53f8 5    6    .rodata ascii   April
+1093 0x0007d3fe 0x080c53fe 4    5    .rodata ascii   June
+1094 0x0007d403 0x080c5403 4    5    .rodata ascii   July
+1095 0x0007d408 0x080c5408 6    7    .rodata ascii   August
+1096 0x0007d40f 0x080c540f 9    10   .rodata ascii   September
+1097 0x0007d419 0x080c5419 7    8    .rodata ascii   October
+1098 0x0007d421 0x080c5421 8    9    .rodata ascii   November
+1099 0x0007d42a 0x080c542a 8    9    .rodata ascii   December
+1100 0x0007d439 0x080c5439 20   21   .rodata ascii   %a %b %e %H:%M:%S %Y
+1101 0x0007d452 0x080c5452 23   24   .rodata ascii   %a %b %e %H:%M:%S %Z %Y
+1102 0x0007d4dc 0x080c54dc 6    28   .rodata utf32le Sunday
+1103 0x0007d4f8 0x080c54f8 6    28   .rodata utf32le Monday
+1104 0x0007d514 0x080c5514 7    32   .rodata utf32le Tuesday
+1105 0x0007d534 0x080c5534 9    40   .rodata utf32le Wednesday
+1106 0x0007d55c 0x080c555c 8    36   .rodata utf32le Thursday
+1107 0x0007d580 0x080c5580 6    28   .rodata utf32le Friday
+1108 0x0007d59c 0x080c559c 8    36   .rodata utf32le Saturday
+1109 0x0007d680 0x080c5680 7    32   .rodata utf32le January
+1110 0x0007d6a0 0x080c56a0 8    36   .rodata utf32le February
+1111 0x0007d6c4 0x080c56c4 5    24   .rodata utf32le March
+1112 0x0007d6dc 0x080c56dc 5    24   .rodata utf32le April
+1113 0x0007d6f4 0x080c56f4 4    20   .rodata utf32le June
+1114 0x0007d708 0x080c5708 4    20   .rodata utf32le July
+1115 0x0007d71c 0x080c571c 6    28   .rodata utf32le August
+1116 0x0007d738 0x080c5738 9    40   .rodata utf32le September
+1117 0x0007d760 0x080c5760 7    32   .rodata utf32le October
+1118 0x0007d780 0x080c5780 8    36   .rodata utf32le November
+1119 0x0007d7a4 0x080c57a4 8    36   .rodata utf32le December
+1120 0x0007d7e0 0x080c57e0 20   84   .rodata utf32le %a %b %e %H:%M:%S %Y
+1121 0x0007d834 0x080c5834 8    36   .rodata utf32le %m/%d/%y
+1122 0x0007d858 0x080c5858 8    36   .rodata utf32le %H:%M:%S
+1123 0x0007d87c 0x080c587c 11   48   .rodata utf32le %I:%M:%S %p
+1124 0x0007d8ac 0x080c58ac 23   96   .rodata utf32le %a %b %e %H:%M:%S %Z %Y
+1125 0x0007d944 0x080c5944 32   33   .rodata ascii   \S\f\b`S\f\bdS\f\bhS\f\blS\f\bpS\f\btS\f\bxS\f\b
+1126 0x0007d9c5 0x080c59c5 7    8    .rodata ascii   T\f\b\bT\f\b
+1127 0x0007d9d1 0x080c59d1 23   24   .rodata ascii   T\f\b!T\f\b*T\f\b3T\f\b6T\f\b9T\f\b
+1128 0x0007d9f1 0x080c59f1 27   28   .rodata ascii   +\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\b
+1129 0x0007da10 0x080c5a10 12   13   .rodata ascii   QT\f\blT\f\b|T\f\b
+1130 0x0007da39 0x080c5a39 11   12   .rodata ascii   U\f\b4U\f\b\U\f\b
+1131 0x0007da61 0x080c5a61 27   28   .rodata ascii   V\f\b V\f\b0V\f\b@V\f\bPV\f\b`V\f\bpV\f\b
+1132 0x0007da91 0x080c5a91 7    8    .rodata ascii   V\f\b\bW\f\b
+1133 0x0007da99 0x080c5a99 11   12   .rodata ascii   W\f\b8W\f\b`W\f\b
+1134 0x0007dab5 0x080c5ab5 15   16   .rodata ascii   W\f\b4X\f\bXX\f\b|X\f\b
+1135 0x0007dad6 0x080c5ad6 6    7    .rodata ascii   \f\bNT\f\b
+1136 0x0007dae0 0x080c5ae0 24   25   .rodata ascii   NT\f\bPT\f\bPT\f\bPT\f\bQT\f\bRT\f\b
+1137 0x0007daf9 0x080c5af9 4    5    .rodata ascii   X\f\bo
+1138 0x0007db2e 0x080c5b2e 16   17   .rodata ascii   \v\b%p%t%g%t%m%t%f
+1139 0x0007db64 0x080c5b64 25   26   .rodata ascii   0[\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bo
+1140 0x0007db7e 0x080c5b7e 45   46   .rodata ascii   \v\b%a%N%f%N%d%N%b%N%s %h %e %r%N%C-%z %T%N%c%N
+1141 0x0007dbe5 0x080c5be5 48   49   .rodata ascii   [\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bQT\f\bo
+1142 0x0007dc16 0x080c5c16 11   12   .rodata ascii   \v\b+%c %a %l
+1143 0x0007dc65 0x080c5c65 16   17   .rodata ascii   \\f\bQT\f\bQT\f\bQT\f\bo
+1144 0x0007dca4 0x080c5ca4 5    6    .rodata ascii   PT\f\bo
+1145 0x0007dcaa 0x080c5caa 29   30   .rodata ascii   \v\bISO/IEC 14652 i18n FDCC-set
+1146 0x0007dcc8 0x080c5cc8 13   14   .rodata ascii   Keld Simonsen
+1147 0x0007dcd6 0x080c5cd6 13   14   .rodata ascii   keld@dkuug.dk
+1148 0x0007dce4 0x080c5ce4 13   14   .rodata ascii   +45 3122-6543
+1149 0x0007dcf2 0x080c5cf2 13   14   .rodata ascii   +45 3325-6543
+1150 0x0007dd08 0x080c5d08 10   11   .rodata ascii   1997-12-20
+1151 0x0007dd14 0x080c5d14 45   46   .rodata ascii   ISO/IEC JTC1/SC22/WG20 - internationalization
+1152 0x0007dd44 0x080c5d44 59   60   .rodata ascii   C/o Keld Simonsen, Skt. Jorgens Alle 8, DK-1615 Kobenhavn V
+1153 0x0007dd80 0x080c5d80 9    10   .rodata ascii   i18n:1999
+1154 0x0007dd8a 0x080c5d8a 9    10   .rodata ascii   i18n:1999
+1155 0x0007dd94 0x080c5d94 9    10   .rodata ascii   i18n:1999
+1156 0x0007dd9e 0x080c5d9e 9    10   .rodata ascii   i18n:1999
+1157 0x0007dda8 0x080c5da8 9    10   .rodata ascii   i18n:1999
+1158 0x0007ddb2 0x080c5db2 9    10   .rodata ascii   i18n:1999
+1159 0x0007ddbd 0x080c5dbd 9    10   .rodata ascii   i18n:1999
+1160 0x0007ddc7 0x080c5dc7 9    10   .rodata ascii   i18n:1999
+1161 0x0007ddd1 0x080c5dd1 9    10   .rodata ascii   i18n:1999
+1162 0x0007dddb 0x080c5ddb 9    10   .rodata ascii   i18n:1999
+1163 0x0007dde5 0x080c5de5 9    10   .rodata ascii   i18n:1999
+1164 0x0007ddef 0x080c5def 9    10   .rodata ascii   i18n:1999
+1165 0x0007ddf9 0x080c5df9 9    10   .rodata ascii   i18n:1999
+1166 0x0007de03 0x080c5e03 9    10   .rodata ascii   i18n:1999
+1167 0x0007de0d 0x080c5e0d 9    10   .rodata ascii   i18n:1999
+1168 0x0007de17 0x080c5e17 9    10   .rodata ascii   i18n:1999
+1169 0x0007de69 0x080c5e69 7    8    .rodata ascii   ]\f\bD]\f\b
+1170 0x0007de7d 0x080c5e7d 7    8    .rodata ascii   \\f\bQT\f\b
+1171 0x0007de85 0x080c5e85 15   16   .rodata ascii   ]\f\bQT\f\bQT\f\bQT\f\b
+1172 0x0007de95 0x080c5e95 7    8    .rodata ascii   ]\f\b\b]\f\b
+1173 0x0007de9d 0x080c5e9d 4    5    .rodata ascii   ]\f\bo
+1174 0x0007df24 0x080c5f24 9    10   .rodata ascii   @_\f\b@`\f\bo
+1175 0x0007df47 0x080c5f47 7    8    .rodata ascii   \a\b\t\n\v\f\r
+1176 0x0007df60 0x080c5f60 95   96   .rodata ascii    !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1177 0x0007e078 0x080c6078 7    32   .rodata utf32le \a\b\t\n\v\f\r
+1178 0x0007e0dc 0x080c60dc 95   384  .rodata utf32le  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+1179 0x0007e4ad 0x080c64ad 5    8    .rodata utf8    ﬅ[Am- blocks=Alphabetic Presentation Forms,Basic Latin
+1180 0x0007e557 0x080c6557 4    5    .rodata ascii   kpnJ
+1181 0x0007e565 0x080c6565 4    6    .rodata utf8    fƭ$6 blocks=Basic Latin,Latin Extended-B
+1182 0x0007e5fe 0x080c65fe 4    5    .rodata ascii   uD;s
+1183 0x0007e6fb 0x080c66fb 4    5    .rodata ascii   )r+[
+1184 0x0007e700 0x080c6700 4    5    .rodata ascii   [!|n
+1185 0x0007e7c5 0x080c67c5 5    6    .rodata ascii   uYD?e
+1186 0x0007e7f1 0x080c67f1 4    6    .rodata utf8    ި6IS blocks=Thaana,Basic Latin
+1187 0x0007e810 0x080c6810 5    7    .rodata utf8    I9C-ƣ blocks=Basic Latin,Latin Extended-B
+1188 0x0007e93b 0x080c693b 4    5    .rodata ascii   I!G.
+1189 0x0007e9f5 0x080c69f5 7    8    .rodata ascii   U^h6LU3
+1190 0x0007eaa2 0x080c6aa2 4    5    .rodata ascii   U.y`
+1191 0x0007eaba 0x080c6aba 4    5    .rodata ascii   3?Cy
+1192 0x0007ead4 0x080c6ad4 5    6    .rodata ascii   '_Djz
+1193 0x0007eb18 0x080c6b18 5    6    .rodata ascii   $po?b
+1194 0x0007eb33 0x080c6b33 5    6    .rodata ascii   w};u\n
+1195 0x0007edeb 0x080c6deb 4    5    .rodata ascii   =t%j
+1196 0x0007ee4c 0x080c6e4c 4    5    .rodata ascii   MP0!
+1197 0x0007ee58 0x080c6e58 5    7    .rodata utf8    *ǎ?:7 blocks=Basic Latin,Latin Extended-B
+1198 0x0007ee8f 0x080c6e8f 5    7    .rodata utf8    +\f͗20 blocks=Basic Latin,Combining Diacritical Marks
+1199 0x0007eee1 0x080c6ee1 4    5    .rodata ascii   t0tv
+1200 0x0007ef24 0x080c6f24 8    9    .rodata ascii   =u8Q)+\n9
+1201 0x0007ef53 0x080c6f53 4    6    .rodata utf8    \f9Ԣ7 blocks=Basic Latin,Cyrillic Supplement
+1202 0x0007ef62 0x080c6f62 6    7    .rodata ascii   {n \b$-
+1203 0x0007ef78 0x080c6f78 4    5    .rodata ascii   %?\vD
+1204 0x0007ef88 0x080c6f88 4    5    .rodata ascii   *~xx
+1205 0x0007efca 0x080c6fca 5    7    .rodata utf8    Ѷ~j2= blocks=Cyrillic,Basic Latin
+1206 0x0007f017 0x080c7017 4    5    .rodata ascii   ?\fE,
+1207 0x0007f03b 0x080c703b 4    5    .rodata ascii   MP#\e
+1208 0x0007f074 0x080c7074 4    5    .rodata ascii   |;#o
+1209 0x0007f09d 0x080c709d 6    9    .rodata utf8    f%(炸r; blocks=Basic Latin,CJK Unified Ideographs
+1210 0x0007f0c5 0x080c70c5 4    5    .rodata ascii   \r@SZ
+1211 0x0007f0d8 0x080c70d8 6    8    .rodata utf8    TɤAc+; blocks=Basic Latin,IPA Extensions
+1212 0x0007f0ed 0x080c70ed 4    5    .rodata ascii   \bU,i
+1213 0x0007f107 0x080c7107 5    6    .rodata ascii   ^2XX%
+1214 0x0007f13f 0x080c713f 4    5    .rodata ascii   +}\\n
+1215 0x0007f185 0x080c7185 4    6    .rodata utf8    ٸZNh blocks=Arabic,Basic Latin
+1216 0x0007f1c9 0x080c71c9 5    6    .rodata ascii   !{>;b
+1217 0x0007f1e8 0x080c71e8 5    6    .rodata ascii   T\v]=!
+1218 0x0007f1f2 0x080c71f2 4    5    .rodata ascii   dI@B
+1219 0x0007f21c 0x080c721c 4    6    .rodata utf8    2I%%
+1220 0x0007f320 0x080c7320 36   148  .rodata utf32le 0123456789abcdefghijklmnopqrstuvwxyz
+1221 0x0007f3c0 0x080c73c0 36   148  .rodata utf32le 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ
+1222 0x0007f472 0x080c7472 4    5    .rodata ascii   \a\bPI
+1223 0x0007f4b3 0x080c74b3 12   13   .rodata ascii   \b_dlfcn_hook
+1224 0x0007f4c0 0x080c74c0 6    7    .rodata ascii   %s%s%s
+1225 0x0007f4c7 0x080c74c7 10   11   .rodata ascii   %s%s%s: %s
+1226 0x0007f4d2 0x080c74d2 26   27   .rodata ascii   unsupported dlinfo request
+1227 0x0007f4f1 0x080c74f1 11   12   .rodata ascii   e\t\b\tf\t\b\ef\t\b
+1228 0x0007f4fd 0x080c74fd 15   16   .rodata ascii   e\t\b*f\t\b?f\t\bIf\t\b
+1229 0x0007f511 0x080c7511 7    8    .rodata ascii   e\t\bhf\t\b
+1230 0x0007f519 0x080c7519 20   21   .rodata ascii   e\t\binvalid namespace
+1231 0x0007f52e 0x080c752e 13   14   .rodata ascii   Unknown error
+1232 0x0007f574 0x080c7574 16   17   .rodata ascii   /etc/resolv.conf
+1233 0x0007f5a5 0x080c75a5 40   41   .rodata ascii   z\t\bDST not allowed in SUID/SGID programs
+1234 0x0007f5d0 0x080c75d0 78   79   .rodata ascii   cannot load auxiliary `%s' because of empty dynamic string token substitution\n
+1235 0x0007f620 0x080c7620 39   40   .rodata ascii   empty dynamic string token substitution
+1236 0x0007f648 0x080c7648 46   47   .rodata ascii   load auxiliary object=%s requested by file=%s\n
+1237 0x0007f678 0x080c7678 45   46   .rodata ascii   load filtered object=%s requested by file=%s\n
+1238 0x0007f6a8 0x080c76a8 31   32   .rodata ascii   cannot allocate dependency list
+1239 0x0007f6c8 0x080c76c8 39   40   .rodata ascii   map->l_searchlist.r_list == ((void *)0)
+1240 0x0007f6f0 0x080c76f0 34   35   .rodata ascii   cannot allocate symbol search list
+1241 0x0007f714 0x080c7714 46   47   .rodata ascii   Filters not supported with LD_TRACE_PRELINKING
+1242 0x0007f744 0x080c7744 34   35   .rodata ascii   map->l_searchlist.r_list[0] == map
+1243 0x0007f767 0x080c7767 9    10   .rodata ascii   dl-deps.c
+1244 0x0007f771 0x080c7771 12   13   .rodata ascii   cnt <= nlist
+1245 0x0007f77e 0x080c777e 19   20   .rodata ascii   _dl_map_object_deps
+1246 0x0007f792 0x080c7792 12   13   .rodata ascii   dl-runtime.c
+1247 0x0007f79f 0x080c779f 29   30   .rodata ascii   ((reloc->r_info) & 0xff) == 7
+1248 0x0007f7bd 0x080c77bd 17   18   .rodata ascii   _dl_profile_fixup
+1249 0x0007f7cf 0x080c77cf 9    10   .rodata ascii   _dl_fixup
+1250 0x0007f7d9 0x080c77d9 19   20   .rodata ascii   \ncalling init: %s\n\n
+1251 0x0007f7ed 0x080c77ed 22   23   .rodata ascii   \ncalling preinit: %s\n\n
+1252 0x0007f804 0x080c7804 9    10   .rodata ascii   dl-fini.c
+1253 0x0007f80e 0x080c780e 9    10   .rodata ascii   j < nmaps
+1254 0x0007f818 0x080c7818 11   12   .rodata ascii   i < nloaded
+1255 0x0007f824 0x080c7824 23   24   .rodata ascii   ns != 0 || i == nloaded
+1256 0x0007f83c 0x080c783c 8    9    .rodata ascii   _dl_fini
+1257 0x0007f845 0x080c7845 13   14   .rodata ascii   _dl_sort_fini
+1258 0x0007f854 0x080c7854 69   70   .rodata ascii   checking for version `%s' in file %s [%lu] required by file %s [%lu]\n
+1259 0x0007f89c 0x080c789c 46   47   .rodata ascii   no version information available (required by 
+1260 0x0007f8cc 0x080c78cc 39   40   .rodata ascii   cannot allocate version reference table
+1261 0x0007f8f4 0x080c78f4 12   13   .rodata ascii   dl-version.c
+1262 0x0007f901 0x080c7901 15   16   .rodata ascii   def_offset != 0
+1263 0x0007f911 0x080c7911 20   21   .rodata ascii   unsupported version 
+1264 0x0007f926 0x080c7926 17   18   .rodata ascii    of Verdef record
+1265 0x0007f938 0x080c7938 14   15   .rodata ascii   weak version `
+1266 0x0007f947 0x080c7947 25   26   .rodata ascii   ' not found (required by 
+1267 0x0007f961 0x080c7961 19   20   .rodata ascii    of Verneed record\n
+1268 0x0007f975 0x080c7975 21   22   .rodata ascii   needed != ((void *)0)
+1269 0x0007f98b 0x080c798b 22   23   .rodata ascii   _dl_check_map_versions
+1270 0x0007f9a2 0x080c79a2 12   13   .rodata ascii   match_symbol
+1271 0x0007f9af 0x080c79af 25   26   .rodata ascii   %s: cannot open file: %s\n
+1272 0x0007f9c9 0x080c79c9 27   28   .rodata ascii   %s: cannot create file: %s\n
+1273 0x0007f9e5 0x080c79e5 24   25   .rodata ascii   %s: cannot map file: %s\n
+1274 0x0007f9fe 0x080c79fe 25   26   .rodata ascii   %s: cannot stat file: %s\n
+1275 0x0007fa18 0x080c7a18 50   51   .rodata ascii   %s: file is no correct profile data file for `%s'\n
+1276 0x0007fa4c 0x080c7a4c 42   43   .rodata ascii   Out of memory while initializing profiler\n
+1277 0x0007fa77 0x080c7a77 10   11   .rodata ascii   to_inpunct
+1278 0x0007fa82 0x080c7a82 9    10   .rodata ascii   vfscanf.c
+1279 0x0007fa8c 0x080c7a8c 20   21   .rodata ascii   _IO_vfscanf_internal
+1280 0x0007faa4 0x080c7aa4 98   99   .rodata ascii   cnt < (((uint32_t) (*_nl_current_LC_CTYPE)->values[((int) (_NL_CTYPE_MB_CUR_MAX) & 0xffff)].word))
+1281 0x0007fc2e 0x080c7c2e 6    8    .rodata utf8    \t\bָ\t\bq blocks=Basic Latin,Hebrew
+1282 0x0007fc56 0x080c7c56 5    7    .rodata utf8    \t\bͯ\t\b blocks=Basic Latin,Combining Diacritical Marks
+1283 0x0007fcd6 0x080c7cd6 5    7    .rodata utf8    \t\bܯ\t\b blocks=Basic Latin,Syriac
+1284 0x0007fcea 0x080c7cea 5    7    .rodata utf8    \t\bͯ\t\b blocks=Basic Latin,Combining Diacritical Marks
+1285 0x0007fd12 0x080c7d12 24   25   .rodata ascii   \t\binvalid mode parameter
+1286 0x0007fd2b 0x080c7d2b 9    10   .rodata ascii   mbrtowc.c
+1287 0x0007fd35 0x080c7d35 9    10   .rodata ascii   __mbrtowc
+1288 0x0007fd3f 0x080c7d3f 6    7    .rodata ascii   ndots:
+1289 0x0007fd46 0x080c7d46 8    9    .rodata ascii   timeout:
+1290 0x0007fd4f 0x080c7d4f 9    10   .rodata ascii   attempts:
+1291 0x0007fd59 0x080c7d59 5    6    .rodata ascii   inet6
+1292 0x0007fd5f 0x080c7d5f 14   15   .rodata ascii   ip6-bytestring
+1293 0x0007fd6e 0x080c7d6e 13   14   .rodata ascii   no-ip6-dotint
+1294 0x0007fd7c 0x080c7d7c 6    7    .rodata ascii   rotate
+1295 0x0007fd83 0x080c7d83 14   15   .rodata ascii   no-check-names
+1296 0x0007fd92 0x080c7d92 5    6    .rodata ascii   edns0
+1297 0x0007fd98 0x080c7d98 11   12   .rodata ascii   LOCALDOMAIN
+1298 0x0007fda4 0x080c7da4 6    7    .rodata ascii   domain
+1299 0x0007fdab 0x080c7dab 6    7    .rodata ascii   search
+1300 0x0007fdb2 0x080c7db2 10   11   .rodata ascii   nameserver
+1301 0x0007fdbd 0x080c7dbd 8    9    .rodata ascii   sortlist
+1302 0x0007fdc6 0x080c7dc6 7    8    .rodata ascii   options
+1303 0x0007fdce 0x080c7dce 11   12   .rodata ascii   RES_OPTIONS
+1304 0x0007fde4 0x080c7de4 36   37   .rodata ascii   ../sysdeps/unix/sysv/linux/ifaddrs.c
+1305 0x0007fe0c 0x080c7e0c 65   66   .rodata ascii   ifa_data_ptr <= (char *) &ifas[newlink + newaddr] + ifa_data_size
+1306 0x0007fe4e 0x080c7e4e 10   11   .rodata ascii   getifaddrs
+1307 0x0007fe5c 0x080c7e5c 45   46   .rodata ascii   RTLD_NEXT used in code not dynamically loaded
+1308 0x0007fea8 0x080c7ea8 8    9    .rodata ascii   UUUUUUUU
+1309 0x0007feb7 0x080c7eb7 9    10   .rodata ascii   ?33333333
+1310 0x0007fef0 0x080c7ef0 7    8    .rodata ascii   UUUUUUU
+1311 0x0007ff2b 0x080c7f2b 5    6    .rodata ascii   P^Cy\r
+1312 0x0007ff3e 0x080c7f3e 4    7    .rodata utf8    0\f袋. blocks=Basic Latin,CJK Unified Ideographs
+1313 0x0007ff4c 0x080c7f4c 4    5    .rodata ascii   ,d!\v
+1314 0x0007ff57 0x080c7f57 9    12   .rodata utf8    \np=\nףp=\n؉ blocks=Basic Latin,Hebrew,Arabic
+1315 0x0007ff6c 0x080c7f6c 6    7    .rodata ascii   ^B{\t$I
+1316 0x0007ffa7 0x080c7fa7 9    10   .rodata ascii   \aP\auP\auP\a
+1317 0x0007ffe3 0x080c7fe3 5    6    .rodata ascii   inity
+1318 0x00080165 0x080c8165 39   41   .rodata utf8    ʚ;../sysdeps/unix/sysv/linux/opensock.c blocks=IPA Extensions,Basic Latin
+1319 0x00080190 0x080c8190 14   15   .rodata ascii   last_type != 0
+1320 0x0008019f 0x080c819f 9    10   .rodata ascii   /proc/net
+1321 0x000801a9 0x080c81a9 10   11   .rodata ascii   __opensock
+1322 0x000801c4 0x080c81c4 8    9    .rodata ascii   net/unix
+1323 0x000801ec 0x080c81ec 12   13   .rodata ascii   net/if_inet6
+1324 0x00080200 0x080c8200 8    9    .rodata ascii   net/ax25
+1325 0x00080214 0x080c8214 6    7    .rodata ascii   net/nr
+1326 0x00080228 0x080c8228 8    9    .rodata ascii   net/rose
+1327 0x0008023c 0x080c823c 7    8    .rodata ascii   net/ipx
+1328 0x00080250 0x080c8250 13   14   .rodata ascii   net/appletalk
+1329 0x00080264 0x080c8264 14   15   .rodata ascii   sys/net/econet
+1330 0x00080278 0x080c8278 11   12   .rodata ascii   sys/net/ash
+1331 0x0008028c 0x080c828c 7    8    .rodata ascii   net/x25
+0    0x000858c0 0x080ce8c0 9    40   .data   utf32le c|w{òkoÅ0 blocks=Basic Latin,Latin-1 Supplement
+1    0x000858e8 0x080ce8e8 7    32   .data   utf32le g+þ×«vÊ blocks=Basic Latin,Latin-1 Supplement
+2    0x0008590c 0x080ce90c 9    40   .data   utf32le }úYGð­Ô¢¯ blocks=Basic Latin,Latin-1 Supplement
+3    0x00085938 0x080ce938 4    20   .data   utf32le rÀ·ý blocks=Basic Latin,Latin-1 Supplement
+4    0x0008594c 0x080ce94c 12   52   .data   utf32le &6?÷Ì4¥åñqØ1 blocks=Basic Latin,Latin-1 Supplement
+5    0x000859b4 0x080ce9b4 4    20   .data   utf32le '²u\t blocks=Basic Latin,Latin-1 Supplement
+6    0x000859d0 0x080ce9d0 11   48   .data   utf32le \enZ R;Ö³)ã/ blocks=Basic Latin,Latin-1 Supplement
+7    0x00085a10 0x080cea10 19   80   .data   utf32le  ü±[jË¾9JLXÏÐïªûCM3 blocks=Basic Latin,Latin-1 Supplement
+8    0x00085a98 0x080cea98 6    28   .data   utf32le 8õ¼¶Ú! blocks=Basic Latin,Latin-1 Supplement
+9    0x00085ae8 0x080ceae8 4    20   .data   utf32le ~=d]
+10   0x00085b08 0x080ceb08 4    20   .data   utf32le OÜ"* blocks=Basic Latin,Latin-1 Supplement
+11   0x00085b34 0x080ceb34 8    36   .data   utf32le ^\vÛà2:\nI blocks=Basic Latin,Latin-1 Supplement
+12   0x00085b58 0x080ceb58 6    28   .data   utf32le $\ÂÓ¬b blocks=Basic Latin,Latin-1 Supplement
+13   0x00085b7c 0x080ceb7c 5    24   .data   utf32le yçÈ7m blocks=Basic Latin,Latin-1 Supplement
+14   0x00085b98 0x080ceb98 14   60   .data   utf32le N©lVôêez®\bºx%. blocks=Basic Latin,Latin-1 Supplement
+15   0x00085c00 0x080cec00 5    24   .data   utf32le p>µfH blocks=Basic Latin,Latin-1 Supplement
+16   0x00085c20 0x080cec20 4    20   .data   utf32le a5W¹ blocks=Basic Latin,Latin-1 Supplement
+17   0x00085c8c 0x080cec8c 6    28   .data   utf32le \r¿æBhA blocks=Basic Latin,Latin-1 Supplement
+18   0x00085cc1 0x080cecc1 5    7    .data   utf8    ccƄ|| blocks=Basic Latin,Latin Extended-B
+19   0x00085cd5 0x080cecd5 5    7    .data   utf8    kkֱoo blocks=Basic Latin,Hebrew
+20   0x00085cde 0x080cecde 5    7    .data   utf8    őP00` blocks=Latin Extended-A,Basic Latin
+21   0x00085cec 0x080cecec 4    5    .data   ascii   }++V
+22   0x00085d4b 0x080ced4b 13   14   .data   ascii   =j&&LZ66lA??~
+23   0x00085d5e 0x080ced5e 5    7    .data   utf8    ̃\44h blocks=Combining Diacritical Marks,Basic Latin
+24   0x00085d76 0x080ced76 6    8    .data   utf8    ثS11b? blocks=Arabic,Basic Latin
+25   0x00085d86 0x080ced86 6    8    .data   utf8    Ǖe##F^ blocks=Latin Extended-B,Basic Latin
+26   0x00085d9f 0x080ced9f 4    5    .data   ascii   /\t\a\a
+27   0x00085db4 0x080cedb4 5    7    .data   utf8    i''NͲ blocks=Basic Latin,Greek and Coptic
+28   0x00085dc8 0x080cedc8 5    6    .data   ascii   t,,X.
+29   0x00085dcf 0x080cedcf 5    6    .data   ascii   4-\e\e6
+30   0x00085de4 0x080cede4 5    6    .data   ascii   M;;va
+31   0x00085def 0x080cedef 6    7    .data   ascii   }{))R>
+32   0x00085df8 0x080cedf8 4    5    .data   ascii   q//^
+33   0x00085e10 0x080cee10 4    5    .data   ascii   `  @
+34   0x00085e2b 0x080cee2b 5    6    .data   ascii   gK99r
+35   0x00085e58 0x080cee58 4    5    .data   ascii   U33f
+36   0x00085e74 0x080cee74 4    5    .data   ascii   D<<x
+37   0x00085e97 0x080cee97 5    6    .data   ascii   !H88p
+38   0x00085eaa 0x080ceeaa 6    8    .data   utf8    گc!!B0 blocks=Arabic,Basic Latin
+39   0x00085eec 0x080ceeec 4    5    .data   ascii   G==z
+40   0x00085f0e 0x080cef0e 9    11   .data   utf8    ܣf""D~**T blocks=Syriac,Basic Latin
+41   0x00085f44 0x080cef44 8    9    .data   ascii   V22dN::t
+42   0x00085f57 0x080cef57 5    6    .data   ascii   \fl$$H
+43   0x00085f86 0x080cef86 5    7    .data   utf8    ȋY77n blocks=Latin Extended-B,Basic Latin
+44   0x00085faf 0x080cefaf 6    9    .data   utf8    ϯeeʎzz blocks=Greek and Coptic,Basic Latin,IPA Extensions
+45   0x00085fc8 0x080cefc8 9    10   .data   ascii   o%%Jr..\$
+46   0x00086004 0x080cf004 5    7    .data   utf8    B>>|ĵ blocks=Basic Latin,Latin Extended-A
+47   0x00086024 0x080cf024 4    5    .data   ascii   _55j
+48   0x00086078 0x080cf078 5    6    .data   ascii   x((Pz
+49   0x000860a7 0x080cf0a7 5    6    .data   ascii   )w--Z
+50   0x000860bf 0x080cf0bf 6    8    .data   utf8    ,ccƥ|| blocks=Basic Latin,Latin Extended-B
+51   0x000860d3 0x080cf0d3 7    10   .data   utf8    \rkkֽooޱ blocks=Basic Latin,Hebrew,Thaana
+52   0x000860dd 0x080cf0dd 6    8    .data   utf8    őT00`P blocks=Latin Extended-A,Basic Latin
+53   0x000860e8 0x080cf0e8 7    9    .data   utf8    ggΩ++V} blocks=Basic Latin,Greek and Coptic
+54   0x00086109 0x080cf109 4    6    .data   utf8    ɉ@}} blocks=Latin Extended-B,Basic Latin
+55   0x0008614c 0x080cf14c 12   13   .data   ascii   &&Lj66lZ??~A
+56   0x0008615d 0x080cf15d 6    8    .data   utf8    ̃O44h\ blocks=Combining Diacritical Marks,Basic Latin
+57   0x00086175 0x080cf175 6    8    .data   utf8    ثs11bS blocks=Arabic,Basic Latin
+58   0x00086185 0x080cf185 6    8    .data   utf8    ǕR##Fe blocks=Latin Extended-B,Basic Latin
+59   0x000861b3 0x080cf1b3 5    6    .data   ascii   &''Ni
+60   0x000861c8 0x080cf1c8 4    5    .data   ascii   ,,Xt
+61   0x000861ce 0x080cf1ce 11   13   .data   utf8    4.\e\e6-nnܲZZ blocks=Basic Latin,Syriac
+62   0x000861e4 0x080cf1e4 4    5    .data   ascii   ;;vM
+63   0x000861f0 0x080cf1f0 4    5    .data   ascii   ))R{
+64   0x000861f7 0x080cf1f7 5    6    .data   ascii   >//^q
+65   0x0008620f 0x080cf20f 5    6    .data   ascii   ,  @`
+66   0x0008622c 0x080cf22c 6    7    .data   ascii   99rKJJ
+67   0x00086258 0x080cf258 4    5    .data   ascii   33fU
+68   0x00086274 0x080cf274 4    5    .data   ascii   <<xD
+69   0x00086298 0x080cf298 4    5    .data   ascii   88pH
+70   0x000862a9 0x080cf2a9 6    8    .data   utf8    گu!!Bc blocks=Arabic,Basic Latin
+71   0x000862c1 0x080cf2c1 4    6    .data   utf8    ́L\f\f blocks=Combining Diacritical Marks,Basic Latin
+72   0x000862ec 0x080cf2ec 9    11   .data   utf8    ==zGddȬ]] blocks=Basic Latin,Latin Extended-B
+73   0x000862fa 0x080cf2fa 4    5    .data   ascii   2+ss
+74   0x00086310 0x080cf310 8    9    .data   ascii   ""Df**T~
+75   0x00086331 0x080cf331 4    6    .data   utf8    ާy^^ blocks=Thaana,Basic Latin
+76   0x00086343 0x080cf343 11   12   .data   ascii   ;22dV::tN\n\n
+77   0x00086356 0x080cf356 8    9    .data   ascii   \f\n$$Hl\\
+78   0x00086385 0x080cf385 9    12   .data   utf8    ȋC77nYmmڷ blocks=Latin Extended-B,Basic Latin,Arabic
+79   0x00086395 0x080cf395 4    6    .data   utf8    ձdNN blocks=Armenian,Basic Latin
+80   0x000863a0 0x080cf3a0 5    7    .data   utf8    llشVV blocks=Basic Latin,Arabic
+81   0x000863af 0x080cf3af 8    13   .data   utf8    %eeʯzz􎮮G blocks=Basic Latin,IPA Extensions,Supplementary Private Use Area-B
+82   0x000863c8 0x080cf3c8 8    9    .data   ascii   %%Jo..\r
+83   0x000863e5 0x080cf3e5 4    6    .data   utf8    ݡ|tt blocks=Arabic Supplement,Basic Latin
+84   0x000863ee 0x080cf3ee 4    5    .data   ascii   >!KK
+85   0x00086404 0x080cf404 4    5    .data   ascii   >>|B
+86   0x0008640c 0x080cf40c 5    7    .data   utf8    ff̪HH blocks=Basic Latin,Combining Diacritical Marks
+87   0x00086420 0x080cf420 9    11   .data   utf8    aa£55j_WW blocks=Basic Latin,Latin-1 Supplement
+88   0x0008644e 0x080cf44e 5    7    .data   utf8    "3iiһ blocks=Basic Latin,Cyrillic
+89   0x00086471 0x080cf471 4    6    .data   utf8    ·IUU blocks=Greek and Coptic,Basic Latin
+90   0x00086478 0x080cf478 4    5    .data   ascii   ((Px
+91   0x0008649c 0x080cf49c 5    7    .data   utf8    hhиAA blocks=Basic Latin,Cyrillic
+92   0x000864a8 0x080cf4a8 4    5    .data   ascii   --Zw
+93   0x000864be 0x080cf4be 6    8    .data   utf8    ,:cƥc| blocks=Basic Latin,Latin Extended-B
+94   0x000864d4 0x080cf4d4 8    12   .data   utf8    kֽkoޱoőT blocks=Basic Latin,Hebrew,Thaana,Latin Extended-A
+95   0x000864e0 0x080cf4e0 4    5    .data   ascii   0`P0
+96   0x000864e8 0x080cf4e8 7    9    .data   utf8    gΩg+V}+ blocks=Basic Latin,Greek and Coptic
+97   0x000864ff 0x080cf4ff 4    7    .data   utf8    vʏEʂ blocks=Basic Latin,IPA Extensions
+98   0x00086524 0x080cf524 4    7    .data   utf8    ԳgԢ_ blocks=Armenian,Basic Latin,Cyrillic Supplement
+99   0x0008653b 0x080cf53b 6    10   .data   utf8    r\e[7u· blocks=Basic Latin,Latin-1 Supplement
+100  0x0008654c 0x080cf54c 12   13   .data   ascii   &Lj&6lZ6?~A?
+101  0x00086560 0x080cf560 4    5    .data   ascii   4h\4
+102  0x00086578 0x080cf578 4    5    .data   ascii   1bS1
+103  0x00086588 0x080cf588 6    8    .data   utf8    #Fe#Ý^ blocks=Basic Latin,Latin-1 Supplement
+104  0x000865b4 0x080cf5b4 4    5    .data   ascii   'Ni'
+105  0x000865c8 0x080cf5c8 4    5    .data   ascii   ,Xt,
+106  0x000865d0 0x080cf5d0 8    10   .data   utf8    \e6-\enܲnZ blocks=Basic Latin,Syriac
+107  0x000865e3 0x080cf5e3 14   18   .data   utf8    R;vM;ַaֳ}γ)R{) blocks=Basic Latin,Hebrew,Greek and Coptic
+108  0x000865f8 0x080cf5f8 4    5    .data   ascii   /^q/
+109  0x00086610 0x080cf610 4    5    .data   ascii    @` 
+110  0x0008661f 0x080cf61f 14   19   .data   utf8    [jԾjˍF˾gپ9rK9J blocks=Basic Latin,Armenian,Spacing Modifier Letters,Arabic
+111  0x00086657 0x080cf657 5    6    .data   ascii   M3fU3
+112  0x00086673 0x080cf673 5    6    .data   ascii   P<xD<
+113  0x00086698 0x080cf698 4    5    .data   ascii   8pH8
+114  0x000866a5 0x080cf6a5 4    7    .data   utf8    wvگu blocks=Basic Latin,Arabic
+115  0x000866ac 0x080cf6ac 4    5    .data   ascii   !Bc!
+116  0x000866e0 0x080cf6e0 4    7    .data   utf8    ēWħU blocks=Latin Extended-A,Basic Latin
+117  0x000866eb 0x080cf6eb 9    11   .data   utf8    ~=zG=dȬd] blocks=Basic Latin,Latin Extended-B
+118  0x000866ff 0x080cf6ff 4    6    .data   utf8    s` `
+119  0x00086710 0x080cf710 8    9    .data   ascii   "Df"*T~*
+120  0x00086744 0x080cf744 9    10   .data   ascii   2dV2:tN:\n
+121  0x00086758 0x080cf758 5    6    .data   ascii   $Hl$\
+122  0x00086764 0x080cf764 4    7    .data   utf8    ӽnӬC blocks=Cyrillic,Basic Latin
+123  0x00086788 0x080cf788 7    9    .data   utf8    7nY7mڷm blocks=Basic Latin,Arabic
+124  0x000867a0 0x080cf7a0 4    6    .data   utf8    lشlV blocks=Basic Latin,Arabic
+125  0x000867b0 0x080cf7b0 4    6    .data   utf8    eʯez blocks=Basic Latin,IPA Extensions
+126  0x000867c7 0x080cf7c7 9    10   .data   ascii   x%Jo%.\r.
+127  0x000867d9 0x080cf7d9 4    7    .data   utf8    sǴƗQ blocks=Basic Latin,Latin Extended-B
+128  0x00086803 0x080cf803 5    6    .data   ascii   p>|B>
+129  0x00086809 0x080cf809 6    9    .data   utf8    qĵf̪fH blocks=Basic Latin,Latin Extended-A,Combining Diacritical Marks
+130  0x00086820 0x080cf820 8    10   .data   utf8    a£a5j_5W blocks=Basic Latin,Latin-1 Supplement
+131  0x00086850 0x080cf850 7    11   .data   utf8    iһi٩pَ\a blocks=Basic Latin,Cyrillic,Arabic
+132  0x00086877 0x080cf877 8    11   .data   utf8    U(Px(ߥzߌ blocks=Basic Latin,NKo
+133  0x0008689b 0x080cf89b 5    7    .data   utf8    BhиhA blocks=Basic Latin,Cyrillic
+134  0x000868a8 0x080cf8a8 4    5    .data   ascii   -Zw-
+135  0x000868d4 0x080cf8d4 6    9    .data   utf8    ֽkkޱoo blocks=Hebrew,Basic Latin,Thaana
+136  0x000868e0 0x080cf8e0 4    5    .data   ascii   `P00
+137  0x000868e8 0x080cf8e8 7    9    .data   utf8    ΩggV}++ blocks=Greek and Coptic,Basic Latin
+138  0x0008694c 0x080cf94c 12   13   .data   ascii   Lj&&lZ66~A??
+139  0x00086960 0x080cf960 5    6    .data   ascii   h\44Q
+140  0x00086978 0x080cf978 6    7    .data   ascii   bS11*?
+141  0x00086988 0x080cf988 4    5    .data   ascii   Fe##
+142  0x000869a1 0x080cf9a1 5    6    .data   ascii   \t\a\a$6
+143  0x000869b4 0x080cf9b4 4    5    .data   ascii   Ni''
+144  0x000869c8 0x080cf9c8 6    7    .data   ascii   Xt,,4.
+145  0x000869d0 0x080cf9d0 7    9    .data   utf8    6-\e\eܲnn blocks=Basic Latin,Syriac
+146  0x000869e2 0x080cf9e2 6    7    .data   ascii   RRvM;;
+147  0x000869f0 0x080cf9f0 4    5    .data   ascii   R{))
+148  0x000869f8 0x080cf9f8 4    5    .data   ascii   ^q//
+149  0x00086a10 0x080cfa10 4    5    .data   ascii   @`  
+150  0x00086a1e 0x080cfa1e 5    7    .data   utf8    [[Ծjj blocks=Basic Latin,Armenian
+151  0x00086a2c 0x080cfa2c 4    5    .data   ascii   rK99
+152  0x00086a56 0x080cfa56 6    7    .data   ascii   MMfU33
+153  0x00086a72 0x080cfa72 7    8    .data   ascii   PPxD<<%
+154  0x00086a98 0x080cfa98 4    5    .data   ascii   pH88
+155  0x00086aac 0x080cfaac 6    7    .data   ascii   Bc!! 0
+156  0x00086ac6 0x080cfac6 4    5    .data   ascii   \f\f&5
+157  0x00086ada 0x080cfada 4    5    .data   ascii   DD.9
+158  0x00086aea 0x080cfaea 9    11   .data   utf8    ~~zG==Ȭdd blocks=Basic Latin,Latin Extended-B
+159  0x00086af6 0x080cfaf6 4    5    .data   ascii   ]]2+
+160  0x00086afe 0x080cfafe 5    7    .data   utf8    ss ``
+161  0x00086b10 0x080cfb10 9    10   .data   ascii   Df""T~**;
+162  0x00086b44 0x080cfb44 8    9    .data   ascii   dV22tN::
+163  0x00086b52 0x080cfb52 4    5    .data   ascii   II\f\n
+164  0x00086b58 0x080cfb58 4    5    .data   ascii   Hl$$
+165  0x00086b68 0x080cfb68 6    10   .data   utf8    CשּׁĦbb9 blocks=Basic Latin,Alphabetic Presentation Forms,Latin Extended-A
+166  0x00086b88 0x080cfb88 7    9    .data   utf8    nY77ڷmm blocks=Basic Latin,Arabic
+167  0x00086b9a 0x080cfb9a 7    11   .data   utf8    NNI੩شll blocks=Basic Latin,Gurmukhi,Arabic
+168  0x00086bb6 0x080cfbb6 4    7    .data   utf8    zzG鮮 blocks=Basic Latin,CJK Unified Ideographs
+169  0x00086bbe 0x080cfbbe 4    6    .data   utf8    \b\boպ blocks=Basic Latin,Armenian
+170  0x00086bc6 0x080cfbc6 12   13   .data   ascii   xxJo%%\r..8$
+171  0x00086bea 0x080cfbea 4    5    .data   ascii   tt>!
+172  0x00086bf2 0x080cfbf2 4    6    .data   utf8    KKaܽ blocks=Basic Latin,Syriac
+173  0x00086c02 0x080cfc02 8    10   .data   utf8    pp|B>>qĵ blocks=Basic Latin,Latin Extended-A
+174  0x00086c20 0x080cfc20 7    9    .data   utf8    £aaj_55 blocks=Latin-1 Supplement,Basic Latin
+175  0x00086c2a 0x080cfc2a 4    6    .data   utf8    WWiй blocks=Basic Latin,Cyrillic
+176  0x00086c76 0x080cfc76 6    7    .data   ascii   UUPx((
+177  0x00086c8e 0x080cfc8e 4    6    .data   utf8    \r\reڿ blocks=Basic Latin,Arabic
+178  0x00086c9a 0x080cfc9a 5    7    .data   utf8    BBиhh blocks=Basic Latin,Cyrillic
+179  0x00086ca8 0x080cfca8 4    5    .data   ascii   Zw--
+180  0x00086cb6 0x080cfcb6 4    6    .data   utf8    TTmֻ blocks=Basic Latin,Hebrew
+181  0x00086cc0 0x080cfcc0 11   48   .data   utf32le R\tjÕ06¥8¿@£ blocks=Basic Latin,Latin-1 Supplement
+182  0x00086d28 0x080cfd28 8    36   .data   utf32le CDÄÞéËT{ blocks=Basic Latin,Latin-1 Supplement
+183  0x00086d4c 0x080cfd4c 7    32   .data   utf32le 2¦Â#=îL blocks=Basic Latin,Latin-1 Supplement
+184  0x00086d6c 0x080cfd6c 18   76   .data   utf32le \vBúÃN\b.¡f(Ù$²v[¢Im blocks=Basic Latin,Latin-1 Supplement
+185  0x00086dbc 0x080cfdbc 5    24   .data   utf32le %røöd blocks=Basic Latin,Latin-1 Supplement
+186  0x00086de8 0x080cfde8 5    24   .data   utf32le \Ì]e¶ blocks=Basic Latin,Latin-1 Supplement
+187  0x00086e00 0x080cfe00 9    40   .data   utf32le lpHPýí¹Ú^ blocks=Basic Latin,Latin-1 Supplement
+188  0x00086e5c 0x080cfe5c 4    20   .data   utf32le \n÷äX blocks=Basic Latin,Latin-1 Supplement
+189  0x00086ecc 0x080cfecc 5    24   .data   utf32le AOgÜê blocks=Basic Latin,Latin-1 Supplement
+190  0x00086f08 0x080cff08 5    24   .data   utf32le t"ç­5 blocks=Basic Latin,Latin-1 Supplement
+191  0x00086f34 0x080cff34 5    24   .data   utf32le ußnGñ blocks=Basic Latin,Latin-1 Supplement
+192  0x00086f7c 0x080cff7c 9    40   .data   utf32le \eüV>KÆÒy  blocks=Basic Latin,Latin-1 Supplement
+193  0x00086fb0 0x080cffb0 4    20   .data   utf32le xÍZô blocks=Basic Latin,Latin-1 Supplement
+194  0x00086fd4 0x080cffd4 4    20   .data   utf32le \aÇ1± blocks=Basic Latin,Latin-1 Supplement
+195  0x00087018 0x080d0018 5    24   .data   utf32le J\r-åz blocks=Basic Latin,Latin-1 Supplement
+196  0x00087048 0x080d0048 10   44   .data   utf32le ;M®*õ°Èë»< blocks=Basic Latin,Latin-1 Supplement
+197  0x0008708c 0x080d008c 7    32   .data   utf32le ~ºwÖ&ái blocks=Basic Latin,Latin-1 Supplement
+198  0x000870ac 0x080d00ac 5    24   .data   utf32le cU!\f}
+199  0x000870c4 0x080d00c4 5    7    .data   utf8    SeA~ä blocks=Basic Latin,Latin-1 Supplement
+200  0x000870e9 0x080d00e9 4    6    .data   utf8    v̈%L blocks=Basic Latin,Combining Diacritical Marks
+201  0x000870f6 0x080d00f6 5    7    .data   utf8    *ŀD5& blocks=Basic Latin,Latin Extended-A
+202  0x00087135 0x080d0135 5    6    .data   ascii   !tX)i
+203  0x00087180 0x080d0180 4    5    .data   ascii   XhHp
+204  0x0008719e 0x080d019e 4    5    .data   ascii   Uf\a(
+205  0x000871df 0x080d01df 4    6    .data   utf8    ĝS.4 blocks=Latin Extended-A,Basic Latin
+206  0x0008723f 0x080d023f 4    5    .data   ascii   yG\n|
+207  0x0008725c 0x080d025c 4    5    .data   ascii   NrZl
+208  0x00087269 0x080d0269 7    9    .data   utf8    ծ='9-6d blocks=Armenian,Basic Latin
+209  0x0008727c 0x080d027c 4    5    .data   ascii   :.6$
+210  0x00087297 0x080d0297 5    6    .data   ascii   aiKwZ
+211  0x000872c3 0x080d02c3 4    5    .data   ascii   WL\au
+212  0x000872d9 0x080d02d9 5    6    .data   ascii   ;fD4~
+213  0x000872df 0x080d02df 4    5    .data   ascii   [v)C
+214  0x000872f6 0x080d02f6 4    5    .data   ascii   cB@"
+215  0x000872fe 0x080d02fe 4    6    .data   utf8    Ƅ}$J blocks=Latin Extended-B,Basic Latin
+216  0x0008734a 0x080d034a 5    9    .data   utf8    ʌ6\vԘρ blocks=IPA Extensions,Basic Latin,Cyrillic Supplement,Greek and Coptic
+217  0x0008736a 0x080d036a 6    7    .data   ascii   _jbF~T
+218  0x000873d3 0x080d03d3 6    7    .data   ascii   11#?*0
+219  0x00087441 0x080d0441 4    6    .data   utf8    aךz\f blocks=Basic Latin,Hebrew
+220  0x00087488 0x080d0488 6    7    .data   ascii   ,4$8_@
+221  0x00087494 0x080d0494 7    10   .data   utf8    \f%⼋I<(A blocks=Basic Latin,Kangxi Radicals
+222  0x000874b8 0x080d04b8 6    7    .data   ascii   t\lHBW
+223  0x000874c2 0x080d04c2 6    7    .data   ascii   QPeA~S
+224  0x000874e1 0x080d04e1 5    6    .data   ascii   0 Umv
+225  0x00087533 0x080d0533 4    5    .data   ascii   -!tX
+226  0x0008756d 0x080d056d 5    6    .data   ascii   SbEwd
+227  0x00087580 0x080d0580 4    5    .data   ascii   hHpX
+228  0x0008759d 0x080d059d 4    5    .data   ascii   Uf*(
+229  0x000875de 0x080d05de 4    6    .data   utf8    ĊS.4 blocks=Latin Extended-A,Basic Latin
+230  0x0008762e 0x080d062e 4    7    .data   utf8    gwB谽 blocks=Basic Latin,CJK Unified Ideographs
+231  0x00087655 0x080d0655 4    5    .data   ascii   +2Hp
+232  0x0008765c 0x080d065c 4    5    .data   ascii   rZlN
+233  0x0008766c 0x080d066c 4    5    .data   ascii   9-6'
+234  0x00087675 0x080d0675 5    6    .data   ascii   \h!T[
+235  0x0008767c 0x080d067c 7    8    .data   ascii   .6$:g\n\f
+236  0x00087698 0x080d0698 4    5    .data   ascii   KwZi
+237  0x000876de 0x080d06de 4    5    .data   ascii   [4)C
+238  0x000876fd 0x080d06fd 4    6    .data   utf8    Ƅ $J blocks=Latin Extended-B,Basic Latin
+239  0x00087738 0x080d0738 6    8    .data   utf8    ,}Vؐ3" blocks=Basic Latin,Arabic
+240  0x0008776c 0x080d076c 4    5    .data   ascii   F~Tb
+241  0x000877b7 0x080d07b7 4    6    .data   utf8    ~ϼ!\b blocks=Basic Latin,Greek and Coptic
+242  0x000877d4 0x080d07d4 4    5    .data   ascii   #?*1
+243  0x000877de 0x080d07de 6    9    .data   utf8    5<Nt7ʂ blocks=Basic Latin,IPA Extensions
+244  0x00087819 0x080d0819 5    7    .data   utf8    ,xQeF
+245  0x00087876 0x080d0876 4    5    .data   ascii   _[o=
+246  0x00087887 0x080d0887 6    7    .data   ascii   >4$8,@
+247  0x00087897 0x080d0897 4    5    .data   ascii   \fI<(
+248  0x000878b7 0x080d08b7 6    7    .data   ascii   p\lHtW
+249  0x000878c4 0x080d08c4 4    5    .data   ascii   A~Se
+250  0x00087939 0x080d0939 5    7    .data   utf8    I)iɎD blocks=Basic Latin,Latin Extended-B
+251  0x0008796a 0x080d096a 5    6    .data   ascii   `3SbE
+252  0x0008797f 0x080d097f 6    7    .data   ascii   +HpXhE
+253  0x000879ab 0x080d09ab 6    8    .data   utf8    {7ӥ\b(0 blocks=Basic Latin,Cyrillic
+254  0x00087a42 0x080d0a42 4    5    .data   ascii   G\nB|
+255  0x00087a5b 0x080d0a5b 5    6    .data   ascii   pZlNr
+256  0x00087a6c 0x080d0a6c 4    5    .data   ascii   -6'9
+257  0x00087a7b 0x080d0a7b 7    8    .data   ascii   T6$:.\n\f
+258  0x00087a97 0x080d0a97 5    6    .data   ascii    wZiK
+259  0x00087aa7 0x080d0aa7 4    5    .data   ascii   *"<C
+260  0x00087add 0x080d0add 4    5    .data   ascii   [4~C
+261  0x00087afa 0x080d0afa 4    6    .data   utf8    @"Ƅ  blocks=Basic Latin,Latin Extended-B
+262  0x00087b6c 0x080d0b6c 4    5    .data   ascii   ~TbF
+263  0x00087ba2 0x080d0ba2 4    5    .data   ascii   \txYn
+264  0x00087bd4 0x080d0bd4 4    5    .data   ascii   ?*1#
+265  0x00087bdf 0x080d0bdf 4    5    .data   ascii   fNt7
+266  0x00087c88 0x080d0c88 4    5    .data   ascii   $8,4
+267  0x00087c96 0x080d0c96 4    5    .data   ascii   \f%<(
+268  0x00087cb8 0x080d0cb8 4    5    .data   ascii   lHt\
+269  0x00087cbe 0x080d0cbe 4    5    .data   ascii   BWQP
+270  0x00087cc4 0x080d0cc4 4    5    .data   ascii   ~SeA
+271  0x00087d36 0x080d0d36 5    6    .data   ascii   !tI)i
+272  0x00087d49 0x080d0d49 4    5    .data   ascii   k>X'
+273  0x00087d69 0x080d0d69 5    6    .data   ascii   `3QbE
+274  0x00087d7e 0x080d0d7e 6    7    .data   ascii   +\bpXhH
+275  0x00087dac 0x080d0dac 4    6    .data   utf8    ӥ\b70 blocks=Cyrillic,Basic Latin
+276  0x00087e2a 0x080d0e2a 4    5    .data   ascii   C@gw
+277  0x00087e3f 0x080d0e3f 5    7    .data   utf8    ȡG\n|| blocks=Latin Extended-B,Basic Latin
+278  0x00087e5c 0x080d0e5c 4    5    .data   ascii   lNrZ
+279  0x00087e6a 0x080d0e6a 7    9    .data   utf8    ծ6'9-\nd blocks=Armenian,Basic Latin
+280  0x00087e7a 0x080d0e7a 7    8    .data   ascii   T[$:.6\f
+281  0x00087e98 0x080d0e98 4    5    .data   ascii   ZiKw
+282  0x00087eda 0x080d0eda 5    6    .data   ascii   ;f[4~
+283  0x00087eff 0x080d0eff 4    6    .data   utf8    ƅ}$J blocks=Latin Extended-B,Basic Latin
+284  0x00087f4b 0x080d0f4b 5    9    .data   utf8    ʘ6\vԦρ blocks=IPA Extensions,Basic Latin,Cyrillic Supplement,Greek and Coptic
+285  0x00087f6b 0x080d0f6b 5    6    .data   ascii   _TbF~
+286  0x00087fa1 0x080d0fa1 4    5    .data   ascii   \tx&n
+287  0x00087fd4 0x080d0fd4 4    5    .data   ascii   *1#?
+288  0x00088087 0x080d1087 5    6    .data   ascii   h8,4$
+289  0x000880b7 0x080d10b7 5    6    .data   ascii   2Ht\l
+290  0x000881a8 0x080d11a8 4    5    .data   ascii   D!\r\b
+291  0x00088248 0x080d1248 4    5    .data   ascii   P!\r\b
+292  0x000882e8 0x080d12e8 4    5    .data   ascii   \!\r\b
+293  0x00088579 0x080d1579 4    5    .data   ascii   \r\v\b`
+294  0x000885b0 0x080d15b0 8    9    .data   ascii   QT\f\bQT\f\b
+295  0x000885cd 0x080d15cd 4    5    .data   ascii   \f\t\b 
+296  0x00088601 0x080d1601 4    5    .data   ascii    \v\bo
+297  0x000886d0 0x080d16d0 4    5    .data   ascii   \r \v\b
+298  0x00088700 0x080d1700 4    5    .data   ascii   - \v\b
+299  0x00088710 0x080d1710 4    5    .data   ascii   > \v\b
+300  0x00088721 0x080d1721 7    8    .data   ascii    \v\b- \v\b
+301  0x00088730 0x080d1730 4    5    .data   ascii   O \v\b
+302  0x00088740 0x080d1740 4    5    .data   ascii   ` \v\b
+303  0x00088750 0x080d1750 4    5    .data   ascii   m \v\b
+304  0x00088761 0x080d1761 7    8    .data   ascii    \v\b` \v\b
+305  0x00088781 0x080d1781 11   12   .data   ascii   Q\v\b S\f\b Y\f\b
+306  0x0008878d 0x080d178d 7    8    .data   ascii   ^\f\b@R\f\b
+307  0x0008879d 0x080d179d 7    8    .data   ascii   [\f\b@[\f\b
+308  0x000887a5 0x080d17a5 7    8    .data   ascii   [\f\b@\\f\b
+309  0x000887ad 0x080d17ad 7    8    .data   ascii   \\f\b@^\f\b
+310  0x00088800 0x080d1800 12   13   .data   ascii   7 \f\b7 \f\b`(\t\b
+311  0x00088829 0x080d1829 7    8    .data   ascii   \n\n\bP\v\n\b
+312  0x00088839 0x080d1839 7    8    .data   ascii   e\t\bpe\t\b
+arch     x86
+baddr    0x8048000
+binsz    573716
+bintype  elf
+bits     32
+canary   false
+class    ELF32
+compiler GCC: (GNU) 4.2.4 (Ubuntu 4.2.4-1ubuntu3)
+crypto   false
+endian   little
+havecode true
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  Intel 80386
+nx       true
+os       linux
+pic      false
+relocs   false
+rpath    NONE
+sanitize false
+static   true
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF MAGIC   0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x0003
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x08048130
+0x0000001c  PhOff       0x00000034
+0x00000020  ShOff       0x0008c114
+0x00000024  Flags       0x00000000
+0x00000028  EhSize      52
+0x0000002a  PhentSize   32
+0x0000002c  PhNum       5
+0x0000002e  ShentSize   40
+0x00000030  ShNum       26
+0x00000032  ShrStrndx   25
+[Linked libraries]
+
+0 library
+[Relocations]
+
+vaddr paddr type name
+―――――――――――――――――――――
+
+
+0 relocations
+573716
+Section to Segment mapping:
+Segment   Section
+-----------------
+LOAD0     .note.ABI-tag .init .text __libc_freeres_fn __libc_thread_freeres_fn .fini .rodata __libc_subfreeres __libc_atexit __libc_thread_subfreeres .eh_frame .gcc_except_table 
+LOAD1     .tdata .tbss .ctors .dtors .jcr .data.rel.ro .got .got.plt .data .bss 
+NOTE      .note.ABI-tag 
+TLS       .tdata .tbss 
+GNU_STACK 
+ehdr      
+
+

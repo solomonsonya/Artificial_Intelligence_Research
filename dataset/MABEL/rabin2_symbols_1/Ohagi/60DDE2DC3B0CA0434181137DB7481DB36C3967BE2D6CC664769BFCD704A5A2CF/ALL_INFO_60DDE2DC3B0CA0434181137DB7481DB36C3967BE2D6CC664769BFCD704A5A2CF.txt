@@ -1,0 +1,1012 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xa600 0x00401000  0xb000 -r-x .text
+1   0x0000aa00   0x200 0x0040c000  0x1000 -rw- .data
+2   0x0000ac00  0x3600 0x0040d000  0x4000 -r-- .rdata
+3   0x00000000     0x0 0x00411000  0x1000 -rw- .bss
+4   0x0000e200  0x1200 0x00412000  0x2000 -rw- .idata
+5   0x0000f400   0x200 0x00414000  0x1000 -rw- .CRT
+6   0x0000f600   0x200 0x00415000  0x1000 -rw- .tls
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004014e0 paddr=0x000008e0 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x00409a20 paddr=0x00008e20 hpaddr=0x0000f420 type=tls
+vaddr=0x004099d0 paddr=0x00008dd0 hpaddr=0x0000f424 type=tls
+
+2 entrypoints
+[Main]
+vaddr=0x00405765 paddr=0x00004b65
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00412388 NONE FUNC ADVAPI32.dll RegCloseKey
+2   0x0041238c NONE FUNC ADVAPI32.dll RegOpenKeyExA
+3   0x00412390 NONE FUNC ADVAPI32.dll RegQueryValueExA
+1   0x00412398 NONE FUNC GDI32.dll    GetDeviceCaps
+1   0x004123a0 NONE FUNC IPHLPAPI.DLL GetAdaptersAddresses
+2   0x004123a4 NONE FUNC IPHLPAPI.DLL GetAdaptersInfo
+3   0x004123a8 NONE FUNC IPHLPAPI.DLL GetIpNetTable
+4   0x004123ac NONE FUNC IPHLPAPI.DLL GetTcpTable
+5   0x004123b0 NONE FUNC IPHLPAPI.DLL GetUdpTable
+1   0x004123b8 NONE FUNC KERNEL32.dll CloseHandle
+2   0x004123bc NONE FUNC KERNEL32.dll CreateFileA
+3   0x004123c0 NONE FUNC KERNEL32.dll CreateProcessA
+4   0x004123c4 NONE FUNC KERNEL32.dll CreateSemaphoreA
+5   0x004123c8 NONE FUNC KERNEL32.dll CreateThread
+6   0x004123cc NONE FUNC KERNEL32.dll CreateToolhelp32Snapshot
+7   0x004123d0 NONE FUNC KERNEL32.dll DeleteCriticalSection
+8   0x004123d4 NONE FUNC KERNEL32.dll DeleteFileA
+9   0x004123d8 NONE FUNC KERNEL32.dll DeleteFileW
+10  0x004123dc NONE FUNC KERNEL32.dll EnterCriticalSection
+11  0x004123e0 NONE FUNC KERNEL32.dll FormatMessageA
+12  0x004123e4 NONE FUNC KERNEL32.dll GetComputerNameA
+13  0x004123e8 NONE FUNC KERNEL32.dll GetCurrentProcess
+14  0x004123ec NONE FUNC KERNEL32.dll GetCurrentProcessId
+15  0x004123f0 NONE FUNC KERNEL32.dll GetCurrentThreadId
+16  0x004123f4 NONE FUNC KERNEL32.dll GetDiskFreeSpaceExA
+17  0x004123f8 NONE FUNC KERNEL32.dll GetDriveTypeA
+18  0x004123fc NONE FUNC KERNEL32.dll GetFileAttributesA
+19  0x00412400 NONE FUNC KERNEL32.dll GetLastError
+20  0x00412404 NONE FUNC KERNEL32.dll GetLogicalDrives
+21  0x00412408 NONE FUNC KERNEL32.dll GetModuleFileNameA
+22  0x0041240c NONE FUNC KERNEL32.dll GetModuleHandleA
+23  0x00412410 NONE FUNC KERNEL32.dll GetProcAddress
+24  0x00412414 NONE FUNC KERNEL32.dll GetProcessHeap
+25  0x00412418 NONE FUNC KERNEL32.dll GetStartupInfoA
+26  0x0041241c NONE FUNC KERNEL32.dll GetSystemDefaultLangID
+27  0x00412420 NONE FUNC KERNEL32.dll GetSystemInfo
+28  0x00412424 NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+29  0x00412428 NONE FUNC KERNEL32.dll GetTickCount
+30  0x0041242c NONE FUNC KERNEL32.dll GetVersionExA
+31  0x00412430 NONE FUNC KERNEL32.dll GetVolumeInformationA
+32  0x00412434 NONE FUNC KERNEL32.dll GlobalMemoryStatus
+33  0x00412438 NONE FUNC KERNEL32.dll GlobalMemoryStatusEx
+34  0x0041243c NONE FUNC KERNEL32.dll HeapAlloc
+35  0x00412440 NONE FUNC KERNEL32.dll HeapFree
+36  0x00412444 NONE FUNC KERNEL32.dll InitializeCriticalSection
+37  0x00412448 NONE FUNC KERNEL32.dll LeaveCriticalSection
+38  0x0041244c NONE FUNC KERNEL32.dll LocalAlloc
+39  0x00412450 NONE FUNC KERNEL32.dll LocalFree
+40  0x00412454 NONE FUNC KERNEL32.dll OutputDebugStringA
+41  0x00412458 NONE FUNC KERNEL32.dll Process32First
+42  0x0041245c NONE FUNC KERNEL32.dll Process32Next
+43  0x00412460 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+44  0x00412464 NONE FUNC KERNEL32.dll ReleaseSemaphore
+45  0x00412468 NONE FUNC KERNEL32.dll SetErrorMode
+46  0x0041246c NONE FUNC KERNEL32.dll SetLastError
+47  0x00412470 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+48  0x00412474 NONE FUNC KERNEL32.dll Sleep
+49  0x00412478 NONE FUNC KERNEL32.dll TerminateProcess
+50  0x0041247c NONE FUNC KERNEL32.dll TlsGetValue
+51  0x00412480 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+52  0x00412484 NONE FUNC KERNEL32.dll VerLanguageNameA
+53  0x00412488 NONE FUNC KERNEL32.dll VirtualProtect
+54  0x0041248c NONE FUNC KERNEL32.dll VirtualQuery
+55  0x00412490 NONE FUNC KERNEL32.dll WaitForMultipleObjects
+56  0x00412494 NONE FUNC KERNEL32.dll WaitForSingleObject
+57  0x00412498 NONE FUNC KERNEL32.dll WideCharToMultiByte
+58  0x0041249c NONE FUNC KERNEL32.dll lstrcmpiA
+1   0x004124a4 NONE FUNC MPR.DLL      WNetGetProviderNameA
+1   0x004124ac NONE FUNC msvcrt.dll   __dllonexit
+2   0x004124b0 NONE FUNC msvcrt.dll   __getmainargs
+3   0x004124b4 NONE FUNC msvcrt.dll   __initenv
+4   0x004124b8 NONE FUNC msvcrt.dll   __lconv_init
+5   0x004124bc NONE FUNC msvcrt.dll   __set_app_type
+6   0x004124c0 NONE FUNC msvcrt.dll   __setusermatherr
+7   0x004124c4 NONE FUNC msvcrt.dll   _acmdln
+8   0x004124c8 NONE FUNC msvcrt.dll   _amsg_exit
+9   0x004124cc NONE FUNC msvcrt.dll   _cexit
+10  0x004124d0 NONE FUNC msvcrt.dll   _findnext
+11  0x004124d4 NONE FUNC msvcrt.dll   _errno
+12  0x004124d8 NONE FUNC msvcrt.dll   _findclose
+13  0x004124dc NONE FUNC msvcrt.dll   _findfirst
+14  0x004124e0 NONE FUNC msvcrt.dll   _fmode
+15  0x004124e4 NONE FUNC msvcrt.dll   _fullpath
+16  0x004124e8 NONE FUNC msvcrt.dll   _initterm
+17  0x004124ec NONE FUNC msvcrt.dll   _iob
+18  0x004124f0 NONE FUNC msvcrt.dll   _lock
+19  0x004124f4 NONE FUNC msvcrt.dll   _onexit
+20  0x004124f8 NONE FUNC msvcrt.dll   _stat
+21  0x004124fc NONE FUNC msvcrt.dll   _unlock
+22  0x00412500 NONE FUNC msvcrt.dll   _vsnprintf
+23  0x00412504 NONE FUNC msvcrt.dll   atoi
+24  0x00412508 NONE FUNC msvcrt.dll   abort
+25  0x0041250c NONE FUNC msvcrt.dll   calloc
+26  0x00412510 NONE FUNC msvcrt.dll   exit
+27  0x00412514 NONE FUNC msvcrt.dll   fclose
+28  0x00412518 NONE FUNC msvcrt.dll   fgetc
+29  0x0041251c NONE FUNC msvcrt.dll   fgets
+30  0x00412520 NONE FUNC msvcrt.dll   fopen
+31  0x00412524 NONE FUNC msvcrt.dll   fprintf
+32  0x00412528 NONE FUNC msvcrt.dll   fputc
+33  0x0041252c NONE FUNC msvcrt.dll   fputs
+34  0x00412530 NONE FUNC msvcrt.dll   free
+35  0x00412534 NONE FUNC msvcrt.dll   fseek
+36  0x00412538 NONE FUNC msvcrt.dll   ftell
+37  0x0041253c NONE FUNC msvcrt.dll   fwrite
+38  0x00412540 NONE FUNC msvcrt.dll   localtime
+39  0x00412544 NONE FUNC msvcrt.dll   malloc
+40  0x00412548 NONE FUNC msvcrt.dll   mbstowcs
+41  0x0041254c NONE FUNC msvcrt.dll   memcmp
+42  0x00412550 NONE FUNC msvcrt.dll   memcpy
+43  0x00412554 NONE FUNC msvcrt.dll   memset
+44  0x00412558 NONE FUNC msvcrt.dll   puts
+45  0x0041255c NONE FUNC msvcrt.dll   signal
+46  0x00412560 NONE FUNC msvcrt.dll   sprintf
+47  0x00412564 NONE FUNC msvcrt.dll   strcat
+48  0x00412568 NONE FUNC msvcrt.dll   strcmp
+49  0x0041256c NONE FUNC msvcrt.dll   strcpy
+50  0x00412570 NONE FUNC msvcrt.dll   strlen
+51  0x00412574 NONE FUNC msvcrt.dll   strncmp
+52  0x00412578 NONE FUNC msvcrt.dll   strncpy
+53  0x0041257c NONE FUNC msvcrt.dll   strstr
+54  0x00412580 NONE FUNC msvcrt.dll   toupper
+55  0x00412584 NONE FUNC msvcrt.dll   vfprintf
+56  0x00412588 NONE FUNC msvcrt.dll   wcsstr
+1   0x00412590 NONE FUNC ole32.dll    CoCreateInstance
+2   0x00412594 NONE FUNC ole32.dll    CoInitializeEx
+3   0x00412598 NONE FUNC ole32.dll    CoInitializeSecurity
+4   0x0041259c NONE FUNC ole32.dll    CoUninitialize
+1   0x004125a4 NONE FUNC OLEAUT32.dll SysAllocString
+2   0x004125a8 NONE FUNC OLEAUT32.dll SysFreeString
+1   0x004125b0 NONE FUNC SHELL32.DLL  SHGetSpecialFolderPathA
+2   0x004125b4 NONE FUNC SHELL32.DLL  ShellExecuteExW
+1   0x004125bc NONE FUNC USER32.dll   FindWindowA
+2   0x004125c0 NONE FUNC USER32.dll   GetCursorPos
+3   0x004125c4 NONE FUNC USER32.dll   GetDC
+4   0x004125c8 NONE FUNC USER32.dll   GetDesktopWindow
+5   0x004125cc NONE FUNC USER32.dll   GetWindow
+6   0x004125d0 NONE FUNC USER32.dll   SendMessageA
+1   0x004125d8 NONE FUNC WINMM.DLL    timeGetTime
+1   0x004125e0 NONE FUNC WS2_32.dll   WSAStartup
+2   0x004125e4 NONE FUNC WS2_32.dll   connect
+3   0x004125e8 NONE FUNC WS2_32.dll   gethostbyname
+4   0x004125ec NONE FUNC WS2_32.dll   htons
+5   0x004125f0 NONE FUNC WS2_32.dll   inet_addr
+6   0x004125f4 NONE FUNC WS2_32.dll   inet_ntoa
+7   0x004125f8 NONE FUNC WS2_32.dll   ntohs
+8   0x004125fc NONE FUNC WS2_32.dll   recv
+9   0x00412600 NONE FUNC WS2_32.dll   send
+10  0x00412604 NONE FUNC WS2_32.dll   socket
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000e588 0x00412388 NONE FUNC 0    ADVAPI32.dll imp.RegCloseKey
+2   0x0000e58c 0x0041238c NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExA
+3   0x0000e590 0x00412390 NONE FUNC 0    ADVAPI32.dll imp.RegQueryValueExA
+1   0x0000e598 0x00412398 NONE FUNC 0    GDI32.dll    imp.GetDeviceCaps
+1   0x0000e5a0 0x004123a0 NONE FUNC 0    IPHLPAPI.DLL imp.GetAdaptersAddresses
+2   0x0000e5a4 0x004123a4 NONE FUNC 0    IPHLPAPI.DLL imp.GetAdaptersInfo
+3   0x0000e5a8 0x004123a8 NONE FUNC 0    IPHLPAPI.DLL imp.GetIpNetTable
+4   0x0000e5ac 0x004123ac NONE FUNC 0    IPHLPAPI.DLL imp.GetTcpTable
+5   0x0000e5b0 0x004123b0 NONE FUNC 0    IPHLPAPI.DLL imp.GetUdpTable
+1   0x0000e5b8 0x004123b8 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+2   0x0000e5bc 0x004123bc NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+3   0x0000e5c0 0x004123c0 NONE FUNC 0    KERNEL32.dll imp.CreateProcessA
+4   0x0000e5c4 0x004123c4 NONE FUNC 0    KERNEL32.dll imp.CreateSemaphoreA
+5   0x0000e5c8 0x004123c8 NONE FUNC 0    KERNEL32.dll imp.CreateThread
+6   0x0000e5cc 0x004123cc NONE FUNC 0    KERNEL32.dll imp.CreateToolhelp32Snapshot
+7   0x0000e5d0 0x004123d0 NONE FUNC 0    KERNEL32.dll imp.DeleteCriticalSection
+8   0x0000e5d4 0x004123d4 NONE FUNC 0    KERNEL32.dll imp.DeleteFileA
+9   0x0000e5d8 0x004123d8 NONE FUNC 0    KERNEL32.dll imp.DeleteFileW
+10  0x0000e5dc 0x004123dc NONE FUNC 0    KERNEL32.dll imp.EnterCriticalSection
+11  0x0000e5e0 0x004123e0 NONE FUNC 0    KERNEL32.dll imp.FormatMessageA
+12  0x0000e5e4 0x004123e4 NONE FUNC 0    KERNEL32.dll imp.GetComputerNameA
+13  0x0000e5e8 0x004123e8 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+14  0x0000e5ec 0x004123ec NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+15  0x0000e5f0 0x004123f0 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+16  0x0000e5f4 0x004123f4 NONE FUNC 0    KERNEL32.dll imp.GetDiskFreeSpaceExA
+17  0x0000e5f8 0x004123f8 NONE FUNC 0    KERNEL32.dll imp.GetDriveTypeA
+18  0x0000e5fc 0x004123fc NONE FUNC 0    KERNEL32.dll imp.GetFileAttributesA
+19  0x0000e600 0x00412400 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+20  0x0000e604 0x00412404 NONE FUNC 0    KERNEL32.dll imp.GetLogicalDrives
+21  0x0000e608 0x00412408 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+22  0x0000e60c 0x0041240c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+23  0x0000e610 0x00412410 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+24  0x0000e614 0x00412414 NONE FUNC 0    KERNEL32.dll imp.GetProcessHeap
+25  0x0000e618 0x00412418 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+26  0x0000e61c 0x0041241c NONE FUNC 0    KERNEL32.dll imp.GetSystemDefaultLangID
+27  0x0000e620 0x00412420 NONE FUNC 0    KERNEL32.dll imp.GetSystemInfo
+28  0x0000e624 0x00412424 NONE FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+29  0x0000e628 0x00412428 NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+30  0x0000e62c 0x0041242c NONE FUNC 0    KERNEL32.dll imp.GetVersionExA
+31  0x0000e630 0x00412430 NONE FUNC 0    KERNEL32.dll imp.GetVolumeInformationA
+32  0x0000e634 0x00412434 NONE FUNC 0    KERNEL32.dll imp.GlobalMemoryStatus
+33  0x0000e638 0x00412438 NONE FUNC 0    KERNEL32.dll imp.GlobalMemoryStatusEx
+34  0x0000e63c 0x0041243c NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+35  0x0000e640 0x00412440 NONE FUNC 0    KERNEL32.dll imp.HeapFree
+36  0x0000e644 0x00412444 NONE FUNC 0    KERNEL32.dll imp.InitializeCriticalSection
+37  0x0000e648 0x00412448 NONE FUNC 0    KERNEL32.dll imp.LeaveCriticalSection
+38  0x0000e64c 0x0041244c NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+39  0x0000e650 0x00412450 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+40  0x0000e654 0x00412454 NONE FUNC 0    KERNEL32.dll imp.OutputDebugStringA
+41  0x0000e658 0x00412458 NONE FUNC 0    KERNEL32.dll imp.Process32First
+42  0x0000e65c 0x0041245c NONE FUNC 0    KERNEL32.dll imp.Process32Next
+43  0x0000e660 0x00412460 NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+44  0x0000e664 0x00412464 NONE FUNC 0    KERNEL32.dll imp.ReleaseSemaphore
+45  0x0000e668 0x00412468 NONE FUNC 0    KERNEL32.dll imp.SetErrorMode
+46  0x0000e66c 0x0041246c NONE FUNC 0    KERNEL32.dll imp.SetLastError
+47  0x0000e670 0x00412470 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+48  0x0000e674 0x00412474 NONE FUNC 0    KERNEL32.dll imp.Sleep
+49  0x0000e678 0x00412478 NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+50  0x0000e67c 0x0041247c NONE FUNC 0    KERNEL32.dll imp.TlsGetValue
+51  0x0000e680 0x00412480 NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+52  0x0000e684 0x00412484 NONE FUNC 0    KERNEL32.dll imp.VerLanguageNameA
+53  0x0000e688 0x00412488 NONE FUNC 0    KERNEL32.dll imp.VirtualProtect
+54  0x0000e68c 0x0041248c NONE FUNC 0    KERNEL32.dll imp.VirtualQuery
+55  0x0000e690 0x00412490 NONE FUNC 0    KERNEL32.dll imp.WaitForMultipleObjects
+56  0x0000e694 0x00412494 NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+57  0x0000e698 0x00412498 NONE FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+58  0x0000e69c 0x0041249c NONE FUNC 0    KERNEL32.dll imp.lstrcmpiA
+1   0x0000e6a4 0x004124a4 NONE FUNC 0    MPR.DLL      imp.WNetGetProviderNameA
+1   0x0000e6ac 0x004124ac NONE FUNC 0    msvcrt.dll   imp.__dllonexit
+2   0x0000e6b0 0x004124b0 NONE FUNC 0    msvcrt.dll   imp.__getmainargs
+3   0x0000e6b4 0x004124b4 NONE FUNC 0    msvcrt.dll   imp.__initenv
+4   0x0000e6b8 0x004124b8 NONE FUNC 0    msvcrt.dll   imp.__lconv_init
+5   0x0000e6bc 0x004124bc NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+6   0x0000e6c0 0x004124c0 NONE FUNC 0    msvcrt.dll   imp.__setusermatherr
+7   0x0000e6c4 0x004124c4 NONE FUNC 0    msvcrt.dll   imp._acmdln
+8   0x0000e6c8 0x004124c8 NONE FUNC 0    msvcrt.dll   imp._amsg_exit
+9   0x0000e6cc 0x004124cc NONE FUNC 0    msvcrt.dll   imp._cexit
+10  0x0000e6d0 0x004124d0 NONE FUNC 0    msvcrt.dll   imp._findnext
+11  0x0000e6d4 0x004124d4 NONE FUNC 0    msvcrt.dll   imp._errno
+12  0x0000e6d8 0x004124d8 NONE FUNC 0    msvcrt.dll   imp._findclose
+13  0x0000e6dc 0x004124dc NONE FUNC 0    msvcrt.dll   imp._findfirst
+14  0x0000e6e0 0x004124e0 NONE FUNC 0    msvcrt.dll   imp._fmode
+15  0x0000e6e4 0x004124e4 NONE FUNC 0    msvcrt.dll   imp._fullpath
+16  0x0000e6e8 0x004124e8 NONE FUNC 0    msvcrt.dll   imp._initterm
+17  0x0000e6ec 0x004124ec NONE FUNC 0    msvcrt.dll   imp._iob
+18  0x0000e6f0 0x004124f0 NONE FUNC 0    msvcrt.dll   imp._lock
+19  0x0000e6f4 0x004124f4 NONE FUNC 0    msvcrt.dll   imp._onexit
+20  0x0000e6f8 0x004124f8 NONE FUNC 0    msvcrt.dll   imp._stat
+21  0x0000e6fc 0x004124fc NONE FUNC 0    msvcrt.dll   imp._unlock
+22  0x0000e700 0x00412500 NONE FUNC 0    msvcrt.dll   imp._vsnprintf
+23  0x0000e704 0x00412504 NONE FUNC 0    msvcrt.dll   imp.atoi
+24  0x0000e708 0x00412508 NONE FUNC 0    msvcrt.dll   imp.abort
+25  0x0000e70c 0x0041250c NONE FUNC 0    msvcrt.dll   imp.calloc
+26  0x0000e710 0x00412510 NONE FUNC 0    msvcrt.dll   imp.exit
+27  0x0000e714 0x00412514 NONE FUNC 0    msvcrt.dll   imp.fclose
+28  0x0000e718 0x00412518 NONE FUNC 0    msvcrt.dll   imp.fgetc
+29  0x0000e71c 0x0041251c NONE FUNC 0    msvcrt.dll   imp.fgets
+30  0x0000e720 0x00412520 NONE FUNC 0    msvcrt.dll   imp.fopen
+31  0x0000e724 0x00412524 NONE FUNC 0    msvcrt.dll   imp.fprintf
+32  0x0000e728 0x00412528 NONE FUNC 0    msvcrt.dll   imp.fputc
+33  0x0000e72c 0x0041252c NONE FUNC 0    msvcrt.dll   imp.fputs
+34  0x0000e730 0x00412530 NONE FUNC 0    msvcrt.dll   imp.free
+35  0x0000e734 0x00412534 NONE FUNC 0    msvcrt.dll   imp.fseek
+36  0x0000e738 0x00412538 NONE FUNC 0    msvcrt.dll   imp.ftell
+37  0x0000e73c 0x0041253c NONE FUNC 0    msvcrt.dll   imp.fwrite
+38  0x0000e740 0x00412540 NONE FUNC 0    msvcrt.dll   imp.localtime
+39  0x0000e744 0x00412544 NONE FUNC 0    msvcrt.dll   imp.malloc
+40  0x0000e748 0x00412548 NONE FUNC 0    msvcrt.dll   imp.mbstowcs
+41  0x0000e74c 0x0041254c NONE FUNC 0    msvcrt.dll   imp.memcmp
+42  0x0000e750 0x00412550 NONE FUNC 0    msvcrt.dll   imp.memcpy
+43  0x0000e754 0x00412554 NONE FUNC 0    msvcrt.dll   imp.memset
+44  0x0000e758 0x00412558 NONE FUNC 0    msvcrt.dll   imp.puts
+45  0x0000e75c 0x0041255c NONE FUNC 0    msvcrt.dll   imp.signal
+46  0x0000e760 0x00412560 NONE FUNC 0    msvcrt.dll   imp.sprintf
+47  0x0000e764 0x00412564 NONE FUNC 0    msvcrt.dll   imp.strcat
+48  0x0000e768 0x00412568 NONE FUNC 0    msvcrt.dll   imp.strcmp
+49  0x0000e76c 0x0041256c NONE FUNC 0    msvcrt.dll   imp.strcpy
+50  0x0000e770 0x00412570 NONE FUNC 0    msvcrt.dll   imp.strlen
+51  0x0000e774 0x00412574 NONE FUNC 0    msvcrt.dll   imp.strncmp
+52  0x0000e778 0x00412578 NONE FUNC 0    msvcrt.dll   imp.strncpy
+53  0x0000e77c 0x0041257c NONE FUNC 0    msvcrt.dll   imp.strstr
+54  0x0000e780 0x00412580 NONE FUNC 0    msvcrt.dll   imp.toupper
+55  0x0000e784 0x00412584 NONE FUNC 0    msvcrt.dll   imp.vfprintf
+56  0x0000e788 0x00412588 NONE FUNC 0    msvcrt.dll   imp.wcsstr
+1   0x0000e790 0x00412590 NONE FUNC 0    ole32.dll    imp.CoCreateInstance
+2   0x0000e794 0x00412594 NONE FUNC 0    ole32.dll    imp.CoInitializeEx
+3   0x0000e798 0x00412598 NONE FUNC 0    ole32.dll    imp.CoInitializeSecurity
+4   0x0000e79c 0x0041259c NONE FUNC 0    ole32.dll    imp.CoUninitialize
+1   0x0000e7a4 0x004125a4 NONE FUNC 0    OLEAUT32.dll imp.SysAllocString
+2   0x0000e7a8 0x004125a8 NONE FUNC 0    OLEAUT32.dll imp.SysFreeString
+1   0x0000e7b0 0x004125b0 NONE FUNC 0    SHELL32.DLL  imp.SHGetSpecialFolderPathA
+2   0x0000e7b4 0x004125b4 NONE FUNC 0    SHELL32.DLL  imp.ShellExecuteExW
+1   0x0000e7bc 0x004125bc NONE FUNC 0    USER32.dll   imp.FindWindowA
+2   0x0000e7c0 0x004125c0 NONE FUNC 0    USER32.dll   imp.GetCursorPos
+3   0x0000e7c4 0x004125c4 NONE FUNC 0    USER32.dll   imp.GetDC
+4   0x0000e7c8 0x004125c8 NONE FUNC 0    USER32.dll   imp.GetDesktopWindow
+5   0x0000e7cc 0x004125cc NONE FUNC 0    USER32.dll   imp.GetWindow
+6   0x0000e7d0 0x004125d0 NONE FUNC 0    USER32.dll   imp.SendMessageA
+1   0x0000e7d8 0x004125d8 NONE FUNC 0    WINMM.DLL    imp.timeGetTime
+1   0x0000e7e0 0x004125e0 NONE FUNC 0    WS2_32.dll   imp.WSAStartup
+2   0x0000e7e4 0x004125e4 NONE FUNC 0    WS2_32.dll   imp.connect
+3   0x0000e7e8 0x004125e8 NONE FUNC 0    WS2_32.dll   imp.gethostbyname
+4   0x0000e7ec 0x004125ec NONE FUNC 0    WS2_32.dll   imp.htons
+5   0x0000e7f0 0x004125f0 NONE FUNC 0    WS2_32.dll   imp.inet_addr
+6   0x0000e7f4 0x004125f4 NONE FUNC 0    WS2_32.dll   imp.inet_ntoa
+7   0x0000e7f8 0x004125f8 NONE FUNC 0    WS2_32.dll   imp.ntohs
+8   0x0000e7fc 0x004125fc NONE FUNC 0    WS2_32.dll   imp.recv
+9   0x0000e800 0x00412600 NONE FUNC 0    WS2_32.dll   imp.send
+10  0x0000e804 0x00412604 NONE FUNC 0    WS2_32.dll   imp.socket
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000ac00 0x0040d000 13  14   .rdata  ascii   libgcj-13.dll
+1   0x0000ac0e 0x0040d00e 19  20   .rdata  ascii   _Jv_RegisterClasses
+2   0x0000ac24 0x0040d024 6   7    .rdata  ascii   160016
+3   0x0000ac2b 0x0040d02b 18  19   .rdata  ascii   /software/send.cgi
+4   0x0000ac3e 0x0040d03e 21  22   .rdata  ascii   snowy-nature.ddns.net
+5   0x0000ac54 0x0040d054 151 152  .rdata  ascii   POST %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows XP)\r\nReferer: http://%s%s\r\nCokkie: xtl_s=%s\r\nContent-Length: 207\r\n\r\n
+6   0x0000acee 0x0040d0ee 17  18   .rdata  ascii   XXX\nANNIE-DAEMON\n
+7   0x0000ad02 0x0040d102 17  18   .rdata  ascii   .\Sagittarius.txt
+8   0x0000ad1c 0x0040d11c 55  56   .rdata  ascii   <System up time>\nContinuous operation time: %lu msec.\n\n
+9   0x0000ad54 0x0040d154 25  26   .rdata  ascii   <Sample path & meta data>
+10  0x0000ad6f 0x0040d16f 16  17   .rdata  ascii   <Start up list>\n
+11  0x0000ad80 0x0040d180 24  25   .rdata  ascii   <Desktop customization>\n
+12  0x0000ad99 0x0040d199 22  23   .rdata  ascii   <File access history>\n
+13  0x0000adb0 0x0040d1b0 8   18   .rdata  utf16le DeviceId
+14  0x0000adc4 0x0040d1c4 21  44   .rdata  utf16le PCI\VEN_80EE&DEV_CAFE
+15  0x0000adf0 0x0040d1f0 14  15   .rdata  ascii   .\Scorpius.txt
+16  0x0000ae00 0x0040d200 9   20   .rdata  utf16le \nDeviceID
+17  0x0000ae14 0x0040d214 4   10   .rdata  utf16le name
+18  0x0000ae20 0x0040d220 20  42   .rdata  utf16le NumberOfFunctionKeys
+19  0x0000ae4a 0x0040d24a 6   14   .rdata  utf16le Layout
+20  0x0000ae58 0x0040d258 12  26   .rdata  utf16le Manufacturer
+21  0x0000ae72 0x0040d272 12  26   .rdata  utf16le HardwareType
+22  0x0000ae8c 0x0040d28c 25  52   .rdata  utf16le CurrentVerticalResolution
+23  0x0000aec0 0x0040d2c0 27  56   .rdata  utf16le CurrentHorizontalResolution
+24  0x0000aef8 0x0040d2f8 11  24   .rdata  utf16le MonitorType
+25  0x0000af10 0x0040d310 12  26   .rdata  utf16le ScreenHeight
+26  0x0000af2a 0x0040d32a 11  24   .rdata  utf16le ScreenWidth
+27  0x0000af44 0x0040d344 19  40   .rdata  utf16le MonitorManufacturer
+28  0x0000af6c 0x0040d36c 4   10   .rdata  utf16le Name
+29  0x0000af76 0x0040d376 7   16   .rdata  utf16le Product
+30  0x0000af86 0x0040d386 7   16   .rdata  utf16le Version
+31  0x0000af96 0x0040d396 12  26   .rdata  utf16le SerialNumber
+32  0x0000afb0 0x0040d3b0 11  24   .rdata  utf16le ReleaseDate
+33  0x0000afc8 0x0040d3c8 17  36   .rdata  utf16le SMBIOSBIOSVersion
+34  0x0000afec 0x0040d3ec 11  24   .rdata  utf16le InstallDate
+35  0x0000b004 0x0040d404 14  30   .rdata  utf16le RegisteredUser
+36  0x0000b022 0x0040d422 6   14   .rdata  utf16le Locale
+37  0x0000b030 0x0040d430 13  28   .rdata  utf16le TimeGenerated
+38  0x0000b04c 0x0040d44c 11  12   .rdata  ascii   <keyboard>\n
+39  0x0000b058 0x0040d458 28  58   .rdata  utf16le SELECT * FROM Win32_keyboard
+40  0x0000b09a 0x0040d49a 10  22   .rdata  utf16le ROOT\CIMV2
+41  0x0000b0b0 0x0040d4b0 8   9    .rdata  ascii   <mouse>\n
+42  0x0000b0bc 0x0040d4bc 34  70   .rdata  utf16le SELECT * FROM Win32_PointingDevice
+43  0x0000b102 0x0040d502 13  14   .rdata  ascii   <video card>\n
+44  0x0000b110 0x0040d510 35  72   .rdata  utf16le SELECT * FROM Win32_VideoController
+45  0x0000b158 0x0040d558 18  19   .rdata  ascii   <desktop monitor>\n
+46  0x0000b16c 0x0040d56c 34  70   .rdata  utf16le SELECT * FROM Win32_DesktopMonitor
+47  0x0000b1b2 0x0040d5b2 6   7    .rdata  ascii   <usb>\n
+48  0x0000b1bc 0x0040d5bc 56  114  .rdata  utf16le SELECT * FROM Win32_PnPEntity WHERE DeviceID like 'USB' 
+49  0x0000b22e 0x0040d62e 15  16   .rdata  ascii   <mother board>\n
+50  0x0000b240 0x0040d640 29  60   .rdata  utf16le SELECT * FROM Win32_BaseBoard
+51  0x0000b27c 0x0040d67c 7   8    .rdata  ascii   <bios>\n
+52  0x0000b284 0x0040d684 24  50   .rdata  utf16le SELECT * FROM Win32_BIOS
+53  0x0000b2b6 0x0040d6b6 5   6    .rdata  ascii   <os>\n
+54  0x0000b2bc 0x0040d6bc 35  72   .rdata  utf16le SELECT * FROM Win32_OperatingSystem
+55  0x0000b304 0x0040d704 16  17   .rdata  ascii   <login history>\n
+56  0x0000b318 0x0040d718 74  150  .rdata  utf16le SELECT * FROM Win32_NTLogEvent WHERE logfile='system' And EventCode='6005'
+57  0x0000b3ae 0x0040d7ae 21  22   .rdata  ascii   <emulator detection>\n
+58  0x0000b3c4 0x0040d7c4 47  48   .rdata  ascii     [*] Detect by checking for VBox devices  ... 
+59  0x0000b3f4 0x0040d7f4 10  22   .rdata  utf16le root\cimv2
+60  0x0000b40a 0x0040d80a 6   7    .rdata  ascii   FALSE\n
+61  0x0000b414 0x0040d814 36  74   .rdata  utf16le SELECT DeviceId FROM Win32_PnPEntity
+62  0x0000b45e 0x0040d85e 5   6    .rdata  ascii   TRUE\n
+63  0x0000b464 0x0040d864 53  54   .rdata  ascii     [*] Detect by looking for VMware serial number ... 
+64  0x0000b49c 0x0040d89c 35  72   .rdata  utf16le SELECT SerialNumber FROM Win32_Bios
+65  0x0000b4e4 0x0040d8e4 6   14   .rdata  utf16le VMware
+66  0x0000b4f2 0x0040d8f2 14  15   .rdata  ascii   .\Circinus.txt
+67  0x0000b504 0x0040d904 32  33   .rdata  ascii   <IP, MAC, Default Gateway, DNS>\n
+68  0x0000b525 0x0040d925 13  14   .rdata  ascii   \n<Port List>\n
+69  0x0000b533 0x0040d933 12  13   .rdata  ascii   \n<ARP List>\n
+70  0x0000b540 0x0040d940 14  15   .rdata  ascii   .\Aquarius.txt
+71  0x0000b552 0x0040d952 19  20   .rdata  ascii   <Application list>\n
+72  0x0000b566 0x0040d966 4   5    .rdata  ascii   .exe
+73  0x0000b56b 0x0040d96b 16  17   .rdata  ascii   C:\Program Files
+74  0x0000b57c 0x0040d97c 11  12   .rdata  ascii   .\Orion.txt
+75  0x0000b58b 0x0040d98b 17  18   .rdata  ascii   \n<OS product ID>\n
+76  0x0000b59d 0x0040d99d 22  23   .rdata  ascii   <System manufacturer>\n
+77  0x0000b5b4 0x0040d9b4 13  14   .rdata  ascii   <OS Version>\n
+78  0x0000b5c2 0x0040d9c2 15  16   .rdata  ascii   <# Processors>\n
+79  0x0000b5d2 0x0040d9d2 9   10   .rdata  ascii   <Memory>\n
+80  0x0000b5dc 0x0040d9dc 7   8    .rdata  ascii   <Disk>\n
+81  0x0000b5e4 0x0040d9e4 21  22   .rdata  ascii   <# Icons of Desktop>\n
+82  0x0000b5fa 0x0040d9fa 16  17   .rdata  ascii   <System locale>\n
+83  0x0000b60b 0x0040da0b 13  14   .rdata  ascii   <Resolution>\n
+84  0x0000b619 0x0040da19 12  13   .rdata  ascii   .\Pisces.txt
+85  0x0000b62c 0x0040da2c 45  46   .rdata  ascii   Sandbox detected 'TRUE', undetected 'FALSE'\n\n
+86  0x0000b65a 0x0040da5a 21  22   .rdata  ascii   [-] Cuckoo detection\n
+87  0x0000b670 0x0040da70 93  94   .rdata  ascii     [*] Detect by cuckoo return address is stored in the TLS (hooks information structure) ... 
+88  0x0000b6d0 0x0040dad0 142 143  .rdata  ascii        Cuckoo stores the return address in an extra space, allocated in the hook information structure FS: TLS_HOOK_INFO (Thread Local Storage)\n
+89  0x0000b760 0x0040db60 206 207  .rdata  ascii        Therefor read the address of hook information and calculate the min and max value for the return address value location. Also FireEye use cuckoo https://github.com/David-Reguera-Garcia-Dreg/anticuckoo\n
+90  0x0000b82f 0x0040dc2f 19  20   .rdata  ascii   [-] Qemu detection\n
+91  0x0000b844 0x0040dc44 42  43   .rdata  ascii     [*] Reg key Scsi identifier is QEMU ... 
+92  0x0000b86f 0x0040dc6f 4   5    .rdata  ascii   QEMU
+93  0x0000b874 0x0040dc74 10  11   .rdata  ascii   Identifier
+94  0x0000b880 0x0040dc80 76  77   .rdata  ascii   HARDWARE\DEVICEMAP\Scsi\Scsi Port 0\Scsi Bus 0\Target Id 0\Logical Unit Id 0
+95  0x0000b8cd 0x0040dccd 4   5    .rdata  ascii   TRUE
+96  0x0000b8d4 0x0040dcd4 81  82   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\Description\System "SystemBiosVersion") is QEMU ... 
+97  0x0000b926 0x0040dd26 17  18   .rdata  ascii   SystemBiosVersion
+98  0x0000b938 0x0040dd38 27  28   .rdata  ascii   HARDWARE\Description\System
+99  0x0000b954 0x0040dd54 24  25   .rdata  ascii   [-] Sandboxie detection\n
+100 0x0000b970 0x0040dd70 56  57   .rdata  ascii     [*] Using GetModuleHandle() to search sbiedll.dll ... 
+101 0x0000b9a9 0x0040dda9 11  12   .rdata  ascii   sbiedll.dll
+102 0x0000b9b5 0x0040ddb5 19  20   .rdata  ascii   [-] VBox detection\n
+103 0x0000b9cc 0x0040ddcc 42  43   .rdata  ascii     [*] Reg key Scsi identifier is VBOX ... 
+104 0x0000b9f7 0x0040ddf7 4   5    .rdata  ascii   VBOX
+105 0x0000b9fc 0x0040ddfc 80  81   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\Description\System "SystemBiosVersion") is VBOX... 
+106 0x0000ba50 0x0040de50 68  69   .rdata  ascii     [*] Reg key (HKLM\SOFTWARE\Oracle\VirtualBox Guest Additions) ... 
+107 0x0000ba98 0x0040de98 42  43   .rdata  ascii   SOFTWARE\Oracle\VirtualBox Guest Additions
+108 0x0000bac4 0x0040dec4 85  86   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\Description\System "VideoBiosVersion") is VIRTUALBOX... 
+109 0x0000bb1a 0x0040df1a 10  11   .rdata  ascii   VIRTUALBOX
+110 0x0000bb25 0x0040df25 16  17   .rdata  ascii   VideoBiosVersion
+111 0x0000bb38 0x0040df38 51  52   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\ACPI\DSDT\VBOX__) ... 
+112 0x0000bb6c 0x0040df6c 25  26   .rdata  ascii   HARDWARE\ACPI\DSDT\VBOX__
+113 0x0000bb88 0x0040df88 51  52   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\ACPI\FADT\VBOX__) ... 
+114 0x0000bbbc 0x0040dfbc 25  26   .rdata  ascii   HARDWARE\ACPI\FADT\VBOX__
+115 0x0000bbd8 0x0040dfd8 51  52   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\ACPI\RSDT\VBOX__) ... 
+116 0x0000bc0c 0x0040e00c 25  26   .rdata  ascii   HARDWARE\ACPI\RSDT\VBOX__
+117 0x0000bc28 0x0040e028 63  64   .rdata  ascii     [*] Reg key (HKLM\SYSTEM\ControlSet001\Services\VBox* x5 ... 
+118 0x0000bc68 0x0040e068 39  40   .rdata  ascii   SYSTEM\ControlSet001\Services\VBoxGuest
+119 0x0000bc90 0x0040e090 39  40   .rdata  ascii   SYSTEM\ControlSet001\Services\VBoxMouse
+120 0x0000bcb8 0x0040e0b8 41  42   .rdata  ascii   SYSTEM\ControlSet001\Services\VBoxService
+121 0x0000bce4 0x0040e0e4 36  37   .rdata  ascii   SYSTEM\ControlSet001\Services\VBoxSF
+122 0x0000bd0c 0x0040e10c 39  40   .rdata  ascii   SYSTEM\ControlSet001\Services\VBoxVideo
+123 0x0000bd34 0x0040e134 39  40   .rdata  ascii   VirtualBox traced using Reg key HKLM\%s
+124 0x0000bd5c 0x0040e15c 82  83   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\DESCRIPTION\System "SystemBiosDate") is 06/23/99 ... 
+125 0x0000bdaf 0x0040e1af 8   9    .rdata  ascii   06/23/99
+126 0x0000bdb8 0x0040e1b8 14  15   .rdata  ascii   SystemBiosDate
+127 0x0000bdc7 0x0040e1c7 27  28   .rdata  ascii   HARDWARE\DESCRIPTION\System
+128 0x0000bde4 0x0040e1e4 73  74   .rdata  ascii     [*] Detect by driver files in C:\WINDOWS\system32\drivers\VBox* x4 ... 
+129 0x0000be30 0x0040e230 41  42   .rdata  ascii   C:\WINDOWS\system32\drivers\VBoxMouse.sys
+130 0x0000be5c 0x0040e25c 41  42   .rdata  ascii   C:\WINDOWS\system32\drivers\VBoxGuest.sys
+131 0x0000be88 0x0040e288 38  39   .rdata  ascii   C:\WINDOWS\system32\drivers\VBoxSF.sys
+132 0x0000beb0 0x0040e2b0 41  42   .rdata  ascii   C:\WINDOWS\system32\drivers\VBoxVideo.sys
+133 0x0000bedc 0x0040e2dc 38  39   .rdata  ascii   VirtualBox traced using driver file %s
+134 0x0000bf04 0x0040e304 55  56   .rdata  ascii     [*] Detect by additional system files vbox* x 14 ... 
+135 0x0000bf3c 0x0040e33c 32  33   .rdata  ascii   C:\WINDOWS\system32\vboxdisp.dll
+136 0x0000bf60 0x0040e360 32  33   .rdata  ascii   C:\WINDOWS\system32\vboxhook.dll
+137 0x0000bf84 0x0040e384 33  34   .rdata  ascii   C:\WINDOWS\system32\vboxmrxnp.dll
+138 0x0000bfa8 0x0040e3a8 31  32   .rdata  ascii   C:\WINDOWS\system32\vboxogl.dll
+139 0x0000bfc8 0x0040e3c8 39  40   .rdata  ascii   C:\WINDOWS\system32\vboxoglarrayspu.dll
+140 0x0000bff0 0x0040e3f0 37  38   .rdata  ascii   C:\WINDOWS\system32\vboxoglcrutil.dll
+141 0x0000c018 0x0040e418 39  40   .rdata  ascii   C:\WINDOWS\system32\vboxoglerrorspu.dll
+142 0x0000c040 0x0040e440 42  43   .rdata  ascii   C:\WINDOWS\system32\vboxoglfeedbackspu.dll
+143 0x0000c06c 0x0040e46c 38  39   .rdata  ascii   C:\WINDOWS\system32\vboxoglpackspu.dll
+144 0x0000c094 0x0040e494 45  46   .rdata  ascii   C:\WINDOWS\system32\vboxoglpassthroughspu.dll
+145 0x0000c0c4 0x0040e4c4 35  36   .rdata  ascii   C:\WINDOWS\system32\vboxservice.exe
+146 0x0000c0e8 0x0040e4e8 32  33   .rdata  ascii   C:\WINDOWS\system32\vboxtray.exe
+147 0x0000c10c 0x0040e50c 35  36   .rdata  ascii   C:\WINDOWS\system32\VBoxControl.exe
+148 0x0000c130 0x0040e530 51  52   .rdata  ascii   C:\program files\oracle\virtualbox guest additions\
+149 0x0000c164 0x0040e564 38  39   .rdata  ascii   VirtualBox traced using system file %s
+150 0x0000c18c 0x0040e58c 62  63   .rdata  ascii   [*] Detect by checking MAC address starting with 08:00:27 ... 
+151 0x0000c1cc 0x0040e5cc 56  57   .rdata  ascii     [*] Detect by looking for pseudo devices VBox* x4 ... 
+152 0x0000c205 0x0040e605 17  18   .rdata  ascii   \\.\VBoxMiniRdrDN
+153 0x0000c217 0x0040e617 21  22   .rdata  ascii   \\.\pipe\VBoxMiniRdDN
+154 0x0000c22d 0x0040e62d 15  16   .rdata  ascii   \\.\VBoxTrayIPC
+155 0x0000c23d 0x0040e63d 20  21   .rdata  ascii   \\.\pipe\VBoxTrayIPC
+156 0x0000c254 0x0040e654 33  34   .rdata  ascii   VirtualBox traced using device %s
+157 0x0000c278 0x0040e678 49  50   .rdata  ascii     [*] Detect by looking for VBoxTray windows ... 
+158 0x0000c2aa 0x0040e6aa 20  21   .rdata  ascii   VBoxTrayToolWndClass
+159 0x0000c2bf 0x0040e6bf 15  16   .rdata  ascii   VBoxTrayToolWnd
+160 0x0000c2d0 0x0040e6d0 79  80   .rdata  ascii     [*] Detect by looking for VBox processes (vboxservice.exe, vboxtray.exe) ... 
+161 0x0000c320 0x0040e720 15  16   .rdata  ascii   vboxservice.exe
+162 0x0000c330 0x0040e730 12  13   .rdata  ascii   vboxtray.exe
+163 0x0000c344 0x0040e744 82  83   .rdata  ascii   [*] Detect by checking VBox network is sharing with VirtualBox Shared Folders ... 
+164 0x0000c397 0x0040e797 25  26   .rdata  ascii   VirtualBox Shared Folders
+165 0x0000c3b1 0x0040e7b1 21  22   .rdata  ascii   [-] VMware detection\n
+166 0x0000c3c8 0x0040e7c8 44  45   .rdata  ascii     [*] Reg key Scsi identifier is VMWARE ... 
+167 0x0000c3f5 0x0040e7f5 6   7    .rdata  ascii   VMWARE
+168 0x0000c3fc 0x0040e7fc 76  77   .rdata  ascii   HARDWARE\DEVICEMAP\Scsi\Scsi Port 1\Scsi Bus 0\Target Id 0\Logical Unit Id 0
+169 0x0000c44c 0x0040e84c 76  77   .rdata  ascii   HARDWARE\DEVICEMAP\Scsi\Scsi Port 2\Scsi Bus 0\Target Id 0\Logical Unit Id 0
+170 0x0000c49c 0x0040e89c 60  61   .rdata  ascii     [*] Reg key (HKLM\SOFTWARE\VMware, Inc.\VMware Tools) ... 
+171 0x0000c4dc 0x0040e8dc 34  35   .rdata  ascii   SOFTWARE\VMware, Inc.\VMware Tools
+172 0x0000c500 0x0040e900 72  73   .rdata  ascii     [*] Detect by looking for C:\WINDOWS\system32\drivers\vmmouse.sys ... 
+173 0x0000c54c 0x0040e94c 39  40   .rdata  ascii   C:\WINDOWS\system32\drivers\vmmouse.sys
+174 0x0000c574 0x0040e974 71  72   .rdata  ascii     [*] Detect by looking for C:\WINDOWS\system32\drivers\vmhgfs.sys ... 
+175 0x0000c5bc 0x0040e9bc 38  39   .rdata  ascii   C:\WINDOWS\system32\drivers\vmhgfs.sys
+176 0x0000c5e4 0x0040e9e4 50  51   .rdata  ascii     [*] Detect by looking for pseudo devices x2 ... 
+177 0x0000c617 0x0040ea17 8   9    .rdata  ascii   \\.\HGFS
+178 0x0000c620 0x0040ea20 8   9    .rdata  ascii   \\.\vmci
+179 0x0000c629 0x0040ea29 29  30   .rdata  ascii   VMWare traced using device %s
+180 0x0000c648 0x0040ea48 62  63   .rdata  ascii   [*] Detect by checking MAC address starting with 00:05:69 ... 
+181 0x0000c68c 0x0040ea8c 62  63   .rdata  ascii   [*] Detect by checking MAC address starting with 00:0C:29 ... 
+182 0x0000c6d0 0x0040ead0 62  63   .rdata  ascii   [*] Detect by checking MAC address starting with 00:1C:14 ... 
+183 0x0000c714 0x0040eb14 62  63   .rdata  ascii   [*] Detect by checking MAC address starting with 00:50:56 ... 
+184 0x0000c758 0x0040eb58 57  58   .rdata  ascii   [*] Detect by checking network adapter name is VMware... 
+185 0x0000c792 0x0040eb92 6   7    .rdata  ascii   VMware
+186 0x0000c799 0x0040eb99 19  20   .rdata  ascii   [-] Wine detection\n
+187 0x0000c7b0 0x0040ebb0 108 109  .rdata  ascii     [*] Using GetProcAddress() to check address of wine_get_unix_file_name func from kernel32.dll library ... 
+188 0x0000c81d 0x0040ec1d 12  13   .rdata  ascii   kernel32.dll
+189 0x0000c82a 0x0040ec2a 23  24   .rdata  ascii   wine_get_unix_file_name
+190 0x0000c844 0x0040ec44 39  40   .rdata  ascii     [*] Reg key (HKCU\SOFTWARE\Wine) ... 
+191 0x0000c86c 0x0040ec6c 13  14   .rdata  ascii   SOFTWARE\Wine
+192 0x0000c87c 0x0040ec7c 30  31   .rdata  ascii   [-] Generic sandbox detection\n
+193 0x0000c89c 0x0040ec9c 57  58   .rdata  ascii     [*] Using GetTickCount() to check if sleep has succeed 
+194 0x0000c8d6 0x0040ecd6 25  26   .rdata  ascii   4500ms < %dms ...  FALSE\n
+195 0x0000c8f0 0x0040ecf0 23  24   .rdata  ascii   4500ms > %dms ... TRUE\n
+196 0x0000c908 0x0040ed08 23  24   .rdata  ascii   [-] Debugger detection\n
+197 0x0000c920 0x0040ed20 64  65   .rdata  ascii     [*] Using OutputDebugString() to send strings to debugger ... 
+198 0x0000c961 0x0040ed61 7   8    .rdata  ascii   useless
+199 0x0000c96c 0x0040ed6c 135 136  .rdata  ascii          but only works on MS Windows systems prior to Vista see "https://msdn.microsoft.com/ja-jp/library/cc428973.aspx" for more info \n
+200 0x0000c9f4 0x0040edf4 20  21   .rdata  ascii   [-] Hooks detection\n
+201 0x0000ca0c 0x0040ee0c 59  60   .rdata  ascii     [*] Detect by tracing hooks using DeleteFileW method ... 
+202 0x0000ca48 0x0040ee48 63  64   .rdata  ascii     [*] Detect by tracing hooks using ShellExecuteExW method ... 
+203 0x0000ca88 0x0040ee88 62  63   .rdata  ascii     [*] Detect by tracing hooks using CreateProcessA method ... 
+204 0x0000cac7 0x0040eec7 20  21   .rdata  ascii   [-] Bochs detection\n
+205 0x0000cadc 0x0040eedc 82  83   .rdata  ascii     [*] Reg key (HKLM\HARDWARE\Description\System "SystemBiosVersion") is BOCHS ... 
+206 0x0000cb2f 0x0040ef2f 5   6    .rdata  ascii   BOCHS
+207 0x0000cb38 0x0040ef38 72  73   .rdata  ascii     [*] Detect by proccessor brand name is P (CPU AMD value is wrong) ... 
+208 0x0000cb81 0x0040ef81 24  25   .rdata  ascii   AMD Athlon(tm) processor
+209 0x0000cb9c 0x0040ef9c 65  66   .rdata  ascii     [*] Detect by easter egg is wrong (CPU AMD value is wrong) ... 
+210 0x0000cbe0 0x0040efe0 69  70   .rdata  ascii     [*] Detect by INTEL CPU processor is Intel(R) Pentium(R) 4 CPU ... 
+211 0x0000cc28 0x0040f028 47  48   .rdata  ascii                 Intel(R) Pentium(R) 4 CPU        
+212 0x0000cc58 0x0040f058 18  19   .rdata  ascii   [-] CPU detection\n
+213 0x0000cc6b 0x0040f06b 17  18   .rdata  ascii   %lu.%lu build %lu
+214 0x0000cc7d 0x0040f07d 27  28   .rdata  ascii          Windows version: %s\n
+215 0x0000cc99 0x0040f099 19  20   .rdata  ascii          CPU: %s %s \n
+216 0x0000ccad 0x0040f0ad 19  20   .rdata  ascii   Windows version: %s
+217 0x0000ccc1 0x0040f0c1 10  11   .rdata  ascii   CPU: %s %s
+218 0x0000cccc 0x0040f0cc 104 105  .rdata  ascii     [*] Detect by checking the difference between CPU timestamp counters (rdtsc: Read Time Stamp Counter) 
+219 0x0000cd35 0x0040f135 23  24   .rdata  ascii   0 < %d < 750 ... FALSE\n
+220 0x0000cd4d 0x0040f14d 28  29   .rdata  ascii   0 > %d || 750 < %d ... TRUE\n
+221 0x0000cd6c 0x0040f16c 124 125  .rdata  ascii     [*] Detect by checking the difference between CPU timestamp counters (rdtsc: Read Time Stamp Counter) forcing VM exit ... 
+222 0x0000cde9 0x0040f1e9 24  25   .rdata  ascii   0 < %d < 1000 ... FALSE\n
+223 0x0000ce02 0x0040f202 29  30   .rdata  ascii   0 > %d || 1000 < %d ... TRUE\n
+224 0x0000ce20 0x0040f220 66  67   .rdata  ascii     [*] Detect by checking hypervisor bit in cpuid feature bits ... 
+225 0x0000ce64 0x0040f264 72  73   .rdata  ascii     [*] Detect by checking cpuid vendor is KVM || Hv || VMware || Xen ... 
+226 0x0000cead 0x0040f2ad 12  13   .rdata  ascii   KVMKVMKVMKVM
+227 0x0000ceba 0x0040f2ba 12  13   .rdata  ascii   Microsoft Hv
+228 0x0000cec7 0x0040f2c7 12  13   .rdata  ascii   VMwareVMware
+229 0x0000ced4 0x0040f2d4 12  13   .rdata  ascii   XenVMMXenVMM
+230 0x0000cee1 0x0040f2e1 18  19   .rdata  ascii   WSAStartup Failed.
+231 0x0000cef4 0x0040f2f4 9   10   .rdata  ascii   NXdomain 
+232 0x0000cefe 0x0040f2fe 12  13   .rdata  ascii   Basic realm=
+233 0x0000cf10 0x0040f310 149 150  .rdata  ascii   POST %s HTTP/1.1\r\nHost: %s\r\nUser-Agent: Mozilla/4.0 (compatible; MSIE 6.0; Windows XP)\r\nReferer: http://%s%s\r\nCokkie: xtl_s=%s\r\nContent-Length: 207\r\n
+234 0x0000cfa6 0x0040f3a6 14  15   .rdata  ascii   tws_action=%s&
+235 0x0000cfb5 0x0040f3b5 15  16   .rdata  ascii   RegisteredOwner
+236 0x0000cfc8 0x0040f3c8 44  45   .rdata  ascii   SOFTWARE\Microsoft\Windows NT\CurrentVersion
+237 0x0000cff5 0x0040f3f5 22  23   .rdata  ascii   RegisteredOrganization
+238 0x0000d00c 0x0040f40c 11  12   .rdata  ascii   InstallDate
+239 0x0000d018 0x0040f418 10  11   .rdata  ascii   BIOSVendor
+240 0x0000d024 0x0040f424 32  33   .rdata  ascii   HARDWARE\DESCRIPTION\System\BIOS
+241 0x0000d045 0x0040f445 11  12   .rdata  ascii   BIOSVersion
+242 0x0000d051 0x0040f451 15  16   .rdata  ascii   BIOSReleaseDate
+243 0x0000d061 0x0040f461 17  18   .rdata  ascii   HTTP/1.1 200 OK\r\n
+244 0x0000d08c 0x0040f48c 55  56   .rdata  ascii   Error allocating memory needed to call GetAdaptersinfo\n
+245 0x0000d0c4 0x0040f4c4 16  17   .rdata  ascii   ComboIndex: \t%d\n
+246 0x0000d0d5 0x0040f4d5 18  19   .rdata  ascii   Adapter Name: \t%s\n
+247 0x0000d0e8 0x0040f4e8 18  19   .rdata  ascii   Adapter Desc: \t%s\n
+248 0x0000d0fb 0x0040f4fb 15  16   .rdata  ascii   Adapter Addr: \t
+249 0x0000d10b 0x0040f50b 5   6    .rdata  ascii   %.2X\n
+250 0x0000d111 0x0040f511 5   6    .rdata  ascii   %.2X-
+251 0x0000d117 0x0040f517 11  12   .rdata  ascii   Index: \t%d\n
+252 0x0000d123 0x0040f523 7   8    .rdata  ascii   Type: \t
+253 0x0000d12b 0x0040f52b 6   7    .rdata  ascii   Other\n
+254 0x0000d132 0x0040f532 9   10   .rdata  ascii   Ethernet\n
+255 0x0000d13c 0x0040f53c 11  12   .rdata  ascii   Token Ring\n
+256 0x0000d148 0x0040f548 5   6    .rdata  ascii   FDDI\n
+257 0x0000d14e 0x0040f54e 4   5    .rdata  ascii   PPP\n
+258 0x0000d153 0x0040f553 9   10   .rdata  ascii   Lookback\n
+259 0x0000d15d 0x0040f55d 5   6    .rdata  ascii   Slip\n
+260 0x0000d163 0x0040f563 17  18   .rdata  ascii   Unknown type %ld\n
+261 0x0000d175 0x0040f575 16  17   .rdata  ascii   IP Address: \t%s\n
+262 0x0000d186 0x0040f586 13  14   .rdata  ascii   IP Mask: \t%s\n
+263 0x0000d194 0x0040f594 13  14   .rdata  ascii   Gateway: \t%s\n
+264 0x0000d1a2 0x0040f5a2 4   5    .rdata  ascii   ***\n
+265 0x0000d1a7 0x0040f5a7 18  19   .rdata  ascii   DHCP Enabled: Yes\n
+266 0x0000d1ba 0x0040f5ba 19  20   .rdata  ascii     DHCP Server: \t%s\n
+267 0x0000d1ce 0x0040f5ce 18  19   .rdata  ascii     Lease Obtained: 
+268 0x0000d1e1 0x0040f5e1 17  18   .rdata  ascii   DHCP Enabled: No\n
+269 0x0000d1f3 0x0040f5f3 15  16   .rdata  ascii   Have Wins: Yes\n
+270 0x0000d203 0x0040f603 29  30   .rdata  ascii     Primary Wins Server:    %s\n
+271 0x0000d221 0x0040f621 29  30   .rdata  ascii     Secondary Wins Server:  %s\n
+272 0x0000d23f 0x0040f63f 14  15   .rdata  ascii   Have Wins: No\n
+273 0x0000d250 0x0040f650 38  39   .rdata  ascii   GetAdaptersInfo failed with error: %d\n
+274 0x0000d2f0 0x0040f6f0 5   6    .rdata  ascii   %02x-
+275 0x0000d2f6 0x0040f6f6 4   5    .rdata  ascii   %02x
+276 0x0000d2fb 0x0040f6fb 5   6    .rdata  ascii   other
+277 0x0000d301 0x0040f701 4   5    .rdata  ascii   \t%s\n
+278 0x0000d306 0x0040f706 7   8    .rdata  ascii   invalid
+279 0x0000d30e 0x0040f70e 7   8    .rdata  ascii   dynamic
+280 0x0000d316 0x0040f716 6   7    .rdata  ascii   static
+281 0x0000d31d 0x0040f71d 22  23   .rdata  ascii   GetIpNetTable failed.\n
+282 0x0000d334 0x0040f734 10  11   .rdata  ascii   \tError: %s
+283 0x0000d33f 0x0040f73f 24  25   .rdata  ascii   Error allocating memory\n
+284 0x0000d358 0x0040f758 22  23   .rdata  ascii   Number of entries: %d\n
+285 0x0000d36f 0x0040f76f 13  14   .rdata  ascii   TCP[%d] %s:%d
+286 0x0000d37d 0x0040f77d 7   8    .rdata  ascii    %s:%d 
+287 0x0000d385 0x0040f785 7   8    .rdata  ascii   CLOSED\n
+288 0x0000d38d 0x0040f78d 7   8    .rdata  ascii   LISTEN\n
+289 0x0000d395 0x0040f795 9   10   .rdata  ascii   SYN-SENT\n
+290 0x0000d39f 0x0040f79f 13  14   .rdata  ascii   SYN-RECEIVED\n
+291 0x0000d3ad 0x0040f7ad 12  13   .rdata  ascii   ESTABLISHED\n
+292 0x0000d3ba 0x0040f7ba 11  12   .rdata  ascii   FIN-WAIT-1\n
+293 0x0000d3c6 0x0040f7c6 12  13   .rdata  ascii   FIN-WAIT-2 \n
+294 0x0000d3d3 0x0040f7d3 11  12   .rdata  ascii   CLOSE-WAIT\n
+295 0x0000d3df 0x0040f7df 8   9    .rdata  ascii   CLOSING\n
+296 0x0000d3e8 0x0040f7e8 9   10   .rdata  ascii   LAST-ACK\n
+297 0x0000d3f2 0x0040f7f2 10  11   .rdata  ascii   TIME-WAIT\n
+298 0x0000d3fd 0x0040f7fd 11  12   .rdata  ascii   DELETE-TCB\n
+299 0x0000d409 0x0040f809 22  23   .rdata  ascii   UNKNOWN dwState value\n
+300 0x0000d420 0x0040f820 28  29   .rdata  ascii   \tGetTcpTable failed with %d\n
+301 0x0000d474 0x0040f874 15  16   .rdata  ascii   UDP[%d]  %s:%d\n
+302 0x0000d484 0x0040f884 27  28   .rdata  ascii   GetUdpTable failed with %d\n
+303 0x0000d4b2 0x0040f8b2 8   9    .rdata  ascii   kernel32
+304 0x0000d4bb 0x0040f8bb 14  15   .rdata  ascii   IsWow64Process
+305 0x0000d4ca 0x0040f8ca 19  20   .rdata  ascii   %d/%d/%d %d:%d:%d%s
+306 0x0000d4e0 0x0040f8e0 38  39   .rdata  ascii   %04d/%02d/%02d %02d:%02d:%02d %12d %s\n
+307 0x0000d507 0x0040f907 5   6    .rdata  ascii   \t\t%s\n
+308 0x0000d50d 0x0040f90d 14  15   .rdata  ascii   %s: not found\n
+309 0x0000d521 0x0040f921 15  16   .rdata  ascii   Directry of %s\n
+310 0x0000d534 0x0040f934 31  32   .rdata  ascii   -----End of main directry-----\n
+311 0x0000d554 0x0040f954 31  32   .rdata  ascii   pointer %d : (dx, dy)=(%d, %d)\n
+312 0x0000d574 0x0040f974 18  19   .rdata  ascii   Runtime: %d msec.\n
+313 0x0000d587 0x0040f987 25  26   .rdata  ascii   -----MEMORYSTATUSEX-----\n
+314 0x0000d5a4 0x0040f9a4 42  43   .rdata  ascii   Total      Physical Memory (byte) : %llu \n
+315 0x0000d5d0 0x0040f9d0 42  43   .rdata  ascii   Available  Physical Memory (byte) : %llu \n
+316 0x0000d5fc 0x0040f9fc 42  43   .rdata  ascii   Total      Virtual  Memory (byte) : %llu \n
+317 0x0000d628 0x0040fa28 42  43   .rdata  ascii   Available  Virtual  Memory (byte) : %llu \n
+318 0x0000d653 0x0040fa53 23  24   .rdata  ascii   -----MEMORYSTATUS-----\n
+319 0x0000d66b 0x0040fa6b 9   10   .rdata  ascii   ProductId
+320 0x0000d678 0x0040fa78 44  45   .rdata  ascii   SOFTWARE\Microsoft\Windows NT\CurrentVersion
+321 0x0000d6a9 0x0040faa9 18  19   .rdata  ascii   SystemManufacturer
+322 0x0000d6bc 0x0040fabc 50  51   .rdata  ascii   SYSTEM\CurrentControlSet\Control\SystemInformation
+323 0x0000d6ef 0x0040faef 18  19   .rdata  ascii   OS version: %d.%d\n
+324 0x0000d702 0x0040fb02 15  16   .rdata  ascii   #Processor: %d\n
+325 0x0000d712 0x0040fb12 4   5    .rdata  ascii   %c:\
+326 0x0000d717 0x0040fb17 14  15   .rdata  ascii   Drive[%d]: %s\n
+327 0x0000d726 0x0040fb26 17  18   .rdata  ascii   Volume name : %s\n
+328 0x0000d738 0x0040fb38 21  22   .rdata  ascii   Serial number : %08X\n
+329 0x0000d74e 0x0040fb4e 22  23   .rdata  ascii   File system name : %s\n
+330 0x0000d765 0x0040fb65 23  24   .rdata  ascii   Available : %I64u Byte\n
+331 0x0000d77d 0x0040fb7d 23  24   .rdata  ascii   All       : %I64u Byte\n
+332 0x0000d795 0x0040fb95 23  24   .rdata  ascii   Free      : %I64u Byte\n
+333 0x0000d7b0 0x0040fbb0 34  35   .rdata  ascii   System locale : %s\nLocale ID : %d\n
+334 0x0000d7d3 0x0040fbd3 7   8    .rdata  ascii   ProgMan
+335 0x0000d7db 0x0040fbdb 26  27   .rdata  ascii   # icon(s) of Desktop : %d\n
+336 0x0000d7f6 0x0040fbf6 21  22   .rdata  ascii   Resolution : %d X %d\n
+337 0x0000d80c 0x0040fc0c 16  17   .rdata  ascii   Color : %d Bits\n
+338 0x0000d820 0x0040fc20 9   10   .rdata  ascii   Error: 1\n
+339 0x0000d82a 0x0040fc2a 9   10   .rdata  ascii   Error: 2\n
+340 0x0000d834 0x0040fc34 9   10   .rdata  ascii   Error: 3\n
+341 0x0000d83e 0x0040fc3e 9   10   .rdata  ascii   Error: 4\n
+342 0x0000d848 0x0040fc48 9   10   .rdata  ascii   Error: 5\n
+343 0x0000d852 0x0040fc52 8   9    .rdata  ascii   %ls: %s\n
+344 0x0000d85b 0x0040fc5b 8   9    .rdata  ascii   %ls: %d\n
+345 0x0000d864 0x0040fc64 8   9    .rdata  ascii   %ls: %u\n
+346 0x0000d86d 0x0040fc6d 9   10   .rdata  ascii   %ls: %ls\n
+347 0x0000d877 0x0040fc77 18  19   .rdata  ascii   ---End of data---\n
+348 0x0000d88c 0x0040fc8c 64  65   .rdata  ascii   ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+349 0x0000d8cd 0x0040fccd 5   6    .rdata  ascii   %%%2X
+350 0x0000d8d4 0x0040fcd4 8   9    .rdata  ascii   kernel32
+351 0x0000d8e0 0x0040fce0 30  31   .rdata  ascii   Wow64DisableWow64FsRedirection
+352 0x0000d8ff 0x0040fcff 29  30   .rdata  ascii   Wow64RevertWow64FsRedirection
+353 0x0000d91d 0x0040fd1d 14  15   .rdata  ascii   IsWow64Process
+354 0x0000d92c 0x0040fd2c 8   9    .rdata  ascii   %c%c%c%c
+355 0x0000d959 0x0040fd59 5   6    .rdata  ascii   <5IkQ
+356 0x0000d9ea 0x0040fdea 4   5    .rdata  ascii   s1q4
+357 0x0000da29 0x0040fe29 5   6    .rdata  ascii   <5IkQ
+358 0x0000da49 0x0040fe49 5   6    .rdata  ascii   <5IkQ
+359 0x0000db1c 0x0040ff1c 13  14   .rdata  ascii   Unknown error
+360 0x0000db2c 0x0040ff2c 42  43   .rdata  ascii   _matherr(): %s in %s(%g, %g)  (retval=%g)\n
+361 0x0000db58 0x0040ff58 30  31   .rdata  ascii   Argument domain error (DOMAIN)
+362 0x0000db77 0x0040ff77 27  28   .rdata  ascii   Argument singularity (SIGN)
+363 0x0000db94 0x0040ff94 31  32   .rdata  ascii   Overflow range error (OVERFLOW)
+364 0x0000dbb4 0x0040ffb4 53  54   .rdata  ascii   The result is too small to be represented (UNDERFLOW)
+365 0x0000dbec 0x0040ffec 34  35   .rdata  ascii   Total loss of significance (TLOSS)
+366 0x0000dc10 0x00410010 36  37   .rdata  ascii   Partial loss of significance (PLOSS)
+367 0x0000dc50 0x00410050 27  28   .rdata  ascii   Mingw-w64 runtime failure:\n
+368 0x0000dc6c 0x0041006c 31  32   .rdata  ascii   Address %p has no image-section
+369 0x0000dc8c 0x0041008c 48  49   .rdata  ascii     VirtualQuery failed for %d bytes at address %p
+370 0x0000dcc0 0x004100c0 38  39   .rdata  ascii     VirtualProtect failed with code 0x%x
+371 0x0000dce8 0x004100e8 49  50   .rdata  ascii     Unknown pseudo relocation protocol version %d.\n
+372 0x0000dd1c 0x0041011c 41  42   .rdata  ascii     Unknown pseudo relocation bit size %d.\n
+373 0x0000dd50 0x00410150 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+374 0x0000dd64 0x00410164 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+375 0x0000dd78 0x00410178 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+376 0x0000dd8c 0x0041018c 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+377 0x0000dda0 0x004101a0 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+378 0x0000ddb4 0x004101b4 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+379 0x0000ddc8 0x004101c8 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+380 0x0000dddc 0x004101dc 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+381 0x0000ddf0 0x004101f0 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+382 0x0000de04 0x00410204 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+383 0x0000de18 0x00410218 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+384 0x0000de2c 0x0041022c 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+385 0x0000de40 0x00410240 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+386 0x0000de54 0x00410254 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+387 0x0000de68 0x00410268 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+388 0x0000de7c 0x0041027c 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+389 0x0000de90 0x00410290 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+390 0x0000dea4 0x004102a4 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+391 0x0000deb8 0x004102b8 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+392 0x0000decc 0x004102cc 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+393 0x0000dee0 0x004102e0 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+394 0x0000def4 0x004102f4 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+395 0x0000df08 0x00410308 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+396 0x0000df1c 0x0041031c 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+397 0x0000df30 0x00410330 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+398 0x0000df44 0x00410344 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+399 0x0000df58 0x00410358 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+400 0x0000df6c 0x0041036c 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+401 0x0000df80 0x00410380 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+402 0x0000df94 0x00410394 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+403 0x0000dfa8 0x004103a8 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+404 0x0000dfbc 0x004103bc 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+405 0x0000dfd0 0x004103d0 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+406 0x0000dfe4 0x004103e4 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+407 0x0000dff8 0x004103f8 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+408 0x0000e00c 0x0041040c 16  17   .rdata  ascii   GCC: (GNU) 4.8.3
+arch     x86
+baddr    0x400000
+binsz    63488
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001f090
+compiled Tue Feb  9 08:23:04 2038
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0001f090
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x801bf7e8
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x30f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x18
+  SizeOfCode : 0xa600
+  SizeOfInitializedData : 0xf400
+  SizeOfUninitializedData : 0x800
+  AddressOfEntryPoint : 0x14e0
+  BaseOfCode : 0x1000
+  BaseOfData : 0xc000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x16000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x1f090
+  Subsystem : 0x3
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x12000
+  Size : 0x11cc
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x15004
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x12388
+  Size : 0x284
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+gdi32.dll
+iphlpapi.dll
+kernel32.dll
+mpr.dll
+msvcrt.dll
+ole32.dll
+oleaut32.dll
+shell32.dll
+user32.dll
+winmm.dll
+ws2_32.dll
+
+12 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0001260c 0x0000e588 SET_32 ADVAPI32.dll_RegCloseKey
+0x0001261a 0x0000e58c SET_32 ADVAPI32.dll_RegOpenKeyExA
+0x0001262a 0x0000e590 SET_32 ADVAPI32.dll_RegQueryValueExA
+0x0001263e 0x0000e598 SET_32 GDI32.dll_GetDeviceCaps
+0x0001264e 0x0000e5a0 SET_32 IPHLPAPI.DLL_GetAdaptersAddresses
+0x00012666 0x0000e5a4 SET_32 IPHLPAPI.DLL_GetAdaptersInfo
+0x00012678 0x0000e5a8 SET_32 IPHLPAPI.DLL_GetIpNetTable
+0x00012688 0x0000e5ac SET_32 IPHLPAPI.DLL_GetTcpTable
+0x00012696 0x0000e5b0 SET_32 IPHLPAPI.DLL_GetUdpTable
+0x000126a4 0x0000e5b8 SET_32 KERNEL32.dll_CloseHandle
+0x000126b2 0x0000e5bc SET_32 KERNEL32.dll_CreateFileA
+0x000126c0 0x0000e5c0 SET_32 KERNEL32.dll_CreateProcessA
+0x000126d2 0x0000e5c4 SET_32 KERNEL32.dll_CreateSemaphoreA
+0x000126e6 0x0000e5c8 SET_32 KERNEL32.dll_CreateThread
+0x000126f6 0x0000e5cc SET_32 KERNEL32.dll_CreateToolhelp32Snapshot
+0x00012712 0x0000e5d0 SET_32 KERNEL32.dll_DeleteCriticalSection
+0x0001272a 0x0000e5d4 SET_32 KERNEL32.dll_DeleteFileA
+0x00012738 0x0000e5d8 SET_32 KERNEL32.dll_DeleteFileW
+0x00012746 0x0000e5dc SET_32 KERNEL32.dll_EnterCriticalSection
+0x0001275e 0x0000e5e0 SET_32 KERNEL32.dll_FormatMessageA
+0x00012770 0x0000e5e4 SET_32 KERNEL32.dll_GetComputerNameA
+0x00012784 0x0000e5e8 SET_32 KERNEL32.dll_GetCurrentProcess
+0x00012798 0x0000e5ec SET_32 KERNEL32.dll_GetCurrentProcessId
+0x000127ae 0x0000e5f0 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x000127c4 0x0000e5f4 SET_32 KERNEL32.dll_GetDiskFreeSpaceExA
+0x000127da 0x0000e5f8 SET_32 KERNEL32.dll_GetDriveTypeA
+0x000127ea 0x0000e5fc SET_32 KERNEL32.dll_GetFileAttributesA
+0x00012800 0x0000e600 SET_32 KERNEL32.dll_GetLastError
+0x00012810 0x0000e604 SET_32 KERNEL32.dll_GetLogicalDrives
+0x00012824 0x0000e608 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x0001283a 0x0000e60c SET_32 KERNEL32.dll_GetModuleHandleA
+0x0001284e 0x0000e610 SET_32 KERNEL32.dll_GetProcAddress
+0x00012860 0x0000e614 SET_32 KERNEL32.dll_GetProcessHeap
+0x00012872 0x0000e618 SET_32 KERNEL32.dll_GetStartupInfoA
+0x00012884 0x0000e61c SET_32 KERNEL32.dll_GetSystemDefaultLangID
+0x0001289e 0x0000e620 SET_32 KERNEL32.dll_GetSystemInfo
+0x000128ae 0x0000e624 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x000128c8 0x0000e628 SET_32 KERNEL32.dll_GetTickCount
+0x000128d8 0x0000e62c SET_32 KERNEL32.dll_GetVersionExA
+0x000128e8 0x0000e630 SET_32 KERNEL32.dll_GetVolumeInformationA
+0x00012900 0x0000e634 SET_32 KERNEL32.dll_GlobalMemoryStatus
+0x00012916 0x0000e638 SET_32 KERNEL32.dll_GlobalMemoryStatusEx
+0x0001292e 0x0000e63c SET_32 KERNEL32.dll_HeapAlloc
+0x0001293a 0x0000e640 SET_32 KERNEL32.dll_HeapFree
+0x00012946 0x0000e644 SET_32 KERNEL32.dll_InitializeCriticalSection
+0x00012962 0x0000e648 SET_32 KERNEL32.dll_LeaveCriticalSection
+0x0001297a 0x0000e64c SET_32 KERNEL32.dll_LocalAlloc
+0x00012988 0x0000e650 SET_32 KERNEL32.dll_LocalFree
+0x00012994 0x0000e654 SET_32 KERNEL32.dll_OutputDebugStringA
+0x000129aa 0x0000e658 SET_32 KERNEL32.dll_Process32First
+0x000129bc 0x0000e65c SET_32 KERNEL32.dll_Process32Next
+0x000129cc 0x0000e660 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x000129e6 0x0000e664 SET_32 KERNEL32.dll_ReleaseSemaphore
+0x000129fa 0x0000e668 SET_32 KERNEL32.dll_SetErrorMode
+0x00012a0a 0x0000e66c SET_32 KERNEL32.dll_SetLastError
+0x00012a1a 0x0000e670 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x00012a38 0x0000e674 SET_32 KERNEL32.dll_Sleep
+0x00012a40 0x0000e678 SET_32 KERNEL32.dll_TerminateProcess
+0x00012a54 0x0000e67c SET_32 KERNEL32.dll_TlsGetValue
+0x00012a62 0x0000e680 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x00012a7e 0x0000e684 SET_32 KERNEL32.dll_VerLanguageNameA
+0x00012a92 0x0000e688 SET_32 KERNEL32.dll_VirtualProtect
+0x00012aa4 0x0000e68c SET_32 KERNEL32.dll_VirtualQuery
+0x00012ab4 0x0000e690 SET_32 KERNEL32.dll_WaitForMultipleObjects
+0x00012ace 0x0000e694 SET_32 KERNEL32.dll_WaitForSingleObject
+0x00012ae4 0x0000e698 SET_32 KERNEL32.dll_WideCharToMultiByte
+0x00012afa 0x0000e69c SET_32 KERNEL32.dll_lstrcmpiA
+0x00012b06 0x0000e6a4 SET_32 MPR.DLL_WNetGetProviderNameA
+0x00012b1e 0x0000e6ac SET_32 msvcrt.dll___dllonexit
+0x00012b2c 0x0000e6b0 SET_32 msvcrt.dll___getmainargs
+0x00012b3c 0x0000e6b4 SET_32 msvcrt.dll___initenv
+0x00012b48 0x0000e6b8 SET_32 msvcrt.dll___lconv_init
+0x00012b58 0x0000e6bc SET_32 msvcrt.dll___set_app_type
+0x00012b6a 0x0000e6c0 SET_32 msvcrt.dll___setusermatherr
+0x00012b7e 0x0000e6c4 SET_32 msvcrt.dll__acmdln
+0x00012b88 0x0000e6c8 SET_32 msvcrt.dll__amsg_exit
+0x00012b96 0x0000e6cc SET_32 msvcrt.dll__cexit
+0x00012ba0 0x0000e6d0 SET_32 msvcrt.dll__findnext
+0x00012bac 0x0000e6d4 SET_32 msvcrt.dll__errno
+0x00012bb6 0x0000e6d8 SET_32 msvcrt.dll__findclose
+0x00012bc4 0x0000e6dc SET_32 msvcrt.dll__findfirst
+0x00012bd2 0x0000e6e0 SET_32 msvcrt.dll__fmode
+0x00012bdc 0x0000e6e4 SET_32 msvcrt.dll__fullpath
+0x00012be8 0x0000e6e8 SET_32 msvcrt.dll__initterm
+0x00012bf4 0x0000e6ec SET_32 msvcrt.dll__iob
+0x00012bfc 0x0000e6f0 SET_32 msvcrt.dll__lock
+0x00012c04 0x0000e6f4 SET_32 msvcrt.dll__onexit
+0x00012c0e 0x0000e6f8 SET_32 msvcrt.dll__stat
+0x00012c16 0x0000e6fc SET_32 msvcrt.dll__unlock
+0x00012c20 0x0000e700 SET_32 msvcrt.dll__vsnprintf
+0x00012c2e 0x0000e704 SET_32 msvcrt.dll_atoi
+0x00012c36 0x0000e708 SET_32 msvcrt.dll_abort
+0x00012c3e 0x0000e70c SET_32 msvcrt.dll_calloc
+0x00012c48 0x0000e710 SET_32 msvcrt.dll_exit
+0x00012c50 0x0000e714 SET_32 msvcrt.dll_fclose
+0x00012c5a 0x0000e718 SET_32 msvcrt.dll_fgetc
+0x00012c62 0x0000e71c SET_32 msvcrt.dll_fgets
+0x00012c6a 0x0000e720 SET_32 msvcrt.dll_fopen
+0x00012c72 0x0000e724 SET_32 msvcrt.dll_fprintf
+0x00012c7c 0x0000e728 SET_32 msvcrt.dll_fputc
+0x00012c84 0x0000e72c SET_32 msvcrt.dll_fputs
+0x00012c8c 0x0000e730 SET_32 msvcrt.dll_free
+0x00012c94 0x0000e734 SET_32 msvcrt.dll_fseek
+0x00012c9c 0x0000e738 SET_32 msvcrt.dll_ftell
+0x00012ca4 0x0000e73c SET_32 msvcrt.dll_fwrite
+0x00012cae 0x0000e740 SET_32 msvcrt.dll_localtime
+0x00012cba 0x0000e744 SET_32 msvcrt.dll_malloc
+0x00012cc4 0x0000e748 SET_32 msvcrt.dll_mbstowcs
+0x00012cd0 0x0000e74c SET_32 msvcrt.dll_memcmp
+0x00012cda 0x0000e750 SET_32 msvcrt.dll_memcpy
+0x00012ce4 0x0000e754 SET_32 msvcrt.dll_memset
+0x00012cee 0x0000e758 SET_32 msvcrt.dll_puts
+0x00012cf6 0x0000e75c SET_32 msvcrt.dll_signal
+0x00012d00 0x0000e760 SET_32 msvcrt.dll_sprintf
+0x00012d0a 0x0000e764 SET_32 msvcrt.dll_strcat
+0x00012d14 0x0000e768 SET_32 msvcrt.dll_strcmp
+0x00012d1e 0x0000e76c SET_32 msvcrt.dll_strcpy
+0x00012d28 0x0000e770 SET_32 msvcrt.dll_strlen
+0x00012d32 0x0000e774 SET_32 msvcrt.dll_strncmp
+0x00012d3c 0x0000e778 SET_32 msvcrt.dll_strncpy
+0x00012d46 0x0000e77c SET_32 msvcrt.dll_strstr
+0x00012d50 0x0000e780 SET_32 msvcrt.dll_toupper
+0x00012d5a 0x0000e784 SET_32 msvcrt.dll_vfprintf
+0x00012d66 0x0000e788 SET_32 msvcrt.dll_wcsstr
+0x00012d70 0x0000e790 SET_32 ole32.dll_CoCreateInstance
+0x00012d84 0x0000e794 SET_32 ole32.dll_CoInitializeEx
+0x00012d96 0x0000e798 SET_32 ole32.dll_CoInitializeSecurity
+0x00012dae 0x0000e79c SET_32 ole32.dll_CoUninitialize
+0x00012dc0 0x0000e7a4 SET_32 OLEAUT32.dll_SysAllocString
+0x00012dd2 0x0000e7a8 SET_32 OLEAUT32.dll_SysFreeString
+0x00012de2 0x0000e7b0 SET_32 SHELL32.DLL_SHGetSpecialFolderPathA
+0x00012dfc 0x0000e7b4 SET_32 SHELL32.DLL_ShellExecuteExW
+0x00012e0e 0x0000e7bc SET_32 USER32.dll_FindWindowA
+0x00012e1c 0x0000e7c0 SET_32 USER32.dll_GetCursorPos
+0x00012e2c 0x0000e7c4 SET_32 USER32.dll_GetDC
+0x00012e34 0x0000e7c8 SET_32 USER32.dll_GetDesktopWindow
+0x00012e48 0x0000e7cc SET_32 USER32.dll_GetWindow
+0x00012e54 0x0000e7d0 SET_32 USER32.dll_SendMessageA
+0x00012e64 0x0000e7d8 SET_32 WINMM.DLL_timeGetTime
+0x00012e72 0x0000e7e0 SET_32 WS2_32.dll_WSAStartup
+0x00012e80 0x0000e7e4 SET_32 WS2_32.dll_connect
+0x00012e8a 0x0000e7e8 SET_32 WS2_32.dll_gethostbyname
+0x00012e9a 0x0000e7ec SET_32 WS2_32.dll_htons
+0x00012ea2 0x0000e7f0 SET_32 WS2_32.dll_inet_addr
+0x00012eae 0x0000e7f4 SET_32 WS2_32.dll_inet_ntoa
+0x00012eba 0x0000e7f8 SET_32 WS2_32.dll_ntohs
+0x00012ec2 0x0000e7fc SET_32 WS2_32.dll_recv
+0x00012eca 0x0000e800 SET_32 WS2_32.dll_send
+0x00012ed2 0x0000e804 SET_32 WS2_32.dll_socket
+
+
+149 relocations
+63488
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

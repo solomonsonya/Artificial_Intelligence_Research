@@ -1,0 +1,176 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb1800 0x00401000  0xb2000 -r-x .text
+1   0x000b1e00    0x200 0x004b3000   0x1000 -r-- .rdata
+2   0x000b2000    0x800 0x004b4000   0x1000 -rwx .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401110 paddr=0x00000710 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b3000 NONE FUNC ntdll.dll    RtlCompressBuffer
+2   0x004b3004 NONE FUNC ntdll.dll    RtlConvertUlongToLargeInteger
+3   0x004b3008 NONE FUNC ntdll.dll    RtlSetCurrentDirectory_U
+4   0x004b300c NONE FUNC ntdll.dll    ZwClearEvent
+1   0x004b3014 NONE FUNC user32.dll   GetWindowTextW
+2   0x004b3018 NONE FUNC user32.dll   GetCaretBlinkTime
+1   0x004b3020 NONE FUNC ole32.dll    OleCreateEmbeddingHelper
+1   0x004b3028 NONE FUNC kernel32.dll GetThreadLocale
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b1e00 0x004b3000 NONE FUNC 0    ntdll.dll    imp.RtlCompressBuffer
+2   0x000b1e04 0x004b3004 NONE FUNC 0    ntdll.dll    imp.RtlConvertUlongToLargeInteger
+3   0x000b1e08 0x004b3008 NONE FUNC 0    ntdll.dll    imp.RtlSetCurrentDirectory_U
+4   0x000b1e0c 0x004b300c NONE FUNC 0    ntdll.dll    imp.ZwClearEvent
+1   0x000b1e14 0x004b3014 NONE FUNC 0    user32.dll   imp.GetWindowTextW
+2   0x000b1e18 0x004b3018 NONE FUNC 0    user32.dll   imp.GetCaretBlinkTime
+1   0x000b1e20 0x004b3020 NONE FUNC 0    ole32.dll    imp.OleCreateEmbeddingHelper
+1   0x000b1e28 0x004b3028 NONE FUNC 0    kernel32.dll imp.GetThreadLocale
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b1ec6 0x004b30c6 17  18   .rdata  ascii RtlCompressBuffer
+1   0x000b1eda 0x004b30da 29  30   .rdata  ascii RtlConvertUlongToLargeInteger
+2   0x000b1efa 0x004b30fa 24  25   .rdata  ascii RtlSetCurrentDirectory_U
+3   0x000b1f15 0x004b3115 12  13   .rdata  ascii ZwClearEvent
+4   0x000b1f22 0x004b3122 9   10   .rdata  ascii ntdll.dll
+5   0x000b1f2e 0x004b312e 14  15   .rdata  ascii GetWindowTextW
+6   0x000b1f3f 0x004b313f 17  18   .rdata  ascii GetCaretBlinkTime
+7   0x000b1f51 0x004b3151 10  11   .rdata  ascii user32.dll
+8   0x000b1f5e 0x004b315e 24  25   .rdata  ascii OleCreateEmbeddingHelper
+9   0x000b1f77 0x004b3177 9   10   .rdata  ascii ole32.dll
+10  0x000b1f83 0x004b3183 15  16   .rdata  ascii GetThreadLocale
+11  0x000b1f93 0x004b3193 12  13   .rdata  ascii kernel32.dll
+arch     x86
+baddr    0x400000
+binsz    731136
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000b2f6b
+compiled Thu Jun  4 21:29:50 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x5570c34e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb1800
+  SizeOfInitializedData : 0x400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1110
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb5000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb3030
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb3000
+  Size : 0x30
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntdll.dll
+user32.dll
+ole32.dll
+kernel32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b30c4 0x000b1e00 SET_32 ntdll.dll_RtlCompressBuffer
+0x000b30d8 0x000b1e04 SET_32 ntdll.dll_RtlConvertUlongToLargeInteger
+0x000b30f8 0x000b1e08 SET_32 ntdll.dll_RtlSetCurrentDirectory_U
+0x000b3113 0x000b1e0c SET_32 ntdll.dll_ZwClearEvent
+0x000b312c 0x000b1e14 SET_32 user32.dll_GetWindowTextW
+0x000b313d 0x000b1e18 SET_32 user32.dll_GetCaretBlinkTime
+0x000b315c 0x000b1e20 SET_32 ole32.dll_OleCreateEmbeddingHelper
+0x000b3181 0x000b1e28 SET_32 kernel32.dll_GetThreadLocale
+
+
+8 relocations
+731136
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

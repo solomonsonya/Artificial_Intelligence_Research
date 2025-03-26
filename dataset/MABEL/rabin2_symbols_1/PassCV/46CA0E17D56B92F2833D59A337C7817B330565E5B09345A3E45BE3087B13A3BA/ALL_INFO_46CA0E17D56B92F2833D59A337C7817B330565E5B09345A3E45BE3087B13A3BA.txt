@@ -1,0 +1,243 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr          vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400     0x0 0x00401000  0x148000 -rwx UPX0
+1   0x00000400  0xde00 0x00549000    0xe000 -rwx UPX1
+2   0x0000e200   0x800 0x00557000    0x1000 -rw- .rsrc
+3   0x00010800   0x600 0x00558000    0x1000 -rwx _5603328
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00556ae0 paddr=0x0000dee0 haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00557628 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x0055762c NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x00557630 NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x00557634 NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x00557638 NONE FUNC KERNEL32.DLL VirtualFree
+6   0x0055763c NONE FUNC KERNEL32.DLL ExitProcess
+1   0x00557644 NONE FUNC ADVAPI32.dll OpenProcessToken
+1   0x0055764c NONE FUNC USER32.dll   wsprintfA
+1   0x00557654 NONE FUNC WININET.dll  InternetOpenA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000e828 0x00557628 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x0000e82c 0x0055762c NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x0000e830 0x00557630 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+4   0x0000e834 0x00557634 NONE FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+5   0x0000e838 0x00557638 NONE FUNC 0    KERNEL32.DLL imp.VirtualFree
+6   0x0000e83c 0x0055763c NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+1   0x0000e844 0x00557644 NONE FUNC 0    ADVAPI32.dll imp.OpenProcessToken
+1   0x0000e84c 0x0055764c NONE FUNC 0    USER32.dll   imp.wsprintfA
+1   0x0000e854 0x00557654 NONE FUNC 0    WININET.dll  imp.InternetOpenA
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000e2fa 0x005570fa 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x0000e356 0x00557156 14  30   .rsrc   utf16le StringFileInfo
+2   0x0000e37a 0x0055717a 8   18   .rsrc   utf16le 040904b0
+3   0x0000e392 0x00557192 11  24   .rsrc   utf16le CompanyName
+4   0x0000e3ac 0x005571ac 22  46   .rsrc   utf16le Microsoft Corporation.
+5   0x0000e3e2 0x005571e2 15  32   .rsrc   utf16le FileDescription
+6   0x0000e404 0x00557204 21  44   .rsrc   utf16le BitLocker 驱动器加密服务实用工具 blocks=Basic Latin,CJK Unified Ideographs
+7   0x0000e436 0x00557236 11  24   .rsrc   utf16le FileVersion
+8   0x0000e450 0x00557250 14  30   .rsrc   utf16le 6.1.7600.16385
+9   0x0000e476 0x00557276 12  26   .rsrc   utf16le InternalName
+10  0x0000e490 0x00557290 13  28   .rsrc   utf16le BitLocker.exe
+11  0x0000e4b2 0x005572b2 14  30   .rsrc   utf16le LegalCopyright
+12  0x0000e4d2 0x005572d2 44  90   .rsrc   utf16le  Microsoft Corporation. All rights reserved.
+13  0x0000e532 0x00557332 16  34   .rsrc   utf16le OriginalFilename
+14  0x0000e554 0x00557354 13  28   .rsrc   utf16le BitLocker.exe
+15  0x0000e576 0x00557376 11  24   .rsrc   utf16le ProductName
+16  0x0000e590 0x00557390 9   19   .rsrc   utf16le Microsoft
+17  0x0000e5a4 0x005573a4 8   17   .rsrc   utf16le  Windows
+18  0x0000e5b6 0x005573b6 17  36   .rsrc   utf16le  Operating System
+19  0x0000e5e2 0x005573e2 14  30   .rsrc   utf16le ProductVersion
+20  0x0000e600 0x00557400 14  30   .rsrc   utf16le 6.1.7600.16385
+21  0x0000e628 0x00557428 10  22   .rsrc   utf16le arFileInfo
+22  0x0000e646 0x00557446 11  24   .rsrc   utf16le Translation
+23  0x0000e668 0x00557468 348 349  .rsrc   ascii   <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>PA
+24  0x0000e85c 0x0055765c 12  13   .rsrc   ascii   KERNEL32.DLL
+25  0x0000e869 0x00557669 12  13   .rsrc   ascii   ADVAPI32.dll
+26  0x0000e876 0x00557676 10  11   .rsrc   ascii   USER32.dll
+27  0x0000e881 0x00557681 11  12   .rsrc   ascii   WININET.dll
+28  0x0000e88e 0x0055768e 12  13   .rsrc   ascii   LoadLibraryA
+29  0x0000e89c 0x0055769c 14  15   .rsrc   ascii   GetProcAddress
+30  0x0000e8ac 0x005576ac 14  15   .rsrc   ascii   VirtualProtect
+31  0x0000e8bc 0x005576bc 12  13   .rsrc   ascii   VirtualAlloc
+32  0x0000e8ca 0x005576ca 11  12   .rsrc   ascii   VirtualFree
+33  0x0000e8d8 0x005576d8 11  12   .rsrc   ascii   ExitProcess
+34  0x0000e8e6 0x005576e6 16  17   .rsrc   ascii   OpenProcessToken
+35  0x0000e8f8 0x005576f8 9   10   .rsrc   ascii   wsprintfA
+36  0x0000e904 0x00557704 13  14   .rsrc   ascii   InternetOpenA
+arch     x86
+baddr    0x400000
+binsz    245208
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00046543
+compiled Fri Aug 14 10:21:32 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00011d64
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x55cdc12c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xe000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x148000
+  AddressOfEntryPoint : 0x156ae0
+  BaseOfCode : 0x149000
+  BaseOfData : 0x157000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x159000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x11d64
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 154 Name: Cvtres1000 Version: 40219 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 40219 Times: 11
+  Product: 1 Name: Import0 Version: 0 Times: 117
+  Product: 147 Name: Implib900 Version: 30729 Times: 9
+  Product: 170 Name: Utc1600_C Version: 40219 Times: 104
+  Product: 158 Name: Masm1000 Version: 40219 Times: 18
+  Product: 171 Name: Utc1600_CPP Version: 40219 Times: 34
+  Product: 152 Name: AliasObj1000 Version: 20115 Times: 3
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x1575c4
+  Size : 0x150
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x157000
+  Size : 0x5c4
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0xea00
+  Size : 0x1e00
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x157714
+  Size : 0x10
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x156c9c
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+advapi32.dll
+user32.dll
+wininet.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0015768c 0x0000e828 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0015769a 0x0000e82c SET_32 KERNEL32.DLL_GetProcAddress
+0x001576aa 0x0000e830 SET_32 KERNEL32.DLL_VirtualProtect
+0x001576ba 0x0000e834 SET_32 KERNEL32.DLL_VirtualAlloc
+0x001576c8 0x0000e838 SET_32 KERNEL32.DLL_VirtualFree
+0x001576d6 0x0000e83c SET_32 KERNEL32.DLL_ExitProcess
+0x001576e4 0x0000e844 SET_32 ADVAPI32.dll_OpenProcessToken
+0x001576f6 0x0000e84c SET_32 USER32.dll_wsprintfA
+0x00157702 0x0000e854 SET_32 WININET.dll_InternetOpenA
+
+
+9 relocations
+245208
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 6.1.7600.16385
+  ProductVersion: 6.1.7600.16385
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Microsoft Corporation.
+  FileDescription: BitLocker 驱动器加密服务实用工具
+  FileVersion: 6.1.7600.16385
+  InternalName: BitLocker.exe
+  LegalCopyright: © Microsoft Corporation. All rights reserved.
+  OriginalFilename: BitLocker.exe
+  ProductName: Microsoft® Windows® Operating System
+  ProductVersion: 6.1.7600.16385
+Section to Segment mapping:
+Segment Section
+---------------
+
+

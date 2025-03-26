@@ -1,0 +1,507 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1000 0x00401000  0x1000 -r-x .text
+1   0x00000000     0x0 0x00402000  0x1000 -rw- bss
+2   0x00001400   0x400 0x00403000  0x1000 -r-- .rdata
+3   0x00001800  0x4e00 0x00404000  0x5000 -rw- .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000400 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00403000 NONE FUNC KERNEL32.dll GetCommandLineA
+2   0x00403004 NONE FUNC KERNEL32.dll SetCurrentDirectoryW
+3   0x00403008 NONE FUNC KERNEL32.dll OutputDebugStringA
+4   0x0040300c NONE FUNC KERNEL32.dll Sleep
+5   0x00403010 NONE FUNC KERNEL32.dll ExitProcess
+6   0x00403014 NONE FUNC KERNEL32.dll CreateProcessW
+7   0x00403018 NONE FUNC KERNEL32.dll GetSystemDirectoryW
+8   0x0040301c NONE FUNC KERNEL32.dll lstrcatW
+9   0x00403020 NONE FUNC KERNEL32.dll GetNativeSystemInfo
+10  0x00403024 NONE FUNC KERNEL32.dll GetModuleFileNameW
+11  0x00403028 NONE FUNC KERNEL32.dll GetModuleHandleA
+12  0x0040302c NONE FUNC KERNEL32.dll GetProcAddress
+13  0x00403030 NONE FUNC KERNEL32.dll LoadLibraryA
+14  0x00403034 NONE FUNC KERNEL32.dll HeapAlloc
+15  0x00403038 NONE FUNC KERNEL32.dll HeapFree
+16  0x0040303c NONE FUNC KERNEL32.dll GetProcessHeap
+1   0x00403044 NONE FUNC SHLWAPI.dll  StrToIntA
+2   0x00403048 NONE FUNC SHLWAPI.dll  StrStrIA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00001400 0x00403000 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineA
+2   0x00001404 0x00403004 NONE FUNC 0    KERNEL32.dll imp.SetCurrentDirectoryW
+3   0x00001408 0x00403008 NONE FUNC 0    KERNEL32.dll imp.OutputDebugStringA
+4   0x0000140c 0x0040300c NONE FUNC 0    KERNEL32.dll imp.Sleep
+5   0x00001410 0x00403010 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+6   0x00001414 0x00403014 NONE FUNC 0    KERNEL32.dll imp.CreateProcessW
+7   0x00001418 0x00403018 NONE FUNC 0    KERNEL32.dll imp.GetSystemDirectoryW
+8   0x0000141c 0x0040301c NONE FUNC 0    KERNEL32.dll imp.lstrcatW
+9   0x00001420 0x00403020 NONE FUNC 0    KERNEL32.dll imp.GetNativeSystemInfo
+10  0x00001424 0x00403024 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+11  0x00001428 0x00403028 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+12  0x0000142c 0x0040302c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+13  0x00001430 0x00403030 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+14  0x00001434 0x00403034 NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+15  0x00001438 0x00403038 NONE FUNC 0    KERNEL32.dll imp.HeapFree
+16  0x0000143c 0x0040303c NONE FUNC 0    KERNEL32.dll imp.GetProcessHeap
+1   0x00001444 0x00403044 NONE FUNC 0    SHLWAPI.dll  imp.StrToIntA
+2   0x00001448 0x00403048 NONE FUNC 0    SHLWAPI.dll  imp.StrStrIA
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001450 0x00403050 8   9    .rdata  ascii fail 3\r\n
+1   0x0000145c 0x0040305c 8   9    .rdata  ascii fail 2\r\n
+2   0x00001468 0x00403068 8   9    .rdata  ascii fail 1\r\n
+3   0x00001474 0x00403074 7   8    .rdata  ascii Start\r\n
+4   0x0000147c 0x0040307c 9   10   .rdata  ascii Stop ok\r\n
+5   0x00001488 0x00403088 10  11   .rdata  ascii Stop Err\r\n
+6   0x0000149a 0x0040309a 4   6    .rdata  utf8  \n6а| blocks=Basic Latin,Cyrillic
+7   0x000014a0 0x004030a0 6   7    .rdata  ascii wz|}s\n
+8   0x000014ff 0x004030ff 7   8    .rdata  ascii ovz|}}}
+9   0x00001518 0x00403118 12  15   .rdata  utf8  GⰗ\nDaovz|}}} blocks=Basic Latin,Glagolitic
+10  0x00001538 0x00403138 12  15   .rdata  utf8  GⰗ\nDaovz|}}} blocks=Basic Latin,Glagolitic
+11  0x00001558 0x00403158 12  15   .rdata  utf8  GⰗ\nDaovz|}}} blocks=Basic Latin,Glagolitic
+12  0x00001578 0x00403178 12  15   .rdata  utf8  GⰗ\nDaovz|}}} blocks=Basic Latin,Glagolitic
+13  0x00001598 0x00403198 9   10   .rdata  ascii NTDLL.DLL
+14  0x000015a4 0x004031a4 4   5    .rdata  ascii  /p=
+15  0x0000163a 0x0040323a 15  16   .rdata  ascii GetCommandLineA
+16  0x0000164c 0x0040324c 20  21   .rdata  ascii SetCurrentDirectoryW
+17  0x00001664 0x00403264 18  19   .rdata  ascii OutputDebugStringA
+18  0x0000167a 0x0040327a 5   6    .rdata  ascii Sleep
+19  0x00001682 0x00403282 11  12   .rdata  ascii ExitProcess
+20  0x00001690 0x00403290 14  15   .rdata  ascii CreateProcessW
+21  0x000016a2 0x004032a2 19  20   .rdata  ascii GetSystemDirectoryW
+22  0x000016b8 0x004032b8 8   9    .rdata  ascii lstrcatW
+23  0x000016c4 0x004032c4 19  20   .rdata  ascii GetNativeSystemInfo
+24  0x000016da 0x004032da 18  19   .rdata  ascii GetModuleFileNameW
+25  0x000016f0 0x004032f0 16  17   .rdata  ascii GetModuleHandleA
+26  0x00001704 0x00403304 14  15   .rdata  ascii GetProcAddress
+27  0x00001716 0x00403316 12  13   .rdata  ascii LoadLibraryA
+28  0x00001726 0x00403326 9   10   .rdata  ascii HeapAlloc
+29  0x00001732 0x00403332 8   9    .rdata  ascii HeapFree
+30  0x0000173e 0x0040333e 14  15   .rdata  ascii GetProcessHeap
+31  0x0000174e 0x0040334e 12  13   .rdata  ascii KERNEL32.dll
+32  0x0000175e 0x0040335e 8   9    .rdata  ascii StrStrIA
+33  0x0000176a 0x0040336a 9   10   .rdata  ascii StrToIntA
+34  0x00001774 0x00403374 11  12   .rdata  ascii SHLWAPI.dll
+0   0x00001887 0x00404087 5   8    .data   utf8  ݟ٧ ;C blocks=Arabic Supplement,Arabic,Basic Latin
+1   0x00001904 0x00404104 8   9    .data   ascii J?HqMwR;
+2   0x00001944 0x00404144 4   5    .data   ascii ~KD$
+3   0x00001a13 0x00404213 5   7    .data   utf8  ȤAZz1 blocks=Latin Extended-B,Basic Latin
+4   0x00001aa1 0x004042a1 5   7    .data   utf8  /(ڥLF blocks=Basic Latin,Arabic
+5   0x00001b6b 0x0040436b 4   5    .data   ascii h; N
+6   0x00001b7e 0x0040437e 6   9    .data   utf8  ݥ--(چ\ blocks=Arabic Supplement,Basic Latin,Arabic
+7   0x00001ba5 0x004043a5 5   6    .data   ascii zb#\n7
+8   0x00001bd5 0x004043d5 4   5    .data   ascii \f?:Z
+9   0x00001bdf 0x004043df 5   6    .data   ascii l3j>,
+10  0x00001c44 0x00404444 10  13   .data   utf8  iֱ!O2S$ҼF  blocks=Basic Latin,Hebrew,Cyrillic
+11  0x00001c58 0x00404458 5   7    .data   utf8  f_eUږ blocks=Basic Latin,Arabic
+12  0x00001c6a 0x0040446a 5   7    .data   utf8  v0qܐ6 blocks=Basic Latin,Syriac
+13  0x00001ccf 0x004044cf 4   6    .data   utf8  Oth\
+14  0x00001cda 0x004044da 8   11   .data   utf8  Kޢ\eɅQh!x blocks=Basic Latin,Thaana,Latin Extended-B
+15  0x00001d1e 0x0040451e 6   9    .data   utf8  ψA )vփ blocks=Greek and Coptic,Basic Latin,Armenian
+16  0x00001d58 0x00404558 5   6    .data   ascii m^aI/
+17  0x00001d9f 0x0040459f 5   7    .data   utf8  \a'?]Ҳ blocks=Basic Latin,Cyrillic
+18  0x00001db7 0x004045b7 4   5    .data   ascii E^w<
+19  0x00001dd0 0x004045d0 5   6    .data   ascii ";VcD
+20  0x00001dd6 0x004045d6 4   5    .data   ascii q+nu
+21  0x00001e44 0x00404644 4   5    .data   ascii i<,#
+22  0x00001e5e 0x0040465e 6   7    .data   ascii h$\r7]j
+23  0x00001e8b 0x0040468b 4   6    .data   utf8  <ߨsI blocks=Basic Latin,NKo
+24  0x00001f0b 0x0040470b 6   8    .data   utf8  ٍ/VH`H blocks=Arabic,Basic Latin
+25  0x00001fe0 0x004047e0 4   5    .data   ascii G<.$
+26  0x00002093 0x00404893 5   6    .data   ascii B\ao~\v
+27  0x000020b5 0x004048b5 4   5    .data   ascii it>}
+28  0x000020f5 0x004048f5 4   6    .data   utf8  a~AЊ blocks=Basic Latin,Cyrillic
+29  0x00002100 0x00404900 4   6    .data   utf8  k>!ޞ blocks=Basic Latin,Thaana
+30  0x0000211a 0x0040491a 4   5    .data   ascii zg.6
+31  0x00002155 0x00404955 4   5    .data   ascii dsB6
+32  0x0000217f 0x0040497f 4   6    .data   utf8  @_\nQ
+33  0x000021d7 0x004049d7 4   5    .data   ascii |v~<
+34  0x000021f5 0x004049f5 4   5    .data   ascii #q`|
+35  0x00002249 0x00404a49 5   6    .data   ascii v:48S
+36  0x000022ba 0x00404aba 4   5    .data   ascii 1Z3&
+37  0x000022cd 0x00404acd 4   5    .data   ascii !TLn
+38  0x000022d7 0x00404ad7 4   5    .data   ascii 9vn\r
+39  0x00002330 0x00404b30 4   5    .data   ascii Z1{K
+40  0x00002378 0x00404b78 4   6    .data   utf8  ޯ:U. blocks=Thaana,Basic Latin
+41  0x00002435 0x00404c35 4   5    .data   ascii 8wy~
+42  0x0000245a 0x00404c5a 4   5    .data   ascii hU^\e
+43  0x00002464 0x00404c64 6   9    .data   utf8  A>.τ[m blocks=Basic Latin,Greek and Coptic
+44  0x0000246d 0x00404c6d 4   5    .data   ascii !NLj
+45  0x000024b7 0x00404cb7 4   5    .data   ascii Zxw`
+46  0x000024d4 0x00404cd4 5   8    .data   utf8  %|rz~
+47  0x000025c8 0x00404dc8 4   5    .data   ascii OY-X
+48  0x00002618 0x00404e18 4   5    .data   ascii sv*S
+49  0x00002627 0x00404e27 5   7    .data   utf8  KǠw4S blocks=Basic Latin,Latin Extended-B
+50  0x0000262f 0x00404e2f 4   5    .data   ascii \b\e5h
+51  0x00002695 0x00404e95 5   6    .data   ascii G9|C}
+52  0x000026f4 0x00404ef4 5   6    .data   ascii DJ]<j
+53  0x000027a2 0x00404fa2 5   6    .data   ascii \t-RJO
+54  0x000027d1 0x00404fd1 4   5    .data   ascii T7\n\r
+55  0x00002808 0x00405008 5   6    .data   ascii LC.(^
+56  0x00002834 0x00405034 4   6    .data   utf8  xiϓ> blocks=Basic Latin,Greek and Coptic
+57  0x00002864 0x00405064 5   6    .data   ascii z\nGDC
+58  0x0000286d 0x0040506d 4   5    .data   ascii \b+H\n
+59  0x00002875 0x00405075 4   5    .data   ascii \n+Zv
+60  0x000028c7 0x004050c7 8   11   .data   utf8  .x%ڢ\eγ5H blocks=Basic Latin,Arabic,Greek and Coptic
+61  0x00002923 0x00405123 5   7    .data   utf8  %WUOĒ blocks=Basic Latin,Latin Extended-A
+62  0x00002945 0x00405145 5   6    .data   ascii b%"03
+63  0x00002966 0x00405166 6   7    .data   ascii L1O&o&
+64  0x0000296d 0x0040516d 4   5    .data   ascii >\v{\v
+65  0x000029da 0x004051da 5   6    .data   ascii \bT+4f
+66  0x000029e2 0x004051e2 5   7    .data   utf8  SF6\nf
+67  0x000029ec 0x004051ec 4   5    .data   ascii VXsI
+68  0x00002a18 0x00405218 4   6    .data   utf8  {v#ߪ blocks=Basic Latin,NKo
+69  0x00002a5e 0x0040525e 7   9    .data   utf8  \{E\nzޖ] blocks=Basic Latin,Thaana
+70  0x00002acd 0x004052cd 4   5    .data   ascii h\brn
+71  0x00002b35 0x00405335 5   7    .data   utf8  $-~خ> blocks=Basic Latin,Arabic
+72  0x00002b4e 0x0040534e 4   6    .data   utf8  k[au
+73  0x00002b63 0x00405363 5   6    .data   ascii F\r\eTZ
+74  0x00002b8b 0x0040538b 4   5    .data   ascii .X-\e
+75  0x00002b94 0x00405394 4   5    .data   ascii l^O_
+76  0x00002bb8 0x004053b8 5   6    .data   ascii Y_>>?
+77  0x00002bc0 0x004053c0 4   5    .data   ascii WwW.
+78  0x00002bd3 0x004053d3 6   7    .data   ascii b!q0^\
+79  0x00002bf4 0x004053f4 5   6    .data   ascii \amK+^
+80  0x00002c4b 0x0040544b 4   6    .data   utf8  Z֢AM blocks=Basic Latin,Hebrew
+81  0x00002cc5 0x004054c5 4   6    .data   utf8  4O)-
+82  0x00002d47 0x00405547 5   6    .data   ascii !Bk.y
+83  0x00002d55 0x00405555 4   5    .data   ascii u.~a
+84  0x00002da0 0x004055a0 4   5    .data   ascii u;SF
+85  0x00002e45 0x00405645 9   10   .data   ascii KTw0S*9VO
+86  0x00002f4f 0x0040574f 4   6    .data   utf8  ~LhN
+87  0x00002fa9 0x004057a9 5   6    .data   ascii $-]/W
+88  0x00002fe3 0x004057e3 4   6    .data   utf8  VϏ;T blocks=Basic Latin,Greek and Coptic
+89  0x00002ff9 0x004057f9 4   5    .data   ascii :2U^
+90  0x0000301a 0x0040581a 5   8    .data   utf8  T❖u\tD blocks=Basic Latin,Dingbats
+91  0x00003035 0x00405835 5   6    .data   ascii )C~as
+92  0x0000303b 0x0040583b 4   6    .data   utf8  ކiu{ blocks=Thaana,Basic Latin
+93  0x0000305a 0x0040585a 5   6    .data   ascii ;]fia
+94  0x00003065 0x00405865 6   8    .data   utf8  -M\#٧( blocks=Basic Latin,Arabic
+95  0x00003088 0x00405888 5   6    .data   ascii Fc&NX
+96  0x00003093 0x00405893 5   7    .data   utf8  z\tě.j blocks=Basic Latin,Latin Extended-A
+97  0x000030ab 0x004058ab 4   7    .data   utf8  \fӀuå blocks=Basic Latin,Cyrillic,Latin-1 Supplement
+98  0x000030fc 0x004058fc 6   10   .data   utf8  -肄u*!؞ blocks=Basic Latin,CJK Unified Ideographs,Arabic
+99  0x00003150 0x00405950 4   8    .data   utf8  欗\tȥ{ blocks=CJK Unified Ideographs,Basic Latin,Latin Extended-B
+100 0x00003174 0x00405974 5   6    .data   ascii L\b3Zb
+101 0x0000320d 0x00405a0d 4   7    .data   utf8  hS"㰓 blocks=Basic Latin,CJK Unified Ideographs Extension A
+102 0x00003277 0x00405a77 4   5    .data   ascii y><,
+103 0x000032e7 0x00405ae7 5   6    .data   ascii !Dc"#
+104 0x0000331a 0x00405b1a 4   5    .data   ascii >)_r
+105 0x0000332e 0x00405b2e 4   5    .data   ascii k@iH
+106 0x00003387 0x00405b87 5   6    .data   ascii ]J\r4 
+107 0x000033a4 0x00405ba4 4   5    .data   ascii j_;4
+108 0x0000340e 0x00405c0e 4   5    .data   ascii frc{
+109 0x000034e6 0x00405ce6 4   5    .data   ascii q;D>
+110 0x00003502 0x00405d02 11  12   .data   ascii }+`*xT3":2s
+111 0x00003510 0x00405d10 5   7    .data   utf8  fFɉD6 blocks=Basic Latin,Latin Extended-B
+112 0x0000352f 0x00405d2f 4   5    .data   ascii Bo1V
+113 0x000035ed 0x00405ded 5   6    .data   ascii \v2O`t
+114 0x00003633 0x00405e33 4   5    .data   ascii b\r`|
+115 0x0000363f 0x00405e3f 4   5    .data   ascii lz8\r
+116 0x0000371b 0x00405f1b 4   5    .data   ascii  Qij
+117 0x00003722 0x00405f22 4   5    .data   ascii Uhw\e
+118 0x0000373e 0x00405f3e 5   7    .data   utf8  z{ּ Q blocks=Basic Latin,Hebrew
+119 0x0000374f 0x00405f4f 4   5    .data   ascii ]e\f%
+120 0x00003775 0x00405f75 4   5    .data   ascii .]|Y
+121 0x00003794 0x00405f94 4   6    .data   utf8  й\vZF blocks=Cyrillic,Basic Latin
+122 0x000037a0 0x00405fa0 8   11   .data   utf8  <$ߓD\fգQw blocks=Basic Latin,NKo,Armenian
+123 0x000037c5 0x00405fc5 4   6    .data   utf8  yʰkn blocks=Basic Latin,Spacing Modifier Letters
+124 0x000037d5 0x00405fd5 6   8    .data   utf8  րkZ,;. blocks=Armenian,Basic Latin
+125 0x000037e3 0x00405fe3 4   5    .data   ascii BQO(
+126 0x000037e9 0x00405fe9 6   7    .data   ascii G :/oV
+127 0x000037ff 0x00405fff 4   5    .data   ascii 6%i6
+128 0x00003899 0x00406099 5   6    .data   ascii ?/ko\a
+129 0x000038b7 0x004060b7 6   7    .data   ascii |}.>Ud
+130 0x00003901 0x00406101 4   6    .data   utf8  aݦSW blocks=Basic Latin,Arabic Supplement
+131 0x00003927 0x00406127 4   5    .data   ascii sFc.
+132 0x00003937 0x00406137 4   5    .data   ascii 2qIs
+133 0x00003946 0x00406146 5   6    .data   ascii ,"Dk&
+134 0x0000395a 0x0040615a 4   7    .data   utf8  <U㞅2 blocks=Basic Latin,CJK Unified Ideographs Extension A
+135 0x00003968 0x00406168 5   7    .data   utf8  ]'Y}Ӥ blocks=Basic Latin,Cyrillic
+136 0x000039d8 0x004061d8 4   5    .data   ascii S>Jh
+137 0x00003a0e 0x0040620e 4   5    .data   ascii BiRA
+138 0x00003a16 0x00406216 4   6    .data   utf8  NӉ&i blocks=Basic Latin,Cyrillic
+139 0x00003a30 0x00406230 6   11   .data   utf8  㴔ro/۪Č blocks=CJK Unified Ideographs Extension A,Basic Latin,Arabic,Latin Extended-A
+140 0x00003a65 0x00406265 5   6    .data   ascii *Il3L
+141 0x00003a72 0x00406272 5   6    .data   ascii 6'sQ\
+142 0x00003a87 0x00406287 4   5    .data   ascii B,$B
+143 0x00003aa9 0x004062a9 4   6    .data   utf8  qb%ߛ blocks=Basic Latin,NKo
+144 0x00003ad6 0x004062d6 5   6    .data   ascii Kj|<.
+145 0x00003ae9 0x004062e9 5   8    .data   utf8  2Z|ߤ\a blocks=Basic Latin,NKo
+146 0x00003af4 0x004062f4 4   5    .data   ascii D\v;z
+147 0x00003b2c 0x0040632c 5   7    .data   utf8  Ӽ(GUA blocks=Cyrillic,Basic Latin
+148 0x00003b48 0x00406348 5   8    .data   utf8  O`ӠǑ  blocks=Basic Latin,Cyrillic,Latin Extended-B
+149 0x00003bdc 0x004063dc 5   6    .data   ascii %X\tD\t
+150 0x00003c6b 0x0040646b 4   9    .data   utf8  }\n粯 blocks=Private Use Area,Basic Latin,CJK Unified Ideographs
+151 0x00003ca7 0x004064a7 7   10   .data   utf8  5F.W᧪&I blocks=Basic Latin,Khmer Symbols
+152 0x00003cd3 0x004064d3 5   7    .data   utf8  ʄ\n\az\n blocks=IPA Extensions,Basic Latin
+153 0x00003cdd 0x004064dd 5   7    .data   utf8  ގB@?_ blocks=Thaana,Basic Latin
+154 0x00003d0b 0x0040650b 4   9    .data   utf8  Bר{ᰇ blocks=Basic Latin,Hebrew,Lepcha
+155 0x00003d87 0x00406587 4   6    .data   utf8  יp[\b blocks=Hebrew,Basic Latin
+156 0x00003dbf 0x004065bf 4   6    .data   utf8  \rD?~
+157 0x00003de9 0x004065e9 4   5    .data   ascii .:2S
+158 0x00003e93 0x00406693 5   7    .data   utf8  /ż;B\n blocks=Basic Latin,Latin Extended-A
+159 0x00003edf 0x004066df 4   5    .data   ascii DyRU
+160 0x00003ee6 0x004066e6 4   5    .data   ascii It;t
+161 0x00003f3f 0x0040673f 6   9    .data   utf8  A?*'Ӑ8 blocks=Basic Latin,Cyrillic
+162 0x00004000 0x00406800 5   6    .data   ascii F>0<F
+163 0x00004006 0x00406806 4   5    .data   ascii K6/-
+164 0x0000400b 0x0040680b 4   5    .data   ascii (Xb8
+165 0x00004036 0x00406836 4   6    .data   utf8  sqɿ4 blocks=Basic Latin,IPA Extensions
+166 0x0000404b 0x0040684b 4   6    .data   utf8  -,ݳR blocks=Basic Latin,Arabic Supplement
+167 0x00004055 0x00406855 4   5    .data   ascii EW?`
+168 0x00004065 0x00406865 4   5    .data   ascii 92J9
+169 0x00004074 0x00406874 6   7    .data   ascii k\n3Zru
+170 0x0000408a 0x0040688a 4   5    .data   ascii \t'Wd
+171 0x000040ba 0x004068ba 4   6    .data   utf8  Wֶi\ blocks=Basic Latin,Hebrew
+172 0x0000410b 0x0040690b 5   7    .data   utf8  hץwc, blocks=Basic Latin,Hebrew
+173 0x00004176 0x00406976 4   5    .data   ascii B-qH
+174 0x00004251 0x00406a51 4   5    .data   ascii XCJ,
+175 0x00004317 0x00406b17 4   6    .data   utf8  \̟4b blocks=Basic Latin,Combining Diacritical Marks
+176 0x000043f8 0x00406bf8 4   6    .data   utf8  H}ڣR blocks=Basic Latin,Arabic
+177 0x00004559 0x00406d59 4   6    .data   utf8  !/Ȼn blocks=Basic Latin,Latin Extended-B
+178 0x00004583 0x00406d83 4   7    .data   utf8  ΔLȨN blocks=Greek and Coptic,Basic Latin,Latin Extended-B
+179 0x000045f7 0x00406df7 4   5    .data   ascii ?j=o
+180 0x000046cb 0x00406ecb 5   6    .data   ascii m'AE"
+181 0x000046d6 0x00406ed6 4   5    .data   ascii 8rU=
+182 0x0000470d 0x00406f0d 4   5    .data   ascii ak\t 
+183 0x00004772 0x00406f72 4   6    .data   utf8  TٶKn blocks=Basic Latin,Arabic
+184 0x00004783 0x00406f83 4   5    .data   ascii a\n\vE
+185 0x00004825 0x00407025 4   5    .data   ascii S;T;
+186 0x00004847 0x00407047 4   5    .data   ascii ?o&f
+187 0x00004908 0x00407108 4   6    .data   utf8  0ق)x blocks=Basic Latin,Arabic
+188 0x00004963 0x00407163 4   6    .data   utf8  n}QĪ blocks=Basic Latin,Latin Extended-A
+189 0x000049eb 0x004071eb 5   6    .data   ascii "S(\f$
+190 0x000049f2 0x004071f2 4   5    .data   ascii o\t{~
+191 0x00004a17 0x00407217 4   5    .data   ascii \nr}B
+192 0x00004a53 0x00407253 9   12   .data   utf8  萀?A?uk"+D blocks=CJK Unified Ideographs,Basic Latin
+193 0x00004a9b 0x0040729b 4   6    .data   utf8  _ǖ\th blocks=Basic Latin,Latin Extended-B
+194 0x00004ae2 0x004072e2 6   9    .data   utf8  銖~d50R blocks=CJK Unified Ideographs,Basic Latin
+195 0x00004b3e 0x0040733e 4   5    .data   ascii \t|\tM
+196 0x00004b65 0x00407365 4   6    .data   utf8  ˅3LJ blocks=Spacing Modifier Letters,Basic Latin
+197 0x00004b85 0x00407385 6   8    .data   utf8  \\f#ϨJ\e blocks=Basic Latin,Greek and Coptic
+198 0x00004ba1 0x004073a1 4   5    .data   ascii <6Qi
+199 0x00004ba6 0x004073a6 4   5    .data   ascii \ad?3
+200 0x00004c09 0x00407409 4   5    .data   ascii IR+r
+201 0x00004cf0 0x004074f0 4   5    .data   ascii "qw\n
+202 0x00004d3c 0x0040753c 6   8    .data   utf8  ^ҏ{t3! blocks=Basic Latin,Cyrillic
+203 0x00004d4b 0x0040754b 5   6    .data   ascii "r:Wj
+204 0x00004d56 0x00407556 5   6    .data   ascii t?\~n
+205 0x00004d6a 0x0040756a 4   7    .data   utf8  R뾋RJ blocks=Basic Latin,Hangul Syllables
+206 0x00004d8f 0x0040758f 6   7    .data   ascii H+;f\tb
+207 0x00004dc3 0x004075c3 7   8    .data   ascii %PTjzC/
+208 0x00004e6e 0x0040766e 4   5    .data   ascii 3P\O
+209 0x00004e9c 0x0040769c 4   5    .data   ascii YF[L
+210 0x00004eb8 0x004076b8 7   9    .data   utf8  8$E˝`5v blocks=Basic Latin,Spacing Modifier Letters
+211 0x00004f01 0x00407701 5   8    .data   utf8  ?ޮ։+  blocks=Basic Latin,Thaana,Armenian
+212 0x00004f54 0x00407754 4   5    .data   ascii \ai{.
+213 0x00004f97 0x00407797 4   5    .data   ascii v;Rz
+214 0x00004fa7 0x004077a7 4   5    .data   ascii "\%_
+215 0x00004fc5 0x004077c5 4   5    .data   ascii \n` b
+216 0x00005021 0x00407821 4   6    .data   utf8  \f\aėY blocks=Basic Latin,Latin Extended-A
+217 0x0000502c 0x0040782c 4   5    .data   ascii ])"Y
+218 0x00005047 0x00407847 4   6    .data   utf8  UާmM blocks=Basic Latin,Thaana
+219 0x000050d9 0x004078d9 4   6    .data   utf8  /Mď3 blocks=Basic Latin,Latin Extended-A
+220 0x00005101 0x00407901 4   6    .data   utf8  U"ݝ$ blocks=Basic Latin,Arabic Supplement
+221 0x0000526c 0x00407a6c 4   7    .data   utf8  ӫ%[Ձ blocks=Cyrillic,Basic Latin,Armenian
+222 0x00005295 0x00407a95 4   5    .data   ascii BHoF
+223 0x000052b8 0x00407ab8 4   5    .data   ascii GW\ai
+224 0x000052ce 0x00407ace 5   9    .data   utf8  )HҊհȻ blocks=Basic Latin,Cyrillic,Armenian,Latin Extended-B
+225 0x000052ed 0x00407aed 4   6    .data   utf8  U)Lع blocks=Basic Latin,Arabic
+226 0x00005335 0x00407b35 4   5    .data   ascii }AkA
+227 0x00005356 0x00407b56 4   5    .data   ascii {~~o
+228 0x00005377 0x00407b77 4   5    .data   ascii OYn,
+229 0x000053ad 0x00407bad 4   6    .data   utf8  q'n֝ blocks=Basic Latin,Hebrew
+230 0x00005475 0x00407c75 4   5    .data   ascii eDvB
+231 0x000054cf 0x00407ccf 5   9    .data   utf8  (㳧ǴeO blocks=Basic Latin,CJK Unified Ideographs Extension A,Latin Extended-B
+232 0x00005520 0x00407d20 4   7    .data   utf8  (?랣x blocks=Basic Latin,Hangul Syllables
+233 0x00005557 0x00407d57 4   5    .data   ascii ~I\v\t
+234 0x00005578 0x00407d78 4   5    .data   ascii G\b\a#
+235 0x0000560d 0x00407e0d 4   6    .data   utf8  P%Dԣ blocks=Basic Latin,Cyrillic Supplement
+236 0x000056b5 0x00407eb5 4   5    .data   ascii WNjL
+237 0x000056d8 0x00407ed8 4   5    .data   ascii M+\r6
+238 0x000056ed 0x00407eed 4   5    .data   ascii L'H\n
+239 0x000056f6 0x00407ef6 6   7    .data   ascii (K~|\vo
+240 0x000056ff 0x00407eff 4   5    .data   ascii [4?1
+241 0x00005780 0x00407f80 4   7    .data   utf8  1;: blocks=Basic Latin,Private Use Area
+242 0x000057b6 0x00407fb6 5   7    .data   utf8  f~nP&
+243 0x000057e3 0x00407fe3 4   5    .data   ascii VV\v7
+244 0x00005802 0x00408002 5   7    .data   utf8  ިV\n<_ blocks=Thaana,Basic Latin
+245 0x00005839 0x00408039 4   5    .data   ascii >>Xn
+246 0x000059fe 0x004081fe 4   5    .data   ascii 2|`/
+247 0x00005a05 0x00408205 8   10   .data   utf8  \nCzRlesӛ blocks=Basic Latin,Cyrillic
+248 0x00005a1a 0x0040821a 4   5    .data   ascii )\fcb
+249 0x00005aa0 0x004082a0 4   7    .data   utf8  3\fꛠ= blocks=Basic Latin,Bamum
+250 0x00005ad4 0x004082d4 4   6    .data   utf8  ρ:~, blocks=Greek and Coptic,Basic Latin
+251 0x00005ade 0x004082de 4   8    .data   utf8  Ƅ2?쮸 blocks=Latin Extended-B,Basic Latin,Hangul Syllables
+252 0x00005b11 0x00408311 5   7    .data   utf8  kȥD7I blocks=Basic Latin,Latin Extended-B
+253 0x00005b4c 0x0040834c 4   5    .data   ascii P^pX
+254 0x00005bba 0x004083ba 4   6    .data   utf8  yޖHP blocks=Basic Latin,Thaana
+255 0x00005bc3 0x004083c3 5   9    .data   utf8  喰0|ϼ" blocks=CJK Unified Ideographs,Basic Latin,Greek and Coptic
+256 0x00005c87 0x00408487 4   5    .data   ascii 7 &d
+257 0x00005cf3 0x004084f3 4   6    .data   utf8  ٝsV2 blocks=Arabic,Basic Latin
+258 0x00005d09 0x00408509 4   5    .data   ascii !Eb,
+259 0x00005d1a 0x0040851a 4   5    .data   ascii ?j_.
+260 0x00005d65 0x00408565 5   6    .data   ascii 5]!\nx
+261 0x00005d6b 0x0040856b 5   6    .data   ascii \e}[-t
+262 0x00005d75 0x00408575 4   5    .data   ascii EPr$
+263 0x00005dbb 0x004085bb 4   5    .data   ascii @XN`
+264 0x00005de5 0x004085e5 4   5    .data   ascii \n\rj|
+265 0x00005e11 0x00408611 5   6    .data   ascii )6\t#y
+266 0x00005e17 0x00408617 4   7    .data   utf8  6ǁVѮ blocks=Basic Latin,Latin Extended-B,Cyrillic
+267 0x00005f96 0x00408796 4   5    .data   ascii \vr~@
+268 0x00005fb8 0x004087b8 4   5    .data   ascii JK2n
+269 0x00005ff5 0x004087f5 4   5    .data   ascii 3v/O
+270 0x00006223 0x00408a23 4   6    .data   utf8  ė\ntr blocks=Latin Extended-A,Basic Latin
+271 0x0000624b 0x00408a4b 4   6    .data   utf8  EýP' blocks=Basic Latin,Latin-1 Supplement
+272 0x00006267 0x00408a67 6   7    .data   ascii !D&[)u
+273 0x00006314 0x00408b14 4   6    .data   utf8  ́LLP blocks=Combining Diacritical Marks,Basic Latin
+274 0x00006433 0x00408c33 4   7    .data   utf8  愤:z? blocks=CJK Unified Ideographs,Basic Latin
+275 0x0000648b 0x00408c8b 4   6    .data   utf8  -чTS blocks=Basic Latin,Cyrillic
+276 0x000064bf 0x00408cbf 4   5    .data   ascii @hE^
+arch     x86
+baddr    0x400000
+binsz    26112
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00006f4d
+compiled Mon Nov  5 08:24:23 2018
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00006f4d
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5bdffe37
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0x1000
+  SizeOfInitializedData : 0x5200
+  SizeOfUninitializedData : 0x600
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x8e00
+  SizeOfHeaders : 0x400
+  CheckSum : 0x6f4d
+  Subsystem : 0x2
+  DllCharacteristics : 0x8400
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 25830 Times: 1
+  Product: 260 Name: Utc1900_C Version: 25830 Times: 10
+  Product: 1 Name: Import0 Version: 0 Times: 18
+  Product: 257 Name: Implib1400 Version: 25203 Times: 5
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x31ac
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x3000
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+shlwapi.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00003238 0x00001400 SET_32 KERNEL32.dll_GetCommandLineA
+0x0000324a 0x00001404 SET_32 KERNEL32.dll_SetCurrentDirectoryW
+0x00003262 0x00001408 SET_32 KERNEL32.dll_OutputDebugStringA
+0x00003278 0x0000140c SET_32 KERNEL32.dll_Sleep
+0x00003280 0x00001410 SET_32 KERNEL32.dll_ExitProcess
+0x0000328e 0x00001414 SET_32 KERNEL32.dll_CreateProcessW
+0x000032a0 0x00001418 SET_32 KERNEL32.dll_GetSystemDirectoryW
+0x000032b6 0x0000141c SET_32 KERNEL32.dll_lstrcatW
+0x000032c2 0x00001420 SET_32 KERNEL32.dll_GetNativeSystemInfo
+0x000032d8 0x00001424 SET_32 KERNEL32.dll_GetModuleFileNameW
+0x000032ee 0x00001428 SET_32 KERNEL32.dll_GetModuleHandleA
+0x00003302 0x0000142c SET_32 KERNEL32.dll_GetProcAddress
+0x00003314 0x00001430 SET_32 KERNEL32.dll_LoadLibraryA
+0x00003324 0x00001434 SET_32 KERNEL32.dll_HeapAlloc
+0x00003330 0x00001438 SET_32 KERNEL32.dll_HeapFree
+0x0000333c 0x0000143c SET_32 KERNEL32.dll_GetProcessHeap
+0x0000335c 0x00001448 SET_32 SHLWAPI.dll_StrStrIA
+0x00003368 0x00001444 SET_32 SHLWAPI.dll_StrToIntA
+
+
+18 relocations
+26112
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,153 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr           size vaddr          vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001000   0x26200 0x0081b000   0x4c000 -rwx    
+1   0x00027200       0x0 0x0044d000    0x1000 -rw- .rsrc   
+2   0x00027200     0x200 0x0044e000    0x1000 -rw- .idata  
+3   0x00027400     0x200 0x0044f000  0x25e000 -rwx         
+4   0x00027600  0x16d800 0x006ad000  0x16e000 -rwx htusmqub
+5   0x00194e00     0x200 0x0081b000    0x1000 -rwx ijybpcqb
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0081b000 paddr=0x0001b000 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0044e033 NONE FUNC kernel32.dll lstrcpy
+1   0x0044e03b NONE FUNC comctl32.dll InitCommonControls
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00027233 0x0044e033 NONE FUNC 0    kernel32.dll imp.lstrcpy
+1   0x0002723b 0x0044e03b NONE FUNC 0    comctl32.dll imp.InitCommonControls
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    1658880
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0019cc42
+compiled Mon Feb 20 10:45:37 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0019cc42
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x58aac8d1
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x3d200
+  SizeOfInitializedData : 0x10200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x41b000
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3f000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x41c000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x19cc42
+  Subsystem : 0x2
+  DllCharacteristics : 0x8040
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 40219 Times: 16
+  Product: 1 Name: Import0 Version: 0 Times: 244
+  Product: 147 Name: Implib900 Version: 30729 Times: 19
+  Product: 170 Name: Utc1600_C Version: 40219 Times: 238
+  Product: 158 Name: Masm1000 Version: 40219 Times: 27
+  Product: 171 Name: Utc1600_CPP Version: 40219 Times: 45
+  Product: 152 Name: AliasObj1000 Version: 20115 Times: 8
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x4e06d
+  Size : 0x95
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x4e1f8
+  Size : 0x8
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+comctl32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0004e014 0x00027233 SET_32 kernel32.dll_lstrcpy
+0x0004e01e 0x0002723b SET_32 comctl32.dll_InitCommonControls
+
+
+2 relocations
+1658880
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

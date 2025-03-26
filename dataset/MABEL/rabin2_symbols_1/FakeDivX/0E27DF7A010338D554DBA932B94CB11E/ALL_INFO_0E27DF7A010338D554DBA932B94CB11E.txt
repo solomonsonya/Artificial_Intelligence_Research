@@ -1,0 +1,277 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1600 0x00401000   0x2000 -r-x .text
+1   0x00001a00   0x200 0x00403000   0x1000 -r-- .data2
+2   0x00001c00  0x3e00 0x00404000   0x4000 -r-x .text2
+3   0x00005a00   0x200 0x00408000   0x1000 -r-- .rdata
+4   0x00005c00   0x600 0x00409000   0x1000 -rw- .data
+5   0x00006200  0x4e00 0x0040a000  0xfc000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401c70 paddr=0x00001070 haddr=0x00000100 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00408010 NONE FUNC KERNEL32.dll WriteFile
+2   0x00408014 NONE FUNC KERNEL32.dll CreateFileA
+3   0x00408018 NONE FUNC KERNEL32.dll VirtualAlloc
+4   0x0040801c NONE FUNC KERNEL32.dll GetCurrentThread
+5   0x00408020 NONE FUNC KERNEL32.dll LocalAlloc
+1   0x00408028 NONE FUNC USER32.dll   GetSystemMetrics
+2   0x0040802c NONE FUNC USER32.dll   LoadCursorA
+3   0x00408030 NONE FUNC USER32.dll   ShowWindow
+1   0x00408008 NONE FUNC GDI32.dll    GetStockObject
+1   0x00408000 NONE FUNC ADVAPI32.dll RegOpenKeyExW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00005a10 0x00408010 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+2   0x00005a14 0x00408014 NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+3   0x00005a18 0x00408018 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+4   0x00005a1c 0x0040801c NONE FUNC 0    KERNEL32.dll imp.GetCurrentThread
+5   0x00005a20 0x00408020 NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+1   0x00005a28 0x00408028 NONE FUNC 0    USER32.dll   imp.GetSystemMetrics
+2   0x00005a2c 0x0040802c NONE FUNC 0    USER32.dll   imp.LoadCursorA
+3   0x00005a30 0x00408030 NONE FUNC 0    USER32.dll   imp.ShowWindow
+1   0x00005a08 0x00408008 NONE FUNC 0    GDI32.dll    imp.GetStockObject
+1   0x00005a00 0x00408000 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00005ad6 0x004080d6 12  13   .rdata  ascii   VirtualAlloc
+1   0x00005ae6 0x004080e6 16  17   .rdata  ascii   GetCurrentThread
+2   0x00005afa 0x004080fa 11  12   .rdata  ascii   CreateFileA
+3   0x00005b08 0x00408108 9   10   .rdata  ascii   WriteFile
+4   0x00005b14 0x00408114 10  11   .rdata  ascii   LocalAlloc
+5   0x00005b20 0x00408120 12  13   .rdata  ascii   KERNEL32.dll
+6   0x00005b30 0x00408130 11  12   .rdata  ascii   LoadCursorA
+7   0x00005b3e 0x0040813e 10  11   .rdata  ascii   ShowWindow
+8   0x00005b4c 0x0040814c 16  17   .rdata  ascii   GetSystemMetrics
+9   0x00005b5e 0x0040815e 10  11   .rdata  ascii   USER32.dll
+10  0x00005b6c 0x0040816c 14  15   .rdata  ascii   GetStockObject
+11  0x00005b7c 0x0040817c 9   10   .rdata  ascii   GDI32.dll
+12  0x00005b88 0x00408188 13  14   .rdata  ascii   RegOpenKeyExW
+13  0x00005b96 0x00408196 12  13   .rdata  ascii   ADVAPI32.dll
+0   0x00005c0c 0x0040900c 4   5    .data   ascii   3333
+1   0x00005c18 0x00409018 37  76   .data   utf16le piffile\shellex\propertysheethandlers
+2   0x00005c64 0x00409064 7   8    .data   ascii   klkljkl
+0   0x000064a6 0x0040a2a6 9   20   .rsrc   utf16le Tray Menu
+1   0x0000656c 0x0040a36c 4   5    .rsrc   ascii   233 
+2   0x0000662c 0x0040a42c 20  21   .rsrc   ascii   )++L***+***,...+333\n
+3   0x000066fc 0x0040a4fc 4   5    .rsrc   ascii   1118
+4   0x000067bc 0x0040a5bc 4   5    .rsrc   ascii   ---;
+5   0x0000687c 0x0040a67c 4   5    .rsrc   ascii   00,:
+6   0x0000693c 0x0040a73c 4   5    .rsrc   ascii   ,,.4
+7   0x000069fc 0x0040a7fc 4   5    .rsrc   ascii   \v\nLZ
+8   0x00006e4e 0x0040ac4e 5   6    .rsrc   ascii   _Y555
+9   0x00007086 0x0040ae86 6   7    .rsrc   ascii   tn\b\fnf
+10  0x0000708e 0x0040ae8e 5   6    .rsrc   ascii   c%555
+11  0x0000717e 0x0040af7e 8   9    .rsrc   ascii   Jr\t\foP$+
+12  0x0000723c 0x0040b03c 4   5    .rsrc   ascii   --5\e
+13  0x000072d4 0x0040b0d4 24  25   .rsrc   ascii   ///-...,...,...,...,111*
+14  0x0000893c 0x0040c73c 4   5    .rsrc   ascii   889V
+15  0x000089bc 0x0040c7bc 4   5    .rsrc   ascii   OOL|
+16  0x000089e6 0x0040c7e6 4   5    .rsrc   ascii   ms\f$
+17  0x00008a3c 0x0040c83c 4   5    .rsrc   ascii   ONNn
+18  0x00008c9c 0x0040ca9c 7   8    .rsrc   ascii   \n\ricCCC
+19  0x00008d94 0x0040cb94 6   7    .rsrc   ascii   "0~n0N
+20  0x00008d9e 0x0040cb9e 6   8    .rsrc   utf8    vhLLL˓ blocks=Basic Latin,Spacing Modifier Letters
+21  0x00008e14 0x0040cc14 4   5    .rsrc   ascii   UR}\e
+22  0x00008e3c 0x0040cc3c 4   5    .rsrc   ascii   ,+>V
+23  0x00008e42 0x0040cc42 4   5    .rsrc   ascii   f\f/6
+24  0x00008e4a 0x0040cc4a 4   5    .rsrc   ascii   rq//
+25  0x00008ea0 0x0040cca0 19  20   .rsrc   ascii   222\e---#---"---$111
+26  0x00009850 0x0040d650 7   8    .rsrc   ascii   ^__+?>@
+27  0x0000992a 0x0040d72a 4   5    .rsrc   ascii   c@\f%
+28  0x00009979 0x0040d779 4   5    .rsrc   ascii   \vgv\v
+29  0x00009a7e 0x0040d87e 5   6    .rsrc   ascii   u]MMM
+30  0x00009ae0 0x0040d8e0 4   6    .rsrc   utf8    YYYˋ blocks=Basic Latin,Spacing Modifier Letters
+31  0x00009b3f 0x0040d93f 4   6    .rsrc   utf8    QYYY
+32  0x00009ba0 0x0040d9a0 24  25   .rsrc   ascii   777;<<<N777MCCD6ssn"10C\f
+33  0x0000a174 0x0040df74 7   8    .rsrc   ascii   Z\]UIG@
+34  0x0000a1c0 0x0040dfc0 4   5    .rsrc   ascii   CCU@
+35  0x0000a1cd 0x0040dfcd 4   5    .rsrc   ascii   \rk\n\a
+36  0x0000a20e 0x0040e00e 4   5    .rsrc   ascii   vh\e4
+37  0x0000a286 0x0040e086 5   6    .rsrc   ascii   p$SSS
+38  0x0000a2d0 0x0040e0d0 4   6    .rsrc   utf8    iiiӂ blocks=Basic Latin,Cyrillic
+39  0x0000a317 0x0040e117 4   5    .rsrc   ascii   ^XXX
+40  0x0000a328 0x0040e128 6   7    .rsrc   ascii   GIvSJN
+41  0x0000a360 0x0040e160 7   8    .rsrc   ascii   666\r222
+42  0x0000a368 0x0040e168 4   5    .rsrc   ascii   CCA\n
+43  0x0000a6ac 0x0040e4ac 7   8    .rsrc   ascii   WXT=FB;
+44  0x0000a6fa 0x0040e4fa 4   5    .rsrc   ascii   {$\n 
+45  0x0000a759 0x0040e559 6   7    .rsrc   ascii   "yC\n\ng
+46  0x0000a79f 0x0040e59f 4   5    .rsrc   ascii   |cdd
+47  0x0000a7e4 0x0040e5e4 4   7    .rsrc   utf8    zzy蓒 blocks=Basic Latin,CJK Unified Ideographs
+48  0x0000a820 0x0040e620 11  12   .rsrc   ascii   :::#999/bb\
+49  0x0000a82c 0x0040e62c 4   5    .rsrc   ascii   ji|\n
+50  0x0000aaf6 0x0040e8f6 15  32   .rsrc   utf16le VS_VERSION_INFO
+51  0x0000ab52 0x0040e952 14  30   .rsrc   utf16le StringFileInfo
+52  0x0000ab76 0x0040e976 8   18   .rsrc   utf16le 041904B0
+53  0x0000ab8e 0x0040e98e 11  24   .rsrc   utf16le CompanyName
+54  0x0000abda 0x0040e9da 15  32   .rsrc   utf16le FileDescription
+55  0x0000ac20 0x0040ea20 12  26   .rsrc   utf16le  (Microsoft)
+56  0x0000ac42 0x0040ea42 11  24   .rsrc   utf16le FileVersion
+57  0x0000ac5c 0x0040ea5c 32  66   .rsrc   utf16le 5.1.2600.5512 (xpsp.080413-2108)
+58  0x0000aca6 0x0040eaa6 12  26   .rsrc   utf16le InternalName
+59  0x0000acc0 0x0040eac0 11  24   .rsrc   utf16le RCIMLBY.EXE
+60  0x0000ace0 0x0040eae0 10  22   .rsrc   utf16le arFileInfo
+61  0x0000acfe 0x0040eafe 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x400000
+binsz    45056
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001333c
+compiled Fri Sep 13 14:59:36 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x52332858
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x5600
+  SizeOfInitializedData : 0x5600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1c70
+  BaseOfCode : 0x1000
+  BaseOfData : 0x8000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x106000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 148 Name: Cvtres900 Version: 21022 Times: 1
+  Product: 0 Name: Unknown Version: 0 Times: 2
+  Product: 131 Name: Utc1500_C Version: 21022 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 10
+  Product: 123 Name: Implib800 Version: 50727 Times: 9
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x8038
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xa000
+  Size : 0x4c48
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x8000
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+gdi32.dll
+advapi32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000080d4 0x00005a18 SET_32 KERNEL32.dll_VirtualAlloc
+0x000080e4 0x00005a1c SET_32 KERNEL32.dll_GetCurrentThread
+0x000080f8 0x00005a14 SET_32 KERNEL32.dll_CreateFileA
+0x00008106 0x00005a10 SET_32 KERNEL32.dll_WriteFile
+0x00008112 0x00005a20 SET_32 KERNEL32.dll_LocalAlloc
+0x0000812e 0x00005a2c SET_32 USER32.dll_LoadCursorA
+0x0000813c 0x00005a30 SET_32 USER32.dll_ShowWindow
+0x0000814a 0x00005a28 SET_32 USER32.dll_GetSystemMetrics
+0x0000816a 0x00005a08 SET_32 GDI32.dll_GetStockObject
+0x00008186 0x00005a00 SET_32 ADVAPI32.dll_RegOpenKeyExW
+
+
+10 relocations
+45056
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 5.1.2600.5512
+  ProductVersion: 5.1.2600.5512
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Корпорация Майкрософт
+  FileDescription: Удаленный помощник (Microsoft)
+  FileVersion: 5.1.2600.5512 (xpsp.080413-2108)
+  InternalName: RCIMLBY.EXE
+Section to Segment mapping:
+Segment Section
+---------------
+
+

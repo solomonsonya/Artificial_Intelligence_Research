@@ -1,0 +1,284 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x2a00 0x00401000   0x3000 srwx .text
+1   0x00002e00    0x600 0x00404000   0x1000 -r-- .rdata
+2   0x00003400    0x600 0x00405000   0x2000 -rw- .data
+3   0x00003a00  0x32800 0x00407000  0x33000 -rw- .sbss
+4   0x00036200  0x32e00 0x0043a000  0x33000 -rw- .reloc
+5   0x00069000    0x600 0x0046d000   0x1000 -r-- .reloc_1
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401b50 paddr=0x00000f50 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00404000 NONE FUNC CLUSAPI.dll  ClusterNodeControl
+1   0x00404060 NONE FUNC SHELL32.dll  DragFinish
+1   0x00404078 NONE FUNC msvcrt.dll   wcscmp
+1   0x00404008 NONE FUNC KERNEL32.dll LoadLibraryA
+2   0x0040400c NONE FUNC KERNEL32.dll GetLastError
+3   0x00404010 NONE FUNC KERNEL32.dll InterlockedExchange
+4   0x00404014 NONE FUNC KERNEL32.dll FreeLibrary
+5   0x00404018 NONE FUNC KERNEL32.dll ExitProcess
+6   0x0040401c NONE FUNC KERNEL32.dll MapUserPhysicalPages
+7   0x00404020 NONE FUNC KERNEL32.dll IsValidLanguageGroup
+8   0x00404024 NONE FUNC KERNEL32.dll PrepareTape
+9   0x00404028 NONE FUNC KERNEL32.dll SetComputerNameExA
+10  0x0040402c NONE FUNC KERNEL32.dll SetCurrentDirectoryA
+11  0x00404030 NONE FUNC KERNEL32.dll FindNextVolumeA
+12  0x00404034 NONE FUNC KERNEL32.dll GetModuleHandleA
+13  0x00404038 NONE FUNC KERNEL32.dll GetProcAddress
+14  0x0040403c NONE FUNC KERNEL32.dll FreeConsole
+15  0x00404040 NONE FUNC KERNEL32.dll RaiseException
+16  0x00404044 NONE FUNC KERNEL32.dll LocalFree
+17  0x00404048 NONE FUNC KERNEL32.dll LocalAlloc
+1   0x00404068 NONE FUNC SHLWAPI.dll  PathFindFileNameA
+1   0x00404070 NONE FUNC comdlg32.dll FindTextA
+259 0x00404058 NONE FUNC OLEAUT32.dll VarUI2FromR4
+1   0x00404050 NONE FUNC NTDSAPI.dll  DsMapSchemaGuidsA
+1   0x00404080 NONE FUNC ole32.dll    OleIsRunning
+1   0x004055e0 NONE FUNC IMM32.dll    ImmDisableIME
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002e00 0x00404000 NONE FUNC 0    CLUSAPI.dll  imp.ClusterNodeControl
+1   0x00002e60 0x00404060 NONE FUNC 0    SHELL32.dll  imp.DragFinish
+1   0x00002e78 0x00404078 NONE FUNC 0    msvcrt.dll   imp.wcscmp
+1   0x00002e08 0x00404008 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+2   0x00002e0c 0x0040400c NONE FUNC 0    KERNEL32.dll imp.GetLastError
+3   0x00002e10 0x00404010 NONE FUNC 0    KERNEL32.dll imp.InterlockedExchange
+4   0x00002e14 0x00404014 NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+5   0x00002e18 0x00404018 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+6   0x00002e1c 0x0040401c NONE FUNC 0    KERNEL32.dll imp.MapUserPhysicalPages
+7   0x00002e20 0x00404020 NONE FUNC 0    KERNEL32.dll imp.IsValidLanguageGroup
+8   0x00002e24 0x00404024 NONE FUNC 0    KERNEL32.dll imp.PrepareTape
+9   0x00002e28 0x00404028 NONE FUNC 0    KERNEL32.dll imp.SetComputerNameExA
+10  0x00002e2c 0x0040402c NONE FUNC 0    KERNEL32.dll imp.SetCurrentDirectoryA
+11  0x00002e30 0x00404030 NONE FUNC 0    KERNEL32.dll imp.FindNextVolumeA
+12  0x00002e34 0x00404034 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+13  0x00002e38 0x00404038 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+14  0x00002e3c 0x0040403c NONE FUNC 0    KERNEL32.dll imp.FreeConsole
+15  0x00002e40 0x00404040 NONE FUNC 0    KERNEL32.dll imp.RaiseException
+16  0x00002e44 0x00404044 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+17  0x00002e48 0x00404048 NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+1   0x00002e68 0x00404068 NONE FUNC 0    SHLWAPI.dll  imp.PathFindFileNameA
+1   0x00002e70 0x00404070 NONE FUNC 0    comdlg32.dll imp.FindTextA
+259 0x00002e58 0x00404058 NONE FUNC 0    OLEAUT32.dll imp.VarUI2FromR4
+1   0x00002e50 0x00404050 NONE FUNC 0    NTDSAPI.dll  imp.DsMapSchemaGuidsA
+1   0x00002e80 0x00404080 NONE FUNC 0    ole32.dll    imp.OleIsRunning
+1   0x000039e0 0x004055e0 NONE FUNC 0    IMM32.dll    imp.ImmDisableIME
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002eb0 0x004040b0 9   10   .rdata  ascii IMM32.dll
+1   0x00002f06 0x00404106 13  14   .rdata  ascii ImmDisableIME
+2   0x0000306e 0x0040426e 18  19   .rdata  ascii ClusterNodeControl
+3   0x00003082 0x00404282 11  12   .rdata  ascii CLUSAPI.dll
+4   0x00003090 0x00404290 10  11   .rdata  ascii DragFinish
+5   0x0000309c 0x0040429c 11  12   .rdata  ascii SHELL32.dll
+6   0x000030aa 0x004042aa 6   7    .rdata  ascii wcscmp
+7   0x000030b2 0x004042b2 10  11   .rdata  ascii msvcrt.dll
+8   0x000030c0 0x004042c0 11  12   .rdata  ascii ExitProcess
+9   0x000030d1 0x004042d1 9   10   .rdata  ascii eExchange
+10  0x000030de 0x004042de 20  21   .rdata  ascii MapUserPhysicalPages
+11  0x000030f6 0x004042f6 20  21   .rdata  ascii IsValidLanguageGroup
+12  0x0000310e 0x0040430e 11  12   .rdata  ascii PrepareTape
+13  0x0000311c 0x0040431c 18  19   .rdata  ascii SetComputerNameExA
+14  0x00003132 0x00404332 20  21   .rdata  ascii SetCurrentDirectoryA
+15  0x0000314a 0x0040434a 15  16   .rdata  ascii FindNextVolumeA
+16  0x0000315c 0x0040435c 16  17   .rdata  ascii GetModuleHandleA
+17  0x00003170 0x00404370 14  15   .rdata  ascii GetProcAddress
+18  0x00003182 0x00404382 11  12   .rdata  ascii FreeConsole
+19  0x0000318e 0x0040438e 12  13   .rdata  ascii KERNEL32.dll
+20  0x0000319e 0x0040439e 17  18   .rdata  ascii PathFindFileNameA
+21  0x000031b0 0x004043b0 11  12   .rdata  ascii SHLWAPI.dll
+22  0x000031be 0x004043be 9   10   .rdata  ascii FindTextA
+23  0x000031c8 0x004043c8 12  13   .rdata  ascii comdlg32.dll
+24  0x000031d6 0x004043d6 12  13   .rdata  ascii OLEAUT32.dll
+25  0x000031e6 0x004043e6 17  18   .rdata  ascii DsMapSchemaGuidsA
+26  0x000031f8 0x004043f8 11  12   .rdata  ascii NTDSAPI.dll
+27  0x00003206 0x00404406 12  13   .rdata  ascii OleIsRunning
+28  0x00003214 0x00404414 9   10   .rdata  ascii ole32.dll
+29  0x00003220 0x00404420 10  11   .rdata  ascii LocalAlloc
+30  0x0000322e 0x0040442e 9   10   .rdata  ascii LocalFree
+31  0x0000323a 0x0040443a 11  12   .rdata  ascii FreeLibrary
+32  0x00003248 0x00404448 19  20   .rdata  ascii InterlockedExchange
+33  0x0000325e 0x0040445e 12  13   .rdata  ascii GetLastError
+34  0x0000326e 0x0040446e 12  13   .rdata  ascii LoadLibraryA
+35  0x0000327e 0x0040447e 14  15   .rdata  ascii RaiseException
+36  0x00003290 0x00404490 4   5    .rdata  ascii RSDS
+37  0x00003295 0x00404495 4   5    .rdata  ascii ?~=;
+38  0x000032a8 0x004044a8 26  27   .rdata  ascii e:\test\release\dbgmod.pdb
+0   0x000038b6 0x004054b6 4   5    .data   ascii _g^4
+1   0x000038cf 0x004054cf 6   7    .data   ascii ^tL3IZ
+2   0x000038dc 0x004054dc 7   8    .data   ascii _CO%B~e
+3   0x000038eb 0x004054eb 5   6    .data   ascii qnP\t1
+4   0x00003905 0x00405505 6   7    .data   ascii hCW-?|
+5   0x00003912 0x00405512 5   6    .data   ascii hH]&5
+6   0x0000391e 0x0040551e 7   8    .data   ascii hR]0D~U
+7   0x00003954 0x00405554 10  11   .data   ascii |zK~~]dnH!
+8   0x000039a3 0x004055a3 9   10   .data   ascii ntdll.dll
+9   0x000039ad 0x004055ad 15  16   .data   ascii NtReleaseMutant
+10  0x000039bd 0x004055bd 15  16   .data   ascii YX:\YnGNrQmVqd3
+11  0x000039cd 0x004055cd 16  17   .data   ascii drvgveccetvecer1
+arch     x86
+baddr    0x400000
+binsz    431616
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0006bea6
+compiled Wed Feb 11 14:17:25 2015
+crypto   false
+dbg_file e:\test\release\dbgmod.pdb
+endian   little
+havecode true
+hdr.csum 0x00000000
+guid     3D7E3FAB7F3B552418BE2E2A020687C8E
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x54db6475
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x20e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x2a00
+  SizeOfInitializedData : 0x67800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1b50
+  BaseOfCode : 0x1000
+  BaseOfData : 0x4000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x6e000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x411c
+  Size : 0xc8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x6d000
+  Size : 0x178
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x4090
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x4000
+  Size : 0x88
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x40bc
+  Size : 0x40
+[Linked libraries]
+clusapi.dll
+shell32.dll
+msvcrt.dll
+kernel32.dll
+shlwapi.dll
+comdlg32.dll
+oleaut32.dll
+ntdsapi.dll
+ole32.dll
+imm32.dll
+
+10 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000426c 0x00002e00 SET_32 CLUSAPI.dll_ClusterNodeControl
+0x0000428e 0x00002e60 SET_32 SHELL32.dll_DragFinish
+0x000042a8 0x00002e78 SET_32 msvcrt.dll_wcscmp
+0x000042be 0x00002e18 SET_32 KERNEL32.dll_ExitProcess
+0x000042dc 0x00002e1c SET_32 KERNEL32.dll_MapUserPhysicalPages
+0x000042f4 0x00002e20 SET_32 KERNEL32.dll_IsValidLanguageGroup
+0x0000430c 0x00002e24 SET_32 KERNEL32.dll_PrepareTape
+0x0000431a 0x00002e28 SET_32 KERNEL32.dll_SetComputerNameExA
+0x00004330 0x00002e2c SET_32 KERNEL32.dll_SetCurrentDirectoryA
+0x00004348 0x00002e30 SET_32 KERNEL32.dll_FindNextVolumeA
+0x0000435a 0x00002e34 SET_32 KERNEL32.dll_GetModuleHandleA
+0x0000436e 0x00002e38 SET_32 KERNEL32.dll_GetProcAddress
+0x00004380 0x00002e3c SET_32 KERNEL32.dll_FreeConsole
+0x0000439c 0x00002e68 SET_32 SHLWAPI.dll_PathFindFileNameA
+0x000043bc 0x00002e70 SET_32 comdlg32.dll_FindTextA
+0x000043e4 0x00002e50 SET_32 NTDSAPI.dll_DsMapSchemaGuidsA
+0x00004404 0x00002e80 SET_32 ole32.dll_OleIsRunning
+0x0000441e 0x00002e48 SET_32 KERNEL32.dll_LocalAlloc
+0x0000442c 0x00002e44 SET_32 KERNEL32.dll_LocalFree
+0x00004438 0x00002e14 SET_32 KERNEL32.dll_FreeLibrary
+0x00004446 0x00002e10 SET_32 KERNEL32.dll_InterlockedExchange
+0x0000445c 0x00002e0c SET_32 KERNEL32.dll_GetLastError
+0x0000446c 0x00002e08 SET_32 KERNEL32.dll_LoadLibraryA
+0x0000447c 0x00002e40 SET_32 KERNEL32.dll_RaiseException
+0x00401bba 0x000039e0 SET_32 IMM32.dll_ImmDisableIME
+0x80000103 0x00002e58 SET_32 OLEAUT32.dll_VarUI2FromR4
+
+
+26 relocations
+431616
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

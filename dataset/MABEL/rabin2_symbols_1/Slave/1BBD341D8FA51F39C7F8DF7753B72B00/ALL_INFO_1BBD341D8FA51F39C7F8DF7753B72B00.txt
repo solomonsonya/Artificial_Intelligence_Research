@@ -1,0 +1,1861 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001000  0x13000 0x001f1000  0x13000 -r-x .text
+1   0x00014000   0x3000 0x00204000   0x3000 -r-- .rdata
+2   0x00017000  0x26000 0x00207000  0x26000 -rw- .data
+3   0x0003d000   0x1000 0x0022d000   0x1000 -r-- .rsrc
+4   0x0003e000   0x2000 0x0022e000   0x2000 -r-- .reloc
+5   0x00040000   0x1000 0x00230000   0x1000 -r-x .imports
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x001f6220 paddr=0x00006220 haddr=0x00000120 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0023004e NONE FUNC ntdll.dll    ZwQueryInformationProcess
+2   0x00230052 NONE FUNC ntdll.dll    ZwQuerySystemInformation
+1   0x0023005a NONE FUNC kernel32.dll GetNativeSystemInfo
+1   0x00230062 NONE FUNC psapi.dll    EnumProcessModules
+2   0x00230066 NONE FUNC psapi.dll    GetModuleFileNameExW
+3   0x0023006a NONE FUNC psapi.dll    GetModuleInformation
+1   0x00230072 NONE FUNC ntdll.dll    ZwQueryObject
+1   0x0023007a NONE FUNC wininet.dll  InternetOpenA
+2   0x0023007e NONE FUNC wininet.dll  HttpSendRequestA
+3   0x00230082 NONE FUNC wininet.dll  InternetConnectA
+4   0x00230086 NONE FUNC wininet.dll  InternetCloseHandle
+5   0x0023008a NONE FUNC wininet.dll  HttpOpenRequestA
+6   0x0023008e NONE FUNC wininet.dll  InternetReadFile
+1   0x00204000 NONE FUNC advapi32.dll FreeSid
+2   0x00204004 NONE FUNC advapi32.dll GetSecurityInfo
+3   0x00204008 NONE FUNC advapi32.dll GetTokenInformation
+4   0x0020400c NONE FUNC advapi32.dll OpenProcessToken
+5   0x00204010 NONE FUNC advapi32.dll RegSetValueExW
+6   0x00204014 NONE FUNC advapi32.dll RegCloseKey
+7   0x00204018 NONE FUNC advapi32.dll RegCreateKeyExA
+8   0x0020401c NONE FUNC advapi32.dll RegEnumValueW
+9   0x00204020 NONE FUNC advapi32.dll SetEntriesInAclW
+10  0x00204024 NONE FUNC advapi32.dll SetSecurityInfo
+11  0x00204028 NONE FUNC advapi32.dll AllocateAndInitializeSid
+12  0x0020402c NONE FUNC advapi32.dll RegDeleteValueW
+1   0x00204034 NONE FUNC kernel32.dll VirtualFreeEx
+2   0x00204038 NONE FUNC kernel32.dll VirtualAllocEx
+3   0x0020403c NONE FUNC kernel32.dll ResumeThread
+4   0x00204040 NONE FUNC kernel32.dll SuspendThread
+5   0x00204044 NONE FUNC kernel32.dll GetThreadPriority
+6   0x00204048 NONE FUNC kernel32.dll OpenThread
+7   0x0020404c NONE FUNC kernel32.dll EnterCriticalSection
+8   0x00204050 NONE FUNC kernel32.dll FlushInstructionCache
+9   0x00204054 NONE FUNC kernel32.dll SetThreadPriority
+10  0x00204058 NONE FUNC kernel32.dll LeaveCriticalSection
+11  0x0020405c NONE FUNC kernel32.dll InitializeCriticalSection
+12  0x00204060 NONE FUNC kernel32.dll GetCurrentThread
+13  0x00204064 NONE FUNC kernel32.dll VirtualQuery
+14  0x00204068 NONE FUNC kernel32.dll GetThreadContext
+15  0x0020406c NONE FUNC kernel32.dll GetSystemTimeAsFileTime
+16  0x00204070 NONE FUNC kernel32.dll GetCurrentThreadId
+17  0x00204074 NONE FUNC kernel32.dll GetTickCount
+18  0x00204078 NONE FUNC kernel32.dll QueryPerformanceCounter
+19  0x0020407c NONE FUNC kernel32.dll GetModuleHandleA
+20  0x00204080 NONE FUNC kernel32.dll SetUnhandledExceptionFilter
+21  0x00204084 NONE FUNC kernel32.dll UnhandledExceptionFilter
+22  0x00204088 NONE FUNC kernel32.dll GetStartupInfoW
+23  0x0020408c NONE FUNC kernel32.dll InterlockedCompareExchange
+24  0x00204090 NONE FUNC kernel32.dll InterlockedExchange
+25  0x00204094 NONE FUNC kernel32.dll RtlUnwind
+26  0x00204098 NONE FUNC kernel32.dll OutputDebugStringA
+27  0x0020409c NONE FUNC kernel32.dll GetSystemInfo
+28  0x002040a0 NONE FUNC kernel32.dll MultiByteToWideChar
+29  0x002040a4 NONE FUNC kernel32.dll Module32NextW
+30  0x002040a8 NONE FUNC kernel32.dll Module32FirstW
+31  0x002040ac NONE FUNC kernel32.dll IsWow64Process
+32  0x002040b0 NONE FUNC kernel32.dll DuplicateHandle
+33  0x002040b4 NONE FUNC kernel32.dll GetLongPathNameW
+34  0x002040b8 NONE FUNC kernel32.dll GetModuleFileNameW
+35  0x002040bc NONE FUNC kernel32.dll TerminateProcess
+36  0x002040c0 NONE FUNC kernel32.dll CreateDirectoryW
+37  0x002040c4 NONE FUNC kernel32.dll MoveFileExW
+38  0x002040c8 NONE FUNC kernel32.dll CreateEventW
+39  0x002040cc NONE FUNC kernel32.dll ResetEvent
+40  0x002040d0 NONE FUNC kernel32.dll VirtualProtectEx
+41  0x002040d4 NONE FUNC kernel32.dll SetLastError
+42  0x002040d8 NONE FUNC kernel32.dll SetEvent
+43  0x002040dc NONE FUNC kernel32.dll GetCurrentProcess
+1   0x002040e4 NONE FUNC kernel32.dll SetFileAttributesW
+2   0x002040e8 NONE FUNC kernel32.dll DeleteFileW
+3   0x002040ec NONE FUNC kernel32.dll CreateFileW
+4   0x002040f0 NONE FUNC kernel32.dll WriteFile
+5   0x002040f4 NONE FUNC kernel32.dll ReleaseMutex
+6   0x002040f8 NONE FUNC kernel32.dll WriteProcessMemory
+7   0x002040fc NONE FUNC kernel32.dll LocalFree
+8   0x00204100 NONE FUNC kernel32.dll GetCurrentProcessId
+9   0x00204104 NONE FUNC kernel32.dll CreateToolhelp32Snapshot
+10  0x00204108 NONE FUNC kernel32.dll Process32NextW
+11  0x0020410c NONE FUNC kernel32.dll GetExitCodeThread
+12  0x00204110 NONE FUNC kernel32.dll Process32FirstW
+13  0x00204114 NONE FUNC kernel32.dll Sleep
+14  0x00204118 NONE FUNC kernel32.dll CloseHandle
+15  0x0020411c NONE FUNC kernel32.dll CreateThread
+16  0x00204120 NONE FUNC kernel32.dll GlobalSize
+17  0x00204124 NONE FUNC kernel32.dll GlobalLock
+18  0x00204128 NONE FUNC kernel32.dll GlobalAlloc
+19  0x0020412c NONE FUNC kernel32.dll GlobalUnlock
+20  0x00204130 NONE FUNC kernel32.dll CreateMutexW
+21  0x00204134 NONE FUNC kernel32.dll WaitForSingleObject
+22  0x00204138 NONE FUNC kernel32.dll GetModuleHandleW
+23  0x0020413c NONE FUNC kernel32.dll VirtualFree
+24  0x00204140 NONE FUNC kernel32.dll FormatMessageA
+25  0x00204144 NONE FUNC kernel32.dll CreateRemoteThread
+26  0x00204148 NONE FUNC kernel32.dll OpenProcess
+27  0x0020414c NONE FUNC kernel32.dll VirtualAlloc
+28  0x00204150 NONE FUNC kernel32.dll OpenMutexW
+29  0x00204154 NONE FUNC kernel32.dll GetLastError
+1   0x00204164 NONE FUNC shell32.dll  SHGetFolderPathW
+1   0x0020416c NONE FUNC user32.dll   CloseClipboard
+2   0x00204170 NONE FUNC user32.dll   GetClipboardData
+3   0x00204174 NONE FUNC user32.dll   EmptyClipboard
+4   0x00204178 NONE FUNC user32.dll   OpenClipboard
+5   0x0020417c NONE FUNC user32.dll   SetClipboardData
+6   0x00204180 NONE FUNC user32.dll   CharLowerW
+1   0x00204188 NONE FUNC msvcrt.dll   _controlfp
+2   0x0020418c NONE FUNC msvcrt.dll   sym.imp.void __cdecl terminate(void)
+3   0x00204190 NONE FUNC msvcrt.dll   _snprintf
+4   0x00204194 NONE FUNC msvcrt.dll   _iob
+5   0x00204198 NONE FUNC msvcrt.dll   __set_app_type
+6   0x0020419c NONE FUNC msvcrt.dll   __p__commode
+7   0x002041a0 NONE FUNC msvcrt.dll   __setusermatherr
+8   0x002041a4 NONE FUNC msvcrt.dll   _amsg_exit
+9   0x002041a8 NONE FUNC msvcrt.dll   _initterm
+10  0x002041ac NONE FUNC msvcrt.dll   _wcmdln
+11  0x002041b0 NONE FUNC msvcrt.dll   exit
+12  0x002041b4 NONE FUNC msvcrt.dll   _XcptFilter
+13  0x002041b8 NONE FUNC msvcrt.dll   _exit
+14  0x002041bc NONE FUNC msvcrt.dll   _cexit
+15  0x002041c0 NONE FUNC msvcrt.dll   __wgetmainargs
+16  0x002041c4 NONE FUNC msvcrt.dll   memcpy
+17  0x002041c8 NONE FUNC msvcrt.dll   memset
+18  0x002041cc NONE FUNC msvcrt.dll   tolower
+19  0x002041d0 NONE FUNC msvcrt.dll   srand
+20  0x002041d4 NONE FUNC msvcrt.dll   rand
+21  0x002041d8 NONE FUNC msvcrt.dll   wcsstr
+22  0x002041dc NONE FUNC msvcrt.dll   time
+23  0x002041e0 NONE FUNC msvcrt.dll   realloc
+24  0x002041e4 NONE FUNC msvcrt.dll   strtol
+25  0x002041e8 NONE FUNC msvcrt.dll   strstr
+26  0x002041ec NONE FUNC msvcrt.dll   memmove
+27  0x002041f0 NONE FUNC msvcrt.dll   _itoa
+28  0x002041f4 NONE FUNC msvcrt.dll   strchr
+29  0x002041f8 NONE FUNC msvcrt.dll   fflush
+30  0x002041fc NONE FUNC msvcrt.dll   __p__fmode
+31  0x00204200 NONE FUNC msvcrt.dll   _assert
+32  0x00204204 NONE FUNC msvcrt.dll   _itow
+33  0x00204208 NONE FUNC msvcrt.dll   malloc
+34  0x0020420c NONE FUNC msvcrt.dll   free
+35  0x00204210 NONE FUNC msvcrt.dll   _wcslwr
+36  0x00204214 NONE FUNC msvcrt.dll   _errno
+1   0x0022bf98 NONE FUNC kernel32.dll Thread32Next
+2   0x00204104 NONE FUNC kernel32.dll CreateToolhelp32Snapshot
+3   0x0022bfa0 NONE FUNC kernel32.dll Thread32First
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0004004e 0x0023004e NONE FUNC 0    ntdll.dll    imp.ZwQueryInformationProcess
+2   0x00040052 0x00230052 NONE FUNC 0    ntdll.dll    imp.ZwQuerySystemInformation
+1   0x0004005a 0x0023005a NONE FUNC 0    kernel32.dll imp.GetNativeSystemInfo
+1   0x00040062 0x00230062 NONE FUNC 0    psapi.dll    imp.EnumProcessModules
+2   0x00040066 0x00230066 NONE FUNC 0    psapi.dll    imp.GetModuleFileNameExW
+3   0x0004006a 0x0023006a NONE FUNC 0    psapi.dll    imp.GetModuleInformation
+1   0x00040072 0x00230072 NONE FUNC 0    ntdll.dll    imp.ZwQueryObject
+1   0x0004007a 0x0023007a NONE FUNC 0    wininet.dll  imp.InternetOpenA
+2   0x0004007e 0x0023007e NONE FUNC 0    wininet.dll  imp.HttpSendRequestA
+3   0x00040082 0x00230082 NONE FUNC 0    wininet.dll  imp.InternetConnectA
+4   0x00040086 0x00230086 NONE FUNC 0    wininet.dll  imp.InternetCloseHandle
+5   0x0004008a 0x0023008a NONE FUNC 0    wininet.dll  imp.HttpOpenRequestA
+6   0x0004008e 0x0023008e NONE FUNC 0    wininet.dll  imp.InternetReadFile
+1   0x00014000 0x00204000 NONE FUNC 0    advapi32.dll imp.FreeSid
+2   0x00014004 0x00204004 NONE FUNC 0    advapi32.dll imp.GetSecurityInfo
+3   0x00014008 0x00204008 NONE FUNC 0    advapi32.dll imp.GetTokenInformation
+4   0x0001400c 0x0020400c NONE FUNC 0    advapi32.dll imp.OpenProcessToken
+5   0x00014010 0x00204010 NONE FUNC 0    advapi32.dll imp.RegSetValueExW
+6   0x00014014 0x00204014 NONE FUNC 0    advapi32.dll imp.RegCloseKey
+7   0x00014018 0x00204018 NONE FUNC 0    advapi32.dll imp.RegCreateKeyExA
+8   0x0001401c 0x0020401c NONE FUNC 0    advapi32.dll imp.RegEnumValueW
+9   0x00014020 0x00204020 NONE FUNC 0    advapi32.dll imp.SetEntriesInAclW
+10  0x00014024 0x00204024 NONE FUNC 0    advapi32.dll imp.SetSecurityInfo
+11  0x00014028 0x00204028 NONE FUNC 0    advapi32.dll imp.AllocateAndInitializeSid
+12  0x0001402c 0x0020402c NONE FUNC 0    advapi32.dll imp.RegDeleteValueW
+1   0x00014034 0x00204034 NONE FUNC 0    kernel32.dll imp.VirtualFreeEx
+2   0x00014038 0x00204038 NONE FUNC 0    kernel32.dll imp.VirtualAllocEx
+3   0x0001403c 0x0020403c NONE FUNC 0    kernel32.dll imp.ResumeThread
+4   0x00014040 0x00204040 NONE FUNC 0    kernel32.dll imp.SuspendThread
+5   0x00014044 0x00204044 NONE FUNC 0    kernel32.dll imp.GetThreadPriority
+6   0x00014048 0x00204048 NONE FUNC 0    kernel32.dll imp.OpenThread
+7   0x0001404c 0x0020404c NONE FUNC 0    kernel32.dll imp.EnterCriticalSection
+8   0x00014050 0x00204050 NONE FUNC 0    kernel32.dll imp.FlushInstructionCache
+9   0x00014054 0x00204054 NONE FUNC 0    kernel32.dll imp.SetThreadPriority
+10  0x00014058 0x00204058 NONE FUNC 0    kernel32.dll imp.LeaveCriticalSection
+11  0x0001405c 0x0020405c NONE FUNC 0    kernel32.dll imp.InitializeCriticalSection
+12  0x00014060 0x00204060 NONE FUNC 0    kernel32.dll imp.GetCurrentThread
+13  0x00014064 0x00204064 NONE FUNC 0    kernel32.dll imp.VirtualQuery
+14  0x00014068 0x00204068 NONE FUNC 0    kernel32.dll imp.GetThreadContext
+15  0x0001406c 0x0020406c NONE FUNC 0    kernel32.dll imp.GetSystemTimeAsFileTime
+16  0x00014070 0x00204070 NONE FUNC 0    kernel32.dll imp.GetCurrentThreadId
+17  0x00014074 0x00204074 NONE FUNC 0    kernel32.dll imp.GetTickCount
+18  0x00014078 0x00204078 NONE FUNC 0    kernel32.dll imp.QueryPerformanceCounter
+19  0x0001407c 0x0020407c NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+20  0x00014080 0x00204080 NONE FUNC 0    kernel32.dll imp.SetUnhandledExceptionFilter
+21  0x00014084 0x00204084 NONE FUNC 0    kernel32.dll imp.UnhandledExceptionFilter
+22  0x00014088 0x00204088 NONE FUNC 0    kernel32.dll imp.GetStartupInfoW
+23  0x0001408c 0x0020408c NONE FUNC 0    kernel32.dll imp.InterlockedCompareExchange
+24  0x00014090 0x00204090 NONE FUNC 0    kernel32.dll imp.InterlockedExchange
+25  0x00014094 0x00204094 NONE FUNC 0    kernel32.dll imp.RtlUnwind
+26  0x00014098 0x00204098 NONE FUNC 0    kernel32.dll imp.OutputDebugStringA
+27  0x0001409c 0x0020409c NONE FUNC 0    kernel32.dll imp.GetSystemInfo
+28  0x000140a0 0x002040a0 NONE FUNC 0    kernel32.dll imp.MultiByteToWideChar
+29  0x000140a4 0x002040a4 NONE FUNC 0    kernel32.dll imp.Module32NextW
+30  0x000140a8 0x002040a8 NONE FUNC 0    kernel32.dll imp.Module32FirstW
+31  0x000140ac 0x002040ac NONE FUNC 0    kernel32.dll imp.IsWow64Process
+32  0x000140b0 0x002040b0 NONE FUNC 0    kernel32.dll imp.DuplicateHandle
+33  0x000140b4 0x002040b4 NONE FUNC 0    kernel32.dll imp.GetLongPathNameW
+34  0x000140b8 0x002040b8 NONE FUNC 0    kernel32.dll imp.GetModuleFileNameW
+35  0x000140bc 0x002040bc NONE FUNC 0    kernel32.dll imp.TerminateProcess
+36  0x000140c0 0x002040c0 NONE FUNC 0    kernel32.dll imp.CreateDirectoryW
+37  0x000140c4 0x002040c4 NONE FUNC 0    kernel32.dll imp.MoveFileExW
+38  0x000140c8 0x002040c8 NONE FUNC 0    kernel32.dll imp.CreateEventW
+39  0x000140cc 0x002040cc NONE FUNC 0    kernel32.dll imp.ResetEvent
+40  0x000140d0 0x002040d0 NONE FUNC 0    kernel32.dll imp.VirtualProtectEx
+41  0x000140d4 0x002040d4 NONE FUNC 0    kernel32.dll imp.SetLastError
+42  0x000140d8 0x002040d8 NONE FUNC 0    kernel32.dll imp.SetEvent
+43  0x000140dc 0x002040dc NONE FUNC 0    kernel32.dll imp.GetCurrentProcess
+1   0x000140e4 0x002040e4 NONE FUNC 0    kernel32.dll imp.SetFileAttributesW
+2   0x000140e8 0x002040e8 NONE FUNC 0    kernel32.dll imp.DeleteFileW
+3   0x000140ec 0x002040ec NONE FUNC 0    kernel32.dll imp.CreateFileW
+4   0x000140f0 0x002040f0 NONE FUNC 0    kernel32.dll imp.WriteFile
+5   0x000140f4 0x002040f4 NONE FUNC 0    kernel32.dll imp.ReleaseMutex
+6   0x000140f8 0x002040f8 NONE FUNC 0    kernel32.dll imp.WriteProcessMemory
+7   0x000140fc 0x002040fc NONE FUNC 0    kernel32.dll imp.LocalFree
+8   0x00014100 0x00204100 NONE FUNC 0    kernel32.dll imp.GetCurrentProcessId
+9   0x00014104 0x00204104 NONE FUNC 0    kernel32.dll imp.CreateToolhelp32Snapshot
+10  0x00014108 0x00204108 NONE FUNC 0    kernel32.dll imp.Process32NextW
+11  0x0001410c 0x0020410c NONE FUNC 0    kernel32.dll imp.GetExitCodeThread
+12  0x00014110 0x00204110 NONE FUNC 0    kernel32.dll imp.Process32FirstW
+13  0x00014114 0x00204114 NONE FUNC 0    kernel32.dll imp.Sleep
+14  0x00014118 0x00204118 NONE FUNC 0    kernel32.dll imp.CloseHandle
+15  0x0001411c 0x0020411c NONE FUNC 0    kernel32.dll imp.CreateThread
+16  0x00014120 0x00204120 NONE FUNC 0    kernel32.dll imp.GlobalSize
+17  0x00014124 0x00204124 NONE FUNC 0    kernel32.dll imp.GlobalLock
+18  0x00014128 0x00204128 NONE FUNC 0    kernel32.dll imp.GlobalAlloc
+19  0x0001412c 0x0020412c NONE FUNC 0    kernel32.dll imp.GlobalUnlock
+20  0x00014130 0x00204130 NONE FUNC 0    kernel32.dll imp.CreateMutexW
+21  0x00014134 0x00204134 NONE FUNC 0    kernel32.dll imp.WaitForSingleObject
+22  0x00014138 0x00204138 NONE FUNC 0    kernel32.dll imp.GetModuleHandleW
+23  0x0001413c 0x0020413c NONE FUNC 0    kernel32.dll imp.VirtualFree
+24  0x00014140 0x00204140 NONE FUNC 0    kernel32.dll imp.FormatMessageA
+25  0x00014144 0x00204144 NONE FUNC 0    kernel32.dll imp.CreateRemoteThread
+26  0x00014148 0x00204148 NONE FUNC 0    kernel32.dll imp.OpenProcess
+27  0x0001414c 0x0020414c NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+28  0x00014150 0x00204150 NONE FUNC 0    kernel32.dll imp.OpenMutexW
+29  0x00014154 0x00204154 NONE FUNC 0    kernel32.dll imp.GetLastError
+1   0x00014164 0x00204164 NONE FUNC 0    shell32.dll  imp.SHGetFolderPathW
+1   0x0001416c 0x0020416c NONE FUNC 0    user32.dll   imp.CloseClipboard
+2   0x00014170 0x00204170 NONE FUNC 0    user32.dll   imp.GetClipboardData
+3   0x00014174 0x00204174 NONE FUNC 0    user32.dll   imp.EmptyClipboard
+4   0x00014178 0x00204178 NONE FUNC 0    user32.dll   imp.OpenClipboard
+5   0x0001417c 0x0020417c NONE FUNC 0    user32.dll   imp.SetClipboardData
+6   0x00014180 0x00204180 NONE FUNC 0    user32.dll   imp.CharLowerW
+1   0x00014188 0x00204188 NONE FUNC 0    msvcrt.dll   imp._controlfp
+2   0x0001418c 0x0020418c NONE FUNC 0    msvcrt.dll   void __cdecl terminate(void)
+3   0x00014190 0x00204190 NONE FUNC 0    msvcrt.dll   imp._snprintf
+4   0x00014194 0x00204194 NONE FUNC 0    msvcrt.dll   imp._iob
+5   0x00014198 0x00204198 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+6   0x0001419c 0x0020419c NONE FUNC 0    msvcrt.dll   imp.__p__commode
+7   0x000141a0 0x002041a0 NONE FUNC 0    msvcrt.dll   imp.__setusermatherr
+8   0x000141a4 0x002041a4 NONE FUNC 0    msvcrt.dll   imp._amsg_exit
+9   0x000141a8 0x002041a8 NONE FUNC 0    msvcrt.dll   imp._initterm
+10  0x000141ac 0x002041ac NONE FUNC 0    msvcrt.dll   imp._wcmdln
+11  0x000141b0 0x002041b0 NONE FUNC 0    msvcrt.dll   imp.exit
+12  0x000141b4 0x002041b4 NONE FUNC 0    msvcrt.dll   imp._XcptFilter
+13  0x000141b8 0x002041b8 NONE FUNC 0    msvcrt.dll   imp._exit
+14  0x000141bc 0x002041bc NONE FUNC 0    msvcrt.dll   imp._cexit
+15  0x000141c0 0x002041c0 NONE FUNC 0    msvcrt.dll   imp.__wgetmainargs
+16  0x000141c4 0x002041c4 NONE FUNC 0    msvcrt.dll   imp.memcpy
+17  0x000141c8 0x002041c8 NONE FUNC 0    msvcrt.dll   imp.memset
+18  0x000141cc 0x002041cc NONE FUNC 0    msvcrt.dll   imp.tolower
+19  0x000141d0 0x002041d0 NONE FUNC 0    msvcrt.dll   imp.srand
+20  0x000141d4 0x002041d4 NONE FUNC 0    msvcrt.dll   imp.rand
+21  0x000141d8 0x002041d8 NONE FUNC 0    msvcrt.dll   imp.wcsstr
+22  0x000141dc 0x002041dc NONE FUNC 0    msvcrt.dll   imp.time
+23  0x000141e0 0x002041e0 NONE FUNC 0    msvcrt.dll   imp.realloc
+24  0x000141e4 0x002041e4 NONE FUNC 0    msvcrt.dll   imp.strtol
+25  0x000141e8 0x002041e8 NONE FUNC 0    msvcrt.dll   imp.strstr
+26  0x000141ec 0x002041ec NONE FUNC 0    msvcrt.dll   imp.memmove
+27  0x000141f0 0x002041f0 NONE FUNC 0    msvcrt.dll   imp._itoa
+28  0x000141f4 0x002041f4 NONE FUNC 0    msvcrt.dll   imp.strchr
+29  0x000141f8 0x002041f8 NONE FUNC 0    msvcrt.dll   imp.fflush
+30  0x000141fc 0x002041fc NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+31  0x00014200 0x00204200 NONE FUNC 0    msvcrt.dll   imp._assert
+32  0x00014204 0x00204204 NONE FUNC 0    msvcrt.dll   imp._itow
+33  0x00014208 0x00204208 NONE FUNC 0    msvcrt.dll   imp.malloc
+34  0x0001420c 0x0020420c NONE FUNC 0    msvcrt.dll   imp.free
+35  0x00014210 0x00204210 NONE FUNC 0    msvcrt.dll   imp._wcslwr
+36  0x00014214 0x00204214 NONE FUNC 0    msvcrt.dll   imp._errno
+1   0x0003bf98 0x0022bf98 NONE FUNC 0    kernel32.dll imp.Thread32Next
+2   0x0003bf9c 0x0022bf9c NONE FUNC 0    kernel32.dll imp.CreateToolhelp32Snapshot
+3   0x0003bfa0 0x0022bfa0 NONE FUNC 0    kernel32.dll imp.Thread32First
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00014250 0x00204250 48  49   .rdata  ascii   Invalid parameter passed to C runtime function.\n
+1   0x000142b5 0x002042b5 5   6    .rdata  ascii   ('8PW
+2   0x000142be 0x002042be 5   6    .rdata  ascii   700PP
+3   0x000142d0 0x002042d0 17  18   .rdata  ascii   ```hhh\b\b\axppwpp\b\b
+4   0x000142f0 0x002042f0 9   20   .rdata  utf16le refox.exe
+5   0x00014304 0x00204304 9   20   .rdata  utf16le nspr4.dll
+6   0x00014318 0x00204318 8   18   .rdata  utf16le nss3.dll
+7   0x0001432c 0x0020432c 12  26   .rdata  utf16le iexplore.exe
+8   0x00014348 0x00204348 11  24   .rdata  utf16le wininet.dll
+9   0x00014360 0x00204360 10  22   .rdata  utf16le chrome.exe
+10  0x00014378 0x00204378 10  22   .rdata  utf16le chrome.dll
+11  0x000151c0 0x002051c0 14  30   .rdata  utf16le __NTDLL_CORE__
+12  0x000151e0 0x002051e0 34  35   .rdata  ascii   1NoKsR7jcTTufgrvh6zyvyJmL2z73aQXQP
+13  0x00015204 0x00205204 15  16   .rdata  ascii   gtagmanager.com
+14  0x00015238 0x00205238 34  35   .rdata  ascii   /info.php?key=vTeJ5ZEbXaB7jNU3iDC5
+15  0x00015290 0x00205290 8   9    .rdata  ascii   HTTP/1.1
+16  0x000152a0 0x002052a0 58  59   .rdata  ascii   123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnopqrstuvwxyz
+17  0x000152dc 0x002052dc 8   18   .rdata  utf16le kernel32
+18  0x000152f0 0x002052f0 5   12   .rdata  utf16le ntdll
+19  0x000152fc 0x002052fc 5   12   .rdata  utf16le psapi
+20  0x00015308 0x00205308 7   16   .rdata  utf16le wininet
+21  0x00015318 0x00205318 9   20   .rdata  utf16le psapi.dll
+22  0x0001532c 0x0020532c 19  20   .rdata  ascii   GetNativeSystemInfo
+23  0x00015340 0x00205340 25  26   .rdata  ascii   NtQueryInformationProcess
+24  0x0001535c 0x0020535c 13  14   .rdata  ascii   NtQueryObject
+25  0x0001536c 0x0020536c 24  25   .rdata  ascii   NtQuerySystemInformation
+26  0x00015388 0x00205388 20  21   .rdata  ascii   GetModuleInformation
+27  0x000153a0 0x002053a0 18  19   .rdata  ascii   EnumProcessModules
+28  0x000153b4 0x002053b4 20  21   .rdata  ascii   GetModuleFileNameExW
+29  0x000153cc 0x002053cc 13  14   .rdata  ascii   InternetOpenA
+30  0x000153dc 0x002053dc 16  17   .rdata  ascii   InternetConnectA
+31  0x000153f0 0x002053f0 16  17   .rdata  ascii   HttpOpenRequestA
+32  0x00015404 0x00205404 16  17   .rdata  ascii   HttpSendRequestA
+33  0x00015418 0x00205418 16  17   .rdata  ascii   InternetReadFile
+34  0x0001542c 0x0020542c 19  20   .rdata  ascii   InternetCloseHandle
+35  0x00015440 0x00205440 12  26   .rdata  utf16le kernel32.dll
+36  0x0001545c 0x0020545c 10  22   .rdata  utf16le user32.dll
+37  0x00015474 0x00205474 5   6    .rdata  ascii   POST 
+38  0x0001547c 0x0020547c 4   5    .rdata  ascii   GET 
+39  0x00015490 0x00205490 17  18   .rdata  ascii   \nContent-Length: 
+40  0x000154b0 0x002054b0 18  19   .rdata  ascii   \nAccept-Encoding: 
+41  0x000154d0 0x002054d0 23  24   .rdata  ascii   Content-Security-Policy
+42  0x000154f0 0x002054f0 28  29   .rdata  ascii   \nTransfer-Encoding: chunked\r
+43  0x00015510 0x00205510 28  29   .rdata  ascii   Transfer-Encoding: chunked\r\n
+44  0x00015530 0x00205530 22  23   .rdata  ascii   Content-Encoding: gzip
+45  0x00015548 0x00205548 4   5    .rdata  ascii   \r\n\r\n
+46  0x00015554 0x00205554 7   8    .rdata  ascii   \r\n0\r\n\r\n
+47  0x0001555c 0x0020555c 5   6    .rdata  ascii   0\r\n\r\n
+48  0x00015564 0x00205564 6   7    .rdata  ascii   1\r\n \r\n
+49  0x00015570 0x00205570 19  20   .rdata  ascii   \r\nAccept: text/html
+50  0x00015590 0x00205590 25  26   .rdata  ascii   \r\nContent-Type: text/html
+51  0x000155ac 0x002055ac 8   9    .rdata  ascii   identity
+52  0x000155b8 0x002055b8 8   9    .rdata  ascii   \r\nHost: 
+53  0x000155c4 0x002055c4 20  21   .rdata  ascii   InternetQueryOptionA
+54  0x000155dc 0x002055dc 25  26   .rdata  ascii   InternetSetStatusCallback
+55  0x000155f8 0x002055f8 21  22   .rdata  ascii   GetUrlCacheEntryInfoW
+56  0x00015610 0x00205610 25  26   .rdata  ascii   MsgWaitForMultipleObjects
+57  0x0001562c 0x0020562c 16  17   .rdata  ascii   TranslateMessage
+58  0x00015640 0x00205640 16  17   .rdata  ascii   DispatchMessageW
+59  0x00015654 0x00205654 12  13   .rdata  ascii   PeekMessageW
+60  0x00015664 0x00205664 6   7    .rdata  ascii   .rdata
+61  0x0001566c 0x0020566c 5   6    .rdata  ascii   .text
+62  0x00015674 0x00205674 53  54   .rdata  ascii   https://www.google.com/tools/feedback/chrome/__submit
+63  0x000156b0 0x002056b0 70  71   .rdata  ascii   c:\b\build\slave\win\build\src\third_party\boringssl\src\ssl\ssl_lib.c
+64  0x000156f8 0x002056f8 8   9    .rdata  ascii   PR_Write
+65  0x00015704 0x00205704 7   8    .rdata  ascii   PR_Read
+66  0x0001570c 0x0020570c 8   9    .rdata  ascii   PR_Close
+67  0x00015718 0x00205718 26  27   .rdata  ascii   InternetQueryDataAvailable
+68  0x00015734 0x00205734 19  20   .rdata  ascii   InternetReadFileExA
+69  0x00015748 0x00205748 14  15   .rdata  ascii   HttpQueryInfoA
+70  0x00015758 0x00205758 11  12   .rdata  ascii   FreeLibrary
+71  0x00015764 0x00205764 12  13   .rdata  ascii   LoadLibraryA
+72  0x00015774 0x00205774 12  13   .rdata  ascii   LoadLibraryW
+73  0x00015784 0x00205784 14  15   .rdata  ascii   LoadLibraryExA
+74  0x00015794 0x00205794 14  15   .rdata  ascii   LoadLibraryExW
+75  0x000157a4 0x002057a4 45  46   .rdata  ascii   Software\Microsoft\Windows\CurrentVersion\Run
+76  0x000157d4 0x002057d4 4   10   .rdata  utf16le .exe
+77  0x000157e0 0x002057e0 62  126  .rdata  utf16le 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+78  0x00015860 0x00205860 24  25   .rdata  ascii   CreateToolhelp32Snapshot
+79  0x0001587c 0x0020587c 13  14   .rdata  ascii   Thread32First
+80  0x0001588c 0x0020588c 12  13   .rdata  ascii   Thread32Next
+81  0x000158cc 0x002058cc 4   5    .rdata  ascii   xmm0
+82  0x000158d4 0x002058d4 4   5    .rdata  ascii   xmm1
+83  0x000158dc 0x002058dc 4   5    .rdata  ascii   xmm2
+84  0x000158e4 0x002058e4 4   5    .rdata  ascii   xmm3
+85  0x000158ec 0x002058ec 4   5    .rdata  ascii   xmm4
+86  0x000158f4 0x002058f4 4   5    .rdata  ascii   xmm5
+87  0x000158fc 0x002058fc 4   5    .rdata  ascii   xmm6
+88  0x00015904 0x00205904 4   5    .rdata  ascii   xmm7
+89  0x0001596c 0x0020596c 5   6    .rdata  ascii   st(0)
+90  0x00015974 0x00205974 5   6    .rdata  ascii   st(1)
+91  0x0001597c 0x0020597c 5   6    .rdata  ascii   st(2)
+92  0x00015984 0x00205984 5   6    .rdata  ascii   st(3)
+93  0x0001598c 0x0020598c 5   6    .rdata  ascii   st(4)
+94  0x00015994 0x00205994 5   6    .rdata  ascii   st(5)
+95  0x0001599c 0x0020599c 5   6    .rdata  ascii   st(6)
+96  0x000159a4 0x002059a4 5   6    .rdata  ascii   st(7)
+97  0x000159c4 0x002059c4 5   6    .rdata  ascii   ERROR
+98  0x00015a34 0x00205a34 4   5    .rdata  ascii   r10b
+99  0x00015a3c 0x00205a3c 4   5    .rdata  ascii   r11b
+100 0x00015a44 0x00205a44 4   5    .rdata  ascii   r12b
+101 0x00015a4c 0x00205a4c 4   5    .rdata  ascii   r13b
+102 0x00015a54 0x00205a54 4   5    .rdata  ascii   r14b
+103 0x00015a5c 0x00205a5c 4   5    .rdata  ascii   r15b
+104 0x00015a6c 0x00205a6c 4   5    .rdata  ascii   r10w
+105 0x00015a74 0x00205a74 4   5    .rdata  ascii   r11w
+106 0x00015a7c 0x00205a7c 4   5    .rdata  ascii   r12w
+107 0x00015a84 0x00205a84 4   5    .rdata  ascii   r13w
+108 0x00015a8c 0x00205a8c 4   5    .rdata  ascii   r14w
+109 0x00015a94 0x00205a94 4   5    .rdata  ascii   r15w
+110 0x00015aa4 0x00205aa4 4   5    .rdata  ascii   r10d
+111 0x00015aac 0x00205aac 4   5    .rdata  ascii   r11d
+112 0x00015ab4 0x00205ab4 4   5    .rdata  ascii   r12d
+113 0x00015abc 0x00205abc 4   5    .rdata  ascii   r13d
+114 0x00015ac4 0x00205ac4 4   5    .rdata  ascii   r14d
+115 0x00015acc 0x00205acc 4   5    .rdata  ascii   r15d
+116 0x00015b14 0x00205b14 8   9    .rdata  ascii   byte ptr
+117 0x00015b20 0x00205b20 8   9    .rdata  ascii   word ptr
+118 0x00015b2c 0x00205b2c 9   10   .rdata  ascii   dword ptr
+119 0x00015b38 0x00205b38 10  11   .rdata  ascii   6_byte ptr
+120 0x00015b44 0x00205b44 9   10   .rdata  ascii   qword ptr
+121 0x00015b50 0x00205b50 11  12   .rdata  ascii   10_byte ptr
+122 0x00015b5c 0x00205b5c 11  12   .rdata  ascii   INVALID PTR
+123 0x00015b68 0x00205b68 9   10   .rdata  ascii   oword ptr
+124 0x00015b74 0x00205b74 5   6    .rdata  ascii   flags
+125 0x00015b7c 0x00205b7c 6   7    .rdata  ascii   eflags
+126 0x00015b84 0x00205b84 6   7    .rdata  ascii   rflags
+127 0x00015b8c 0x00205b8c 7   8    .rdata  ascii   ip+ilen
+128 0x00015b94 0x00205b94 8   9    .rdata  ascii   eip+ilen
+129 0x00015ba0 0x00205ba0 8   9    .rdata  ascii   rip+ilen
+130 0x00015bb4 0x00205bb4 4   5    .rdata  ascii   tr10
+131 0x00015bbc 0x00205bbc 4   5    .rdata  ascii   tr11
+132 0x00015bc4 0x00205bc4 4   5    .rdata  ascii   tr12
+133 0x00015bcc 0x00205bcc 4   5    .rdata  ascii   tr13
+134 0x00015bd4 0x00205bd4 4   5    .rdata  ascii   tr14
+135 0x00015bdc 0x00205bdc 4   5    .rdata  ascii   tr15
+136 0x00015bec 0x00205bec 4   5    .rdata  ascii   cr10
+137 0x00015bf4 0x00205bf4 4   5    .rdata  ascii   cr11
+138 0x00015bfc 0x00205bfc 4   5    .rdata  ascii   cr12
+139 0x00015c04 0x00205c04 4   5    .rdata  ascii   cr13
+140 0x00015c0c 0x00205c0c 4   5    .rdata  ascii   cr14
+141 0x00015c14 0x00205c14 4   5    .rdata  ascii   cr15
+142 0x00015c24 0x00205c24 4   5    .rdata  ascii   dr10
+143 0x00015c2c 0x00205c2c 4   5    .rdata  ascii   dr11
+144 0x00015c34 0x00205c34 4   5    .rdata  ascii   dr12
+145 0x00015c3c 0x00205c3c 4   5    .rdata  ascii   dr13
+146 0x00015c44 0x00205c44 4   5    .rdata  ascii   dr14
+147 0x00015c4c 0x00205c4c 4   5    .rdata  ascii   dr15
+148 0x00015c54 0x00205c54 4   5    .rdata  ascii   xmm8
+149 0x00015c5c 0x00205c5c 4   5    .rdata  ascii   xmm9
+150 0x00015c64 0x00205c64 5   6    .rdata  ascii   xmm10
+151 0x00015c6c 0x00205c6c 5   6    .rdata  ascii   xmm11
+152 0x00015c74 0x00205c74 5   6    .rdata  ascii   xmm12
+153 0x00015c7c 0x00205c7c 5   6    .rdata  ascii   xmm13
+154 0x00015c84 0x00205c84 5   6    .rdata  ascii   xmm14
+155 0x00015c8c 0x00205c8c 5   6    .rdata  ascii   xmm15
+156 0x00015c94 0x00205c94 12  13   .rdata  ascii   %d_byte ptr 
+157 0x00015cac 0x00205cac 9   10   .rdata  ascii   0x%04I64X
+158 0x00015cb8 0x00205cb8 7   8    .rdata  ascii   0x%04lX
+159 0x00015cc0 0x00205cc0 6   7    .rdata  ascii   0x%04X
+160 0x00015cd4 0x00205cd4 10  11   .rdata  ascii   +0x%02I64X
+161 0x00015ce0 0x00205ce0 10  11   .rdata  ascii   -0x%02I64X
+162 0x00015cec 0x00205cec 8   9    .rdata  ascii   +0x%02lX
+163 0x00015cf8 0x00205cf8 8   9    .rdata  ascii   -0x%02lX
+164 0x00015d04 0x00205d04 7   8    .rdata  ascii   +0x%02X
+165 0x00015d0c 0x00205d0c 7   8    .rdata  ascii   -0x%02X
+166 0x00015d14 0x00205d14 12  13   .rdata  ascii   =[0x%04I64X]
+167 0x00015d28 0x00205d28 5   6    .rdata  ascii   repe 
+168 0x00015d30 0x00205d30 4   5    .rdata  ascii   rep 
+169 0x00015d38 0x00205d38 6   7    .rdata  ascii   repne 
+170 0x00015d40 0x00205d40 5   6    .rdata  ascii   lock 
+171 0x00015d48 0x00205d48 9   10   .rdata  ascii   hinttake 
+172 0x00015d54 0x00205d54 9   10   .rdata  ascii   hintskip 
+173 0x00015d64 0x00205d64 7   8    .rdata  ascii   COND:{ 
+174 0x00015d78 0x00205d78 4   5    .rdata  ascii   NLE 
+175 0x00015d8c 0x00205d8c 4   5    .rdata  ascii   NGE 
+176 0x00015da0 0x00205da0 4   5    .rdata  ascii   NAE 
+177 0x00015db4 0x00205db4 4   5    .rdata  ascii   NBE 
+178 0x00015e00 0x00205e00 6   7    .rdata  ascii   SET:{ 
+179 0x00015e0c 0x00205e0c 6   7    .rdata  ascii   CLR:{ 
+180 0x00015e14 0x00205e14 8   9    .rdata  ascii   FPU_ALL 
+181 0x00015e20 0x00205e20 7   8    .rdata  ascii   FPU_C0 
+182 0x00015e28 0x00205e28 7   8    .rdata  ascii   FPU_C1 
+183 0x00015e30 0x00205e30 7   8    .rdata  ascii   FPU_C2 
+184 0x00015e38 0x00205e38 7   8    .rdata  ascii   FPU_C3 
+185 0x00015e40 0x00205e40 6   7    .rdata  ascii   MOD:{ 
+186 0x00015e48 0x00205e48 10  11   .rdata  ascii   FLAGS_ALL 
+187 0x00015e54 0x00205e54 13  14   .rdata  ascii   FLAGS_COMMON 
+188 0x00015e64 0x00205e64 6   7    .rdata  ascii   TOG:{ 
+189 0x00015e78 0x00205e78 6   7    .rdata  ascii   <0xFF>
+190 0x00015e80 0x00205e80 9   10   .rdata  ascii   <TSC_MSR>
+191 0x00015e8c 0x00205e8c 8   9    .rdata  ascii   <CS_MSR>
+192 0x00015e98 0x00205e98 9   10   .rdata  ascii   <EIP_MSR>
+193 0x00015ea4 0x00205ea4 9   10   .rdata  ascii   <ESP_MSR>
+194 0x00015eb0 0x00205eb0 14  15   .rdata  ascii   <KRNLBASE_MSR>
+195 0x00015ec0 0x00205ec0 10  11   .rdata  ascii   <STAR_MSR>
+196 0x00015ecc 0x00205ecc 11  12   .rdata  ascii   <CSTAR_MSR>
+197 0x00015ed8 0x00205ed8 11  12   .rdata  ascii   <LSTAR_MSR>
+198 0x00015ee4 0x00205ee4 11  12   .rdata  ascii   <FMASK_MSR>
+199 0x00015ef0 0x00205ef0 4   5    .rdata  ascii   <%s>
+200 0x00015ef8 0x00205ef8 9   10   .rdata  ascii   <RCX:RBX>
+201 0x00015f04 0x00205f04 9   10   .rdata  ascii   <ECX:EBX>
+202 0x00015f10 0x00205f10 7   8    .rdata  ascii   <CX:BX>
+203 0x00015f18 0x00205f18 9   10   .rdata  ascii   <RDX:RAX>
+204 0x00015f24 0x00205f24 9   10   .rdata  ascii   <EDX:EAX>
+205 0x00015f30 0x00205f30 7   8    .rdata  ascii   <DX:AX>
+206 0x00015f38 0x00205f38 17  18   .rdata  ascii   <EDX:ECX:EBX:EAX>
+207 0x00015f4c 0x00205f4c 9   10   .rdata  ascii   <FPUSTAT>
+208 0x00015f58 0x00205f58 9   10   .rdata  ascii   <FPUCTRL>
+209 0x00015f64 0x00205f64 8   9    .rdata  ascii   <FPUTAG>
+210 0x00015f70 0x00205f70 5   6    .rdata  ascii   <0.0>
+211 0x00015f78 0x00205f78 5   6    .rdata  ascii   <1.0>
+212 0x00015f80 0x00205f80 4   5    .rdata  ascii   <pi>
+213 0x00015f88 0x00205f88 10  11   .rdata  ascii   <log_2 10>
+214 0x00015f94 0x00205f94 9   10   .rdata  ascii   <log_2 e>
+215 0x00015fa0 0x00205fa0 10  11   .rdata  ascii   <log_10 2>
+216 0x00015fac 0x00205fac 6   7    .rdata  ascii   <ln 2>
+217 0x00015fb4 0x00205fb4 7   8    .rdata  ascii   %s:[%s]
+218 0x00015fbc 0x00205fbc 10  11   .rdata  ascii   0x%02I64X=
+219 0x00015fc8 0x00205fc8 5   6    .rdata  ascii   %I64u
+220 0x00015fd0 0x00205fd0 5   6    .rdata  ascii   %I64d
+221 0x00015fd8 0x00205fd8 8   9    .rdata  ascii   0x%02lX=
+222 0x00015fec 0x00205fec 7   8    .rdata  ascii   0x%02X=
+223 0x00015ffc 0x00205ffc 9   10   .rdata  ascii   [rip+ilen
+224 0x00016008 0x00206008 11  12   .rdata  ascii   ]=0x%04I64X
+225 0x00016014 0x00206014 9   10   .rdata  ascii   [eip+ilen
+226 0x00016020 0x00206020 9   10   .rdata  ascii   ]=0x%04lX
+227 0x0001602c 0x0020602c 8   9    .rdata  ascii   [ip+ilen
+228 0x00016038 0x00206038 8   9    .rdata  ascii   ]=0x%04X
+229 0x00016044 0x00206044 11  12   .rdata  ascii   %s 0x%02X:[
+230 0x00016050 0x00206050 7   8    .rdata  ascii   %s %s:[
+231 0x00016058 0x00206058 8   9    .rdata  ascii   seg_%02X
+232 0x00016064 0x00206064 5   6    .rdata  ascii   cpu.c
+233 0x000163c2 0x002063c2 6   7    .rdata  ascii   _errno
+234 0x000163cc 0x002063cc 7   8    .rdata  ascii   _wcslwr
+235 0x000163d6 0x002063d6 4   5    .rdata  ascii   free
+236 0x000163de 0x002063de 6   7    .rdata  ascii   malloc
+237 0x000163e8 0x002063e8 5   6    .rdata  ascii   _itow
+238 0x000163f0 0x002063f0 6   7    .rdata  ascii   strchr
+239 0x000163fa 0x002063fa 5   6    .rdata  ascii   _itoa
+240 0x00016402 0x00206402 7   8    .rdata  ascii   memmove
+241 0x0001640c 0x0020640c 6   7    .rdata  ascii   strstr
+242 0x00016416 0x00206416 6   7    .rdata  ascii   strtol
+243 0x00016420 0x00206420 7   8    .rdata  ascii   realloc
+244 0x0001642a 0x0020642a 4   5    .rdata  ascii   time
+245 0x00016432 0x00206432 6   7    .rdata  ascii   wcsstr
+246 0x0001643c 0x0020643c 4   5    .rdata  ascii   rand
+247 0x00016444 0x00206444 5   6    .rdata  ascii   srand
+248 0x0001644c 0x0020644c 7   8    .rdata  ascii   tolower
+249 0x00016454 0x00206454 10  11   .rdata  ascii   msvcrt.dll
+250 0x00016462 0x00206462 6   7    .rdata  ascii   memset
+251 0x0001646c 0x0020646c 6   7    .rdata  ascii   memcpy
+252 0x00016476 0x00206476 14  15   .rdata  ascii   __wgetmainargs
+253 0x00016488 0x00206488 6   7    .rdata  ascii   _cexit
+254 0x00016492 0x00206492 5   6    .rdata  ascii   _exit
+255 0x0001649a 0x0020649a 11  12   .rdata  ascii   _XcptFilter
+256 0x000164a8 0x002064a8 4   5    .rdata  ascii   exit
+257 0x000164b0 0x002064b0 7   8    .rdata  ascii   _wcmdln
+258 0x000164ba 0x002064ba 9   10   .rdata  ascii   _initterm
+259 0x000164c6 0x002064c6 10  11   .rdata  ascii   _amsg_exit
+260 0x000164d4 0x002064d4 16  17   .rdata  ascii   __setusermatherr
+261 0x000164e8 0x002064e8 12  13   .rdata  ascii   __p__commode
+262 0x000164f8 0x002064f8 10  11   .rdata  ascii   __p__fmode
+263 0x00016506 0x00206506 14  15   .rdata  ascii   __set_app_type
+264 0x00016518 0x00206518 4   5    .rdata  ascii   _iob
+265 0x00016520 0x00206520 9   10   .rdata  ascii   _snprintf
+266 0x0001652c 0x0020652c 17  18   .rdata  ascii   ?terminate@@YAXXZ
+267 0x00016540 0x00206540 10  11   .rdata  ascii   _controlfp
+268 0x0001654e 0x0020654e 6   7    .rdata  ascii   fflush
+269 0x00016558 0x00206558 7   8    .rdata  ascii   _assert
+270 0x00016562 0x00206562 5   6    .rdata  ascii   Sleep
+271 0x0001656a 0x0020656a 11  12   .rdata  ascii   CloseHandle
+272 0x00016578 0x00206578 12  13   .rdata  ascii   CreateThread
+273 0x00016588 0x00206588 10  11   .rdata  ascii   GlobalSize
+274 0x00016596 0x00206596 10  11   .rdata  ascii   GlobalLock
+275 0x000165a4 0x002065a4 11  12   .rdata  ascii   GlobalAlloc
+276 0x000165b2 0x002065b2 12  13   .rdata  ascii   GlobalUnlock
+277 0x000165c2 0x002065c2 12  13   .rdata  ascii   CreateMutexW
+278 0x000165d2 0x002065d2 19  20   .rdata  ascii   WaitForSingleObject
+279 0x000165e8 0x002065e8 16  17   .rdata  ascii   GetModuleHandleW
+280 0x000165fc 0x002065fc 11  12   .rdata  ascii   VirtualFree
+281 0x0001660a 0x0020660a 14  15   .rdata  ascii   FormatMessageA
+282 0x0001661c 0x0020661c 18  19   .rdata  ascii   CreateRemoteThread
+283 0x00016632 0x00206632 11  12   .rdata  ascii   OpenProcess
+284 0x00016640 0x00206640 13  14   .rdata  ascii   VirtualFreeEx
+285 0x00016650 0x00206650 10  11   .rdata  ascii   OpenMutexW
+286 0x0001665e 0x0020665e 12  13   .rdata  ascii   GetLastError
+287 0x0001666e 0x0020666e 14  15   .rdata  ascii   GetProcAddress
+288 0x00016680 0x00206680 12  13   .rdata  ascii   VirtualAlloc
+289 0x00016690 0x00206690 14  15   .rdata  ascii   VirtualAllocEx
+290 0x000166a2 0x002066a2 12  13   .rdata  ascii   LoadLibraryA
+291 0x000166b2 0x002066b2 15  16   .rdata  ascii   Process32FirstW
+292 0x000166c4 0x002066c4 17  18   .rdata  ascii   GetExitCodeThread
+293 0x000166d8 0x002066d8 14  15   .rdata  ascii   Process32NextW
+294 0x000166ea 0x002066ea 24  25   .rdata  ascii   CreateToolhelp32Snapshot
+295 0x00016706 0x00206706 19  20   .rdata  ascii   GetCurrentProcessId
+296 0x0001671c 0x0020671c 9   10   .rdata  ascii   LocalFree
+297 0x00016728 0x00206728 18  19   .rdata  ascii   WriteProcessMemory
+298 0x0001673e 0x0020673e 12  13   .rdata  ascii   ReleaseMutex
+299 0x0001674e 0x0020674e 9   10   .rdata  ascii   WriteFile
+300 0x0001675a 0x0020675a 11  12   .rdata  ascii   CreateFileW
+301 0x00016768 0x00206768 11  12   .rdata  ascii   DeleteFileW
+302 0x00016776 0x00206776 18  19   .rdata  ascii   SetFileAttributesW
+303 0x0001678c 0x0020678c 12  13   .rdata  ascii   LoadLibraryW
+304 0x0001679c 0x0020679c 17  18   .rdata  ascii   GetCurrentProcess
+305 0x000167b0 0x002067b0 8   9    .rdata  ascii   SetEvent
+306 0x000167bc 0x002067bc 12  13   .rdata  ascii   SetLastError
+307 0x000167cc 0x002067cc 16  17   .rdata  ascii   VirtualProtectEx
+308 0x000167e0 0x002067e0 10  11   .rdata  ascii   ResetEvent
+309 0x000167ee 0x002067ee 12  13   .rdata  ascii   CreateEventW
+310 0x000167fe 0x002067fe 11  12   .rdata  ascii   MoveFileExW
+311 0x0001680c 0x0020680c 16  17   .rdata  ascii   CreateDirectoryW
+312 0x00016820 0x00206820 16  17   .rdata  ascii   TerminateProcess
+313 0x00016834 0x00206834 18  19   .rdata  ascii   GetModuleFileNameW
+314 0x0001684a 0x0020684a 16  17   .rdata  ascii   GetLongPathNameW
+315 0x0001685e 0x0020685e 15  16   .rdata  ascii   DuplicateHandle
+316 0x00016870 0x00206870 14  15   .rdata  ascii   IsWow64Process
+317 0x00016882 0x00206882 14  15   .rdata  ascii   Module32FirstW
+318 0x00016894 0x00206894 13  14   .rdata  ascii   Module32NextW
+319 0x000168a4 0x002068a4 19  20   .rdata  ascii   MultiByteToWideChar
+320 0x000168ba 0x002068ba 13  14   .rdata  ascii   GetSystemInfo
+321 0x000168ca 0x002068ca 18  19   .rdata  ascii   OutputDebugStringA
+322 0x000168e0 0x002068e0 9   10   .rdata  ascii   RtlUnwind
+323 0x000168ec 0x002068ec 19  20   .rdata  ascii   InterlockedExchange
+324 0x00016902 0x00206902 26  27   .rdata  ascii   InterlockedCompareExchange
+325 0x00016920 0x00206920 15  16   .rdata  ascii   GetStartupInfoW
+326 0x00016932 0x00206932 24  25   .rdata  ascii   UnhandledExceptionFilter
+327 0x0001694e 0x0020694e 27  28   .rdata  ascii   SetUnhandledExceptionFilter
+328 0x0001696c 0x0020696c 16  17   .rdata  ascii   GetModuleHandleA
+329 0x00016980 0x00206980 23  24   .rdata  ascii   QueryPerformanceCounter
+330 0x0001699a 0x0020699a 12  13   .rdata  ascii   GetTickCount
+331 0x000169aa 0x002069aa 18  19   .rdata  ascii   GetCurrentThreadId
+332 0x000169c0 0x002069c0 23  24   .rdata  ascii   GetSystemTimeAsFileTime
+333 0x000169da 0x002069da 16  17   .rdata  ascii   GetThreadContext
+334 0x000169ee 0x002069ee 12  13   .rdata  ascii   VirtualQuery
+335 0x000169fe 0x002069fe 16  17   .rdata  ascii   GetCurrentThread
+336 0x00016a12 0x00206a12 25  26   .rdata  ascii   InitializeCriticalSection
+337 0x00016a2e 0x00206a2e 20  21   .rdata  ascii   LeaveCriticalSection
+338 0x00016a46 0x00206a46 17  18   .rdata  ascii   SetThreadPriority
+339 0x00016a5a 0x00206a5a 21  22   .rdata  ascii   FlushInstructionCache
+340 0x00016a72 0x00206a72 20  21   .rdata  ascii   EnterCriticalSection
+341 0x00016a8a 0x00206a8a 10  11   .rdata  ascii   OpenThread
+342 0x00016a98 0x00206a98 17  18   .rdata  ascii   GetThreadPriority
+343 0x00016aac 0x00206aac 13  14   .rdata  ascii   SuspendThread
+344 0x00016abc 0x00206abc 12  13   .rdata  ascii   ResumeThread
+345 0x00016aca 0x00206aca 12  13   .rdata  ascii   KERNEL32.dll
+346 0x00016ada 0x00206ada 16  17   .rdata  ascii   SetClipboardData
+347 0x00016aee 0x00206aee 13  14   .rdata  ascii   OpenClipboard
+348 0x00016afe 0x00206afe 14  15   .rdata  ascii   EmptyClipboard
+349 0x00016b10 0x00206b10 16  17   .rdata  ascii   GetClipboardData
+350 0x00016b24 0x00206b24 14  15   .rdata  ascii   CloseClipboard
+351 0x00016b36 0x00206b36 10  11   .rdata  ascii   CharLowerW
+352 0x00016b42 0x00206b42 10  11   .rdata  ascii   USER32.dll
+353 0x00016b50 0x00206b50 15  16   .rdata  ascii   RegCreateKeyExA
+354 0x00016b62 0x00206b62 15  16   .rdata  ascii   GetSecurityInfo
+355 0x00016b74 0x00206b74 15  16   .rdata  ascii   RegDeleteValueW
+356 0x00016b86 0x00206b86 24  25   .rdata  ascii   AllocateAndInitializeSid
+357 0x00016ba2 0x00206ba2 15  16   .rdata  ascii   SetSecurityInfo
+358 0x00016bb4 0x00206bb4 16  17   .rdata  ascii   SetEntriesInAclW
+359 0x00016bc8 0x00206bc8 13  14   .rdata  ascii   RegEnumValueW
+360 0x00016bd8 0x00206bd8 7   8    .rdata  ascii   FreeSid
+361 0x00016be2 0x00206be2 11  12   .rdata  ascii   RegCloseKey
+362 0x00016bf0 0x00206bf0 14  15   .rdata  ascii   RegSetValueExW
+363 0x00016c02 0x00206c02 16  17   .rdata  ascii   OpenProcessToken
+364 0x00016c16 0x00206c16 19  20   .rdata  ascii   GetTokenInformation
+365 0x00016c2a 0x00206c2a 12  13   .rdata  ascii   ADVAPI32.dll
+366 0x00016c3a 0x00206c3a 16  17   .rdata  ascii   SHGetFolderPathW
+367 0x00016c4c 0x00206c4c 11  12   .rdata  ascii   SHELL32.dll
+0   0x00017038 0x00207038 4   20   .data   utf32le 5\v@Ͽ blocks=Basic Latin,Greek and Coptic
+1   0x00017122 0x00207122 4   5    .data   ascii   kU'9
+2   0x00017172 0x00207172 8   11   .data   utf8    HMXB䧓9;5 blocks=Basic Latin,CJK Unified Ideographs Extension A
+3   0x000171ac 0x002071ac 5   8    .data   utf8    ]݀nLɛ blocks=Basic Latin,Syriac,IPA Extensions
+4   0x000171cb 0x002071cb 9   12   .data   utf8    ?q=\nףp=\nף blocks=Basic Latin,Hebrew
+5   0x000171d7 0x002071d7 4   5    .data   ascii   ?Zd;
+6   0x0001721f 0x0020721f 4   5    .data   ascii   ?/L[
+7   0x0001722e 0x0020722e 4   5    .data   ascii   S;uD
+8   0x00017241 0x00207241 4   6    .data   utf8    ϔ?$# blocks=Greek and Coptic,Basic Latin
+9   0x00017247 0x00207247 4   7    .data   utf8    ⼺;1a blocks=Kangxi Radicals,Basic Latin
+10  0x0001724e 0x0020724e 5   6    .data   ascii   z?aUY
+11  0x00017266 0x00207266 4   5    .data   ascii   D?$?
+12  0x0001727e 0x0020727e 4   5    .data   ascii   U>c{
+13  0x00017290 0x00207290 8   10   .data   utf8    zc%C1,<!
+14  0x000172a3 0x002072a3 5   7    .data   utf8    ;܈X\b\e blocks=Basic Latin,Syriac
+15  0x000172af 0x002072af 5   7    .data   utf8    ;ƄEB\a blocks=Basic Latin,Latin Extended-B
+16  0x000172ba 0x002072ba 4   5    .data   ascii   .:3q
+17  0x000172e3 0x002072e3 5   6    .data   ascii   -64OS
+18  0x00017304 0x00207304 4   5    .data   ascii   NKeb
+19  0x0001739c 0x0020739c 6   7    .data   ascii   fxsave
+20  0x000173d4 0x002073d4 7   8    .data   ascii   fxrstor
+21  0x0001740c 0x0020740c 7   8    .data   ascii   ldmxcsr
+22  0x00017444 0x00207444 7   8    .data   ascii   stmxcsr
+23  0x000174b4 0x002074b4 6   7    .data   ascii   lfence
+24  0x000174ec 0x002074ec 6   7    .data   ascii   mfence
+25  0x00017524 0x00207524 6   7    .data   ascii   sfence
+26  0x000175cc 0x002075cc 5   6    .data   ascii   psrld
+27  0x0001763c 0x0020763c 5   6    .data   ascii   psrad
+28  0x000176ac 0x002076ac 5   6    .data   ascii   pslld
+29  0x00017bec 0x00207bec 4   5    .data   ascii   push
+30  0x00017dac 0x00207dac 4   5    .data   ascii   push
+31  0x00017f6c 0x00207f6c 4   5    .data   ascii   push
+32  0x0001812c 0x0020812c 4   5    .data   ascii   push
+33  0x00018c1c 0x00208c1c 4   5    .data   ascii   push
+34  0x00018c54 0x00208c54 4   5    .data   ascii   push
+35  0x00018c8c 0x00208c8c 4   5    .data   ascii   push
+36  0x00018cc4 0x00208cc4 4   5    .data   ascii   push
+37  0x00018cfc 0x00208cfc 4   5    .data   ascii   push
+38  0x00018d34 0x00208d34 4   5    .data   ascii   push
+39  0x00018d6c 0x00208d6c 4   5    .data   ascii   push
+40  0x00018da4 0x00208da4 4   5    .data   ascii   push
+41  0x00018f9c 0x00208f9c 6   7    .data   ascii   pushad
+42  0x00018fd4 0x00208fd4 5   6    .data   ascii   popad
+43  0x0001900c 0x0020900c 5   6    .data   ascii   bound
+44  0x0001915c 0x0020915c 4   5    .data   ascii   push
+45  0x00019194 0x00209194 4   5    .data   ascii   imul
+46  0x000191cc 0x002091cc 4   5    .data   ascii   push
+47  0x00019204 0x00209204 4   5    .data   ascii   imul
+48  0x0001923c 0x0020923c 4   5    .data   ascii   insb
+49  0x00019274 0x00209274 4   5    .data   ascii   insd
+50  0x000192ac 0x002092ac 5   6    .data   ascii   outsb
+51  0x000192e4 0x002092e4 5   6    .data   ascii   outsd
+52  0x0001977c 0x0020977c 4   5    .data   ascii   test
+53  0x000197b4 0x002097b4 4   5    .data   ascii   test
+54  0x000197ec 0x002097ec 4   5    .data   ascii   xchg
+55  0x00019824 0x00209824 4   5    .data   ascii   xchg
+56  0x00019a54 0x00209a54 4   5    .data   ascii   xchg
+57  0x00019a8c 0x00209a8c 4   5    .data   ascii   xchg
+58  0x00019ac4 0x00209ac4 4   5    .data   ascii   xchg
+59  0x00019afc 0x00209afc 4   5    .data   ascii   xchg
+60  0x00019b34 0x00209b34 4   5    .data   ascii   xchg
+61  0x00019b6c 0x00209b6c 4   5    .data   ascii   xchg
+62  0x00019ba4 0x00209ba4 4   5    .data   ascii   xchg
+63  0x00019bdc 0x00209bdc 4   5    .data   ascii   cwde
+64  0x00019c4c 0x00209c4c 4   5    .data   ascii   call
+65  0x00019c84 0x00209c84 4   5    .data   ascii   wait
+66  0x00019cbc 0x00209cbc 5   6    .data   ascii   pushf
+67  0x00019cf4 0x00209cf4 4   5    .data   ascii   popf
+68  0x00019d2c 0x00209d2c 4   5    .data   ascii   sahf
+69  0x00019d64 0x00209d64 4   5    .data   ascii   lahf
+70  0x00019e7c 0x00209e7c 5   6    .data   ascii   movsb
+71  0x00019eb4 0x00209eb4 5   6    .data   ascii   movsd
+72  0x00019eec 0x00209eec 5   6    .data   ascii   cmpsb
+73  0x00019f24 0x00209f24 5   6    .data   ascii   cmpsd
+74  0x00019f5c 0x00209f5c 4   5    .data   ascii   test
+75  0x00019f94 0x00209f94 4   5    .data   ascii   test
+76  0x00019fcc 0x00209fcc 5   6    .data   ascii   stosb
+77  0x0001a004 0x0020a004 5   6    .data   ascii   stosd
+78  0x0001a03c 0x0020a03c 5   6    .data   ascii   lodsb
+79  0x0001a074 0x0020a074 5   6    .data   ascii   lodsd
+80  0x0001a0ac 0x0020a0ac 5   6    .data   ascii   scasb
+81  0x0001a0e4 0x0020a0e4 5   6    .data   ascii   scasd
+82  0x0001a65c 0x0020a65c 5   6    .data   ascii   enter
+83  0x0001a694 0x0020a694 5   6    .data   ascii   leave
+84  0x0001a6cc 0x0020a6cc 4   5    .data   ascii   retf
+85  0x0001a704 0x0020a704 4   5    .data   ascii   retf
+86  0x0001a73c 0x0020a73c 4   5    .data   ascii   int3
+87  0x0001a7ac 0x0020a7ac 4   5    .data   ascii   into
+88  0x0001a7e4 0x0020a7e4 4   5    .data   ascii   iret
+89  0x0001a96c 0x0020a96c 4   5    .data   ascii   salc
+90  0x0001a9a4 0x0020a9a4 4   5    .data   ascii   xlat
+91  0x0001ab9c 0x0020ab9c 6   7    .data   ascii   loopnz
+92  0x0001abd4 0x0020abd4 5   6    .data   ascii   loopz
+93  0x0001ac0c 0x0020ac0c 4   5    .data   ascii   loop
+94  0x0001ac44 0x0020ac44 5   6    .data   ascii   jecxz
+95  0x0001ad5c 0x0020ad5c 4   5    .data   ascii   call
+96  0x0001af54 0x0020af54 4   5    .data   ascii   int1
+97  0x0001b29c 0x0020b29c 4   5    .data   ascii   fadd
+98  0x0001b2d4 0x0020b2d4 4   5    .data   ascii   fmul
+99  0x0001b30c 0x0020b30c 4   5    .data   ascii   fcom
+100 0x0001b31d 0x0020b31d 5   6    .data   ascii    \b\r1 
+101 0x0001b344 0x0020b344 5   6    .data   ascii   fcomp
+102 0x0001b355 0x0020b355 5   6    .data   ascii    \b\r1 
+103 0x0001b37c 0x0020b37c 4   5    .data   ascii   fsub
+104 0x0001b3b4 0x0020b3b4 5   6    .data   ascii   fsubr
+105 0x0001b3ec 0x0020b3ec 4   5    .data   ascii   fdiv
+106 0x0001b424 0x0020b424 5   6    .data   ascii   fdivr
+107 0x0001b45c 0x0020b45c 4   5    .data   ascii   fadd
+108 0x0001b494 0x0020b494 4   5    .data   ascii   fadd
+109 0x0001b4cc 0x0020b4cc 4   5    .data   ascii   fadd
+110 0x0001b504 0x0020b504 4   5    .data   ascii   fadd
+111 0x0001b53c 0x0020b53c 4   5    .data   ascii   fadd
+112 0x0001b574 0x0020b574 4   5    .data   ascii   fadd
+113 0x0001b5ac 0x0020b5ac 4   5    .data   ascii   fadd
+114 0x0001b5e4 0x0020b5e4 4   5    .data   ascii   fadd
+115 0x0001b61c 0x0020b61c 4   5    .data   ascii   fmul
+116 0x0001b654 0x0020b654 4   5    .data   ascii   fmul
+117 0x0001b68c 0x0020b68c 4   5    .data   ascii   fmul
+118 0x0001b6c4 0x0020b6c4 4   5    .data   ascii   fmul
+119 0x0001b6fc 0x0020b6fc 4   5    .data   ascii   fmul
+120 0x0001b734 0x0020b734 4   5    .data   ascii   fmul
+121 0x0001b76c 0x0020b76c 4   5    .data   ascii   fmul
+122 0x0001b7a4 0x0020b7a4 4   5    .data   ascii   fmul
+123 0x0001bb5c 0x0020bb5c 5   6    .data   ascii   fsubr
+124 0x0001bb94 0x0020bb94 5   6    .data   ascii   fsubr
+125 0x0001bbcc 0x0020bbcc 5   6    .data   ascii   fsubr
+126 0x0001bc04 0x0020bc04 5   6    .data   ascii   fsubr
+127 0x0001bc3c 0x0020bc3c 5   6    .data   ascii   fsubr
+128 0x0001bc74 0x0020bc74 5   6    .data   ascii   fsubr
+129 0x0001bcac 0x0020bcac 5   6    .data   ascii   fsubr
+130 0x0001bce4 0x0020bce4 5   6    .data   ascii   fsubr
+131 0x0001bd1c 0x0020bd1c 4   5    .data   ascii   fsub
+132 0x0001bd54 0x0020bd54 4   5    .data   ascii   fsub
+133 0x0001bd8c 0x0020bd8c 4   5    .data   ascii   fsub
+134 0x0001bdc4 0x0020bdc4 4   5    .data   ascii   fsub
+135 0x0001bdfc 0x0020bdfc 4   5    .data   ascii   fsub
+136 0x0001be34 0x0020be34 4   5    .data   ascii   fsub
+137 0x0001be6c 0x0020be6c 4   5    .data   ascii   fsub
+138 0x0001bea4 0x0020bea4 4   5    .data   ascii   fsub
+139 0x0001bedc 0x0020bedc 5   6    .data   ascii   fdivr
+140 0x0001bf14 0x0020bf14 5   6    .data   ascii   fdivr
+141 0x0001bf4c 0x0020bf4c 5   6    .data   ascii   fdivr
+142 0x0001bf84 0x0020bf84 5   6    .data   ascii   fdivr
+143 0x0001bfbc 0x0020bfbc 5   6    .data   ascii   fdivr
+144 0x0001bff4 0x0020bff4 5   6    .data   ascii   fdivr
+145 0x0001c02c 0x0020c02c 5   6    .data   ascii   fdivr
+146 0x0001c064 0x0020c064 5   6    .data   ascii   fdivr
+147 0x0001c09c 0x0020c09c 4   5    .data   ascii   fdiv
+148 0x0001c0d4 0x0020c0d4 4   5    .data   ascii   fdiv
+149 0x0001c10c 0x0020c10c 4   5    .data   ascii   fdiv
+150 0x0001c144 0x0020c144 4   5    .data   ascii   fdiv
+151 0x0001c17c 0x0020c17c 4   5    .data   ascii   fdiv
+152 0x0001c1b4 0x0020c1b4 4   5    .data   ascii   fdiv
+153 0x0001c1ec 0x0020c1ec 4   5    .data   ascii   fdiv
+154 0x0001c224 0x0020c224 4   5    .data   ascii   fdiv
+155 0x0001c2cc 0x0020c2cc 5   6    .data   ascii   psrlw
+156 0x0001c33c 0x0020c33c 5   6    .data   ascii   psraw
+157 0x0001c3ac 0x0020c3ac 5   6    .data   ascii   psllw
+158 0x0001c48c 0x0020c48c 4   5    .data   ascii   call
+159 0x0001c4c4 0x0020c4c4 4   5    .data   ascii   call
+160 0x0001c56c 0x0020c56c 4   5    .data   ascii   push
+161 0x0001cb1c 0x0020cb1c 5   6    .data   ascii   undef
+162 0x0001cb54 0x0020cb54 5   6    .data   ascii   undef
+163 0x0001cb8c 0x0020cb8c 5   6    .data   ascii   undef
+164 0x0001cbc4 0x0020cbc4 5   6    .data   ascii   undef
+165 0x0001cbfc 0x0020cbfc 5   6    .data   ascii   undef
+166 0x0001cc34 0x0020cc34 5   6    .data   ascii   undef
+167 0x0001cc6c 0x0020cc6c 5   6    .data   ascii   undef
+168 0x0001cca4 0x0020cca4 5   6    .data   ascii   undef
+169 0x0001ccdc 0x0020ccdc 4   5    .data   ascii   test
+170 0x0001cd14 0x0020cd14 4   5    .data   ascii   test
+171 0x0001cdf4 0x0020cdf4 4   5    .data   ascii   imul
+172 0x0001ce64 0x0020ce64 4   5    .data   ascii   idiv
+173 0x0001ce9c 0x0020ce9c 4   5    .data   ascii   sldt
+174 0x0001cf0c 0x0020cf0c 4   5    .data   ascii   lldt
+175 0x0001cf7c 0x0020cf7c 4   5    .data   ascii   verr
+176 0x0001cfb4 0x0020cfb4 4   5    .data   ascii   verw
+177 0x0001cfec 0x0020cfec 4   5    .data   ascii   jmpe
+178 0x0001d3dc 0x0020d3dc 4   5    .data   ascii   fild
+179 0x0001d44c 0x0020d44c 4   5    .data   ascii   fist
+180 0x0001d484 0x0020d484 5   6    .data   ascii   fistp
+181 0x0001d564 0x0020d564 4   5    .data   ascii   fstp
+182 0x0001d59c 0x0020d59c 7   8    .data   ascii   fcmovnb
+183 0x0001d5d4 0x0020d5d4 7   8    .data   ascii   fcmovnb
+184 0x0001d60c 0x0020d60c 7   8    .data   ascii   fcmovnb
+185 0x0001d644 0x0020d644 7   8    .data   ascii   fcmovnb
+186 0x0001d67c 0x0020d67c 7   8    .data   ascii   fcmovnb
+187 0x0001d6b4 0x0020d6b4 7   8    .data   ascii   fcmovnb
+188 0x0001d6ec 0x0020d6ec 7   8    .data   ascii   fcmovnb
+189 0x0001d724 0x0020d724 7   8    .data   ascii   fcmovnb
+190 0x0001d75c 0x0020d75c 7   8    .data   ascii   fcmovne
+191 0x0001d794 0x0020d794 7   8    .data   ascii   fcmovne
+192 0x0001d7cc 0x0020d7cc 7   8    .data   ascii   fcmovne
+193 0x0001d804 0x0020d804 7   8    .data   ascii   fcmovne
+194 0x0001d83c 0x0020d83c 7   8    .data   ascii   fcmovne
+195 0x0001d874 0x0020d874 7   8    .data   ascii   fcmovne
+196 0x0001d8ac 0x0020d8ac 7   8    .data   ascii   fcmovne
+197 0x0001d8e4 0x0020d8e4 7   8    .data   ascii   fcmovne
+198 0x0001d91c 0x0020d91c 8   9    .data   ascii   fcmovnbe
+199 0x0001d954 0x0020d954 8   9    .data   ascii   fcmovnbe
+200 0x0001d98c 0x0020d98c 8   9    .data   ascii   fcmovnbe
+201 0x0001d9c4 0x0020d9c4 8   9    .data   ascii   fcmovnbe
+202 0x0001d9fc 0x0020d9fc 8   9    .data   ascii   fcmovnbe
+203 0x0001da34 0x0020da34 8   9    .data   ascii   fcmovnbe
+204 0x0001da6c 0x0020da6c 8   9    .data   ascii   fcmovnbe
+205 0x0001daa4 0x0020daa4 8   9    .data   ascii   fcmovnbe
+206 0x0001dadc 0x0020dadc 7   8    .data   ascii   fcmovnu
+207 0x0001db14 0x0020db14 7   8    .data   ascii   fcmovnu
+208 0x0001db4c 0x0020db4c 7   8    .data   ascii   fcmovnu
+209 0x0001db84 0x0020db84 7   8    .data   ascii   fcmovnu
+210 0x0001dbbc 0x0020dbbc 7   8    .data   ascii   fcmovnu
+211 0x0001dbf4 0x0020dbf4 7   8    .data   ascii   fcmovnu
+212 0x0001dc2c 0x0020dc2c 7   8    .data   ascii   fcmovnu
+213 0x0001dc64 0x0020dc64 7   8    .data   ascii   fcmovnu
+214 0x0001dd0c 0x0020dd0c 6   7    .data   ascii   fnclex
+215 0x0001dd44 0x0020dd44 5   6    .data   ascii   finit
+216 0x0001de5c 0x0020de5c 6   7    .data   ascii   fucomi
+217 0x0001de94 0x0020de94 6   7    .data   ascii   fucomi
+218 0x0001decc 0x0020decc 6   7    .data   ascii   fucomi
+219 0x0001df04 0x0020df04 6   7    .data   ascii   fucomi
+220 0x0001df3c 0x0020df3c 6   7    .data   ascii   fucomi
+221 0x0001df74 0x0020df74 6   7    .data   ascii   fucomi
+222 0x0001dfac 0x0020dfac 6   7    .data   ascii   fucomi
+223 0x0001dfe4 0x0020dfe4 6   7    .data   ascii   fucomi
+224 0x0001e01c 0x0020e01c 5   6    .data   ascii   fcomi
+225 0x0001e054 0x0020e054 5   6    .data   ascii   fcomi
+226 0x0001e08c 0x0020e08c 5   6    .data   ascii   fcomi
+227 0x0001e0c4 0x0020e0c4 5   6    .data   ascii   fcomi
+228 0x0001e0fc 0x0020e0fc 5   6    .data   ascii   fcomi
+229 0x0001e134 0x0020e134 5   6    .data   ascii   fcomi
+230 0x0001e16c 0x0020e16c 5   6    .data   ascii   fcomi
+231 0x0001e1a4 0x0020e1a4 5   6    .data   ascii   fcomi
+232 0x0001e63c 0x0020e63c 5   6    .data   ascii   pi2fw
+233 0x0001e674 0x0020e674 5   6    .data   ascii   pi2fd
+234 0x0001e9bc 0x0020e9bc 5   6    .data   ascii   pf2iw
+235 0x0001e9f4 0x0020e9f4 5   6    .data   ascii   pf2id
+236 0x000201cc 0x002101cc 6   7    .data   ascii   pfnacc
+237 0x000202ac 0x002102ac 7   8    .data   ascii   pfpnacc
+238 0x0002031c 0x0021031c 7   8    .data   ascii   pfcmpge
+239 0x000203fc 0x002103fc 5   6    .data   ascii   pfmin
+240 0x0002046c 0x0021046c 5   6    .data   ascii   pfrcp
+241 0x000204a4 0x002104a4 7   8    .data   ascii   pfrsqrt
+242 0x0002054c 0x0021054c 5   6    .data   ascii   pfsub
+243 0x0002062c 0x0021062c 5   6    .data   ascii   pfadd
+244 0x0002069c 0x0021069c 7   8    .data   ascii   pfcmpgt
+245 0x0002077c 0x0021077c 5   6    .data   ascii   pfmax
+246 0x000207ec 0x002107ec 8   9    .data   ascii   pfrcpit1
+247 0x00020824 0x00210824 8   9    .data   ascii   pfrsqit1
+248 0x000208cc 0x002108cc 6   7    .data   ascii   pfsubr
+249 0x000209ac 0x002109ac 5   6    .data   ascii   pfacc
+250 0x00020a1c 0x00210a1c 7   8    .data   ascii   pfcmpeq
+251 0x00020afc 0x00210afc 5   6    .data   ascii   pfmul
+252 0x00020b6c 0x00210b6c 8   9    .data   ascii   pfrcpit2
+253 0x00020ba4 0x00210ba4 7   8    .data   ascii   pmulhrw
+254 0x00020c84 0x00210c84 6   7    .data   ascii   pswapd
+255 0x00020d64 0x00210d64 5   6    .data   ascii   pavgb
+256 0x00021c0c 0x00211c0c 5   6    .data   ascii   psrlq
+257 0x00021c44 0x00211c44 6   7    .data   ascii   psrldq
+258 0x00021cec 0x00211cec 5   6    .data   ascii   psllq
+259 0x00021d24 0x00211d24 6   7    .data   ascii   pslldq
+260 0x00021f1c 0x00211f1c 8   9    .data   ascii   prefetch
+261 0x00021f54 0x00211f54 9   10   .data   ascii   prefetchw
+262 0x000222d4 0x002122d4 9   10   .data   ascii   cmpxchg8b
+263 0x0002299c 0x0021299c 4   5    .data   ascii   test
+264 0x000229d4 0x002129d4 4   5    .data   ascii   test
+265 0x00022ab4 0x00212ab4 4   5    .data   ascii   imul
+266 0x00022b24 0x00212b24 4   5    .data   ascii   idiv
+267 0x00022edc 0x00212edc 6   7    .data   ascii   movupd
+268 0x00022f14 0x00212f14 6   7    .data   ascii   movupd
+269 0x00022f4c 0x00212f4c 6   7    .data   ascii   movlpd
+270 0x00022f84 0x00212f84 6   7    .data   ascii   movlpd
+271 0x00022fbc 0x00212fbc 8   9    .data   ascii   unpcklpd
+272 0x00022ff4 0x00212ff4 8   9    .data   ascii   unpckhpd
+273 0x0002302c 0x0021302c 6   7    .data   ascii   movhpd
+274 0x00023064 0x00213064 6   7    .data   ascii   mpvhpd
+275 0x0002341c 0x0021341c 6   7    .data   ascii   movapd
+276 0x00023454 0x00213454 6   7    .data   ascii   movapd
+277 0x0002348c 0x0021348c 8   9    .data   ascii   cvtpi2pd
+278 0x000234c4 0x002134c4 7   8    .data   ascii   movntpd
+279 0x000234fc 0x002134fc 9   10   .data   ascii   cvttpd2pi
+280 0x00023534 0x00213534 8   9    .data   ascii   cvtpd2pi
+281 0x0002356c 0x0021356c 7   8    .data   ascii   ucomisd
+282 0x000235a4 0x002135a4 6   7    .data   ascii   comisd
+283 0x00023cdc 0x00213cdc 8   9    .data   ascii   movmskpd
+284 0x00023d14 0x00213d14 6   7    .data   ascii   sqrtpd
+285 0x00023dbc 0x00213dbc 5   6    .data   ascii   andpd
+286 0x00023df4 0x00213df4 6   7    .data   ascii   andnpd
+287 0x00023e2c 0x00213e2c 4   5    .data   ascii   orpd
+288 0x00023e64 0x00213e64 5   6    .data   ascii   xorpd
+289 0x00023e9c 0x00213e9c 5   6    .data   ascii   addpd
+290 0x00023ed4 0x00213ed4 5   6    .data   ascii   mulpd
+291 0x00023f0c 0x00213f0c 8   9    .data   ascii   cvtpd2ps
+292 0x00023f44 0x00213f44 8   9    .data   ascii   cvtps2dq
+293 0x00023f7c 0x00213f7c 5   6    .data   ascii   subpd
+294 0x00023fb4 0x00213fb4 5   6    .data   ascii   minpd
+295 0x00023fec 0x00213fec 5   6    .data   ascii   divpd
+296 0x00024024 0x00214024 5   6    .data   ascii   maxpd
+297 0x0002405c 0x0021405c 9   10   .data   ascii   punpcklbw
+298 0x00024094 0x00214094 9   10   .data   ascii   punpcklwd
+299 0x000240cc 0x002140cc 9   10   .data   ascii   punpckldq
+300 0x00024104 0x00214104 8   9    .data   ascii   packsswb
+301 0x0002413c 0x0021413c 7   8    .data   ascii   pcmpgtb
+302 0x00024174 0x00214174 7   8    .data   ascii   pcmpgtw
+303 0x000241ac 0x002141ac 7   8    .data   ascii   pcmpgtd
+304 0x000241e4 0x002141e4 8   9    .data   ascii   packuswb
+305 0x0002421c 0x0021421c 9   10   .data   ascii   punpckhbw
+306 0x00024254 0x00214254 9   10   .data   ascii   punpckhwd
+307 0x0002428c 0x0021428c 9   10   .data   ascii   punpckhdq
+308 0x000242c4 0x002142c4 8   9    .data   ascii   packssdw
+309 0x000242fc 0x002142fc 10  11   .data   ascii   punpcklqdq
+310 0x00024334 0x00214334 10  11   .data   ascii   punpckhqdq
+311 0x0002436c 0x0021436c 4   5    .data   ascii   movd
+312 0x000243a4 0x002143a4 6   7    .data   ascii   movdqa
+313 0x000243dc 0x002143dc 6   7    .data   ascii   pshufd
+314 0x000244bc 0x002144bc 7   8    .data   ascii   pcmpeqb
+315 0x000244f4 0x002144f4 7   8    .data   ascii   pcmpeqw
+316 0x0002452c 0x0021452c 7   8    .data   ascii   pcmpeqd
+317 0x0002467c 0x0021467c 6   7    .data   ascii   haddpd
+318 0x000246b4 0x002146b4 6   7    .data   ascii   hsubpd
+319 0x000246ec 0x002146ec 4   5    .data   ascii   movd
+320 0x00024724 0x00214724 6   7    .data   ascii   movdqa
+321 0x000255cc 0x002155cc 5   6    .data   ascii   cmppd
+322 0x0002563c 0x0021563c 6   7    .data   ascii   pinsrw
+323 0x00025674 0x00215674 6   7    .data   ascii   pextrw
+324 0x000256ac 0x002156ac 6   7    .data   ascii   shufpd
+325 0x000258dc 0x002158dc 8   9    .data   ascii   addsubpd
+326 0x00025914 0x00215914 5   6    .data   ascii   psrlw
+327 0x0002594c 0x0021594c 5   6    .data   ascii   psrld
+328 0x00025984 0x00215984 5   6    .data   ascii   psrlq
+329 0x000259bc 0x002159bc 5   6    .data   ascii   paddq
+330 0x000259f4 0x002159f4 6   7    .data   ascii   pmullw
+331 0x00025a2c 0x00215a2c 4   5    .data   ascii   movq
+332 0x00025a64 0x00215a64 8   9    .data   ascii   pmovmskb
+333 0x00025a9c 0x00215a9c 7   8    .data   ascii   psubusb
+334 0x00025ad4 0x00215ad4 7   8    .data   ascii   psubusw
+335 0x00025b0c 0x00215b0c 6   7    .data   ascii   pminub
+336 0x00025b44 0x00215b44 4   5    .data   ascii   pand
+337 0x00025b7c 0x00215b7c 7   8    .data   ascii   paddusb
+338 0x00025bb4 0x00215bb4 7   8    .data   ascii   paddusw
+339 0x00025bec 0x00215bec 6   7    .data   ascii   pmaxub
+340 0x00025c24 0x00215c24 5   6    .data   ascii   pandn
+341 0x00025c5c 0x00215c5c 5   6    .data   ascii   pavgb
+342 0x00025c94 0x00215c94 5   6    .data   ascii   psraw
+343 0x00025ccc 0x00215ccc 5   6    .data   ascii   psrad
+344 0x00025d04 0x00215d04 5   6    .data   ascii   pavgw
+345 0x00025d3c 0x00215d3c 7   8    .data   ascii   pmulhuw
+346 0x00025d74 0x00215d74 6   7    .data   ascii   pmulhw
+347 0x00025dac 0x00215dac 9   10   .data   ascii   cvttpd2dq
+348 0x00025de4 0x00215de4 7   8    .data   ascii   movntdq
+349 0x00025e1c 0x00215e1c 6   7    .data   ascii   psubsb
+350 0x00025e54 0x00215e54 6   7    .data   ascii   psubsw
+351 0x00025e8c 0x00215e8c 6   7    .data   ascii   pminsw
+352 0x00025efc 0x00215efc 6   7    .data   ascii   paddsb
+353 0x00025f34 0x00215f34 6   7    .data   ascii   paddsw
+354 0x00025f6c 0x00215f6c 6   7    .data   ascii   pmaxuw
+355 0x00025fa4 0x00215fa4 4   5    .data   ascii   pxor
+356 0x00026014 0x00216014 5   6    .data   ascii   psllw
+357 0x0002604c 0x0021604c 5   6    .data   ascii   pslld
+358 0x00026084 0x00216084 5   6    .data   ascii   psllq
+359 0x000260bc 0x002160bc 7   8    .data   ascii   pmuludq
+360 0x000260f4 0x002160f4 7   8    .data   ascii   pmaddwd
+361 0x0002612c 0x0021612c 6   7    .data   ascii   psadbw
+362 0x00026164 0x00216164 10  11   .data   ascii   maskmovdqu
+363 0x0002619c 0x0021619c 5   6    .data   ascii   psubb
+364 0x000261d4 0x002161d4 5   6    .data   ascii   psubw
+365 0x0002620c 0x0021620c 5   6    .data   ascii   psubd
+366 0x00026244 0x00216244 5   6    .data   ascii   psubq
+367 0x0002627c 0x0021627c 5   6    .data   ascii   paddb
+368 0x000262b4 0x002162b4 5   6    .data   ascii   paddw
+369 0x000262ec 0x002162ec 5   6    .data   ascii   paddd
+370 0x000266dc 0x002166dc 5   6    .data   ascii   movsd
+371 0x00026714 0x00216714 5   6    .data   ascii   movsd
+372 0x0002674c 0x0021674c 7   8    .data   ascii   movddup
+373 0x00026c8c 0x00216c8c 8   9    .data   ascii   cvtsi2sd
+374 0x00026cfc 0x00216cfc 9   10   .data   ascii   cvttsd2si
+375 0x00026d34 0x00216d34 8   9    .data   ascii   cvtsd2si
+376 0x00027514 0x00217514 6   7    .data   ascii   sqrtsd
+377 0x0002769c 0x0021769c 5   6    .data   ascii   addsd
+378 0x000276d4 0x002176d4 5   6    .data   ascii   mulsd
+379 0x0002770c 0x0021770c 8   9    .data   ascii   cvtsd2ss
+380 0x0002777c 0x0021777c 5   6    .data   ascii   subsd
+381 0x000277b4 0x002177b4 5   6    .data   ascii   minsd
+382 0x000277ec 0x002177ec 5   6    .data   ascii   divsd
+383 0x00027824 0x00217824 5   6    .data   ascii   maxsd
+384 0x00027ba4 0x00217ba4 6   7    .data   ascii   movdqa
+385 0x00027bdc 0x00217bdc 7   8    .data   ascii   pshuflw
+386 0x00027e7c 0x00217e7c 6   7    .data   ascii   haddps
+387 0x00027eb4 0x00217eb4 6   7    .data   ascii   hsubps
+388 0x00028dcc 0x00218dcc 5   6    .data   ascii   cmpsd
+389 0x000290dc 0x002190dc 8   9    .data   ascii   addsubps
+390 0x0002922c 0x0021922c 7   8    .data   ascii   movdq2q
+391 0x000295ac 0x002195ac 8   9    .data   ascii   cvtpd2dq
+392 0x000297dc 0x002197dc 5   6    .data   ascii   lddqu
+393 0x00029edc 0x00219edc 5   6    .data   ascii   movss
+394 0x00029f14 0x00219f14 5   6    .data   ascii   movss
+395 0x00029f4c 0x00219f4c 8   9    .data   ascii   movsldup
+396 0x0002a02c 0x0021a02c 8   9    .data   ascii   movshdup
+397 0x0002a48c 0x0021a48c 8   9    .data   ascii   cvtsi2ss
+398 0x0002a4fc 0x0021a4fc 9   10   .data   ascii   cvttss2si
+399 0x0002a534 0x0021a534 8   9    .data   ascii   cvtss2si
+400 0x0002ad14 0x0021ad14 6   7    .data   ascii   sqrtss
+401 0x0002ad4c 0x0021ad4c 7   8    .data   ascii   rsqrtss
+402 0x0002ad84 0x0021ad84 5   6    .data   ascii   rcpss
+403 0x0002ae9c 0x0021ae9c 5   6    .data   ascii   addss
+404 0x0002aed4 0x0021aed4 5   6    .data   ascii   mulss
+405 0x0002af0c 0x0021af0c 8   9    .data   ascii   cvtss2sd
+406 0x0002af44 0x0021af44 9   10   .data   ascii   cvttps2dq
+407 0x0002af7c 0x0021af7c 5   6    .data   ascii   subss
+408 0x0002afb4 0x0021afb4 5   6    .data   ascii   minss
+409 0x0002afec 0x0021afec 5   6    .data   ascii   divss
+410 0x0002b024 0x0021b024 5   6    .data   ascii   maxss
+411 0x0002b3a4 0x0021b3a4 6   7    .data   ascii   movdqu
+412 0x0002b3dc 0x0021b3dc 7   8    .data   ascii   pshufhw
+413 0x0002b6ec 0x0021b6ec 4   5    .data   ascii   movq
+414 0x0002b724 0x0021b724 6   7    .data   ascii   movdqu
+415 0x0002c5cc 0x0021c5cc 5   6    .data   ascii   cmpss
+416 0x0002ca2c 0x0021ca2c 7   8    .data   ascii   movq2dq
+417 0x0002cdac 0x0021cdac 8   9    .data   ascii   cvtdq2pd
+418 0x0002d3cc 0x0021d3cc 5   6    .data   ascii   psrld
+419 0x0002d43c 0x0021d43c 5   6    .data   ascii   psrad
+420 0x0002d4ac 0x0021d4ac 5   6    .data   ascii   pslld
+421 0x0003045c 0x0022045c 7   8    .data   ascii   monitor
+422 0x00030494 0x00220494 5   6    .data   ascii   mwait
+423 0x00030edc 0x00220edc 6   7    .data   ascii   swapgs
+424 0x0003109c 0x0022109c 5   6    .data   ascii   fiadd
+425 0x000310d4 0x002210d4 5   6    .data   ascii   fimul
+426 0x0003110c 0x0022110c 5   6    .data   ascii   ficom
+427 0x0003111d 0x0022111d 5   6    .data   ascii   !\b\r1`
+428 0x00031144 0x00221144 6   7    .data   ascii   ficomp
+429 0x00031155 0x00221155 5   6    .data   ascii   !\b\r1`
+430 0x0003117c 0x0022117c 5   6    .data   ascii   fisub
+431 0x000311b4 0x002211b4 6   7    .data   ascii   fisubr
+432 0x000311ec 0x002211ec 5   6    .data   ascii   fidiv
+433 0x00031224 0x00221224 6   7    .data   ascii   fidivr
+434 0x0003125c 0x0022125c 6   7    .data   ascii   fcmovb
+435 0x00031294 0x00221294 6   7    .data   ascii   fcmovb
+436 0x000312cc 0x002212cc 6   7    .data   ascii   fcmovb
+437 0x00031304 0x00221304 6   7    .data   ascii   fcmovb
+438 0x0003133c 0x0022133c 6   7    .data   ascii   fcmovb
+439 0x00031374 0x00221374 6   7    .data   ascii   fcmovb
+440 0x000313ac 0x002213ac 6   7    .data   ascii   fcmovb
+441 0x000313e4 0x002213e4 6   7    .data   ascii   fcmovb
+442 0x0003141c 0x0022141c 6   7    .data   ascii   fcmove
+443 0x00031454 0x00221454 6   7    .data   ascii   fcmove
+444 0x0003148c 0x0022148c 6   7    .data   ascii   fcmove
+445 0x000314c4 0x002214c4 6   7    .data   ascii   fcmove
+446 0x000314fc 0x002214fc 6   7    .data   ascii   fcmove
+447 0x00031534 0x00221534 6   7    .data   ascii   fcmove
+448 0x0003156c 0x0022156c 6   7    .data   ascii   fcmove
+449 0x000315a4 0x002215a4 6   7    .data   ascii   fcmove
+450 0x000315dc 0x002215dc 7   8    .data   ascii   fcmovbe
+451 0x00031614 0x00221614 7   8    .data   ascii   fcmovbe
+452 0x0003164c 0x0022164c 7   8    .data   ascii   fcmovbe
+453 0x00031684 0x00221684 7   8    .data   ascii   fcmovbe
+454 0x000316bc 0x002216bc 7   8    .data   ascii   fcmovbe
+455 0x000316f4 0x002216f4 7   8    .data   ascii   fcmovbe
+456 0x0003172c 0x0022172c 7   8    .data   ascii   fcmovbe
+457 0x00031764 0x00221764 7   8    .data   ascii   fcmovbe
+458 0x0003179c 0x0022179c 6   7    .data   ascii   fcmovu
+459 0x000317d4 0x002217d4 6   7    .data   ascii   fcmovu
+460 0x0003180c 0x0022180c 6   7    .data   ascii   fcmovu
+461 0x00031844 0x00221844 6   7    .data   ascii   fcmovu
+462 0x0003187c 0x0022187c 6   7    .data   ascii   fcmovu
+463 0x000318b4 0x002218b4 6   7    .data   ascii   fcmovu
+464 0x000318ec 0x002218ec 6   7    .data   ascii   fcmovu
+465 0x00031924 0x00221924 6   7    .data   ascii   fcmovu
+466 0x00031b54 0x00221b54 7   8    .data   ascii   fucompp
+467 0x000320dd 0x002220dd 5   6    .data   ascii    \b\r1 
+468 0x00032104 0x00222104 4   5    .data   ascii   fstp
+469 0x00032115 0x00222115 5   6    .data   ascii    \b\r1 
+470 0x0003213c 0x0022213c 6   7    .data   ascii   frstor
+471 0x000321ac 0x002221ac 5   6    .data   ascii   fsave
+472 0x000321e4 0x002221e4 6   7    .data   ascii   fnstsw
+473 0x000321f5 0x002221f5 5   6    .data   ascii   @\b\b3 
+474 0x0003221c 0x0022221c 5   6    .data   ascii   ffree
+475 0x00032254 0x00222254 5   6    .data   ascii   ffree
+476 0x0003228c 0x0022228c 5   6    .data   ascii   ffree
+477 0x000322c4 0x002222c4 5   6    .data   ascii   ffree
+478 0x000322fc 0x002222fc 5   6    .data   ascii   ffree
+479 0x00032334 0x00222334 5   6    .data   ascii   ffree
+480 0x0003236c 0x0022236c 5   6    .data   ascii   ffree
+481 0x000323a4 0x002223a4 5   6    .data   ascii   ffree
+482 0x0003275c 0x0022275c 4   5    .data   ascii   fstp
+483 0x00032794 0x00222794 4   5    .data   ascii   fstp
+484 0x000327cc 0x002227cc 4   5    .data   ascii   fstp
+485 0x00032804 0x00222804 4   5    .data   ascii   fstp
+486 0x0003283c 0x0022283c 4   5    .data   ascii   fstp
+487 0x00032874 0x00222874 4   5    .data   ascii   fstp
+488 0x000328ac 0x002228ac 4   5    .data   ascii   fstp
+489 0x000328e4 0x002228e4 4   5    .data   ascii   fstp
+490 0x0003291c 0x0022291c 5   6    .data   ascii   fucom
+491 0x00032954 0x00222954 5   6    .data   ascii   fucom
+492 0x0003298c 0x0022298c 5   6    .data   ascii   fucom
+493 0x000329c4 0x002229c4 5   6    .data   ascii   fucom
+494 0x000329fc 0x002229fc 5   6    .data   ascii   fucom
+495 0x00032a34 0x00222a34 5   6    .data   ascii   fucom
+496 0x00032a6c 0x00222a6c 5   6    .data   ascii   fucom
+497 0x00032aa4 0x00222aa4 5   6    .data   ascii   fucom
+498 0x00032adc 0x00222adc 6   7    .data   ascii   fucomp
+499 0x00032b14 0x00222b14 6   7    .data   ascii   fucomp
+500 0x00032b4c 0x00222b4c 6   7    .data   ascii   fucomp
+501 0x00032b84 0x00222b84 6   7    .data   ascii   fucomp
+502 0x00032bbc 0x00222bbc 6   7    .data   ascii   fucomp
+503 0x00032bf4 0x00222bf4 6   7    .data   ascii   fucomp
+504 0x00032c2c 0x00222c2c 6   7    .data   ascii   fucomp
+505 0x00032c64 0x00222c64 6   7    .data   ascii   fucomp
+506 0x0003301c 0x0022301c 4   5    .data   ascii   fild
+507 0x00033065 0x00223065 5   6    .data   ascii   A\b\b1 
+508 0x0003308c 0x0022308c 4   5    .data   ascii   fist
+509 0x0003309d 0x0022309d 5   6    .data   ascii   A\b\b1 
+510 0x000330c4 0x002230c4 5   6    .data   ascii   fistp
+511 0x000330d5 0x002230d5 5   6    .data   ascii   A\b\b1 
+512 0x000330fc 0x002230fc 4   5    .data   ascii   fbld
+513 0x00033134 0x00223134 4   5    .data   ascii   fild
+514 0x0003316c 0x0022316c 5   6    .data   ascii   fbstp
+515 0x0003317d 0x0022317d 5   6    .data   ascii   @\b\v1 
+516 0x000331a4 0x002231a4 5   6    .data   ascii   fistp
+517 0x000338dc 0x002238dc 6   7    .data   ascii   fnstsw
+518 0x00033a9c 0x00223a9c 7   8    .data   ascii   fucomip
+519 0x00033ad4 0x00223ad4 7   8    .data   ascii   fucomip
+520 0x00033b0c 0x00223b0c 7   8    .data   ascii   fucomip
+521 0x00033b44 0x00223b44 7   8    .data   ascii   fucomip
+522 0x00033b7c 0x00223b7c 7   8    .data   ascii   fucomip
+523 0x00033bb4 0x00223bb4 7   8    .data   ascii   fucomip
+524 0x00033bec 0x00223bec 7   8    .data   ascii   fucomip
+525 0x00033c24 0x00223c24 7   8    .data   ascii   fucomip
+526 0x00033c5c 0x00223c5c 6   7    .data   ascii   fcomip
+527 0x00033c94 0x00223c94 6   7    .data   ascii   fcomip
+528 0x00033ccc 0x00223ccc 6   7    .data   ascii   fcomip
+529 0x00033d04 0x00223d04 6   7    .data   ascii   fcomip
+530 0x00033d3c 0x00223d3c 6   7    .data   ascii   fcomip
+531 0x00033d74 0x00223d74 6   7    .data   ascii   fcomip
+532 0x00033dac 0x00223dac 6   7    .data   ascii   fcomip
+533 0x00033de4 0x00223de4 6   7    .data   ascii   fcomip
+534 0x0003404c 0x0022404c 5   6    .data   ascii   psrlq
+535 0x00034084 0x00224084 6   7    .data   ascii   psrldq
+536 0x0003412c 0x0022412c 5   6    .data   ascii   psllq
+537 0x00034164 0x00224164 6   7    .data   ascii   pslldq
+538 0x0003451c 0x0022451c 7   8    .data   ascii   syscall
+539 0x00034554 0x00224554 7   8    .data   ascii   syscall
+540 0x0003490c 0x0022490c 11  12   .data   ascii   prefetchnta
+541 0x00034944 0x00224944 10  11   .data   ascii   prefetcht0
+542 0x0003497c 0x0022497c 10  11   .data   ascii   prefetcht1
+543 0x000349b4 0x002249b4 10  11   .data   ascii   prefetcht2
+544 0x000349ec 0x002249ec 7   8    .data   ascii   hintnop
+545 0x00034a24 0x00224a24 7   8    .data   ascii   hintnop
+546 0x00034a5c 0x00224a5c 7   8    .data   ascii   hintnop
+547 0x00034a94 0x00224a94 7   8    .data   ascii   hintnop
+548 0x00034acc 0x00224acc 4   5    .data   ascii   fadd
+549 0x00034b04 0x00224b04 4   5    .data   ascii   fmul
+550 0x00034b3c 0x00224b3c 4   5    .data   ascii   fcom
+551 0x00034b4d 0x00224b4d 5   6    .data   ascii    \b\f1 
+552 0x00034b74 0x00224b74 5   6    .data   ascii   fcomp
+553 0x00034b85 0x00224b85 5   6    .data   ascii    \b\f1 
+554 0x00034bac 0x00224bac 4   5    .data   ascii   fsub
+555 0x00034be4 0x00224be4 5   6    .data   ascii   fsubr
+556 0x00034c1c 0x00224c1c 4   5    .data   ascii   fdiv
+557 0x00034c54 0x00224c54 5   6    .data   ascii   fdivr
+558 0x00034c8c 0x00224c8c 4   5    .data   ascii   fadd
+559 0x00034cc4 0x00224cc4 4   5    .data   ascii   fadd
+560 0x00034cfc 0x00224cfc 4   5    .data   ascii   fadd
+561 0x00034d34 0x00224d34 4   5    .data   ascii   fadd
+562 0x00034d6c 0x00224d6c 4   5    .data   ascii   fadd
+563 0x00034da4 0x00224da4 4   5    .data   ascii   fadd
+564 0x00034ddc 0x00224ddc 4   5    .data   ascii   fadd
+565 0x00034e14 0x00224e14 4   5    .data   ascii   fadd
+566 0x00034e4c 0x00224e4c 4   5    .data   ascii   fmul
+567 0x00034e84 0x00224e84 4   5    .data   ascii   fmul
+568 0x00034ebc 0x00224ebc 4   5    .data   ascii   fmul
+569 0x00034ef4 0x00224ef4 4   5    .data   ascii   fmul
+570 0x00034f2c 0x00224f2c 4   5    .data   ascii   fmul
+571 0x00034f64 0x00224f64 4   5    .data   ascii   fmul
+572 0x00034f9c 0x00224f9c 4   5    .data   ascii   fmul
+573 0x00034fd4 0x00224fd4 4   5    .data   ascii   fmul
+574 0x0003500c 0x0022500c 4   5    .data   ascii   fcom
+575 0x00035044 0x00225044 4   5    .data   ascii   fcom
+576 0x0003507c 0x0022507c 4   5    .data   ascii   fcom
+577 0x000350b4 0x002250b4 4   5    .data   ascii   fcom
+578 0x000350ec 0x002250ec 4   5    .data   ascii   fcom
+579 0x00035124 0x00225124 4   5    .data   ascii   fcom
+580 0x0003515c 0x0022515c 4   5    .data   ascii   fcom
+581 0x00035194 0x00225194 4   5    .data   ascii   fcom
+582 0x000351cc 0x002251cc 5   6    .data   ascii   fcomp
+583 0x00035204 0x00225204 5   6    .data   ascii   fcomp
+584 0x0003523c 0x0022523c 5   6    .data   ascii   fcomp
+585 0x00035274 0x00225274 5   6    .data   ascii   fcomp
+586 0x000352ac 0x002252ac 5   6    .data   ascii   fcomp
+587 0x000352e4 0x002252e4 5   6    .data   ascii   fcomp
+588 0x0003531c 0x0022531c 5   6    .data   ascii   fcomp
+589 0x00035354 0x00225354 5   6    .data   ascii   fcomp
+590 0x0003538c 0x0022538c 4   5    .data   ascii   fsub
+591 0x000353c4 0x002253c4 4   5    .data   ascii   fsub
+592 0x000353fc 0x002253fc 4   5    .data   ascii   fsub
+593 0x00035434 0x00225434 4   5    .data   ascii   fsub
+594 0x0003546c 0x0022546c 4   5    .data   ascii   fsub
+595 0x000354a4 0x002254a4 4   5    .data   ascii   fsub
+596 0x000354dc 0x002254dc 4   5    .data   ascii   fsub
+597 0x00035514 0x00225514 4   5    .data   ascii   fsub
+598 0x0003554c 0x0022554c 5   6    .data   ascii   fsubr
+599 0x00035584 0x00225584 5   6    .data   ascii   fsubr
+600 0x000355bc 0x002255bc 5   6    .data   ascii   fsubr
+601 0x000355f4 0x002255f4 5   6    .data   ascii   fsubr
+602 0x0003562c 0x0022562c 5   6    .data   ascii   fsubr
+603 0x00035664 0x00225664 5   6    .data   ascii   fsubr
+604 0x0003569c 0x0022569c 5   6    .data   ascii   fsubr
+605 0x000356d4 0x002256d4 5   6    .data   ascii   fsubr
+606 0x0003570c 0x0022570c 4   5    .data   ascii   fdiv
+607 0x00035744 0x00225744 4   5    .data   ascii   fdiv
+608 0x0003577c 0x0022577c 4   5    .data   ascii   fdiv
+609 0x000357b4 0x002257b4 4   5    .data   ascii   fdiv
+610 0x000357ec 0x002257ec 4   5    .data   ascii   fdiv
+611 0x00035824 0x00225824 4   5    .data   ascii   fdiv
+612 0x0003585c 0x0022585c 4   5    .data   ascii   fdiv
+613 0x00035894 0x00225894 4   5    .data   ascii   fdiv
+614 0x000358cc 0x002258cc 5   6    .data   ascii   fdivr
+615 0x00035904 0x00225904 5   6    .data   ascii   fdivr
+616 0x0003593c 0x0022593c 5   6    .data   ascii   fdivr
+617 0x00035974 0x00225974 5   6    .data   ascii   fdivr
+618 0x000359ac 0x002259ac 5   6    .data   ascii   fdivr
+619 0x000359e4 0x002259e4 5   6    .data   ascii   fdivr
+620 0x00035a1c 0x00225a1c 5   6    .data   ascii   fdivr
+621 0x00035a54 0x00225a54 5   6    .data   ascii   fdivr
+622 0x00035a8c 0x00225a8c 5   6    .data   ascii   fiadd
+623 0x00035ac4 0x00225ac4 5   6    .data   ascii   fimul
+624 0x00035afc 0x00225afc 5   6    .data   ascii   ficom
+625 0x00035b0d 0x00225b0d 5   6    .data   ascii   !\b\b1 
+626 0x00035b34 0x00225b34 6   7    .data   ascii   ficomp
+627 0x00035b45 0x00225b45 5   6    .data   ascii   !\b\b1 
+628 0x00035b6c 0x00225b6c 5   6    .data   ascii   fisub
+629 0x00035ba4 0x00225ba4 6   7    .data   ascii   fisubr
+630 0x00035bdc 0x00225bdc 5   6    .data   ascii   fidiv
+631 0x00035c14 0x00225c14 6   7    .data   ascii   fidivr
+632 0x00035c4c 0x00225c4c 5   6    .data   ascii   faddp
+633 0x00035c84 0x00225c84 5   6    .data   ascii   faddp
+634 0x00035cbc 0x00225cbc 5   6    .data   ascii   faddp
+635 0x00035cf4 0x00225cf4 5   6    .data   ascii   faddp
+636 0x00035d2c 0x00225d2c 5   6    .data   ascii   faddp
+637 0x00035d64 0x00225d64 5   6    .data   ascii   faddp
+638 0x00035d9c 0x00225d9c 5   6    .data   ascii   faddp
+639 0x00035dd4 0x00225dd4 5   6    .data   ascii   faddp
+640 0x00035e0c 0x00225e0c 5   6    .data   ascii   fmulp
+641 0x00035e44 0x00225e44 5   6    .data   ascii   fmulp
+642 0x00035e7c 0x00225e7c 5   6    .data   ascii   fmulp
+643 0x00035eb4 0x00225eb4 5   6    .data   ascii   fmulp
+644 0x00035eec 0x00225eec 5   6    .data   ascii   fmulp
+645 0x00035f24 0x00225f24 5   6    .data   ascii   fmulp
+646 0x00035f5c 0x00225f5c 5   6    .data   ascii   fmulp
+647 0x00035f94 0x00225f94 5   6    .data   ascii   fmulp
+648 0x000361c4 0x002261c4 6   7    .data   ascii   fcompp
+649 0x0003634c 0x0022634c 6   7    .data   ascii   fsubrp
+650 0x00036384 0x00226384 6   7    .data   ascii   fsubrp
+651 0x000363bc 0x002263bc 6   7    .data   ascii   fsubrp
+652 0x000363f4 0x002263f4 6   7    .data   ascii   fsubrp
+653 0x0003642c 0x0022642c 6   7    .data   ascii   fsubrp
+654 0x00036464 0x00226464 6   7    .data   ascii   fsubrp
+655 0x0003649c 0x0022649c 6   7    .data   ascii   fsubrp
+656 0x000364d4 0x002264d4 6   7    .data   ascii   fsubrp
+657 0x0003650c 0x0022650c 5   6    .data   ascii   fsubp
+658 0x00036544 0x00226544 5   6    .data   ascii   fsubp
+659 0x0003657c 0x0022657c 5   6    .data   ascii   fsubp
+660 0x000365b4 0x002265b4 5   6    .data   ascii   fsubp
+661 0x000365ec 0x002265ec 5   6    .data   ascii   fsubp
+662 0x00036624 0x00226624 5   6    .data   ascii   fsubp
+663 0x0003665c 0x0022665c 5   6    .data   ascii   fsubp
+664 0x00036694 0x00226694 5   6    .data   ascii   fsubp
+665 0x000366cc 0x002266cc 6   7    .data   ascii   fdivrp
+666 0x00036704 0x00226704 6   7    .data   ascii   fdivrp
+667 0x0003673c 0x0022673c 6   7    .data   ascii   fdivrp
+668 0x00036774 0x00226774 6   7    .data   ascii   fdivrp
+669 0x000367ac 0x002267ac 6   7    .data   ascii   fdivrp
+670 0x000367e4 0x002267e4 6   7    .data   ascii   fdivrp
+671 0x0003681c 0x0022681c 6   7    .data   ascii   fdivrp
+672 0x00036854 0x00226854 6   7    .data   ascii   fdivrp
+673 0x0003688c 0x0022688c 5   6    .data   ascii   fdivp
+674 0x000368c4 0x002268c4 5   6    .data   ascii   fdivp
+675 0x000368fc 0x002268fc 5   6    .data   ascii   fdivp
+676 0x00036934 0x00226934 5   6    .data   ascii   fdivp
+677 0x0003696c 0x0022696c 5   6    .data   ascii   fdivp
+678 0x000369a4 0x002269a4 5   6    .data   ascii   fdivp
+679 0x000369dc 0x002269dc 5   6    .data   ascii   fdivp
+680 0x00036a14 0x00226a14 5   6    .data   ascii   fdivp
+681 0x00036a4c 0x00226a4c 4   5    .data   ascii   arpl
+682 0x00036a84 0x00226a84 6   7    .data   ascii   movsxd
+683 0x00036b2c 0x00226b2c 5   6    .data   ascii   psrlw
+684 0x00036b9c 0x00226b9c 5   6    .data   ascii   psraw
+685 0x00036c0c 0x00226c0c 5   6    .data   ascii   psllw
+686 0x0003707d 0x0022707d 5   6    .data   ascii   @\b\f1 
+687 0x000370a4 0x002270a4 4   5    .data   ascii   fstp
+688 0x000370b5 0x002270b5 5   6    .data   ascii   @\b\f1 
+689 0x000370dc 0x002270dc 6   7    .data   ascii   fldenv
+690 0x00037114 0x00227114 5   6    .data   ascii   fldcw
+691 0x0003714c 0x0022714c 6   7    .data   ascii   fstenv
+692 0x00037184 0x00227184 6   7    .data   ascii   fnstcw
+693 0x00037195 0x00227195 5   6    .data   ascii   @\b\b4 
+694 0x0003737c 0x0022737c 4   5    .data   ascii   fxch
+695 0x000373b4 0x002273b4 4   5    .data   ascii   fxch
+696 0x000373ec 0x002273ec 4   5    .data   ascii   fxch
+697 0x00037424 0x00227424 4   5    .data   ascii   fxch
+698 0x0003745c 0x0022745c 4   5    .data   ascii   fxch
+699 0x00037494 0x00227494 4   5    .data   ascii   fxch
+700 0x000374cc 0x002274cc 4   5    .data   ascii   fxch
+701 0x00037504 0x00227504 4   5    .data   ascii   fxch
+702 0x0003753c 0x0022753c 4   5    .data   ascii   fnop
+703 0x000378bc 0x002278bc 4   5    .data   ascii   fchs
+704 0x000378f4 0x002278f4 4   5    .data   ascii   fabs
+705 0x0003799c 0x0022799c 4   5    .data   ascii   ftst
+706 0x000379d4 0x002279d4 4   5    .data   ascii   fxam
+707 0x00037a7c 0x00227a7c 4   5    .data   ascii   fld1
+708 0x00037ab4 0x00227ab4 6   7    .data   ascii   fldl2t
+709 0x00037aec 0x00227aec 6   7    .data   ascii   fldl2e
+710 0x00037b24 0x00227b24 5   6    .data   ascii   fldpi
+711 0x00037b5c 0x00227b5c 6   7    .data   ascii   fldlg2
+712 0x00037b94 0x00227b94 6   7    .data   ascii   fldln2
+713 0x00037bcc 0x00227bcc 4   5    .data   ascii   fldz
+714 0x00037c3c 0x00227c3c 5   6    .data   ascii   f2xm1
+715 0x00037c74 0x00227c74 5   6    .data   ascii   fyl2x
+716 0x00037cac 0x00227cac 5   6    .data   ascii   fptan
+717 0x00037ce4 0x00227ce4 6   7    .data   ascii   fpatan
+718 0x00037d1c 0x00227d1c 7   8    .data   ascii   fxtract
+719 0x00037d54 0x00227d54 6   7    .data   ascii   fprem1
+720 0x00037d8c 0x00227d8c 7   8    .data   ascii   fdecstp
+721 0x00037dc4 0x00227dc4 7   8    .data   ascii   fincstp
+722 0x00037dfc 0x00227dfc 5   6    .data   ascii   fprem
+723 0x00037e34 0x00227e34 7   8    .data   ascii   fyl2xp1
+724 0x00037e6c 0x00227e6c 5   6    .data   ascii   fsqrt
+725 0x00037ea4 0x00227ea4 7   8    .data   ascii   fsincos
+726 0x00037edc 0x00227edc 7   8    .data   ascii   frndint
+727 0x00037f14 0x00227f14 6   7    .data   ascii   fscale
+728 0x00037f4c 0x00227f4c 4   5    .data   ascii   fsin
+729 0x00037f84 0x00227f84 4   5    .data   ascii   fcos
+730 0x00037fbc 0x00227fbc 4   5    .data   ascii   sgdt
+731 0x00037ff4 0x00227ff4 4   5    .data   ascii   sidt
+732 0x0003802c 0x0022802c 4   5    .data   ascii   lgdt
+733 0x00038064 0x00228064 4   5    .data   ascii   lidt
+734 0x0003809c 0x0022809c 4   5    .data   ascii   smsw
+735 0x0003810c 0x0022810c 4   5    .data   ascii   lmsw
+736 0x00038144 0x00228144 6   7    .data   ascii   invlpg
+737 0x000382cc 0x002282cc 4   5    .data   ascii   clts
+738 0x00038304 0x00228304 6   7    .data   ascii   sysret
+739 0x0003833c 0x0022833c 4   5    .data   ascii   invd
+740 0x00038374 0x00228374 6   7    .data   ascii   wbinvd
+741 0x000383e4 0x002283e4 5   6    .data   ascii   undef
+742 0x0003848c 0x0022848c 5   6    .data   ascii   femms
+743 0x000384fc 0x002284fc 6   7    .data   ascii   movups
+744 0x00038534 0x00228534 6   7    .data   ascii   movups
+745 0x0003856c 0x0022856c 6   7    .data   ascii   movlps
+746 0x000385a4 0x002285a4 6   7    .data   ascii   movlps
+747 0x000385dc 0x002285dc 8   9    .data   ascii   unpcklps
+748 0x00038614 0x00228614 8   9    .data   ascii   unpckhps
+749 0x0003864c 0x0022864c 6   7    .data   ascii   movhps
+750 0x00038684 0x00228684 6   7    .data   ascii   movhps
+751 0x00038a3c 0x00228a3c 6   7    .data   ascii   movaps
+752 0x00038a74 0x00228a74 6   7    .data   ascii   movaps
+753 0x00038aac 0x00228aac 8   9    .data   ascii   cvtpi2ps
+754 0x00038ae4 0x00228ae4 7   8    .data   ascii   movntps
+755 0x00038b1c 0x00228b1c 9   10   .data   ascii   cvttps2pi
+756 0x00038b54 0x00228b54 8   9    .data   ascii   cvtps2pi
+757 0x00038b8c 0x00228b8c 7   8    .data   ascii   ucomiss
+758 0x00038bc4 0x00228bc4 6   7    .data   ascii   comiss
+759 0x00038bfc 0x00228bfc 5   6    .data   ascii   wrmsr
+760 0x00038c34 0x00228c34 5   6    .data   ascii   rdtsc
+761 0x00038c6c 0x00228c6c 5   6    .data   ascii   rdmsr
+762 0x00038ca4 0x00228ca4 5   6    .data   ascii   rdpmc
+763 0x00038cdc 0x00228cdc 8   9    .data   ascii   sysenter
+764 0x00038d14 0x00228d14 7   8    .data   ascii   sysexit
+765 0x00038f7c 0x00228f7c 5   6    .data   ascii   cmovo
+766 0x00038fb4 0x00228fb4 6   7    .data   ascii   cmovno
+767 0x00038fec 0x00228fec 5   6    .data   ascii   cmovc
+768 0x00039024 0x00229024 6   7    .data   ascii   cmovnc
+769 0x0003905c 0x0022905c 5   6    .data   ascii   cmovz
+770 0x00039094 0x00229094 6   7    .data   ascii   cmovnz
+771 0x000390cc 0x002290cc 6   7    .data   ascii   cmovbe
+772 0x00039104 0x00229104 5   6    .data   ascii   cmova
+773 0x0003913c 0x0022913c 5   6    .data   ascii   cmovs
+774 0x00039174 0x00229174 6   7    .data   ascii   cmovns
+775 0x000391ac 0x002291ac 6   7    .data   ascii   cmovpe
+776 0x000391e4 0x002291e4 6   7    .data   ascii   cmovpo
+777 0x0003921c 0x0022921c 5   6    .data   ascii   cmovl
+778 0x00039254 0x00229254 6   7    .data   ascii   cmovge
+779 0x0003928c 0x0022928c 6   7    .data   ascii   cmovle
+780 0x000392c4 0x002292c4 5   6    .data   ascii   cmovg
+781 0x000392fc 0x002292fc 8   9    .data   ascii   movmskps
+782 0x00039334 0x00229334 6   7    .data   ascii   sqrtps
+783 0x0003936c 0x0022936c 7   8    .data   ascii   rsqrtps
+784 0x000393a4 0x002293a4 5   6    .data   ascii   rcpps
+785 0x000393dc 0x002293dc 5   6    .data   ascii   andps
+786 0x00039414 0x00229414 6   7    .data   ascii   andnps
+787 0x0003944c 0x0022944c 4   5    .data   ascii   orps
+788 0x00039484 0x00229484 5   6    .data   ascii   xorps
+789 0x000394bc 0x002294bc 5   6    .data   ascii   addps
+790 0x000394f4 0x002294f4 5   6    .data   ascii   mulps
+791 0x0003952c 0x0022952c 8   9    .data   ascii   cvtps2pd
+792 0x00039564 0x00229564 8   9    .data   ascii   cvtdq2ps
+793 0x0003959c 0x0022959c 5   6    .data   ascii   subps
+794 0x000395d4 0x002295d4 5   6    .data   ascii   minps
+795 0x0003960c 0x0022960c 5   6    .data   ascii   divps
+796 0x00039644 0x00229644 5   6    .data   ascii   maxps
+797 0x0003967c 0x0022967c 9   10   .data   ascii   punpcklbw
+798 0x000396b4 0x002296b4 9   10   .data   ascii   punpcklwd
+799 0x000396ec 0x002296ec 9   10   .data   ascii   punpckldq
+800 0x00039724 0x00229724 8   9    .data   ascii   packsswb
+801 0x0003975c 0x0022975c 7   8    .data   ascii   pcmpgtb
+802 0x00039794 0x00229794 7   8    .data   ascii   pcmpgtw
+803 0x000397cc 0x002297cc 7   8    .data   ascii   pcmpgtd
+804 0x00039804 0x00229804 8   9    .data   ascii   packuswb
+805 0x0003983c 0x0022983c 9   10   .data   ascii   punpckhbw
+806 0x00039874 0x00229874 9   10   .data   ascii   punpckhwd
+807 0x000398ac 0x002298ac 9   10   .data   ascii   punpckhdq
+808 0x000398e4 0x002298e4 8   9    .data   ascii   packssdw
+809 0x0003998c 0x0022998c 4   5    .data   ascii   movd
+810 0x000399c4 0x002299c4 4   5    .data   ascii   movq
+811 0x000399fc 0x002299fc 6   7    .data   ascii   pshufw
+812 0x00039adc 0x00229adc 7   8    .data   ascii   pcmpeqb
+813 0x00039b14 0x00229b14 7   8    .data   ascii   pcmpeqw
+814 0x00039b4c 0x00229b4c 7   8    .data   ascii   pcmpeqd
+815 0x00039b84 0x00229b84 4   5    .data   ascii   emms
+816 0x00039d0c 0x00229d0c 4   5    .data   ascii   movd
+817 0x00039d44 0x00229d44 4   5    .data   ascii   movq
+818 0x0003a0fc 0x0022a0fc 4   5    .data   ascii   seto
+819 0x0003a134 0x0022a134 5   6    .data   ascii   setno
+820 0x0003a16c 0x0022a16c 4   5    .data   ascii   setb
+821 0x0003a1a4 0x0022a1a4 5   6    .data   ascii   setnb
+822 0x0003a1dc 0x0022a1dc 4   5    .data   ascii   sete
+823 0x0003a214 0x0022a214 5   6    .data   ascii   setne
+824 0x0003a24c 0x0022a24c 5   6    .data   ascii   setbe
+825 0x0003a284 0x0022a284 4   5    .data   ascii   seta
+826 0x0003a2bc 0x0022a2bc 4   5    .data   ascii   sets
+827 0x0003a2f4 0x0022a2f4 5   6    .data   ascii   setns
+828 0x0003a32c 0x0022a32c 5   6    .data   ascii   setpe
+829 0x0003a364 0x0022a364 5   6    .data   ascii   setpo
+830 0x0003a39c 0x0022a39c 4   5    .data   ascii   setl
+831 0x0003a3d4 0x0022a3d4 5   6    .data   ascii   setge
+832 0x0003a40c 0x0022a40c 5   6    .data   ascii   setle
+833 0x0003a444 0x0022a444 4   5    .data   ascii   setg
+834 0x0003a47c 0x0022a47c 4   5    .data   ascii   push
+835 0x0003a4ec 0x0022a4ec 5   6    .data   ascii   cpuid
+836 0x0003a55c 0x0022a55c 4   5    .data   ascii   shld
+837 0x0003a594 0x0022a594 4   5    .data   ascii   shld
+838 0x0003a63c 0x0022a63c 4   5    .data   ascii   push
+839 0x0003a71c 0x0022a71c 4   5    .data   ascii   shrd
+840 0x0003a754 0x0022a754 4   5    .data   ascii   shrd
+841 0x0003a7c4 0x0022a7c4 4   5    .data   ascii   imul
+842 0x0003a7fc 0x0022a7fc 7   8    .data   ascii   cmpxchg
+843 0x0003a834 0x0022a834 7   8    .data   ascii   cmpxchg
+844 0x0003a94c 0x0022a94c 5   6    .data   ascii   movzx
+845 0x0003a984 0x0022a984 5   6    .data   ascii   movzx
+846 0x0003ab0c 0x0022ab0c 5   6    .data   ascii   movsx
+847 0x0003ab44 0x0022ab44 5   6    .data   ascii   movsx
+848 0x0003ab7c 0x0022ab7c 4   5    .data   ascii   xadd
+849 0x0003abb4 0x0022abb4 4   5    .data   ascii   xadd
+850 0x0003abec 0x0022abec 5   6    .data   ascii   cmpps
+851 0x0003ac24 0x0022ac24 6   7    .data   ascii   movnti
+852 0x0003ac5c 0x0022ac5c 6   7    .data   ascii   pinsrw
+853 0x0003ac94 0x0022ac94 6   7    .data   ascii   pextrw
+854 0x0003accc 0x0022accc 6   7    .data   ascii   shufps
+855 0x0003ad3c 0x0022ad3c 5   6    .data   ascii   bswap
+856 0x0003ad74 0x0022ad74 5   6    .data   ascii   bswap
+857 0x0003adac 0x0022adac 5   6    .data   ascii   bswap
+858 0x0003ade4 0x0022ade4 5   6    .data   ascii   bswap
+859 0x0003ae1c 0x0022ae1c 5   6    .data   ascii   bswap
+860 0x0003ae54 0x0022ae54 5   6    .data   ascii   bswap
+861 0x0003ae8c 0x0022ae8c 5   6    .data   ascii   bswap
+862 0x0003aec4 0x0022aec4 5   6    .data   ascii   bswap
+863 0x0003af34 0x0022af34 5   6    .data   ascii   psrlw
+864 0x0003af6c 0x0022af6c 5   6    .data   ascii   psrld
+865 0x0003afa4 0x0022afa4 5   6    .data   ascii   psrlq
+866 0x0003afdc 0x0022afdc 5   6    .data   ascii   paddq
+867 0x0003b014 0x0022b014 6   7    .data   ascii   pmullw
+868 0x0003b084 0x0022b084 8   9    .data   ascii   pmovmskb
+869 0x0003b0bc 0x0022b0bc 7   8    .data   ascii   psubusb
+870 0x0003b0f4 0x0022b0f4 7   8    .data   ascii   psubusw
+871 0x0003b12c 0x0022b12c 6   7    .data   ascii   pminub
+872 0x0003b164 0x0022b164 4   5    .data   ascii   pand
+873 0x0003b19c 0x0022b19c 7   8    .data   ascii   paddusb
+874 0x0003b1d4 0x0022b1d4 7   8    .data   ascii   paddusw
+875 0x0003b20c 0x0022b20c 6   7    .data   ascii   pmaxub
+876 0x0003b244 0x0022b244 5   6    .data   ascii   pandn
+877 0x0003b27c 0x0022b27c 5   6    .data   ascii   pavgb
+878 0x0003b2b4 0x0022b2b4 5   6    .data   ascii   psraw
+879 0x0003b2ec 0x0022b2ec 5   6    .data   ascii   psrad
+880 0x0003b324 0x0022b324 5   6    .data   ascii   pavgw
+881 0x0003b35c 0x0022b35c 7   8    .data   ascii   pmulhuw
+882 0x0003b394 0x0022b394 6   7    .data   ascii   pmulhw
+883 0x0003b404 0x0022b404 6   7    .data   ascii   movntq
+884 0x0003b43c 0x0022b43c 6   7    .data   ascii   psubsb
+885 0x0003b474 0x0022b474 6   7    .data   ascii   psubsw
+886 0x0003b4ac 0x0022b4ac 6   7    .data   ascii   pminsw
+887 0x0003b51c 0x0022b51c 6   7    .data   ascii   paddsb
+888 0x0003b554 0x0022b554 6   7    .data   ascii   paddsw
+889 0x0003b58c 0x0022b58c 6   7    .data   ascii   pmaxsw
+890 0x0003b5c4 0x0022b5c4 4   5    .data   ascii   pxor
+891 0x0003b634 0x0022b634 5   6    .data   ascii   psllw
+892 0x0003b66c 0x0022b66c 5   6    .data   ascii   pslld
+893 0x0003b6a4 0x0022b6a4 5   6    .data   ascii   psllq
+894 0x0003b6dc 0x0022b6dc 7   8    .data   ascii   pmuludq
+895 0x0003b714 0x0022b714 7   8    .data   ascii   pmaddwd
+896 0x0003b74c 0x0022b74c 6   7    .data   ascii   psadbw
+897 0x0003b784 0x0022b784 8   9    .data   ascii   maskmovq
+898 0x0003b7bc 0x0022b7bc 5   6    .data   ascii   psubb
+899 0x0003b7f4 0x0022b7f4 5   6    .data   ascii   psubw
+900 0x0003b82c 0x0022b82c 5   6    .data   ascii   psubd
+901 0x0003b864 0x0022b864 5   6    .data   ascii   psubq
+902 0x0003b89c 0x0022b89c 5   6    .data   ascii   paddb
+903 0x0003b8d4 0x0022b8d4 5   6    .data   ascii   paddw
+904 0x0003b90c 0x0022b90c 5   6    .data   ascii   paddd
+905 0x0003c146 0x0022c146 15  31   .data   utf16le #$#*#0#6#<#B#H#
+0   0x0003d060 0x0022d060 381 382  .rsrc   ascii   <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+arch     x86
+baddr    0x1f0000
+binsz    266240
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00046501
+compiled Sat Apr  4 23:57:38 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x55207a72
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xc
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x12200
+  SizeOfInitializedData : 0x29600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x6220
+  BaseOfCode : 0x1000
+  BaseOfData : 0x14000
+  ImageBase : 0x1f0000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x1000
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x41000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 222 Name: Linker1200 Version: 31101 Times: 1
+  Product: 219 Name: Cvtres1200 Version: 21005 Times: 1
+  Product: 228 Name: Unknown Version: 31101 Times: 21
+  Product: 126 Name: AliasObj800 Version: 50727 Times: 1
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 68
+  Product: 147 Name: Implib900 Version: 30729 Times: 11
+  Product: 1 Name: Import0 Version: 0 Times: 169
+  Product: 132 Name: Utc1500_CPP Version: 30729 Times: 14
+  Product: 149 Name: Masm900 Version: 30729 Times: 7
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x40a1b
+  Size : 0x104
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x3d000
+  Size : 0x1e0
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x16070
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntdll.dll
+kernel32.dll
+psapi.dll
+wininet.dll
+advapi32.dll
+shell32.dll
+user32.dll
+msvcrt.dll
+
+8 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00040096 0x0004004e SET_32 ntdll.dll_ZwQueryInformationProcess
+0x000400b2 0x00040052 SET_32 ntdll.dll_ZwQuerySystemInformation
+0x000400cd 0x0004005a SET_32 kernel32.dll_GetNativeSystemInfo
+0x000400e3 0x00040062 SET_32 psapi.dll_EnumProcessModules
+0x000400f8 0x00040066 SET_32 psapi.dll_GetModuleFileNameExW
+0x0004010f 0x0004006a SET_32 psapi.dll_GetModuleInformation
+0x00040126 0x00040072 SET_32 ntdll.dll_ZwQueryObject
+0x00040136 0x0004007a SET_32 wininet.dll_InternetOpenA
+0x00040146 0x0004007e SET_32 wininet.dll_HttpSendRequestA
+0x00040159 0x00040082 SET_32 wininet.dll_InternetConnectA
+0x0004016c 0x00040086 SET_32 wininet.dll_InternetCloseHandle
+0x00040182 0x0004008a SET_32 wininet.dll_HttpOpenRequestA
+0x00040195 0x0004008e SET_32 wininet.dll_InternetReadFile
+0x000401a8 0x00014000 SET_32 advapi32.dll_FreeSid
+0x000401b2 0x00014004 SET_32 advapi32.dll_GetSecurityInfo
+0x000401c4 0x00014008 SET_32 advapi32.dll_GetTokenInformation
+0x000401da 0x0001400c SET_32 advapi32.dll_OpenProcessToken
+0x000401ed 0x00014010 SET_32 advapi32.dll_RegSetValueExW
+0x000401fe 0x00014014 SET_32 advapi32.dll_RegCloseKey
+0x0004020c 0x00014018 SET_32 advapi32.dll_RegCreateKeyExA
+0x0004021e 0x0001401c SET_32 advapi32.dll_RegEnumValueW
+0x0004022e 0x00014020 SET_32 advapi32.dll_SetEntriesInAclW
+0x00040241 0x00014024 SET_32 advapi32.dll_SetSecurityInfo
+0x00040253 0x00014028 SET_32 advapi32.dll_AllocateAndInitializeSid
+0x0004026e 0x0001402c SET_32 advapi32.dll_RegDeleteValueW
+0x00040280 0x00014034 SET_32 kernel32.dll_VirtualFreeEx
+0x00040290 0x00014038 SET_32 kernel32.dll_VirtualAllocEx
+0x000402a1 0x0001403c SET_32 kernel32.dll_ResumeThread
+0x000402b0 0x00014040 SET_32 kernel32.dll_SuspendThread
+0x000402c0 0x00014044 SET_32 kernel32.dll_GetThreadPriority
+0x000402d4 0x00014048 SET_32 kernel32.dll_OpenThread
+0x000402e1 0x0001404c SET_32 kernel32.dll_EnterCriticalSection
+0x000402f8 0x00014050 SET_32 kernel32.dll_FlushInstructionCache
+0x00040310 0x00014054 SET_32 kernel32.dll_SetThreadPriority
+0x00040324 0x00014058 SET_32 kernel32.dll_LeaveCriticalSection
+0x0004033b 0x0001405c SET_32 kernel32.dll_InitializeCriticalSection
+0x00040357 0x00014060 SET_32 kernel32.dll_GetCurrentThread
+0x0004036a 0x00014064 SET_32 kernel32.dll_VirtualQuery
+0x00040379 0x00014068 SET_32 kernel32.dll_GetThreadContext
+0x0004038c 0x0001406c SET_32 kernel32.dll_GetSystemTimeAsFileTime
+0x000403a6 0x00014070 SET_32 kernel32.dll_GetCurrentThreadId
+0x000403bb 0x00014074 SET_32 kernel32.dll_GetTickCount
+0x000403ca 0x00014078 SET_32 kernel32.dll_QueryPerformanceCounter
+0x000403e4 0x0001407c SET_32 kernel32.dll_GetModuleHandleA
+0x000403f7 0x00014080 SET_32 kernel32.dll_SetUnhandledExceptionFilter
+0x00040415 0x00014084 SET_32 kernel32.dll_UnhandledExceptionFilter
+0x00040430 0x00014088 SET_32 kernel32.dll_GetStartupInfoW
+0x00040442 0x0001408c SET_32 kernel32.dll_InterlockedCompareExchange
+0x0004045f 0x00014090 SET_32 kernel32.dll_InterlockedExchange
+0x00040475 0x00014094 SET_32 kernel32.dll_RtlUnwind
+0x00040481 0x00014098 SET_32 kernel32.dll_OutputDebugStringA
+0x00040496 0x0001409c SET_32 kernel32.dll_GetSystemInfo
+0x000404a6 0x000140a0 SET_32 kernel32.dll_MultiByteToWideChar
+0x000404bc 0x000140a4 SET_32 kernel32.dll_Module32NextW
+0x000404cc 0x000140a8 SET_32 kernel32.dll_Module32FirstW
+0x000404dd 0x000140ac SET_32 kernel32.dll_IsWow64Process
+0x000404ee 0x000140b0 SET_32 kernel32.dll_DuplicateHandle
+0x00040500 0x000140b4 SET_32 kernel32.dll_GetLongPathNameW
+0x00040513 0x000140b8 SET_32 kernel32.dll_GetModuleFileNameW
+0x00040528 0x000140bc SET_32 kernel32.dll_TerminateProcess
+0x0004053b 0x000140c0 SET_32 kernel32.dll_CreateDirectoryW
+0x0004054e 0x000140c4 SET_32 kernel32.dll_MoveFileExW
+0x0004055c 0x000140c8 SET_32 kernel32.dll_CreateEventW
+0x0004056b 0x000140cc SET_32 kernel32.dll_ResetEvent
+0x00040578 0x000140d0 SET_32 kernel32.dll_VirtualProtectEx
+0x0004058b 0x000140d4 SET_32 kernel32.dll_SetLastError
+0x0004059a 0x000140d8 SET_32 kernel32.dll_SetEvent
+0x000405a5 0x000140dc SET_32 kernel32.dll_GetCurrentProcess
+0x000405b9 0x000140e4 SET_32 kernel32.dll_SetFileAttributesW
+0x000405ce 0x000140e8 SET_32 kernel32.dll_DeleteFileW
+0x000405dc 0x000140ec SET_32 kernel32.dll_CreateFileW
+0x000405ea 0x000140f0 SET_32 kernel32.dll_WriteFile
+0x000405f6 0x000140f4 SET_32 kernel32.dll_ReleaseMutex
+0x00040605 0x000140f8 SET_32 kernel32.dll_WriteProcessMemory
+0x0004061a 0x000140fc SET_32 kernel32.dll_LocalFree
+0x00040626 0x00014100 SET_32 kernel32.dll_GetCurrentProcessId
+0x0004063c 0x00014104 SET_32 kernel32.dll_CreateToolhelp32Snapshot
+0x00040657 0x00014108 SET_32 kernel32.dll_Process32NextW
+0x00040668 0x0001410c SET_32 kernel32.dll_GetExitCodeThread
+0x0004067c 0x00014110 SET_32 kernel32.dll_Process32FirstW
+0x0004068e 0x00014114 SET_32 kernel32.dll_Sleep
+0x00040696 0x00014118 SET_32 kernel32.dll_CloseHandle
+0x000406a4 0x0001411c SET_32 kernel32.dll_CreateThread
+0x000406b3 0x00014120 SET_32 kernel32.dll_GlobalSize
+0x000406c0 0x00014124 SET_32 kernel32.dll_GlobalLock
+0x000406cd 0x00014128 SET_32 kernel32.dll_GlobalAlloc
+0x000406db 0x0001412c SET_32 kernel32.dll_GlobalUnlock
+0x000406ea 0x00014130 SET_32 kernel32.dll_CreateMutexW
+0x000406f9 0x00014134 SET_32 kernel32.dll_WaitForSingleObject
+0x0004070f 0x00014138 SET_32 kernel32.dll_GetModuleHandleW
+0x00040722 0x0001413c SET_32 kernel32.dll_VirtualFree
+0x00040730 0x00014140 SET_32 kernel32.dll_FormatMessageA
+0x00040741 0x00014144 SET_32 kernel32.dll_CreateRemoteThread
+0x00040756 0x00014148 SET_32 kernel32.dll_OpenProcess
+0x00040764 0x0001414c SET_32 kernel32.dll_VirtualAlloc
+0x00040773 0x00014150 SET_32 kernel32.dll_OpenMutexW
+0x00040780 0x00014154 SET_32 kernel32.dll_GetLastError
+0x0004078f 0x00014164 SET_32 shell32.dll_SHGetFolderPathW
+0x000407a2 0x0001416c SET_32 user32.dll_CloseClipboard
+0x000407b3 0x00014170 SET_32 user32.dll_GetClipboardData
+0x000407c6 0x00014174 SET_32 user32.dll_EmptyClipboard
+0x000407d7 0x00014178 SET_32 user32.dll_OpenClipboard
+0x000407e7 0x0001417c SET_32 user32.dll_SetClipboardData
+0x000407fa 0x00014180 SET_32 user32.dll_CharLowerW
+0x00040807 0x00014188 SET_32 msvcrt.dll__controlfp
+0x00040814 0x0001418c SET_32 msvcrt.dll_void __cdecl terminate(void)
+0x00040828 0x00014190 SET_32 msvcrt.dll__snprintf
+0x00040834 0x00014194 SET_32 msvcrt.dll__iob
+0x0004083b 0x00014198 SET_32 msvcrt.dll___set_app_type
+0x0004084c 0x0001419c SET_32 msvcrt.dll___p__commode
+0x0004085b 0x000141a0 SET_32 msvcrt.dll___setusermatherr
+0x0004086e 0x000141a4 SET_32 msvcrt.dll__amsg_exit
+0x0004087b 0x000141a8 SET_32 msvcrt.dll__initterm
+0x00040887 0x000141ac SET_32 msvcrt.dll__wcmdln
+0x00040891 0x000141b0 SET_32 msvcrt.dll_exit
+0x00040898 0x000141b4 SET_32 msvcrt.dll__XcptFilter
+0x000408a6 0x000141b8 SET_32 msvcrt.dll__exit
+0x000408ae 0x000141bc SET_32 msvcrt.dll__cexit
+0x000408b7 0x000141c0 SET_32 msvcrt.dll___wgetmainargs
+0x000408c8 0x000141c4 SET_32 msvcrt.dll_memcpy
+0x000408d1 0x000141c8 SET_32 msvcrt.dll_memset
+0x000408da 0x000141cc SET_32 msvcrt.dll_tolower
+0x000408e4 0x000141d0 SET_32 msvcrt.dll_srand
+0x000408ec 0x000141d4 SET_32 msvcrt.dll_rand
+0x000408f3 0x000141d8 SET_32 msvcrt.dll_wcsstr
+0x000408fc 0x000141dc SET_32 msvcrt.dll_time
+0x00040903 0x000141e0 SET_32 msvcrt.dll_realloc
+0x0004090d 0x000141e4 SET_32 msvcrt.dll_strtol
+0x00040916 0x000141e8 SET_32 msvcrt.dll_strstr
+0x0004091f 0x000141ec SET_32 msvcrt.dll_memmove
+0x00040929 0x000141f0 SET_32 msvcrt.dll__itoa
+0x00040931 0x000141f4 SET_32 msvcrt.dll_strchr
+0x0004093a 0x000141f8 SET_32 msvcrt.dll_fflush
+0x00040943 0x000141fc SET_32 msvcrt.dll___p__fmode
+0x00040950 0x00014200 SET_32 msvcrt.dll__assert
+0x0004095a 0x00014204 SET_32 msvcrt.dll__itow
+0x00040962 0x00014208 SET_32 msvcrt.dll_malloc
+0x0004096b 0x0001420c SET_32 msvcrt.dll_free
+0x00040972 0x00014210 SET_32 msvcrt.dll__wcslwr
+0x0004097c 0x00014214 SET_32 msvcrt.dll__errno
+0x00040985 0x0003bf98 SET_32 kernel32.dll_Thread32Next
+0x00040994 0x0003bf9c SET_32 kernel32.dll_CreateToolhelp32Snapshot
+0x000409af 0x0003bfa0 SET_32 kernel32.dll_Thread32First
+
+
+143 relocations
+266240
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

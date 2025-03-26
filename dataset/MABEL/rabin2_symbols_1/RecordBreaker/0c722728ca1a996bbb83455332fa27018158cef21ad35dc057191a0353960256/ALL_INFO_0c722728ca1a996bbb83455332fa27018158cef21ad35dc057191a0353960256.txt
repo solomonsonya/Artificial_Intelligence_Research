@@ -1,0 +1,438 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xa800 0x00401000  0xb000 -r-x .text
+1   0x0000ac00  0x1a00 0x0040c000  0x2000 -r-- .rdata
+2   0x0000c600   0x200 0x0040e000  0x2000 -rw- .data
+3   0x0000c800  0x1600 0x00410000  0x2000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00407486 paddr=0x00006886 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040c008 NONE FUNC KERNEL32.dll lstrcpynA
+2   0x0040c00c NONE FUNC KERNEL32.dll GetUserDefaultLCID
+3   0x0040c010 NONE FUNC KERNEL32.dll GetSystemInfo
+4   0x0040c014 NONE FUNC KERNEL32.dll LocalFree
+5   0x0040c018 NONE FUNC KERNEL32.dll FreeLibrary
+6   0x0040c01c NONE FUNC KERNEL32.dll GetProcAddress
+7   0x0040c020 NONE FUNC KERNEL32.dll LoadLibraryW
+1   0x0040c000 NONE FUNC ADVAPI32.dll GetUserNameW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000ac08 0x0040c008 NONE FUNC 0    KERNEL32.dll imp.lstrcpynA
+2   0x0000ac0c 0x0040c00c NONE FUNC 0    KERNEL32.dll imp.GetUserDefaultLCID
+3   0x0000ac10 0x0040c010 NONE FUNC 0    KERNEL32.dll imp.GetSystemInfo
+4   0x0000ac14 0x0040c014 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+5   0x0000ac18 0x0040c018 NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+6   0x0000ac1c 0x0040c01c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+7   0x0000ac20 0x0040c020 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryW
+1   0x0000ac00 0x0040c000 NONE FUNC 0    ADVAPI32.dll imp.GetUserNameW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000ac60 0x0040c060 12  26   .rdata  utf16le kernel32.dll
+1   0x0000ac7c 0x0040c07c 12  13   .rdata  ascii   LoadLibraryW
+2   0x0000ac8c 0x0040c08c 11  24   .rdata  utf16le Shlwapi.dll
+3   0x0000aca4 0x0040c0a4 9   20   .rdata  utf16le Ole32.dll
+4   0x0000acb8 0x0040c0b8 11  24   .rdata  utf16le WinInet.dll
+5   0x0000acd0 0x0040c0d0 12  26   .rdata  utf16le Advapi32.dll
+6   0x0000acec 0x0040c0ec 10  22   .rdata  utf16le User32.dll
+7   0x0000ad04 0x0040c104 11  24   .rdata  utf16le Crypt32.dll
+8   0x0000ad1c 0x0040c11c 11  24   .rdata  utf16le Shell32.dll
+9   0x0000ad34 0x0040c134 10  22   .rdata  utf16le Bcrypt.dll
+10  0x0000ad4c 0x0040c14c 14  15   .rdata  ascii   GetProcAddress
+11  0x0000ad5c 0x0040c15c 17  18   .rdata  ascii   GetCurrentProcess
+12  0x0000ad70 0x0040c170 23  24   .rdata  ascii   GetEnvironmentVariableW
+13  0x0000ad88 0x0040c188 11  12   .rdata  ascii   GetFileSize
+14  0x0000ad94 0x0040c194 13  14   .rdata  ascii   GetDriveTypeW
+15  0x0000ada4 0x0040c1a4 12  13   .rdata  ascii   GetLastError
+16  0x0000adb4 0x0040c1b4 14  15   .rdata  ascii   GetLocaleInfoW
+17  0x0000adc4 0x0040c1c4 23  24   .rdata  ascii   GetLogicalDriveStringsW
+18  0x0000addc 0x0040c1dc 18  19   .rdata  ascii   GetModuleFileNameW
+19  0x0000adf0 0x0040c1f0 24  25   .rdata  ascii   GetSystemWow64DirectoryW
+20  0x0000ae0c 0x0040c20c 24  25   .rdata  ascii   GetUserDefaultLocaleName
+21  0x0000ae28 0x0040c228 22  23   .rdata  ascii   GetTimeZoneInformation
+22  0x0000ae40 0x0040c240 11  12   .rdata  ascii   GlobalAlloc
+23  0x0000ae4c 0x0040c24c 10  11   .rdata  ascii   GlobalFree
+24  0x0000ae58 0x0040c258 20  21   .rdata  ascii   GlobalMemoryStatusEx
+25  0x0000ae70 0x0040c270 11  12   .rdata  ascii   CloseHandle
+26  0x0000ae7c 0x0040c27c 11  12   .rdata  ascii   CreateFileW
+27  0x0000ae88 0x0040c288 12  13   .rdata  ascii   CreateMutexW
+28  0x0000ae98 0x0040c298 9   10   .rdata  ascii   CopyFileW
+29  0x0000aea4 0x0040c2a4 11  12   .rdata  ascii   DeleteFileW
+30  0x0000aeb0 0x0040c2b0 9   10   .rdata  ascii   FindClose
+31  0x0000aebc 0x0040c2bc 14  15   .rdata  ascii   FindFirstFileW
+32  0x0000aecc 0x0040c2cc 13  14   .rdata  ascii   FindNextFileW
+33  0x0000aedc 0x0040c2dc 24  25   .rdata  ascii   CreateToolhelp32Snapshot
+34  0x0000aef8 0x0040c2f8 8   9    .rdata  ascii   HeapFree
+35  0x0000af04 0x0040c304 11  12   .rdata  ascii   ExitProcess
+36  0x0000af10 0x0040c310 10  11   .rdata  ascii   OpenMutexW
+37  0x0000af1c 0x0040c31c 11  12   .rdata  ascii   OpenProcess
+38  0x0000af28 0x0040c328 9   10   .rdata  ascii   LocalFree
+39  0x0000af34 0x0040c334 10  11   .rdata  ascii   LocalAlloc
+40  0x0000af40 0x0040c340 19  20   .rdata  ascii   MultiByteToWideChar
+41  0x0000af54 0x0040c354 8   9    .rdata  ascii   ReadFile
+42  0x0000af60 0x0040c360 14  15   .rdata  ascii   Process32First
+43  0x0000af70 0x0040c370 13  14   .rdata  ascii   Process32Next
+44  0x0000af80 0x0040c380 20  21   .rdata  ascii   SetCurrentDirectoryW
+45  0x0000af98 0x0040c398 23  24   .rdata  ascii   SetEnvironmentVariableW
+46  0x0000afb0 0x0040c3b0 5   6    .rdata  ascii   Sleep
+47  0x0000afb8 0x0040c3b8 8   9    .rdata  ascii   lstrcpyA
+48  0x0000afc4 0x0040c3c4 9   10   .rdata  ascii   lstrcmpiW
+49  0x0000afd0 0x0040c3d0 8   9    .rdata  ascii   lstrcmpA
+50  0x0000afdc 0x0040c3dc 8   9    .rdata  ascii   lstrcmpW
+51  0x0000afe8 0x0040c3e8 8   9    .rdata  ascii   lstrlenA
+52  0x0000aff4 0x0040c3f4 8   9    .rdata  ascii   lstrlenW
+53  0x0000b000 0x0040c400 9   10   .rdata  ascii   WriteFile
+54  0x0000b00c 0x0040c40c 19  20   .rdata  ascii   WideCharToMultiByte
+55  0x0000b020 0x0040c420 13  14   .rdata  ascii   ShellExecuteW
+56  0x0000b030 0x0040c430 16  17   .rdata  ascii   SHGetFolderPathW
+57  0x0000b044 0x0040c444 23  24   .rdata  ascii   SHGetSpecialFolderPathW
+58  0x0000b05c 0x0040c45c 14  15   .rdata  ascii   PathMatchSpecW
+59  0x0000b06c 0x0040c46c 12  13   .rdata  ascii   PathCombineW
+60  0x0000b07c 0x0040c47c 8   9    .rdata  ascii   StrRChrW
+61  0x0000b088 0x0040c488 7   8    .rdata  ascii   StrCpyW
+62  0x0000b090 0x0040c490 7   8    .rdata  ascii   StrStrA
+63  0x0000b098 0x0040c498 7   8    .rdata  ascii   StrStrW
+64  0x0000b0a0 0x0040c4a0 8   9    .rdata  ascii   StrStrIW
+65  0x0000b0ac 0x0040c4ac 9   10   .rdata  ascii   StrToIntA
+66  0x0000b0b8 0x0040c4b8 9   10   .rdata  ascii   StrToIntW
+67  0x0000b0c4 0x0040c4c4 13  14   .rdata  ascii   StrToInt64ExW
+68  0x0000b0d4 0x0040c4d4 22  23   .rdata  ascii   ConvertSidToStringSidW
+69  0x0000b0ec 0x0040c4ec 23  24   .rdata  ascii   CreateProcessWithTokenW
+70  0x0000b104 0x0040c504 16  17   .rdata  ascii   DuplicateTokenEx
+71  0x0000b118 0x0040c518 19  20   .rdata  ascii   GetTokenInformation
+72  0x0000b12c 0x0040c52c 12  13   .rdata  ascii   GetUserNameW
+73  0x0000b13c 0x0040c53c 16  17   .rdata  ascii   OpenProcessToken
+74  0x0000b150 0x0040c550 11  12   .rdata  ascii   RegCloseKey
+75  0x0000b15c 0x0040c55c 13  14   .rdata  ascii   RegEnumKeyExW
+76  0x0000b16c 0x0040c56c 13  14   .rdata  ascii   RegOpenKeyExW
+77  0x0000b17c 0x0040c57c 16  17   .rdata  ascii   RegQueryValueExW
+78  0x0000b190 0x0040c590 17  18   .rdata  ascii   SystemFunction036
+79  0x0000b1a4 0x0040c5a4 10  11   .rdata  ascii   CharUpperW
+80  0x0000b1b0 0x0040c5b0 19  20   .rdata  ascii   EnumDisplayDevicesW
+81  0x0000b1c4 0x0040c5c4 13  14   .rdata  ascii   GetClientRect
+82  0x0000b1d4 0x0040c5d4 5   6    .rdata  ascii   GetDC
+83  0x0000b1dc 0x0040c5dc 16  17   .rdata  ascii   GetDesktopWindow
+84  0x0000b1f0 0x0040c5f0 16  17   .rdata  ascii   GetSystemMetrics
+85  0x0000b204 0x0040c604 9   10   .rdata  ascii   ReleaseDC
+86  0x0000b210 0x0040c610 9   10   .rdata  ascii   wsprintfW
+87  0x0000b21c 0x0040c61c 12  13   .rdata  ascii   CoInitialize
+88  0x0000b22c 0x0040c62c 16  17   .rdata  ascii   CoCreateInstance
+89  0x0000b240 0x0040c640 20  21   .rdata  ascii   CryptStringToBinaryA
+90  0x0000b258 0x0040c658 20  21   .rdata  ascii   CryptStringToBinaryW
+91  0x0000b270 0x0040c670 20  21   .rdata  ascii   CryptBinaryToStringW
+92  0x0000b288 0x0040c688 18  19   .rdata  ascii   CryptUnprotectData
+93  0x0000b29c 0x0040c69c 16  17   .rdata  ascii   InternetConnectW
+94  0x0000b2b0 0x0040c6b0 13  14   .rdata  ascii   InternetOpenW
+95  0x0000b2c0 0x0040c6c0 18  19   .rdata  ascii   InternetSetOptionW
+96  0x0000b2d4 0x0040c6d4 16  17   .rdata  ascii   InternetOpenUrlA
+97  0x0000b2e8 0x0040c6e8 16  17   .rdata  ascii   InternetOpenUrlW
+98  0x0000b2fc 0x0040c6fc 19  20   .rdata  ascii   InternetReadFileExW
+99  0x0000b310 0x0040c710 16  17   .rdata  ascii   InternetReadFile
+100 0x0000b324 0x0040c724 19  20   .rdata  ascii   InternetCloseHandle
+101 0x0000b338 0x0040c738 16  17   .rdata  ascii   HttpOpenRequestW
+102 0x0000b34c 0x0040c74c 16  17   .rdata  ascii   HttpSendRequestW
+103 0x0000b360 0x0040c760 14  15   .rdata  ascii   HttpQueryInfoA
+104 0x0000b370 0x0040c770 14  15   .rdata  ascii   HttpQueryInfoW
+105 0x0000b380 0x0040c780 11  24   .rdata  utf16le Local State
+106 0x0000b398 0x0040c798 7   16   .rdata  utf16le Default
+107 0x0000b3a8 0x0040c7a8 10  22   .rdata  utf16le Profile %d
+108 0x0000b3c0 0x0040c7c0 10  22   .rdata  utf16le Login Data
+109 0x0000b3da 0x0040c7da 16  34   .rdata  utf16le 0Network\Cookies
+110 0x0000b3fc 0x0040c7fc 7   16   .rdata  utf16le Cookies
+111 0x0000b41c 0x0040c81c 5   12   .rdata  utf16le FALSE
+112 0x0000b428 0x0040c828 8   18   .rdata  utf16le Web Data
+113 0x0000b444 0x0040c844 14  15   .rdata  ascii   edinayarossiya
+114 0x0000b454 0x0040c854 8   9    .rdata  ascii   fVQMox8c
+115 0x0000b460 0x0040c860 8   9    .rdata  ascii   bE8Yjg==
+116 0x0000b46c 0x0040c86c 8   9    .rdata  ascii   bkoJoy0=
+117 0x0000b478 0x0040c878 32  33   .rdata  ascii   LEtihSAW6eunMDV+Aes3rVhAClFoaQM=
+118 0x0000b49c 0x0040c89c 32  33   .rdata  ascii   XGon61cwprfREQZ+AehCnwI2Q30+EA==
+119 0x0000b4c0 0x0040c8c0 12  13   .rdata  ascii   ADFOtVtjiZGI
+120 0x0000b4d0 0x0040c8d0 20  21   .rdata  ascii   ABVLnR0gzY7neRx+Aeg=
+121 0x0000b4e8 0x0040c8e8 16  17   .rdata  ascii   ABVLniF5jMfxSQ==
+122 0x0000b4fc 0x0040c8fc 20  21   .rdata  ascii   ABVLgzMOlsKnJxwWMOg=
+123 0x0000b514 0x0040c914 52  53   .rdata  ascii   ABVLhRsuycL4LFI+SMI3vXQJHXggc2czmduXAivp0jSxF5aMYw==
+124 0x0000b54c 0x0040c94c 32  33   .rdata  ascii   ABVLlRsw3I7jOhwoG5h35HFAHSBofgM=
+125 0x0000b570 0x0040c970 4   5    .rdata  ascii   LFw=
+126 0x0000b578 0x0040c978 28  29   .rdata  ascii   ABVLkAAgxIv2Jl8vB5B35HEdXDxH
+127 0x0000b598 0x0040c998 32  33   .rdata  ascii   ABVLkiIWlsKnMBxzV4YyvT4XHCtkEA==
+128 0x0000b5bc 0x0040c9bc 32  33   .rdata  ascii   ABVLlRsw3I7jOhwfF5R7vTQWQ1JoaQM=
+129 0x0000b5e0 0x0040c9e0 24  25   .rdata  ascii   b1cZvBoq35btMUV1AZN+tyUA
+130 0x0000b5fc 0x0040c9fc 4   5    .rdata  ascii   Iw==
+131 0x0000b604 0x0040ca04 4   5    .rdata  ascii   VQ==
+132 0x0000b60c 0x0040ca0c 4   5    .rdata  ascii   Aw==
+133 0x0000b614 0x0040ca14 4   5    .rdata  ascii   BDI=
+134 0x0000b61c 0x0040ca1c 4   5    .rdata  ascii   Mw==
+135 0x0000b624 0x0040ca24 4   5    .rdata  ascii   LA==
+136 0x0000b62c 0x0040ca2c 4   5    .rdata  ascii   Mg==
+137 0x0000b634 0x0040ca34 4   5    .rdata  ascii   Vg==
+138 0x0000b63c 0x0040ca3c 4   5    .rdata  ascii   dQ==
+139 0x0000b644 0x0040ca44 4   5    .rdata  ascii   VRI=
+140 0x0000b64c 0x0040ca4c 16  17   .rdata  ascii   ZVcMuBwwgojxLFI=
+141 0x0000b660 0x0040ca60 20  21   .rdata  ascii   VVkepR0lxY7ubUgjBg==
+142 0x0000b678 0x0040ca78 16  17   .rdata  ascii   VVsEvhkqyZGsN0Qv
+143 0x0000b68c 0x0040ca8c 20  21   .rdata  ascii   VUgKogE0w5DmMBIvCpY=
+144 0x0000b6a4 0x0040caa4 4   5    .rdata  ascii   JBVG
+145 0x0000b6ac 0x0040caac 4   5    .rdata  ascii   JBU=
+146 0x0000b6b4 0x0040cab4 4   5    .rdata  ascii   IxdB
+147 0x0000b6c0 0x0040cac0 84  85   .rdata  ascii   SlcFpRct2M/WOkw+SMJzriEJEDssbmApg5GcDzrsynT3P6m1RNFTpQD6Bte+KnZAyY5YUQ+FHRG1ekGc9f4=
+148 0x0000b718 0x0040cb18 60  61   .rdata  ascii   SlcFpRct2M/WOkw+SMJ/qz0RECgsaH1pi9GWT2D/3C3wa/u6BtFPrQTmHIU=
+149 0x0000b758 0x0040cb58 36  37   .rdata  ascii   SlcFpRct2M/WOkw+SMJmuykRVighe2Ao1g==
+150 0x0000b780 0x0040cb80 12  13   .rdata  ascii   XEsOo1IHzZbj
+151 0x0000b790 0x0040cb90 12  13   .rdata  ascii   flkHvRc33w==
+152 0x0000b7a0 0x0040cba0 8   9    .rdata  ascii   flQfoi0=
+153 0x0000b7ac 0x0040cbac 8   9    .rdata  ascii   ZVwZjg==
+154 0x0000b7b8 0x0040cbb8 12  13   .rdata  ascii   elsZvwEr2L0=
+155 0x0000b7c8 0x0040cbc8 12  13   .rdata  ascii   eksfvBwlw70=
+156 0x0000b7d8 0x0040cbd8 8   9    .rdata  ascii   fVcAtBx5
+157 0x0000b7e4 0x0040cbe4 12  13   .rdata  ascii   Z0sY4lwnwI4=
+158 0x0000b7f4 0x0040cbf4 16  17   .rdata  ascii   ekkHuAYmn8zmL1A=
+159 0x0000b808 0x0040cc08 60  61   .rdata  ascii   WncthSUC/qfeDlU4AI1hsTcRJQ8kdG0pms3EbBnH/izjIr62HfJEuxb9CtY=
+160 0x0000b848 0x0040cc48 8   9    .rdata  ascii   WXk/mQ==
+161 0x0000b854 0x0040cc54 16  17   .rdata  ascii   WUoEtQcg2KzjLlk=
+162 0x0000b868 0x0040cc68 12  13   .rdata  ascii   Xl0J8TYi2IM=
+163 0x0000b878 0x0040cc78 24  25   .rdata  ascii   ekkHuAYmn73yMVkrE5B3gSdX
+164 0x0000b894 0x0040cc94 20  21   .rdata  ascii   ekkHuAYmn73tM1k1Q9Q=
+165 0x0000b8ac 0x0040ccac 20  21   .rdata  ascii   ekkHuAYmn73hL1MoFw==
+166 0x0000b8c4 0x0040ccc4 16  17   .rdata  ascii   ekkHuAYmn73xN1kr
+167 0x0000b8d8 0x0040ccd8 24  25   .rdata  ascii   ekkHuAYmn73kKlI6Hotouw==
+168 0x0000b8f4 0x0040ccf4 28  29   .rdata  ascii   ekkHuAYmn73hLFAuH4xNqjQdDWl7
+169 0x0000b914 0x0040cd14 32  33   .rdata  ascii   ekkHuAYmn73hLFAuH4xNvCgRHCt8LA==
+170 0x0000b938 0x0040cd38 28  29   .rdata  ascii   ekkHuAYmn73hLFAuH4xNvD0KGw==
+171 0x0000b958 0x0040cd58 84  85   .rdata  ascii   Wn0nlDEXjI3wKlsyHL1nrD1JWS0+f3sojNOBfTv60Sz0fPuoCNdSvgrmAeesLn4OjM12YjK7WAnnaFyUqw==
+172 0x0000b9b0 0x0040cdb0 112 113  .rdata  ascii   Wn0nlDEXjIrtMEgEGYdr8nEVGCwlNikvnuGXRy7uzzyxfPu9EdRIuwDnOs2uLD5bh4xdVVHWHQvrfUyKrKNnqPLIl/syUmf4THNL8iOu91aPJQ==
+173 0x0000ba24 0x0040ce24 44  45   .rdata  ascii   Wn0nlDEXjIzjLll3UpRzsiQAWR4fVURmjMuQTSvy0TU=
+174 0x0000ba54 0x0040ce54 8   9    .rdata  ascii   eV0ZsFI=
+175 0x0000ba60 0x0040ce60 8   9    .rdata  ascii   WkwKsx4m
+176 0x0000ba70 0x0040ce70 88  89   .rdata  ascii   Wn0nlDEXjIrtMEh3UpJzqjlJWTE+SWwlmMyBDm3+xSn4IqL0ScpApAC4Rc67I2ceyatifzDWFQryUFaVt61qkvc=
+177 0x0000bacc 0x0040cecc 60  61   .rdata  ascii   Wn0nlDEXjITrJlA/HIN/u31FDzkhb2xmq+yrb2320iPONrSqBMxIuhH7F8E=
+178 0x0000bb0c 0x0040cf0c 20  21   .rdata  ascii   alcEuhsm38zxMlAyBoc=
+179 0x0000bb24 0x0040cf24 16  17   .rdata  ascii   ZFkIuRstyavmfg==
+180 0x0000bb38 0x0040cf38 16  17   .rdata  ascii   L1sEvxQqy6vmfg==
+181 0x0000bb4c 0x0040cf4c 24  25   .rdata  ascii   K10FsgA63JbnJ2MwF5sw5HM=
+182 0x0000bb68 0x0040cf68 24  25   .rdata  ascii   ekwKpQEc2ofwMFU0HMAo/A==
+183 0x0000bb84 0x0040cf84 48  49   .rdata  ascii   SlcFpRct2M/WOkw+SMJzriEJEDssbmApg5GcDyL51zzyJA==
+184 0x0000bbb8 0x0040cfb8 76  77   .rdata  ascii   SlcFpRct2M/GKk8rHZF7qjgKF2JtfGY0gJOAQzn6hnn/Mba9VIZHoAnxR4P6KXsXjINRXRjLWg==
+185 0x0000bc08 0x0040d008 4   5    .rdata  ascii   Tn0/
+186 0x0000bc10 0x0040d010 8   9    .rdata  ascii   WXc4hQ==
+187 0x0000bc1c 0x0040d01c 4   5    .rdata  ascii   RVcc
+188 0x0000bc24 0x0040d024 16  17   .rdata  ascii   RFkIuRstyaX3Klg=
+189 0x0000bc38 0x0040d038 16  17   .rdata  ascii   YFUKthdsxpLnJA==
+190 0x0000bc4c 0x0040d04c 16  17   .rdata  ascii   TlwCgR4238zmL1A=
+191 0x0000bc60 0x0040d060 12  13   .rdata  ascii   TlwC4kBtyI7u
+192 0x0000bc70 0x0040d070 20  21   .rdata  ascii   TlwCoR4237H2Ik4vB5I=
+193 0x0000bc88 0x0040d088 24  25   .rdata  ascii   TlwCoTYq35LtMFkSH4N1uw==
+194 0x0000bca4 0x0040d0a4 28  29   .rdata  ascii   TlwCoTUm2KvvIls+N4xxsTUACys=
+195 0x0000bcc4 0x0040d0c4 32  33   .rdata  ascii   TlwCoTUm2KvvIls+N4xxsTUACysec3Mj
+196 0x0000bce8 0x0040d0e8 36  37   .rdata  ascii   TlwCoTExyYP2Jn4yBo9zrhcXFjUFWEASoP+0
+197 0x0000bd10 0x0040d110 28  29   .rdata  ascii   TlwCoSEi2ofLLl08F7Z9mDgJHA==
+198 0x0000bd30 0x0040d130 8   9    .rdata  ascii   S1Efkx43
+199 0x0000bd3c 0x0040d13c 32  33   .rdata  ascii   SkoOsAYm743vM10vG4B+uxMMDTUsag==
+200 0x0000bd60 0x0040d160 24  25   .rdata  ascii   SkoOsAYm743vM10vG4B+uxUm
+201 0x0000bd7c 0x0040d17c 16  17   .rdata  ascii   TV0HtAYm44DoJl8v
+202 0x0000bd90 0x0040d190 16  17   .rdata  ascii   Tl0fnhApyYH2FA==
+203 0x0000bda4 0x0040d1a4 16  17   .rdata  ascii   Wl0HtBE344DoJl8v
+204 0x0000bdb8 0x0040d1b8 24  25   .rdata  ascii   Wl0fggYxyZbhK343Bq99ujQ=
+205 0x0000bdd4 0x0040d1d4 16  17   .rdata  ascii   WkwZtAYgxKDuNw==
+206 0x0000bde8 0x0040d1e8 128 129  .rdata  ascii   Wn0nlDEXjIzjLlkEHYxNvTAXHXRteWg0ieGKVyD52CvONbW7G91RvQDwSZi/N2ISm4xEWRKYJwjnYUGS9OZmj/TAie8jG07EXEcO8D7h2m2lGzWnFG31R1rsxG1+G8E=
+207 0x0000be6c 0x0040d26c 36  37   .rdata  ascii   R20m61cwpqrND3geINg3rVsgIQh3P3ppyM3u
+208 0x0000be94 0x0040d294 12  13   .rdata  ascii   VXso/wY72A==
+209 0x0000bea4 0x0040d2a4 12  13   .rdata  ascii   R2s4jjstxZY=
+210 0x0000beb4 0x0040d2b4 16  17   .rdata  ascii   R2s4jiEr2ZbmLEs1
+211 0x0000bec8 0x0040d2c8 32  33   .rdata  ascii   WXNa4C0EyZbLLUg+AIxzshoAAAshdX0=
+212 0x0000beec 0x0040d2ec 20  21   .rdata  ascii   WXNa4C0F3ofnEFA0Bg==
+213 0x0000bf04 0x0040d304 24  25   .rdata  ascii   WXNa4C0C2ZbqJlIvG4FzqjQ=
+214 0x0000bf20 0x0040d320 20  21   .rdata  ascii   WXNa4CEH/r3GJl8pC5Jm
+215 0x0000bf38 0x0040d338 24  25   .rdata  ascii   Wn0omCYG4b3EMVk+O5Z3sw==
+216 0x0000bf54 0x0040d354 16  17   .rdata  ascii   YVcYpRwiwYegeR4=
+217 0x0000bf68 0x0040d368 20  21   .rdata  ascii   KxRJuQY33LDnIlA2UNg=
+218 0x0000bf80 0x0040d380 28  29   .rdata  ascii   bFYIowsz2IfmFk8+AIxzszRHQ3o=
+219 0x0000bfa0 0x0040d3a0 32  33   .rdata  ascii   KxRJtBwg3pvyN1k/IoNhrSYKCzxvICs=
+220 0x0000bfc4 0x0040d3c4 12  13   .rdata  ascii   KxRJtgcqyMC4
+221 0x0000bfd4 0x0040d3d4 12  13   .rdata  ascii   WUoEtxsvyZE=
+222 0x0000bfe9 0x0040d3e9 4   5    .rdata  ascii   f")@
+223 0x0000bff8 0x0040d3f8 5   12   .rdata  utf16le *.lnk
+224 0x0000c010 0x0040d410 12  26   .rdata  utf16le fcookies.txt
+225 0x0000c03c 0x0040d43c 32  33   .rdata  ascii   3ed895c4ff5dc5ec85caa2a9d1bed0f2
+226 0x0000c060 0x0040d460 64  65   .rdata  ascii   lKFPcO/wp53AxNPuzSMABaUeiM3kRQ==                                
+227 0x0000c0a8 0x0040d4a8 64  65   .rdata  ascii                                                                   
+228 0x0000c0f0 0x0040d4f0 64  65   .rdata  ascii                                                                   
+229 0x0000c138 0x0040d538 64  65   .rdata  ascii                                                                   
+230 0x0000c180 0x0040d580 64  65   .rdata  ascii                                                                   
+231 0x0000c1d4 0x0040d5d4 4   10   .rdata  utf16le cord
+232 0x0000c1f0 0x0040d5f0 4   10   .rdata  utf16le \r\n\r\n
+233 0x0000c1fc 0x0040d5fc 4   10   .rdata  utf16le libs
+234 0x0000c208 0x0040d608 4   10   .rdata  utf16le .dll
+235 0x0000c218 0x0040d618 51  104  .rdata  utf16le SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+236 0x0000c280 0x0040d680 11  24   .rdata  utf16le DisplayName
+237 0x0000c298 0x0040d698 14  30   .rdata  utf16le DisplayVersion
+238 0x0000c2b8 0x0040d6b8 7   16   .rdata  utf16le \t%s %s\n
+239 0x0000c2d8 0x0040d6d8 10  22   .rdata  utf16le 8724643052
+240 0x0000c2f0 0x0040d6f0 8   18   .rdata  utf16le S-1-5-18
+241 0x0000c310 0x0040d710 31  64   .rdata  utf16le SOFTWARE\Microsoft\Cryptography
+242 0x0000c358 0x0040d758 8   18   .rdata  utf16le llet.dat
+243 0x0000c3e0 0x0040d7e0 4   5    .rdata  ascii   GCTL
+244 0x0000c3ec 0x0040d7ec 8   9    .rdata  ascii   .text$mn
+245 0x0000c400 0x0040d800 8   9    .rdata  ascii   .idata$5
+246 0x0000c414 0x0040d814 6   7    .rdata  ascii   .rdata
+247 0x0000c424 0x0040d824 13  14   .rdata  ascii   .rdata$voltmd
+248 0x0000c43c 0x0040d83c 13  14   .rdata  ascii   .rdata$zzzdbg
+249 0x0000c454 0x0040d854 8   9    .rdata  ascii   .idata$2
+250 0x0000c468 0x0040d868 8   9    .rdata  ascii   .idata$3
+251 0x0000c47c 0x0040d87c 8   9    .rdata  ascii   .idata$4
+252 0x0000c490 0x0040d890 8   9    .rdata  ascii   .idata$6
+253 0x0000c4a4 0x0040d8a4 5   6    .rdata  ascii   .data
+254 0x0000c4b4 0x0040d8b4 4   5    .rdata  ascii   .bss
+255 0x0000c522 0x0040d922 12  13   .rdata  ascii   LoadLibraryW
+256 0x0000c532 0x0040d932 14  15   .rdata  ascii   GetProcAddress
+257 0x0000c544 0x0040d944 11  12   .rdata  ascii   FreeLibrary
+258 0x0000c552 0x0040d952 9   10   .rdata  ascii   lstrcpynA
+259 0x0000c55e 0x0040d95e 18  19   .rdata  ascii   GetUserDefaultLCID
+260 0x0000c574 0x0040d974 13  14   .rdata  ascii   GetSystemInfo
+261 0x0000c584 0x0040d984 9   10   .rdata  ascii   LocalFree
+262 0x0000c58e 0x0040d98e 12  13   .rdata  ascii   KERNEL32.dll
+263 0x0000c59e 0x0040d99e 12  13   .rdata  ascii   GetUserNameW
+264 0x0000c5ac 0x0040d9ac 12  13   .rdata  ascii   ADVAPI32.dll
+arch     x86
+baddr    0x400000
+binsz    56832
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00015918
+compiled Thu May 26 13:58:25 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x628f8781
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x1d
+  SizeOfCode : 0xa800
+  SizeOfInitializedData : 0x4600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x7486
+  BaseOfCode : 0x1000
+  BaseOfData : 0xc000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x12000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 30136 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 30136 Times: 17
+  Product: 1 Name: Import0 Version: 0 Times: 8
+  Product: 257 Name: Implib1400 Version: 27412 Times: 5
+  Product: 262 Name: Utc1900_CVTCIL_C Version: 27412 Times: 1
+  Product: 260 Name: Utc1900_C Version: 27412 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xd8bc
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x10000
+  Size : 0x148c
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0xd790
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xc000
+  Size : 0x30
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+advapi32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000d920 0x0000ac20 SET_32 KERNEL32.dll_LoadLibraryW
+0x0000d930 0x0000ac1c SET_32 KERNEL32.dll_GetProcAddress
+0x0000d942 0x0000ac18 SET_32 KERNEL32.dll_FreeLibrary
+0x0000d950 0x0000ac08 SET_32 KERNEL32.dll_lstrcpynA
+0x0000d95c 0x0000ac0c SET_32 KERNEL32.dll_GetUserDefaultLCID
+0x0000d972 0x0000ac10 SET_32 KERNEL32.dll_GetSystemInfo
+0x0000d982 0x0000ac14 SET_32 KERNEL32.dll_LocalFree
+0x0000d99c 0x0000ac00 SET_32 ADVAPI32.dll_GetUserNameW
+
+
+8 relocations
+56832
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,447 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x200 0x10001000  0x1000 -r-x .text
+1   0x00000600   0x400 0x10002000  0x1000 -r-- .rdata
+2   0x00000a00  0x3000 0x10003000  0x3000 -r-- .rsrc
+3   0x00003a00   0x200 0x10006000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x1000113b paddr=0x0000053b haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10002000 NONE FUNC KERNEL32.dll GetEnvironmentVariableW
+2   0x10002004 NONE FUNC KERNEL32.dll FindResourceW
+3   0x10002008 NONE FUNC KERNEL32.dll LoadResource
+4   0x1000200c NONE FUNC KERNEL32.dll CreateProcessW
+5   0x10002010 NONE FUNC KERNEL32.dll WriteFile
+6   0x10002014 NONE FUNC KERNEL32.dll SizeofResource
+7   0x10002018 NONE FUNC KERNEL32.dll CreateFileW
+8   0x1000201c NONE FUNC KERNEL32.dll lstrlenW
+9   0x10002020 NONE FUNC KERNEL32.dll DisableThreadLibraryCalls
+10  0x10002024 NONE FUNC KERNEL32.dll LockResource
+11  0x10002028 NONE FUNC KERNEL32.dll CloseHandle
+12  0x1000202c NONE FUNC KERNEL32.dll RtlZeroMemory
+1   0x10002040 NONE FUNC USER32.dll   wsprintfW
+1   0x10002034 NONE FUNC SHLWAPI.dll  PathAppendW
+2   0x10002038 NONE FUNC SHLWAPI.dll  SHRegSetUSValueW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000600 0x10002000 NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentVariableW
+2   0x00000604 0x10002004 NONE FUNC 0    KERNEL32.dll imp.FindResourceW
+3   0x00000608 0x10002008 NONE FUNC 0    KERNEL32.dll imp.LoadResource
+4   0x0000060c 0x1000200c NONE FUNC 0    KERNEL32.dll imp.CreateProcessW
+5   0x00000610 0x10002010 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+6   0x00000614 0x10002014 NONE FUNC 0    KERNEL32.dll imp.SizeofResource
+7   0x00000618 0x10002018 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+8   0x0000061c 0x1000201c NONE FUNC 0    KERNEL32.dll imp.lstrlenW
+9   0x00000620 0x10002020 NONE FUNC 0    KERNEL32.dll imp.DisableThreadLibraryCalls
+10  0x00000624 0x10002024 NONE FUNC 0    KERNEL32.dll imp.LockResource
+11  0x00000628 0x10002028 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+12  0x0000062c 0x1000202c NONE FUNC 0    KERNEL32.dll imp.RtlZeroMemory
+1   0x00000640 0x10002040 NONE FUNC 0    USER32.dll   imp.wsprintfW
+1   0x00000634 0x10002034 NONE FUNC 0    SHLWAPI.dll  imp.PathAppendW
+2   0x00000638 0x10002038 NONE FUNC 0    SHLWAPI.dll  imp.SHRegSetUSValueW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000648 0x10002048 7   16   .rdata  utf16le AppData
+1   0x00000658 0x10002058 11  24   .rdata  utf16le mshttps.dll
+2   0x00000670 0x10002070 26  54   .rdata  utf16le rundll32 "%s",DllGetObject
+3   0x000006a8 0x100020a8 14  30   .rdata  utf16le MSHTTPS Loader
+4   0x000006c8 0x100020c8 45  92   .rdata  utf16le Software\Microsoft\Windows\CurrentVersion\Run
+5   0x000007be 0x100021be 23  24   .rdata  ascii   GetEnvironmentVariableW
+6   0x000007d8 0x100021d8 13  14   .rdata  ascii   FindResourceW
+7   0x000007e8 0x100021e8 12  13   .rdata  ascii   LoadResource
+8   0x000007f8 0x100021f8 14  15   .rdata  ascii   CreateProcessW
+9   0x0000080a 0x1000220a 9   10   .rdata  ascii   WriteFile
+10  0x00000816 0x10002216 14  15   .rdata  ascii   SizeofResource
+11  0x00000828 0x10002228 11  12   .rdata  ascii   CreateFileW
+12  0x00000836 0x10002236 8   9    .rdata  ascii   lstrlenW
+13  0x00000842 0x10002242 25  26   .rdata  ascii   DisableThreadLibraryCalls
+14  0x0000085e 0x1000225e 12  13   .rdata  ascii   LockResource
+15  0x0000086e 0x1000226e 11  12   .rdata  ascii   CloseHandle
+16  0x0000087c 0x1000227c 13  14   .rdata  ascii   RtlZeroMemory
+17  0x0000088a 0x1000228a 12  13   .rdata  ascii   KERNEL32.dll
+18  0x0000089a 0x1000229a 9   10   .rdata  ascii   wsprintfW
+19  0x000008a4 0x100022a4 10  11   .rdata  ascii   USER32.dll
+20  0x000008b2 0x100022b2 16  17   .rdata  ascii   SHRegSetUSValueW
+21  0x000008c6 0x100022c6 11  12   .rdata  ascii   PathAppendW
+22  0x000008d2 0x100022d2 11  12   .rdata  ascii   SHLWAPI.dll
+23  0x00000908 0x10002308 10  11   .rdata  ascii   EnvChk.dll
+0   0x00000aad 0x100030ad 44  45   .rsrc   ascii   !This program cannot be run in DOS mode.\r\r\n$
+1   0x00000b27 0x10003127 6   7    .rsrc   ascii   xRichh
+2   0x00000c40 0x10003240 5   6    .rsrc   ascii   .text
+3   0x00000c67 0x10003267 7   8    .rsrc   ascii   `.rdata
+4   0x00000c8f 0x1000328f 6   7    .rsrc   ascii   @.data
+5   0x00000cb8 0x100032b8 5   6    .rsrc   ascii   .rsrc
+6   0x00000cdf 0x100032df 7   8    .rsrc   ascii   @.reloc
+7   0x00000e65 0x10003465 5   6    .rsrc   ascii   G\fPj@
+8   0x00000e7c 0x1000347c 5   6    .rsrc   ascii   ^\ft\vW
+9   0x00000edb 0x100034db 6   8    .rsrc   utf8    j\fX+ǉE blocks=Basic Latin,Latin Extended-B
+10  0x00000f3f 0x1000353f 5   6    .rsrc   ascii   tlPj@
+11  0x00000faf 0x100035af 4   5    .rsrc   ascii   @_^[
+12  0x00001066 0x10003666 4   5    .rsrc   ascii   YYWh
+13  0x000010d5 0x100036d5 6   7    .rsrc   ascii   t$\fj\fW
+14  0x000010e0 0x100036e0 4   5    .rsrc   ascii   YYWh
+15  0x00001162 0x10003762 5   6    .rsrc   ascii   u\bj\fW
+16  0x0000116c 0x1000376c 4   5    .rsrc   ascii   YYWh
+17  0x00001242 0x10003842 7   9    .rsrc   utf8    u\f3ۉ\$$ blocks=Basic Latin,Arabic
+18  0x0000124b 0x1000384b 4   5    .rsrc   ascii   \$ 3
+19  0x00001260 0x10003860 4   5    .rsrc   ascii   SPSj
+20  0x0000127d 0x1000387d 5   6    .rsrc   ascii   u\bj\fW
+21  0x00001287 0x10003887 4   5    .rsrc   ascii   YYWh
+22  0x00001340 0x10003940 4   5    .rsrc   ascii   D$$k
+23  0x000013c4 0x100039c4 4   6    .rsrc   utf8    ȉD$$ blocks=Latin Extended-B,Basic Latin
+24  0x000013ec 0x100039ec 4   5    .rsrc   ascii   D$ j
+25  0x000013f6 0x100039f6 4   5    .rsrc   ascii   D<0P
+26  0x00001405 0x10003a05 4   5    .rsrc   ascii   D<0P
+27  0x00001437 0x10003a37 5   6    .rsrc   ascii   D$(Pj
+28  0x00001462 0x10003a62 4   5    .rsrc   ascii   YYWh
+29  0x0000148e 0x10003a8e 4   5    .rsrc   ascii   D$,P
+30  0x00001499 0x10003a99 4   5    .rsrc   ascii   D$$3
+31  0x000014ac 0x10003aac 4   5    .rsrc   ascii   X9D$
+32  0x000014d2 0x10003ad2 4   6    .rsrc   utf8    +ID$
+33  0x000014df 0x10003adf 4   5    .rsrc   ascii   D<0P
+34  0x000014ee 0x10003aee 4   5    .rsrc   ascii   D<0P
+35  0x00001529 0x10003b29 4   5    .rsrc   ascii   D<0P
+36  0x0000153f 0x10003b3f 4   5    .rsrc   ascii   D<0P
+37  0x000015c1 0x10003bc1 5   6    .rsrc   ascii   uk9t$
+38  0x000015e1 0x10003be1 4   5    .rsrc   ascii   D<0P
+39  0x000015f0 0x10003bf0 4   5    .rsrc   ascii   D<0P
+40  0x00001641 0x10003c41 4   5    .rsrc   ascii   +D$ 
+41  0x00001650 0x10003c50 4   5    .rsrc   ascii   D<0P
+42  0x0000165f 0x10003c5f 4   5    .rsrc   ascii   D<0P
+43  0x00001691 0x10003c91 5   6    .rsrc   ascii   D$(Pj
+44  0x000016ba 0x10003cba 4   5    .rsrc   ascii   YYSh
+45  0x000016e4 0x10003ce4 6   8    .rsrc   utf8    ]ËD$\ff blocks=Basic Latin,Latin-1 Supplement
+46  0x000016ec 0x10003cec 4   5    .rsrc   ascii   \b@@f
+47  0x00001725 0x10003d25 6   7    .rsrc   ascii   t$\fj\fW
+48  0x00001730 0x10003d30 4   5    .rsrc   ascii   YYWh
+49  0x0000175f 0x10003d5f 5   6    .rsrc   ascii   \bSVW3
+50  0x00001792 0x10003d92 5   6    .rsrc   ascii   PVj\b3
+51  0x000017ae 0x10003dae 5   6    .rsrc   ascii   u\bj\fW
+52  0x000017b8 0x10003db8 4   5    .rsrc   ascii   YYWh
+53  0x0000188c 0x10003e8c 5   6    .rsrc   ascii   u\bj\fW
+54  0x00001896 0x10003e96 4   5    .rsrc   ascii   YYWh
+55  0x000018bc 0x10003ebc 4   5    .rsrc   ascii   QQUV
+56  0x000018ee 0x10003eee 5   6    .rsrc   ascii   PUj\b3
+57  0x00001915 0x10003f15 4   5    .rsrc   ascii   YYWh
+58  0x0000193f 0x10003f3f 5   6    .rsrc   ascii   SUUVW
+59  0x0000196d 0x10003f6d 4   5    .rsrc   ascii   UPj\t
+60  0x00001991 0x10003f91 4   5    .rsrc   ascii   YYWh
+61  0x000019b1 0x10003fb1 5   6    .rsrc   ascii   t#9l$
+62  0x000019e2 0x10003fe2 6   7    .rsrc   ascii   [_^]YY
+63  0x000019fc 0x10003ffc 8   9    .rsrc   ascii   TSVWjD^V
+64  0x00001a17 0x10004017 4   6    .rsrc   utf8    P3ۍE blocks=Basic Latin,Arabic
+65  0x00001a1d 0x1000401d 8   9    .rsrc   ascii   PSSj SSS
+66  0x00001a73 0x10004073 5   6    .rsrc   ascii   u\bj\fW
+67  0x00001a7d 0x1000407d 4   5    .rsrc   ascii   YYWh
+68  0x00001ab7 0x100040b7 4   5    .rsrc   ascii   SVW3
+69  0x00001b14 0x10004114 4   5    .rsrc   ascii   ,t\ff
+70  0x00001b27 0x10004127 7   8    .rsrc   ascii   \b@@f98u
+71  0x00001b56 0x10004156 5   6    .rsrc   ascii   PWhD2
+72  0x00001c1d 0x1000421d 4   5    .rsrc   ascii   YYSh
+73  0x00001ce7 0x100042e7 4   5    .rsrc   ascii   &j\fS
+74  0x00001cf0 0x100042f0 4   5    .rsrc   ascii   YYSh
+75  0x00001d83 0x10004383 4   5    .rsrc   ascii   \b@@f
+76  0x00001d8b 0x1000438b 4   5    .rsrc   ascii   f9\bu
+77  0x00001ddf 0x100043df 6   7    .rsrc   ascii   D$\bHu\t
+78  0x00001e1e 0x1000441e 4   5    .rsrc   ascii   uBPP
+79  0x00001e94 0x10004494 5   6    .rsrc   ascii   D$,Ph
+80  0x00001efb 0x100044fb 4   5    .rsrc   ascii   PPPP
+81  0x00001fa9 0x100045a9 4   5    .rsrc   ascii   @_][
+82  0x00001fe7 0x100045e7 4   5    .rsrc   ascii   PPPP
+83  0x00002069 0x10004669 4   5    .rsrc   ascii   uBPP
+84  0x000020bd 0x100046bd 5   6    .rsrc   ascii   T$\fRQ
+85  0x000020c7 0x100046c7 5   6    .rsrc   ascii   L$ QP
+86  0x000020db 0x100046db 5   6    .rsrc   ascii   L$\fQP
+87  0x000020e5 0x100046e5 4   5    .rsrc   ascii   D$ P
+88  0x00002214 0x10004814 4   5    .rsrc   ascii   @_][
+89  0x000022dd 0x100048dd 7   8    .rsrc   ascii   EtPVVVj
+90  0x000022ec 0x100048ec 4   5    .rsrc   ascii   ot\a3
+91  0x000022f8 0x100048f8 4   5    .rsrc   ascii   utj@
+92  0x00002309 0x10004909 7   8    .rsrc   ascii   EtPWVVj
+93  0x00002354 0x10004954 6   7    .rsrc   ascii   EtVVVV
+94  0x000023a2 0x100049a2 5   7    .rsrc   utf8    u\b+ǉE blocks=Basic Latin,Latin Extended-B
+95  0x00002410 0x10004a10 4   5    .rsrc   ascii   #hL3
+96  0x000024e5 0x10004ae5 4   5    .rsrc   ascii   Pj\nW
+97  0x0000253e 0x10004b3e 4   5    .rsrc   ascii   Whh3
+98  0x00002740 0x10004d40 10  11   .rsrc   ascii   GlobalFree
+99  0x0000274c 0x10004d4c 8   18   .rsrc   utf16le kernel32
+100 0x00002760 0x10004d60 4   10   .rsrc   utf16le %s\*
+101 0x00002780 0x10004d80 14  30   .rsrc   utf16le tpsapi_dll_5_1
+102 0x000027a0 0x10004da0 17  36   .rsrc   utf16le ls910329.my03.com
+103 0x000027c4 0x10004dc4 13  28   .rsrc   utf16le _PADDING_DATA
+104 0x000027e0 0x10004de0 15  32   .rsrc   utf16le IP_PADDING_DATA
+105 0x00002800 0x10004e00 15  32   .rsrc   utf16le IP_PADDING_DATA
+106 0x00002820 0x10004e20 15  32   .rsrc   utf16le IP_PADDING_DATA
+107 0x00002840 0x10004e40 15  32   .rsrc   utf16le IP_PADDING_DATA
+108 0x00002860 0x10004e60 15  32   .rsrc   utf16le IP_PADDING_DATA
+109 0x00002880 0x10004e80 15  32   .rsrc   utf16le IP_PADDING_DATA
+110 0x000028a4 0x10004ea4 4   10   .rsrc   utf16le 8081
+111 0x000028b6 0x10004eb6 8   18   .rsrc   utf16le PORT_NUM
+112 0x000028c8 0x10004ec8 8   18   .rsrc   utf16le PORT_NUM
+113 0x000028e4 0x10004ee4 16  17   .rsrc   ascii   InternetConnectW
+114 0x000028f8 0x10004ef8 7   16   .rsrc   utf16le wininet
+115 0x00002908 0x10004f08 16  17   .rsrc   ascii   HttpOpenRequestW
+116 0x0000291c 0x10004f1c 4   10   .rsrc   utf16le POST
+117 0x00002928 0x10004f28 18  19   .rsrc   ascii   InternetSetOptionW
+118 0x0000293c 0x10004f3c 16  17   .rsrc   ascii   HttpSendRequestW
+119 0x00002950 0x10004f50 14  15   .rsrc   ascii   HttpQueryInfoW
+120 0x00002960 0x10004f60 19  20   .rsrc   ascii   InternetCloseHandle
+121 0x00002974 0x10004f74 16  17   .rsrc   ascii   InternetReadFile
+122 0x00002988 0x10004f88 16  34   .rsrc   utf16le SeDebugPrivilege
+123 0x000029ac 0x10004fac 12  26   .rsrc   utf16le explorer.exe
+124 0x000029c8 0x10004fc8 17  36   .rsrc   utf16le .NET CLR 1.1.4336
+125 0x000029ec 0x10004fec 12  26   .rsrc   utf16le HTClient; %s
+126 0x00002a08 0x10005008 13  14   .rsrc   ascii   InternetOpenW
+127 0x00002b9a 0x1000519a 8   9    .rsrc   ascii   lstrlenW
+128 0x00002ba6 0x100051a6 8   9    .rsrc   ascii   lstrcatW
+129 0x00002bb2 0x100051b2 12  13   .rsrc   ascii   CreateMutexW
+130 0x00002bc2 0x100051c2 14  15   .rsrc   ascii   FindFirstFileW
+131 0x00002bd4 0x100051d4 14  15   .rsrc   ascii   SetFilePointer
+132 0x00002be6 0x100051e6 12  13   .rsrc   ascii   SetEndOfFile
+133 0x00002bf6 0x100051f6 12  13   .rsrc   ascii   SetErrorMode
+134 0x00002c06 0x10005206 14  15   .rsrc   ascii   CreateProcessW
+135 0x00002c18 0x10005218 11  12   .rsrc   ascii   MoveFileExW
+136 0x00002c26 0x10005226 16  17   .rsrc   ascii   GetComputerNameW
+137 0x00002c3a 0x1000523a 9   10   .rsrc   ascii   WriteFile
+138 0x00002c46 0x10005246 11  12   .rsrc   ascii   GlobalAlloc
+139 0x00002c54 0x10005254 12  13   .rsrc   ascii   LoadLibraryW
+140 0x00002c64 0x10005264 5   6    .rsrc   ascii   Sleep
+141 0x00002c6c 0x1000526c 8   9    .rsrc   ascii   ReadFile
+142 0x00002c78 0x10005278 18  19   .rsrc   ascii   GetModuleFileNameW
+143 0x00002c8e 0x1000528e 11  12   .rsrc   ascii   CreateFileW
+144 0x00002c9c 0x1000529c 13  14   .rsrc   ascii   RtlMoveMemory
+145 0x00002cac 0x100052ac 12  13   .rsrc   ascii   GetLastError
+146 0x00002cbc 0x100052bc 14  15   .rsrc   ascii   GetProcAddress
+147 0x00002cce 0x100052ce 9   10   .rsrc   ascii   FindClose
+148 0x00002cda 0x100052da 20  21   .rsrc   ascii   SetCurrentDirectoryW
+149 0x00002cf2 0x100052f2 9   10   .rsrc   ascii   lstrcmpiW
+150 0x00002cfe 0x100052fe 13  14   .rsrc   ascii   FindNextFileW
+151 0x00002d0e 0x1000530e 11  12   .rsrc   ascii   CloseHandle
+152 0x00002d1c 0x1000531c 10  11   .rsrc   ascii   GetVersion
+153 0x00002d2a 0x1000532a 11  12   .rsrc   ascii   DeleteFileW
+154 0x00002d38 0x10005338 8   9    .rsrc   ascii   lstrcpyW
+155 0x00002d44 0x10005344 18  19   .rsrc   ascii   SetFileAttributesW
+156 0x00002d5a 0x1000535a 13  14   .rsrc   ascii   RtlZeroMemory
+157 0x00002d6a 0x1000536a 17  18   .rsrc   ascii   GetCurrentProcess
+158 0x00002d7e 0x1000537e 11  12   .rsrc   ascii   OpenProcess
+159 0x00002d8c 0x1000538c 19  20   .rsrc   ascii   GetSystemDirectoryW
+160 0x00002da2 0x100053a2 10  11   .rsrc   ascii   GlobalFree
+161 0x00002db0 0x100053b0 15  16   .rsrc   ascii   Process32FirstW
+162 0x00002dc2 0x100053c2 14  15   .rsrc   ascii   Process32NextW
+163 0x00002dd4 0x100053d4 24  25   .rsrc   ascii   CreateToolhelp32Snapshot
+164 0x00002df0 0x100053f0 21  22   .rsrc   ascii   GetVolumeInformationW
+165 0x00002e06 0x10005406 12  13   .rsrc   ascii   KERNEL32.dll
+166 0x00002e16 0x10005416 9   10   .rsrc   ascii   wsprintfW
+167 0x00002e20 0x10005420 10  11   .rsrc   ascii   USER32.dll
+168 0x00002e2e 0x1000542e 16  17   .rsrc   ascii   OpenProcessToken
+169 0x00002e42 0x10005442 21  22   .rsrc   ascii   LookupPrivilegeValueW
+170 0x00002e5a 0x1000545a 23  24   .rsrc   ascii   ImpersonateLoggedOnUser
+171 0x00002e74 0x10005474 21  22   .rsrc   ascii   AdjustTokenPrivileges
+172 0x00002e8a 0x1000548a 12  13   .rsrc   ascii   ADVAPI32.dll
+173 0x00002e98 0x10005498 11  12   .rsrc   ascii   SHELL32.dll
+174 0x00002ea4 0x100054a4 10  11   .rsrc   ascii   WS2_32.dll
+175 0x00002eb2 0x100054b2 11  12   .rsrc   ascii   StrToIntExW
+176 0x00002ebe 0x100054be 11  12   .rsrc   ascii   SHLWAPI.dll
+177 0x00002ecc 0x100054cc 20  21   .rsrc   ascii   GetAdaptersAddresses
+178 0x00002ee2 0x100054e2 12  13   .rsrc   ascii   IPHLPAPI.DLL
+179 0x00002f36 0x10005536 11  12   .rsrc   ascii   mshttps.dll
+180 0x00002f42 0x10005542 12  13   .rsrc   ascii   DllGetObject
+181 0x00002f4f 0x1000554f 10  11   .rsrc   ascii   WxShutdown
+182 0x00002f5a 0x1000555a 9   10   .rsrc   ascii   WxStartup
+183 0x000030c6 0x100056c6 15  32   .rsrc   utf16le VS_VERSION_INFO
+184 0x00003122 0x10005722 14  30   .rsrc   utf16le StringFileInfo
+185 0x00003146 0x10005746 8   18   .rsrc   utf16le 040904b0
+186 0x0000315e 0x1000575e 11  24   .rsrc   utf16le CompanyName
+187 0x00003178 0x10005778 21  44   .rsrc   utf16le Microsoft Corporation
+188 0x000031aa 0x100057aa 15  32   .rsrc   utf16le FileDescription
+189 0x000031cc 0x100057cc 21  44   .rsrc   utf16le Windows HTTP Services
+190 0x000031fe 0x100057fe 11  24   .rsrc   utf16le FileVersion
+191 0x00003218 0x10005818 16  34   .rsrc   utf16le 5, 1, 2600, 5868
+192 0x00003242 0x10005842 12  26   .rsrc   utf16le InternalName
+193 0x0000325c 0x1000585c 12  26   .rsrc   utf16le httpsapi.dll
+194 0x0000327e 0x1000587e 14  30   .rsrc   utf16le LegalCopyright
+195 0x0000329e 0x1000589e 44  90   .rsrc   utf16le  Microsoft Corporation. All rights reserved.
+196 0x000032fe 0x100058fe 16  34   .rsrc   utf16le OriginalFilename
+197 0x00003320 0x10005920 12  26   .rsrc   utf16le httpsapi.dll
+198 0x00003342 0x10005942 11  24   .rsrc   utf16le ProductName
+199 0x0000335c 0x1000595c 9   19   .rsrc   utf16le Microsoft
+200 0x00003370 0x10005970 8   17   .rsrc   utf16le  Windows
+201 0x00003382 0x10005982 17  36   .rsrc   utf16le  Operating System
+202 0x000033ae 0x100059ae 14  30   .rsrc   utf16le ProductVersion
+203 0x000033cc 0x100059cc 16  34   .rsrc   utf16le 5, 1, 2600, 5868
+204 0x000033f8 0x100059f8 10  22   .rsrc   utf16le arFileInfo
+205 0x00003416 0x10005a16 11  24   .rsrc   utf16le Translation
+206 0x00003468 0x10005a68 4   5    .rsrc   ascii   \f0'0
+207 0x00003487 0x10005a87 7   8    .rsrc   ascii   2;2B2Y2
+208 0x000034a5 0x10005aa5 13  14   .rsrc   ascii   3$3K3T3k3x3}3
+209 0x000034bb 0x10005abb 19  20   .rsrc   ascii   3+40484?4O4T4^4n4v4
+210 0x000034ed 0x10005aed 13  14   .rsrc   ascii   5"5(525A5K5R5
+211 0x0000350b 0x10005b0b 5   6    .rsrc   ascii   646n6
+212 0x00003529 0x10005b29 13  14   .rsrc   ascii   7%7+7:7E7W7r7
+213 0x00003549 0x10005b49 9   10   .rsrc   ascii   8^8c8k8r8
+214 0x0000355d 0x10005b5d 13  14   .rsrc   ascii   8 9.9\9a9i9p9
+215 0x00003579 0x10005b79 11  12   .rsrc   ascii   :\r:::?:G:x:
+216 0x00003591 0x10005b91 13  14   .rsrc   ascii   :5;:;B;I;k;|;
+217 0x000035a7 0x10005ba7 17  18   .rsrc   ascii   ;!<&<.<5<e<j<r<x<
+218 0x000035ed 0x10005bed 23  24   .rsrc   ascii   ?@?V?Z?^?b?f?j?n?r?v?z?
+219 0x00003619 0x10005c19 9   10   .rsrc   ascii   0!090D0i0
+220 0x00003627 0x10005c27 9   10   .rsrc   ascii   0\r141V1y1
+221 0x00003649 0x10005c49 7   8    .rsrc   ascii   3'3K3p3
+222 0x00003659 0x10005c59 7   8    .rsrc   ascii   4*4D4x4
+223 0x00003677 0x10005c77 13  14   .rsrc   ascii   6!6(6:6@6P6x6
+224 0x00003699 0x10005c99 13  14   .rsrc   ascii   7\e7\7f7l7r7x7
+arch     x86
+baddr    0x10000000
+binsz    15360
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000d2e0
+compiled Thu Jan  1 00:00:00 1970
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x0
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x200
+  SizeOfInitializedData : 0x3600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x113b
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x7000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x540
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 148 Name: Cvtres900 Version: 21022 Times: 1
+  Product: 146 Name: Export900 Version: 30729 Times: 1
+  Product: 138 Name: Utc1500_LTCG_CPP Version: 30729 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 15
+  Product: 123 Name: Implib800 Version: 50727 Times: 7
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x22e0
+  Size : 0x33
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2124
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x3000
+  Size : 0x2e60
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x6000
+  Size : 0x34
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+shlwapi.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000021bc 0x00000600 SET_32 KERNEL32.dll_GetEnvironmentVariableW
+0x000021d6 0x00000604 SET_32 KERNEL32.dll_FindResourceW
+0x000021e6 0x00000608 SET_32 KERNEL32.dll_LoadResource
+0x000021f6 0x0000060c SET_32 KERNEL32.dll_CreateProcessW
+0x00002208 0x00000610 SET_32 KERNEL32.dll_WriteFile
+0x00002214 0x00000614 SET_32 KERNEL32.dll_SizeofResource
+0x00002226 0x00000618 SET_32 KERNEL32.dll_CreateFileW
+0x00002234 0x0000061c SET_32 KERNEL32.dll_lstrlenW
+0x00002240 0x00000620 SET_32 KERNEL32.dll_DisableThreadLibraryCalls
+0x0000225c 0x00000624 SET_32 KERNEL32.dll_LockResource
+0x0000226c 0x00000628 SET_32 KERNEL32.dll_CloseHandle
+0x0000227a 0x0000062c SET_32 KERNEL32.dll_RtlZeroMemory
+0x00002298 0x00000640 SET_32 USER32.dll_wsprintfW
+0x000022b0 0x00000638 SET_32 SHLWAPI.dll_SHRegSetUSValueW
+0x000022c4 0x00000634 SET_32 SHLWAPI.dll_PathAppendW
+
+
+15 relocations
+15360
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

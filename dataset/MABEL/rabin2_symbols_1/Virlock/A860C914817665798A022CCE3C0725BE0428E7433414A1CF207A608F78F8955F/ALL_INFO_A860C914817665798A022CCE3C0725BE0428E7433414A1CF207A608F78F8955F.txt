@@ -1,0 +1,193 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb3200 0x00401000  0xb4000 -r-x .text
+1   0x000b3800    0x400 0x004b5000   0x1000 -r-- .rdata
+2   0x000b3c00    0x800 0x004b6000   0x1000 -rwx .data
+3   0x000b4400   0x1200 0x004b7000   0x2000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004010f0 paddr=0x000006f0 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b5000 NONE FUNC oleaut32.dll VarDateFromI8
+1   0x004b5008 NONE FUNC ws2_32.dll   WSAAsyncGetServByPort
+1   0x004b5010 NONE FUNC user32.dll   GetWindowTextLengthA
+1   0x004b5018 NONE FUNC kernel32.dll OutputDebugStringA
+2   0x004b501c NONE FUNC kernel32.dll GetCurrentThreadId
+3   0x004b5020 NONE FUNC kernel32.dll GetCurrentThread
+1   0x004b5028 NONE FUNC ntdll.dll    LdrFindEntryForAddress
+2   0x004b502c NONE FUNC ntdll.dll    RtlOpenCurrentUser
+3   0x004b5030 NONE FUNC ntdll.dll    NtLockVirtualMemory
+1   0x004b5038 NONE FUNC ole32.dll    OleSave
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b3800 0x004b5000 NONE FUNC 0    oleaut32.dll imp.VarDateFromI8
+1   0x000b3808 0x004b5008 NONE FUNC 0    ws2_32.dll   imp.WSAAsyncGetServByPort
+1   0x000b3810 0x004b5010 NONE FUNC 0    user32.dll   imp.GetWindowTextLengthA
+1   0x000b3818 0x004b5018 NONE FUNC 0    kernel32.dll imp.OutputDebugStringA
+2   0x000b381c 0x004b501c NONE FUNC 0    kernel32.dll imp.GetCurrentThreadId
+3   0x000b3820 0x004b5020 NONE FUNC 0    kernel32.dll imp.GetCurrentThread
+1   0x000b3828 0x004b5028 NONE FUNC 0    ntdll.dll    imp.LdrFindEntryForAddress
+2   0x000b382c 0x004b502c NONE FUNC 0    ntdll.dll    imp.RtlOpenCurrentUser
+3   0x000b3830 0x004b5030 NONE FUNC 0    ntdll.dll    imp.NtLockVirtualMemory
+1   0x000b3838 0x004b5038 NONE FUNC 0    ole32.dll    imp.OleSave
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b390e 0x004b510e 13  14   .rdata  ascii VarDateFromI8
+1   0x000b391c 0x004b511c 12  13   .rdata  ascii oleaut32.dll
+2   0x000b392b 0x004b512b 21  22   .rdata  ascii WSAAsyncGetServByPort
+3   0x000b3941 0x004b5141 10  11   .rdata  ascii ws2_32.dll
+4   0x000b394e 0x004b514e 20  21   .rdata  ascii GetWindowTextLengthA
+5   0x000b3963 0x004b5163 10  11   .rdata  ascii user32.dll
+6   0x000b3970 0x004b5170 18  19   .rdata  ascii OutputDebugStringA
+7   0x000b3985 0x004b5185 18  19   .rdata  ascii GetCurrentThreadId
+8   0x000b399a 0x004b519a 16  17   .rdata  ascii GetCurrentThread
+9   0x000b39ab 0x004b51ab 12  13   .rdata  ascii kernel32.dll
+10  0x000b39ba 0x004b51ba 22  23   .rdata  ascii LdrFindEntryForAddress
+11  0x000b39d3 0x004b51d3 18  19   .rdata  ascii RtlOpenCurrentUser
+12  0x000b39e8 0x004b51e8 19  20   .rdata  ascii NtLockVirtualMemory
+13  0x000b39fc 0x004b51fc 9   10   .rdata  ascii ntdll.dll
+14  0x000b3a08 0x004b5208 7   8    .rdata  ascii OleSave
+15  0x000b3a10 0x004b5210 9   10   .rdata  ascii ole32.dll
+0   0x000b555c 0x004b815c 164 164  .rsrc   ascii PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+arch     x86
+baddr    0x400000
+binsz    742912
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000bb064
+compiled Mon Jul 27 18:38:55 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x55b67abf
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb3200
+  SizeOfInitializedData : 0x1600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x10f0
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb5000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb9000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb5040
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xb7000
+  Size : 0x115c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb5000
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+oleaut32.dll
+ws2_32.dll
+user32.dll
+kernel32.dll
+ntdll.dll
+ole32.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b510c 0x000b3800 SET_32 oleaut32.dll_VarDateFromI8
+0x000b5129 0x000b3808 SET_32 ws2_32.dll_WSAAsyncGetServByPort
+0x000b514c 0x000b3810 SET_32 user32.dll_GetWindowTextLengthA
+0x000b516e 0x000b3818 SET_32 kernel32.dll_OutputDebugStringA
+0x000b5183 0x000b381c SET_32 kernel32.dll_GetCurrentThreadId
+0x000b5198 0x000b3820 SET_32 kernel32.dll_GetCurrentThread
+0x000b51b8 0x000b3828 SET_32 ntdll.dll_LdrFindEntryForAddress
+0x000b51d1 0x000b382c SET_32 ntdll.dll_RtlOpenCurrentUser
+0x000b51e6 0x000b3830 SET_32 ntdll.dll_NtLockVirtualMemory
+0x000b5206 0x000b3838 SET_32 ole32.dll_OleSave
+
+
+10 relocations
+742912
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

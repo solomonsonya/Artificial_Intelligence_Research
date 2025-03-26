@@ -1,0 +1,203 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x20000 0x00401000  0x43000 -rwx .text
+1   0x00020400   0x1200 0x00444000   0x2000 -rwx .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0041758f paddr=0x0001698f haddr=0x00000130 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00444020 NONE FUNC kernel32.dll LoadLibraryA
+2   0x00444024 NONE FUNC kernel32.dll GetProcAddress
+3   0x00444028 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0044402c NONE FUNC kernel32.dll VirtualFree
+1   0x00444034 NONE FUNC USER32.dll   GetUpdateRect
+1   0x0044403c NONE FUNC ADVAPI32.dll RegCreateKeyExW
+1   0x00444044 NONE FUNC SHLWAPI.dll  PathUnquoteSpacesW
+1   0x0044404c NONE FUNC SHELL32.dll  ShellExecuteW
+1   0x00444054 NONE FUNC Secur32.dll  GetUserNameExW
+1   0x0044405c NONE FUNC ole32.dll    CoInitializeEx
+1   0x00444064 NONE FUNC GDI32.dll    GdiFlush
+20  0x0044406c NONE FUNC WS2_32.dll   sendto
+1   0x00444074 NONE FUNC CRYPT32.dll  CertDuplicateCertificateContext
+1   0x0044407c NONE FUNC WININET.dll  InternetCrackUrlA
+6   0x00444084 NONE FUNC OLEAUT32.dll SysStringLen
+1   0x0044408c NONE FUNC NETAPI32.dll NetUserEnum
+1   0x00444094 NONE FUNC IPHLPAPI.DLL GetAdaptersAddresses
+1   0x0044409c NONE FUNC msvcrt.dll   _errno
+1   0x004440a4 NONE FUNC VERSION.dll  VerQueryValueW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00020420 0x00444020 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x00020424 0x00444024 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x00020428 0x00444028 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x0002042c 0x0044402c NONE FUNC 0    kernel32.dll imp.VirtualFree
+1   0x00020434 0x00444034 NONE FUNC 0    USER32.dll   imp.GetUpdateRect
+1   0x0002043c 0x0044403c NONE FUNC 0    ADVAPI32.dll imp.RegCreateKeyExW
+1   0x00020444 0x00444044 NONE FUNC 0    SHLWAPI.dll  imp.PathUnquoteSpacesW
+1   0x0002044c 0x0044404c NONE FUNC 0    SHELL32.dll  imp.ShellExecuteW
+1   0x00020454 0x00444054 NONE FUNC 0    Secur32.dll  imp.GetUserNameExW
+1   0x0002045c 0x0044405c NONE FUNC 0    ole32.dll    imp.CoInitializeEx
+1   0x00020464 0x00444064 NONE FUNC 0    GDI32.dll    imp.GdiFlush
+20  0x0002046c 0x0044406c NONE FUNC 0    WS2_32.dll   imp.sendto
+1   0x00020474 0x00444074 NONE FUNC 0    CRYPT32.dll  imp.CertDuplicateCertificateContext
+1   0x0002047c 0x0044407c NONE FUNC 0    WININET.dll  imp.InternetCrackUrlA
+6   0x00020484 0x00444084 NONE FUNC 0    OLEAUT32.dll imp.SysStringLen
+1   0x0002048c 0x0044408c NONE FUNC 0    NETAPI32.dll imp.NetUserEnum
+1   0x00020494 0x00444094 NONE FUNC 0    IPHLPAPI.DLL imp.GetAdaptersAddresses
+1   0x0002049c 0x0044409c NONE FUNC 0    msvcrt.dll   imp._errno
+1   0x000204a4 0x004440a4 NONE FUNC 0    VERSION.dll  imp.VerQueryValueW
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    136704
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0002387a
+compiled Wed Jun  6 15:20:20 2012
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0002387a
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x4fcf7534
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x3c400
+  SizeOfInitializedData : 0x5200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1758f
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3e000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x46000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x2387a
+  Subsystem : 0x2
+  DllCharacteristics : 0x8100
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x440ac
+  Size : 0x402
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+shlwapi.dll
+shell32.dll
+secur32.dll
+ole32.dll
+gdi32.dll
+ws2_32.dll
+crypt32.dll
+wininet.dll
+oleaut32.dll
+netapi32.dll
+iphlpapi.dll
+msvcrt.dll
+version.dll
+
+16 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00044210 0x00020420 SET_32 kernel32.dll_LoadLibraryA
+0x00044220 0x00020424 SET_32 kernel32.dll_GetProcAddress
+0x00044234 0x00020428 SET_32 kernel32.dll_VirtualAlloc
+0x00044244 0x0002042c SET_32 kernel32.dll_VirtualFree
+0x00044260 0x00020434 SET_32 USER32.dll_GetUpdateRect
+0x00044284 0x0002043c SET_32 ADVAPI32.dll_RegCreateKeyExW
+0x000442a4 0x00020444 SET_32 SHLWAPI.dll_PathUnquoteSpacesW
+0x000442c8 0x0002044c SET_32 SHELL32.dll_ShellExecuteW
+0x000442e8 0x00020454 SET_32 Secur32.dll_GetUserNameExW
+0x00044308 0x0002045c SET_32 ole32.dll_CoInitializeEx
+0x00044328 0x00020464 SET_32 GDI32.dll_GdiFlush
+0x0004434c 0x00020474 SET_32 CRYPT32.dll_CertDuplicateCertificateContext
+0x0004437c 0x0002047c SET_32 WININET.dll_InternetCrackUrlA
+0x000443b4 0x0002048c SET_32 NETAPI32.dll_NetUserEnum
+0x000443d4 0x00020494 SET_32 IPHLPAPI.DLL_GetAdaptersAddresses
+0x000443f8 0x0002049c SET_32 msvcrt.dll__errno
+0x00044410 0x000204a4 SET_32 VERSION.dll_VerQueryValueW
+0x80000006 0x00020484 SET_32 OLEAUT32.dll_SysStringLen
+0x80000014 0x0002046c SET_32 WS2_32.dll_sendto
+
+
+19 relocations
+136704
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

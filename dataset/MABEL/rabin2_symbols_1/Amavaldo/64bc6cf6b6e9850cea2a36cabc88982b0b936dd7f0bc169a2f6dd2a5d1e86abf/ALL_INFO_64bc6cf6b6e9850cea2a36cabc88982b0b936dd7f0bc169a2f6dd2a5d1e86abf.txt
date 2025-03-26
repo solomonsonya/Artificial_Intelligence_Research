@@ -1,0 +1,279 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x600 0x00401000  0x1000 -r-x .text
+1   0x00000a00  0x600 0x00402000  0x1000 -r-- .rdata
+2   0x00000000    0x0 0x00403000  0x1000 -rw- .data
+3   0x00001000  0x600 0x00404000  0x1000 -r-- .rsrc
+4   0x00001600  0x200 0x00405000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004014b9 paddr=0x000008b9 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00402000 NONE FUNC KERNEL32.dll LocalFree
+2   0x00402004 NONE FUNC KERNEL32.dll ExitProcess
+3   0x00402008 NONE FUNC KERNEL32.dll RaiseException
+1   0x00402030 NONE FUNC ole32.dll    CoCreateInstance
+2   0x00402034 NONE FUNC ole32.dll    CoInitializeSecurity
+3   0x00402038 NONE FUNC ole32.dll    CoInitializeEx
+4   0x0040203c NONE FUNC ole32.dll    CoUninitialize
+5   0x00402040 NONE FUNC ole32.dll    CoSetProxyBlanket
+7   0x00402010 NONE FUNC OLEAUT32.dll VariantInit
+4   0x00402014 NONE FUNC OLEAUT32.dll SysReAllocStringLen
+314 0x00402018 NONE FUNC OLEAUT32.dll VarR8Pow
+9   0x0040201c NONE FUNC OLEAUT32.dll VariantCopy
+8   0x00402020 NONE FUNC OLEAUT32.dll VariantClear
+2   0x00402024 NONE FUNC OLEAUT32.dll SysReAllocString
+6   0x00402028 NONE FUNC OLEAUT32.dll SysStringLen
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000a00 0x00402000 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+2   0x00000a04 0x00402004 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+3   0x00000a08 0x00402008 NONE FUNC 0    KERNEL32.dll imp.RaiseException
+1   0x00000a30 0x00402030 NONE FUNC 0    ole32.dll    imp.CoCreateInstance
+2   0x00000a34 0x00402034 NONE FUNC 0    ole32.dll    imp.CoInitializeSecurity
+3   0x00000a38 0x00402038 NONE FUNC 0    ole32.dll    imp.CoInitializeEx
+4   0x00000a3c 0x0040203c NONE FUNC 0    ole32.dll    imp.CoUninitialize
+5   0x00000a40 0x00402040 NONE FUNC 0    ole32.dll    imp.CoSetProxyBlanket
+7   0x00000a10 0x00402010 NONE FUNC 0    OLEAUT32.dll imp.VariantInit
+4   0x00000a14 0x00402014 NONE FUNC 0    OLEAUT32.dll imp.SysReAllocStringLen
+314 0x00000a18 0x00402018 NONE FUNC 0    OLEAUT32.dll imp.VarR8Pow
+9   0x00000a1c 0x0040201c NONE FUNC 0    OLEAUT32.dll imp.VariantCopy
+8   0x00000a20 0x00402020 NONE FUNC 0    OLEAUT32.dll imp.VariantClear
+2   0x00000a24 0x00402024 NONE FUNC 0    OLEAUT32.dll imp.SysReAllocString
+6   0x00000a28 0x00402028 NONE FUNC 0    OLEAUT32.dll imp.SysStringLen
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000a8d 0x0040208d 5   6    .rdata  ascii   <5IkQ
+1   0x00000b1e 0x0040211e 4   5    .rdata  ascii   s1q4
+2   0x00000b5d 0x0040215d 5   6    .rdata  ascii   <5IkQ
+3   0x00000b7d 0x0040217d 5   6    .rdata  ascii   <5IkQ
+4   0x00000c4c 0x0040224c 5   12   .rdata  utf16le A M I
+5   0x00000c58 0x00402258 6   14   .rdata  utf16le VRTUAL
+6   0x00000c68 0x00402268 15  32   .rdata  utf16le Virtual Machine
+7   0x00000c88 0x00402288 21  44   .rdata  utf16le Microsoft Corporation
+8   0x00000cb4 0x004022b4 10  22   .rdata  utf16le VirtualBox
+9   0x00000ccc 0x004022cc 12  26   .rdata  utf16le innotek GmbH
+10  0x00000ce8 0x004022e8 23  48   .rdata  utf16le VMware Virtual Platform
+11  0x00000d18 0x00402318 12  26   .rdata  utf16le VMware, Inc.
+12  0x00000d78 0x00402378 10  22   .rdata  utf16le ROOT\CIMV2
+13  0x00000d90 0x00402390 34  70   .rdata  utf16le SELECT * FROM Win32_ComputerSystem
+14  0x00000de0 0x004023e0 12  26   .rdata  utf16le Manufacturer
+15  0x00000dfc 0x004023fc 5   12   .rdata  utf16le Model
+16  0x00000e08 0x00402408 24  50   .rdata  utf16le SELECT * FROM Win32_BIOS
+17  0x00000e3c 0x0040243c 7   16   .rdata  utf16le Version
+18  0x00000e4c 0x0040244c 5   6    .rdata  ascii   RSDST
+19  0x00000e64 0x00402464 46  47   .rdata  ascii   C:\Branch\win\Release\custact\x86\vmdetect.pdb
+20  0x00000f2e 0x0040252e 14  15   .rdata  ascii   RaiseException
+21  0x00000f40 0x00402540 9   10   .rdata  ascii   LocalFree
+22  0x00000f4c 0x0040254c 11  12   .rdata  ascii   ExitProcess
+23  0x00000f58 0x00402558 12  13   .rdata  ascii   KERNEL32.dll
+24  0x00000f68 0x00402568 14  15   .rdata  ascii   CoUninitialize
+25  0x00000f7a 0x0040257a 14  15   .rdata  ascii   CoInitializeEx
+26  0x00000f8c 0x0040258c 20  21   .rdata  ascii   CoInitializeSecurity
+27  0x00000fa4 0x004025a4 16  17   .rdata  ascii   CoCreateInstance
+28  0x00000fb8 0x004025b8 17  18   .rdata  ascii   CoSetProxyBlanket
+29  0x00000fca 0x004025ca 9   10   .rdata  ascii   ole32.dll
+30  0x00000fd4 0x004025d4 12  13   .rdata  ascii   OLEAUT32.dll
+0   0x000010a6 0x004040a6 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00001102 0x00404102 14  30   .rsrc   utf16le StringFileInfo
+2   0x00001126 0x00404126 8   18   .rsrc   utf16le 040904b0
+3   0x0000113e 0x0040413e 11  24   .rsrc   utf16le CompanyName
+4   0x00001158 0x00404158 11  24   .rsrc   utf16le Caphyon LTD
+5   0x00001176 0x00404176 15  32   .rsrc   utf16le FileDescription
+6   0x00001198 0x00404198 55  112  .rsrc   utf16le Executable that detects if running in a virtual machine
+7   0x0000120e 0x0040420e 11  24   .rsrc   utf16le FileVersion
+8   0x00001228 0x00404228 8   18   .rsrc   utf16le 12.2.1.0
+9   0x00001242 0x00404242 12  26   .rsrc   utf16le InternalName
+10  0x0000125c 0x0040425c 12  26   .rsrc   utf16le vmdetect.exe
+11  0x0000127e 0x0040427e 14  30   .rsrc   utf16le LegalCopyright
+12  0x0000129c 0x0040429c 37  76   .rsrc   utf16le (c) Caphyon LTD. All rights reserved.
+13  0x000012ee 0x004042ee 16  34   .rsrc   utf16le OriginalFilename
+14  0x00001310 0x00404310 12  26   .rsrc   utf16le vmdetect.exe
+15  0x00001332 0x00404332 11  24   .rsrc   utf16le ProductName
+16  0x0000134c 0x0040434c 18  38   .rsrc   utf16le Advanced Installer
+17  0x0000137a 0x0040437a 14  30   .rsrc   utf16le ProductVersion
+18  0x00001398 0x00404398 8   18   .rsrc   utf16le 12.2.1.0
+19  0x000013b4 0x004043b4 10  22   .rsrc   utf16le arFileInfo
+20  0x000013d2 0x004043d2 11  24   .rsrc   utf16le Translation
+21  0x000013f0 0x004043f0 528 528  .rsrc   ascii   <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>PAPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+arch     x86
+baddr    0x400000
+binsz    13112
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001331b
+compiled Mon Jun 29 10:08:02 2015
+crypto   false
+dbg_file C:\Branch\win\Release\custact\x86\vmdetect.pdb
+endian   little
+havecode true
+hdr.csum 0x0001331b
+guid     7318AF5458E3445AAED8AA8C9ED3F3FE1
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x55911902
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x600
+  SizeOfInitializedData : 0xe00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x14b9
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x6000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x1331b
+  Subsystem : 0x2
+  DllCharacteristics : 0x8540
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 148 Name: Cvtres900 Version: 21022 Times: 1
+  Product: 138 Name: Utc1500_LTCG_CPP Version: 30729 Times: 3
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 16
+  Product: 147 Name: Implib900 Version: 30729 Times: 7
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2494
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x4000
+  Size : 0x54c
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x1800
+  Size : 0x1b38
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x5000
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x2050
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+ole32.dll
+oleaut32.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000252c 0x00000a08 SET_32 KERNEL32.dll_RaiseException
+0x0000253e 0x00000a00 SET_32 KERNEL32.dll_LocalFree
+0x0000254a 0x00000a04 SET_32 KERNEL32.dll_ExitProcess
+0x00002566 0x00000a3c SET_32 ole32.dll_CoUninitialize
+0x00002578 0x00000a38 SET_32 ole32.dll_CoInitializeEx
+0x0000258a 0x00000a34 SET_32 ole32.dll_CoInitializeSecurity
+0x000025a2 0x00000a30 SET_32 ole32.dll_CoCreateInstance
+0x000025b6 0x00000a40 SET_32 ole32.dll_CoSetProxyBlanket
+0x80000002 0x00000a24 SET_32 OLEAUT32.dll_SysReAllocString
+0x80000004 0x00000a14 SET_32 OLEAUT32.dll_SysReAllocStringLen
+0x80000006 0x00000a28 SET_32 OLEAUT32.dll_SysStringLen
+0x80000007 0x00000a10 SET_32 OLEAUT32.dll_VariantInit
+0x80000008 0x00000a20 SET_32 OLEAUT32.dll_VariantClear
+0x80000009 0x00000a1c SET_32 OLEAUT32.dll_VariantCopy
+0x8000013a 0x00000a18 SET_32 OLEAUT32.dll_VarR8Pow
+
+
+15 relocations
+13112
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 12.2.1.0
+  ProductVersion: 12.2.1.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Caphyon LTD
+  FileDescription: Executable that detects if running in a virtual machine
+  FileVersion: 12.2.1.0
+  InternalName: vmdetect.exe
+  LegalCopyright: (c) Caphyon LTD. All rights reserved.
+  OriginalFilename: vmdetect.exe
+  ProductName: Advanced Installer
+  ProductVersion: 12.2.1.0
+Section to Segment mapping:
+Segment Section
+---------------
+
+

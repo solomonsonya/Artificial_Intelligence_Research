@@ -1,0 +1,624 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x12e00 0x01001000  0x13000 -r-x .text
+1   0x00013200    0x600 0x01014000   0x1000 -rw- .data
+2   0x00013800    0x800 0x01015000   0x1000 -r-- .rsrc
+3   0x00014000   0x1200 0x01016000   0x2000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x01011c89 paddr=0x00011089 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x0100341f paddr=0x0000281f
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x01001000 NONE FUNC ADVAPI32.dll TraceMessage
+2   0x01001004 NONE FUNC ADVAPI32.dll GetTraceEnableFlags
+3   0x01001008 NONE FUNC ADVAPI32.dll GetTraceEnableLevel
+4   0x0100100c NONE FUNC ADVAPI32.dll GetTraceLoggerHandle
+5   0x01001010 NONE FUNC ADVAPI32.dll RegisterTraceGuidsW
+6   0x01001014 NONE FUNC ADVAPI32.dll UnregisterTraceGuids
+7   0x01001018 NONE FUNC ADVAPI32.dll EventRegister
+8   0x0100101c NONE FUNC ADVAPI32.dll EventUnregister
+9   0x01001020 NONE FUNC ADVAPI32.dll RegDeleteKeyValueW
+10  0x01001024 NONE FUNC ADVAPI32.dll RegGetValueW
+11  0x01001028 NONE FUNC ADVAPI32.dll RegSetKeyValueW
+12  0x0100102c NONE FUNC ADVAPI32.dll RegCloseKey
+13  0x01001030 NONE FUNC ADVAPI32.dll RegEnumKeyExW
+14  0x01001034 NONE FUNC ADVAPI32.dll RegOpenKeyExW
+15  0x01001038 NONE FUNC ADVAPI32.dll RegEnumValueW
+16  0x0100103c NONE FUNC ADVAPI32.dll EventWrite
+1   0x01001074 NONE FUNC KERNEL32.dll GlobalAlloc
+2   0x01001078 NONE FUNC KERNEL32.dll AcquireSRWLockShared
+3   0x0100107c NONE FUNC KERNEL32.dll ReleaseSRWLockShared
+4   0x01001080 NONE FUNC KERNEL32.dll GetComputerNameExW
+5   0x01001084 NONE FUNC KERNEL32.dll SetThreadpoolTimer
+6   0x01001088 NONE FUNC KERNEL32.dll CloseThreadpoolTimer
+7   0x0100108c NONE FUNC KERNEL32.dll WaitForThreadpoolTimerCallbacks
+8   0x01001090 NONE FUNC KERNEL32.dll CloseThreadpoolWork
+9   0x01001094 NONE FUNC KERNEL32.dll WaitForThreadpoolWorkCallbacks
+10  0x01001098 NONE FUNC KERNEL32.dll ResetEvent
+11  0x0100109c NONE FUNC KERNEL32.dll SubmitThreadpoolWork
+12  0x010010a0 NONE FUNC KERNEL32.dll CreateThreadpoolWork
+13  0x010010a4 NONE FUNC KERNEL32.dll GlobalFree
+14  0x010010a8 NONE FUNC KERNEL32.dll ReadFile
+15  0x010010ac NONE FUNC KERNEL32.dll WriteFile
+16  0x010010b0 NONE FUNC KERNEL32.dll SetFilePointerEx
+17  0x010010b4 NONE FUNC KERNEL32.dll GetFileSizeEx
+18  0x010010b8 NONE FUNC KERNEL32.dll WaitForSingleObject
+19  0x010010bc NONE FUNC KERNEL32.dll GetCurrentProcess
+20  0x010010c0 NONE FUNC KERNEL32.dll CreateFileW
+21  0x010010c4 NONE FUNC KERNEL32.dll InterlockedIncrement
+22  0x010010c8 NONE FUNC KERNEL32.dll InterlockedDecrement
+23  0x010010cc NONE FUNC KERNEL32.dll SetEvent
+24  0x010010d0 NONE FUNC KERNEL32.dll CloseHandle
+25  0x010010d4 NONE FUNC KERNEL32.dll ReleaseSRWLockExclusive
+26  0x010010d8 NONE FUNC KERNEL32.dll AcquireSRWLockExclusive
+27  0x010010dc NONE FUNC KERNEL32.dll InitializeSRWLock
+28  0x010010e0 NONE FUNC KERNEL32.dll DuplicateHandle
+29  0x010010e4 NONE FUNC KERNEL32.dll GetTickCount
+30  0x010010e8 NONE FUNC KERNEL32.dll CreateEventW
+31  0x010010ec NONE FUNC KERNEL32.dll CreateThreadpoolTimer
+32  0x010010f0 NONE FUNC KERNEL32.dll GetLastError
+33  0x010010f4 NONE FUNC KERNEL32.dll InterlockedExchange
+34  0x010010f8 NONE FUNC KERNEL32.dll MultiByteToWideChar
+35  0x010010fc NONE FUNC KERNEL32.dll GetSystemFirmwareTable
+36  0x01001100 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+37  0x01001104 NONE FUNC KERNEL32.dll TerminateProcess
+38  0x01001108 NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+39  0x0100110c NONE FUNC KERNEL32.dll GetCurrentProcessId
+40  0x01001110 NONE FUNC KERNEL32.dll GetCurrentThreadId
+41  0x01001114 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+42  0x01001118 NONE FUNC KERNEL32.dll Sleep
+43  0x0100111c NONE FUNC KERNEL32.dll GetModuleHandleA
+44  0x01001120 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+45  0x01001124 NONE FUNC KERNEL32.dll GetStartupInfoA
+46  0x01001128 NONE FUNC KERNEL32.dll InterlockedCompareExchange
+1   0x01001138 NONE FUNC USER32.dll   GetDisplayConfigBufferSizes
+2   0x0100113c NONE FUNC USER32.dll   DisplayConfigGetDeviceInfo
+3   0x01001140 NONE FUNC USER32.dll   QueryDisplayConfig
+1   0x01001170 NONE FUNC msvcrt.dll   __set_app_type
+2   0x01001174 NONE FUNC msvcrt.dll   free
+3   0x01001178 NONE FUNC msvcrt.dll   _purecall
+4   0x0100117c NONE FUNC msvcrt.dll   malloc
+5   0x01001180 NONE FUNC msvcrt.dll   memset
+6   0x01001184 NONE FUNC msvcrt.dll   qsort
+7   0x01001188 NONE FUNC msvcrt.dll   _wcsnicmp
+8   0x0100118c NONE FUNC msvcrt.dll   wcsstr
+9   0x01001190 NONE FUNC msvcrt.dll   _wcsicmp
+10  0x01001194 NONE FUNC msvcrt.dll   _vsnwprintf
+11  0x01001198 NONE FUNC msvcrt.dll   __RTDynamicCast
+12  0x0100119c NONE FUNC msvcrt.dll   wcschr
+13  0x010011a0 NONE FUNC msvcrt.dll   memcpy
+14  0x010011a4 NONE FUNC msvcrt.dll   _callnewh
+15  0x010011a8 NONE FUNC msvcrt.dll   __getmainargs
+16  0x010011ac NONE FUNC msvcrt.dll   _cexit
+17  0x010011b0 NONE FUNC msvcrt.dll   _controlfp
+18  0x010011b4 NONE FUNC msvcrt.dll   _except_handler4_common
+19  0x010011b8 NONE FUNC msvcrt.dll   sym.imp.void __cdecl terminate(void)
+20  0x010011bc NONE FUNC msvcrt.dll   sym.imp.public virtual: void __thiscall type_info::~destructor(void)
+21  0x010011c0 NONE FUNC msvcrt.dll   _ismbblead
+22  0x010011c4 NONE FUNC msvcrt.dll   __p__fmode
+23  0x010011c8 NONE FUNC msvcrt.dll   __p__commode
+24  0x010011cc NONE FUNC msvcrt.dll   __setusermatherr
+25  0x010011d0 NONE FUNC msvcrt.dll   _amsg_exit
+26  0x010011d4 NONE FUNC msvcrt.dll   _initterm
+27  0x010011d8 NONE FUNC msvcrt.dll   _acmdln
+28  0x010011dc NONE FUNC msvcrt.dll   exit
+29  0x010011e0 NONE FUNC msvcrt.dll   _XcptFilter
+30  0x010011e4 NONE FUNC msvcrt.dll   _exit
+1   0x010011ec NONE FUNC ole32.dll    CoAddRefServerProcess
+2   0x010011f0 NONE FUNC ole32.dll    CoReleaseServerProcess
+3   0x010011f4 NONE FUNC ole32.dll    CoUninitialize
+4   0x010011f8 NONE FUNC ole32.dll    CLSIDFromString
+5   0x010011fc NONE FUNC ole32.dll    IIDFromString
+6   0x01001200 NONE FUNC ole32.dll    StringFromIID
+7   0x01001204 NONE FUNC ole32.dll    StringFromGUID2
+8   0x01001208 NONE FUNC ole32.dll    CoTaskMemFree
+9   0x0100120c NONE FUNC ole32.dll    CoTaskMemAlloc
+10  0x01001210 NONE FUNC ole32.dll    PropVariantClear
+11  0x01001214 NONE FUNC ole32.dll    CreateStreamOnHGlobal
+12  0x01001218 NONE FUNC ole32.dll    CoCreateInstance
+13  0x0100121c NONE FUNC ole32.dll    CoInitializeEx
+14  0x01001220 NONE FUNC ole32.dll    CoRegisterClassObject
+15  0x01001224 NONE FUNC ole32.dll    CoRevokeClassObject
+1   0x01001044 NONE FUNC DEVOBJ.dll   DevObjGetDeviceProperty
+2   0x01001048 NONE FUNC DEVOBJ.dll   DevObjOpenDeviceInfo
+3   0x0100104c NONE FUNC DEVOBJ.dll   DevObjCreateDeviceInfoList
+4   0x01001050 NONE FUNC DEVOBJ.dll   DevObjDestroyDeviceInfoList
+1   0x01001130 NONE FUNC PROPSYS.dll  PSPropertyKeyFromString
+1   0x01001058 NONE FUNC DMRC.dll     DMrcQueryModelId
+2   0x0100105c NONE FUNC DMRC.dll     DMrcGetProperties
+3   0x01001060 NONE FUNC DMRC.dll     DMrcQueryClose
+4   0x01001064 NONE FUNC DMRC.dll     DMrcInit
+5   0x01001068 NONE FUNC DMRC.dll     DMrcExit
+6   0x0100106c NONE FUNC DMRC.dll     DMrcQueryHardwareId
+1   0x01001148 NONE FUNC XmlLite.dll  CreateXmlReader
+1   0x01001150 NONE FUNC bcrypt.dll   BCryptDestroyHash
+2   0x01001154 NONE FUNC bcrypt.dll   BCryptCloseAlgorithmProvider
+3   0x01001158 NONE FUNC bcrypt.dll   BCryptOpenAlgorithmProvider
+4   0x0100115c NONE FUNC bcrypt.dll   BCryptFinishHash
+5   0x01001160 NONE FUNC bcrypt.dll   BCryptGetProperty
+6   0x01001164 NONE FUNC bcrypt.dll   BCryptCreateHash
+7   0x01001168 NONE FUNC bcrypt.dll   BCryptHashData
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000400 0x01001000 NONE FUNC 0    ADVAPI32.dll imp.TraceMessage
+2   0x00000404 0x01001004 NONE FUNC 0    ADVAPI32.dll imp.GetTraceEnableFlags
+3   0x00000408 0x01001008 NONE FUNC 0    ADVAPI32.dll imp.GetTraceEnableLevel
+4   0x0000040c 0x0100100c NONE FUNC 0    ADVAPI32.dll imp.GetTraceLoggerHandle
+5   0x00000410 0x01001010 NONE FUNC 0    ADVAPI32.dll imp.RegisterTraceGuidsW
+6   0x00000414 0x01001014 NONE FUNC 0    ADVAPI32.dll imp.UnregisterTraceGuids
+7   0x00000418 0x01001018 NONE FUNC 0    ADVAPI32.dll imp.EventRegister
+8   0x0000041c 0x0100101c NONE FUNC 0    ADVAPI32.dll imp.EventUnregister
+9   0x00000420 0x01001020 NONE FUNC 0    ADVAPI32.dll imp.RegDeleteKeyValueW
+10  0x00000424 0x01001024 NONE FUNC 0    ADVAPI32.dll imp.RegGetValueW
+11  0x00000428 0x01001028 NONE FUNC 0    ADVAPI32.dll imp.RegSetKeyValueW
+12  0x0000042c 0x0100102c NONE FUNC 0    ADVAPI32.dll imp.RegCloseKey
+13  0x00000430 0x01001030 NONE FUNC 0    ADVAPI32.dll imp.RegEnumKeyExW
+14  0x00000434 0x01001034 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExW
+15  0x00000438 0x01001038 NONE FUNC 0    ADVAPI32.dll imp.RegEnumValueW
+16  0x0000043c 0x0100103c NONE FUNC 0    ADVAPI32.dll imp.EventWrite
+1   0x00000474 0x01001074 NONE FUNC 0    KERNEL32.dll imp.GlobalAlloc
+2   0x00000478 0x01001078 NONE FUNC 0    KERNEL32.dll imp.AcquireSRWLockShared
+3   0x0000047c 0x0100107c NONE FUNC 0    KERNEL32.dll imp.ReleaseSRWLockShared
+4   0x00000480 0x01001080 NONE FUNC 0    KERNEL32.dll imp.GetComputerNameExW
+5   0x00000484 0x01001084 NONE FUNC 0    KERNEL32.dll imp.SetThreadpoolTimer
+6   0x00000488 0x01001088 NONE FUNC 0    KERNEL32.dll imp.CloseThreadpoolTimer
+7   0x0000048c 0x0100108c NONE FUNC 0    KERNEL32.dll imp.WaitForThreadpoolTimerCallbacks
+8   0x00000490 0x01001090 NONE FUNC 0    KERNEL32.dll imp.CloseThreadpoolWork
+9   0x00000494 0x01001094 NONE FUNC 0    KERNEL32.dll imp.WaitForThreadpoolWorkCallbacks
+10  0x00000498 0x01001098 NONE FUNC 0    KERNEL32.dll imp.ResetEvent
+11  0x0000049c 0x0100109c NONE FUNC 0    KERNEL32.dll imp.SubmitThreadpoolWork
+12  0x000004a0 0x010010a0 NONE FUNC 0    KERNEL32.dll imp.CreateThreadpoolWork
+13  0x000004a4 0x010010a4 NONE FUNC 0    KERNEL32.dll imp.GlobalFree
+14  0x000004a8 0x010010a8 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+15  0x000004ac 0x010010ac NONE FUNC 0    KERNEL32.dll imp.WriteFile
+16  0x000004b0 0x010010b0 NONE FUNC 0    KERNEL32.dll imp.SetFilePointerEx
+17  0x000004b4 0x010010b4 NONE FUNC 0    KERNEL32.dll imp.GetFileSizeEx
+18  0x000004b8 0x010010b8 NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+19  0x000004bc 0x010010bc NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+20  0x000004c0 0x010010c0 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+21  0x000004c4 0x010010c4 NONE FUNC 0    KERNEL32.dll imp.InterlockedIncrement
+22  0x000004c8 0x010010c8 NONE FUNC 0    KERNEL32.dll imp.InterlockedDecrement
+23  0x000004cc 0x010010cc NONE FUNC 0    KERNEL32.dll imp.SetEvent
+24  0x000004d0 0x010010d0 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+25  0x000004d4 0x010010d4 NONE FUNC 0    KERNEL32.dll imp.ReleaseSRWLockExclusive
+26  0x000004d8 0x010010d8 NONE FUNC 0    KERNEL32.dll imp.AcquireSRWLockExclusive
+27  0x000004dc 0x010010dc NONE FUNC 0    KERNEL32.dll imp.InitializeSRWLock
+28  0x000004e0 0x010010e0 NONE FUNC 0    KERNEL32.dll imp.DuplicateHandle
+29  0x000004e4 0x010010e4 NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+30  0x000004e8 0x010010e8 NONE FUNC 0    KERNEL32.dll imp.CreateEventW
+31  0x000004ec 0x010010ec NONE FUNC 0    KERNEL32.dll imp.CreateThreadpoolTimer
+32  0x000004f0 0x010010f0 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+33  0x000004f4 0x010010f4 NONE FUNC 0    KERNEL32.dll imp.InterlockedExchange
+34  0x000004f8 0x010010f8 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+35  0x000004fc 0x010010fc NONE FUNC 0    KERNEL32.dll imp.GetSystemFirmwareTable
+36  0x00000500 0x01001100 NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+37  0x00000504 0x01001104 NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+38  0x00000508 0x01001108 NONE FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+39  0x0000050c 0x0100110c NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+40  0x00000510 0x01001110 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+41  0x00000514 0x01001114 NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+42  0x00000518 0x01001118 NONE FUNC 0    KERNEL32.dll imp.Sleep
+43  0x0000051c 0x0100111c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+44  0x00000520 0x01001120 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+45  0x00000524 0x01001124 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+46  0x00000528 0x01001128 NONE FUNC 0    KERNEL32.dll imp.InterlockedCompareExchange
+1   0x00000538 0x01001138 NONE FUNC 0    USER32.dll   imp.GetDisplayConfigBufferSizes
+2   0x0000053c 0x0100113c NONE FUNC 0    USER32.dll   imp.DisplayConfigGetDeviceInfo
+3   0x00000540 0x01001140 NONE FUNC 0    USER32.dll   imp.QueryDisplayConfig
+1   0x00000570 0x01001170 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+2   0x00000574 0x01001174 NONE FUNC 0    msvcrt.dll   imp.free
+3   0x00000578 0x01001178 NONE FUNC 0    msvcrt.dll   imp._purecall
+4   0x0000057c 0x0100117c NONE FUNC 0    msvcrt.dll   imp.malloc
+5   0x00000580 0x01001180 NONE FUNC 0    msvcrt.dll   imp.memset
+6   0x00000584 0x01001184 NONE FUNC 0    msvcrt.dll   imp.qsort
+7   0x00000588 0x01001188 NONE FUNC 0    msvcrt.dll   imp._wcsnicmp
+8   0x0000058c 0x0100118c NONE FUNC 0    msvcrt.dll   imp.wcsstr
+9   0x00000590 0x01001190 NONE FUNC 0    msvcrt.dll   imp._wcsicmp
+10  0x00000594 0x01001194 NONE FUNC 0    msvcrt.dll   imp._vsnwprintf
+11  0x00000598 0x01001198 NONE FUNC 0    msvcrt.dll   imp.__RTDynamicCast
+12  0x0000059c 0x0100119c NONE FUNC 0    msvcrt.dll   imp.wcschr
+13  0x000005a0 0x010011a0 NONE FUNC 0    msvcrt.dll   imp.memcpy
+14  0x000005a4 0x010011a4 NONE FUNC 0    msvcrt.dll   imp._callnewh
+15  0x000005a8 0x010011a8 NONE FUNC 0    msvcrt.dll   imp.__getmainargs
+16  0x000005ac 0x010011ac NONE FUNC 0    msvcrt.dll   imp._cexit
+17  0x000005b0 0x010011b0 NONE FUNC 0    msvcrt.dll   imp._controlfp
+18  0x000005b4 0x010011b4 NONE FUNC 0    msvcrt.dll   imp._except_handler4_common
+19  0x000005b8 0x010011b8 NONE FUNC 0    msvcrt.dll   void __cdecl terminate(void)
+20  0x000005bc 0x010011bc NONE FUNC 0    msvcrt.dll   public virtual: void __thiscall type_info::~destructor(void)
+21  0x000005c0 0x010011c0 NONE FUNC 0    msvcrt.dll   imp._ismbblead
+22  0x000005c4 0x010011c4 NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+23  0x000005c8 0x010011c8 NONE FUNC 0    msvcrt.dll   imp.__p__commode
+24  0x000005cc 0x010011cc NONE FUNC 0    msvcrt.dll   imp.__setusermatherr
+25  0x000005d0 0x010011d0 NONE FUNC 0    msvcrt.dll   imp._amsg_exit
+26  0x000005d4 0x010011d4 NONE FUNC 0    msvcrt.dll   imp._initterm
+27  0x000005d8 0x010011d8 NONE FUNC 0    msvcrt.dll   imp._acmdln
+28  0x000005dc 0x010011dc NONE FUNC 0    msvcrt.dll   imp.exit
+29  0x000005e0 0x010011e0 NONE FUNC 0    msvcrt.dll   imp._XcptFilter
+30  0x000005e4 0x010011e4 NONE FUNC 0    msvcrt.dll   imp._exit
+1   0x000005ec 0x010011ec NONE FUNC 0    ole32.dll    imp.CoAddRefServerProcess
+2   0x000005f0 0x010011f0 NONE FUNC 0    ole32.dll    imp.CoReleaseServerProcess
+3   0x000005f4 0x010011f4 NONE FUNC 0    ole32.dll    imp.CoUninitialize
+4   0x000005f8 0x010011f8 NONE FUNC 0    ole32.dll    imp.CLSIDFromString
+5   0x000005fc 0x010011fc NONE FUNC 0    ole32.dll    imp.IIDFromString
+6   0x00000600 0x01001200 NONE FUNC 0    ole32.dll    imp.StringFromIID
+7   0x00000604 0x01001204 NONE FUNC 0    ole32.dll    imp.StringFromGUID2
+8   0x00000608 0x01001208 NONE FUNC 0    ole32.dll    imp.CoTaskMemFree
+9   0x0000060c 0x0100120c NONE FUNC 0    ole32.dll    imp.CoTaskMemAlloc
+10  0x00000610 0x01001210 NONE FUNC 0    ole32.dll    imp.PropVariantClear
+11  0x00000614 0x01001214 NONE FUNC 0    ole32.dll    imp.CreateStreamOnHGlobal
+12  0x00000618 0x01001218 NONE FUNC 0    ole32.dll    imp.CoCreateInstance
+13  0x0000061c 0x0100121c NONE FUNC 0    ole32.dll    imp.CoInitializeEx
+14  0x00000620 0x01001220 NONE FUNC 0    ole32.dll    imp.CoRegisterClassObject
+15  0x00000624 0x01001224 NONE FUNC 0    ole32.dll    imp.CoRevokeClassObject
+1   0x00000444 0x01001044 NONE FUNC 0    DEVOBJ.dll   imp.DevObjGetDeviceProperty
+2   0x00000448 0x01001048 NONE FUNC 0    DEVOBJ.dll   imp.DevObjOpenDeviceInfo
+3   0x0000044c 0x0100104c NONE FUNC 0    DEVOBJ.dll   imp.DevObjCreateDeviceInfoList
+4   0x00000450 0x01001050 NONE FUNC 0    DEVOBJ.dll   imp.DevObjDestroyDeviceInfoList
+1   0x00000530 0x01001130 NONE FUNC 0    PROPSYS.dll  imp.PSPropertyKeyFromString
+1   0x00000458 0x01001058 NONE FUNC 0    DMRC.dll     imp.DMrcQueryModelId
+2   0x0000045c 0x0100105c NONE FUNC 0    DMRC.dll     imp.DMrcGetProperties
+3   0x00000460 0x01001060 NONE FUNC 0    DMRC.dll     imp.DMrcQueryClose
+4   0x00000464 0x01001064 NONE FUNC 0    DMRC.dll     imp.DMrcInit
+5   0x00000468 0x01001068 NONE FUNC 0    DMRC.dll     imp.DMrcExit
+6   0x0000046c 0x0100106c NONE FUNC 0    DMRC.dll     imp.DMrcQueryHardwareId
+1   0x00000548 0x01001148 NONE FUNC 0    XmlLite.dll  imp.CreateXmlReader
+1   0x00000550 0x01001150 NONE FUNC 0    bcrypt.dll   imp.BCryptDestroyHash
+2   0x00000554 0x01001154 NONE FUNC 0    bcrypt.dll   imp.BCryptCloseAlgorithmProvider
+3   0x00000558 0x01001158 NONE FUNC 0    bcrypt.dll   imp.BCryptOpenAlgorithmProvider
+4   0x0000055c 0x0100115c NONE FUNC 0    bcrypt.dll   imp.BCryptFinishHash
+5   0x00000560 0x01001160 NONE FUNC 0    bcrypt.dll   imp.BCryptGetProperty
+6   0x00000564 0x01001164 NONE FUNC 0    bcrypt.dll   imp.BCryptCreateHash
+7   0x00000568 0x01001168 NONE FUNC 0    bcrypt.dll   imp.BCryptHashData
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00013210 0x01014010 19  20   .data   ascii   .?AVTClassFactory@@
+1   0x0001322c 0x0101402c 19  20   .data   ascii   .?AUIClassFactory@@
+2   0x00013248 0x01014048 14  15   .data   ascii   .?AUIUnknown@@
+3   0x000132f4 0x010140f4 20  21   .data   ascii   .?AVTDisplayObject@@
+4   0x00013314 0x01014114 51  52   .data   ascii   .?AVTListEntry@?$TIntrusiveList@VTDisplayObject@@@@
+5   0x00013350 0x01014150 14  15   .data   ascii   .?AVTSRWLock@@
+6   0x00013368 0x01014168 21  22   .data   ascii   .?AVTDeviceFunction@@
+7   0x00013388 0x01014188 13  14   .data   ascii   .?AVTDevice@@
+8   0x00013414 0x01014214 21  22   .data   ascii   .?AVTComputerDevice@@
+9   0x00013434 0x01014234 29  30   .data   ascii   .?AVTDeviceFunctionCallback@@
+10  0x0001345c 0x0101425c 36  37   .data   ascii   .?AUIFunctionDiscoveryNotification@@
+11  0x0001348c 0x0101428c 18  19   .data   ascii   .?AVTDDOProvider@@
+12  0x000134a8 0x010142a8 49  50   .data   ascii   .?AVTListEntry@?$TIntrusiveList@VTDDOProvider@@@@
+13  0x000134e4 0x010142e4 32  33   .data   ascii   .?AUIFunctionDiscoveryProvider@@
+14  0x00013510 0x01014310 25  26   .data   ascii   .?AUIProviderProperties@@
+15  0x00013534 0x01014334 22  23   .data   ascii   .?AUIServiceProvider@@
+16  0x00013554 0x01014354 17  18   .data   ascii   .?AVTFileStream@@
+17  0x00013570 0x01014370 13  14   .data   ascii   .?AUIStream@@
+18  0x00013588 0x01014388 23  24   .data   ascii   .?AUISequentialStream@@
+19  0x000135b0 0x010143b0 23  24   .data   ascii   .?AVTProviderServices@@
+20  0x000135d0 0x010143d0 39  40   .data   ascii   .?AUIFunctionDiscoveryProviderRefresh@@
+0   0x000138a0 0x010150a0 675 676  .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<!-- Copyright (c) Microsoft Corporation -->\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <assemblyIdentity\r\n    version="1.0.0.0"\r\n    processorArchitecture="x86"\r\n    name="Microsoft.Windows.fdDDO"\r\n    type="win32"\r\n  />\r\n  <description>Device Display Object Function Discovery Provider</description>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel\r\n          level="asInvoker"\r\n          uiAccess="false"\r\n        />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+1   0x00013b4e 0x0101534e 15  32   .rsrc   utf16le VS_VERSION_INFO
+2   0x00013baa 0x010153aa 14  30   .rsrc   utf16le StringFileInfo
+3   0x00013bce 0x010153ce 8   18   .rsrc   utf16le 040904B0
+4   0x00013be6 0x010153e6 11  24   .rsrc   utf16le CompanyName
+5   0x00013c00 0x01015400 21  44   .rsrc   utf16le Microsoft Corporation
+6   0x00013c32 0x01015432 15  32   .rsrc   utf16le FileDescription
+7   0x00013c54 0x01015454 49  100  .rsrc   utf16le Device Display Object Function Discovery Provider
+8   0x00013cbe 0x010154be 11  24   .rsrc   utf16le FileVersion
+9   0x00013cd8 0x010154d8 37  76   .rsrc   utf16le 6.1.7600.16385 (win7_rtm.090713-1255)
+10  0x00013d2a 0x0101552a 12  26   .rsrc   utf16le InternalName
+11  0x00013d44 0x01015544 27  56   .rsrc   utf16le DeviceDisplayObjectProvider
+12  0x00013d82 0x01015582 14  30   .rsrc   utf16le LegalCopyright
+13  0x00013da2 0x010155a2 44  90   .rsrc   utf16le  Microsoft Corporation. All rights reserved.
+14  0x00013e02 0x01015602 16  34   .rsrc   utf16le OriginalFilename
+15  0x00013e24 0x01015624 31  64   .rsrc   utf16le DeviceDisplayObjectProvider.exe
+16  0x00013e6a 0x0101566a 11  24   .rsrc   utf16le ProductName
+17  0x00013e84 0x01015684 9   19   .rsrc   utf16le Microsoft
+18  0x00013e98 0x01015698 8   17   .rsrc   utf16le  Windows
+19  0x00013eaa 0x010156aa 17  36   .rsrc   utf16le  Operating System
+20  0x00013ed6 0x010156d6 14  30   .rsrc   utf16le ProductVersion
+21  0x00013ef4 0x010156f4 14  30   .rsrc   utf16le 6.1.7600.16385
+22  0x00013f1c 0x0101571c 10  22   .rsrc   utf16le arFileInfo
+23  0x00013f3a 0x0101573a 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x1000000
+binsz    86528
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00019f59
+compiled Mon Jul 13 23:24:04 2009
+crypto   false
+dbg_file DeviceDisplayObjectProvider.pdb
+endian   little
+havecode true
+hdr.csum 0x00019f59
+guid     9CF56B7BB77F4C818B268127FC9077C41
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x4a5bc214
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x12e00
+  SizeOfInitializedData : 0x2200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x11c89
+  BaseOfCode : 0x1000
+  BaseOfData : 0x14000
+  ImageBase : 0x1000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x6
+  MinorImageVersion : 0x1
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x18000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x19f59
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x40000
+  SizeOfStackCommit : 0x2000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 148 Name: Cvtres900 Version: 30729 Times: 1
+  Product: 132 Name: Utc1500_CPP Version: 30729 Times: 24
+  Product: 1 Name: Import0 Version: 0 Times: 133
+  Product: 147 Name: Implib900 Version: 30729 Times: 21
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 22
+  Product: 149 Name: Masm900 Version: 30729 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x130bc
+  Size : 0xdc
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x15000
+  Size : 0x758
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x16000
+  Size : 0xf18
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x1250
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x2928
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT
+  VirtualAddress : 0x278
+  Size : 0xe4
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x1000
+  Size : 0x22c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+kernel32.dll
+user32.dll
+msvcrt.dll
+ole32.dll
+devobj.dll
+propsys.dll
+dmrc.dll
+xmllite.dll
+bcrypt.dll
+
+10 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x05044110 0x0000044c SET_32 DEVOBJ.dll_DevObjCreateDeviceInfoList
+0x0504449e 0x00000450 SET_32 DEVOBJ.dll_DevObjDestroyDeviceInfoList
+0x05044ae8 0x00000448 SET_32 DEVOBJ.dll_DevObjOpenDeviceInfo
+0x05044f69 0x00000444 SET_32 DEVOBJ.dll_DevObjGetDeviceProperty
+0x096b526e 0x00000460 SET_32 DMRC.dll_DMrcQueryClose
+0x096b5378 0x0000045c SET_32 DMRC.dll_DMrcGetProperties
+0x096b65f7 0x00000468 SET_32 DMRC.dll_DMrcExit
+0x096b672b 0x00000458 SET_32 DMRC.dll_DMrcQueryModelId
+0x096b6970 0x0000046c SET_32 DMRC.dll_DMrcQueryHardwareId
+0x096b70b3 0x00000464 SET_32 DMRC.dll_DMrcInit
+0x09ec4679 0x00000548 SET_32 XmlLite.dll_CreateXmlReader
+0x1d31c3f2 0x00000530 SET_32 PROPSYS.dll_PSPropertyKeyFromString
+0x6d801a5f 0x00000550 SET_32 bcrypt.dll_BCryptDestroyHash
+0x6d801b0b 0x00000568 SET_32 bcrypt.dll_BCryptHashData
+0x6d801b44 0x0000055c SET_32 bcrypt.dll_BCryptFinishHash
+0x6d801b93 0x00000564 SET_32 bcrypt.dll_BCryptCreateHash
+0x6d801ca7 0x00000560 SET_32 bcrypt.dll_BCryptGetProperty
+0x6d802391 0x00000554 SET_32 bcrypt.dll_BCryptCloseAlgorithmProvider
+0x6d802cda 0x00000558 SET_32 bcrypt.dll_BCryptOpenAlgorithmProvider
+0x6ff59790 0x00000580 SET_32 msvcrt.dll_memset
+0x6ff59894 0x00000574 SET_32 msvcrt.dll_free
+0x6ff59910 0x000005a0 SET_32 msvcrt.dll_memcpy
+0x6ff59cee 0x0000057c SET_32 msvcrt.dll_malloc
+0x6ff5a9e9 0x00000590 SET_32 msvcrt.dll__wcsicmp
+0x6ff5aa61 0x0000059c SET_32 msvcrt.dll_wcschr
+0x6ff5aae3 0x00000588 SET_32 msvcrt.dll__wcsnicmp
+0x6ff5bbce 0x00000594 SET_32 msvcrt.dll__vsnwprintf
+0x6ff5bf71 0x0000058c SET_32 msvcrt.dll_wcsstr
+0x6ff5c151 0x000005d4 SET_32 msvcrt.dll__initterm
+0x6ff5d3e6 0x00000584 SET_32 msvcrt.dll_qsort
+0x6ff5e1e1 0x000005b0 SET_32 msvcrt.dll__controlfp
+0x6ff5f607 0x000005c0 SET_32 msvcrt.dll__ismbblead
+0x6ff627c3 0x000005c8 SET_32 msvcrt.dll___p__commode
+0x6ff627ce 0x000005c4 SET_32 msvcrt.dll___p__fmode
+0x6ff62804 0x00000570 SET_32 msvcrt.dll___set_app_type
+0x6ff62bc0 0x000005a8 SET_32 msvcrt.dll___getmainargs
+0x6ff636aa 0x000005dc SET_32 msvcrt.dll_exit
+0x6ff637d4 0x000005ac SET_32 msvcrt.dll__cexit
+0x6ff73e27 0x000005b4 SET_32 msvcrt.dll__except_handler4_common
+0x6ff74343 0x00000598 SET_32 msvcrt.dll___RTDynamicCast
+0x6ff7dc75 0x000005e0 SET_32 msvcrt.dll__XcptFilter
+0x6ffa61cf 0x000005b8 SET_32 msvcrt.dll_void __cdecl terminate(void)
+0x6ffa92b3 0x000005bc SET_32 msvcrt.dll_public virtual: void __thiscall type_info::~destructor(void)
+0x6ffabf91 0x000005a4 SET_32 msvcrt.dll__callnewh
+0x6ffb6ea9 0x00000578 SET_32 msvcrt.dll__purecall
+0x6ffbb2c0 0x000005e4 SET_32 msvcrt.dll__exit
+0x6ffbb2ef 0x000005d0 SET_32 msvcrt.dll__amsg_exit
+0x6ffe77ad 0x000005cc SET_32 msvcrt.dll___setusermatherr
+0x6fff04d8 0x000005d8 SET_32 msvcrt.dll__acmdln
+0x725511f5 0x00000620 SET_32 ole32.dll_CoRegisterClassObject
+0x725520f2 0x000005fc SET_32 ole32.dll_IIDFromString
+0x72552a75 0x00000624 SET_32 ole32.dll_CoRevokeClassObject
+0x7255336b 0x00000600 SET_32 ole32.dll_StringFromIID
+0x7255e30d 0x000005f8 SET_32 ole32.dll_CLSIDFromString
+0x72562404 0x00000614 SET_32 ole32.dll_CreateStreamOnHGlobal
+0x725807b8 0x00000604 SET_32 ole32.dll_StringFromGUID2
+0x72580804 0x0000061c SET_32 ole32.dll_CoInitializeEx
+0x725866b8 0x00000610 SET_32 ole32.dll_PropVariantClear
+0x725870c7 0x000005f4 SET_32 ole32.dll_CoUninitialize
+0x72594003 0x00000608 SET_32 ole32.dll_CoTaskMemFree
+0x72594054 0x0000060c SET_32 ole32.dll_CoTaskMemAlloc
+0x725957fc 0x00000618 SET_32 ole32.dll_CoCreateInstance
+0x7259c78d 0x000005ec SET_32 ole32.dll_CoAddRefServerProcess
+0x7259c8b3 0x000005f0 SET_32 ole32.dll_CoReleaseServerProcess
+0x77c718cb 0x00000424 SET_32 ADVAPI32.dll_RegGetValueW
+0x77c7bb65 0x00000430 SET_32 ADVAPI32.dll_RegEnumKeyExW
+0x77c7bb72 0x00000438 SET_32 ADVAPI32.dll_RegEnumValueW
+0x77c7bec4 0x00000434 SET_32 ADVAPI32.dll_RegOpenKeyExW
+0x77c7bed4 0x0000042c SET_32 ADVAPI32.dll_RegCloseKey
+0x77c8daf2 0x00000428 SET_32 ADVAPI32.dll_RegSetKeyValueW
+0x77cbdf33 0x00000420 SET_32 ADVAPI32.dll_RegDeleteKeyValueW
+0x77d15119 0x00000538 SET_32 USER32.dll_GetDisplayConfigBufferSizes
+0x77d15150 0x00000540 SET_32 USER32.dll_QueryDisplayConfig
+0x77d311aa 0x0000053c SET_32 USER32.dll_DisplayConfigGetDeviceInfo
+0x77de1df0 0x00000524 SET_32 KERNEL32.dll_GetStartupInfoA
+0x77e12269 0x000004fc SET_32 KERNEL32.dll_GetSystemFirmwareTable
+0x77e1e295 0x000004ec SET_32 KERNEL32.dll_CreateThreadpoolTimer
+0x77e1e425 0x000004a0 SET_32 KERNEL32.dll_CreateThreadpoolWork
+0x77e22a2a 0x000004b0 SET_32 KERNEL32.dll_SetFilePointerEx
+0x77e23c17 0x00000480 SET_32 KERNEL32.dll_GetComputerNameExW
+0x77e2509b 0x00000504 SET_32 KERNEL32.dll_TerminateProcess
+0x77e2ca51 0x000004b4 SET_32 KERNEL32.dll_GetFileSizeEx
+0x77e2d35c 0x00000474 SET_32 KERNEL32.dll_GlobalAlloc
+0x77e2d374 0x000004a4 SET_32 KERNEL32.dll_GlobalFree
+0x77e2daa9 0x000004a8 SET_32 KERNEL32.dll_ReadFile
+0x77e2ef66 0x00000518 SET_32 KERNEL32.dll_Sleep
+0x77e2ef76 0x000004e4 SET_32 KERNEL32.dll_GetTickCount
+0x77e2efa0 0x000004b8 SET_32 KERNEL32.dll_WaitForSingleObject
+0x77e2f15b 0x000004c8 SET_32 KERNEL32.dll_InterlockedDecrement
+0x77e2f176 0x000004f0 SET_32 KERNEL32.dll_GetLastError
+0x77e2f188 0x000004c4 SET_32 KERNEL32.dll_InterlockedIncrement
+0x77e2f212 0x00000510 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x77e2f224 0x00000498 SET_32 KERNEL32.dll_ResetEvent
+0x77e2f23c 0x00000528 SET_32 KERNEL32.dll_InterlockedCompareExchange
+0x77e2f25e 0x000004f4 SET_32 KERNEL32.dll_InterlockedExchange
+0x77e2f26e 0x000004cc SET_32 KERNEL32.dll_SetEvent
+0x77e2f2a7 0x00000514 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x77e2fe44 0x00000508 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x77e305b7 0x000004d0 SET_32 KERNEL32.dll_CloseHandle
+0x77e3060c 0x000004bc SET_32 KERNEL32.dll_GetCurrentProcess
+0x77e30613 0x000004e8 SET_32 KERNEL32.dll_CreateEventW
+0x77e30636 0x000004e0 SET_32 KERNEL32.dll_DuplicateHandle
+0x77e30b5d 0x000004c0 SET_32 KERNEL32.dll_CreateFileW
+0x77e30d23 0x0000050c SET_32 KERNEL32.dll_GetCurrentProcessId
+0x77e30e69 0x000004f8 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x77e311cc 0x000004ac SET_32 KERNEL32.dll_WriteFile
+0x77e328d7 0x0000051c SET_32 KERNEL32.dll_GetModuleHandleA
+0x77e33142 0x00000520 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x77e42b35 0x00000500 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x77ecf583 0x0000048c SET_32 KERNEL32.dll_WaitForThreadpoolTimerCallbacks
+0x77ed6d3d 0x0000049c SET_32 KERNEL32.dll_SubmitThreadpoolWork
+0x77ed6f39 0x00000490 SET_32 KERNEL32.dll_CloseThreadpoolWork
+0x77ed7b3c 0x00000488 SET_32 KERNEL32.dll_CloseThreadpoolTimer
+0x77edf5ab 0x0000043c SET_32 ADVAPI32.dll_EventWrite
+0x77ee8ac6 0x00000484 SET_32 KERNEL32.dll_SetThreadpoolTimer
+0x77ee9627 0x00000410 SET_32 ADVAPI32.dll_RegisterTraceGuidsW
+0x77eea42b 0x0000040c SET_32 ADVAPI32.dll_GetTraceLoggerHandle
+0x77eea494 0x00000408 SET_32 ADVAPI32.dll_GetTraceEnableLevel
+0x77eea4ca 0x00000404 SET_32 ADVAPI32.dll_GetTraceEnableFlags
+0x77ef17ad 0x00000414 SET_32 ADVAPI32.dll_UnregisterTraceGuids
+0x77ef18f3 0x00000400 SET_32 ADVAPI32.dll_TraceMessage
+0x77f15560 0x00000478 SET_32 KERNEL32.dll_AcquireSRWLockShared
+0x77f155a9 0x0000047c SET_32 KERNEL32.dll_ReleaseSRWLockShared
+0x77f155d2 0x000004d4 SET_32 KERNEL32.dll_ReleaseSRWLockExclusive
+0x77f155fc 0x000004d8 SET_32 KERNEL32.dll_AcquireSRWLockExclusive
+0x77f19b8e 0x000004dc SET_32 KERNEL32.dll_InitializeSRWLock
+0x77f23614 0x0000041c SET_32 ADVAPI32.dll_EventUnregister
+0x77f25a12 0x00000418 SET_32 ADVAPI32.dll_EventRegister
+0x77f36ac0 0x00000494 SET_32 KERNEL32.dll_WaitForThreadpoolWorkCallbacks
+
+
+129 relocations
+86528
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 6.1.7600.16385
+  ProductVersion: 6.1.7600.16385
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Microsoft Corporation
+  FileDescription: Device Display Object Function Discovery Provider
+  FileVersion: 6.1.7600.16385 (win7_rtm.090713-1255)
+  InternalName: DeviceDisplayObjectProvider
+  LegalCopyright: © Microsoft Corporation. All rights reserved.
+  OriginalFilename: DeviceDisplayObjectProvider.exe
+  ProductName: Microsoft® Windows® Operating System
+  ProductVersion: 6.1.7600.16385
+Section to Segment mapping:
+Segment Section
+---------------
+
+

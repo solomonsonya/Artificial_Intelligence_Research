@@ -1,0 +1,165 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x800 0x10001000  0x1000 -rwx .text
+1   0x00000c00   0x200 0x10002000  0x1000 -rw- .rdata
+2   0x00000e00   0x200 0x10003000  0x1000 -rw- .data
+3   0x00001000   0x200 0x10004000  0x1000 -rw- .reloc
+4   0x00001200  0x1200 0x10005000  0x2000 -rwx 1
+5   0x00002400     0x0 0x10007000  0x1000 -rwx .adata
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10005001 paddr=0x00001201 haddr=0x00000100 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10005fb8 NONE FUNC kernel32.dll GetProcAddress
+2   0x10005fbc NONE FUNC kernel32.dll GetModuleHandleA
+3   0x10005fc0 NONE FUNC kernel32.dll LoadLibraryA
+1   0x1000604f NONE FUNC msvcrt.dll   _adjust_fdiv
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000021b8 0x10005fb8 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+2   0x000021bc 0x10005fbc NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+3   0x000021c0 0x10005fc0 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+1   0x0000224f 0x1000604f NONE FUNC 0    msvcrt.dll   imp._adjust_fdiv
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000c4c 0x1000204c 4   5    .rdata  ascii Ql\t,
+1   0x00000c6a 0x1000206a 6   8    .rdata  utf8  r\a\bS\r"
+2   0x00000cc2 0x100020c2 4   5    .rdata  ascii V$yy
+3   0x00000ccc 0x100020cc 4   5    .rdata  ascii zj)5
+4   0x00000cf2 0x100020f2 4   5    .rdata  ascii z\f"2
+5   0x00000d2d 0x1000212d 4   5    .rdata  ascii {lI{
+0   0x00000e50 0x10003050 4   6    .data   utf8  ¾Bc3 blocks=Latin-1 Supplement,Basic Latin
+1   0x00000e84 0x10003084 4   6    .data   utf8  \ԗaP blocks=Basic Latin,Cyrillic Supplement
+arch     x86
+baddr    0x10000000
+binsz    9216
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000405b
+compiled Sun Jan  4 13:06:33 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x54a93ad9
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x210e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1000
+  SizeOfInitializedData : 0x3000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x5001
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x8000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 3
+  Product: 10 Name: Utc12_C Version: 8168 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 21
+  Product: 4 Name: Linker600 Version: 8047 Times: 3
+  Product: 10 Name: Utc12_C Version: 8047 Times: 4
+  Product: 93 Name: Implib710 Version: 4035 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x6008
+  Size : 0x60
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x5fb0
+  Size : 0x8
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00005fd5 0x000021b8 SET_32 kernel32.dll_GetProcAddress
+0x00005fe6 0x000021bc SET_32 kernel32.dll_GetModuleHandleA
+0x00005ff9 0x000021c0 SET_32 kernel32.dll_LoadLibraryA
+0x00006057 0x0000224f SET_32 msvcrt.dll__adjust_fdiv
+
+
+4 relocations
+9216
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

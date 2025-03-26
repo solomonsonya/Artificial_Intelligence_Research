@@ -1,0 +1,363 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1400 0x00401000  0x2000 -r-x .text
+1   0x00001800   0x200 0x00403000  0x1000 -rw- .data
+2   0x00001a00   0x400 0x00404000  0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401b04 paddr=0x00000f04 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00401090 NONE FUNC msvcrt.dll   __set_app_type
+2   0x00401094 NONE FUNC msvcrt.dll   __p__fmode
+3   0x00401098 NONE FUNC msvcrt.dll   __p__commode
+4   0x0040109c NONE FUNC msvcrt.dll   _adjust_fdiv
+5   0x004010a0 NONE FUNC msvcrt.dll   __setusermatherr
+6   0x004010a4 NONE FUNC msvcrt.dll   _initterm
+7   0x004010a8 NONE FUNC msvcrt.dll   _except_handler3
+8   0x004010ac NONE FUNC msvcrt.dll   _acmdln
+9   0x004010b0 NONE FUNC msvcrt.dll   exit
+10  0x004010b4 NONE FUNC msvcrt.dll   _cexit
+11  0x004010b8 NONE FUNC msvcrt.dll   _XcptFilter
+12  0x004010bc NONE FUNC msvcrt.dll   _controlfp
+13  0x004010c0 NONE FUNC msvcrt.dll   swprintf
+14  0x004010c4 NONE FUNC msvcrt.dll   __getmainargs
+15  0x004010c8 NONE FUNC msvcrt.dll   _exit
+16  0x004010cc NONE FUNC msvcrt.dll   _c_exit
+17  0x004010d0 NONE FUNC msvcrt.dll   wcscpy
+18  0x004010d4 NONE FUNC msvcrt.dll   wcscat
+1   0x00401000 NONE FUNC ADVAPI32.dll OpenProcessToken
+2   0x00401004 NONE FUNC ADVAPI32.dll LogonUserW
+3   0x00401008 NONE FUNC ADVAPI32.dll DuplicateTokenEx
+4   0x0040100c NONE FUNC ADVAPI32.dll SetThreadToken
+5   0x00401010 NONE FUNC ADVAPI32.dll StartServiceCtrlDispatcherW
+1   0x00401018 NONE FUNC KERNEL32.dll GetTickCount
+2   0x0040101c NONE FUNC KERNEL32.dll QueryPerformanceCounter
+3   0x00401020 NONE FUNC KERNEL32.dll GetCurrentProcess
+4   0x00401024 NONE FUNC KERNEL32.dll GetCurrentThreadId
+5   0x00401028 NONE FUNC KERNEL32.dll GetProcAddress
+6   0x0040102c NONE FUNC KERNEL32.dll CreateThread
+7   0x00401030 NONE FUNC KERNEL32.dll GetCurrentProcessId
+8   0x00401034 NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+9   0x00401038 NONE FUNC KERNEL32.dll CloseHandle
+10  0x0040103c NONE FUNC KERNEL32.dll TerminateProcess
+11  0x00401040 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+12  0x00401044 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+13  0x00401048 NONE FUNC KERNEL32.dll GetStartupInfoA
+14  0x0040104c NONE FUNC KERNEL32.dll HeapAlloc
+15  0x00401050 NONE FUNC KERNEL32.dll GetProcessHeap
+16  0x00401054 NONE FUNC KERNEL32.dll SetEvent
+17  0x00401058 NONE FUNC KERNEL32.dll CreateEventW
+18  0x0040105c NONE FUNC KERNEL32.dll OpenEventW
+19  0x00401060 NONE FUNC KERNEL32.dll GetModuleHandleW
+20  0x00401064 NONE FUNC KERNEL32.dll LoadLibraryW
+21  0x00401068 NONE FUNC KERNEL32.dll Sleep
+1   0x0040107c NONE FUNC USER32.dll   wsprintfW
+2   0x00401080 NONE FUNC USER32.dll   MessageBoxW
+1   0x004010dc NONE FUNC ole32.dll    CoImpersonateClient
+1   0x00401088 NONE FUNC WTSAPI32.dll WTSQueryUserToken
+1   0x00401070 NONE FUNC SbieDll.dll  SbieApi_Log
+2   0x00401074 NONE FUNC SbieDll.dll  _SbieDll_Hook@12
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000490 0x00401090 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+2   0x00000494 0x00401094 NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+3   0x00000498 0x00401098 NONE FUNC 0    msvcrt.dll   imp.__p__commode
+4   0x0000049c 0x0040109c NONE FUNC 0    msvcrt.dll   imp._adjust_fdiv
+5   0x000004a0 0x004010a0 NONE FUNC 0    msvcrt.dll   imp.__setusermatherr
+6   0x000004a4 0x004010a4 NONE FUNC 0    msvcrt.dll   imp._initterm
+7   0x000004a8 0x004010a8 NONE FUNC 0    msvcrt.dll   imp._except_handler3
+8   0x000004ac 0x004010ac NONE FUNC 0    msvcrt.dll   imp._acmdln
+9   0x000004b0 0x004010b0 NONE FUNC 0    msvcrt.dll   imp.exit
+10  0x000004b4 0x004010b4 NONE FUNC 0    msvcrt.dll   imp._cexit
+11  0x000004b8 0x004010b8 NONE FUNC 0    msvcrt.dll   imp._XcptFilter
+12  0x000004bc 0x004010bc NONE FUNC 0    msvcrt.dll   imp._controlfp
+13  0x000004c0 0x004010c0 NONE FUNC 0    msvcrt.dll   imp.swprintf
+14  0x000004c4 0x004010c4 NONE FUNC 0    msvcrt.dll   imp.__getmainargs
+15  0x000004c8 0x004010c8 NONE FUNC 0    msvcrt.dll   imp._exit
+16  0x000004cc 0x004010cc NONE FUNC 0    msvcrt.dll   imp._c_exit
+17  0x000004d0 0x004010d0 NONE FUNC 0    msvcrt.dll   imp.wcscpy
+18  0x000004d4 0x004010d4 NONE FUNC 0    msvcrt.dll   imp.wcscat
+1   0x00000400 0x00401000 NONE FUNC 0    ADVAPI32.dll imp.OpenProcessToken
+2   0x00000404 0x00401004 NONE FUNC 0    ADVAPI32.dll imp.LogonUserW
+3   0x00000408 0x00401008 NONE FUNC 0    ADVAPI32.dll imp.DuplicateTokenEx
+4   0x0000040c 0x0040100c NONE FUNC 0    ADVAPI32.dll imp.SetThreadToken
+5   0x00000410 0x00401010 NONE FUNC 0    ADVAPI32.dll imp.StartServiceCtrlDispatcherW
+1   0x00000418 0x00401018 NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+2   0x0000041c 0x0040101c NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+3   0x00000420 0x00401020 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+4   0x00000424 0x00401024 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+5   0x00000428 0x00401028 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+6   0x0000042c 0x0040102c NONE FUNC 0    KERNEL32.dll imp.CreateThread
+7   0x00000430 0x00401030 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+8   0x00000434 0x00401034 NONE FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+9   0x00000438 0x00401038 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+10  0x0000043c 0x0040103c NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+11  0x00000440 0x00401040 NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+12  0x00000444 0x00401044 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+13  0x00000448 0x00401048 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+14  0x0000044c 0x0040104c NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+15  0x00000450 0x00401050 NONE FUNC 0    KERNEL32.dll imp.GetProcessHeap
+16  0x00000454 0x00401054 NONE FUNC 0    KERNEL32.dll imp.SetEvent
+17  0x00000458 0x00401058 NONE FUNC 0    KERNEL32.dll imp.CreateEventW
+18  0x0000045c 0x0040105c NONE FUNC 0    KERNEL32.dll imp.OpenEventW
+19  0x00000460 0x00401060 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleW
+20  0x00000464 0x00401064 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryW
+21  0x00000468 0x00401068 NONE FUNC 0    KERNEL32.dll imp.Sleep
+1   0x0000047c 0x0040107c NONE FUNC 0    USER32.dll   imp.wsprintfW
+2   0x00000480 0x00401080 NONE FUNC 0    USER32.dll   imp.MessageBoxW
+1   0x000004dc 0x004010dc NONE FUNC 0    ole32.dll    imp.CoImpersonateClient
+1   0x00000488 0x00401088 NONE FUNC 0    WTSAPI32.dll imp.WTSQueryUserToken
+1   0x00000470 0x00401070 NONE FUNC 0    SbieDll.dll  imp.SbieApi_Log
+2   0x00000474 0x00401074 NONE FUNC 0    SbieDll.dll  imp._SbieDll_Hook@12
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001a66 0x00404066 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00001ac2 0x004040c2 14  30   .rsrc   utf16le StringFileInfo
+2   0x00001ae6 0x004040e6 8   18   .rsrc   utf16le 040904b0
+3   0x00001afe 0x004040fe 8   18   .rsrc   utf16le Comments
+4   0x00001b16 0x00404116 11  24   .rsrc   utf16le CompanyName
+5   0x00001b30 0x00404130 15  32   .rsrc   utf16le SANDBOXIE L.T.D
+6   0x00001b56 0x00404156 15  32   .rsrc   utf16le FileDescription
+7   0x00001b78 0x00404178 29  60   .rsrc   utf16le Sandboxie COM Services (BITS)
+8   0x00001bba 0x004041ba 11  24   .rsrc   utf16le FileVersion
+9   0x00001bd4 0x004041d4 7   16   .rsrc   utf16le 3.55.06
+10  0x00001bea 0x004041ea 12  26   .rsrc   utf16le InternalName
+11  0x00001c04 0x00404204 4   10   .rsrc   utf16le BITS
+12  0x00001c16 0x00404216 14  30   .rsrc   utf16le LegalCopyright
+13  0x00001c34 0x00404234 10  21   .rsrc   utf16le Copyright 
+14  0x00001c4a 0x0040424a 24  50   .rsrc   utf16le  2004-2011 by Ronen Tzur
+15  0x00001c84 0x00404284 14  30   .rsrc   utf16le egalTrademarks
+16  0x00001caa 0x004042aa 16  34   .rsrc   utf16le OriginalFilename
+17  0x00001ccc 0x004042cc 17  36   .rsrc   utf16le SandboxieBITS.exe
+18  0x00001cf8 0x004042f8 11  24   .rsrc   utf16le rivateBuild
+19  0x00001d16 0x00404316 11  24   .rsrc   utf16le ProductName
+20  0x00001d30 0x00404330 9   20   .rsrc   utf16le Sandboxie
+21  0x00001d4a 0x0040434a 14  30   .rsrc   utf16le ProductVersion
+22  0x00001d68 0x00404368 7   16   .rsrc   utf16le 3.55.06
+23  0x00001d80 0x00404380 11  24   .rsrc   utf16le pecialBuild
+24  0x00001da0 0x004043a0 10  22   .rsrc   utf16le arFileInfo
+25  0x00001dbe 0x004043be 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x400000
+binsz    14568
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000050b2
+compiled Sun May  1 16:24:20 2011
+crypto   false
+dbg_file c:\work\sbie\apps\com\bits\obj\i386\SandboxieBITS.pdb
+endian   little
+havecode true
+hdr.csum 0x000050b2
+guid     F7A777A55F3245758905410A90BEFDB01
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x4dbd8934
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x7
+  MinorLinkerVersion : 0xa
+  SizeOfCode : 0x1400
+  SizeOfInitializedData : 0x800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1b04
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x2
+  MajorImageVersion : 0x5
+  MinorImageVersion : 0x2
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x5000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x50b2
+  Subsystem : 0x2
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x40000
+  SizeOfStackCommit : 0x2000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 90 Name: Linker710 Version: 4035 Times: 1
+  Product: 94 Name: Cvtres710 Version: 4035 Times: 1
+  Product: 95 Name: Utc1310_C Version: 4035 Times: 16
+  Product: 93 Name: Implib710 Version: 4035 Times: 15
+  Product: 1 Name: Import0 Version: 0 Times: 74
+  Product: 15 Name: Masm710 Version: 4035 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x1db4
+  Size : 0xa0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x4000
+  Size : 0x3e0
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x1e00
+  Size : 0x1ae8
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x1100
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x1430
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x1000
+  Size : 0xe4
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+msvcrt.dll
+advapi32.dll
+kernel32.dll
+user32.dll
+ole32.dll
+wtsapi32.dll
+sbiedll.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00001f38 0x000004c0 SET_32 msvcrt.dll_swprintf
+0x00001f44 0x000004d4 SET_32 msvcrt.dll_wcscat
+0x00001f4e 0x000004d0 SET_32 msvcrt.dll_wcscpy
+0x00001f58 0x000004cc SET_32 msvcrt.dll__c_exit
+0x00001f62 0x000004c8 SET_32 msvcrt.dll__exit
+0x00001f6a 0x000004b8 SET_32 msvcrt.dll__XcptFilter
+0x00001f78 0x000004b4 SET_32 msvcrt.dll__cexit
+0x00001f82 0x000004b0 SET_32 msvcrt.dll_exit
+0x00001f8a 0x000004ac SET_32 msvcrt.dll__acmdln
+0x00001f94 0x000004c4 SET_32 msvcrt.dll___getmainargs
+0x00001fa4 0x000004a4 SET_32 msvcrt.dll__initterm
+0x00001fb0 0x000004a0 SET_32 msvcrt.dll___setusermatherr
+0x00001fc4 0x0000049c SET_32 msvcrt.dll__adjust_fdiv
+0x00001fd4 0x00000498 SET_32 msvcrt.dll___p__commode
+0x00001fe4 0x00000494 SET_32 msvcrt.dll___p__fmode
+0x00001ff2 0x00000490 SET_32 msvcrt.dll___set_app_type
+0x00002004 0x000004a8 SET_32 msvcrt.dll__except_handler3
+0x00002024 0x000004bc SET_32 msvcrt.dll__controlfp
+0x00002032 0x00000400 SET_32 ADVAPI32.dll_OpenProcessToken
+0x00002046 0x00000410 SET_32 ADVAPI32.dll_StartServiceCtrlDispatcherW
+0x00002064 0x0000040c SET_32 ADVAPI32.dll_SetThreadToken
+0x00002076 0x00000408 SET_32 ADVAPI32.dll_DuplicateTokenEx
+0x0000208a 0x00000404 SET_32 ADVAPI32.dll_LogonUserW
+0x000020a6 0x00000464 SET_32 KERNEL32.dll_LoadLibraryW
+0x000020b6 0x00000438 SET_32 KERNEL32.dll_CloseHandle
+0x000020c4 0x0000044c SET_32 KERNEL32.dll_HeapAlloc
+0x000020d0 0x00000450 SET_32 KERNEL32.dll_GetProcessHeap
+0x000020e2 0x00000454 SET_32 KERNEL32.dll_SetEvent
+0x000020ee 0x00000458 SET_32 KERNEL32.dll_CreateEventW
+0x000020fe 0x0000045c SET_32 KERNEL32.dll_OpenEventW
+0x0000210c 0x00000468 SET_32 KERNEL32.dll_Sleep
+0x00002114 0x0000042c SET_32 KERNEL32.dll_CreateThread
+0x00002124 0x00000428 SET_32 KERNEL32.dll_GetProcAddress
+0x00002136 0x00000460 SET_32 KERNEL32.dll_GetModuleHandleW
+0x0000214a 0x00000420 SET_32 KERNEL32.dll_GetCurrentProcess
+0x0000215e 0x0000041c SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x00002178 0x00000418 SET_32 KERNEL32.dll_GetTickCount
+0x00002188 0x00000424 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x0000219e 0x00000430 SET_32 KERNEL32.dll_GetCurrentProcessId
+0x000021b4 0x00000434 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x000021ce 0x0000043c SET_32 KERNEL32.dll_TerminateProcess
+0x000021e2 0x00000440 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x000021fe 0x00000444 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x0000221c 0x00000448 SET_32 KERNEL32.dll_GetStartupInfoA
+0x0000223c 0x00000480 SET_32 USER32.dll_MessageBoxW
+0x0000224a 0x0000047c SET_32 USER32.dll_wsprintfW
+0x00002262 0x000004dc SET_32 ole32.dll_CoImpersonateClient
+0x00002282 0x00000488 SET_32 WTSAPI32.dll_WTSQueryUserToken
+0x000022a4 0x00000470 SET_32 SbieDll.dll_SbieApi_Log
+0x000022b2 0x00000474 SET_32 SbieDll.dll__SbieDll_Hook@12
+
+
+50 relocations
+14568
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 3.55.6.0
+  ProductVersion: 3.55.6.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: 
+  CompanyName: SANDBOXIE L.T.D
+  FileDescription: Sandboxie COM Services (BITS)
+  FileVersion: 3.55.06
+  InternalName: BITS
+  LegalCopyright: Copyright © 2004-2011 by Ronen Tzur
+  LegalTrademarks: 
+  OriginalFilename: SandboxieBITS.exe
+  PrivateBuild: 
+  ProductName: Sandboxie
+  ProductVersion: 3.55.06
+  SpecialBuild: 
+Section to Segment mapping:
+Segment Section
+---------------
+
+

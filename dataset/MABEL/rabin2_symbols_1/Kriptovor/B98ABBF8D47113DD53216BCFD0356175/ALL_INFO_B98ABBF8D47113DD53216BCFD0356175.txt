@@ -1,0 +1,205 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000200  0xb3e00 0x00401000  0x1fa000 -rwx .MPRESS1
+1   0x000b4000   0x1000 0x005fb000    0x1000 -rwx .MPRESS2
+2   0x000b5000  0x11400 0x005fc000   0x12000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x005fb34f paddr=0x000b434f haddr=0x00000068 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x005fb17c NONE FUNC KERNEL32.DLL GetModuleHandleA
+2   0x005fb180 NONE FUNC KERNEL32.DLL GetProcAddress
+1   0x005fb188 NONE FUNC oleaut32.dll SysFreeString
+1   0x005fb190 NONE FUNC advapi32.dll RegCloseKey
+1   0x005fb198 NONE FUNC user32.dll   CharNextW
+1   0x005fb1a0 NONE FUNC msimg32.dll  AlphaBlend
+1   0x005fb1a8 NONE FUNC gdi32.dll    Pie
+1   0x005fb1b0 NONE FUNC version.dll  VerQueryValueW
+1   0x005fb1b8 NONE FUNC ole32.dll    IsEqualGUID
+1   0x005fb1c0 NONE FUNC comctl32.dll ImageList_Add
+1   0x005fb1c8 NONE FUNC shell32.dll  ShellExecuteW
+1   0x005fb1d0 NONE FUNC winspool.drv OpenPrinterW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b417c 0x005fb17c NONE FUNC 0    KERNEL32.DLL imp.GetModuleHandleA
+2   0x000b4180 0x005fb180 NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+1   0x000b4188 0x005fb188 NONE FUNC 0    oleaut32.dll imp.SysFreeString
+1   0x000b4190 0x005fb190 NONE FUNC 0    advapi32.dll imp.RegCloseKey
+1   0x000b4198 0x005fb198 NONE FUNC 0    user32.dll   imp.CharNextW
+1   0x000b41a0 0x005fb1a0 NONE FUNC 0    msimg32.dll  imp.AlphaBlend
+1   0x000b41a8 0x005fb1a8 NONE FUNC 0    gdi32.dll    imp.Pie
+1   0x000b41b0 0x005fb1b0 NONE FUNC 0    version.dll  imp.VerQueryValueW
+1   0x000b41b8 0x005fb1b8 NONE FUNC 0    ole32.dll    imp.IsEqualGUID
+1   0x000b41c0 0x005fb1c0 NONE FUNC 0    comctl32.dll imp.ImageList_Add
+1   0x000b41c8 0x005fb1c8 NONE FUNC 0    shell32.dll  imp.ShellExecuteW
+1   0x000b41d0 0x005fb1d0 NONE FUNC 0    winspool.drv imp.OpenPrinterW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000c0e73 0x00607e73 6   8    .rsrc   utf8    USMӳg` blocks=Basic Latin,Cyrillic
+1   0x000c147b 0x0060847b 6   8    .rsrc   utf8    MHAȕkd blocks=Basic Latin,Latin Extended-B
+2   0x000c2296 0x00609296 4   5    .rsrc   ascii   |@GA
+3   0x000c26a3 0x006096a3 6   8    .rsrc   utf8    CWP֏qh blocks=Basic Latin,Armenian
+4   0x000c28a6 0x006098a6 4   5    .rsrc   ascii   {81(
+5   0x000c2aae 0x00609aae 4   5    .rsrc   ascii   }9C>
+6   0x000c32db 0x0060a2db 6   8    .rsrc   utf8    `YPލcZ blocks=Basic Latin,Thaana
+7   0x000c5f42 0x0060cf42 6   14   .rsrc   utf16le ATTACH
+8   0x000c5f7a 0x0060cf7a 4   10   .rsrc   utf16le CERT
+9   0x000c5fac 0x0060cfac 8   18   .rsrc   utf16le \aCERTMGR
+10  0x000c5fe4 0x0060cfe4 10  22   .rsrc   utf16le \tCHARTABLE
+11  0x000c6022 0x0060d022 6   14   .rsrc   utf16le DVCLAL
+12  0x000c6058 0x0060d058 12  26   .rsrc   utf16le \vPACKAGEINFO
+13  0x000c609a 0x0060d09a 6   14   .rsrc   utf16le RAREXE
+14  0x000c6248 0x0060d248 9   20   .rsrc   utf16le \bMAINICON
+arch     x86
+baddr    0x400000
+binsz    815832
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000d217f
+compiled Mon Mar  2 00:14:35 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000d217f
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped true
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x54f3ab6b
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x838e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x155e00
+  SizeOfInitializedData : 0x99800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1fb34f
+  BaseOfCode : 0x1000
+  BaseOfData : 0x157000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x20e000
+  SizeOfHeaders : 0x200
+  CheckSum : 0xd217f
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x4000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x1fb000
+  Size : 0x350
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1fc000
+  Size : 0x11298
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0xc6400
+  Size : 0xed8
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x1fbec0
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x1fb17c
+  Size : 0x58
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x167000
+  Size : 0x326
+[Linked libraries]
+kernel32.dll
+oleaut32.dll
+advapi32.dll
+user32.dll
+msimg32.dll
+gdi32.dll
+version.dll
+ole32.dll
+comctl32.dll
+shell32.dll
+winspool.drv
+
+11 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x001fb21c 0x000b417c SET_32 KERNEL32.DLL_GetModuleHandleA
+0x001fb22f 0x000b4180 SET_32 KERNEL32.DLL_GetProcAddress
+0x001fb25a 0x000b4188 SET_32 oleaut32.dll_SysFreeString
+0x001fb277 0x000b4190 SET_32 advapi32.dll_RegCloseKey
+0x001fb290 0x000b4198 SET_32 user32.dll_CharNextW
+0x001fb2a8 0x000b41a0 SET_32 msimg32.dll_AlphaBlend
+0x001fb2bf 0x000b41a8 SET_32 gdi32.dll_Pie
+0x001fb2d1 0x000b41b0 SET_32 version.dll_VerQueryValueW
+0x001fb2ec 0x000b41b8 SET_32 ole32.dll_IsEqualGUID
+0x001fb307 0x000b41c0 SET_32 comctl32.dll_ImageList_Add
+0x001fb323 0x000b41c8 SET_32 shell32.dll_ShellExecuteW
+0x001fb340 0x000b41d0 SET_32 winspool.drv_OpenPrinterW
+
+
+12 relocations
+815832
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

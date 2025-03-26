@@ -1,0 +1,317 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x7e00 0x140001000  0x8000 -r-x .text
+1   0x00008200   0xe00 0x140009000  0x1000 -r-- .rdata
+2   0x00009000   0x400 0x14000a000  0x1000 -rw- .data
+3   0x00009400   0x400 0x14000b000  0x1000 -r-- .pdata
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x140002130 paddr=0x00001530 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――
+1   0x140009000 NONE FUNC KERNEL32.dll GetCommandLineW
+2   0x140009008 NONE FUNC KERNEL32.dll GetStdHandle
+3   0x140009010 NONE FUNC KERNEL32.dll WriteFile
+4   0x140009018 NONE FUNC KERNEL32.dll ExitProcess
+5   0x140009020 NONE FUNC KERNEL32.dll ReadFile
+6   0x140009028 NONE FUNC KERNEL32.dll GetFileSizeEx
+7   0x140009030 NONE FUNC KERNEL32.dll WaitForMultipleObjects
+8   0x140009038 NONE FUNC KERNEL32.dll GetQueuedCompletionStatus
+9   0x140009040 NONE FUNC KERNEL32.dll CreateFileW
+10  0x140009048 NONE FUNC KERNEL32.dll PostQueuedCompletionStatus
+11  0x140009050 NONE FUNC KERNEL32.dll Sleep
+12  0x140009058 NONE FUNC KERNEL32.dll CloseHandle
+13  0x140009060 NONE FUNC KERNEL32.dll GetSystemInfo
+14  0x140009068 NONE FUNC KERNEL32.dll CreateThread
+15  0x140009070 NONE FUNC KERNEL32.dll CreateIoCompletionPort
+16  0x140009078 NONE FUNC KERNEL32.dll MoveFileW
+17  0x140009080 NONE FUNC KERNEL32.dll FindFirstFileW
+18  0x140009088 NONE FUNC KERNEL32.dll FindNextFileW
+19  0x140009090 NONE FUNC KERNEL32.dll FindClose
+20  0x140009098 NONE FUNC KERNEL32.dll GlobalAlloc
+21  0x1400090a0 NONE FUNC KERNEL32.dll GlobalFree
+22  0x1400090a8 NONE FUNC KERNEL32.dll GetDriveTypeW
+23  0x1400090b0 NONE FUNC KERNEL32.dll HeapFree
+24  0x1400090b8 NONE FUNC KERNEL32.dll LoadLibraryW
+25  0x1400090c0 NONE FUNC KERNEL32.dll HeapAlloc
+26  0x1400090c8 NONE FUNC KERNEL32.dll GetProcAddress
+27  0x1400090d0 NONE FUNC KERNEL32.dll GetProcessHeap
+1   0x1400090e0 NONE FUNC MPR.dll      WNetEnumResourceW
+2   0x1400090e8 NONE FUNC MPR.dll      WNetOpenEnumW
+3   0x1400090f0 NONE FUNC MPR.dll      WNetCloseEnum
+
+[Symbols]
+
+nth paddr      vaddr       bind type size lib          name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00008200 0x140009000 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineW
+2   0x00008208 0x140009008 NONE FUNC 0    KERNEL32.dll imp.GetStdHandle
+3   0x00008210 0x140009010 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+4   0x00008218 0x140009018 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+5   0x00008220 0x140009020 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+6   0x00008228 0x140009028 NONE FUNC 0    KERNEL32.dll imp.GetFileSizeEx
+7   0x00008230 0x140009030 NONE FUNC 0    KERNEL32.dll imp.WaitForMultipleObjects
+8   0x00008238 0x140009038 NONE FUNC 0    KERNEL32.dll imp.GetQueuedCompletionStatus
+9   0x00008240 0x140009040 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+10  0x00008248 0x140009048 NONE FUNC 0    KERNEL32.dll imp.PostQueuedCompletionStatus
+11  0x00008250 0x140009050 NONE FUNC 0    KERNEL32.dll imp.Sleep
+12  0x00008258 0x140009058 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+13  0x00008260 0x140009060 NONE FUNC 0    KERNEL32.dll imp.GetSystemInfo
+14  0x00008268 0x140009068 NONE FUNC 0    KERNEL32.dll imp.CreateThread
+15  0x00008270 0x140009070 NONE FUNC 0    KERNEL32.dll imp.CreateIoCompletionPort
+16  0x00008278 0x140009078 NONE FUNC 0    KERNEL32.dll imp.MoveFileW
+17  0x00008280 0x140009080 NONE FUNC 0    KERNEL32.dll imp.FindFirstFileW
+18  0x00008288 0x140009088 NONE FUNC 0    KERNEL32.dll imp.FindNextFileW
+19  0x00008290 0x140009090 NONE FUNC 0    KERNEL32.dll imp.FindClose
+20  0x00008298 0x140009098 NONE FUNC 0    KERNEL32.dll imp.GlobalAlloc
+21  0x000082a0 0x1400090a0 NONE FUNC 0    KERNEL32.dll imp.GlobalFree
+22  0x000082a8 0x1400090a8 NONE FUNC 0    KERNEL32.dll imp.GetDriveTypeW
+23  0x000082b0 0x1400090b0 NONE FUNC 0    KERNEL32.dll imp.HeapFree
+24  0x000082b8 0x1400090b8 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryW
+25  0x000082c0 0x1400090c0 NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+26  0x000082c8 0x1400090c8 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+27  0x000082d0 0x1400090d0 NONE FUNC 0    KERNEL32.dll imp.GetProcessHeap
+1   0x000082e0 0x1400090e0 NONE FUNC 0    MPR.dll      imp.WNetEnumResourceW
+2   0x000082e8 0x1400090e8 NONE FUNC 0    MPR.dll      imp.WNetOpenEnumW
+3   0x000082f0 0x1400090f0 NONE FUNC 0    MPR.dll      imp.WNetCloseEnum
+[Strings]
+nth paddr      vaddr       len size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00008300 0x140009100 65  66   .rdata  ascii   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@>@@@?456789:;<=@@@@@@@
+1   0x00008348 0x140009148 7   8    .rdata  ascii   \a\b\t\n\v\f\r
+2   0x0000835b 0x14000915b 6   7    .rdata  ascii   @@@@@@
+3   0x00008367 0x140009167 153 154  .rdata  ascii    !"#$%&'()*+,-./0123@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+4   0x00008424 0x140009224 6   8    .rdata  utf8    ~oq6ʧg blocks=Basic Latin,IPA Extensions
+5   0x0000844b 0x14000924b 6   7    .rdata  ascii    ;3;!X
+6   0x000084a0 0x1400092a0 8   18   .rdata  utf16le -network
+7   0x000084b8 0x1400092b8 5   12   .rdata  utf16le -help
+8   0x000084d0 0x1400092d0 73  74   .rdata  ascii   \nNOKOYAWA.exe (Encrypt all local, network drives without network shares)\n
+9   0x00008520 0x140009320 73  74   .rdata  ascii   \nNOKOYAWA.exe (Encrypt all local, network drives without network shares)\n
+10  0x00008570 0x140009370 83  84   .rdata  ascii   NOKOYAWA.exe -network (Encrypt all local, network drives including network shares)\n
+11  0x000085d0 0x1400093d0 83  84   .rdata  ascii   NOKOYAWA.exe -network (Encrypt all local, network drives including network shares)\n
+12  0x00008628 0x140009428 57  58   .rdata  ascii   NOKOYAWA.exe -file filePath (Encrypt only selected file)\n
+13  0x00008668 0x140009468 57  58   .rdata  ascii   NOKOYAWA.exe -file filePath (Encrypt only selected file)\n
+14  0x000086a8 0x1400094a8 5   12   .rdata  utf16le -file
+15  0x000086c0 0x1400094c0 75  76   .rdata  ascii   NOKOYAWA.exe -dir dirPath (Encrypt selected directory and sub-directories)\n
+16  0x00008710 0x140009510 75  76   .rdata  ascii   NOKOYAWA.exe -dir dirPath (Encrypt selected directory and sub-directories)\n
+17  0x00008770 0x140009570 8   9    .rdata  ascii   lvcelvce
+18  0x00008780 0x140009580 8   9    .rdata  ascii   lvcelvce
+19  0x00008790 0x140009590 4   10   .rdata  utf16le .exe
+20  0x000087a0 0x1400095a0 4   10   .rdata  utf16le .dll
+21  0x000087b0 0x1400095b0 4   10   .rdata  utf16le .lnk
+22  0x00008800 0x140009600 10  22   .rdata  utf16le user32.dll
+23  0x00008818 0x140009618 11  12   .rdata  ascii   MessageBoxA
+24  0x00008828 0x140009628 7   8    .rdata  ascii   Message
+25  0x00008830 0x140009630 10  22   .rdata  utf16le user32.dll
+26  0x00008848 0x140009648 11  12   .rdata  ascii   MessageBoxW
+27  0x00008858 0x140009658 7   16   .rdata  utf16le Message
+28  0x00008868 0x140009668 10  22   .rdata  utf16le bcrypt.dll
+29  0x00008880 0x140009680 15  16   .rdata  ascii   BCryptGenRandom
+30  0x000088e0 0x1400096e0 4   5    .rdata  ascii   GCTL
+31  0x000088ec 0x1400096ec 8   9    .rdata  ascii   .text$mn
+32  0x00008900 0x140009700 8   9    .rdata  ascii   .idata$5
+33  0x00008914 0x140009714 6   7    .rdata  ascii   .rdata
+34  0x00008924 0x140009724 13  14   .rdata  ascii   .rdata$voltmd
+35  0x0000893c 0x14000973c 13  14   .rdata  ascii   .rdata$zzzdbg
+36  0x00008954 0x140009754 6   7    .rdata  ascii   .xdata
+37  0x00008964 0x140009764 8   9    .rdata  ascii   .idata$2
+38  0x00008978 0x140009778 8   9    .rdata  ascii   .idata$3
+39  0x0000898c 0x14000978c 8   9    .rdata  ascii   .idata$4
+40  0x000089a0 0x1400097a0 8   9    .rdata  ascii   .idata$6
+41  0x000089b4 0x1400097b4 5   6    .rdata  ascii   .data
+42  0x000089c4 0x1400097c4 4   5    .rdata  ascii   .bss
+43  0x000089d4 0x1400097d4 6   7    .rdata  ascii   .pdata
+44  0x00008c62 0x140009a62 15  16   .rdata  ascii   GetCommandLineW
+45  0x00008c74 0x140009a74 12  13   .rdata  ascii   GetStdHandle
+46  0x00008c84 0x140009a84 9   10   .rdata  ascii   WriteFile
+47  0x00008c90 0x140009a90 11  12   .rdata  ascii   ExitProcess
+48  0x00008c9e 0x140009a9e 8   9    .rdata  ascii   ReadFile
+49  0x00008caa 0x140009aaa 13  14   .rdata  ascii   GetFileSizeEx
+50  0x00008cba 0x140009aba 22  23   .rdata  ascii   WaitForMultipleObjects
+51  0x00008cd4 0x140009ad4 25  26   .rdata  ascii   GetQueuedCompletionStatus
+52  0x00008cf0 0x140009af0 11  12   .rdata  ascii   CreateFileW
+53  0x00008cfe 0x140009afe 26  27   .rdata  ascii   PostQueuedCompletionStatus
+54  0x00008d1c 0x140009b1c 5   6    .rdata  ascii   Sleep
+55  0x00008d24 0x140009b24 11  12   .rdata  ascii   CloseHandle
+56  0x00008d32 0x140009b32 13  14   .rdata  ascii   GetSystemInfo
+57  0x00008d42 0x140009b42 12  13   .rdata  ascii   CreateThread
+58  0x00008d52 0x140009b52 22  23   .rdata  ascii   CreateIoCompletionPort
+59  0x00008d6c 0x140009b6c 9   10   .rdata  ascii   MoveFileW
+60  0x00008d78 0x140009b78 14  15   .rdata  ascii   FindFirstFileW
+61  0x00008d8a 0x140009b8a 13  14   .rdata  ascii   FindNextFileW
+62  0x00008d9a 0x140009b9a 9   10   .rdata  ascii   FindClose
+63  0x00008da6 0x140009ba6 11  12   .rdata  ascii   GlobalAlloc
+64  0x00008db4 0x140009bb4 10  11   .rdata  ascii   GlobalFree
+65  0x00008dc2 0x140009bc2 13  14   .rdata  ascii   GetDriveTypeW
+66  0x00008dd2 0x140009bd2 8   9    .rdata  ascii   HeapFree
+67  0x00008dde 0x140009bde 12  13   .rdata  ascii   LoadLibraryW
+68  0x00008dee 0x140009bee 9   10   .rdata  ascii   HeapAlloc
+69  0x00008dfa 0x140009bfa 14  15   .rdata  ascii   GetProcAddress
+70  0x00008e0c 0x140009c0c 14  15   .rdata  ascii   GetProcessHeap
+71  0x00008e1c 0x140009c1c 12  13   .rdata  ascii   KERNEL32.dll
+72  0x00008e2c 0x140009c2c 13  14   .rdata  ascii   WNetCloseEnum
+73  0x00008e3c 0x140009c3c 17  18   .rdata  ascii   WNetEnumResourceW
+74  0x00008e50 0x140009c50 13  14   .rdata  ascii   WNetOpenEnumW
+75  0x00008e5e 0x140009c5e 7   8    .rdata  ascii   MPR.dll
+0   0x00009000 0x14000a000 8   9    .data   ascii   NOKOYAWA
+1   0x00009010 0x14000a010 88  89   .data   ascii   9Hza43mgbylXKRiRTJo7/2ax8fWRit0xXW2A2FAAAADGTGFndDpGoI14n1DeJdRBB7IF2YlynzfilbPyqgAAAA==
+2   0x00009070 0x14000a070 11  24   .data   utf16le _readme.txt
+3   0x00009090 0x14000a090 834 835  .data   ascii   RGVhciB1c2VybmFtbWUsIHlvdXIgZmlsZXMgd2VyZSBlbmNyeXB0ZWQsIHNvbWUgYXJlIGNvbXByb21pc2VkLg0KQmUgc3VyZSwgeW91IGNhbid0IHJlc3RvcmUgaXQgd2l0aG91dCBvdXIgaGVscC4NCllvdSBuZWVkIGEgcHJpdmF0ZSBrZXkgdGhhdCBvbmx5IHdlIGhhdmUuDQoNCkNvbnRhY3QgdXMgdG8gcmVhY2ggYW4gYWdyZWVtZW50IG9yIHdlIHdpbGwgbGVhayB5b3VyIGJsYWNrIHNoaXQgdG8gbWVkaWE6DQpCcm9va3NsYW1iZXJ0QHByb3Rvbm1haWwuY29tDQpTaGVwcGFyZGFybXN0cm9uZ0B0dXRhbm90YS5jb20NCg0K5Lqy54ix55qE55So5oi35ZCN77yM5oKo55qE5paH5Lu25bey5Yqg5a+G77yM5pyJ5Lqb5bey6KKr5rOE6Zyy44CCDQror7fnoa7kv53vvIzlpoLmnpzmsqHmnInmiJHku6znmoTluK7liqnvvIzmgqjlsIbml6Dms5XmgaLlpI3lroPjgIINCuaCqOmcgOimgeS4gOS4quWPquacieaIkeS7rOaLpeacieeahOengemSpeOAgg0KDQrogZTns7vmiJHku6zku6Xovr7miJDljY/orq7vvIzlkKbliJnmiJHku6zkvJrlsIbmgqjnmoTpu5HlsY7ms4TpnLLnu5nlqpLkvZPvvJoNCkJyb29rc2xhbWJlcnRAcHJvdG9ubWFpbC5jb20NClNoZXBwYXJkYXJtc3Ryb25nQHR1dGFub3RhLmNvbQ
+arch     x86
+baddr    0x140000000
+binsz    38912
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x0000b165
+compiled Fri Feb 11 14:27:48 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  false
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x62067264
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x22
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x1e
+  SizeOfCode : 0x7e00
+  SizeOfInitializedData : 0x1800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x2130
+  BaseOfCode : 0x1000
+  ImageBase : 0x140000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xc000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x8160
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 30709 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 30709 Times: 10
+  Product: 259 Name: Masm1400 Version: 30625 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 31
+  Product: 257 Name: Implib1400 Version: 27412 Times: 5
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x9920
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0xb000
+  Size : 0x33c
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x9690
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x9000
+  Size : 0x100
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+mpr.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00009a60 0x00008200 SET_64 KERNEL32.dll_GetCommandLineW
+0x00009a72 0x00008208 SET_64 KERNEL32.dll_GetStdHandle
+0x00009a82 0x00008210 SET_64 KERNEL32.dll_WriteFile
+0x00009a8e 0x00008218 SET_64 KERNEL32.dll_ExitProcess
+0x00009a9c 0x00008220 SET_64 KERNEL32.dll_ReadFile
+0x00009aa8 0x00008228 SET_64 KERNEL32.dll_GetFileSizeEx
+0x00009ab8 0x00008230 SET_64 KERNEL32.dll_WaitForMultipleObjects
+0x00009ad2 0x00008238 SET_64 KERNEL32.dll_GetQueuedCompletionStatus
+0x00009aee 0x00008240 SET_64 KERNEL32.dll_CreateFileW
+0x00009afc 0x00008248 SET_64 KERNEL32.dll_PostQueuedCompletionStatus
+0x00009b1a 0x00008250 SET_64 KERNEL32.dll_Sleep
+0x00009b22 0x00008258 SET_64 KERNEL32.dll_CloseHandle
+0x00009b30 0x00008260 SET_64 KERNEL32.dll_GetSystemInfo
+0x00009b40 0x00008268 SET_64 KERNEL32.dll_CreateThread
+0x00009b50 0x00008270 SET_64 KERNEL32.dll_CreateIoCompletionPort
+0x00009b6a 0x00008278 SET_64 KERNEL32.dll_MoveFileW
+0x00009b76 0x00008280 SET_64 KERNEL32.dll_FindFirstFileW
+0x00009b88 0x00008288 SET_64 KERNEL32.dll_FindNextFileW
+0x00009b98 0x00008290 SET_64 KERNEL32.dll_FindClose
+0x00009ba4 0x00008298 SET_64 KERNEL32.dll_GlobalAlloc
+0x00009bb2 0x000082a0 SET_64 KERNEL32.dll_GlobalFree
+0x00009bc0 0x000082a8 SET_64 KERNEL32.dll_GetDriveTypeW
+0x00009bd0 0x000082b0 SET_64 KERNEL32.dll_HeapFree
+0x00009bdc 0x000082b8 SET_64 KERNEL32.dll_LoadLibraryW
+0x00009bec 0x000082c0 SET_64 KERNEL32.dll_HeapAlloc
+0x00009bf8 0x000082c8 SET_64 KERNEL32.dll_GetProcAddress
+0x00009c0a 0x000082d0 SET_64 KERNEL32.dll_GetProcessHeap
+0x00009c2a 0x000082f0 SET_64 MPR.dll_WNetCloseEnum
+0x00009c3a 0x000082e0 SET_64 MPR.dll_WNetEnumResourceW
+0x00009c4e 0x000082e8 SET_64 MPR.dll_WNetOpenEnumW
+
+
+30 relocations
+38912
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

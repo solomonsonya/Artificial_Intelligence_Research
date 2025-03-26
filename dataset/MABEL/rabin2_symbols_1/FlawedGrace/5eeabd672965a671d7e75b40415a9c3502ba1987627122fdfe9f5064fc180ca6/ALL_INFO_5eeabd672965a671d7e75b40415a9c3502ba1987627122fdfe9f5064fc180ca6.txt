@@ -1,0 +1,441 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x5400 0x10001000   0x6000 -r-x .text
+1   0x00005800  0x36600 0x10007000  0x47000 -rw- .data
+2   0x0003be00    0x200 0x1004e000   0x1000 -r-- .pdata
+3   0x0003c000    0x200 0x1004f000   0x1000 -rw- .tls
+4   0x0003c200    0x200 0x10050000   0x1000 -r-- .CRT
+5   0x0003c400    0x400 0x10051000   0x1000 -r-- .rsrc
+6   0x0003c800    0x200 0x10052000   0x1000 sr-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10001d07 paddr=0x00001107 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x100010b8 NONE FUNC USER32.dll   LoadStringW
+1   0x10001000 NONE FUNC COMDLG32.dll GetSaveFileNameA
+1   0x100010c8 NONE FUNC ole32.dll    CoUninitialize
+2   0x100010d0 NONE FUNC ole32.dll    CoRegisterSurrogate
+3   0x100010d8 NONE FUNC ole32.dll    CoInitialize
+1   0x10001010 NONE FUNC KERNEL32.dll RtlLookupFunctionEntry
+2   0x10001018 NONE FUNC KERNEL32.dll VirtualAllocEx
+3   0x10001020 NONE FUNC KERNEL32.dll RtlVirtualUnwind
+4   0x10001028 NONE FUNC KERNEL32.dll IsDebuggerPresent
+5   0x10001030 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+6   0x10001038 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+7   0x10001040 NONE FUNC KERNEL32.dll CreateMutexA
+8   0x10001048 NONE FUNC KERNEL32.dll GetEnvironmentStringsW
+9   0x10001050 NONE FUNC KERNEL32.dll GetEnvironmentStrings
+10  0x10001058 NONE FUNC KERNEL32.dll GetVersionExA
+11  0x10001060 NONE FUNC KERNEL32.dll GetACP
+12  0x10001068 NONE FUNC KERNEL32.dll GetModuleHandleA
+13  0x10001070 NONE FUNC KERNEL32.dll RtlCaptureContext
+14  0x10001078 NONE FUNC KERNEL32.dll GetProcessHeap
+15  0x10001080 NONE FUNC KERNEL32.dll GetCurrentProcessId
+16  0x10001088 NONE FUNC KERNEL32.dll GetCurrentThread
+17  0x10001090 NONE FUNC KERNEL32.dll GetOEMCP
+18  0x10001098 NONE FUNC KERNEL32.dll CreateEventA
+19  0x100010a0 NONE FUNC KERNEL32.dll TerminateProcess
+20  0x100010a8 NONE FUNC KERNEL32.dll GetCurrentProcess
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00004fc0 0x10005bc0 GLOBAL FUNC 0    verkar.dll   verkar
+1   0x000004b8 0x100010b8 NONE   FUNC 0    USER32.dll   imp.LoadStringW
+1   0x00000400 0x10001000 NONE   FUNC 0    COMDLG32.dll imp.GetSaveFileNameA
+1   0x000004c8 0x100010c8 NONE   FUNC 0    ole32.dll    imp.CoUninitialize
+2   0x000004d0 0x100010d0 NONE   FUNC 0    ole32.dll    imp.CoRegisterSurrogate
+3   0x000004d8 0x100010d8 NONE   FUNC 0    ole32.dll    imp.CoInitialize
+1   0x00000410 0x10001010 NONE   FUNC 0    KERNEL32.dll imp.RtlLookupFunctionEntry
+2   0x00000418 0x10001018 NONE   FUNC 0    KERNEL32.dll imp.VirtualAllocEx
+3   0x00000420 0x10001020 NONE   FUNC 0    KERNEL32.dll imp.RtlVirtualUnwind
+4   0x00000428 0x10001028 NONE   FUNC 0    KERNEL32.dll imp.IsDebuggerPresent
+5   0x00000430 0x10001030 NONE   FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+6   0x00000438 0x10001038 NONE   FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+7   0x00000440 0x10001040 NONE   FUNC 0    KERNEL32.dll imp.CreateMutexA
+8   0x00000448 0x10001048 NONE   FUNC 0    KERNEL32.dll imp.GetEnvironmentStringsW
+9   0x00000450 0x10001050 NONE   FUNC 0    KERNEL32.dll imp.GetEnvironmentStrings
+10  0x00000458 0x10001058 NONE   FUNC 0    KERNEL32.dll imp.GetVersionExA
+11  0x00000460 0x10001060 NONE   FUNC 0    KERNEL32.dll imp.GetACP
+12  0x00000468 0x10001068 NONE   FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+13  0x00000470 0x10001070 NONE   FUNC 0    KERNEL32.dll imp.RtlCaptureContext
+14  0x00000478 0x10001078 NONE   FUNC 0    KERNEL32.dll imp.GetProcessHeap
+15  0x00000480 0x10001080 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+16  0x00000488 0x10001088 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentThread
+17  0x00000490 0x10001090 NONE   FUNC 0    KERNEL32.dll imp.GetOEMCP
+18  0x00000498 0x10001098 NONE   FUNC 0    KERNEL32.dll imp.CreateEventA
+19  0x000004a0 0x100010a0 NONE   FUNC 0    KERNEL32.dll imp.TerminateProcess
+20  0x000004a8 0x100010a8 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00005858 0x10007058 7   8    .data   ascii   [`\b6R)\b
+1   0x00005860 0x10007060 7   8    .data   ascii   [`J6R)\n
+2   0x0000586b 0x1000706b 4   5    .data   ascii   6R)\f
+3   0x000058a0 0x100070a0 6   7    .data   ascii   [`06R)
+4   0x000058bb 0x100070bb 4   5    .data   ascii   6R) 
+5   0x000058c0 0x100070c0 7   8    .data   ascii   [`@6R)"
+6   0x000058cb 0x100070cb 4   5    .data   ascii   6R)$
+7   0x000058d3 0x100070d3 4   5    .data   ascii   7R)&
+8   0x000058db 0x100070db 4   5    .data   ascii   7R)(
+9   0x000058e3 0x100070e3 4   5    .data   ascii   6R)*
+10  0x000058eb 0x100070eb 4   5    .data   ascii   7R),
+11  0x000058f3 0x100070f3 4   5    .data   ascii   6R).
+12  0x000058fb 0x100070fb 4   5    .data   ascii   6R)0
+13  0x00005900 0x10007100 7   8    .data   ascii   [`r6R)2
+14  0x0000590b 0x1000710b 4   5    .data   ascii   7R)4
+15  0x00005913 0x10007113 4   5    .data   ascii   6R)6
+16  0x00005918 0x10007118 7   8    .data   ascii   [`86R)8
+17  0x00005923 0x10007123 4   5    .data   ascii   6R):
+18  0x0000592b 0x1000712b 4   5    .data   ascii   7R)<
+19  0x00005933 0x10007133 4   5    .data   ascii   7R)>
+20  0x0000593b 0x1000713b 4   5    .data   ascii   6R)@
+21  0x00005943 0x10007143 4   5    .data   ascii   7R)B
+22  0x0000594b 0x1000714b 4   5    .data   ascii   7R)D
+23  0x00005950 0x10007150 7   8    .data   ascii   [` 6R)F
+24  0x0000595b 0x1000715b 4   5    .data   ascii   6R)H
+25  0x00005963 0x10007163 4   5    .data   ascii   7R)J
+26  0x0000596b 0x1000716b 4   5    .data   ascii   6R)L
+27  0x00005970 0x10007170 7   8    .data   ascii   [``6R)N
+28  0x0000597b 0x1000717b 4   5    .data   ascii   6R)P
+29  0x00005980 0x10007180 7   8    .data   ascii   [`r6R)R
+30  0x0000598b 0x1000718b 4   5    .data   ascii   7R)T
+31  0x00005993 0x10007193 4   5    .data   ascii   6R)V
+32  0x0000599b 0x1000719b 4   5    .data   ascii   7R)X
+33  0x000059a3 0x100071a3 4   5    .data   ascii   6R)Z
+34  0x000059ab 0x100071ab 4   5    .data   ascii   7R)\
+35  0x000059b3 0x100071b3 4   5    .data   ascii   6R)^
+36  0x000059b8 0x100071b8 7   8    .data   ascii   [`p6R)`
+37  0x000059c3 0x100071c3 4   5    .data   ascii   6R)b
+38  0x000059cb 0x100071cb 4   5    .data   ascii   7R)d
+39  0x000059d3 0x100071d3 4   5    .data   ascii   6R)f
+40  0x000059d8 0x100071d8 7   8    .data   ascii   [``6R)h
+41  0x000059e3 0x100071e3 4   5    .data   ascii   7R)j
+42  0x000059eb 0x100071eb 4   5    .data   ascii   6R)l
+43  0x000059f3 0x100071f3 4   5    .data   ascii   7R)n
+44  0x000059fb 0x100071fb 4   5    .data   ascii   7R)p
+45  0x00005a03 0x10007203 4   5    .data   ascii   6R)r
+46  0x00005a0b 0x1000720b 4   5    .data   ascii   7R)t
+47  0x00005a13 0x10007213 4   5    .data   ascii   7R)v
+48  0x00005a1b 0x1000721b 4   5    .data   ascii   6R)x
+49  0x00005a23 0x10007223 4   5    .data   ascii   7R)z
+50  0x00005a2b 0x1000722b 4   5    .data   ascii   7R)|
+51  0x00005a33 0x10007233 4   5    .data   ascii   6R)~
+52  0x00005b33 0x10007333 6   8    .data   utf8    4R)9[`
+53  0x00005b3b 0x1000733b 6   8    .data   utf8    4R)¹[` blocks=Basic Latin,Latin-1 Supplement
+54  0x00005b43 0x10007343 6   8    .data   utf8    4R)Ĺ[` blocks=Basic Latin,Latin Extended-A
+55  0x00005b4b 0x1000734b 6   8    .data   utf8    4R)ƹ[` blocks=Basic Latin,Latin Extended-B
+56  0x00005b53 0x10007353 6   8    .data   utf8    4R)ȹ[` blocks=Basic Latin,Latin Extended-B
+57  0x00005b5b 0x1000735b 6   8    .data   utf8    4R)ʹ[` blocks=Basic Latin,Spacing Modifier Letters
+58  0x00005b63 0x10007363 6   8    .data   utf8    4R)̹[` blocks=Basic Latin,Combining Diacritical Marks
+59  0x00005b6b 0x1000736b 6   8    .data   utf8    4R)ι[` blocks=Basic Latin,Greek and Coptic
+60  0x00005b73 0x10007373 6   8    .data   utf8    4R)й[` blocks=Basic Latin,Cyrillic
+61  0x00005b7b 0x1000737b 6   8    .data   utf8    4R)ҹ[` blocks=Basic Latin,Cyrillic
+62  0x00005b83 0x10007383 6   8    .data   utf8    4R)Թ[` blocks=Basic Latin,Armenian
+63  0x00005b8b 0x1000738b 6   8    .data   utf8    4R)ֹ[` blocks=Basic Latin,Hebrew
+64  0x00005b93 0x10007393 6   8    .data   utf8    4R)ع[` blocks=Basic Latin,Arabic
+65  0x00005b9b 0x1000739b 6   8    .data   utf8    4R)ڹ[` blocks=Basic Latin,Arabic
+66  0x00005ba3 0x100073a3 6   8    .data   utf8    4R)ܹ[` blocks=Basic Latin,Syriac
+67  0x00005bc6 0x100073c6 4   9    .data   utf8    Hޙ쉮Ǹ blocks=Basic Latin,Thaana,Hangul Syllables,Latin Extended-B
+68  0x00005c63 0x10007463 4   6    .data   utf8    <[̌5 blocks=Basic Latin,Combining Diacritical Marks
+69  0x00005d14 0x10007514 5   7    .data   utf8    R)и[` blocks=Basic Latin,Cyrillic
+70  0x00005d1b 0x1000751b 6   8    .data   utf8    6R)Ҹ[` blocks=Basic Latin,Cyrillic
+71  0x00005d23 0x10007523 6   8    .data   utf8    6R)Ը[` blocks=Basic Latin,Armenian
+72  0x00005d2b 0x1000752b 6   8    .data   utf8    6R)ָ[` blocks=Basic Latin,Hebrew
+73  0x00005d33 0x10007533 6   8    .data   utf8    6R)ظ[` blocks=Basic Latin,Arabic
+74  0x00005d3b 0x1000753b 6   8    .data   utf8    6R)ڸ[` blocks=Basic Latin,Arabic
+75  0x00005d43 0x10007543 6   8    .data   utf8    6R)ܸ[` blocks=Basic Latin,Syriac
+76  0x00005d93 0x10007593 4   5    .data   ascii   6AII
+77  0x00005dad 0x100075ad 5   6    .data   ascii   r\t5\va
+78  0x00005db5 0x100075b5 5   6    .data   ascii   fy5\va
+79  0x00005dbf 0x100075bf 6   8    .data   utf8    4۳_S[` blocks=Basic Latin,Arabic
+80  0x00005deb 0x100075eb 4   5    .data   ascii   .MiI
+81  0x00005dff 0x100075ff 7   8    .data   ascii   4R) '[`
+82  0x00005e07 0x10007607 7   8    .data   ascii   4r)p/[`
+83  0x00005e45 0x10007645 5   6    .data   ascii   r\t5\ea
+84  0x00005e55 0x10007655 5   6    .data   ascii   fyw\ea
+85  0x00005e6b 0x1000766b 7   8    .data   ascii   4")03[`
+86  0x00005e7e 0x1000767e 4   5    .data   ascii   \t4[`
+87  0x00005ebf 0x100076bf 4   5    .data   ascii   <+a`
+88  0x00005efa 0x100076fa 5   6    .data   ascii   M4MiI
+89  0x00005f8b 0x1000778b 6   7    .data   ascii   47i *X
+90  0x00005faf 0x100077af 4   5    .data   ascii   5IiI
+91  0x00005fe7 0x100077e7 7   8    .data   ascii   5R) '[`
+92  0x00006003 0x10007803 4   5    .data   ascii   5HiI
+93  0x0000600c 0x1000780c 6   7    .data   ascii   R) #[`
+94  0x00006013 0x10007813 4   5    .data   ascii   7Tr\t
+95  0x00006026 0x10007826 11  12   .data   ascii   @4B) #[`f6L
+96  0x0000604c 0x1000784c 4   5    .data   ascii   [r)4
+97  0x000060a6 0x100078a6 8   9    .data   ascii   \tt[`t5{`
+98  0x000060af 0x100078af 4   5    .data   ascii   4MiI
+99  0x000060d7 0x100078d7 4   5    .data   ascii   4MyI
+100 0x00006113 0x10007913 4   5    .data   ascii   4IiI
+101 0x0000611b 0x1000791b 4   5    .data   ascii   TMiI
+102 0x00006137 0x10007937 7   8    .data   ascii   4R)0#[`
+103 0x0000615f 0x1000795f 7   8    .data   ascii   4R)0#[`
+104 0x00006197 0x10007997 7   8    .data   ascii   >R)`#[`
+105 0x000061a4 0x100079a4 6   7    .data   ascii   B)`#[`
+106 0x000061da 0x100079da 4   5    .data   ascii   \t5\ec
+107 0x000061ef 0x100079ef 7   8    .data   ascii   5R)@'[`
+108 0x0000623d 0x10007a3d 4   5    .data   ascii   t("M
+109 0x00006263 0x10007a63 4   5    .data   ascii   "MiI
+110 0x000062ab 0x10007aab 5   8    .data   utf8    5M㑤R) blocks=Basic Latin,CJK Unified Ideographs Extension A
+111 0x000062d2 0x10007ad2 4   5    .data   ascii   S5[`
+112 0x000062d7 0x10007ad7 7   8    .data   ascii   4R)P#[`
+113 0x000062df 0x10007adf 7   8    .data   ascii   4r)0#[`
+114 0x000062e7 0x10007ae7 7   8    .data   ascii   4B)`#[`
+115 0x000062f3 0x10007af3 4   5    .data   ascii   LMiI
+116 0x000062ff 0x10007aff 7   8    .data   ascii   "B)`#[`
+117 0x00006312 0x10007b12 4   5    .data   ascii   r}[`
+118 0x0000631f 0x10007b1f 5   6    .data   ascii   4[`f4
+119 0x0000632e 0x10007b2e 4   5    .data   ascii   p}[`
+120 0x00006341 0x10007b41 4   5    .data   ascii   5\ad[
+121 0x00006395 0x10007b95 4   5    .data   ascii   (P&M
+122 0x000063b3 0x10007bb3 7   8    .data   ascii   $Kfq}Z`
+123 0x000063e7 0x10007be7 7   8    .data   ascii   |[~\b=Y`
+124 0x00006411 0x10007c11 4   5    .data   ascii   ( &M
+125 0x0000643e 0x10007c3e 4   5    .data   ascii   \b?Z`
+126 0x00006463 0x10007c63 5   6    .data   ascii   4{~n}
+127 0x00006475 0x10007c75 4   5    .data   ascii   v\t,]
+128 0x000064bb 0x10007cbb 5   6    .data   ascii   4{~n}
+129 0x0000651d 0x10007d1d 4   5    .data   ascii   (@&"
+130 0x000065b1 0x10007db1 4   5    .data   ascii   (p&M
+131 0x000065b9 0x10007db9 5   6    .data   ascii   IIDZ`
+132 0x000065e2 0x10007de2 5   6    .data   ascii    TMyI
+133 0x000065ff 0x10007dff 4   5    .data   ascii   |MyI
+134 0x00006642 0x10007e42 4   5    .data   ascii   r}[`
+135 0x00006689 0x10007e89 4   5    .data   ascii   (P"]
+136 0x0000670d 0x10007f0d 4   6    .data   utf8    v\t"˞ blocks=Basic Latin,Spacing Modifier Letters
+137 0x00006713 0x10007f13 4   5    .data   ascii   }IiH
+138 0x00006729 0x10007f29 4   5    .data   ascii   (@"]
+139 0x00006789 0x10007f89 4   5    .data   ascii   (P"]
+140 0x000067bc 0x10007fbc 4   5    .data   ascii   'sv*
+141 0x000067d6 0x10007fd6 7   8    .data   ascii   '}7iH*]
+142 0x00006805 0x10008005 4   5    .data   ascii   (P&M
+143 0x0000681d 0x1000801d 4   5    .data   ascii   (P"]
+144 0x0000682d 0x1000802d 5   6    .data   ascii   (@"*q
+145 0x0000684d 0x1000804d 4   5    .data   ascii   (P"]
+146 0x000068e1 0x100080e1 4   6    .data   utf8    ~n}ˬ blocks=Basic Latin,Spacing Modifier Letters
+147 0x000068f5 0x100080f5 4   5    .data   ascii   (P"]
+148 0x00006959 0x10008159 5   6    .data   ascii   (@"Ma
+149 0x000069aa 0x100081aa 4   5    .data   ascii    tR(
+150 0x000069ca 0x100081ca 4   5    .data   ascii   HDY`
+151 0x000069f5 0x100081f5 4   5    .data   ascii   (@"]
+152 0x00006a15 0x10008215 4   5    .data   ascii   (p&M
+153 0x00006a49 0x10008249 5   6    .data   ascii   (p"7s
+154 0x00006a82 0x10008282 4   5    .data   ascii   \b?^`
+155 0x00006aa6 0x100082a6 4   5    .data   ascii   \b?Z`
+156 0x00006b32 0x10008332 4   5    .data   ascii   \e5[`
+157 0x00006b39 0x10008339 5   6    .data   ascii   (p"7a
+158 0x00006b95 0x10008395 5   6    .data   ascii   ~l}Kc
+159 0x00006c21 0x10008421 5   6    .data   ascii   ~l}Kc
+160 0x00006c67 0x10008467 6   7    .data   ascii   T+~l}M
+161 0x00006ca9 0x100084a9 5   6    .data   ascii   (`6Q`
+162 0x00006cbd 0x100084bd 5   6    .data   ascii   (`6Z`
+163 0x00006ce5 0x100084e5 4   5    .data   ascii   (`"M
+164 0x00006d25 0x10008525 5   6    .data   ascii   (p"7s
+0   0x0003c466 0x10051066 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x0003c4c2 0x100510c2 14  30   .rsrc   utf16le StringFileInfo
+2   0x0003c4e6 0x100510e6 8   18   .rsrc   utf16le 040904E4
+3   0x0003c4fe 0x100510fe 11  24   .rsrc   utf16le CompanyName
+4   0x0003c518 0x10051118 13  28   .rsrc   utf16le MinuetsOs Inc
+5   0x0003c53a 0x1005113a 15  32   .rsrc   utf16le FileDescription
+6   0x0003c55c 0x1005115c 13  28   .rsrc   utf16le MinuetsOs Inc
+7   0x0003c57e 0x1005117e 11  24   .rsrc   utf16le FileVersion
+8   0x0003c5a6 0x100511a6 12  26   .rsrc   utf16le InternalName
+9   0x0003c5c0 0x100511c0 13  28   .rsrc   utf16le MinuetsOs Inc
+10  0x0003c5e2 0x100511e2 16  34   .rsrc   utf16le OriginalFilename
+11  0x0003c604 0x10051204 13  28   .rsrc   utf16le MinuetsOs.dll
+12  0x0003c626 0x10051226 14  30   .rsrc   utf16le ProductVersion
+13  0x0003c644 0x10051244 4   10   .rsrc   utf16le 1, 0
+14  0x0003c656 0x10051256 11  24   .rsrc   utf16le ProductName
+15  0x0003c670 0x10051270 13  28   .rsrc   utf16le MinuetsOs Inc
+16  0x0003c694 0x10051294 10  22   .rsrc   utf16le arFileInfo
+17  0x0003c6b2 0x100512b2 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x10000000
+binsz    263787
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x00046fcd
+compiled Fri Oct 19 19:28:32 2018
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  true
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x5bca3060
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x2022
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x5400
+  SizeOfInitializedData : 0x47800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1d07
+  BaseOfCode : 0x1000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x2
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x53000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 154 Name: Cvtres1000 Version: 40219 Times: 1
+  Product: 155 Name: Export1000 Version: 40219 Times: 1
+  Product: 171 Name: Utc1600_CPP Version: 40219 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 25
+  Product: 147 Name: Implib900 Version: 30729 Times: 9
+  Product: 109 Name: Utc1400_C Version: 50727 Times: 5
+  Product: 125 Name: Masm800 Version: 50727 Times: 1
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x63b0
+  Size : 0x44
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x6044
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x51000
+  Size : 0x2d0
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x52000
+  Size : 0x14
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x1108
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x1000
+  Size : 0xe8
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+comdlg32.dll
+ole32.dll
+kernel32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00006190 0x000004b8 SET_64 USER32.dll_LoadStringW
+0x000061aa 0x00000400 SET_64 COMDLG32.dll_GetSaveFileNameA
+0x000061cc 0x000004c8 SET_64 ole32.dll_CoUninitialize
+0x000061de 0x000004d0 SET_64 ole32.dll_CoRegisterSurrogate
+0x000061f4 0x000004d8 SET_64 ole32.dll_CoInitialize
+0x0000620e 0x00000440 SET_64 KERNEL32.dll_CreateMutexA
+0x0000621e 0x00000448 SET_64 KERNEL32.dll_GetEnvironmentStringsW
+0x00006238 0x00000450 SET_64 KERNEL32.dll_GetEnvironmentStrings
+0x00006250 0x00000458 SET_64 KERNEL32.dll_GetVersionExA
+0x00006260 0x00000460 SET_64 KERNEL32.dll_GetACP
+0x0000626a 0x00000468 SET_64 KERNEL32.dll_GetModuleHandleA
+0x0000627e 0x00000418 SET_64 KERNEL32.dll_VirtualAllocEx
+0x00006290 0x00000478 SET_64 KERNEL32.dll_GetProcessHeap
+0x000062a2 0x00000480 SET_64 KERNEL32.dll_GetCurrentProcessId
+0x000062b8 0x00000488 SET_64 KERNEL32.dll_GetCurrentThread
+0x000062cc 0x00000490 SET_64 KERNEL32.dll_GetOEMCP
+0x000062d8 0x00000498 SET_64 KERNEL32.dll_CreateEventA
+0x000062f6 0x000004a0 SET_64 KERNEL32.dll_TerminateProcess
+0x0000630a 0x000004a8 SET_64 KERNEL32.dll_GetCurrentProcess
+0x0000631e 0x00000438 SET_64 KERNEL32.dll_UnhandledExceptionFilter
+0x0000633a 0x00000430 SET_64 KERNEL32.dll_SetUnhandledExceptionFilter
+0x00006358 0x00000428 SET_64 KERNEL32.dll_IsDebuggerPresent
+0x0000636c 0x00000420 SET_64 KERNEL32.dll_RtlVirtualUnwind
+0x00006380 0x00000410 SET_64 KERNEL32.dll_RtlLookupFunctionEntry
+0x0000639a 0x00000470 SET_64 KERNEL32.dll_RtlCaptureContext
+
+
+25 relocations
+263787
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.0.0
+  ProductVersion: 1.9.0.0
+  FileFlagsMask: 0x17
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: MinuetsOs Inc
+  FileDescription: MinuetsOs Inc
+  FileVersion: 1.0
+  InternalName: MinuetsOs Inc
+  OriginalFilename: MinuetsOs.dll
+  ProductVersion: 1, 0
+  ProductName: MinuetsOs Inc
+Section to Segment mapping:
+Segment Section
+---------------
+
+

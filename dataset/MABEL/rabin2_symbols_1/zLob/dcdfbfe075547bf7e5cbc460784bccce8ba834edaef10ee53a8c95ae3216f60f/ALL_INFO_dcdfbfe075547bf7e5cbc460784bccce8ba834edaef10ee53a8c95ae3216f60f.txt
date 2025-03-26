@@ -1,0 +1,169 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000   0x200 0x00401000  0xd000 -rwx _4198400
+1   0x00000200  0x3b08 0x0040e000  0x6000 -rwx sect_1
+2   0x00000000   0x200 0x00414000  0x1000 -rwx _4276224
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401018 paddr=0x00000018 haddr=0x00000038 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004011e8 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x004011ec NONE FUNC KERNEL32.DLL GetProcAddress
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000001e8 0x004011e8 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x000001ec 0x004011ec NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    15637
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000c7b0
+compiled Fri Jan 23 23:39:42 2004
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x4011b0be
+  PointerToSymbolTable : 0xff50ad00
+  NumberOfSymbols : 0x7ceb3476
+  SizeOfOptionalHeader : 0x148
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x4c
+  MinorLinkerVersion : 0x6f
+  SizeOfCode : 0x694c6461
+  SizeOfInitializedData : 0x72617262
+  SizeOfUninitializedData : 0x4179
+  AddressOfEntryPoint : 0x1018
+  BaseOfCode : 0x10
+  BaseOfData : 0x3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x39
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x15000
+  SizeOfHeaders : 0x200
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x400
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0xa
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x141ee
+  Size : 0x14
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xe000
+  Size : 0x66
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0xad3876ff
+  Size : 0xbe3e8b50
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x4140f0
+  Size : 0xf359276a
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x476ffa5
+  Size : 0x8bffc883
+IMAGE_DIRECTORY_ENTRY_COPYRIGHT
+IMAGE_DIRECTORY_ENTRY_ARCHITECTURE
+  VirtualAddress : 0x50746547
+  Size : 0x41636f72
+IMAGE_DIRECTORY_ENTRY_GLOBALPTR
+  VirtualAddress : 0x65726464
+  Size : 0x7373
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0xb140ab40
+  Size : 0xc1abf304
+IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT
+  VirtualAddress : 0x7b50ae0
+  Size : 0x7e8babf3
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xe951570c
+  Size : 0x10903
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0xe3e21056
+  Size : 0xe0d304b1
+IMAGE_DIRECTORY_ENTRY_COM_DESCRIPTOR
+  VirtualAddress : 0x538de803
+  Size : 0x55c03318
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00000028 0x000001e8 SET_32 KERNEL32.DLL_LoadLibraryA
+0x000000be 0x000001ec SET_32 KERNEL32.DLL_GetProcAddress
+
+
+2 relocations
+15637
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

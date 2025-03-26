@@ -1,0 +1,1079 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0xd000 0x00401000   0xd000 -r-x .text
+1   0x0000d400   0x5200 0x0040e000   0x6000 -r-- .rdata
+2   0x00012600    0x400 0x00414000   0x1000 -rw- .data
+3   0x00012a00  0x28c00 0x00415000  0x29000 -r-- .rsrc
+4   0x0003b600    0xc00 0x0043e000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0040c7c8 paddr=0x0000bbc8 haddr=0x00000128 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x0040a7e0 paddr=0x00009be0
+[Imports]
+nth vaddr      bind type lib                                  name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0040e000 NONE FUNC KERNEL32.dll                         GetLastError
+2   0x0040e004 NONE FUNC KERNEL32.dll                         VirtualProtect
+3   0x0040e008 NONE FUNC KERNEL32.dll                         VirtualAlloc
+4   0x0040e00c NONE FUNC KERNEL32.dll                         GetModuleFileNameW
+5   0x0040e010 NONE FUNC KERNEL32.dll                         CreateToolhelp32Snapshot
+6   0x0040e014 NONE FUNC KERNEL32.dll                         Process32NextW
+7   0x0040e018 NONE FUNC KERNEL32.dll                         Process32FirstW
+8   0x0040e01c NONE FUNC KERNEL32.dll                         CreateProcessW
+9   0x0040e020 NONE FUNC KERNEL32.dll                         WideCharToMultiByte
+10  0x0040e024 NONE FUNC KERNEL32.dll                         MultiByteToWideChar
+11  0x0040e028 NONE FUNC KERNEL32.dll                         EnterCriticalSection
+12  0x0040e02c NONE FUNC KERNEL32.dll                         LeaveCriticalSection
+13  0x0040e030 NONE FUNC KERNEL32.dll                         InitializeCriticalSectionAndSpinCount
+14  0x0040e034 NONE FUNC KERNEL32.dll                         DeleteCriticalSection
+15  0x0040e038 NONE FUNC KERNEL32.dll                         SetEvent
+16  0x0040e03c NONE FUNC KERNEL32.dll                         ResetEvent
+17  0x0040e040 NONE FUNC KERNEL32.dll                         WaitForSingleObjectEx
+18  0x0040e044 NONE FUNC KERNEL32.dll                         CreateEventW
+19  0x0040e048 NONE FUNC KERNEL32.dll                         GetModuleHandleW
+20  0x0040e04c NONE FUNC KERNEL32.dll                         GetProcAddress
+21  0x0040e050 NONE FUNC KERNEL32.dll                         UnhandledExceptionFilter
+22  0x0040e054 NONE FUNC KERNEL32.dll                         SetUnhandledExceptionFilter
+23  0x0040e058 NONE FUNC KERNEL32.dll                         GetCurrentProcess
+24  0x0040e05c NONE FUNC KERNEL32.dll                         TerminateProcess
+25  0x0040e060 NONE FUNC KERNEL32.dll                         IsProcessorFeaturePresent
+26  0x0040e064 NONE FUNC KERNEL32.dll                         IsDebuggerPresent
+27  0x0040e068 NONE FUNC KERNEL32.dll                         QueryPerformanceCounter
+28  0x0040e06c NONE FUNC KERNEL32.dll                         GetCurrentProcessId
+29  0x0040e070 NONE FUNC KERNEL32.dll                         GetCurrentThreadId
+30  0x0040e074 NONE FUNC KERNEL32.dll                         GetSystemTimeAsFileTime
+31  0x0040e078 NONE FUNC KERNEL32.dll                         InitializeSListHead
+32  0x0040e07c NONE FUNC KERNEL32.dll                         CloseHandle
+1   0x0040e124 NONE FUNC USER32.dll                           MessageBoxA
+1   0x0040e084 NONE FUNC MSVCP140.dll                         sym.imp.protected: char * __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::_Pninc(void)
+2   0x0040e088 NONE FUNC MSVCP140.dll                         sym.imp.public: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::setstate(int, bool)
+3   0x0040e08c NONE FUNC MSVCP140.dll                         sym.imp.public virtual: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::~destructor(void)
+4   0x0040e090 NONE FUNC MSVCP140.dll                         sym.imp.protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::showmanyc(void)
+5   0x0040e094 NONE FUNC MSVCP140.dll                         sym.imp.protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::xsgetn(char *, long long(__int64))
+6   0x0040e098 NONE FUNC MSVCP140.dll                         sym.imp.protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::xsputn(char const *, long long(__int64))
+7   0x0040e09c NONE FUNC MSVCP140.dll                         sym.imp.public virtual: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::~destructor(void)
+8   0x0040e0a0 NONE FUNC MSVCP140.dll                         sym.imp.public virtual: void __thiscall std::basic_istream<char, struct std::char_traits<char>>::~destructor(void)
+9   0x0040e0a4 NONE FUNC MSVCP140.dll                         sym.imp.public: class std::basic_istream<char, struct std::char_traits<char>> & __thiscall std::basic_istream<char, struct std::char_traits<char>>::read(char *, long long(__int64))
+10  0x0040e0a8 NONE FUNC MSVCP140.dll                         sym.imp.public: bool __thiscall std::codecvt_base::always_noconv(void)const
+11  0x0040e0ac NONE FUNC MSVCP140.dll                         sym.imp.public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::in(struct _Mbstatet &, char const *, char const *, char const * &, char *, char *, char * &)const
+12  0x0040e0b0 NONE FUNC MSVCP140.dll                         sym.imp.class std::basic_ostream<char, struct std::char_traits<char>> std::cout
+13  0x0040e0b4 NONE FUNC MSVCP140.dll                         sym.imp.bool __cdecl std::uncaught_exception(void)
+14  0x0040e0b8 NONE FUNC MSVCP140.dll                         sym.imp.public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::put(char)
+15  0x0040e0bc NONE FUNC MSVCP140.dll                         sym.imp.public: int __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::sputc(char)
+16  0x0040e0c0 NONE FUNC MSVCP140.dll                         sym.imp.public: char __thiscall std::basic_ios<char, struct std::char_traits<char>>::widen(char)const
+17  0x0040e0c4 NONE FUNC MSVCP140.dll                         sym.imp.public: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::_Osfx(void)
+18  0x0040e0c8 NONE FUNC MSVCP140.dll                         sym.imp.public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::flush(void)
+19  0x0040e0cc NONE FUNC MSVCP140.dll                         sym.imp.public: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::sputn(char const *, long long(__int64))
+20  0x0040e0d0 NONE FUNC MSVCP140.dll                         sym.imp.public: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::constructor(class std::basic_streambuf<char, struct std::char_traits<char>> *, bool)
+21  0x0040e0d4 NONE FUNC MSVCP140.dll                         sym.imp.public virtual: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::~destructor(void)
+22  0x0040e0d8 NONE FUNC MSVCP140.dll                         sym.imp.public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::operator<<(class std::basic_ostream<char, struct std::char_traits<char>> & (__cdecl *)(class std::basic_ostream<char, struct std::char_traits<char>> &))
+23  0x0040e0dc NONE FUNC MSVCP140.dll                         sym.imp.public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::write(char const *, long long(__int64))
+24  0x0040e0e0 NONE FUNC MSVCP140.dll                         sym.imp.public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::out(struct _Mbstatet &, char const *, char const *, char const * &, char *, char *, char * &)const
+25  0x0040e0e4 NONE FUNC MSVCP140.dll                         sym.imp.void __cdecl std::_Xlength_error(char const *)
+26  0x0040e0e8 NONE FUNC MSVCP140.dll                         sym.imp.public: void __thiscall std::_Lockit::~destructor(void)
+27  0x0040e0ec NONE FUNC MSVCP140.dll                         sym.imp.public: void __thiscall std::basic_istream<char, struct std::char_traits<char>>::constructor(class std::basic_streambuf<char, struct std::char_traits<char>> *, bool)
+28  0x0040e0f0 NONE FUNC MSVCP140.dll                         sym.imp.protected: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::constructor(void)
+29  0x0040e0f4 NONE FUNC MSVCP140.dll                         sym.imp.protected: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::_Init(void)
+30  0x0040e0f8 NONE FUNC MSVCP140.dll                         sym.imp.public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::unshift(struct _Mbstatet &, char *, char *, char * &)const
+31  0x0040e0fc NONE FUNC MSVCP140.dll                         sym.imp.public: class std::locale __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::getloc(void)
+32  0x0040e100 NONE FUNC MSVCP140.dll                         sym.imp.protected: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::constructor(void)
+33  0x0040e104 NONE FUNC MSVCP140.dll                         sym.imp.public: static unsigned int __cdecl std::codecvt<char, char, struct _Mbstatet>::_Getcat(class std::locale::facet const * *, class std::locale const *)
+34  0x0040e108 NONE FUNC MSVCP140.dll                         sym.imp.struct _iobuf * __cdecl std::_Fiopen(char const *, int, int)
+35  0x0040e10c NONE FUNC MSVCP140.dll                         sym.imp.class std::locale::id std::codecvt<char, char, struct _Mbstatet>::id
+36  0x0040e110 NONE FUNC MSVCP140.dll                         sym.imp.void __cdecl std::_Xout_of_range(char const *)
+37  0x0040e114 NONE FUNC MSVCP140.dll                         sym.imp.private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)
+38  0x0040e118 NONE FUNC MSVCP140.dll                         sym.imp.public: void __thiscall std::_Lockit::constructor(int)
+39  0x0040e11c NONE FUNC MSVCP140.dll                         sym.imp.public: unsigned int __thiscall std::locale::id::operator unsigned int(void)
+1   0x0040e160 NONE FUNC WININET.dll                          InternetReadFile
+2   0x0040e164 NONE FUNC WININET.dll                          HttpOpenRequestW
+3   0x0040e168 NONE FUNC WININET.dll                          InternetSetOptionW
+4   0x0040e16c NONE FUNC WININET.dll                          InternetConnectW
+5   0x0040e170 NONE FUNC WININET.dll                          InternetQueryOptionW
+6   0x0040e174 NONE FUNC WININET.dll                          InternetSetCookieA
+7   0x0040e178 NONE FUNC WININET.dll                          InternetQueryDataAvailable
+8   0x0040e17c NONE FUNC WININET.dll                          InternetOpenW
+9   0x0040e180 NONE FUNC WININET.dll                          HttpQueryInfoW
+10  0x0040e184 NONE FUNC WININET.dll                          HttpSendRequestW
+11  0x0040e188 NONE FUNC WININET.dll                          InternetCloseHandle
+1   0x0040e12c NONE FUNC VCRUNTIME140.dll                     __CxxFrameHandler3
+2   0x0040e130 NONE FUNC VCRUNTIME140.dll                     __std_exception_destroy
+3   0x0040e134 NONE FUNC VCRUNTIME140.dll                     memcpy
+4   0x0040e138 NONE FUNC VCRUNTIME140.dll                     memmove
+5   0x0040e13c NONE FUNC VCRUNTIME140.dll                     __current_exception
+6   0x0040e140 NONE FUNC VCRUNTIME140.dll                     __current_exception_context
+7   0x0040e144 NONE FUNC VCRUNTIME140.dll                     _CxxThrowException
+8   0x0040e148 NONE FUNC VCRUNTIME140.dll                     memset
+9   0x0040e14c NONE FUNC VCRUNTIME140.dll                     _except_handler4_common
+10  0x0040e150 NONE FUNC VCRUNTIME140.dll                     __std_terminate
+11  0x0040e154 NONE FUNC VCRUNTIME140.dll                     __std_exception_copy
+12  0x0040e158 NONE FUNC VCRUNTIME140.dll                     memchr
+1   0x0040e26c NONE FUNC api-ms-win-crt-string-l1-1-0.dll     tolower
+2   0x0040e270 NONE FUNC api-ms-win-crt-string-l1-1-0.dll     isspace
+3   0x0040e274 NONE FUNC api-ms-win-crt-string-l1-1-0.dll     _wcsicmp
+1   0x0040e228 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      __stdio_common_vsscanf
+2   0x0040e22c NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fsetpos
+3   0x0040e230 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fputc
+4   0x0040e234 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      __p__commode
+5   0x0040e238 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      _set_fmode
+6   0x0040e23c NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fflush
+7   0x0040e240 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fclose
+8   0x0040e244 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      _get_stream_buffer_pointers
+9   0x0040e248 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      _fseeki64
+10  0x0040e24c NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fread
+11  0x0040e250 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      __stdio_common_vsprintf
+12  0x0040e254 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      ungetc
+13  0x0040e258 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      setvbuf
+14  0x0040e25c NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fgetpos
+15  0x0040e260 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fwrite
+16  0x0040e264 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll      fgetc
+1   0x0040e1ac NONE FUNC api-ms-win-crt-heap-l1-1-0.dll       _set_new_mode
+2   0x0040e1b0 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll       _callnewh
+3   0x0040e1b4 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll       malloc
+4   0x0040e1b8 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll       free
+1   0x0040e1d4 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _get_initial_narrow_environment
+2   0x0040e1d8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _initterm
+3   0x0040e1dc NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _set_app_type
+4   0x0040e1e0 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    exit
+5   0x0040e1e4 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _exit
+6   0x0040e1e8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _seh_filter_exe
+7   0x0040e1ec NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    __p___argc
+8   0x0040e1f0 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    __p___argv
+9   0x0040e1f4 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _c_exit
+10  0x0040e1f8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _register_thread_local_exe_atexit_callback
+11  0x0040e1fc NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _cexit
+12  0x0040e200 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _invalid_parameter_noinfo_noreturn
+13  0x0040e204 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _controlfp_s
+14  0x0040e208 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _crt_atexit
+15  0x0040e20c NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _register_onexit_function
+16  0x0040e210 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _initialize_narrow_environment
+17  0x0040e214 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _configure_narrow_argv
+18  0x0040e218 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    terminate
+19  0x0040e21c NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _initterm_e
+20  0x0040e220 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll    _initialize_onexit_table
+1   0x0040e19c NONE FUNC api-ms-win-crt-filesystem-l1-1-0.dll _lock_file
+2   0x0040e1a0 NONE FUNC api-ms-win-crt-filesystem-l1-1-0.dll _unlock_file
+3   0x0040e1a4 NONE FUNC api-ms-win-crt-filesystem-l1-1-0.dll _stat64i32
+1   0x0040e190 NONE FUNC api-ms-win-crt-convert-l1-1-0.dll    wcstombs
+2   0x0040e194 NONE FUNC api-ms-win-crt-convert-l1-1-0.dll    atoi
+1   0x0040e1c0 NONE FUNC api-ms-win-crt-locale-l1-1-0.dll     _configthreadlocale
+2   0x0040e1c4 NONE FUNC api-ms-win-crt-locale-l1-1-0.dll     setlocale
+1   0x0040e1cc NONE FUNC api-ms-win-crt-math-l1-1-0.dll       __setusermatherr
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib                                  name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000d400 0x0040e000 NONE FUNC 0    KERNEL32.dll                         imp.GetLastError
+2   0x0000d404 0x0040e004 NONE FUNC 0    KERNEL32.dll                         imp.VirtualProtect
+3   0x0000d408 0x0040e008 NONE FUNC 0    KERNEL32.dll                         imp.VirtualAlloc
+4   0x0000d40c 0x0040e00c NONE FUNC 0    KERNEL32.dll                         imp.GetModuleFileNameW
+5   0x0000d410 0x0040e010 NONE FUNC 0    KERNEL32.dll                         imp.CreateToolhelp32Snapshot
+6   0x0000d414 0x0040e014 NONE FUNC 0    KERNEL32.dll                         imp.Process32NextW
+7   0x0000d418 0x0040e018 NONE FUNC 0    KERNEL32.dll                         imp.Process32FirstW
+8   0x0000d41c 0x0040e01c NONE FUNC 0    KERNEL32.dll                         imp.CreateProcessW
+9   0x0000d420 0x0040e020 NONE FUNC 0    KERNEL32.dll                         imp.WideCharToMultiByte
+10  0x0000d424 0x0040e024 NONE FUNC 0    KERNEL32.dll                         imp.MultiByteToWideChar
+11  0x0000d428 0x0040e028 NONE FUNC 0    KERNEL32.dll                         imp.EnterCriticalSection
+12  0x0000d42c 0x0040e02c NONE FUNC 0    KERNEL32.dll                         imp.LeaveCriticalSection
+13  0x0000d430 0x0040e030 NONE FUNC 0    KERNEL32.dll                         imp.InitializeCriticalSectionAndSpinCount
+14  0x0000d434 0x0040e034 NONE FUNC 0    KERNEL32.dll                         imp.DeleteCriticalSection
+15  0x0000d438 0x0040e038 NONE FUNC 0    KERNEL32.dll                         imp.SetEvent
+16  0x0000d43c 0x0040e03c NONE FUNC 0    KERNEL32.dll                         imp.ResetEvent
+17  0x0000d440 0x0040e040 NONE FUNC 0    KERNEL32.dll                         imp.WaitForSingleObjectEx
+18  0x0000d444 0x0040e044 NONE FUNC 0    KERNEL32.dll                         imp.CreateEventW
+19  0x0000d448 0x0040e048 NONE FUNC 0    KERNEL32.dll                         imp.GetModuleHandleW
+20  0x0000d44c 0x0040e04c NONE FUNC 0    KERNEL32.dll                         imp.GetProcAddress
+21  0x0000d450 0x0040e050 NONE FUNC 0    KERNEL32.dll                         imp.UnhandledExceptionFilter
+22  0x0000d454 0x0040e054 NONE FUNC 0    KERNEL32.dll                         imp.SetUnhandledExceptionFilter
+23  0x0000d458 0x0040e058 NONE FUNC 0    KERNEL32.dll                         imp.GetCurrentProcess
+24  0x0000d45c 0x0040e05c NONE FUNC 0    KERNEL32.dll                         imp.TerminateProcess
+25  0x0000d460 0x0040e060 NONE FUNC 0    KERNEL32.dll                         imp.IsProcessorFeaturePresent
+26  0x0000d464 0x0040e064 NONE FUNC 0    KERNEL32.dll                         imp.IsDebuggerPresent
+27  0x0000d468 0x0040e068 NONE FUNC 0    KERNEL32.dll                         imp.QueryPerformanceCounter
+28  0x0000d46c 0x0040e06c NONE FUNC 0    KERNEL32.dll                         imp.GetCurrentProcessId
+29  0x0000d470 0x0040e070 NONE FUNC 0    KERNEL32.dll                         imp.GetCurrentThreadId
+30  0x0000d474 0x0040e074 NONE FUNC 0    KERNEL32.dll                         imp.GetSystemTimeAsFileTime
+31  0x0000d478 0x0040e078 NONE FUNC 0    KERNEL32.dll                         imp.InitializeSListHead
+32  0x0000d47c 0x0040e07c NONE FUNC 0    KERNEL32.dll                         imp.CloseHandle
+1   0x0000d524 0x0040e124 NONE FUNC 0    USER32.dll                           imp.MessageBoxA
+1   0x0000d484 0x0040e084 NONE FUNC 0    MSVCP140.dll                         protected: char * __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::_Pninc(void)
+2   0x0000d488 0x0040e088 NONE FUNC 0    MSVCP140.dll                         public: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::setstate(int, bool)
+3   0x0000d48c 0x0040e08c NONE FUNC 0    MSVCP140.dll                         public virtual: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::~destructor(void)
+4   0x0000d490 0x0040e090 NONE FUNC 0    MSVCP140.dll                         protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::showmanyc(void)
+5   0x0000d494 0x0040e094 NONE FUNC 0    MSVCP140.dll                         protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::xsgetn(char *, long long(__int64))
+6   0x0000d498 0x0040e098 NONE FUNC 0    MSVCP140.dll                         protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::xsputn(char const *, long long(__int64))
+7   0x0000d49c 0x0040e09c NONE FUNC 0    MSVCP140.dll                         public virtual: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::~destructor(void)
+8   0x0000d4a0 0x0040e0a0 NONE FUNC 0    MSVCP140.dll                         public virtual: void __thiscall std::basic_istream<char, struct std::char_traits<char>>::~destructor(void)
+9   0x0000d4a4 0x0040e0a4 NONE FUNC 0    MSVCP140.dll                         public: class std::basic_istream<char, struct std::char_traits<char>> & __thiscall std::basic_istream<char, struct std::char_traits<char>>::read(char *, long long(__int64))
+10  0x0000d4a8 0x0040e0a8 NONE FUNC 0    MSVCP140.dll                         public: bool __thiscall std::codecvt_base::always_noconv(void)const
+11  0x0000d4ac 0x0040e0ac NONE FUNC 0    MSVCP140.dll                         public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::in(struct _Mbstatet &, char const *, char const *, char const * &, char *, char *, char * &)const
+12  0x0000d4b0 0x0040e0b0 NONE FUNC 0    MSVCP140.dll                         class std::basic_ostream<char, struct std::char_traits<char>> std::cout
+13  0x0000d4b4 0x0040e0b4 NONE FUNC 0    MSVCP140.dll                         bool __cdecl std::uncaught_exception(void)
+14  0x0000d4b8 0x0040e0b8 NONE FUNC 0    MSVCP140.dll                         public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::put(char)
+15  0x0000d4bc 0x0040e0bc NONE FUNC 0    MSVCP140.dll                         public: int __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::sputc(char)
+16  0x0000d4c0 0x0040e0c0 NONE FUNC 0    MSVCP140.dll                         public: char __thiscall std::basic_ios<char, struct std::char_traits<char>>::widen(char)const
+17  0x0000d4c4 0x0040e0c4 NONE FUNC 0    MSVCP140.dll                         public: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::_Osfx(void)
+18  0x0000d4c8 0x0040e0c8 NONE FUNC 0    MSVCP140.dll                         public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::flush(void)
+19  0x0000d4cc 0x0040e0cc NONE FUNC 0    MSVCP140.dll                         public: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::sputn(char const *, long long(__int64))
+20  0x0000d4d0 0x0040e0d0 NONE FUNC 0    MSVCP140.dll                         public: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::constructor(class std::basic_streambuf<char, struct std::char_traits<char>> *, bool)
+21  0x0000d4d4 0x0040e0d4 NONE FUNC 0    MSVCP140.dll                         public virtual: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::~destructor(void)
+22  0x0000d4d8 0x0040e0d8 NONE FUNC 0    MSVCP140.dll                         public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::operator<<(class std::basic_ostream<char, struct std::char_traits<char>> & (__cdecl *)(class std::basic_ostream<char, struct std::char_traits<char>> &))
+23  0x0000d4dc 0x0040e0dc NONE FUNC 0    MSVCP140.dll                         public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::write(char const *, long long(__int64))
+24  0x0000d4e0 0x0040e0e0 NONE FUNC 0    MSVCP140.dll                         public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::out(struct _Mbstatet &, char const *, char const *, char const * &, char *, char *, char * &)const
+25  0x0000d4e4 0x0040e0e4 NONE FUNC 0    MSVCP140.dll                         void __cdecl std::_Xlength_error(char const *)
+26  0x0000d4e8 0x0040e0e8 NONE FUNC 0    MSVCP140.dll                         public: void __thiscall std::_Lockit::~destructor(void)
+27  0x0000d4ec 0x0040e0ec NONE FUNC 0    MSVCP140.dll                         public: void __thiscall std::basic_istream<char, struct std::char_traits<char>>::constructor(class std::basic_streambuf<char, struct std::char_traits<char>> *, bool)
+28  0x0000d4f0 0x0040e0f0 NONE FUNC 0    MSVCP140.dll                         protected: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::constructor(void)
+29  0x0000d4f4 0x0040e0f4 NONE FUNC 0    MSVCP140.dll                         protected: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::_Init(void)
+30  0x0000d4f8 0x0040e0f8 NONE FUNC 0    MSVCP140.dll                         public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::unshift(struct _Mbstatet &, char *, char *, char * &)const
+31  0x0000d4fc 0x0040e0fc NONE FUNC 0    MSVCP140.dll                         public: class std::locale __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::getloc(void)
+32  0x0000d500 0x0040e100 NONE FUNC 0    MSVCP140.dll                         protected: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::constructor(void)
+33  0x0000d504 0x0040e104 NONE FUNC 0    MSVCP140.dll                         public: static unsigned int __cdecl std::codecvt<char, char, struct _Mbstatet>::_Getcat(class std::locale::facet const * *, class std::locale const *)
+34  0x0000d508 0x0040e108 NONE FUNC 0    MSVCP140.dll                         struct _iobuf * __cdecl std::_Fiopen(char const *, int, int)
+35  0x0000d50c 0x0040e10c NONE FUNC 0    MSVCP140.dll                         class std::locale::id std::codecvt<char, char, struct _Mbstatet>::id
+36  0x0000d510 0x0040e110 NONE FUNC 0    MSVCP140.dll                         void __cdecl std::_Xout_of_range(char const *)
+37  0x0000d514 0x0040e114 NONE FUNC 0    MSVCP140.dll                         private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)
+38  0x0000d518 0x0040e118 NONE FUNC 0    MSVCP140.dll                         public: void __thiscall std::_Lockit::constructor(int)
+39  0x0000d51c 0x0040e11c NONE FUNC 0    MSVCP140.dll                         public: unsigned int __thiscall std::locale::id::operator unsigned int(void)
+1   0x0000d560 0x0040e160 NONE FUNC 0    WININET.dll                          imp.InternetReadFile
+2   0x0000d564 0x0040e164 NONE FUNC 0    WININET.dll                          imp.HttpOpenRequestW
+3   0x0000d568 0x0040e168 NONE FUNC 0    WININET.dll                          imp.InternetSetOptionW
+4   0x0000d56c 0x0040e16c NONE FUNC 0    WININET.dll                          imp.InternetConnectW
+5   0x0000d570 0x0040e170 NONE FUNC 0    WININET.dll                          imp.InternetQueryOptionW
+6   0x0000d574 0x0040e174 NONE FUNC 0    WININET.dll                          imp.InternetSetCookieA
+7   0x0000d578 0x0040e178 NONE FUNC 0    WININET.dll                          imp.InternetQueryDataAvailable
+8   0x0000d57c 0x0040e17c NONE FUNC 0    WININET.dll                          imp.InternetOpenW
+9   0x0000d580 0x0040e180 NONE FUNC 0    WININET.dll                          imp.HttpQueryInfoW
+10  0x0000d584 0x0040e184 NONE FUNC 0    WININET.dll                          imp.HttpSendRequestW
+11  0x0000d588 0x0040e188 NONE FUNC 0    WININET.dll                          imp.InternetCloseHandle
+1   0x0000d52c 0x0040e12c NONE FUNC 0    VCRUNTIME140.dll                     imp.__CxxFrameHandler3
+2   0x0000d530 0x0040e130 NONE FUNC 0    VCRUNTIME140.dll                     imp.__std_exception_destroy
+3   0x0000d534 0x0040e134 NONE FUNC 0    VCRUNTIME140.dll                     imp.memcpy
+4   0x0000d538 0x0040e138 NONE FUNC 0    VCRUNTIME140.dll                     imp.memmove
+5   0x0000d53c 0x0040e13c NONE FUNC 0    VCRUNTIME140.dll                     imp.__current_exception
+6   0x0000d540 0x0040e140 NONE FUNC 0    VCRUNTIME140.dll                     imp.__current_exception_context
+7   0x0000d544 0x0040e144 NONE FUNC 0    VCRUNTIME140.dll                     imp._CxxThrowException
+8   0x0000d548 0x0040e148 NONE FUNC 0    VCRUNTIME140.dll                     imp.memset
+9   0x0000d54c 0x0040e14c NONE FUNC 0    VCRUNTIME140.dll                     imp._except_handler4_common
+10  0x0000d550 0x0040e150 NONE FUNC 0    VCRUNTIME140.dll                     imp.__std_terminate
+11  0x0000d554 0x0040e154 NONE FUNC 0    VCRUNTIME140.dll                     imp.__std_exception_copy
+12  0x0000d558 0x0040e158 NONE FUNC 0    VCRUNTIME140.dll                     imp.memchr
+1   0x0000d66c 0x0040e26c NONE FUNC 0    api-ms-win-crt-string-l1-1-0.dll     imp.tolower
+2   0x0000d670 0x0040e270 NONE FUNC 0    api-ms-win-crt-string-l1-1-0.dll     imp.isspace
+3   0x0000d674 0x0040e274 NONE FUNC 0    api-ms-win-crt-string-l1-1-0.dll     imp._wcsicmp
+1   0x0000d628 0x0040e228 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.__stdio_common_vsscanf
+2   0x0000d62c 0x0040e22c NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fsetpos
+3   0x0000d630 0x0040e230 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fputc
+4   0x0000d634 0x0040e234 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.__p__commode
+5   0x0000d638 0x0040e238 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp._set_fmode
+6   0x0000d63c 0x0040e23c NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fflush
+7   0x0000d640 0x0040e240 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fclose
+8   0x0000d644 0x0040e244 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp._get_stream_buffer_pointers
+9   0x0000d648 0x0040e248 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp._fseeki64
+10  0x0000d64c 0x0040e24c NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fread
+11  0x0000d650 0x0040e250 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.__stdio_common_vsprintf
+12  0x0000d654 0x0040e254 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.ungetc
+13  0x0000d658 0x0040e258 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.setvbuf
+14  0x0000d65c 0x0040e25c NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fgetpos
+15  0x0000d660 0x0040e260 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fwrite
+16  0x0000d664 0x0040e264 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll      imp.fgetc
+1   0x0000d5ac 0x0040e1ac NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll       imp._set_new_mode
+2   0x0000d5b0 0x0040e1b0 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll       imp._callnewh
+3   0x0000d5b4 0x0040e1b4 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll       imp.malloc
+4   0x0000d5b8 0x0040e1b8 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll       imp.free
+1   0x0000d5d4 0x0040e1d4 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._get_initial_narrow_environment
+2   0x0000d5d8 0x0040e1d8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._initterm
+3   0x0000d5dc 0x0040e1dc NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._set_app_type
+4   0x0000d5e0 0x0040e1e0 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp.exit
+5   0x0000d5e4 0x0040e1e4 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._exit
+6   0x0000d5e8 0x0040e1e8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._seh_filter_exe
+7   0x0000d5ec 0x0040e1ec NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp.__p___argc
+8   0x0000d5f0 0x0040e1f0 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp.__p___argv
+9   0x0000d5f4 0x0040e1f4 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._c_exit
+10  0x0000d5f8 0x0040e1f8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._register_thread_local_exe_atexit_callback
+11  0x0000d5fc 0x0040e1fc NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._cexit
+12  0x0000d600 0x0040e200 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._invalid_parameter_noinfo_noreturn
+13  0x0000d604 0x0040e204 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._controlfp_s
+14  0x0000d608 0x0040e208 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._crt_atexit
+15  0x0000d60c 0x0040e20c NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._register_onexit_function
+16  0x0000d610 0x0040e210 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._initialize_narrow_environment
+17  0x0000d614 0x0040e214 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._configure_narrow_argv
+18  0x0000d618 0x0040e218 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp.terminate
+19  0x0000d61c 0x0040e21c NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._initterm_e
+20  0x0000d620 0x0040e220 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll    imp._initialize_onexit_table
+1   0x0000d59c 0x0040e19c NONE FUNC 0    api-ms-win-crt-filesystem-l1-1-0.dll imp._lock_file
+2   0x0000d5a0 0x0040e1a0 NONE FUNC 0    api-ms-win-crt-filesystem-l1-1-0.dll imp._unlock_file
+3   0x0000d5a4 0x0040e1a4 NONE FUNC 0    api-ms-win-crt-filesystem-l1-1-0.dll imp._stat64i32
+1   0x0000d590 0x0040e190 NONE FUNC 0    api-ms-win-crt-convert-l1-1-0.dll    imp.wcstombs
+2   0x0000d594 0x0040e194 NONE FUNC 0    api-ms-win-crt-convert-l1-1-0.dll    imp.atoi
+1   0x0000d5c0 0x0040e1c0 NONE FUNC 0    api-ms-win-crt-locale-l1-1-0.dll     imp._configthreadlocale
+2   0x0000d5c4 0x0040e1c4 NONE FUNC 0    api-ms-win-crt-locale-l1-1-0.dll     imp.setlocale
+1   0x0000d5cc 0x0040e1cc NONE FUNC 0    api-ms-win-crt-math-l1-1-0.dll       imp.__setusermatherr
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000d6c8 0x0040e2c8 32  66   .rdata  utf16le api-ms-win-core-synch-l1-2-0.dll
+1   0x0000d70c 0x0040e30c 12  26   .rdata  utf16le kernel32.dll
+2   0x0000d728 0x0040e328 24  25   .rdata  ascii   SleepConditionVariableCS
+3   0x0000d744 0x0040e344 24  25   .rdata  ascii   WakeAllConditionVariable
+4   0x0000d780 0x0040e380 14  15   .rdata  ascii   bad allocation
+5   0x0000d7b0 0x0040e3b0 17  18   .rdata  ascii   Unknown exception
+6   0x0000d7c4 0x0040e3c4 20  21   .rdata  ascii   bad array new length
+7   0x0000d7dc 0x0040e3dc 15  16   .rdata  ascii   string too long
+8   0x0000d7ec 0x0040e3ec 16  17   .rdata  ascii   map/set too long
+9   0x0000d800 0x0040e400 8   9    .rdata  ascii   bad cast
+10  0x0000d810 0x0040e410 4   5    .rdata  ascii   \r\n\r\n
+11  0x0000d81c 0x0040e41c 6   7    .rdata  ascii   status
+12  0x0000d824 0x0040e424 5   6    .rdata  ascii   HTTP/
+13  0x0000d82c 0x0040e42c 10  11   .rdata  ascii   Set-Cookie
+14  0x0000d840 0x0040e440 10  11   .rdata  ascii   User-Agent
+15  0x0000d850 0x0040e450 120 121  .rdata  ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36
+16  0x0000d8cc 0x0040e4cc 10  11   .rdata  ascii   Connection
+17  0x0000d8d8 0x0040e4d8 10  11   .rdata  ascii   Keep-Alive
+18  0x0000d8e4 0x0040e4e4 7   8    .rdata  ascii   timeout
+19  0x0000d8ec 0x0040e4ec 4   5    .rdata  ascii   3000
+20  0x0000d8f4 0x0040e4f4 5   6    .rdata  ascii   proxy
+21  0x0000d900 0x0040e500 7   8    .rdata  ascii   http://
+22  0x0000d908 0x0040e508 5   6    .rdata  ascii   http:
+23  0x0000d918 0x0040e518 4   5    .rdata  ascii   POST
+24  0x0000d920 0x0040e520 14  15   .rdata  ascii   Content-Length
+25  0x0000d930 0x0040e530 32  33   .rdata  ascii   --216378052142052079582464804396
+26  0x0000d954 0x0040e554 12  13   .rdata  ascii   Content-Type
+27  0x0000d968 0x0040e568 87  88   .rdata  ascii   multipart/form-data; boundary=---------------------------216378052142052079582464804396
+28  0x0000d9c0 0x0040e5c0 48  49   .rdata  ascii   application/x-www-form-urlencoded; charset=UTF-8
+29  0x0000d9f8 0x0040e5f8 6   7    .rdata  ascii   https:
+30  0x0000da00 0x0040e600 15  16   .rdata  ascii   application/pdf
+31  0x0000da10 0x0040e610 4   5    .rdata  ascii   .pdf
+32  0x0000da18 0x0040e618 22  23   .rdata  ascii   application/ecmascript
+33  0x0000da34 0x0040e634 16  17   .rdata  ascii   application/json
+34  0x0000da48 0x0040e648 5   6    .rdata  ascii   .json
+35  0x0000da50 0x0040e650 28  29   .rdata  ascii   application/x-zip-compressed
+36  0x0000da70 0x0040e670 4   5    .rdata  ascii   .zip
+37  0x0000da78 0x0040e678 10  11   .rdata  ascii   text/plain
+38  0x0000da84 0x0040e684 4   5    .rdata  ascii   .txt
+39  0x0000da8c 0x0040e68c 10  11   .rdata  ascii   audio/mpeg
+40  0x0000da98 0x0040e698 4   5    .rdata  ascii   .mp3
+41  0x0000daa0 0x0040e6a0 9   10   .rdata  ascii   image/gif
+42  0x0000daac 0x0040e6ac 4   5    .rdata  ascii   .gif
+43  0x0000dabc 0x0040e6bc 20  21   .rdata  ascii   text/x-python-script
+44  0x0000dad8 0x0040e6d8 10  11   .rdata  ascii   image/jpeg
+45  0x0000dae4 0x0040e6e4 4   5    .rdata  ascii   .jpg
+46  0x0000daec 0x0040e6ec 24  25   .rdata  ascii   application/octet-stream
+47  0x0000db08 0x0040e708 78  79   .rdata  ascii   ERROR_INTERNET_OUT_OF_HANDLES No more handles could be generated at this time.
+48  0x0000db58 0x0040e758 49  50   .rdata  ascii   ERROR_INTERNET_TIMEOUT The request has timed out.
+49  0x0000db90 0x0040e790 212 213  .rdata  ascii   ERROR_INTERNET_EXTENDED_ERROR An extended error was returned from the server., This is typically a string or buffer containing a verbose error message. Call InternetGetLastResponseInfo to retrieve the error text.
+50  0x0000dc68 0x0040e868 61  62   .rdata  ascii   ERROR_INTERNET_INTERNAL_ERROR An internal error has occurred.
+51  0x0000dca8 0x0040e8a8 46  47   .rdata  ascii   ERROR_INTERNET_INVALID_URL The URL is invalid.
+52  0x0000dcd8 0x0040e8d8 94  95   .rdata  ascii   ERROR_INTERNET_UNRECOGNIZED_SCHEME The URL scheme could not be recognized or is not supported.
+53  0x0000dd38 0x0040e938 71  72   .rdata  ascii   ERROR_INTERNET_NAME_NOT_RESOLVED The server name could not be resolved.
+54  0x0000dd80 0x0040e980 78  79   .rdata  ascii   ERROR_INTERNET_PROTOCOL_NOT_FOUND The requested protocol could not be located.
+55  0x0000ddd0 0x0040e9d0 118 119  .rdata  ascii   ERROR_INTERNET_INVALID_OPTION A request to InternetQueryOption or InternetSetOption specified an invalid option value.
+56  0x0000de48 0x0040ea48 156 157  .rdata  ascii   ERROR_INTERNET_BAD_OPTION_LENGTH The length of an option supplied to InternetQueryOption or InternetSetOption is incorrect for the type of option specified.
+57  0x0000dee8 0x0040eae8 82  83   .rdata  ascii   ERROR_INTERNET_OPTION_NOT_SETTABLE The request option cannot be set, only queried.
+58  0x0000df40 0x0040eb40 91  92   .rdata  ascii   ERROR_INTERNET_SHUTDOWN The Win32 Internet function support is being shut down or unloaded.
+59  0x0000dfa0 0x0040eba0 153 154  .rdata  ascii   ERROR_INTERNET_INCORRECT_USER_NAME The request to connect and log on to an FTP server could not be completed because the supplied user name is incorrect.
+60  0x0000e040 0x0040ec40 151 152  .rdata  ascii   ERROR_INTERNET_INCORRECT_PASSWORD The request to connect and log on to an FTP server could not be completed because the supplied password is incorrect.
+61  0x0000e0d8 0x0040ecd8 90  91   .rdata  ascii   ERROR_INTERNET_LOGIN_FAILURE The request to connect to and log on to an FTP server failed.
+62  0x0000e138 0x0040ed38 68  69   .rdata  ascii   ERROR_INTERNET_INVALID_OPERATION The requested operation is invalid.
+63  0x0000e180 0x0040ed80 167 168  .rdata  ascii   ERROR_INTERNET_OPERATION_CANCELLED The operation was canceled, usually because the handle on which the request was operating was closed before the operation completed.
+64  0x0000e228 0x0040ee28 97  98   .rdata  ascii   ERROR_INTERNET_INCORRECT_HANDLE_TYPE The type of handle supplied is incorrect for this operation.
+65  0x0000e290 0x0040ee90 140 141  .rdata  ascii   ERROR_INTERNET_INCORRECT_HANDLE_STATE The requested operation cannot be carried out because the handle supplied is not in the correct state.
+66  0x0000e320 0x0040ef20 72  73   .rdata  ascii   ERROR_INTERNET_NOT_PROXY_REQUEST The request cannot be made via a proxy.
+67  0x0000e370 0x0040ef70 87  88   .rdata  ascii   ERROR_INTERNET_REGISTRY_VALUE_NOT_FOUND A required registry value could not be located.
+68  0x0000e3c8 0x0040efc8 125 126  .rdata  ascii   ERROR_INTERNET_BAD_REGISTRY_PARAMETER A required registry value was located but is an incorrect type or has an invalid value.
+69  0x0000e448 0x0040f048 82  83   .rdata  ascii   ERROR_INTERNET_NO_DIRECT_ACCESS Direct network access cannot be made at this time.
+70  0x0000e4a0 0x0040f0a0 110 111  .rdata  ascii   ERROR_INTERNET_NO_CONTEXT An asynchronous request could not be made because a zero context value was supplied.
+71  0x0000e510 0x0040f110 114 115  .rdata  ascii   ERROR_INTERNET_NO_CALLBACK An asynchronous request could not be made because a callback function has not been set.
+72  0x0000e588 0x0040f188 118 119  .rdata  ascii   ERROR_INTERNET_REQUEST_PENDING The required operation could not be completed because one or more requests are pending.
+73  0x0000e600 0x0040f200 69  70   .rdata  ascii   ERROR_INTERNET_INCORRECT_FORMAT The format of the request is invalid.
+74  0x0000e648 0x0040f248 70  71   .rdata  ascii   ERROR_INTERNET_ITEM_NOT_FOUND The requested item could not be located.
+75  0x0000e690 0x0040f290 74  75   .rdata  ascii   ERROR_INTERNET_CANNOT_CONNECT The attempt to connect to the server failed.
+76  0x0000e6e0 0x0040f2e0 85  86   .rdata  ascii   ERROR_INTERNET_CONNECTION_ABORTED The connection with the server has been terminated.
+77  0x0000e738 0x0040f338 78  79   .rdata  ascii   ERROR_INTERNET_CONNECTION_RESET The connection with the server has been reset.
+78  0x0000e788 0x0040f388 85  86   .rdata  ascii   ERROR_INTERNET_FORCE_RETRY Calls for the Win32 Internet function to redo the request.
+79  0x0000e7e0 0x0040f3e0 74  75   .rdata  ascii   ERROR_INTERNET_INVALID_PROXY_REQUEST The request to the proxy was invalid.
+80  0x0000e830 0x0040f430 82  83   .rdata  ascii   ERROR_INTERNET_HANDLE_EXISTS The request failed because the handle already exists.
+81  0x0000e888 0x0040f488 126 127  .rdata  ascii   ERROR_INTERNET_SEC_CERT_DATE_INVALID SSL certificate date that was received from the server is bad.The certificate is expired.
+82  0x0000e908 0x0040f508 202 203  .rdata  ascii   ERROR_INTERNET_SEC_CERT_CN_INVALID SSL certificate common name (host name field) is incorrect., For example, if you entered www.server.com and the common name on the certificate says www.,different.com.
+83  0x0000e9d8 0x0040f5d8 122 123  .rdata  ascii   ERROR_INTERNET_HTTP_TO_HTTPS_ON_REDIR The application is moving from a non-SSL to an SSL connection because of a redirect.
+84  0x0000ea58 0x0040f658 123 124  .rdata  ascii   ERROR_INTERNET_HTTPS_TO_HTTP_ON_REDIR The application is moving from an SSL to an non-SSL connection because of a redirect.
+85  0x0000ead8 0x0040f6d8 151 152  .rdata  ascii   ERROR_INTERNET_MIXED_SECURITY Indicates that the content is not entirely secure. Some of the content being viewed may have come from unsecured servers.
+86  0x0000eb70 0x0040f770 144 145  .rdata  ascii   ERROR_INTERNET_CHG_POST_IS_NON_SECURE The application is posting and attempting to change multiple lines of text on a server that is not secure.
+87  0x0000ec08 0x0040f808 97  98   .rdata  ascii   ERROR_INTERNET_POST_IS_NON_SECURE The application is posting data to a server that is not secure.
+88  0x0000ec70 0x0040f870 140 141  .rdata  ascii   ERROR_FTP_TRANSFER_IN_PROGRESS The requested operation cannot be made on the FTP session handle because an operation is already in progress.
+89  0x0000ed00 0x0040f900 86  87   .rdata  ascii   ERROR_FTP_DROPPED The FTP operation was not completed because the session was aborted.
+90  0x0000ed58 0x0040f958 101 102  .rdata  ascii   ERROR_GOPHER_PROTOCOL_ERROR An error was detected while parsing data returned from the gopher server.
+91  0x0000edc0 0x0040f9c0 66  67   .rdata  ascii   ERROR_GOPHER_NOT_FILE The request must be made for a file locator.
+92  0x0000ee08 0x0040fa08 90  91   .rdata  ascii   ERROR_GOPHER_DATA_ERROR An error was detected while receiving data from the gopher server.
+93  0x0000ee64 0x0040fa64 62  63   .rdata  ascii   ERROR_GOPHER_END_OF_DATA The end of the data has been reached.
+94  0x0000eea8 0x0040faa8 63  64   .rdata  ascii   ERROR_GOPHER_INVALID_LOCATOR The supplied locator is not valid.
+95  0x0000eee8 0x0040fae8 94  95   .rdata  ascii   ERROR_GOPHER_INCORRECT_LOCATOR_TYPE The type of the locator is not correct for this operation.
+96  0x0000ef48 0x0040fb48 148 149  .rdata  ascii   ERROR_GOPHER_NOT_GOPHER_PLUS The requested operation can only be made against a Gopher+ server or with a locator that specifies a Gopher+ operation.
+97  0x0000efe0 0x0040fbe0 78  79   .rdata  ascii   ERROR_GOPHER_ATTRIBUTE_NOT_FOUND The requested attribute could not be located.
+98  0x0000f030 0x0040fc30 57  58   .rdata  ascii   ERROR_GOPHER_UNKNOWN_LOCATOR The locator type is unknown.
+99  0x0000f070 0x0040fc70 70  71   .rdata  ascii   ERROR_HTTP_HEADER_NOT_FOUND The requested header could not be located.
+100 0x0000f0b8 0x0040fcb8 66  67   .rdata  ascii   ERROR_HTTP_DOWNLEVEL_SERVER The server did not return any headers.
+101 0x0000f100 0x0040fd00 75  76   .rdata  ascii   ERROR_HTTP_INVALID_SERVER_RESPONSE The server response could not be parsed.
+102 0x0000f14c 0x0040fd4c 57  58   .rdata  ascii   ERROR_HTTP_INVALID_HEADER The supplied header is invalid.
+103 0x0000f188 0x0040fd88 78  79   .rdata  ascii   ERROR_HTTP_INVALID_QUERY_REQUEST The request made to HttpQueryInfo is invalid.
+104 0x0000f1d8 0x0040fdd8 89  90   .rdata  ascii   ERROR_HTTP_HEADER_ALREADY_EXISTS The header could not be added because it already exists.
+105 0x0000f238 0x0040fe38 178 179  .rdata  ascii   ERROR_HTTP_REDIRECT_FAILED The redirection failed because either the scheme changed (for example, HTTP to FTP) or all attempts made to redirect failed (default is five attempts).
+106 0x0000f2ec 0x0040feec 22  46   .rdata  utf16le WinInetGet/CppRequests
+107 0x0000f31c 0x0040ff1c 8   18   .rdata  utf16le HTTP/1.1
+108 0x0000f330 0x0040ff30 39  40   .rdata  ascii   HttpOpenRequest failed,error = %d (%s)\n
+109 0x0000f358 0x0040ff58 6   7    .rdata  ascii   Cookie
+110 0x0000f360 0x0040ff60 39  40   .rdata  ascii   HttpSendRequest failed,error = %d (%s)\n
+111 0x0000f388 0x0040ff88 37  38   .rdata  ascii   HttpQueryInfo failed,error = %d (%s)\n
+112 0x0000f3b0 0x0040ffb0 44  45   .rdata  ascii   InternetReadFile failed, error = %d (0x%x)/n
+113 0x0000f3e0 0x0040ffe0 15  16   .rdata  ascii   vector too long
+114 0x0000f3f0 0x0040fff0 23  24   .rdata  ascii   invalid string position
+115 0x0000f476 0x00410076 16  34   .rdata  utf16le @wpscloudsvr.exe
+116 0x0000f498 0x00410098 6   14   .rdata  utf16le QQ.exe
+117 0x0000f4a8 0x004100a8 10  22   .rdata  utf16le wechat.exe
+118 0x0000f4c0 0x004100c0 20  21   .rdata  ascii   qsaddadasawvrfdsvcha
+119 0x0000f4d8 0x004100d8 25  26   .rdata  ascii   C:\Users\Public\cvpnc.exe
+120 0x0000f4f4 0x004100f4 25  52   .rdata  utf16le C:\Users\Public\cvpnc.exe
+121 0x0000f528 0x00410128 5   6    .rdata  ascii   error
+122 0x0000f540 0x00410140 223 224  .rdata  ascii   https://www.yuque.com/api/docs/share/6d9a855b-d656-4f7f-86d5-e346f8738aa3?doc_slug=vucyas&from=https%3A%2F%2Fwww.yuque.com%2Fdocs%2Fshare%2F6d9a855b-d656-4f7f-86d5-e346f8738aa3%3F%23%2520%25E3%2580%258A996icu%25E3%2580%258B
+123 0x0000fce4 0x004108e4 5   6    .rdata  ascii   RSDS+
+124 0x0000fcfc 0x004108fc 48  49   .rdata  ascii   D:\c-code\c++\shellcode\scopysss\Release\sc2.pdb
+125 0x0000fd44 0x00410944 4   5    .rdata  ascii   GCTL
+126 0x0000fd50 0x00410950 8   9    .rdata  ascii   .text$di
+127 0x0000fd64 0x00410964 8   9    .rdata  ascii   .text$mn
+128 0x0000fd78 0x00410978 7   8    .rdata  ascii   .text$x
+129 0x0000fd88 0x00410988 8   9    .rdata  ascii   .text$yd
+130 0x0000fd9c 0x0041099c 8   9    .rdata  ascii   .idata$5
+131 0x0000fdb0 0x004109b0 6   7    .rdata  ascii   .00cfg
+132 0x0000fdc0 0x004109c0 8   9    .rdata  ascii   .CRT$XCA
+133 0x0000fdd4 0x004109d4 9   10   .rdata  ascii   .CRT$XCAA
+134 0x0000fde8 0x004109e8 8   9    .rdata  ascii   .CRT$XCL
+135 0x0000fdfc 0x004109fc 8   9    .rdata  ascii   .CRT$XCZ
+136 0x0000fe10 0x00410a10 8   9    .rdata  ascii   .CRT$XIA
+137 0x0000fe24 0x00410a24 9   10   .rdata  ascii   .CRT$XIAA
+138 0x0000fe38 0x00410a38 9   10   .rdata  ascii   .CRT$XIAC
+139 0x0000fe4c 0x00410a4c 8   9    .rdata  ascii   .CRT$XIC
+140 0x0000fe60 0x00410a60 8   9    .rdata  ascii   .CRT$XIZ
+141 0x0000fe74 0x00410a74 8   9    .rdata  ascii   .CRT$XLA
+142 0x0000fe88 0x00410a88 8   9    .rdata  ascii   .CRT$XLZ
+143 0x0000fe9c 0x00410a9c 8   9    .rdata  ascii   .CRT$XPA
+144 0x0000feb0 0x00410ab0 8   9    .rdata  ascii   .CRT$XPZ
+145 0x0000fec4 0x00410ac4 8   9    .rdata  ascii   .CRT$XTA
+146 0x0000fed8 0x00410ad8 8   9    .rdata  ascii   .CRT$XTZ
+147 0x0000feec 0x00410aec 6   7    .rdata  ascii   .rdata
+148 0x0000fefc 0x00410afc 8   9    .rdata  ascii   .rdata$T
+149 0x0000ff10 0x00410b10 8   9    .rdata  ascii   .rdata$r
+150 0x0000ff24 0x00410b24 13  14   .rdata  ascii   .rdata$sxdata
+151 0x0000ff3c 0x00410b3c 13  14   .rdata  ascii   .rdata$zzzdbg
+152 0x0000ff54 0x00410b54 8   9    .rdata  ascii   .rtc$IAA
+153 0x0000ff68 0x00410b68 8   9    .rdata  ascii   .rtc$IZZ
+154 0x0000ff7c 0x00410b7c 8   9    .rdata  ascii   .rtc$TAA
+155 0x0000ff90 0x00410b90 8   9    .rdata  ascii   .rtc$TZZ
+156 0x0000ffa4 0x00410ba4 4   5    .rdata  ascii   .tls
+157 0x0000ffb4 0x00410bb4 5   6    .rdata  ascii   .tls$
+158 0x0000ffc4 0x00410bc4 8   9    .rdata  ascii   .tls$ZZZ
+159 0x0000ffd8 0x00410bd8 8   9    .rdata  ascii   .xdata$x
+160 0x0000ffec 0x00410bec 8   9    .rdata  ascii   .idata$2
+161 0x00010000 0x00410c00 8   9    .rdata  ascii   .idata$3
+162 0x00010014 0x00410c14 8   9    .rdata  ascii   .idata$4
+163 0x00010028 0x00410c28 8   9    .rdata  ascii   .idata$6
+164 0x0001003c 0x00410c3c 5   6    .rdata  ascii   .data
+165 0x0001004c 0x00410c4c 7   8    .rdata  ascii   .data$r
+166 0x0001005c 0x00410c5c 8   9    .rdata  ascii   .data$rs
+167 0x00010070 0x00410c70 4   5    .rdata  ascii   .bss
+168 0x00010080 0x00410c80 8   9    .rdata  ascii   .rsrc$01
+169 0x00010094 0x00410c94 8   9    .rdata  ascii   .rsrc$02
+170 0x0001130e 0x00411f0e 12  13   .rdata  ascii   GetLastError
+171 0x0001131e 0x00411f1e 14  15   .rdata  ascii   VirtualProtect
+172 0x00011330 0x00411f30 12  13   .rdata  ascii   VirtualAlloc
+173 0x00011340 0x00411f40 18  19   .rdata  ascii   GetModuleFileNameW
+174 0x00011356 0x00411f56 24  25   .rdata  ascii   CreateToolhelp32Snapshot
+175 0x00011372 0x00411f72 14  15   .rdata  ascii   Process32NextW
+176 0x00011384 0x00411f84 15  16   .rdata  ascii   Process32FirstW
+177 0x00011396 0x00411f96 14  15   .rdata  ascii   CreateProcessW
+178 0x000113a8 0x00411fa8 19  20   .rdata  ascii   WideCharToMultiByte
+179 0x000113be 0x00411fbe 19  20   .rdata  ascii   MultiByteToWideChar
+180 0x000113d2 0x00411fd2 12  13   .rdata  ascii   KERNEL32.dll
+181 0x000113e2 0x00411fe2 11  12   .rdata  ascii   MessageBoxA
+182 0x000113ee 0x00411fee 10  11   .rdata  ascii   USER32.dll
+183 0x000113fc 0x00411ffc 29  30   .rdata  ascii   ?_Xlength_error@std@@YAXPBD@Z
+184 0x0001141c 0x0041201c 22  23   .rdata  ascii   ??1_Lockit@std@@QAE@XZ
+185 0x00011436 0x00412036 23  24   .rdata  ascii   ??0_Lockit@std@@QAE@H@Z
+186 0x00011450 0x00412050 48  49   .rdata  ascii   ?_Getgloballocale@locale@std@@CAPAV_Locimp@12@XZ
+187 0x00011484 0x00412084 29  30   .rdata  ascii   ?_Xout_of_range@std@@YAXPBD@Z
+188 0x000114a4 0x004120a4 47  48   .rdata  ascii   ?id@?$codecvt@DDU_Mbstatet@@@std@@2V0locale@2@A
+189 0x000114d6 0x004120d6 34  35   .rdata  ascii   ?_Fiopen@std@@YAPAU_iobuf@@PBDHH@Z
+190 0x000114fc 0x004120fc 70  71   .rdata  ascii   ?_Getcat@?$codecvt@DDU_Mbstatet@@@std@@SAIPAPBVfacet@locale@2@PBV42@@Z
+191 0x00011546 0x00412146 56  57   .rdata  ascii   ??0?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAE@XZ
+192 0x00011582 0x00412182 72  73   .rdata  ascii   ?getloc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QBE?AVlocale@2@XZ
+193 0x000115ce 0x004121ce 68  69   .rdata  ascii   ?unshift@?$codecvt@DDU_Mbstatet@@@std@@QBEHAAU_Mbstatet@@PAD1AAPAD@Z
+194 0x00011616 0x00412216 60  61   .rdata  ascii   ?_Init@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEXXZ
+195 0x00011656 0x00412256 50  51   .rdata  ascii   ??0?$basic_ios@DU?$char_traits@D@std@@@std@@IAE@XZ
+196 0x0001168c 0x0041228c 103 104  .rdata  ascii   ??0?$basic_istream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+197 0x000116f6 0x004122f6 72  73   .rdata  ascii   ?in@?$codecvt@DDU_Mbstatet@@@std@@QBEHAAU_Mbstatet@@PBD1AAPBDPAD3AAPAD@Z
+198 0x00011742 0x00412342 73  74   .rdata  ascii   ?out@?$codecvt@DDU_Mbstatet@@@std@@QBEHAAU_Mbstatet@@PBD1AAPBDPAD3AAPAD@Z
+199 0x0001178e 0x0041238e 63  64   .rdata  ascii   ?_Pninc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@IAEPADXZ
+200 0x000117d0 0x004123d0 60  61   .rdata  ascii   ?setstate@?$basic_ios@DU?$char_traits@D@std@@@std@@QAEXH_N@Z
+201 0x00011810 0x00412410 56  57   .rdata  ascii   ??1?$basic_streambuf@DU?$char_traits@D@std@@@std@@UAE@XZ
+202 0x0001184c 0x0041244c 65  66   .rdata  ascii   ?showmanyc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JXZ
+203 0x00011890 0x00412490 67  68   .rdata  ascii   ?xsgetn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPAD_J@Z
+204 0x000118d6 0x004124d6 67  68   .rdata  ascii   ?xsputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@MAE_JPBD_J@Z
+205 0x0001191c 0x0041251c 50  51   .rdata  ascii   ??1?$basic_ios@DU?$char_traits@D@std@@@std@@UAE@XZ
+206 0x00011952 0x00412552 54  55   .rdata  ascii   ??1?$basic_istream@DU?$char_traits@D@std@@@std@@UAE@XZ
+207 0x0001198c 0x0041258c 67  68   .rdata  ascii   ?read@?$basic_istream@DU?$char_traits@D@std@@@std@@QAEAAV12@PAD_J@Z
+208 0x000119d2 0x004125d2 40  41   .rdata  ascii   ?always_noconv@codecvt_base@std@@QBE_NXZ
+209 0x000119fe 0x004125fe 24  25   .rdata  ascii   ??Bid@locale@std@@QAEIXZ
+210 0x00011a1a 0x0041261a 56  57   .rdata  ascii   ?cout@std@@3V?$basic_ostream@DU?$char_traits@D@std@@@1@A
+211 0x00011a56 0x00412656 31  32   .rdata  ascii   ?uncaught_exception@std@@YA_NXZ
+212 0x00011a78 0x00412678 62  63   .rdata  ascii   ?put@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@D@Z
+213 0x00011aba 0x004126ba 61  62   .rdata  ascii   ?sputc@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAEHD@Z
+214 0x00011afa 0x004126fa 55  56   .rdata  ascii   ?widen@?$basic_ios@DU?$char_traits@D@std@@@std@@QBEDD@Z
+215 0x00011b34 0x00412734 58  59   .rdata  ascii   ?_Osfx@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEXXZ
+216 0x00011b72 0x00412772 63  64   .rdata  ascii   ?flush@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@XZ
+217 0x00011bb4 0x004127b4 66  67   .rdata  ascii   ?sputn@?$basic_streambuf@DU?$char_traits@D@std@@@std@@QAE_JPBD_J@Z
+218 0x00011bfa 0x004127fa 103 104  .rdata  ascii   ??0?$basic_ostream@DU?$char_traits@D@std@@@std@@QAE@PAV?$basic_streambuf@DU?$char_traits@D@std@@@1@_N@Z
+219 0x00011c64 0x00412864 54  55   .rdata  ascii   ??1?$basic_ostream@DU?$char_traits@D@std@@@std@@UAE@XZ
+220 0x00011c9e 0x0041289e 76  77   .rdata  ascii   ??6?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV01@P6AAAV01@AAV01@@Z@Z
+221 0x00011cee 0x004128ee 68  69   .rdata  ascii   ?write@?$basic_ostream@DU?$char_traits@D@std@@@std@@QAEAAV12@PBD_J@Z
+222 0x00011d34 0x00412934 12  13   .rdata  ascii   MSVCP140.dll
+223 0x00011d44 0x00412944 16  17   .rdata  ascii   HttpOpenRequestW
+224 0x00011d58 0x00412958 20  21   .rdata  ascii   InternetQueryOptionW
+225 0x00011d70 0x00412970 18  19   .rdata  ascii   InternetSetCookieA
+226 0x00011d86 0x00412986 26  27   .rdata  ascii   InternetQueryDataAvailable
+227 0x00011da4 0x004129a4 13  14   .rdata  ascii   InternetOpenW
+228 0x00011db4 0x004129b4 14  15   .rdata  ascii   HttpQueryInfoW
+229 0x00011dc6 0x004129c6 16  17   .rdata  ascii   HttpSendRequestW
+230 0x00011dda 0x004129da 19  20   .rdata  ascii   InternetCloseHandle
+231 0x00011df0 0x004129f0 16  17   .rdata  ascii   InternetConnectW
+232 0x00011e04 0x00412a04 18  19   .rdata  ascii   InternetSetOptionW
+233 0x00011e1a 0x00412a1a 16  17   .rdata  ascii   InternetReadFile
+234 0x00011e2c 0x00412a2c 11  12   .rdata  ascii   WININET.dll
+235 0x00011e3a 0x00412a3a 18  19   .rdata  ascii   __CxxFrameHandler3
+236 0x00011e50 0x00412a50 23  24   .rdata  ascii   __std_exception_destroy
+237 0x00011e6a 0x00412a6a 20  21   .rdata  ascii   __std_exception_copy
+238 0x00011e82 0x00412a82 15  16   .rdata  ascii   __std_terminate
+239 0x00011e94 0x00412a94 19  20   .rdata  ascii   __current_exception
+240 0x00011eaa 0x00412aaa 27  28   .rdata  ascii   __current_exception_context
+241 0x00011ec8 0x00412ac8 18  19   .rdata  ascii   _CxxThrowException
+242 0x00011ede 0x00412ade 6   7    .rdata  ascii   memset
+243 0x00011ee8 0x00412ae8 23  24   .rdata  ascii   _except_handler4_common
+244 0x00011f00 0x00412b00 16  17   .rdata  ascii   VCRUNTIME140.dll
+245 0x00011f14 0x00412b14 7   8    .rdata  ascii   tolower
+246 0x00011f1e 0x00412b1e 23  24   .rdata  ascii   __stdio_common_vsprintf
+247 0x00011f38 0x00412b38 4   5    .rdata  ascii   free
+248 0x00011f40 0x00412b40 22  23   .rdata  ascii   __stdio_common_vsscanf
+249 0x00011f5a 0x00412b5a 6   7    .rdata  ascii   malloc
+250 0x00011f64 0x00412b64 34  35   .rdata  ascii   _invalid_parameter_noinfo_noreturn
+251 0x00011f8a 0x00412b8a 5   6    .rdata  ascii   fputc
+252 0x00011f92 0x00412b92 6   7    .rdata  ascii   fflush
+253 0x00011f9c 0x00412b9c 6   7    .rdata  ascii   fclose
+254 0x00011fa6 0x00412ba6 5   6    .rdata  ascii   fgetc
+255 0x00011fae 0x00412bae 12  13   .rdata  ascii   _unlock_file
+256 0x00011fbe 0x00412bbe 10  11   .rdata  ascii   _lock_file
+257 0x00011fcc 0x00412bcc 6   7    .rdata  ascii   fwrite
+258 0x00011fd6 0x00412bd6 7   8    .rdata  ascii   fgetpos
+259 0x00011fe0 0x00412be0 7   8    .rdata  ascii   setvbuf
+260 0x00011fea 0x00412bea 4   5    .rdata  ascii   atoi
+261 0x00011ff2 0x00412bf2 6   7    .rdata  ascii   ungetc
+262 0x00011ffc 0x00412bfc 7   8    .rdata  ascii   fsetpos
+263 0x00012006 0x00412c06 5   6    .rdata  ascii   fread
+264 0x0001200e 0x00412c0e 9   10   .rdata  ascii   _fseeki64
+265 0x0001201a 0x00412c1a 27  28   .rdata  ascii   _get_stream_buffer_pointers
+266 0x00012038 0x00412c38 8   9    .rdata  ascii   _wcsicmp
+267 0x00012044 0x00412c44 10  11   .rdata  ascii   _stat64i32
+268 0x00012052 0x00412c52 9   10   .rdata  ascii   setlocale
+269 0x0001205e 0x00412c5e 8   9    .rdata  ascii   wcstombs
+270 0x0001206a 0x00412c6a 7   8    .rdata  ascii   isspace
+271 0x00012074 0x00412c74 9   10   .rdata  ascii   _callnewh
+272 0x00012080 0x00412c80 9   10   .rdata  ascii   terminate
+273 0x0001208c 0x00412c8c 22  23   .rdata  ascii   _configure_narrow_argv
+274 0x000120a6 0x00412ca6 30  31   .rdata  ascii   _initialize_narrow_environment
+275 0x000120c8 0x00412cc8 24  25   .rdata  ascii   _initialize_onexit_table
+276 0x000120e4 0x00412ce4 25  26   .rdata  ascii   _register_onexit_function
+277 0x00012100 0x00412d00 11  12   .rdata  ascii   _crt_atexit
+278 0x0001210e 0x00412d0e 6   7    .rdata  ascii   _cexit
+279 0x00012118 0x00412d18 15  16   .rdata  ascii   _seh_filter_exe
+280 0x0001212a 0x00412d2a 13  14   .rdata  ascii   _set_app_type
+281 0x0001213a 0x00412d3a 16  17   .rdata  ascii   __setusermatherr
+282 0x0001214e 0x00412d4e 31  32   .rdata  ascii   _get_initial_narrow_environment
+283 0x00012170 0x00412d70 9   10   .rdata  ascii   _initterm
+284 0x0001217c 0x00412d7c 11  12   .rdata  ascii   _initterm_e
+285 0x0001218a 0x00412d8a 4   5    .rdata  ascii   exit
+286 0x00012192 0x00412d92 5   6    .rdata  ascii   _exit
+287 0x0001219a 0x00412d9a 10  11   .rdata  ascii   _set_fmode
+288 0x000121a8 0x00412da8 10  11   .rdata  ascii   __p___argc
+289 0x000121b6 0x00412db6 10  11   .rdata  ascii   __p___argv
+290 0x000121c4 0x00412dc4 7   8    .rdata  ascii   _c_exit
+291 0x000121ce 0x00412dce 42  43   .rdata  ascii   _register_thread_local_exe_atexit_callback
+292 0x000121fc 0x00412dfc 19  20   .rdata  ascii   _configthreadlocale
+293 0x00012212 0x00412e12 13  14   .rdata  ascii   _set_new_mode
+294 0x00012222 0x00412e22 12  13   .rdata  ascii   __p__commode
+295 0x00012232 0x00412e32 12  13   .rdata  ascii   _controlfp_s
+296 0x00012240 0x00412e40 32  33   .rdata  ascii   api-ms-win-crt-string-l1-1-0.dll
+297 0x00012262 0x00412e62 31  32   .rdata  ascii   api-ms-win-crt-stdio-l1-1-0.dll
+298 0x00012282 0x00412e82 30  31   .rdata  ascii   api-ms-win-crt-heap-l1-1-0.dll
+299 0x000122a2 0x00412ea2 33  34   .rdata  ascii   api-ms-win-crt-runtime-l1-1-0.dll
+300 0x000122c4 0x00412ec4 36  37   .rdata  ascii   api-ms-win-crt-filesystem-l1-1-0.dll
+301 0x000122ea 0x00412eea 33  34   .rdata  ascii   api-ms-win-crt-convert-l1-1-0.dll
+302 0x0001230c 0x00412f0c 32  33   .rdata  ascii   api-ms-win-crt-locale-l1-1-0.dll
+303 0x0001232e 0x00412f2e 30  31   .rdata  ascii   api-ms-win-crt-math-l1-1-0.dll
+304 0x00012350 0x00412f50 11  12   .rdata  ascii   CloseHandle
+305 0x0001235e 0x00412f5e 20  21   .rdata  ascii   EnterCriticalSection
+306 0x00012376 0x00412f76 20  21   .rdata  ascii   LeaveCriticalSection
+307 0x0001238e 0x00412f8e 37  38   .rdata  ascii   InitializeCriticalSectionAndSpinCount
+308 0x000123b6 0x00412fb6 21  22   .rdata  ascii   DeleteCriticalSection
+309 0x000123ce 0x00412fce 8   9    .rdata  ascii   SetEvent
+310 0x000123da 0x00412fda 10  11   .rdata  ascii   ResetEvent
+311 0x000123e8 0x00412fe8 21  22   .rdata  ascii   WaitForSingleObjectEx
+312 0x00012400 0x00413000 12  13   .rdata  ascii   CreateEventW
+313 0x00012410 0x00413010 16  17   .rdata  ascii   GetModuleHandleW
+314 0x00012424 0x00413024 14  15   .rdata  ascii   GetProcAddress
+315 0x00012436 0x00413036 24  25   .rdata  ascii   UnhandledExceptionFilter
+316 0x00012452 0x00413052 27  28   .rdata  ascii   SetUnhandledExceptionFilter
+317 0x00012470 0x00413070 17  18   .rdata  ascii   GetCurrentProcess
+318 0x00012484 0x00413084 16  17   .rdata  ascii   TerminateProcess
+319 0x00012498 0x00413098 25  26   .rdata  ascii   IsProcessorFeaturePresent
+320 0x000124b4 0x004130b4 17  18   .rdata  ascii   IsDebuggerPresent
+321 0x000124c8 0x004130c8 23  24   .rdata  ascii   QueryPerformanceCounter
+322 0x000124e2 0x004130e2 19  20   .rdata  ascii   GetCurrentProcessId
+323 0x000124f8 0x004130f8 18  19   .rdata  ascii   GetCurrentThreadId
+324 0x0001250e 0x0041310e 23  24   .rdata  ascii   GetSystemTimeAsFileTime
+325 0x00012528 0x00413128 19  20   .rdata  ascii   InitializeSListHead
+326 0x0001253e 0x0041313e 6   7    .rdata  ascii   memchr
+327 0x00012548 0x00413148 6   7    .rdata  ascii   memcpy
+328 0x00012552 0x00413152 7   8    .rdata  ascii   memmove
+0   0x00012624 0x00414024 15  16   .data   ascii   .?AVtype_info@@
+1   0x0001263c 0x0041403c 19  20   .data   ascii   .?AVbad_alloc@std@@
+2   0x00012658 0x00414058 19  20   .data   ascii   .?AVexception@std@@
+3   0x00012674 0x00414074 30  31   .data   ascii   .?AVbad_array_new_length@std@@
+4   0x0001269c 0x0041409c 4   5    .data   ascii   .PAX
+5   0x000126ac 0x004140ac 18  19   .data   ascii   .?AVbad_cast@std@@
+6   0x000126c8 0x004140c8 4   5    .data   ascii   .PAD
+7   0x000126d8 0x004140d8 49  50   .data   ascii   .?AV?$basic_filebuf@DU?$char_traits@D@std@@@std@@
+8   0x00012714 0x00414114 50  51   .data   ascii   .?AV?$basic_ifstream@DU?$char_traits@D@std@@@std@@
+9   0x00012750 0x00414150 18  19   .data   ascii   .?AVios_base@std@@
+10  0x0001276c 0x0041416c 19  20   .data   ascii   .?AV?$_Iosb@H@std@@
+11  0x00012788 0x00414188 51  52   .data   ascii   .?AV?$basic_streambuf@DU?$char_traits@D@std@@@std@@
+12  0x000127c4 0x004141c4 49  50   .data   ascii   .?AV?$basic_istream@DU?$char_traits@D@std@@@std@@
+13  0x00012800 0x00414200 45  46   .data   ascii   .?AV?$basic_ios@DU?$char_traits@D@std@@@std@@
+14  0x00012838 0x00414238 45  46   .data   ascii   .?AV?$_Ref_count@VBinaryData@requests@@@std@@
+15  0x00012870 0x00414270 25  26   .data   ascii   .?AV_Ref_count_base@std@@
+16  0x00012894 0x00414294 50  51   .data   ascii   .?AV?$basic_ofstream@DU?$char_traits@D@std@@@std@@
+17  0x000128d0 0x004142d0 49  50   .data   ascii   .?AV?$basic_ostream@DU?$char_traits@D@std@@@std@@
+0   0x00012f08 0x00415508 10  22   .rsrc   utf16le \tIDI_ICON1
+1   0x00012fe8 0x004155e8 7   8    .rsrc   ascii   ,,,,,,/
+2   0x00013008 0x00415608 7   8    .rsrc   ascii   ,,,,,,/
+3   0x000130a8 0x004156a8 7   8    .rsrc   ascii   ,,,,,,/
+4   0x000130ca 0x004156ca 5   6    .rsrc   ascii   ,,,,/
+5   0x00013290 0x00415890 4   5    .rsrc   ascii   ,,,/
+6   0x000132b0 0x004158b0 4   5    .rsrc   ascii   ////
+7   0x000132c0 0x004158c0 4   5    .rsrc   ascii   ,,,/
+8   0x00014253 0x00416853 4   5    .rsrc   ascii   \f\f\f\v
+9   0x000169f4 0x00418ff4 5   6    .rsrc   ascii   \a\f\f\f\a
+10  0x00018250 0x0041a850 6   7    .rsrc   ascii   '#\v\e\r\a
+11  0x00019a38 0x0041c038 4   5    .rsrc   ascii   \a\v\v\n
+12  0x0001befc 0x0041e4fc 60  244  .rsrc   utf32le \a
+13  0x0001d3f2 0x0041f9f2 6   7    .rsrc   ascii   (!\r\e\f\n
+14  0x0001d491 0x0041fa91 8   9    .rsrc   ascii   \n(\a((\t(\n
+15  0x0001d59e 0x0041fb9e 6   14   .rsrc   utf16le 0ðpðð( blocks=Basic Latin,Latin-1 Supplement
+16  0x0001db11 0x00420111 5   6    .rsrc   ascii   PNG\r\n
+17  0x0001db1b 0x0042011b 5   6    .rsrc   ascii   \rIHDR
+18  0x0001db34 0x00420134 5   6    .rsrc   ascii   \tpHYs
+19  0x0001db48 0x00420148 7   8    .rsrc   ascii   \v"IDATx
+20  0x0001db77 0x00420177 4   5    .rsrc   ascii   ?9&N
+21  0x0001db8a 0x0042018a 4   5    .rsrc   ascii   cisi
+22  0x0001db93 0x00420193 6   7    .rsrc   ascii   InmehL
+23  0x0001dbff 0x004201ff 5   6    .rsrc   ascii   :0?75
+24  0x0001dc15 0x00420215 5   6    .rsrc   ascii   Mk77.
+25  0x0001dc2e 0x0042022e 7   8    .rsrc   ascii   <xy~njZ
+26  0x0001dcad 0x004202ad 4   5    .rsrc   ascii   C\b<D
+27  0x0001dcb2 0x004202b2 4   5    .rsrc   ascii   @%B`
+28  0x0001dcdd 0x004202dd 4   6    .rsrc   utf8    %UۋQ blocks=Basic Latin,Arabic
+29  0x0001dd28 0x00420328 4   5    .rsrc   ascii   0YH$
+30  0x0001dd6d 0x0042036d 4   5    .rsrc   ascii    %E\f
+31  0x0001ddc8 0x004203c8 4   5    .rsrc   ascii   }^D>
+32  0x0001ddd4 0x004203d4 4   5    .rsrc   ascii   hl||
+33  0x0001de20 0x00420420 7   8    .rsrc   ascii   MAu\nq\r\b
+34  0x0001de7f 0x0042047f 5   7    .rsrc   utf8    nMnݩI blocks=Basic Latin,Arabic Supplement
+35  0x0001de8b 0x0042048b 4   5    .rsrc   ascii   )WkR
+36  0x0001de97 0x00420497 7   8    .rsrc   ascii   }!N^Az\b
+37  0x0001decf 0x004204cf 5   6    .rsrc   ascii   <!"O\e
+38  0x0001df6a 0x0042056a 4   5    .rsrc   ascii    pl\n
+39  0x0001dfda 0x004205da 5   6    .rsrc   ascii   /"25:
+40  0x0001e00f 0x0042060f 4   5    .rsrc   ascii   xlu}
+41  0x0001e019 0x00420619 4   5    .rsrc   ascii   w\v "
+42  0x0001e050 0x00420650 4   5    .rsrc   ascii   b=>i
+43  0x0001e05d 0x0042065d 4   6    .rsrc   utf8    ɘ Y] blocks=IPA Extensions,Basic Latin
+44  0x0001e065 0x00420665 4   5    .rsrc   ascii   - mA
+45  0x0001e077 0x00420677 5   7    .rsrc   utf8    Yt\b\nۧ blocks=Basic Latin,Arabic
+46  0x0001e087 0x00420687 4   6    .rsrc   utf8    \aԄC# blocks=Basic Latin,Cyrillic Supplement
+47  0x0001e08d 0x0042068d 4   5    .rsrc   ascii   %$DD
+48  0x0001e0a4 0x004206a4 7   8    .rsrc   ascii   @\#pj<>
+49  0x0001e0bf 0x004206bf 4   5    .rsrc   ascii   ^V;5
+50  0x0001e0e6 0x004206e6 4   5    .rsrc   ascii    |\n6
+51  0x0001e136 0x00420736 6   8    .rsrc   utf8    ?'?|\v6
+52  0x0001e170 0x00420770 4   6    .rsrc   utf8    =r\ݠ blocks=Basic Latin,Arabic Supplement
+53  0x0001e18f 0x0042078f 4   6    .rsrc   utf8    \eX)ݶ blocks=Basic Latin,Arabic Supplement
+54  0x0001e22e 0x0042082e 4   6    .rsrc   utf8    F`ӣE blocks=Basic Latin,Cyrillic
+55  0x0001e299 0x00420899 5   6    .rsrc   ascii   (RZ3o
+56  0x0001e2a7 0x004208a7 6   7    .rsrc   ascii   uk#pvT
+57  0x0001e323 0x00420923 6   7    .rsrc   ascii   8;l\R|
+58  0x0001e331 0x00420931 5   6    .rsrc   ascii   6`_xf
+59  0x0001e388 0x00420988 4   7    .rsrc   utf8    I>`㪆 blocks=Basic Latin,CJK Unified Ideographs Extension A
+60  0x0001e3a7 0x004209a7 4   6    .rsrc   utf8     ɀuY blocks=Basic Latin,Latin Extended-B
+61  0x0001e3b5 0x004209b5 4   5    .rsrc   ascii   b-@$
+62  0x0001e3d0 0x004209d0 5   7    .rsrc   utf8    \n ɀu- blocks=Basic Latin,Latin Extended-B
+63  0x0001e3d9 0x004209d9 4   5    .rsrc   ascii   \n|\t(
+64  0x0001e40c 0x00420a0c 5   6    .rsrc   ascii   \r8rH_
+65  0x0001e449 0x00420a49 4   5    .rsrc   ascii   _(*u
+66  0x0001e4d3 0x00420ad3 5   6    .rsrc   ascii   <-"OX
+67  0x0001e4ec 0x00420aec 6   7    .rsrc   ascii   |B\b\b 3
+68  0x0001e524 0x00420b24 4   5    .rsrc   ascii   dmnj
+69  0x0001e539 0x00420b39 4   5    .rsrc   ascii   [wjR
+70  0x0001e553 0x00420b53 6   8    .rsrc   utf8    3/G?߸u blocks=Basic Latin,NKo
+71  0x0001e563 0x00420b63 5   6    .rsrc   ascii   :512 
+72  0x0001e5ea 0x00420bea 4   5    .rsrc   ascii   \n,. 
+73  0x0001e678 0x00420c78 4   5    .rsrc   ascii   IEND
+74  0x0002890d 0x0042af0d 5   7    .rsrc   utf8    O)ٙV* blocks=Basic Latin,Arabic
+75  0x0002acf1 0x0042d2f1 5   7    .rsrc   utf8    V*ߙV* blocks=Basic Latin,NKo
+76  0x0002b2ac 0x0042d8ac 4   5    .rsrc   ascii   =<?o
+77  0x0002d9fd 0x0042fffd 6   7    .rsrc   ascii   V*?vF(
+78  0x0002daf1 0x004300f1 5   7    .rsrc   utf8    V*ϙV* blocks=Basic Latin,Greek and Coptic
+79  0x0002f8fd 0x00431efd 6   7    .rsrc   ascii   V*ovF(
+80  0x0002ffac 0x004325ac 4   5    .rsrc   ascii   >>Ai
+81  0x000300a8 0x004326a8 4   5    .rsrc   ascii   >>Ai
+82  0x000301a4 0x004327a4 4   5    .rsrc   ascii   >>Ai
+83  0x000302a0 0x004328a0 4   5    .rsrc   ascii   >>Ai
+84  0x0003039c 0x0043299c 4   5    .rsrc   ascii   >>Ai
+85  0x00030498 0x00432a98 4   5    .rsrc   ascii   >>Ai
+86  0x00030594 0x00432b94 4   5    .rsrc   ascii   >>Ai
+87  0x00030690 0x00432c90 4   5    .rsrc   ascii   >>Ai
+88  0x0003078c 0x00432d8c 4   5    .rsrc   ascii   >>Ai
+89  0x00030888 0x00432e88 4   5    .rsrc   ascii   >>Ai
+90  0x00030984 0x00432f84 4   5    .rsrc   ascii   >>Ai
+91  0x00030a80 0x00433080 4   5    .rsrc   ascii   >>Ai
+92  0x00030b7c 0x0043317c 4   5    .rsrc   ascii   >>Ai
+93  0x000351a5 0x004377a5 6   7    .rsrc   ascii   V*?`<&
+94  0x000363a5 0x004389a5 6   7    .rsrc   ascii   V*?`<&
+95  0x00038afc 0x0043b0fc 60  244  .rsrc   utf32le \a
+96  0x00038ee1 0x0043b4e1 5   7    .rsrc   utf8    V*ϙV* blocks=Basic Latin,Greek and Coptic
+97  0x00039669 0x0043bc69 5   7    .rsrc   utf8    V*ߙV* blocks=Basic Latin,NKo
+98  0x000398c0 0x0043bec0 4   5    .rsrc   ascii   =<?o
+99  0x0003993c 0x0043bf3c 4   5    .rsrc   ascii   =<?o
+100 0x000399b8 0x0043bfb8 4   5    .rsrc   ascii   =<?o
+101 0x00039a34 0x0043c034 4   5    .rsrc   ascii   =<?o
+102 0x00039ab0 0x0043c0b0 4   5    .rsrc   ascii   =<?o
+103 0x00039b2c 0x0043c12c 4   5    .rsrc   ascii   =<?o
+104 0x00039e31 0x0043c431 6   7    .rsrc   ascii   W+?g@'
+105 0x00039e89 0x0043c489 5   7    .rsrc   utf8    W+ߗW+ blocks=Basic Latin,NKo
+106 0x0003a369 0x0043c969 5   7    .rsrc   utf8    W+ߗW+ blocks=Basic Latin,NKo
+107 0x0003a3d1 0x0043c9d1 6   7    .rsrc   ascii   W+?g@'
+108 0x0003a735 0x0043cd35 6   7    .rsrc   ascii   W+?g@'
+109 0x0003ab3d 0x0043d13d 5   7    .rsrc   utf8    W+ߗW+ blocks=Basic Latin,NKo
+110 0x0003ab95 0x0043d195 6   7    .rsrc   ascii   W+/U8&
+111 0x0003ad0e 0x0043d30e 6   14   .rsrc   utf16le 0ðpðð( blocks=Basic Latin,Latin-1 Supplement
+112 0x0003b2c8 0x0043d8c8 381 382  .rsrc   ascii   <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+arch     x86
+baddr    0x400000
+binsz    256968
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00045dc9
+compiled Wed Oct 20 06:21:06 2021
+crypto   false
+dbg_file D:\c-code\c++\shellcode\scopysss\Release\sc2.pdb
+endian   little
+havecode true
+hdr.csum 0x00000000
+guid     B871EB2BF5494B38860F87A3FAD2C506A
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x616fb552
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x1c
+  SizeOfCode : 0xd000
+  SizeOfInitializedData : 0x2f200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0xc7c8
+  BaseOfCode : 0x1000
+  BaseOfData : 0xe000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x3f000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 29337 Times: 1
+  Product: 151 Name: Resource900 Version: 0 Times: 1
+  Product: 255 Name: Cvtres1400 Version: 29337 Times: 1
+  Product: 264 Name: Utc1900_LTCG_C  Version: 29337 Times: 5
+  Product: 1 Name: Import0 Version: 0 Times: 196
+  Product: 257 Name: Implib1400 Version: 26715 Times: 11
+  Product: 259 Name: Masm1400 Version: 29118 Times: 2
+  Product: 260 Name: Utc1900_C Version: 29118 Times: 12
+  Product: 261 Name: Utc1900_CPP Version: 29118 Times: 30
+  Product: 257 Name: Implib1400 Version: 29118 Times: 4
+  Product: 147 Name: Implib900 Version: 30729 Times: 16
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x11b78
+  Size : 0x118
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x15000
+  Size : 0x28a48
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x3c200
+  Size : 0x29c8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x3e000
+  Size : 0xabc
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x10248
+  Size : 0x70
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x10380
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x102b8
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xe000
+  Size : 0x27c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+msvcp140.dll
+wininet.dll
+vcruntime140.dll
+api-ms-win-crt-string-l1-1-0.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+api-ms-win-crt-heap-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-filesystem-l1-1-0.dll
+api-ms-win-crt-convert-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+
+13 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00011f0c 0x0000d400 SET_32 KERNEL32.dll_GetLastError
+0x00011f1c 0x0000d404 SET_32 KERNEL32.dll_VirtualProtect
+0x00011f2e 0x0000d408 SET_32 KERNEL32.dll_VirtualAlloc
+0x00011f3e 0x0000d40c SET_32 KERNEL32.dll_GetModuleFileNameW
+0x00011f54 0x0000d410 SET_32 KERNEL32.dll_CreateToolhelp32Snapshot
+0x00011f70 0x0000d414 SET_32 KERNEL32.dll_Process32NextW
+0x00011f82 0x0000d418 SET_32 KERNEL32.dll_Process32FirstW
+0x00011f94 0x0000d41c SET_32 KERNEL32.dll_CreateProcessW
+0x00011fa6 0x0000d420 SET_32 KERNEL32.dll_WideCharToMultiByte
+0x00011fbc 0x0000d424 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x00011fe0 0x0000d524 SET_32 USER32.dll_MessageBoxA
+0x00011ffa 0x0000d4e4 SET_32 MSVCP140.dll_void __cdecl std::_Xlength_error(char const *)
+0x0001201a 0x0000d4e8 SET_32 MSVCP140.dll_public: void __thiscall std::_Lockit::~destructor(void)
+0x00012034 0x0000d518 SET_32 MSVCP140.dll_public: void __thiscall std::_Lockit::constructor(int)
+0x0001204e 0x0000d514 SET_32 MSVCP140.dll_private: static class std::locale::_Locimp * __cdecl std::locale::_Getgloballocale(void)
+0x00012082 0x0000d510 SET_32 MSVCP140.dll_void __cdecl std::_Xout_of_range(char const *)
+0x000120a2 0x0000d50c SET_32 MSVCP140.dll_class std::locale::id std::codecvt<char, char, struct _Mbstatet>::id
+0x000120d4 0x0000d508 SET_32 MSVCP140.dll_struct _iobuf * __cdecl std::_Fiopen(char const *, int, int)
+0x000120fa 0x0000d504 SET_32 MSVCP140.dll_public: static unsigned int __cdecl std::codecvt<char, char, struct _Mbstatet>::_Getcat(class std::locale::facet const * *, class std::locale const *)
+0x00012144 0x0000d500 SET_32 MSVCP140.dll_protected: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::constructor(void)
+0x00012180 0x0000d4fc SET_32 MSVCP140.dll_public: class std::locale __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::getloc(void)
+0x000121cc 0x0000d4f8 SET_32 MSVCP140.dll_public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::unshift(struct _Mbstatet &, char *, char *, char * &)const
+0x00012214 0x0000d4f4 SET_32 MSVCP140.dll_protected: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::_Init(void)
+0x00012254 0x0000d4f0 SET_32 MSVCP140.dll_protected: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::constructor(void)
+0x0001228a 0x0000d4ec SET_32 MSVCP140.dll_public: void __thiscall std::basic_istream<char, struct std::char_traits<char>>::constructor(class std::basic_streambuf<char, struct std::char_traits<char>> *, bool)
+0x000122f4 0x0000d4ac SET_32 MSVCP140.dll_public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::in(struct _Mbstatet &, char const *, char const *, char const * &, char *, char *, char * &)const
+0x00012340 0x0000d4e0 SET_32 MSVCP140.dll_public: int __thiscall std::codecvt<char, char, struct _Mbstatet>::out(struct _Mbstatet &, char const *, char const *, char const * &, char *, char *, char * &)const
+0x0001238c 0x0000d484 SET_32 MSVCP140.dll_protected: char * __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::_Pninc(void)
+0x000123ce 0x0000d488 SET_32 MSVCP140.dll_public: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::setstate(int, bool)
+0x0001240e 0x0000d48c SET_32 MSVCP140.dll_public virtual: void __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::~destructor(void)
+0x0001244a 0x0000d490 SET_32 MSVCP140.dll_protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::showmanyc(void)
+0x0001248e 0x0000d494 SET_32 MSVCP140.dll_protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::xsgetn(char *, long long(__int64))
+0x000124d4 0x0000d498 SET_32 MSVCP140.dll_protected virtual: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::xsputn(char const *, long long(__int64))
+0x0001251a 0x0000d49c SET_32 MSVCP140.dll_public virtual: void __thiscall std::basic_ios<char, struct std::char_traits<char>>::~destructor(void)
+0x00012550 0x0000d4a0 SET_32 MSVCP140.dll_public virtual: void __thiscall std::basic_istream<char, struct std::char_traits<char>>::~destructor(void)
+0x0001258a 0x0000d4a4 SET_32 MSVCP140.dll_public: class std::basic_istream<char, struct std::char_traits<char>> & __thiscall std::basic_istream<char, struct std::char_traits<char>>::read(char *, long long(__int64))
+0x000125d0 0x0000d4a8 SET_32 MSVCP140.dll_public: bool __thiscall std::codecvt_base::always_noconv(void)const
+0x000125fc 0x0000d51c SET_32 MSVCP140.dll_public: unsigned int __thiscall std::locale::id::operator unsigned int(void)
+0x00012618 0x0000d4b0 SET_32 MSVCP140.dll_class std::basic_ostream<char, struct std::char_traits<char>> std::cout
+0x00012654 0x0000d4b4 SET_32 MSVCP140.dll_bool __cdecl std::uncaught_exception(void)
+0x00012676 0x0000d4b8 SET_32 MSVCP140.dll_public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::put(char)
+0x000126b8 0x0000d4bc SET_32 MSVCP140.dll_public: int __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::sputc(char)
+0x000126f8 0x0000d4c0 SET_32 MSVCP140.dll_public: char __thiscall std::basic_ios<char, struct std::char_traits<char>>::widen(char)const
+0x00012732 0x0000d4c4 SET_32 MSVCP140.dll_public: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::_Osfx(void)
+0x00012770 0x0000d4c8 SET_32 MSVCP140.dll_public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::flush(void)
+0x000127b2 0x0000d4cc SET_32 MSVCP140.dll_public: long long(__int64) __thiscall std::basic_streambuf<char, struct std::char_traits<char>>::sputn(char const *, long long(__int64))
+0x000127f8 0x0000d4d0 SET_32 MSVCP140.dll_public: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::constructor(class std::basic_streambuf<char, struct std::char_traits<char>> *, bool)
+0x00012862 0x0000d4d4 SET_32 MSVCP140.dll_public virtual: void __thiscall std::basic_ostream<char, struct std::char_traits<char>>::~destructor(void)
+0x0001289c 0x0000d4d8 SET_32 MSVCP140.dll_public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::operator<<(class std::basic_ostream<char, struct std::char_traits<char>> & (__cdecl *)(class std::basic_ostream<char, struct std::char_traits<char>> &))
+0x000128ec 0x0000d4dc SET_32 MSVCP140.dll_public: class std::basic_ostream<char, struct std::char_traits<char>> & __thiscall std::basic_ostream<char, struct std::char_traits<char>>::write(char const *, long long(__int64))
+0x00012942 0x0000d564 SET_32 WININET.dll_HttpOpenRequestW
+0x00012956 0x0000d570 SET_32 WININET.dll_InternetQueryOptionW
+0x0001296e 0x0000d574 SET_32 WININET.dll_InternetSetCookieA
+0x00012984 0x0000d578 SET_32 WININET.dll_InternetQueryDataAvailable
+0x000129a2 0x0000d57c SET_32 WININET.dll_InternetOpenW
+0x000129b2 0x0000d580 SET_32 WININET.dll_HttpQueryInfoW
+0x000129c4 0x0000d584 SET_32 WININET.dll_HttpSendRequestW
+0x000129d8 0x0000d588 SET_32 WININET.dll_InternetCloseHandle
+0x000129ee 0x0000d56c SET_32 WININET.dll_InternetConnectW
+0x00012a02 0x0000d568 SET_32 WININET.dll_InternetSetOptionW
+0x00012a18 0x0000d560 SET_32 WININET.dll_InternetReadFile
+0x00012a38 0x0000d52c SET_32 VCRUNTIME140.dll___CxxFrameHandler3
+0x00012a4e 0x0000d530 SET_32 VCRUNTIME140.dll___std_exception_destroy
+0x00012a68 0x0000d554 SET_32 VCRUNTIME140.dll___std_exception_copy
+0x00012a80 0x0000d550 SET_32 VCRUNTIME140.dll___std_terminate
+0x00012a92 0x0000d53c SET_32 VCRUNTIME140.dll___current_exception
+0x00012aa8 0x0000d540 SET_32 VCRUNTIME140.dll___current_exception_context
+0x00012ac6 0x0000d544 SET_32 VCRUNTIME140.dll__CxxThrowException
+0x00012adc 0x0000d548 SET_32 VCRUNTIME140.dll_memset
+0x00012ae6 0x0000d54c SET_32 VCRUNTIME140.dll__except_handler4_common
+0x00012b12 0x0000d66c SET_32 api-ms-win-crt-string-l1-1-0.dll_tolower
+0x00012b1c 0x0000d650 SET_32 api-ms-win-crt-stdio-l1-1-0.dll___stdio_common_vsprintf
+0x00012b36 0x0000d5b8 SET_32 api-ms-win-crt-heap-l1-1-0.dll_free
+0x00012b3e 0x0000d628 SET_32 api-ms-win-crt-stdio-l1-1-0.dll___stdio_common_vsscanf
+0x00012b58 0x0000d5b4 SET_32 api-ms-win-crt-heap-l1-1-0.dll_malloc
+0x00012b62 0x0000d600 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__invalid_parameter_noinfo_noreturn
+0x00012b88 0x0000d630 SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fputc
+0x00012b90 0x0000d63c SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fflush
+0x00012b9a 0x0000d640 SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fclose
+0x00012ba4 0x0000d664 SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fgetc
+0x00012bac 0x0000d5a0 SET_32 api-ms-win-crt-filesystem-l1-1-0.dll__unlock_file
+0x00012bbc 0x0000d59c SET_32 api-ms-win-crt-filesystem-l1-1-0.dll__lock_file
+0x00012bca 0x0000d660 SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fwrite
+0x00012bd4 0x0000d65c SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fgetpos
+0x00012bde 0x0000d658 SET_32 api-ms-win-crt-stdio-l1-1-0.dll_setvbuf
+0x00012be8 0x0000d594 SET_32 api-ms-win-crt-convert-l1-1-0.dll_atoi
+0x00012bf0 0x0000d654 SET_32 api-ms-win-crt-stdio-l1-1-0.dll_ungetc
+0x00012bfa 0x0000d62c SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fsetpos
+0x00012c04 0x0000d64c SET_32 api-ms-win-crt-stdio-l1-1-0.dll_fread
+0x00012c0c 0x0000d648 SET_32 api-ms-win-crt-stdio-l1-1-0.dll__fseeki64
+0x00012c18 0x0000d644 SET_32 api-ms-win-crt-stdio-l1-1-0.dll__get_stream_buffer_pointers
+0x00012c36 0x0000d674 SET_32 api-ms-win-crt-string-l1-1-0.dll__wcsicmp
+0x00012c42 0x0000d5a4 SET_32 api-ms-win-crt-filesystem-l1-1-0.dll__stat64i32
+0x00012c50 0x0000d5c4 SET_32 api-ms-win-crt-locale-l1-1-0.dll_setlocale
+0x00012c5c 0x0000d590 SET_32 api-ms-win-crt-convert-l1-1-0.dll_wcstombs
+0x00012c68 0x0000d670 SET_32 api-ms-win-crt-string-l1-1-0.dll_isspace
+0x00012c72 0x0000d5b0 SET_32 api-ms-win-crt-heap-l1-1-0.dll__callnewh
+0x00012c7e 0x0000d618 SET_32 api-ms-win-crt-runtime-l1-1-0.dll_terminate
+0x00012c8a 0x0000d614 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__configure_narrow_argv
+0x00012ca4 0x0000d610 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__initialize_narrow_environment
+0x00012cc6 0x0000d620 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__initialize_onexit_table
+0x00012ce2 0x0000d60c SET_32 api-ms-win-crt-runtime-l1-1-0.dll__register_onexit_function
+0x00012cfe 0x0000d608 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__crt_atexit
+0x00012d0c 0x0000d5fc SET_32 api-ms-win-crt-runtime-l1-1-0.dll__cexit
+0x00012d16 0x0000d5e8 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__seh_filter_exe
+0x00012d28 0x0000d5dc SET_32 api-ms-win-crt-runtime-l1-1-0.dll__set_app_type
+0x00012d38 0x0000d5cc SET_32 api-ms-win-crt-math-l1-1-0.dll___setusermatherr
+0x00012d4c 0x0000d5d4 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__get_initial_narrow_environment
+0x00012d6e 0x0000d5d8 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__initterm
+0x00012d7a 0x0000d61c SET_32 api-ms-win-crt-runtime-l1-1-0.dll__initterm_e
+0x00012d88 0x0000d5e0 SET_32 api-ms-win-crt-runtime-l1-1-0.dll_exit
+0x00012d90 0x0000d5e4 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__exit
+0x00012d98 0x0000d638 SET_32 api-ms-win-crt-stdio-l1-1-0.dll__set_fmode
+0x00012da6 0x0000d5ec SET_32 api-ms-win-crt-runtime-l1-1-0.dll___p___argc
+0x00012db4 0x0000d5f0 SET_32 api-ms-win-crt-runtime-l1-1-0.dll___p___argv
+0x00012dc2 0x0000d5f4 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__c_exit
+0x00012dcc 0x0000d5f8 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__register_thread_local_exe_atexit_callback
+0x00012dfa 0x0000d5c0 SET_32 api-ms-win-crt-locale-l1-1-0.dll__configthreadlocale
+0x00012e10 0x0000d5ac SET_32 api-ms-win-crt-heap-l1-1-0.dll__set_new_mode
+0x00012e20 0x0000d634 SET_32 api-ms-win-crt-stdio-l1-1-0.dll___p__commode
+0x00012e30 0x0000d604 SET_32 api-ms-win-crt-runtime-l1-1-0.dll__controlfp_s
+0x00012f4e 0x0000d47c SET_32 KERNEL32.dll_CloseHandle
+0x00012f5c 0x0000d428 SET_32 KERNEL32.dll_EnterCriticalSection
+0x00012f74 0x0000d42c SET_32 KERNEL32.dll_LeaveCriticalSection
+0x00012f8c 0x0000d430 SET_32 KERNEL32.dll_InitializeCriticalSectionAndSpinCount
+0x00012fb4 0x0000d434 SET_32 KERNEL32.dll_DeleteCriticalSection
+0x00012fcc 0x0000d438 SET_32 KERNEL32.dll_SetEvent
+0x00012fd8 0x0000d43c SET_32 KERNEL32.dll_ResetEvent
+0x00012fe6 0x0000d440 SET_32 KERNEL32.dll_WaitForSingleObjectEx
+0x00012ffe 0x0000d444 SET_32 KERNEL32.dll_CreateEventW
+0x0001300e 0x0000d448 SET_32 KERNEL32.dll_GetModuleHandleW
+0x00013022 0x0000d44c SET_32 KERNEL32.dll_GetProcAddress
+0x00013034 0x0000d450 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x00013050 0x0000d454 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x0001306e 0x0000d458 SET_32 KERNEL32.dll_GetCurrentProcess
+0x00013082 0x0000d45c SET_32 KERNEL32.dll_TerminateProcess
+0x00013096 0x0000d460 SET_32 KERNEL32.dll_IsProcessorFeaturePresent
+0x000130b2 0x0000d464 SET_32 KERNEL32.dll_IsDebuggerPresent
+0x000130c6 0x0000d468 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x000130e0 0x0000d46c SET_32 KERNEL32.dll_GetCurrentProcessId
+0x000130f6 0x0000d470 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x0001310c 0x0000d474 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x00013126 0x0000d478 SET_32 KERNEL32.dll_InitializeSListHead
+0x0001313c 0x0000d558 SET_32 VCRUNTIME140.dll_memchr
+0x00013146 0x0000d534 SET_32 VCRUNTIME140.dll_memcpy
+0x00013150 0x0000d538 SET_32 VCRUNTIME140.dll_memmove
+
+
+146 relocations
+256968
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

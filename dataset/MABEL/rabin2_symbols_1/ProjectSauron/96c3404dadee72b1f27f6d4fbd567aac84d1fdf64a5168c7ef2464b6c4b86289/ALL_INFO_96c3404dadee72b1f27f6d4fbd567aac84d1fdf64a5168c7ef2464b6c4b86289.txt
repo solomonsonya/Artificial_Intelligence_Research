@@ -1,0 +1,362 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr            vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x1400 0x7ff4f001000   0x2000 -r-x .text
+1   0x00001800    0xa00 0x7ff4f003000   0x1000 -r-- .rdata
+2   0x00002200    0x200 0x7ff4f004000   0x1000 -rw- .data
+3   0x00002400    0x200 0x7ff4f005000   0x1000 -r-- .pdata
+4   0x00002600    0x200 0x7ff4f006000   0x1000 -r-- .reloc
+5   0x00002800  0x17200 0x7ff4f007000  0x18000 -r-- .edata
+6   0x00019a00    0x400 0x7ff4f01f000   0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x7ff4f002010 paddr=0x00001410 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr         bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――――
+1   0x7ff4f003088 NONE FUNC msvcrt.dll   malloc
+2   0x7ff4f003090 NONE FUNC msvcrt.dll   free
+3   0x7ff4f003098 NONE FUNC msvcrt.dll   _initterm
+4   0x7ff4f0030a0 NONE FUNC msvcrt.dll   _wcsicmp
+5   0x7ff4f0030a8 NONE FUNC msvcrt.dll   _stricmp
+6   0x7ff4f0030b0 NONE FUNC msvcrt.dll   wcsstr
+7   0x7ff4f0030b8 NONE FUNC msvcrt.dll   strncmp
+8   0x7ff4f0030c0 NONE FUNC msvcrt.dll   __C_specific_handler
+9   0x7ff4f0030c8 NONE FUNC msvcrt.dll   memcpy
+10  0x7ff4f0030d0 NONE FUNC msvcrt.dll   memset
+1   0x7ff4f003000 NONE FUNC KERNEL32.dll GetModuleFileNameW
+2   0x7ff4f003008 NONE FUNC KERNEL32.dll Sleep
+3   0x7ff4f003010 NONE FUNC KERNEL32.dll GetVersionExW
+4   0x7ff4f003018 NONE FUNC KERNEL32.dll LocalFree
+5   0x7ff4f003020 NONE FUNC KERNEL32.dll LocalAlloc
+6   0x7ff4f003028 NONE FUNC KERNEL32.dll DeleteCriticalSection
+7   0x7ff4f003030 NONE FUNC KERNEL32.dll LoadLibraryA
+8   0x7ff4f003038 NONE FUNC KERNEL32.dll DisableThreadLibraryCalls
+9   0x7ff4f003040 NONE FUNC KERNEL32.dll EnterCriticalSection
+10  0x7ff4f003048 NONE FUNC KERNEL32.dll VirtualAlloc
+11  0x7ff4f003050 NONE FUNC KERNEL32.dll GetProcAddress
+12  0x7ff4f003058 NONE FUNC KERNEL32.dll GetCommandLineW
+13  0x7ff4f003060 NONE FUNC KERNEL32.dll GetModuleHandleW
+14  0x7ff4f003068 NONE FUNC KERNEL32.dll VirtualFree
+15  0x7ff4f003070 NONE FUNC KERNEL32.dll InitializeCriticalSection
+16  0x7ff4f003078 NONE FUNC KERNEL32.dll LeaveCriticalSection
+
+[Symbols]
+
+nth paddr      vaddr         bind   type size lib            name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000b80 0x7ff4f001780 GLOBAL FUNC 0    sxsapifeed.dll AcceptSecurityContext
+2   0x000010fc 0x7ff4f001cfc GLOBAL FUNC 0    sxsapifeed.dll AcquireCredentialsHandleA
+3   0x000010fc 0x7ff4f001cfc GLOBAL FUNC 0    sxsapifeed.dll AcquireCredentialsHandleW
+4   0x00000d98 0x7ff4f001998 GLOBAL FUNC 0    sxsapifeed.dll ApplyControlToken
+5   0x00000db4 0x7ff4f0019b4 GLOBAL FUNC 0    sxsapifeed.dll CompleteAuthToken
+6   0x00000d90 0x7ff4f001990 GLOBAL FUNC 0    sxsapifeed.dll DeleteSecurityContext
+7   0x00000f14 0x7ff4f001b14 GLOBAL FUNC 0    sxsapifeed.dll EnumerateSecurityPackagesA
+8   0x00001160 0x7ff4f001d60 GLOBAL FUNC 0    sxsapifeed.dll EnumerateSecurityPackagesW
+9   0x00000da0 0x7ff4f0019a0 GLOBAL FUNC 0    sxsapifeed.dll FreeContextBuffer
+10  0x00000908 0x7ff4f001508 GLOBAL FUNC 0    sxsapifeed.dll FreeCredentialsHandle
+11  0x00000db4 0x7ff4f0019b4 GLOBAL FUNC 0    sxsapifeed.dll ImpersonateSecurityContext
+12  0x00000f0c 0x7ff4f001b0c GLOBAL FUNC 0    sxsapifeed.dll InitSecurityInterfaceA
+13  0x00001094 0x7ff4f001c94 GLOBAL FUNC 0    sxsapifeed.dll InitSecurityInterfaceW
+14  0x00001114 0x7ff4f001d14 GLOBAL FUNC 0    sxsapifeed.dll InitializeSecurityContextA
+15  0x00001114 0x7ff4f001d14 GLOBAL FUNC 0    sxsapifeed.dll InitializeSecurityContextW
+16  0x00000e38 0x7ff4f001a38 GLOBAL FUNC 0    sxsapifeed.dll MakeSignature
+17  0x00000fe8 0x7ff4f001be8 GLOBAL FUNC 0    sxsapifeed.dll QueryContextAttributesA
+18  0x00001250 0x7ff4f001e50 GLOBAL FUNC 0    sxsapifeed.dll QueryContextAttributesW
+19  0x00000f3c 0x7ff4f001b3c GLOBAL FUNC 0    sxsapifeed.dll QuerySecurityPackageInfoA
+20  0x00001188 0x7ff4f001d88 GLOBAL FUNC 0    sxsapifeed.dll QuerySecurityPackageInfoW
+21  0x00000db4 0x7ff4f0019b4 GLOBAL FUNC 0    sxsapifeed.dll RevertSecurityContext
+22  0x00000e9c 0x7ff4f001a9c GLOBAL FUNC 0    sxsapifeed.dll VerifySignature
+1   0x00001888 0x7ff4f003088 NONE   FUNC 0    msvcrt.dll     imp.malloc
+2   0x00001890 0x7ff4f003090 NONE   FUNC 0    msvcrt.dll     imp.free
+3   0x00001898 0x7ff4f003098 NONE   FUNC 0    msvcrt.dll     imp._initterm
+4   0x000018a0 0x7ff4f0030a0 NONE   FUNC 0    msvcrt.dll     imp._wcsicmp
+5   0x000018a8 0x7ff4f0030a8 NONE   FUNC 0    msvcrt.dll     imp._stricmp
+6   0x000018b0 0x7ff4f0030b0 NONE   FUNC 0    msvcrt.dll     imp.wcsstr
+7   0x000018b8 0x7ff4f0030b8 NONE   FUNC 0    msvcrt.dll     imp.strncmp
+8   0x000018c0 0x7ff4f0030c0 NONE   FUNC 0    msvcrt.dll     imp.__C_specific_handler
+9   0x000018c8 0x7ff4f0030c8 NONE   FUNC 0    msvcrt.dll     imp.memcpy
+10  0x000018d0 0x7ff4f0030d0 NONE   FUNC 0    msvcrt.dll     imp.memset
+1   0x00001800 0x7ff4f003000 NONE   FUNC 0    KERNEL32.dll   imp.GetModuleFileNameW
+2   0x00001808 0x7ff4f003008 NONE   FUNC 0    KERNEL32.dll   imp.Sleep
+3   0x00001810 0x7ff4f003010 NONE   FUNC 0    KERNEL32.dll   imp.GetVersionExW
+4   0x00001818 0x7ff4f003018 NONE   FUNC 0    KERNEL32.dll   imp.LocalFree
+5   0x00001820 0x7ff4f003020 NONE   FUNC 0    KERNEL32.dll   imp.LocalAlloc
+6   0x00001828 0x7ff4f003028 NONE   FUNC 0    KERNEL32.dll   imp.DeleteCriticalSection
+7   0x00001830 0x7ff4f003030 NONE   FUNC 0    KERNEL32.dll   imp.LoadLibraryA
+8   0x00001838 0x7ff4f003038 NONE   FUNC 0    KERNEL32.dll   imp.DisableThreadLibraryCalls
+9   0x00001840 0x7ff4f003040 NONE   FUNC 0    KERNEL32.dll   imp.EnterCriticalSection
+10  0x00001848 0x7ff4f003048 NONE   FUNC 0    KERNEL32.dll   imp.VirtualAlloc
+11  0x00001850 0x7ff4f003050 NONE   FUNC 0    KERNEL32.dll   imp.GetProcAddress
+12  0x00001858 0x7ff4f003058 NONE   FUNC 0    KERNEL32.dll   imp.GetCommandLineW
+13  0x00001860 0x7ff4f003060 NONE   FUNC 0    KERNEL32.dll   imp.GetModuleHandleW
+14  0x00001868 0x7ff4f003068 NONE   FUNC 0    KERNEL32.dll   imp.VirtualFree
+15  0x00001870 0x7ff4f003070 NONE   FUNC 0    KERNEL32.dll   imp.InitializeCriticalSection
+16  0x00001878 0x7ff4f003078 NONE   FUNC 0    KERNEL32.dll   imp.LeaveCriticalSection
+[Strings]
+nth paddr      vaddr         len size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001900 0x7ff4f003100 6   7    .rdata  ascii   .edata
+1   0x00001908 0x7ff4f003108 11  24   .rdata  utf16le svchost.exe
+2   0x00001920 0x7ff4f003120 7   16   .rdata  utf16le netsvcs
+3   0x00001938 0x7ff4f003138 20  21   .rdata  ascii   PRT Security Package
+4   0x00001950 0x7ff4f003150 12  13   .rdata  ascii   Default user
+5   0x00001968 0x7ff4f003168 20  42   .rdata  utf16le PRT Security Package
+6   0x00001998 0x7ff4f003198 12  26   .rdata  utf16le Default user
+7   0x00001be2 0x7ff4f0033e2 6   7    .rdata  ascii   wcsstr
+8   0x00001bec 0x7ff4f0033ec 8   9    .rdata  ascii   _stricmp
+9   0x00001bf8 0x7ff4f0033f8 8   9    .rdata  ascii   _wcsicmp
+10  0x00001c02 0x7ff4f003402 10  11   .rdata  ascii   msvcrt.dll
+11  0x00001c10 0x7ff4f003410 9   10   .rdata  ascii   _initterm
+12  0x00001c1c 0x7ff4f00341c 4   5    .rdata  ascii   free
+13  0x00001c24 0x7ff4f003424 6   7    .rdata  ascii   malloc
+14  0x00001c2e 0x7ff4f00342e 15  16   .rdata  ascii   GetCommandLineW
+15  0x00001c40 0x7ff4f003440 16  17   .rdata  ascii   GetModuleHandleW
+16  0x00001c54 0x7ff4f003454 11  12   .rdata  ascii   VirtualFree
+17  0x00001c62 0x7ff4f003462 25  26   .rdata  ascii   InitializeCriticalSection
+18  0x00001c7e 0x7ff4f00347e 20  21   .rdata  ascii   LeaveCriticalSection
+19  0x00001c96 0x7ff4f003496 18  19   .rdata  ascii   GetModuleFileNameW
+20  0x00001cac 0x7ff4f0034ac 14  15   .rdata  ascii   GetProcAddress
+21  0x00001cbe 0x7ff4f0034be 12  13   .rdata  ascii   VirtualAlloc
+22  0x00001cce 0x7ff4f0034ce 20  21   .rdata  ascii   EnterCriticalSection
+23  0x00001ce6 0x7ff4f0034e6 25  26   .rdata  ascii   DisableThreadLibraryCalls
+24  0x00001d02 0x7ff4f003502 12  13   .rdata  ascii   LoadLibraryA
+25  0x00001d12 0x7ff4f003512 21  22   .rdata  ascii   DeleteCriticalSection
+26  0x00001d2a 0x7ff4f00352a 10  11   .rdata  ascii   LocalAlloc
+27  0x00001d38 0x7ff4f003538 9   10   .rdata  ascii   LocalFree
+28  0x00001d44 0x7ff4f003544 13  14   .rdata  ascii   GetVersionExW
+29  0x00001d54 0x7ff4f003554 5   6    .rdata  ascii   Sleep
+30  0x00001d5a 0x7ff4f00355a 12  13   .rdata  ascii   KERNEL32.dll
+31  0x00001d6a 0x7ff4f00356a 7   8    .rdata  ascii   strncmp
+32  0x00001d74 0x7ff4f003574 20  21   .rdata  ascii   __C_specific_handler
+33  0x00001d8c 0x7ff4f00358c 6   7    .rdata  ascii   memcpy
+34  0x00001d96 0x7ff4f003596 6   7    .rdata  ascii   memset
+35  0x00001e86 0x7ff4f003686 7   16   .rdata  utf16le \a\b\t\n\v\f\r
+36  0x00001eb2 0x7ff4f0036b2 21  22   .rdata  ascii   AcceptSecurityContext
+37  0x00001ec8 0x7ff4f0036c8 25  26   .rdata  ascii   AcquireCredentialsHandleA
+38  0x00001ee2 0x7ff4f0036e2 25  26   .rdata  ascii   AcquireCredentialsHandleW
+39  0x00001efc 0x7ff4f0036fc 17  18   .rdata  ascii   ApplyControlToken
+40  0x00001f0e 0x7ff4f00370e 17  18   .rdata  ascii   CompleteAuthToken
+41  0x00001f20 0x7ff4f003720 21  22   .rdata  ascii   DeleteSecurityContext
+42  0x00001f36 0x7ff4f003736 26  27   .rdata  ascii   EnumerateSecurityPackagesA
+43  0x00001f51 0x7ff4f003751 26  27   .rdata  ascii   EnumerateSecurityPackagesW
+44  0x00001f6c 0x7ff4f00376c 17  18   .rdata  ascii   FreeContextBuffer
+45  0x00001f7e 0x7ff4f00377e 21  22   .rdata  ascii   FreeCredentialsHandle
+46  0x00001f94 0x7ff4f003794 26  27   .rdata  ascii   ImpersonateSecurityContext
+47  0x00001faf 0x7ff4f0037af 22  23   .rdata  ascii   InitSecurityInterfaceA
+48  0x00001fc6 0x7ff4f0037c6 22  23   .rdata  ascii   InitSecurityInterfaceW
+49  0x00001fdd 0x7ff4f0037dd 26  27   .rdata  ascii   InitializeSecurityContextA
+50  0x00001ff8 0x7ff4f0037f8 26  27   .rdata  ascii   InitializeSecurityContextW
+51  0x00002013 0x7ff4f003813 13  14   .rdata  ascii   MakeSignature
+52  0x00002021 0x7ff4f003821 23  24   .rdata  ascii   QueryContextAttributesA
+53  0x00002039 0x7ff4f003839 23  24   .rdata  ascii   QueryContextAttributesW
+54  0x00002051 0x7ff4f003851 25  26   .rdata  ascii   QuerySecurityPackageInfoA
+55  0x0000206b 0x7ff4f00386b 25  26   .rdata  ascii   QuerySecurityPackageInfoW
+56  0x00002085 0x7ff4f003885 21  22   .rdata  ascii   RevertSecurityContext
+57  0x0000209b 0x7ff4f00389b 15  16   .rdata  ascii   VerifySignature
+58  0x000020ab 0x7ff4f0038ab 14  15   .rdata  ascii   sxsapifeed.dll
+0   0x00019a5e 0x7ff4f01f05e 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00019aba 0x7ff4f01f0ba 14  30   .rsrc   utf16le StringFileInfo
+2   0x00019ade 0x7ff4f01f0de 8   18   .rsrc   utf16le 040904B0
+3   0x00019af6 0x7ff4f01f0f6 11  24   .rsrc   utf16le CompanyName
+4   0x00019b10 0x7ff4f01f110 21  44   .rsrc   utf16le Microsoft Corporation
+5   0x00019b42 0x7ff4f01f142 15  32   .rsrc   utf16le FileDescription
+6   0x00019b6e 0x7ff4f01f16e 11  24   .rsrc   utf16le FileVersion
+7   0x00019b88 0x7ff4f01f188 37  76   .rsrc   utf16le 6.1.7600.16385 (win7_rtm.090713-1255)
+8   0x00019bda 0x7ff4f01f1da 12  26   .rsrc   utf16le InternalName
+9   0x00019bf4 0x7ff4f01f1f4 14  30   .rsrc   utf16le sxsapifeed.dll
+10  0x00019c1a 0x7ff4f01f21a 14  30   .rsrc   utf16le LegalCopyright
+11  0x00019c3a 0x7ff4f01f23a 44  90   .rsrc   utf16le  Microsoft Corporation. All rights reserved.
+12  0x00019c9a 0x7ff4f01f29a 16  34   .rsrc   utf16le OriginalFilename
+13  0x00019cbc 0x7ff4f01f2bc 14  30   .rsrc   utf16le sxsapifeed.dll
+14  0x00019ce2 0x7ff4f01f2e2 11  24   .rsrc   utf16le ProductName
+15  0x00019cfc 0x7ff4f01f2fc 9   19   .rsrc   utf16le Microsoft
+16  0x00019d10 0x7ff4f01f310 8   17   .rsrc   utf16le  Windows
+17  0x00019d22 0x7ff4f01f322 17  36   .rsrc   utf16le  Operating System
+18  0x00019d4e 0x7ff4f01f34e 14  30   .rsrc   utf16le ProductVersion
+19  0x00019d6c 0x7ff4f01f36c 14  30   .rsrc   utf16le 6.1.7600.16385
+20  0x00019d94 0x7ff4f01f394 10  22   .rsrc   utf16le arFileInfo
+21  0x00019db2 0x7ff4f01f3b2 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x7ff4f000000
+binsz    105984
+bintype  pe
+bits     64
+canary   false
+retguard false
+class    PE32+
+cmp.csum 0x00023933
+compiled Tue Jul 14 01:24:44 2009
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       false
+os       windows
+overlay  false
+cc       ms
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x4a5bde5c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x2022
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1400
+  SizeOfInitializedData : 0x18800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x2010
+  BaseOfCode : 0x1000
+  ImageBase : 0x7ff4f000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x2
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x20000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 146 Name: Export900 Version: 30729 Times: 1
+  Product: 137 Name: Utc1500_LTCG_C Version: 30729 Times: 4
+  Product: 123 Name: Implib800 Version: 40310 Times: 3
+  Product: 1 Name: Import0 Version: 0 Times: 30
+  Product: 109 Name: Utc1400_C Version: 40310 Times: 4
+  Product: 123 Name: Implib800 Version: 50727 Times: 2
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 1
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x35a0
+  Size : 0x30b
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x32c0
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1f000
+  Size : 0x3d0
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x5000
+  Size : 0x138
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x6000
+  Size : 0x44
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x3000
+  Size : 0xe0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+msvcrt.dll
+kernel32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000033e0 0x000018b0 SET_64 msvcrt.dll_wcsstr
+0x000033ea 0x000018a8 SET_64 msvcrt.dll__stricmp
+0x000033f6 0x000018a0 SET_64 msvcrt.dll__wcsicmp
+0x0000340e 0x00001898 SET_64 msvcrt.dll__initterm
+0x0000341a 0x00001890 SET_64 msvcrt.dll_free
+0x00003422 0x00001888 SET_64 msvcrt.dll_malloc
+0x0000342c 0x00001858 SET_64 KERNEL32.dll_GetCommandLineW
+0x0000343e 0x00001860 SET_64 KERNEL32.dll_GetModuleHandleW
+0x00003452 0x00001868 SET_64 KERNEL32.dll_VirtualFree
+0x00003460 0x00001870 SET_64 KERNEL32.dll_InitializeCriticalSection
+0x0000347c 0x00001878 SET_64 KERNEL32.dll_LeaveCriticalSection
+0x00003494 0x00001800 SET_64 KERNEL32.dll_GetModuleFileNameW
+0x000034aa 0x00001850 SET_64 KERNEL32.dll_GetProcAddress
+0x000034bc 0x00001848 SET_64 KERNEL32.dll_VirtualAlloc
+0x000034cc 0x00001840 SET_64 KERNEL32.dll_EnterCriticalSection
+0x000034e4 0x00001838 SET_64 KERNEL32.dll_DisableThreadLibraryCalls
+0x00003500 0x00001830 SET_64 KERNEL32.dll_LoadLibraryA
+0x00003510 0x00001828 SET_64 KERNEL32.dll_DeleteCriticalSection
+0x00003528 0x00001820 SET_64 KERNEL32.dll_LocalAlloc
+0x00003536 0x00001818 SET_64 KERNEL32.dll_LocalFree
+0x00003542 0x00001810 SET_64 KERNEL32.dll_GetVersionExW
+0x00003552 0x00001808 SET_64 KERNEL32.dll_Sleep
+0x00003568 0x000018b8 SET_64 msvcrt.dll_strncmp
+0x00003572 0x000018c0 SET_64 msvcrt.dll___C_specific_handler
+0x0000358a 0x000018c8 SET_64 msvcrt.dll_memcpy
+0x00003594 0x000018d0 SET_64 msvcrt.dll_memset
+
+
+26 relocations
+105984
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 6.1.7600.16385
+  ProductVersion: 6.1.7600.16385
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Microsoft Corporation
+  FileDescription: 
+  FileVersion: 6.1.7600.16385 (win7_rtm.090713-1255)
+  InternalName: sxsapifeed.dll
+  LegalCopyright: © Microsoft Corporation. All rights reserved.
+  OriginalFilename: sxsapifeed.dll
+  ProductName: Microsoft® Windows® Operating System
+  ProductVersion: 6.1.7600.16385
+Section to Segment mapping:
+Segment Section
+---------------
+
+

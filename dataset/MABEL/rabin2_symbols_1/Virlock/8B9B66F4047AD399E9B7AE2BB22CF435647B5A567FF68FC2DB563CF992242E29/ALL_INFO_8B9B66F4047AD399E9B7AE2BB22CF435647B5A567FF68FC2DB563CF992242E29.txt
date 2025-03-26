@@ -1,0 +1,182 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb1a00 0x00401000  0xb2000 -r-x .text
+1   0x000b2000    0x200 0x004b3000   0x1000 -r-- .rdata
+2   0x000b2200    0x800 0x004b4000   0x1000 -rwx .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401060 paddr=0x00000660 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b3000 NONE FUNC user32.dll   DeregisterShellHookWindow
+2   0x004b3004 NONE FUNC user32.dll   DlgDirListComboBoxA
+1   0x004b300c NONE FUNC ntdll.dll    NtQueryTimerResolution
+1   0x004b3014 NONE FUNC oleaut32.dll VarCyFromI2
+1   0x004b301c NONE FUNC kernel32.dll GetProcessHeap
+2   0x004b3020 NONE FUNC kernel32.dll FillConsoleOutputAttribute
+3   0x004b3024 NONE FUNC kernel32.dll CreateNamedPipeA
+4   0x004b3028 NONE FUNC kernel32.dll GetThreadLocale
+1   0x004b3030 NONE FUNC advapi32.dll StartTraceA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b2000 0x004b3000 NONE FUNC 0    user32.dll   imp.DeregisterShellHookWindow
+2   0x000b2004 0x004b3004 NONE FUNC 0    user32.dll   imp.DlgDirListComboBoxA
+1   0x000b200c 0x004b300c NONE FUNC 0    ntdll.dll    imp.NtQueryTimerResolution
+1   0x000b2014 0x004b3014 NONE FUNC 0    oleaut32.dll imp.VarCyFromI2
+1   0x000b201c 0x004b301c NONE FUNC 0    kernel32.dll imp.GetProcessHeap
+2   0x000b2020 0x004b3020 NONE FUNC 0    kernel32.dll imp.FillConsoleOutputAttribute
+3   0x000b2024 0x004b3024 NONE FUNC 0    kernel32.dll imp.CreateNamedPipeA
+4   0x000b2028 0x004b3028 NONE FUNC 0    kernel32.dll imp.GetThreadLocale
+1   0x000b2030 0x004b3030 NONE FUNC 0    advapi32.dll imp.StartTraceA
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b20ea 0x004b30ea 25  26   .rdata  ascii DeregisterShellHookWindow
+1   0x000b2106 0x004b3106 19  20   .rdata  ascii DlgDirListComboBoxA
+2   0x000b211a 0x004b311a 10  11   .rdata  ascii user32.dll
+3   0x000b2127 0x004b3127 22  23   .rdata  ascii NtQueryTimerResolution
+4   0x000b213e 0x004b313e 9   10   .rdata  ascii ntdll.dll
+5   0x000b214a 0x004b314a 11  12   .rdata  ascii VarCyFromI2
+6   0x000b2156 0x004b3156 12  13   .rdata  ascii oleaut32.dll
+7   0x000b2165 0x004b3165 14  15   .rdata  ascii GetProcessHeap
+8   0x000b2176 0x004b3176 26  27   .rdata  ascii FillConsoleOutputAttribute
+9   0x000b2193 0x004b3193 16  17   .rdata  ascii CreateNamedPipeA
+10  0x000b21a6 0x004b31a6 15  16   .rdata  ascii GetThreadLocale
+11  0x000b21b6 0x004b31b6 12  13   .rdata  ascii kernel32.dll
+12  0x000b21c5 0x004b31c5 11  12   .rdata  ascii StartTraceA
+13  0x000b21d1 0x004b31d1 12  13   .rdata  ascii advapi32.dll
+arch     x86
+baddr    0x400000
+binsz    731648
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000b8fc9
+compiled Fri Jun 19 22:20:36 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x558495b4
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb1a00
+  SizeOfInitializedData : 0x400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1060
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb5000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb3038
+  Size : 0x78
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb3000
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+ntdll.dll
+oleaut32.dll
+kernel32.dll
+advapi32.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b30e8 0x000b2000 SET_32 user32.dll_DeregisterShellHookWindow
+0x000b3104 0x000b2004 SET_32 user32.dll_DlgDirListComboBoxA
+0x000b3125 0x000b200c SET_32 ntdll.dll_NtQueryTimerResolution
+0x000b3148 0x000b2014 SET_32 oleaut32.dll_VarCyFromI2
+0x000b3163 0x000b201c SET_32 kernel32.dll_GetProcessHeap
+0x000b3174 0x000b2020 SET_32 kernel32.dll_FillConsoleOutputAttribute
+0x000b3191 0x000b2024 SET_32 kernel32.dll_CreateNamedPipeA
+0x000b31a4 0x000b2028 SET_32 kernel32.dll_GetThreadLocale
+0x000b31c3 0x000b2030 SET_32 advapi32.dll_StartTraceA
+
+
+9 relocations
+731648
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

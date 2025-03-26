@@ -1,0 +1,858 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr           size vaddr          vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2e4c00 0x00401000  0x2e5000 -r-x .text
+1   0x002e5000     0x200 0x006e6000    0x1000 -rw- .data
+2   0x002e5200     0x200 0x006e7000    0x1000 -rw- .tls
+3   0x002e5400    0x5e00 0x006e8000    0x6000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x006de3d3 paddr=0x002dd7d3 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00401250 NONE FUNC USER32.dll   LoadStringW
+2   0x00401254 NONE FUNC USER32.dll   CharUpperW
+3   0x00401258 NONE FUNC USER32.dll   wsprintfW
+1   0x004011cc NONE FUNC MPR.dll      WNetGetLastErrorW
+2   0x004011d0 NONE FUNC MPR.dll      WNetCancelConnection2W
+3   0x004011d4 NONE FUNC MPR.dll      WNetAddConnection2W
+1   0x00401378 NONE FUNC ole32.dll    CoInitializeSecurity
+2   0x0040137c NONE FUNC ole32.dll    CoCreateInstance
+3   0x00401380 NONE FUNC ole32.dll    CoTaskMemAlloc
+4   0x00401384 NONE FUNC ole32.dll    CoTaskMemFree
+5   0x00401388 NONE FUNC ole32.dll    CoUninitialize
+6   0x0040138c NONE FUNC ole32.dll    CoInitializeEx
+2   0x00401200 NONE FUNC OLEAUT32.dll SysReAllocString
+7   0x00401204 NONE FUNC OLEAUT32.dll VariantInit
+20  0x00401208 NONE FUNC OLEAUT32.dll SafeArrayLock
+19  0x0040120c NONE FUNC OLEAUT32.dll SafeArrayGetLBound
+150 0x00401210 NONE FUNC OLEAUT32.dll DllRegisterServer
+12  0x00401214 NONE FUNC OLEAUT32.dll VariantTimeToDosDateTime
+9   0x00401218 NONE FUNC OLEAUT32.dll VariantCopy
+10  0x0040121c NONE FUNC OLEAUT32.dll VariantCopyInd
+8   0x00401220 NONE FUNC OLEAUT32.dll VariantClear
+6   0x00401224 NONE FUNC OLEAUT32.dll SysStringLen
+25  0x00401228 NONE FUNC OLEAUT32.dll SafeArrayPutElement
+1   0x00401240 NONE FUNC Secur32.dll  GetComputerObjectNameW
+2   0x00401244 NONE FUNC Secur32.dll  TranslateNameW
+3   0x00401248 NONE FUNC Secur32.dll  GetUserNameExW
+116 0x00401260 NONE FUNC WS2_32.dll   WSACleanup
+11  0x00401264 NONE FUNC WS2_32.dll   inet_addr
+111 0x00401268 NONE FUNC WS2_32.dll   WSAGetLastError
+115 0x0040126c NONE FUNC WS2_32.dll   WSAStartup
+51  0x00401270 NONE FUNC WS2_32.dll   gethostbyaddr
+1   0x004011dc NONE FUNC NETAPI32.dll DsGetDcNameW
+2   0x004011e0 NONE FUNC NETAPI32.dll NetApiBufferFree
+3   0x004011e4 NONE FUNC NETAPI32.dll NetServerGetInfo
+1   0x00401278 NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::~destructor(void)
+2   0x0040127c NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::constructor(void)
+3   0x00401280 NONE FUNC framedyn.dll sym.imp.protected: struct CHStringData * __thiscall CHString::GetData(void)const
+4   0x00401284 NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::Empty(void)
+5   0x00401288 NONE FUNC framedyn.dll sym.imp.public: int __thiscall CHString::Compare(unsigned short int const *)const
+6   0x0040128c NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::ReleaseBuffer(int)
+7   0x00401290 NONE FUNC framedyn.dll sym.imp.public: unsigned short int * __thiscall CHString::GetBufferSetLength(int)
+8   0x00401294 NONE FUNC framedyn.dll sym.imp.public: void __cdecl CHString::Format(unsigned short int const *)
+9   0x00401298 NONE FUNC framedyn.dll sym.imp.public: class CHString const & __thiscall CHString::operator=(class CHString const &)
+10  0x0040129c NONE FUNC framedyn.dll sym.imp.public: class CHString __thiscall CHString::Mid(int)
+11  0x004012a0 NONE FUNC framedyn.dll sym.imp.public: int __thiscall CHString::Find(unsigned short int)const
+12  0x004012a4 NONE FUNC framedyn.dll sym.imp.public: int __thiscall CHString::FindOneOf(unsigned short int const *)const
+13  0x004012a8 NONE FUNC framedyn.dll sym.imp.public: class CHString __thiscall CHString::Left(int)
+14  0x004012ac NONE FUNC framedyn.dll sym.imp.public: class CHString const & __thiscall CHString::operator+=(unsigned short int const *)
+15  0x004012b0 NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::constructor(unsigned short int const *)
+16  0x004012b4 NONE FUNC framedyn.dll sym.imp.public: class CHString __thiscall CHString::Mid(int, int)
+17  0x004012b8 NONE FUNC framedyn.dll sym.imp.public: int __thiscall CHString::Find(unsigned short int const *)const
+18  0x004012bc NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::constructor(class CHString const &)
+19  0x004012c0 NONE FUNC framedyn.dll sym.imp.class CHString __stdcall operator+(class CHString const &, unsigned short int const *)
+20  0x004012c4 NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::MakeLower(void)
+21  0x004012c8 NONE FUNC framedyn.dll sym.imp.public: void __thiscall CHString::SetAt(int, unsigned short int)
+22  0x004012cc NONE FUNC framedyn.dll sym.imp.class CHString __stdcall operator+(class CHString const &, class CHString const &)
+23  0x004012d0 NONE FUNC framedyn.dll sym.imp.public: unsigned short int * __thiscall CHString::GetBuffer(int)
+24  0x004012d4 NONE FUNC framedyn.dll sym.imp.public: class CHString const & __thiscall CHString::operator=(unsigned short int const *)
+1   0x00401230 NONE FUNC RPCRT4.dll   RpcStringFreeW
+2   0x00401234 NONE FUNC RPCRT4.dll   UuidToStringW
+3   0x00401238 NONE FUNC RPCRT4.dll   UuidCreate
+1   0x004011ec NONE FUNC NTDSAPI.dll  DsCrackNamesW
+2   0x004011f0 NONE FUNC NTDSAPI.dll  DsFreeNameResultW
+3   0x004011f4 NONE FUNC NTDSAPI.dll  DsUnBindW
+4   0x004011f8 NONE FUNC NTDSAPI.dll  DsBindWithCredW
+1   0x004012dc NONE FUNC msvcrt.dll   calloc
+2   0x004012e0 NONE FUNC msvcrt.dll   wcstok
+3   0x004012e4 NONE FUNC msvcrt.dll   wcslen
+4   0x004012e8 NONE FUNC msvcrt.dll   free
+5   0x004012ec NONE FUNC msvcrt.dll   _wcsicmp
+6   0x004012f0 NONE FUNC msvcrt.dll   sym.imp.void * __cdecl operator new(unsigned int)
+7   0x004012f4 NONE FUNC msvcrt.dll   sym.imp.void __cdecl operator delete(void *)
+8   0x004012f8 NONE FUNC msvcrt.dll   __CxxFrameHandler
+9   0x004012fc NONE FUNC msvcrt.dll   _iob
+10  0x00401300 NONE FUNC msvcrt.dll   wcstod
+11  0x00401304 NONE FUNC msvcrt.dll   wcstol
+12  0x00401308 NONE FUNC msvcrt.dll   wcsstr
+13  0x0040130c NONE FUNC msvcrt.dll   wcsncmp
+14  0x00401310 NONE FUNC msvcrt.dll   _wcsnicmp
+15  0x00401314 NONE FUNC msvcrt.dll   realloc
+16  0x00401318 NONE FUNC msvcrt.dll   fprintf
+17  0x0040131c NONE FUNC msvcrt.dll   wcschr
+18  0x00401320 NONE FUNC msvcrt.dll   strtok
+19  0x00401324 NONE FUNC msvcrt.dll   _CxxThrowException
+20  0x00401328 NONE FUNC msvcrt.dll   _c_exit
+21  0x0040132c NONE FUNC msvcrt.dll   _exit
+22  0x00401330 NONE FUNC msvcrt.dll   _XcptFilter
+23  0x00401334 NONE FUNC msvcrt.dll   _cexit
+24  0x00401338 NONE FUNC msvcrt.dll   exit
+25  0x0040133c NONE FUNC msvcrt.dll   __winitenv
+26  0x00401340 NONE FUNC msvcrt.dll   __wgetmainargs
+27  0x00401344 NONE FUNC msvcrt.dll   sym.imp.void __cdecl terminate(void)
+28  0x00401348 NONE FUNC msvcrt.dll   _controlfp
+29  0x0040134c NONE FUNC msvcrt.dll   sym.imp.public virtual: void __thiscall type_info::~destructor(void)
+30  0x00401350 NONE FUNC msvcrt.dll   __set_app_type
+31  0x00401354 NONE FUNC msvcrt.dll   _except_handler3
+32  0x00401358 NONE FUNC msvcrt.dll   __p__fmode
+33  0x0040135c NONE FUNC msvcrt.dll   __p__commode
+34  0x00401360 NONE FUNC msvcrt.dll   _adjust_fdiv
+35  0x00401364 NONE FUNC msvcrt.dll   __setusermatherr
+36  0x00401368 NONE FUNC msvcrt.dll   wcscpy
+37  0x0040136c NONE FUNC msvcrt.dll   _initterm
+38  0x00401370 NONE FUNC msvcrt.dll   fflush
+1   0x004010c8 NONE FUNC ADVAPI32.dll AdjustTokenPrivileges
+2   0x004010cc NONE FUNC ADVAPI32.dll LookupPrivilegeValueW
+3   0x004010d0 NONE FUNC ADVAPI32.dll ConvertStringSecurityDescriptorToSecurityDescriptorW
+4   0x004010d4 NONE FUNC ADVAPI32.dll RegUnLoadKeyW
+5   0x004010d8 NONE FUNC ADVAPI32.dll RegOpenKeyExW
+6   0x004010dc NONE FUNC ADVAPI32.dll RegLoadKeyW
+7   0x004010e0 NONE FUNC ADVAPI32.dll OpenProcessToken
+8   0x004010e4 NONE FUNC ADVAPI32.dll RegCloseKey
+9   0x004010e8 NONE FUNC ADVAPI32.dll RegQueryInfoKeyW
+10  0x004010ec NONE FUNC ADVAPI32.dll RegConnectRegistryW
+11  0x004010f0 NONE FUNC ADVAPI32.dll ConvertStringSidToSidW
+12  0x004010f4 NONE FUNC ADVAPI32.dll LookupAccountSidW
+1   0x004010fc NONE FUNC KERNEL32.dll SetConsoleMode
+2   0x00401100 NONE FUNC KERNEL32.dll GetModuleHandleA
+3   0x00401104 NONE FUNC KERNEL32.dll GetConsoleMode
+4   0x00401108 NONE FUNC KERNEL32.dll CreateMutexW
+5   0x0040110c NONE FUNC KERNEL32.dll CloseHandle
+6   0x00401110 NONE FUNC KERNEL32.dll GetConsoleScreenBufferInfo
+7   0x00401114 NONE FUNC KERNEL32.dll GetStdHandle
+8   0x00401118 NONE FUNC KERNEL32.dll SetLastError
+9   0x0040111c NONE FUNC KERNEL32.dll lstrlenW
+10  0x00401120 NONE FUNC KERNEL32.dll WriteConsoleW
+11  0x00401124 NONE FUNC KERNEL32.dll SetConsoleCursorPosition
+12  0x00401128 NONE FUNC KERNEL32.dll lstrcmpiW
+13  0x0040112c NONE FUNC KERNEL32.dll lstrcpyW
+14  0x00401130 NONE FUNC KERNEL32.dll lstrcmpW
+15  0x00401134 NONE FUNC KERNEL32.dll InterlockedIncrement
+16  0x00401138 NONE FUNC KERNEL32.dll LocalAlloc
+17  0x0040113c NONE FUNC KERNEL32.dll ReadFile
+18  0x00401140 NONE FUNC KERNEL32.dll ReadConsoleW
+19  0x00401144 NONE FUNC KERNEL32.dll MultiByteToWideChar
+20  0x00401148 NONE FUNC KERNEL32.dll LoadLibraryW
+21  0x0040114c NONE FUNC KERNEL32.dll GetProcAddress
+22  0x00401150 NONE FUNC KERNEL32.dll FreeLibrary
+23  0x00401154 NONE FUNC KERNEL32.dll FormatMessageW
+24  0x00401158 NONE FUNC KERNEL32.dll lstrcatW
+25  0x0040115c NONE FUNC KERNEL32.dll InterlockedDecrement
+26  0x00401160 NONE FUNC KERNEL32.dll GetComputerNameW
+27  0x00401164 NONE FUNC KERNEL32.dll lstrcpynW
+28  0x00401168 NONE FUNC KERNEL32.dll WideCharToMultiByte
+29  0x0040116c NONE FUNC KERNEL32.dll VerSetConditionMask
+30  0x00401170 NONE FUNC KERNEL32.dll VerifyVersionInfoW
+31  0x00401174 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+32  0x00401178 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+33  0x0040117c NONE FUNC KERNEL32.dll TerminateProcess
+34  0x00401180 NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+35  0x00401184 NONE FUNC KERNEL32.dll GetCurrentProcessId
+36  0x00401188 NONE FUNC KERNEL32.dll GetCurrentThreadId
+37  0x0040118c NONE FUNC KERNEL32.dll GetTickCount
+38  0x00401190 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+39  0x00401194 NONE FUNC KERNEL32.dll GetComputerNameExW
+40  0x00401198 NONE FUNC KERNEL32.dll WaitForSingleObject
+41  0x0040119c NONE FUNC KERNEL32.dll ReleaseMutex
+42  0x004011a0 NONE FUNC KERNEL32.dll FileTimeToLocalFileTime
+43  0x004011a4 NONE FUNC KERNEL32.dll FileTimeToSystemTime
+44  0x004011a8 NONE FUNC KERNEL32.dll GetCurrentProcess
+45  0x004011ac NONE FUNC KERNEL32.dll GetLocalTime
+46  0x004011b0 NONE FUNC KERNEL32.dll GetDateFormatW
+47  0x004011b4 NONE FUNC KERNEL32.dll GetTimeFormatW
+48  0x004011b8 NONE FUNC KERNEL32.dll OpenMutexW
+49  0x004011bc NONE FUNC KERNEL32.dll GetLastError
+50  0x004011c0 NONE FUNC KERNEL32.dll LocalFree
+51  0x004011c4 NONE FUNC KERNEL32.dll GetUserDefaultLCID
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000650 0x00401250 NONE FUNC 0    USER32.dll   imp.LoadStringW
+2   0x00000654 0x00401254 NONE FUNC 0    USER32.dll   imp.CharUpperW
+3   0x00000658 0x00401258 NONE FUNC 0    USER32.dll   imp.wsprintfW
+1   0x000005cc 0x004011cc NONE FUNC 0    MPR.dll      imp.WNetGetLastErrorW
+2   0x000005d0 0x004011d0 NONE FUNC 0    MPR.dll      imp.WNetCancelConnection2W
+3   0x000005d4 0x004011d4 NONE FUNC 0    MPR.dll      imp.WNetAddConnection2W
+1   0x00000778 0x00401378 NONE FUNC 0    ole32.dll    imp.CoInitializeSecurity
+2   0x0000077c 0x0040137c NONE FUNC 0    ole32.dll    imp.CoCreateInstance
+3   0x00000780 0x00401380 NONE FUNC 0    ole32.dll    imp.CoTaskMemAlloc
+4   0x00000784 0x00401384 NONE FUNC 0    ole32.dll    imp.CoTaskMemFree
+5   0x00000788 0x00401388 NONE FUNC 0    ole32.dll    imp.CoUninitialize
+6   0x0000078c 0x0040138c NONE FUNC 0    ole32.dll    imp.CoInitializeEx
+2   0x00000600 0x00401200 NONE FUNC 0    OLEAUT32.dll imp.SysReAllocString
+7   0x00000604 0x00401204 NONE FUNC 0    OLEAUT32.dll imp.VariantInit
+20  0x00000608 0x00401208 NONE FUNC 0    OLEAUT32.dll imp.SafeArrayLock
+19  0x0000060c 0x0040120c NONE FUNC 0    OLEAUT32.dll imp.SafeArrayGetLBound
+150 0x00000610 0x00401210 NONE FUNC 0    OLEAUT32.dll imp.DllRegisterServer
+12  0x00000614 0x00401214 NONE FUNC 0    OLEAUT32.dll imp.VariantTimeToDosDateTime
+9   0x00000618 0x00401218 NONE FUNC 0    OLEAUT32.dll imp.VariantCopy
+10  0x0000061c 0x0040121c NONE FUNC 0    OLEAUT32.dll imp.VariantCopyInd
+8   0x00000620 0x00401220 NONE FUNC 0    OLEAUT32.dll imp.VariantClear
+6   0x00000624 0x00401224 NONE FUNC 0    OLEAUT32.dll imp.SysStringLen
+25  0x00000628 0x00401228 NONE FUNC 0    OLEAUT32.dll imp.SafeArrayPutElement
+1   0x00000640 0x00401240 NONE FUNC 0    Secur32.dll  imp.GetComputerObjectNameW
+2   0x00000644 0x00401244 NONE FUNC 0    Secur32.dll  imp.TranslateNameW
+3   0x00000648 0x00401248 NONE FUNC 0    Secur32.dll  imp.GetUserNameExW
+116 0x00000660 0x00401260 NONE FUNC 0    WS2_32.dll   imp.WSACleanup
+11  0x00000664 0x00401264 NONE FUNC 0    WS2_32.dll   imp.inet_addr
+111 0x00000668 0x00401268 NONE FUNC 0    WS2_32.dll   imp.WSAGetLastError
+115 0x0000066c 0x0040126c NONE FUNC 0    WS2_32.dll   imp.WSAStartup
+51  0x00000670 0x00401270 NONE FUNC 0    WS2_32.dll   imp.gethostbyaddr
+1   0x000005dc 0x004011dc NONE FUNC 0    NETAPI32.dll imp.DsGetDcNameW
+2   0x000005e0 0x004011e0 NONE FUNC 0    NETAPI32.dll imp.NetApiBufferFree
+3   0x000005e4 0x004011e4 NONE FUNC 0    NETAPI32.dll imp.NetServerGetInfo
+1   0x00000678 0x00401278 NONE FUNC 0    framedyn.dll public: void __thiscall CHString::~destructor(void)
+2   0x0000067c 0x0040127c NONE FUNC 0    framedyn.dll public: void __thiscall CHString::constructor(void)
+3   0x00000680 0x00401280 NONE FUNC 0    framedyn.dll protected: struct CHStringData * __thiscall CHString::GetData(void)const
+4   0x00000684 0x00401284 NONE FUNC 0    framedyn.dll public: void __thiscall CHString::Empty(void)
+5   0x00000688 0x00401288 NONE FUNC 0    framedyn.dll public: int __thiscall CHString::Compare(unsigned short int const *)const
+6   0x0000068c 0x0040128c NONE FUNC 0    framedyn.dll public: void __thiscall CHString::ReleaseBuffer(int)
+7   0x00000690 0x00401290 NONE FUNC 0    framedyn.dll public: unsigned short int * __thiscall CHString::GetBufferSetLength(int)
+8   0x00000694 0x00401294 NONE FUNC 0    framedyn.dll public: void __cdecl CHString::Format(unsigned short int const *)
+9   0x00000698 0x00401298 NONE FUNC 0    framedyn.dll public: class CHString const & __thiscall CHString::operator=(class CHString const &)
+10  0x0000069c 0x0040129c NONE FUNC 0    framedyn.dll public: class CHString __thiscall CHString::Mid(int)
+11  0x000006a0 0x004012a0 NONE FUNC 0    framedyn.dll public: int __thiscall CHString::Find(unsigned short int)const
+12  0x000006a4 0x004012a4 NONE FUNC 0    framedyn.dll public: int __thiscall CHString::FindOneOf(unsigned short int const *)const
+13  0x000006a8 0x004012a8 NONE FUNC 0    framedyn.dll public: class CHString __thiscall CHString::Left(int)
+14  0x000006ac 0x004012ac NONE FUNC 0    framedyn.dll public: class CHString const & __thiscall CHString::operator+=(unsigned short int const *)
+15  0x000006b0 0x004012b0 NONE FUNC 0    framedyn.dll public: void __thiscall CHString::constructor(unsigned short int const *)
+16  0x000006b4 0x004012b4 NONE FUNC 0    framedyn.dll public: class CHString __thiscall CHString::Mid(int, int)
+17  0x000006b8 0x004012b8 NONE FUNC 0    framedyn.dll public: int __thiscall CHString::Find(unsigned short int const *)const
+18  0x000006bc 0x004012bc NONE FUNC 0    framedyn.dll public: void __thiscall CHString::constructor(class CHString const &)
+19  0x000006c0 0x004012c0 NONE FUNC 0    framedyn.dll class CHString __stdcall operator+(class CHString const &, unsigned short int const *)
+20  0x000006c4 0x004012c4 NONE FUNC 0    framedyn.dll public: void __thiscall CHString::MakeLower(void)
+21  0x000006c8 0x004012c8 NONE FUNC 0    framedyn.dll public: void __thiscall CHString::SetAt(int, unsigned short int)
+22  0x000006cc 0x004012cc NONE FUNC 0    framedyn.dll class CHString __stdcall operator+(class CHString const &, class CHString const &)
+23  0x000006d0 0x004012d0 NONE FUNC 0    framedyn.dll public: unsigned short int * __thiscall CHString::GetBuffer(int)
+24  0x000006d4 0x004012d4 NONE FUNC 0    framedyn.dll public: class CHString const & __thiscall CHString::operator=(unsigned short int const *)
+1   0x00000630 0x00401230 NONE FUNC 0    RPCRT4.dll   imp.RpcStringFreeW
+2   0x00000634 0x00401234 NONE FUNC 0    RPCRT4.dll   imp.UuidToStringW
+3   0x00000638 0x00401238 NONE FUNC 0    RPCRT4.dll   imp.UuidCreate
+1   0x000005ec 0x004011ec NONE FUNC 0    NTDSAPI.dll  imp.DsCrackNamesW
+2   0x000005f0 0x004011f0 NONE FUNC 0    NTDSAPI.dll  imp.DsFreeNameResultW
+3   0x000005f4 0x004011f4 NONE FUNC 0    NTDSAPI.dll  imp.DsUnBindW
+4   0x000005f8 0x004011f8 NONE FUNC 0    NTDSAPI.dll  imp.DsBindWithCredW
+1   0x000006dc 0x004012dc NONE FUNC 0    msvcrt.dll   imp.calloc
+2   0x000006e0 0x004012e0 NONE FUNC 0    msvcrt.dll   imp.wcstok
+3   0x000006e4 0x004012e4 NONE FUNC 0    msvcrt.dll   imp.wcslen
+4   0x000006e8 0x004012e8 NONE FUNC 0    msvcrt.dll   imp.free
+5   0x000006ec 0x004012ec NONE FUNC 0    msvcrt.dll   imp._wcsicmp
+6   0x000006f0 0x004012f0 NONE FUNC 0    msvcrt.dll   void * __cdecl operator new(unsigned int)
+7   0x000006f4 0x004012f4 NONE FUNC 0    msvcrt.dll   void __cdecl operator delete(void *)
+8   0x000006f8 0x004012f8 NONE FUNC 0    msvcrt.dll   imp.__CxxFrameHandler
+9   0x000006fc 0x004012fc NONE FUNC 0    msvcrt.dll   imp._iob
+10  0x00000700 0x00401300 NONE FUNC 0    msvcrt.dll   imp.wcstod
+11  0x00000704 0x00401304 NONE FUNC 0    msvcrt.dll   imp.wcstol
+12  0x00000708 0x00401308 NONE FUNC 0    msvcrt.dll   imp.wcsstr
+13  0x0000070c 0x0040130c NONE FUNC 0    msvcrt.dll   imp.wcsncmp
+14  0x00000710 0x00401310 NONE FUNC 0    msvcrt.dll   imp._wcsnicmp
+15  0x00000714 0x00401314 NONE FUNC 0    msvcrt.dll   imp.realloc
+16  0x00000718 0x00401318 NONE FUNC 0    msvcrt.dll   imp.fprintf
+17  0x0000071c 0x0040131c NONE FUNC 0    msvcrt.dll   imp.wcschr
+18  0x00000720 0x00401320 NONE FUNC 0    msvcrt.dll   imp.strtok
+19  0x00000724 0x00401324 NONE FUNC 0    msvcrt.dll   imp._CxxThrowException
+20  0x00000728 0x00401328 NONE FUNC 0    msvcrt.dll   imp._c_exit
+21  0x0000072c 0x0040132c NONE FUNC 0    msvcrt.dll   imp._exit
+22  0x00000730 0x00401330 NONE FUNC 0    msvcrt.dll   imp._XcptFilter
+23  0x00000734 0x00401334 NONE FUNC 0    msvcrt.dll   imp._cexit
+24  0x00000738 0x00401338 NONE FUNC 0    msvcrt.dll   imp.exit
+25  0x0000073c 0x0040133c NONE FUNC 0    msvcrt.dll   imp.__winitenv
+26  0x00000740 0x00401340 NONE FUNC 0    msvcrt.dll   imp.__wgetmainargs
+27  0x00000744 0x00401344 NONE FUNC 0    msvcrt.dll   void __cdecl terminate(void)
+28  0x00000748 0x00401348 NONE FUNC 0    msvcrt.dll   imp._controlfp
+29  0x0000074c 0x0040134c NONE FUNC 0    msvcrt.dll   public virtual: void __thiscall type_info::~destructor(void)
+30  0x00000750 0x00401350 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+31  0x00000754 0x00401354 NONE FUNC 0    msvcrt.dll   imp._except_handler3
+32  0x00000758 0x00401358 NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+33  0x0000075c 0x0040135c NONE FUNC 0    msvcrt.dll   imp.__p__commode
+34  0x00000760 0x00401360 NONE FUNC 0    msvcrt.dll   imp._adjust_fdiv
+35  0x00000764 0x00401364 NONE FUNC 0    msvcrt.dll   imp.__setusermatherr
+36  0x00000768 0x00401368 NONE FUNC 0    msvcrt.dll   imp.wcscpy
+37  0x0000076c 0x0040136c NONE FUNC 0    msvcrt.dll   imp._initterm
+38  0x00000770 0x00401370 NONE FUNC 0    msvcrt.dll   imp.fflush
+1   0x000004c8 0x004010c8 NONE FUNC 0    ADVAPI32.dll imp.AdjustTokenPrivileges
+2   0x000004cc 0x004010cc NONE FUNC 0    ADVAPI32.dll imp.LookupPrivilegeValueW
+3   0x000004d0 0x004010d0 NONE FUNC 0    ADVAPI32.dll imp.ConvertStringSecurityDescriptorToSecurityDescriptorW
+4   0x000004d4 0x004010d4 NONE FUNC 0    ADVAPI32.dll imp.RegUnLoadKeyW
+5   0x000004d8 0x004010d8 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExW
+6   0x000004dc 0x004010dc NONE FUNC 0    ADVAPI32.dll imp.RegLoadKeyW
+7   0x000004e0 0x004010e0 NONE FUNC 0    ADVAPI32.dll imp.OpenProcessToken
+8   0x000004e4 0x004010e4 NONE FUNC 0    ADVAPI32.dll imp.RegCloseKey
+9   0x000004e8 0x004010e8 NONE FUNC 0    ADVAPI32.dll imp.RegQueryInfoKeyW
+10  0x000004ec 0x004010ec NONE FUNC 0    ADVAPI32.dll imp.RegConnectRegistryW
+11  0x000004f0 0x004010f0 NONE FUNC 0    ADVAPI32.dll imp.ConvertStringSidToSidW
+12  0x000004f4 0x004010f4 NONE FUNC 0    ADVAPI32.dll imp.LookupAccountSidW
+1   0x000004fc 0x004010fc NONE FUNC 0    KERNEL32.dll imp.SetConsoleMode
+2   0x00000500 0x00401100 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+3   0x00000504 0x00401104 NONE FUNC 0    KERNEL32.dll imp.GetConsoleMode
+4   0x00000508 0x00401108 NONE FUNC 0    KERNEL32.dll imp.CreateMutexW
+5   0x0000050c 0x0040110c NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+6   0x00000510 0x00401110 NONE FUNC 0    KERNEL32.dll imp.GetConsoleScreenBufferInfo
+7   0x00000514 0x00401114 NONE FUNC 0    KERNEL32.dll imp.GetStdHandle
+8   0x00000518 0x00401118 NONE FUNC 0    KERNEL32.dll imp.SetLastError
+9   0x0000051c 0x0040111c NONE FUNC 0    KERNEL32.dll imp.lstrlenW
+10  0x00000520 0x00401120 NONE FUNC 0    KERNEL32.dll imp.WriteConsoleW
+11  0x00000524 0x00401124 NONE FUNC 0    KERNEL32.dll imp.SetConsoleCursorPosition
+12  0x00000528 0x00401128 NONE FUNC 0    KERNEL32.dll imp.lstrcmpiW
+13  0x0000052c 0x0040112c NONE FUNC 0    KERNEL32.dll imp.lstrcpyW
+14  0x00000530 0x00401130 NONE FUNC 0    KERNEL32.dll imp.lstrcmpW
+15  0x00000534 0x00401134 NONE FUNC 0    KERNEL32.dll imp.InterlockedIncrement
+16  0x00000538 0x00401138 NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+17  0x0000053c 0x0040113c NONE FUNC 0    KERNEL32.dll imp.ReadFile
+18  0x00000540 0x00401140 NONE FUNC 0    KERNEL32.dll imp.ReadConsoleW
+19  0x00000544 0x00401144 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+20  0x00000548 0x00401148 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryW
+21  0x0000054c 0x0040114c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+22  0x00000550 0x00401150 NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+23  0x00000554 0x00401154 NONE FUNC 0    KERNEL32.dll imp.FormatMessageW
+24  0x00000558 0x00401158 NONE FUNC 0    KERNEL32.dll imp.lstrcatW
+25  0x0000055c 0x0040115c NONE FUNC 0    KERNEL32.dll imp.InterlockedDecrement
+26  0x00000560 0x00401160 NONE FUNC 0    KERNEL32.dll imp.GetComputerNameW
+27  0x00000564 0x00401164 NONE FUNC 0    KERNEL32.dll imp.lstrcpynW
+28  0x00000568 0x00401168 NONE FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+29  0x0000056c 0x0040116c NONE FUNC 0    KERNEL32.dll imp.VerSetConditionMask
+30  0x00000570 0x00401170 NONE FUNC 0    KERNEL32.dll imp.VerifyVersionInfoW
+31  0x00000574 0x00401174 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+32  0x00000578 0x00401178 NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+33  0x0000057c 0x0040117c NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+34  0x00000580 0x00401180 NONE FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+35  0x00000584 0x00401184 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+36  0x00000588 0x00401188 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+37  0x0000058c 0x0040118c NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+38  0x00000590 0x00401190 NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+39  0x00000594 0x00401194 NONE FUNC 0    KERNEL32.dll imp.GetComputerNameExW
+40  0x00000598 0x00401198 NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+41  0x0000059c 0x0040119c NONE FUNC 0    KERNEL32.dll imp.ReleaseMutex
+42  0x000005a0 0x004011a0 NONE FUNC 0    KERNEL32.dll imp.FileTimeToLocalFileTime
+43  0x000005a4 0x004011a4 NONE FUNC 0    KERNEL32.dll imp.FileTimeToSystemTime
+44  0x000005a8 0x004011a8 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+45  0x000005ac 0x004011ac NONE FUNC 0    KERNEL32.dll imp.GetLocalTime
+46  0x000005b0 0x004011b0 NONE FUNC 0    KERNEL32.dll imp.GetDateFormatW
+47  0x000005b4 0x004011b4 NONE FUNC 0    KERNEL32.dll imp.GetTimeFormatW
+48  0x000005b8 0x004011b8 NONE FUNC 0    KERNEL32.dll imp.OpenMutexW
+49  0x000005bc 0x004011bc NONE FUNC 0    KERNEL32.dll imp.GetLastError
+50  0x000005c0 0x004011c0 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+51  0x000005c4 0x004011c4 NONE FUNC 0    KERNEL32.dll imp.GetUserDefaultLCID
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x002e501d 0x006e601d 4   5    .data   ascii   /-|^
+1   0x002e5035 0x006e6035 6   7    .data   ascii   Z[j\f9w
+2   0x002e504e 0x006e604e 6   7    .data   ascii   ~/y<w\f
+3   0x002e5065 0x006e6065 5   6    .data   ascii   .5j.[
+4   0x002e5077 0x006e6077 4   5    .data   ascii   HQ>Q
+5   0x002e507d 0x006e607d 6   7    .data   ascii   fV5 pl
+6   0x002e509b 0x006e609b 5   6    .data   ascii   WS%@'
+7   0x002e50bf 0x006e60bf 6   7    .data   ascii   wU?]`y
+8   0x002e50c9 0x006e60c9 4   5    .data   ascii   !gNu
+9   0x002e50ce 0x006e60ce 4   5    .data   ascii   5~'/
+10  0x002e50d3 0x006e60d3 7   8    .data   ascii   +4R?gw7
+11  0x002e50df 0x006e60df 7   8    .data   ascii   pPrlNMw
+0   0x002e541b 0x006e801b 4   5    .rsrc   ascii   Q4YI
+1   0x002e5428 0x006e8028 6   7    .rsrc   ascii   1\a~\W'
+2   0x002e5430 0x006e8030 4   5    .rsrc   ascii   98u2
+3   0x002e5478 0x006e8078 6   7    .rsrc   ascii   BSN\ecP
+4   0x002e549d 0x006e809d 9   10   .rsrc   ascii   r:#F<.\t?A
+5   0x002e598a 0x006e858a 16  33   .rsrc   utf16le ;\nGPRESULT [/S <
+6   0x002e59b8 0x006e85b8 7   15   .rsrc   utf16le > [/U <
+7   0x002e59de 0x006e85de 7   15   .rsrc   utf16le > [/P <
+8   0x002e59f8 0x006e85f8 24  49   .rsrc   utf16le >]]]\n<         [/SCOPE <
+9   0x002e5a36 0x006e8636 10  21   .rsrc   utf16le >] /USER <
+10  0x002e5a62 0x006e8662 13  28   .rsrc   utf16le >] [/V | /Z]\n
+11  0x002e5a92 0x006e8692 64  130  .rsrc   utf16le :\n=    Отображает результирующую политику (RSoP) для указанного\n blocks=Basic Latin,Cyrillic
+12  0x002e5b14 0x006e8714 31  64   .rsrc   utf16le     пользователя и компьютера.\n blocks=Basic Latin,Cyrillic
+13  0x002e5b6a 0x006e876a 9   19   .rsrc   utf16le :\nD  /S <
+14  0x002e5b8a 0x006e878a 21  43   .rsrc   utf16le >                    
+15  0x002e5bf4 0x006e87f4 38  77   .rsrc   utf16le .\n\e                          \nG  /U [<
+16  0x002e5c4a 0x006e884a 4   9    .rsrc   utf16le >\]<
+17  0x002e5c6a 0x006e886a 6   13   .rsrc   utf16le >     
+18  0x002e5cbe 0x006e88be 36  73   .rsrc   utf16le \nC                                  
+19  0x002e5d42 0x006e8942 10  21   .rsrc   utf16le .\n\nE  /P <
+20  0x002e5d62 0x006e8962 22  45   .rsrc   utf16le >                     
+21  0x002e5dd2 0x006e89d2 36  73   .rsrc   utf16le \n.                                  
+22  0x002e5e2c 0x006e8a2c 14  29   .rsrc   utf16le .\n\nJ  /USER [<
+23  0x002e5e52 0x006e8a52 4   9    .rsrc   utf16le >\]<
+24  0x002e5ec6 0x006e8ac6 36  73   .rsrc   utf16le \nC                                  
+25  0x002e5f40 0x006e8b40 19  39   .rsrc   utf16le  RSOP.\n\nJ  /SCOPE <
+26  0x002e5f74 0x006e8b74 17  35   .rsrc   utf16le >                
+27  0x002e5fe2 0x006e8be2 37  75   .rsrc   utf16le ;\n7                                  
+28  0x002e6054 0x006e8c54 36  73   .rsrc   utf16le \n1                                  
+29  0x002e60b8 0x006e8cb8 36  73   .rsrc   utf16le \nL                                  
+30  0x002e6126 0x006e8d26 58  117  .rsrc   utf16le : "USER", "COMPUTER".\n\nD  /V                              
+31  0x002e61da 0x006e8dda 37  75   .rsrc   utf16le .\nI                                  
+32  0x002e6270 0x006e8e70 36  73   .rsrc   utf16le \n=                                  
+33  0x002e62ea 0x006e8eea 37  75   .rsrc   utf16le  \n4                                  
+34  0x002e634e 0x006e8f4e 40  81   .rsrc   utf16le  1.\n\nI  /Z                              
+35  0x002e63e8 0x006e8fe8 37  75   .rsrc   utf16le .\nE                                  
+36  0x002e6476 0x006e9076 36  73   .rsrc   utf16le \nE                                  
+37  0x002e6502 0x006e9102 36  73   .rsrc   utf16le \n:                                  
+38  0x002e6576 0x006e9176 37  75   .rsrc   utf16le .\nL                                  
+39  0x002e6612 0x006e9212 36  73   .rsrc   utf16le \nJ                                  
+40  0x002e66a6 0x006e92a6 37  75   .rsrc   utf16le .\nG                                  
+41  0x002e6740 0x006e9340 33  67   .rsrc   utf16le                                  
+42  0x002e67c0 0x006e93c0 38  77   .rsrc   utf16le .\n\nC  /?                              
+43  0x002e6848 0x006e9448 4   9    .rsrc   utf16le .\n\nJ
+44  0x002e687e 0x006e947e 10  21   .rsrc   utf16le  GPresult 
+45  0x002e68d6 0x006e94d6 14  29   .rsrc   utf16le  RSoP \nO      
+46  0x002e6980 0x006e9580 4   9    .rsrc   utf16le .\n\n\n
+47  0x002e6996 0x006e9596 181 364  .rsrc   utf16le :\n\r    GPRESULT\n%    GPRESULT /USER targetusername /V\n?    GPRESULT /S system /USER targetusername /SCOPE COMPUTER /Z\n>    GPRESULT /S system /U username /P password /SCOPE USER /V\n
+48  0x002e6b64 0x006e9764 5   12   .rsrc   utf16le \n    
+49  0x002e6b70 0x006e9770 4   10   .rsrc   utf16le  :  
+50  0x002e6b7a 0x006e977a 62  126  .rsrc   utf16le \n$\n                                   \t\n        \r\n            
+51  0x002e6bf8 0x006e97f8 28  58   .rsrc   utf16le \n                           
+52  0x002e6cca 0x006e98ca 6   13   .rsrc   utf16le  "%s" 
+53  0x002e6cf4 0x006e98f4 7   16   .rsrc   utf16le  RSOP.\n
+54  0x002e6d50 0x006e9950 123 248  .rsrc   utf16le  /U может использоваться только вместе с /S.\nMНеправильный синтаксис. Параметр /P может использоваться только вместе с /U.\n blocks=Basic Latin,Cyrillic
+55  0x002e6e48 0x006e9a48 537 1076 .rsrc   utf16le %s Код ошибки: 0x%08lx\n?Неправильный синтаксис. Имя пользователя не может быть пустым.\n:Недопустимый синтаксис. Имя сервера не может быть пустым.\nVНедопустимый синтаксис.\nВведите "GPRESULT /?" для получения справки по использованию.\nWНедопустимый синтаксис. Никакие параметры не могут быть использованы совместно с '/?'.\n>Введите "GPRESULT /?" для получения справки по использованию.\nHНедопустимый синтаксис. Имя целевого пользователя не может быть пустым.\n(Указано недопустимое имя пользователя..\n&Значение параметра /USER недопустимо.\n blocks=Basic Latin,Cyrillic
+56  0x002e72a0 0x006e9ea0 81  164  .rsrc   utf16le .\nNНедопустимый синтаксис. Параметр /Z не может быть использован совместно с /V.\n blocks=Basic Latin,Cyrillic
+57  0x002e7352 0x006e9f52 28  58   .rsrc   utf16le \e\n\nКонфигурация пользователя blocks=Basic Latin,Cyrillic
+58  0x002e73be 0x006e9fbe 155 312  .rsrc   utf16le 4\rRSOP-результаты для %s на %s : Режим журналирования1\n    Результирующий набор политик для компьютера:3\n    Результирующий набор политик для пользователя: blocks=Basic Latin,Cyrillic
+59  0x002e750a 0x006ea10a 18  38   .rsrc   utf16le :                 
+60  0x002e7544 0x006ea144 18  38   .rsrc   utf16le :                 
+61  0x002e757c 0x006ea17c 19  40   .rsrc   utf16le :                  
+62  0x002e75b2 0x006ea1b2 22  46   .rsrc   utf16le :                     
+63  0x002e75f4 0x006ea1f4 19  40   .rsrc   utf16le :                  
+64  0x002e763c 0x006ea23c 13  28   .rsrc   utf16le :            
+65  0x002e767c 0x006ea27c 128 258  .rsrc   utf16le :          +\n    Примененные объекты групповой политикиH\n    Следующие политики GPO не были приняты, поскольку они отфильтрованы blocks=Basic Latin,Cyrillic
+66  0x002e777e 0x006ea37e 12  25   .rsrc   utf16le             
+67  0x002e77a2 0x006ea3a2 6   14   .rsrc   utf16le  WMI: 
+68  0x002e7a66 0x006ea666 4   10   .rsrc   utf16le  RAS
+69  0x002e7b1c 0x006ea71c 18  38   .rsrc   utf16le  Internet Explorer
+70  0x002e7b4e 0x006ea74e 18  38   .rsrc   utf16le  Internet Explorer
+71  0x002e7b8c 0x006ea78c 19  39   .rsrc   utf16le  Internet Explorer\e
+72  0x002e7bc4 0x006ea7c4 18  38   .rsrc   utf16le  Internet Explorer
+73  0x002e7c00 0x006ea800 36  73   .rsrc   utf16le  Internet Explorer'\n                
+74  0x002e7c58 0x006ea858 32  65   .rsrc   utf16le :             '\n                
+75  0x002e7cc6 0x006ea8c6 36  73   .rsrc   utf16le \n            GPO: +\n                
+76  0x002e7d14 0x006ea914 41  83   .rsrc   utf16le :                      +\n                
+77  0x002e7d78 0x006ea978 35  71   .rsrc   utf16le :                +\n                
+78  0x002e7de6 0x006ea9e6 6   14   .rsrc   utf16le :     
+79  0x002e7df4 0x006ea9f4 18  37   .rsrc   utf16le +\n                
+80  0x002e7e28 0x006eaa28 36  73   .rsrc   utf16le :                 +\n                
+81  0x002e7e80 0x006eaa80 36  73   .rsrc   utf16le :                 +\n                
+82  0x002e7eda 0x006eaada 35  71   .rsrc   utf16le :                +\n                
+83  0x002e7f50 0x006eab50 20  41   .rsrc   utf16le : +\n                
+84  0x002e7f94 0x006eab94 30  61   .rsrc   utf16le :           +\n                
+85  0x002e7fe6 0x006eabe6 33  67   .rsrc   utf16le :              +\n                
+86  0x002e803c 0x006eac3c 34  69   .rsrc   utf16le :               +\n                
+87  0x002e808a 0x006eac8a 39  79   .rsrc   utf16le :                    +\n                
+88  0x002e80ec 0x006eacec 34  69   .rsrc   utf16le :               +\n                
+89  0x002e8148 0x006ead48 32  65   .rsrc   utf16le :             +\n                
+90  0x002e8192 0x006ead92 39  79   .rsrc   utf16le :                    +\n                
+91  0x002e81f4 0x006eadf4 16  34   .rsrc   utf16le :               
+92  0x002e8232 0x006eae32 25  51   .rsrc   utf16le :  -\n                    
+93  0x002e8280 0x006eae80 32  65   .rsrc   utf16le :         -\n                    
+94  0x002e82de 0x006eaede 31  63   .rsrc   utf16le :        -\n                    
+95  0x002e8348 0x006eaf48 24  49   .rsrc   utf16le : -\n                    
+96  0x002e83a0 0x006eafa0 26  53   .rsrc   utf16le :   -\n                    
+97  0x002e83f6 0x006eaff6 25  51   .rsrc   utf16le :      2\n                
+98  0x002e844a 0x006eb04a 34  69   .rsrc   utf16le :               2\n                
+99  0x002e84cc 0x006eb0cc 20  41   .rsrc   utf16le : 2\n                
+100 0x002e8526 0x006eb126 26  53   .rsrc   utf16le :       2\n                
+101 0x002e8578 0x006eb178 36  73   .rsrc   utf16le :                 2\n                
+102 0x002e85f2 0x006eb1f2 26  53   .rsrc   utf16le :       1\n            URL-
+103 0x002e8630 0x006eb230 41  83   .rsrc   utf16le :                          1\n            
+104 0x002e86b8 0x006eb2b8 23  47   .rsrc   utf16le :        1\n            
+105 0x002e871c 0x006eb31c 23  47   .rsrc   utf16le :        1\n            
+106 0x002e8780 0x006eb380 23  47   .rsrc   utf16le :        1\n            
+107 0x002e87c8 0x006eb3c8 37  75   .rsrc   utf16le  HTTP:                 1\n            
+108 0x002e882c 0x006eb42c 37  75   .rsrc   utf16le  Secure:               1\n            
+109 0x002e8890 0x006eb490 37  75   .rsrc   utf16le  FTP:                  1\n            
+110 0x002e88f4 0x006eb4f4 37  75   .rsrc   utf16le  Gopher:               1\n            
+111 0x002e8958 0x006eb558 23  48   .rsrc   utf16le  Socks:                
+112 0x002e8988 0x006eb588 717 1436 .rsrc   utf16le 1\n            Разрешить автоматическую настройку: 1\n            Разрешить использование прокси:     1\n            Использовать один прокси-сервер:    $\n                Имя:               $\n                Версия:            $\n                Статус разработки: $\n                Источник:          $\n                Имя журнала:       >    Пользователь является членом следующих групп безопасности:;    Компьютер является членом следующих групп безопасности:*Подключение по медленному каналу?:        *Порог медленной связи групповой политики: *Последнее применение групповой политики:  *Групповая политика была применена с:      *Перемещаемый профиль:                     +\n                Адрес страницы поиска:     blocks=Basic Latin,Cyrillic
+113 0x002e8f24 0x006ebb24 491 984  .rsrc   utf16le +\n                Адрес страницы поддержки: M\n                Импортировать текущие параметры зон безопасности:           M\n                Импортировать текущие параметры программ:                   M\n                Импортировать текущие параметры оценки содержимого:         M\n                Импортировать текущую информацию безопасности Authenticode: M\n                Зафиксировать список заслуживающих доверия издателей:       8\n                Удалить существующие кнопки на панели:  blocks=Basic Latin,Cyrillic
+114 0x002e92fc 0x006ebefc 13  27   .rsrc   utf16le \n            
+115 0x002e940a 0x006ec00a 4   10   .rsrc   utf16le  ARP
+116 0x002e9648 0x006ec248 4   10   .rsrc   utf16le  SID
+117 0x002e9960 0x006ec560 13  28   .rsrc   utf16le \fWindows 2000
+118 0x002e99a4 0x006ec5a4 13  28   .rsrc   utf16le >\vWindowsNT 4
+119 0x002e99c0 0x006ec5c0 155 312  .rsrc   utf16le ms-419nПрограмма формирования отчета групповой политики операционной системы\nMicrosoft (R) Windows (R) XP версии 2.0\n%(С) Корпорация Майкрософт, 1981-2001\n blocks=Basic Latin,Cyrillic
+120 0x002e9b0e 0x006ec70e 4   9    .rsrc   utf16le  %s 
+121 0x002e9b18 0x006ec718 5   12   .rsrc   utf16le  %s\n\n
+122 0x002e9b44 0x006ec744 6   14   .rsrc   utf16le  WMI)\n
+123 0x002e9b8a 0x006ec78a 7   16   .rsrc   utf16le  (GPO)\n
+124 0x002e9bf8 0x006ec7f8 37  76   .rsrc   utf16le )\n"Не применено (причина неизвестна)\n blocks=Basic Latin,Cyrillic
+125 0x002e9ca2 0x006ec8a2 8   18   .rsrc   utf16le  RSOP...
+126 0x002e9cf4 0x006ec8f4 87  176  .rsrc   utf16le  CIMV2...%Извлечение пользовательских данных...'Подключение к пространству имен RSOP... blocks=Basic Latin,Cyrillic
+127 0x002e9dce 0x006ec9ce 73  148  .rsrc   utf16le  SID... Извлечение имени пользователя... Извлечение локального профиля... blocks=Basic Latin,Cyrillic
+128 0x002e9e98 0x006eca98 70  142  .rsrc   utf16le ...!Извлечение доменной информации... Извлечение информации о сайте... blocks=Basic Latin,Cyrillic
+129 0x002e9f50 0x006ecb50 8   18   .rsrc   utf16le  RSOP...
+130 0x002e9f84 0x006ecb84 8   18   .rsrc   utf16le  RSOP...
+131 0x002e9faa 0x006ecbaa 7   16   .rsrc   utf16le  SID...
+132 0x002e9fd8 0x006ecbd8 6   13   .rsrc   utf16le  RSOP 
+133 0x002e9fea 0x006ecbea 6   14   .rsrc   utf16le  %s...
+134 0x002ea02a 0x006ecc2a 66  134  .rsrc   utf16le ...>Ожидание завершения извлечения методов другими экземплярами... blocks=Basic Latin,Cyrillic
+135 0x002ea19c 0x006ecd9c 140 282  .rsrc   utf16le  %s:AОтправка пользователем учетных данных по локальному подключению.\nEЦелевая система должна работать под управлением Windows XP или выше.\n blocks=Basic Latin,Cyrillic
+136 0x002ea2f6 0x006ecef6 217 436  .rsrc   utf16le  '%s' для параметра '%s'  не разрешено.\nВведите "%s" для получения справки по использованию.\n{Синтаксическая ошибка. Укажите допустимое числовое значение для '%s'.\nВведите "%s" для получения справки по использованию.\n blocks=Basic Latin,Cyrillic
+137 0x002ea530 0x006ed130 174 350  .rsrc   utf16le  '%s'.\nВведите "%s" для получения справки по использованию.\nqСинтаксическая ошибка. Потерян обязательный параметр '/%s'.\nВведите "%s" для получения справки по использованию.\n blocks=Basic Latin,Cyrillic
+138 0x002ea6ea 0x006ed2ea 91  184  .rsrc   utf16le  '%s' не разрешенo более '%d' раз(а).\nВведите "%s" для получения справки по использованию.\n blocks=Basic Latin,Cyrillic
+139 0x002ea7e8 0x006ed3e8 238 478  .rsrc   utf16le  - '%s'.\nВведите "%s" для получения справки по использованию.\nkСинтаксическая ошибка. Потерян аргумент по умолчанию.\nВведите "%s" для получения справки по использованию.\nCДлина аргумента командной строки не должна превышать 255 символов.\n blocks=Basic Latin,Cyrillic
+140 0x002eaa52 0x006ed652 181 364  .rsrc   utf16le  '%d' раз(а).\nВведите "%s" для получения справки по использованию.\nqСинтаксическая ошибка. Для '%s' необходимо ввести значение.\nВведите "%s" для получения справки по использованию.\n blocks=Basic Latin,Cyrillic
+141 0x002eabfc 0x006ed7fc 109 220  .rsrc   utf16le  '%s' не допускается в качестве аргумента по умолчанию.\nВведите "%s" для получения справки по использованию.\n blocks=Basic Latin,Cyrillic
+142 0x002eace2 0x006ed8e2 15  32   .rsrc   utf16le VS_VERSION_INFO
+143 0x002ead3e 0x006ed93e 14  30   .rsrc   utf16le StringFileInfo
+144 0x002ead62 0x006ed962 8   18   .rsrc   utf16le 041904B0
+145 0x002ead7a 0x006ed97a 11  24   .rsrc   utf16le CompanyName
+146 0x002eadc6 0x006ed9c6 15  32   .rsrc   utf16le FileDescription
+147 0x002eae02 0x006eda02 5   12   .rsrc   utf16le  RSOP
+148 0x002eae16 0x006eda16 11  24   .rsrc   utf16le FileVersion
+149 0x002eae30 0x006eda30 32  66   .rsrc   utf16le 5.1.2600.5512 (xpsp.080413-2108)
+150 0x002eae7a 0x006eda7a 12  26   .rsrc   utf16le InternalName
+151 0x002eae94 0x006eda94 12  26   .rsrc   utf16le GpResult.exe
+152 0x002eaeb6 0x006edab6 14  30   .rsrc   utf16le LegalCopyright
+153 0x002eaf36 0x006edb36 16  34   .rsrc   utf16le OriginalFilename
+154 0x002eaf58 0x006edb58 10  22   .rsrc   utf16le GpRslt.exe
+155 0x002eaf76 0x006edb76 11  24   .rsrc   utf16le ProductName
+156 0x002eafb8 0x006edbb8 10  21   .rsrc   utf16le  Microsoft
+157 0x002eafce 0x006edbce 8   17   .rsrc   utf16le  Windows
+158 0x002eafea 0x006edbea 14  30   .rsrc   utf16le ProductVersion
+159 0x002eb008 0x006edc08 13  28   .rsrc   utf16le 5.1.2600.5512
+160 0x002eb02c 0x006edc2c 10  22   .rsrc   utf16le arFileInfo
+161 0x002eb04a 0x006edc4a 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x400000
+binsz    3060224
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x002f83e8
+compiled Sun Apr 13 18:38:41 2008
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x002f83e8
+laddr    0x0
+lang     msvc
+linenum  true
+lsyms    true
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x48025331
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x7
+  MinorLinkerVersion : 0xa
+  SizeOfCode : 0x2e4c00
+  SizeOfInitializedData : 0x6000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x2de3d3
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2e6000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x5
+  MinorImageVersion : 0x1
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x2ee000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x2f83e8
+  Subsystem : 0x2
+  DllCharacteristics : 0x8100
+  SizeOfStackReserve : 0x40000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 90 Name: Linker710 Version: 4035 Times: 1
+  Product: 96 Name: Utc1310_CPP Version: 4035 Times: 9
+  Product: 94 Name: Cvtres710 Version: 4035 Times: 1
+  Product: 95 Name: Utc1310_C Version: 4035 Times: 24
+  Product: 1 Name: Import0 Version: 0 Times: 175
+  Product: 93 Name: Implib710 Version: 4035 Times: 27
+  Product: 15 Name: Masm710 Version: 4035 Times: 5
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2e4bb4
+  Size : 0x118
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x2e80c8
+  Size : 0x5ba4
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x2de394
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_BOUND_IMPORT
+  VirtualAddress : 0x278
+  Size : 0x11c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x10c8
+  Size : 0x2cc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+mpr.dll
+ole32.dll
+oleaut32.dll
+secur32.dll
+ws2_32.dll
+netapi32.dll
+framedyn.dll
+rpcrt4.dll
+ntdsapi.dll
+msvcrt.dll
+advapi32.dll
+kernel32.dll
+
+13 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x4dc6d8c5 0x00000700 SET_32 msvcrt.dll_wcstod
+0x4dc6dc2b 0x00000704 SET_32 msvcrt.dll_wcstol
+0x4dc6ee8a 0x00000740 SET_32 msvcrt.dll___wgetmainargs
+0x4dc6f1a4 0x0000075c SET_32 msvcrt.dll___p__commode
+0x4dc6f1db 0x00000758 SET_32 msvcrt.dll___p__fmode
+0x4dc71868 0x0000074c SET_32 msvcrt.dll_public virtual: void __thiscall type_info::~destructor(void)
+0x4dc7266d 0x00000744 SET_32 msvcrt.dll_void __cdecl terminate(void)
+0x4dc726f6 0x00000724 SET_32 msvcrt.dll__CxxThrowException
+0x4dc727fa 0x000006f8 SET_32 msvcrt.dll___CxxFrameHandler
+0x4dc79cc5 0x000006f0 SET_32 msvcrt.dll_void * __cdecl operator new(unsigned int)
+0x4dc79cdd 0x000006f4 SET_32 msvcrt.dll_void __cdecl operator delete(void *)
+0x4dc7c0c3 0x000006dc SET_32 msvcrt.dll_calloc
+0x4dc7c21b 0x000006e8 SET_32 msvcrt.dll_free
+0x4dc7c437 0x00000714 SET_32 msvcrt.dll_realloc
+0x4dc82dae 0x00000730 SET_32 msvcrt.dll__XcptFilter
+0x4dc8537c 0x00000750 SET_32 msvcrt.dll___set_app_type
+0x4dc85c94 0x00000754 SET_32 msvcrt.dll__except_handler3
+0x4dc89d67 0x0000076c SET_32 msvcrt.dll__initterm
+0x4dc89e7e 0x00000738 SET_32 msvcrt.dll_exit
+0x4dc89e9a 0x0000072c SET_32 msvcrt.dll__exit
+0x4dc89eb6 0x00000734 SET_32 msvcrt.dll__cexit
+0x4dc89ece 0x00000728 SET_32 msvcrt.dll__c_exit
+0x4dc8eef6 0x00000770 SET_32 msvcrt.dll_fflush
+0x4dc90e13 0x00000718 SET_32 msvcrt.dll_fprintf
+0x4dc967bd 0x000006ec SET_32 msvcrt.dll__wcsicmp
+0x4dc96abb 0x00000710 SET_32 msvcrt.dll__wcsnicmp
+0x4dc97ce5 0x00000720 SET_32 msvcrt.dll_strtok
+0x4dc97e94 0x00000768 SET_32 msvcrt.dll_wcscpy
+0x4dc97eb8 0x0000071c SET_32 msvcrt.dll_wcschr
+0x4dc97fcc 0x000006e4 SET_32 msvcrt.dll_wcslen
+0x4dc9802f 0x0000070c SET_32 msvcrt.dll_wcsncmp
+0x4dc98180 0x00000708 SET_32 msvcrt.dll_wcsstr
+0x4dc981e6 0x000006e0 SET_32 msvcrt.dll_wcstok
+0x4dc9d695 0x00000764 SET_32 msvcrt.dll___setusermatherr
+0x4dc9ee4f 0x00000748 SET_32 msvcrt.dll__controlfp
+0x4dcafc80 0x000006fc SET_32 msvcrt.dll__iob
+0x4dcb1a40 0x0000073c SET_32 msvcrt.dll___winitenv
+0x4dcb23d8 0x00000760 SET_32 msvcrt.dll__adjust_fdiv
+0x5bd57a00 0x000005e0 SET_32 NETAPI32.dll_NetApiBufferFree
+0x5bd5d189 0x000005dc SET_32 NETAPI32.dll_DsGetDcNameW
+0x5bd62c7e 0x000005e4 SET_32 NETAPI32.dll_NetServerGetInfo
+0x6985742e 0x00000680 SET_32 framedyn.dll_protected: struct CHStringData * __thiscall CHString::GetData(void)const
+0x69857565 0x0000067c SET_32 framedyn.dll_public: void __thiscall CHString::constructor(void)
+0x698575eb 0x000006b0 SET_32 framedyn.dll_public: void __thiscall CHString::constructor(unsigned short int const *)
+0x6985762a 0x00000678 SET_32 framedyn.dll_public: void __thiscall CHString::~destructor(void)
+0x69857661 0x00000688 SET_32 framedyn.dll_public: int __thiscall CHString::Compare(unsigned short int const *)const
+0x6985767c 0x000006d0 SET_32 framedyn.dll_public: unsigned short int * __thiscall CHString::GetBuffer(int)
+0x698576fe 0x00000690 SET_32 framedyn.dll_public: unsigned short int * __thiscall CHString::GetBufferSetLength(int)
+0x698577c3 0x000006a0 SET_32 framedyn.dll_public: int __thiscall CHString::Find(unsigned short int)const
+0x698577ef 0x000006a4 SET_32 framedyn.dll_public: int __thiscall CHString::FindOneOf(unsigned short int const *)const
+0x69857847 0x000006b8 SET_32 framedyn.dll_public: int __thiscall CHString::Find(unsigned short int const *)const
+0x69857a4f 0x000006c8 SET_32 framedyn.dll_public: void __thiscall CHString::SetAt(int, unsigned short int)
+0x69857a73 0x000006ac SET_32 framedyn.dll_public: class CHString const & __thiscall CHString::operator+=(unsigned short int const *)
+0x69857ae1 0x0000068c SET_32 framedyn.dll_public: void __thiscall CHString::ReleaseBuffer(int)
+0x69857b36 0x000006c4 SET_32 framedyn.dll_public: void __thiscall CHString::MakeLower(void)
+0x69857fc0 0x00000698 SET_32 framedyn.dll_public: class CHString const & __thiscall CHString::operator=(class CHString const &)
+0x6985802f 0x000006d4 SET_32 framedyn.dll_public: class CHString const & __thiscall CHString::operator=(unsigned short int const *)
+0x698580d0 0x00000694 SET_32 framedyn.dll_public: void __cdecl CHString::Format(unsigned short int const *)
+0x6985813a 0x000006bc SET_32 framedyn.dll_public: void __thiscall CHString::constructor(class CHString const &)
+0x6985817f 0x00000684 SET_32 framedyn.dll_public: void __thiscall CHString::Empty(void)
+0x698581a9 0x000006cc SET_32 framedyn.dll_class CHString __stdcall operator+(class CHString const &, class CHString const &)
+0x6985821c 0x000006c0 SET_32 framedyn.dll_class CHString __stdcall operator+(class CHString const &, unsigned short int const *)
+0x698583d6 0x000006b4 SET_32 framedyn.dll_public: class CHString __thiscall CHString::Mid(int, int)
+0x698584ee 0x000006a8 SET_32 framedyn.dll_public: class CHString __thiscall CHString::Left(int)
+0x69858635 0x0000069c SET_32 framedyn.dll_public: class CHString __thiscall CHString::Mid(int)
+0x71a92ee1 0x00000664 SET_32 WS2_32.dll_inet_addr
+0x71a93cce 0x00000668 SET_32 WS2_32.dll_WSAGetLastError
+0x71a93fed 0x00000660 SET_32 WS2_32.dll_WSACleanup
+0x71a96a55 0x0000066c SET_32 WS2_32.dll_WSAStartup
+0x71a9e491 0x00000670 SET_32 WS2_32.dll_gethostbyaddr
+0x71b04989 0x000005d0 SET_32 MPR.dll_WNetCancelConnection2W
+0x71b050d4 0x000005d4 SET_32 MPR.dll_WNetAddConnection2W
+0x71b0a5ed 0x000005cc SET_32 MPR.dll_WNetGetLastErrorW
+0x76785b11 0x000005f8 SET_32 NTDSAPI.dll_DsBindWithCredW
+0x76785b53 0x000005f4 SET_32 NTDSAPI.dll_DsUnBindW
+0x7678602b 0x000005f0 SET_32 NTDSAPI.dll_DsFreeNameResultW
+0x76786842 0x000005ec SET_32 NTDSAPI.dll_DsCrackNamesW
+0x77114880 0x00000624 SET_32 OLEAUT32.dll_SysStringLen
+0x771148f0 0x00000618 SET_32 OLEAUT32.dll_VariantCopy
+0x77114950 0x00000620 SET_32 OLEAUT32.dll_VariantClear
+0x77114ba2 0x00000600 SET_32 OLEAUT32.dll_SysReAllocString
+0x77114c1b 0x00000604 SET_32 OLEAUT32.dll_VariantInit
+0x77114c35 0x00000610 SET_32 OLEAUT32.dll_DllRegisterServer
+0x77114cfd 0x0000061c SET_32 OLEAUT32.dll_VariantCopyInd
+0x7711515a 0x0000060c SET_32 OLEAUT32.dll_SafeArrayGetLBound
+0x771151a6 0x00000608 SET_32 OLEAUT32.dll_SafeArrayLock
+0x77116bbb 0x00000614 SET_32 OLEAUT32.dll_VariantTimeToDosDateTime
+0x7711ab93 0x00000628 SET_32 OLEAUT32.dll_SafeArrayPutElement
+0x774ed044 0x00000784 SET_32 ole32.dll_CoTaskMemFree
+0x774ed060 0x00000780 SET_32 ole32.dll_CoTaskMemAlloc
+0x774eee46 0x00000788 SET_32 ole32.dll_CoUninitialize
+0x774eef7b 0x0000078c SET_32 ole32.dll_CoInitializeEx
+0x774f057e 0x0000077c SET_32 ole32.dll_CoCreateInstance
+0x77506b9e 0x00000778 SET_32 ole32.dll_CoInitializeSecurity
+0x77dc6a9f 0x000004d8 SET_32 ADVAPI32.dll_RegOpenKeyExW
+0x77dc6c17 0x000004e4 SET_32 ADVAPI32.dll_RegCloseKey
+0x77dc797b 0x000004e0 SET_32 ADVAPI32.dll_OpenProcessToken
+0x77dceffc 0x000004c8 SET_32 ADVAPI32.dll_AdjustTokenPrivileges
+0x77dd2ee6 0x000004d0 SET_32 ADVAPI32.dll_ConvertStringSecurityDescriptorToSecurityDescriptorW
+0x77dd49ae 0x000004e8 SET_32 ADVAPI32.dll_RegQueryInfoKeyW
+0x77dd56e7 0x000004f4 SET_32 ADVAPI32.dll_LookupAccountSidW
+0x77de0d66 0x000004dc SET_32 ADVAPI32.dll_RegLoadKeyW
+0x77de4437 0x000004f0 SET_32 ADVAPI32.dll_ConvertStringSidToSidW
+0x77de814a 0x000004ec SET_32 ADVAPI32.dll_RegConnectRegistryW
+0x77deb8af 0x000004cc SET_32 ADVAPI32.dll_LookupPrivilegeValueW
+0x77e2533e 0x000004d4 SET_32 ADVAPI32.dll_RegUnLoadKeyW
+0x77e76254 0x00000638 SET_32 RPCRT4.dll_UuidCreate
+0x77e7e75e 0x00000630 SET_32 RPCRT4.dll_RpcStringFreeW
+0x77e979c6 0x00000634 SET_32 RPCRT4.dll_UuidToStringW
+0x77fe1c70 0x00000648 SET_32 Secur32.dll_GetUserNameExW
+0x77febed4 0x00000640 SET_32 Secur32.dll_GetComputerObjectNameW
+0x77fec06b 0x00000644 SET_32 Secur32.dll_TranslateNameW
+0x7c8017e9 0x00000580 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x7c801812 0x0000053c SET_32 KERNEL32.dll_ReadFile
+0x7c801e1a 0x0000057c SET_32 KERNEL32.dll_TerminateProcess
+0x7c8024b7 0x0000059c SET_32 KERNEL32.dll_ReleaseMutex
+0x7c802530 0x00000598 SET_32 KERNEL32.dll_WaitForSingleObject
+0x7c80932e 0x0000058c SET_32 KERNEL32.dll_GetTickCount
+0x7c8097b8 0x00000588 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x7c8097f6 0x00000534 SET_32 KERNEL32.dll_InterlockedIncrement
+0x7c80980a 0x0000055c SET_32 KERNEL32.dll_InterlockedDecrement
+0x7c8099b0 0x00000584 SET_32 KERNEL32.dll_GetCurrentProcessId
+0x7c8099bf 0x000005c0 SET_32 KERNEL32.dll_LocalFree
+0x7c809a1d 0x00000538 SET_32 KERNEL32.dll_LocalAlloc
+0x7c809a99 0x0000051c SET_32 KERNEL32.dll_lstrlenW
+0x7c809bd7 0x0000050c SET_32 KERNEL32.dll_CloseHandle
+0x7c809c88 0x00000544 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x7c809fa0 0x000005c4 SET_32 KERNEL32.dll_GetUserDefaultLCID
+0x7c80a164 0x00000568 SET_32 KERNEL32.dll_WideCharToMultiByte
+0x7c80a4b7 0x00000590 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x7c80a864 0x000005ac SET_32 KERNEL32.dll_GetLocalTime
+0x7c80aa26 0x00000528 SET_32 KERNEL32.dll_lstrcmpiW
+0x7c80aa5c 0x00000530 SET_32 KERNEL32.dll_lstrcmpW
+0x7c80ac6e 0x00000550 SET_32 KERNEL32.dll_FreeLibrary
+0x7c80ae30 0x0000054c SET_32 KERNEL32.dll_GetProcAddress
+0x7c80aedb 0x00000548 SET_32 KERNEL32.dll_LoadLibraryW
+0x7c80b731 0x00000500 SET_32 KERNEL32.dll_GetModuleHandleA
+0x7c80ba7f 0x00000564 SET_32 KERNEL32.dll_lstrcpynW
+0x7c80baf4 0x0000052c SET_32 KERNEL32.dll_lstrcpyW
+0x7c80de85 0x000005a8 SET_32 KERNEL32.dll_GetCurrentProcess
+0x7c80e87c 0x000005a4 SET_32 KERNEL32.dll_FileTimeToSystemTime
+0x7c80e8f6 0x000005a0 SET_32 KERNEL32.dll_FileTimeToLocalFileTime
+0x7c80e947 0x00000508 SET_32 KERNEL32.dll_CreateMutexW
+0x7c80ea25 0x000005b8 SET_32 KERNEL32.dll_OpenMutexW
+0x7c810fc2 0x00000558 SET_32 KERNEL32.dll_lstrcatW
+0x7c812fc9 0x00000514 SET_32 KERNEL32.dll_GetStdHandle
+0x7c81ac38 0x00000504 SET_32 KERNEL32.dll_GetConsoleMode
+0x7c81af10 0x000004fc SET_32 KERNEL32.dll_SetConsoleMode
+0x7c81b94b 0x00000510 SET_32 KERNEL32.dll_GetConsoleScreenBufferInfo
+0x7c81fb0e 0x00000570 SET_32 KERNEL32.dll_VerifyVersionInfoW
+0x7c8201d9 0x00000594 SET_32 KERNEL32.dll_GetComputerNameExW
+0x7c8316b7 0x00000560 SET_32 KERNEL32.dll_GetComputerNameW
+0x7c83378d 0x000005b0 SET_32 KERNEL32.dll_GetDateFormatW
+0x7c833feb 0x000005b4 SET_32 KERNEL32.dll_GetTimeFormatW
+0x7c834ba7 0x00000554 SET_32 KERNEL32.dll_FormatMessageW
+0x7c83549c 0x00000520 SET_32 KERNEL32.dll_WriteConsoleW
+0x7c8449fd 0x00000574 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x7c863e6a 0x00000578 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x7c872a8c 0x00000540 SET_32 KERNEL32.dll_ReadConsoleW
+0x7c874c2a 0x00000524 SET_32 KERNEL32.dll_SetConsoleCursorPosition
+0x7c90fe01 0x000005bc SET_32 KERNEL32.dll_GetLastError
+0x7c90fe10 0x00000518 SET_32 KERNEL32.dll_SetLastError
+0x7c934a89 0x0000056c SET_32 KERNEL32.dll_VerSetConditionMask
+0x7e3690d2 0x00000654 SET_32 USER32.dll_CharUpperW
+0x7e369e36 0x00000650 SET_32 USER32.dll_LoadStringW
+0x7e36a9b6 0x00000658 SET_32 USER32.dll_wsprintfW
+
+
+166 relocations
+3060224
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 5.1.2600.5512
+  ProductVersion: 5.1.2600.5512
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Корпорация Майкрософт
+  FileDescription: Запрос данных RSOP
+  FileVersion: 5.1.2600.5512 (xpsp.080413-2108)
+  InternalName: GpResult.exe
+  LegalCopyright: © Корпорация Майкрософт. Все права защищены.
+  OriginalFilename: GpRslt.exe
+  ProductName: Операционная система Microsoft® Windows®
+  ProductVersion: 5.1.2600.5512
+Section to Segment mapping:
+Segment Section
+---------------
+
+

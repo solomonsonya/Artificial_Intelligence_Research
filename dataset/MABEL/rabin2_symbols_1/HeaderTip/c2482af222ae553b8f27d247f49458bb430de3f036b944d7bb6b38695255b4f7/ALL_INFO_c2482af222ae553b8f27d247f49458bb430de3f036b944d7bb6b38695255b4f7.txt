@@ -1,0 +1,236 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1800 0x10001000   0x2000 -r-x .text
+1   0x00001c00   0x400 0x10003000   0x1000 -r-- .rdata
+2   0x00002000   0x200 0x10004000  0x11000 -rw- .data
+3   0x00002200   0x400 0x10015000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x100025f3 paddr=0x000019f3 haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10003000 NONE FUNC KERNEL32.dll GetTickCount
+2   0x10003004 NONE FUNC KERNEL32.dll GetModuleFileNameW
+3   0x10003008 NONE FUNC KERNEL32.dll GetLastError
+4   0x1000300c NONE FUNC KERNEL32.dll Sleep
+5   0x10003010 NONE FUNC KERNEL32.dll lstrcpyW
+6   0x10003014 NONE FUNC KERNEL32.dll DisableThreadLibraryCalls
+1   0x1000301c NONE FUNC MSVCRT.dll   free
+2   0x10003020 NONE FUNC MSVCRT.dll   malloc
+3   0x10003024 NONE FUNC MSVCRT.dll   memset
+4   0x10003028 NONE FUNC MSVCRT.dll   strstr
+5   0x1000302c NONE FUNC MSVCRT.dll   wcsstr
+6   0x10003030 NONE FUNC MSVCRT.dll   memcpy
+7   0x10003034 NONE FUNC MSVCRT.dll   fclose
+8   0x10003038 NONE FUNC MSVCRT.dll   fwrite
+9   0x1000303c NONE FUNC MSVCRT.dll   fseek
+10  0x10003040 NONE FUNC MSVCRT.dll   _wfopen
+11  0x10003044 NONE FUNC MSVCRT.dll   strcmp
+12  0x10003048 NONE FUNC MSVCRT.dll   _initterm
+13  0x1000304c NONE FUNC MSVCRT.dll   _adjust_fdiv
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib             name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00001668 0x10002268 GLOBAL FUNC 0    httpshelper.dll HttpsInit
+1   0x00001c00 0x10003000 NONE   FUNC 0    KERNEL32.dll    imp.GetTickCount
+2   0x00001c04 0x10003004 NONE   FUNC 0    KERNEL32.dll    imp.GetModuleFileNameW
+3   0x00001c08 0x10003008 NONE   FUNC 0    KERNEL32.dll    imp.GetLastError
+4   0x00001c0c 0x1000300c NONE   FUNC 0    KERNEL32.dll    imp.Sleep
+5   0x00001c10 0x10003010 NONE   FUNC 0    KERNEL32.dll    imp.lstrcpyW
+6   0x00001c14 0x10003014 NONE   FUNC 0    KERNEL32.dll    imp.DisableThreadLibraryCalls
+1   0x00001c1c 0x1000301c NONE   FUNC 0    MSVCRT.dll      imp.free
+2   0x00001c20 0x10003020 NONE   FUNC 0    MSVCRT.dll      imp.malloc
+3   0x00001c24 0x10003024 NONE   FUNC 0    MSVCRT.dll      imp.memset
+4   0x00001c28 0x10003028 NONE   FUNC 0    MSVCRT.dll      imp.strstr
+5   0x00001c2c 0x1000302c NONE   FUNC 0    MSVCRT.dll      imp.wcsstr
+6   0x00001c30 0x10003030 NONE   FUNC 0    MSVCRT.dll      imp.memcpy
+7   0x00001c34 0x10003034 NONE   FUNC 0    MSVCRT.dll      imp.fclose
+8   0x00001c38 0x10003038 NONE   FUNC 0    MSVCRT.dll      imp.fwrite
+9   0x00001c3c 0x1000303c NONE   FUNC 0    MSVCRT.dll      imp.fseek
+10  0x00001c40 0x10003040 NONE   FUNC 0    MSVCRT.dll      imp._wfopen
+11  0x00001c44 0x10003044 NONE   FUNC 0    MSVCRT.dll      imp.strcmp
+12  0x00001c48 0x10003048 NONE   FUNC 0    MSVCRT.dll      imp._initterm
+13  0x00001c4c 0x1000304c NONE   FUNC 0    MSVCRT.dll      imp._adjust_fdiv
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001c58 0x10003058 4   10   .rdata  utf16le POST
+1   0x00001c64 0x10003064 12  26   .rdata  utf16le %016I64x%08x
+2   0x00001c88 0x10003088 69  140  .rdata  utf16le Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; rv:11.0) like Gecko
+3   0x00001d1c 0x1000311c 6   7    .rdata  ascii   Loader
+4   0x00001d24 0x10003124 13  28   .rdata  utf16le mert.my03.com
+5   0x00001dd2 0x100031d2 12  13   .rdata  ascii   GetTickCount
+6   0x00001de2 0x100031e2 18  19   .rdata  ascii   GetModuleFileNameW
+7   0x00001df8 0x100031f8 12  13   .rdata  ascii   GetLastError
+8   0x00001e08 0x10003208 5   6    .rdata  ascii   Sleep
+9   0x00001e10 0x10003210 8   9    .rdata  ascii   lstrcpyW
+10  0x00001e1c 0x1000321c 25  26   .rdata  ascii   DisableThreadLibraryCalls
+11  0x00001e36 0x10003236 12  13   .rdata  ascii   KERNEL32.dll
+12  0x00001e46 0x10003246 4   5    .rdata  ascii   free
+13  0x00001e4e 0x1000324e 6   7    .rdata  ascii   malloc
+14  0x00001e58 0x10003258 6   7    .rdata  ascii   memset
+15  0x00001e62 0x10003262 6   7    .rdata  ascii   strstr
+16  0x00001e6c 0x1000326c 6   7    .rdata  ascii   wcsstr
+17  0x00001e76 0x10003276 6   7    .rdata  ascii   memcpy
+18  0x00001e80 0x10003280 6   7    .rdata  ascii   fclose
+19  0x00001e8a 0x1000328a 6   7    .rdata  ascii   fwrite
+20  0x00001e94 0x10003294 5   6    .rdata  ascii   fseek
+21  0x00001e9c 0x1000329c 7   8    .rdata  ascii   _wfopen
+22  0x00001ea6 0x100032a6 6   7    .rdata  ascii   strcmp
+23  0x00001eae 0x100032ae 10  11   .rdata  ascii   MSVCRT.dll
+24  0x00001ebc 0x100032bc 9   10   .rdata  ascii   _initterm
+25  0x00001ec8 0x100032c8 12  13   .rdata  ascii   _adjust_fdiv
+26  0x00001f12 0x10003312 15  16   .rdata  ascii   httpshelper.dll
+27  0x00001f22 0x10003322 9   10   .rdata  ascii   HttpsInit
+arch     x86
+baddr    0x10000000
+binsz    9729
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00007041
+compiled Thu Jan  1 00:00:00 1970
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x0
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1800
+  SizeOfInitializedData : 0x10c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x25f3
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x16000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 146 Name: Export900 Version: 21022 Times: 1
+  Product: 132 Name: Utc1500_CPP Version: 21022 Times: 5
+  Product: 1 Name: Import0 Version: 0 Times: 29
+  Product: 123 Name: Implib800 Version: 50727 Times: 7
+  Product: 10 Name: Utc12_C Version: 8047 Times: 4
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x32e0
+  Size : 0x4c
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x3140
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x15000
+  Size : 0x1cc
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x3000
+  Size : 0x54
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000031d0 0x00001c00 SET_32 KERNEL32.dll_GetTickCount
+0x000031e0 0x00001c04 SET_32 KERNEL32.dll_GetModuleFileNameW
+0x000031f6 0x00001c08 SET_32 KERNEL32.dll_GetLastError
+0x00003206 0x00001c0c SET_32 KERNEL32.dll_Sleep
+0x0000320e 0x00001c10 SET_32 KERNEL32.dll_lstrcpyW
+0x0000321a 0x00001c14 SET_32 KERNEL32.dll_DisableThreadLibraryCalls
+0x00003244 0x00001c1c SET_32 MSVCRT.dll_free
+0x0000324c 0x00001c20 SET_32 MSVCRT.dll_malloc
+0x00003256 0x00001c24 SET_32 MSVCRT.dll_memset
+0x00003260 0x00001c28 SET_32 MSVCRT.dll_strstr
+0x0000326a 0x00001c2c SET_32 MSVCRT.dll_wcsstr
+0x00003274 0x00001c30 SET_32 MSVCRT.dll_memcpy
+0x0000327e 0x00001c34 SET_32 MSVCRT.dll_fclose
+0x00003288 0x00001c38 SET_32 MSVCRT.dll_fwrite
+0x00003292 0x00001c3c SET_32 MSVCRT.dll_fseek
+0x0000329a 0x00001c40 SET_32 MSVCRT.dll__wfopen
+0x000032a4 0x00001c44 SET_32 MSVCRT.dll_strcmp
+0x000032ba 0x00001c48 SET_32 MSVCRT.dll__initterm
+0x000032c6 0x00001c4c SET_32 MSVCRT.dll__adjust_fdiv
+
+
+19 relocations
+9729
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

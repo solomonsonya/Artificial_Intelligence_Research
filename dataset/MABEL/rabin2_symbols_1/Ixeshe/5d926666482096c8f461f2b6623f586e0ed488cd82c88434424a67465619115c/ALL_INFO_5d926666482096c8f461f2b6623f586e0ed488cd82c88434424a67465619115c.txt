@@ -1,0 +1,349 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x4800 0x00401000  0x5000 -r-x .text
+1   0x00004c00   0x600 0x00406000  0x1000 -r-- .rdata
+2   0x00005200   0x200 0x00407000  0x3000 -rw- .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0040563f paddr=0x00004a3f haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401000 paddr=0x00000400
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00406000 NONE FUNC KERNEL32.dll CloseHandle
+2   0x00406004 NONE FUNC KERNEL32.dll GetLastError
+3   0x00406008 NONE FUNC KERNEL32.dll CreateProcessA
+4   0x0040600c NONE FUNC KERNEL32.dll ReadFile
+5   0x00406010 NONE FUNC KERNEL32.dll PeekNamedPipe
+6   0x00406014 NONE FUNC KERNEL32.dll WriteFile
+7   0x00406018 NONE FUNC KERNEL32.dll TerminateProcess
+8   0x0040601c NONE FUNC KERNEL32.dll GetModuleHandleA
+9   0x00406020 NONE FUNC KERNEL32.dll DeleteFileA
+10  0x00406024 NONE FUNC KERNEL32.dll CreateFileA
+11  0x00406028 NONE FUNC KERNEL32.dll FreeLibrary
+12  0x0040602c NONE FUNC KERNEL32.dll OutputDebugStringA
+13  0x00406030 NONE FUNC KERNEL32.dll GetTempPathA
+14  0x00406034 NONE FUNC KERNEL32.dll WideCharToMultiByte
+15  0x00406038 NONE FUNC KERNEL32.dll LoadLibraryA
+16  0x0040603c NONE FUNC KERNEL32.dll GetProcAddress
+17  0x00406040 NONE FUNC KERNEL32.dll CreatePipe
+18  0x00406044 NONE FUNC KERNEL32.dll GetModuleFileNameA
+19  0x00406048 NONE FUNC KERNEL32.dll WaitForSingleObject
+20  0x0040604c NONE FUNC KERNEL32.dll Sleep
+21  0x00406050 NONE FUNC KERNEL32.dll GetStartupInfoA
+1   0x00406058 NONE FUNC MSVCRT.dll   sprintf
+2   0x0040605c NONE FUNC MSVCRT.dll   time
+3   0x00406060 NONE FUNC MSVCRT.dll   _except_handler3
+4   0x00406064 NONE FUNC MSVCRT.dll   atoi
+5   0x00406068 NONE FUNC MSVCRT.dll   free
+6   0x0040606c NONE FUNC MSVCRT.dll   malloc
+7   0x00406070 NONE FUNC MSVCRT.dll   rand
+8   0x00406074 NONE FUNC MSVCRT.dll   strncpy
+9   0x00406078 NONE FUNC MSVCRT.dll   strstr
+10  0x0040607c NONE FUNC MSVCRT.dll   _exit
+11  0x00406080 NONE FUNC MSVCRT.dll   _XcptFilter
+12  0x00406084 NONE FUNC MSVCRT.dll   exit
+13  0x00406088 NONE FUNC MSVCRT.dll   _acmdln
+14  0x0040608c NONE FUNC MSVCRT.dll   __getmainargs
+15  0x00406090 NONE FUNC MSVCRT.dll   _initterm
+16  0x00406094 NONE FUNC MSVCRT.dll   __setusermatherr
+17  0x00406098 NONE FUNC MSVCRT.dll   _adjust_fdiv
+18  0x0040609c NONE FUNC MSVCRT.dll   __p__commode
+19  0x004060a0 NONE FUNC MSVCRT.dll   __p__fmode
+20  0x004060a4 NONE FUNC MSVCRT.dll   __set_app_type
+21  0x004060a8 NONE FUNC MSVCRT.dll   _controlfp
+22  0x004060ac NONE FUNC MSVCRT.dll   _strnicmp
+23  0x004060b0 NONE FUNC MSVCRT.dll   _stricmp
+24  0x004060b4 NONE FUNC MSVCRT.dll   srand
+25  0x004060b8 NONE FUNC MSVCRT.dll   _itoa
+1   0x004060c0 NONE FUNC WINHTTP.dll  WinHttpGetIEProxyConfigForCurrentUser
+2   0x004060c4 NONE FUNC WINHTTP.dll  WinHttpGetProxyForUrl
+3   0x004060c8 NONE FUNC WINHTTP.dll  WinHttpOpen
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00004c00 0x00406000 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+2   0x00004c04 0x00406004 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+3   0x00004c08 0x00406008 NONE FUNC 0    KERNEL32.dll imp.CreateProcessA
+4   0x00004c0c 0x0040600c NONE FUNC 0    KERNEL32.dll imp.ReadFile
+5   0x00004c10 0x00406010 NONE FUNC 0    KERNEL32.dll imp.PeekNamedPipe
+6   0x00004c14 0x00406014 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+7   0x00004c18 0x00406018 NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+8   0x00004c1c 0x0040601c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+9   0x00004c20 0x00406020 NONE FUNC 0    KERNEL32.dll imp.DeleteFileA
+10  0x00004c24 0x00406024 NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+11  0x00004c28 0x00406028 NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+12  0x00004c2c 0x0040602c NONE FUNC 0    KERNEL32.dll imp.OutputDebugStringA
+13  0x00004c30 0x00406030 NONE FUNC 0    KERNEL32.dll imp.GetTempPathA
+14  0x00004c34 0x00406034 NONE FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+15  0x00004c38 0x00406038 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+16  0x00004c3c 0x0040603c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+17  0x00004c40 0x00406040 NONE FUNC 0    KERNEL32.dll imp.CreatePipe
+18  0x00004c44 0x00406044 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+19  0x00004c48 0x00406048 NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+20  0x00004c4c 0x0040604c NONE FUNC 0    KERNEL32.dll imp.Sleep
+21  0x00004c50 0x00406050 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+1   0x00004c58 0x00406058 NONE FUNC 0    MSVCRT.dll   imp.sprintf
+2   0x00004c5c 0x0040605c NONE FUNC 0    MSVCRT.dll   imp.time
+3   0x00004c60 0x00406060 NONE FUNC 0    MSVCRT.dll   imp._except_handler3
+4   0x00004c64 0x00406064 NONE FUNC 0    MSVCRT.dll   imp.atoi
+5   0x00004c68 0x00406068 NONE FUNC 0    MSVCRT.dll   imp.free
+6   0x00004c6c 0x0040606c NONE FUNC 0    MSVCRT.dll   imp.malloc
+7   0x00004c70 0x00406070 NONE FUNC 0    MSVCRT.dll   imp.rand
+8   0x00004c74 0x00406074 NONE FUNC 0    MSVCRT.dll   imp.strncpy
+9   0x00004c78 0x00406078 NONE FUNC 0    MSVCRT.dll   imp.strstr
+10  0x00004c7c 0x0040607c NONE FUNC 0    MSVCRT.dll   imp._exit
+11  0x00004c80 0x00406080 NONE FUNC 0    MSVCRT.dll   imp._XcptFilter
+12  0x00004c84 0x00406084 NONE FUNC 0    MSVCRT.dll   imp.exit
+13  0x00004c88 0x00406088 NONE FUNC 0    MSVCRT.dll   imp._acmdln
+14  0x00004c8c 0x0040608c NONE FUNC 0    MSVCRT.dll   imp.__getmainargs
+15  0x00004c90 0x00406090 NONE FUNC 0    MSVCRT.dll   imp._initterm
+16  0x00004c94 0x00406094 NONE FUNC 0    MSVCRT.dll   imp.__setusermatherr
+17  0x00004c98 0x00406098 NONE FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+18  0x00004c9c 0x0040609c NONE FUNC 0    MSVCRT.dll   imp.__p__commode
+19  0x00004ca0 0x004060a0 NONE FUNC 0    MSVCRT.dll   imp.__p__fmode
+20  0x00004ca4 0x004060a4 NONE FUNC 0    MSVCRT.dll   imp.__set_app_type
+21  0x00004ca8 0x004060a8 NONE FUNC 0    MSVCRT.dll   imp._controlfp
+22  0x00004cac 0x004060ac NONE FUNC 0    MSVCRT.dll   imp._strnicmp
+23  0x00004cb0 0x004060b0 NONE FUNC 0    MSVCRT.dll   imp._stricmp
+24  0x00004cb4 0x004060b4 NONE FUNC 0    MSVCRT.dll   imp.srand
+25  0x00004cb8 0x004060b8 NONE FUNC 0    MSVCRT.dll   imp._itoa
+1   0x00004cc0 0x004060c0 NONE FUNC 0    WINHTTP.dll  imp.WinHttpGetIEProxyConfigForCurrentUser
+2   0x00004cc4 0x004060c4 NONE FUNC 0    WINHTTP.dll  imp.WinHttpGetProxyForUrl
+3   0x00004cc8 0x004060c8 NONE FUNC 0    WINHTTP.dll  imp.WinHttpOpen
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00004e0e 0x0040620e 5   6    .rdata  ascii   Sleep
+1   0x00004e16 0x00406216 18  19   .rdata  ascii   GetModuleFileNameA
+2   0x00004e2c 0x0040622c 10  11   .rdata  ascii   CreatePipe
+3   0x00004e3a 0x0040623a 14  15   .rdata  ascii   GetProcAddress
+4   0x00004e4c 0x0040624c 12  13   .rdata  ascii   LoadLibraryA
+5   0x00004e5c 0x0040625c 16  17   .rdata  ascii   GetModuleHandleA
+6   0x00004e70 0x00406270 11  12   .rdata  ascii   CloseHandle
+7   0x00004e7e 0x0040627e 12  13   .rdata  ascii   GetLastError
+8   0x00004e8e 0x0040628e 14  15   .rdata  ascii   CreateProcessA
+9   0x00004ea0 0x004062a0 8   9    .rdata  ascii   ReadFile
+10  0x00004eac 0x004062ac 13  14   .rdata  ascii   PeekNamedPipe
+11  0x00004ebc 0x004062bc 9   10   .rdata  ascii   WriteFile
+12  0x00004ec8 0x004062c8 16  17   .rdata  ascii   TerminateProcess
+13  0x00004edc 0x004062dc 19  20   .rdata  ascii   WaitForSingleObject
+14  0x00004ef2 0x004062f2 11  12   .rdata  ascii   DeleteFileA
+15  0x00004f00 0x00406300 11  12   .rdata  ascii   CreateFileA
+16  0x00004f0e 0x0040630e 11  12   .rdata  ascii   FreeLibrary
+17  0x00004f1c 0x0040631c 18  19   .rdata  ascii   OutputDebugStringA
+18  0x00004f32 0x00406332 12  13   .rdata  ascii   GetTempPathA
+19  0x00004f42 0x00406342 19  20   .rdata  ascii   WideCharToMultiByte
+20  0x00004f56 0x00406356 12  13   .rdata  ascii   KERNEL32.dll
+21  0x00004f64 0x00406364 12  13   .rdata  ascii   ADVAPI32.dll
+22  0x00004f74 0x00406374 7   8    .rdata  ascii   sprintf
+23  0x00004f7e 0x0040637e 5   6    .rdata  ascii   srand
+24  0x00004f86 0x00406386 4   5    .rdata  ascii   time
+25  0x00004f8e 0x0040638e 16  17   .rdata  ascii   _except_handler3
+26  0x00004fa2 0x004063a2 4   5    .rdata  ascii   atoi
+27  0x00004faa 0x004063aa 4   5    .rdata  ascii   free
+28  0x00004fb2 0x004063b2 6   7    .rdata  ascii   malloc
+29  0x00004fbc 0x004063bc 4   5    .rdata  ascii   rand
+30  0x00004fc4 0x004063c4 7   8    .rdata  ascii   strncpy
+31  0x00004fce 0x004063ce 6   7    .rdata  ascii   strstr
+32  0x00004fd6 0x004063d6 10  11   .rdata  ascii   MSVCRT.dll
+33  0x00004fe4 0x004063e4 5   6    .rdata  ascii   _exit
+34  0x00004fec 0x004063ec 11  12   .rdata  ascii   _XcptFilter
+35  0x00004ffa 0x004063fa 4   5    .rdata  ascii   exit
+36  0x00005002 0x00406402 7   8    .rdata  ascii   _acmdln
+37  0x0000500c 0x0040640c 13  14   .rdata  ascii   __getmainargs
+38  0x0000501c 0x0040641c 9   10   .rdata  ascii   _initterm
+39  0x00005028 0x00406428 16  17   .rdata  ascii   __setusermatherr
+40  0x0000503c 0x0040643c 12  13   .rdata  ascii   _adjust_fdiv
+41  0x0000504c 0x0040644c 12  13   .rdata  ascii   __p__commode
+42  0x0000505c 0x0040645c 10  11   .rdata  ascii   __p__fmode
+43  0x0000506a 0x0040646a 14  15   .rdata  ascii   __set_app_type
+44  0x0000507c 0x0040647c 10  11   .rdata  ascii   _controlfp
+45  0x0000508a 0x0040648a 21  22   .rdata  ascii   WinHttpGetProxyForUrl
+46  0x000050a2 0x004064a2 37  38   .rdata  ascii   WinHttpGetIEProxyConfigForCurrentUser
+47  0x000050ca 0x004064ca 11  12   .rdata  ascii   WinHttpOpen
+48  0x000050d6 0x004064d6 11  12   .rdata  ascii   WINHTTP.dll
+49  0x000050e4 0x004064e4 15  16   .rdata  ascii   GetStartupInfoA
+50  0x000050f6 0x004064f6 8   9    .rdata  ascii   _stricmp
+51  0x00005102 0x00406502 9   10   .rdata  ascii   _strnicmp
+52  0x0000510e 0x0040650e 5   6    .rdata  ascii   _itoa
+0   0x00005224 0x00407024 4   5    .data   ascii   ated
+1   0x00005234 0x00407034 47  48   .data   ascii   Process Do not exit in 10 second, so i Kill it!
+2   0x00005270 0x00407070 146 294  .data   utf16le zilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; GTB6; .NET CLR 1.1.4322; .NET C\tLR 2.0.50727; .NET CLR 3.0.04506.30; .NET CLR 3.0.04506.648)
+3   0x00005398 0x00407198 17  36   .data   utf16le www.google.com.tw
+arch     x86
+baddr    0x400000
+binsz    21504
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000147b2
+compiled Wed Sep 21 08:33:14 2011
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x4e79a14a
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x4800
+  SizeOfInitializedData : 0x2a00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x563f
+  BaseOfCode : 0x1000
+  BaseOfData : 0x6000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xa000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 2
+  Product: 1 Name: Import0 Version: 0 Times: 58
+  Product: 93 Name: Implib710 Version: 2179 Times: 7
+  Product: 4 Name: Linker600 Version: 8168 Times: 2
+  Product: 10 Name: Utc12_C Version: 8168 Times: 11
+  Product: 14 Name: Masm613 Version: 7299 Times: 2
+  Product: 12 Name: AliasObj60 Version: 7291 Times: 3
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x60ec
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x6000
+  Size : 0xd0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+winhttp.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000620c 0x00004c4c SET_32 KERNEL32.dll_Sleep
+0x00006214 0x00004c44 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x0000622a 0x00004c40 SET_32 KERNEL32.dll_CreatePipe
+0x00006238 0x00004c3c SET_32 KERNEL32.dll_GetProcAddress
+0x0000624a 0x00004c38 SET_32 KERNEL32.dll_LoadLibraryA
+0x0000625a 0x00004c1c SET_32 KERNEL32.dll_GetModuleHandleA
+0x0000626e 0x00004c00 SET_32 KERNEL32.dll_CloseHandle
+0x0000627c 0x00004c04 SET_32 KERNEL32.dll_GetLastError
+0x0000628c 0x00004c08 SET_32 KERNEL32.dll_CreateProcessA
+0x0000629e 0x00004c0c SET_32 KERNEL32.dll_ReadFile
+0x000062aa 0x00004c10 SET_32 KERNEL32.dll_PeekNamedPipe
+0x000062ba 0x00004c14 SET_32 KERNEL32.dll_WriteFile
+0x000062c6 0x00004c18 SET_32 KERNEL32.dll_TerminateProcess
+0x000062da 0x00004c48 SET_32 KERNEL32.dll_WaitForSingleObject
+0x000062f0 0x00004c20 SET_32 KERNEL32.dll_DeleteFileA
+0x000062fe 0x00004c24 SET_32 KERNEL32.dll_CreateFileA
+0x0000630c 0x00004c28 SET_32 KERNEL32.dll_FreeLibrary
+0x0000631a 0x00004c2c SET_32 KERNEL32.dll_OutputDebugStringA
+0x00006330 0x00004c30 SET_32 KERNEL32.dll_GetTempPathA
+0x00006340 0x00004c34 SET_32 KERNEL32.dll_WideCharToMultiByte
+0x00006372 0x00004c58 SET_32 MSVCRT.dll_sprintf
+0x0000637c 0x00004cb4 SET_32 MSVCRT.dll_srand
+0x00006384 0x00004c5c SET_32 MSVCRT.dll_time
+0x0000638c 0x00004c60 SET_32 MSVCRT.dll__except_handler3
+0x000063a0 0x00004c64 SET_32 MSVCRT.dll_atoi
+0x000063a8 0x00004c68 SET_32 MSVCRT.dll_free
+0x000063b0 0x00004c6c SET_32 MSVCRT.dll_malloc
+0x000063ba 0x00004c70 SET_32 MSVCRT.dll_rand
+0x000063c2 0x00004c74 SET_32 MSVCRT.dll_strncpy
+0x000063cc 0x00004c78 SET_32 MSVCRT.dll_strstr
+0x000063e2 0x00004c7c SET_32 MSVCRT.dll__exit
+0x000063ea 0x00004c80 SET_32 MSVCRT.dll__XcptFilter
+0x000063f8 0x00004c84 SET_32 MSVCRT.dll_exit
+0x00006400 0x00004c88 SET_32 MSVCRT.dll__acmdln
+0x0000640a 0x00004c8c SET_32 MSVCRT.dll___getmainargs
+0x0000641a 0x00004c90 SET_32 MSVCRT.dll__initterm
+0x00006426 0x00004c94 SET_32 MSVCRT.dll___setusermatherr
+0x0000643a 0x00004c98 SET_32 MSVCRT.dll__adjust_fdiv
+0x0000644a 0x00004c9c SET_32 MSVCRT.dll___p__commode
+0x0000645a 0x00004ca0 SET_32 MSVCRT.dll___p__fmode
+0x00006468 0x00004ca4 SET_32 MSVCRT.dll___set_app_type
+0x0000647a 0x00004ca8 SET_32 MSVCRT.dll__controlfp
+0x00006488 0x00004cc4 SET_32 WINHTTP.dll_WinHttpGetProxyForUrl
+0x000064a0 0x00004cc0 SET_32 WINHTTP.dll_WinHttpGetIEProxyConfigForCurrentUser
+0x000064c8 0x00004cc8 SET_32 WINHTTP.dll_WinHttpOpen
+0x000064e2 0x00004c50 SET_32 KERNEL32.dll_GetStartupInfoA
+0x000064f4 0x00004cb0 SET_32 MSVCRT.dll__stricmp
+0x00006500 0x00004cac SET_32 MSVCRT.dll__strnicmp
+0x0000650c 0x00004cb8 SET_32 MSVCRT.dll__itoa
+
+
+49 relocations
+21504
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,333 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr           size vaddr           vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000       0x0 0x140001000   0x16000 -r-x .text
+1   0x00000000       0x0 0x140017000    0x8000 -r-- .rdata
+2   0x00000000       0x0 0x14001f000    0x6000 -rw- .data
+3   0x00000000       0x0 0x140025000    0x2000 -r-- .pdata
+4   0x00000000       0x0 0x140027000   0xfa000 -rwx .vmp0
+5   0x00000400  0x112400 0x140121000  0x113000 -rwx .vmp1
+6   0x00112800     0x200 0x140234000    0x1000 -r-- .reloc
+7   0x00112a00   0x28c00 0x140235000   0x29000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x1401383f7 paddr=0x000177f7 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――
+1   0x140132000 NONE FUNC urlmon.dll   URLDownloadToFileA
+23  0x140132010 NONE FUNC WS2_32.dll   socket
+1   0x140132020 NONE FUNC USER32.dll   CharUpperBuffW
+1   0x140132030 NONE FUNC ADVAPI32.dll GetUserNameA
+1   0x140132040 NONE FUNC WININET.dll  InternetCloseHandle
+1   0x140132050 NONE FUNC WTSAPI32.dll WTSFreeMemory
+1   0x140132060 NONE FUNC IPHLPAPI.DLL GetNetworkParams
+1   0x140132070 NONE FUNC SHELL32.dll  ShellExecuteA
+1   0x140132080 NONE FUNC KERNEL32.dll GetVersionExW
+2   0x140132088 NONE FUNC KERNEL32.dll FlsFree
+1   0x140132098 NONE FUNC KERNEL32.dll GetModuleFileNameW
+1   0x1401320a8 NONE FUNC KERNEL32.dll GetModuleHandleA
+2   0x1401320b0 NONE FUNC KERNEL32.dll LoadLibraryA
+3   0x1401320b8 NONE FUNC KERNEL32.dll LocalAlloc
+4   0x1401320c0 NONE FUNC KERNEL32.dll LocalFree
+5   0x1401320c8 NONE FUNC KERNEL32.dll GetModuleFileNameA
+6   0x1401320d0 NONE FUNC KERNEL32.dll ExitProcess
+
+[Symbols]
+
+nth paddr      vaddr       bind type size lib          name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00011400 0x140132000 NONE FUNC 0    urlmon.dll   imp.URLDownloadToFileA
+23  0x00011410 0x140132010 NONE FUNC 0    WS2_32.dll   imp.socket
+1   0x00011420 0x140132020 NONE FUNC 0    USER32.dll   imp.CharUpperBuffW
+1   0x00011430 0x140132030 NONE FUNC 0    ADVAPI32.dll imp.GetUserNameA
+1   0x00011440 0x140132040 NONE FUNC 0    WININET.dll  imp.InternetCloseHandle
+1   0x00011450 0x140132050 NONE FUNC 0    WTSAPI32.dll imp.WTSFreeMemory
+1   0x00011460 0x140132060 NONE FUNC 0    IPHLPAPI.DLL imp.GetNetworkParams
+1   0x00011470 0x140132070 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteA
+1   0x00011480 0x140132080 NONE FUNC 0    KERNEL32.dll imp.GetVersionExW
+2   0x00011488 0x140132088 NONE FUNC 0    KERNEL32.dll imp.FlsFree
+1   0x00011498 0x140132098 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+1   0x000114a8 0x1401320a8 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+2   0x000114b0 0x1401320b0 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+3   0x000114b8 0x1401320b8 NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+4   0x000114c0 0x1401320c0 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+5   0x000114c8 0x1401320c8 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+6   0x000114d0 0x1401320d0 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+[Strings]
+nth paddr      vaddr       len size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00112fd0 0x1402355d0 7   8    .rsrc   ascii   ,,,,,,/
+1   0x00112ff0 0x1402355f0 7   8    .rsrc   ascii   ,,,,,,/
+2   0x00113090 0x140235690 7   8    .rsrc   ascii   ,,,,,,/
+3   0x001130b2 0x1402356b2 5   6    .rsrc   ascii   ,,,,/
+4   0x00113278 0x140235878 4   5    .rsrc   ascii   ,,,/
+5   0x00113298 0x140235898 4   5    .rsrc   ascii   ////
+6   0x001132a8 0x1402358a8 4   5    .rsrc   ascii   ,,,/
+7   0x0011423b 0x14023683b 4   5    .rsrc   ascii   \f\f\f\v
+8   0x001169dc 0x140238fdc 5   6    .rsrc   ascii   \a\f\f\f\a
+9   0x00118238 0x14023a838 6   7    .rsrc   ascii   '#\v\e\r\a
+10  0x00119a20 0x14023c020 4   5    .rsrc   ascii   \a\v\v\n
+11  0x0011bee4 0x14023e4e4 60  244  .rsrc   utf32le \a
+12  0x0011d3da 0x14023f9da 6   7    .rsrc   ascii   (!\r\e\f\n
+13  0x0011d479 0x14023fa79 8   9    .rsrc   ascii   \n(\a((\t(\n
+14  0x0011d586 0x14023fb86 6   14   .rsrc   utf16le 0ðpðð( blocks=Basic Latin,Latin-1 Supplement
+15  0x0011daf9 0x1402400f9 5   6    .rsrc   ascii   PNG\r\n
+16  0x0011db03 0x140240103 5   6    .rsrc   ascii   \rIHDR
+17  0x0011db1c 0x14024011c 5   6    .rsrc   ascii   \tpHYs
+18  0x0011db30 0x140240130 7   8    .rsrc   ascii   \v"IDATx
+19  0x0011db5f 0x14024015f 4   5    .rsrc   ascii   ?9&N
+20  0x0011db72 0x140240172 4   5    .rsrc   ascii   cisi
+21  0x0011db7b 0x14024017b 6   7    .rsrc   ascii   InmehL
+22  0x0011dbe7 0x1402401e7 5   6    .rsrc   ascii   :0?75
+23  0x0011dbfd 0x1402401fd 5   6    .rsrc   ascii   Mk77.
+24  0x0011dc16 0x140240216 7   8    .rsrc   ascii   <xy~njZ
+25  0x0011dc95 0x140240295 4   5    .rsrc   ascii   C\b<D
+26  0x0011dc9a 0x14024029a 4   5    .rsrc   ascii   @%B`
+27  0x0011dcc5 0x1402402c5 4   6    .rsrc   utf8    %UۋQ blocks=Basic Latin,Arabic
+28  0x0011dd10 0x140240310 4   5    .rsrc   ascii   0YH$
+29  0x0011dd55 0x140240355 4   5    .rsrc   ascii    %E\f
+30  0x0011ddb0 0x1402403b0 4   5    .rsrc   ascii   }^D>
+31  0x0011ddbc 0x1402403bc 4   5    .rsrc   ascii   hl||
+32  0x0011de08 0x140240408 7   8    .rsrc   ascii   MAu\nq\r\b
+33  0x0011de67 0x140240467 5   7    .rsrc   utf8    nMnݩI blocks=Basic Latin,Arabic Supplement
+34  0x0011de73 0x140240473 4   5    .rsrc   ascii   )WkR
+35  0x0011de7f 0x14024047f 7   8    .rsrc   ascii   }!N^Az\b
+36  0x0011deb7 0x1402404b7 5   6    .rsrc   ascii   <!"O\e
+37  0x0011df52 0x140240552 4   5    .rsrc   ascii    pl\n
+38  0x0011dfc2 0x1402405c2 5   6    .rsrc   ascii   /"25:
+39  0x0011dff7 0x1402405f7 4   5    .rsrc   ascii   xlu}
+40  0x0011e001 0x140240601 4   5    .rsrc   ascii   w\v "
+41  0x0011e038 0x140240638 4   5    .rsrc   ascii   b=>i
+42  0x0011e045 0x140240645 4   6    .rsrc   utf8    ɘ Y] blocks=IPA Extensions,Basic Latin
+43  0x0011e04d 0x14024064d 4   5    .rsrc   ascii   - mA
+44  0x0011e05f 0x14024065f 5   7    .rsrc   utf8    Yt\b\nۧ blocks=Basic Latin,Arabic
+45  0x0011e06f 0x14024066f 4   6    .rsrc   utf8    \aԄC# blocks=Basic Latin,Cyrillic Supplement
+46  0x0011e075 0x140240675 4   5    .rsrc   ascii   %$DD
+47  0x0011e08c 0x14024068c 7   8    .rsrc   ascii   @\#pj<>
+48  0x0011e0a7 0x1402406a7 4   5    .rsrc   ascii   ^V;5
+49  0x0011e0ce 0x1402406ce 4   5    .rsrc   ascii    |\n6
+50  0x0011e11e 0x14024071e 6   8    .rsrc   utf8    ?'?|\v6
+51  0x0011e158 0x140240758 4   6    .rsrc   utf8    =r\ݠ blocks=Basic Latin,Arabic Supplement
+52  0x0011e177 0x140240777 4   6    .rsrc   utf8    \eX)ݶ blocks=Basic Latin,Arabic Supplement
+53  0x0011e216 0x140240816 4   6    .rsrc   utf8    F`ӣE blocks=Basic Latin,Cyrillic
+54  0x0011e281 0x140240881 5   6    .rsrc   ascii   (RZ3o
+55  0x0011e28f 0x14024088f 6   7    .rsrc   ascii   uk#pvT
+56  0x0011e30b 0x14024090b 6   7    .rsrc   ascii   8;l\R|
+57  0x0011e319 0x140240919 5   6    .rsrc   ascii   6`_xf
+58  0x0011e370 0x140240970 4   7    .rsrc   utf8    I>`㪆 blocks=Basic Latin,CJK Unified Ideographs Extension A
+59  0x0011e38f 0x14024098f 4   6    .rsrc   utf8     ɀuY blocks=Basic Latin,Latin Extended-B
+60  0x0011e39d 0x14024099d 4   5    .rsrc   ascii   b-@$
+61  0x0011e3b8 0x1402409b8 5   7    .rsrc   utf8    \n ɀu- blocks=Basic Latin,Latin Extended-B
+62  0x0011e3c1 0x1402409c1 4   5    .rsrc   ascii   \n|\t(
+63  0x0011e3f4 0x1402409f4 5   6    .rsrc   ascii   \r8rH_
+64  0x0011e431 0x140240a31 4   5    .rsrc   ascii   _(*u
+65  0x0011e4bb 0x140240abb 5   6    .rsrc   ascii   <-"OX
+66  0x0011e4d4 0x140240ad4 6   7    .rsrc   ascii   |B\b\b 3
+67  0x0011e50c 0x140240b0c 4   5    .rsrc   ascii   dmnj
+68  0x0011e521 0x140240b21 4   5    .rsrc   ascii   [wjR
+69  0x0011e53b 0x140240b3b 6   8    .rsrc   utf8    3/G?߸u blocks=Basic Latin,NKo
+70  0x0011e54b 0x140240b4b 5   6    .rsrc   ascii   :512 
+71  0x0011e5d2 0x140240bd2 4   5    .rsrc   ascii   \n,. 
+72  0x0011e660 0x140240c60 4   5    .rsrc   ascii   IEND
+73  0x001288f5 0x14024aef5 5   7    .rsrc   utf8    O)ٙV* blocks=Basic Latin,Arabic
+74  0x0012acd9 0x14024d2d9 5   7    .rsrc   utf8    V*ߙV* blocks=Basic Latin,NKo
+75  0x0012b294 0x14024d894 4   5    .rsrc   ascii   =<?o
+76  0x0012d9e5 0x14024ffe5 6   7    .rsrc   ascii   V*?vF(
+77  0x0012dad9 0x1402500d9 5   7    .rsrc   utf8    V*ϙV* blocks=Basic Latin,Greek and Coptic
+78  0x0012f8e5 0x140251ee5 6   7    .rsrc   ascii   V*ovF(
+79  0x0012ff94 0x140252594 4   5    .rsrc   ascii   >>Ai
+80  0x00130090 0x140252690 4   5    .rsrc   ascii   >>Ai
+81  0x0013018c 0x14025278c 4   5    .rsrc   ascii   >>Ai
+82  0x00130288 0x140252888 4   5    .rsrc   ascii   >>Ai
+83  0x00130384 0x140252984 4   5    .rsrc   ascii   >>Ai
+84  0x00130480 0x140252a80 4   5    .rsrc   ascii   >>Ai
+85  0x0013057c 0x140252b7c 4   5    .rsrc   ascii   >>Ai
+86  0x00130678 0x140252c78 4   5    .rsrc   ascii   >>Ai
+87  0x00130774 0x140252d74 4   5    .rsrc   ascii   >>Ai
+88  0x00130870 0x140252e70 4   5    .rsrc   ascii   >>Ai
+89  0x0013096c 0x140252f6c 4   5    .rsrc   ascii   >>Ai
+90  0x00130a68 0x140253068 4   5    .rsrc   ascii   >>Ai
+91  0x00130b64 0x140253164 4   5    .rsrc   ascii   >>Ai
+92  0x0013518d 0x14025778d 6   7    .rsrc   ascii   V*?`<&
+93  0x0013638d 0x14025898d 6   7    .rsrc   ascii   V*?`<&
+94  0x00138ae4 0x14025b0e4 60  244  .rsrc   utf32le \a
+95  0x00138ec9 0x14025b4c9 5   7    .rsrc   utf8    V*ϙV* blocks=Basic Latin,Greek and Coptic
+96  0x00139651 0x14025bc51 5   7    .rsrc   utf8    V*ߙV* blocks=Basic Latin,NKo
+97  0x001398a8 0x14025bea8 4   5    .rsrc   ascii   =<?o
+98  0x00139924 0x14025bf24 4   5    .rsrc   ascii   =<?o
+99  0x001399a0 0x14025bfa0 4   5    .rsrc   ascii   =<?o
+100 0x00139a1c 0x14025c01c 4   5    .rsrc   ascii   =<?o
+101 0x00139a98 0x14025c098 4   5    .rsrc   ascii   =<?o
+102 0x00139b14 0x14025c114 4   5    .rsrc   ascii   =<?o
+103 0x00139e19 0x14025c419 6   7    .rsrc   ascii   W+?g@'
+104 0x00139e71 0x14025c471 5   7    .rsrc   utf8    W+ߗW+ blocks=Basic Latin,NKo
+105 0x0013a351 0x14025c951 5   7    .rsrc   utf8    W+ߗW+ blocks=Basic Latin,NKo
+106 0x0013a3b9 0x14025c9b9 6   7    .rsrc   ascii   W+?g@'
+107 0x0013a71d 0x14025cd1d 6   7    .rsrc   ascii   W+?g@'
+108 0x0013ab25 0x14025d125 5   7    .rsrc   utf8    W+ߗW+ blocks=Basic Latin,NKo
+109 0x0013ab7d 0x14025d17d 6   7    .rsrc   ascii   W+/U8&
+110 0x0013acf6 0x14025d2f6 6   14   .rsrc   utf16le 0ðpðð( blocks=Basic Latin,Latin-1 Supplement
+111 0x0013b21c 0x14025d81c 4   5    .rsrc   ascii   DRp\v
+112 0x0013b2b3 0x14025d8b3 545 546  .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel></requestedPrivileges></security></trustInfo><application xmlns="urn:schemas-microsoft-com:asm.v3"><windowsSettings><dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware></windowsSettings></application></assembly>
+arch     x86
+baddr    0x140000000
+binsz    1291776
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x0013b729
+compiled Mon Sep  4 14:04:43 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  false
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x8
+  TimeDateStamp : 0x59ad5d7b
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x22
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xb
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x15e00
+  SizeOfInitializedData : 0x3be00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1383f7
+  BaseOfCode : 0x1000
+  ImageBase : 0x140000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x25e000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8160
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 204 Name: Linker1100 Version: 50727 Times: 1
+  Product: 151 Name: Resource900 Version: 0 Times: 1
+  Product: 201 Name: Cvtres1100 Version: 50727 Times: 1
+  Product: 211 Name: Utc1700_LTCG_CPP Version: 50727 Times: 2
+  Product: 207 Name: Utc1700_CPP Version: 50628 Times: 45
+  Product: 185 Name: Implib1010 Version: 30716 Times: 19
+  Product: 1 Name: Import0 Version: 0 Times: 141
+  Product: 205 Name: Masm1100 Version: 50628 Times: 11
+  Product: 206 Name: Utc1700_C Version: 50628 Times: 128
+  Product: 199 Name: AliasObj1100 Version: 41118 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x133d58
+  Size : 0xf0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x235000
+  Size : 0x28ad4
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x25000
+  Size : 0x11f4
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x234000
+  Size : 0x30
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x233220
+  Size : 0x70
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x132000
+  Size : 0xe0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+urlmon.dll
+ws2_32.dll
+user32.dll
+advapi32.dll
+wininet.dll
+wtsapi32.dll
+iphlpapi.dll
+shell32.dll
+kernel32.dll
+
+9 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00000017 0x00011410 SET_64 WS2_32.dll_socket
+0x00121544 0x00011420 SET_64 USER32.dll_CharUpperBuffW
+0x0012287f 0x00011480 SET_64 KERNEL32.dll_GetVersionExW
+0x00128490 0x00011450 SET_64 WTSAPI32.dll_WTSFreeMemory
+0x0012b01f 0x00011460 SET_64 IPHLPAPI.DLL_GetNetworkParams
+0x0012cb0a 0x000114c8 SET_64 KERNEL32.dll_GetModuleFileNameA
+0x0012cd01 0x000114c0 SET_64 KERNEL32.dll_LocalFree
+0x00130b38 0x000114b0 SET_64 KERNEL32.dll_LoadLibraryA
+0x00130e35 0x00011440 SET_64 WININET.dll_InternetCloseHandle
+0x00133c4c 0x000114a8 SET_64 KERNEL32.dll_GetModuleHandleA
+0x00135b68 0x00011400 SET_64 urlmon.dll_URLDownloadToFileA
+0x001385a2 0x00011488 SET_64 KERNEL32.dll_FlsFree
+0x00138e49 0x000114d0 SET_64 KERNEL32.dll_ExitProcess
+0x001392e8 0x00011430 SET_64 ADVAPI32.dll_GetUserNameA
+0x0013945b 0x00011470 SET_64 SHELL32.dll_ShellExecuteA
+0x0013967f 0x00011498 SET_64 KERNEL32.dll_GetModuleFileNameW
+0x0022f04e 0x000114b8 SET_64 KERNEL32.dll_LocalAlloc
+
+
+17 relocations
+1291776
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

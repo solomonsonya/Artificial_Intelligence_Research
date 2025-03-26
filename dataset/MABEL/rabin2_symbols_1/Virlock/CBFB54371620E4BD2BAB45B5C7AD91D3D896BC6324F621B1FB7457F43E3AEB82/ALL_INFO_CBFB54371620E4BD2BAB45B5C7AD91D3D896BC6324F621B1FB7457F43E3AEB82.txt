@@ -1,0 +1,180 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb1600 0x00401000  0xb2000 -r-x .text
+1   0x000b1c00    0x200 0x004b3000   0x1000 -r-- .rdata
+2   0x000b1e00    0x800 0x004b4000   0x1000 -rwx .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401130 paddr=0x00000730 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b3000 NONE FUNC ntdll.dll    ZwPowerInformation
+2   0x004b3004 NONE FUNC ntdll.dll    RtlExitUserThread
+1   0x004b300c NONE FUNC shell32.dll  SHPathPrepareForWriteA
+1   0x004b3014 NONE FUNC advapi32.dll AccessCheckByTypeAndAuditAlarmA
+1   0x004b301c NONE FUNC oleaut32.dll VarUI1FromI2
+1   0x004b3024 NONE FUNC kernel32.dll EnumDateFormatsExW
+2   0x004b3028 NONE FUNC kernel32.dll GetCurrentProcessId
+1   0x004b3030 NONE FUNC user32.dll   GetDialogBaseUnits
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b1c00 0x004b3000 NONE FUNC 0    ntdll.dll    imp.ZwPowerInformation
+2   0x000b1c04 0x004b3004 NONE FUNC 0    ntdll.dll    imp.RtlExitUserThread
+1   0x000b1c0c 0x004b300c NONE FUNC 0    shell32.dll  imp.SHPathPrepareForWriteA
+1   0x000b1c14 0x004b3014 NONE FUNC 0    advapi32.dll imp.AccessCheckByTypeAndAuditAlarmA
+1   0x000b1c1c 0x004b301c NONE FUNC 0    oleaut32.dll imp.VarUI1FromI2
+1   0x000b1c24 0x004b3024 NONE FUNC 0    kernel32.dll imp.EnumDateFormatsExW
+2   0x000b1c28 0x004b3028 NONE FUNC 0    kernel32.dll imp.GetCurrentProcessId
+1   0x000b1c30 0x004b3030 NONE FUNC 0    user32.dll   imp.GetDialogBaseUnits
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b1cfe 0x004b30fe 18  19   .rdata  ascii ZwPowerInformation
+1   0x000b1d13 0x004b3113 17  18   .rdata  ascii RtlExitUserThread
+2   0x000b1d25 0x004b3125 9   10   .rdata  ascii ntdll.dll
+3   0x000b1d31 0x004b3131 22  23   .rdata  ascii SHPathPrepareForWriteA
+4   0x000b1d48 0x004b3148 11  12   .rdata  ascii shell32.dll
+5   0x000b1d56 0x004b3156 31  32   .rdata  ascii AccessCheckByTypeAndAuditAlarmA
+6   0x000b1d76 0x004b3176 12  13   .rdata  ascii advapi32.dll
+7   0x000b1d85 0x004b3185 12  13   .rdata  ascii VarUI1FromI2
+8   0x000b1d92 0x004b3192 12  13   .rdata  ascii oleaut32.dll
+9   0x000b1da1 0x004b31a1 18  19   .rdata  ascii EnumDateFormatsExW
+10  0x000b1db6 0x004b31b6 19  20   .rdata  ascii GetCurrentProcessId
+11  0x000b1dca 0x004b31ca 12  13   .rdata  ascii kernel32.dll
+12  0x000b1dd9 0x004b31d9 18  19   .rdata  ascii GetDialogBaseUnits
+13  0x000b1dec 0x004b31ec 10  11   .rdata  ascii user32.dll
+arch     x86
+baddr    0x400000
+binsz    730624
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000b2640
+compiled Tue Apr  7 20:58:59 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x55244513
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb1600
+  SizeOfInitializedData : 0x400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1130
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb5000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb3038
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb3000
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntdll.dll
+shell32.dll
+advapi32.dll
+oleaut32.dll
+kernel32.dll
+user32.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b30fc 0x000b1c00 SET_32 ntdll.dll_ZwPowerInformation
+0x000b3111 0x000b1c04 SET_32 ntdll.dll_RtlExitUserThread
+0x000b312f 0x000b1c0c SET_32 shell32.dll_SHPathPrepareForWriteA
+0x000b3154 0x000b1c14 SET_32 advapi32.dll_AccessCheckByTypeAndAuditAlarmA
+0x000b3183 0x000b1c1c SET_32 oleaut32.dll_VarUI1FromI2
+0x000b319f 0x000b1c24 SET_32 kernel32.dll_EnumDateFormatsExW
+0x000b31b4 0x000b1c28 SET_32 kernel32.dll_GetCurrentProcessId
+0x000b31d7 0x000b1c30 SET_32 user32.dll_GetDialogBaseUnits
+
+
+8 relocations
+730624
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

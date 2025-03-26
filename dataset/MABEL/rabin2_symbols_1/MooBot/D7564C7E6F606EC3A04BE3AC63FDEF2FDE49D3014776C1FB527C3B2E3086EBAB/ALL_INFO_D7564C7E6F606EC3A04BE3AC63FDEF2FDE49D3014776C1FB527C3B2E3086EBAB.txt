@@ -1,0 +1,482 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x000000f4    0x14 0x000080f4    0x14 -r-- .interp
+2   0x00000108   0x244 0x00008108   0x244 -r-- .hash
+3   0x0000034c   0x4c0 0x0000834c   0x4c0 -r-- .dynsym
+4   0x0000080c   0x260 0x0000880c   0x260 -r-- .dynstr
+5   0x00000a6c   0x1c8 0x00008a6c   0x1c8 -r-- .rel.plt
+6   0x00000c34    0x18 0x00008c34    0x18 -r-x .init
+7   0x00000c4c   0x2c0 0x00008c4c   0x2c0 -r-x .plt
+8   0x00000f0c  0xa8e4 0x00008f0c  0xa8e4 -r-x .text
+9   0x0000b7f0    0x14 0x000137f0    0x14 -r-x .fini
+10  0x0000b804   0x8c0 0x00013804   0x8c0 -r-- .rodata
+11  0x0000c0c8     0x8 0x0001c0c8     0x8 -rw- .ctors
+12  0x0000c0d0     0x8 0x0001c0d0     0x8 -rw- .dtors
+13  0x0000c0dc    0x98 0x0001c0dc    0x98 -rw- .dynamic
+14  0x0000c174    0xf0 0x0001c174    0xf0 -rw- .got
+15  0x0000c264    0x24 0x0001c264    0x24 -rw- .data
+16  0x0000c288     0x0 0x0001c288   0x2b4 -rw- .bss
+17  0x0000c288    0x73 0x00000000    0x73 ---- .shstrtab
+
+[Segments]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000034    0xc0 0x00008034    0xc0 -r-x PHDR
+1   0x000000f4    0x14 0x000080f4    0x14 -r-- INTERP
+2   0x00000000  0xc0c4 0x00008000  0xc0c4 -r-x LOAD0
+3   0x0000c0c8   0x1c0 0x0001c0c8   0x474 -rw- LOAD1
+4   0x0000c0dc    0x98 0x0001c0dc    0x98 -rw- DYNAMIC
+5   0x00000000     0x0 0x00000000     0x0 -rwx GNU_STACK
+6   0x00000000    0x34 0x00008000    0x34 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00008fec paddr=0x00000fec haddr=0x00000018 hvaddr=0x00008018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x0000f6fc paddr=0x000076fc
+[Imports]
+nth vaddr      bind   type lib name
+―――――――――――――――――――――――――――――――――――
+1   0x00008c60 GLOBAL FUNC     ioctl
+2   0x00008c6c GLOBAL FUNC     recv
+3   0x00008c78 GLOBAL FUNC     connect
+4   0x00008c84 GLOBAL FUNC     sigemptyset
+5   0x00008c90 GLOBAL FUNC     memmove
+7   0x00008c9c GLOBAL FUNC     usleep
+8   0x00008ca8 GLOBAL FUNC     getpid
+9   0x00008cb4 GLOBAL FUNC     prctl
+10  0x00008cc0 GLOBAL FUNC     memcpy
+11  0x00008ccc GLOBAL FUNC     readlink
+12  0x00000000 GLOBAL FUNC     rewinddir
+13  0x00008cd8 GLOBAL FUNC     malloc
+15  0x00008ce4 GLOBAL FUNC     sleep
+16  0x00008cf0 GLOBAL FUNC     recvfrom
+18  0x00008cfc GLOBAL FUNC     socket
+19  0x00008d08 GLOBAL FUNC     select
+20  0x00008d14 GLOBAL FUNC     readdir
+21  0x00008d20 GLOBAL FUNC     sigaddset
+22  0x00008d2c GLOBAL FUNC     send
+23  0x00008d38 GLOBAL FUNC     abort
+24  0x00008d44 GLOBAL FUNC     accept
+25  0x00008d50 GLOBAL FUNC     basename
+26  0x00008d5c GLOBAL FUNC     calloc
+27  0x00008d68 GLOBAL FUNC     write
+28  0x00008d74 GLOBAL FUNC     kill
+29  0x00008d80 GLOBAL FUNC     strcat
+30  0x00008d8c GLOBAL FUNC     bind
+32  0x00008d98 GLOBAL FUNC     inet_addr
+33  0x00008da4 GLOBAL FUNC     setsockopt
+36  0x00008db0 GLOBAL FUNC     strstr
+37  0x00008dbc GLOBAL FUNC     rand
+38  0x00008dc8 GLOBAL FUNC     signal
+39  0x00008dd4 GLOBAL FUNC     read
+40  0x00008de0 GLOBAL FUNC     unlink
+41  0x00008dec GLOBAL FUNC     sendto
+42  0x00008df8 GLOBAL FUNC     realloc
+43  0x00008e04 GLOBAL FUNC     listen
+44  0x00008e10 GLOBAL FUNC     fork
+46  0x00008e1c GLOBAL FUNC     __uClibc_main
+48  0x00008e28 GLOBAL FUNC     memset
+51  0x00008e34 GLOBAL FUNC     getppid
+52  0x00008e40 GLOBAL FUNC     time
+53  0x00008e4c GLOBAL FUNC     opendir
+55  0x00008e58 GLOBAL FUNC     strcmp
+56  0x00008e64 GLOBAL FUNC     getsockopt
+60  0x00008e70 GLOBAL FUNC     __errno_location
+61  0x00008e7c GLOBAL FUNC     exit
+63  0x00008e88 GLOBAL FUNC     atoi
+65  0x00008e94 GLOBAL FUNC     strlen
+66  0x00008ea0 GLOBAL FUNC     open
+67  0x00008eac GLOBAL FUNC     clock
+69  0x00008eb8 GLOBAL FUNC     setsid
+70  0x00008ec4 GLOBAL FUNC     closedir
+71  0x00008ed0 GLOBAL FUNC     fcntl
+72  0x00008edc GLOBAL FUNC     close
+73  0x00008ee8 GLOBAL FUNC     free
+74  0x00008ef4 GLOBAL FUNC     sigprocmask
+75  0x00008f00 GLOBAL FUNC     getsockname
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+6   ---------- 0x0001c53c GLOBAL NOTYPE 0        _bss_end__
+14  0x0000b4f0 0x000134f0 GLOBAL FUNC   248      __udivsi3
+17  ---------- 0x0001c288 GLOBAL NOTYPE 0        __bss_start__
+31  0x0000b600 0x00013600 GLOBAL FUNC   204      __umodsi3
+34  ---------- 0x0001c53c GLOBAL NOTYPE 0        __bss_end__
+35  0x00000fec 0x00008fec GLOBAL FUNC   80       _start
+45  0x0000b7b0 0x000137b0 GLOBAL FUNC   4        __aeabi_ldiv0
+47  ---------- 0x0001c288 GLOBAL NOTYPE 0        __bss_start
+49  0x0000b7b0 0x000137b0 GLOBAL FUNC   4        __div0
+50  0x0000b4f0 0x000134f0 GLOBAL FUNC   0        __aeabi_uidiv
+54  ---------- 0x0001c53c GLOBAL NOTYPE 0        __end__
+57  0x0000b5e8 0x000135e8 GLOBAL FUNC   24       __aeabi_uidivmod
+58  ---------- 0x0001c288 GLOBAL NOTYPE 0        _edata
+59  ---------- 0x0001c53c GLOBAL NOTYPE 0        _end
+62  0x0000b6cc 0x000136cc GLOBAL FUNC   228      __modsi3
+64  0x0000b7b0 0x000137b0 GLOBAL FUNC   4        __aeabi_idiv0
+68  0x0000c264 0x0001c264 GLOBAL NOTYPE 0        __data_start
+1   0x00000c60 0x00008c60 GLOBAL FUNC   16       imp.ioctl
+2   0x00000c6c 0x00008c6c GLOBAL FUNC   16       imp.recv
+3   0x00000c78 0x00008c78 GLOBAL FUNC   16       imp.connect
+4   0x00000c84 0x00008c84 GLOBAL FUNC   16       imp.sigemptyset
+5   0x00000c90 0x00008c90 GLOBAL FUNC   16       imp.memmove
+7   0x00000c9c 0x00008c9c GLOBAL FUNC   16       imp.usleep
+8   0x00000ca8 0x00008ca8 GLOBAL FUNC   16       imp.getpid
+9   0x00000cb4 0x00008cb4 GLOBAL FUNC   16       imp.prctl
+10  0x00000cc0 0x00008cc0 GLOBAL FUNC   16       imp.memcpy
+11  0x00000ccc 0x00008ccc GLOBAL FUNC   16       imp.readlink
+12  ---------- 0x00000000 GLOBAL FUNC   16       imp.rewinddir
+13  0x00000cd8 0x00008cd8 GLOBAL FUNC   16       imp.malloc
+15  0x00000ce4 0x00008ce4 GLOBAL FUNC   16       imp.sleep
+16  0x00000cf0 0x00008cf0 GLOBAL FUNC   16       imp.recvfrom
+18  0x00000cfc 0x00008cfc GLOBAL FUNC   16       imp.socket
+19  0x00000d08 0x00008d08 GLOBAL FUNC   16       imp.select
+20  0x00000d14 0x00008d14 GLOBAL FUNC   16       imp.readdir
+21  0x00000d20 0x00008d20 GLOBAL FUNC   16       imp.sigaddset
+22  0x00000d2c 0x00008d2c GLOBAL FUNC   16       imp.send
+23  0x00000d38 0x00008d38 GLOBAL FUNC   16       imp.abort
+24  0x00000d44 0x00008d44 GLOBAL FUNC   16       imp.accept
+25  0x00000d50 0x00008d50 GLOBAL FUNC   16       imp.basename
+26  0x00000d5c 0x00008d5c GLOBAL FUNC   16       imp.calloc
+27  0x00000d68 0x00008d68 GLOBAL FUNC   16       imp.write
+28  0x00000d74 0x00008d74 GLOBAL FUNC   16       imp.kill
+29  0x00000d80 0x00008d80 GLOBAL FUNC   16       imp.strcat
+30  0x00000d8c 0x00008d8c GLOBAL FUNC   16       imp.bind
+32  0x00000d98 0x00008d98 GLOBAL FUNC   16       imp.inet_addr
+33  0x00000da4 0x00008da4 GLOBAL FUNC   16       imp.setsockopt
+36  0x00000db0 0x00008db0 GLOBAL FUNC   16       imp.strstr
+37  0x00000dbc 0x00008dbc GLOBAL FUNC   16       imp.rand
+38  0x00000dc8 0x00008dc8 GLOBAL FUNC   16       imp.signal
+39  0x00000dd4 0x00008dd4 GLOBAL FUNC   16       imp.read
+40  0x00000de0 0x00008de0 GLOBAL FUNC   16       imp.unlink
+41  0x00000dec 0x00008dec GLOBAL FUNC   16       imp.sendto
+42  0x00000df8 0x00008df8 GLOBAL FUNC   16       imp.realloc
+43  0x00000e04 0x00008e04 GLOBAL FUNC   16       imp.listen
+44  0x00000e10 0x00008e10 GLOBAL FUNC   16       imp.fork
+46  0x00000e1c 0x00008e1c GLOBAL FUNC   16       imp.__uClibc_main
+48  0x00000e28 0x00008e28 GLOBAL FUNC   16       imp.memset
+51  0x00000e34 0x00008e34 GLOBAL FUNC   16       imp.getppid
+52  0x00000e40 0x00008e40 GLOBAL FUNC   16       imp.time
+53  0x00000e4c 0x00008e4c GLOBAL FUNC   16       imp.opendir
+55  0x00000e58 0x00008e58 GLOBAL FUNC   16       imp.strcmp
+56  0x00000e64 0x00008e64 GLOBAL FUNC   16       imp.getsockopt
+60  0x00000e70 0x00008e70 GLOBAL FUNC   16       imp.__errno_location
+61  0x00000e7c 0x00008e7c GLOBAL FUNC   16       imp.exit
+63  0x00000e88 0x00008e88 GLOBAL FUNC   16       imp.atoi
+65  0x00000e94 0x00008e94 GLOBAL FUNC   16       imp.strlen
+66  0x00000ea0 0x00008ea0 GLOBAL FUNC   16       imp.open
+67  0x00000eac 0x00008eac GLOBAL FUNC   16       imp.clock
+69  0x00000eb8 0x00008eb8 GLOBAL FUNC   16       imp.setsid
+70  0x00000ec4 0x00008ec4 GLOBAL FUNC   16       imp.closedir
+71  0x00000ed0 0x00008ed0 GLOBAL FUNC   16       imp.fcntl
+72  0x00000edc 0x00008edc GLOBAL FUNC   16       imp.close
+73  0x00000ee8 0x00008ee8 GLOBAL FUNC   16       imp.free
+74  0x00000ef4 0x00008ef4 GLOBAL FUNC   16       imp.sigprocmask
+75  0x00000f00 0x00008f00 GLOBAL FUNC   16       imp.getsockname
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000b810 0x00013810 23  24   .rodata ascii  HTTP/1.1\r\nUser-Agent: 
+1   0x0000b828 0x00013828 8   9    .rodata ascii \r\nHost: 
+2   0x0000b838 0x00013838 8   9    .rodata ascii Cookie: 
+3   0x0000b848 0x00013848 4   5    .rodata ascii \r\n\r\n
+4   0x0000b854 0x00013854 4   5    .rodata ascii http
+5   0x0000b85c 0x0001385c 4   5    .rodata ascii url=
+6   0x0000b864 0x00013864 4   5    .rodata ascii POST
+7   0x0000b874 0x00013874 4   5    .rodata ascii bin/
+8   0x0000b87c 0x0001387c 4   5    .rodata ascii lib/
+9   0x0000b884 0x00013884 6   7    .rodata ascii /proc/
+10  0x0000b88c 0x0001388c 4   5    .rodata ascii /exe
+11  0x0000b898 0x00013898 12  13   .rodata ascii get haxored!
+12  0x0000b8b0 0x000138b0 32  33   .rodata ascii w5q6he3dbrsgmclkiu4to18npavj702f
+13  0x0000b8d4 0x000138d4 8   9    .rodata ascii RCQQUMPF
+14  0x0000b8e8 0x000138e8 4   5    .rodata ascii WQGP
+15  0x0000b8f0 0x000138f0 4   5    .rodata ascii RCQQ
+16  0x0000b8f8 0x000138f8 5   6    .rodata ascii CFOKL
+17  0x0000b90c 0x0001390c 8   9    .rodata ascii QOACFOKL
+18  0x0000b930 0x00013930 13  14   .rodata ascii cFOKLKQVPCVMP
+19  0x0000b940 0x00013940 6   7    .rodata ascii OGKLQO
+20  0x0000b948 0x00013948 7   8    .rodata ascii QGPTKAG
+21  0x0000b950 0x00013950 10  11   .rodata ascii QWRGPTKQMP
+22  0x0000b95c 0x0001395c 5   6    .rodata ascii EWGQV
+23  0x0000b964 0x00013964 5   6    .rodata ascii CFOKL
+24  0x0000b96c 0x0001396c 13  14   .rodata ascii CFOKLKQVPCVMP
+25  0x0000b97c 0x0001397c 4   5    .rodata ascii W@LV
+26  0x0000b99c 0x0001399c 5   6    .rodata ascii HT@XF
+27  0x0000b9a4 0x000139a4 4   5    .rodata ascii CLIM
+28  0x0000b9ac 0x000139ac 5   6    .rodata ascii XNZZ\f
+29  0x0000b9b5 0x000139b5 5   6    .rodata ascii WHoIM
+30  0x0000b9bb 0x000139bb 5   6    .rodata ascii TKXZT
+31  0x0000b9c5 0x000139c5 5   6    .rodata ascii WHoIM
+32  0x0000b9cb 0x000139cb 5   6    .rodata ascii CFOKL
+33  0x0000b9d4 0x000139d4 6   7    .rodata ascii Q[QVGO
+34  0x0000b9dc 0x000139dc 4   5    .rodata ascii KIU@
+35  0x0000b9e4 0x000139e4 8   9    .rodata ascii FPGCO@MZ
+36  0x0000b9f0 0x000139f0 7   8    .rodata ascii PGCNVGI
+37  0x0000ba14 0x00013a14 6   7    .rodata ascii OMVJGP
+38  0x0000ba1c 0x00013a1c 6   7    .rodata ascii DWAIGP
+39  0x0000ba24 0x00013a24 4   5    .rodata ascii ogin
+40  0x0000ba2c 0x00013a2c 5   6    .rodata ascii enter
+41  0x0000ba34 0x00013a34 7   8    .rodata ascii assword
+42  0x0000ba3c 0x00013a3c 4   5    .rodata ascii PMMV
+43  0x0000ba4c 0x00013a4c 5   6    .rodata ascii TKXZT
+44  0x0000ba54 0x00013a54 5   6    .rodata ascii CFOKL
+45  0x0000ba64 0x00013a64 7   8    .rodata ascii ZOJFKRA
+46  0x0000ba6c 0x00013a6c 7   8    .rodata ascii FGDCWNV
+47  0x0000ba74 0x00013a74 8   9    .rodata ascii HWCLVGAJ
+48  0x0000ba90 0x00013a90 7   8    .rodata ascii QWRRMPV
+49  0x0000baa4 0x00013aa4 9   10   .rodata ascii NKQVGLKLE
+50  0x0000bab8 0x00013ab8 17  18   .rodata ascii TRL\fIMOCPW\fVMFC["
+51  0x0000bacc 0x00013acc 14  15   .rodata ascii \rFGT\rUCVAJFME"
+52  0x0000badc 0x00013adc 19  20   .rodata ascii \rFGT\rOKQA\rUCVAJFME"
+53  0x0000baf0 0x00013af0 20  21   .rodata ascii \rDJ\rGZVGLF\rUCVAJFME"
+54  0x0000bb08 0x00013b08 7   8    .rodata ascii vqMWPAG
+55  0x0000bb10 0x00013b10 6   7    .rodata ascii gLEKLG
+56  0x0000bb17 0x00013b17 6   7    .rodata ascii sWGP["
+57  0x0000bb20 0x00013b20 17  18   .rodata ascii \rGVA\rPGQMNT\fAMLD"
+58  0x0000bb34 0x00013b34 10  11   .rodata ascii LCOGQGPTGP
+59  0x0000bb44 0x00013b44 4   5    .rodata ascii mRGL
+60  0x0000bb50 0x00013b50 6   7    .rodata ascii TGPKD[
+61  0x0000bb5c 0x00013b5c 7   8    .rodata ascii PCLFlWO
+62  0x0000bb68 0x00013b68 12  13   .rodata ascii qGEOGLVCVKML
+63  0x0000bb75 0x00013b75 6   7    .rodata ascii DCWNV"
+64  0x0000bb7c 0x00013b7c 7   8    .rodata ascii kNNGECN
+65  0x0000bb84 0x00013b84 12  13   .rodata ascii KLQVPWAVKML"
+66  0x0000bb94 0x00013b94 6   7    .rodata ascii zdaed"
+67  0x0000bb9c 0x00013b9c 4   5    .rodata ascii gajm
+68  0x0000bba2 0x00013ba2 6   7    .rodata ascii CRRNGV
+69  0x0000bbad 0x00013bad 6   7    .rodata ascii DMWLF"
+70  0x0000bbb4 0x00013bb4 6   7    .rodata ascii QJGNN"
+71  0x0000bbbc 0x00013bbc 7   8    .rodata ascii GLC@NG"
+72  0x0000bbc4 0x00013bc4 7   8    .rodata ascii Q[QVGO"
+73  0x0000bbd0 0x00013bd0 12  13   .rodata ascii \r@KL\r@WQ[@MZ
+74  0x0000bbdd 0x00013bdd 6   7    .rodata ascii okpck"
+75  0x0000bbe4 0x00013be4 5   6    .rodata ascii okpck
+76  0x0000bbeb 0x00013beb 6   7    .rodata ascii CRRNGV
+77  0x0000bbf6 0x00013bf6 6   7    .rodata ascii DMWLF"
+78  0x0000bc00 0x00013c00 12  13   .rodata ascii \r@KL\r@WQ[@MZ
+79  0x0000bc14 0x00013c14 12  13   .rodata ascii \r@KL\r@WQ[@MZ
+80  0x0000bc21 0x00013c21 4   5    .rodata ascii IKNN
+81  0x0000bc2c 0x00013c2c 8   9    .rodata ascii CQQUMPF"
+82  0x0000bc38 0x00013c38 5   6    .rodata ascii MEKL"
+83  0x0000bc40 0x00013c40 6   7    .rodata ascii GLVGP"
+84  0x0000bc48 0x00013c48 9   10   .rodata ascii LAMPPGAV"
+85  0x0000bc54 0x00013c54 6   7    .rodata ascii vGNLGV
+86  0x0000bc5b 0x00013c5b 9   10   .rodata ascii mRGLmLAG"
+87  0x0000bc68 0x00013c68 10  11   .rodata ascii aMLLGAVKML
+88  0x0000bc74 0x00013c74 4   5    .rodata ascii IGGR
+89  0x0000bc79 0x00013c79 6   7    .rodata ascii CNKTG"
+90  0x0000bc80 0x00013c80 6   7    .rodata ascii cAAGRV
+91  0x0000bc88 0x00013c88 9   10   .rodata ascii VGZV\rJVON
+92  0x0000bc92 0x00013c92 21  22   .rodata ascii CRRNKACVKML\rZJVON\tZON
+93  0x0000bca8 0x00013ca8 15  16   .rodata ascii CRRNKACVKML\rZON
+94  0x0000bcbe 0x00013cbe 10  11   .rodata ascii KOCEG\rUG@R
+95  0x0000bcd4 0x00013cd4 6   7    .rodata ascii cAAGRV
+96  0x0000bcdb 0x00013cdb 8   9    .rodata ascii nCLEWCEG
+97  0x0000bcf8 0x00013cf8 7   8    .rodata ascii aMLVGLV
+98  0x0000bd00 0x00013d00 4   5    .rodata ascii v[RG
+99  0x0000bd06 0x00013d06 13  14   .rodata ascii CRRNKACVKML\rZ
+100 0x0000bd18 0x00013d18 4   5    .rodata ascii DMPO
+101 0x0000bd1d 0x00013d1d 11  12   .rodata ascii WPNGLAMFGF"
+102 0x0000bd2c 0x00013d2c 10  11   .rodata ascii QGVaMMIKG\n
+103 0x0000bd3c 0x00013d3c 7   8    .rodata ascii PGDPGQJ
+104 0x0000bd48 0x00013d48 8   9    .rodata ascii NMACVKML
+105 0x0000bd58 0x00013d58 6   7    .rodata ascii AMMIKG
+106 0x0000bd64 0x00013d64 7   8    .rodata ascii AMLVGLV
+107 0x0000bd6c 0x00013d6c 6   7    .rodata ascii NGLEVJ
+108 0x0000bd78 0x00013d78 8   9    .rodata ascii VPCLQDGP
+109 0x0000bd81 0x00013d81 8   9    .rodata ascii GLAMFKLE
+110 0x0000bd8c 0x00013d8c 8   9    .rodata ascii AJWLIGF"
+111 0x0000bd98 0x00013d98 10  11   .rodata ascii AMLLGAVKML
+112 0x0000bda8 0x00013da8 6   7    .rodata ascii QGPTGP
+113 0x0000bdb0 0x00013db0 10  11   .rodata ascii FMQCPPGQV"
+114 0x0000bdbc 0x00013dbc 6   7    .rodata ascii QGPTGP
+115 0x0000bdc4 0x00013dc4 10  11   .rodata ascii ANMWFDNCPG
+116 0x0000bdcf 0x00013dcf 6   7    .rodata ascii LEKLZ"
+117 0x0000bdd8 0x00013dd8 8   9    .rodata ascii oMXKNNC\r
+118 0x0000bde4 0x00013de4 8   9    .rodata ascii \nuKLFMUQ
+119 0x0000bdfd 0x00013dfd 12  13   .rodata ascii cRRNGuG@iKV\r
+120 0x0000be10 0x00013e10 6   7    .rodata ascii \nijvon
+121 0x0000be18 0x00013e18 4   5    .rodata ascii NKIG
+122 0x0000be1d 0x00013e1d 6   7    .rodata ascii eGAIM\v
+123 0x0000be24 0x00013e24 7   8    .rodata ascii aJPMOG\r
+124 0x0000be39 0x00013e39 7   8    .rodata ascii qCDCPK\r
+125 0x0000be48 0x00013e48 8   9    .rodata ascii oMXKNNC\r
+126 0x0000be54 0x00013e54 8   9    .rodata ascii \nuKLFMUQ
+127 0x0000be6d 0x00013e6d 12  13   .rodata ascii cRRNGuG@iKV\r
+128 0x0000be80 0x00013e80 6   7    .rodata ascii \nijvon
+129 0x0000be88 0x00013e88 4   5    .rodata ascii NKIG
+130 0x0000be8d 0x00013e8d 6   7    .rodata ascii eGAIM\v
+131 0x0000be94 0x00013e94 7   8    .rodata ascii aJPMOG\r
+132 0x0000bea9 0x00013ea9 7   8    .rodata ascii qCDCPK\r
+133 0x0000beb8 0x00013eb8 8   9    .rodata ascii oMXKNNC\r
+134 0x0000bec4 0x00013ec4 8   9    .rodata ascii \nuKLFMUQ
+135 0x0000bedc 0x00013edc 12  13   .rodata ascii cRRNGuG@iKV\r
+136 0x0000beef 0x00013eef 6   7    .rodata ascii \nijvon
+137 0x0000bef7 0x00013ef7 4   5    .rodata ascii NKIG
+138 0x0000befc 0x00013efc 6   7    .rodata ascii eGAIM\v
+139 0x0000bf03 0x00013f03 7   8    .rodata ascii aJPMOG\r
+140 0x0000bf18 0x00013f18 7   8    .rodata ascii qCDCPK\r
+141 0x0000bf28 0x00013f28 8   9    .rodata ascii oMXKNNC\r
+142 0x0000bf34 0x00013f34 8   9    .rodata ascii \nuKLFMUQ
+143 0x0000bf4c 0x00013f4c 12  13   .rodata ascii cRRNGuG@iKV\r
+144 0x0000bf5f 0x00013f5f 6   7    .rodata ascii \nijvon
+145 0x0000bf67 0x00013f67 4   5    .rodata ascii NKIG
+146 0x0000bf6c 0x00013f6c 6   7    .rodata ascii eGAIM\v
+147 0x0000bf73 0x00013f73 7   8    .rodata ascii aJPMOG\r
+148 0x0000bf88 0x00013f88 7   8    .rodata ascii qCDCPK\r
+149 0x0000bf98 0x00013f98 8   9    .rodata ascii oMXKNNC\r
+150 0x0000bfa4 0x00013fa4 10  11   .rodata ascii \noCAKLVMQJ
+151 0x0000bfb0 0x00013fb0 5   6    .rodata ascii kLVGN
+152 0x0000bfc8 0x00013fc8 12  13   .rodata ascii cRRNGuG@iKV\r
+153 0x0000bfdc 0x00013fdc 6   7    .rodata ascii \nijvon
+154 0x0000bfe4 0x00013fe4 4   5    .rodata ascii NKIG
+155 0x0000bfe9 0x00013fe9 6   7    .rodata ascii eGAIM\v
+156 0x0000bff0 0x00013ff0 10  11   .rodata ascii tGPQKML\r\e\f
+157 0x0000bffe 0x00013ffe 7   8    .rodata ascii qCDCPK\r
+158 0x0000c010 0x00014010 9   10   .rodata ascii \rAOFNKLG"
+159 0x0000c01c 0x0001401c 11  12   .rodata ascii \rTCP\rqMDKC"
+160 0x0000c028 0x00014028 7   8    .rodata ascii \rRPMA\r"
+161 0x0000c030 0x00014030 5   6    .rodata ascii \rGZG"
+162 0x0000c039 0x00014039 10  11   .rodata ascii \nFGNGVGF\v"
+163 0x0000c044 0x00014044 4   5    .rodata ascii \rDF"
+164 0x0000c04c 0x0001404c 7   8    .rodata ascii \fCLKOG"
+165 0x0000c054 0x00014054 8   9    .rodata ascii \rQVCVWQ"
+166 0x0000c060 0x00014060 6   7    .rodata ascii pgrmpv
+167 0x0000c070 0x00014070 10  11   .rodata ascii jvvrdnmmf"
+168 0x0000c07c 0x0001407c 10  11   .rodata ascii nmnlmevdm"
+169 0x0000c0ac 0x000140ac 8   9    .rodata ascii XMNNCPF"
+170 0x0000c0b8 0x000140b8 11  12   .rodata ascii egvnmacnkr"
+arch     arm
+baddr    0x8000
+binsz    49800
+bintype  elf
+bits     32
+canary   false
+class    ELF32
+crypto   false
+endian   little
+havecode true
+intrp    /lib/ld-uClibc.so.0
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  ARM
+nx       false
+os       linux
+pic      false
+relocs   false
+relro    no
+rpath    NONE
+sanitize false
+static   false
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF MAGIC   0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x0028
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00008fec
+0x0000001c  PhOff       0x00000034
+0x00000020  ShOff       0x0000c2fc
+0x00000024  Flags       0x00000002
+0x00000028  EhSize      52
+0x0000002a  PhentSize   32
+0x0000002c  PhNum       6
+0x0000002e  ShentSize   40
+0x00000030  ShNum       18
+0x00000032  ShrStrndx   17
+[Linked libraries]
+libc.so.0
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0001c180 0x0000c180 SET_32 ioctl
+0x0001c184 0x0000c184 SET_32 recv
+0x0001c188 0x0000c188 SET_32 connect
+0x0001c18c 0x0000c18c SET_32 sigemptyset
+0x0001c190 0x0000c190 SET_32 memmove
+0x0001c194 0x0000c194 SET_32 usleep
+0x0001c198 0x0000c198 SET_32 getpid
+0x0001c19c 0x0000c19c SET_32 prctl
+0x0001c1a0 0x0000c1a0 SET_32 memcpy
+0x0001c1a4 0x0000c1a4 SET_32 readlink
+0x0001c1a8 0x0000c1a8 SET_32 malloc
+0x0001c1ac 0x0000c1ac SET_32 sleep
+0x0001c1b0 0x0000c1b0 SET_32 recvfrom
+0x0001c1b4 0x0000c1b4 SET_32 socket
+0x0001c1b8 0x0000c1b8 SET_32 select
+0x0001c1bc 0x0000c1bc SET_32 readdir
+0x0001c1c0 0x0000c1c0 SET_32 sigaddset
+0x0001c1c4 0x0000c1c4 SET_32 send
+0x0001c1c8 0x0000c1c8 SET_32 abort
+0x0001c1cc 0x0000c1cc SET_32 accept
+0x0001c1d0 0x0000c1d0 SET_32 basename
+0x0001c1d4 0x0000c1d4 SET_32 calloc
+0x0001c1d8 0x0000c1d8 SET_32 write
+0x0001c1dc 0x0000c1dc SET_32 kill
+0x0001c1e0 0x0000c1e0 SET_32 strcat
+0x0001c1e4 0x0000c1e4 SET_32 bind
+0x0001c1e8 0x0000c1e8 SET_32 inet_addr
+0x0001c1ec 0x0000c1ec SET_32 setsockopt
+0x0001c1f0 0x0000c1f0 SET_32 strstr
+0x0001c1f4 0x0000c1f4 SET_32 rand
+0x0001c1f8 0x0000c1f8 SET_32 signal
+0x0001c1fc 0x0000c1fc SET_32 read
+0x0001c200 0x0000c200 SET_32 unlink
+0x0001c204 0x0000c204 SET_32 sendto
+0x0001c208 0x0000c208 SET_32 realloc
+0x0001c20c 0x0000c20c SET_32 listen
+0x0001c210 0x0000c210 SET_32 fork
+0x0001c214 0x0000c214 SET_32 __uClibc_main
+0x0001c218 0x0000c218 SET_32 memset
+0x0001c21c 0x0000c21c SET_32 getppid
+0x0001c220 0x0000c220 SET_32 time
+0x0001c224 0x0000c224 SET_32 opendir
+0x0001c228 0x0000c228 SET_32 strcmp
+0x0001c22c 0x0000c22c SET_32 getsockopt
+0x0001c230 0x0000c230 SET_32 __errno_location
+0x0001c234 0x0000c234 SET_32 exit
+0x0001c238 0x0000c238 SET_32 atoi
+0x0001c23c 0x0000c23c SET_32 strlen
+0x0001c240 0x0000c240 SET_32 open
+0x0001c244 0x0000c244 SET_32 clock
+0x0001c248 0x0000c248 SET_32 setsid
+0x0001c24c 0x0000c24c SET_32 closedir
+0x0001c250 0x0000c250 SET_32 fcntl
+0x0001c254 0x0000c254 SET_32 close
+0x0001c258 0x0000c258 SET_32 free
+0x0001c25c 0x0000c25c SET_32 sigprocmask
+0x0001c260 0x0000c260 SET_32 getsockname
+
+
+57 relocations
+49800
+Section to Segment mapping:
+Segment   Section
+-----------------
+PHDR      
+INTERP    .interp 
+LOAD0     .interp .hash .dynsym .dynstr .rel.plt .init .plt .text .fini .rodata 
+LOAD1     .ctors .dtors .dynamic .got .data .bss 
+DYNAMIC   .dynamic 
+GNU_STACK 
+ehdr      
+
+

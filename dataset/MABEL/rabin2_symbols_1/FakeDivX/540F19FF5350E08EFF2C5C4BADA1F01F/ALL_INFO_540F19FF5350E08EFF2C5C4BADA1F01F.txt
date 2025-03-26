@@ -1,0 +1,528 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1200 0x00401000   0x2000 -r-x .text
+1   0x00001600   0x800 0x00403000   0x1000 -r-x .text2
+2   0x00001e00   0x200 0x00404000   0x1000 -rw- .data
+3   0x00002000   0x200 0x00405000   0x1000 -r-- .data2
+4   0x00002200  0x5a00 0x00406000   0x6000 -r-- .data_1
+5   0x00007c00   0x400 0x0040c000  0xfa000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401a90 paddr=0x00000e90 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00406010 NONE FUNC KERNEL32.dll FormatMessageW
+2   0x00406014 NONE FUNC KERNEL32.dll GetModuleFileNameW
+3   0x00406018 NONE FUNC KERNEL32.dll GetModuleHandleA
+4   0x0040601c NONE FUNC KERNEL32.dll GetUserDefaultLangID
+5   0x00406020 NONE FUNC KERNEL32.dll GetStartupInfoA
+6   0x00406024 NONE FUNC KERNEL32.dll lstrcmpA
+7   0x00406028 NONE FUNC KERNEL32.dll lstrlenA
+8   0x0040602c NONE FUNC KERNEL32.dll WriteFile
+9   0x00406030 NONE FUNC KERNEL32.dll VirtualAlloc
+10  0x00406034 NONE FUNC KERNEL32.dll CreateFileA
+11  0x00406038 NONE FUNC KERNEL32.dll MultiByteToWideChar
+1   0x00406040 NONE FUNC USER32.dll   MessageBoxW
+2   0x00406044 NONE FUNC USER32.dll   ShowWindow
+3   0x00406048 NONE FUNC USER32.dll   UpdateWindow
+4   0x0040604c NONE FUNC USER32.dll   LoadCursorW
+5   0x00406050 NONE FUNC USER32.dll   LoadCursorA
+6   0x00406054 NONE FUNC USER32.dll   CreateWindowExA
+1   0x00406008 NONE FUNC GDI32.dll    GetStockObject
+1   0x00406000 NONE FUNC ADVAPI32.dll RegOpenKeyExW
+1   0x00406094 NONE FUNC ole32.dll    CoInitialize
+2   0x00406098 NONE FUNC ole32.dll    CoCreateInstance
+3   0x0040609c NONE FUNC ole32.dll    CLSIDFromProgID
+4   0x004060a0 NONE FUNC ole32.dll    CoUninitialize
+1   0x0040605c NONE FUNC msvcrt.dll   exit
+2   0x00406060 NONE FUNC msvcrt.dll   _initterm
+3   0x00406064 NONE FUNC msvcrt.dll   _exit
+4   0x00406068 NONE FUNC msvcrt.dll   _except_handler3
+5   0x0040606c NONE FUNC msvcrt.dll   _controlfp
+6   0x00406070 NONE FUNC msvcrt.dll   _XcptFilter
+7   0x00406074 NONE FUNC msvcrt.dll   __getmainargs
+8   0x00406078 NONE FUNC msvcrt.dll   __p__commode
+9   0x0040607c NONE FUNC msvcrt.dll   __p__fmode
+10  0x00406080 NONE FUNC msvcrt.dll   __set_app_type
+11  0x00406084 NONE FUNC msvcrt.dll   __setusermatherr
+12  0x00406088 NONE FUNC msvcrt.dll   _acmdln
+13  0x0040608c NONE FUNC msvcrt.dll   _adjust_fdiv
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002210 0x00406010 NONE FUNC 0    KERNEL32.dll imp.FormatMessageW
+2   0x00002214 0x00406014 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+3   0x00002218 0x00406018 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+4   0x0000221c 0x0040601c NONE FUNC 0    KERNEL32.dll imp.GetUserDefaultLangID
+5   0x00002220 0x00406020 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+6   0x00002224 0x00406024 NONE FUNC 0    KERNEL32.dll imp.lstrcmpA
+7   0x00002228 0x00406028 NONE FUNC 0    KERNEL32.dll imp.lstrlenA
+8   0x0000222c 0x0040602c NONE FUNC 0    KERNEL32.dll imp.WriteFile
+9   0x00002230 0x00406030 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+10  0x00002234 0x00406034 NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+11  0x00002238 0x00406038 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+1   0x00002240 0x00406040 NONE FUNC 0    USER32.dll   imp.MessageBoxW
+2   0x00002244 0x00406044 NONE FUNC 0    USER32.dll   imp.ShowWindow
+3   0x00002248 0x00406048 NONE FUNC 0    USER32.dll   imp.UpdateWindow
+4   0x0000224c 0x0040604c NONE FUNC 0    USER32.dll   imp.LoadCursorW
+5   0x00002250 0x00406050 NONE FUNC 0    USER32.dll   imp.LoadCursorA
+6   0x00002254 0x00406054 NONE FUNC 0    USER32.dll   imp.CreateWindowExA
+1   0x00002208 0x00406008 NONE FUNC 0    GDI32.dll    imp.GetStockObject
+1   0x00002200 0x00406000 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExW
+1   0x00002294 0x00406094 NONE FUNC 0    ole32.dll    imp.CoInitialize
+2   0x00002298 0x00406098 NONE FUNC 0    ole32.dll    imp.CoCreateInstance
+3   0x0000229c 0x0040609c NONE FUNC 0    ole32.dll    imp.CLSIDFromProgID
+4   0x000022a0 0x004060a0 NONE FUNC 0    ole32.dll    imp.CoUninitialize
+1   0x0000225c 0x0040605c NONE FUNC 0    msvcrt.dll   imp.exit
+2   0x00002260 0x00406060 NONE FUNC 0    msvcrt.dll   imp._initterm
+3   0x00002264 0x00406064 NONE FUNC 0    msvcrt.dll   imp._exit
+4   0x00002268 0x00406068 NONE FUNC 0    msvcrt.dll   imp._except_handler3
+5   0x0000226c 0x0040606c NONE FUNC 0    msvcrt.dll   imp._controlfp
+6   0x00002270 0x00406070 NONE FUNC 0    msvcrt.dll   imp._XcptFilter
+7   0x00002274 0x00406074 NONE FUNC 0    msvcrt.dll   imp.__getmainargs
+8   0x00002278 0x00406078 NONE FUNC 0    msvcrt.dll   imp.__p__commode
+9   0x0000227c 0x0040607c NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+10  0x00002280 0x00406080 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+11  0x00002284 0x00406084 NONE FUNC 0    msvcrt.dll   imp.__setusermatherr
+12  0x00002288 0x00406088 NONE FUNC 0    msvcrt.dll   imp._acmdln
+13  0x0000228c 0x0040608c NONE FUNC 0    msvcrt.dll   imp._adjust_fdiv
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001e08 0x00404008 4   5    .data   ascii   3333
+1   0x00001e18 0x00404018 33  68   .data   utf16le protocols\name-space handler\mk\*
+0   0x00002991 0x00406791 4   5    .data_1 ascii   f*b|
+1   0x0000299e 0x0040679e 8   9    .data_1 ascii   CS9ocd|H
+2   0x00002b2b 0x0040692b 5   8    .data_1 utf8    \t骣\tMU blocks=Basic Latin,CJK Unified Ideographs
+3   0x00002be3 0x004069e3 4   5    .data_1 ascii   dx`k
+4   0x00002c09 0x00406a09 6   7    .data_1 ascii   ^VaE;\n
+5   0x00002f43 0x00406d43 5   6    .data_1 ascii   z\vvL"
+6   0x00002f4e 0x00406d4e 5   6    .data_1 ascii   ER<Um
+7   0x00002f82 0x00406d82 6   7    .data_1 ascii   cr{AEd
+8   0x00002fed 0x00406ded 6   7    .data_1 ascii   MXkDM,
+9   0x00003019 0x00406e19 5   6    .data_1 ascii   \a@\t<e
+10  0x00003107 0x00406f07 4   6    .data_1 utf8    pقuH blocks=Basic Latin,Arabic
+11  0x00003123 0x00406f23 5   7    .data_1 utf8    u_^Pؖ blocks=Basic Latin,Arabic
+12  0x000031a9 0x00406fa9 4   5    .data_1 ascii   \fRdP
+13  0x000031b7 0x00406fb7 4   5    .data_1 ascii   [wEq
+14  0x00003238 0x00407038 4   5    .data_1 ascii   LVL\n
+15  0x00003242 0x00407042 4   5    .data_1 ascii   DZS\a
+16  0x00003267 0x00407067 12  13   .data_1 ascii    DY>4(M><(eK
+17  0x00003279 0x00407079 7   8    .data_1 ascii   Up5{-3t
+18  0x000032d2 0x004070d2 4   5    .data_1 ascii   Dye(
+19  0x000032ee 0x004070ee 4   5    .data_1 ascii   kIe.
+20  0x0000337d 0x0040717d 4   5    .data_1 ascii   _QW>
+21  0x0000338c 0x0040718c 4   5    .data_1 ascii   ;Y>A
+22  0x00003402 0x00407202 4   5    .data_1 ascii   [v}\r
+23  0x00003453 0x00407253 6   7    .data_1 ascii   R9@YL\
+24  0x000034be 0x004072be 4   5    .data_1 ascii   h\t}q
+25  0x000034cd 0x004072cd 7   8    .data_1 ascii   YLs}1$9
+26  0x000034dd 0x004072dd 4   5    .data_1 ascii   dL\nS
+27  0x0000352b 0x0040732b 5   6    .data_1 ascii   \vYL#E
+28  0x00003573 0x00407373 4   5    .data_1 ascii   }a,%
+29  0x00003602 0x00407402 5   6    .data_1 ascii   |j&L-
+30  0x0000360d 0x0040740d 4   5    .data_1 ascii   c9%K
+31  0x00003618 0x00407418 4   5    .data_1 ascii   oIls
+32  0x0000368f 0x0040748f 5   6    .data_1 ascii   L|\bm3
+33  0x000036a2 0x004074a2 4   5    .data_1 ascii   _Max
+34  0x000036a8 0x004074a8 4   5    .data_1 ascii   \tPXj
+35  0x000036f3 0x004074f3 6   7    .data_1 ascii   c:CWa\n
+36  0x000036fe 0x004074fe 4   5    .data_1 ascii   IPY$
+37  0x00003748 0x00407548 4   5    .data_1 ascii   \nYLu
+38  0x000037b5 0x004075b5 4   5    .data_1 ascii   LuE]
+39  0x000037c7 0x004075c7 8   10   .data_1 utf8    \nYLuE1ɶ\f blocks=Basic Latin,IPA Extensions
+40  0x000037db 0x004075db 5   6    .data_1 ascii   \bYL]V
+41  0x000037e1 0x004075e1 4   5    .data_1 ascii   4.\tY
+42  0x00003846 0x00407646 4   5    .data_1 ascii   CY(e
+43  0x000039f2 0x004077f2 4   7    .data_1 utf8    \tW?愅 blocks=Basic Latin,CJK Unified Ideographs
+44  0x00003a8f 0x0040788f 7   9    .data_1 utf8    D<:@Y\rE
+45  0x00003abb 0x004078bb 4   5    .data_1 ascii   V\aJ0
+46  0x00003acb 0x004078cb 5   6    .data_1 ascii   r&yF)
+47  0x00003b59 0x00407959 4   7    .data_1 utf8    CY<m
+48  0x00003bac 0x004079ac 4   5    .data_1 ascii   4%1|
+49  0x00003bb9 0x004079b9 6   7    .data_1 ascii   Ls\t7-j
+50  0x00003c42 0x00407a42 7   8    .data_1 ascii   J)]{A8%
+51  0x00003c8b 0x00407a8b 4   5    .data_1 ascii   h$yI
+52  0x00003c91 0x00407a91 4   6    .data_1 utf8    \e{\a3
+53  0x00003cea 0x00407aea 4   5    .data_1 ascii   MX?L
+54  0x00003cf5 0x00407af5 4   6    .data_1 utf8    2M|D
+55  0x00003cfd 0x00407afd 4   7    .data_1 utf8    \tQYꆅ blocks=Basic Latin,Yi Syllables
+56  0x00003db2 0x00407bb2 5   6    .data_1 ascii   V>C\aY
+57  0x00003e26 0x00407c26 4   7    .data_1 utf8    ,_ɂG blocks=Basic Latin,Latin Extended-B
+58  0x00003f60 0x00407d60 4   6    .data_1 utf8    wτ=\ blocks=Basic Latin,Greek and Coptic
+59  0x00003fe4 0x00407de4 4   5    .data_1 ascii   K@Yj
+60  0x00003ff7 0x00407df7 4   5    .data_1 ascii   &^[n
+61  0x00004090 0x00407e90 4   5    .data_1 ascii   CY8m
+62  0x000040ff 0x00407eff 7   8    .data_1 ascii   V=8eo'*
+63  0x0000410d 0x00407f0d 4   5    .data_1 ascii   *0jm
+64  0x00004138 0x00407f38 5   6    .data_1 ascii   Y6\t-z
+65  0x00004193 0x00407f93 4   5    .data_1 ascii   Js\tl
+66  0x0000422d 0x0040802d 4   6    .data_1 utf8    jȖ-h blocks=Basic Latin,Latin Extended-B
+67  0x00004248 0x00408048 4   5    .data_1 ascii   9@p3
+68  0x0000424d 0x0040804d 4   5    .data_1 ascii   ui\r|
+69  0x00004268 0x00408068 7   8    .data_1 ascii   c\fH\a8@0
+70  0x000042bc 0x004080bc 4   5    .data_1 ascii   \fpK\t
+71  0x00004378 0x00408178 5   7    .data_1 utf8    V\ak?͙ blocks=Basic Latin,Combining Diacritical Marks
+72  0x0000438d 0x0040818d 4   6    .data_1 utf8    &'ٱ0 blocks=Basic Latin,Arabic
+73  0x00004412 0x00408212 4   5    .data_1 ascii   N\r<-
+74  0x00004421 0x00408221 4   5    .data_1 ascii   9)]0
+75  0x0000442b 0x0040822b 6   7    .data_1 ascii   Z:L]sp
+76  0x00004437 0x00408237 4   5    .data_1 ascii   Z&|A
+77  0x000044bb 0x004082bb 4   7    .data_1 utf8    Ä$ՀY blocks=Latin-1 Supplement,Basic Latin,Armenian
+78  0x000045df 0x004083df 4   5    .data_1 ascii   'iZ\n
+79  0x0000467a 0x0040847a 5   7    .data_1 utf8    ʚT0A) blocks=IPA Extensions,Basic Latin
+80  0x00004691 0x00408491 4   6    .data_1 utf8    Gޞ"/ blocks=Basic Latin,Thaana
+81  0x0000469b 0x0040849b 5   8    .data_1 utf8    i\v;Ն" blocks=Basic Latin,Armenian
+82  0x000046f0 0x004084f0 4   5    .data_1 ascii   , Q)
+83  0x00004792 0x00408592 4   5    .data_1 ascii   \e)}g
+84  0x0000479d 0x0040859d 4   5    .data_1 ascii   ,47\f
+85  0x000047a6 0x004085a6 4   5    .data_1 ascii   /;)U
+86  0x0000483f 0x0040863f 4   5    .data_1 ascii   EX8l
+87  0x000048c1 0x004086c1 5   6    .data_1 ascii   GVC\n=
+88  0x000048f2 0x004086f2 5   6    .data_1 ascii   7U$Q\a
+89  0x000048ff 0x004086ff 4   5    .data_1 ascii    \n^\n
+90  0x00004951 0x00408751 4   5    .data_1 ascii   {[t"
+91  0x00004bae 0x004089ae 7   11   .data_1 utf8    Y搔ԣ`d\$ blocks=Basic Latin,CJK Unified Ideographs,Cyrillic Supplement
+92  0x00004c5f 0x00408a5f 4   5    .data_1 ascii   8\v`\t
+93  0x00004c77 0x00408a77 4   5    .data_1 ascii   %iJu
+94  0x00004ce5 0x00408ae5 4   5    .data_1 ascii   +p~k
+95  0x00004d77 0x00408b77 6   7    .data_1 ascii   !fp\bao
+96  0x00004d87 0x00408b87 4   5    .data_1 ascii   \bOVk
+97  0x00004d93 0x00408b93 4   5    .data_1 ascii   ^1$\b
+98  0x00004dff 0x00408bff 4   5    .data_1 ascii   v=`=
+99  0x00004e1e 0x00408c1e 6   7    .data_1 ascii   Yb5!u\a
+100 0x00004e30 0x00408c30 5   6    .data_1 ascii   ]3K\n\n
+101 0x00004e36 0x00408c36 4   5    .data_1 ascii   Yc_W
+102 0x00004e3d 0x00408c3d 5   6    .data_1 ascii   4\t<Sc
+103 0x00005083 0x00408e83 4   6    .data_1 utf8    s`lͱ blocks=Basic Latin,Greek and Coptic
+104 0x0000508f 0x00408e8f 4   5    .data_1 ascii   tgAp
+105 0x000050fb 0x00408efb 5   6    .data_1 ascii   hm]n\t
+106 0x00005115 0x00408f15 5   6    .data_1 ascii   Y?\fG4
+107 0x00005139 0x00408f39 4   5    .data_1 ascii   Z>[t
+108 0x00005181 0x00408f81 7   8    .data_1 ascii   \n\nXXEit
+109 0x0000519e 0x00408f9e 7   8    .data_1 ascii   \nD|fhtt
+110 0x000051ae 0x00408fae 4   5    .data_1 ascii   'amp
+111 0x000051c7 0x00408fc7 6   7    .data_1 ascii   V:r\f`K
+112 0x0000525b 0x0040905b 5   6    .data_1 ascii   Zzl5/
+113 0x0000533e 0x0040913e 8   9    .data_1 ascii   teoCrBeI
+114 0x00005349 0x00409149 13  14   .data_1 ascii   2rnOPrgKU~Lx1
+115 0x00005357 0x00409157 6   7    .data_1 ascii   HDvvYI
+116 0x0000535f 0x0040915f 5   6    .data_1 ascii   'd\k\t
+117 0x00005377 0x00409177 5   7    .data_1 utf8    LL̢;. blocks=Basic Latin,Combining Diacritical Marks
+118 0x00005827 0x00409627 5   6    .data_1 ascii   8im58
+119 0x00006629 0x0040a429 4   5    .data_1 ascii   },x0
+120 0x00006634 0x0040a434 4   5    .data_1 ascii   FQ*L
+121 0x0000663e 0x0040a43e 4   5    .data_1 ascii   36kM
+122 0x00006651 0x0040a451 8   12   .data_1 utf8    \f,僭ςEa*L blocks=Basic Latin,CJK Unified Ideographs,Greek and Coptic
+123 0x00006663 0x0040a463 5   6    .data_1 ascii   \nQ=*\
+124 0x0000666d 0x0040a46d 7   8    .data_1 ascii   !{\nMQ*D
+125 0x0000667b 0x0040a47b 5   6    .data_1 ascii   \nEa*L
+126 0x000066ba 0x0040a4ba 5   6    .data_1 ascii   \nUa*\
+127 0x000066c6 0x0040a4c6 5   6    .data_1 ascii   \nMQ*D
+128 0x000066ee 0x0040a4ee 5   6    .data_1 ascii   \nEa*L
+129 0x00006713 0x0040a513 4   5    .data_1 ascii   \f)*D
+130 0x00006753 0x0040a553 4   6    .data_1 utf8    ɳL\br blocks=IPA Extensions,Basic Latin
+131 0x00006792 0x0040a592 5   6    .data_1 ascii   d's\th
+132 0x0000679e 0x0040a59e 4   6    .data_1 utf8    Q֠m6 blocks=Basic Latin,Hebrew
+133 0x000067a8 0x0040a5a8 4   5    .data_1 ascii   s\tjY
+134 0x00006805 0x0040a605 4   5    .data_1 ascii   s8*L
+135 0x0000680e 0x0040a60e 4   5    .data_1 ascii   [s\tQ
+136 0x0000681d 0x0040a61d 4   5    .data_1 ascii   M=,\r
+137 0x00006842 0x0040a642 4   5    .data_1 ascii   7*I0
+138 0x0000689b 0x0040a69b 4   5    .data_1 ascii   ?@YX
+139 0x000068bf 0x0040a6bf 5   6    .data_1 ascii   ?@Y,L
+140 0x000068c6 0x0040a6c6 6   7    .data_1 ascii   \v\v@Y(L
+141 0x000069af 0x0040a7af 6   7    .data_1 ascii   \7?@YV
+142 0x000069ca 0x0040a7ca 4   5    .data_1 ascii   Ea0q
+143 0x00006a4b 0x0040a84b 5   7    .data_1 utf8    BEu'D
+144 0x00006a5d 0x0040a85d 5   6    .data_1 ascii   UQ?L\b
+145 0x00006a6f 0x0040a86f 13  16   .data_1 utf8    ÂMa>\\fZĂM!=\r\n blocks=Latin-1 Supplement,Basic Latin,Latin Extended-A
+146 0x00006a81 0x0040a881 8   9    .data_1 ascii   Ua>L\bZu\r
+147 0x00006a9a 0x0040a89a 5   8    .data_1 utf8    헂Ea<L blocks=Hangul Syllables,Basic Latin
+148 0x00006adb 0x0040a8db 5   6    .data_1 ascii   \tQ}<\
+149 0x00006b26 0x0040a926 4   6    .data_1 utf8    Ӊ8Yg blocks=Cyrillic,Basic Latin
+150 0x00006b6d 0x0040a96d 5   6    .data_1 ascii   =D\bZ{
+151 0x00006b7e 0x0040a97e 5   6    .data_1 ascii   \nBI<L
+152 0x00006ba0 0x0040a9a0 5   7    .data_1 utf8    \fӉ9Yg blocks=Basic Latin,Cyrillic
+153 0x00006c31 0x0040aa31 5   6    .data_1 ascii   \btS<D
+154 0x00006cae 0x0040aaae 7   8    .data_1 ascii   dc?@Y:L
+155 0x00006cb8 0x0040aab8 5   6    .data_1 ascii   \n@Y<L
+156 0x00006cf0 0x0040aaf0 5   6    .data_1 ascii   >@Y:Y
+157 0x00006d5c 0x0040ab5c 4   5    .data_1 ascii   MQ;\
+158 0x00006d78 0x0040ab78 4   5    .data_1 ascii   M!;X
+159 0x00006d80 0x0040ab80 4   5    .data_1 ascii   up:L
+160 0x00006dfe 0x0040abfe 4   5    .data_1 ascii   2Eeb
+161 0x00006e24 0x0040ac24 4   5    .data_1 ascii   Y:L\b
+162 0x00006e74 0x0040ac74 6   7    .data_1 ascii   ?M\nQ<L
+163 0x00006e7d 0x0040ac7d 4   5    .data_1 ascii   \n@Y:
+164 0x00006e94 0x0040ac94 4   5    .data_1 ascii   [\t0Y
+165 0x00006ea7 0x0040aca7 4   6    .data_1 utf8    $ӁB- blocks=Basic Latin,Cyrillic
+166 0x00006f43 0x0040ad43 5   6    .data_1 ascii   8D\bZ{
+167 0x00006fae 0x0040adae 4   5    .data_1 ascii   s\tP1
+168 0x00006fda 0x0040adda 4   5    .data_1 ascii   [\t0Y
+169 0x00006fe6 0x0040ade6 4   5    .data_1 ascii   7A4(
+170 0x00007029 0x0040ae29 4   5    .data_1 ascii   [\t0Y
+171 0x00007042 0x0040ae42 7   8    .data_1 ascii   \tulYIhY
+172 0x0000705b 0x0040ae5b 4   5    .data_1 ascii   M==D
+173 0x00007065 0x0040ae65 6   7    .data_1 ascii   \v\nB}<L
+174 0x00007078 0x0040ae78 5   6    .data_1 ascii   L/?@Y
+175 0x000070d8 0x0040aed8 4   5    .data_1 ascii   /?@Y
+176 0x000070e0 0x0040aee0 5   6    .data_1 ascii   #?@Y>
+177 0x000070e7 0x0040aee7 4   5    .data_1 ascii   os\tQ
+178 0x0000710d 0x0040af0d 5   6    .data_1 ascii   >@Y64
+179 0x0000715a 0x0040af5a 5   6    .data_1 ascii   LG?@Y
+180 0x0000716a 0x0040af6a 4   5    .data_1 ascii   Os\tP
+181 0x00007177 0x0040af77 6   7    .data_1 ascii   Sa$Zs\t
+182 0x0000717e 0x0040af7e 5   6    .data_1 ascii   L\e?@Y
+183 0x00007192 0x0040af92 4   5    .data_1 ascii   os\tR
+184 0x0000719a 0x0040af9a 5   6    .data_1 ascii   T/?@Y
+185 0x000071a0 0x0040afa0 4   5    .data_1 ascii   A((>
+186 0x000071a6 0x0040afa6 5   6    .data_1 ascii   Gs\tRq
+187 0x000072d8 0x0040b0d8 4   7    .data_1 utf8    Y<D\b
+188 0x00007355 0x0040b155 5   6    .data_1 ascii   \tuL]\t
+189 0x0000735b 0x0040b15b 5   6    .data_1 ascii   lc?@Y
+190 0x0000736f 0x0040b16f 7   8    .data_1 ascii   DG?@Y:L
+191 0x000073b6 0x0040b1b6 4   5    .data_1 ascii   Os\th
+192 0x000073ca 0x0040b1ca 11  12   .data_1 ascii   T+?@YP\n@Y[Y
+193 0x00007472 0x0040b272 4   7    .data_1 utf8    :D܈ۦ blocks=Basic Latin,Syriac,Arabic
+194 0x000074dc 0x0040b2dc 7   8    .data_1 ascii   ,\a\nUu;\
+195 0x000074eb 0x0040b2eb 4   5    .data_1 ascii   Ee9D
+196 0x000074f7 0x0040b2f7 4   7    .data_1 utf8    M9ٖǜ blocks=Basic Latin,Arabic,Latin Extended-B
+197 0x0000750b 0x0040b30b 4   5    .data_1 ascii   U!9L
+198 0x00007587 0x0040b387 5   6    .data_1 ascii   TC?@Y
+199 0x0000758d 0x0040b38d 6   8    .data_1 utf8    \tL;?@Y
+200 0x00007595 0x0040b395 6   8    .data_1 utf8    \tTK?@Y
+201 0x000075c8 0x0040b3c8 9   11   .data_1 utf8    .?@Y:M$]ۂ blocks=Basic Latin,Arabic
+202 0x0000781e 0x0040b61e 12  13   .data_1 ascii   VirtualAlloc
+203 0x0000782e 0x0040b62e 11  12   .data_1 ascii   CreateFileA
+204 0x0000783c 0x0040b63c 9   10   .data_1 ascii   WriteFile
+205 0x00007848 0x0040b648 15  16   .data_1 ascii   GetStartupInfoA
+206 0x0000785a 0x0040b65a 14  15   .data_1 ascii   FormatMessageW
+207 0x0000786c 0x0040b66c 18  19   .data_1 ascii   GetModuleFileNameW
+208 0x00007882 0x0040b682 16  17   .data_1 ascii   GetModuleHandleA
+209 0x00007896 0x0040b696 20  21   .data_1 ascii   GetUserDefaultLangID
+210 0x000078ae 0x0040b6ae 19  20   .data_1 ascii   MultiByteToWideChar
+211 0x000078c4 0x0040b6c4 8   9    .data_1 ascii   lstrcmpA
+212 0x000078d0 0x0040b6d0 8   9    .data_1 ascii   lstrlenA
+213 0x000078da 0x0040b6da 12  13   .data_1 ascii   KERNEL32.dll
+214 0x000078ea 0x0040b6ea 11  12   .data_1 ascii   LoadCursorA
+215 0x000078f8 0x0040b6f8 11  12   .data_1 ascii   LoadCursorW
+216 0x00007906 0x0040b706 12  13   .data_1 ascii   UpdateWindow
+217 0x00007916 0x0040b716 10  11   .data_1 ascii   ShowWindow
+218 0x00007924 0x0040b724 15  16   .data_1 ascii   CreateWindowExA
+219 0x00007936 0x0040b736 11  12   .data_1 ascii   MessageBoxW
+220 0x00007942 0x0040b742 10  11   .data_1 ascii   USER32.dll
+221 0x00007950 0x0040b750 14  15   .data_1 ascii   GetStockObject
+222 0x00007960 0x0040b760 9   10   .data_1 ascii   GDI32.dll
+223 0x0000796c 0x0040b76c 13  14   .data_1 ascii   RegOpenKeyExW
+224 0x0000797a 0x0040b77a 12  13   .data_1 ascii   ADVAPI32.dll
+225 0x0000798a 0x0040b78a 15  16   .data_1 ascii   CLSIDFromProgID
+226 0x0000799c 0x0040b79c 16  17   .data_1 ascii   CoCreateInstance
+227 0x000079b0 0x0040b7b0 12  13   .data_1 ascii   CoInitialize
+228 0x000079c0 0x0040b7c0 14  15   .data_1 ascii   CoUninitialize
+229 0x000079d0 0x0040b7d0 9   10   .data_1 ascii   ole32.dll
+230 0x000079dc 0x0040b7dc 11  12   .data_1 ascii   _XcptFilter
+231 0x000079ea 0x0040b7ea 13  14   .data_1 ascii   __getmainargs
+232 0x000079fa 0x0040b7fa 12  13   .data_1 ascii   __p__commode
+233 0x00007a0a 0x0040b80a 10  11   .data_1 ascii   __p__fmode
+234 0x00007a18 0x0040b818 14  15   .data_1 ascii   __set_app_type
+235 0x00007a2a 0x0040b82a 16  17   .data_1 ascii   __setusermatherr
+236 0x00007a3e 0x0040b83e 7   8    .data_1 ascii   _acmdln
+237 0x00007a48 0x0040b848 12  13   .data_1 ascii   _adjust_fdiv
+238 0x00007a58 0x0040b858 10  11   .data_1 ascii   _controlfp
+239 0x00007a66 0x0040b866 16  17   .data_1 ascii   _except_handler3
+240 0x00007a7a 0x0040b87a 5   6    .data_1 ascii   _exit
+241 0x00007a82 0x0040b882 9   10   .data_1 ascii   _initterm
+242 0x00007a8e 0x0040b88e 4   5    .data_1 ascii   exit
+243 0x00007a94 0x0040b894 10  11   .data_1 ascii   msvcrt.dll
+0   0x00007ca6 0x0040c0a6 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00007d02 0x0040c102 14  30   .rsrc   utf16le StringFileInfo
+2   0x00007d28 0x0040c128 7   16   .rsrc   utf16le 40904E4
+3   0x00007d3e 0x0040c13e 12  26   .rsrc   utf16le InternalName
+4   0x00007d58 0x0040c158 24  50   .rsrc   utf16le RegNow  Download Manager
+5   0x00007d90 0x0040c190 378 379  .rsrc   ascii   <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess="false"/>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>
+arch     x86
+baddr    0x400000
+binsz    32768
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000cd94
+compiled Tue Sep  3 06:00:53 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x52257b15
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1a00
+  SizeOfInitializedData : 0x6200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1a90
+  BaseOfCode : 0x1000
+  BaseOfData : 0x4000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x106000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 148 Name: Cvtres900 Version: 21022 Times: 1
+  Product: 0 Name: Unknown Version: 0 Times: 2
+  Product: 131 Name: Utc1500_C Version: 21022 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 23
+  Product: 123 Name: Implib800 Version: 50727 Times: 11
+  Product: 19 Name: Linker512 Version: 8078 Times: 15
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb4e8
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xc000
+  Size : 0x310
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x6000
+  Size : 0xa8
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+gdi32.dll
+advapi32.dll
+ole32.dll
+msvcrt.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000b61c 0x00002230 SET_32 KERNEL32.dll_VirtualAlloc
+0x0000b62c 0x00002234 SET_32 KERNEL32.dll_CreateFileA
+0x0000b63a 0x0000222c SET_32 KERNEL32.dll_WriteFile
+0x0000b646 0x00002220 SET_32 KERNEL32.dll_GetStartupInfoA
+0x0000b658 0x00002210 SET_32 KERNEL32.dll_FormatMessageW
+0x0000b66a 0x00002214 SET_32 KERNEL32.dll_GetModuleFileNameW
+0x0000b680 0x00002218 SET_32 KERNEL32.dll_GetModuleHandleA
+0x0000b694 0x0000221c SET_32 KERNEL32.dll_GetUserDefaultLangID
+0x0000b6ac 0x00002238 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x0000b6c2 0x00002224 SET_32 KERNEL32.dll_lstrcmpA
+0x0000b6ce 0x00002228 SET_32 KERNEL32.dll_lstrlenA
+0x0000b6e8 0x00002250 SET_32 USER32.dll_LoadCursorA
+0x0000b6f6 0x0000224c SET_32 USER32.dll_LoadCursorW
+0x0000b704 0x00002248 SET_32 USER32.dll_UpdateWindow
+0x0000b714 0x00002244 SET_32 USER32.dll_ShowWindow
+0x0000b722 0x00002254 SET_32 USER32.dll_CreateWindowExA
+0x0000b734 0x00002240 SET_32 USER32.dll_MessageBoxW
+0x0000b74e 0x00002208 SET_32 GDI32.dll_GetStockObject
+0x0000b76a 0x00002200 SET_32 ADVAPI32.dll_RegOpenKeyExW
+0x0000b788 0x0000229c SET_32 ole32.dll_CLSIDFromProgID
+0x0000b79a 0x00002298 SET_32 ole32.dll_CoCreateInstance
+0x0000b7ae 0x00002294 SET_32 ole32.dll_CoInitialize
+0x0000b7be 0x000022a0 SET_32 ole32.dll_CoUninitialize
+0x0000b7da 0x00002270 SET_32 msvcrt.dll__XcptFilter
+0x0000b7e8 0x00002274 SET_32 msvcrt.dll___getmainargs
+0x0000b7f8 0x00002278 SET_32 msvcrt.dll___p__commode
+0x0000b808 0x0000227c SET_32 msvcrt.dll___p__fmode
+0x0000b816 0x00002280 SET_32 msvcrt.dll___set_app_type
+0x0000b828 0x00002284 SET_32 msvcrt.dll___setusermatherr
+0x0000b83c 0x00002288 SET_32 msvcrt.dll__acmdln
+0x0000b846 0x0000228c SET_32 msvcrt.dll__adjust_fdiv
+0x0000b856 0x0000226c SET_32 msvcrt.dll__controlfp
+0x0000b864 0x00002268 SET_32 msvcrt.dll__except_handler3
+0x0000b878 0x00002264 SET_32 msvcrt.dll__exit
+0x0000b880 0x00002260 SET_32 msvcrt.dll__initterm
+0x0000b88c 0x0000225c SET_32 msvcrt.dll_exit
+
+
+36 relocations
+32768
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.7.1
+  ProductVersion: 1.0.7.1
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  InternalName: RegNow  Download Manager
+Section to Segment mapping:
+Segment Section
+---------------
+
+

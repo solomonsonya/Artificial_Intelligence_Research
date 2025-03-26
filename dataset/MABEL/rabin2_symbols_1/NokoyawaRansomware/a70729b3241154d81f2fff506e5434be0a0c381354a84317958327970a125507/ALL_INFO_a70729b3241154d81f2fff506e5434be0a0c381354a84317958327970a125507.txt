@@ -1,0 +1,259 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x7e00 0x00401000  0x8000 -r-x .text
+1   0x00008200   0xc00 0x00409000  0x1000 -r-- .rdata
+2   0x00008e00   0x200 0x0040a000  0x1000 -rw- .data
+3   0x00009000   0x400 0x0040b000  0x1000 -r-- .pdata
+4   0x00009400   0x200 0x0040c000  0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004066e0 paddr=0x00005ae0 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00409000 NONE FUNC KERNEL32.dll TerminateProcess
+2   0x00409008 NONE FUNC KERNEL32.dll GetCurrentProcess
+3   0x00409010 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+4   0x00409018 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+5   0x00409020 NONE FUNC KERNEL32.dll IsDebuggerPresent
+6   0x00409028 NONE FUNC KERNEL32.dll RtlVirtualUnwind
+7   0x00409030 NONE FUNC KERNEL32.dll RtlLookupFunctionEntry
+8   0x00409038 NONE FUNC KERNEL32.dll RtlCaptureContext
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00008200 0x00409000 NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+2   0x00008208 0x00409008 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+3   0x00008210 0x00409010 NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+4   0x00008218 0x00409018 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+5   0x00008220 0x00409020 NONE FUNC 0    KERNEL32.dll imp.IsDebuggerPresent
+6   0x00008228 0x00409028 NONE FUNC 0    KERNEL32.dll imp.RtlVirtualUnwind
+7   0x00008230 0x00409030 NONE FUNC 0    KERNEL32.dll imp.RtlLookupFunctionEntry
+8   0x00008238 0x00409038 NONE FUNC 0    KERNEL32.dll imp.RtlCaptureContext
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000826f 0x0040906f 8   9    .rdata  ascii @cmd.exe
+1   0x00008280 0x00409080 7   8    .rdata  ascii detype1
+2   0x00008288 0x00409088 4   5    .rdata  ascii %02x
+3   0x00008290 0x00409090 9   10   .rdata  ascii hvcurveto
+4   0x000082a0 0x004090a0 9   10   .rdata  ascii vhcurveto
+5   0x000082b0 0x004090b0 9   10   .rdata  ascii callgsubr
+6   0x000082c0 0x004090c0 14  15   .rdata  ascii extendednumber
+7   0x000082d0 0x004090d0 9   10   .rdata  ascii hhcurveto
+8   0x000082e0 0x004090e0 9   10   .rdata  ascii vvcurveto
+9   0x000082f0 0x004090f0 10  11   .rdata  ascii rlinecurve
+10  0x00008300 0x00409100 10  11   .rdata  ascii rcurveline
+11  0x00008310 0x00409110 7   8    .rdata  ascii vstemhm
+12  0x00008318 0x00409118 7   8    .rdata  ascii hmoveto
+13  0x00008320 0x00409120 7   8    .rdata  ascii rmoveto
+14  0x00008328 0x00409128 8   9    .rdata  ascii cntrmask
+15  0x00008338 0x00409138 8   9    .rdata  ascii hintmask
+16  0x00008348 0x00409148 7   8    .rdata  ascii hstemhm
+17  0x00008350 0x00409150 11  12   .rdata  ascii reserved_17
+18  0x0000835c 0x0040915c 5   6    .rdata  ascii blend
+19  0x00008368 0x00409168 11  12   .rdata  ascii reserved_15
+20  0x00008378 0x00409178 7   8    .rdata  ascii endchar
+21  0x00008380 0x00409180 4   5    .rdata  ascii hsbw
+22  0x00008388 0x00409188 6   7    .rdata  ascii return
+23  0x00008390 0x00409190 8   9    .rdata  ascii callsubr
+24  0x000083a0 0x004091a0 9   10   .rdata  ascii closepath
+25  0x000083b0 0x004091b0 9   10   .rdata  ascii rrcurveto
+26  0x000083c0 0x004091c0 7   8    .rdata  ascii vlineto
+27  0x000083c8 0x004091c8 7   8    .rdata  ascii hlineto
+28  0x000083d0 0x004091d0 7   8    .rdata  ascii rlineto
+29  0x000083d8 0x004091d8 7   8    .rdata  ascii vmoveto
+30  0x000083e0 0x004091e0 5   6    .rdata  ascii vstem
+31  0x000083e8 0x004091e8 10  11   .rdata  ascii reserved_2
+32  0x000083f4 0x004091f4 5   6    .rdata  ascii hstem
+33  0x00008400 0x00409200 10  11   .rdata  ascii reserved_0
+34  0x00008410 0x00409210 14  15   .rdata  ascii reservedESC_50
+35  0x00008420 0x00409220 14  15   .rdata  ascii reservedESC_49
+36  0x00008430 0x00409230 14  15   .rdata  ascii reservedESC_48
+37  0x00008440 0x00409240 14  15   .rdata  ascii reservedESC_47
+38  0x00008450 0x00409250 14  15   .rdata  ascii reservedESC_46
+39  0x00008460 0x00409260 14  15   .rdata  ascii reservedESC_45
+40  0x00008470 0x00409270 14  15   .rdata  ascii reservedESC_44
+41  0x00008480 0x00409280 14  15   .rdata  ascii reservedESC_43
+42  0x00008490 0x00409290 14  15   .rdata  ascii reservedESC_42
+43  0x000084a0 0x004092a0 14  15   .rdata  ascii reservedESC_41
+44  0x000084b0 0x004092b0 14  15   .rdata  ascii reservedESC_40
+45  0x000084c0 0x004092c0 14  15   .rdata  ascii reservedESC_39
+46  0x000084d0 0x004092d0 6   7    .rdata  ascii cntron
+47  0x000084d8 0x004092d8 5   6    .rdata  ascii flex1
+48  0x000084e0 0x004092e0 6   7    .rdata  ascii hflex1
+49  0x000084e8 0x004092e8 4   5    .rdata  ascii flex
+50  0x000084f0 0x004092f0 5   6    .rdata  ascii hflex
+51  0x000084f8 0x004092f8 15  16   .rdata  ascii setcurrentpoint
+52  0x00008508 0x00409308 14  15   .rdata  ascii reservedESC_32
+53  0x00008518 0x00409318 14  15   .rdata  ascii reservedESC_31
+54  0x00008528 0x00409328 4   5    .rdata  ascii roll
+55  0x00008530 0x00409330 5   6    .rdata  ascii index
+56  0x00008538 0x00409338 4   5    .rdata  ascii exch
+57  0x00008540 0x00409340 4   5    .rdata  ascii sqrt
+58  0x00008548 0x00409348 4   5    .rdata  ascii div2
+59  0x00008554 0x00409354 6   7    .rdata  ascii random
+60  0x0000855c 0x0040935c 6   7    .rdata  ascii ifelse
+61  0x00008570 0x00409370 14  15   .rdata  ascii reservedESC_19
+62  0x00008580 0x00409380 4   5    .rdata  ascii drop
+63  0x00008588 0x00409388 9   10   .rdata  ascii callother
+64  0x0000859c 0x0040939c 4   5    .rdata  ascii load
+65  0x000085b4 0x004093b4 5   6    .rdata  ascii store
+66  0x000085c0 0x004093c0 4   5    .rdata  ascii seac
+67  0x000085d4 0x004093d4 6   7    .rdata  ascii hstem3
+68  0x000085dc 0x004093dc 6   7    .rdata  ascii vstem3
+69  0x000085e8 0x004093e8 10  11   .rdata  ascii dotsection
+70  0x000085f8 0x004093f8 6   7    .rdata  ascii %d %s 
+71  0x00008600 0x00409400 6   7    .rdata  ascii %d %s 
+72  0x00008608 0x00409408 18  19   .rdata  ascii %currentfile eexec
+73  0x00008620 0x00409420 65  66   .rdata  ascii 0000000000000000000000000000000000000000000000000000000000000000\n
+74  0x00008910 0x00409710 6   7    .rdata  ascii /lenIV
+75  0x00008918 0x00409718 22  23   .rdata  ascii %currentfile closefile
+76  0x00008930 0x00409730 9   10   .rdata  ascii ntdll.dll
+77  0x00008940 0x00409740 10  11   .rdata  ascii msvcrt.dll
+78  0x00008950 0x00409750 10  11   .rdata  ascii user32.dll
+79  0x00008960 0x00409760 14  15   .rdata  ascii DefWindowProcW
+80  0x00008970 0x00409770 9   10   .rdata  ascii gdi32.dll
+81  0x000089f5 0x004097f5 5   6    .rdata  ascii b\fp\v`
+82  0x00008b18 0x00409918 5   6    .rdata  ascii \fp\v`@
+83  0x00008be2 0x004099e2 16  17   .rdata  ascii TerminateProcess
+84  0x00008bf6 0x004099f6 17  18   .rdata  ascii GetCurrentProcess
+85  0x00008c0a 0x00409a0a 24  25   .rdata  ascii UnhandledExceptionFilter
+86  0x00008c26 0x00409a26 27  28   .rdata  ascii SetUnhandledExceptionFilter
+87  0x00008c44 0x00409a44 17  18   .rdata  ascii IsDebuggerPresent
+88  0x00008c58 0x00409a58 16  17   .rdata  ascii RtlVirtualUnwind
+89  0x00008c6c 0x00409a6c 22  23   .rdata  ascii RtlLookupFunctionEntry
+90  0x00008c86 0x00409a86 17  18   .rdata  ascii RtlCaptureContext
+91  0x00008c98 0x00409a98 12  13   .rdata  ascii KERNEL32.dll
+0   0x00009458 0x0040c058 424 424  .rsrc   ascii <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n</assembly>PAPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING
+arch     x86
+baddr    0x400000
+binsz    38400
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x0001823e
+compiled Fri Feb 26 14:39:26 2021
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000101f1
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       false
+os       windows
+overlay  false
+cc       ms
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x6039081e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x23
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0x8
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x7e00
+  SizeOfInitializedData : 0x1400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x66e0
+  BaseOfCode : 0x1000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xd000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x101f1
+  Subsystem : 0x2
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x996c
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xc000
+  Size : 0xb0
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0xb000
+  Size : 0x258
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x9000
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000099e0 0x00008200 SET_64 KERNEL32.dll_TerminateProcess
+0x000099f4 0x00008208 SET_64 KERNEL32.dll_GetCurrentProcess
+0x00009a08 0x00008210 SET_64 KERNEL32.dll_UnhandledExceptionFilter
+0x00009a24 0x00008218 SET_64 KERNEL32.dll_SetUnhandledExceptionFilter
+0x00009a42 0x00008220 SET_64 KERNEL32.dll_IsDebuggerPresent
+0x00009a56 0x00008228 SET_64 KERNEL32.dll_RtlVirtualUnwind
+0x00009a6a 0x00008230 SET_64 KERNEL32.dll_RtlLookupFunctionEntry
+0x00009a84 0x00008238 SET_64 KERNEL32.dll_RtlCaptureContext
+
+
+8 relocations
+38400
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

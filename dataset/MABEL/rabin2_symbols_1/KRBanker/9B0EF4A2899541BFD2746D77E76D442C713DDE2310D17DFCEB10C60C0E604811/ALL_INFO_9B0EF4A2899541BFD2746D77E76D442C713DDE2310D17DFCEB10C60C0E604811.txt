@@ -1,0 +1,178 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x20400 0x00401000  0x3d000 -rwx .text
+1   0x00020800   0x1c00 0x0043e000   0x2000 -rwx .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000400 haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0043ee30 NONE FUNC kernel32.dll LoadLibraryA
+2   0x0043ee34 NONE FUNC kernel32.dll GetProcAddress
+3   0x0043ee38 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0043ee3c NONE FUNC kernel32.dll VirtualFree
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00021630 0x0043ee30 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x00021634 0x0043ee34 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x00021638 0x0043ee38 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x0002163c 0x0043ee3c NONE FUNC 0    kernel32.dll imp.VirtualFree
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    140288
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0002c902
+compiled Mon Dec  7 09:21:54 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0002b7e5
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x56654fb2
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x3b200
+  SizeOfInitializedData : 0x1be00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  BaseOfData : 0xf000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x40000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x2b7e5
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 55
+  Product: 0 Name: Unknown Version: 0 Times: 1
+  Product: 93 Name: Implib710 Version: 4035 Times: 11
+  Product: 1 Name: Import0 Version: 0 Times: 83
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+  Product: 12 Name: AliasObj60 Version: 7291 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x3ee44
+  Size : 0x8f
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x3e000
+  Size : 0xe28
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x71345736
+  Size : 0x44486e
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0003ee7c 0x00021630 SET_32 kernel32.dll_LoadLibraryA
+0x0003ee8c 0x00021634 SET_32 kernel32.dll_GetProcAddress
+0x0003eea0 0x00021638 SET_32 kernel32.dll_VirtualAlloc
+0x0003eeb0 0x0002163c SET_32 kernel32.dll_VirtualFree
+
+
+4 relocations
+140288
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 2.4.0.1063
+  ProductVersion: 2.4.0.1063
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: FFNCHR.ICI
+  FileDescription: Cerjvn Nieutrun Ioetuozf WEBAPP
+  FileVersion: 22, 34, 0, 7383
+  InternalName: Cetcsdfxp.exe
+  LegalCopyright: Cit 300 (C) FFNCHR.ICI. All Rights Reserved.
+  OriginalFilename: Cetcsdfxp.exe
+  ProductName: Cerjvn Nieutrun Ioetuozf WEBAPP
+  ProductVersion: 22, 34, 0, 7383
+Section to Segment mapping:
+Segment Section
+---------------
+
+

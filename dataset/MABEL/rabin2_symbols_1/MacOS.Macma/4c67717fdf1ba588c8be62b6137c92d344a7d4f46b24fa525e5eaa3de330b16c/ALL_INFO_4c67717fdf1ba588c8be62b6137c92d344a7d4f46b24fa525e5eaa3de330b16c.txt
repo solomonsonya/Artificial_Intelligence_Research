@@ -1,0 +1,881 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001870  0x2589 0x100001870  0x2589 -r-x 0.__TEXT.__text
+1   0x00003dfa   0x174 0x100003dfa   0x174 -r-x 1.__TEXT.__stubs
+2   0x00003f70   0x27c 0x100003f70   0x27c -r-x 2.__TEXT.__stub_helper
+3   0x000041ec   0x8b0 0x1000041ec   0x8b0 -r-x 3.__TEXT.__objc_methname
+4   0x00004a9c    0x82 0x100004a9c    0x82 -r-x 4.__TEXT.__objc_classname
+5   0x00004b1e   0x428 0x100004b1e   0x428 -r-x 5.__TEXT.__objc_methtype
+6   0x00004f46   0x4b9 0x100004f46   0x4b9 -r-x 6.__TEXT.__cstring
+7   0x00005400    0x16 0x100005400    0x16 -r-x 7.__TEXT.__ustring
+8   0x00005418     0x8 0x100005418     0x8 -r-x 8.__TEXT.__const
+9   0x00005420    0xfc 0x100005420    0xfc -r-x 9.__TEXT.__unwind_info
+10  0x00005520   0xae0 0x100005520   0xae0 -r-x 10.__TEXT.__eh_frame
+11  0x00006000    0x28 0x100006000    0x28 -rw- 11.__DATA.__program_vars
+12  0x00006028    0x10 0x100006028    0x10 -rw- 12.__DATA.__nl_symbol_ptr
+13  0x00006038    0x88 0x100006038    0x88 -rw- 13.__DATA.__got
+14  0x000060c0   0x1f0 0x1000060c0   0x1f0 -rw- 14.__DATA.__la_symbol_ptr
+15  0x000062b0    0x60 0x1000062b0    0x60 -rw- 15.__DATA.__cfstring
+16  0x00006310    0x10 0x100006310    0x10 -rw- 16.__DATA.__objc_classlist
+17  0x00006320     0x8 0x100006320     0x8 -rw- 17.__DATA.__objc_nlclslist
+18  0x00006328    0x20 0x100006328    0x20 -rw- 18.__DATA.__objc_protolist
+19  0x00006348     0x8 0x100006348     0x8 -rw- 19.__DATA.__objc_imageinfo
+20  0x00006350   0xae8 0x100006350   0xae8 -rw- 20.__DATA.__objc_const
+21  0x00006e38   0x120 0x100006e38   0x120 -rw- 21.__DATA.__objc_selrefs
+22  0x00006f58    0x10 0x100006f58    0x10 -rw- 22.__DATA.__objc_protorefs
+23  0x00006f68     0x8 0x100006f68     0x8 -rw- 23.__DATA.__objc_classrefs
+24  0x00006f70     0x8 0x100006f70     0x8 -rw- 24.__DATA.__objc_superrefs
+25  0x00006f78    0xf0 0x100006f78    0xf0 -rw- 25.__DATA.__objc_data
+26  0x00007068   0x1c0 0x100007068   0x1c0 -rw- 26.__DATA.__data
+27  0x00000000     0x0 0x100007228    0x20 -rw- 27.__DATA.__common
+28  0x00000000     0x0 0x100007250   0x280 -rw- 28.__DATA.__bss
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x6000 0x100000000  0x6000 -r-x __TEXT
+1   0x00006000  0x2000 0x100006000  0x2000 -rw- __DATA
+2   0x00008000  0x9000 0x100008000  0x9000 -r-- __LINKEDIT
+
+[Entrypoints]
+vaddr=0x100001870 paddr=0x00001870 haddr=0x00000bc0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x100001906 paddr=0x100001906
+[Imports]
+nth vaddr       bind type           lib name
+――――――――――――――――――――――――――――――――――――――――――――
+0   0x100003f68 NONE FUNC               CFStringGetCStringPtr
+1   0x00000000  NONE OBJC_CLASS         NSAlert
+2   0x00000000  NONE OBJC_CLASS         NSObject
+3   0x00000000  NONE OBJC_CLASS         NSViewController
+4   0x00000000  NONE OBJC_METACLASS     NSObject
+5   0x00000000  NONE OBJC_METACLASS     NSViewController
+6   0x100003eae NONE FUNC               _Block_copy
+7   0x00000000  NONE FUNC               _DefaultRuneLocale
+8   0x00000000  NONE FUNC               __CFConstantStringClassReference
+9   0x100003eb4 NONE FUNC               __bzero
+10  0x100003eba NONE FUNC               __memcpy_chk
+11  0x100003ec0 NONE FUNC               __snprintf_chk
+12  0x100003ec6 NONE FUNC               __stack_chk_fail
+13  0x00000000  NONE FUNC               __stack_chk_guard
+14  0x100003ecc NONE FUNC               __strcat_chk
+15  0x100003ed2 NONE FUNC               __strcpy_chk
+16  0x100003ed8 NONE FUNC               _dyld_register_func_for_add_image
+17  0x00000000  NONE FUNC               _objc_empty_cache
+18  0x00000000  NONE FUNC               _objc_empty_vtable
+19  0x100003ede NONE FUNC               access
+20  0x100003ee4 NONE FUNC               asprintf
+21  0x100003eea NONE FUNC               bzero
+22  0x100003ef0 NONE FUNC               calloc
+23  0x100003dfa NONE FUNC               class_addMethod
+24  0x100003e00 NONE FUNC               class_addProperty
+25  0x100003e06 NONE FUNC               class_addProtocol
+26  0x100003e0c NONE FUNC               class_getInstanceMethod
+27  0x100003e12 NONE FUNC               class_getInstanceSize
+28  0x100003e18 NONE FUNC               class_getInstanceVariable
+29  0x100003e1e NONE FUNC               class_getIvarLayout
+30  0x00000000  NONE FUNC               class_getName
+31  0x100003e24 NONE FUNC               class_getSuperclass
+32  0x100003e2a NONE FUNC               class_isMetaClass
+33  0x100003e30 NONE FUNC               class_replaceMethod
+34  0x100003e36 NONE FUNC               class_respondsToSelector
+35  0x100003ef6 NONE FUNC               execve
+36  0x100003efc NONE FUNC               exit
+37  0x100003f02 NONE FUNC               free
+38  0x100003f08 NONE FUNC               getpwuid
+39  0x100003f0e NONE FUNC               getuid
+40  0x100003f14 NONE FUNC               hash_create
+41  0x100003f1a NONE FUNC               hash_search
+42  0x100003e3c NONE FUNC               ivar_getName
+43  0x100003e42 NONE FUNC               ivar_getOffset
+44  0x00000000  NONE FUNC               kCFCoreFoundationVersionNumber
+45  0x100003f20 NONE FUNC               malloc
+46  0x100003f26 NONE FUNC               memcmp
+47  0x100003f2c NONE FUNC               memcpy
+48  0x100003e48 NONE FUNC               method_setImplementation
+49  0x00000000  NONE FUNC               objc_allocateClassPair
+50  0x00000000  NONE FUNC               objc_autoreleasePoolPush
+51  0x100003e4e NONE FUNC               objc_constructInstance
+52  0x00000000  NONE FUNC               objc_copyClassNamesForImage
+53  0x100003e54 NONE FUNC               objc_getClass
+54  0x100003e5a NONE FUNC               objc_getMetaClass
+55  0x100003e60 NONE FUNC               objc_getProtocol
+56  0x100003e66 NONE FUNC               objc_getRequiredClass
+57  0x100003e6c NONE FUNC               objc_initializeClassPair
+58  0x100003e72 NONE FUNC               objc_lookUpClass
+59  0x00000000  NONE FUNC               objc_msgSend
+60  0x100003e78 NONE FUNC               objc_msgSendSuper2
+61  0x00000000  NONE FUNC               objc_readClassPair
+62  0x100003e7e NONE FUNC               objc_registerClassPair
+63  0x00000000  NONE FUNC               objc_retain
+64  0x100003e84 NONE FUNC               objc_retainAutoreleasedReturnValue
+65  0x100003e8a NONE FUNC               object_getClass
+66  0x00000000  NONE FUNC               object_getIndexedIvars
+67  0x100003e90 NONE FUNC               object_getIvar
+68  0x100003e96 NONE FUNC               object_setIvar
+69  0x100003e9c NONE FUNC               property_copyAttributeList
+70  0x100003ea2 NONE FUNC               protocol_getMethodDescription
+71  0x00000000  NONE FUNC               protocol_getName
+72  0x100003f32 NONE FUNC               pthread_mutex_lock
+73  0x100003f38 NONE FUNC               pthread_mutex_unlock
+74  0x100003ea8 NONE FUNC               sel_getUid
+75  0x100003f3e NONE FUNC               sleep
+76  0x100003f44 NONE FUNC               strchr
+77  0x100003f4a NONE FUNC               strcmp
+78  0x100003f50 NONE FUNC               strlen
+79  0x100003f56 NONE FUNC               strncmp
+80  0x100003f5c NONE FUNC               strstr
+81  0x100003f62 NONE FUNC               system
+82  0x00000000  NONE FUNC               dyld_stub_binder
+
+0x100006fa0 [0x1000018ac - 0x1000018d9]     45 class 0 ViewController :: NSViewController
+0x1000018ac method 0      viewDidLoad
+0x1000018d9 method 1      setRepresentedObject:
+0x100006fc8 [0x100001da3 - 0x100001da9]      6 class 0 AppDelegate :: NSObject
+0x100001da3 method 0      applicationDidFinishLaunching:
+0x100001da9 method 1      applicationWillTerminate:
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00007228 0x100007228 GLOBAL FUNC 0        _NXArgc
+1   0x00007230 0x100007230 GLOBAL FUNC 0        _NXArgv
+2   0x00007240 0x100007240 GLOBAL FUNC 0        ___progname
+3   0x00000000 0x100000000 GLOBAL FUNC 0        __mh_execute_header
+4   0x00007238 0x100007238 GLOBAL FUNC 0        _environ
+5   0x00001870 0x100001870 GLOBAL FUNC 0        start
+8   0x5bf664e2 0x5bf664e2  LOCAL  FUNC 0        /Users/lifei/macmk/mac_ma/src/modifydmg/preexcl_project/build/preexcl_project.build/Release/preexcl_project.build/Objects-normal/x86_64/ViewController.o
+10  0x000018ac 0x1000018ac LOCAL  FUNC 0        public int ViewController::viewDidLoad()
+13  0x000018d9 0x1000018d9 LOCAL  FUNC 0        public int ViewController::setRepresentedObject(int)
+18  0x5bf664e2 0x5bf664e2  LOCAL  FUNC 0        /Users/lifei/macmk/mac_ma/src/modifydmg/preexcl_project/build/preexcl_project.build/Release/preexcl_project.build/Objects-normal/x86_64/main.o
+20  0x00001906 0x100001906 LOCAL  FUNC 0        _main
+23  0x5bf664e2 0x5bf664e2  LOCAL  FUNC 0        /Users/lifei/macmk/mac_ma/src/modifydmg/preexcl_project/build/preexcl_project.build/Release/preexcl_project.build/Objects-normal/x86_64/AppDelegate.o
+25  0x00001da3 0x100001da3 LOCAL  FUNC 0        public int AppDelegate::applicationDidFinishLaunching(int)
+28  0x00001da9 0x100001da9 LOCAL  FUNC 0        public int AppDelegate::applicationWillTerminate(int)
+33  0x57be7417 0x57be7417  LOCAL  FUNC 0        /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a(arclite.o)
+35  0x00001daf 0x100001daf LOCAL  FUNC 0        __ARCLite__load()
+38  0x000021c9 0x1000021c9 LOCAL  FUNC 0        add_image_hook_autoreleasepool(mach_header const*, long)
+41  0x00002252 0x100002252 LOCAL  FUNC 0        __arclite_objc_autoreleasePoolPush()
+44  0x0000226b 0x10000226b LOCAL  FUNC 0        __arclite_objc_autoreleasePoolPop(void*)
+47  0x0000227d 0x10000227d LOCAL  FUNC 0        patch_lazy_pointers(mach_header const*, patch_t*, unsigned long)
+50  0x000024f3 0x1000024f3 LOCAL  FUNC 0        __arclite_NSArray_objectAtIndexedSubscript(NSArray*, objc_selector*, unsigned long)
+52  0x00002505 0x100002505 LOCAL  FUNC 0        __arclite_NSMutableArray_setObject_atIndexedSubscript(NSMutableArray*, objc_selector*, objc_object*, unsigned long)
+55  0x00002567 0x100002567 LOCAL  FUNC 0        __arclite_NSDictionary_objectForKeyedSubscript(NSDictionary*, objc_selector*, objc_object*)
+57  0x00002579 0x100002579 LOCAL  FUNC 0        __arclite_NSOrderedSet_objectAtIndexedSubscript(NSOrderedSet*, objc_selector*, unsigned long)
+59  0x0000258b 0x10000258b LOCAL  FUNC 0        __arclite_NSMutableOrderedSet_setObject_atIndexedSubscript(NSMutableOrderedSet*, objc_selector*, objc_object*, unsigned long)
+61  0x0000259d 0x10000259d LOCAL  FUNC 0        __arclite_NSMutableDictionary__setObject_forKeyedSubscript(NSMutableDictionary*, objc_selector*, objc_object*, objc_object*)
+64  0x000025c5 0x1000025c5 LOCAL  FUNC 0        add_image_hook_ARC(mach_header const*, long)
+67  0x00002740 0x100002740 LOCAL  FUNC 0        __arclite_object_setInstanceVariable(objc_object*, char const*, void*)
+70  0x00002798 0x100002798 LOCAL  FUNC 0        __arclite_object_setIvar(objc_object*, objc_ivar*, objc_object*)
+73  0x000028f2 0x1000028f2 LOCAL  FUNC 0        __arclite_object_copy(objc_object*, unsigned long)
+76  0x00002a87 0x100002a87 LOCAL  FUNC 0        __arclite_objc_retain(objc_object*)
+78  0x00002a99 0x100002a99 LOCAL  FUNC 0        __arclite_objc_retainBlock(objc_object*)
+81  0x00002aa3 0x100002aa3 LOCAL  FUNC 0        __arclite_objc_release(objc_object*)
+83  0x00002ab5 0x100002ab5 LOCAL  FUNC 0        __arclite_objc_autorelease(objc_object*)
+85  0x00002ac7 0x100002ac7 LOCAL  FUNC 0        __arclite_objc_retainAutorelease(objc_object*)
+88  0x00002af2 0x100002af2 LOCAL  FUNC 0        __arclite_objc_autoreleaseReturnValue(objc_object*)
+90  0x00002b04 0x100002b04 LOCAL  FUNC 0        __arclite_objc_retainAutoreleaseReturnValue(objc_object*)
+92  0x00002b2f 0x100002b2f LOCAL  FUNC 0        __arclite_objc_retainAutoreleasedReturnValue(objc_object*)
+94  0x00002b41 0x100002b41 LOCAL  FUNC 0        __arclite_objc_storeStrong(objc_object**, objc_object*)
+97  0x00002b91 0x100002b91 LOCAL  FUNC 0        add_image_hook_swiftV1(mach_header const*, long)
+100 0x00002d7c 0x100002d7c LOCAL  FUNC 0        __arclite_NSUndoManagerProxy_isKindOfClass(objc_object*, objc_selector*, objc_class*)
+103 0x00002db5 0x100002db5 LOCAL  FUNC 0        replaceMethod(objc_class*, objc_selector*, objc_object* (*)(objc_object*, objc_selector*, ...), objc_object* (**)(objc_object*, objc_selector*, ...))
+106 0x00002de8 0x100002de8 LOCAL  FUNC 0        __arclite_NSManagedObject_init(objc_object*, objc_selector*)
+109 0x00002dfb 0x100002dfb LOCAL  FUNC 0        __arclite_NSManagedObject_allocWithEntity(objc_object*, objc_selector*, objc_object*)
+111 0x00002e0e 0x100002e0e LOCAL  FUNC 0        __arclite_NSManagedObject_allocBatch(objc_object*, objc_selector*, objc_object**, objc_object*, unsigned int)
+114 0x00002e4a 0x100002e4a LOCAL  FUNC 0        __arclite_NSKKMS_fastIndexForKnownKey(objc_object*, objc_selector*, objc_object*)
+117 0x00002e9c 0x100002e9c LOCAL  FUNC 0        __arclite_NSKKMS_indexForKey(objc_object*, objc_selector*, objc_object*)
+119 0x00002eee 0x100002eee LOCAL  FUNC 0        __arclite_NSKKsD_objectForKey(objc_object*, objc_selector*, objc_object*)
+121 0x00002f40 0x100002f40 LOCAL  FUNC 0        __arclite_NSKKsD_removeObjectForKey(objc_object*, objc_selector*, objc_object*)
+124 0x00002f94 0x100002f94 LOCAL  FUNC 0        __arclite_NSKKsD_setObject_forKey(objc_object*, objc_selector*, objc_object*, objc_object*)
+127 0x00002ffd 0x100002ffd LOCAL  FUNC 0        __arclite_NSKKsD_addEntriesFromDictionary(objc_object*, objc_selector*, NSDictionary*)
+130 0x0000312c 0x10000312c LOCAL  FUNC 0        __arclite_objc_readClassPair(objc_class*, objc_image_info const*)
+133 0x0000348e 0x10000348e LOCAL  FUNC 0        __arclite_objc_allocateClassPair(objc_class*, char const*, unsigned long)
+136 0x0000352d 0x10000352d LOCAL  FUNC 0        __arclite_object_getIndexedIvars(objc_object*)
+138 0x0000357f 0x10000357f LOCAL  FUNC 0        __arclite_objc_getClass(char const*)
+141 0x000035d4 0x1000035d4 LOCAL  FUNC 0        __arclite_objc_getMetaClass(char const*)
+143 0x00003629 0x100003629 LOCAL  FUNC 0        __arclite_objc_getRequiredClass(char const*)
+145 0x0000367e 0x10000367e LOCAL  FUNC 0        __arclite_objc_lookUpClass(char const*)
+147 0x000036d3 0x1000036d3 LOCAL  FUNC 0        __arclite_objc_getProtocol(char const*)
+149 0x0000372b 0x10000372b LOCAL  FUNC 0        __arclite_class_getName(objc_class*)
+152 0x00003740 0x100003740 LOCAL  FUNC 0        __arclite_protocol_getName(Protocol*)
+155 0x00003758 0x100003758 LOCAL  FUNC 0        __arclite_objc_copyClassNamesForImage(char const*, unsigned int*)
+158 0x000037b8 0x1000037b8 LOCAL  FUNC 0        transcribeMethods(objc_class*, glue_class_ro_t*)
+161 0x0000383c 0x10000383c LOCAL  FUNC 0        transcribeProtocols(objc_class*, glue_class_ro_t*)
+164 0x00003887 0x100003887 LOCAL  FUNC 0        transcribeProperties(objc_class*, glue_class_ro_t*)
+167 0x00003907 0x100003907 LOCAL  FUNC 0        initialize_imp(objc_object*, objc_selector*)
+169 0x0000390d 0x10000390d LOCAL  FUNC 0        allocateMaybeSwift(glue_swift_class_t*, unsigned long)
+172 0x000039a0 0x1000039a0 LOCAL  FUNC 0        copySwiftV1MangledName(char const*, bool)
+175 0x00003ad6 0x100003ad6 LOCAL  FUNC 0        demangledName(char const*, bool)
+178 0x00003c83 0x100003c83 LOCAL  FUNC 0        scanMangledField(char const*&, char const*, char const*&, int&)
+182 0x00003cfa 0x100003cfa LOCAL  FUNC 0        arclite_uninitialized_function()
+184 0x00003d00 0x100003d00 LOCAL  FUNC 0        cxxConstruct(objc_object*)
+187 0x00003d30 0x100003d30 LOCAL  FUNC 0        fixStringForCoreData(objc_object*)
+190 0x00006cf8 0x100006cf8 LOCAL  FUNC 0        OBJC_METACLASS_RO_$___ARCLite__
+191 0x00006d40 0x100006d40 LOCAL  FUNC 0        OBJC_CLASS_RO_$___ARCLite__
+192 0x00006d88 0x100006d88 LOCAL  FUNC 0        OBJC_$_CLASS_METHODS___ARCLite__
+194 0x00007040 0x100007040 LOCAL  FUNC 0        OBJC_CLASS_$___ARCLite__
+195 0x000071e8 0x1000071e8 LOCAL  FUNC 0        demangleLock
+196 0x00007250 0x100007250 LOCAL  FUNC 0        NSAutoreleasePool_class
+197 0x00007260 0x100007260 LOCAL  FUNC 0        add_image_hook_autoreleasepool(mach_header const*, long)::patches
+198 0x00007280 0x100007280 LOCAL  FUNC 0        guard variable for add_image_hook_autoreleasepool(mach_header const*, long)::patches
+199 0x00007290 0x100007290 LOCAL  FUNC 0        add_image_hook_ARC(mach_header const*, long)::patches
+200 0x00007350 0x100007350 LOCAL  FUNC 0        guard variable for add_image_hook_ARC(mach_header const*, long)::patches
+201 0x00007358 0x100007358 LOCAL  FUNC 0        NSUndoManagerProxy_targetClass
+202 0x00007360 0x100007360 LOCAL  FUNC 0        original_NSManagedObject_init
+203 0x00007368 0x100007368 LOCAL  FUNC 0        original_NSManagedObject_allocWithEntity
+204 0x00007370 0x100007370 LOCAL  FUNC 0        original_NSManagedObject_allocBatch
+205 0x00007378 0x100007378 LOCAL  FUNC 0        NSMutableDictionary_class
+206 0x00007380 0x100007380 LOCAL  FUNC 0        NSConstantString_class
+207 0x00007388 0x100007388 LOCAL  FUNC 0        NSString_class
+208 0x00007390 0x100007390 LOCAL  FUNC 0        original_NSKKMS_fastIndexForKnownKey
+209 0x00007398 0x100007398 LOCAL  FUNC 0        original_NSKKMS_indexForKey
+210 0x000073a0 0x1000073a0 LOCAL  FUNC 0        original_NSKKsD_objectForKey
+211 0x000073a8 0x1000073a8 LOCAL  FUNC 0        original_NSKKsD_removeObjectForKey
+212 0x000073b0 0x1000073b0 LOCAL  FUNC 0        original_NSKKsD_setObject_forKey
+213 0x000073b8 0x1000073b8 LOCAL  FUNC 0        original_NSKKsD_addEntriesFromDictionary
+214 0x000073c0 0x1000073c0 LOCAL  FUNC 0        add_image_hook_swiftV1(mach_header const*, long)::patches
+215 0x00007470 0x100007470 LOCAL  FUNC 0        guard variable for add_image_hook_swiftV1(mach_header const*, long)::patches
+216 0x00007478 0x100007478 LOCAL  FUNC 0        original_objc_allocateClassPair
+217 0x00007480 0x100007480 LOCAL  FUNC 0        original_object_getIndexedIvars
+218 0x00007488 0x100007488 LOCAL  FUNC 0        original_objc_getClass
+219 0x00007490 0x100007490 LOCAL  FUNC 0        original_objc_getMetaClass
+220 0x00007498 0x100007498 LOCAL  FUNC 0        original_objc_getRequiredClass
+221 0x000074a0 0x1000074a0 LOCAL  FUNC 0        original_objc_lookUpClass
+222 0x000074a8 0x1000074a8 LOCAL  FUNC 0        original_objc_getProtocol
+223 0x000074b0 0x1000074b0 LOCAL  FUNC 0        original_class_getName
+224 0x000074b8 0x1000074b8 LOCAL  FUNC 0        original_protocol_getName
+225 0x000074c0 0x1000074c0 LOCAL  FUNC 0        original_objc_copyClassNamesForImage
+226 0x000074c8 0x1000074c8 LOCAL  FUNC 0        Demangled
+227 0x000048a3 0x1000048a3 LOCAL  FUNC 0        _load_method_name
+228 0x00004ad6 0x100004ad6 LOCAL  FUNC 0        _class_name
+229 0x00004f29 0x100004f29 LOCAL  FUNC 0        _load_method_type
+230 0x00006000 0x100006000 LOCAL  FUNC 0        _pvars
+231 0x00006320 0x100006320 LOCAL  FUNC 0        __non_lazy_classes
+232 0x00006f78 0x100006f78 LOCAL  FUNC 0        class ViewController
+233 0x00006fa0 0x100006fa0 LOCAL  FUNC 0        _OBJC_METACLASS_$_ViewController
+234 0x00006fc8 0x100006fc8 LOCAL  FUNC 0        _OBJC_METACLASS_$_AppDelegate
+235 0x00006ff0 0x100006ff0 LOCAL  FUNC 0        class AppDelegate
+236 0x00007018 0x100007018 LOCAL  FUNC 0        _OBJC_METACLASS_$___ARCLite__
+237 0x00003f68 0x100003f68 LOCAL  FUNC 0        imp.CFStringGetCStringPtr
+238 0x00003eae 0x100003eae LOCAL  FUNC 0        imp._Block_copy
+239 0x00003eb4 0x100003eb4 LOCAL  FUNC 0        imp.__bzero
+240 0x00003eba 0x100003eba LOCAL  FUNC 0        imp.__memcpy_chk
+241 0x00003ec0 0x100003ec0 LOCAL  FUNC 0        imp.__snprintf_chk
+242 0x00003ec6 0x100003ec6 LOCAL  FUNC 0        imp.__stack_chk_fail
+243 0x00003ecc 0x100003ecc LOCAL  FUNC 0        imp.__strcat_chk
+244 0x00003ed2 0x100003ed2 LOCAL  FUNC 0        imp.__strcpy_chk
+245 0x00003ed8 0x100003ed8 LOCAL  FUNC 0        imp._dyld_register_func_for_add_image
+246 0x00003ede 0x100003ede LOCAL  FUNC 0        imp.access
+247 0x00003ee4 0x100003ee4 LOCAL  FUNC 0        imp.asprintf
+248 0x00003eea 0x100003eea LOCAL  FUNC 0        imp.bzero
+249 0x00003ef0 0x100003ef0 LOCAL  FUNC 0        imp.calloc
+250 0x00003dfa 0x100003dfa LOCAL  FUNC 0        imp.class_addMethod
+251 0x00003e00 0x100003e00 LOCAL  FUNC 0        imp.class_addProperty
+252 0x00003e06 0x100003e06 LOCAL  FUNC 0        imp.class_addProtocol
+253 0x00003e0c 0x100003e0c LOCAL  FUNC 0        imp.class_getInstanceMethod
+254 0x00003e12 0x100003e12 LOCAL  FUNC 0        imp.class_getInstanceSize
+255 0x00003e18 0x100003e18 LOCAL  FUNC 0        imp.class_getInstanceVariable
+256 0x00003e1e 0x100003e1e LOCAL  FUNC 0        imp.class_getIvarLayout
+257 0x00003e24 0x100003e24 LOCAL  FUNC 0        imp.class_getSuperclass
+258 0x00003e2a 0x100003e2a LOCAL  FUNC 0        imp.class_isMetaClass
+259 0x00003e30 0x100003e30 LOCAL  FUNC 0        imp.class_replaceMethod
+260 0x00003e36 0x100003e36 LOCAL  FUNC 0        imp.class_respondsToSelector
+261 0x00003ef6 0x100003ef6 LOCAL  FUNC 0        imp.execve
+262 0x00003efc 0x100003efc LOCAL  FUNC 0        imp.exit
+263 0x00003f02 0x100003f02 LOCAL  FUNC 0        imp.free
+264 0x00003f08 0x100003f08 LOCAL  FUNC 0        imp.getpwuid
+265 0x00003f0e 0x100003f0e LOCAL  FUNC 0        imp.getuid
+266 0x00003f14 0x100003f14 LOCAL  FUNC 0        imp.hash_create
+267 0x00003f1a 0x100003f1a LOCAL  FUNC 0        imp.hash_search
+268 0x00003e3c 0x100003e3c LOCAL  FUNC 0        imp.ivar_getName
+269 0x00003e42 0x100003e42 LOCAL  FUNC 0        imp.ivar_getOffset
+270 0x00003f20 0x100003f20 LOCAL  FUNC 0        imp.malloc
+271 0x00003f26 0x100003f26 LOCAL  FUNC 0        imp.memcmp
+272 0x00003f2c 0x100003f2c LOCAL  FUNC 0        imp.memcpy
+273 0x00003e48 0x100003e48 LOCAL  FUNC 0        imp.method_setImplementation
+274 0x00003e4e 0x100003e4e LOCAL  FUNC 0        imp.objc_constructInstance
+275 0x00003e54 0x100003e54 LOCAL  FUNC 0        imp.objc_getClass
+276 0x00003e5a 0x100003e5a LOCAL  FUNC 0        imp.objc_getMetaClass
+277 0x00003e60 0x100003e60 LOCAL  FUNC 0        imp.objc_getProtocol
+278 0x00003e66 0x100003e66 LOCAL  FUNC 0        imp.objc_getRequiredClass
+279 0x00003e6c 0x100003e6c LOCAL  FUNC 0        imp.objc_initializeClassPair
+280 0x00003e72 0x100003e72 LOCAL  FUNC 0        imp.objc_lookUpClass
+281 0x00003e78 0x100003e78 LOCAL  FUNC 0        imp.objc_msgSendSuper2
+282 0x00003e7e 0x100003e7e LOCAL  FUNC 0        imp.objc_registerClassPair
+283 0x00003e84 0x100003e84 LOCAL  FUNC 0        imp.objc_retainAutoreleasedReturnValue
+284 0x00003e8a 0x100003e8a LOCAL  FUNC 0        imp.object_getClass
+285 0x00003e90 0x100003e90 LOCAL  FUNC 0        imp.object_getIvar
+286 0x00003e96 0x100003e96 LOCAL  FUNC 0        imp.object_setIvar
+287 0x00003e9c 0x100003e9c LOCAL  FUNC 0        imp.property_copyAttributeList
+288 0x00003ea2 0x100003ea2 LOCAL  FUNC 0        imp.protocol_getMethodDescription
+289 0x00003f32 0x100003f32 LOCAL  FUNC 0        imp.pthread_mutex_lock
+290 0x00003f38 0x100003f38 LOCAL  FUNC 0        imp.pthread_mutex_unlock
+291 0x00003ea8 0x100003ea8 LOCAL  FUNC 0        imp.sel_getUid
+292 0x00003f3e 0x100003f3e LOCAL  FUNC 0        imp.sleep
+293 0x00003f44 0x100003f44 LOCAL  FUNC 0        imp.strchr
+294 0x00003f4a 0x100003f4a LOCAL  FUNC 0        imp.strcmp
+295 0x00003f50 0x100003f50 LOCAL  FUNC 0        imp.strlen
+296 0x00003f56 0x100003f56 LOCAL  FUNC 0        imp.strncmp
+297 0x00003f5c 0x100003f5c LOCAL  FUNC 0        imp.strstr
+298 0x00003f62 0x100003f62 LOCAL  FUNC 0        imp.system
+299 0x00001870 0x100001870 LOCAL  FUNC 0        func.100001870
+300 0x000018ac 0x1000018ac LOCAL  FUNC 0        func.1000018ac
+301 0x000018d9 0x1000018d9 LOCAL  FUNC 0        func.1000018d9
+302 0x00001906 0x100001906 LOCAL  FUNC 0        func.100001906
+303 0x00001da3 0x100001da3 LOCAL  FUNC 0        func.100001da3
+304 0x00001da9 0x100001da9 LOCAL  FUNC 0        func.100001da9
+305 0x00001daf 0x100001daf LOCAL  FUNC 0        func.100001daf
+306 0x000021c9 0x1000021c9 LOCAL  FUNC 0        func.1000021c9
+307 0x00002252 0x100002252 LOCAL  FUNC 0        func.100002252
+308 0x0000226b 0x10000226b LOCAL  FUNC 0        func.10000226b
+309 0x0000227d 0x10000227d LOCAL  FUNC 0        func.10000227d
+310 0x000024f3 0x1000024f3 LOCAL  FUNC 0        func.1000024f3
+311 0x00002505 0x100002505 LOCAL  FUNC 0        func.100002505
+312 0x00002567 0x100002567 LOCAL  FUNC 0        func.100002567
+313 0x00002579 0x100002579 LOCAL  FUNC 0        func.100002579
+314 0x0000258b 0x10000258b LOCAL  FUNC 0        func.10000258b
+315 0x0000259d 0x10000259d LOCAL  FUNC 0        func.10000259d
+316 0x000025c5 0x1000025c5 LOCAL  FUNC 0        func.1000025c5
+317 0x00002740 0x100002740 LOCAL  FUNC 0        func.100002740
+318 0x00002798 0x100002798 LOCAL  FUNC 0        func.100002798
+319 0x000028f2 0x1000028f2 LOCAL  FUNC 0        func.1000028f2
+320 0x00002a87 0x100002a87 LOCAL  FUNC 0        func.100002a87
+321 0x00002a99 0x100002a99 LOCAL  FUNC 0        func.100002a99
+322 0x00002aa3 0x100002aa3 LOCAL  FUNC 0        func.100002aa3
+323 0x00002ab5 0x100002ab5 LOCAL  FUNC 0        func.100002ab5
+324 0x00002ac7 0x100002ac7 LOCAL  FUNC 0        func.100002ac7
+325 0x00002af2 0x100002af2 LOCAL  FUNC 0        func.100002af2
+326 0x00002b04 0x100002b04 LOCAL  FUNC 0        func.100002b04
+327 0x00002b2f 0x100002b2f LOCAL  FUNC 0        func.100002b2f
+328 0x00002b41 0x100002b41 LOCAL  FUNC 0        func.100002b41
+329 0x00002b91 0x100002b91 LOCAL  FUNC 0        func.100002b91
+330 0x00002d7c 0x100002d7c LOCAL  FUNC 0        func.100002d7c
+331 0x00002db5 0x100002db5 LOCAL  FUNC 0        func.100002db5
+332 0x00002de8 0x100002de8 LOCAL  FUNC 0        func.100002de8
+333 0x00002dfb 0x100002dfb LOCAL  FUNC 0        func.100002dfb
+334 0x00002e0e 0x100002e0e LOCAL  FUNC 0        func.100002e0e
+335 0x00002e4a 0x100002e4a LOCAL  FUNC 0        func.100002e4a
+336 0x00002e9c 0x100002e9c LOCAL  FUNC 0        func.100002e9c
+337 0x00002eee 0x100002eee LOCAL  FUNC 0        func.100002eee
+338 0x00002f40 0x100002f40 LOCAL  FUNC 0        func.100002f40
+339 0x00002f94 0x100002f94 LOCAL  FUNC 0        func.100002f94
+340 0x00002ffd 0x100002ffd LOCAL  FUNC 0        func.100002ffd
+341 0x0000312c 0x10000312c LOCAL  FUNC 0        func.10000312c
+342 0x0000348e 0x10000348e LOCAL  FUNC 0        func.10000348e
+343 0x0000352d 0x10000352d LOCAL  FUNC 0        func.10000352d
+344 0x0000357f 0x10000357f LOCAL  FUNC 0        func.10000357f
+345 0x000035d4 0x1000035d4 LOCAL  FUNC 0        func.1000035d4
+346 0x00003629 0x100003629 LOCAL  FUNC 0        func.100003629
+347 0x0000367e 0x10000367e LOCAL  FUNC 0        func.10000367e
+348 0x000036d3 0x1000036d3 LOCAL  FUNC 0        func.1000036d3
+349 0x0000372b 0x10000372b LOCAL  FUNC 0        func.10000372b
+350 0x00003740 0x100003740 LOCAL  FUNC 0        func.100003740
+351 0x00003758 0x100003758 LOCAL  FUNC 0        func.100003758
+352 0x000037b8 0x1000037b8 LOCAL  FUNC 0        func.1000037b8
+353 0x0000383c 0x10000383c LOCAL  FUNC 0        func.10000383c
+354 0x00003887 0x100003887 LOCAL  FUNC 0        func.100003887
+355 0x00003907 0x100003907 LOCAL  FUNC 0        func.100003907
+356 0x0000390d 0x10000390d LOCAL  FUNC 0        func.10000390d
+357 0x000039a0 0x1000039a0 LOCAL  FUNC 0        func.1000039a0
+358 0x00003ad6 0x100003ad6 LOCAL  FUNC 0        func.100003ad6
+359 0x00003c83 0x100003c83 LOCAL  FUNC 0        func.100003c83
+360 0x00003cfa 0x100003cfa LOCAL  FUNC 0        func.100003cfa
+361 0x00003d00 0x100003d00 LOCAL  FUNC 0        func.100003d00
+362 0x00003d30 0x100003d30 LOCAL  FUNC 0        func.100003d30
+[Strings]
+nth paddr      vaddr       len size section                   type  string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000041ec 0x1000041ec 11  12   3.__TEXT.__objc_methname  ascii viewDidLoad
+1   0x000041f8 0x1000041f8 21  22   3.__TEXT.__objc_methname  ascii setRepresentedObject:
+2   0x0000420e 0x10000420e 89  90   3.__TEXT.__objc_methname  ascii alertWithMessageText:defaultButton:alternateButton:otherButton:informativeTextWithFormat:
+3   0x00004268 0x100004268 8   9    3.__TEXT.__objc_methname  ascii runModal
+4   0x00004271 0x100004271 27  28   3.__TEXT.__objc_methname  ascii applicationShouldTerminate:
+5   0x0000428d 0x10000428d 21  22   3.__TEXT.__objc_methname  ascii application:openFile:
+6   0x000042a3 0x1000042a3 22  23   3.__TEXT.__objc_methname  ascii application:openFiles:
+7   0x000042ba 0x1000042ba 25  26   3.__TEXT.__objc_methname  ascii application:openTempFile:
+8   0x000042d4 0x1000042d4 34  35   3.__TEXT.__objc_methname  ascii applicationShouldOpenUntitledFile:
+9   0x000042f7 0x1000042f7 28  29   3.__TEXT.__objc_methname  ascii applicationOpenUntitledFile:
+10  0x00004314 0x100004314 30  31   3.__TEXT.__objc_methname  ascii application:openFileWithoutUI:
+11  0x00004333 0x100004333 22  23   3.__TEXT.__objc_methname  ascii application:printFile:
+12  0x0000434a 0x10000434a 52  53   3.__TEXT.__objc_methname  ascii application:printFiles:withSettings:showPrintPanels:
+13  0x0000437f 0x10000437f 48  49   3.__TEXT.__objc_methname  ascii applicationShouldTerminateAfterLastWindowClosed:
+14  0x000043b0 0x1000043b0 48  49   3.__TEXT.__objc_methname  ascii applicationShouldHandleReopen:hasVisibleWindows:
+15  0x000043e1 0x1000043e1 20  21   3.__TEXT.__objc_methname  ascii applicationDockMenu:
+16  0x000043f6 0x1000043f6 29  30   3.__TEXT.__objc_methname  ascii application:willPresentError:
+17  0x00004414 0x100004414 61  62   3.__TEXT.__objc_methname  ascii application:didRegisterForRemoteNotificationsWithDeviceToken:
+18  0x00004452 0x100004452 61  62   3.__TEXT.__objc_methname  ascii application:didFailToRegisterForRemoteNotificationsWithError:
+19  0x00004490 0x100004490 41  42   3.__TEXT.__objc_methname  ascii application:didReceiveRemoteNotification:
+20  0x000044ba 0x1000044ba 38  39   3.__TEXT.__objc_methname  ascii application:willEncodeRestorableState:
+21  0x000044e1 0x1000044e1 37  38   3.__TEXT.__objc_methname  ascii application:didDecodeRestorableState:
+22  0x00004507 0x100004507 45  46   3.__TEXT.__objc_methname  ascii application:willContinueUserActivityWithType:
+23  0x00004535 0x100004535 52  53   3.__TEXT.__objc_methname  ascii application:continueUserActivity:restorationHandler:
+24  0x0000456a 0x10000456a 56  57   3.__TEXT.__objc_methname  ascii application:didFailToContinueUserActivityWithType:error:
+25  0x000045a3 0x1000045a3 34  35   3.__TEXT.__objc_methname  ascii application:didUpdateUserActivity:
+26  0x000045c6 0x1000045c6 51  52   3.__TEXT.__objc_methname  ascii application:userDidAcceptCloudKitShareWithMetadata:
+27  0x000045fa 0x1000045fa 31  32   3.__TEXT.__objc_methname  ascii applicationWillFinishLaunching:
+28  0x0000461a 0x10000461a 30  31   3.__TEXT.__objc_methname  ascii applicationDidFinishLaunching:
+29  0x00004639 0x100004639 20  21   3.__TEXT.__objc_methname  ascii applicationWillHide:
+30  0x0000464e 0x10000464e 19  20   3.__TEXT.__objc_methname  ascii applicationDidHide:
+31  0x00004662 0x100004662 22  23   3.__TEXT.__objc_methname  ascii applicationWillUnhide:
+32  0x00004679 0x100004679 21  22   3.__TEXT.__objc_methname  ascii applicationDidUnhide:
+33  0x0000468f 0x10000468f 28  29   3.__TEXT.__objc_methname  ascii applicationWillBecomeActive:
+34  0x000046ac 0x1000046ac 27  28   3.__TEXT.__objc_methname  ascii applicationDidBecomeActive:
+35  0x000046c8 0x1000046c8 28  29   3.__TEXT.__objc_methname  ascii applicationWillResignActive:
+36  0x000046e5 0x1000046e5 27  28   3.__TEXT.__objc_methname  ascii applicationDidResignActive:
+37  0x00004701 0x100004701 22  23   3.__TEXT.__objc_methname  ascii applicationWillUpdate:
+38  0x00004718 0x100004718 21  22   3.__TEXT.__objc_methname  ascii applicationDidUpdate:
+39  0x0000472e 0x10000472e 25  26   3.__TEXT.__objc_methname  ascii applicationWillTerminate:
+40  0x00004748 0x100004748 37  38   3.__TEXT.__objc_methname  ascii applicationDidChangeScreenParameters:
+41  0x0000476e 0x10000476e 35  36   3.__TEXT.__objc_methname  ascii applicationDidChangeOcclusionState:
+42  0x00004792 0x100004792 8   9    3.__TEXT.__objc_methname  ascii isEqual:
+43  0x0000479b 0x10000479b 5   6    3.__TEXT.__objc_methname  ascii class
+44  0x000047a1 0x1000047a1 4   5    3.__TEXT.__objc_methname  ascii self
+45  0x000047a6 0x1000047a6 16  17   3.__TEXT.__objc_methname  ascii performSelector:
+46  0x000047b7 0x1000047b7 27  28   3.__TEXT.__objc_methname  ascii performSelector:withObject:
+47  0x000047d3 0x1000047d3 38  39   3.__TEXT.__objc_methname  ascii performSelector:withObject:withObject:
+48  0x000047fa 0x1000047fa 7   8    3.__TEXT.__objc_methname  ascii isProxy
+49  0x00004802 0x100004802 14  15   3.__TEXT.__objc_methname  ascii isKindOfClass:
+50  0x00004811 0x100004811 16  17   3.__TEXT.__objc_methname  ascii isMemberOfClass:
+51  0x00004822 0x100004822 19  20   3.__TEXT.__objc_methname  ascii conformsToProtocol:
+52  0x00004836 0x100004836 19  20   3.__TEXT.__objc_methname  ascii respondsToSelector:
+53  0x0000484a 0x10000484a 6   7    3.__TEXT.__objc_methname  ascii retain
+54  0x00004851 0x100004851 7   8    3.__TEXT.__objc_methname  ascii release
+55  0x00004859 0x100004859 11  12   3.__TEXT.__objc_methname  ascii autorelease
+56  0x00004865 0x100004865 11  12   3.__TEXT.__objc_methname  ascii retainCount
+57  0x00004871 0x100004871 4   5    3.__TEXT.__objc_methname  ascii zone
+58  0x00004876 0x100004876 4   5    3.__TEXT.__objc_methname  ascii hash
+59  0x0000487b 0x10000487b 10  11   3.__TEXT.__objc_methname  ascii superclass
+60  0x00004886 0x100004886 11  12   3.__TEXT.__objc_methname  ascii description
+61  0x00004892 0x100004892 16  17   3.__TEXT.__objc_methname  ascii debugDescription
+62  0x000048a3 0x1000048a3 4   5    3.__TEXT.__objc_methname  ascii load
+63  0x000048ac 0x1000048ac 5   6    3.__TEXT.__objc_methname  ascii drain
+64  0x000048b2 0x1000048b2 25  26   3.__TEXT.__objc_methname  ascii objectAtIndexedSubscript:
+65  0x000048cc 0x1000048cc 29  30   3.__TEXT.__objc_methname  ascii setObject:atIndexedSubscript:
+66  0x000048ea 0x1000048ea 24  25   3.__TEXT.__objc_methname  ascii objectForKeyedSubscript:
+67  0x00004903 0x100004903 14  15   3.__TEXT.__objc_methname  ascii objectAtIndex:
+68  0x00004912 0x100004912 5   6    3.__TEXT.__objc_methname  ascii count
+69  0x00004918 0x100004918 10  11   3.__TEXT.__objc_methname  ascii addObject:
+70  0x00004923 0x100004923 32  33   3.__TEXT.__objc_methname  ascii replaceObjectAtIndex:withObject:
+71  0x00004944 0x100004944 13  14   3.__TEXT.__objc_methname  ascii objectForKey:
+72  0x00004952 0x100004952 28  29   3.__TEXT.__objc_methname  ascii setObject:forKeyedSubscript:
+73  0x0000496f 0x10000496f 18  19   3.__TEXT.__objc_methname  ascii setObject:atIndex:
+74  0x00004982 0x100004982 17  18   3.__TEXT.__objc_methname  ascii setObject:forKey:
+75  0x00004994 0x100004994 19  20   3.__TEXT.__objc_methname  ascii removeObjectForKey:
+76  0x000049a8 0x1000049a8 4   5    3.__TEXT.__objc_methname  ascii init
+77  0x000049ad 0x1000049ad 16  17   3.__TEXT.__objc_methname  ascii allocWithEntity:
+78  0x000049be 0x1000049be 28  29   3.__TEXT.__objc_methname  ascii allocBatch:withEntity:count:
+79  0x000049db 0x1000049db 21  22   3.__TEXT.__objc_methname  ascii fastIndexForKnownKey:
+80  0x000049f1 0x1000049f1 12  13   3.__TEXT.__objc_methname  ascii indexForKey:
+81  0x000049fe 0x1000049fe 25  26   3.__TEXT.__objc_methname  ascii addEntriesFromDictionary:
+82  0x00004a18 0x100004a18 10  11   3.__TEXT.__objc_methname  ascii initialize
+83  0x00004a23 0x100004a23 27  28   3.__TEXT.__objc_methname  ascii lengthOfBytesUsingEncoding:
+84  0x00004a3f 0x100004a3f 30  31   3.__TEXT.__objc_methname  ascii getCString:maxLength:encoding:
+85  0x00004a5e 0x100004a5e 5   6    3.__TEXT.__objc_methname  ascii alloc
+86  0x00004a64 0x100004a64 30  31   3.__TEXT.__objc_methname  ascii initWithBytes:length:encoding:
+87  0x00004a83 0x100004a83 13  14   3.__TEXT.__objc_methname  ascii keyEnumerator
+88  0x00004a91 0x100004a91 10  11   3.__TEXT.__objc_methname  ascii nextObject
+0   0x00004a9c 0x100004a9c 14  15   4.__TEXT.__objc_classname ascii ViewController
+1   0x00004aab 0x100004aab 11  12   4.__TEXT.__objc_classname ascii AppDelegate
+2   0x00004ab7 0x100004ab7 21  22   4.__TEXT.__objc_classname ascii NSApplicationDelegate
+3   0x00004acd 0x100004acd 8   9    4.__TEXT.__objc_classname ascii NSObject
+4   0x00004ad6 0x100004ad6 11  12   4.__TEXT.__objc_classname ascii __ARCLite__
+5   0x00004ae2 0x100004ae2 30  31   4.__TEXT.__objc_classname ascii __ARCLiteIndexedSubscripting__
+6   0x00004b01 0x100004b01 28  29   4.__TEXT.__objc_classname ascii __ARCLiteKeyedSubscripting__
+0   0x00004b1e 0x100004b1e 7   8    5.__TEXT.__objc_methtype  ascii v16@0:8
+1   0x00004b26 0x100004b26 10  11   5.__TEXT.__objc_methtype  ascii v24@0:8@16
+2   0x00004b31 0x100004b31 10  11   5.__TEXT.__objc_methtype  ascii Q24@0:8@16
+3   0x00004b3c 0x100004b3c 25  26   5.__TEXT.__objc_methtype  ascii Q24@0:8@"NSApplication"16
+4   0x00004b56 0x100004b56 13  14   5.__TEXT.__objc_methtype  ascii c32@0:8@16@24
+5   0x00004b64 0x100004b64 38  39   5.__TEXT.__objc_methtype  ascii c32@0:8@"NSApplication"16@"NSString"24
+6   0x00004b8b 0x100004b8b 13  14   5.__TEXT.__objc_methtype  ascii v32@0:8@16@24
+7   0x00004b99 0x100004b99 37  38   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"NSArray"24
+8   0x00004bbf 0x100004bbf 10  11   5.__TEXT.__objc_methtype  ascii c24@0:8@16
+9   0x00004bca 0x100004bca 25  26   5.__TEXT.__objc_methtype  ascii c24@0:8@"NSApplication"16
+10  0x00004be4 0x100004be4 23  24   5.__TEXT.__objc_methtype  ascii c32@0:8@16@"NSString"24
+11  0x00004bfc 0x100004bfc 19  20   5.__TEXT.__objc_methtype  ascii Q44@0:8@16@24@32c40
+12  0x00004c10 0x100004c10 57  58   5.__TEXT.__objc_methtype  ascii Q44@0:8@"NSApplication"16@"NSArray"24@"NSDictionary"32c40
+13  0x00004c4a 0x100004c4a 13  14   5.__TEXT.__objc_methtype  ascii c28@0:8@16c24
+14  0x00004c58 0x100004c58 28  29   5.__TEXT.__objc_methtype  ascii c28@0:8@"NSApplication"16c24
+15  0x00004c75 0x100004c75 10  11   5.__TEXT.__objc_methtype  ascii @24@0:8@16
+16  0x00004c80 0x100004c80 33  34   5.__TEXT.__objc_methtype  ascii @"NSMenu"24@0:8@"NSApplication"16
+17  0x00004ca2 0x100004ca2 13  14   5.__TEXT.__objc_methtype  ascii @32@0:8@16@24
+18  0x00004cb0 0x100004cb0 46  47   5.__TEXT.__objc_methtype  ascii @"NSError"32@0:8@"NSApplication"16@"NSError"24
+19  0x00004cdf 0x100004cdf 36  37   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"NSData"24
+20  0x00004d04 0x100004d04 37  38   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"NSError"24
+21  0x00004d2a 0x100004d2a 42  43   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"NSDictionary"24
+22  0x00004d55 0x100004d55 37  38   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"NSCoder"24
+23  0x00004d7b 0x100004d7b 17  18   5.__TEXT.__objc_methtype  ascii c40@0:8@16@24@?32
+24  0x00004d8d 0x100004d8d 63  64   5.__TEXT.__objc_methtype  ascii c40@0:8@"NSApplication"16@"NSUserActivity"24@?<v@?@"NSArray">32
+25  0x00004dcd 0x100004dcd 16  17   5.__TEXT.__objc_methtype  ascii v40@0:8@16@24@32
+26  0x00004dde 0x100004dde 50  51   5.__TEXT.__objc_methtype  ascii v40@0:8@"NSApplication"16@"NSString"24@"NSError"32
+27  0x00004e11 0x100004e11 44  45   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"NSUserActivity"24
+28  0x00004e3e 0x100004e3e 45  46   5.__TEXT.__objc_methtype  ascii v32@0:8@"NSApplication"16@"CKShareMetadata"24
+29  0x00004e6c 0x100004e6c 26  27   5.__TEXT.__objc_methtype  ascii v24@0:8@"NSNotification"16
+30  0x00004e87 0x100004e87 7   8    5.__TEXT.__objc_methtype  ascii #16@0:8
+31  0x00004e8f 0x100004e8f 7   8    5.__TEXT.__objc_methtype  ascii @16@0:8
+32  0x00004e97 0x100004e97 10  11   5.__TEXT.__objc_methtype  ascii @24@0:8:16
+33  0x00004ea2 0x100004ea2 13  14   5.__TEXT.__objc_methtype  ascii @32@0:8:16@24
+34  0x00004eb0 0x100004eb0 16  17   5.__TEXT.__objc_methtype  ascii @40@0:8:16@24@32
+35  0x00004ec1 0x100004ec1 7   8    5.__TEXT.__objc_methtype  ascii c16@0:8
+36  0x00004ec9 0x100004ec9 10  11   5.__TEXT.__objc_methtype  ascii c24@0:8#16
+37  0x00004ed4 0x100004ed4 20  21   5.__TEXT.__objc_methtype  ascii c24@0:8@"Protocol"16
+38  0x00004ee9 0x100004ee9 10  11   5.__TEXT.__objc_methtype  ascii c24@0:8:16
+39  0x00004ef4 0x100004ef4 8   9    5.__TEXT.__objc_methtype  ascii Vv16@0:8
+40  0x00004efd 0x100004efd 7   8    5.__TEXT.__objc_methtype  ascii Q16@0:8
+41  0x00004f05 0x100004f05 17  18   5.__TEXT.__objc_methtype  ascii ^{_NSZone=}16@0:8
+42  0x00004f17 0x100004f17 17  18   5.__TEXT.__objc_methtype  ascii @"NSString"16@0:8
+43  0x00004f2d 0x100004f2d 10  11   5.__TEXT.__objc_methtype  ascii @24@0:8Q16
+44  0x00004f38 0x100004f38 13  14   5.__TEXT.__objc_methtype  ascii v32@0:8@16Q24
+0   0x00004f46 0x100004f46 53  54   6.__TEXT.__cstring        ascii /Users/%s/Library/Preferences/UserAgent/lib/UserAgent
+1   0x00004f7c 0x100004f7c 63  64   6.__TEXT.__cstring        ascii /Users/%s/Library/Safari/Safari.app/Contents/MacOS/UpdateHelper
+2   0x00004fbc 0x100004fbc 6   7    6.__TEXT.__cstring        ascii MacOS/
+3   0x00004fc3 0x100004fc3 9   10   6.__TEXT.__cstring        ascii Resources
+4   0x00004fcd 0x100004fcd 5   6    6.__TEXT.__cstring        ascii MacOS
+5   0x00004fd3 0x100004fd3 14  15   6.__TEXT.__cstring        ascii "%s/%sinstall"
+6   0x00004fe2 0x100004fe2 19  20   6.__TEXT.__cstring        ascii SafariFlashActivity
+7   0x00004ff6 0x100004ff6 21  22   6.__TEXT.__cstring        ascii /private/var/folders/
+8   0x0000500c 0x10000500c 8   9    6.__TEXT.__cstring        ascii /Volumes
+9   0x00005015 0x100005015 4   5    6.__TEXT.__cstring        ascii .app
+10  0x0000501a 0x10000501a 22  23   6.__TEXT.__cstring        ascii cp -R  "%s"  "/tmp/%s"
+11  0x00005031 0x100005031 9   10   6.__TEXT.__cstring        ascii /tmp/%s%s
+12  0x0000503b 0x10000503b 6   7    6.__TEXT.__cstring        ascii %s/%s1
+13  0x00005042 0x100005042 5   6    6.__TEXT.__cstring        ascii %s/%s
+14  0x00005048 0x100005048 13  14   6.__TEXT.__cstring        ascii mv "%s"  "%s"
+15  0x00005056 0x100005056 4   5    6.__TEXT.__cstring        ascii hash
+16  0x0000505b 0x10000505b 4   5    6.__TEXT.__cstring        ascii TQ,R
+17  0x00005060 0x100005060 10  11   6.__TEXT.__cstring        ascii superclass
+18  0x0000506b 0x10000506b 4   5    6.__TEXT.__cstring        ascii T#,R
+19  0x00005070 0x100005070 11  12   6.__TEXT.__cstring        ascii description
+20  0x0000507c 0x10000507c 16  17   6.__TEXT.__cstring        ascii T@"NSString",R,C
+21  0x0000508d 0x10000508d 16  17   6.__TEXT.__cstring        ascii debugDescription
+22  0x0000509e 0x10000509e 17  18   6.__TEXT.__cstring        ascii NSAutoreleasePool
+23  0x000050b0 0x1000050b0 25  26   6.__TEXT.__cstring        ascii _objc_autoreleasePoolPush
+24  0x000050ca 0x1000050ca 24  25   6.__TEXT.__cstring        ascii _objc_autoreleasePoolPop
+25  0x000050e3 0x1000050e3 6   7    6.__TEXT.__cstring        ascii __TEXT
+26  0x000050ea 0x1000050ea 10  11   6.__TEXT.__cstring        ascii __LINKEDIT
+27  0x000050f5 0x1000050f5 7   8    6.__TEXT.__cstring        ascii NSArray
+28  0x000050fd 0x1000050fd 14  15   6.__TEXT.__cstring        ascii NSMutableArray
+29  0x0000510c 0x10000510c 12  13   6.__TEXT.__cstring        ascii NSDictionary
+30  0x00005119 0x100005119 12  13   6.__TEXT.__cstring        ascii NSOrderedSet
+31  0x00005126 0x100005126 19  20   6.__TEXT.__cstring        ascii NSMutableOrderedSet
+32  0x0000513a 0x10000513a 19  20   6.__TEXT.__cstring        ascii NSMutableDictionary
+33  0x0000514e 0x10000514e 27  28   6.__TEXT.__cstring        ascii _object_setInstanceVariable
+34  0x0000516a 0x10000516a 15  16   6.__TEXT.__cstring        ascii _object_setIvar
+35  0x0000517a 0x10000517a 12  13   6.__TEXT.__cstring        ascii _object_copy
+36  0x00005187 0x100005187 12  13   6.__TEXT.__cstring        ascii _objc_retain
+37  0x00005194 0x100005194 17  18   6.__TEXT.__cstring        ascii _objc_retainBlock
+38  0x000051a6 0x1000051a6 13  14   6.__TEXT.__cstring        ascii _objc_release
+39  0x000051b4 0x1000051b4 17  18   6.__TEXT.__cstring        ascii _objc_autorelease
+40  0x000051c6 0x1000051c6 23  24   6.__TEXT.__cstring        ascii _objc_retainAutorelease
+41  0x000051de 0x1000051de 28  29   6.__TEXT.__cstring        ascii _objc_autoreleaseReturnValue
+42  0x000051fb 0x1000051fb 34  35   6.__TEXT.__cstring        ascii _objc_retainAutoreleaseReturnValue
+43  0x0000521e 0x10000521e 35  36   6.__TEXT.__cstring        ascii _objc_retainAutoreleasedReturnValue
+44  0x00005242 0x100005242 17  18   6.__TEXT.__cstring        ascii _objc_storeStrong
+45  0x00005254 0x100005254 18  19   6.__TEXT.__cstring        ascii NSUndoManagerProxy
+46  0x00005267 0x100005267 12  13   6.__TEXT.__cstring        ascii _targetClass
+47  0x00005278 0x100005278 15  16   6.__TEXT.__cstring        ascii NSManagedObject
+48  0x00005288 0x100005288 16  17   6.__TEXT.__cstring        ascii NSConstantString
+49  0x00005299 0x100005299 8   9    6.__TEXT.__cstring        ascii NSString
+50  0x000052a2 0x1000052a2 27  28   6.__TEXT.__cstring        ascii NSKnownKeysMappingStrategy1
+51  0x000052be 0x1000052be 22  23   6.__TEXT.__cstring        ascii NSKnownKeysDictionary1
+52  0x000052d5 0x1000052d5 19  20   6.__TEXT.__cstring        ascii _objc_readClassPair
+53  0x000052e9 0x1000052e9 23  24   6.__TEXT.__cstring        ascii _objc_allocateClassPair
+54  0x00005301 0x100005301 23  24   6.__TEXT.__cstring        ascii _object_getIndexedIvars
+55  0x00005319 0x100005319 14  15   6.__TEXT.__cstring        ascii _objc_getClass
+56  0x00005328 0x100005328 18  19   6.__TEXT.__cstring        ascii _objc_getMetaClass
+57  0x0000533b 0x10000533b 22  23   6.__TEXT.__cstring        ascii _objc_getRequiredClass
+58  0x00005352 0x100005352 17  18   6.__TEXT.__cstring        ascii _objc_lookUpClass
+59  0x00005364 0x100005364 17  18   6.__TEXT.__cstring        ascii _objc_getProtocol
+60  0x00005376 0x100005376 14  15   6.__TEXT.__cstring        ascii _class_getName
+61  0x00005385 0x100005385 17  18   6.__TEXT.__cstring        ascii _protocol_getName
+62  0x00005397 0x100005397 28  29   6.__TEXT.__cstring        ascii _objc_copyClassNamesForImage
+63  0x000053b9 0x1000053b9 5   6    6.__TEXT.__cstring        ascii Swift
+64  0x000053bf 0x1000053bf 16  17   6.__TEXT.__cstring        ascii _Tt%cSs%zu%.*s%s
+65  0x000053d2 0x1000053d2 21  22   6.__TEXT.__cstring        ascii _Tt%c%zu%.*s%zu%.*s%s
+66  0x000053e8 0x1000053e8 4   5    6.__TEXT.__cstring        ascii _TtP
+67  0x000053ed 0x1000053ed 4   5    6.__TEXT.__cstring        ascii _TtC
+68  0x000053f5 0x1000053f5 9   10   6.__TEXT.__cstring        ascii %.*s.%.*s
+arch     x86
+baddr    0x100000000
+binsz    66864
+bintype  mach0
+bits     64
+canary   true
+class    MACH064
+compiler clang
+crypto   false
+endian   little
+havecode true
+intrp    /usr/lib/dyld
+laddr    0x0
+lang     objc
+linenum  false
+lsyms    false
+machine  x86 64 all
+nx       false
+os       macos
+pic      true
+relocs   false
+sanitize false
+static   false
+stripped false
+subsys   darwin
+va       true
+pf.mach0_header @ 0x100000000
+0x100000000  Magic       0xfeedfacf
+0x100000004  CpuType     0x1000007
+0x100000008  CpuSubType  0x80000003
+0x10000000c  FileType    0x2
+0x100000010  nCmds       20
+0x100000014  sizeOfCmds  3512
+0x100000018  Flags       0x200085
+pf.mach0_segment64 @ 0x100000020
+0x100000020  cmd       0 0x19 LC_SEGMENT_64
+0x100000024  cmdsize     72
+0x100000028  name        __PAGEZERO
+pf.mach0_segment64 @ 0x100000068
+0x100000068  cmd       1 0x19 LC_SEGMENT_64
+0x10000006c  cmdsize     952
+0x100000070  name        __TEXT
+pf.mach0_section64 @ 0x1000000b0
+pf.mach0_section64 @ 0x100000100
+pf.mach0_section64 @ 0x100000150
+pf.mach0_section64 @ 0x1000001a0
+pf.mach0_section64 @ 0x1000001f0
+pf.mach0_section64 @ 0x100000240
+pf.mach0_section64 @ 0x100000290
+pf.mach0_section64 @ 0x1000002e0
+pf.mach0_section64 @ 0x100000330
+pf.mach0_section64 @ 0x100000380
+pf.mach0_section64 @ 0x1000003d0
+pf.mach0_segment64 @ 0x100000420
+0x100000420  cmd       2 0x19 LC_SEGMENT_64
+0x100000424  cmdsize     1512
+0x100000428  name        __DATA
+pf.mach0_section64 @ 0x100000468
+pf.mach0_section64 @ 0x1000004b8
+pf.mach0_section64 @ 0x100000508
+pf.mach0_section64 @ 0x100000558
+pf.mach0_section64 @ 0x1000005a8
+pf.mach0_section64 @ 0x1000005f8
+pf.mach0_section64 @ 0x100000648
+pf.mach0_section64 @ 0x100000698
+pf.mach0_section64 @ 0x1000006e8
+pf.mach0_section64 @ 0x100000738
+pf.mach0_section64 @ 0x100000788
+pf.mach0_section64 @ 0x1000007d8
+pf.mach0_section64 @ 0x100000828
+pf.mach0_section64 @ 0x100000878
+pf.mach0_section64 @ 0x1000008c8
+pf.mach0_section64 @ 0x100000918
+pf.mach0_section64 @ 0x100000968
+pf.mach0_section64 @ 0x1000009b8
+pf.mach0_segment64 @ 0x100000a08
+0x100000a08  cmd       3 0x19 LC_SEGMENT_64
+0x100000a0c  cmdsize     72
+0x100000a10  name        __LINKEDIT
+pf.mach0_dyld_info_only_command @ 0x100000a50
+0x100000a50  cmd       4 0x80000022 LC_DYLD_INFO_ONLY
+0x100000a54  cmdsize     48
+pf.mach0_symtab_command @ 0x100000a80
+0x100000a80  cmd       5 0x2 LC_SYMTAB
+0x100000a84  cmdsize     24
+pf.mach0_dysymtab_command @ 0x100000a98
+0x100000a98  cmd       6 0xb LC_DYSYMTAB
+0x100000a9c  cmdsize     80
+pf.mach0_load_dylinker_command @ 0x100000ae8
+0x100000ae8  cmd       7 0xe LC_LOAD_DYLINKER
+0x100000aec  cmdsize     32
+pf.mach0_uuid_command @ 0x100000b08
+0x100000b08  cmd       8 0x1b LC_UUID
+0x100000b0c  cmdsize     24
+0x100000b10  uuid        7d6bf60d80003dbab9a9a981df618b56
+pf.mach0_version_min_command @ 0x100000b20
+0x100000b20  cmd       9 0x24 LC_VERSION_MIN_MACOSX
+0x100000b24  cmdsize     16
+pf.mach0_unixthread_command @ 0x100000b30
+0x100000b30  cmd      10 0x5 LC_UNIXTHREAD
+0x100000b34  cmdsize     184
+pf.mach0_dylib_command @ 0x100000be8
+0x100000be8  cmd      11 0xc LC_LOAD_DYLIB
+0x100000bec  cmdsize     96
+0x100000bf8  current     1349.0.0
+0x100000bfc  compat      300.0.0
+0x100000c00  load_dylib  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+pf.mach0_dylib_command @ 0x100000c48
+0x100000c48  cmd      12 0xc LC_LOAD_DYLIB
+0x100000c4c  cmdsize     56
+0x100000c58  current     228.0.0
+0x100000c5c  compat      1.0.0
+0x100000c60  load_dylib  /usr/lib/libobjc.A.dylib
+pf.mach0_dylib_command @ 0x100000c80
+0x100000c80  cmd      13 0xc LC_LOAD_DYLIB
+0x100000c84  cmdsize     56
+0x100000c90  current     1238.0.0
+0x100000c94  compat      1.0.0
+0x100000c98  load_dylib  /usr/lib/libSystem.B.dylib
+pf.mach0_dylib_command @ 0x100000cb8
+0x100000cb8  cmd      14 0xc LC_LOAD_DYLIB
+0x100000cbc  cmdsize     88
+0x100000cc8  current     1500.0.0
+0x100000ccc  compat      45.0.0
+0x100000cd0  load_dylib  /System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+pf.mach0_dylib_command @ 0x100000d10
+0x100000d10  cmd      15 0xc LC_LOAD_DYLIB
+0x100000d14  cmdsize     104
+0x100000d20  current     1348.0.0
+0x100000d24  compat      150.0.0
+0x100000d28  load_dylib  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+pf.mach0_rpath_command @ 0x100000d78
+0x100000d78  cmd      16 0x8000001c LC_RPATH
+0x100000d7c  cmdsize     48
+0x100000d84  rpath       @executable_path/../Frameworks
+pf.mach0_function_starts_command @ 0x100000da8
+0x100000da8  cmd      17 0x26 LC_FUNCTION_STARTS
+0x100000dac  cmdsize     16
+pf.mach0_data_in_code_command @ 0x100000db8
+0x100000db8  cmd      18 0x29 LC_DATA_IN_CODE
+0x100000dbc  cmdsize     16
+pf.mach0_code_signature_command @ 0x100000dc8
+0x100000dc8  cmd      19 0x1d LC_CODE_SIGNATURE
+0x100000dcc  cmdsize     16
+0x100000dd0  dataoff     0x0000dda0
+0x100000dd4  datasize    10128
+# wtf mach0.sign 10128 @ 0xdda0
+[Linked libraries]
+/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+/usr/lib/libobjc.A.dylib
+/usr/lib/libSystem.B.dylib
+/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+
+5 libraries
+[Relocations]
+
+vaddr       paddr      type   name
+――――――――――――――――――――――――――――――――――
+0x00000000  0x00000000 SET_64 NSAlert
+0x100006028 0x00006028 SET_64 dyld_stub_binder
+0x100006038 0x00006038 SET_64 _DefaultRuneLocale
+0x100006040 0x00006040 SET_64 __stack_chk_guard
+0x100006048 0x00006048 SET_64 class_getName
+0x100006050 0x00006050 SET_64 kCFCoreFoundationVersionNumber
+0x100006058 0x00006058 SET_64 objc_allocateClassPair
+0x100006060 0x00006060 SET_64 objc_autoreleasePoolPush
+0x100006068 0x00006068 SET_64 objc_copyClassNamesForImage
+0x100006070 0x00006070 SET_64 objc_getClass
+0x100006078 0x00006078 SET_64 objc_getMetaClass
+0x100006080 0x00006080 SET_64 objc_getProtocol
+0x100006088 0x00006088 SET_64 objc_getRequiredClass
+0x100006090 0x00006090 SET_64 objc_lookUpClass
+0x100006098 0x00006098 SET_64 objc_msgSend
+0x1000060a0 0x000060a0 SET_64 objc_readClassPair
+0x1000060a8 0x000060a8 SET_64 objc_retain
+0x1000060b0 0x000060b0 SET_64 object_getIndexedIvars
+0x1000060b8 0x000060b8 SET_64 protocol_getName
+0x1000060c0 0x000060c0 SET_64 class_addMethod
+0x1000060c8 0x000060c8 SET_64 class_addProperty
+0x1000060d0 0x000060d0 SET_64 class_addProtocol
+0x1000060d8 0x000060d8 SET_64 class_getInstanceMethod
+0x1000060e0 0x000060e0 SET_64 class_getInstanceSize
+0x1000060e8 0x000060e8 SET_64 class_getInstanceVariable
+0x1000060f0 0x000060f0 SET_64 class_getIvarLayout
+0x1000060f8 0x000060f8 SET_64 class_getSuperclass
+0x100006100 0x00006100 SET_64 class_isMetaClass
+0x100006108 0x00006108 SET_64 class_replaceMethod
+0x100006110 0x00006110 SET_64 class_respondsToSelector
+0x100006118 0x00006118 SET_64 ivar_getName
+0x100006120 0x00006120 SET_64 ivar_getOffset
+0x100006128 0x00006128 SET_64 method_setImplementation
+0x100006130 0x00006130 SET_64 objc_constructInstance
+0x100006138 0x00006138 SET_64 objc_getClass
+0x100006140 0x00006140 SET_64 objc_getMetaClass
+0x100006148 0x00006148 SET_64 objc_getProtocol
+0x100006150 0x00006150 SET_64 objc_getRequiredClass
+0x100006158 0x00006158 SET_64 objc_initializeClassPair
+0x100006160 0x00006160 SET_64 objc_lookUpClass
+0x100006168 0x00006168 SET_64 objc_msgSendSuper2
+0x100006170 0x00006170 SET_64 objc_registerClassPair
+0x100006178 0x00006178 SET_64 objc_retainAutoreleasedReturnValue
+0x100006180 0x00006180 SET_64 object_getClass
+0x100006188 0x00006188 SET_64 object_getIvar
+0x100006190 0x00006190 SET_64 object_setIvar
+0x100006198 0x00006198 SET_64 property_copyAttributeList
+0x1000061a0 0x000061a0 SET_64 protocol_getMethodDescription
+0x1000061a8 0x000061a8 SET_64 sel_getUid
+0x1000061b0 0x000061b0 SET_64 _Block_copy
+0x1000061b8 0x000061b8 SET_64 __bzero
+0x1000061c0 0x000061c0 SET_64 __memcpy_chk
+0x1000061c8 0x000061c8 SET_64 __snprintf_chk
+0x1000061d0 0x000061d0 SET_64 __stack_chk_fail
+0x1000061d8 0x000061d8 SET_64 __strcat_chk
+0x1000061e0 0x000061e0 SET_64 __strcpy_chk
+0x1000061e8 0x000061e8 SET_64 _dyld_register_func_for_add_image
+0x1000061f0 0x000061f0 SET_64 access
+0x1000061f8 0x000061f8 SET_64 asprintf
+0x100006200 0x00006200 SET_64 bzero
+0x100006208 0x00006208 SET_64 calloc
+0x100006210 0x00006210 SET_64 execve
+0x100006218 0x00006218 SET_64 exit
+0x100006220 0x00006220 SET_64 free
+0x100006228 0x00006228 SET_64 getpwuid
+0x100006230 0x00006230 SET_64 getuid
+0x100006238 0x00006238 SET_64 hash_create
+0x100006240 0x00006240 SET_64 hash_search
+0x100006248 0x00006248 SET_64 malloc
+0x100006250 0x00006250 SET_64 memcmp
+0x100006258 0x00006258 SET_64 memcpy
+0x100006260 0x00006260 SET_64 pthread_mutex_lock
+0x100006268 0x00006268 SET_64 pthread_mutex_unlock
+0x100006270 0x00006270 SET_64 sleep
+0x100006278 0x00006278 SET_64 strchr
+0x100006280 0x00006280 SET_64 strcmp
+0x100006288 0x00006288 SET_64 strlen
+0x100006290 0x00006290 SET_64 strncmp
+0x100006298 0x00006298 SET_64 strstr
+0x1000062a0 0x000062a0 SET_64 system
+0x1000062a8 0x000062a8 SET_64 CFStringGetCStringPtr
+0x1000062b0 0x000062b0 SET_64 __CFConstantStringClassReference
+0x1000062d0 0x000062d0 SET_64 __CFConstantStringClassReference
+0x1000062f0 0x000062f0 SET_64 __CFConstantStringClassReference
+0x100006f68 0x00006f68 SET_64 NSAlert
+0x100006f80 0x00006f80 SET_64 NSViewController
+0x100006f88 0x00006f88 SET_64 _objc_empty_cache
+0x100006f90 0x00006f90 SET_64 _objc_empty_vtable
+0x100006fa0 0x00006fa0 SET_64 NSObject
+0x100006fa8 0x00006fa8 SET_64 NSViewController
+0x100006fb0 0x00006fb0 SET_64 _objc_empty_cache
+0x100006fb8 0x00006fb8 SET_64 _objc_empty_vtable
+0x100006fc8 0x00006fc8 SET_64 NSObject
+0x100006fd0 0x00006fd0 SET_64 NSObject
+0x100006fd8 0x00006fd8 SET_64 _objc_empty_cache
+0x100006fe0 0x00006fe0 SET_64 _objc_empty_vtable
+0x100006ff8 0x00006ff8 SET_64 NSObject
+0x100007000 0x00007000 SET_64 _objc_empty_cache
+0x100007008 0x00007008 SET_64 _objc_empty_vtable
+0x100007028 0x00007028 SET_64 _objc_empty_cache
+0x100007030 0x00007030 SET_64 _objc_empty_vtable
+0x100007050 0x00007050 SET_64 _objc_empty_cache
+0x100007058 0x00007058 SET_64 _objc_empty_vtable
+
+
+103 relocations
+66864
+Section to Segment mapping:
+Segment    Section
+------------------
+__TEXT     0.__TEXT.__text 1.__TEXT.__stubs 2.__TEXT.__stub_helper 3.__TEXT.__objc_methname 4.__TEXT.__objc_classname 5.__TEXT.__objc_methtype 6.__TEXT.__cstring 7.__TEXT.__ustring 8.__TEXT.__const 9.__TEXT.__unwind_info 10.__TEXT.__eh_frame 
+__DATA     11.__DATA.__program_vars 12.__DATA.__nl_symbol_ptr 13.__DATA.__got 14.__DATA.__la_symbol_ptr 15.__DATA.__cfstring 16.__DATA.__objc_classlist 17.__DATA.__objc_nlclslist 18.__DATA.__objc_protolist 19.__DATA.__objc_imageinfo 20.__DATA.__objc_const 21.__DATA.__objc_selrefs 22.__DATA.__objc_protorefs 23.__DATA.__objc_classrefs 24.__DATA.__objc_superrefs 25.__DATA.__objc_data 26.__DATA.__data 27.__DATA.__common 28.__DATA.__bss 
+__LINKEDIT 
+
+

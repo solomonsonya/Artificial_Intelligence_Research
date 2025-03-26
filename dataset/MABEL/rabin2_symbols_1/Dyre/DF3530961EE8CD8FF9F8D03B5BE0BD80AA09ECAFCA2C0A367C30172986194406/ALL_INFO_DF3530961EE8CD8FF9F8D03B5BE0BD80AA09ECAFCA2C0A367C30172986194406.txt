@@ -1,0 +1,462 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2800 0x00401000  0x3000 -r-x .text
+1   0x00002c00   0xc00 0x00404000  0x1000 -r-- .rdata
+2   0x00003800   0x800 0x00405000  0x1000 -rw- .data
+3   0x00004000  0x5000 0x00406000  0x5000 -r-- .rsrc
+4   0x00009000   0x400 0x0040b000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00403232 paddr=0x00002632 haddr=0x00000120 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00402caf paddr=0x000020af
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040407c NONE FUNC USER32.dll   SendMessageA
+2   0x00404080 NONE FUNC USER32.dll   DrawTextA
+3   0x00404084 NONE FUNC USER32.dll   EndPaint
+4   0x00404088 NONE FUNC USER32.dll   GetClientRect
+5   0x0040408c NONE FUNC USER32.dll   BeginPaint
+6   0x00404090 NONE FUNC USER32.dll   DestroyWindow
+7   0x00404094 NONE FUNC USER32.dll   DefWindowProcA
+8   0x00404098 NONE FUNC USER32.dll   PostQuitMessage
+9   0x0040409c NONE FUNC USER32.dll   PostMessageA
+10  0x004040a0 NONE FUNC USER32.dll   CreateWindowExA
+11  0x004040a4 NONE FUNC USER32.dll   ShowWindow
+12  0x004040a8 NONE FUNC USER32.dll   UpdateWindow
+13  0x004040ac NONE FUNC USER32.dll   LoadStringA
+14  0x004040b0 NONE FUNC USER32.dll   LoadIconA
+15  0x004040b4 NONE FUNC USER32.dll   LoadCursorA
+16  0x004040b8 NONE FUNC USER32.dll   RegisterClassExA
+17  0x004040bc NONE FUNC USER32.dll   GetMessageA
+18  0x004040c0 NONE FUNC USER32.dll   TranslateMessage
+19  0x004040c4 NONE FUNC USER32.dll   DispatchMessageA
+1   0x0040403c NONE FUNC KERNEL32.dll FindNextFileW
+2   0x00404040 NONE FUNC KERNEL32.dll GetModuleHandleA
+3   0x00404044 NONE FUNC KERNEL32.dll LoadLibraryA
+4   0x00404048 NONE FUNC KERNEL32.dll FindClose
+5   0x0040404c NONE FUNC KERNEL32.dll FindFirstFileW
+6   0x00404050 NONE FUNC KERNEL32.dll GlobalSize
+7   0x00404054 NONE FUNC KERNEL32.dll SizeofResource
+8   0x00404058 NONE FUNC KERNEL32.dll CreateThread
+9   0x0040405c NONE FUNC KERNEL32.dll WaitForSingleObject
+10  0x00404060 NONE FUNC KERNEL32.dll GlobalAlloc
+11  0x00404064 NONE FUNC KERNEL32.dll GetStartupInfoA
+12  0x00404068 NONE FUNC KERNEL32.dll Sleep
+1   0x00404000 NONE FUNC COMCTL32.dll InitCommonControlsEx
+1   0x00404070 NONE FUNC MSIMG32.dll  GradientFill
+2   0x00404074 NONE FUNC MSIMG32.dll  AlphaBlend
+1   0x00404008 NONE FUNC CRTDLL.dll   _local_unwind2
+2   0x0040400c NONE FUNC CRTDLL.dll   _global_unwind2
+3   0x00404010 NONE FUNC CRTDLL.dll   _fmode_dll
+4   0x00404014 NONE FUNC CRTDLL.dll   _commode_dll
+5   0x00404018 NONE FUNC CRTDLL.dll   __GetMainArgs
+6   0x0040401c NONE FUNC CRTDLL.dll   _acmdln_dll
+7   0x00404020 NONE FUNC CRTDLL.dll   exit
+8   0x00404024 NONE FUNC CRTDLL.dll   _XcptFilter
+9   0x00404028 NONE FUNC CRTDLL.dll   _exit
+10  0x0040402c NONE FUNC CRTDLL.dll   sym.imp.void * __cdecl operator new(unsigned int)
+11  0x00404030 NONE FUNC CRTDLL.dll   sym.imp.void __cdecl operator delete(void *)
+12  0x00404034 NONE FUNC CRTDLL.dll   _initterm
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002c7c 0x0040407c NONE FUNC 0    USER32.dll   imp.SendMessageA
+2   0x00002c80 0x00404080 NONE FUNC 0    USER32.dll   imp.DrawTextA
+3   0x00002c84 0x00404084 NONE FUNC 0    USER32.dll   imp.EndPaint
+4   0x00002c88 0x00404088 NONE FUNC 0    USER32.dll   imp.GetClientRect
+5   0x00002c8c 0x0040408c NONE FUNC 0    USER32.dll   imp.BeginPaint
+6   0x00002c90 0x00404090 NONE FUNC 0    USER32.dll   imp.DestroyWindow
+7   0x00002c94 0x00404094 NONE FUNC 0    USER32.dll   imp.DefWindowProcA
+8   0x00002c98 0x00404098 NONE FUNC 0    USER32.dll   imp.PostQuitMessage
+9   0x00002c9c 0x0040409c NONE FUNC 0    USER32.dll   imp.PostMessageA
+10  0x00002ca0 0x004040a0 NONE FUNC 0    USER32.dll   imp.CreateWindowExA
+11  0x00002ca4 0x004040a4 NONE FUNC 0    USER32.dll   imp.ShowWindow
+12  0x00002ca8 0x004040a8 NONE FUNC 0    USER32.dll   imp.UpdateWindow
+13  0x00002cac 0x004040ac NONE FUNC 0    USER32.dll   imp.LoadStringA
+14  0x00002cb0 0x004040b0 NONE FUNC 0    USER32.dll   imp.LoadIconA
+15  0x00002cb4 0x004040b4 NONE FUNC 0    USER32.dll   imp.LoadCursorA
+16  0x00002cb8 0x004040b8 NONE FUNC 0    USER32.dll   imp.RegisterClassExA
+17  0x00002cbc 0x004040bc NONE FUNC 0    USER32.dll   imp.GetMessageA
+18  0x00002cc0 0x004040c0 NONE FUNC 0    USER32.dll   imp.TranslateMessage
+19  0x00002cc4 0x004040c4 NONE FUNC 0    USER32.dll   imp.DispatchMessageA
+1   0x00002c3c 0x0040403c NONE FUNC 0    KERNEL32.dll imp.FindNextFileW
+2   0x00002c40 0x00404040 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+3   0x00002c44 0x00404044 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+4   0x00002c48 0x00404048 NONE FUNC 0    KERNEL32.dll imp.FindClose
+5   0x00002c4c 0x0040404c NONE FUNC 0    KERNEL32.dll imp.FindFirstFileW
+6   0x00002c50 0x00404050 NONE FUNC 0    KERNEL32.dll imp.GlobalSize
+7   0x00002c54 0x00404054 NONE FUNC 0    KERNEL32.dll imp.SizeofResource
+8   0x00002c58 0x00404058 NONE FUNC 0    KERNEL32.dll imp.CreateThread
+9   0x00002c5c 0x0040405c NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+10  0x00002c60 0x00404060 NONE FUNC 0    KERNEL32.dll imp.GlobalAlloc
+11  0x00002c64 0x00404064 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+12  0x00002c68 0x00404068 NONE FUNC 0    KERNEL32.dll imp.Sleep
+1   0x00002c00 0x00404000 NONE FUNC 0    COMCTL32.dll imp.InitCommonControlsEx
+1   0x00002c70 0x00404070 NONE FUNC 0    MSIMG32.dll  imp.GradientFill
+2   0x00002c74 0x00404074 NONE FUNC 0    MSIMG32.dll  imp.AlphaBlend
+1   0x00002c08 0x00404008 NONE FUNC 0    CRTDLL.dll   imp._local_unwind2
+2   0x00002c0c 0x0040400c NONE FUNC 0    CRTDLL.dll   imp._global_unwind2
+3   0x00002c10 0x00404010 NONE FUNC 0    CRTDLL.dll   imp._fmode_dll
+4   0x00002c14 0x00404014 NONE FUNC 0    CRTDLL.dll   imp._commode_dll
+5   0x00002c18 0x00404018 NONE FUNC 0    CRTDLL.dll   imp.__GetMainArgs
+6   0x00002c1c 0x0040401c NONE FUNC 0    CRTDLL.dll   imp._acmdln_dll
+7   0x00002c20 0x00404020 NONE FUNC 0    CRTDLL.dll   imp.exit
+8   0x00002c24 0x00404024 NONE FUNC 0    CRTDLL.dll   imp._XcptFilter
+9   0x00002c28 0x00404028 NONE FUNC 0    CRTDLL.dll   imp._exit
+10  0x00002c2c 0x0040402c NONE FUNC 0    CRTDLL.dll   void * __cdecl operator new(unsigned int)
+11  0x00002c30 0x00404030 NONE FUNC 0    CRTDLL.dll   void __cdecl operator delete(void *)
+12  0x00002c34 0x00404034 NONE FUNC 0    CRTDLL.dll   imp._initterm
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002d0c 0x0040410c 19  20   .rdata  ascii   h)<P>g4j!*'Cm-c1&a/
+1   0x00002d20 0x00404120 22  46   .rdata  utf16le projects/notepad-plus/
+2   0x00002d52 0x00404152 53  108  .rdata  utf16le \rdoesn't exist. Please download it on Notepad++ site.
+3   0x00002dbe 0x004041be 19  40   .rdata  utf16le File does not exist
+4   0x00002de6 0x004041e6 20  21   .rdata  ascii   NppHelpAbsentWarning
+5   0x00002dfe 0x004041fe 4   10   .rdata  utf16le open
+6   0x00002e0a 0x0040420a 18  38   .rdata  utf16le \user.manual\docum
+7   0x00002e32 0x00404232 59  120  .rdata  utf16le lection" or "Alt+Shift+Arrow key" to switch to column mode.
+8   0x00002eaa 0x004042aa 15  32   .rdata  utf16le Column Mode Tip
+9   0x00002eca 0x004042ca 16  34   .rdata  utf16le Rich Text Format
+10  0x00002eee 0x004042ee 11  24   .rdata  utf16le HTML Format
+11  0x00002f06 0x00404306 4   10   .rdata  utf16le new 
+12  0x00002f12 0x00404312 16  17   .rdata  ascii   DocReloadWarning
+13  0x00002f2a 0x0040432a 80  161  .rdata  utf16le Are you sure you want to reload the current file and lose the changes made in No
+14  0x00002fcd 0x004043cd 13  14   .rdata  ascii   AMb/#fiFfk<_?
+15  0x00002fea 0x004043ea 17  18   .rdata  ascii   \2_BL I/dU WNZ=Vi
+16  0x00003043 0x00404443 13  14   .rdata  ascii   2d+/Z'I\IU#kj
+17  0x0000305c 0x0040445c 46  47   .rdata  ascii   thought of it since then - that he had a charm
+18  0x000031e2 0x004045e2 16  17   .rdata  ascii   DispatchMessageA
+19  0x000031f6 0x004045f6 16  17   .rdata  ascii   TranslateMessage
+20  0x0000320a 0x0040460a 11  12   .rdata  ascii   GetMessageA
+21  0x00003218 0x00404618 16  17   .rdata  ascii   RegisterClassExA
+22  0x0000322c 0x0040462c 11  12   .rdata  ascii   LoadCursorA
+23  0x0000323a 0x0040463a 9   10   .rdata  ascii   LoadIconA
+24  0x00003246 0x00404646 11  12   .rdata  ascii   LoadStringA
+25  0x00003254 0x00404654 12  13   .rdata  ascii   UpdateWindow
+26  0x00003264 0x00404664 10  11   .rdata  ascii   ShowWindow
+27  0x00003272 0x00404672 15  16   .rdata  ascii   CreateWindowExA
+28  0x00003284 0x00404684 12  13   .rdata  ascii   PostMessageA
+29  0x00003294 0x00404694 15  16   .rdata  ascii   PostQuitMessage
+30  0x000032a6 0x004046a6 14  15   .rdata  ascii   DefWindowProcA
+31  0x000032b8 0x004046b8 13  14   .rdata  ascii   DestroyWindow
+32  0x000032c8 0x004046c8 8   9    .rdata  ascii   EndPaint
+33  0x000032d4 0x004046d4 9   10   .rdata  ascii   DrawTextA
+34  0x000032e0 0x004046e0 13  14   .rdata  ascii   GetClientRect
+35  0x000032f0 0x004046f0 10  11   .rdata  ascii   BeginPaint
+36  0x000032fe 0x004046fe 12  13   .rdata  ascii   SendMessageA
+37  0x0000330c 0x0040470c 10  11   .rdata  ascii   USER32.dll
+38  0x0000331a 0x0040471a 10  11   .rdata  ascii   GlobalSize
+39  0x00003328 0x00404728 14  15   .rdata  ascii   SizeofResource
+40  0x0000333a 0x0040473a 12  13   .rdata  ascii   CreateThread
+41  0x0000334a 0x0040474a 19  20   .rdata  ascii   WaitForSingleObject
+42  0x00003360 0x00404760 11  12   .rdata  ascii   GlobalAlloc
+43  0x0000336e 0x0040476e 13  14   .rdata  ascii   FindNextFileW
+44  0x0000337e 0x0040477e 5   6    .rdata  ascii   Sleep
+45  0x00003386 0x00404786 14  15   .rdata  ascii   FindFirstFileW
+46  0x00003398 0x00404798 9   10   .rdata  ascii   FindClose
+47  0x000033a4 0x004047a4 12  13   .rdata  ascii   LoadLibraryA
+48  0x000033b4 0x004047b4 16  17   .rdata  ascii   GetModuleHandleA
+49  0x000033c6 0x004047c6 12  13   .rdata  ascii   KERNEL32.dll
+50  0x000033d6 0x004047d6 20  21   .rdata  ascii   InitCommonControlsEx
+51  0x000033ec 0x004047ec 12  13   .rdata  ascii   COMCTL32.dll
+52  0x000033fc 0x004047fc 12  13   .rdata  ascii   GradientFill
+53  0x0000340c 0x0040480c 10  11   .rdata  ascii   AlphaBlend
+54  0x00003418 0x00404818 11  12   .rdata  ascii   MSIMG32.dll
+55  0x00003426 0x00404826 12  13   .rdata  ascii   ??3@YAXPAX@Z
+56  0x00003436 0x00404836 12  13   .rdata  ascii   ??2@YAPAXI@Z
+57  0x00003446 0x00404846 5   6    .rdata  ascii   _exit
+58  0x0000344e 0x0040484e 11  12   .rdata  ascii   _XcptFilter
+59  0x0000345c 0x0040485c 4   5    .rdata  ascii   exit
+60  0x00003464 0x00404864 11  12   .rdata  ascii   _acmdln_dll
+61  0x00003472 0x00404872 9   10   .rdata  ascii   _initterm
+62  0x0000347e 0x0040487e 13  14   .rdata  ascii   __GetMainArgs
+63  0x0000348e 0x0040488e 12  13   .rdata  ascii   _commode_dll
+64  0x0000349e 0x0040489e 10  11   .rdata  ascii   _fmode_dll
+65  0x000034aa 0x004048aa 10  11   .rdata  ascii   CRTDLL.dll
+66  0x000034b8 0x004048b8 15  16   .rdata  ascii   _global_unwind2
+67  0x000034ca 0x004048ca 14  15   .rdata  ascii   _local_unwind2
+68  0x000034dc 0x004048dc 15  16   .rdata  ascii   GetStartupInfoA
+0   0x00003800 0x00405000 17  18   .data   ascii   bUMLRkHeAmEZ]CIb 
+1   0x00003812 0x00405012 9   20   .data   utf16le Clipboard
+2   0x00003828 0x00405028 21  44   .data   utf16le Filename to Clipboard
+3   0x00003854 0x00405054 27  56   .data   utf16le Full File Path to Clipboard
+4   0x0000388c 0x0040508c 20  42   .data   utf16le Clear Read-Only Flag
+5   0x000038b8 0x004050b8 9   20   .data   utf16le Read-Only
+6   0x000038cc 0x004050cc 19  40   .data   utf16le Move to Recycle Bin
+7   0x000038f4 0x004050f4 6   14   .data   utf16le Rename
+8   0x00003904 0x00405104 10  22   .data   utf16le Save As...
+9   0x0000391c 0x0040511c 19  39   .data   utf16le Close All to the Ri
+10  0x00003948 0x00405148 4   5    .data   ascii   @7W[
+11  0x0000395c 0x0040515c 21  44   .data   utf16le Close All to the Left
+12  0x00003988 0x00405188 18  38   .data   utf16le Close All BUT This
+13  0x000039b0 0x004051b0 13  14   .data   ascii   CannotMoveDoc
+14  0x000039c0 0x004051c0 45  92   .data   utf16le Document is modified, save it then try again.
+15  0x00003a1c 0x0040521c 30  62   .data   utf16le Move to new Notepad++ Instance
+16  0x00003a5c 0x0040525c 19  40   .data   utf16le Clone to other View
+17  0x00003a84 0x00405284 18  38   .data   utf16le Move to other view
+18  0x00003ab0 0x004052b0 77  78   .data   ascii   abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_-+.,:?&@=/%#()
+19  0x00003b00 0x00405300 11  24   .data   utf16le sinhala.xml
+20  0x00003b24 0x00405324 11  24   .data   utf16le bengali.xml
+21  0x00003b48 0x00405348 13  28   .data   utf16le aragonese.xml
+22  0x00003b64 0x00405364 6   13   .data   utf16le aragon
+23  0x00003b78 0x00405378 10  22   .data   utf16le telugu.xml
+24  0x00003b90 0x00405390 8   9    .data   ascii   $\fF\f2\fA\f
+25  0x00003ba0 0x004053a0 10  22   .data   utf16le uyghur.xml
+26  0x00003bcc 0x004053cc 13  28   .data   utf16le sardinian.xml
+27  0x00003be8 0x004053e8 5   12   .data   utf16le Sardu
+28  0x00003bf4 0x004053f4 9   20   .data   utf16le hindi.xml
+29  0x00003c08 0x00405408 12  13   .data   ascii   9\t?\t(\tM\t&\t@\t
+30  0x00003c18 0x00405418 12  26   .data   utf16le ligurian.xml
+31  0x00003c34 0x00405434 7   16   .data   utf16le Zeneize
+32  0x00003c44 0x00405444 13  28   .data   utf16le esperanto.xml
+33  0x00003c60 0x00405460 9   20   .data   utf16le Esperanto
+34  0x00003c74 0x00405474 11  24   .data   utf16le bosnian.xml
+35  0x00003c8c 0x0040548c 8   18   .data   utf16le Bosanski
+36  0x00003ca0 0x004054a0 15  32   .data   utf16le azerbaijani.xml
+37  0x00003cc6 0x004054c6 12  26   .data   utf16le rbaycan dili
+38  0x00003ce0 0x004054e0 9   20   .data   utf16le tamil.xml
+39  0x00003cfd 0x004054fd 29  30   .data   ascii   V[XDlnXaOMFc]rXsbOLrcNlcZN^pG
+40  0x00003d1e 0x0040551e 13  14   .data   ascii   KohNo[BWDnoqb
+41  0x00003d38 0x00405538 9   10   .data   ascii   Magnetick
+42  0x00003d44 0x00405544 17  18   .data   ascii   Charge Window App
+43  0x00003d58 0x00405558 4   5    .data   ascii   EXIT
+44  0x00003d60 0x00405560 6   7    .data   ascii   button
+45  0x00003d68 0x00405568 4   5    .data   ascii   edit
+46  0x00003d70 0x00405570 6   7    .data   ascii   static
+47  0x00003d78 0x00405578 8   9    .data   ascii   richedit
+48  0x00003d88 0x00405588 7   8    .data   ascii   ABCDEFG
+49  0x00003d90 0x00405590 12  13   .data   ascii   riched32.dll
+0   0x000042e6 0x004062e6 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00004342 0x00406342 14  30   .rsrc   utf16le StringFileInfo
+2   0x00004366 0x00406366 8   18   .rsrc   utf16le 035AE7D5
+3   0x0000437e 0x0040637e 11  24   .rsrc   utf16le CompanyName
+4   0x00004398 0x00406398 6   14   .rsrc   utf16le COOTEK
+5   0x000043ae 0x004063ae 15  32   .rsrc   utf16le FileDescription
+6   0x000043d0 0x004063d0 6   14   .rsrc   utf16le COOTEK
+7   0x000043e6 0x004063e6 11  24   .rsrc   utf16le FileVersion
+8   0x00004400 0x00406400 8   18   .rsrc   utf16le 1.1.4.37
+9   0x0000441c 0x0040641c 11  24   .rsrc   utf16le nternalName
+10  0x0000443c 0x0040643c 13  28   .rsrc   utf16le egalCopyright
+11  0x00004460 0x00406460 14  30   .rsrc   utf16le egalTrademarks
+12  0x00004488 0x00406488 15  32   .rsrc   utf16le riginalFilename
+13  0x000044ae 0x004064ae 11  24   .rsrc   utf16le ProductName
+14  0x000044c8 0x004064c8 6   14   .rsrc   utf16le COOTEK
+15  0x000044de 0x004064de 14  30   .rsrc   utf16le ProductVersion
+16  0x000044fc 0x004064fc 4   10   .rsrc   utf16le 4.37
+17  0x00004510 0x00406510 10  22   .rsrc   utf16le arFileInfo
+18  0x0000452e 0x0040652e 11  24   .rsrc   utf16le Translation
+19  0x000045c9 0x004065c9 6   7    .rsrc   ascii   ffffff
+20  0x000045d1 0x004065d1 6   7    .rsrc   ascii   aGGDDV
+21  0x000045da 0x004065da 6   7    .rsrc   ascii   tttDP`
+22  0x000045e2 0x004065e2 12  13   .rsrc   ascii   twGD``awwGtu
+23  0x000045ef 0x004065ef 7   8    .rsrc   ascii   PawwwGE
+24  0x000045f7 0x004065f7 9   10   .rsrc   ascii   PffffffWP
+25  0x00004602 0x00406602 6   7    .rsrc   ascii   GtwwwP
+26  0x000046b0 0x004066b0 8   9    .rsrc   ascii   www30www
+27  0x000046e1 0x004066e1 6   7    .rsrc   ascii   wwwwwx
+28  0x000046e9 0x004066e9 5   6    .rsrc   ascii   wwwwr
+29  0x000046f9 0x004066f9 6   7    .rsrc   ascii   wwwwww
+30  0x00004726 0x00406726 6   14   .rsrc   utf16le COOTEK
+31  0x00004734 0x00406734 14  30   .rsrc   utf16le \bMS Sans Serif
+32  0x000089b4 0x0040a9b4 4   20   .rsrc   utf32le ( @𐀁 blocks=Basic Latin,Linear B Syllabary
+33  0x00008c50 0x0040ac50 516 517  .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n\t<assemblyIdentity version="1.0.4.37"\r\n\t\tprocessorArchitecture="X86"\r\n\t\tname="COOTEK"\r\n\t\ttype="win32"/>\r\n\t<description>COOTEK</description>\r\n\t<trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">\r\n\t\t<security>\r\n\t\t\t<requestedPrivileges>\r\n\t\t\t\t<requestedExecutionLevel\r\n\t\t\t\t\tlevel="asInvoker"\r\n\t\t\t\t\tuiAccess="false"/>\r\n\t\t\t\t</requestedPrivileges>\r\n\t\t</security>\r\n\t</trustInfo>\r\n</assembly>
+arch     x86
+baddr    0x400000
+binsz    38030
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00011338
+compiled Thu Sep 25 01:47:27 2014
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0000f888
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x5423742f
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x2800
+  SizeOfInitializedData : 0x6c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x3232
+  BaseOfCode : 0x1000
+  BaseOfData : 0x4000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x400
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0xa
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xc000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xf888
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x449c
+  Size : 0x78
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x6000
+  Size : 0x4e58
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0xb000
+  Size : 0x124
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x4000
+  Size : 0xcc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+kernel32.dll
+comctl32.dll
+msimg32.dll
+crtdll.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000045e0 0x00002cc4 SET_32 USER32.dll_DispatchMessageA
+0x000045f4 0x00002cc0 SET_32 USER32.dll_TranslateMessage
+0x00004608 0x00002cbc SET_32 USER32.dll_GetMessageA
+0x00004616 0x00002cb8 SET_32 USER32.dll_RegisterClassExA
+0x0000462a 0x00002cb4 SET_32 USER32.dll_LoadCursorA
+0x00004638 0x00002cb0 SET_32 USER32.dll_LoadIconA
+0x00004644 0x00002cac SET_32 USER32.dll_LoadStringA
+0x00004652 0x00002ca8 SET_32 USER32.dll_UpdateWindow
+0x00004662 0x00002ca4 SET_32 USER32.dll_ShowWindow
+0x00004670 0x00002ca0 SET_32 USER32.dll_CreateWindowExA
+0x00004682 0x00002c9c SET_32 USER32.dll_PostMessageA
+0x00004692 0x00002c98 SET_32 USER32.dll_PostQuitMessage
+0x000046a4 0x00002c94 SET_32 USER32.dll_DefWindowProcA
+0x000046b6 0x00002c90 SET_32 USER32.dll_DestroyWindow
+0x000046c6 0x00002c84 SET_32 USER32.dll_EndPaint
+0x000046d2 0x00002c80 SET_32 USER32.dll_DrawTextA
+0x000046de 0x00002c88 SET_32 USER32.dll_GetClientRect
+0x000046ee 0x00002c8c SET_32 USER32.dll_BeginPaint
+0x000046fc 0x00002c7c SET_32 USER32.dll_SendMessageA
+0x00004718 0x00002c50 SET_32 KERNEL32.dll_GlobalSize
+0x00004726 0x00002c54 SET_32 KERNEL32.dll_SizeofResource
+0x00004738 0x00002c58 SET_32 KERNEL32.dll_CreateThread
+0x00004748 0x00002c5c SET_32 KERNEL32.dll_WaitForSingleObject
+0x0000475e 0x00002c60 SET_32 KERNEL32.dll_GlobalAlloc
+0x0000476c 0x00002c3c SET_32 KERNEL32.dll_FindNextFileW
+0x0000477c 0x00002c68 SET_32 KERNEL32.dll_Sleep
+0x00004784 0x00002c4c SET_32 KERNEL32.dll_FindFirstFileW
+0x00004796 0x00002c48 SET_32 KERNEL32.dll_FindClose
+0x000047a2 0x00002c44 SET_32 KERNEL32.dll_LoadLibraryA
+0x000047b2 0x00002c40 SET_32 KERNEL32.dll_GetModuleHandleA
+0x000047d4 0x00002c00 SET_32 COMCTL32.dll_InitCommonControlsEx
+0x000047fa 0x00002c70 SET_32 MSIMG32.dll_GradientFill
+0x0000480a 0x00002c74 SET_32 MSIMG32.dll_AlphaBlend
+0x00004824 0x00002c30 SET_32 CRTDLL.dll_void __cdecl operator delete(void *)
+0x00004834 0x00002c2c SET_32 CRTDLL.dll_void * __cdecl operator new(unsigned int)
+0x00004844 0x00002c28 SET_32 CRTDLL.dll__exit
+0x0000484c 0x00002c24 SET_32 CRTDLL.dll__XcptFilter
+0x0000485a 0x00002c20 SET_32 CRTDLL.dll_exit
+0x00004862 0x00002c1c SET_32 CRTDLL.dll__acmdln_dll
+0x00004870 0x00002c34 SET_32 CRTDLL.dll__initterm
+0x0000487c 0x00002c18 SET_32 CRTDLL.dll___GetMainArgs
+0x0000488c 0x00002c14 SET_32 CRTDLL.dll__commode_dll
+0x0000489c 0x00002c10 SET_32 CRTDLL.dll__fmode_dll
+0x000048b6 0x00002c0c SET_32 CRTDLL.dll__global_unwind2
+0x000048c8 0x00002c08 SET_32 CRTDLL.dll__local_unwind2
+0x000048da 0x00002c64 SET_32 KERNEL32.dll_GetStartupInfoA
+
+
+46 relocations
+38030
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.1.4.37
+  ProductVersion: 1.1.4.37
+  FileFlagsMask: 0x0
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: COOTEK
+  FileDescription: COOTEK
+  FileVersion: 1.1.4.37
+  InternalName: 
+  LegalCopyright: 
+  LegalTrademarks: 
+  OriginalFilename: 
+  ProductName: COOTEK
+  ProductVersion: 4.37
+Section to Segment mapping:
+Segment Section
+---------------
+
+

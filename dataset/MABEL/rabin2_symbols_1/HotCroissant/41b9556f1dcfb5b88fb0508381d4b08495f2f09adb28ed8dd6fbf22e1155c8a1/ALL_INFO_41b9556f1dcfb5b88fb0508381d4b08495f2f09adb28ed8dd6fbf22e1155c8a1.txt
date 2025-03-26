@@ -1,0 +1,199 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400     0x0 0x00401000  0x23000 -rwx UPX0
+1   0x00000400  0xe000 0x00424000   0xe000 -rwx UPX1
+2   0x0000e400   0x400 0x00432000   0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00431cd0 paddr=0x0000e0d0 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00432258 NONE FUNC ADVAPI32.dll FreeSid
+1   0x00432260 NONE FUNC GDI32.dll    BitBlt
+1   0x00432268 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x0043226c NONE FUNC KERNEL32.DLL ExitProcess
+3   0x00432270 NONE FUNC KERNEL32.DLL GetProcAddress
+4   0x00432274 NONE FUNC KERNEL32.DLL VirtualProtect
+1   0x0043227c NONE FUNC PSAPI.DLL    EnumProcessModules
+1   0x00432284 NONE FUNC SHELL32.dll  ShellExecuteA
+1   0x0043228c NONE FUNC USER32.dll   GetDC
+57  0x00432294 NONE FUNC WS2_32.dll   gethostname
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000e658 0x00432258 NONE FUNC 0    ADVAPI32.dll imp.FreeSid
+1   0x0000e660 0x00432260 NONE FUNC 0    GDI32.dll    imp.BitBlt
+1   0x0000e668 0x00432268 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x0000e66c 0x0043226c NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+3   0x0000e670 0x00432270 NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+4   0x0000e674 0x00432274 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+1   0x0000e67c 0x0043227c NONE FUNC 0    PSAPI.DLL    imp.EnumProcessModules
+1   0x0000e684 0x00432284 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteA
+1   0x0000e68c 0x0043228c NONE FUNC 0    USER32.dll   imp.GetDC
+57  0x0000e694 0x00432294 NONE FUNC 0    WS2_32.dll   imp.gethostname
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000e45c 0x0043205c 348 349  .rsrc   ascii <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>PA
+1   0x0000e69c 0x0043229c 12  13   .rsrc   ascii ADVAPI32.dll
+2   0x0000e6a9 0x004322a9 9   10   .rsrc   ascii GDI32.dll
+3   0x0000e6b3 0x004322b3 12  13   .rsrc   ascii KERNEL32.DLL
+4   0x0000e6c0 0x004322c0 9   10   .rsrc   ascii PSAPI.DLL
+5   0x0000e6ca 0x004322ca 11  12   .rsrc   ascii SHELL32.dll
+6   0x0000e6d6 0x004322d6 10  11   .rsrc   ascii USER32.dll
+7   0x0000e6e1 0x004322e1 10  11   .rsrc   ascii WS2_32.dll
+8   0x0000e6ee 0x004322ee 7   8    .rsrc   ascii FreeSid
+9   0x0000e6f8 0x004322f8 6   7    .rsrc   ascii BitBlt
+10  0x0000e700 0x00432300 11  12   .rsrc   ascii ExitProcess
+11  0x0000e70e 0x0043230e 14  15   .rsrc   ascii GetProcAddress
+12  0x0000e71e 0x0043231e 12  13   .rsrc   ascii LoadLibraryA
+13  0x0000e72c 0x0043232c 14  15   .rsrc   ascii VirtualProtect
+14  0x0000e73c 0x0043233c 18  19   .rsrc   ascii EnumProcessModules
+15  0x0000e750 0x00432350 13  14   .rsrc   ascii ShellExecuteA
+16  0x0000e760 0x00432360 5   6    .rsrc   ascii GetDC
+arch     x86
+baddr    0x400000
+binsz    59392
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001819b
+compiled Thu Jun  1 04:26:52 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x592f978c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xe000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x23000
+  AddressOfEntryPoint : 0x31cd0
+  BaseOfCode : 0x24000
+  BaseOfData : 0x32000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x33000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 138 Name: Utc1500_LTCG_CPP Version: 21022 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 180
+  Product: 123 Name: Implib800 Version: 50727 Times: 15
+  Product: 10 Name: Utc12_C Version: 8168 Times: 12
+  Product: 131 Name: Utc1500_C Version: 21022 Times: 115
+  Product: 149 Name: Masm900 Version: 21022 Times: 17
+  Product: 132 Name: Utc1500_CPP Version: 21022 Times: 40
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x321b8
+  Size : 0x1b0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x32000
+  Size : 0x1b8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x32368
+  Size : 0xc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+gdi32.dll
+kernel32.dll
+psapi.dll
+shell32.dll
+user32.dll
+ws2_32.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000322ec 0x0000e658 SET_32 ADVAPI32.dll_FreeSid
+0x000322f6 0x0000e660 SET_32 GDI32.dll_BitBlt
+0x000322fe 0x0000e66c SET_32 KERNEL32.DLL_ExitProcess
+0x0003230c 0x0000e670 SET_32 KERNEL32.DLL_GetProcAddress
+0x0003231c 0x0000e668 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0003232a 0x0000e674 SET_32 KERNEL32.DLL_VirtualProtect
+0x0003233a 0x0000e67c SET_32 PSAPI.DLL_EnumProcessModules
+0x0003234e 0x0000e684 SET_32 SHELL32.dll_ShellExecuteA
+0x0003235e 0x0000e68c SET_32 USER32.dll_GetDC
+0x80000039 0x0000e694 SET_32 WS2_32.dll_gethostname
+
+
+10 relocations
+59392
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

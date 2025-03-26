@@ -1,0 +1,306 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1e00 0x00011000  0x2000 -r-x .text
+1   0x00002200   0x200 0x00013000  0x1000 -r-- .rdata
+2   0x00002400   0x400 0x00014000  0x1000 -rw- .data
+3   0x00002800   0x400 0x00015000  0x1000 -rwx INIT
+4   0x00002c00   0x400 0x00016000  0x1000 -r-- .rsrc
+5   0x00003000   0x200 0x00017000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0001503e paddr=0x0000283e haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00013008 NONE FUNC ntoskrnl.exe _allmul
+2   0x0001300c NONE FUNC ntoskrnl.exe IoDeleteDevice
+3   0x00013010 NONE FUNC ntoskrnl.exe IoDeleteSymbolicLink
+4   0x00013014 NONE FUNC ntoskrnl.exe RtlInitUnicodeString
+5   0x00013018 NONE FUNC ntoskrnl.exe IofCompleteRequest
+6   0x0001301c NONE FUNC ntoskrnl.exe IoCreateSymbolicLink
+7   0x00013020 NONE FUNC ntoskrnl.exe IoCreateDevice
+8   0x00013024 NONE FUNC ntoskrnl.exe ExFreePoolWithTag
+9   0x00013028 NONE FUNC ntoskrnl.exe memmove
+10  0x0001302c NONE FUNC ntoskrnl.exe ExAllocatePool
+11  0x00013030 NONE FUNC ntoskrnl.exe IoGetDeviceObjectPointer
+12  0x00013034 NONE FUNC ntoskrnl.exe memset
+13  0x00013038 NONE FUNC ntoskrnl.exe KeUnstackDetachProcess
+14  0x0001303c NONE FUNC ntoskrnl.exe KeDelayExecutionThread
+15  0x00013040 NONE FUNC ntoskrnl.exe MmIsAddressValid
+16  0x00013044 NONE FUNC ntoskrnl.exe IoGetCurrentProcess
+17  0x00013048 NONE FUNC ntoskrnl.exe ObReferenceObjectByName
+18  0x0001304c NONE FUNC ntoskrnl.exe IoDriverObjectType
+19  0x00013050 NONE FUNC ntoskrnl.exe MmGetSystemRoutineAddress
+20  0x00013054 NONE FUNC ntoskrnl.exe _wcsicmp
+21  0x00013058 NONE FUNC ntoskrnl.exe memcpy
+22  0x0001305c NONE FUNC ntoskrnl.exe _stricmp
+23  0x00013060 NONE FUNC ntoskrnl.exe ExAllocatePoolWithTag
+24  0x00013064 NONE FUNC ntoskrnl.exe PsGetProcessImageFileName
+25  0x00013068 NONE FUNC ntoskrnl.exe KeTickCount
+26  0x0001306c NONE FUNC ntoskrnl.exe KeBugCheckEx
+27  0x00013070 NONE FUNC ntoskrnl.exe KeStackAttachProcess
+28  0x00013074 NONE FUNC ntoskrnl.exe ObfDereferenceObject
+29  0x00013078 NONE FUNC ntoskrnl.exe RtlUnwind
+1   0x00013000 NONE FUNC HAL.dll      KeGetCurrentIrql
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002208 0x00013008 NONE FUNC 0    ntoskrnl.exe imp._allmul
+2   0x0000220c 0x0001300c NONE FUNC 0    ntoskrnl.exe imp.IoDeleteDevice
+3   0x00002210 0x00013010 NONE FUNC 0    ntoskrnl.exe imp.IoDeleteSymbolicLink
+4   0x00002214 0x00013014 NONE FUNC 0    ntoskrnl.exe imp.RtlInitUnicodeString
+5   0x00002218 0x00013018 NONE FUNC 0    ntoskrnl.exe imp.IofCompleteRequest
+6   0x0000221c 0x0001301c NONE FUNC 0    ntoskrnl.exe imp.IoCreateSymbolicLink
+7   0x00002220 0x00013020 NONE FUNC 0    ntoskrnl.exe imp.IoCreateDevice
+8   0x00002224 0x00013024 NONE FUNC 0    ntoskrnl.exe imp.ExFreePoolWithTag
+9   0x00002228 0x00013028 NONE FUNC 0    ntoskrnl.exe imp.memmove
+10  0x0000222c 0x0001302c NONE FUNC 0    ntoskrnl.exe imp.ExAllocatePool
+11  0x00002230 0x00013030 NONE FUNC 0    ntoskrnl.exe imp.IoGetDeviceObjectPointer
+12  0x00002234 0x00013034 NONE FUNC 0    ntoskrnl.exe imp.memset
+13  0x00002238 0x00013038 NONE FUNC 0    ntoskrnl.exe imp.KeUnstackDetachProcess
+14  0x0000223c 0x0001303c NONE FUNC 0    ntoskrnl.exe imp.KeDelayExecutionThread
+15  0x00002240 0x00013040 NONE FUNC 0    ntoskrnl.exe imp.MmIsAddressValid
+16  0x00002244 0x00013044 NONE FUNC 0    ntoskrnl.exe imp.IoGetCurrentProcess
+17  0x00002248 0x00013048 NONE FUNC 0    ntoskrnl.exe imp.ObReferenceObjectByName
+18  0x0000224c 0x0001304c NONE FUNC 0    ntoskrnl.exe imp.IoDriverObjectType
+19  0x00002250 0x00013050 NONE FUNC 0    ntoskrnl.exe imp.MmGetSystemRoutineAddress
+20  0x00002254 0x00013054 NONE FUNC 0    ntoskrnl.exe imp._wcsicmp
+21  0x00002258 0x00013058 NONE FUNC 0    ntoskrnl.exe imp.memcpy
+22  0x0000225c 0x0001305c NONE FUNC 0    ntoskrnl.exe imp._stricmp
+23  0x00002260 0x00013060 NONE FUNC 0    ntoskrnl.exe imp.ExAllocatePoolWithTag
+24  0x00002264 0x00013064 NONE FUNC 0    ntoskrnl.exe imp.PsGetProcessImageFileName
+25  0x00002268 0x00013068 NONE FUNC 0    ntoskrnl.exe imp.KeTickCount
+26  0x0000226c 0x0001306c NONE FUNC 0    ntoskrnl.exe imp.KeBugCheckEx
+27  0x00002270 0x00013070 NONE FUNC 0    ntoskrnl.exe imp.KeStackAttachProcess
+28  0x00002274 0x00013074 NONE FUNC 0    ntoskrnl.exe imp.ObfDereferenceObject
+29  0x00002278 0x00013078 NONE FUNC 0    ntoskrnl.exe imp.RtlUnwind
+1   0x00002200 0x00013000 NONE FUNC 0    HAL.dll      imp.KeGetCurrentIrql
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002400 0x00014000 8   18   .data   utf16le \Device\
+1   0x00002440 0x00014040 12  26   .data   utf16le \DosDevices\
+2   0x00002480 0x00014080 12  13   .data   ascii   winlogon.exe
+3   0x000024a0 0x000140a0 9   10   .data   ascii   csrss.exe
+4   0x000024c0 0x000140c0 12  13   .data   ascii   services.exe
+5   0x000024e0 0x000140e0 9   10   .data   ascii   lsass.exe
+6   0x00002500 0x00014100 11  12   .data   ascii   svchost.exe
+7   0x00002520 0x00014120 11  12   .data   ascii   wininit.exe
+8   0x00002540 0x00014140 8   9    .data   ascii   smss.exe
+9   0x00002560 0x00014160 11  12   .data   ascii   dllhost.exe
+10  0x00002580 0x00014180 12  13   .data   ascii   rundll32.exe
+11  0x000025a0 0x000141a0 12  13   .data   ascii   explorer.exe
+12  0x000025c0 0x000141c0 12  13   .data   ascii   wmiapsrv.exe
+13  0x000025e0 0x000141e0 9   10   .data   ascii   cacls.exe
+14  0x00002600 0x00014200 8   9    .data   ascii   free.exe
+0   0x00002c66 0x00016066 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x00002cc2 0x000160c2 14  30   .rsrc   utf16le StringFileInfo
+2   0x00002ce6 0x000160e6 8   18   .rsrc   utf16le 040904B0
+3   0x00002cfe 0x000160fe 11  24   .rsrc   utf16le CompanyName
+4   0x00002d18 0x00016118 21  44   .rsrc   utf16le Microsoft Corporation
+5   0x00002d4a 0x0001614a 15  32   .rsrc   utf16le FileDescription
+6   0x00002d6c 0x0001616c 14  30   .rsrc   utf16le AutoChk Driver
+7   0x00002d92 0x00016192 11  24   .rsrc   utf16le FileVersion
+8   0x00002dac 0x000161ac 13  28   .rsrc   utf16le 5.1.2195.6689
+9   0x00002dce 0x000161ce 12  26   .rsrc   utf16le InternalName
+10  0x00002de8 0x000161e8 11  24   .rsrc   utf16le autochk.sys
+11  0x00002e06 0x00016206 14  30   .rsrc   utf16le LegalCopyright
+12  0x00002e24 0x00016224 39  80   .rsrc   utf16le Copyright (C) Microsoft Corp. 1981-1999
+13  0x00002e7a 0x0001627a 16  34   .rsrc   utf16le OriginalFilename
+14  0x00002e9c 0x0001629c 11  24   .rsrc   utf16le autochk.sys
+15  0x00002eba 0x000162ba 11  24   .rsrc   utf16le ProductName
+16  0x00002ed4 0x000162d4 40  82   .rsrc   utf16le Microsoft(R) Windows(R) Operating System
+17  0x00002f2e 0x0001632e 14  30   .rsrc   utf16le ProductVersion
+18  0x00002f4c 0x0001634c 13  28   .rsrc   utf16le 6.1.2195.6689
+19  0x00002f70 0x00016370 10  22   .rsrc   utf16le arFileInfo
+20  0x00002f8e 0x0001638e 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x10000
+binsz    28448
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000164bd
+compiled Sat Aug 26 21:13:07 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000164bd
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       native
+overlay  true
+cc       cdecl
+pic      false
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Native
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x59a1e463
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x2200
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x503e
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3000
+  ImageBase : 0x10000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x6
+  MinorImageVersion : 0x1
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x8000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x164bd
+  Subsystem : 0x1
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x40000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 148 Name: Cvtres900 Version: 30729 Times: 1
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 8
+  Product: 95 Name: Utc1310_C Version: 4035 Times: 1
+  Product: 93 Name: Implib710 Version: 4035 Times: 5
+  Product: 1 Name: Import0 Version: 0 Times: 30
+  Product: 149 Name: Masm900 Version: 30729 Times: 3
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x5050
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x6000
+  Size : 0x3b0
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x3200
+  Size : 0x3d20
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x7000
+  Size : 0x1b0
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x3080
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x3000
+  Size : 0x80
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntoskrnl.exe
+hal.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000510c 0x00002274 SET_32 ntoskrnl.exe_ObfDereferenceObject
+0x00005124 0x0000223c SET_32 ntoskrnl.exe_KeDelayExecutionThread
+0x0000513e 0x00002208 SET_32 ntoskrnl.exe__allmul
+0x00005148 0x0000220c SET_32 ntoskrnl.exe_IoDeleteDevice
+0x0000515a 0x00002210 SET_32 ntoskrnl.exe_IoDeleteSymbolicLink
+0x00005172 0x00002214 SET_32 ntoskrnl.exe_RtlInitUnicodeString
+0x0000518a 0x00002218 SET_32 ntoskrnl.exe_IofCompleteRequest
+0x000051a0 0x0000221c SET_32 ntoskrnl.exe_IoCreateSymbolicLink
+0x000051b8 0x00002220 SET_32 ntoskrnl.exe_IoCreateDevice
+0x000051ca 0x00002224 SET_32 ntoskrnl.exe_ExFreePoolWithTag
+0x000051de 0x00002228 SET_32 ntoskrnl.exe_memmove
+0x000051e8 0x0000222c SET_32 ntoskrnl.exe_ExAllocatePool
+0x000051fa 0x00002230 SET_32 ntoskrnl.exe_IoGetDeviceObjectPointer
+0x00005216 0x00002234 SET_32 ntoskrnl.exe_memset
+0x00005220 0x00002238 SET_32 ntoskrnl.exe_KeUnstackDetachProcess
+0x0000523a 0x00002270 SET_32 ntoskrnl.exe_KeStackAttachProcess
+0x00005252 0x00002240 SET_32 ntoskrnl.exe_MmIsAddressValid
+0x00005266 0x00002244 SET_32 ntoskrnl.exe_IoGetCurrentProcess
+0x0000527c 0x00002248 SET_32 ntoskrnl.exe_ObReferenceObjectByName
+0x00005296 0x0000224c SET_32 ntoskrnl.exe_IoDriverObjectType
+0x000052ac 0x00002250 SET_32 ntoskrnl.exe_MmGetSystemRoutineAddress
+0x000052c8 0x00002254 SET_32 ntoskrnl.exe__wcsicmp
+0x000052d4 0x00002258 SET_32 ntoskrnl.exe_memcpy
+0x000052de 0x0000225c SET_32 ntoskrnl.exe__stricmp
+0x000052ea 0x00002260 SET_32 ntoskrnl.exe_ExAllocatePoolWithTag
+0x00005302 0x00002264 SET_32 ntoskrnl.exe_PsGetProcessImageFileName
+0x0000531e 0x00002268 SET_32 ntoskrnl.exe_KeTickCount
+0x0000532c 0x0000226c SET_32 ntoskrnl.exe_KeBugCheckEx
+0x0000534a 0x00002200 SET_32 HAL.dll_KeGetCurrentIrql
+0x00005366 0x00002278 SET_32 ntoskrnl.exe_RtlUnwind
+
+
+30 relocations
+28448
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 5.1.2195.6689
+  ProductVersion: 5.1.2195.6689
+  FileFlagsMask: 0x0
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Microsoft Corporation
+  FileDescription: AutoChk Driver
+  FileVersion: 5.1.2195.6689
+  InternalName: autochk.sys
+  LegalCopyright: Copyright (C) Microsoft Corp. 1981-1999
+  OriginalFilename: autochk.sys
+  ProductName: Microsoft(R) Windows(R) Operating System
+  ProductVersion: 6.1.2195.6689
+Section to Segment mapping:
+Segment Section
+---------------
+
+

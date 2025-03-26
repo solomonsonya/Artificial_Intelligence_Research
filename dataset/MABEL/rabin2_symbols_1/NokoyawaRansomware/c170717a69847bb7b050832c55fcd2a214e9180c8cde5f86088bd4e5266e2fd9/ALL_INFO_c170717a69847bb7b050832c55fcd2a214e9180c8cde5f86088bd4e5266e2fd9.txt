@@ -1,0 +1,369 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x3200 0x180001000  0x4000 -r-x .text
+1   0x00003600   0xc00 0x180005000  0x1000 -r-- .rdata
+2   0x00004200   0x400 0x180006000  0x1000 -rw- .data
+3   0x00004600   0x200 0x180007000  0x1000 -r-- .pdata
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x180001000 paddr=0x00000400 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――
+1   0x180005100 NONE FUNC user32.dll   wsprintfA
+1   0x180005110 NONE FUNC ws2_32.dll   getaddrinfo
+2   0x180005118 NONE FUNC ws2_32.dll   closesocket
+3   0x180005120 NONE FUNC ws2_32.dll   shutdown
+4   0x180005128 NONE FUNC ws2_32.dll   send
+5   0x180005130 NONE FUNC ws2_32.dll   setsockopt
+6   0x180005138 NONE FUNC ws2_32.dll   freeaddrinfo
+7   0x180005140 NONE FUNC ws2_32.dll   recv
+8   0x180005148 NONE FUNC ws2_32.dll   WSAIoctl
+9   0x180005150 NONE FUNC ws2_32.dll   select
+10  0x180005158 NONE FUNC ws2_32.dll   connect
+11  0x180005160 NONE FUNC ws2_32.dll   inet_ntoa
+12  0x180005168 NONE FUNC ws2_32.dll   inet_addr
+13  0x180005170 NONE FUNC ws2_32.dll   htons
+14  0x180005178 NONE FUNC ws2_32.dll   ioctlsocket
+15  0x180005180 NONE FUNC ws2_32.dll   WSAStartup
+16  0x180005188 NONE FUNC ws2_32.dll   socket
+1   0x180005000 NONE FUNC advapi32.dll GetTokenInformation
+2   0x180005008 NONE FUNC advapi32.dll OpenProcessToken
+3   0x180005010 NONE FUNC advapi32.dll GetSidSubAuthority
+1   0x180005020 NONE FUNC kernel32.dll WriteFile
+2   0x180005028 NONE FUNC kernel32.dll SetFilePointer
+3   0x180005030 NONE FUNC kernel32.dll CreateFileA
+4   0x180005038 NONE FUNC kernel32.dll VirtualFree
+5   0x180005040 NONE FUNC kernel32.dll LocalFree
+6   0x180005048 NONE FUNC kernel32.dll LocalAlloc
+7   0x180005050 NONE FUNC kernel32.dll SystemTimeToFileTime
+8   0x180005058 NONE FUNC kernel32.dll SetEvent
+9   0x180005060 NONE FUNC kernel32.dll WaitForSingleObject
+10  0x180005068 NONE FUNC kernel32.dll ExitThread
+11  0x180005070 NONE FUNC kernel32.dll CloseHandle
+12  0x180005078 NONE FUNC kernel32.dll CreateThread
+13  0x180005080 NONE FUNC kernel32.dll GetTempPathA
+14  0x180005088 NONE FUNC kernel32.dll GetVolumeInformationA
+15  0x180005090 NONE FUNC kernel32.dll Sleep
+16  0x180005098 NONE FUNC kernel32.dll CreateEventA
+17  0x1800050a0 NONE FUNC kernel32.dll GetCurrentProcess
+18  0x1800050a8 NONE FUNC kernel32.dll FileTimeToSystemTime
+19  0x1800050b0 NONE FUNC kernel32.dll GetLocalTime
+20  0x1800050b8 NONE FUNC kernel32.dll VirtualAlloc
+1   0x1800050e8 NONE FUNC secur32.dll  GetUserNameExA
+2   0x1800050f0 NONE FUNC secur32.dll  GetUserNameExW
+1   0x1800050c8 NONE FUNC ole32.dll    CoCreateInstance
+2   0x1800050d0 NONE FUNC ole32.dll    CoUninitialize
+3   0x1800050d8 NONE FUNC ole32.dll    CoInitialize
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib          name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000420 0x180001020 GLOBAL FUNC 0    socks64.dll  rundll
+1   0x00003700 0x180005100 NONE   FUNC 0    user32.dll   imp.wsprintfA
+1   0x00003710 0x180005110 NONE   FUNC 0    ws2_32.dll   imp.getaddrinfo
+2   0x00003718 0x180005118 NONE   FUNC 0    ws2_32.dll   imp.closesocket
+3   0x00003720 0x180005120 NONE   FUNC 0    ws2_32.dll   imp.shutdown
+4   0x00003728 0x180005128 NONE   FUNC 0    ws2_32.dll   imp.send
+5   0x00003730 0x180005130 NONE   FUNC 0    ws2_32.dll   imp.setsockopt
+6   0x00003738 0x180005138 NONE   FUNC 0    ws2_32.dll   imp.freeaddrinfo
+7   0x00003740 0x180005140 NONE   FUNC 0    ws2_32.dll   imp.recv
+8   0x00003748 0x180005148 NONE   FUNC 0    ws2_32.dll   imp.WSAIoctl
+9   0x00003750 0x180005150 NONE   FUNC 0    ws2_32.dll   imp.select
+10  0x00003758 0x180005158 NONE   FUNC 0    ws2_32.dll   imp.connect
+11  0x00003760 0x180005160 NONE   FUNC 0    ws2_32.dll   imp.inet_ntoa
+12  0x00003768 0x180005168 NONE   FUNC 0    ws2_32.dll   imp.inet_addr
+13  0x00003770 0x180005170 NONE   FUNC 0    ws2_32.dll   imp.htons
+14  0x00003778 0x180005178 NONE   FUNC 0    ws2_32.dll   imp.ioctlsocket
+15  0x00003780 0x180005180 NONE   FUNC 0    ws2_32.dll   imp.WSAStartup
+16  0x00003788 0x180005188 NONE   FUNC 0    ws2_32.dll   imp.socket
+1   0x00003600 0x180005000 NONE   FUNC 0    advapi32.dll imp.GetTokenInformation
+2   0x00003608 0x180005008 NONE   FUNC 0    advapi32.dll imp.OpenProcessToken
+3   0x00003610 0x180005010 NONE   FUNC 0    advapi32.dll imp.GetSidSubAuthority
+1   0x00003620 0x180005020 NONE   FUNC 0    kernel32.dll imp.WriteFile
+2   0x00003628 0x180005028 NONE   FUNC 0    kernel32.dll imp.SetFilePointer
+3   0x00003630 0x180005030 NONE   FUNC 0    kernel32.dll imp.CreateFileA
+4   0x00003638 0x180005038 NONE   FUNC 0    kernel32.dll imp.VirtualFree
+5   0x00003640 0x180005040 NONE   FUNC 0    kernel32.dll imp.LocalFree
+6   0x00003648 0x180005048 NONE   FUNC 0    kernel32.dll imp.LocalAlloc
+7   0x00003650 0x180005050 NONE   FUNC 0    kernel32.dll imp.SystemTimeToFileTime
+8   0x00003658 0x180005058 NONE   FUNC 0    kernel32.dll imp.SetEvent
+9   0x00003660 0x180005060 NONE   FUNC 0    kernel32.dll imp.WaitForSingleObject
+10  0x00003668 0x180005068 NONE   FUNC 0    kernel32.dll imp.ExitThread
+11  0x00003670 0x180005070 NONE   FUNC 0    kernel32.dll imp.CloseHandle
+12  0x00003678 0x180005078 NONE   FUNC 0    kernel32.dll imp.CreateThread
+13  0x00003680 0x180005080 NONE   FUNC 0    kernel32.dll imp.GetTempPathA
+14  0x00003688 0x180005088 NONE   FUNC 0    kernel32.dll imp.GetVolumeInformationA
+15  0x00003690 0x180005090 NONE   FUNC 0    kernel32.dll imp.Sleep
+16  0x00003698 0x180005098 NONE   FUNC 0    kernel32.dll imp.CreateEventA
+17  0x000036a0 0x1800050a0 NONE   FUNC 0    kernel32.dll imp.GetCurrentProcess
+18  0x000036a8 0x1800050a8 NONE   FUNC 0    kernel32.dll imp.FileTimeToSystemTime
+19  0x000036b0 0x1800050b0 NONE   FUNC 0    kernel32.dll imp.GetLocalTime
+20  0x000036b8 0x1800050b8 NONE   FUNC 0    kernel32.dll imp.VirtualAlloc
+1   0x000036e8 0x1800050e8 NONE   FUNC 0    secur32.dll  imp.GetUserNameExA
+2   0x000036f0 0x1800050f0 NONE   FUNC 0    secur32.dll  imp.GetUserNameExW
+1   0x000036c8 0x1800050c8 NONE   FUNC 0    ole32.dll    imp.CoCreateInstance
+2   0x000036d0 0x1800050d0 NONE   FUNC 0    ole32.dll    imp.CoUninitialize
+3   0x000036d8 0x1800050d8 NONE   FUNC 0    ole32.dll    imp.CoInitialize
+[Strings]
+nth paddr      vaddr       len size section type  string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000037d8 0x1800051d8 8   9    .rdata  ascii \f`\vp\n0\tS
+1   0x000037f4 0x1800051f4 8   9    .rdata  ascii \f`\vp\n0\tS
+2   0x00003810 0x180005210 8   9    .rdata  ascii \f`\vp\n0\tS
+3   0x00003876 0x180005276 8   9    .rdata  ascii \f`\vp\n0\tS
+4   0x000038f6 0x1800052f6 8   9    .rdata  ascii \f`\vp\n0\tS
+5   0x000039c6 0x1800053c6 8   9    .rdata  ascii \f`\vp\n0\tS
+6   0x00003a0f 0x18000540f 9   10   .rdata  ascii `\rp\f0\vS\bP
+7   0x00003a3e 0x18000543e 8   9    .rdata  ascii \f`\vp\n0\tS
+8   0x00003a86 0x180005486 8   9    .rdata  ascii \f`\vp\n0\tS
+9   0x00003ace 0x1800054ce 8   9    .rdata  ascii \f`\vp\n0\tS
+10  0x00003b04 0x180005504 8   9    .rdata  ascii \f`\vp\n0\tS
+11  0x00003d3a 0x18000573a 9   10   .rdata  ascii wsprintfA
+12  0x00003d44 0x180005744 10  11   .rdata  ascii user32.dll
+13  0x00003d52 0x180005752 10  11   .rdata  ascii WSAStartup
+14  0x00003d60 0x180005760 11  12   .rdata  ascii ioctlsocket
+15  0x00003d6e 0x18000576e 7   8    .rdata  ascii connect
+16  0x00003d78 0x180005778 6   7    .rdata  ascii select
+17  0x00003d82 0x180005782 8   9    .rdata  ascii WSAIoctl
+18  0x00003d8e 0x18000578e 4   5    .rdata  ascii recv
+19  0x00003d96 0x180005796 6   7    .rdata  ascii socket
+20  0x00003da0 0x1800057a0 10  11   .rdata  ascii setsockopt
+21  0x00003dae 0x1800057ae 4   5    .rdata  ascii send
+22  0x00003db6 0x1800057b6 8   9    .rdata  ascii shutdown
+23  0x00003dc2 0x1800057c2 11  12   .rdata  ascii closesocket
+24  0x00003dd0 0x1800057d0 11  12   .rdata  ascii getaddrinfo
+25  0x00003dde 0x1800057de 12  13   .rdata  ascii freeaddrinfo
+26  0x00003dee 0x1800057ee 9   10   .rdata  ascii inet_ntoa
+27  0x00003dfa 0x1800057fa 9   10   .rdata  ascii inet_addr
+28  0x00003e06 0x180005806 5   6    .rdata  ascii htons
+29  0x00003e0c 0x18000580c 10  11   .rdata  ascii ws2_32.dll
+30  0x00003e1a 0x18000581a 16  17   .rdata  ascii OpenProcessToken
+31  0x00003e2e 0x18000582e 19  20   .rdata  ascii GetTokenInformation
+32  0x00003e44 0x180005844 18  19   .rdata  ascii GetSidSubAuthority
+33  0x00003e58 0x180005858 12  13   .rdata  ascii advapi32.dll
+34  0x00003e68 0x180005868 12  13   .rdata  ascii GetLocalTime
+35  0x00003e78 0x180005878 20  21   .rdata  ascii SystemTimeToFileTime
+36  0x00003e90 0x180005890 20  21   .rdata  ascii FileTimeToSystemTime
+37  0x00003ea8 0x1800058a8 5   6    .rdata  ascii Sleep
+38  0x00003eb0 0x1800058b0 12  13   .rdata  ascii CreateEventA
+39  0x00003ec0 0x1800058c0 12  13   .rdata  ascii VirtualAlloc
+40  0x00003ed0 0x1800058d0 21  22   .rdata  ascii GetVolumeInformationA
+41  0x00003ee8 0x1800058e8 12  13   .rdata  ascii GetTempPathA
+42  0x00003ef8 0x1800058f8 12  13   .rdata  ascii CreateThread
+43  0x00003f08 0x180005908 11  12   .rdata  ascii CloseHandle
+44  0x00003f16 0x180005916 10  11   .rdata  ascii ExitThread
+45  0x00003f24 0x180005924 19  20   .rdata  ascii WaitForSingleObject
+46  0x00003f3a 0x18000593a 8   9    .rdata  ascii SetEvent
+47  0x00003f46 0x180005946 17  18   .rdata  ascii GetCurrentProcess
+48  0x00003f5a 0x18000595a 10  11   .rdata  ascii LocalAlloc
+49  0x00003f68 0x180005968 9   10   .rdata  ascii LocalFree
+50  0x00003f74 0x180005974 11  12   .rdata  ascii VirtualFree
+51  0x00003f82 0x180005982 11  12   .rdata  ascii CreateFileA
+52  0x00003f90 0x180005990 14  15   .rdata  ascii SetFilePointer
+53  0x00003fa2 0x1800059a2 9   10   .rdata  ascii WriteFile
+54  0x00003fac 0x1800059ac 12  13   .rdata  ascii kernel32.dll
+55  0x00003fbc 0x1800059bc 14  15   .rdata  ascii GetUserNameExW
+56  0x00003fce 0x1800059ce 14  15   .rdata  ascii GetUserNameExA
+57  0x00003fde 0x1800059de 11  12   .rdata  ascii secur32.dll
+58  0x00003fec 0x1800059ec 12  13   .rdata  ascii CoInitialize
+59  0x00003ffc 0x1800059fc 16  17   .rdata  ascii CoCreateInstance
+60  0x00004010 0x180005a10 14  15   .rdata  ascii CoUninitialize
+61  0x00004020 0x180005a20 9   10   .rdata  ascii ole32.dll
+62  0x00004062 0x180005a62 11  12   .rdata  ascii socks64.dll
+63  0x0000406e 0x180005a6e 6   7    .rdata  ascii rundll
+0   0x00004200 0x180006000 9   10   .data   ascii BEGINDATA
+1   0x0000420a 0x18000600a 19  20   .data   ascii HOST1:46.166.161.93
+2   0x0000421e 0x18000601e 4   5    .data   ascii ange
+3   0x00004241 0x180006041 24  25   .data   ascii HOST2:localhost.exchange
+4   0x00004278 0x180006078 9   10   .data   ascii PORT1:443
+5   0x00004284 0x180006084 4   5    .data   ascii TOR:
+6   0x0000431d 0x18000611d 11  12   .data   ascii a2guard.exe
+7   0x00004329 0x180006129 6   7    .data   ascii start2
+8   0x00004330 0x180006130 15  16   .data   ascii ALLUSERSPROFILE
+9   0x00004340 0x180006140 8   9    .data   ascii win32app
+10  0x00004349 0x180006149 9   10   .data   ascii Microsoft
+11  0x00004353 0x180006153 9   10   .data   ascii ntdll.dll
+12  0x0000435d 0x18000615d 12  13   .data   ascii LoadLibraryA
+13  0x0000436a 0x18000616a 10  11   .data   ascii powershell
+14  0x00004375 0x180006175 38  39   .data   ascii -WindowStyle Hidden -ep bypass -file "
+15  0x0000439c 0x18000619c 12  13   .data   ascii kernel32.dll
+16  0x000043a9 0x1800061a9 13  14   .data   ascii RtlGetVersion
+17  0x000043b7 0x1800061b7 139 140  .data   ascii GET %s HTTP/1.0\r\nHost: %s\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0\r\nConnection: close\r\n\r\n
+arch     x86
+baddr    0x180000000
+binsz    18432
+bintype  pe
+bits     64
+canary   false
+retguard false
+class    PE32+
+cmp.csum 0x00014413
+compiled Thu Mar 18 07:16:27 2021
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  false
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x6052fe4b
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x2022
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x3200
+  SizeOfInitializedData : 0x1200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  ImageBase : 0x180000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x2
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x8000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 30319 Times: 1
+  Product: 155 Name: Export1000 Version: 30319 Times: 1
+  Product: 0 Name: Unknown Version: 0 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 45
+  Product: 123 Name: Implib800 Version: 50727 Times: 13
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x5a30
+  Size : 0x45
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x5510
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x7000
+  Size : 0x1b0
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x5000
+  Size : 0x198
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+ws2_32.dll
+advapi32.dll
+kernel32.dll
+secur32.dll
+ole32.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00005738 0x00003700 SET_64 user32.dll_wsprintfA
+0x00005750 0x00003780 SET_64 ws2_32.dll_WSAStartup
+0x0000575e 0x00003778 SET_64 ws2_32.dll_ioctlsocket
+0x0000576c 0x00003758 SET_64 ws2_32.dll_connect
+0x00005776 0x00003750 SET_64 ws2_32.dll_select
+0x00005780 0x00003748 SET_64 ws2_32.dll_WSAIoctl
+0x0000578c 0x00003740 SET_64 ws2_32.dll_recv
+0x00005794 0x00003788 SET_64 ws2_32.dll_socket
+0x0000579e 0x00003730 SET_64 ws2_32.dll_setsockopt
+0x000057ac 0x00003728 SET_64 ws2_32.dll_send
+0x000057b4 0x00003720 SET_64 ws2_32.dll_shutdown
+0x000057c0 0x00003718 SET_64 ws2_32.dll_closesocket
+0x000057ce 0x00003710 SET_64 ws2_32.dll_getaddrinfo
+0x000057dc 0x00003738 SET_64 ws2_32.dll_freeaddrinfo
+0x000057ec 0x00003760 SET_64 ws2_32.dll_inet_ntoa
+0x000057f8 0x00003768 SET_64 ws2_32.dll_inet_addr
+0x00005804 0x00003770 SET_64 ws2_32.dll_htons
+0x00005818 0x00003608 SET_64 advapi32.dll_OpenProcessToken
+0x0000582c 0x00003600 SET_64 advapi32.dll_GetTokenInformation
+0x00005842 0x00003610 SET_64 advapi32.dll_GetSidSubAuthority
+0x00005866 0x000036b0 SET_64 kernel32.dll_GetLocalTime
+0x00005876 0x00003650 SET_64 kernel32.dll_SystemTimeToFileTime
+0x0000588e 0x000036a8 SET_64 kernel32.dll_FileTimeToSystemTime
+0x000058a6 0x00003690 SET_64 kernel32.dll_Sleep
+0x000058ae 0x00003698 SET_64 kernel32.dll_CreateEventA
+0x000058be 0x000036b8 SET_64 kernel32.dll_VirtualAlloc
+0x000058ce 0x00003688 SET_64 kernel32.dll_GetVolumeInformationA
+0x000058e6 0x00003680 SET_64 kernel32.dll_GetTempPathA
+0x000058f6 0x00003678 SET_64 kernel32.dll_CreateThread
+0x00005906 0x00003670 SET_64 kernel32.dll_CloseHandle
+0x00005914 0x00003668 SET_64 kernel32.dll_ExitThread
+0x00005922 0x00003660 SET_64 kernel32.dll_WaitForSingleObject
+0x00005938 0x00003658 SET_64 kernel32.dll_SetEvent
+0x00005944 0x000036a0 SET_64 kernel32.dll_GetCurrentProcess
+0x00005958 0x00003648 SET_64 kernel32.dll_LocalAlloc
+0x00005966 0x00003640 SET_64 kernel32.dll_LocalFree
+0x00005972 0x00003638 SET_64 kernel32.dll_VirtualFree
+0x00005980 0x00003630 SET_64 kernel32.dll_CreateFileA
+0x0000598e 0x00003628 SET_64 kernel32.dll_SetFilePointer
+0x000059a0 0x00003620 SET_64 kernel32.dll_WriteFile
+0x000059ba 0x000036f0 SET_64 secur32.dll_GetUserNameExW
+0x000059cc 0x000036e8 SET_64 secur32.dll_GetUserNameExA
+0x000059ea 0x000036d8 SET_64 ole32.dll_CoInitialize
+0x000059fa 0x000036c8 SET_64 ole32.dll_CoCreateInstance
+0x00005a0e 0x000036d0 SET_64 ole32.dll_CoUninitialize
+
+
+45 relocations
+18432
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

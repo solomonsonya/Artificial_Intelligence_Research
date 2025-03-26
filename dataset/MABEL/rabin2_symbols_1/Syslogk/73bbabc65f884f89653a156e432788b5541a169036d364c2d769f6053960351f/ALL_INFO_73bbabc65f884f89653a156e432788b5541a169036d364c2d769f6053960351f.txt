@@ -1,0 +1,629 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x00000200    0x1c 0x00400200    0x1c -r-- .interp
+2   0x0000021c    0x20 0x0040021c    0x20 -r-- .note.ABI-tag
+3   0x0000023c    0x24 0x0040023c    0x24 -r-- .note.gnu.build-id
+4   0x00000260    0x1c 0x00400260    0x1c -r-- .gnu.hash
+5   0x00000280   0x828 0x00400280   0x828 -r-- .dynsym
+6   0x00000aa8   0x379 0x00400aa8   0x379 -r-- .dynstr
+7   0x00000e22    0xae 0x00400e22    0xae -r-- .gnu.version
+8   0x00000ed0    0xa0 0x00400ed0    0xa0 -r-- .gnu.version_r
+9   0x00000f70    0x18 0x00400f70    0x18 -r-- .rela.dyn
+10  0x00000f88   0x7e0 0x00400f88   0x7e0 -r-- .rela.plt
+11  0x00001768    0x18 0x00401768    0x18 -r-x .init
+12  0x00001780   0x550 0x00401780   0x550 -r-x .plt
+13  0x00001cd0  0xba68 0x00401cd0  0xba68 -r-x .text
+14  0x0000d738     0xe 0x0040d738     0xe -r-x .fini
+15  0x0000d760  0x50b0 0x0040d760  0x50b0 -r-- .rodata
+16  0x00012810   0x344 0x00412810   0x344 -r-- .eh_frame_hdr
+17  0x00012b58  0x13b4 0x00412b58  0x13b4 -r-- .eh_frame
+18  0x00014000    0x10 0x00614000    0x10 -rw- .ctors
+19  0x00014010    0x10 0x00614010    0x10 -rw- .dtors
+20  0x00014020     0x8 0x00614020     0x8 -rw- .jcr
+21  0x00014028   0x1c0 0x00614028   0x1c0 -rw- .dynamic
+22  0x000141e8     0x8 0x006141e8     0x8 -rw- .got
+23  0x000141f0   0x2b8 0x006141f0   0x2b8 -rw- .got.plt
+24  0x000144c0   0x3e0 0x006144c0   0x3e0 -rw- .data
+25  0x000148a0     0x0 0x006148a0  0x3ae8 -rw- .bss
+26  0x000148a0    0x2c 0x00000000    0x2c ---- .comment
+27  0x000148cc    0xee 0x00000000    0xee ---- .shstrtab
+
+[Segments]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000040    0x1c0 0x00400040    0x1c0 -r-x PHDR
+1   0x00000200     0x1c 0x00400200     0x1c -r-- INTERP
+2   0x00000000  0x13f0c 0x00400000  0x13f0c -r-x LOAD0
+3   0x00014000    0x8a0 0x00614000   0x4388 -rw- LOAD1
+4   0x00014028    0x1c0 0x00614028    0x1c0 -rw- DYNAMIC
+5   0x0000021c     0x44 0x0040021c     0x44 -r-- NOTE
+6   0x00012810    0x344 0x00412810    0x344 -r-- GNU_EH_FRAME
+7   0x00000000      0x0 0x00000000      0x0 -rw- GNU_STACK
+8   0x00000000     0x40 0x00400000     0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00401cd0 paddr=0x00001cd0 haddr=0x00000018 hvaddr=0x00400018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00404957 paddr=0x00004957
+[Imports]
+nth vaddr      bind   type   lib name
+―――――――――――――――――――――――――――――――――――――
+1   0x00401790 GLOBAL FUNC       daemon
+2   0x004017a0 GLOBAL FUNC       chmod
+3   0x004017b0 GLOBAL FUNC       dup2
+4   0x004017c0 GLOBAL FUNC       execv
+5   0x004017d0 GLOBAL FUNC       memset
+6   0x004017e0 GLOBAL FUNC       setsid
+7   0x004017f0 GLOBAL FUNC       shutdown
+8   0x00401800 GLOBAL FUNC       close
+9   0x00401810 GLOBAL FUNC       ioctl
+10  0x00401820 GLOBAL FUNC       ttyname
+11  0x00401830 GLOBAL FUNC       gethostbyname
+12  0x00000000 WEAK   NOTYPE     __gmon_start__
+13  0x00000000 WEAK   NOTYPE     _Jv_RegisterClasses
+14  0x00401840 GLOBAL FUNC       pthread_cond_signal
+15  0x00401850 GLOBAL FUNC       select
+16  0x00401860 GLOBAL FUNC       exit
+17  0x00401870 GLOBAL FUNC       gettimeofday
+18  0x00401880 GLOBAL FUNC       execl
+19  0x00401890 GLOBAL FUNC       read
+20  0x004018a0 GLOBAL FUNC       malloc
+21  0x004018b0 GLOBAL FUNC       fopen
+22  0x004018c0 GLOBAL FUNC       __libc_start_main
+23  0x004018d0 GLOBAL FUNC       recv
+24  0x004018e0 GLOBAL FUNC       pthread_cond_timedwait
+25  0x004018f0 GLOBAL FUNC       setsockopt
+26  0x00401900 GLOBAL FUNC       getpid
+27  0x00401910 GLOBAL FUNC       pthread_mutex_init
+28  0x00401920 GLOBAL FUNC       fgets
+29  0x00401930 GLOBAL FUNC       free
+30  0x00401940 GLOBAL FUNC       pthread_create
+31  0x00401950 GLOBAL FUNC       opendir
+32  0x00401960 GLOBAL FUNC       pthread_cond_init
+33  0x00401970 GLOBAL FUNC       listen
+34  0x00401980 GLOBAL FUNC       readdir
+35  0x00401990 GLOBAL FUNC       sprintf
+36  0x004019a0 GLOBAL FUNC       usleep
+37  0x004019b0 GLOBAL FUNC       strstr
+38  0x004019c0 GLOBAL FUNC       getifaddrs
+39  0x004019d0 GLOBAL FUNC       pthread_attr_setstacksize
+40  0x004019e0 GLOBAL FUNC       strcat
+41  0x004019f0 GLOBAL FUNC       strtol
+42  0x00401a00 GLOBAL FUNC       readlink
+43  0x00401a10 GLOBAL FUNC       connect
+44  0x00401a20 GLOBAL FUNC       gethostname
+45  0x00401a30 GLOBAL FUNC       memcpy
+46  0x00401a40 GLOBAL FUNC       putenv
+47  0x00401a50 GLOBAL FUNC       signal
+48  0x00401a60 GLOBAL FUNC       __lxstat64
+49  0x00401a70 GLOBAL FUNC       waitpid
+50  0x00401a80 GLOBAL FUNC       socket
+51  0x00401a90 GLOBAL FUNC       fread
+52  0x00401aa0 GLOBAL FUNC       inet_ntoa
+53  0x00401ab0 GLOBAL FUNC       alarm
+54  0x00401ac0 GLOBAL FUNC       __errno_location
+55  0x00401ad0 GLOBAL FUNC       sigaddset
+56  0x00401ae0 GLOBAL FUNC       strcmp
+57  0x00401af0 GLOBAL FUNC       send
+58  0x00401b00 GLOBAL FUNC       strcpy
+59  0x00401b10 GLOBAL FUNC       srand
+60  0x00401b20 GLOBAL FUNC       feof
+61  0x00401b30 GLOBAL FUNC       fclose
+62  0x00401b40 GLOBAL FUNC       remove
+63  0x00401b50 GLOBAL FUNC       strncpy
+64  0x00401b60 GLOBAL FUNC       pthread_attr_init
+65  0x00401b70 GLOBAL FUNC       fseeko
+66  0x00401b80 GLOBAL FUNC       closedir
+67  0x00401b90 GLOBAL FUNC       fork
+68  0x00401ba0 GLOBAL FUNC       sigemptyset
+69  0x00401bb0 GLOBAL FUNC       pthread_sigmask
+70  0x00401bc0 GLOBAL FUNC       bind
+71  0x00401bd0 GLOBAL FUNC       fwrite
+72  0x00401be0 GLOBAL FUNC       pthread_mutex_lock
+73  0x00401bf0 GLOBAL FUNC       rand
+74  0x00401c00 GLOBAL FUNC       localtime
+75  0x00401c10 GLOBAL FUNC       pthread_mutex_destroy
+76  0x00401c20 GLOBAL FUNC       write
+77  0x00401c30 GLOBAL FUNC       openpty
+78  0x00401c40 GLOBAL FUNC       accept
+79  0x00401c50 GLOBAL FUNC       clock_gettime
+80  0x00401c60 GLOBAL FUNC       pthread_mutex_unlock
+81  0x00401c70 GLOBAL FUNC       fcntl
+82  0x00401c80 GLOBAL FUNC       rename
+83  0x00401c90 GLOBAL FUNC       mkdir
+84  0x00401ca0 GLOBAL FUNC       time
+85  0x00401cb0 GLOBAL FUNC       inet_addr
+86  0x00401cc0 GLOBAL FUNC       pthread_attr_setdetachstate
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00001790 0x00401790 GLOBAL FUNC   16       imp.daemon
+2   0x000017a0 0x004017a0 GLOBAL FUNC   16       imp.chmod
+3   0x000017b0 0x004017b0 GLOBAL FUNC   16       imp.dup2
+4   0x000017c0 0x004017c0 GLOBAL FUNC   16       imp.execv
+5   0x000017d0 0x004017d0 GLOBAL FUNC   16       imp.memset
+6   0x000017e0 0x004017e0 GLOBAL FUNC   16       imp.setsid
+7   0x000017f0 0x004017f0 GLOBAL FUNC   16       imp.shutdown
+8   0x00001800 0x00401800 GLOBAL FUNC   16       imp.close
+9   0x00001810 0x00401810 GLOBAL FUNC   16       imp.ioctl
+10  0x00001820 0x00401820 GLOBAL FUNC   16       imp.ttyname
+11  0x00001830 0x00401830 GLOBAL FUNC   16       imp.gethostbyname
+12  ---------- 0x00000000 WEAK   NOTYPE 16       imp.__gmon_start__
+13  ---------- 0x00000000 WEAK   NOTYPE 16       imp._Jv_RegisterClasses
+14  0x00001840 0x00401840 GLOBAL FUNC   16       imp.pthread_cond_signal
+15  0x00001850 0x00401850 GLOBAL FUNC   16       imp.select
+16  0x00001860 0x00401860 GLOBAL FUNC   16       imp.exit
+17  0x00001870 0x00401870 GLOBAL FUNC   16       imp.gettimeofday
+18  0x00001880 0x00401880 GLOBAL FUNC   16       imp.execl
+19  0x00001890 0x00401890 GLOBAL FUNC   16       imp.read
+20  0x000018a0 0x004018a0 GLOBAL FUNC   16       imp.malloc
+21  0x000018b0 0x004018b0 GLOBAL FUNC   16       imp.fopen
+22  0x000018c0 0x004018c0 GLOBAL FUNC   16       imp.__libc_start_main
+23  0x000018d0 0x004018d0 GLOBAL FUNC   16       imp.recv
+24  0x000018e0 0x004018e0 GLOBAL FUNC   16       imp.pthread_cond_timedwait
+25  0x000018f0 0x004018f0 GLOBAL FUNC   16       imp.setsockopt
+26  0x00001900 0x00401900 GLOBAL FUNC   16       imp.getpid
+27  0x00001910 0x00401910 GLOBAL FUNC   16       imp.pthread_mutex_init
+28  0x00001920 0x00401920 GLOBAL FUNC   16       imp.fgets
+29  0x00001930 0x00401930 GLOBAL FUNC   16       imp.free
+30  0x00001940 0x00401940 GLOBAL FUNC   16       imp.pthread_create
+31  0x00001950 0x00401950 GLOBAL FUNC   16       imp.opendir
+32  0x00001960 0x00401960 GLOBAL FUNC   16       imp.pthread_cond_init
+33  0x00001970 0x00401970 GLOBAL FUNC   16       imp.listen
+34  0x00001980 0x00401980 GLOBAL FUNC   16       imp.readdir
+35  0x00001990 0x00401990 GLOBAL FUNC   16       imp.sprintf
+36  0x000019a0 0x004019a0 GLOBAL FUNC   16       imp.usleep
+37  0x000019b0 0x004019b0 GLOBAL FUNC   16       imp.strstr
+38  0x000019c0 0x004019c0 GLOBAL FUNC   16       imp.getifaddrs
+39  0x000019d0 0x004019d0 GLOBAL FUNC   16       imp.pthread_attr_setstacksize
+40  0x000019e0 0x004019e0 GLOBAL FUNC   16       imp.strcat
+41  0x000019f0 0x004019f0 GLOBAL FUNC   16       imp.strtol
+42  0x00001a00 0x00401a00 GLOBAL FUNC   16       imp.readlink
+43  0x00001a10 0x00401a10 GLOBAL FUNC   16       imp.connect
+44  0x00001a20 0x00401a20 GLOBAL FUNC   16       imp.gethostname
+45  0x00001a30 0x00401a30 GLOBAL FUNC   16       imp.memcpy
+46  0x00001a40 0x00401a40 GLOBAL FUNC   16       imp.putenv
+47  0x00001a50 0x00401a50 GLOBAL FUNC   16       imp.signal
+48  0x00001a60 0x00401a60 GLOBAL FUNC   16       imp.__lxstat64
+49  0x00001a70 0x00401a70 GLOBAL FUNC   16       imp.waitpid
+50  0x00001a80 0x00401a80 GLOBAL FUNC   16       imp.socket
+51  0x00001a90 0x00401a90 GLOBAL FUNC   16       imp.fread
+52  0x00001aa0 0x00401aa0 GLOBAL FUNC   16       imp.inet_ntoa
+53  0x00001ab0 0x00401ab0 GLOBAL FUNC   16       imp.alarm
+54  0x00001ac0 0x00401ac0 GLOBAL FUNC   16       imp.__errno_location
+55  0x00001ad0 0x00401ad0 GLOBAL FUNC   16       imp.sigaddset
+56  0x00001ae0 0x00401ae0 GLOBAL FUNC   16       imp.strcmp
+57  0x00001af0 0x00401af0 GLOBAL FUNC   16       imp.send
+58  0x00001b00 0x00401b00 GLOBAL FUNC   16       imp.strcpy
+59  0x00001b10 0x00401b10 GLOBAL FUNC   16       imp.srand
+60  0x00001b20 0x00401b20 GLOBAL FUNC   16       imp.feof
+61  0x00001b30 0x00401b30 GLOBAL FUNC   16       imp.fclose
+62  0x00001b40 0x00401b40 GLOBAL FUNC   16       imp.remove
+63  0x00001b50 0x00401b50 GLOBAL FUNC   16       imp.strncpy
+64  0x00001b60 0x00401b60 GLOBAL FUNC   16       imp.pthread_attr_init
+65  0x00001b70 0x00401b70 GLOBAL FUNC   16       imp.fseeko
+66  0x00001b80 0x00401b80 GLOBAL FUNC   16       imp.closedir
+67  0x00001b90 0x00401b90 GLOBAL FUNC   16       imp.fork
+68  0x00001ba0 0x00401ba0 GLOBAL FUNC   16       imp.sigemptyset
+69  0x00001bb0 0x00401bb0 GLOBAL FUNC   16       imp.pthread_sigmask
+70  0x00001bc0 0x00401bc0 GLOBAL FUNC   16       imp.bind
+71  0x00001bd0 0x00401bd0 GLOBAL FUNC   16       imp.fwrite
+72  0x00001be0 0x00401be0 GLOBAL FUNC   16       imp.pthread_mutex_lock
+73  0x00001bf0 0x00401bf0 GLOBAL FUNC   16       imp.rand
+74  0x00001c00 0x00401c00 GLOBAL FUNC   16       imp.localtime
+75  0x00001c10 0x00401c10 GLOBAL FUNC   16       imp.pthread_mutex_destroy
+76  0x00001c20 0x00401c20 GLOBAL FUNC   16       imp.write
+77  0x00001c30 0x00401c30 GLOBAL FUNC   16       imp.openpty
+78  0x00001c40 0x00401c40 GLOBAL FUNC   16       imp.accept
+79  0x00001c50 0x00401c50 GLOBAL FUNC   16       imp.clock_gettime
+80  0x00001c60 0x00401c60 GLOBAL FUNC   16       imp.pthread_mutex_unlock
+81  0x00001c70 0x00401c70 GLOBAL FUNC   16       imp.fcntl
+82  0x00001c80 0x00401c80 GLOBAL FUNC   16       imp.rename
+83  0x00001c90 0x00401c90 GLOBAL FUNC   16       imp.mkdir
+84  0x00001ca0 0x00401ca0 GLOBAL FUNC   16       imp.time
+85  0x00001cb0 0x00401cb0 GLOBAL FUNC   16       imp.inet_addr
+86  0x00001cc0 0x00401cc0 GLOBAL FUNC   16       imp.pthread_attr_setdetachstate
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000d7c8 0x0040d7c8 4   5    .rodata ascii SeA~
+1   0x0000d940 0x0040d940 4   5    .rodata ascii XhHp
+2   0x0000daf8 0x0040daf8 4   5    .rodata ascii NrZl
+3   0x0000db18 0x0040db18 4   5    .rodata ascii '9-6
+4   0x0000db38 0x0040db38 4   5    .rodata ascii :.6$
+5   0x0000db70 0x0040db70 4   5    .rodata ascii iKwZ
+6   0x0000dd18 0x0040dd18 4   5    .rodata ascii bF~T
+7   0x0000dde8 0x0040dde8 4   5    .rodata ascii 1#?*
+8   0x0000df50 0x0040df50 4   5    .rodata ascii ,4$8
+9   0x0000dfb0 0x0040dfb0 4   5    .rodata ascii t\lH
+10  0x0000dfc8 0x0040dfc8 4   5    .rodata ascii eA~S
+11  0x0000e140 0x0040e140 4   5    .rodata ascii hHpX
+12  0x0000e2f8 0x0040e2f8 4   5    .rodata ascii rZlN
+13  0x0000e318 0x0040e318 4   5    .rodata ascii 9-6'
+14  0x0000e338 0x0040e338 4   5    .rodata ascii .6$:
+15  0x0000e370 0x0040e370 4   5    .rodata ascii KwZi
+16  0x0000e518 0x0040e518 4   5    .rodata ascii F~Tb
+17  0x0000e5e8 0x0040e5e8 4   5    .rodata ascii #?*1
+18  0x0000e750 0x0040e750 4   5    .rodata ascii 4$8,
+19  0x0000e7b0 0x0040e7b0 4   5    .rodata ascii \lHt
+20  0x0000e7c8 0x0040e7c8 4   5    .rodata ascii A~Se
+21  0x0000e940 0x0040e940 4   5    .rodata ascii HpXh
+22  0x0000eaf8 0x0040eaf8 4   5    .rodata ascii ZlNr
+23  0x0000eb18 0x0040eb18 4   5    .rodata ascii -6'9
+24  0x0000eb38 0x0040eb38 4   5    .rodata ascii 6$:.
+25  0x0000eb70 0x0040eb70 4   5    .rodata ascii wZiK
+26  0x0000ed18 0x0040ed18 4   5    .rodata ascii ~TbF
+27  0x0000ede8 0x0040ede8 4   5    .rodata ascii ?*1#
+28  0x0000ef50 0x0040ef50 4   5    .rodata ascii $8,4
+29  0x0000efb0 0x0040efb0 4   5    .rodata ascii lHt\
+30  0x0000efc8 0x0040efc8 4   5    .rodata ascii ~SeA
+31  0x0000f140 0x0040f140 4   5    .rodata ascii pXhH
+32  0x0000f2f8 0x0040f2f8 4   5    .rodata ascii lNrZ
+33  0x0000f318 0x0040f318 4   5    .rodata ascii 6'9-
+34  0x0000f338 0x0040f338 4   5    .rodata ascii $:.6
+35  0x0000f370 0x0040f370 4   5    .rodata ascii ZiKw
+36  0x0000f518 0x0040f518 4   5    .rodata ascii TbF~
+37  0x0000f5e8 0x0040f5e8 4   5    .rodata ascii *1#?
+38  0x0000f750 0x0040f750 4   5    .rodata ascii 8,4$
+39  0x0000f7b0 0x0040f7b0 4   5    .rodata ascii Ht\l
+40  0x00010000 0x00410000 4   5    .rodata ascii P00`
+41  0x00010018 0x00410018 4   5    .rodata ascii }++V
+42  0x000100d8 0x004100d8 4   5    .rodata ascii j&&L
+43  0x000100e0 0x004100e0 4   5    .rodata ascii Z66l
+44  0x000100e8 0x004100e8 4   5    .rodata ascii A??~
+45  0x00010100 0x00410100 4   5    .rodata ascii \44h
+46  0x00010130 0x00410130 4   5    .rodata ascii S11b
+47  0x00010150 0x00410150 4   5    .rodata ascii e##F
+48  0x000101a8 0x004101a8 4   5    .rodata ascii i''N
+49  0x000101d0 0x004101d0 4   5    .rodata ascii t,,X
+50  0x000101e0 0x004101e0 4   5    .rodata ascii -\e\e6
+51  0x00010208 0x00410208 4   5    .rodata ascii M;;v
+52  0x00010220 0x00410220 4   5    .rodata ascii {))R
+53  0x00010230 0x00410230 4   5    .rodata ascii q//^
+54  0x00010260 0x00410260 4   5    .rodata ascii `  @
+55  0x00010298 0x00410298 4   5    .rodata ascii K99r
+56  0x000102f0 0x004102f0 4   5    .rodata ascii U33f
+57  0x00010328 0x00410328 4   5    .rodata ascii D<<x
+58  0x00010370 0x00410370 4   5    .rodata ascii H88p
+59  0x00010398 0x00410398 4   5    .rodata ascii c!!B
+60  0x00010418 0x00410418 4   5    .rodata ascii G==z
+61  0x00010460 0x00410460 4   5    .rodata ascii f""D
+62  0x00010468 0x00410468 4   5    .rodata ascii ~**T
+63  0x000104c8 0x004104c8 4   5    .rodata ascii V22d
+64  0x000104d0 0x004104d0 4   5    .rodata ascii N::t
+65  0x000104f0 0x004104f0 4   5    .rodata ascii l$$H
+66  0x00010550 0x00410550 4   5    .rodata ascii Y77n
+67  0x000105d0 0x004105d0 4   5    .rodata ascii o%%J
+68  0x000105d8 0x004105d8 4   5    .rodata ascii r..\
+69  0x00010648 0x00410648 4   5    .rodata ascii B>>|
+70  0x00010688 0x00410688 4   5    .rodata ascii _55j
+71  0x00010730 0x00410730 4   5    .rodata ascii x((P
+72  0x00010790 0x00410790 4   5    .rodata ascii w--Z
+73  0x00010800 0x00410800 4   5    .rodata ascii 00`P
+74  0x00010818 0x00410818 4   5    .rodata ascii ++V}
+75  0x000108d8 0x004108d8 4   5    .rodata ascii &&Lj
+76  0x000108e0 0x004108e0 4   5    .rodata ascii 66lZ
+77  0x000108e8 0x004108e8 4   5    .rodata ascii ??~A
+78  0x00010900 0x00410900 4   5    .rodata ascii 44h\
+79  0x00010930 0x00410930 4   5    .rodata ascii 11bS
+80  0x00010950 0x00410950 4   5    .rodata ascii ##Fe
+81  0x000109a8 0x004109a8 4   5    .rodata ascii ''Ni
+82  0x000109d0 0x004109d0 4   5    .rodata ascii ,,Xt
+83  0x000109e0 0x004109e0 4   5    .rodata ascii \e\e6-
+84  0x00010a08 0x00410a08 4   5    .rodata ascii ;;vM
+85  0x00010a20 0x00410a20 4   5    .rodata ascii ))R{
+86  0x00010a30 0x00410a30 4   5    .rodata ascii //^q
+87  0x00010a60 0x00410a60 4   5    .rodata ascii   @`
+88  0x00010a98 0x00410a98 4   5    .rodata ascii 99rK
+89  0x00010af0 0x00410af0 4   5    .rodata ascii 33fU
+90  0x00010b28 0x00410b28 4   5    .rodata ascii <<xD
+91  0x00010b70 0x00410b70 4   5    .rodata ascii 88pH
+92  0x00010b98 0x00410b98 4   5    .rodata ascii !!Bc
+93  0x00010c18 0x00410c18 4   5    .rodata ascii ==zG
+94  0x00010c60 0x00410c60 4   5    .rodata ascii ""Df
+95  0x00010c68 0x00410c68 4   5    .rodata ascii **T~
+96  0x00010cc8 0x00410cc8 4   5    .rodata ascii 22dV
+97  0x00010cd0 0x00410cd0 4   5    .rodata ascii ::tN
+98  0x00010cf0 0x00410cf0 4   5    .rodata ascii $$Hl
+99  0x00010d50 0x00410d50 4   5    .rodata ascii 77nY
+100 0x00010dd0 0x00410dd0 4   5    .rodata ascii %%Jo
+101 0x00010dd8 0x00410dd8 4   5    .rodata ascii ..\r
+102 0x00010e48 0x00410e48 4   5    .rodata ascii >>|B
+103 0x00010e88 0x00410e88 4   5    .rodata ascii 55j_
+104 0x00010f30 0x00410f30 4   5    .rodata ascii ((Px
+105 0x00010f90 0x00410f90 4   5    .rodata ascii --Zw
+106 0x00011000 0x00411000 4   5    .rodata ascii 0`P0
+107 0x00011018 0x00411018 4   5    .rodata ascii +V}+
+108 0x000110d8 0x004110d8 4   5    .rodata ascii &Lj&
+109 0x000110e0 0x004110e0 4   5    .rodata ascii 6lZ6
+110 0x000110e8 0x004110e8 4   5    .rodata ascii ?~A?
+111 0x00011100 0x00411100 4   5    .rodata ascii 4h\4
+112 0x00011130 0x00411130 4   5    .rodata ascii 1bS1
+113 0x00011150 0x00411150 4   5    .rodata ascii #Fe#
+114 0x000111a8 0x004111a8 4   5    .rodata ascii 'Ni'
+115 0x000111d0 0x004111d0 4   5    .rodata ascii ,Xt,
+116 0x000111e0 0x004111e0 4   5    .rodata ascii \e6-\e
+117 0x00011208 0x00411208 4   5    .rodata ascii ;vM;
+118 0x00011220 0x00411220 4   5    .rodata ascii )R{)
+119 0x00011230 0x00411230 4   5    .rodata ascii /^q/
+120 0x00011260 0x00411260 4   5    .rodata ascii  @` 
+121 0x00011298 0x00411298 4   5    .rodata ascii 9rK9
+122 0x000112f0 0x004112f0 4   5    .rodata ascii 3fU3
+123 0x00011328 0x00411328 4   5    .rodata ascii <xD<
+124 0x00011370 0x00411370 4   5    .rodata ascii 8pH8
+125 0x00011398 0x00411398 4   5    .rodata ascii !Bc!
+126 0x00011418 0x00411418 4   5    .rodata ascii =zG=
+127 0x00011460 0x00411460 4   5    .rodata ascii "Df"
+128 0x00011468 0x00411468 4   5    .rodata ascii *T~*
+129 0x000114c8 0x004114c8 4   5    .rodata ascii 2dV2
+130 0x000114d0 0x004114d0 4   5    .rodata ascii :tN:
+131 0x000114f0 0x004114f0 4   5    .rodata ascii $Hl$
+132 0x00011550 0x00411550 4   5    .rodata ascii 7nY7
+133 0x000115d0 0x004115d0 4   5    .rodata ascii %Jo%
+134 0x000115d8 0x004115d8 4   5    .rodata ascii .\r.
+135 0x00011648 0x00411648 4   5    .rodata ascii >|B>
+136 0x00011688 0x00411688 4   5    .rodata ascii 5j_5
+137 0x00011730 0x00411730 4   5    .rodata ascii (Px(
+138 0x00011790 0x00411790 4   5    .rodata ascii -Zw-
+139 0x00011800 0x00411800 4   5    .rodata ascii `P00
+140 0x00011818 0x00411818 4   5    .rodata ascii V}++
+141 0x000118d8 0x004118d8 4   5    .rodata ascii Lj&&
+142 0x000118e0 0x004118e0 4   5    .rodata ascii lZ66
+143 0x000118e8 0x004118e8 4   5    .rodata ascii ~A??
+144 0x00011900 0x00411900 4   5    .rodata ascii h\44
+145 0x00011930 0x00411930 4   5    .rodata ascii bS11
+146 0x00011950 0x00411950 4   5    .rodata ascii Fe##
+147 0x000119a8 0x004119a8 4   5    .rodata ascii Ni''
+148 0x000119d0 0x004119d0 4   5    .rodata ascii Xt,,
+149 0x000119e0 0x004119e0 4   5    .rodata ascii 6-\e\e
+150 0x00011a08 0x00411a08 4   5    .rodata ascii vM;;
+151 0x00011a20 0x00411a20 4   5    .rodata ascii R{))
+152 0x00011a30 0x00411a30 4   5    .rodata ascii ^q//
+153 0x00011a60 0x00411a60 4   5    .rodata ascii @`  
+154 0x00011a98 0x00411a98 4   5    .rodata ascii rK99
+155 0x00011af0 0x00411af0 4   5    .rodata ascii fU33
+156 0x00011b28 0x00411b28 4   5    .rodata ascii xD<<
+157 0x00011b70 0x00411b70 4   5    .rodata ascii pH88
+158 0x00011b98 0x00411b98 4   5    .rodata ascii Bc!!
+159 0x00011c18 0x00411c18 4   5    .rodata ascii zG==
+160 0x00011c60 0x00411c60 4   5    .rodata ascii Df""
+161 0x00011c68 0x00411c68 4   5    .rodata ascii T~**
+162 0x00011cc8 0x00411cc8 4   5    .rodata ascii dV22
+163 0x00011cd0 0x00411cd0 4   5    .rodata ascii tN::
+164 0x00011cf0 0x00411cf0 4   5    .rodata ascii Hl$$
+165 0x00011d50 0x00411d50 4   5    .rodata ascii nY77
+166 0x00011dd0 0x00411dd0 4   5    .rodata ascii Jo%%
+167 0x00011dd8 0x00411dd8 4   5    .rodata ascii \r..
+168 0x00011e48 0x00411e48 4   5    .rodata ascii |B>>
+169 0x00011e88 0x00411e88 4   5    .rodata ascii j_55
+170 0x00011f30 0x00411f30 4   5    .rodata ascii Px((
+171 0x00011f90 0x00411f90 4   5    .rodata ascii Zw--
+0   0x00014518 0x00614518 4   5    .data   ascii \W[^
+arch     x86
+baddr    0x400000
+binsz    84410
+bintype  elf
+bits     64
+canary   false
+class    ELF64
+compiler GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-4)
+crypto   false
+endian   little
+havecode true
+intrp    /lib64/ld-linux-x86-64.so.2
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD x86-64 architecture
+nx       true
+os       linux
+pic      false
+relocs   false
+relro    no
+rpath    NONE
+sanitize false
+static   false
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00401cd0
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x000149c0
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       8
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       28
+0x0000003e  ShrStrndx   27
+[Linked libraries]
+libutil.so.1
+librt.so.1
+libpthread.so.0
+libc.so.6
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x006141e8 0x000141e8 SET_64 __gmon_start__
+0x00614208 0x00014208 SET_64 daemon
+0x00614210 0x00014210 SET_64 chmod
+0x00614218 0x00014218 SET_64 dup2
+0x00614220 0x00014220 SET_64 execv
+0x00614228 0x00014228 SET_64 memset
+0x00614230 0x00014230 SET_64 setsid
+0x00614238 0x00014238 SET_64 shutdown
+0x00614240 0x00014240 SET_64 close
+0x00614248 0x00014248 SET_64 ioctl
+0x00614250 0x00014250 SET_64 ttyname
+0x00614258 0x00014258 SET_64 gethostbyname
+0x00614260 0x00014260 SET_64 pthread_cond_signal
+0x00614268 0x00014268 SET_64 select
+0x00614270 0x00014270 SET_64 exit
+0x00614278 0x00014278 SET_64 gettimeofday
+0x00614280 0x00014280 SET_64 execl
+0x00614288 0x00014288 SET_64 read
+0x00614290 0x00014290 SET_64 malloc
+0x00614298 0x00014298 SET_64 fopen
+0x006142a0 0x000142a0 SET_64 __libc_start_main
+0x006142a8 0x000142a8 SET_64 recv
+0x006142b0 0x000142b0 SET_64 pthread_cond_timedwait
+0x006142b8 0x000142b8 SET_64 setsockopt
+0x006142c0 0x000142c0 SET_64 getpid
+0x006142c8 0x000142c8 SET_64 pthread_mutex_init
+0x006142d0 0x000142d0 SET_64 fgets
+0x006142d8 0x000142d8 SET_64 free
+0x006142e0 0x000142e0 SET_64 pthread_create
+0x006142e8 0x000142e8 SET_64 opendir
+0x006142f0 0x000142f0 SET_64 pthread_cond_init
+0x006142f8 0x000142f8 SET_64 listen
+0x00614300 0x00014300 SET_64 readdir
+0x00614308 0x00014308 SET_64 sprintf
+0x00614310 0x00014310 SET_64 usleep
+0x00614318 0x00014318 SET_64 strstr
+0x00614320 0x00014320 SET_64 getifaddrs
+0x00614328 0x00014328 SET_64 pthread_attr_setstacksize
+0x00614330 0x00014330 SET_64 strcat
+0x00614338 0x00014338 SET_64 strtol
+0x00614340 0x00014340 SET_64 readlink
+0x00614348 0x00014348 SET_64 connect
+0x00614350 0x00014350 SET_64 gethostname
+0x00614358 0x00014358 SET_64 memcpy
+0x00614360 0x00014360 SET_64 putenv
+0x00614368 0x00014368 SET_64 signal
+0x00614370 0x00014370 SET_64 __lxstat64
+0x00614378 0x00014378 SET_64 waitpid
+0x00614380 0x00014380 SET_64 socket
+0x00614388 0x00014388 SET_64 fread
+0x00614390 0x00014390 SET_64 inet_ntoa
+0x00614398 0x00014398 SET_64 alarm
+0x006143a0 0x000143a0 SET_64 __errno_location
+0x006143a8 0x000143a8 SET_64 sigaddset
+0x006143b0 0x000143b0 SET_64 strcmp
+0x006143b8 0x000143b8 SET_64 send
+0x006143c0 0x000143c0 SET_64 strcpy
+0x006143c8 0x000143c8 SET_64 srand
+0x006143d0 0x000143d0 SET_64 feof
+0x006143d8 0x000143d8 SET_64 fclose
+0x006143e0 0x000143e0 SET_64 remove
+0x006143e8 0x000143e8 SET_64 strncpy
+0x006143f0 0x000143f0 SET_64 pthread_attr_init
+0x006143f8 0x000143f8 SET_64 fseeko
+0x00614400 0x00014400 SET_64 closedir
+0x00614408 0x00014408 SET_64 fork
+0x00614410 0x00014410 SET_64 sigemptyset
+0x00614418 0x00014418 SET_64 pthread_sigmask
+0x00614420 0x00014420 SET_64 bind
+0x00614428 0x00014428 SET_64 fwrite
+0x00614430 0x00014430 SET_64 pthread_mutex_lock
+0x00614438 0x00014438 SET_64 rand
+0x00614440 0x00014440 SET_64 localtime
+0x00614448 0x00014448 SET_64 pthread_mutex_destroy
+0x00614450 0x00014450 SET_64 write
+0x00614458 0x00014458 SET_64 openpty
+0x00614460 0x00014460 SET_64 accept
+0x00614468 0x00014468 SET_64 clock_gettime
+0x00614470 0x00014470 SET_64 pthread_mutex_unlock
+0x00614478 0x00014478 SET_64 fcntl
+0x00614480 0x00014480 SET_64 rename
+0x00614488 0x00014488 SET_64 mkdir
+0x00614490 0x00014490 SET_64 time
+0x00614498 0x00014498 SET_64 inet_addr
+0x006144a0 0x000144a0 SET_64 pthread_attr_setdetachstate
+
+
+85 relocations
+84410
+Version symbols section '.gnu.version' contains 87 entries:
+ Addr: 0x00400e22  Offset: 0x00000e22  Link: 5 (.dynsym)
+  0x00000000: 0 (*local*)
+  0x00000001: 2 (GLIBC_2.2.5)
+  0x00000008: 3 (GLIBC_2.2.5)
+  0x00000009: 2 (GLIBC_2.2.5)
+  0x0000000c: 0 (*local*)
+  0x0000000e: 4 (GLIBC_2.3.2)
+  0x0000000f: 2 (GLIBC_2.2.5)
+  0x00000013: 3 (GLIBC_2.2.5)
+  0x00000014: 2 (GLIBC_2.2.5)
+  0x00000017: 3 (GLIBC_2.2.5)
+  0x00000018: 4 (GLIBC_2.3.2)
+  0x00000019: 2 (GLIBC_2.2.5)
+  0x0000001b: 3 (GLIBC_2.2.5)
+  0x0000001c: 2 (GLIBC_2.2.5)
+  0x0000001e: 3 (GLIBC_2.2.5)
+  0x0000001f: 2 (GLIBC_2.2.5)
+  0x00000020: 4 (GLIBC_2.3.2)
+  0x00000021: 2 (GLIBC_2.2.5)
+  0x00000026: 5 (GLIBC_2.3)
+  0x00000027: 3 (GLIBC_2.2.5)
+  0x00000028: 2 (GLIBC_2.2.5)
+  0x0000002b: 3 (GLIBC_2.2.5)
+  0x0000002c: 2 (GLIBC_2.2.5)
+  0x00000031: 3 (GLIBC_2.2.5)
+  0x00000032: 2 (GLIBC_2.2.5)
+  0x00000036: 3 (GLIBC_2.2.5)
+  0x00000037: 2 (GLIBC_2.2.5)
+  0x00000039: 3 (GLIBC_2.2.5)
+  0x0000003a: 2 (GLIBC_2.2.5)
+  0x00000040: 3 (GLIBC_2.2.5)
+  0x00000041: 2 (GLIBC_2.2.5)
+  0x00000043: 3 (GLIBC_2.2.5)
+  0x00000044: 2 (GLIBC_2.2.5)
+  0x00000045: 3 (GLIBC_2.2.5)
+  0x00000046: 2 (GLIBC_2.2.5)
+  0x00000048: 3 (GLIBC_2.2.5)
+  0x00000049: 2 (GLIBC_2.2.5)
+  0x0000004b: 3 (GLIBC_2.2.5)
+  0x0000004d: 6 (GLIBC_2.2.5)
+  0x0000004e: 3 (GLIBC_2.2.5)
+  0x0000004f: 7 (GLIBC_2.2.5)
+  0x00000050: 3 (GLIBC_2.2.5)
+  0x00000052: 2 (GLIBC_2.2.5)
+  0x00000056: 3 (GLIBC_2.2.5)
+
+
+Version need section '.gnu.version_r' contains 4 entries:
+ Addr: 0x00400ed0  Offset: 0x00000ed0  Link to section: 6 (.dynstr)
+  0x00000000: Version: 1  File: librt.so.1  Cnt: 1
+  0x00000010:   Name: GLIBC_2.2.5  Flags: none Version: 7
+  0x00000020: Version: 1  File: libutil.so.1  Cnt: 1
+  0x00000030:   Name: GLIBC_2.2.5  Flags: none Version: 6
+  0x00000040: Version: 1  File: libpthread.so.0  Cnt: 2
+  0x00000050:   Name: GLIBC_2.3.2  Flags: none Version: 4
+  0x00000060:   Name: GLIBC_2.2.5  Flags: none Version: 3
+  0x00000070: Version: 1  File: libc.so.6  Cnt: 2
+  0x00000080:   Name: GLIBC_2.3  Flags: none Version: 5
+  0x00000090:   Name: GLIBC_2.2.5  Flags: none Version: 2
+Section to Segment mapping:
+Segment      Section
+--------------------
+PHDR         
+INTERP       .interp 
+LOAD0        .interp .note.ABI-tag .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt .init .plt .text .fini .rodata .eh_frame_hdr .eh_frame 
+LOAD1        .ctors .dtors .jcr .dynamic .got .got.plt .data .bss 
+DYNAMIC      .dynamic 
+NOTE         .note.ABI-tag .note.gnu.build-id 
+GNU_EH_FRAME .eh_frame_hdr 
+GNU_STACK    
+ehdr         
+
+

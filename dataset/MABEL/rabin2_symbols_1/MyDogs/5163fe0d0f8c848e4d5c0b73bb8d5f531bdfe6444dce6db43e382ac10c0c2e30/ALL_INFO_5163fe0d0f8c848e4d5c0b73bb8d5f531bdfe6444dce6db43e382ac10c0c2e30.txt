@@ -1,0 +1,205 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400     0x0 0x10001000  0x11000 -rwx UPX0
+1   0x00000400  0x7e00 0x10012000   0x8000 -rwx UPX1
+2   0x00008200   0x400 0x1001a000   0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10019ad0 paddr=0x00007ed0 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x1001a254 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x1001a258 NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x1001a25c NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x1001a260 NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x1001a264 NONE FUNC KERNEL32.DLL VirtualFree
+1   0x1001a26c NONE FUNC ADVAPI32.dll RegCloseKey
+1   0x1001a274 NONE FUNC SHELL32.dll  ShellExecuteA
+1   0x1001a27c NONE FUNC USER32.dll   wsprintfA
+1   0x1001a284 NONE FUNC WININET.dll  FtpGetFileA
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib                  name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000a40 0x10001640 GLOBAL FUNC 0    EngineDropperDll.dll DllRegisterServer
+2   0x00000950 0x10001550 GLOBAL FUNC 0    EngineDropperDll.dll crowdtt
+1   0x00008454 0x1001a254 NONE   FUNC 0    KERNEL32.DLL         imp.LoadLibraryA
+2   0x00008458 0x1001a258 NONE   FUNC 0    KERNEL32.DLL         imp.GetProcAddress
+3   0x0000845c 0x1001a25c NONE   FUNC 0    KERNEL32.DLL         imp.VirtualProtect
+4   0x00008460 0x1001a260 NONE   FUNC 0    KERNEL32.DLL         imp.VirtualAlloc
+5   0x00008464 0x1001a264 NONE   FUNC 0    KERNEL32.DLL         imp.VirtualFree
+1   0x0000846c 0x1001a26c NONE   FUNC 0    ADVAPI32.dll         imp.RegCloseKey
+1   0x00008474 0x1001a274 NONE   FUNC 0    SHELL32.dll          imp.ShellExecuteA
+1   0x0000847c 0x1001a27c NONE   FUNC 0    USER32.dll           imp.wsprintfA
+1   0x00008484 0x1001a284 NONE   FUNC 0    WININET.dll          imp.FtpGetFileA
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000825c 0x1001a05c 381 382  .rsrc   ascii <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+1   0x0000848c 0x1001a28c 12  13   .rsrc   ascii KERNEL32.DLL
+2   0x00008499 0x1001a299 12  13   .rsrc   ascii ADVAPI32.dll
+3   0x000084a6 0x1001a2a6 11  12   .rsrc   ascii SHELL32.dll
+4   0x000084b2 0x1001a2b2 10  11   .rsrc   ascii USER32.dll
+5   0x000084bd 0x1001a2bd 11  12   .rsrc   ascii WININET.dll
+6   0x000084ca 0x1001a2ca 12  13   .rsrc   ascii LoadLibraryA
+7   0x000084d8 0x1001a2d8 14  15   .rsrc   ascii GetProcAddress
+8   0x000084e8 0x1001a2e8 14  15   .rsrc   ascii VirtualProtect
+9   0x000084f8 0x1001a2f8 12  13   .rsrc   ascii VirtualAlloc
+10  0x00008506 0x1001a306 11  12   .rsrc   ascii VirtualFree
+11  0x00008514 0x1001a314 11  12   .rsrc   ascii RegCloseKey
+12  0x00008522 0x1001a322 13  14   .rsrc   ascii ShellExecuteA
+13  0x00008532 0x1001a332 9   10   .rsrc   ascii wsprintfA
+14  0x0000853e 0x1001a33e 11  12   .rsrc   ascii FtpGetFileA
+15  0x00008588 0x1001a388 20  21   .rsrc   ascii EngineDropperDll.dll
+16  0x0000859d 0x1001a39d 17  18   .rsrc   ascii DllRegisterServer
+17  0x000085af 0x1001a3af 7   8    .rsrc   ascii crowdtt
+arch     x86
+baddr    0x10000000
+binsz    34304
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00013b59
+compiled Tue May 28 02:42:12 2019
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x5ceca004
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xb
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x8000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x11000
+  AddressOfEntryPoint : 0x19ad0
+  BaseOfCode : 0x12000
+  BaseOfData : 0x1a000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x1b000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 204 Name: Linker1100 Version: 50727 Times: 1
+  Product: 201 Name: Cvtres1100 Version: 50727 Times: 1
+  Product: 202 Name: Export1100 Version: 50727 Times: 1
+  Product: 211 Name: Utc1700_LTCG_CPP Version: 50727 Times: 5
+  Product: 185 Name: Implib1010 Version: 30716 Times: 11
+  Product: 1 Name: Import0 Version: 0 Times: 108
+  Product: 206 Name: Utc1700_C Version: 50628 Times: 112
+  Product: 205 Name: Masm1100 Version: 50628 Times: 14
+  Product: 207 Name: Utc1700_CPP Version: 50628 Times: 36
+  Product: 199 Name: AliasObj1100 Version: 41118 Times: 2
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x1a34c
+  Size : 0x6c
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x1a1dc
+  Size : 0x170
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1a000
+  Size : 0x1dc
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x1a3b8
+  Size : 0x10
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x19c9c
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+advapi32.dll
+shell32.dll
+user32.dll
+wininet.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0001a2c8 0x00008454 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0001a2d6 0x00008458 SET_32 KERNEL32.DLL_GetProcAddress
+0x0001a2e6 0x0000845c SET_32 KERNEL32.DLL_VirtualProtect
+0x0001a2f6 0x00008460 SET_32 KERNEL32.DLL_VirtualAlloc
+0x0001a304 0x00008464 SET_32 KERNEL32.DLL_VirtualFree
+0x0001a312 0x0000846c SET_32 ADVAPI32.dll_RegCloseKey
+0x0001a320 0x00008474 SET_32 SHELL32.dll_ShellExecuteA
+0x0001a330 0x0000847c SET_32 USER32.dll_wsprintfA
+0x0001a33c 0x00008484 SET_32 WININET.dll_FtpGetFileA
+
+
+9 relocations
+34304
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

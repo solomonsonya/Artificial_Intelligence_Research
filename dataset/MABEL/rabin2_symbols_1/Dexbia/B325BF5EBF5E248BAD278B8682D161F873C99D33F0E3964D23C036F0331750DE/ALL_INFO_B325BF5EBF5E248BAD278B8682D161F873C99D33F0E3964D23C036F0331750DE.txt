@@ -1,0 +1,180 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400     0x0 0x00401000  0xd000 -rwx nsp0
+1   0x00000400  0x4e00 0x0040e000  0x7000 -rwx nsp1
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0040e25c paddr=0x0000065c haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040e048 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x0040e04c NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x0040e050 NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x0040e054 NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x0040e058 NONE FUNC KERNEL32.DLL VirtualFree
+6   0x0040e05c NONE FUNC KERNEL32.DLL ExitProcess
+1   0x0040e064 NONE FUNC USER32.dll   wsprintfW
+1   0x0040e06c NONE FUNC ADVAPI32.dll OpenProcessToken
+1   0x0040e074 NONE FUNC SHELL32.dll  ShellExecuteW
+116 0x0040e07c NONE FUNC WS2_32.dll   WSACleanup
+1   0x0040e084 NONE FUNC WININET.dLL  HttpOpenRequestA
+1   0x0040e08c NONE FUNC PSAPI.DLL    EnumProcessModules
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000448 0x0040e048 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x0000044c 0x0040e04c NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x00000450 0x0040e050 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+4   0x00000454 0x0040e054 NONE FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+5   0x00000458 0x0040e058 NONE FUNC 0    KERNEL32.DLL imp.VirtualFree
+6   0x0000045c 0x0040e05c NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+1   0x00000464 0x0040e064 NONE FUNC 0    USER32.dll   imp.wsprintfW
+1   0x0000046c 0x0040e06c NONE FUNC 0    ADVAPI32.dll imp.OpenProcessToken
+1   0x00000474 0x0040e074 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteW
+116 0x0000047c 0x0040e07c NONE FUNC 0    WS2_32.dll   imp.WSACleanup
+1   0x00000484 0x0040e084 NONE FUNC 0    WININET.dLL  imp.HttpOpenRequestA
+1   0x0000048c 0x0040e08c NONE FUNC 0    PSAPI.DLL    imp.EnumProcessModules
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    20992
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00006f98
+compiled Mon Feb  6 04:36:28 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00006f98
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x5897fd4c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x0
+  SizeOfInitializedData : 0x5000
+  SizeOfUninitializedData : 0xd000
+  AddressOfEntryPoint : 0xe25c
+  BaseOfCode : 0x1000
+  BaseOfData : 0xe000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x15000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x6f98
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 5
+  Product: 1 Name: Import0 Version: 0 Times: 81
+  Product: 19 Name: Linker512 Version: 8034 Times: 11
+  Product: 0 Name: Unknown Version: 0 Times: 9
+  Product: 93 Name: Implib710 Version: 4035 Times: 2
+  Product: 10 Name: Utc12_C Version: 8168 Times: 46
+  Product: 14 Name: Masm613 Version: 7299 Times: 12
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xe094
+  Size : 0xa0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+shell32.dll
+ws2_32.dll
+wininet.dll
+psapi.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000e186 0x00000448 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0000e195 0x0000044c SET_32 KERNEL32.DLL_GetProcAddress
+0x0000e1a6 0x00000450 SET_32 KERNEL32.DLL_VirtualProtect
+0x0000e1b7 0x00000454 SET_32 KERNEL32.DLL_VirtualAlloc
+0x0000e1c6 0x00000458 SET_32 KERNEL32.DLL_VirtualFree
+0x0000e1d4 0x0000045c SET_32 KERNEL32.DLL_ExitProcess
+0x0000e1e2 0x00000464 SET_32 USER32.dll_wsprintfW
+0x0000e1ee 0x0000046c SET_32 ADVAPI32.dll_OpenProcessToken
+0x0000e201 0x00000474 SET_32 SHELL32.dll_ShellExecuteW
+0x0000e211 0x00000484 SET_32 WININET.dLL_HttpOpenRequestA
+0x0000e224 0x0000048c SET_32 PSAPI.DLL_EnumProcessModules
+0x80000074 0x0000047c SET_32 WS2_32.dll_WSACleanup
+
+
+12 relocations
+20992
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,292 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr       vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000    0x0 0x00000000    0x0 ---- 
+1   0x000002a8   0x20 0x000002a8   0x20 -r-- .note.gnu.property
+2   0x000002c8   0x24 0x000002c8   0x24 -r-- .note.gnu.build-id
+3   0x000002f0   0x28 0x000002f0   0x28 -r-- .gnu.hash
+4   0x00000318  0x210 0x00000318  0x210 -r-- .dynsym
+5   0x00000528  0x11a 0x00000528  0x11a -r-- .dynstr
+6   0x00000642   0x2c 0x00000642   0x2c -r-- .gnu.version
+7   0x00000670   0x60 0x00000670   0x60 -r-- .gnu.version_r
+8   0x000006d0   0xd8 0x000006d0   0xd8 -r-- .rela.dyn
+9   0x000007a8  0x150 0x000007a8  0x150 -r-- .rela.plt
+10  0x00001000   0x1b 0x00001000   0x1b -r-x .init
+11  0x00001020   0xf0 0x00001020   0xf0 -r-x .plt
+12  0x00001110   0x10 0x00001110   0x10 -r-x .plt.got
+13  0x00001120   0xe0 0x00001120   0xe0 -r-x .plt.sec
+14  0x00001200  0x539 0x00001200  0x539 -r-x .text
+15  0x0000173c    0xd 0x0000173c    0xd -r-x .fini
+16  0x00002000   0x6e 0x00002000   0x6e -r-- .rodata
+17  0x00002070   0x44 0x00002070   0x44 -r-- .eh_frame_hdr
+18  0x000020b8   0xf8 0x000020b8   0xf8 -r-- .eh_frame
+19  0x00002df8    0x8 0x00003df8    0x8 -rw- .init_array
+20  0x00002e00    0x8 0x00003e00    0x8 -rw- .fini_array
+21  0x00002e08  0x1d0 0x00003e08  0x1d0 -rw- .dynamic
+22  0x00002fd8   0x28 0x00003fd8   0x28 -rw- .got
+23  0x00003000   0x88 0x00004000   0x88 -rw- .got.plt
+24  0x00003088   0x10 0x00004088   0x10 -rw- .data
+25  0x00003098    0x0 0x00004098   0x18 -rw- .bss
+26  0x00003098   0x2a 0x00000000   0x2a ---- .comment
+27  0x000030c8  0x6c0 0x00000000  0x6c0 ---- .symtab
+28  0x00003788  0x2f9 0x00000000  0x2f9 ---- .strtab
+29  0x00003a81  0x10d 0x00000000  0x10d ---- .shstrtab
+
+[Segments]
+
+nth paddr        size vaddr       vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x8f8 0x00000000  0x8f8 -r-- LOAD0
+1   0x00001000  0x749 0x00001000  0x749 -r-x LOAD1
+2   0x00002000  0x1b0 0x00002000  0x1b0 -r-- LOAD2
+3   0x00002df8  0x2a0 0x00003df8  0x2b8 -rw- LOAD3
+4   0x00002e08  0x1d0 0x00003e08  0x1d0 -rw- DYNAMIC
+5   0x000002a8   0x20 0x000002a8   0x20 -r-- NOTE
+6   0x000002c8   0x24 0x000002c8   0x24 -r-- NOTE_1
+7   0x000002a8   0x20 0x000002a8   0x20 -r-- UNKNOWN
+8   0x00002070   0x44 0x00002070   0x44 -r-- GNU_EH_FRAME
+9   0x00000000    0x0 0x00000000    0x0 -rw- GNU_STACK
+10  0x00002df8  0x208 0x00003df8  0x208 -r-- GNU_RELRO
+11  0x00000000   0x40 0x00000000   0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00001200 paddr=0x00001200 haddr=0x00000018 hvaddr=0x00000018 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x000012b0 paddr=0x000012b0 hvaddr=0x00003df8 hpaddr=0x00002df8 type=init
+vaddr=0x00001270 paddr=0x00001270 hvaddr=0x00003e00 hpaddr=0x00002e00 type=fini
+
+2 entrypoints
+[Imports]
+nth vaddr      bind   type   lib name
+―――――――――――――――――――――――――――――――――――――
+1   0x00000000 WEAK   NOTYPE     _ITM_deregisterTMCloneTable
+2   0x00001120 GLOBAL FUNC       readlink
+3   0x00001130 GLOBAL FUNC       fclose
+4   0x00001140 GLOBAL FUNC       strlen
+5   0x00001150 GLOBAL FUNC       __stack_chk_fail
+6   0x00001160 GLOBAL FUNC       snprintf
+7   0x00001170 GLOBAL FUNC       strspn
+8   0x00001180 GLOBAL FUNC       fgets
+9   0x00001190 GLOBAL FUNC       strcmp
+10  0x000011a0 GLOBAL FUNC       dirfd
+11  0x000011b0 GLOBAL FUNC       fprintf
+12  0x00000000 WEAK   NOTYPE     __gmon_start__
+13  0x000011c0 GLOBAL FUNC       __isoc99_sscanf
+14  0x000011d0 GLOBAL FUNC       fopen
+15  0x00000000 WEAK   NOTYPE     _ITM_registerTMCloneTable
+16  0x000011e0 GLOBAL FUNC       dlsym
+17  0x00000000 WEAK   FUNC       __cxa_finalize
+18  0x000011f0 GLOBAL FUNC       dlerror
+19  0x00000000 GLOBAL OBJ        stderr
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+20  0x000014bd 0x000014bd GLOBAL FUNC   318      readdir64
+21  0x000015fb 0x000015fb GLOBAL FUNC   318      readdir
+1   0x000002a8 0x000002a8 LOCAL  SECT   0        .note.gnu.property
+2   0x000002c8 0x000002c8 LOCAL  SECT   0        .note.gnu.build-id
+3   0x000002f0 0x000002f0 LOCAL  SECT   0        .gnu.hash
+4   0x00000318 0x00000318 LOCAL  SECT   0        .dynsym
+5   0x00000528 0x00000528 LOCAL  SECT   0        .dynstr
+6   0x00000642 0x00000642 LOCAL  SECT   0        .gnu.version
+7   0x00000670 0x00000670 LOCAL  SECT   0        .gnu.version_r
+8   0x000006d0 0x000006d0 LOCAL  SECT   0        .rela.dyn
+9   0x000007a8 0x000007a8 LOCAL  SECT   0        .rela.plt
+10  0x00001000 0x00001000 LOCAL  SECT   0        .init
+11  0x00001020 0x00001020 LOCAL  SECT   0        .plt
+12  0x00001110 0x00001110 LOCAL  SECT   0        .plt.got
+13  0x00001120 0x00001120 LOCAL  SECT   0        .plt.sec
+14  0x00001200 0x00001200 LOCAL  SECT   0        .text
+15  0x0000173c 0x0000173c LOCAL  SECT   0        .fini
+16  0x00002000 0x00002000 LOCAL  SECT   0        .rodata
+17  0x00002070 0x00002070 LOCAL  SECT   0        .eh_frame_hdr
+18  0x000020b8 0x000020b8 LOCAL  SECT   0        .eh_frame
+19  0x00002df8 0x00003df8 LOCAL  SECT   0        .init_array
+20  0x00002e00 0x00003e00 LOCAL  SECT   0        .fini_array
+21  0x00002e08 0x00003e08 LOCAL  SECT   0        .dynamic
+22  0x00002fd8 0x00003fd8 LOCAL  SECT   0        .got
+23  0x00003000 0x00004000 LOCAL  SECT   0        .got.plt
+24  0x00003088 0x00004088 LOCAL  SECT   0        .data
+25  ---------- 0x00004098 LOCAL  SECT   0        .bss
+26  0x00000000 0x00000000 LOCAL  SECT   0        .comment
+27  0x00000000 0x00000000 LOCAL  FILE   0        crtstuff.c
+28  0x00001200 0x00001200 LOCAL  FUNC   0        deregister_tm_clones
+29  0x00001230 0x00001230 LOCAL  FUNC   0        register_tm_clones
+30  0x00001270 0x00001270 LOCAL  FUNC   0        __do_global_dtors_aux
+31  ---------- 0x00004098 LOCAL  OBJ    1        completed.8060
+32  0x00002e00 0x00003e00 LOCAL  OBJ    0        __do_global_dtors_aux_fini_array_entry
+33  0x000012b0 0x000012b0 LOCAL  FUNC   0        frame_dummy
+34  0x00002df8 0x00003df8 LOCAL  OBJ    0        __frame_dummy_init_array_entry
+35  0x00000000 0x00000000 LOCAL  FILE   0        process.c
+36  0x00003090 0x00004090 LOCAL  OBJ    8        process_to_filter
+37  0x000012b9 0x000012b9 LOCAL  FUNC   183      get_dir_name
+38  0x00001370 0x00001370 LOCAL  FUNC   333      get_process_name
+39  ---------- 0x000040a0 LOCAL  OBJ    8        original_readdir64
+40  ---------- 0x000040a8 LOCAL  OBJ    8        original_readdir
+41  0x00000000 0x00000000 LOCAL  FILE   0        crtstuff.c
+42  0x000021ac 0x000021ac LOCAL  OBJ    0        __FRAME_END__
+43  0x00000000 0x00000000 LOCAL  FILE   0        
+44  0x0000173c 0x0000173c LOCAL  FUNC   0        _fini
+45  0x00003088 0x00004088 LOCAL  OBJ    0        __dso_handle
+46  0x00002e08 0x00003e08 LOCAL  OBJ    0        _DYNAMIC
+47  0x00002070 0x00002070 LOCAL  NOTYPE 0        __GNU_EH_FRAME_HDR
+48  ---------- 0x00004098 LOCAL  OBJ    0        __TMC_END__
+49  0x00003000 0x00004000 LOCAL  OBJ    0        _GLOBAL_OFFSET_TABLE_
+50  0x00001000 0x00001000 LOCAL  FUNC   0        _init
+1   0x00000000 0x00000000 WEAK   NOTYPE 16       imp._ITM_deregisterTMCloneTable
+2   0x00001120 0x00001120 GLOBAL FUNC   16       imp.readlink
+3   0x00001130 0x00001130 GLOBAL FUNC   16       imp.fclose
+4   0x00001140 0x00001140 GLOBAL FUNC   16       imp.strlen
+5   0x00001150 0x00001150 GLOBAL FUNC   16       imp.__stack_chk_fail
+6   0x00001160 0x00001160 GLOBAL FUNC   16       imp.snprintf
+7   0x00001170 0x00001170 GLOBAL FUNC   16       imp.strspn
+8   0x00001180 0x00001180 GLOBAL FUNC   16       imp.fgets
+9   0x00001190 0x00001190 GLOBAL FUNC   16       imp.strcmp
+10  0x000011a0 0x000011a0 GLOBAL FUNC   16       imp.dirfd
+11  0x000011b0 0x000011b0 GLOBAL FUNC   16       imp.fprintf
+12  0x00000000 0x00000000 WEAK   NOTYPE 16       imp.__gmon_start__
+13  0x000011c0 0x000011c0 GLOBAL FUNC   16       imp.__isoc99_sscanf
+14  0x000011d0 0x000011d0 GLOBAL FUNC   16       imp.fopen
+15  0x00000000 0x00000000 WEAK   NOTYPE 16       imp._ITM_registerTMCloneTable
+16  0x000011e0 0x000011e0 GLOBAL FUNC   16       imp.dlsym
+17  0x00000000 0x00000000 WEAK   FUNC   16       imp.__cxa_finalize
+18  0x000011f0 0x000011f0 GLOBAL FUNC   16       imp.dlerror
+19  0x00000000 0x00000000 GLOBAL OBJ    16       imp.stderr
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002000 0x00002000 10  11   .rodata ascii dhcpclient
+1   0x0000200b 0x0000200b 16  17   .rodata ascii /proc/self/fd/%d
+2   0x0000201c 0x0000201c 10  11   .rodata ascii 0123456789
+3   0x00002027 0x00002027 13  14   .rodata ascii /proc/%s/stat
+4   0x00002037 0x00002037 10  11   .rodata ascii %d (%[^)]s
+5   0x00002042 0x00002042 9   10   .rodata ascii readdir64
+6   0x0000204c 0x0000204c 19  20   .rodata ascii Error in dlsym: %s\n
+7   0x00002060 0x00002060 5   6    .rodata ascii /proc
+8   0x00002066 0x00002066 7   8    .rodata ascii readdir
+arch     x86
+baddr    0x0
+binsz    15246
+bintype  elf
+bits     64
+canary   true
+class    ELF64
+compiler GCC: (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+crypto   false
+endian   little
+havecode true
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  AMD x86-64 architecture
+nx       true
+os       linux
+pic      true
+relocs   true
+relro    partial
+rpath    NONE
+sanitize false
+static   false
+stripped false
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0003
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00001200
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x00003b90
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       11
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       30
+0x0000003e  ShrStrndx   29
+[Linked libraries]
+libdl.so.2
+libc.so.6
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00003df8 0x00002df8 ADD_64  0x000012b0
+0x00003e00 0x00002e00 ADD_64  0x00001270
+0x00003fd8 0x00002fd8 SET_64 _ITM_deregisterTMCloneTable
+0x00003fe0 0x00002fe0 SET_64 __gmon_start__
+0x00003fe8 0x00002fe8 SET_64 _ITM_registerTMCloneTable
+0x00003ff0 0x00002ff0 SET_64 __cxa_finalize
+0x00003ff8 0x00002ff8 SET_64 stderr
+0x00004018 0x00003018 SET_64 readlink
+0x00004020 0x00003020 SET_64 fclose
+0x00004028 0x00003028 SET_64 strlen
+0x00004030 0x00003030 SET_64 __stack_chk_fail
+0x00004038 0x00003038 SET_64 snprintf
+0x00004040 0x00003040 SET_64 strspn
+0x00004048 0x00003048 SET_64 fgets
+0x00004050 0x00003050 SET_64 strcmp
+0x00004058 0x00003058 SET_64 dirfd
+0x00004060 0x00003060 SET_64 fprintf
+0x00004068 0x00003068 SET_64 __isoc99_sscanf
+0x00004070 0x00003070 SET_64 fopen
+0x00004078 0x00003078 SET_64 dlsym
+0x00004080 0x00003080 SET_64 dlerror
+0x00004088 0x00003088 ADD_64  0x00004088
+0x00004090 0x00003090 ADD_64  0x00002000
+
+
+23 relocations
+15246
+Version symbols section '.gnu.version' contains 22 entries:
+ Addr: 0x00000642  Offset: 0x00000642  Link: 4 (.dynsym)
+  0x00000000: 0 (*local*)
+  0x00000002: 2 (GLIBC_2.2.5)
+  0x00000005: 3 (GLIBC_2.4)
+  0x00000006: 2 (GLIBC_2.2.5)
+  0x0000000c: 0 (*local*)
+  0x0000000d: 4 (GLIBC_2.7)
+  0x0000000e: 2 (GLIBC_2.2.5)
+  0x0000000f: 0 (*local*)
+  0x00000010: 5 (GLIBC_2.2.5)
+  0x00000011: 2 (GLIBC_2.2.5)
+  0x00000012: 5 (GLIBC_2.2.5)
+  0x00000013: 2 (GLIBC_2.2.5)
+  0x00000014: 1 (*global*)
+
+
+Version need section '.gnu.version_r' contains 2 entries:
+ Addr: 0x00000670  Offset: 0x00000670  Link to section: 5 (.dynstr)
+  0x00000000: Version: 1  File: libdl.so.2  Cnt: 1
+  0x00000010:   Name: GLIBC_2.2.5  Flags: none Version: 5
+  0x00000020: Version: 1  File: libc.so.6  Cnt: 3
+  0x00000030:   Name: GLIBC_2.7  Flags: none Version: 4
+  0x00000040:   Name: GLIBC_2.4  Flags: none Version: 3
+  0x00000050:   Name: GLIBC_2.2.5  Flags: none Version: 2
+Section to Segment mapping:
+Segment      Section
+--------------------
+LOAD0        .note.gnu.property .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt .comment .symtab .strtab .shstrtab 
+LOAD1        .init .plt .plt.got .plt.sec .text .fini 
+LOAD2        .rodata .eh_frame_hdr .eh_frame 
+LOAD3        .init_array .fini_array .dynamic .got .got.plt .data .bss 
+DYNAMIC      .dynamic 
+NOTE         .note.gnu.property 
+NOTE_1       .note.gnu.build-id 
+UNKNOWN      .note.gnu.property 
+GNU_EH_FRAME .eh_frame_hdr 
+GNU_STACK    
+GNU_RELRO    .init_array .fini_array .dynamic .got 
+ehdr         .comment 
+
+

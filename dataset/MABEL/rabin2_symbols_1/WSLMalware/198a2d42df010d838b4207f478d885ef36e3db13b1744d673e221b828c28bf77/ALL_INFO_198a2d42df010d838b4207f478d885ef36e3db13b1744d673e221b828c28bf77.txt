@@ -1,0 +1,639 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr           size vaddr          vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000       0x0 0x00000000       0x0 ---- 
+1   0x000002a8      0x1c 0x000002a8      0x1c -r-- .interp
+2   0x000002c4      0x20 0x000002c4      0x20 -r-- .note.ABI-tag
+3   0x000002e4      0x24 0x000002e4      0x24 -r-- .note.gnu.build-id
+4   0x00000308      0x34 0x00000308      0x34 -r-- .gnu.hash
+5   0x00000340     0x7b0 0x00000340     0x7b0 -r-- .dynsym
+6   0x00000af0     0x348 0x00000af0     0x348 -r-- .dynstr
+7   0x00000e38      0xa4 0x00000e38      0xa4 -r-- .gnu.version
+8   0x00000ee0      0xa0 0x00000ee0      0xa0 -r-- .gnu.version_r
+9   0x00000f80     0x198 0x00000f80     0x198 -r-- .rela.dyn
+10  0x00001118     0x6d8 0x00001118     0x6d8 -r-- .rela.plt
+11  0x00002000      0x17 0x00002000      0x17 -r-x .init
+12  0x00002020     0x4a0 0x00002020     0x4a0 -r-x .plt
+13  0x000024c0       0x8 0x000024c0       0x8 -r-x .plt.got
+14  0x000024d0    0x3f21 0x000024d0    0x3f21 -r-x .text
+15  0x000063f4       0x9 0x000063f4       0x9 -r-x .fini
+16  0x00007000    0x1618 0x00007000    0x1618 -r-- .rodata
+17  0x00008618     0x25c 0x00008618     0x25c -r-- .eh_frame_hdr
+18  0x00008878     0xe90 0x00008878     0xe90 -r-- .eh_frame
+19  0x00009d70       0x8 0x0000ad70       0x8 -rw- .init_array
+20  0x00009d78       0x8 0x0000ad78       0x8 -rw- .fini_array
+21  0x00009d80      0x40 0x0000ad80      0x40 -rw- .data.rel.ro
+22  0x00009dc0     0x210 0x0000adc0     0x210 -rw- .dynamic
+23  0x00009fd0      0x28 0x0000afd0      0x28 -rw- .got
+24  0x0000a000     0x260 0x0000b000     0x260 -rw- .got.plt
+25  0x0000a260      0x10 0x0000b260      0x10 -rw- .data
+26  0x0000a270       0x0 0x0000b280   0x172c0 -rw- .bss
+27  0x0000a270      0x1c 0x00000000      0x1c ---- .comment
+28  0x0000a28c  0x6a834c 0x00000000  0x6a834c ---- pydata
+29  0x006b25d8     0x10b 0x00000000     0x10b ---- .shstrtab
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000040   0x268 0x00000040    0x268 -r-- PHDR
+1   0x000002a8    0x1c 0x000002a8     0x1c -r-- INTERP
+2   0x00000000  0x17f0 0x00000000   0x17f0 -r-- LOAD0
+3   0x00002000  0x43fd 0x00002000   0x43fd -r-x LOAD1
+4   0x00007000  0x2708 0x00007000   0x2708 -r-- LOAD2
+5   0x00009d70   0x500 0x0000ad70  0x177d0 -rw- LOAD3
+6   0x00009dc0   0x210 0x0000adc0    0x210 -rw- DYNAMIC
+7   0x000002c4    0x44 0x000002c4     0x44 -r-- NOTE
+8   0x00008618   0x25c 0x00008618    0x25c -r-- GNU_EH_FRAME
+9   0x00000000     0x0 0x00000000      0x0 -rw- GNU_STACK
+10  0x00009d70   0x290 0x0000ad70    0x290 -r-- GNU_RELRO
+11  0x00000000    0x40 0x00000000     0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x000024e0 paddr=0x000024e0 haddr=0x00000018 hvaddr=0x00000018 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x000025c0 paddr=0x000025c0 hvaddr=0x0000ad70 hpaddr=0x00009d70 type=init
+vaddr=0x00002580 paddr=0x00002580 hvaddr=0x0000ad78 hpaddr=0x00009d78 type=fini
+
+2 entrypoints
+[Main]
+vaddr=0x000024d0 paddr=0x000024d0
+[Imports]
+nth vaddr      bind   type   lib name
+―――――――――――――――――――――――――――――――――――――
+1   0x00002030 GLOBAL FUNC       __strcat_chk
+2   0x00002040 GLOBAL FUNC       getenv
+3   0x00002050 GLOBAL FUNC       __snprintf_chk
+4   0x00002060 GLOBAL FUNC       raise
+5   0x00002070 GLOBAL FUNC       free
+6   0x00002080 GLOBAL FUNC       __vfprintf_chk
+7   0x00002090 GLOBAL FUNC       __errno_location
+8   0x000020a0 GLOBAL FUNC       unlink
+9   0x000020b0 GLOBAL FUNC       strncpy
+10  0x000020c0 GLOBAL FUNC       strncmp
+11  0x00000000 WEAK   NOTYPE     _ITM_deregisterTMCloneTable
+12  0x000020d0 GLOBAL FUNC       strcpy
+13  0x000020e0 GLOBAL FUNC       ftello
+14  0x000020f0 GLOBAL FUNC       inflate
+15  0x00002100 GLOBAL FUNC       mkdir
+16  0x00002110 GLOBAL FUNC       ferror
+17  0x00002120 GLOBAL FUNC       fread
+18  0x00002130 GLOBAL FUNC       mbstowcs
+19  0x00002140 GLOBAL FUNC       readlink
+20  0x00002150 GLOBAL FUNC       setenv
+21  0x00002160 GLOBAL FUNC       getpid
+22  0x00002170 GLOBAL FUNC       fclose
+23  0x00002180 GLOBAL FUNC       opendir
+24  0x00002190 GLOBAL FUNC       stpcpy
+25  0x000021a0 GLOBAL FUNC       rmdir
+26  0x000021b0 GLOBAL FUNC       strlen
+27  0x000021c0 GLOBAL FUNC       setbuf
+28  0x000021d0 GLOBAL FUNC       strchr
+29  0x000021e0 GLOBAL FUNC       snprintf
+30  0x000021f0 GLOBAL FUNC       dirname
+31  0x00002200 GLOBAL FUNC       strncat
+32  0x00002210 GLOBAL FUNC       __realpath_chk
+33  0x00002220 GLOBAL FUNC       closedir
+34  0x00000000 GLOBAL FUNC       __libc_start_main
+35  0x00002230 GLOBAL FUNC       wcsncpy
+36  0x00002240 GLOBAL FUNC       calloc
+37  0x00002250 GLOBAL FUNC       strcmp
+38  0x00002260 GLOBAL FUNC       signal
+39  0x00002270 GLOBAL FUNC       __memcpy_chk
+40  0x00002280 GLOBAL FUNC       feof
+41  0x00000000 WEAK   NOTYPE     __gmon_start__
+42  0x00002290 GLOBAL FUNC       clearerr
+43  0x000022a0 GLOBAL FUNC       realpath
+44  0x000022b0 GLOBAL FUNC       prctl
+45  0x000022c0 GLOBAL FUNC       inflateEnd
+46  0x000022d0 GLOBAL FUNC       kill
+47  0x000022e0 GLOBAL FUNC       __xpg_basename
+48  0x000022f0 GLOBAL FUNC       fileno
+49  0x00002300 GLOBAL FUNC       __xstat
+50  0x00002310 GLOBAL FUNC       readdir
+51  0x00002320 GLOBAL FUNC       dlopen
+52  0x00002330 GLOBAL FUNC       malloc
+53  0x00002340 GLOBAL FUNC       fflush
+54  0x00002350 GLOBAL FUNC       nl_langinfo
+55  0x00002360 GLOBAL FUNC       __vsnprintf_chk
+56  0x00002370 GLOBAL FUNC       __strcpy_chk
+57  0x00002380 GLOBAL FUNC       mkdtemp
+58  0x00002390 GLOBAL FUNC       setlocale
+59  0x000023a0 GLOBAL FUNC       fchmod
+60  0x000023b0 GLOBAL FUNC       inflateInit_
+61  0x000023c0 GLOBAL FUNC       __fread_chk
+62  0x000023d0 GLOBAL FUNC       waitpid
+63  0x000023e0 GLOBAL FUNC       fseeko
+64  0x000023f0 GLOBAL FUNC       fopen
+65  0x00002400 GLOBAL FUNC       perror
+66  0x00002410 GLOBAL FUNC       strtok
+67  0x00002420 GLOBAL FUNC       unsetenv
+68  0x00002430 GLOBAL FUNC       execvp
+69  0x00002440 GLOBAL FUNC       strcat
+70  0x00002450 GLOBAL FUNC       fwrite
+71  0x00002460 GLOBAL FUNC       __fprintf_chk
+72  0x00000000 WEAK   NOTYPE     _ITM_registerTMCloneTable
+73  0x00002470 GLOBAL FUNC       strdup
+74  0x00002480 GLOBAL FUNC       strerror
+75  0x00002490 GLOBAL FUNC       dlsym
+76  0x000024a0 GLOBAL FUNC       fork
+77  0x000024b0 GLOBAL FUNC       dlerror
+79  0x000024c0 WEAK   FUNC       __cxa_finalize
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+78  ---------- 0x0000b280 GLOBAL OBJ    8        stdout
+80  ---------- 0x0000b290 GLOBAL OBJ    8        stdin
+81  ---------- 0x0000b2a0 GLOBAL OBJ    8        stderr
+1   0x00002030 0x00002030 GLOBAL FUNC   16       imp.__strcat_chk
+2   0x00002040 0x00002040 GLOBAL FUNC   16       imp.getenv
+3   0x00002050 0x00002050 GLOBAL FUNC   16       imp.__snprintf_chk
+4   0x00002060 0x00002060 GLOBAL FUNC   16       imp.raise
+5   0x00002070 0x00002070 GLOBAL FUNC   16       imp.free
+6   0x00002080 0x00002080 GLOBAL FUNC   16       imp.__vfprintf_chk
+7   0x00002090 0x00002090 GLOBAL FUNC   16       imp.__errno_location
+8   0x000020a0 0x000020a0 GLOBAL FUNC   16       imp.unlink
+9   0x000020b0 0x000020b0 GLOBAL FUNC   16       imp.strncpy
+10  0x000020c0 0x000020c0 GLOBAL FUNC   16       imp.strncmp
+11  0x00000000 0x00000000 WEAK   NOTYPE 16       imp._ITM_deregisterTMCloneTable
+12  0x000020d0 0x000020d0 GLOBAL FUNC   16       imp.strcpy
+13  0x000020e0 0x000020e0 GLOBAL FUNC   16       imp.ftello
+14  0x000020f0 0x000020f0 GLOBAL FUNC   16       imp.inflate
+15  0x00002100 0x00002100 GLOBAL FUNC   16       imp.mkdir
+16  0x00002110 0x00002110 GLOBAL FUNC   16       imp.ferror
+17  0x00002120 0x00002120 GLOBAL FUNC   16       imp.fread
+18  0x00002130 0x00002130 GLOBAL FUNC   16       imp.mbstowcs
+19  0x00002140 0x00002140 GLOBAL FUNC   16       imp.readlink
+20  0x00002150 0x00002150 GLOBAL FUNC   16       imp.setenv
+21  0x00002160 0x00002160 GLOBAL FUNC   16       imp.getpid
+22  0x00002170 0x00002170 GLOBAL FUNC   16       imp.fclose
+23  0x00002180 0x00002180 GLOBAL FUNC   16       imp.opendir
+24  0x00002190 0x00002190 GLOBAL FUNC   16       imp.stpcpy
+25  0x000021a0 0x000021a0 GLOBAL FUNC   16       imp.rmdir
+26  0x000021b0 0x000021b0 GLOBAL FUNC   16       imp.strlen
+27  0x000021c0 0x000021c0 GLOBAL FUNC   16       imp.setbuf
+28  0x000021d0 0x000021d0 GLOBAL FUNC   16       imp.strchr
+29  0x000021e0 0x000021e0 GLOBAL FUNC   16       imp.snprintf
+30  0x000021f0 0x000021f0 GLOBAL FUNC   16       imp.dirname
+31  0x00002200 0x00002200 GLOBAL FUNC   16       imp.strncat
+32  0x00002210 0x00002210 GLOBAL FUNC   16       imp.__realpath_chk
+33  0x00002220 0x00002220 GLOBAL FUNC   16       imp.closedir
+34  0x00000000 0x00000000 GLOBAL FUNC   16       imp.__libc_start_main
+35  0x00002230 0x00002230 GLOBAL FUNC   16       imp.wcsncpy
+36  0x00002240 0x00002240 GLOBAL FUNC   16       imp.calloc
+37  0x00002250 0x00002250 GLOBAL FUNC   16       imp.strcmp
+38  0x00002260 0x00002260 GLOBAL FUNC   16       imp.signal
+39  0x00002270 0x00002270 GLOBAL FUNC   16       imp.__memcpy_chk
+40  0x00002280 0x00002280 GLOBAL FUNC   16       imp.feof
+41  0x00000000 0x00000000 WEAK   NOTYPE 16       imp.__gmon_start__
+42  0x00002290 0x00002290 GLOBAL FUNC   16       imp.clearerr
+43  0x000022a0 0x000022a0 GLOBAL FUNC   16       imp.realpath
+44  0x000022b0 0x000022b0 GLOBAL FUNC   16       imp.prctl
+45  0x000022c0 0x000022c0 GLOBAL FUNC   16       imp.inflateEnd
+46  0x000022d0 0x000022d0 GLOBAL FUNC   16       imp.kill
+47  0x000022e0 0x000022e0 GLOBAL FUNC   16       imp.__xpg_basename
+48  0x000022f0 0x000022f0 GLOBAL FUNC   16       imp.fileno
+49  0x00002300 0x00002300 GLOBAL FUNC   16       imp.__xstat
+50  0x00002310 0x00002310 GLOBAL FUNC   16       imp.readdir
+51  0x00002320 0x00002320 GLOBAL FUNC   16       imp.dlopen
+52  0x00002330 0x00002330 GLOBAL FUNC   16       imp.malloc
+53  0x00002340 0x00002340 GLOBAL FUNC   16       imp.fflush
+54  0x00002350 0x00002350 GLOBAL FUNC   16       imp.nl_langinfo
+55  0x00002360 0x00002360 GLOBAL FUNC   16       imp.__vsnprintf_chk
+56  0x00002370 0x00002370 GLOBAL FUNC   16       imp.__strcpy_chk
+57  0x00002380 0x00002380 GLOBAL FUNC   16       imp.mkdtemp
+58  0x00002390 0x00002390 GLOBAL FUNC   16       imp.setlocale
+59  0x000023a0 0x000023a0 GLOBAL FUNC   16       imp.fchmod
+60  0x000023b0 0x000023b0 GLOBAL FUNC   16       imp.inflateInit_
+61  0x000023c0 0x000023c0 GLOBAL FUNC   16       imp.__fread_chk
+62  0x000023d0 0x000023d0 GLOBAL FUNC   16       imp.waitpid
+63  0x000023e0 0x000023e0 GLOBAL FUNC   16       imp.fseeko
+64  0x000023f0 0x000023f0 GLOBAL FUNC   16       imp.fopen
+65  0x00002400 0x00002400 GLOBAL FUNC   16       imp.perror
+66  0x00002410 0x00002410 GLOBAL FUNC   16       imp.strtok
+67  0x00002420 0x00002420 GLOBAL FUNC   16       imp.unsetenv
+68  0x00002430 0x00002430 GLOBAL FUNC   16       imp.execvp
+69  0x00002440 0x00002440 GLOBAL FUNC   16       imp.strcat
+70  0x00002450 0x00002450 GLOBAL FUNC   16       imp.fwrite
+71  0x00002460 0x00002460 GLOBAL FUNC   16       imp.__fprintf_chk
+72  0x00000000 0x00000000 WEAK   NOTYPE 16       imp._ITM_registerTMCloneTable
+73  0x00002470 0x00002470 GLOBAL FUNC   16       imp.strdup
+74  0x00002480 0x00002480 GLOBAL FUNC   16       imp.strerror
+75  0x00002490 0x00002490 GLOBAL FUNC   16       imp.dlsym
+76  0x000024a0 0x000024a0 GLOBAL FUNC   16       imp.fork
+77  0x000024b0 0x000024b0 GLOBAL FUNC   16       imp.dlerror
+79  0x000024c0 0x000024c0 WEAK   FUNC   16       imp.__cxa_finalize
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00007007 0x00007007 6   7    .rodata ascii 1.2.11
+1   0x0000700e 0x0000700e 6   7    .rodata ascii malloc
+2   0x00007015 0x00007015 5   6    .rodata ascii fseek
+3   0x0000701b 0x0000701b 5   6    .rodata ascii fread
+4   0x00007021 0x00007021 5   6    .rodata ascii fopen
+5   0x00007027 0x00007027 6   7    .rodata ascii fwrite
+6   0x0000702e 0x0000702e 22  23   .rodata ascii failed to read cookie.
+7   0x00007045 0x00007045 25  26   .rodata ascii Could not read from file.
+8   0x0000705f 0x0000705f 15  16   .rodata ascii Error on file\n.
+9   0x0000706f 0x0000706f 6   7    .rodata ascii calloc
+10  0x00007078 0x00007078 64  65   .rodata ascii Failed to extract %s: inflateInit() failed with return code %d!\n
+11  0x000070c0 0x000070c0 65  66   .rodata ascii Failed to extract %s: failed to allocate temporary input buffer!\n
+12  0x00007108 0x00007108 66  67   .rodata ascii Failed to extract %s: failed to allocate temporary output buffer!\n
+13  0x00007150 0x00007150 64  65   .rodata ascii Failed to extract %s: decompression resulted in return code %d!\n
+14  0x00007198 0x00007198 31  32   .rodata ascii Cannot read Table of Contents.\n
+15  0x000071b8 0x000071b8 51  52   .rodata ascii Failed to extract %s: failed to open archive file!\n
+16  0x000071f0 0x000071f0 58  59   .rodata ascii Failed to extract %s: failed to seek to the entry's data!\n
+17  0x00007230 0x00007230 65  66   .rodata ascii Failed to extract %s: failed to allocate data buffer (%u bytes)!\n
+18  0x00007278 0x00007278 49  50   .rodata ascii Failed to extract %s: failed to read data chunk!\n
+19  0x000072b0 0x000072b0 50  51   .rodata ascii Failed to extract %s: failed to open target file!\n
+20  0x000072e8 0x000072e8 59  60   .rodata ascii Failed to extract %s: failed to allocate temporary buffer!\n
+21  0x00007328 0x00007328 50  51   .rodata ascii Failed to extract %s: failed to write data chunk!\n
+22  0x00007360 0x00007360 34  35   .rodata ascii failed to seek to cookie position.
+23  0x00007388 0x00007388 34  35   .rodata ascii Could not allocate buffer for TOC.
+24  0x000073b0 0x000073b0 42  43   .rodata ascii Cannot allocate memory for ARCHIVE_STATUS\n
+25  0x000073e0 0x000073e0 7   8    .rodata ascii MEI\f\v\n\v
+26  0x000073e8 0x000073e8 5   6    .rodata ascii [%d] 
+27  0x000073f0 0x000073f0 17  18   .rodata ascii Error copying %s\n
+28  0x00007405 0x00007405 14  15   .rodata ascii %s%s%s%s%s%s%s
+29  0x00007414 0x00007414 10  11   .rodata ascii %s%s%s.pkg
+30  0x0000741f 0x0000741f 10  11   .rodata ascii %s%s%s.exe
+31  0x0000742a 0x0000742a 22  23   .rodata ascii Archive not found: %s\n
+32  0x00007441 0x00007441 25  26   .rodata ascii Error opening archive %s\n
+33  0x0000745b 0x0000745b 20  21   .rodata ascii Error extracting %s\n
+34  0x00007470 0x00007470 8   9    .rodata ascii __main__
+35  0x00007479 0x00007479 9   10   .rodata ascii %s%c%s.py
+36  0x00007483 0x00007483 8   9    .rodata ascii __file__
+37  0x0000748c 0x0000748c 28  29   .rodata ascii Failed to execute script %s\n
+38  0x000074b0 0x000074b0 30  31   .rodata ascii Could not get __main__ module.
+39  0x000074d0 0x000074d0 37  38   .rodata ascii Could not get __main__ module's dict.
+40  0x000074f8 0x000074f8 41  42   .rodata ascii Absolute path to script exceeds PATH_MAX\n
+41  0x00007528 0x00007528 39  40   .rodata ascii Failed to unmarshal code object for %s\n
+42  0x00007550 0x00007550 9   10   .rodata ascii _MEIPASS2
+43  0x0000755a 0x0000755a 13  14   .rodata ascii _PYI_PROCNAME
+44  0x00007568 0x00007568 34  35   .rodata ascii Cannot open self %s or archive %s\n
+45  0x00007590 0x00007590 42  43   .rodata ascii LOADER: failed to set linux process name!\n
+46  0x000075bd 0x000075bd 14  15   .rodata ascii /proc/self/exe
+47  0x000075cc 0x000075cc 24  25   .rodata ascii Py_DontWriteBytecodeFlag
+48  0x000075e5 0x000075e5 28  29   .rodata ascii Py_FileSystemDefaultEncoding
+49  0x00007602 0x00007602 13  14   .rodata ascii Py_FrozenFlag
+50  0x00007610 0x00007610 24  25   .rodata ascii Py_IgnoreEnvironmentFlag
+51  0x00007629 0x00007629 13  14   .rodata ascii Py_NoSiteFlag
+52  0x00007637 0x00007637 22  23   .rodata ascii Py_NoUserSiteDirectory
+53  0x0000764e 0x0000764e 15  16   .rodata ascii Py_OptimizeFlag
+54  0x0000765e 0x0000765e 14  15   .rodata ascii Py_VerboseFlag
+55  0x0000766d 0x0000766d 22  23   .rodata ascii Py_UnbufferedStdioFlag
+56  0x00007684 0x00007684 13  14   .rodata ascii Py_BuildValue
+57  0x00007692 0x00007692 9   10   .rodata ascii Py_DecRef
+58  0x0000769c 0x0000769c 27  28   .rodata ascii Cannot dlsym for Py_DecRef\n
+59  0x000076b8 0x000076b8 11  12   .rodata ascii Py_Finalize
+60  0x000076c4 0x000076c4 29  30   .rodata ascii Cannot dlsym for Py_Finalize\n
+61  0x000076e2 0x000076e2 9   10   .rodata ascii Py_IncRef
+62  0x000076ec 0x000076ec 27  28   .rodata ascii Cannot dlsym for Py_IncRef\n
+63  0x00007708 0x00007708 13  14   .rodata ascii Py_Initialize
+64  0x00007716 0x00007716 10  11   .rodata ascii Py_SetPath
+65  0x00007721 0x00007721 28  29   .rodata ascii Cannot dlsym for Py_SetPath\n
+66  0x0000773e 0x0000773e 10  11   .rodata ascii Py_GetPath
+67  0x00007749 0x00007749 28  29   .rodata ascii Cannot dlsym for Py_GetPath\n
+68  0x00007766 0x00007766 17  18   .rodata ascii Py_SetProgramName
+69  0x00007778 0x00007778 16  17   .rodata ascii Py_SetPythonHome
+70  0x00007789 0x00007789 20  21   .rodata ascii PyDict_GetItemString
+71  0x0000779e 0x0000779e 11  12   .rodata ascii PyErr_Clear
+72  0x000077aa 0x000077aa 29  30   .rodata ascii Cannot dlsym for PyErr_Clear\n
+73  0x000077c8 0x000077c8 14  15   .rodata ascii PyErr_Occurred
+74  0x000077d7 0x000077d7 11  12   .rodata ascii PyErr_Print
+75  0x000077e3 0x000077e3 29  30   .rodata ascii Cannot dlsym for PyErr_Print\n
+76  0x00007801 0x00007801 11  12   .rodata ascii PyErr_Fetch
+77  0x0000780d 0x0000780d 29  30   .rodata ascii Cannot dlsym for PyErr_Fetch\n
+78  0x0000782b 0x0000782b 13  14   .rodata ascii PyErr_Restore
+79  0x00007839 0x00007839 18  19   .rodata ascii PyImport_AddModule
+80  0x0000784c 0x0000784c 23  24   .rodata ascii PyImport_ExecCodeModule
+81  0x00007864 0x00007864 21  22   .rodata ascii PyImport_ImportModule
+82  0x0000787a 0x0000787a 13  14   .rodata ascii PyList_Append
+83  0x00007888 0x00007888 10  11   .rodata ascii PyList_New
+84  0x00007893 0x00007893 28  29   .rodata ascii Cannot dlsym for PyList_New\n
+85  0x000078b0 0x000078b0 13  14   .rodata ascii PyLong_AsLong
+86  0x000078be 0x000078be 16  17   .rodata ascii PyModule_GetDict
+87  0x000078cf 0x000078cf 21  22   .rodata ascii PyObject_CallFunction
+88  0x000078e5 0x000078e5 28  29   .rodata ascii PyObject_CallFunctionObjArgs
+89  0x00007902 0x00007902 22  23   .rodata ascii PyObject_SetAttrString
+90  0x00007919 0x00007919 22  23   .rodata ascii PyObject_GetAttrString
+91  0x00007930 0x00007930 12  13   .rodata ascii PyObject_Str
+92  0x0000793d 0x0000793d 18  19   .rodata ascii PyRun_SimpleString
+93  0x00007950 0x00007950 19  20   .rodata ascii PySys_AddWarnOption
+94  0x00007964 0x00007964 15  16   .rodata ascii PySys_SetArgvEx
+95  0x00007974 0x00007974 15  16   .rodata ascii PySys_GetObject
+96  0x00007984 0x00007984 15  16   .rodata ascii PySys_SetObject
+97  0x00007994 0x00007994 13  14   .rodata ascii PySys_SetPath
+98  0x000079a2 0x000079a2 15  16   .rodata ascii PyEval_EvalCode
+99  0x000079b2 0x000079b2 20  21   .rodata ascii PyUnicode_FromString
+100 0x000079c7 0x000079c7 15  16   .rodata ascii Py_DecodeLocale
+101 0x000079d7 0x000079d7 13  14   .rodata ascii PyMem_RawFree
+102 0x000079e5 0x000079e5 20  21   .rodata ascii PyUnicode_FromFormat
+103 0x000079fa 0x000079fa 16  17   .rodata ascii PyUnicode_Decode
+104 0x00007a0b 0x00007a0b 25  26   .rodata ascii PyUnicode_DecodeFSDefault
+105 0x00007a25 0x00007a25 16  17   .rodata ascii PyUnicode_AsUTF8
+106 0x00007a38 0x00007a38 42  43   .rodata ascii Cannot dlsym for Py_DontWriteBytecodeFlag\n
+107 0x00007a68 0x00007a68 46  47   .rodata ascii Cannot dlsym for Py_FileSystemDefaultEncoding\n
+108 0x00007a98 0x00007a98 31  32   .rodata ascii Cannot dlsym for Py_FrozenFlag\n
+109 0x00007ab8 0x00007ab8 42  43   .rodata ascii Cannot dlsym for Py_IgnoreEnvironmentFlag\n
+110 0x00007ae8 0x00007ae8 31  32   .rodata ascii Cannot dlsym for Py_NoSiteFlag\n
+111 0x00007b08 0x00007b08 40  41   .rodata ascii Cannot dlsym for Py_NoUserSiteDirectory\n
+112 0x00007b38 0x00007b38 33  34   .rodata ascii Cannot dlsym for Py_OptimizeFlag\n
+113 0x00007b60 0x00007b60 32  33   .rodata ascii Cannot dlsym for Py_VerboseFlag\n
+114 0x00007b88 0x00007b88 40  41   .rodata ascii Cannot dlsym for Py_UnbufferedStdioFlag\n
+115 0x00007bb8 0x00007bb8 31  32   .rodata ascii Cannot dlsym for Py_BuildValue\n
+116 0x00007bd8 0x00007bd8 31  32   .rodata ascii Cannot dlsym for Py_Initialize\n
+117 0x00007bf8 0x00007bf8 35  36   .rodata ascii Cannot dlsym for Py_SetProgramName\n
+118 0x00007c20 0x00007c20 34  35   .rodata ascii Cannot dlsym for Py_SetPythonHome\n
+119 0x00007c48 0x00007c48 38  39   .rodata ascii Cannot dlsym for PyDict_GetItemString\n
+120 0x00007c70 0x00007c70 32  33   .rodata ascii Cannot dlsym for PyErr_Occurred\n
+121 0x00007c98 0x00007c98 31  32   .rodata ascii Cannot dlsym for PyErr_Restore\n
+122 0x00007cb8 0x00007cb8 36  37   .rodata ascii Cannot dlsym for PyImport_AddModule\n
+123 0x00007ce0 0x00007ce0 41  42   .rodata ascii Cannot dlsym for PyImport_ExecCodeModule\n
+124 0x00007d10 0x00007d10 39  40   .rodata ascii Cannot dlsym for PyImport_ImportModule\n
+125 0x00007d38 0x00007d38 31  32   .rodata ascii Cannot dlsym for PyList_Append\n
+126 0x00007d58 0x00007d58 31  32   .rodata ascii Cannot dlsym for PyLong_AsLong\n
+127 0x00007d78 0x00007d78 34  35   .rodata ascii Cannot dlsym for PyModule_GetDict\n
+128 0x00007da0 0x00007da0 39  40   .rodata ascii Cannot dlsym for PyObject_CallFunction\n
+129 0x00007dc8 0x00007dc8 46  47   .rodata ascii Cannot dlsym for PyObject_CallFunctionObjArgs\n
+130 0x00007df8 0x00007df8 40  41   .rodata ascii Cannot dlsym for PyObject_SetAttrString\n
+131 0x00007e28 0x00007e28 40  41   .rodata ascii Cannot dlsym for PyObject_GetAttrString\n
+132 0x00007e58 0x00007e58 30  31   .rodata ascii Cannot dlsym for PyObject_Str\n
+133 0x00007e78 0x00007e78 36  37   .rodata ascii Cannot dlsym for PyRun_SimpleString\n
+134 0x00007ea0 0x00007ea0 37  38   .rodata ascii Cannot dlsym for PySys_AddWarnOption\n
+135 0x00007ec8 0x00007ec8 33  34   .rodata ascii Cannot dlsym for PySys_SetArgvEx\n
+136 0x00007ef0 0x00007ef0 33  34   .rodata ascii Cannot dlsym for PySys_GetObject\n
+137 0x00007f18 0x00007f18 33  34   .rodata ascii Cannot dlsym for PySys_SetObject\n
+138 0x00007f40 0x00007f40 31  32   .rodata ascii Cannot dlsym for PySys_SetPath\n
+139 0x00007f60 0x00007f60 33  34   .rodata ascii Cannot dlsym for PyEval_EvalCode\n
+140 0x00007f88 0x00007f88 30  31   .rodata ascii PyMarshal_ReadObjectFromString
+141 0x00007fa8 0x00007fa8 48  49   .rodata ascii Cannot dlsym for PyMarshal_ReadObjectFromString\n
+142 0x00007fe0 0x00007fe0 38  39   .rodata ascii Cannot dlsym for PyUnicode_FromString\n
+143 0x00008008 0x00008008 33  34   .rodata ascii Cannot dlsym for Py_DecodeLocale\n
+144 0x00008030 0x00008030 31  32   .rodata ascii Cannot dlsym for PyMem_RawFree\n
+145 0x00008050 0x00008050 38  39   .rodata ascii Cannot dlsym for PyUnicode_FromFormat\n
+146 0x00008078 0x00008078 34  35   .rodata ascii Cannot dlsym for PyUnicode_Decode\n
+147 0x000080a0 0x000080a0 43  44   .rodata ascii Cannot dlsym for PyUnicode_DecodeFSDefault\n
+148 0x000080d0 0x000080d0 34  35   .rodata ascii Cannot dlsym for PyUnicode_AsUTF8\n
+149 0x000080f3 0x000080f3 4   5    .rodata ascii pyi-
+150 0x000080f8 0x000080f8 14  15   .rodata ascii out of memory\n
+151 0x00008107 0x00008107 18  19   .rodata ascii %s%c%s%c%s%c%s%c%s
+152 0x0000811a 0x0000811a 11  12   .rodata ascii lib-dynload
+153 0x00008126 0x00008126 16  17   .rodata ascii base_library.zip
+154 0x00008137 0x00008137 8   9    .rodata ascii _MEIPASS
+155 0x00008140 0x00008140 7   8    .rodata ascii marshal
+156 0x00008148 0x00008148 5   6    .rodata ascii loads
+157 0x00008151 0x00008151 16  17   .rodata ascii mod is NULL - %s
+158 0x00008162 0x00008162 6   7    .rodata ascii %U?%lu
+159 0x00008169 0x00008169 4   5    .rodata ascii path
+160 0x0000816e 0x0000816e 29  30   .rodata ascii Failed to append to sys.path\n
+161 0x00008190 0x00008190 69  70   .rodata ascii Failed to convert Wflag %s using mbstowcs (invalid multibyte string)\n
+162 0x000081d8 0x000081d8 49  50   .rodata ascii Path of DLL (%s) length exceeds buffer[%d] space\n
+163 0x00008210 0x00008210 42  43   .rodata ascii Error loading Python lib '%s': dlopen: %s\n
+164 0x00008240 0x00008240 60  61   .rodata ascii Fatal error: unable to decode the command line argument #%i\n
+165 0x00008280 0x00008280 38  39   .rodata ascii Failed to convert progname to wchar_t\n
+166 0x000082a8 0x000082a8 36  37   .rodata ascii Failed to convert pyhome to wchar_t\n
+167 0x000082d0 0x000082d0 36  37   .rodata ascii Failed to convert pypath to wchar_t\n
+168 0x000082f8 0x000082f8 34  35   .rodata ascii Failed to convert argv to wchar_t\n
+169 0x00008320 0x00008320 34  35   .rodata ascii Error detected starting Python VM.
+170 0x00008348 0x00008348 36  37   .rodata ascii Failed to get _MEIPASS as PyObject.\n
+171 0x00008370 0x00008370 39  40   .rodata ascii Installing PYZ: Could not get sys.path\n
+172 0x00008398 0x00008398 144 145  .rodata ascii import sys; sys.stdout.flush();                 (sys.__stdout__.flush if sys.__stdout__                 is not sys.stdout else (lambda: None))()
+173 0x00008430 0x00008430 144 145  .rodata ascii import sys; sys.stderr.flush();                 (sys.__stderr__.flush if sys.__stderr__                 is not sys.stderr else (lambda: None))()
+174 0x000084c1 0x000084c1 15  16   .rodata ascii LD_LIBRARY_PATH
+175 0x000084d1 0x000084d1 20  21   .rodata ascii LD_LIBRARY_PATH_ORIG
+176 0x000084e6 0x000084e6 6   7    .rodata ascii TMPDIR
+177 0x000084ed 0x000084ed 18  19   .rodata ascii pyi-runtime-tmpdir
+178 0x00008503 0x00008503 10  11   .rodata ascii LISTEN_PID
+179 0x00008512 0x00008512 29  30   .rodata ascii pyi-bootloader-ignore-signals
+180 0x00008530 0x00008530 8   9    .rodata ascii /var/tmp
+181 0x00008539 0x00008539 8   9    .rodata ascii /usr/tmp
+182 0x00008542 0x00008542 4   5    .rodata ascii TEMP
+183 0x00008550 0x00008550 51  52   .rodata ascii INTERNAL ERROR: cannot create temporary directory!\n
+184 0x00008588 0x00008588 48  49   .rodata ascii WARNING: file already exists but should not: %s\n
+185 0x000085c0 0x000085c0 40  41   .rodata ascii LOADER: failed to allocate argv_pyi: %s\n
+186 0x000085f0 0x000085f0 38  39   .rodata ascii LOADER: failed to strdup argv[%d]: %s\n
+arch     x86
+baddr    0x0
+binsz    7022307
+bintype  elf
+bits     64
+canary   false
+class    ELF64
+compiler GCC: (Debian 8.3.0-6) 8.3.0
+crypto   false
+endian   little
+havecode true
+intrp    /lib64/ld-linux-x86-64.so.2
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD x86-64 architecture
+nx       true
+os       linux
+pic      true
+relocs   false
+relro    partial
+rpath    NONE
+sanitize false
+static   false
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0003
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x000024e0
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x006b26e8
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       11
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       30
+0x0000003e  ShrStrndx   29
+[Linked libraries]
+libdl.so.2
+libz.so.1
+libpthread.so.0
+libc.so.6
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000ad70 0x00009d70 ADD_64  0x000025c0
+0x0000ad78 0x00009d78 ADD_64  0x00002580
+0x0000ad80 0x00009d80 ADD_64  0x00008534
+0x0000ad88 0x00009d88 ADD_64  0x00008530
+0x0000ad90 0x00009d90 ADD_64  0x00008539
+0x0000ada0 0x00009da0 ADD_64  0x000084e6
+0x0000ada8 0x00009da8 ADD_64  0x00008542
+0x0000adb0 0x00009db0 ADD_64  0x00008547
+0x0000afd0 0x00009fd0 SET_64 _ITM_deregisterTMCloneTable
+0x0000afd8 0x00009fd8 SET_64 __libc_start_main
+0x0000afe0 0x00009fe0 SET_64 __gmon_start__
+0x0000afe8 0x00009fe8 SET_64 _ITM_registerTMCloneTable
+0x0000aff0 0x00009ff0 SET_64 __cxa_finalize
+0x0000b018 0x0000a018 SET_64 __strcat_chk
+0x0000b020 0x0000a020 SET_64 getenv
+0x0000b028 0x0000a028 SET_64 __snprintf_chk
+0x0000b030 0x0000a030 SET_64 raise
+0x0000b038 0x0000a038 SET_64 free
+0x0000b040 0x0000a040 SET_64 __vfprintf_chk
+0x0000b048 0x0000a048 SET_64 __errno_location
+0x0000b050 0x0000a050 SET_64 unlink
+0x0000b058 0x0000a058 SET_64 strncpy
+0x0000b060 0x0000a060 SET_64 strncmp
+0x0000b068 0x0000a068 SET_64 strcpy
+0x0000b070 0x0000a070 SET_64 ftello
+0x0000b078 0x0000a078 SET_64 inflate
+0x0000b080 0x0000a080 SET_64 mkdir
+0x0000b088 0x0000a088 SET_64 ferror
+0x0000b090 0x0000a090 SET_64 fread
+0x0000b098 0x0000a098 SET_64 mbstowcs
+0x0000b0a0 0x0000a0a0 SET_64 readlink
+0x0000b0a8 0x0000a0a8 SET_64 setenv
+0x0000b0b0 0x0000a0b0 SET_64 getpid
+0x0000b0b8 0x0000a0b8 SET_64 fclose
+0x0000b0c0 0x0000a0c0 SET_64 opendir
+0x0000b0c8 0x0000a0c8 SET_64 stpcpy
+0x0000b0d0 0x0000a0d0 SET_64 rmdir
+0x0000b0d8 0x0000a0d8 SET_64 strlen
+0x0000b0e0 0x0000a0e0 SET_64 setbuf
+0x0000b0e8 0x0000a0e8 SET_64 strchr
+0x0000b0f0 0x0000a0f0 SET_64 snprintf
+0x0000b0f8 0x0000a0f8 SET_64 dirname
+0x0000b100 0x0000a100 SET_64 strncat
+0x0000b108 0x0000a108 SET_64 __realpath_chk
+0x0000b110 0x0000a110 SET_64 closedir
+0x0000b118 0x0000a118 SET_64 wcsncpy
+0x0000b120 0x0000a120 SET_64 calloc
+0x0000b128 0x0000a128 SET_64 strcmp
+0x0000b130 0x0000a130 SET_64 signal
+0x0000b138 0x0000a138 SET_64 __memcpy_chk
+0x0000b140 0x0000a140 SET_64 feof
+0x0000b148 0x0000a148 SET_64 clearerr
+0x0000b150 0x0000a150 SET_64 realpath
+0x0000b158 0x0000a158 SET_64 prctl
+0x0000b160 0x0000a160 SET_64 inflateEnd
+0x0000b168 0x0000a168 SET_64 kill
+0x0000b170 0x0000a170 SET_64 __xpg_basename
+0x0000b178 0x0000a178 SET_64 fileno
+0x0000b180 0x0000a180 SET_64 __xstat
+0x0000b188 0x0000a188 SET_64 readdir
+0x0000b190 0x0000a190 SET_64 dlopen
+0x0000b198 0x0000a198 SET_64 malloc
+0x0000b1a0 0x0000a1a0 SET_64 fflush
+0x0000b1a8 0x0000a1a8 SET_64 nl_langinfo
+0x0000b1b0 0x0000a1b0 SET_64 __vsnprintf_chk
+0x0000b1b8 0x0000a1b8 SET_64 __strcpy_chk
+0x0000b1c0 0x0000a1c0 SET_64 mkdtemp
+0x0000b1c8 0x0000a1c8 SET_64 setlocale
+0x0000b1d0 0x0000a1d0 SET_64 fchmod
+0x0000b1d8 0x0000a1d8 SET_64 inflateInit_
+0x0000b1e0 0x0000a1e0 SET_64 __fread_chk
+0x0000b1e8 0x0000a1e8 SET_64 waitpid
+0x0000b1f0 0x0000a1f0 SET_64 fseeko
+0x0000b1f8 0x0000a1f8 SET_64 fopen
+0x0000b200 0x0000a200 SET_64 perror
+0x0000b208 0x0000a208 SET_64 strtok
+0x0000b210 0x0000a210 SET_64 unsetenv
+0x0000b218 0x0000a218 SET_64 execvp
+0x0000b220 0x0000a220 SET_64 strcat
+0x0000b228 0x0000a228 SET_64 fwrite
+0x0000b230 0x0000a230 SET_64 __fprintf_chk
+0x0000b238 0x0000a238 SET_64 strdup
+0x0000b240 0x0000a240 SET_64 strerror
+0x0000b248 0x0000a248 SET_64 dlsym
+0x0000b250 0x0000a250 SET_64 fork
+0x0000b258 0x0000a258 SET_64 dlerror
+0x0000b268 0x0000a268 ADD_64  0x0000b268
+0x0000b280 0x0000b280 ADD_64 stdout
+0x0000b290 0x0000b290 ADD_64 stdin
+0x0000b2a0 0x0000b2a0 ADD_64 stderr
+
+
+90 relocations
+7022307
+Version symbols section '.gnu.version' contains 82 entries:
+ Addr: 0x00000e38  Offset: 0x00000e38  Link: 5 (.dynsym)
+  0x00000000: 0 (*local*)
+  0x00000001: 2 (GLIBC_2.3.4)
+  0x00000002: 3 (GLIBC_2.2.5)
+  0x00000003: 2 (GLIBC_2.3.4)
+  0x00000004: 4 (GLIBC_2.2.5)
+  0x00000005: 3 (GLIBC_2.2.5)
+  0x00000006: 2 (GLIBC_2.3.4)
+  0x00000007: 4 (GLIBC_2.2.5)
+  0x00000008: 3 (GLIBC_2.2.5)
+  0x0000000b: 0 (*local*)
+  0x0000000c: 3 (GLIBC_2.2.5)
+  0x0000000e: 0 (*local*)
+  0x0000000f: 3 (GLIBC_2.2.5)
+  0x00000020: 5 (GLIBC_2.4)
+  0x00000021: 3 (GLIBC_2.2.5)
+  0x00000027: 2 (GLIBC_2.3.4)
+  0x00000028: 3 (GLIBC_2.2.5)
+  0x00000029: 0 (*local*)
+  0x0000002a: 3 (GLIBC_2.2.5)
+  0x0000002b: 6 (GLIBC_2.3)
+  0x0000002c: 3 (GLIBC_2.2.5)
+  0x0000002d: 0 (*local*)
+  0x0000002e: 3 (GLIBC_2.2.5)
+  0x00000033: 7 (GLIBC_2.2.5)
+  0x00000034: 3 (GLIBC_2.2.5)
+  0x00000037: 2 (GLIBC_2.3.4)
+  0x00000039: 3 (GLIBC_2.2.5)
+  0x0000003c: 0 (*local*)
+  0x0000003d: 8 (GLIBC_2.7)
+  0x0000003e: 4 (GLIBC_2.2.5)
+  0x0000003f: 3 (GLIBC_2.2.5)
+  0x00000047: 2 (GLIBC_2.3.4)
+  0x00000048: 0 (*local*)
+  0x00000049: 3 (GLIBC_2.2.5)
+  0x0000004b: 7 (GLIBC_2.2.5)
+  0x0000004c: 3 (GLIBC_2.2.5)
+  0x0000004d: 7 (GLIBC_2.2.5)
+  0x0000004e: 3 (GLIBC_2.2.5)
+
+
+Version need section '.gnu.version_r' contains 3 entries:
+ Addr: 0x00000ee0  Offset: 0x00000ee0  Link to section: 6 (.dynstr)
+  0x00000000: Version: 1  File: libdl.so.2  Cnt: 1
+  0x00000010:   Name: GLIBC_2.2.5  Flags: none Version: 7
+  0x00000020: Version: 1  File: libpthread.so.0  Cnt: 1
+  0x00000030:   Name: GLIBC_2.2.5  Flags: none Version: 4
+  0x00000040: Version: 1  File: libc.so.6  Cnt: 5
+  0x00000050:   Name: GLIBC_2.7  Flags: none Version: 8
+  0x00000060:   Name: GLIBC_2.3  Flags: none Version: 6
+  0x00000070:   Name: GLIBC_2.4  Flags: none Version: 5
+  0x00000080:   Name: GLIBC_2.2.5  Flags: none Version: 3
+  0x00000090:   Name: GLIBC_2.3.4  Flags: none Version: 2
+Section to Segment mapping:
+Segment      Section
+--------------------
+PHDR         
+INTERP       .interp 
+LOAD0        .interp .note.ABI-tag .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt .comment .shstrtab 
+LOAD1        .init .plt .plt.got .text .fini 
+LOAD2        .rodata .eh_frame_hdr .eh_frame 
+LOAD3        .init_array .fini_array .data.rel.ro .dynamic .got .got.plt .data 
+DYNAMIC      .dynamic 
+NOTE         .note.ABI-tag .note.gnu.build-id 
+GNU_EH_FRAME .eh_frame_hdr 
+GNU_STACK    
+GNU_RELRO    .init_array .fini_array .data.rel.ro .dynamic .got 
+ehdr         .comment 
+
+

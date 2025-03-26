@@ -1,0 +1,768 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x00000134    0x13 0x08048134    0x13 -r-- .interp
+2   0x00000148    0x20 0x08048148    0x20 -r-- .note.ABI-tag
+3   0x00000168    0x24 0x08048168    0x24 -r-- .note.gnu.build-id
+4   0x0000018c    0x20 0x0804818c    0x20 -r-- .gnu.hash
+5   0x000001ac   0x5a0 0x080481ac   0x5a0 -r-- .dynsym
+6   0x0000074c   0x395 0x0804874c   0x395 -r-- .dynstr
+7   0x00000ae2    0xb4 0x08048ae2    0xb4 -r-- .gnu.version
+8   0x00000b98    0xd0 0x08048b98    0xd0 -r-- .gnu.version_r
+9   0x00000c68     0x8 0x08048c68     0x8 -r-- .rel.dyn
+10  0x00000c70   0x2b8 0x08048c70   0x2b8 -r-- .rel.plt
+11  0x00000f28    0x30 0x08048f28    0x30 -r-x .init
+12  0x00000f58   0x580 0x08048f58   0x580 -r-x .plt
+13  0x000014e0  0xae2c 0x080494e0  0xae2c -r-x .text
+14  0x0000c30c    0x1c 0x0805430c    0x1c -r-x .fini
+15  0x0000c340  0x2888 0x08054340  0x2888 -r-- .rodata
+16  0x0000ebc8    0x24 0x08056bc8    0x24 -r-- .eh_frame_hdr
+17  0x0000ebec    0x7c 0x08056bec    0x7c -r-- .eh_frame
+18  0x0000f000     0x8 0x08057000     0x8 -rw- .ctors
+19  0x0000f008     0x8 0x08057008     0x8 -rw- .dtors
+20  0x0000f010     0x4 0x08057010     0x4 -rw- .jcr
+21  0x0000f014    0xe0 0x08057014    0xe0 -rw- .dynamic
+22  0x0000f0f4     0x4 0x080570f4     0x4 -rw- .got
+23  0x0000f0f8   0x168 0x080570f8   0x168 -rw- .got.plt
+24  0x0000f260   0x3c0 0x08057260   0x3c0 -rw- .data
+25  0x0000f620     0x0 0x08057620  0x31a8 -rw- .bss
+26  0x0000f620    0x5a 0x00000000    0x5a ---- .comment
+27  0x0000f67a    0xec 0x00000000    0xec ---- .shstrtab
+
+[Segments]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000034   0x100 0x08048034   0x100 -r-x PHDR
+1   0x00000134    0x13 0x08048134    0x13 -r-- INTERP
+2   0x00000000  0xec68 0x08048000  0xec68 -r-x LOAD0
+3   0x0000f000   0x620 0x08057000  0x37c8 -rw- LOAD1
+4   0x0000f014    0xe0 0x08057014    0xe0 -rw- DYNAMIC
+5   0x00000148    0x44 0x08048148    0x44 -r-- NOTE
+6   0x0000ebc8    0x24 0x08056bc8    0x24 -r-- GNU_EH_FRAME
+7   0x00000000     0x0 0x00000000     0x0 -rw- GNU_STACK
+8   0x00000000    0x34 0x08048000    0x34 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x080494e0 paddr=0x000014e0 haddr=0x00000018 hvaddr=0x08048018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x0804c7fd paddr=0x000047fd
+[Imports]
+nth vaddr      bind   type   lib name
+―――――――――――――――――――――――――――――――――――――
+1   0x08048f68 GLOBAL FUNC       __errno_location
+2   0x08048f78 GLOBAL FUNC       sigemptyset
+3   0x08048f88 GLOBAL FUNC       sprintf
+4   0x08048f98 GLOBAL FUNC       srand
+5   0x08048fa8 GLOBAL FUNC       connect
+6   0x08048fb8 GLOBAL FUNC       mkdir
+7   0x08048fc8 GLOBAL FUNC       daemon
+8   0x08048fd8 GLOBAL FUNC       pthread_attr_setdetachstate
+9   0x08048fe8 GLOBAL FUNC       inet_ntoa
+10  0x08048ff8 GLOBAL FUNC       shutdown
+11  0x08049008 GLOBAL FUNC       signal
+12  0x08049018 WEAK   NOTYPE     __gmon_start__
+13  0x00000000 WEAK   NOTYPE     _Jv_RegisterClasses
+14  0x08049028 GLOBAL FUNC       pthread_cond_signal
+15  0x08049038 GLOBAL FUNC       localtime
+16  0x08049048 GLOBAL FUNC       recv
+17  0x08049058 GLOBAL FUNC       inet_addr
+18  0x08049068 GLOBAL FUNC       strncpy
+19  0x08049078 GLOBAL FUNC       ttyname
+20  0x08049088 GLOBAL FUNC       write
+21  0x08049098 GLOBAL FUNC       listen
+22  0x080490a8 GLOBAL FUNC       fgets
+23  0x080490b8 GLOBAL FUNC       rename
+24  0x080490c8 GLOBAL FUNC       memset
+25  0x080490d8 GLOBAL FUNC       setsid
+26  0x080490e8 GLOBAL FUNC       __libc_start_main
+27  0x080490f8 GLOBAL FUNC       execl
+28  0x08049108 GLOBAL FUNC       pthread_cond_timedwait
+29  0x08049118 GLOBAL FUNC       strrchr
+30  0x08049128 GLOBAL FUNC       fseeko64
+31  0x08049138 GLOBAL FUNC       chmod
+32  0x08049148 GLOBAL FUNC       pthread_attr_setstacksize
+33  0x08049158 GLOBAL FUNC       read
+34  0x08049168 GLOBAL FUNC       usleep
+35  0x08049178 GLOBAL FUNC       readdir
+36  0x08049188 GLOBAL FUNC       gettimeofday
+37  0x08049198 GLOBAL FUNC       strtol
+38  0x080491a8 GLOBAL FUNC       free
+39  0x080491b8 GLOBAL FUNC       __lxstat64
+40  0x080491c8 GLOBAL FUNC       access
+41  0x080491d8 GLOBAL FUNC       dlsym
+42  0x080491e8 GLOBAL FUNC       pthread_cond_init
+43  0x080491f8 GLOBAL FUNC       opendir
+44  0x08049208 GLOBAL FUNC       accept
+45  0x08049218 GLOBAL FUNC       ioctl
+46  0x08049228 GLOBAL FUNC       socket
+47  0x08049238 GLOBAL FUNC       dup2
+48  0x08049248 GLOBAL FUNC       fseek
+49  0x08049258 GLOBAL FUNC       pthread_mutex_unlock
+50  0x08049268 GLOBAL FUNC       pthread_attr_init
+51  0x08049278 GLOBAL FUNC       fclose
+52  0x08049288 GLOBAL FUNC       memcpy
+53  0x08049298 GLOBAL FUNC       execv
+54  0x080492a8 GLOBAL FUNC       fopen
+55  0x080492b8 GLOBAL FUNC       pthread_mutex_destroy
+56  0x080492c8 GLOBAL FUNC       waitpid
+57  0x080492d8 GLOBAL FUNC       pthread_sigmask
+58  0x080492e8 GLOBAL FUNC       feof
+59  0x080492f8 GLOBAL FUNC       strcpy
+60  0x08049308 GLOBAL FUNC       dlopen
+61  0x08049318 GLOBAL FUNC       bind
+62  0x08049328 GLOBAL FUNC       pthread_mutex_init
+63  0x08049338 GLOBAL FUNC       putenv
+64  0x08049348 GLOBAL FUNC       select
+65  0x08049358 GLOBAL FUNC       openpty
+66  0x08049368 GLOBAL FUNC       closedir
+67  0x08049378 GLOBAL FUNC       close
+68  0x08049388 GLOBAL FUNC       fwrite
+69  0x08049398 GLOBAL FUNC       strstr
+70  0x080493a8 GLOBAL FUNC       time
+71  0x080493b8 GLOBAL FUNC       remove
+72  0x080493c8 GLOBAL FUNC       malloc
+73  0x080493d8 GLOBAL FUNC       pthread_mutex_lock
+74  0x080493e8 GLOBAL FUNC       fseeko
+75  0x080493f8 GLOBAL FUNC       gethostname
+76  0x08049408 GLOBAL FUNC       pthread_create
+77  0x08049418 GLOBAL FUNC       sigaddset
+78  0x08049428 GLOBAL FUNC       readlink
+79  0x08049438 GLOBAL FUNC       strcat
+80  0x08049448 GLOBAL FUNC       send
+81  0x08049458 GLOBAL FUNC       fork
+82  0x08049468 GLOBAL FUNC       setsockopt
+83  0x08049478 GLOBAL FUNC       fcntl
+84  0x08049488 GLOBAL FUNC       rand
+85  0x08049498 GLOBAL FUNC       fread
+86  0x080494a8 GLOBAL FUNC       gethostbyname
+87  0x080494b8 GLOBAL FUNC       strcmp
+88  0x080494c8 GLOBAL FUNC       exit
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+89  0x0000c344 0x08054344 GLOBAL OBJ    4        _IO_stdin_used
+1   0x00000f68 0x08048f68 GLOBAL FUNC   16       imp.__errno_location
+2   0x00000f78 0x08048f78 GLOBAL FUNC   16       imp.sigemptyset
+3   0x00000f88 0x08048f88 GLOBAL FUNC   16       imp.sprintf
+4   0x00000f98 0x08048f98 GLOBAL FUNC   16       imp.srand
+5   0x00000fa8 0x08048fa8 GLOBAL FUNC   16       imp.connect
+6   0x00000fb8 0x08048fb8 GLOBAL FUNC   16       imp.mkdir
+7   0x00000fc8 0x08048fc8 GLOBAL FUNC   16       imp.daemon
+8   0x00000fd8 0x08048fd8 GLOBAL FUNC   16       imp.pthread_attr_setdetachstate
+9   0x00000fe8 0x08048fe8 GLOBAL FUNC   16       imp.inet_ntoa
+10  0x00000ff8 0x08048ff8 GLOBAL FUNC   16       imp.shutdown
+11  0x00001008 0x08049008 GLOBAL FUNC   16       imp.signal
+12  0x00001018 0x08049018 WEAK   NOTYPE 16       imp.__gmon_start__
+13  ---------- 0x00000000 WEAK   NOTYPE 16       imp._Jv_RegisterClasses
+14  0x00001028 0x08049028 GLOBAL FUNC   16       imp.pthread_cond_signal
+15  0x00001038 0x08049038 GLOBAL FUNC   16       imp.localtime
+16  0x00001048 0x08049048 GLOBAL FUNC   16       imp.recv
+17  0x00001058 0x08049058 GLOBAL FUNC   16       imp.inet_addr
+18  0x00001068 0x08049068 GLOBAL FUNC   16       imp.strncpy
+19  0x00001078 0x08049078 GLOBAL FUNC   16       imp.ttyname
+20  0x00001088 0x08049088 GLOBAL FUNC   16       imp.write
+21  0x00001098 0x08049098 GLOBAL FUNC   16       imp.listen
+22  0x000010a8 0x080490a8 GLOBAL FUNC   16       imp.fgets
+23  0x000010b8 0x080490b8 GLOBAL FUNC   16       imp.rename
+24  0x000010c8 0x080490c8 GLOBAL FUNC   16       imp.memset
+25  0x000010d8 0x080490d8 GLOBAL FUNC   16       imp.setsid
+26  0x000010e8 0x080490e8 GLOBAL FUNC   16       imp.__libc_start_main
+27  0x000010f8 0x080490f8 GLOBAL FUNC   16       imp.execl
+28  0x00001108 0x08049108 GLOBAL FUNC   16       imp.pthread_cond_timedwait
+29  0x00001118 0x08049118 GLOBAL FUNC   16       imp.strrchr
+30  0x00001128 0x08049128 GLOBAL FUNC   16       imp.fseeko64
+31  0x00001138 0x08049138 GLOBAL FUNC   16       imp.chmod
+32  0x00001148 0x08049148 GLOBAL FUNC   16       imp.pthread_attr_setstacksize
+33  0x00001158 0x08049158 GLOBAL FUNC   16       imp.read
+34  0x00001168 0x08049168 GLOBAL FUNC   16       imp.usleep
+35  0x00001178 0x08049178 GLOBAL FUNC   16       imp.readdir
+36  0x00001188 0x08049188 GLOBAL FUNC   16       imp.gettimeofday
+37  0x00001198 0x08049198 GLOBAL FUNC   16       imp.strtol
+38  0x000011a8 0x080491a8 GLOBAL FUNC   16       imp.free
+39  0x000011b8 0x080491b8 GLOBAL FUNC   16       imp.__lxstat64
+40  0x000011c8 0x080491c8 GLOBAL FUNC   16       imp.access
+41  0x000011d8 0x080491d8 GLOBAL FUNC   16       imp.dlsym
+42  0x000011e8 0x080491e8 GLOBAL FUNC   16       imp.pthread_cond_init
+43  0x000011f8 0x080491f8 GLOBAL FUNC   16       imp.opendir
+44  0x00001208 0x08049208 GLOBAL FUNC   16       imp.accept
+45  0x00001218 0x08049218 GLOBAL FUNC   16       imp.ioctl
+46  0x00001228 0x08049228 GLOBAL FUNC   16       imp.socket
+47  0x00001238 0x08049238 GLOBAL FUNC   16       imp.dup2
+48  0x00001248 0x08049248 GLOBAL FUNC   16       imp.fseek
+49  0x00001258 0x08049258 GLOBAL FUNC   16       imp.pthread_mutex_unlock
+50  0x00001268 0x08049268 GLOBAL FUNC   16       imp.pthread_attr_init
+51  0x00001278 0x08049278 GLOBAL FUNC   16       imp.fclose
+52  0x00001288 0x08049288 GLOBAL FUNC   16       imp.memcpy
+53  0x00001298 0x08049298 GLOBAL FUNC   16       imp.execv
+54  0x000012a8 0x080492a8 GLOBAL FUNC   16       imp.fopen
+55  0x000012b8 0x080492b8 GLOBAL FUNC   16       imp.pthread_mutex_destroy
+56  0x000012c8 0x080492c8 GLOBAL FUNC   16       imp.waitpid
+57  0x000012d8 0x080492d8 GLOBAL FUNC   16       imp.pthread_sigmask
+58  0x000012e8 0x080492e8 GLOBAL FUNC   16       imp.feof
+59  0x000012f8 0x080492f8 GLOBAL FUNC   16       imp.strcpy
+60  0x00001308 0x08049308 GLOBAL FUNC   16       imp.dlopen
+61  0x00001318 0x08049318 GLOBAL FUNC   16       imp.bind
+62  0x00001328 0x08049328 GLOBAL FUNC   16       imp.pthread_mutex_init
+63  0x00001338 0x08049338 GLOBAL FUNC   16       imp.putenv
+64  0x00001348 0x08049348 GLOBAL FUNC   16       imp.select
+65  0x00001358 0x08049358 GLOBAL FUNC   16       imp.openpty
+66  0x00001368 0x08049368 GLOBAL FUNC   16       imp.closedir
+67  0x00001378 0x08049378 GLOBAL FUNC   16       imp.close
+68  0x00001388 0x08049388 GLOBAL FUNC   16       imp.fwrite
+69  0x00001398 0x08049398 GLOBAL FUNC   16       imp.strstr
+70  0x000013a8 0x080493a8 GLOBAL FUNC   16       imp.time
+71  0x000013b8 0x080493b8 GLOBAL FUNC   16       imp.remove
+72  0x000013c8 0x080493c8 GLOBAL FUNC   16       imp.malloc
+73  0x000013d8 0x080493d8 GLOBAL FUNC   16       imp.pthread_mutex_lock
+74  0x000013e8 0x080493e8 GLOBAL FUNC   16       imp.fseeko
+75  0x000013f8 0x080493f8 GLOBAL FUNC   16       imp.gethostname
+76  0x00001408 0x08049408 GLOBAL FUNC   16       imp.pthread_create
+77  0x00001418 0x08049418 GLOBAL FUNC   16       imp.sigaddset
+78  0x00001428 0x08049428 GLOBAL FUNC   16       imp.readlink
+79  0x00001438 0x08049438 GLOBAL FUNC   16       imp.strcat
+80  0x00001448 0x08049448 GLOBAL FUNC   16       imp.send
+81  0x00001458 0x08049458 GLOBAL FUNC   16       imp.fork
+82  0x00001468 0x08049468 GLOBAL FUNC   16       imp.setsockopt
+83  0x00001478 0x08049478 GLOBAL FUNC   16       imp.fcntl
+84  0x00001488 0x08049488 GLOBAL FUNC   16       imp.rand
+85  0x00001498 0x08049498 GLOBAL FUNC   16       imp.fread
+86  0x000014a8 0x080494a8 GLOBAL FUNC   16       imp.gethostbyname
+87  0x000014b8 0x080494b8 GLOBAL FUNC   16       imp.strcmp
+88  0x000014c8 0x080494c8 GLOBAL FUNC   16       imp.exit
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000c34c 0x0805434c 14  15   .rodata ascii   /lib/libc.so.6
+1   0x0000c35b 0x0805435b 6   7    .rodata ascii   fseeko
+2   0x0000c362 0x08054362 8   9    .rodata ascii   fseeko64
+3   0x0000c3a3 0x080543a3 6   8    .rodata utf8    QSeA~ä blocks=Basic Latin,Latin-1 Supplement
+4   0x0000c3c9 0x080543c9 4   6    .rodata utf8    v̈%L blocks=Basic Latin,Combining Diacritical Marks
+5   0x0000c3d6 0x080543d6 5   7    .rodata utf8    *ŀD5& blocks=Basic Latin,Latin Extended-A
+6   0x0000c415 0x08054415 5   6    .rodata ascii   !tX)i
+7   0x0000c460 0x08054460 4   5    .rodata ascii   XhHp
+8   0x0000c47e 0x0805447e 4   5    .rodata ascii   Uf\a(
+9   0x0000c4bf 0x080544bf 4   6    .rodata utf8    ĝS.4 blocks=Latin Extended-A,Basic Latin
+10  0x0000c51f 0x0805451f 4   5    .rodata ascii   yG\n|
+11  0x0000c53c 0x0805453c 4   5    .rodata ascii   NrZl
+12  0x0000c549 0x08054549 7   9    .rodata utf8    ծ='9-6d blocks=Armenian,Basic Latin
+13  0x0000c55c 0x0805455c 4   5    .rodata ascii   :.6$
+14  0x0000c577 0x08054577 5   6    .rodata ascii   aiKwZ
+15  0x0000c5a3 0x080545a3 4   5    .rodata ascii   WL\au
+16  0x0000c5b9 0x080545b9 5   6    .rodata ascii   ;fD4~
+17  0x0000c5bf 0x080545bf 4   5    .rodata ascii   [v)C
+18  0x0000c5d6 0x080545d6 4   5    .rodata ascii   cB@"
+19  0x0000c5de 0x080545de 4   6    .rodata utf8    Ƅ}$J blocks=Latin Extended-B,Basic Latin
+20  0x0000c62a 0x0805462a 5   9    .rodata utf8    ʌ6\vԘρ blocks=IPA Extensions,Basic Latin,Cyrillic Supplement,Greek and Coptic
+21  0x0000c64a 0x0805464a 6   7    .rodata ascii   _jbF~T
+22  0x0000c6b3 0x080546b3 6   7    .rodata ascii   11#?*0
+23  0x0000c721 0x08054721 4   6    .rodata utf8    aךz\f blocks=Basic Latin,Hebrew
+24  0x0000c768 0x08054768 6   7    .rodata ascii   ,4$8_@
+25  0x0000c774 0x08054774 7   10   .rodata utf8    \f%⼋I<(A blocks=Basic Latin,Kangxi Radicals
+26  0x0000c798 0x08054798 6   7    .rodata ascii   t\lHBW
+27  0x0000c7a2 0x080547a2 6   7    .rodata ascii   QPeA~S
+28  0x0000c7c1 0x080547c1 5   6    .rodata ascii   0 Umv
+29  0x0000c813 0x08054813 4   5    .rodata ascii   -!tX
+30  0x0000c84d 0x0805484d 5   6    .rodata ascii   SbEwd
+31  0x0000c860 0x08054860 4   5    .rodata ascii   hHpX
+32  0x0000c87d 0x0805487d 4   5    .rodata ascii   Uf*(
+33  0x0000c8be 0x080548be 4   6    .rodata utf8    ĊS.4 blocks=Latin Extended-A,Basic Latin
+34  0x0000c90e 0x0805490e 4   7    .rodata utf8    gwB谽 blocks=Basic Latin,CJK Unified Ideographs
+35  0x0000c935 0x08054935 4   5    .rodata ascii   +2Hp
+36  0x0000c93c 0x0805493c 4   5    .rodata ascii   rZlN
+37  0x0000c94c 0x0805494c 4   5    .rodata ascii   9-6'
+38  0x0000c955 0x08054955 5   6    .rodata ascii   \h!T[
+39  0x0000c95c 0x0805495c 7   8    .rodata ascii   .6$:g\n\f
+40  0x0000c978 0x08054978 4   5    .rodata ascii   KwZi
+41  0x0000c9be 0x080549be 4   5    .rodata ascii   [4)C
+42  0x0000c9dd 0x080549dd 4   6    .rodata utf8    Ƅ $J blocks=Latin Extended-B,Basic Latin
+43  0x0000ca18 0x08054a18 6   8    .rodata utf8    ,}Vؐ3" blocks=Basic Latin,Arabic
+44  0x0000ca4c 0x08054a4c 4   5    .rodata ascii   F~Tb
+45  0x0000ca97 0x08054a97 4   6    .rodata utf8    ~ϼ!\b blocks=Basic Latin,Greek and Coptic
+46  0x0000cab4 0x08054ab4 4   5    .rodata ascii   #?*1
+47  0x0000cabe 0x08054abe 6   9    .rodata utf8    5<Nt7ʂ blocks=Basic Latin,IPA Extensions
+48  0x0000caf9 0x08054af9 5   7    .rodata utf8    ,xQeF
+49  0x0000cb56 0x08054b56 4   5    .rodata ascii   _[o=
+50  0x0000cb67 0x08054b67 6   7    .rodata ascii   >4$8,@
+51  0x0000cb77 0x08054b77 4   5    .rodata ascii   \fI<(
+52  0x0000cb97 0x08054b97 6   7    .rodata ascii   p\lHtW
+53  0x0000cba4 0x08054ba4 4   5    .rodata ascii   A~Se
+54  0x0000cc19 0x08054c19 5   7    .rodata utf8    I)iɎD blocks=Basic Latin,Latin Extended-B
+55  0x0000cc4a 0x08054c4a 5   6    .rodata ascii   `3SbE
+56  0x0000cc5f 0x08054c5f 6   7    .rodata ascii   +HpXhE
+57  0x0000cc8b 0x08054c8b 6   8    .rodata utf8    {7ӥ\b(0 blocks=Basic Latin,Cyrillic
+58  0x0000cd22 0x08054d22 4   5    .rodata ascii   G\nB|
+59  0x0000cd3b 0x08054d3b 5   6    .rodata ascii   pZlNr
+60  0x0000cd4c 0x08054d4c 4   5    .rodata ascii   -6'9
+61  0x0000cd5b 0x08054d5b 7   8    .rodata ascii   T6$:.\n\f
+62  0x0000cd77 0x08054d77 5   6    .rodata ascii    wZiK
+63  0x0000cd87 0x08054d87 4   5    .rodata ascii   *"<C
+64  0x0000cdbd 0x08054dbd 4   5    .rodata ascii   [4~C
+65  0x0000cdda 0x08054dda 4   6    .rodata utf8    @"Ƅ  blocks=Basic Latin,Latin Extended-B
+66  0x0000ce4c 0x08054e4c 4   5    .rodata ascii   ~TbF
+67  0x0000ce82 0x08054e82 4   5    .rodata ascii   \txYn
+68  0x0000ceb4 0x08054eb4 4   5    .rodata ascii   ?*1#
+69  0x0000cebf 0x08054ebf 4   5    .rodata ascii   fNt7
+70  0x0000cf68 0x08054f68 4   5    .rodata ascii   $8,4
+71  0x0000cf76 0x08054f76 4   5    .rodata ascii   \f%<(
+72  0x0000cf98 0x08054f98 4   5    .rodata ascii   lHt\
+73  0x0000cf9e 0x08054f9e 4   5    .rodata ascii   BWQP
+74  0x0000cfa4 0x08054fa4 4   5    .rodata ascii   ~SeA
+75  0x0000d016 0x08055016 5   6    .rodata ascii   !tI)i
+76  0x0000d029 0x08055029 4   5    .rodata ascii   k>X'
+77  0x0000d049 0x08055049 5   6    .rodata ascii   `3QbE
+78  0x0000d05e 0x0805505e 6   7    .rodata ascii   +\bpXhH
+79  0x0000d08c 0x0805508c 4   6    .rodata utf8    ӥ\b70 blocks=Cyrillic,Basic Latin
+80  0x0000d10a 0x0805510a 4   5    .rodata ascii   C@gw
+81  0x0000d11f 0x0805511f 5   7    .rodata utf8    ȡG\n|| blocks=Latin Extended-B,Basic Latin
+82  0x0000d13c 0x0805513c 4   5    .rodata ascii   lNrZ
+83  0x0000d14a 0x0805514a 7   9    .rodata utf8    ծ6'9-\nd blocks=Armenian,Basic Latin
+84  0x0000d15a 0x0805515a 7   8    .rodata ascii   T[$:.6\f
+85  0x0000d178 0x08055178 4   5    .rodata ascii   ZiKw
+86  0x0000d1ba 0x080551ba 5   6    .rodata ascii   ;f[4~
+87  0x0000d1df 0x080551df 4   6    .rodata utf8    ƅ}$J blocks=Latin Extended-B,Basic Latin
+88  0x0000d22b 0x0805522b 5   9    .rodata utf8    ʘ6\vԦρ blocks=IPA Extensions,Basic Latin,Cyrillic Supplement,Greek and Coptic
+89  0x0000d24b 0x0805524b 5   6    .rodata ascii   _TbF~
+90  0x0000d281 0x08055281 4   5    .rodata ascii   \tx&n
+91  0x0000d2b4 0x080552b4 4   5    .rodata ascii   *1#?
+92  0x0000d367 0x08055367 5   6    .rodata ascii   h8,4$
+93  0x0000d397 0x08055397 5   6    .rodata ascii   2Ht\l
+94  0x0000d3a0 0x080553a0 11  48   .rodata utf32le R\tjÕ06¥8¿@£ blocks=Basic Latin,Latin-1 Supplement
+95  0x0000d408 0x08055408 8   36   .rodata utf32le CDÄÞéËT{ blocks=Basic Latin,Latin-1 Supplement
+96  0x0000d42c 0x0805542c 7   32   .rodata utf32le 2¦Â#=îL blocks=Basic Latin,Latin-1 Supplement
+97  0x0000d44c 0x0805544c 18  76   .rodata utf32le \vBúÃN\b.¡f(Ù$²v[¢Im blocks=Basic Latin,Latin-1 Supplement
+98  0x0000d49c 0x0805549c 5   24   .rodata utf32le %røöd blocks=Basic Latin,Latin-1 Supplement
+99  0x0000d4c8 0x080554c8 5   24   .rodata utf32le \Ì]e¶ blocks=Basic Latin,Latin-1 Supplement
+100 0x0000d4e0 0x080554e0 9   40   .rodata utf32le lpHPýí¹Ú^ blocks=Basic Latin,Latin-1 Supplement
+101 0x0000d53c 0x0805553c 4   20   .rodata utf32le \n÷äX blocks=Basic Latin,Latin-1 Supplement
+102 0x0000d5ac 0x080555ac 5   24   .rodata utf32le AOgÜê blocks=Basic Latin,Latin-1 Supplement
+103 0x0000d5e8 0x080555e8 5   24   .rodata utf32le t"ç­5 blocks=Basic Latin,Latin-1 Supplement
+104 0x0000d614 0x08055614 5   24   .rodata utf32le ußnGñ blocks=Basic Latin,Latin-1 Supplement
+105 0x0000d65c 0x0805565c 9   40   .rodata utf32le \eüV>KÆÒy  blocks=Basic Latin,Latin-1 Supplement
+106 0x0000d690 0x08055690 4   20   .rodata utf32le xÍZô blocks=Basic Latin,Latin-1 Supplement
+107 0x0000d6b4 0x080556b4 4   20   .rodata utf32le \aÇ1± blocks=Basic Latin,Latin-1 Supplement
+108 0x0000d6f8 0x080556f8 5   24   .rodata utf32le J\r-åz blocks=Basic Latin,Latin-1 Supplement
+109 0x0000d728 0x08055728 10  44   .rodata utf32le ;M®*õ°Èë»< blocks=Basic Latin,Latin-1 Supplement
+110 0x0000d76c 0x0805576c 7   32   .rodata utf32le ~ºwÖ&ái blocks=Basic Latin,Latin-1 Supplement
+111 0x0000d78c 0x0805578c 5   24   .rodata utf32le cU!\f}
+112 0x0000d7b5 0x080557b5 5   7    .rodata utf8    kkֱoo blocks=Basic Latin,Hebrew
+113 0x0000d7be 0x080557be 5   7    .rodata utf8    őP00` blocks=Latin Extended-A,Basic Latin
+114 0x0000d7cc 0x080557cc 4   5    .rodata ascii   }++V
+115 0x0000d82b 0x0805582b 13  14   .rodata ascii   =j&&LZ66lA??~
+116 0x0000d83e 0x0805583e 5   7    .rodata utf8    ̃\44h blocks=Combining Diacritical Marks,Basic Latin
+117 0x0000d856 0x08055856 6   8    .rodata utf8    ثS11b? blocks=Arabic,Basic Latin
+118 0x0000d866 0x08055866 6   8    .rodata utf8    Ǖe##F^ blocks=Latin Extended-B,Basic Latin
+119 0x0000d87f 0x0805587f 4   5    .rodata ascii   /\t\a\a
+120 0x0000d894 0x08055894 5   7    .rodata utf8    i''NͲ blocks=Basic Latin,Greek and Coptic
+121 0x0000d8a8 0x080558a8 5   6    .rodata ascii   t,,X.
+122 0x0000d8af 0x080558af 5   6    .rodata ascii   4-\e\e6
+123 0x0000d8c4 0x080558c4 5   6    .rodata ascii   M;;va
+124 0x0000d8cf 0x080558cf 6   7    .rodata ascii   }{))R>
+125 0x0000d8d8 0x080558d8 4   5    .rodata ascii   q//^
+126 0x0000d8f0 0x080558f0 4   5    .rodata ascii   `  @
+127 0x0000d90b 0x0805590b 5   6    .rodata ascii   gK99r
+128 0x0000d938 0x08055938 4   5    .rodata ascii   U33f
+129 0x0000d954 0x08055954 4   5    .rodata ascii   D<<x
+130 0x0000d977 0x08055977 5   6    .rodata ascii   !H88p
+131 0x0000d98a 0x0805598a 6   8    .rodata utf8    گc!!B0 blocks=Arabic,Basic Latin
+132 0x0000d9cc 0x080559cc 4   5    .rodata ascii   G==z
+133 0x0000d9ee 0x080559ee 9   11   .rodata utf8    ܣf""D~**T blocks=Syriac,Basic Latin
+134 0x0000da24 0x08055a24 8   9    .rodata ascii   V22dN::t
+135 0x0000da37 0x08055a37 5   6    .rodata ascii   \fl$$H
+136 0x0000da66 0x08055a66 5   7    .rodata utf8    ȋY77n blocks=Latin Extended-B,Basic Latin
+137 0x0000da8f 0x08055a8f 6   9    .rodata utf8    ϯeeʎzz blocks=Greek and Coptic,Basic Latin,IPA Extensions
+138 0x0000daa8 0x08055aa8 9   10   .rodata ascii   o%%Jr..\$
+139 0x0000dae4 0x08055ae4 5   7    .rodata utf8    B>>|ĵ blocks=Basic Latin,Latin Extended-A
+140 0x0000db04 0x08055b04 4   5    .rodata ascii   _55j
+141 0x0000db58 0x08055b58 5   6    .rodata ascii   x((Pz
+142 0x0000db87 0x08055b87 5   6    .rodata ascii   )w--Z
+143 0x0000db9f 0x08055b9f 6   8    .rodata utf8    ,ccƥ|| blocks=Basic Latin,Latin Extended-B
+144 0x0000dbb3 0x08055bb3 7   10   .rodata utf8    \rkkֽooޱ blocks=Basic Latin,Hebrew,Thaana
+145 0x0000dbbd 0x08055bbd 6   8    .rodata utf8    őT00`P blocks=Latin Extended-A,Basic Latin
+146 0x0000dbc8 0x08055bc8 7   9    .rodata utf8    ggΩ++V} blocks=Basic Latin,Greek and Coptic
+147 0x0000dbe9 0x08055be9 4   6    .rodata utf8    ɉ@}} blocks=Latin Extended-B,Basic Latin
+148 0x0000dc2c 0x08055c2c 12  13   .rodata ascii   &&Lj66lZ??~A
+149 0x0000dc3d 0x08055c3d 6   8    .rodata utf8    ̃O44h\ blocks=Combining Diacritical Marks,Basic Latin
+150 0x0000dc55 0x08055c55 6   8    .rodata utf8    ثs11bS blocks=Arabic,Basic Latin
+151 0x0000dc65 0x08055c65 6   8    .rodata utf8    ǕR##Fe blocks=Latin Extended-B,Basic Latin
+152 0x0000dc93 0x08055c93 5   6    .rodata ascii   &''Ni
+153 0x0000dca8 0x08055ca8 4   5    .rodata ascii   ,,Xt
+154 0x0000dcae 0x08055cae 11  13   .rodata utf8    4.\e\e6-nnܲZZ blocks=Basic Latin,Syriac
+155 0x0000dcc4 0x08055cc4 4   5    .rodata ascii   ;;vM
+156 0x0000dcd0 0x08055cd0 4   5    .rodata ascii   ))R{
+157 0x0000dcd7 0x08055cd7 5   6    .rodata ascii   >//^q
+158 0x0000dcef 0x08055cef 5   6    .rodata ascii   ,  @`
+159 0x0000dd0c 0x08055d0c 6   7    .rodata ascii   99rKJJ
+160 0x0000dd38 0x08055d38 4   5    .rodata ascii   33fU
+161 0x0000dd54 0x08055d54 4   5    .rodata ascii   <<xD
+162 0x0000dd78 0x08055d78 4   5    .rodata ascii   88pH
+163 0x0000dd89 0x08055d89 6   8    .rodata utf8    گu!!Bc blocks=Arabic,Basic Latin
+164 0x0000dda1 0x08055da1 4   6    .rodata utf8    ́L\f\f blocks=Combining Diacritical Marks,Basic Latin
+165 0x0000ddcc 0x08055dcc 9   11   .rodata utf8    ==zGddȬ]] blocks=Basic Latin,Latin Extended-B
+166 0x0000ddda 0x08055dda 4   5    .rodata ascii   2+ss
+167 0x0000ddf0 0x08055df0 8   9    .rodata ascii   ""Df**T~
+168 0x0000de11 0x08055e11 4   6    .rodata utf8    ާy^^ blocks=Thaana,Basic Latin
+169 0x0000de23 0x08055e23 11  12   .rodata ascii   ;22dV::tN\n\n
+170 0x0000de36 0x08055e36 8   9    .rodata ascii   \f\n$$Hl\\
+171 0x0000de65 0x08055e65 9   12   .rodata utf8    ȋC77nYmmڷ blocks=Latin Extended-B,Basic Latin,Arabic
+172 0x0000de75 0x08055e75 4   6    .rodata utf8    ձdNN blocks=Armenian,Basic Latin
+173 0x0000de80 0x08055e80 5   7    .rodata utf8    llشVV blocks=Basic Latin,Arabic
+174 0x0000de8f 0x08055e8f 8   13   .rodata utf8    %eeʯzz􎮮G blocks=Basic Latin,IPA Extensions,Supplementary Private Use Area-B
+175 0x0000dea8 0x08055ea8 8   9    .rodata ascii   %%Jo..\r
+176 0x0000dec5 0x08055ec5 4   6    .rodata utf8    ݡ|tt blocks=Arabic Supplement,Basic Latin
+177 0x0000dece 0x08055ece 4   5    .rodata ascii   >!KK
+178 0x0000dee4 0x08055ee4 4   5    .rodata ascii   >>|B
+179 0x0000deec 0x08055eec 5   7    .rodata utf8    ff̪HH blocks=Basic Latin,Combining Diacritical Marks
+180 0x0000df00 0x08055f00 9   11   .rodata utf8    aa£55j_WW blocks=Basic Latin,Latin-1 Supplement
+181 0x0000df2e 0x08055f2e 5   7    .rodata utf8    "3iiһ blocks=Basic Latin,Cyrillic
+182 0x0000df51 0x08055f51 4   6    .rodata utf8    ·IUU blocks=Greek and Coptic,Basic Latin
+183 0x0000df58 0x08055f58 4   5    .rodata ascii   ((Px
+184 0x0000df7c 0x08055f7c 5   7    .rodata utf8    hhиAA blocks=Basic Latin,Cyrillic
+185 0x0000df88 0x08055f88 4   5    .rodata ascii   --Zw
+186 0x0000df9e 0x08055f9e 6   8    .rodata utf8    ,:cƥc| blocks=Basic Latin,Latin Extended-B
+187 0x0000dfb4 0x08055fb4 8   12   .rodata utf8    kֽkoޱoőT blocks=Basic Latin,Hebrew,Thaana,Latin Extended-A
+188 0x0000dfc0 0x08055fc0 4   5    .rodata ascii   0`P0
+189 0x0000dfc8 0x08055fc8 7   9    .rodata utf8    gΩg+V}+ blocks=Basic Latin,Greek and Coptic
+190 0x0000dfdf 0x08055fdf 4   7    .rodata utf8    vʏEʂ blocks=Basic Latin,IPA Extensions
+191 0x0000e004 0x08056004 4   7    .rodata utf8    ԳgԢ_ blocks=Armenian,Basic Latin,Cyrillic Supplement
+192 0x0000e01b 0x0805601b 6   10   .rodata utf8    r\e[7u· blocks=Basic Latin,Latin-1 Supplement
+193 0x0000e02c 0x0805602c 12  13   .rodata ascii   &Lj&6lZ6?~A?
+194 0x0000e040 0x08056040 4   5    .rodata ascii   4h\4
+195 0x0000e058 0x08056058 4   5    .rodata ascii   1bS1
+196 0x0000e068 0x08056068 6   8    .rodata utf8    #Fe#Ý^ blocks=Basic Latin,Latin-1 Supplement
+197 0x0000e094 0x08056094 4   5    .rodata ascii   'Ni'
+198 0x0000e0a8 0x080560a8 4   5    .rodata ascii   ,Xt,
+199 0x0000e0b0 0x080560b0 8   10   .rodata utf8    \e6-\enܲnZ blocks=Basic Latin,Syriac
+200 0x0000e0c3 0x080560c3 14  18   .rodata utf8    R;vM;ַaֳ}γ)R{) blocks=Basic Latin,Hebrew,Greek and Coptic
+201 0x0000e0d8 0x080560d8 4   5    .rodata ascii   /^q/
+202 0x0000e0f0 0x080560f0 4   5    .rodata ascii    @` 
+203 0x0000e0ff 0x080560ff 14  19   .rodata utf8    [jԾjˍF˾gپ9rK9J blocks=Basic Latin,Armenian,Spacing Modifier Letters,Arabic
+204 0x0000e137 0x08056137 5   6    .rodata ascii   M3fU3
+205 0x0000e153 0x08056153 5   6    .rodata ascii   P<xD<
+206 0x0000e178 0x08056178 4   5    .rodata ascii   8pH8
+207 0x0000e185 0x08056185 4   7    .rodata utf8    wvگu blocks=Basic Latin,Arabic
+208 0x0000e18c 0x0805618c 4   5    .rodata ascii   !Bc!
+209 0x0000e1c0 0x080561c0 4   7    .rodata utf8    ēWħU blocks=Latin Extended-A,Basic Latin
+210 0x0000e1cb 0x080561cb 9   11   .rodata utf8    ~=zG=dȬd] blocks=Basic Latin,Latin Extended-B
+211 0x0000e1df 0x080561df 4   6    .rodata utf8    s` `
+212 0x0000e1f0 0x080561f0 8   9    .rodata ascii   "Df"*T~*
+213 0x0000e224 0x08056224 9   10   .rodata ascii   2dV2:tN:\n
+214 0x0000e238 0x08056238 5   6    .rodata ascii   $Hl$\
+215 0x0000e244 0x08056244 4   7    .rodata utf8    ӽnӬC blocks=Cyrillic,Basic Latin
+216 0x0000e268 0x08056268 7   9    .rodata utf8    7nY7mڷm blocks=Basic Latin,Arabic
+217 0x0000e280 0x08056280 4   6    .rodata utf8    lشlV blocks=Basic Latin,Arabic
+218 0x0000e290 0x08056290 4   6    .rodata utf8    eʯez blocks=Basic Latin,IPA Extensions
+219 0x0000e2a7 0x080562a7 9   10   .rodata ascii   x%Jo%.\r.
+220 0x0000e2b9 0x080562b9 4   7    .rodata utf8    sǴƗQ blocks=Basic Latin,Latin Extended-B
+221 0x0000e2e3 0x080562e3 5   6    .rodata ascii   p>|B>
+222 0x0000e2e9 0x080562e9 6   9    .rodata utf8    qĵf̪fH blocks=Basic Latin,Latin Extended-A,Combining Diacritical Marks
+223 0x0000e300 0x08056300 8   10   .rodata utf8    a£a5j_5W blocks=Basic Latin,Latin-1 Supplement
+224 0x0000e330 0x08056330 7   11   .rodata utf8    iһi٩pَ\a blocks=Basic Latin,Cyrillic,Arabic
+225 0x0000e357 0x08056357 8   11   .rodata utf8    U(Px(ߥzߌ blocks=Basic Latin,NKo
+226 0x0000e37b 0x0805637b 5   7    .rodata utf8    BhиhA blocks=Basic Latin,Cyrillic
+227 0x0000e388 0x08056388 4   5    .rodata ascii   -Zw-
+228 0x0000e3b4 0x080563b4 6   9    .rodata utf8    ֽkkޱoo blocks=Hebrew,Basic Latin,Thaana
+229 0x0000e3c0 0x080563c0 4   5    .rodata ascii   `P00
+230 0x0000e3c8 0x080563c8 7   9    .rodata utf8    ΩggV}++ blocks=Greek and Coptic,Basic Latin
+231 0x0000e42c 0x0805642c 12  13   .rodata ascii   Lj&&lZ66~A??
+232 0x0000e440 0x08056440 5   6    .rodata ascii   h\44Q
+233 0x0000e458 0x08056458 6   7    .rodata ascii   bS11*?
+234 0x0000e468 0x08056468 4   5    .rodata ascii   Fe##
+235 0x0000e481 0x08056481 5   6    .rodata ascii   \t\a\a$6
+236 0x0000e494 0x08056494 4   5    .rodata ascii   Ni''
+237 0x0000e4a8 0x080564a8 6   7    .rodata ascii   Xt,,4.
+238 0x0000e4b0 0x080564b0 7   9    .rodata utf8    6-\e\eܲnn blocks=Basic Latin,Syriac
+239 0x0000e4c2 0x080564c2 6   7    .rodata ascii   RRvM;;
+240 0x0000e4d0 0x080564d0 4   5    .rodata ascii   R{))
+241 0x0000e4d8 0x080564d8 4   5    .rodata ascii   ^q//
+242 0x0000e4f0 0x080564f0 4   5    .rodata ascii   @`  
+243 0x0000e4fe 0x080564fe 5   7    .rodata utf8    [[Ծjj blocks=Basic Latin,Armenian
+244 0x0000e50c 0x0805650c 4   5    .rodata ascii   rK99
+245 0x0000e536 0x08056536 6   7    .rodata ascii   MMfU33
+246 0x0000e552 0x08056552 7   8    .rodata ascii   PPxD<<%
+247 0x0000e578 0x08056578 4   5    .rodata ascii   pH88
+248 0x0000e58c 0x0805658c 6   7    .rodata ascii   Bc!! 0
+249 0x0000e5a6 0x080565a6 4   5    .rodata ascii   \f\f&5
+250 0x0000e5ba 0x080565ba 4   5    .rodata ascii   DD.9
+251 0x0000e5ca 0x080565ca 9   11   .rodata utf8    ~~zG==Ȭdd blocks=Basic Latin,Latin Extended-B
+252 0x0000e5d6 0x080565d6 4   5    .rodata ascii   ]]2+
+253 0x0000e5de 0x080565de 5   7    .rodata utf8    ss ``
+254 0x0000e5f0 0x080565f0 9   10   .rodata ascii   Df""T~**;
+255 0x0000e624 0x08056624 8   9    .rodata ascii   dV22tN::
+256 0x0000e632 0x08056632 4   5    .rodata ascii   II\f\n
+257 0x0000e638 0x08056638 4   5    .rodata ascii   Hl$$
+258 0x0000e648 0x08056648 6   10   .rodata utf8    CשּׁĦbb9 blocks=Basic Latin,Alphabetic Presentation Forms,Latin Extended-A
+259 0x0000e668 0x08056668 7   9    .rodata utf8    nY77ڷmm blocks=Basic Latin,Arabic
+260 0x0000e67a 0x0805667a 7   11   .rodata utf8    NNI੩شll blocks=Basic Latin,Gurmukhi,Arabic
+261 0x0000e696 0x08056696 4   7    .rodata utf8    zzG鮮 blocks=Basic Latin,CJK Unified Ideographs
+262 0x0000e69e 0x0805669e 4   6    .rodata utf8    \b\boպ blocks=Basic Latin,Armenian
+263 0x0000e6a6 0x080566a6 12  13   .rodata ascii   xxJo%%\r..8$
+264 0x0000e6ca 0x080566ca 4   5    .rodata ascii   tt>!
+265 0x0000e6d2 0x080566d2 4   6    .rodata utf8    KKaܽ blocks=Basic Latin,Syriac
+266 0x0000e6e2 0x080566e2 8   10   .rodata utf8    pp|B>>qĵ blocks=Basic Latin,Latin Extended-A
+267 0x0000e700 0x08056700 7   9    .rodata utf8    £aaj_55 blocks=Latin-1 Supplement,Basic Latin
+268 0x0000e70a 0x0805670a 4   6    .rodata utf8    WWiй blocks=Basic Latin,Cyrillic
+269 0x0000e756 0x08056756 6   7    .rodata ascii   UUPx((
+270 0x0000e76e 0x0805676e 4   6    .rodata utf8    \r\reڿ blocks=Basic Latin,Arabic
+271 0x0000e77a 0x0805677a 5   7    .rodata utf8    BBиhh blocks=Basic Latin,Cyrillic
+272 0x0000e788 0x08056788 4   5    .rodata ascii   Zw--
+273 0x0000e796 0x08056796 4   6    .rodata utf8    TTmֻ blocks=Basic Latin,Hebrew
+274 0x0000e7a0 0x080567a0 9   40   .rodata utf32le c|w{òkoÅ0 blocks=Basic Latin,Latin-1 Supplement
+275 0x0000e7c8 0x080567c8 7   32   .rodata utf32le g+þ×«vÊ blocks=Basic Latin,Latin-1 Supplement
+276 0x0000e7ec 0x080567ec 9   40   .rodata utf32le }úYGð­Ô¢¯ blocks=Basic Latin,Latin-1 Supplement
+277 0x0000e818 0x08056818 4   20   .rodata utf32le rÀ·ý blocks=Basic Latin,Latin-1 Supplement
+278 0x0000e82c 0x0805682c 12  52   .rodata utf32le &6?÷Ì4¥åñqØ1 blocks=Basic Latin,Latin-1 Supplement
+279 0x0000e894 0x08056894 4   20   .rodata utf32le '²u\t blocks=Basic Latin,Latin-1 Supplement
+280 0x0000e8b0 0x080568b0 11  48   .rodata utf32le \enZ R;Ö³)ã/ blocks=Basic Latin,Latin-1 Supplement
+281 0x0000e8f0 0x080568f0 19  80   .rodata utf32le  ü±[jË¾9JLXÏÐïªûCM3 blocks=Basic Latin,Latin-1 Supplement
+282 0x0000e978 0x08056978 6   28   .rodata utf32le 8õ¼¶Ú! blocks=Basic Latin,Latin-1 Supplement
+283 0x0000e9c8 0x080569c8 4   20   .rodata utf32le ~=d]
+284 0x0000e9e8 0x080569e8 4   20   .rodata utf32le OÜ"* blocks=Basic Latin,Latin-1 Supplement
+285 0x0000ea14 0x08056a14 8   36   .rodata utf32le ^\vÛà2:\nI blocks=Basic Latin,Latin-1 Supplement
+286 0x0000ea38 0x08056a38 6   28   .rodata utf32le $\ÂÓ¬b blocks=Basic Latin,Latin-1 Supplement
+287 0x0000ea5c 0x08056a5c 5   24   .rodata utf32le yçÈ7m blocks=Basic Latin,Latin-1 Supplement
+288 0x0000ea78 0x08056a78 14  60   .rodata utf32le N©lVôêez®\bºx%. blocks=Basic Latin,Latin-1 Supplement
+289 0x0000eae0 0x08056ae0 5   24   .rodata utf32le p>µfH blocks=Basic Latin,Latin-1 Supplement
+290 0x0000eb00 0x08056b00 4   20   .rodata utf32le a5W¹ blocks=Basic Latin,Latin-1 Supplement
+291 0x0000eb6c 0x08056b6c 6   28   .rodata utf32le \r¿æBhA blocks=Basic Latin,Latin-1 Supplement
+arch     x86
+baddr    0x8048000
+binsz    63334
+bintype  elf
+bits     32
+canary   false
+class    ELF32
+compiler GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-23) GCC: (GNU) 4.4.7 20120313 (Red Hat 4.4.7-11)
+crypto   false
+endian   little
+havecode true
+intrp    /lib/ld-linux.so.2
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  Intel 80386
+nx       true
+os       linux
+pic      false
+relocs   false
+relro    no
+rpath    NONE
+sanitize false
+static   false
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF MAGIC   0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x0003
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x080494e0
+0x0000001c  PhOff       0x00000034
+0x00000020  ShOff       0x0000f768
+0x00000024  Flags       0x00000000
+0x00000028  EhSize      52
+0x0000002a  PhentSize   32
+0x0000002c  PhNum       8
+0x0000002e  ShentSize   40
+0x00000030  ShNum       28
+0x00000032  ShrStrndx   27
+[Linked libraries]
+libutil.so.1
+libpthread.so.0
+libdl.so.2
+libc.so.6
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x080570f4 0x0000f0f4 SET_32 __gmon_start__
+0x08057104 0x0000f104 SET_32 __errno_location
+0x08057108 0x0000f108 SET_32 sigemptyset
+0x0805710c 0x0000f10c SET_32 sprintf
+0x08057110 0x0000f110 SET_32 srand
+0x08057114 0x0000f114 SET_32 connect
+0x08057118 0x0000f118 SET_32 mkdir
+0x0805711c 0x0000f11c SET_32 daemon
+0x08057120 0x0000f120 SET_32 pthread_attr_setdetachstate
+0x08057124 0x0000f124 SET_32 inet_ntoa
+0x08057128 0x0000f128 SET_32 shutdown
+0x0805712c 0x0000f12c SET_32 signal
+0x08057130 0x0000f130 SET_32 __gmon_start__
+0x08057134 0x0000f134 SET_32 pthread_cond_signal
+0x08057138 0x0000f138 SET_32 localtime
+0x0805713c 0x0000f13c SET_32 recv
+0x08057140 0x0000f140 SET_32 inet_addr
+0x08057144 0x0000f144 SET_32 strncpy
+0x08057148 0x0000f148 SET_32 ttyname
+0x0805714c 0x0000f14c SET_32 write
+0x08057150 0x0000f150 SET_32 listen
+0x08057154 0x0000f154 SET_32 fgets
+0x08057158 0x0000f158 SET_32 rename
+0x0805715c 0x0000f15c SET_32 memset
+0x08057160 0x0000f160 SET_32 setsid
+0x08057164 0x0000f164 SET_32 __libc_start_main
+0x08057168 0x0000f168 SET_32 execl
+0x0805716c 0x0000f16c SET_32 pthread_cond_timedwait
+0x08057170 0x0000f170 SET_32 strrchr
+0x08057174 0x0000f174 SET_32 fseeko64
+0x08057178 0x0000f178 SET_32 chmod
+0x0805717c 0x0000f17c SET_32 pthread_attr_setstacksize
+0x08057180 0x0000f180 SET_32 read
+0x08057184 0x0000f184 SET_32 usleep
+0x08057188 0x0000f188 SET_32 readdir
+0x0805718c 0x0000f18c SET_32 gettimeofday
+0x08057190 0x0000f190 SET_32 strtol
+0x08057194 0x0000f194 SET_32 free
+0x08057198 0x0000f198 SET_32 __lxstat64
+0x0805719c 0x0000f19c SET_32 access
+0x080571a0 0x0000f1a0 SET_32 dlsym
+0x080571a4 0x0000f1a4 SET_32 pthread_cond_init
+0x080571a8 0x0000f1a8 SET_32 opendir
+0x080571ac 0x0000f1ac SET_32 accept
+0x080571b0 0x0000f1b0 SET_32 ioctl
+0x080571b4 0x0000f1b4 SET_32 socket
+0x080571b8 0x0000f1b8 SET_32 dup2
+0x080571bc 0x0000f1bc SET_32 fseek
+0x080571c0 0x0000f1c0 SET_32 pthread_mutex_unlock
+0x080571c4 0x0000f1c4 SET_32 pthread_attr_init
+0x080571c8 0x0000f1c8 SET_32 fclose
+0x080571cc 0x0000f1cc SET_32 memcpy
+0x080571d0 0x0000f1d0 SET_32 execv
+0x080571d4 0x0000f1d4 SET_32 fopen
+0x080571d8 0x0000f1d8 SET_32 pthread_mutex_destroy
+0x080571dc 0x0000f1dc SET_32 waitpid
+0x080571e0 0x0000f1e0 SET_32 pthread_sigmask
+0x080571e4 0x0000f1e4 SET_32 feof
+0x080571e8 0x0000f1e8 SET_32 strcpy
+0x080571ec 0x0000f1ec SET_32 dlopen
+0x080571f0 0x0000f1f0 SET_32 bind
+0x080571f4 0x0000f1f4 SET_32 pthread_mutex_init
+0x080571f8 0x0000f1f8 SET_32 putenv
+0x080571fc 0x0000f1fc SET_32 select
+0x08057200 0x0000f200 SET_32 openpty
+0x08057204 0x0000f204 SET_32 closedir
+0x08057208 0x0000f208 SET_32 close
+0x0805720c 0x0000f20c SET_32 fwrite
+0x08057210 0x0000f210 SET_32 strstr
+0x08057214 0x0000f214 SET_32 time
+0x08057218 0x0000f218 SET_32 remove
+0x0805721c 0x0000f21c SET_32 malloc
+0x08057220 0x0000f220 SET_32 pthread_mutex_lock
+0x08057224 0x0000f224 SET_32 fseeko
+0x08057228 0x0000f228 SET_32 gethostname
+0x0805722c 0x0000f22c SET_32 pthread_create
+0x08057230 0x0000f230 SET_32 sigaddset
+0x08057234 0x0000f234 SET_32 readlink
+0x08057238 0x0000f238 SET_32 strcat
+0x0805723c 0x0000f23c SET_32 send
+0x08057240 0x0000f240 SET_32 fork
+0x08057244 0x0000f244 SET_32 setsockopt
+0x08057248 0x0000f248 SET_32 fcntl
+0x0805724c 0x0000f24c SET_32 rand
+0x08057250 0x0000f250 SET_32 fread
+0x08057254 0x0000f254 SET_32 gethostbyname
+0x08057258 0x0000f258 SET_32 strcmp
+0x0805725c 0x0000f25c SET_32 exit
+
+
+88 relocations
+63334
+Version symbols section '.gnu.version' contains 90 entries:
+ Addr: 0x08048ae2  Offset: 0x00000ae2  Link: 5 (.dynsym)
+  0x00000000: 0 (*local*)
+  0x00000001: 2 (GLIBC_2.0)
+  0x00000002: 3 (GLIBC_2.0)
+  0x00000005: 2 (GLIBC_2.0)
+  0x00000006: 3 (GLIBC_2.0)
+  0x00000008: 2 (GLIBC_2.0)
+  0x00000009: 3 (GLIBC_2.0)
+  0x0000000c: 0 (*local*)
+  0x0000000e: 4 (GLIBC_2.3.2)
+  0x0000000f: 3 (GLIBC_2.0)
+  0x00000010: 2 (GLIBC_2.0)
+  0x00000011: 3 (GLIBC_2.0)
+  0x00000014: 2 (GLIBC_2.0)
+  0x00000015: 3 (GLIBC_2.0)
+  0x0000001c: 4 (GLIBC_2.3.2)
+  0x0000001d: 3 (GLIBC_2.0)
+  0x0000001e: 5 (GLIBC_2.1)
+  0x0000001f: 3 (GLIBC_2.0)
+  0x00000020: 6 (GLIBC_2.1)
+  0x00000021: 2 (GLIBC_2.0)
+  0x00000022: 3 (GLIBC_2.0)
+  0x00000027: 7 (GLIBC_2.2)
+  0x00000028: 3 (GLIBC_2.0)
+  0x00000029: 8 (GLIBC_2.0)
+  0x0000002a: 4 (GLIBC_2.3.2)
+  0x0000002b: 3 (GLIBC_2.0)
+  0x0000002c: 2 (GLIBC_2.0)
+  0x0000002d: 3 (GLIBC_2.0)
+  0x00000031: 2 (GLIBC_2.0)
+  0x00000032: 6 (GLIBC_2.1)
+  0x00000033: 5 (GLIBC_2.1)
+  0x00000034: 3 (GLIBC_2.0)
+  0x00000036: 5 (GLIBC_2.1)
+  0x00000037: 2 (GLIBC_2.0)
+  0x0000003a: 3 (GLIBC_2.0)
+  0x0000003c: 9 (GLIBC_2.1)
+  0x0000003d: 3 (GLIBC_2.0)
+  0x0000003e: 2 (GLIBC_2.0)
+  0x0000003f: 3 (GLIBC_2.0)
+  0x00000041: a (GLIBC_2.0)
+  0x00000042: 3 (GLIBC_2.0)
+  0x00000043: 2 (GLIBC_2.0)
+  0x00000044: 3 (GLIBC_2.0)
+  0x00000049: 2 (GLIBC_2.0)
+  0x0000004a: 5 (GLIBC_2.1)
+  0x0000004b: 3 (GLIBC_2.0)
+  0x0000004c: 6 (GLIBC_2.1)
+  0x0000004d: 3 (GLIBC_2.0)
+  0x00000050: 2 (GLIBC_2.0)
+  0x00000052: 3 (GLIBC_2.0)
+  0x00000053: 2 (GLIBC_2.0)
+  0x00000054: 3 (GLIBC_2.0)
+  0x00000059: 1 (*global*)
+
+
+Version need section '.gnu.version_r' contains 4 entries:
+ Addr: 0x08048b98  Offset: 0x00000b98  Link to section: 6 (.dynstr)
+  0x00000000: Version: 1  File: libutil.so.1  Cnt: 1
+  0x00000010:   Name: GLIBC_2.0  Flags: none Version: 10
+  0x00000020: Version: 1  File: libdl.so.2  Cnt: 2
+  0x00000030:   Name: GLIBC_2.1  Flags: none Version: 9
+  0x00000040:   Name: GLIBC_2.0  Flags: none Version: 8
+  0x00000050: Version: 1  File: libc.so.6  Cnt: 3
+  0x00000060:   Name: GLIBC_2.2  Flags: none Version: 7
+  0x00000070:   Name: GLIBC_2.1  Flags: none Version: 5
+  0x00000080:   Name: GLIBC_2.0  Flags: none Version: 3
+  0x00000090: Version: 1  File: libpthread.so.0  Cnt: 3
+  0x000000a0:   Name: GLIBC_2.1  Flags: none Version: 6
+  0x000000b0:   Name: GLIBC_2.3.2  Flags: none Version: 4
+  0x000000c0:   Name: GLIBC_2.0  Flags: none Version: 2
+Section to Segment mapping:
+Segment      Section
+--------------------
+PHDR         
+INTERP       .interp 
+LOAD0        .interp .note.ABI-tag .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rel.dyn .rel.plt .init .plt .text .fini .rodata .eh_frame_hdr .eh_frame 
+LOAD1        .ctors .dtors .jcr .dynamic .got .got.plt .data .bss 
+DYNAMIC      .dynamic 
+NOTE         .note.ABI-tag .note.gnu.build-id 
+GNU_EH_FRAME .eh_frame_hdr 
+GNU_STACK    
+ehdr         
+
+

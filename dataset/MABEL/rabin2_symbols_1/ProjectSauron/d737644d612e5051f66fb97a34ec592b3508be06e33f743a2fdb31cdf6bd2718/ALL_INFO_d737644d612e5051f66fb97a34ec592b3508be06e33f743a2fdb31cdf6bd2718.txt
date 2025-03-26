@@ -1,0 +1,237 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400    0x600 0x10001000   0x1000 -r-x .text
+1   0x00000a00    0x400 0x10002000   0x1000 -r-- .rdata
+2   0x00000e00    0x200 0x10003000   0x1000 -rw- .data
+3   0x00001000    0x200 0x10004000   0x1000 -r-- .reloc
+4   0x00001200  0x2e200 0x10005000  0x2f000 -r-- .bin
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10001370 paddr=0x00000770 haddr=0x00000120 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10002000 NONE FUNC KERNEL32.dll DisableThreadLibraryCalls
+2   0x10002004 NONE FUNC KERNEL32.dll VirtualAlloc
+3   0x10002008 NONE FUNC KERNEL32.dll GetProcAddress
+4   0x1000200c NONE FUNC KERNEL32.dll GetCurrentDirectoryW
+5   0x10002010 NONE FUNC KERNEL32.dll GetSystemDirectoryW
+6   0x10002014 NONE FUNC KERNEL32.dll GetProcessHeap
+7   0x10002018 NONE FUNC KERNEL32.dll VirtualFree
+8   0x1000201c NONE FUNC KERNEL32.dll LoadLibraryA
+9   0x10002020 NONE FUNC KERNEL32.dll HeapAlloc
+1   0x10002028 NONE FUNC MSVCRT.dll   _adjust_fdiv
+2   0x1000202c NONE FUNC MSVCRT.dll   _initterm
+3   0x10002030 NONE FUNC MSVCRT.dll   free
+4   0x10002034 NONE FUNC MSVCRT.dll   malloc
+5   0x10002038 NONE FUNC MSVCRT.dll   strncmp
+6   0x1000203c NONE FUNC MSVCRT.dll   _except_handler3
+7   0x10002040 NONE FUNC MSVCRT.dll   memset
+8   0x10002044 NONE FUNC MSVCRT.dll   memcpy
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000526 0x10001126 GLOBAL FUNC 0    .            InitializeChangeNotify
+2   0x00000521 0x10001121 GLOBAL FUNC 0    .            PasswordChangeNotify
+1   0x00000a00 0x10002000 NONE   FUNC 0    KERNEL32.dll imp.DisableThreadLibraryCalls
+2   0x00000a04 0x10002004 NONE   FUNC 0    KERNEL32.dll imp.VirtualAlloc
+3   0x00000a08 0x10002008 NONE   FUNC 0    KERNEL32.dll imp.GetProcAddress
+4   0x00000a0c 0x1000200c NONE   FUNC 0    KERNEL32.dll imp.GetCurrentDirectoryW
+5   0x00000a10 0x10002010 NONE   FUNC 0    KERNEL32.dll imp.GetSystemDirectoryW
+6   0x00000a14 0x10002014 NONE   FUNC 0    KERNEL32.dll imp.GetProcessHeap
+7   0x00000a18 0x10002018 NONE   FUNC 0    KERNEL32.dll imp.VirtualFree
+8   0x00000a1c 0x1000201c NONE   FUNC 0    KERNEL32.dll imp.LoadLibraryA
+9   0x00000a20 0x10002020 NONE   FUNC 0    KERNEL32.dll imp.HeapAlloc
+1   0x00000a28 0x10002028 NONE   FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+2   0x00000a2c 0x1000202c NONE   FUNC 0    MSVCRT.dll   imp._initterm
+3   0x00000a30 0x10002030 NONE   FUNC 0    MSVCRT.dll   imp.free
+4   0x00000a34 0x10002034 NONE   FUNC 0    MSVCRT.dll   imp.malloc
+5   0x00000a38 0x10002038 NONE   FUNC 0    MSVCRT.dll   imp.strncmp
+6   0x00000a3c 0x1000203c NONE   FUNC 0    MSVCRT.dll   imp._except_handler3
+7   0x00000a40 0x10002040 NONE   FUNC 0    MSVCRT.dll   imp.memset
+8   0x00000a44 0x10002044 NONE   FUNC 0    MSVCRT.dll   imp.memcpy
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000a4c 0x1000204c 4   5    .rdata  ascii   .bin
+1   0x00000a54 0x10002054 10  22   .rdata  utf16le HKEY_USERS
+2   0x00000a74 0x10002074 19  40   .rdata  utf16le HKEY_CURRENT_CONFIG
+3   0x00000a9c 0x1000209c 4   10   .rdata  utf16le HKCC
+4   0x00000aa8 0x100020a8 17  36   .rdata  utf16le HKEY_CURRENT_USER
+5   0x00000acc 0x100020cc 4   10   .rdata  utf16le HKCU
+6   0x00000ad8 0x100020d8 17  36   .rdata  utf16le HKEY_CLASSES_ROOT
+7   0x00000afc 0x100020fc 4   10   .rdata  utf16le HKCR
+8   0x00000b08 0x10002108 18  38   .rdata  utf16le HKEY_LOCAL_MACHINE
+9   0x00000b30 0x10002130 4   10   .rdata  utf16le HKLM
+10  0x00000bd6 0x100021d6 9   10   .rdata  ascii   HeapAlloc
+11  0x00000be2 0x100021e2 11  12   .rdata  ascii   VirtualFree
+12  0x00000bf0 0x100021f0 14  15   .rdata  ascii   GetProcessHeap
+13  0x00000c02 0x10002202 19  20   .rdata  ascii   GetSystemDirectoryW
+14  0x00000c18 0x10002218 20  21   .rdata  ascii   GetCurrentDirectoryW
+15  0x00000c30 0x10002230 14  15   .rdata  ascii   GetProcAddress
+16  0x00000c42 0x10002242 12  13   .rdata  ascii   VirtualAlloc
+17  0x00000c52 0x10002252 25  26   .rdata  ascii   DisableThreadLibraryCalls
+18  0x00000c6e 0x1000226e 12  13   .rdata  ascii   LoadLibraryA
+19  0x00000c7c 0x1000227c 12  13   .rdata  ascii   KERNEL32.dll
+20  0x00000c8c 0x1000228c 7   8    .rdata  ascii   strncmp
+21  0x00000c96 0x10002296 6   7    .rdata  ascii   malloc
+22  0x00000ca0 0x100022a0 4   5    .rdata  ascii   free
+23  0x00000ca8 0x100022a8 9   10   .rdata  ascii   _initterm
+24  0x00000cb4 0x100022b4 12  13   .rdata  ascii   _adjust_fdiv
+25  0x00000cc2 0x100022c2 10  11   .rdata  ascii   MSVCRT.dll
+26  0x00000cd0 0x100022d0 16  17   .rdata  ascii   _except_handler3
+27  0x00000ce4 0x100022e4 6   7    .rdata  ascii   memset
+28  0x00000cee 0x100022ee 6   7    .rdata  ascii   memcpy
+29  0x00000d3e 0x1000233e 22  23   .rdata  ascii   InitializeChangeNotify
+30  0x00000d55 0x10002355 20  21   .rdata  ascii   PasswordChangeNotify
+arch     x86
+baddr    0x10000000
+binsz    193536
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0003a0b2
+compiled Mon Apr 14 02:12:46 2008
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x4802bd9e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x600
+  SizeOfInitializedData : 0x800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1370
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x34000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x100
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 146 Name: Export900 Version: 30729 Times: 1
+  Product: 138 Name: Utc1500_LTCG_CPP Version: 30729 Times: 4
+  Product: 149 Name: Masm900 Version: 30729 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 40
+  Product: 123 Name: Implib800 Version: 50727 Times: 5
+  Product: 10 Name: Utc12_C Version: 8047 Times: 4
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 150 Name: AliasObj900 Version: 20413 Times: 1
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x2300
+  Size : 0x6a
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x214c
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x4000
+  Size : 0x88
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x4c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000021d4 0x00000a20 SET_32 KERNEL32.dll_HeapAlloc
+0x000021e0 0x00000a18 SET_32 KERNEL32.dll_VirtualFree
+0x000021ee 0x00000a14 SET_32 KERNEL32.dll_GetProcessHeap
+0x00002200 0x00000a10 SET_32 KERNEL32.dll_GetSystemDirectoryW
+0x00002216 0x00000a0c SET_32 KERNEL32.dll_GetCurrentDirectoryW
+0x0000222e 0x00000a08 SET_32 KERNEL32.dll_GetProcAddress
+0x00002240 0x00000a04 SET_32 KERNEL32.dll_VirtualAlloc
+0x00002250 0x00000a00 SET_32 KERNEL32.dll_DisableThreadLibraryCalls
+0x0000226c 0x00000a1c SET_32 KERNEL32.dll_LoadLibraryA
+0x0000228a 0x00000a38 SET_32 MSVCRT.dll_strncmp
+0x00002294 0x00000a34 SET_32 MSVCRT.dll_malloc
+0x0000229e 0x00000a30 SET_32 MSVCRT.dll_free
+0x000022a6 0x00000a2c SET_32 MSVCRT.dll__initterm
+0x000022b2 0x00000a28 SET_32 MSVCRT.dll__adjust_fdiv
+0x000022ce 0x00000a3c SET_32 MSVCRT.dll__except_handler3
+0x000022e2 0x00000a40 SET_32 MSVCRT.dll_memset
+0x000022ec 0x00000a44 SET_32 MSVCRT.dll_memcpy
+
+
+17 relocations
+193536
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

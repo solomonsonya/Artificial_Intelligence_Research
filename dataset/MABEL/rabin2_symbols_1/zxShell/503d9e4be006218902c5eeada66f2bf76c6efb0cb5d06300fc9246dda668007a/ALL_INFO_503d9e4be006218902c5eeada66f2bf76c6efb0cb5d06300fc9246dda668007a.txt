@@ -1,0 +1,435 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x6600 0x00401000  0x7000 -r-x .text
+1   0x00006a00   0x600 0x00408000  0x1000 -r-- .rdata
+2   0x00007000   0x200 0x00409000  0x3000 -rw- .data
+3   0x00007200  0x2a00 0x0040c000  0x3000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00407274 paddr=0x00006674 haddr=0x00000100 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401000 paddr=0x00000400
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004080d8 NONE FUNC USER32.dll   MessageBoxA
+1   0x004080d0 NONE FUNC SHELL32.dll  ShellExecuteExW
+1   0x0040806c NONE FUNC MSVCRT.dll   _except_handler3
+2   0x00408070 NONE FUNC MSVCRT.dll   __set_app_type
+3   0x00408074 NONE FUNC MSVCRT.dll   __p__fmode
+4   0x00408078 NONE FUNC MSVCRT.dll   __p__commode
+5   0x0040807c NONE FUNC MSVCRT.dll   _adjust_fdiv
+6   0x00408080 NONE FUNC MSVCRT.dll   __setusermatherr
+7   0x00408084 NONE FUNC MSVCRT.dll   _initterm
+8   0x00408088 NONE FUNC MSVCRT.dll   __getmainargs
+9   0x0040808c NONE FUNC MSVCRT.dll   _acmdln
+10  0x00408090 NONE FUNC MSVCRT.dll   exit
+11  0x00408094 NONE FUNC MSVCRT.dll   _XcptFilter
+12  0x00408098 NONE FUNC MSVCRT.dll   _exit
+13  0x0040809c NONE FUNC MSVCRT.dll   memcpy
+14  0x004080a0 NONE FUNC MSVCRT.dll   free
+15  0x004080a4 NONE FUNC MSVCRT.dll   malloc
+16  0x004080a8 NONE FUNC MSVCRT.dll   wcscmp
+17  0x004080ac NONE FUNC MSVCRT.dll   memcmp
+18  0x004080b0 NONE FUNC MSVCRT.dll   memmove
+19  0x004080b4 NONE FUNC MSVCRT.dll   strlen
+20  0x004080b8 NONE FUNC MSVCRT.dll   wcslen
+21  0x004080bc NONE FUNC MSVCRT.dll   wcscpy
+22  0x004080c0 NONE FUNC MSVCRT.dll   wcscat
+23  0x004080c4 NONE FUNC MSVCRT.dll   memset
+24  0x004080c8 NONE FUNC MSVCRT.dll   _controlfp
+1   0x00408000 NONE FUNC KERNEL32.dll GetStartupInfoA
+2   0x00408004 NONE FUNC KERNEL32.dll GetModuleHandleA
+3   0x00408008 NONE FUNC KERNEL32.dll SetFilePointer
+4   0x0040800c NONE FUNC KERNEL32.dll WriteFile
+5   0x00408010 NONE FUNC KERNEL32.dll ReadFile
+6   0x00408014 NONE FUNC KERNEL32.dll CreateFileW
+7   0x00408018 NONE FUNC KERNEL32.dll DeleteFileW
+8   0x0040801c NONE FUNC KERNEL32.dll FindNextFileW
+9   0x00408020 NONE FUNC KERNEL32.dll RemoveDirectoryW
+10  0x00408024 NONE FUNC KERNEL32.dll FindFirstFileW
+11  0x00408028 NONE FUNC KERNEL32.dll FindClose
+12  0x0040802c NONE FUNC KERNEL32.dll GetModuleFileNameW
+13  0x00408030 NONE FUNC KERNEL32.dll GetCommandLineW
+14  0x00408034 NONE FUNC KERNEL32.dll GetTempPathW
+15  0x00408038 NONE FUNC KERNEL32.dll GetCurrentThreadId
+16  0x0040803c NONE FUNC KERNEL32.dll GetTickCount
+17  0x00408040 NONE FUNC KERNEL32.dll GetCurrentProcessId
+18  0x00408044 NONE FUNC KERNEL32.dll CreateDirectoryW
+19  0x00408048 NONE FUNC KERNEL32.dll GetLastError
+20  0x0040804c NONE FUNC KERNEL32.dll SetFileTime
+21  0x00408050 NONE FUNC KERNEL32.dll SetFileAttributesW
+22  0x00408054 NONE FUNC KERNEL32.dll GetCurrentDirectoryW
+23  0x00408058 NONE FUNC KERNEL32.dll SetCurrentDirectoryW
+24  0x0040805c NONE FUNC KERNEL32.dll CreateProcessW
+25  0x00408060 NONE FUNC KERNEL32.dll CloseHandle
+26  0x00408064 NONE FUNC KERNEL32.dll WaitForSingleObject
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00006ad8 0x004080d8 NONE FUNC 0    USER32.dll   imp.MessageBoxA
+1   0x00006ad0 0x004080d0 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteExW
+1   0x00006a6c 0x0040806c NONE FUNC 0    MSVCRT.dll   imp._except_handler3
+2   0x00006a70 0x00408070 NONE FUNC 0    MSVCRT.dll   imp.__set_app_type
+3   0x00006a74 0x00408074 NONE FUNC 0    MSVCRT.dll   imp.__p__fmode
+4   0x00006a78 0x00408078 NONE FUNC 0    MSVCRT.dll   imp.__p__commode
+5   0x00006a7c 0x0040807c NONE FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+6   0x00006a80 0x00408080 NONE FUNC 0    MSVCRT.dll   imp.__setusermatherr
+7   0x00006a84 0x00408084 NONE FUNC 0    MSVCRT.dll   imp._initterm
+8   0x00006a88 0x00408088 NONE FUNC 0    MSVCRT.dll   imp.__getmainargs
+9   0x00006a8c 0x0040808c NONE FUNC 0    MSVCRT.dll   imp._acmdln
+10  0x00006a90 0x00408090 NONE FUNC 0    MSVCRT.dll   imp.exit
+11  0x00006a94 0x00408094 NONE FUNC 0    MSVCRT.dll   imp._XcptFilter
+12  0x00006a98 0x00408098 NONE FUNC 0    MSVCRT.dll   imp._exit
+13  0x00006a9c 0x0040809c NONE FUNC 0    MSVCRT.dll   imp.memcpy
+14  0x00006aa0 0x004080a0 NONE FUNC 0    MSVCRT.dll   imp.free
+15  0x00006aa4 0x004080a4 NONE FUNC 0    MSVCRT.dll   imp.malloc
+16  0x00006aa8 0x004080a8 NONE FUNC 0    MSVCRT.dll   imp.wcscmp
+17  0x00006aac 0x004080ac NONE FUNC 0    MSVCRT.dll   imp.memcmp
+18  0x00006ab0 0x004080b0 NONE FUNC 0    MSVCRT.dll   imp.memmove
+19  0x00006ab4 0x004080b4 NONE FUNC 0    MSVCRT.dll   imp.strlen
+20  0x00006ab8 0x004080b8 NONE FUNC 0    MSVCRT.dll   imp.wcslen
+21  0x00006abc 0x004080bc NONE FUNC 0    MSVCRT.dll   imp.wcscpy
+22  0x00006ac0 0x004080c0 NONE FUNC 0    MSVCRT.dll   imp.wcscat
+23  0x00006ac4 0x004080c4 NONE FUNC 0    MSVCRT.dll   imp.memset
+24  0x00006ac8 0x004080c8 NONE FUNC 0    MSVCRT.dll   imp._controlfp
+1   0x00006a00 0x00408000 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+2   0x00006a04 0x00408004 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+3   0x00006a08 0x00408008 NONE FUNC 0    KERNEL32.dll imp.SetFilePointer
+4   0x00006a0c 0x0040800c NONE FUNC 0    KERNEL32.dll imp.WriteFile
+5   0x00006a10 0x00408010 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+6   0x00006a14 0x00408014 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+7   0x00006a18 0x00408018 NONE FUNC 0    KERNEL32.dll imp.DeleteFileW
+8   0x00006a1c 0x0040801c NONE FUNC 0    KERNEL32.dll imp.FindNextFileW
+9   0x00006a20 0x00408020 NONE FUNC 0    KERNEL32.dll imp.RemoveDirectoryW
+10  0x00006a24 0x00408024 NONE FUNC 0    KERNEL32.dll imp.FindFirstFileW
+11  0x00006a28 0x00408028 NONE FUNC 0    KERNEL32.dll imp.FindClose
+12  0x00006a2c 0x0040802c NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+13  0x00006a30 0x00408030 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineW
+14  0x00006a34 0x00408034 NONE FUNC 0    KERNEL32.dll imp.GetTempPathW
+15  0x00006a38 0x00408038 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+16  0x00006a3c 0x0040803c NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+17  0x00006a40 0x00408040 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+18  0x00006a44 0x00408044 NONE FUNC 0    KERNEL32.dll imp.CreateDirectoryW
+19  0x00006a48 0x00408048 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+20  0x00006a4c 0x0040804c NONE FUNC 0    KERNEL32.dll imp.SetFileTime
+21  0x00006a50 0x00408050 NONE FUNC 0    KERNEL32.dll imp.SetFileAttributesW
+22  0x00006a54 0x00408054 NONE FUNC 0    KERNEL32.dll imp.GetCurrentDirectoryW
+23  0x00006a58 0x00408058 NONE FUNC 0    KERNEL32.dll imp.SetCurrentDirectoryW
+24  0x00006a5c 0x0040805c NONE FUNC 0    KERNEL32.dll imp.CreateProcessW
+25  0x00006a60 0x00408060 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+26  0x00006a64 0x00408064 NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00006c32 0x00408232 11  12   .rdata  ascii   MessageBoxA
+1   0x00006c3e 0x0040823e 10  11   .rdata  ascii   USER32.dll
+2   0x00006c4c 0x0040824c 15  16   .rdata  ascii   ShellExecuteExW
+3   0x00006c5c 0x0040825c 11  12   .rdata  ascii   SHELL32.dll
+4   0x00006c6a 0x0040826a 6   7    .rdata  ascii   memset
+5   0x00006c74 0x00408274 6   7    .rdata  ascii   wcscat
+6   0x00006c7e 0x0040827e 6   7    .rdata  ascii   wcscpy
+7   0x00006c88 0x00408288 6   7    .rdata  ascii   wcslen
+8   0x00006c92 0x00408292 6   7    .rdata  ascii   strlen
+9   0x00006c9c 0x0040829c 7   8    .rdata  ascii   memmove
+10  0x00006ca6 0x004082a6 6   7    .rdata  ascii   memcmp
+11  0x00006cb0 0x004082b0 6   7    .rdata  ascii   wcscmp
+12  0x00006cba 0x004082ba 6   7    .rdata  ascii   malloc
+13  0x00006cc4 0x004082c4 4   5    .rdata  ascii   free
+14  0x00006ccc 0x004082cc 6   7    .rdata  ascii   memcpy
+15  0x00006cd4 0x004082d4 10  11   .rdata  ascii   MSVCRT.dll
+16  0x00006ce2 0x004082e2 5   6    .rdata  ascii   _exit
+17  0x00006cea 0x004082ea 11  12   .rdata  ascii   _XcptFilter
+18  0x00006cf8 0x004082f8 4   5    .rdata  ascii   exit
+19  0x00006d00 0x00408300 7   8    .rdata  ascii   _acmdln
+20  0x00006d0a 0x0040830a 13  14   .rdata  ascii   __getmainargs
+21  0x00006d1a 0x0040831a 9   10   .rdata  ascii   _initterm
+22  0x00006d26 0x00408326 16  17   .rdata  ascii   __setusermatherr
+23  0x00006d3a 0x0040833a 12  13   .rdata  ascii   _adjust_fdiv
+24  0x00006d4a 0x0040834a 12  13   .rdata  ascii   __p__commode
+25  0x00006d5a 0x0040835a 10  11   .rdata  ascii   __p__fmode
+26  0x00006d68 0x00408368 14  15   .rdata  ascii   __set_app_type
+27  0x00006d7a 0x0040837a 16  17   .rdata  ascii   _except_handler3
+28  0x00006d8e 0x0040838e 10  11   .rdata  ascii   _controlfp
+29  0x00006d9c 0x0040839c 19  20   .rdata  ascii   WaitForSingleObject
+30  0x00006db2 0x004083b2 11  12   .rdata  ascii   CloseHandle
+31  0x00006dc0 0x004083c0 14  15   .rdata  ascii   CreateProcessW
+32  0x00006dd2 0x004083d2 20  21   .rdata  ascii   SetCurrentDirectoryW
+33  0x00006dea 0x004083ea 20  21   .rdata  ascii   GetCurrentDirectoryW
+34  0x00006e02 0x00408402 18  19   .rdata  ascii   SetFileAttributesW
+35  0x00006e18 0x00408418 11  12   .rdata  ascii   SetFileTime
+36  0x00006e26 0x00408426 12  13   .rdata  ascii   GetLastError
+37  0x00006e36 0x00408436 16  17   .rdata  ascii   CreateDirectoryW
+38  0x00006e4a 0x0040844a 19  20   .rdata  ascii   GetCurrentProcessId
+39  0x00006e60 0x00408460 12  13   .rdata  ascii   GetTickCount
+40  0x00006e70 0x00408470 18  19   .rdata  ascii   GetCurrentThreadId
+41  0x00006e86 0x00408486 12  13   .rdata  ascii   GetTempPathW
+42  0x00006e96 0x00408496 15  16   .rdata  ascii   GetCommandLineW
+43  0x00006ea8 0x004084a8 18  19   .rdata  ascii   GetModuleFileNameW
+44  0x00006ebe 0x004084be 9   10   .rdata  ascii   FindClose
+45  0x00006eca 0x004084ca 14  15   .rdata  ascii   FindFirstFileW
+46  0x00006edc 0x004084dc 16  17   .rdata  ascii   RemoveDirectoryW
+47  0x00006ef0 0x004084f0 13  14   .rdata  ascii   FindNextFileW
+48  0x00006f00 0x00408500 11  12   .rdata  ascii   DeleteFileW
+49  0x00006f0e 0x0040850e 11  12   .rdata  ascii   CreateFileW
+50  0x00006f1c 0x0040851c 8   9    .rdata  ascii   ReadFile
+51  0x00006f28 0x00408528 9   10   .rdata  ascii   WriteFile
+52  0x00006f34 0x00408534 14  15   .rdata  ascii   SetFilePointer
+53  0x00006f46 0x00408546 16  17   .rdata  ascii   GetModuleHandleA
+54  0x00006f5a 0x0040855a 15  16   .rdata  ascii   GetStartupInfoA
+55  0x00006f6a 0x0040856a 12  13   .rdata  ascii   KERNEL32.dll
+0   0x0000703c 0x0040903c 5   6    .data   ascii   start
+1   0x00007048 0x00409048 7   8    .data   ascii   install
+2   0x00007050 0x00409050 5   6    .data   ascii   setup
+3   0x0000705c 0x0040905c 4   5    .data   ascii   html
+4   0x00007078 0x00409078 5   6    .data   ascii   ERROR
+5   0x00007080 0x00409080 9   10   .data   ascii   CRC error
+6   0x0000708c 0x0040908c 30  31   .data   ascii   Can't allocate required memory
+7   0x000070ac 0x004090ac 36  37   .data   ascii   Decoder doesn't support this archive
+8   0x000070d4 0x004090d4 27  28   .data   ascii   There is no file to execute
+9   0x000070f0 0x004090f0 22  23   .data   ascii   Can't open output file
+10  0x00007108 0x00409108 14  15   .data   ascii   Duplicate file
+11  0x00007118 0x00409118 23  24   .data   ascii   Can't write output file
+12  0x00007130 0x00409130 21  22   .data   ascii   Can't find 7z archive
+13  0x00007148 0x00409148 23  24   .data   ascii   can not open input file
+14  0x00007160 0x00409160 5   6    .data   ascii   Error
+15  0x00007168 0x00409168 24  25   .data   ascii   Can't create temp folder
+16  0x00007190 0x00409190 11  12   .data   ascii   7-Zip Error
+17  0x000071b4 0x004091b4 36  37   .data   ascii   GenuineIntelAuthenticAMDCentaurHauls
+0   0x0000731c 0x0040c11c 7   8    .rsrc   ascii   mW73mW7
+1   0x000073c8 0x0040c1c8 4   5    .rsrc   ascii   mW73
+2   0x000073d8 0x0040c1d8 7   8    .rsrc   ascii   nX9foY:
+3   0x0000748c 0x0040c28c 4   5    .rsrc   ascii   nX9f
+4   0x00007494 0x0040c294 7   8    .rsrc   ascii   pZ:!q[;
+5   0x00007550 0x0040c350 8   9    .rsrc   ascii   pZ:!q[<x
+6   0x00007610 0x0040c410 7   8    .rsrc   ascii   q[<xr]>
+7   0x000098b2 0x0040e6b2 15  32   .rsrc   utf16le VS_VERSION_INFO
+8   0x0000990e 0x0040e70e 14  30   .rsrc   utf16le StringFileInfo
+9   0x00009932 0x0040e732 8   18   .rsrc   utf16le 040904b0
+10  0x0000994a 0x0040e74a 11  24   .rsrc   utf16le CompanyName
+11  0x00009964 0x0040e764 11  24   .rsrc   utf16le Igor Pavlov
+12  0x00009982 0x0040e782 15  32   .rsrc   utf16le FileDescription
+13  0x000099a4 0x0040e7a4 7   16   .rsrc   utf16le 7z Setu
+14  0x000099b4 0x0040e7b4 10  22   .rsrc   utf16le  SFX small
+15  0x000099d2 0x0040e7d2 11  24   .rsrc   utf16le FileVersion
+16  0x000099ec 0x0040e7ec 9   20   .rsrc   utf16le 9.38 beta
+17  0x00009a06 0x0040e806 12  26   .rsrc   utf16le InternalName
+18  0x00009a20 0x0040e820 8   18   .rsrc   utf16le 7zS2.sfx
+19  0x00009a3a 0x0040e83a 14  30   .rsrc   utf16le LegalCopyright
+20  0x00009a58 0x0040e858 29  60   .rsrc   utf16le : Igor Pavlov : Public domain
+21  0x00009a9a 0x0040e89a 16  34   .rsrc   utf16le OriginalFilename
+22  0x00009abc 0x0040e8bc 12  26   .rsrc   utf16le 7zS2.sfx.exe
+23  0x00009ade 0x0040e8de 11  24   .rsrc   utf16le ProductName
+24  0x00009af8 0x0040e8f8 5   12   .rsrc   utf16le 7-Zip
+25  0x00009b0a 0x0040e90a 14  30   .rsrc   utf16le ProductVersion
+26  0x00009b28 0x0040e928 9   20   .rsrc   utf16le 9.38 beta
+27  0x00009b44 0x0040e944 10  22   .rsrc   utf16le arFileInfo
+28  0x00009b62 0x0040e962 11  24   .rsrc   utf16le Translation
+29  0x00009b80 0x0040e980 128 128  .rsrc   ascii   PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING
+arch     x86
+baddr    0x400000
+binsz    845296
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000cfa65
+compiled Sat Jan  3 17:31:56 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000cfa65
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x54a8278c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x12f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x6600
+  SizeOfInitializedData : 0x3200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x7274
+  BaseOfCode : 0x1000
+  BaseOfData : 0x8000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xf000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xcfa65
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 6 Name: Cvtres500 Version: 1735 Times: 1
+  Product: 10 Name: Utc12_C Version: 9782 Times: 16
+  Product: 93 Name: Implib710 Version: 2179 Times: 7
+  Product: 1 Name: Import0 Version: 0 Times: 57
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 5
+  Product: 10 Name: Utc12_C Version: 8047 Times: 11
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x80ec
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xc000
+  Size : 0x2980
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0xcce38
+  Size : 0x17b8
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x8000
+  Size : 0xe0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+shell32.dll
+msvcrt.dll
+kernel32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00008230 0x00006ad8 SET_32 USER32.dll_MessageBoxA
+0x0000824a 0x00006ad0 SET_32 SHELL32.dll_ShellExecuteExW
+0x00008268 0x00006ac4 SET_32 MSVCRT.dll_memset
+0x00008272 0x00006ac0 SET_32 MSVCRT.dll_wcscat
+0x0000827c 0x00006abc SET_32 MSVCRT.dll_wcscpy
+0x00008286 0x00006ab8 SET_32 MSVCRT.dll_wcslen
+0x00008290 0x00006ab4 SET_32 MSVCRT.dll_strlen
+0x0000829a 0x00006ab0 SET_32 MSVCRT.dll_memmove
+0x000082a4 0x00006aac SET_32 MSVCRT.dll_memcmp
+0x000082ae 0x00006aa8 SET_32 MSVCRT.dll_wcscmp
+0x000082b8 0x00006aa4 SET_32 MSVCRT.dll_malloc
+0x000082c2 0x00006aa0 SET_32 MSVCRT.dll_free
+0x000082ca 0x00006a9c SET_32 MSVCRT.dll_memcpy
+0x000082e0 0x00006a98 SET_32 MSVCRT.dll__exit
+0x000082e8 0x00006a94 SET_32 MSVCRT.dll__XcptFilter
+0x000082f6 0x00006a90 SET_32 MSVCRT.dll_exit
+0x000082fe 0x00006a8c SET_32 MSVCRT.dll__acmdln
+0x00008308 0x00006a88 SET_32 MSVCRT.dll___getmainargs
+0x00008318 0x00006a84 SET_32 MSVCRT.dll__initterm
+0x00008324 0x00006a80 SET_32 MSVCRT.dll___setusermatherr
+0x00008338 0x00006a7c SET_32 MSVCRT.dll__adjust_fdiv
+0x00008348 0x00006a78 SET_32 MSVCRT.dll___p__commode
+0x00008358 0x00006a74 SET_32 MSVCRT.dll___p__fmode
+0x00008366 0x00006a70 SET_32 MSVCRT.dll___set_app_type
+0x00008378 0x00006a6c SET_32 MSVCRT.dll__except_handler3
+0x0000838c 0x00006ac8 SET_32 MSVCRT.dll__controlfp
+0x0000839a 0x00006a64 SET_32 KERNEL32.dll_WaitForSingleObject
+0x000083b0 0x00006a60 SET_32 KERNEL32.dll_CloseHandle
+0x000083be 0x00006a5c SET_32 KERNEL32.dll_CreateProcessW
+0x000083d0 0x00006a58 SET_32 KERNEL32.dll_SetCurrentDirectoryW
+0x000083e8 0x00006a54 SET_32 KERNEL32.dll_GetCurrentDirectoryW
+0x00008400 0x00006a50 SET_32 KERNEL32.dll_SetFileAttributesW
+0x00008416 0x00006a4c SET_32 KERNEL32.dll_SetFileTime
+0x00008424 0x00006a48 SET_32 KERNEL32.dll_GetLastError
+0x00008434 0x00006a44 SET_32 KERNEL32.dll_CreateDirectoryW
+0x00008448 0x00006a40 SET_32 KERNEL32.dll_GetCurrentProcessId
+0x0000845e 0x00006a3c SET_32 KERNEL32.dll_GetTickCount
+0x0000846e 0x00006a38 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x00008484 0x00006a34 SET_32 KERNEL32.dll_GetTempPathW
+0x00008494 0x00006a30 SET_32 KERNEL32.dll_GetCommandLineW
+0x000084a6 0x00006a2c SET_32 KERNEL32.dll_GetModuleFileNameW
+0x000084bc 0x00006a28 SET_32 KERNEL32.dll_FindClose
+0x000084c8 0x00006a24 SET_32 KERNEL32.dll_FindFirstFileW
+0x000084da 0x00006a20 SET_32 KERNEL32.dll_RemoveDirectoryW
+0x000084ee 0x00006a1c SET_32 KERNEL32.dll_FindNextFileW
+0x000084fe 0x00006a18 SET_32 KERNEL32.dll_DeleteFileW
+0x0000850c 0x00006a14 SET_32 KERNEL32.dll_CreateFileW
+0x0000851a 0x00006a10 SET_32 KERNEL32.dll_ReadFile
+0x00008526 0x00006a0c SET_32 KERNEL32.dll_WriteFile
+0x00008532 0x00006a08 SET_32 KERNEL32.dll_SetFilePointer
+0x00008544 0x00006a04 SET_32 KERNEL32.dll_GetModuleHandleA
+0x00008558 0x00006a00 SET_32 KERNEL32.dll_GetStartupInfoA
+
+
+52 relocations
+845296
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 9.38.0.0
+  ProductVersion: 9.38.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Igor Pavlov
+  FileDescription: 7z Setu
+  FileVersion: 9.38 beta
+  InternalName: 7zS2.sfx
+  LegalCopyright: : Igor Pavlov : Public domain
+  OriginalFilename: 7zS2.sfx.exe
+  ProductName: 7-Zip
+  ProductVersion: 9.38 beta
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,161 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400      0x0 0x00401000   0xf000 -rwx UPX0
+1   0x00000400  0x11000 0x00410000  0x11000 -rwx UPX1
+2   0x00011400    0x200 0x00421000   0x1000 -rw- UPX2
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00420c90 paddr=0x00011090 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0042103c NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x00421040 NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x00421044 NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x00421048 NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x0042104c NONE FUNC KERNEL32.DLL VirtualFree
+6   0x00421050 NONE FUNC KERNEL32.DLL ExitProcess
+1   0x00421058 NONE FUNC USER32.dll   CharUpperW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0001143c 0x0042103c NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x00011440 0x00421040 NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x00011444 0x00421044 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+4   0x00011448 0x00421048 NONE FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+5   0x0001144c 0x0042104c NONE FUNC 0    KERNEL32.DLL imp.VirtualFree
+6   0x00011450 0x00421050 NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+1   0x00011458 0x00421058 NONE FUNC 0    USER32.dll   imp.CharUpperW
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    71168
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001b7de
+compiled Wed Mar  8 21:16:45 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x58c074bd
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x11000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0xf000
+  AddressOfEntryPoint : 0x20c90
+  BaseOfCode : 0x10000
+  BaseOfData : 0x21000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x22000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 22 Name: Utc12_CPP_Std Version: 8168 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 82
+  Product: 147 Name: Implib900 Version: 30729 Times: 3
+  Product: 93 Name: Implib710 Version: 4035 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 19
+  Product: 10 Name: Utc12_C Version: 8168 Times: 76
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x21000
+  Size : 0xe0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00021078 0x0001143c SET_32 KERNEL32.DLL_LoadLibraryA
+0x00021086 0x00011440 SET_32 KERNEL32.DLL_GetProcAddress
+0x00021096 0x00011444 SET_32 KERNEL32.DLL_VirtualProtect
+0x000210a6 0x00011448 SET_32 KERNEL32.DLL_VirtualAlloc
+0x000210b4 0x0001144c SET_32 KERNEL32.DLL_VirtualFree
+0x000210c2 0x00011450 SET_32 KERNEL32.DLL_ExitProcess
+0x000210d0 0x00011458 SET_32 USER32.dll_CharUpperW
+
+
+7 relocations
+71168
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

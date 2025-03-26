@@ -1,0 +1,364 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1600 0x00401000  0x2000 -r-x .text
+1   0x00001a00   0x200 0x00403000  0x1000 -rw- .data
+2   0x00001c00   0x400 0x00404000  0x1000 -r-- .rdata
+3   0x00000000     0x0 0x00405000  0x1000 -rw- .bss
+4   0x00002000   0x800 0x00406000  0x1000 -rw- .idata
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401240 paddr=0x00000640 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401bb0 paddr=0x00000fb0
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00406180 NONE FUNC KERNEL32.DLL AddAtomA
+2   0x00406184 NONE FUNC KERNEL32.DLL CloseHandle
+3   0x00406188 NONE FUNC KERNEL32.DLL CopyFileA
+4   0x0040618c NONE FUNC KERNEL32.DLL CreateThread
+5   0x00406190 NONE FUNC KERNEL32.DLL ExitProcess
+6   0x00406194 NONE FUNC KERNEL32.DLL FindAtomA
+7   0x00406198 NONE FUNC KERNEL32.DLL FindFirstFileA
+8   0x0040619c NONE FUNC KERNEL32.DLL FindNextFileA
+9   0x004061a0 NONE FUNC KERNEL32.DLL GetAtomNameA
+10  0x004061a4 NONE FUNC KERNEL32.DLL GetCommandLineA
+11  0x004061a8 NONE FUNC KERNEL32.DLL GetModuleFileNameA
+12  0x004061ac NONE FUNC KERNEL32.DLL GetModuleHandleA
+13  0x004061b0 NONE FUNC KERNEL32.DLL GetStartupInfoA
+14  0x004061b4 NONE FUNC KERNEL32.DLL GetSystemDirectoryA
+15  0x004061b8 NONE FUNC KERNEL32.DLL SetUnhandledExceptionFilter
+16  0x004061bc NONE FUNC KERNEL32.DLL Sleep
+1   0x0040616c NONE FUNC ADVAPI32.DLL RegCloseKey
+2   0x00406170 NONE FUNC ADVAPI32.DLL RegOpenKeyExA
+3   0x00406174 NONE FUNC ADVAPI32.DLL RegSetValueExA
+1   0x004061c8 NONE FUNC msvcrt.dll   __getmainargs
+2   0x004061cc NONE FUNC msvcrt.dll   __p__environ
+3   0x004061d0 NONE FUNC msvcrt.dll   __p__fmode
+4   0x004061d4 NONE FUNC msvcrt.dll   __set_app_type
+5   0x004061d8 NONE FUNC msvcrt.dll   _cexit
+6   0x004061dc NONE FUNC msvcrt.dll   _iob
+7   0x004061e0 NONE FUNC msvcrt.dll   _onexit
+8   0x004061e4 NONE FUNC msvcrt.dll   _setmode
+9   0x004061e8 NONE FUNC msvcrt.dll   abort
+10  0x004061ec NONE FUNC msvcrt.dll   atexit
+11  0x004061f0 NONE FUNC msvcrt.dll   exit
+12  0x004061f4 NONE FUNC msvcrt.dll   fclose
+13  0x004061f8 NONE FUNC msvcrt.dll   fflush
+14  0x004061fc NONE FUNC msvcrt.dll   fopen
+15  0x00406200 NONE FUNC msvcrt.dll   fprintf
+16  0x00406204 NONE FUNC msvcrt.dll   fread
+17  0x00406208 NONE FUNC msvcrt.dll   free
+18  0x0040620c NONE FUNC msvcrt.dll   fseek
+19  0x00406210 NONE FUNC msvcrt.dll   ftell
+20  0x00406214 NONE FUNC msvcrt.dll   fwrite
+21  0x00406218 NONE FUNC msvcrt.dll   malloc
+22  0x0040621c NONE FUNC msvcrt.dll   rand
+23  0x00406220 NONE FUNC msvcrt.dll   signal
+24  0x00406224 NONE FUNC msvcrt.dll   sprintf
+25  0x00406228 NONE FUNC msvcrt.dll   strcat
+26  0x0040622c NONE FUNC msvcrt.dll   strcmp
+27  0x00406230 NONE FUNC msvcrt.dll   strlen
+1   0x0040623c NONE FUNC SHELL32.DLL  ShellExecuteA
+1   0x00406248 NONE FUNC USER32.dll   GetForegroundWindow
+2   0x0040624c NONE FUNC USER32.dll   SendMessageA
+3   0x00406250 NONE FUNC USER32.dll   SetWindowTextA
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400 0x00401000 GLOBAL FUNC 0                 __gnu_exception_handler@4
+1   0x00000500 0x00401100 GLOBAL FUNC 0                 ___mingw_CRTStartup
+2   0x00000620 0x00401220 GLOBAL FUNC 0                 _mainCRTStartup
+3   0x00000640 0x00401240 GLOBAL FUNC 0                 _WinMainCRTStartup
+4   0x00000660 0x00401260 GLOBAL FUNC 0                 _atexit
+5   0x00000670 0x00401270 GLOBAL FUNC 0                 __onexit
+6   0x00000680 0x00401280 GLOBAL FUNC 0                 ___do_sjlj_init
+7   0x00000690 0x00401290 GLOBAL FUNC 0                 _WinMain@16
+8   0x00000920 0x00401520 GLOBAL FUNC 0                 _infect(char*)
+9   0x00000ac2 0x004016c2 GLOBAL FUNC 0                 __Z13autoInfectionPv@4
+10  0x00000e78 0x00401a78 GLOBAL FUNC 0                 startUp()
+11  0x00000c16 0x00401816 GLOBAL FUNC 0                 _payload(int)
+12  0x00000720 0x00401320 GLOBAL FUNC 0                 get_crAcker()
+13  0x00000fb0 0x00401bb0 GLOBAL FUNC 0                 _main
+14  0x000010d0 0x00401cd0 GLOBAL FUNC 0                 __pei386_runtime_relocator
+15  0x00001100 0x00401d00 GLOBAL FUNC 0                 _fpreset
+16  0x00001100 0x00401d00 GLOBAL FUNC 0                 __fpreset
+17  0x00001110 0x00401d10 GLOBAL FUNC 0                 ___do_global_dtors
+18  0x00001150 0x00401d50 GLOBAL FUNC 0                 ___do_global_ctors
+19  0x000011b0 0x00401db0 GLOBAL FUNC 0                 ___main
+20  0x00001220 0x00401e20 GLOBAL FUNC 0                 ___w32_sharedptr_default_unexpected
+21  0x00001230 0x00401e30 GLOBAL FUNC 0                 ___w32_sharedptr_get
+22  0x000012d0 0x00401ed0 GLOBAL FUNC 0                 ___w32_sharedptr_initialize
+23  0x00001540 0x00402140 GLOBAL FUNC 0                 ___eprintf
+24  0x00001880 0x00402480 GLOBAL FUNC 0                 ___sjlj_init_ctor
+25  0x000015a0 0x004021a0 GLOBAL FUNC 0                 __cexit
+26  0x00001630 0x00402230 GLOBAL FUNC 0                 _sprintf
+27  0x00001640 0x00402240 GLOBAL FUNC 0                 _free
+28  0x00001610 0x00402210 GLOBAL FUNC 0                 _strcat
+29  0x00001620 0x00402220 GLOBAL FUNC 0                 _strcmp
+30  0x000015d0 0x004021d0 GLOBAL FUNC 0                 ___p__fmode
+31  0x000016c0 0x004022c0 GLOBAL FUNC 0                 _rand
+32  0x000015b0 0x004021b0 GLOBAL FUNC 0                 ___p__environ
+33  0x00001650 0x00402250 GLOBAL FUNC 0                 _fwrite
+34  0x000015f0 0x004021f0 GLOBAL FUNC 0                 ___getmainargs
+35  0x000016f0 0x004022f0 GLOBAL FUNC 0                 _fflush
+36  0x00001700 0x00402300 GLOBAL FUNC 0                 _fprintf
+37  0x00001670 0x00402270 GLOBAL FUNC 0                 _fread
+38  0x000016d0 0x004022d0 GLOBAL FUNC 0                 _fopen
+39  0x000015c0 0x004021c0 GLOBAL FUNC 0                 _signal
+40  0x00001680 0x00402280 GLOBAL FUNC 0                 _malloc
+41  0x00001660 0x00402260 GLOBAL FUNC 0                 _fclose
+42  0x000016a0 0x004022a0 GLOBAL FUNC 0                 _fseek
+43  0x000016e0 0x004022e0 GLOBAL FUNC 0                 _abort
+44  0x00001690 0x00402290 GLOBAL FUNC 0                 _ftell
+45  0x000015e0 0x004021e0 GLOBAL FUNC 0                 __setmode
+46  0x00001600 0x00402200 GLOBAL FUNC 0                 _strlen
+47  0x000016b0 0x004022b0 GLOBAL FUNC 0                 _exit
+1   0x00002180 0x00406180 NONE   FUNC 0    KERNEL32.DLL imp.AddAtomA
+2   0x00002184 0x00406184 NONE   FUNC 0    KERNEL32.DLL imp.CloseHandle
+3   0x00002188 0x00406188 NONE   FUNC 0    KERNEL32.DLL imp.CopyFileA
+4   0x0000218c 0x0040618c NONE   FUNC 0    KERNEL32.DLL imp.CreateThread
+5   0x00002190 0x00406190 NONE   FUNC 0    KERNEL32.DLL imp.ExitProcess
+6   0x00002194 0x00406194 NONE   FUNC 0    KERNEL32.DLL imp.FindAtomA
+7   0x00002198 0x00406198 NONE   FUNC 0    KERNEL32.DLL imp.FindFirstFileA
+8   0x0000219c 0x0040619c NONE   FUNC 0    KERNEL32.DLL imp.FindNextFileA
+9   0x000021a0 0x004061a0 NONE   FUNC 0    KERNEL32.DLL imp.GetAtomNameA
+10  0x000021a4 0x004061a4 NONE   FUNC 0    KERNEL32.DLL imp.GetCommandLineA
+11  0x000021a8 0x004061a8 NONE   FUNC 0    KERNEL32.DLL imp.GetModuleFileNameA
+12  0x000021ac 0x004061ac NONE   FUNC 0    KERNEL32.DLL imp.GetModuleHandleA
+13  0x000021b0 0x004061b0 NONE   FUNC 0    KERNEL32.DLL imp.GetStartupInfoA
+14  0x000021b4 0x004061b4 NONE   FUNC 0    KERNEL32.DLL imp.GetSystemDirectoryA
+15  0x000021b8 0x004061b8 NONE   FUNC 0    KERNEL32.DLL imp.SetUnhandledExceptionFilter
+16  0x000021bc 0x004061bc NONE   FUNC 0    KERNEL32.DLL imp.Sleep
+1   0x0000216c 0x0040616c NONE   FUNC 0    ADVAPI32.DLL imp.RegCloseKey
+2   0x00002170 0x00406170 NONE   FUNC 0    ADVAPI32.DLL imp.RegOpenKeyExA
+3   0x00002174 0x00406174 NONE   FUNC 0    ADVAPI32.DLL imp.RegSetValueExA
+1   0x000021c8 0x004061c8 NONE   FUNC 0    msvcrt.dll   imp.__getmainargs
+2   0x000021cc 0x004061cc NONE   FUNC 0    msvcrt.dll   imp.__p__environ
+3   0x000021d0 0x004061d0 NONE   FUNC 0    msvcrt.dll   imp.__p__fmode
+4   0x000021d4 0x004061d4 NONE   FUNC 0    msvcrt.dll   imp.__set_app_type
+5   0x000021d8 0x004061d8 NONE   FUNC 0    msvcrt.dll   imp._cexit
+6   0x000021dc 0x004061dc NONE   FUNC 0    msvcrt.dll   imp._iob
+7   0x000021e0 0x004061e0 NONE   FUNC 0    msvcrt.dll   imp._onexit
+8   0x000021e4 0x004061e4 NONE   FUNC 0    msvcrt.dll   imp._setmode
+9   0x000021e8 0x004061e8 NONE   FUNC 0    msvcrt.dll   imp.abort
+10  0x000021ec 0x004061ec NONE   FUNC 0    msvcrt.dll   imp.atexit
+11  0x000021f0 0x004061f0 NONE   FUNC 0    msvcrt.dll   imp.exit
+12  0x000021f4 0x004061f4 NONE   FUNC 0    msvcrt.dll   imp.fclose
+13  0x000021f8 0x004061f8 NONE   FUNC 0    msvcrt.dll   imp.fflush
+14  0x000021fc 0x004061fc NONE   FUNC 0    msvcrt.dll   imp.fopen
+15  0x00002200 0x00406200 NONE   FUNC 0    msvcrt.dll   imp.fprintf
+16  0x00002204 0x00406204 NONE   FUNC 0    msvcrt.dll   imp.fread
+17  0x00002208 0x00406208 NONE   FUNC 0    msvcrt.dll   imp.free
+18  0x0000220c 0x0040620c NONE   FUNC 0    msvcrt.dll   imp.fseek
+19  0x00002210 0x00406210 NONE   FUNC 0    msvcrt.dll   imp.ftell
+20  0x00002214 0x00406214 NONE   FUNC 0    msvcrt.dll   imp.fwrite
+21  0x00002218 0x00406218 NONE   FUNC 0    msvcrt.dll   imp.malloc
+22  0x0000221c 0x0040621c NONE   FUNC 0    msvcrt.dll   imp.rand
+23  0x00002220 0x00406220 NONE   FUNC 0    msvcrt.dll   imp.signal
+24  0x00002224 0x00406224 NONE   FUNC 0    msvcrt.dll   imp.sprintf
+25  0x00002228 0x00406228 NONE   FUNC 0    msvcrt.dll   imp.strcat
+26  0x0000222c 0x0040622c NONE   FUNC 0    msvcrt.dll   imp.strcmp
+27  0x00002230 0x00406230 NONE   FUNC 0    msvcrt.dll   imp.strlen
+1   0x0000223c 0x0040623c NONE   FUNC 0    SHELL32.DLL  imp.ShellExecuteA
+1   0x00002248 0x00406248 NONE   FUNC 0    USER32.dll   imp.GetForegroundWindow
+2   0x0000224c 0x0040624c NONE   FUNC 0    USER32.dll   imp.SendMessageA
+3   0x00002250 0x00406250 NONE   FUNC 0    USER32.dll   imp.SetWindowTextA
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001c02 0x00404002 9   10   .rdata  ascii \WINDOWS\
+1   0x00001c0c 0x0040400c 16  17   .rdata  ascii \WINDOWS\system\
+2   0x00001c1d 0x0040401d 18  19   .rdata  ascii \WINDOWS\system32\
+3   0x00001c30 0x00404030 26  27   .rdata  ascii \WINDOWS\system32\drivers\
+4   0x00001c4c 0x0040404c 47  48   .rdata  ascii \DOCUME~1\All Users\Startmenu\Programs\Startup\
+5   0x00001c7c 0x0040407c 28  29   .rdata  ascii \DOKUME~1\All Users\Startmen
+6   0x00001c99 0x00404099 21  22   .rdata  ascii \Programme\Autostart\
+7   0x00001caf 0x004040af 14  15   .rdata  ascii \My Downloads\
+8   0x00001cc4 0x004040c4 8   9    .rdata  ascii \exc.exe
+9   0x00001ccd 0x004040cd 5   6    .rdata  ascii %s*.*
+10  0x00001cd3 0x004040d3 4   5    .rdata  ascii %s%s
+11  0x00001cd8 0x004040d8 11  12   .rdata  ascii notepad.exe
+12  0x00001ce4 0x004040e4 15  16   .rdata  ascii Win32.crAcker.A
+13  0x00001cf4 0x004040f4 24  25   .rdata  ascii http://www.pinkworld.com
+14  0x00001d0d 0x0040410d 22  23   .rdata  ascii http://www.youporn.com
+15  0x00001d24 0x00404124 22  23   .rdata  ascii http://www.redtube.com
+16  0x00001d3b 0x0040413b 25  26   .rdata  ascii http://www.assparade.com/
+17  0x00001d55 0x00404155 22  23   .rdata  ascii http://www.freeav.com/
+18  0x00001d6c 0x0040416c 27  28   .rdata  ascii http://www.antispyware.com/
+19  0x00001d88 0x00404188 25  26   .rdata  ascii http://www.antivirus.com/
+20  0x00001dd0 0x004041d0 12  13   .rdata  ascii \crAcker.exe
+21  0x00001de0 0x004041e0 45  46   .rdata  ascii Software\Microsoft\Windows\CurrentVersion\Run
+22  0x00001e10 0x00404210 33  34   .rdata  ascii -LIBGCCW32-EH-2-SJLJ-GTHR-MINGW32
+23  0x00001e34 0x00404234 44  45   .rdata  ascii w32_sharedptr->size == sizeof(W32_EH_SHARED)
+24  0x00001e61 0x00404261 29  30   .rdata  ascii %s:%u: failed assertion `%s'\n
+25  0x00001e80 0x00404280 42  43   .rdata  ascii ../../gcc/gcc/config/i386/w32-shared-ptr.c
+26  0x00001eac 0x004042ac 38  39   .rdata  ascii GetAtomNameA (atom, s, sizeof(s)) != 0
+arch     x86
+baddr    0x400000
+binsz    1661963
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x001a38dd
+compiled Sat Apr 19 11:49:11 2008
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c++
+linenum  true
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x4809dc37
+  PointerToSymbolTable : 0x2800
+  NumberOfSymbols : 0x342
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x307
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x38
+  SizeOfCode : 0x1600
+  SizeOfInitializedData : 0x2400
+  SizeOfUninitializedData : 0x200
+  AddressOfEntryPoint : 0x1240
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x7000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x6000
+  Size : 0x634
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+advapi32.dll
+msvcrt.dll
+shell32.dll
+user32.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00006258 0x0000216c SET_32 ADVAPI32.DLL_RegCloseKey
+0x00006268 0x00002170 SET_32 ADVAPI32.DLL_RegOpenKeyExA
+0x00006278 0x00002174 SET_32 ADVAPI32.DLL_RegSetValueExA
+0x0000628c 0x00002180 SET_32 KERNEL32.DLL_AddAtomA
+0x00006298 0x00002184 SET_32 KERNEL32.DLL_CloseHandle
+0x000062a8 0x00002188 SET_32 KERNEL32.DLL_CopyFileA
+0x000062b4 0x0000218c SET_32 KERNEL32.DLL_CreateThread
+0x000062c4 0x00002190 SET_32 KERNEL32.DLL_ExitProcess
+0x000062d4 0x00002194 SET_32 KERNEL32.DLL_FindAtomA
+0x000062e0 0x00002198 SET_32 KERNEL32.DLL_FindFirstFileA
+0x000062f4 0x0000219c SET_32 KERNEL32.DLL_FindNextFileA
+0x00006304 0x000021a0 SET_32 KERNEL32.DLL_GetAtomNameA
+0x00006314 0x000021a4 SET_32 KERNEL32.DLL_GetCommandLineA
+0x00006328 0x000021a8 SET_32 KERNEL32.DLL_GetModuleFileNameA
+0x00006340 0x000021ac SET_32 KERNEL32.DLL_GetModuleHandleA
+0x00006354 0x000021b0 SET_32 KERNEL32.DLL_GetStartupInfoA
+0x00006368 0x000021b4 SET_32 KERNEL32.DLL_GetSystemDirectoryA
+0x00006380 0x000021b8 SET_32 KERNEL32.DLL_SetUnhandledExceptionFilter
+0x000063a0 0x000021bc SET_32 KERNEL32.DLL_Sleep
+0x000063a8 0x000021c8 SET_32 msvcrt.dll___getmainargs
+0x000063b8 0x000021cc SET_32 msvcrt.dll___p__environ
+0x000063c8 0x000021d0 SET_32 msvcrt.dll___p__fmode
+0x000063d8 0x000021d4 SET_32 msvcrt.dll___set_app_type
+0x000063ec 0x000021d8 SET_32 msvcrt.dll__cexit
+0x000063f8 0x000021dc SET_32 msvcrt.dll__iob
+0x00006400 0x000021e0 SET_32 msvcrt.dll__onexit
+0x0000640c 0x000021e4 SET_32 msvcrt.dll__setmode
+0x00006418 0x000021e8 SET_32 msvcrt.dll_abort
+0x00006420 0x000021ec SET_32 msvcrt.dll_atexit
+0x0000642c 0x000021f0 SET_32 msvcrt.dll_exit
+0x00006434 0x000021f4 SET_32 msvcrt.dll_fclose
+0x00006440 0x000021f8 SET_32 msvcrt.dll_fflush
+0x0000644c 0x000021fc SET_32 msvcrt.dll_fopen
+0x00006454 0x00002200 SET_32 msvcrt.dll_fprintf
+0x00006460 0x00002204 SET_32 msvcrt.dll_fread
+0x00006468 0x00002208 SET_32 msvcrt.dll_free
+0x00006470 0x0000220c SET_32 msvcrt.dll_fseek
+0x00006478 0x00002210 SET_32 msvcrt.dll_ftell
+0x00006480 0x00002214 SET_32 msvcrt.dll_fwrite
+0x0000648c 0x00002218 SET_32 msvcrt.dll_malloc
+0x00006498 0x0000221c SET_32 msvcrt.dll_rand
+0x000064a0 0x00002220 SET_32 msvcrt.dll_signal
+0x000064ac 0x00002224 SET_32 msvcrt.dll_sprintf
+0x000064b8 0x00002228 SET_32 msvcrt.dll_strcat
+0x000064c4 0x0000222c SET_32 msvcrt.dll_strcmp
+0x000064d0 0x00002230 SET_32 msvcrt.dll_strlen
+0x000064dc 0x0000223c SET_32 SHELL32.DLL_ShellExecuteA
+0x000064ec 0x00002248 SET_32 USER32.dll_GetForegroundWindow
+0x00006504 0x0000224c SET_32 USER32.dll_SendMessageA
+0x00006514 0x00002250 SET_32 USER32.dll_SetWindowTextA
+
+
+50 relocations
+1661963
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

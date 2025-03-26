@@ -1,0 +1,168 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1200 0x00401000  0x7000 -rwx .text
+1   0x00001600  0x1e00 0x00408000  0x2000 -rwx .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004012f8 paddr=0x000006f8 haddr=0x000000e8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00409390 NONE FUNC kernel32.dll LoadLibraryA
+2   0x00409394 NONE FUNC kernel32.dll GetProcAddress
+3   0x00409398 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0040939c NONE FUNC kernel32.dll VirtualFree
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002990 0x00409390 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x00002994 0x00409394 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x00002998 0x00409398 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x0000299c 0x0040939c NONE FUNC 0    kernel32.dll imp.VirtualFree
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    13312
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00008fa4
+compiled Sun May 22 21:01:05 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00008fa4
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x628aa491
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x4000
+  SizeOfInitializedData : 0x3000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x12f8
+  BaseOfCode : 0x1000
+  BaseOfData : 0x5000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0xb
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xa000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x8fa4
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 13 Name: VisualBasic60 Version: 8169 Times: 1
+  Product: 9 Name: Utc12_Basic Version: 8041 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x93a4
+  Size : 0x8f
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x8000
+  Size : 0x138c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000093dc 0x00002990 SET_32 kernel32.dll_LoadLibraryA
+0x000093ec 0x00002994 SET_32 kernel32.dll_GetProcAddress
+0x00009400 0x00002998 SET_32 kernel32.dll_VirtualAlloc
+0x00009410 0x0000299c SET_32 kernel32.dll_VirtualFree
+
+
+4 relocations
+13312
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 11.0.0.2463
+  ProductVersion: 11.0.0.2463
+  FileFlagsMask: 0x0
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  ProductName: Offer
+  FileVersion: 11.00.2463
+  ProductVersion: 11.00.2463
+  InternalName: Offer
+  OriginalFilename: Offer.exe
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,362 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400    0x600 0x00401000   0x5000 -r-x text
+1   0x00000a00   0x3200 0x00406000  0x14000 -rw- sect_1
+2   0x00003c00  0x6a200 0x0041a000  0x6b000 -rw- sect_2
+3   0x00000400    0x300 0x00485000   0x1000 -r-- sect_3
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000400 haddr=0x000000f0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00406000 NONE FUNC msvcrt.dll   fread
+2   0x00406004 NONE FUNC msvcrt.dll   fopen
+1   0x0040600c NONE FUNC oleaut32.dll RegisterTypeLibForUser
+2   0x00406010 NONE FUNC oleaut32.dll RevokeActiveObject
+3   0x00406014 NONE FUNC oleaut32.dll SafeArrayAccessData
+4   0x00406018 NONE FUNC oleaut32.dll SafeArrayAllocData
+5   0x0040601c NONE FUNC oleaut32.dll SafeArrayAllocDescriptor
+6   0x00406020 NONE FUNC oleaut32.dll SafeArrayAllocDescriptorEx
+7   0x00406024 NONE FUNC oleaut32.dll SafeArrayCopy
+8   0x00406028 NONE FUNC oleaut32.dll SafeArrayCopyData
+9   0x0040602c NONE FUNC oleaut32.dll SafeArrayCreate
+10  0x00406030 NONE FUNC oleaut32.dll SafeArrayCreateEx
+11  0x00406034 NONE FUNC oleaut32.dll SafeArrayCreateVector
+12  0x00406038 NONE FUNC oleaut32.dll SafeArrayCreateVectorEx
+13  0x0040603c NONE FUNC oleaut32.dll SafeArrayDestroy
+14  0x00406040 NONE FUNC oleaut32.dll SafeArrayDestroyData
+15  0x00406044 NONE FUNC oleaut32.dll SafeArrayDestroyDescriptor
+16  0x00406048 NONE FUNC oleaut32.dll SafeArrayGetDim
+17  0x0040604c NONE FUNC oleaut32.dll SafeArrayGetElement
+18  0x00406050 NONE FUNC oleaut32.dll SafeArrayGetElemsize
+19  0x00406054 NONE FUNC oleaut32.dll SafeArrayGetIID
+20  0x00406058 NONE FUNC oleaut32.dll SafeArrayGetLBound
+21  0x0040605c NONE FUNC oleaut32.dll SafeArrayGetRecordInfo
+22  0x00406060 NONE FUNC oleaut32.dll SafeArrayGetUBound
+23  0x00406064 NONE FUNC oleaut32.dll SafeArrayGetVartype
+24  0x00406068 NONE FUNC oleaut32.dll SafeArrayLock
+25  0x0040606c NONE FUNC oleaut32.dll SafeArrayPtrOfIndex
+26  0x00406070 NONE FUNC oleaut32.dll SafeArrayPutElement
+27  0x00406074 NONE FUNC oleaut32.dll SafeArrayRedim
+28  0x00406078 NONE FUNC oleaut32.dll SafeArraySetIID
+29  0x0040607c NONE FUNC oleaut32.dll SafeArraySetRecordInfo
+30  0x00406080 NONE FUNC oleaut32.dll SafeArrayUnaccessData
+1   0x00406088 NONE FUNC kernel32.dll GetSystemTime
+2   0x0040608c NONE FUNC kernel32.dll GetACP
+3   0x00406090 NONE FUNC kernel32.dll GetSystemDirectoryA
+4   0x00406094 NONE FUNC kernel32.dll GetVersionExA
+5   0x00406098 NONE FUNC kernel32.dll PeekConsoleInputW
+6   0x0040609c NONE FUNC kernel32.dll EnumCalendarInfoA
+7   0x004060a0 NONE FUNC kernel32.dll CallNamedPipeW
+8   0x004060a4 NONE FUNC kernel32.dll _lread
+9   0x004060a8 NONE FUNC kernel32.dll _lopen
+1   0x004060b0 NONE FUNC ole32.dll    CoRegisterInitializeSpy
+2   0x004060b4 NONE FUNC ole32.dll    CoRegisterMallocSpy
+3   0x004060b8 NONE FUNC ole32.dll    CoRegisterMessageFilter
+4   0x004060bc NONE FUNC ole32.dll    CoRegisterPSClsid
+5   0x004060c0 NONE FUNC ole32.dll    CoRegisterSurrogate
+6   0x004060c4 NONE FUNC ole32.dll    CoRegisterSurrogateEx
+7   0x004060c8 NONE FUNC ole32.dll    CoReleaseMarshalData
+8   0x004060cc NONE FUNC ole32.dll    CoReleaseServerProcess
+9   0x004060d0 NONE FUNC ole32.dll    CoResumeClassObjects
+1   0x004060d8 NONE FUNC rasman.dll   RasRpcGetSystemDirectory
+2   0x004060dc NONE FUNC rasman.dll   RasRpcGetUserPreferences
+3   0x004060e0 NONE FUNC rasman.dll   RasRpcGetVersion
+4   0x004060e4 NONE FUNC rasman.dll   RasRpcPortEnum
+5   0x004060e8 NONE FUNC rasman.dll   RasRpcPortGetInfo
+6   0x004060ec NONE FUNC rasman.dll   RasRpcRemoteRasDeleteEntry
+7   0x004060f0 NONE FUNC rasman.dll   RasRpcRemoteSetUserPreferences
+8   0x004060f4 NONE FUNC rasman.dll   RasRpcSetUserPreferences
+9   0x004060f8 NONE FUNC rasman.dll   RasRpcUnloadDll
+10  0x004060fc NONE FUNC rasman.dll   RasSecurityDialogGetInfo
+1   0x004060d8 NONE FUNC rasman.dll   RasRpcGetSystemDirectory
+2   0x004060dc NONE FUNC rasman.dll   RasRpcGetUserPreferences
+3   0x004060e0 NONE FUNC rasman.dll   RasRpcGetVersion
+4   0x004060e4 NONE FUNC rasman.dll   RasRpcPortEnum
+5   0x004060e8 NONE FUNC rasman.dll   RasRpcPortGetInfo
+6   0x004060ec NONE FUNC rasman.dll   RasRpcRemoteRasDeleteEntry
+7   0x004060f0 NONE FUNC rasman.dll   RasRpcRemoteSetUserPreferences
+8   0x004060f4 NONE FUNC rasman.dll   RasRpcSetUserPreferences
+9   0x004060f8 NONE FUNC rasman.dll   RasRpcUnloadDll
+10  0x004060fc NONE FUNC rasman.dll   RasSecurityDialogGetInfo
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000a00 0x00406000 NONE FUNC 0    msvcrt.dll   imp.fread
+2   0x00000a04 0x00406004 NONE FUNC 0    msvcrt.dll   imp.fopen
+1   0x00000a0c 0x0040600c NONE FUNC 0    oleaut32.dll imp.RegisterTypeLibForUser
+2   0x00000a10 0x00406010 NONE FUNC 0    oleaut32.dll imp.RevokeActiveObject
+3   0x00000a14 0x00406014 NONE FUNC 0    oleaut32.dll imp.SafeArrayAccessData
+4   0x00000a18 0x00406018 NONE FUNC 0    oleaut32.dll imp.SafeArrayAllocData
+5   0x00000a1c 0x0040601c NONE FUNC 0    oleaut32.dll imp.SafeArrayAllocDescriptor
+6   0x00000a20 0x00406020 NONE FUNC 0    oleaut32.dll imp.SafeArrayAllocDescriptorEx
+7   0x00000a24 0x00406024 NONE FUNC 0    oleaut32.dll imp.SafeArrayCopy
+8   0x00000a28 0x00406028 NONE FUNC 0    oleaut32.dll imp.SafeArrayCopyData
+9   0x00000a2c 0x0040602c NONE FUNC 0    oleaut32.dll imp.SafeArrayCreate
+10  0x00000a30 0x00406030 NONE FUNC 0    oleaut32.dll imp.SafeArrayCreateEx
+11  0x00000a34 0x00406034 NONE FUNC 0    oleaut32.dll imp.SafeArrayCreateVector
+12  0x00000a38 0x00406038 NONE FUNC 0    oleaut32.dll imp.SafeArrayCreateVectorEx
+13  0x00000a3c 0x0040603c NONE FUNC 0    oleaut32.dll imp.SafeArrayDestroy
+14  0x00000a40 0x00406040 NONE FUNC 0    oleaut32.dll imp.SafeArrayDestroyData
+15  0x00000a44 0x00406044 NONE FUNC 0    oleaut32.dll imp.SafeArrayDestroyDescriptor
+16  0x00000a48 0x00406048 NONE FUNC 0    oleaut32.dll imp.SafeArrayGetDim
+17  0x00000a4c 0x0040604c NONE FUNC 0    oleaut32.dll imp.SafeArrayGetElement
+18  0x00000a50 0x00406050 NONE FUNC 0    oleaut32.dll imp.SafeArrayGetElemsize
+19  0x00000a54 0x00406054 NONE FUNC 0    oleaut32.dll imp.SafeArrayGetIID
+20  0x00000a58 0x00406058 NONE FUNC 0    oleaut32.dll imp.SafeArrayGetLBound
+21  0x00000a5c 0x0040605c NONE FUNC 0    oleaut32.dll imp.SafeArrayGetRecordInfo
+22  0x00000a60 0x00406060 NONE FUNC 0    oleaut32.dll imp.SafeArrayGetUBound
+23  0x00000a64 0x00406064 NONE FUNC 0    oleaut32.dll imp.SafeArrayGetVartype
+24  0x00000a68 0x00406068 NONE FUNC 0    oleaut32.dll imp.SafeArrayLock
+25  0x00000a6c 0x0040606c NONE FUNC 0    oleaut32.dll imp.SafeArrayPtrOfIndex
+26  0x00000a70 0x00406070 NONE FUNC 0    oleaut32.dll imp.SafeArrayPutElement
+27  0x00000a74 0x00406074 NONE FUNC 0    oleaut32.dll imp.SafeArrayRedim
+28  0x00000a78 0x00406078 NONE FUNC 0    oleaut32.dll imp.SafeArraySetIID
+29  0x00000a7c 0x0040607c NONE FUNC 0    oleaut32.dll imp.SafeArraySetRecordInfo
+30  0x00000a80 0x00406080 NONE FUNC 0    oleaut32.dll imp.SafeArrayUnaccessData
+1   0x00000a88 0x00406088 NONE FUNC 0    kernel32.dll imp.GetSystemTime
+2   0x00000a8c 0x0040608c NONE FUNC 0    kernel32.dll imp.GetACP
+3   0x00000a90 0x00406090 NONE FUNC 0    kernel32.dll imp.GetSystemDirectoryA
+4   0x00000a94 0x00406094 NONE FUNC 0    kernel32.dll imp.GetVersionExA
+5   0x00000a98 0x00406098 NONE FUNC 0    kernel32.dll imp.PeekConsoleInputW
+6   0x00000a9c 0x0040609c NONE FUNC 0    kernel32.dll imp.EnumCalendarInfoA
+7   0x00000aa0 0x004060a0 NONE FUNC 0    kernel32.dll imp.CallNamedPipeW
+8   0x00000aa4 0x004060a4 NONE FUNC 0    kernel32.dll imp._lread
+9   0x00000aa8 0x004060a8 NONE FUNC 0    kernel32.dll imp._lopen
+1   0x00000ab0 0x004060b0 NONE FUNC 0    ole32.dll    imp.CoRegisterInitializeSpy
+2   0x00000ab4 0x004060b4 NONE FUNC 0    ole32.dll    imp.CoRegisterMallocSpy
+3   0x00000ab8 0x004060b8 NONE FUNC 0    ole32.dll    imp.CoRegisterMessageFilter
+4   0x00000abc 0x004060bc NONE FUNC 0    ole32.dll    imp.CoRegisterPSClsid
+5   0x00000ac0 0x004060c0 NONE FUNC 0    ole32.dll    imp.CoRegisterSurrogate
+6   0x00000ac4 0x004060c4 NONE FUNC 0    ole32.dll    imp.CoRegisterSurrogateEx
+7   0x00000ac8 0x004060c8 NONE FUNC 0    ole32.dll    imp.CoReleaseMarshalData
+8   0x00000acc 0x004060cc NONE FUNC 0    ole32.dll    imp.CoReleaseServerProcess
+9   0x00000ad0 0x004060d0 NONE FUNC 0    ole32.dll    imp.CoResumeClassObjects
+1   0x00000ad8 0x004060d8 NONE FUNC 0    rasman.dll   imp.RasRpcGetSystemDirectory
+2   0x00000adc 0x004060dc NONE FUNC 0    rasman.dll   imp.RasRpcGetUserPreferences
+3   0x00000ae0 0x004060e0 NONE FUNC 0    rasman.dll   imp.RasRpcGetVersion
+4   0x00000ae4 0x004060e4 NONE FUNC 0    rasman.dll   imp.RasRpcPortEnum
+5   0x00000ae8 0x004060e8 NONE FUNC 0    rasman.dll   imp.RasRpcPortGetInfo
+6   0x00000aec 0x004060ec NONE FUNC 0    rasman.dll   imp.RasRpcRemoteRasDeleteEntry
+7   0x00000af0 0x004060f0 NONE FUNC 0    rasman.dll   imp.RasRpcRemoteSetUserPreferences
+8   0x00000af4 0x004060f4 NONE FUNC 0    rasman.dll   imp.RasRpcSetUserPreferences
+9   0x00000af8 0x004060f8 NONE FUNC 0    rasman.dll   imp.RasRpcUnloadDll
+10  0x00000afc 0x004060fc NONE FUNC 0    rasman.dll   imp.RasSecurityDialogGetInfo
+1   0x00000b04 0x00406104 NONE FUNC 0    rasman.dll   imp.RasRpcGetSystemDirectory
+2   0x00000b08 0x00406108 NONE FUNC 0    rasman.dll   imp.RasRpcGetUserPreferences
+3   0x00000b0c 0x0040610c NONE FUNC 0    rasman.dll   imp.RasRpcGetVersion
+4   0x00000b10 0x00406110 NONE FUNC 0    rasman.dll   imp.RasRpcPortEnum
+5   0x00000b14 0x00406114 NONE FUNC 0    rasman.dll   imp.RasRpcPortGetInfo
+6   0x00000b18 0x00406118 NONE FUNC 0    rasman.dll   imp.RasRpcRemoteRasDeleteEntry
+7   0x00000b1c 0x0040611c NONE FUNC 0    rasman.dll   imp.RasRpcRemoteSetUserPreferences
+8   0x00000b20 0x00406120 NONE FUNC 0    rasman.dll   imp.RasRpcSetUserPreferences
+9   0x00000b24 0x00406124 NONE FUNC 0    rasman.dll   imp.RasRpcUnloadDll
+10  0x00000b28 0x00406128 NONE FUNC 0    rasman.dll   imp.RasSecurityDialogGetInfo
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    450560
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0007dbd6
+compiled Sun Nov  2 16:57:32 2014
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5456627c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x303
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x13
+  SizeOfCode : 0x4000
+  SizeOfInitializedData : 0x15000
+  SizeOfUninitializedData : 0x6b000
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  BaseOfData : 0x6000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x4
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x85200
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 19 Name: Linker512 Version: 8078 Times: 1
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+  Product: 0 Name: Unknown Version: 0 Times: 4
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x6130
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1a000
+  Size : 0x6a200
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x75000
+  Size : 0x1046
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x85000
+  Size : 0xc50
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x6000
+  Size : 0x130
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+msvcrt.dll
+oleaut32.dll
+kernel32.dll
+ole32.dll
+rasman.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000062ec 0x00000a00 SET_32 msvcrt.dll_fread
+0x000062f4 0x00000a04 SET_32 msvcrt.dll_fopen
+0x00006308 0x00000a0c SET_32 oleaut32.dll_RegisterTypeLibForUser
+0x00006322 0x00000a10 SET_32 oleaut32.dll_RevokeActiveObject
+0x00006338 0x00000a14 SET_32 oleaut32.dll_SafeArrayAccessData
+0x0000634e 0x00000a18 SET_32 oleaut32.dll_SafeArrayAllocData
+0x00006364 0x00000a1c SET_32 oleaut32.dll_SafeArrayAllocDescriptor
+0x00006380 0x00000a20 SET_32 oleaut32.dll_SafeArrayAllocDescriptorEx
+0x0000639e 0x00000a24 SET_32 oleaut32.dll_SafeArrayCopy
+0x000063ae 0x00000a28 SET_32 oleaut32.dll_SafeArrayCopyData
+0x000063c2 0x00000a2c SET_32 oleaut32.dll_SafeArrayCreate
+0x000063d4 0x00000a30 SET_32 oleaut32.dll_SafeArrayCreateEx
+0x000063e8 0x00000a34 SET_32 oleaut32.dll_SafeArrayCreateVector
+0x00006400 0x00000a38 SET_32 oleaut32.dll_SafeArrayCreateVectorEx
+0x0000641a 0x00000a3c SET_32 oleaut32.dll_SafeArrayDestroy
+0x0000642e 0x00000a40 SET_32 oleaut32.dll_SafeArrayDestroyData
+0x00006446 0x00000a44 SET_32 oleaut32.dll_SafeArrayDestroyDescriptor
+0x00006464 0x00000a48 SET_32 oleaut32.dll_SafeArrayGetDim
+0x00006476 0x00000a4c SET_32 oleaut32.dll_SafeArrayGetElement
+0x0000648c 0x00000a50 SET_32 oleaut32.dll_SafeArrayGetElemsize
+0x000064a4 0x00000a54 SET_32 oleaut32.dll_SafeArrayGetIID
+0x000064b6 0x00000a58 SET_32 oleaut32.dll_SafeArrayGetLBound
+0x000064cc 0x00000a5c SET_32 oleaut32.dll_SafeArrayGetRecordInfo
+0x000064e6 0x00000a60 SET_32 oleaut32.dll_SafeArrayGetUBound
+0x000064fc 0x00000a64 SET_32 oleaut32.dll_SafeArrayGetVartype
+0x00006512 0x00000a68 SET_32 oleaut32.dll_SafeArrayLock
+0x00006522 0x00000a6c SET_32 oleaut32.dll_SafeArrayPtrOfIndex
+0x00006538 0x00000a70 SET_32 oleaut32.dll_SafeArrayPutElement
+0x0000654e 0x00000a74 SET_32 oleaut32.dll_SafeArrayRedim
+0x00006560 0x00000a78 SET_32 oleaut32.dll_SafeArraySetIID
+0x00006572 0x00000a7c SET_32 oleaut32.dll_SafeArraySetRecordInfo
+0x0000658c 0x00000a80 SET_32 oleaut32.dll_SafeArrayUnaccessData
+0x000065b2 0x00000a88 SET_32 kernel32.dll_GetSystemTime
+0x000065c2 0x00000a8c SET_32 kernel32.dll_GetACP
+0x000065cc 0x00000a90 SET_32 kernel32.dll_GetSystemDirectoryA
+0x000065e2 0x00000a94 SET_32 kernel32.dll_GetVersionExA
+0x000065f2 0x00000a98 SET_32 kernel32.dll_PeekConsoleInputW
+0x00006606 0x00000a9c SET_32 kernel32.dll_EnumCalendarInfoA
+0x0000661a 0x00000aa0 SET_32 kernel32.dll_CallNamedPipeW
+0x0000662c 0x00000aa4 SET_32 kernel32.dll__lread
+0x00006636 0x00000aa8 SET_32 kernel32.dll__lopen
+0x0000664e 0x00000ab0 SET_32 ole32.dll_CoRegisterInitializeSpy
+0x00006668 0x00000ab4 SET_32 ole32.dll_CoRegisterMallocSpy
+0x0000667e 0x00000ab8 SET_32 ole32.dll_CoRegisterMessageFilter
+0x00006698 0x00000abc SET_32 ole32.dll_CoRegisterPSClsid
+0x000066ac 0x00000ac0 SET_32 ole32.dll_CoRegisterSurrogate
+0x000066c2 0x00000ac4 SET_32 ole32.dll_CoRegisterSurrogateEx
+0x000066da 0x00000ac8 SET_32 ole32.dll_CoReleaseMarshalData
+0x000066f2 0x00000acc SET_32 ole32.dll_CoReleaseServerProcess
+0x0000670c 0x00000ad0 SET_32 ole32.dll_CoResumeClassObjects
+0x0000672e 0x00000ad8 SET_32 rasman.dll_RasRpcGetSystemDirectory
+0x0000674a 0x00000adc SET_32 rasman.dll_RasRpcGetUserPreferences
+0x00006766 0x00000ae0 SET_32 rasman.dll_RasRpcGetVersion
+0x0000677a 0x00000ae4 SET_32 rasman.dll_RasRpcPortEnum
+0x0000678c 0x00000ae8 SET_32 rasman.dll_RasRpcPortGetInfo
+0x000067a0 0x00000aec SET_32 rasman.dll_RasRpcRemoteRasDeleteEntry
+0x000067be 0x00000af0 SET_32 rasman.dll_RasRpcRemoteSetUserPreferences
+0x000067e0 0x00000af4 SET_32 rasman.dll_RasRpcSetUserPreferences
+0x000067fc 0x00000af8 SET_32 rasman.dll_RasRpcUnloadDll
+0x0000680e 0x00000afc SET_32 rasman.dll_RasSecurityDialogGetInfo
+0x00006836 0x00000b04 SET_32 rasman.dll_RasRpcGetSystemDirectory
+0x00006852 0x00000b08 SET_32 rasman.dll_RasRpcGetUserPreferences
+0x0000686e 0x00000b0c SET_32 rasman.dll_RasRpcGetVersion
+0x00006882 0x00000b10 SET_32 rasman.dll_RasRpcPortEnum
+0x00006894 0x00000b14 SET_32 rasman.dll_RasRpcPortGetInfo
+0x000068a8 0x00000b18 SET_32 rasman.dll_RasRpcRemoteRasDeleteEntry
+0x000068c6 0x00000b1c SET_32 rasman.dll_RasRpcRemoteSetUserPreferences
+0x000068e8 0x00000b20 SET_32 rasman.dll_RasRpcSetUserPreferences
+0x00006904 0x00000b24 SET_32 rasman.dll_RasRpcUnloadDll
+0x00006916 0x00000b28 SET_32 rasman.dll_RasSecurityDialogGetInfo
+
+
+70 relocations
+450560
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

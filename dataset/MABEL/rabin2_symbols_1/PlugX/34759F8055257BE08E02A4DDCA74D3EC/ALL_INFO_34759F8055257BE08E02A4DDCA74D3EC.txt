@@ -1,0 +1,223 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xe00 0x10001000  0x1000 -r-x .text
+1   0x00001200  0x400 0x10002000  0x1000 -r-- .rdata
+2   0x00000000    0x0 0x10003000  0x2000 -rw- .data
+3   0x00001600  0x400 0x10005000  0x1000 -r-- .rsrc
+4   0x00001a00  0x200 0x10006000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10001c90 paddr=0x00001090 haddr=0x000000f0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x1000200c NONE FUNC KERNEL32.dll LoadLibraryA
+2   0x10002010 NONE FUNC KERNEL32.dll GetProcAddress
+3   0x10002014 NONE FUNC KERNEL32.dll ExitProcess
+1   0x10002000 NONE FUNC GDI32.dll    CreateColorSpaceA
+2   0x10002004 NONE FUNC GDI32.dll    GetColorSpace
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000120c 0x1000200c NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+2   0x00001210 0x10002010 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+3   0x00001214 0x10002014 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+1   0x00001200 0x10002000 NONE FUNC 0    GDI32.dll    imp.CreateColorSpaceA
+2   0x00001204 0x10002004 NONE FUNC 0    GDI32.dll    imp.GetColorSpace
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001243 0x10002043 5   6    .rdata  ascii   b5585
+1   0x0000124c 0x1000204c 10  11   .rdata  ascii   s`^vU`Wz`L
+2   0x0000125c 0x1000205c 16  17   .rdata  ascii   BFOA>TCP99SLGTC<
+3   0x00001284 0x10002084 17  36   .rdata  utf16le ssMUIDLL.dll.conf
+4   0x000012a8 0x100020a8 10  11   .rdata  ascii   WDBf=:6D^D
+5   0x000012b8 0x100020b8 9   10   .rdata  ascii   bm\el\vhel
+6   0x000012c2 0x100020c2 4   5    .rdata  ascii   pdlz
+7   0x000012c8 0x100020c8 8   9    .rdata  ascii   ibacrta~
+8   0x000012d5 0x100020d5 5   6    .rdata  ascii   kx|ix
+9   0x000012ec 0x100020ec 11  12   .rdata  ascii   d;84B_F9C;B
+10  0x000012f8 0x100020f8 12  13   .rdata  ascii   s`WUTh]\b]]Zf
+11  0x00001309 0x10002109 4   5    .rdata  ascii   ovvk
+12  0x00001314 0x10002114 5   6    .rdata  ascii   `fetl
+13  0x00001335 0x10002135 6   7    .rdata  ascii   lca`ti
+14  0x0000133c 0x1000213c 6   7    .rdata  ascii   cfapra
+15  0x0000139e 0x1000219e 11  12   .rdata  ascii   ExitProcess
+16  0x000013ac 0x100021ac 14  15   .rdata  ascii   GetProcAddress
+17  0x000013be 0x100021be 12  13   .rdata  ascii   LoadLibraryA
+18  0x000013cc 0x100021cc 12  13   .rdata  ascii   KERNEL32.dll
+19  0x000013dc 0x100021dc 13  14   .rdata  ascii   GetColorSpace
+20  0x000013ec 0x100021ec 17  18   .rdata  ascii   CreateColorSpaceA
+21  0x000013fe 0x100021fe 9   10   .rdata  ascii   GDI32.dll
+0   0x00001666 0x10005066 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x000016c2 0x100050c2 14  30   .rsrc   utf16le StringFileInfo
+2   0x000016e6 0x100050e6 8   18   .rsrc   utf16le 000904b0
+3   0x000016fe 0x100050fe 11  24   .rsrc   utf16le CompanyName
+4   0x00001726 0x10005126 15  32   .rsrc   utf16le FileDescription
+5   0x00001756 0x10005156 11  24   .rsrc   utf16le FileVersion
+6   0x00001770 0x10005170 7   16   .rsrc   utf16le 1.0.0.1
+7   0x00001786 0x10005186 12  26   .rsrc   utf16le InternalName
+8   0x000017ae 0x100051ae 14  30   .rsrc   utf16le LegalCopyright
+9   0x000017da 0x100051da 16  34   .rsrc   utf16le OriginalFilename
+10  0x0000180a 0x1000520a 11  24   .rsrc   utf16le ProductName
+11  0x00001832 0x10005232 14  30   .rsrc   utf16le ProductVersion
+12  0x00001850 0x10005250 7   16   .rsrc   utf16le 1.0.0.1
+13  0x00001868 0x10005268 10  22   .rsrc   utf16le arFileInfo
+14  0x00001886 0x10005286 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x10000000
+binsz    7168
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000f508
+compiled Wed Mar 18 06:51:54 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x5509208a
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xe00
+  SizeOfInitializedData : 0x1c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1c90
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x7000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x540
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 154 Name: Cvtres1000 Version: 40219 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 40219 Times: 3
+  Product: 1 Name: Import0 Version: 0 Times: 5
+  Product: 147 Name: Implib900 Version: 30729 Times: 5
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2144
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x5000
+  Size : 0x2a8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x6000
+  Size : 0x158
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+gdi32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000219c 0x00001214 SET_32 KERNEL32.dll_ExitProcess
+0x000021aa 0x00001210 SET_32 KERNEL32.dll_GetProcAddress
+0x000021bc 0x0000120c SET_32 KERNEL32.dll_LoadLibraryA
+0x000021da 0x00001204 SET_32 GDI32.dll_GetColorSpace
+0x000021ea 0x00001200 SET_32 GDI32.dll_CreateColorSpaceA
+
+
+5 relocations
+7168
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.0.1
+  ProductVersion: 1.0.0.1
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: MSO
+  FileDescription: MSO
+  FileVersion: 1.0.0.1
+  InternalName: MSO
+  LegalCopyright: MSO
+  OriginalFilename: MSO
+  ProductName: MSO
+  ProductVersion: 1.0.0.1
+Section to Segment mapping:
+Segment Section
+---------------
+
+

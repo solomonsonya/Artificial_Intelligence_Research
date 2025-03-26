@@ -1,0 +1,156 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000200      0x0 0x140001000  0x47000 -rwx UPX0
+1   0x00000200  0x10800 0x140048000  0x11000 -rwx UPX1
+2   0x00010a00    0x200 0x140059000   0x1000 -rw- UPX2
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x1400583e0 paddr=0x000105e0 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――
+1   0x14005903c NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x140059044 NONE FUNC KERNEL32.DLL ExitProcess
+3   0x14005904c NONE FUNC KERNEL32.DLL GetProcAddress
+4   0x140059054 NONE FUNC KERNEL32.DLL VirtualProtect
+1   0x140059064 NONE FUNC msvcrt.dll   exit
+
+[Symbols]
+
+nth paddr      vaddr       bind type size lib          name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00010a3c 0x14005903c NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x00010a44 0x140059044 NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+3   0x00010a4c 0x14005904c NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+4   0x00010a54 0x140059054 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+1   0x00010a64 0x140059064 NONE FUNC 0    msvcrt.dll   imp.exit
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x140000000
+binsz    150336
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x000343e2
+compiled Wed Aug 17 05:03:45 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  true
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x62fc76b1
+  PointerToSymbolTable : 0x37e00
+  NumberOfSymbols : 0xb4f
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x26
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x24
+  SizeOfCode : 0x11000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x47000
+  AddressOfEntryPoint : 0x583e0
+  BaseOfCode : 0x48000
+  ImageBase : 0x140000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x5a000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x160
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x59000
+  Size : 0xd0
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x35000
+  Size : 0x1dc4
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x590d0
+  Size : 0x14
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x586a8
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0005908c 0x00010a44 SET_64 KERNEL32.DLL_ExitProcess
+0x0005909a 0x00010a4c SET_64 KERNEL32.DLL_GetProcAddress
+0x000590aa 0x00010a3c SET_64 KERNEL32.DLL_LoadLibraryA
+0x000590b8 0x00010a54 SET_64 KERNEL32.DLL_VirtualProtect
+0x000590c8 0x00010a64 SET_64 msvcrt.dll_exit
+
+
+5 relocations
+150336
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

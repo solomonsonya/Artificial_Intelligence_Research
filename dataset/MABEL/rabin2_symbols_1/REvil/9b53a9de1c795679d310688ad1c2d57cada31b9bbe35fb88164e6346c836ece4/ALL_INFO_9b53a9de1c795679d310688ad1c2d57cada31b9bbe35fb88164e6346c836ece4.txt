@@ -1,0 +1,947 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xae00 0x00401000  0xb000 -r-x .text
+1   0x0000b200  0x4200 0x0040c000  0x5000 -r-- .rdata
+2   0x0000f400   0xe00 0x00411000  0x2000 -rw- .data
+3   0x00010200  0xc800 0x00413000  0xd000 -rw- .cfg
+4   0x0001ca00   0x800 0x00420000  0x1000 -r-- .rsrc
+5   0x0001d200   0xa00 0x00421000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004027f1 paddr=0x00001bf1 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040c010 NONE FUNC KERNEL32.dll CloseHandle
+2   0x0040c014 NONE FUNC KERNEL32.dll CreateThread
+3   0x0040c018 NONE FUNC KERNEL32.dll GetModuleHandleW
+4   0x0040c01c NONE FUNC KERNEL32.dll CopyFileW
+5   0x0040c020 NONE FUNC KERNEL32.dll MoveFileW
+6   0x0040c024 NONE FUNC KERNEL32.dll GetStdHandle
+7   0x0040c028 NONE FUNC KERNEL32.dll CreateFileW
+8   0x0040c02c NONE FUNC KERNEL32.dll WriteFile
+9   0x0040c030 NONE FUNC KERNEL32.dll OutputDebugStringW
+10  0x0040c034 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+11  0x0040c038 NONE FUNC KERNEL32.dll QueryPerformanceFrequency
+12  0x0040c03c NONE FUNC KERNEL32.dll HeapAlloc
+13  0x0040c040 NONE FUNC KERNEL32.dll SetEndOfFile
+14  0x0040c044 NONE FUNC KERNEL32.dll GetProcessHeap
+15  0x0040c048 NONE FUNC KERNEL32.dll InitializeCriticalSection
+16  0x0040c04c NONE FUNC KERNEL32.dll DeleteCriticalSection
+17  0x0040c050 NONE FUNC KERNEL32.dll ExitProcess
+18  0x0040c054 NONE FUNC KERNEL32.dll GetCurrentThread
+19  0x0040c058 NONE FUNC KERNEL32.dll GetProcAddress
+20  0x0040c05c NONE FUNC KERNEL32.dll SetThreadAffinityMask
+21  0x0040c060 NONE FUNC KERNEL32.dll lstrlenW
+22  0x0040c064 NONE FUNC KERNEL32.dll LoadLibraryA
+23  0x0040c068 NONE FUNC KERNEL32.dll GetConsoleScreenBufferInfo
+24  0x0040c06c NONE FUNC KERNEL32.dll SetConsoleTextAttribute
+25  0x0040c070 NONE FUNC KERNEL32.dll WriteConsoleW
+26  0x0040c074 NONE FUNC KERNEL32.dll DeleteFileW
+27  0x0040c078 NONE FUNC KERNEL32.dll LeaveCriticalSection
+28  0x0040c07c NONE FUNC KERNEL32.dll HeapFree
+29  0x0040c080 NONE FUNC KERNEL32.dll EnterCriticalSection
+30  0x0040c084 NONE FUNC KERNEL32.dll IsProcessorFeaturePresent
+1   0x0040c098 NONE FUNC USER32.dll   CheckDlgButton
+2   0x0040c09c NONE FUNC USER32.dll   IsDlgButtonChecked
+3   0x0040c0a0 NONE FUNC USER32.dll   EnableWindow
+4   0x0040c0a4 NONE FUNC USER32.dll   SetDlgItemTextW
+5   0x0040c0a8 NONE FUNC USER32.dll   DialogBoxParamW
+6   0x0040c0ac NONE FUNC USER32.dll   SendMessageW
+7   0x0040c0b0 NONE FUNC USER32.dll   SetDlgItemInt
+8   0x0040c0b4 NONE FUNC USER32.dll   GetDlgItem
+9   0x0040c0b8 NONE FUNC USER32.dll   SetWindowTextW
+10  0x0040c0bc NONE FUNC USER32.dll   wsprintfW
+11  0x0040c0c0 NONE FUNC USER32.dll   MessageBoxW
+12  0x0040c0c4 NONE FUNC USER32.dll   EndDialog
+1   0x0040c008 NONE FUNC GDI32.dll    CreateFontW
+1   0x0040c08c NONE FUNC SHELL32.dll  SHBrowseForFolderW
+2   0x0040c090 NONE FUNC SHELL32.dll  SHGetPathFromIDListW
+1   0x0040c000 NONE FUNC COMDLG32.dll GetOpenFileNameW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000b210 0x0040c010 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+2   0x0000b214 0x0040c014 NONE FUNC 0    KERNEL32.dll imp.CreateThread
+3   0x0000b218 0x0040c018 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleW
+4   0x0000b21c 0x0040c01c NONE FUNC 0    KERNEL32.dll imp.CopyFileW
+5   0x0000b220 0x0040c020 NONE FUNC 0    KERNEL32.dll imp.MoveFileW
+6   0x0000b224 0x0040c024 NONE FUNC 0    KERNEL32.dll imp.GetStdHandle
+7   0x0000b228 0x0040c028 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+8   0x0000b22c 0x0040c02c NONE FUNC 0    KERNEL32.dll imp.WriteFile
+9   0x0000b230 0x0040c030 NONE FUNC 0    KERNEL32.dll imp.OutputDebugStringW
+10  0x0000b234 0x0040c034 NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+11  0x0000b238 0x0040c038 NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceFrequency
+12  0x0000b23c 0x0040c03c NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+13  0x0000b240 0x0040c040 NONE FUNC 0    KERNEL32.dll imp.SetEndOfFile
+14  0x0000b244 0x0040c044 NONE FUNC 0    KERNEL32.dll imp.GetProcessHeap
+15  0x0000b248 0x0040c048 NONE FUNC 0    KERNEL32.dll imp.InitializeCriticalSection
+16  0x0000b24c 0x0040c04c NONE FUNC 0    KERNEL32.dll imp.DeleteCriticalSection
+17  0x0000b250 0x0040c050 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+18  0x0000b254 0x0040c054 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThread
+19  0x0000b258 0x0040c058 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+20  0x0000b25c 0x0040c05c NONE FUNC 0    KERNEL32.dll imp.SetThreadAffinityMask
+21  0x0000b260 0x0040c060 NONE FUNC 0    KERNEL32.dll imp.lstrlenW
+22  0x0000b264 0x0040c064 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+23  0x0000b268 0x0040c068 NONE FUNC 0    KERNEL32.dll imp.GetConsoleScreenBufferInfo
+24  0x0000b26c 0x0040c06c NONE FUNC 0    KERNEL32.dll imp.SetConsoleTextAttribute
+25  0x0000b270 0x0040c070 NONE FUNC 0    KERNEL32.dll imp.WriteConsoleW
+26  0x0000b274 0x0040c074 NONE FUNC 0    KERNEL32.dll imp.DeleteFileW
+27  0x0000b278 0x0040c078 NONE FUNC 0    KERNEL32.dll imp.LeaveCriticalSection
+28  0x0000b27c 0x0040c07c NONE FUNC 0    KERNEL32.dll imp.HeapFree
+29  0x0000b280 0x0040c080 NONE FUNC 0    KERNEL32.dll imp.EnterCriticalSection
+30  0x0000b284 0x0040c084 NONE FUNC 0    KERNEL32.dll imp.IsProcessorFeaturePresent
+1   0x0000b298 0x0040c098 NONE FUNC 0    USER32.dll   imp.CheckDlgButton
+2   0x0000b29c 0x0040c09c NONE FUNC 0    USER32.dll   imp.IsDlgButtonChecked
+3   0x0000b2a0 0x0040c0a0 NONE FUNC 0    USER32.dll   imp.EnableWindow
+4   0x0000b2a4 0x0040c0a4 NONE FUNC 0    USER32.dll   imp.SetDlgItemTextW
+5   0x0000b2a8 0x0040c0a8 NONE FUNC 0    USER32.dll   imp.DialogBoxParamW
+6   0x0000b2ac 0x0040c0ac NONE FUNC 0    USER32.dll   imp.SendMessageW
+7   0x0000b2b0 0x0040c0b0 NONE FUNC 0    USER32.dll   imp.SetDlgItemInt
+8   0x0000b2b4 0x0040c0b4 NONE FUNC 0    USER32.dll   imp.GetDlgItem
+9   0x0000b2b8 0x0040c0b8 NONE FUNC 0    USER32.dll   imp.SetWindowTextW
+10  0x0000b2bc 0x0040c0bc NONE FUNC 0    USER32.dll   imp.wsprintfW
+11  0x0000b2c0 0x0040c0c0 NONE FUNC 0    USER32.dll   imp.MessageBoxW
+12  0x0000b2c4 0x0040c0c4 NONE FUNC 0    USER32.dll   imp.EndDialog
+1   0x0000b208 0x0040c008 NONE FUNC 0    GDI32.dll    imp.CreateFontW
+1   0x0000b28c 0x0040c08c NONE FUNC 0    SHELL32.dll  imp.SHBrowseForFolderW
+2   0x0000b290 0x0040c090 NONE FUNC 0    SHELL32.dll  imp.SHGetPathFromIDListW
+1   0x0000b200 0x0040c000 NONE FUNC 0    COMDLG32.dll imp.GetOpenFileNameW
+[Strings]
+nth paddr      vaddr      len  size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000b2d2 0x0040c0d2 6    14   .rdata  utf16le lERROR
+1   0x0000b2e0 0x0040c0e0 20   42   .rdata  utf16le get_decryptor_type()
+2   0x0000b30c 0x0040c10c 6    14   .rdata  utf16le [DBG] 
+3   0x0000b31c 0x0040c11c 8    18   .rdata  utf16le cfg:%S\r\n
+4   0x0000b330 0x0040c130 9    10   .rdata  ascii   master_sk
+5   0x0000b33c 0x0040c13c 5    6    .rdata  ascii   pc_sk
+6   0x0000b350 0x0040c150 7    16   .rdata  utf16le l Files
+7   0x0000b36c 0x0040c16c 7    16   .rdata  utf16le WARNING
+8   0x0000b37c 0x0040c17c 4    10   .rdata  utf16le INFO
+9   0x0000b388 0x0040c188 11   24   .rdata  utf16le Courier New
+10  0x0000b3a0 0x0040c1a0 13   28   .rdata  utf16le DECRYPTING.  
+11  0x0000b3bc 0x0040c1bc 13   28   .rdata  utf16le DECRYPTING.. 
+12  0x0000b3d8 0x0040c1d8 13   28   .rdata  utf16le DECRYPTING...
+13  0x0000b3f4 0x0040c1f4 11   24   .rdata  utf16le DECRYPT ALL
+14  0x0000b410 0x0040c210 14   30   .rdata  utf16le DECRYPT FOLDER
+15  0x0000b430 0x0040c230 12   26   .rdata  utf16le DECRYPT FILE
+16  0x0000b44c 0x0040c24c 22   46   .rdata  utf16le REvil Decryptor v%d.%d
+17  0x0000b47c 0x0040c27c 12   26   .rdata  utf16le $recycle.bin
+18  0x0000b498 0x0040c298 12   26   .rdata  utf16le $windows.~bt
+19  0x0000b4b4 0x0040c2b4 12   26   .rdata  utf16le $windows.~ws
+20  0x0000b4d0 0x0040c2d0 7    16   .rdata  utf16le appdata
+21  0x0000b4e0 0x0040c2e0 16   34   .rdata  utf16le application data
+22  0x0000b504 0x0040c304 4    10   .rdata  utf16le boot
+23  0x0000b510 0x0040c310 6    14   .rdata  utf16le google
+24  0x0000b520 0x0040c320 7    16   .rdata  utf16le mozilla
+25  0x0000b530 0x0040c330 11   24   .rdata  utf16le programdata
+26  0x0000b548 0x0040c348 25   52   .rdata  utf16le system volume information
+27  0x0000b57c 0x0040c37c 11   24   .rdata  utf16le tor browser
+28  0x0000b594 0x0040c394 7    16   .rdata  utf16le windows
+29  0x0000b5a4 0x0040c3a4 11   24   .rdata  utf16le windows.old
+30  0x0000b5bc 0x0040c3bc 5    12   .rdata  utf16le intel
+31  0x0000b5c8 0x0040c3c8 8    18   .rdata  utf16le msocache
+32  0x0000b5dc 0x0040c3dc 8    18   .rdata  utf16le perflogs
+33  0x0000b5f0 0x0040c3f0 13   28   .rdata  utf16le program files
+34  0x0000b60c 0x0040c40c 19   40   .rdata  utf16le program files (x86)
+35  0x0000b63c 0x0040c43c 9    20   .rdata  utf16le open:%s\r\n
+36  0x0000b650 0x0040c450 16   17   .rdata  ascii   decrypt_one_file
+37  0x0000b664 0x0040c464 39   40   .rdata  ascii   *****************************\src\dec.c
+38  0x0000b68c 0x0040c48c 17   36   .rdata  utf16le       %S:%S:%lu\r\n
+39  0x0000b6b0 0x0040c4b0 14   30   .rdata  utf16le  fin:%s:%llu\r\n
+40  0x0000b6d0 0x0040c4d0 6    14   .rdata  utf16le [ERR] 
+41  0x0000b6e0 0x0040c4e0 12   26   .rdata  utf16le open:%s:%d\r\n
+42  0x0000b6fc 0x0040c4fc 19   40   .rdata  utf16le DEC_DATA, %s = %s\r\n
+43  0x0000b724 0x0040c524 21   22   .rdata  ascii   file_decrypt_callback
+44  0x0000b73c 0x0040c53c 26   54   .rdata  utf16le invalid "master_sk" key!\r\n
+45  0x0000b774 0x0040c574 7    16   .rdata  utf16le .BACKUP
+46  0x0000b784 0x0040c584 13   28   .rdata  utf16le   create:%s\r\n
+47  0x0000b7a0 0x0040c5a0 22   46   .rdata  utf16le invalid "pc_sk" key!\r\n
+48  0x0000b7d0 0x0040c5d0 13   28   .rdata  utf16le   delete:%s\r\n
+49  0x0000b7ec 0x0040c5ec 14   30   .rdata  utf16le  restore: %s\r\n
+50  0x0000b80c 0x0040c60c 29   60   .rdata  utf16le read "struct _DEC_DATA": %s\r\n
+51  0x0000b848 0x0040c648 19   40   .rdata  utf16le start decrypt ALL\r\n
+52  0x0000b870 0x0040c670 32   66   .rdata  utf16le %d files successfully decrypted!
+53  0x0000b8b4 0x0040c6b4 4    10   .rdata  utf16le %s\r\n
+54  0x0000b8c0 0x0040c6c0 34   70   .rdata  utf16le extensions not found OR key error!
+55  0x0000b908 0x0040c708 22   46   .rdata  utf16le start decrypt FOLDER\r\n
+56  0x0000b938 0x0040c738 20   42   .rdata  utf16le start decrypt FILE\r\n
+57  0x0000b968 0x0040c768 31   64   .rdata  utf16le %d file successfully decrypted!
+58  0x0000b9a8 0x0040c7a8 7    16   .rdata  utf16le enabled
+59  0x0000b9b8 0x0040c7b8 8    18   .rdata  utf16le disabled
+60  0x0000b9cc 0x0040c7cc 20   42   .rdata  utf16le create backup - %s\r\n
+61  0x0000b9f8 0x0040c7f8 41   84   .rdata  utf16le Decryption process cannot be interrupted!
+62  0x0000ba4c 0x0040c84c 5    12   .rdata  utf16le -full
+63  0x0000ba58 0x0040c858 5    12   .rdata  utf16le -path
+64  0x0000ba64 0x0040c864 5    12   .rdata  utf16le -file
+65  0x0000ba70 0x0040c870 11   24   .rdata  utf16le start GUI\r\n
+66  0x0000ba88 0x0040c888 8    9    .rdata  ascii   dec_main
+67  0x0000ba94 0x0040c894 19   40   .rdata  utf16le config init error\r\n
+68  0x0000babc 0x0040c8bc 11   12   .rdata  ascii   _vsnwprintf
+69  0x0000bac8 0x0040c8c8 5    6    .rdata  ascii   ntdll
+70  0x0000bad0 0x0040c8d0 11   24   .rdata  utf16le DBG_LOG.TXT
+71  0x0000bae8 0x0040c8e8 10   22   .rdata  utf16le       %p  
+72  0x0000bb00 0x0040c900 4    10   .rdata  utf16le %02x
+73  0x0000bb34 0x0040c934 21   44   .rdata  utf16le valid args: %p, %lu\r\n
+74  0x0000bb60 0x0040c960 14   15   .rdata  ascii   stdout_hexdump
+75  0x0000bb70 0x0040c970 47   48   .rdata  ascii   ********************************\common\debug.c
+76  0x0000bba0 0x0040c9a0 6    14   .rdata  utf16le [INF] 
+77  0x0000bbb0 0x0040c9b0 18   38   .rdata  utf16le TIMING: start...\r\n
+78  0x0000bbd8 0x0040c9d8 35   72   .rdata  utf16le TIMING: result = %llu:%02llu:%.3f\r\n
+79  0x0000bc30 0x0040ca30 29   60   .rdata  utf16le win_dir() last error = %08X\r\n
+80  0x0000bc6c 0x0040ca6c 48   49   .rdata  ascii   ********************************\common\system.c
+81  0x0000bca0 0x0040caa0 43   88   .rdata  utf16le GetVolumeInformationW() last error = %08X\r\n
+82  0x0000bd00 0x0040cb00 41   84   .rdata  utf16le GetDiskFreeSpaceExW() last error = %08X\r\n
+83  0x0000bd54 0x0040cb54 18   38   .rdata  utf16le check RU speak..\r\n
+84  0x0000bd7c 0x0040cb7c 11   12   .rdata  ascii   is_ru_speak
+85  0x0000bd88 0x0040cb88 15   32   .rdata  utf16le !!! IS RU !!!\r\n
+86  0x0000bda8 0x0040cba8 19   40   .rdata  utf16le manual UAC bypass\r\n
+87  0x0000bdd0 0x0040cbd0 20   42   .rdata  utf16le delete shadow copy\r\n
+88  0x0000bdfc 0x0040cbfc 18   38   .rdata  utf16le First run winsec\r\n
+89  0x0000be24 0x0040cc24 16   17   .rdata  ascii   reset_file_perms
+90  0x0000be38 0x0040cc38 36   74   .rdata  utf16le cannot open current proccess token\r\n
+91  0x0000be84 0x0040cc84 26   54   .rdata  utf16le fatal error alloc memory\r\n
+92  0x0000bebc 0x0040ccbc 23   48   .rdata  utf16le cannot get token info\r\n
+93  0x0000beec 0x0040ccec 28   58   .rdata  utf16le SetFileSecurity first call\r\n
+94  0x0000bf28 0x0040cd28 29   60   .rdata  utf16le SetFileSecurity second call\r\n
+95  0x0000bf64 0x0040cd64 14   30   .rdata  utf16le ServicesActive
+96  0x0000bf84 0x0040cd84 27   56   .rdata  utf16le fatal error start session\r\n
+97  0x0000bfbc 0x0040cdbc 11   12   .rdata  ascii   unlock_file
+98  0x0000bfc8 0x0040cdc8 47   96   .rdata  utf16le It is critical or system process. May be bsod\r\n
+99  0x0000c028 0x0040ce28 32   66   .rdata  utf16le this is service %s try to kill\r\n
+100 0x0000c070 0x0040ce70 31   64   .rdata  utf16le Err,cant stop service %s - %d\r\n
+101 0x0000c0b0 0x0040ceb0 28   58   .rdata  utf16le Err,cant delete service %s\r\n
+102 0x0000c0ec 0x0040ceec 26   54   .rdata  utf16le And here we kill process\r\n
+103 0x0000c124 0x0040cf24 28   58   .rdata  utf16le error terminate process %d\r\n
+104 0x0000c160 0x0040cf60 23   48   .rdata  utf16le error open process %d\r\n
+105 0x0000c190 0x0040cf90 20   42   .rdata  utf16le error RmGetList %d\r\n
+106 0x0000c1c0 0x0040cfc0 31   64   .rdata  utf16le error RmRegisterResources, %d\r\n
+107 0x0000c200 0x0040d000 16   17   .rdata  ascii   0123456789abcdef
+108 0x0000c219 0x0040d019 5    6    .rdata  ascii   OGVX'
+109 0x0000c220 0x0040d020 5    6    .rdata  ascii   ?\e4@4
+110 0x0000c226 0x0040d026 5    6    .rdata  ascii   %:''`
+111 0x0000c22c 0x0040d02c 6    7    .rdata  ascii   aa^L8*
+112 0x0000c235 0x0040d035 14   15   .rdata  ascii   :U-2UN)/F4O2Z0
+113 0x0000c24f 0x0040d04f 4    5    .rdata  ascii   \a\b\t\e
+114 0x0000c254 0x0040d054 9    10   .rdata  ascii   ]!1I!\n\v\f\r
+115 0x0000c262 0x0040d062 7    8    .rdata  ascii   E/3[T(>
+116 0x0000c26a 0x0040d06a 5    6    .rdata  ascii   WQ2K7
+117 0x0000c279 0x0040d079 4    5    .rdata  ascii   \n\v\f\r
+118 0x0000c27f 0x0040d07f 8    9    .rdata  ascii   NTca0c\@
+119 0x0000c288 0x0040d088 16   17   .rdata  ascii   E'U?27FNZN/?[]<0
+120 0x0000c29a 0x0040d09a 5    6    .rdata  ascii   *2[%O
+121 0x0000c2a2 0x0040d0a2 9    10   .rdata  ascii   2[  0:E%$
+122 0x0000c2ac 0x0040d0ac 11   12   .rdata  ascii   F+Q?$/W<Z[[
+123 0x0000c2c1 0x0040d0c1 5    6    .rdata  ascii   DE8#I
+124 0x0000c2c7 0x0040d0c7 7    8    .rdata  ascii   )G!L?N:
+125 0x0000c2cf 0x0040d0cf 13   14   .rdata  ascii   KW!1KW]TU:;DY
+126 0x0000c2e5 0x0040d0e5 5    6    .rdata  ascii   \eB[aJ
+127 0x0000c2f6 0x0040d0f6 6    7    .rdata  ascii   3NGHLW
+128 0x0000c2fd 0x0040d0fd 6    7    .rdata  ascii   APAS[C
+129 0x0000c304 0x0040d104 5    6    .rdata  ascii   \e@W'J
+130 0x0000c320 0x0040d120 17   36   .rdata  utf16le rename:%s:%s:%s\r\n
+131 0x0000c358 0x0040d158 40   82   .rdata  utf16le search_net_files() - [scope - %d] - %s\r\n
+132 0x0000c3b0 0x0040d1b0 38   78   .rdata  utf16le core_init() - Program initialization\r\n
+133 0x0000c400 0x0040d200 42   86   .rdata  utf16le core_close() - Completion of the program\r\n
+134 0x0000c458 0x0040d258 32   33   .rdata  ascii   expand 32-byte kexpand 16-byte k
+135 0x0000c479 0x0040d279 5    7    .rdata  utf8    ccƄ|| blocks=Basic Latin,Latin Extended-B
+136 0x0000c48d 0x0040d28d 5    7    .rdata  utf8    kkֱoo blocks=Basic Latin,Hebrew
+137 0x0000c496 0x0040d296 5    7    .rdata  utf8    őP00` blocks=Latin Extended-A,Basic Latin
+138 0x0000c4a4 0x0040d2a4 4    5    .rdata  ascii   }++V
+139 0x0000c503 0x0040d303 13   14   .rdata  ascii   =j&&LZ66lA??~
+140 0x0000c516 0x0040d316 5    7    .rdata  utf8    ̃\44h blocks=Combining Diacritical Marks,Basic Latin
+141 0x0000c52e 0x0040d32e 6    8    .rdata  utf8    ثS11b? blocks=Arabic,Basic Latin
+142 0x0000c53e 0x0040d33e 6    8    .rdata  utf8    Ǖe##F^ blocks=Latin Extended-B,Basic Latin
+143 0x0000c557 0x0040d357 4    5    .rdata  ascii   /\t\a\a
+144 0x0000c56c 0x0040d36c 5    7    .rdata  utf8    i''NͲ blocks=Basic Latin,Greek and Coptic
+145 0x0000c580 0x0040d380 5    6    .rdata  ascii   t,,X.
+146 0x0000c587 0x0040d387 5    6    .rdata  ascii   4-\e\e6
+147 0x0000c59c 0x0040d39c 5    6    .rdata  ascii   M;;va
+148 0x0000c5a7 0x0040d3a7 6    7    .rdata  ascii   }{))R>
+149 0x0000c5b0 0x0040d3b0 4    5    .rdata  ascii   q//^
+150 0x0000c5c8 0x0040d3c8 4    5    .rdata  ascii   `  @
+151 0x0000c5e3 0x0040d3e3 5    6    .rdata  ascii   gK99r
+152 0x0000c610 0x0040d410 4    5    .rdata  ascii   U33f
+153 0x0000c62c 0x0040d42c 4    5    .rdata  ascii   D<<x
+154 0x0000c64f 0x0040d44f 5    6    .rdata  ascii   !H88p
+155 0x0000c662 0x0040d462 6    8    .rdata  utf8    گc!!B0 blocks=Arabic,Basic Latin
+156 0x0000c6a4 0x0040d4a4 4    5    .rdata  ascii   G==z
+157 0x0000c6c6 0x0040d4c6 9    11   .rdata  utf8    ܣf""D~**T blocks=Syriac,Basic Latin
+158 0x0000c6fc 0x0040d4fc 8    9    .rdata  ascii   V22dN::t
+159 0x0000c70f 0x0040d50f 5    6    .rdata  ascii   \fl$$H
+160 0x0000c73e 0x0040d53e 5    7    .rdata  utf8    ȋY77n blocks=Latin Extended-B,Basic Latin
+161 0x0000c767 0x0040d567 6    9    .rdata  utf8    ϯeeʎzz blocks=Greek and Coptic,Basic Latin,IPA Extensions
+162 0x0000c780 0x0040d580 9    10   .rdata  ascii   o%%Jr..\$
+163 0x0000c7bc 0x0040d5bc 5    7    .rdata  utf8    B>>|ĵ blocks=Basic Latin,Latin Extended-A
+164 0x0000c7dc 0x0040d5dc 4    5    .rdata  ascii   _55j
+165 0x0000c830 0x0040d630 5    6    .rdata  ascii   x((Pz
+166 0x0000c85f 0x0040d65f 5    6    .rdata  ascii   )w--Z
+167 0x0000c877 0x0040d677 6    8    .rdata  utf8    ,ccƥ|| blocks=Basic Latin,Latin Extended-B
+168 0x0000c88b 0x0040d68b 7    10   .rdata  utf8    \rkkֽooޱ blocks=Basic Latin,Hebrew,Thaana
+169 0x0000c895 0x0040d695 6    8    .rdata  utf8    őT00`P blocks=Latin Extended-A,Basic Latin
+170 0x0000c8a0 0x0040d6a0 7    9    .rdata  utf8    ggΩ++V} blocks=Basic Latin,Greek and Coptic
+171 0x0000c8c1 0x0040d6c1 4    6    .rdata  utf8    ɉ@}} blocks=Latin Extended-B,Basic Latin
+172 0x0000c904 0x0040d704 12   13   .rdata  ascii   &&Lj66lZ??~A
+173 0x0000c915 0x0040d715 6    8    .rdata  utf8    ̃O44h\ blocks=Combining Diacritical Marks,Basic Latin
+174 0x0000c92d 0x0040d72d 6    8    .rdata  utf8    ثs11bS blocks=Arabic,Basic Latin
+175 0x0000c93d 0x0040d73d 6    8    .rdata  utf8    ǕR##Fe blocks=Latin Extended-B,Basic Latin
+176 0x0000c96b 0x0040d76b 5    6    .rdata  ascii   &''Ni
+177 0x0000c980 0x0040d780 4    5    .rdata  ascii   ,,Xt
+178 0x0000c986 0x0040d786 11   13   .rdata  utf8    4.\e\e6-nnܲZZ blocks=Basic Latin,Syriac
+179 0x0000c99c 0x0040d79c 4    5    .rdata  ascii   ;;vM
+180 0x0000c9a8 0x0040d7a8 4    5    .rdata  ascii   ))R{
+181 0x0000c9af 0x0040d7af 5    6    .rdata  ascii   >//^q
+182 0x0000c9c7 0x0040d7c7 5    6    .rdata  ascii   ,  @`
+183 0x0000c9e4 0x0040d7e4 6    7    .rdata  ascii   99rKJJ
+184 0x0000ca10 0x0040d810 4    5    .rdata  ascii   33fU
+185 0x0000ca2c 0x0040d82c 4    5    .rdata  ascii   <<xD
+186 0x0000ca50 0x0040d850 4    5    .rdata  ascii   88pH
+187 0x0000ca61 0x0040d861 6    8    .rdata  utf8    گu!!Bc blocks=Arabic,Basic Latin
+188 0x0000ca79 0x0040d879 4    6    .rdata  utf8    ́L\f\f blocks=Combining Diacritical Marks,Basic Latin
+189 0x0000caa4 0x0040d8a4 9    11   .rdata  utf8    ==zGddȬ]] blocks=Basic Latin,Latin Extended-B
+190 0x0000cab2 0x0040d8b2 4    5    .rdata  ascii   2+ss
+191 0x0000cac8 0x0040d8c8 8    9    .rdata  ascii   ""Df**T~
+192 0x0000cae9 0x0040d8e9 4    6    .rdata  utf8    ާy^^ blocks=Thaana,Basic Latin
+193 0x0000cafb 0x0040d8fb 11   12   .rdata  ascii   ;22dV::tN\n\n
+194 0x0000cb0e 0x0040d90e 8    9    .rdata  ascii   \f\n$$Hl\\
+195 0x0000cb3d 0x0040d93d 9    12   .rdata  utf8    ȋC77nYmmڷ blocks=Latin Extended-B,Basic Latin,Arabic
+196 0x0000cb4d 0x0040d94d 4    6    .rdata  utf8    ձdNN blocks=Armenian,Basic Latin
+197 0x0000cb58 0x0040d958 5    7    .rdata  utf8    llشVV blocks=Basic Latin,Arabic
+198 0x0000cb67 0x0040d967 8    13   .rdata  utf8    %eeʯzz􎮮G blocks=Basic Latin,IPA Extensions,Supplementary Private Use Area-B
+199 0x0000cb80 0x0040d980 8    9    .rdata  ascii   %%Jo..\r
+200 0x0000cb9d 0x0040d99d 4    6    .rdata  utf8    ݡ|tt blocks=Arabic Supplement,Basic Latin
+201 0x0000cba6 0x0040d9a6 4    5    .rdata  ascii   >!KK
+202 0x0000cbbc 0x0040d9bc 4    5    .rdata  ascii   >>|B
+203 0x0000cbc4 0x0040d9c4 5    7    .rdata  utf8    ff̪HH blocks=Basic Latin,Combining Diacritical Marks
+204 0x0000cbd8 0x0040d9d8 9    11   .rdata  utf8    aa£55j_WW blocks=Basic Latin,Latin-1 Supplement
+205 0x0000cc06 0x0040da06 5    7    .rdata  utf8    "3iiһ blocks=Basic Latin,Cyrillic
+206 0x0000cc29 0x0040da29 4    6    .rdata  utf8    ·IUU blocks=Greek and Coptic,Basic Latin
+207 0x0000cc30 0x0040da30 4    5    .rdata  ascii   ((Px
+208 0x0000cc54 0x0040da54 5    7    .rdata  utf8    hhиAA blocks=Basic Latin,Cyrillic
+209 0x0000cc60 0x0040da60 4    5    .rdata  ascii   --Zw
+210 0x0000cc76 0x0040da76 6    8    .rdata  utf8    ,:cƥc| blocks=Basic Latin,Latin Extended-B
+211 0x0000cc8c 0x0040da8c 8    12   .rdata  utf8    kֽkoޱoőT blocks=Basic Latin,Hebrew,Thaana,Latin Extended-A
+212 0x0000cc98 0x0040da98 4    5    .rdata  ascii   0`P0
+213 0x0000cca0 0x0040daa0 7    9    .rdata  utf8    gΩg+V}+ blocks=Basic Latin,Greek and Coptic
+214 0x0000ccb7 0x0040dab7 4    7    .rdata  utf8    vʏEʂ blocks=Basic Latin,IPA Extensions
+215 0x0000ccdc 0x0040dadc 4    7    .rdata  utf8    ԳgԢ_ blocks=Armenian,Basic Latin,Cyrillic Supplement
+216 0x0000ccf3 0x0040daf3 6    10   .rdata  utf8    r\e[7u· blocks=Basic Latin,Latin-1 Supplement
+217 0x0000cd04 0x0040db04 12   13   .rdata  ascii   &Lj&6lZ6?~A?
+218 0x0000cd18 0x0040db18 4    5    .rdata  ascii   4h\4
+219 0x0000cd30 0x0040db30 4    5    .rdata  ascii   1bS1
+220 0x0000cd40 0x0040db40 6    8    .rdata  utf8    #Fe#Ý^ blocks=Basic Latin,Latin-1 Supplement
+221 0x0000cd6c 0x0040db6c 4    5    .rdata  ascii   'Ni'
+222 0x0000cd80 0x0040db80 4    5    .rdata  ascii   ,Xt,
+223 0x0000cd88 0x0040db88 8    10   .rdata  utf8    \e6-\enܲnZ blocks=Basic Latin,Syriac
+224 0x0000cd9b 0x0040db9b 14   18   .rdata  utf8    R;vM;ַaֳ}γ)R{) blocks=Basic Latin,Hebrew,Greek and Coptic
+225 0x0000cdb0 0x0040dbb0 4    5    .rdata  ascii   /^q/
+226 0x0000cdc8 0x0040dbc8 4    5    .rdata  ascii    @` 
+227 0x0000cdd7 0x0040dbd7 14   19   .rdata  utf8    [jԾjˍF˾gپ9rK9J blocks=Basic Latin,Armenian,Spacing Modifier Letters,Arabic
+228 0x0000ce0f 0x0040dc0f 5    6    .rdata  ascii   M3fU3
+229 0x0000ce2b 0x0040dc2b 5    6    .rdata  ascii   P<xD<
+230 0x0000ce50 0x0040dc50 4    5    .rdata  ascii   8pH8
+231 0x0000ce5d 0x0040dc5d 4    7    .rdata  utf8    wvگu blocks=Basic Latin,Arabic
+232 0x0000ce64 0x0040dc64 4    5    .rdata  ascii   !Bc!
+233 0x0000ce98 0x0040dc98 4    7    .rdata  utf8    ēWħU blocks=Latin Extended-A,Basic Latin
+234 0x0000cea3 0x0040dca3 9    11   .rdata  utf8    ~=zG=dȬd] blocks=Basic Latin,Latin Extended-B
+235 0x0000ceb7 0x0040dcb7 4    6    .rdata  utf8    s` `
+236 0x0000cec8 0x0040dcc8 8    9    .rdata  ascii   "Df"*T~*
+237 0x0000cefc 0x0040dcfc 9    10   .rdata  ascii   2dV2:tN:\n
+238 0x0000cf10 0x0040dd10 5    6    .rdata  ascii   $Hl$\
+239 0x0000cf1c 0x0040dd1c 4    7    .rdata  utf8    ӽnӬC blocks=Cyrillic,Basic Latin
+240 0x0000cf40 0x0040dd40 7    9    .rdata  utf8    7nY7mڷm blocks=Basic Latin,Arabic
+241 0x0000cf58 0x0040dd58 4    6    .rdata  utf8    lشlV blocks=Basic Latin,Arabic
+242 0x0000cf68 0x0040dd68 4    6    .rdata  utf8    eʯez blocks=Basic Latin,IPA Extensions
+243 0x0000cf7f 0x0040dd7f 9    10   .rdata  ascii   x%Jo%.\r.
+244 0x0000cf91 0x0040dd91 4    7    .rdata  utf8    sǴƗQ blocks=Basic Latin,Latin Extended-B
+245 0x0000cfbb 0x0040ddbb 5    6    .rdata  ascii   p>|B>
+246 0x0000cfc1 0x0040ddc1 6    9    .rdata  utf8    qĵf̪fH blocks=Basic Latin,Latin Extended-A,Combining Diacritical Marks
+247 0x0000cfd8 0x0040ddd8 8    10   .rdata  utf8    a£a5j_5W blocks=Basic Latin,Latin-1 Supplement
+248 0x0000d008 0x0040de08 7    11   .rdata  utf8    iһi٩pَ\a blocks=Basic Latin,Cyrillic,Arabic
+249 0x0000d02f 0x0040de2f 8    11   .rdata  utf8    U(Px(ߥzߌ blocks=Basic Latin,NKo
+250 0x0000d053 0x0040de53 5    7    .rdata  utf8    BhиhA blocks=Basic Latin,Cyrillic
+251 0x0000d060 0x0040de60 4    5    .rdata  ascii   -Zw-
+252 0x0000d08c 0x0040de8c 6    9    .rdata  utf8    ֽkkޱoo blocks=Hebrew,Basic Latin,Thaana
+253 0x0000d098 0x0040de98 4    5    .rdata  ascii   `P00
+254 0x0000d0a0 0x0040dea0 7    9    .rdata  utf8    ΩggV}++ blocks=Greek and Coptic,Basic Latin
+255 0x0000d104 0x0040df04 12   13   .rdata  ascii   Lj&&lZ66~A??
+256 0x0000d118 0x0040df18 5    6    .rdata  ascii   h\44Q
+257 0x0000d130 0x0040df30 6    7    .rdata  ascii   bS11*?
+258 0x0000d140 0x0040df40 4    5    .rdata  ascii   Fe##
+259 0x0000d159 0x0040df59 5    6    .rdata  ascii   \t\a\a$6
+260 0x0000d16c 0x0040df6c 4    5    .rdata  ascii   Ni''
+261 0x0000d180 0x0040df80 6    7    .rdata  ascii   Xt,,4.
+262 0x0000d188 0x0040df88 7    9    .rdata  utf8    6-\e\eܲnn blocks=Basic Latin,Syriac
+263 0x0000d19a 0x0040df9a 6    7    .rdata  ascii   RRvM;;
+264 0x0000d1a8 0x0040dfa8 4    5    .rdata  ascii   R{))
+265 0x0000d1b0 0x0040dfb0 4    5    .rdata  ascii   ^q//
+266 0x0000d1c8 0x0040dfc8 4    5    .rdata  ascii   @`  
+267 0x0000d1d6 0x0040dfd6 5    7    .rdata  utf8    [[Ծjj blocks=Basic Latin,Armenian
+268 0x0000d1e4 0x0040dfe4 4    5    .rdata  ascii   rK99
+269 0x0000d20e 0x0040e00e 6    7    .rdata  ascii   MMfU33
+270 0x0000d22a 0x0040e02a 7    8    .rdata  ascii   PPxD<<%
+271 0x0000d250 0x0040e050 4    5    .rdata  ascii   pH88
+272 0x0000d264 0x0040e064 6    7    .rdata  ascii   Bc!! 0
+273 0x0000d27e 0x0040e07e 4    5    .rdata  ascii   \f\f&5
+274 0x0000d292 0x0040e092 4    5    .rdata  ascii   DD.9
+275 0x0000d2a2 0x0040e0a2 9    11   .rdata  utf8    ~~zG==Ȭdd blocks=Basic Latin,Latin Extended-B
+276 0x0000d2ae 0x0040e0ae 4    5    .rdata  ascii   ]]2+
+277 0x0000d2b6 0x0040e0b6 5    7    .rdata  utf8    ss ``
+278 0x0000d2c8 0x0040e0c8 9    10   .rdata  ascii   Df""T~**;
+279 0x0000d2fc 0x0040e0fc 8    9    .rdata  ascii   dV22tN::
+280 0x0000d30a 0x0040e10a 4    5    .rdata  ascii   II\f\n
+281 0x0000d310 0x0040e110 4    5    .rdata  ascii   Hl$$
+282 0x0000d320 0x0040e120 6    10   .rdata  utf8    CשּׁĦbb9 blocks=Basic Latin,Alphabetic Presentation Forms,Latin Extended-A
+283 0x0000d340 0x0040e140 7    9    .rdata  utf8    nY77ڷmm blocks=Basic Latin,Arabic
+284 0x0000d352 0x0040e152 7    11   .rdata  utf8    NNI੩شll blocks=Basic Latin,Gurmukhi,Arabic
+285 0x0000d36e 0x0040e16e 4    7    .rdata  utf8    zzG鮮 blocks=Basic Latin,CJK Unified Ideographs
+286 0x0000d376 0x0040e176 4    6    .rdata  utf8    \b\boպ blocks=Basic Latin,Armenian
+287 0x0000d37e 0x0040e17e 12   13   .rdata  ascii   xxJo%%\r..8$
+288 0x0000d3a2 0x0040e1a2 4    5    .rdata  ascii   tt>!
+289 0x0000d3aa 0x0040e1aa 4    6    .rdata  utf8    KKaܽ blocks=Basic Latin,Syriac
+290 0x0000d3ba 0x0040e1ba 8    10   .rdata  utf8    pp|B>>qĵ blocks=Basic Latin,Latin Extended-A
+291 0x0000d3d8 0x0040e1d8 7    9    .rdata  utf8    £aaj_55 blocks=Latin-1 Supplement,Basic Latin
+292 0x0000d3e2 0x0040e1e2 4    6    .rdata  utf8    WWiй blocks=Basic Latin,Cyrillic
+293 0x0000d42e 0x0040e22e 6    7    .rdata  ascii   UUPx((
+294 0x0000d446 0x0040e246 4    6    .rdata  utf8    \r\reڿ blocks=Basic Latin,Arabic
+295 0x0000d452 0x0040e252 5    7    .rdata  utf8    BBиhh blocks=Basic Latin,Cyrillic
+296 0x0000d460 0x0040e260 4    5    .rdata  ascii   Zw--
+297 0x0000d46e 0x0040e26e 4    6    .rdata  utf8    TTmֻ blocks=Basic Latin,Hebrew
+298 0x0000d478 0x0040e278 16   17   .rdata  ascii   cccc||||wwww{{{{
+299 0x0000d48c 0x0040e28c 8    9    .rdata  ascii   kkkkoooo
+300 0x0000d498 0x0040e298 4    5    .rdata  ascii   0000
+301 0x0000d4a0 0x0040e2a0 8    9    .rdata  ascii   gggg++++
+302 0x0000d4b4 0x0040e2b4 4    5    .rdata  ascii   vvvv
+303 0x0000d4c4 0x0040e2c4 4    5    .rdata  ascii   }}}}
+304 0x0000d4cc 0x0040e2cc 8    9    .rdata  ascii   YYYYGGGG
+305 0x0000d4f0 0x0040e2f0 4    5    .rdata  ascii   rrrr
+306 0x0000d504 0x0040e304 12   13   .rdata  ascii   &&&&6666????
+307 0x0000d518 0x0040e318 4    5    .rdata  ascii   4444
+308 0x0000d528 0x0040e328 4    5    .rdata  ascii   qqqq
+309 0x0000d530 0x0040e330 4    5    .rdata  ascii   1111
+310 0x0000d540 0x0040e340 4    5    .rdata  ascii   ####
+311 0x0000d558 0x0040e358 4    5    .rdata  ascii   \a\a\a\a
+312 0x0000d56c 0x0040e36c 4    5    .rdata  ascii   ''''
+313 0x0000d574 0x0040e374 8    9    .rdata  ascii   uuuu\t\t\t\t
+314 0x0000d580 0x0040e380 4    5    .rdata  ascii   ,,,,
+315 0x0000d588 0x0040e388 12   13   .rdata  ascii   \e\e\e\ennnnZZZZ
+316 0x0000d598 0x0040e398 8    9    .rdata  ascii   RRRR;;;;
+317 0x0000d5a8 0x0040e3a8 4    5    .rdata  ascii   ))))
+318 0x0000d5b0 0x0040e3b0 4    5    .rdata  ascii   ////
+319 0x0000d5b8 0x0040e3b8 4    5    .rdata  ascii   SSSS
+320 0x0000d5c8 0x0040e3c8 4    5    .rdata  ascii       
+321 0x0000d5d4 0x0040e3d4 8    9    .rdata  ascii   [[[[jjjj
+322 0x0000d5e4 0x0040e3e4 16   17   .rdata  ascii   9999JJJJLLLLXXXX
+323 0x0000d608 0x0040e408 12   13   .rdata  ascii   CCCCMMMM3333
+324 0x0000d618 0x0040e418 4    5    .rdata  ascii   EEEE
+325 0x0000d628 0x0040e428 8    9    .rdata  ascii   PPPP<<<<
+326 0x0000d638 0x0040e438 4    5    .rdata  ascii   QQQQ
+327 0x0000d640 0x0040e440 4    5    .rdata  ascii   @@@@
+328 0x0000d650 0x0040e450 4    5    .rdata  ascii   8888
+329 0x0000d664 0x0040e464 4    5    .rdata  ascii   !!!!
+330 0x0000d67c 0x0040e47c 4    5    .rdata  ascii   \f\f\f\f
+331 0x0000d688 0x0040e488 4    5    .rdata  ascii   ____
+332 0x0000d690 0x0040e490 4    5    .rdata  ascii   DDDD
+333 0x0000d6a0 0x0040e4a0 16   17   .rdata  ascii   ~~~~====dddd]]]]
+334 0x0000d6b4 0x0040e4b4 8    9    .rdata  ascii   ssss````
+335 0x0000d6c0 0x0040e4c0 4    5    .rdata  ascii   OOOO
+336 0x0000d6c8 0x0040e4c8 8    9    .rdata  ascii   """"****
+337 0x0000d6d8 0x0040e4d8 4    5    .rdata  ascii   FFFF
+338 0x0000d6ec 0x0040e4ec 8    9    .rdata  ascii   ^^^^\v\v\v\v
+339 0x0000d6fc 0x0040e4fc 16   17   .rdata  ascii   2222::::\n\n\n\nIIII
+340 0x0000d710 0x0040e510 8    9    .rdata  ascii   $$$$\\\\
+341 0x0000d724 0x0040e524 4    5    .rdata  ascii   bbbb
+342 0x0000d734 0x0040e534 4    5    .rdata  ascii   yyyy
+343 0x0000d740 0x0040e540 8    9    .rdata  ascii   7777mmmm
+344 0x0000d750 0x0040e550 4    5    .rdata  ascii   NNNN
+345 0x0000d758 0x0040e558 8    9    .rdata  ascii   llllVVVV
+346 0x0000d768 0x0040e568 8    9    .rdata  ascii   eeeezzzz
+347 0x0000d774 0x0040e574 4    5    .rdata  ascii   \b\b\b\b
+348 0x0000d77c 0x0040e57c 12   13   .rdata  ascii   xxxx%%%%....
+349 0x0000d7a0 0x0040e5a0 4    5    .rdata  ascii   tttt
+350 0x0000d7a8 0x0040e5a8 4    5    .rdata  ascii   KKKK
+351 0x0000d7b8 0x0040e5b8 8    9    .rdata  ascii   pppp>>>>
+352 0x0000d7c4 0x0040e5c4 8    9    .rdata  ascii   ffffHHHH
+353 0x0000d7d8 0x0040e5d8 12   13   .rdata  ascii   aaaa5555WWWW
+354 0x0000d808 0x0040e608 4    5    .rdata  ascii   iiii
+355 0x0000d82c 0x0040e62c 8    9    .rdata  ascii   UUUU((((
+356 0x0000d844 0x0040e644 4    5    .rdata  ascii   \r\r\r\r
+357 0x0000d850 0x0040e650 12   13   .rdata  ascii   BBBBhhhhAAAA
+358 0x0000d860 0x0040e660 4    5    .rdata  ascii   ----
+359 0x0000d86c 0x0040e66c 4    5    .rdata  ascii   TTTT
+360 0x0000d87b 0x0040e67b 6    8    .rdata  utf8    QSeA~ä blocks=Basic Latin,Latin-1 Supplement
+361 0x0000d8a1 0x0040e6a1 4    6    .rdata  utf8    v̈%L blocks=Basic Latin,Combining Diacritical Marks
+362 0x0000d8ae 0x0040e6ae 5    7    .rdata  utf8    *ŀD5& blocks=Basic Latin,Latin Extended-A
+363 0x0000d8ed 0x0040e6ed 5    6    .rdata  ascii   !tX)i
+364 0x0000d938 0x0040e738 4    5    .rdata  ascii   XhHp
+365 0x0000d956 0x0040e756 4    5    .rdata  ascii   Uf\a(
+366 0x0000d997 0x0040e797 4    6    .rdata  utf8    ĝS.4 blocks=Latin Extended-A,Basic Latin
+367 0x0000d9f7 0x0040e7f7 4    5    .rdata  ascii   yG\n|
+368 0x0000da14 0x0040e814 4    5    .rdata  ascii   NrZl
+369 0x0000da21 0x0040e821 7    9    .rdata  utf8    ծ='9-6d blocks=Armenian,Basic Latin
+370 0x0000da34 0x0040e834 4    5    .rdata  ascii   :.6$
+371 0x0000da4f 0x0040e84f 5    6    .rdata  ascii   aiKwZ
+372 0x0000da7b 0x0040e87b 4    5    .rdata  ascii   WL\au
+373 0x0000da91 0x0040e891 5    6    .rdata  ascii   ;fD4~
+374 0x0000da97 0x0040e897 4    5    .rdata  ascii   [v)C
+375 0x0000daae 0x0040e8ae 4    5    .rdata  ascii   cB@"
+376 0x0000dab6 0x0040e8b6 4    6    .rdata  utf8    Ƅ}$J blocks=Latin Extended-B,Basic Latin
+377 0x0000db02 0x0040e902 5    9    .rdata  utf8    ʌ6\vԘρ blocks=IPA Extensions,Basic Latin,Cyrillic Supplement,Greek and Coptic
+378 0x0000db22 0x0040e922 6    7    .rdata  ascii   _jbF~T
+379 0x0000db8b 0x0040e98b 6    7    .rdata  ascii   11#?*0
+380 0x0000dbf9 0x0040e9f9 4    6    .rdata  utf8    aךz\f blocks=Basic Latin,Hebrew
+381 0x0000dc40 0x0040ea40 6    7    .rdata  ascii   ,4$8_@
+382 0x0000dc4c 0x0040ea4c 7    10   .rdata  utf8    \f%⼋I<(A blocks=Basic Latin,Kangxi Radicals
+383 0x0000dc70 0x0040ea70 6    7    .rdata  ascii   t\lHBW
+384 0x0000dc7a 0x0040ea7a 6    7    .rdata  ascii   QPeA~S
+385 0x0000dc99 0x0040ea99 5    6    .rdata  ascii   0 Umv
+386 0x0000dceb 0x0040eaeb 4    5    .rdata  ascii   -!tX
+387 0x0000dd25 0x0040eb25 5    6    .rdata  ascii   SbEwd
+388 0x0000dd38 0x0040eb38 4    5    .rdata  ascii   hHpX
+389 0x0000dd55 0x0040eb55 4    5    .rdata  ascii   Uf*(
+390 0x0000dd96 0x0040eb96 4    6    .rdata  utf8    ĊS.4 blocks=Latin Extended-A,Basic Latin
+391 0x0000dde6 0x0040ebe6 4    7    .rdata  utf8    gwB谽 blocks=Basic Latin,CJK Unified Ideographs
+392 0x0000de0d 0x0040ec0d 4    5    .rdata  ascii   +2Hp
+393 0x0000de14 0x0040ec14 4    5    .rdata  ascii   rZlN
+394 0x0000de24 0x0040ec24 4    5    .rdata  ascii   9-6'
+395 0x0000de2d 0x0040ec2d 5    6    .rdata  ascii   \h!T[
+396 0x0000de34 0x0040ec34 7    8    .rdata  ascii   .6$:g\n\f
+397 0x0000de50 0x0040ec50 4    5    .rdata  ascii   KwZi
+398 0x0000de96 0x0040ec96 4    5    .rdata  ascii   [4)C
+399 0x0000deb5 0x0040ecb5 4    6    .rdata  utf8    Ƅ $J blocks=Latin Extended-B,Basic Latin
+400 0x0000def0 0x0040ecf0 6    8    .rdata  utf8    ,}Vؐ3" blocks=Basic Latin,Arabic
+401 0x0000df24 0x0040ed24 4    5    .rdata  ascii   F~Tb
+402 0x0000df6f 0x0040ed6f 4    6    .rdata  utf8    ~ϼ!\b blocks=Basic Latin,Greek and Coptic
+403 0x0000df8c 0x0040ed8c 4    5    .rdata  ascii   #?*1
+404 0x0000df96 0x0040ed96 6    9    .rdata  utf8    5<Nt7ʂ blocks=Basic Latin,IPA Extensions
+405 0x0000dfd1 0x0040edd1 5    7    .rdata  utf8    ,xQeF
+406 0x0000e02e 0x0040ee2e 4    5    .rdata  ascii   _[o=
+407 0x0000e03f 0x0040ee3f 6    7    .rdata  ascii   >4$8,@
+408 0x0000e04f 0x0040ee4f 4    5    .rdata  ascii   \fI<(
+409 0x0000e06f 0x0040ee6f 6    7    .rdata  ascii   p\lHtW
+410 0x0000e07c 0x0040ee7c 4    5    .rdata  ascii   A~Se
+411 0x0000e0f1 0x0040eef1 5    7    .rdata  utf8    I)iɎD blocks=Basic Latin,Latin Extended-B
+412 0x0000e122 0x0040ef22 5    6    .rdata  ascii   `3SbE
+413 0x0000e137 0x0040ef37 6    7    .rdata  ascii   +HpXhE
+414 0x0000e163 0x0040ef63 6    8    .rdata  utf8    {7ӥ\b(0 blocks=Basic Latin,Cyrillic
+415 0x0000e1fa 0x0040effa 4    5    .rdata  ascii   G\nB|
+416 0x0000e213 0x0040f013 5    6    .rdata  ascii   pZlNr
+417 0x0000e224 0x0040f024 4    5    .rdata  ascii   -6'9
+418 0x0000e233 0x0040f033 7    8    .rdata  ascii   T6$:.\n\f
+419 0x0000e24f 0x0040f04f 5    6    .rdata  ascii    wZiK
+420 0x0000e25f 0x0040f05f 4    5    .rdata  ascii   *"<C
+421 0x0000e295 0x0040f095 4    5    .rdata  ascii   [4~C
+422 0x0000e2b2 0x0040f0b2 4    6    .rdata  utf8    @"Ƅ  blocks=Basic Latin,Latin Extended-B
+423 0x0000e324 0x0040f124 4    5    .rdata  ascii   ~TbF
+424 0x0000e35a 0x0040f15a 4    5    .rdata  ascii   \txYn
+425 0x0000e38c 0x0040f18c 4    5    .rdata  ascii   ?*1#
+426 0x0000e397 0x0040f197 4    5    .rdata  ascii   fNt7
+427 0x0000e440 0x0040f240 4    5    .rdata  ascii   $8,4
+428 0x0000e44e 0x0040f24e 4    5    .rdata  ascii   \f%<(
+429 0x0000e470 0x0040f270 4    5    .rdata  ascii   lHt\
+430 0x0000e476 0x0040f276 4    5    .rdata  ascii   BWQP
+431 0x0000e47c 0x0040f27c 4    5    .rdata  ascii   ~SeA
+432 0x0000e4ee 0x0040f2ee 5    6    .rdata  ascii   !tI)i
+433 0x0000e501 0x0040f301 4    5    .rdata  ascii   k>X'
+434 0x0000e521 0x0040f321 5    6    .rdata  ascii   `3QbE
+435 0x0000e536 0x0040f336 6    7    .rdata  ascii   +\bpXhH
+436 0x0000e564 0x0040f364 4    6    .rdata  utf8    ӥ\b70 blocks=Cyrillic,Basic Latin
+437 0x0000e5e2 0x0040f3e2 4    5    .rdata  ascii   C@gw
+438 0x0000e5f7 0x0040f3f7 5    7    .rdata  utf8    ȡG\n|| blocks=Latin Extended-B,Basic Latin
+439 0x0000e614 0x0040f414 4    5    .rdata  ascii   lNrZ
+440 0x0000e622 0x0040f422 7    9    .rdata  utf8    ծ6'9-\nd blocks=Armenian,Basic Latin
+441 0x0000e632 0x0040f432 7    8    .rdata  ascii   T[$:.6\f
+442 0x0000e650 0x0040f450 4    5    .rdata  ascii   ZiKw
+443 0x0000e692 0x0040f492 5    6    .rdata  ascii   ;f[4~
+444 0x0000e6b7 0x0040f4b7 4    6    .rdata  utf8    ƅ}$J blocks=Latin Extended-B,Basic Latin
+445 0x0000e703 0x0040f503 5    9    .rdata  utf8    ʘ6\vԦρ blocks=IPA Extensions,Basic Latin,Cyrillic Supplement,Greek and Coptic
+446 0x0000e723 0x0040f523 5    6    .rdata  ascii   _TbF~
+447 0x0000e759 0x0040f559 4    5    .rdata  ascii   \tx&n
+448 0x0000e78c 0x0040f58c 4    5    .rdata  ascii   *1#?
+449 0x0000e83f 0x0040f63f 5    6    .rdata  ascii   h8,4$
+450 0x0000e86f 0x0040f66f 5    6    .rdata  ascii   2Ht\l
+451 0x0000e878 0x0040f678 12   13   .rdata  ascii   RRRR\t\t\t\tjjjj
+452 0x0000e888 0x0040f688 8    9    .rdata  ascii   00006666
+453 0x0000e894 0x0040f694 4    5    .rdata  ascii   8888
+454 0x0000e89c 0x0040f69c 4    5    .rdata  ascii   @@@@
+455 0x0000e8b8 0x0040f6b8 4    5    .rdata  ascii   ||||
+456 0x0000e8c0 0x0040f6c0 4    5    .rdata  ascii   9999
+457 0x0000e8cc 0x0040f6cc 4    5    .rdata  ascii   ////
+458 0x0000e8d8 0x0040f6d8 4    5    .rdata  ascii   4444
+459 0x0000e8e0 0x0040f6e0 8    9    .rdata  ascii   CCCCDDDD
+460 0x0000e8f8 0x0040f6f8 8    9    .rdata  ascii   TTTT{{{{
+461 0x0000e904 0x0040f704 4    5    .rdata  ascii   2222
+462 0x0000e910 0x0040f710 8    9    .rdata  ascii   ####====
+463 0x0000e91c 0x0040f71c 4    5    .rdata  ascii   LLLL
+464 0x0000e924 0x0040f724 8    9    .rdata  ascii   \v\v\v\vBBBB
+465 0x0000e934 0x0040f734 12   13   .rdata  ascii   NNNN\b\b\b\b....
+466 0x0000e944 0x0040f744 8    9    .rdata  ascii   ffff((((
+467 0x0000e950 0x0040f750 4    5    .rdata  ascii   $$$$
+468 0x0000e958 0x0040f758 8    9    .rdata  ascii   vvvv[[[[
+469 0x0000e964 0x0040f764 8    9    .rdata  ascii   IIIImmmm
+470 0x0000e974 0x0040f774 8    9    .rdata  ascii   %%%%rrrr
+471 0x0000e984 0x0040f784 4    5    .rdata  ascii   dddd
+472 0x0000e98c 0x0040f78c 4    5    .rdata  ascii   hhhh
+473 0x0000e9a0 0x0040f7a0 4    5    .rdata  ascii   \\\\
+474 0x0000e9a8 0x0040f7a8 8    9    .rdata  ascii   ]]]]eeee
+475 0x0000e9b8 0x0040f7b8 16   17   .rdata  ascii   llllppppHHHHPPPP
+476 0x0000e9d8 0x0040f7d8 4    5    .rdata  ascii   ^^^^
+477 0x0000e9e0 0x0040f7e0 8    9    .rdata  ascii   FFFFWWWW
+478 0x0000ea14 0x0040f814 4    5    .rdata  ascii   \n\n\n\n
+479 0x0000ea20 0x0040f820 4    5    .rdata  ascii   XXXX
+480 0x0000ea30 0x0040f830 4    5    .rdata  ascii   EEEE
+481 0x0000ea3c 0x0040f83c 4    5    .rdata  ascii   ,,,,
+482 0x0000ea4c 0x0040f84c 4    5    .rdata  ascii   ????
+483 0x0000ea74 0x0040f874 8    9    .rdata  ascii   kkkk::::
+484 0x0000ea84 0x0040f884 12   13   .rdata  ascii   AAAAOOOOgggg
+485 0x0000eab4 0x0040f8b4 4    5    .rdata  ascii   ssss
+486 0x0000eac0 0x0040f8c0 8    9    .rdata  ascii   tttt""""
+487 0x0000ead0 0x0040f8d0 4    5    .rdata  ascii   5555
+488 0x0000eae0 0x0040f8e0 4    5    .rdata  ascii   7777
+489 0x0000eaec 0x0040f8ec 4    5    .rdata  ascii   uuuu
+490 0x0000eaf4 0x0040f8f4 8    9    .rdata  ascii   nnnnGGGG
+491 0x0000eb04 0x0040f904 4    5    .rdata  ascii   qqqq
+492 0x0000eb0c 0x0040f90c 4    5    .rdata  ascii   ))))
+493 0x0000eb18 0x0040f918 4    5    .rdata  ascii   oooo
+494 0x0000eb20 0x0040f920 4    5    .rdata  ascii   bbbb
+495 0x0000eb34 0x0040f934 4    5    .rdata  ascii   \e\e\e\e
+496 0x0000eb3c 0x0040f93c 12   13   .rdata  ascii   VVVV>>>>KKKK
+497 0x0000eb50 0x0040f950 8    9    .rdata  ascii   yyyy    
+498 0x0000eb68 0x0040f968 4    5    .rdata  ascii   xxxx
+499 0x0000eb70 0x0040f970 4    5    .rdata  ascii   ZZZZ
+500 0x0000eb84 0x0040f984 4    5    .rdata  ascii   3333
+501 0x0000eb8c 0x0040f98c 4    5    .rdata  ascii   \a\a\a\a
+502 0x0000eb94 0x0040f994 4    5    .rdata  ascii   1111
+503 0x0000eba4 0x0040f9a4 8    9    .rdata  ascii   YYYY''''
+504 0x0000ebb4 0x0040f9b4 12   13   .rdata  ascii   ____````QQQQ
+505 0x0000ebd0 0x0040f9d0 12   13   .rdata  ascii   JJJJ\r\r\r\r----
+506 0x0000ebe0 0x0040f9e0 4    5    .rdata  ascii   zzzz
+507 0x0000ec00 0x0040fa00 8    9    .rdata  ascii   ;;;;MMMM
+508 0x0000ec0c 0x0040fa0c 4    5    .rdata  ascii   ****
+509 0x0000ec24 0x0040fa24 4    5    .rdata  ascii   <<<<
+510 0x0000ec2c 0x0040fa2c 4    5    .rdata  ascii   SSSS
+511 0x0000ec34 0x0040fa34 4    5    .rdata  ascii   aaaa
+512 0x0000ec3c 0x0040fa3c 4    5    .rdata  ascii   ++++
+513 0x0000ec44 0x0040fa44 4    5    .rdata  ascii   ~~~~
+514 0x0000ec4c 0x0040fa4c 4    5    .rdata  ascii   wwww
+515 0x0000ec54 0x0040fa54 4    5    .rdata  ascii   &&&&
+516 0x0000ec5c 0x0040fa5c 4    5    .rdata  ascii   iiii
+517 0x0000ec64 0x0040fa64 20   21   .rdata  ascii   ccccUUUU!!!!\f\f\f\f}}}}
+518 0x0000eda8 0x0040fba8 4    5    .rdata  ascii   RSDS
+519 0x0000edc0 0x0040fbc0 53   54   .rdata  ascii   ***************************\Debug\rwdec_x86_debug.pdb
+520 0x0000ef52 0x0040fd52 20   21   .rdata  ascii   EnterCriticalSection
+521 0x0000ef6a 0x0040fd6a 20   21   .rdata  ascii   LeaveCriticalSection
+522 0x0000ef82 0x0040fd82 11   12   .rdata  ascii   DeleteFileW
+523 0x0000ef90 0x0040fd90 12   13   .rdata  ascii   SetEndOfFile
+524 0x0000efa0 0x0040fda0 11   12   .rdata  ascii   CloseHandle
+525 0x0000efae 0x0040fdae 12   13   .rdata  ascii   CreateThread
+526 0x0000efbe 0x0040fdbe 16   17   .rdata  ascii   GetModuleHandleW
+527 0x0000efd2 0x0040fdd2 9    10   .rdata  ascii   CopyFileW
+528 0x0000efde 0x0040fdde 9    10   .rdata  ascii   MoveFileW
+529 0x0000efea 0x0040fdea 12   13   .rdata  ascii   GetStdHandle
+530 0x0000effa 0x0040fdfa 11   12   .rdata  ascii   CreateFileW
+531 0x0000f008 0x0040fe08 9    10   .rdata  ascii   WriteFile
+532 0x0000f014 0x0040fe14 18   19   .rdata  ascii   OutputDebugStringW
+533 0x0000f02a 0x0040fe2a 23   24   .rdata  ascii   QueryPerformanceCounter
+534 0x0000f044 0x0040fe44 25   26   .rdata  ascii   QueryPerformanceFrequency
+535 0x0000f060 0x0040fe60 9    10   .rdata  ascii   HeapAlloc
+536 0x0000f06c 0x0040fe6c 8    9    .rdata  ascii   HeapFree
+537 0x0000f078 0x0040fe78 14   15   .rdata  ascii   GetProcessHeap
+538 0x0000f08a 0x0040fe8a 25   26   .rdata  ascii   InitializeCriticalSection
+539 0x0000f0a6 0x0040fea6 21   22   .rdata  ascii   DeleteCriticalSection
+540 0x0000f0be 0x0040febe 11   12   .rdata  ascii   ExitProcess
+541 0x0000f0cc 0x0040fecc 16   17   .rdata  ascii   GetCurrentThread
+542 0x0000f0e0 0x0040fee0 14   15   .rdata  ascii   GetProcAddress
+543 0x0000f0f2 0x0040fef2 21   22   .rdata  ascii   SetThreadAffinityMask
+544 0x0000f10a 0x0040ff0a 8    9    .rdata  ascii   lstrlenW
+545 0x0000f116 0x0040ff16 12   13   .rdata  ascii   LoadLibraryA
+546 0x0000f126 0x0040ff26 26   27   .rdata  ascii   GetConsoleScreenBufferInfo
+547 0x0000f144 0x0040ff44 23   24   .rdata  ascii   SetConsoleTextAttribute
+548 0x0000f15e 0x0040ff5e 13   14   .rdata  ascii   WriteConsoleW
+549 0x0000f16c 0x0040ff6c 12   13   .rdata  ascii   KERNEL32.dll
+550 0x0000f17c 0x0040ff7c 11   12   .rdata  ascii   MessageBoxW
+551 0x0000f18a 0x0040ff8a 9    10   .rdata  ascii   wsprintfW
+552 0x0000f196 0x0040ff96 12   13   .rdata  ascii   SendMessageW
+553 0x0000f1a6 0x0040ffa6 15   16   .rdata  ascii   DialogBoxParamW
+554 0x0000f1b8 0x0040ffb8 9    10   .rdata  ascii   EndDialog
+555 0x0000f1c4 0x0040ffc4 10   11   .rdata  ascii   GetDlgItem
+556 0x0000f1d2 0x0040ffd2 13   14   .rdata  ascii   SetDlgItemInt
+557 0x0000f1e2 0x0040ffe2 15   16   .rdata  ascii   SetDlgItemTextW
+558 0x0000f1f4 0x0040fff4 14   15   .rdata  ascii   CheckDlgButton
+559 0x0000f206 0x00410006 18   19   .rdata  ascii   IsDlgButtonChecked
+560 0x0000f21c 0x0041001c 12   13   .rdata  ascii   EnableWindow
+561 0x0000f22c 0x0041002c 14   15   .rdata  ascii   SetWindowTextW
+562 0x0000f23c 0x0041003c 10   11   .rdata  ascii   USER32.dll
+563 0x0000f24a 0x0041004a 11   12   .rdata  ascii   CreateFontW
+564 0x0000f256 0x00410056 9    10   .rdata  ascii   GDI32.dll
+565 0x0000f262 0x00410062 20   21   .rdata  ascii   SHGetPathFromIDListW
+566 0x0000f27a 0x0041007a 18   19   .rdata  ascii   SHBrowseForFolderW
+567 0x0000f28e 0x0041008e 11   12   .rdata  ascii   SHELL32.dll
+568 0x0000f29c 0x0041009c 16   17   .rdata  ascii   GetOpenFileNameW
+569 0x0000f2ae 0x004100ae 12   13   .rdata  ascii   COMDLG32.dll
+570 0x0000f2be 0x004100be 25   26   .rdata  ascii   IsProcessorFeaturePresent
+0   0x0000f448 0x00411048 4    10   .data   utf16le \v0\r`
+1   0x0000f493 0x00411093 4    7    .data   utf8    "~ᕄk blocks=Basic Latin,Unified Canadian Aboriginal Syllabics
+2   0x0000f4b1 0x004110b1 4    7    .data   utf8    |销4W blocks=Basic Latin,CJK Unified Ideographs
+3   0x0000f4ba 0x004110ba 7    8    .data   ascii    UGzo0:
+4   0x0000f4c8 0x004110c8 5    6    .data   ascii   Ht~>g
+5   0x0000f50b 0x0041110b 4    6    .data   utf8    ,_)̺ blocks=Basic Latin,Combining Diacritical Marks
+6   0x0000f553 0x00411153 6    7    .data   ascii   \vdiO#=
+7   0x0000f57e 0x0041117e 4    5    .data   ascii   (XLc
+8   0x0000f583 0x00411183 4    6    .data   utf8    4ƋC! blocks=Basic Latin,Latin Extended-B
+9   0x0000f5b9 0x004111b9 5    6    .data   ascii   4E\f4*
+10  0x0000f5f2 0x004111f2 5    6    .data   ascii   \f6(D\e
+11  0x0000f61d 0x0041121d 4    5    .data   ascii   |fD\a
+12  0x0000f6b2 0x004112b2 4    5    .data   ascii   8I|y
+13  0x0000f6da 0x004112da 4    7    .data   utf8    8WࢧF blocks=Basic Latin,Arabic Extended-A
+14  0x0000f6ec 0x004112ec 5    7    .data   utf8    ۟O\fz- blocks=Arabic,Basic Latin
+15  0x0000f710 0x00411310 4    5    .data   ascii   JmDq
+16  0x0000f74e 0x0041134e 4    5    .data   ascii   &EVp
+17  0x0000f7d1 0x004113d1 5    6    .data   ascii   *+6/Z
+18  0x0000f7eb 0x004113eb 4    5    .data   ascii   $jy%
+19  0x0000f8db 0x004114db 4    6    .data   utf8    f\Gݷ blocks=Basic Latin,Arabic Supplement
+20  0x0000f90a 0x0041150a 4    5    .data   ascii   b@GB
+21  0x0000f92f 0x0041152f 4    5    .data   ascii   vlwj
+22  0x0000f952 0x00411552 5    6    .data   ascii   $>2`~
+23  0x0000f962 0x00411562 4    6    .data   utf8    a Vɦ blocks=Basic Latin,IPA Extensions
+24  0x0000f9a5 0x004115a5 6    9    .data   utf8    ؚ\tݜi>y blocks=Arabic,Basic Latin,Arabic Supplement
+25  0x0000f9b0 0x004115b0 4    5    .data   ascii   \Mt`
+26  0x0000f9d4 0x004115d4 4    5    .data   ascii   \e/T#
+27  0x0000f9f1 0x004115f1 6    7    .data   ascii    c\t3gV
+28  0x0000fa38 0x00411638 4    5    .data   ascii   ZC1M
+29  0x0000fa5e 0x0041165e 4    5    .data   ascii   Y5DK
+30  0x0000fa7c 0x0041167c 4    5    .data   ascii   KA\n*
+31  0x0000fad8 0x004116d8 8    10   .data   utf8    'cЭ`"W%r blocks=Basic Latin,Cyrillic
+32  0x0000fae5 0x004116e5 4    5    .data   ascii   f7Ry
+33  0x0000fb21 0x00411721 4    5    .data   ascii   1R9I
+34  0x0000fbaa 0x004117aa 6    7    .data   ascii   <a/*\b\e
+35  0x0000fbdb 0x004117db 4    5    .data   ascii   1Z~e
+36  0x0000fbe5 0x004117e5 4    5    .data   ascii   *sA\n
+37  0x0000fbf5 0x004117f5 8    13   .data   utf8    ,Ϡ픾gJF҅e blocks=Basic Latin,Greek and Coptic,Hangul Syllables,Cyrillic
+38  0x0000fc20 0x00411820 5    6    .data   ascii   \aDK]F
+39  0x0000fc2b 0x0041182b 5    6    .data   ascii   \D{F}
+40  0x0000fc39 0x00411839 4    5    .data   ascii    "uX
+41  0x0000fc94 0x00411894 4    7    .data   utf8    ȹ{4× blocks=Latin Extended-B,Basic Latin,Latin-1 Supplement
+42  0x0000fca0 0x004118a0 4    5    .data   ascii   !Zf`
+43  0x0000fcbf 0x004118bf 4    5    .data   ascii   WK6I
+44  0x0000fcf6 0x004118f6 6    7    .data   ascii   @[Zm9e
+45  0x0000fd00 0x00411900 5    6    .data   ascii   n*.3w
+46  0x0000fd36 0x00411936 5    7    .data   utf8    sC[TZ
+47  0x0000fd3d 0x0041193d 5    7    .data   utf8    &^E;В blocks=Basic Latin,Cyrillic
+48  0x0000fd7a 0x0041197a 4    5    .data   ascii   q6VG
+49  0x0000fd80 0x00411980 8    10   .data   utf8    :˝8nE} z blocks=Basic Latin,Spacing Modifier Letters
+50  0x0000fd8b 0x0041198b 4    5    .data   ascii   ?(%E
+51  0x0000fd9e 0x0041199e 4    5    .data   ascii   ;z\eD
+52  0x0000fdea 0x004119ea 4    5    .data   ascii   =oYb
+53  0x0000fdf2 0x004119f2 5    6    .data   ascii   M?8\b;
+54  0x0000fe1b 0x00411a1b 5    8    .data   utf8    VOۖ// blocks=Basic Latin,Arabic
+55  0x0000fe8c 0x00411a8c 4    6    .data   utf8    Ǫo6h blocks=Latin Extended-B,Basic Latin
+56  0x0000feaa 0x00411aaa 6    7    .data   ascii   YZ]D*E
+57  0x0000fec5 0x00411ac5 4    5    .data   ascii   (Y\rq
+58  0x0000ff0f 0x00411b0f 4    5    .data   ascii   }89\v
+59  0x0000ff1b 0x00411b1b 4    7    .data   utf8    ҇rɜ' blocks=Cyrillic,Basic Latin,IPA Extensions
+60  0x0000ff3f 0x00411b3f 4    5    .data   ascii   X-F<
+61  0x0000ff57 0x00411b57 5    7    .data   utf8    ʵ1.N) blocks=Spacing Modifier Letters,Basic Latin
+62  0x0000ff86 0x00411b86 4    5    .data   ascii   \f(6#
+63  0x0000ffc7 0x00411bc7 4    5    .data   ascii   ng=8
+64  0x0000ffe3 0x00411be3 4    5    .data   ascii   x>=}
+65  0x00010093 0x00411c93 5    6    .data   ascii   c}h#f
+66  0x000100af 0x00411caf 7    9    .data   utf8    Lyɷ)E:z blocks=Basic Latin,IPA Extensions
+67  0x0001011d 0x00411d1d 4    6    .data   utf8    \rĜ,T blocks=Basic Latin,Latin Extended-A
+68  0x00010151 0x00411d51 4    5    .data   ascii   EuWg
+69  0x00010181 0x00411d81 5    7    .data   utf8    `؊scS blocks=Basic Latin,Arabic
+70  0x0001019f 0x00411d9f 6    7    .data   ascii   '@x\b\n\v
+71  0x000101a8 0x00411da8 5    6    .data   ascii   H M>X
+72  0x000101b3 0x00411db3 7    8    .data   ascii   \t~+)>m;
+0   0x0001cab8 0x004200b8 13   28   .rsrc   utf16le \bMs Shell Dlg
+1   0x0001caea 0x004200ea 8    18   .rsrc   utf16le Progress
+2   0x0001cb4e 0x0042014e 13   28   .rsrc   utf16le create backup
+3   0x0001cbc0 0x004201c0 1504 1505 .rsrc   ascii   <?xml version="1.0" encoding="utf-8"?>\r\n<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">\r\n    <dependency xmlns="urn:schemas-microsoft-com:asm.v2">\r\n        <dependentAssembly>\r\n            <assemblyIdentity type="win32" name="Microsoft.Windows.Common-Controls" version="6.0.0.0" processorArchitecture="*" publicKeyToken="6595b64144ccf1df" language="*" />\r\n        </dependentAssembly>\r\n    </dependency>\r\n    <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">\r\n        <security>\r\n            <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">\r\n                <requestedExecutionLevel level="requireAdministrator" uiAccess="false" />\r\n            </requestedPrivileges>\r\n        </security>\r\n    </trustInfo>\r\n    <application xmlns="urn:schemas-microsoft-com:asm.v3">\r\n        <windowsSettings xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">\r\n            <dpiAware>true</dpiAware>\r\n        </windowsSettings>\r\n    </application>\r\n    <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\r\n        <application>\r\n            <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />\r\n            <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />\r\n            <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />\r\n            <supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />\r\n            <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />\r\n        </application>\r\n    </compatibility>\r\n</assembly>
+arch     x86
+baddr    0x400000
+binsz    121856
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000298b3
+compiled Sat Apr 25 17:16:47 2020
+crypto   false
+dbg_file ***************************\Debug\rwdec_x86_debug.pdb
+endian   little
+havecode true
+hdr.csum 0x00000000
+guid     FEB40BFDE861498586245E97F7BEF7011
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x5ea4707f
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xae00
+  SizeOfInitializedData : 0x12e00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x27f1
+  BaseOfCode : 0x1000
+  BaseOfData : 0xc000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x22000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 24215 Times: 1
+  Product: 255 Name: Cvtres1400 Version: 24210 Times: 1
+  Product: 260 Name: Utc1900_C Version: 24215 Times: 22
+  Product: 1 Name: Import0 Version: 0 Times: 46
+  Product: 203 Name: Implib1100 Version: 65501 Times: 11
+  Product: 260 Name: Utc1900_C Version: 24123 Times: 1
+  Product: 259 Name: Masm1400 Version: 24123 Times: 4
+  Product: 261 Name: Utc1900_CPP Version: 24123 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xfc0c
+  Size : 0x78
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x20000
+  Size : 0x7a0
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x21000
+  Size : 0x890
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0xfb70
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xc000
+  Size : 0xd0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+gdi32.dll
+shell32.dll
+comdlg32.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000fd50 0x0000b280 SET_32 KERNEL32.dll_EnterCriticalSection
+0x0000fd68 0x0000b278 SET_32 KERNEL32.dll_LeaveCriticalSection
+0x0000fd80 0x0000b274 SET_32 KERNEL32.dll_DeleteFileW
+0x0000fd8e 0x0000b240 SET_32 KERNEL32.dll_SetEndOfFile
+0x0000fd9e 0x0000b210 SET_32 KERNEL32.dll_CloseHandle
+0x0000fdac 0x0000b214 SET_32 KERNEL32.dll_CreateThread
+0x0000fdbc 0x0000b218 SET_32 KERNEL32.dll_GetModuleHandleW
+0x0000fdd0 0x0000b21c SET_32 KERNEL32.dll_CopyFileW
+0x0000fddc 0x0000b220 SET_32 KERNEL32.dll_MoveFileW
+0x0000fde8 0x0000b224 SET_32 KERNEL32.dll_GetStdHandle
+0x0000fdf8 0x0000b228 SET_32 KERNEL32.dll_CreateFileW
+0x0000fe06 0x0000b22c SET_32 KERNEL32.dll_WriteFile
+0x0000fe12 0x0000b230 SET_32 KERNEL32.dll_OutputDebugStringW
+0x0000fe28 0x0000b234 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x0000fe42 0x0000b238 SET_32 KERNEL32.dll_QueryPerformanceFrequency
+0x0000fe5e 0x0000b23c SET_32 KERNEL32.dll_HeapAlloc
+0x0000fe6a 0x0000b27c SET_32 KERNEL32.dll_HeapFree
+0x0000fe76 0x0000b244 SET_32 KERNEL32.dll_GetProcessHeap
+0x0000fe88 0x0000b248 SET_32 KERNEL32.dll_InitializeCriticalSection
+0x0000fea4 0x0000b24c SET_32 KERNEL32.dll_DeleteCriticalSection
+0x0000febc 0x0000b250 SET_32 KERNEL32.dll_ExitProcess
+0x0000feca 0x0000b254 SET_32 KERNEL32.dll_GetCurrentThread
+0x0000fede 0x0000b258 SET_32 KERNEL32.dll_GetProcAddress
+0x0000fef0 0x0000b25c SET_32 KERNEL32.dll_SetThreadAffinityMask
+0x0000ff08 0x0000b260 SET_32 KERNEL32.dll_lstrlenW
+0x0000ff14 0x0000b264 SET_32 KERNEL32.dll_LoadLibraryA
+0x0000ff24 0x0000b268 SET_32 KERNEL32.dll_GetConsoleScreenBufferInfo
+0x0000ff42 0x0000b26c SET_32 KERNEL32.dll_SetConsoleTextAttribute
+0x0000ff5c 0x0000b270 SET_32 KERNEL32.dll_WriteConsoleW
+0x0000ff7a 0x0000b2c0 SET_32 USER32.dll_MessageBoxW
+0x0000ff88 0x0000b2bc SET_32 USER32.dll_wsprintfW
+0x0000ff94 0x0000b2ac SET_32 USER32.dll_SendMessageW
+0x0000ffa4 0x0000b2a8 SET_32 USER32.dll_DialogBoxParamW
+0x0000ffb6 0x0000b2c4 SET_32 USER32.dll_EndDialog
+0x0000ffc2 0x0000b2b4 SET_32 USER32.dll_GetDlgItem
+0x0000ffd0 0x0000b2b0 SET_32 USER32.dll_SetDlgItemInt
+0x0000ffe0 0x0000b2a4 SET_32 USER32.dll_SetDlgItemTextW
+0x0000fff2 0x0000b298 SET_32 USER32.dll_CheckDlgButton
+0x00010004 0x0000b29c SET_32 USER32.dll_IsDlgButtonChecked
+0x0001001a 0x0000b2a0 SET_32 USER32.dll_EnableWindow
+0x0001002a 0x0000b2b8 SET_32 USER32.dll_SetWindowTextW
+0x00010048 0x0000b208 SET_32 GDI32.dll_CreateFontW
+0x00010060 0x0000b290 SET_32 SHELL32.dll_SHGetPathFromIDListW
+0x00010078 0x0000b28c SET_32 SHELL32.dll_SHBrowseForFolderW
+0x0001009a 0x0000b200 SET_32 COMDLG32.dll_GetOpenFileNameW
+0x000100bc 0x0000b284 SET_32 KERNEL32.dll_IsProcessorFeaturePresent
+
+
+46 relocations
+121856
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

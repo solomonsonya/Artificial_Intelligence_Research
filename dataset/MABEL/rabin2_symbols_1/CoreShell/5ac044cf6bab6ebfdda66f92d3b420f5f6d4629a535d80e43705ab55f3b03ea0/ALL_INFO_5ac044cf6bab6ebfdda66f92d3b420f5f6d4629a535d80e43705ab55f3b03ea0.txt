@@ -1,0 +1,318 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x10a00 0x10001000  0x11000 -r-x .text
+1   0x00010e00    0x200 0x10012000   0x1000 -r-- .rdata
+2   0x00011000    0x600 0x10013000   0x1000 -rw- .data
+3   0x00011600    0x600 0x10014000   0x1000 -r-- .rsrc
+4   0x00011c00   0x1200 0x10015000   0x2000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x100118e1 paddr=0x00010ce1 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10012000 NONE FUNC KERNEL32.dll LoadLibraryW
+2   0x10012004 NONE FUNC KERNEL32.dll FreeLibrary
+3   0x10012008 NONE FUNC KERNEL32.dll LoadLibraryA
+4   0x1001200c NONE FUNC KERNEL32.dll Sleep
+5   0x10012010 NONE FUNC KERNEL32.dll GetProcAddress
+1   0x10012018 NONE FUNC MSVCRT.dll   memset
+2   0x1001201c NONE FUNC MSVCRT.dll   _strrev
+3   0x10012020 NONE FUNC MSVCRT.dll   free
+4   0x10012024 NONE FUNC MSVCRT.dll   _initterm
+5   0x10012028 NONE FUNC MSVCRT.dll   malloc
+6   0x1001202c NONE FUNC MSVCRT.dll   _adjust_fdiv
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib                     name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000e080 0x1000ec80 GLOBAL FUNC 0    downloader_dll_http.dll int __stdcall Applicate(void)
+1   0x00010e00 0x10012000 NONE   FUNC 0    KERNEL32.dll            imp.LoadLibraryW
+2   0x00010e04 0x10012004 NONE   FUNC 0    KERNEL32.dll            imp.FreeLibrary
+3   0x00010e08 0x10012008 NONE   FUNC 0    KERNEL32.dll            imp.LoadLibraryA
+4   0x00010e0c 0x1001200c NONE   FUNC 0    KERNEL32.dll            imp.Sleep
+5   0x00010e10 0x10012010 NONE   FUNC 0    KERNEL32.dll            imp.GetProcAddress
+1   0x00010e18 0x10012018 NONE   FUNC 0    MSVCRT.dll              imp.memset
+2   0x00010e1c 0x1001201c NONE   FUNC 0    MSVCRT.dll              imp._strrev
+3   0x00010e20 0x10012020 NONE   FUNC 0    MSVCRT.dll              imp.free
+4   0x00010e24 0x10012024 NONE   FUNC 0    MSVCRT.dll              imp._initterm
+5   0x00010e28 0x10012028 NONE   FUNC 0    MSVCRT.dll              imp.malloc
+6   0x00010e2c 0x1001202c NONE   FUNC 0    MSVCRT.dll              imp._adjust_fdiv
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00010eb6 0x100120b6 14  15   .rdata  ascii   GetProcAddress
+1   0x00010ec8 0x100120c8 12  13   .rdata  ascii   LoadLibraryW
+2   0x00010ed8 0x100120d8 11  12   .rdata  ascii   FreeLibrary
+3   0x00010ee6 0x100120e6 12  13   .rdata  ascii   LoadLibraryA
+4   0x00010ef6 0x100120f6 5   6    .rdata  ascii   Sleep
+5   0x00010efc 0x100120fc 12  13   .rdata  ascii   KERNEL32.dll
+6   0x00010f0c 0x1001210c 6   7    .rdata  ascii   memset
+7   0x00010f16 0x10012116 7   8    .rdata  ascii   _strrev
+8   0x00010f1e 0x1001211e 10  11   .rdata  ascii   MSVCRT.dll
+9   0x00010f2c 0x1001212c 4   5    .rdata  ascii   free
+10  0x00010f34 0x10012134 9   10   .rdata  ascii   _initterm
+11  0x00010f40 0x10012140 6   7    .rdata  ascii   malloc
+12  0x00010f4a 0x1001214a 12  13   .rdata  ascii   _adjust_fdiv
+13  0x00010f92 0x10012192 23  24   .rdata  ascii   downloader_dll_http.dll
+14  0x00010faa 0x100121aa 17  18   .rdata  ascii   ?Applicate@@YGHXZ
+0   0x00011025 0x10013025 4   5    .data   ascii   0%#A
+1   0x0001103e 0x1001303e 5   6    .data   ascii   H%Hso
+2   0x00011044 0x10013044 6   7    .data   ascii   0yh4\b:
+3   0x0001104e 0x1001304e 5   7    .data   utf8    \b Ȁ_n blocks=Basic Latin,Latin Extended-B
+4   0x0001106b 0x1001306b 4   5    .data   ascii   :Pr\b
+5   0x00011090 0x10013090 5   7    .data   utf8    Ȣ_;@V blocks=Latin Extended-B,Basic Latin
+6   0x000110ce 0x100130ce 4   6    .data   utf8    \btȳ_ blocks=Basic Latin,Latin Extended-B
+7   0x0001113e 0x1001313e 9   10   .data   ascii   HSH.o[0\h
+8   0x0001116b 0x1001316b 4   5    .data   ascii   (1rm
+9   0x0001118a 0x1001318a 5   6    .data   ascii   N23lu
+10  0x0001119b 0x1001319b 4   7    .data   utf8    #orҪ blocks=Basic Latin,Cyrillic
+11  0x000111a2 0x100131a2 7   8    .data   ascii   `4cejtp
+12  0x000111b4 0x100131b4 5   6    .data   ascii   aW`S+
+13  0x000111d3 0x100131d3 4   5    .data   ascii   aeH`
+14  0x000111d9 0x100131d9 5   6    .data   ascii   u\f2ts
+15  0x000111e3 0x100131e3 4   5    .data   ascii   .aHe
+16  0x000111ec 0x100131ec 4   5    .data   ascii   ely@
+17  0x000111ff 0x100131ff 4   5    .data   ascii   V@8`
+18  0x00011217 0x10013217 7   9    .data   utf8    :;5'@We
+19  0x00011223 0x10013223 4   5    .data   ascii   %leD
+20  0x00011253 0x10013253 4   5    .data   ascii   Ckc\t
+21  0x00011262 0x10013262 5   6    .data   ascii   `@Wta
+22  0x0001128a 0x1001328a 5   6    .data   ascii   \ttamb
+23  0x00011292 0x10013292 5   6    .data   ascii   )emu\f
+24  0x000112a3 0x100132a3 4   5    .data   ascii   #vsm
+25  0x000112b4 0x100132b4 5   6    .data   ascii   ps`D;
+26  0x000112cb 0x100132cb 5   6    .data   ascii   EteWF
+27  0x000112df 0x100132df 8   9    .data   ascii   \aaQ"/Tgn
+28  0x000112ec 0x100132ec 4   5    .data   ascii   pybE
+29  0x00011306 0x10013306 9   10   .data   ascii   A3Ra.rete
+30  0x00011311 0x10013311 9   10   .data   ascii   G#teG`!*=
+31  0x00011323 0x10013323 6   7    .data   ascii   $oMtsx
+32  0x00011334 0x10013334 6   7    .data   ascii   tr\t`O3
+33  0x00011348 0x10013348 8   9    .data   ascii   \r(4eta~/
+34  0x0001135a 0x1001335a 4   5    .data   ascii   S)pa
+35  0x00011362 0x10013362 5   6    .data   ascii   74xeN
+36  0x0001136c 0x1001336c 4   5    .data   ascii   cobV
+37  0x00011384 0x10013384 5   6    .data   ascii   spa8l
+38  0x0001138a 0x1001338a 5   6    .data   ascii   Splex
+39  0x00011392 0x10013392 4   5    .data   ascii   4eta
+40  0x0001139a 0x1001339a 5   7    .data   utf8    78Ee݇ blocks=Basic Latin,Syriac
+41  0x000113a2 0x100133a2 7   8    .data   ascii   \f)Felc[
+42  0x000113cb 0x100133cb 5   6    .data   ascii   Pret*
+43  0x000113d3 0x100133d3 4   5    .data   ascii   eGH3
+44  0x000113e3 0x100133e3 4   5    .data   ascii   @lld
+45  0x00011404 0x10013404 11  12   .data   ascii   23r3Lu`egac
+46  0x00011418 0x10013418 7   9    .data   utf8    ."4@Aeׇ blocks=Basic Latin,Hebrew
+47  0x00011423 0x10013423 8   9    .data   ascii   \rhctwOs\t
+48  0x00011434 0x10013434 5   6    .data   ascii   in\tAO
+49  0x00011449 0x10013449 7   8    .data   ascii   ,\tavAq2
+50  0x00011453 0x10013453 4   5    .data   ascii   reu1
+51  0x0001146c 0x1001346c 4   5    .data   ascii   et~O
+52  0x00011484 0x10013484 5   6    .data   ascii   Ets3J
+53  0x0001148b 0x1001348b 4   5    .data   ascii   Rdnu
+54  0x0001149b 0x1001349b 4   6    .data   utf8    )rWă blocks=Basic Latin,Latin Extended-A
+55  0x000114b4 0x100134b4 5   6    .data   ascii   tH`S#
+56  0x000114ca 0x100134ca 5   6    .data   ascii   `etad
+57  0x000114ec 0x100134ec 4   5    .data   ascii   nrur
+58  0x000114ff 0x100134ff 4   5    .data   ascii   C{V)
+59  0x00011518 0x10013518 5   6    .data   ascii   \bP<@c
+0   0x00011666 0x10014066 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x000116c2 0x100140c2 14  30   .rsrc   utf16le StringFileInfo
+2   0x000116e6 0x100140e6 8   18   .rsrc   utf16le 040904e4
+3   0x000116fe 0x100140fe 8   18   .rsrc   utf16le Comments
+4   0x00011716 0x10014116 11  24   .rsrc   utf16le CompanyName
+5   0x00011730 0x10014130 21  44   .rsrc   utf16le Microsoft Corporation
+6   0x00011762 0x10014162 15  32   .rsrc   utf16le FileDescription
+7   0x00011784 0x10014184 26  54   .rsrc   utf16le Core Shell Runtime Service
+8   0x000117c2 0x100141c2 11  24   .rsrc   utf16le FileVersion
+9   0x000117dc 0x100141dc 13  28   .rsrc   utf16le 5.1.2600.6341
+10  0x000117fe 0x100141fe 12  26   .rsrc   utf16le InternalName
+11  0x00011818 0x10014218 13  28   .rsrc   utf16le coreshell.dll
+12  0x0001183a 0x1001423a 14  30   .rsrc   utf16le LegalCopyright
+13  0x0001185a 0x1001425a 44  90   .rsrc   utf16le  Microsoft Corporation. All rights reserved.
+14  0x000118bc 0x100142bc 14  30   .rsrc   utf16le egalTrademarks
+15  0x000118e2 0x100142e2 16  34   .rsrc   utf16le OriginalFilename
+16  0x00011904 0x10014304 13  28   .rsrc   utf16le coreshell.dll
+17  0x00011928 0x10014328 11  24   .rsrc   utf16le rivateBuild
+18  0x00011946 0x10014346 11  24   .rsrc   utf16le ProductName
+19  0x00011960 0x10014360 9   19   .rsrc   utf16le Microsoft
+20  0x00011974 0x10014374 8   17   .rsrc   utf16le  Windows
+21  0x00011986 0x10014386 17  36   .rsrc   utf16le  Operating System
+22  0x000119b2 0x100143b2 14  30   .rsrc   utf16le ProductVersion
+23  0x000119d0 0x100143d0 13  28   .rsrc   utf16le 5.1.2600.6341
+24  0x000119f4 0x100143f4 11  24   .rsrc   utf16le pecialBuild
+25  0x00011a14 0x10014414 10  22   .rsrc   utf16le arFileInfo
+26  0x00011a32 0x10014432 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x10000000
+binsz    77312
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001b2a1
+compiled Mon Sep 22 12:08:30 2014
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x5420113e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xb
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x10a00
+  SizeOfInitializedData : 0x2200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x118e1
+  BaseOfCode : 0x1000
+  BaseOfData : 0x12000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x17000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 204 Name: Linker1100 Version: 60610 Times: 1
+  Product: 201 Name: Cvtres1100 Version: 60610 Times: 1
+  Product: 202 Name: Export1100 Version: 60610 Times: 1
+  Product: 0 Name: Unknown Version: 0 Times: 7
+  Product: 1 Name: Import0 Version: 0 Times: 13
+  Product: 147 Name: Implib900 Version: 30729 Times: 3
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+  Product: 10 Name: Utc12_C Version: 8168 Times: 4
+  Product: 4 Name: Linker600 Version: 8168 Times: 2
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x12160
+  Size : 0x5c
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x12044
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x14000
+  Size : 0x450
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x15000
+  Size : 0x1050
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x12000
+  Size : 0x34
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000120b4 0x00010e10 SET_32 KERNEL32.dll_GetProcAddress
+0x000120c6 0x00010e00 SET_32 KERNEL32.dll_LoadLibraryW
+0x000120d6 0x00010e04 SET_32 KERNEL32.dll_FreeLibrary
+0x000120e4 0x00010e08 SET_32 KERNEL32.dll_LoadLibraryA
+0x000120f4 0x00010e0c SET_32 KERNEL32.dll_Sleep
+0x0001210a 0x00010e18 SET_32 MSVCRT.dll_memset
+0x00012114 0x00010e1c SET_32 MSVCRT.dll__strrev
+0x0001212a 0x00010e20 SET_32 MSVCRT.dll_free
+0x00012132 0x00010e24 SET_32 MSVCRT.dll__initterm
+0x0001213e 0x00010e28 SET_32 MSVCRT.dll_malloc
+0x00012148 0x00010e2c SET_32 MSVCRT.dll__adjust_fdiv
+
+
+11 relocations
+77312
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 5.1.2600.6341
+  ProductVersion: 5.1.2600.6341
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: 
+  CompanyName: Microsoft Corporation
+  FileDescription: Core Shell Runtime Service
+  FileVersion: 5.1.2600.6341
+  InternalName: coreshell.dll
+  LegalCopyright: ® Microsoft Corporation. All rights reserved.
+  LegalTrademarks: 
+  OriginalFilename: coreshell.dll
+  PrivateBuild: 
+  ProductName: Microsoft® Windows® Operating System
+  ProductVersion: 5.1.2600.6341
+  SpecialBuild: 
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,182 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr           size vaddr          vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000       0x0 0x00401000   0xe5000 -rwx haANoHnb
+1   0x00000400   0x62a00 0x004e6000   0x6a000 -rwx 7333yj9z
+2   0x00000000       0x0 0x00550000   0x57000 -rwx MoJoHSrI
+3   0x00062e00  0x4dca00 0x005a7000  0x4dd000 -rwx RsLStgDj
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x005a7085 paddr=0x00062e85 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x005a7028 NONE FUNC KERNEL32.dll GetProcAddress
+2   0x005a702c NONE FUNC KERNEL32.dll LoadLibraryA
+3   0x005a7030 NONE FUNC KERNEL32.dll VirtualAlloc
+4   0x005a7034 NONE FUNC KERNEL32.dll VirtualFree
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00062e28 0x005a7028 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+2   0x00062e2c 0x005a702c NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+3   0x00062e30 0x005a7030 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+4   0x00062e34 0x005a7034 NONE FUNC 0    KERNEL32.dll imp.VirtualFree
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    5508032
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0054782c
+compiled Tue Mar 14 20:32:03 2023
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0054782c
+laddr    0x0
+lang     c
+linenum  true
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x6410d9c3
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x126
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x24
+  SizeOfCode : 0xcf200
+  SizeOfInitializedData : 0x19ca00
+  SizeOfUninitializedData : 0x1200
+  AddressOfEntryPoint : 0x1a7085
+  BaseOfCode : 0x1000
+  BaseOfData : 0xd1000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x684000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x54782c
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x1a7000
+  Size : 0x81
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xe6000
+  Size : 0x62854
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x53f800
+  Size : 0x13c0
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x683844
+  Size : 0x10
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x68382c
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x001a703a 0x00062e28 SET_32 KERNEL32.dll_GetProcAddress
+0x001a704a 0x00062e2c SET_32 KERNEL32.dll_LoadLibraryA
+0x001a7058 0x00062e30 SET_32 KERNEL32.dll_VirtualAlloc
+0x001a7066 0x00062e34 SET_32 KERNEL32.dll_VirtualFree
+
+
+4 relocations
+5508032
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 5.16.0.0
+  ProductVersion: 5.16.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: Pro version of Duplicate Cleaner 5.
+  CompanyName: DigitalVolcano Software Ltd
+  FileDescription: Duplicate Cleaner Pro 5
+  FileVersion: 5.16.0.0
+  InternalName: Duplicate Cleaner 5.exe
+  LegalCopyright: Copyright ©2006-2022
+  LegalTrademarks: 
+  OriginalFilename: Duplicate Cleaner 5.exe
+  ProductName: Duplicate_Cleaner_5
+  ProductVersion: 5.16.0.0
+  Assembly Version: 5.16.0.0
+Section to Segment mapping:
+Segment Section
+---------------
+
+

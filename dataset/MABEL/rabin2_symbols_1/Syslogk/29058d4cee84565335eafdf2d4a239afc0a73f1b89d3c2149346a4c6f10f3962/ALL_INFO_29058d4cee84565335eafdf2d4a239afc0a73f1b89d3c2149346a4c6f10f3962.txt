@@ -1,0 +1,437 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x00000238    0x1c 0x00400238    0x1c -r-- .interp
+2   0x00000254    0x20 0x00400254    0x20 -r-- .note.ABI-tag
+3   0x00000274    0x24 0x00400274    0x24 -r-- .note.gnu.build-id
+4   0x00000298    0x1c 0x00400298    0x1c -r-- .gnu.hash
+5   0x000002b8   0x348 0x004002b8   0x348 -r-- .dynsym
+6   0x00000600   0x159 0x00400600   0x159 -r-- .dynstr
+7   0x0000075a    0x46 0x0040075a    0x46 -r-- .gnu.version
+8   0x000007a0    0x50 0x004007a0    0x50 -r-- .gnu.version_r
+9   0x000007f0    0x60 0x004007f0    0x60 -r-- .rela.dyn
+10  0x00000850   0x2d0 0x00400850   0x2d0 -r-- .rela.plt
+11  0x00000b20    0x1b 0x00400b20    0x1b -r-x .init
+12  0x00000b40   0x1f0 0x00400b40   0x1f0 -r-x .plt
+13  0x00000d30  0x5f25 0x00400d30  0x5f25 -r-x .text
+14  0x00006c58     0xd 0x00406c58     0xd -r-x .fini
+15  0x00006c80  0x5091 0x00406c80  0x5091 -r-- .rodata
+16  0x0000bd14    0xc4 0x0040bd14    0xc4 -r-- .eh_frame_hdr
+17  0x0000bdd8   0x4b8 0x0040bdd8   0x4b8 -r-- .eh_frame
+18  0x0000cdf0     0x8 0x0060cdf0     0x8 -rw- .init_array
+19  0x0000cdf8     0x8 0x0060cdf8     0x8 -rw- .fini_array
+20  0x0000ce00   0x1e0 0x0060ce00   0x1e0 -rw- .dynamic
+21  0x0000cfe0    0x20 0x0060cfe0    0x20 -rw- .got
+22  0x0000d000   0x108 0x0060d000   0x108 -rw- .got.plt
+23  0x0000d120    0x68 0x0060d120    0x68 -rw- .data
+24  0x0000d188     0x0 0x0060d1a0  0x29c8 -rw- .bss
+25  0x0000d188    0x2c 0x00000000    0x2c ---- .comment
+26  0x0000d1b4   0x234 0x00a0fb68   0x234 ---- .gnu.build.attributes
+27  0x0000d3e8   0x109 0x00000000   0x109 ---- .shstrtab
+
+[Segments]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000040   0x1f8 0x00400040   0x1f8 -r-- PHDR
+1   0x00000238    0x1c 0x00400238    0x1c -r-- INTERP
+2   0x00000000  0xc290 0x00400000  0xc290 -r-x LOAD0
+3   0x0000cdf0   0x398 0x0060cdf0  0x2d78 -rw- LOAD1
+4   0x0000ce00   0x1e0 0x0060ce00   0x1e0 -rw- DYNAMIC
+5   0x00000254    0x44 0x00400254    0x44 -r-- NOTE
+6   0x0000bd14    0xc4 0x0040bd14    0xc4 -r-- GNU_EH_FRAME
+7   0x00000000     0x0 0x00000000     0x0 -rw- GNU_STACK
+8   0x0000cdf0   0x210 0x0060cdf0   0x210 -r-- GNU_RELRO
+9   0x00000000    0x40 0x00400000    0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00400d30 paddr=0x00000d30 haddr=0x00000018 hvaddr=0x00400018 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x00400e10 paddr=0x00000e10 hvaddr=0x0060cdf0 hpaddr=0x0000cdf0 type=init
+vaddr=0x00400de0 paddr=0x00000de0 hvaddr=0x0060cdf8 hpaddr=0x0000cdf8 type=fini
+
+2 entrypoints
+[Main]
+vaddr=0x00406997 paddr=0x00406997
+[Imports]
+nth vaddr      bind   type   lib name
+―――――――――――――――――――――――――――――――――――――
+1   0x00400b50 GLOBAL FUNC       recv
+2   0x00400b60 GLOBAL FUNC       strncpy
+3   0x00000000 WEAK   NOTYPE     _ITM_deregisterTMCloneTable
+4   0x00400b70 GLOBAL FUNC       write
+5   0x00400b80 GLOBAL FUNC       getpid
+6   0x00400b90 GLOBAL FUNC       shutdown
+7   0x00400ba0 GLOBAL FUNC       dup2
+8   0x00400bb0 GLOBAL FUNC       send
+9   0x00400bc0 GLOBAL FUNC       gettimeofday
+10  0x00400bd0 GLOBAL FUNC       memset
+11  0x00400be0 GLOBAL FUNC       ioctl
+12  0x00400bf0 GLOBAL FUNC       alarm
+13  0x00400c00 GLOBAL FUNC       close
+14  0x00400c10 GLOBAL FUNC       setsid
+15  0x00400c20 GLOBAL FUNC       read
+16  0x00000000 GLOBAL FUNC       __libc_start_main
+17  0x00400c30 GLOBAL FUNC       memcmp
+18  0x00400c40 GLOBAL FUNC       putenv
+19  0x00400c50 GLOBAL FUNC       gethostbyname
+20  0x00000000 WEAK   NOTYPE     __gmon_start__
+21  0x00400c60 GLOBAL FUNC       memcpy
+22  0x00400c70 GLOBAL FUNC       openpty
+23  0x00400c80 GLOBAL FUNC       select
+24  0x00400c90 GLOBAL FUNC       malloc
+25  0x00400ca0 GLOBAL FUNC       ttyname
+26  0x00400cb0 GLOBAL FUNC       waitpid
+27  0x00400cc0 GLOBAL FUNC       open
+28  0x00400cd0 GLOBAL FUNC       creat
+29  0x00400ce0 GLOBAL FUNC       connect
+30  0x00000000 WEAK   NOTYPE     _ITM_registerTMCloneTable
+31  0x00400cf0 GLOBAL FUNC       execl
+32  0x00400d00 GLOBAL FUNC       sleep
+33  0x00400d10 GLOBAL FUNC       fork
+34  0x00400d20 GLOBAL FUNC       socket
+
+[Symbols]
+
+nth paddr      vaddr      bind   type   size lib name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000b50 0x00400b50 GLOBAL FUNC   16       imp.recv
+2   0x00000b60 0x00400b60 GLOBAL FUNC   16       imp.strncpy
+3   ---------- 0x00000000 WEAK   NOTYPE 16       imp._ITM_deregisterTMCloneTable
+4   0x00000b70 0x00400b70 GLOBAL FUNC   16       imp.write
+5   0x00000b80 0x00400b80 GLOBAL FUNC   16       imp.getpid
+6   0x00000b90 0x00400b90 GLOBAL FUNC   16       imp.shutdown
+7   0x00000ba0 0x00400ba0 GLOBAL FUNC   16       imp.dup2
+8   0x00000bb0 0x00400bb0 GLOBAL FUNC   16       imp.send
+9   0x00000bc0 0x00400bc0 GLOBAL FUNC   16       imp.gettimeofday
+10  0x00000bd0 0x00400bd0 GLOBAL FUNC   16       imp.memset
+11  0x00000be0 0x00400be0 GLOBAL FUNC   16       imp.ioctl
+12  0x00000bf0 0x00400bf0 GLOBAL FUNC   16       imp.alarm
+13  0x00000c00 0x00400c00 GLOBAL FUNC   16       imp.close
+14  0x00000c10 0x00400c10 GLOBAL FUNC   16       imp.setsid
+15  0x00000c20 0x00400c20 GLOBAL FUNC   16       imp.read
+16  ---------- 0x00000000 GLOBAL FUNC   16       imp.__libc_start_main
+17  0x00000c30 0x00400c30 GLOBAL FUNC   16       imp.memcmp
+18  0x00000c40 0x00400c40 GLOBAL FUNC   16       imp.putenv
+19  0x00000c50 0x00400c50 GLOBAL FUNC   16       imp.gethostbyname
+20  ---------- 0x00000000 WEAK   NOTYPE 16       imp.__gmon_start__
+21  0x00000c60 0x00400c60 GLOBAL FUNC   16       imp.memcpy
+22  0x00000c70 0x00400c70 GLOBAL FUNC   16       imp.openpty
+23  0x00000c80 0x00400c80 GLOBAL FUNC   16       imp.select
+24  0x00000c90 0x00400c90 GLOBAL FUNC   16       imp.malloc
+25  0x00000ca0 0x00400ca0 GLOBAL FUNC   16       imp.ttyname
+26  0x00000cb0 0x00400cb0 GLOBAL FUNC   16       imp.waitpid
+27  0x00000cc0 0x00400cc0 GLOBAL FUNC   16       imp.open
+28  0x00000cd0 0x00400cd0 GLOBAL FUNC   16       imp.creat
+29  0x00000ce0 0x00400ce0 GLOBAL FUNC   16       imp.connect
+30  ---------- 0x00000000 WEAK   NOTYPE 16       imp._ITM_registerTMCloneTable
+31  0x00000cf0 0x00400cf0 GLOBAL FUNC   16       imp.execl
+32  0x00000d00 0x00400d00 GLOBAL FUNC   16       imp.sleep
+33  0x00000d10 0x00400d10 GLOBAL FUNC   16       imp.fork
+34  0x00000d20 0x00400d20 GLOBAL FUNC   16       imp.socket
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00006d08 0x00406d08 4   5    .rodata ascii ~SeA
+1   0x00006e80 0x00406e80 4   5    .rodata ascii pXhH
+2   0x00007038 0x00407038 4   5    .rodata ascii lNrZ
+3   0x00007058 0x00407058 4   5    .rodata ascii 6'9-
+4   0x00007078 0x00407078 4   5    .rodata ascii $:.6
+5   0x000070b0 0x004070b0 4   5    .rodata ascii ZiKw
+6   0x00007258 0x00407258 4   5    .rodata ascii TbF~
+7   0x00007328 0x00407328 4   5    .rodata ascii *1#?
+8   0x00007490 0x00407490 4   5    .rodata ascii 8,4$
+9   0x000074f0 0x004074f0 4   5    .rodata ascii Ht\l
+10  0x00007508 0x00407508 4   5    .rodata ascii A~Se
+11  0x00007680 0x00407680 4   5    .rodata ascii HpXh
+12  0x00007838 0x00407838 4   5    .rodata ascii ZlNr
+13  0x00007858 0x00407858 4   5    .rodata ascii -6'9
+14  0x00007878 0x00407878 4   5    .rodata ascii 6$:.
+15  0x000078b0 0x004078b0 4   5    .rodata ascii wZiK
+16  0x00007a58 0x00407a58 4   5    .rodata ascii ~TbF
+17  0x00007b28 0x00407b28 4   5    .rodata ascii ?*1#
+18  0x00007c90 0x00407c90 4   5    .rodata ascii $8,4
+19  0x00007cf0 0x00407cf0 4   5    .rodata ascii lHt\
+20  0x00007d08 0x00407d08 4   5    .rodata ascii eA~S
+21  0x00007e80 0x00407e80 4   5    .rodata ascii hHpX
+22  0x00008038 0x00408038 4   5    .rodata ascii rZlN
+23  0x00008058 0x00408058 4   5    .rodata ascii 9-6'
+24  0x00008078 0x00408078 4   5    .rodata ascii .6$:
+25  0x000080b0 0x004080b0 4   5    .rodata ascii KwZi
+26  0x00008258 0x00408258 4   5    .rodata ascii F~Tb
+27  0x00008328 0x00408328 4   5    .rodata ascii #?*1
+28  0x00008490 0x00408490 4   5    .rodata ascii 4$8,
+29  0x000084f0 0x004084f0 4   5    .rodata ascii \lHt
+30  0x00008508 0x00408508 4   5    .rodata ascii SeA~
+31  0x00008680 0x00408680 4   5    .rodata ascii XhHp
+32  0x00008838 0x00408838 4   5    .rodata ascii NrZl
+33  0x00008858 0x00408858 4   5    .rodata ascii '9-6
+34  0x00008878 0x00408878 4   5    .rodata ascii :.6$
+35  0x000088b0 0x004088b0 4   5    .rodata ascii iKwZ
+36  0x00008a58 0x00408a58 4   5    .rodata ascii bF~T
+37  0x00008b28 0x00408b28 4   5    .rodata ascii 1#?*
+38  0x00008c90 0x00408c90 4   5    .rodata ascii ,4$8
+39  0x00008cf0 0x00408cf0 4   5    .rodata ascii t\lH
+40  0x00009540 0x00409540 4   5    .rodata ascii `P00
+41  0x00009558 0x00409558 4   5    .rodata ascii V}++
+42  0x00009618 0x00409618 4   5    .rodata ascii Lj&&
+43  0x00009620 0x00409620 4   5    .rodata ascii lZ66
+44  0x00009628 0x00409628 4   5    .rodata ascii ~A??
+45  0x00009640 0x00409640 4   5    .rodata ascii h\44
+46  0x00009670 0x00409670 4   5    .rodata ascii bS11
+47  0x00009690 0x00409690 4   5    .rodata ascii Fe##
+48  0x000096e8 0x004096e8 4   5    .rodata ascii Ni''
+49  0x00009710 0x00409710 4   5    .rodata ascii Xt,,
+50  0x00009720 0x00409720 4   5    .rodata ascii 6-\e\e
+51  0x00009748 0x00409748 4   5    .rodata ascii vM;;
+52  0x00009760 0x00409760 4   5    .rodata ascii R{))
+53  0x00009770 0x00409770 4   5    .rodata ascii ^q//
+54  0x000097a0 0x004097a0 4   5    .rodata ascii @`  
+55  0x000097d8 0x004097d8 4   5    .rodata ascii rK99
+56  0x00009830 0x00409830 4   5    .rodata ascii fU33
+57  0x00009868 0x00409868 4   5    .rodata ascii xD<<
+58  0x000098b0 0x004098b0 4   5    .rodata ascii pH88
+59  0x000098d8 0x004098d8 4   5    .rodata ascii Bc!!
+60  0x00009958 0x00409958 4   5    .rodata ascii zG==
+61  0x000099a0 0x004099a0 4   5    .rodata ascii Df""
+62  0x000099a8 0x004099a8 4   5    .rodata ascii T~**
+63  0x00009a08 0x00409a08 4   5    .rodata ascii dV22
+64  0x00009a10 0x00409a10 4   5    .rodata ascii tN::
+65  0x00009a30 0x00409a30 4   5    .rodata ascii Hl$$
+66  0x00009a90 0x00409a90 4   5    .rodata ascii nY77
+67  0x00009b10 0x00409b10 4   5    .rodata ascii Jo%%
+68  0x00009b18 0x00409b18 4   5    .rodata ascii \r..
+69  0x00009b88 0x00409b88 4   5    .rodata ascii |B>>
+70  0x00009bc8 0x00409bc8 4   5    .rodata ascii j_55
+71  0x00009c70 0x00409c70 4   5    .rodata ascii Px((
+72  0x00009cd0 0x00409cd0 4   5    .rodata ascii Zw--
+73  0x00009d40 0x00409d40 4   5    .rodata ascii 0`P0
+74  0x00009d58 0x00409d58 4   5    .rodata ascii +V}+
+75  0x00009e18 0x00409e18 4   5    .rodata ascii &Lj&
+76  0x00009e20 0x00409e20 4   5    .rodata ascii 6lZ6
+77  0x00009e28 0x00409e28 4   5    .rodata ascii ?~A?
+78  0x00009e40 0x00409e40 4   5    .rodata ascii 4h\4
+79  0x00009e70 0x00409e70 4   5    .rodata ascii 1bS1
+80  0x00009e90 0x00409e90 4   5    .rodata ascii #Fe#
+81  0x00009ee8 0x00409ee8 4   5    .rodata ascii 'Ni'
+82  0x00009f10 0x00409f10 4   5    .rodata ascii ,Xt,
+83  0x00009f20 0x00409f20 4   5    .rodata ascii \e6-\e
+84  0x00009f48 0x00409f48 4   5    .rodata ascii ;vM;
+85  0x00009f60 0x00409f60 4   5    .rodata ascii )R{)
+86  0x00009f70 0x00409f70 4   5    .rodata ascii /^q/
+87  0x00009fa0 0x00409fa0 4   5    .rodata ascii  @` 
+88  0x00009fd8 0x00409fd8 4   5    .rodata ascii 9rK9
+89  0x0000a030 0x0040a030 4   5    .rodata ascii 3fU3
+90  0x0000a068 0x0040a068 4   5    .rodata ascii <xD<
+91  0x0000a0b0 0x0040a0b0 4   5    .rodata ascii 8pH8
+92  0x0000a0d8 0x0040a0d8 4   5    .rodata ascii !Bc!
+93  0x0000a158 0x0040a158 4   5    .rodata ascii =zG=
+94  0x0000a1a0 0x0040a1a0 4   5    .rodata ascii "Df"
+95  0x0000a1a8 0x0040a1a8 4   5    .rodata ascii *T~*
+96  0x0000a208 0x0040a208 4   5    .rodata ascii 2dV2
+97  0x0000a210 0x0040a210 4   5    .rodata ascii :tN:
+98  0x0000a230 0x0040a230 4   5    .rodata ascii $Hl$
+99  0x0000a290 0x0040a290 4   5    .rodata ascii 7nY7
+100 0x0000a310 0x0040a310 4   5    .rodata ascii %Jo%
+101 0x0000a318 0x0040a318 4   5    .rodata ascii .\r.
+102 0x0000a388 0x0040a388 4   5    .rodata ascii >|B>
+103 0x0000a3c8 0x0040a3c8 4   5    .rodata ascii 5j_5
+104 0x0000a470 0x0040a470 4   5    .rodata ascii (Px(
+105 0x0000a4d0 0x0040a4d0 4   5    .rodata ascii -Zw-
+106 0x0000a540 0x0040a540 4   5    .rodata ascii 00`P
+107 0x0000a558 0x0040a558 4   5    .rodata ascii ++V}
+108 0x0000a618 0x0040a618 4   5    .rodata ascii &&Lj
+109 0x0000a620 0x0040a620 4   5    .rodata ascii 66lZ
+110 0x0000a628 0x0040a628 4   5    .rodata ascii ??~A
+111 0x0000a640 0x0040a640 4   5    .rodata ascii 44h\
+112 0x0000a670 0x0040a670 4   5    .rodata ascii 11bS
+113 0x0000a690 0x0040a690 4   5    .rodata ascii ##Fe
+114 0x0000a6e8 0x0040a6e8 4   5    .rodata ascii ''Ni
+115 0x0000a710 0x0040a710 4   5    .rodata ascii ,,Xt
+116 0x0000a720 0x0040a720 4   5    .rodata ascii \e\e6-
+117 0x0000a748 0x0040a748 4   5    .rodata ascii ;;vM
+118 0x0000a760 0x0040a760 4   5    .rodata ascii ))R{
+119 0x0000a770 0x0040a770 4   5    .rodata ascii //^q
+120 0x0000a7a0 0x0040a7a0 4   5    .rodata ascii   @`
+121 0x0000a7d8 0x0040a7d8 4   5    .rodata ascii 99rK
+122 0x0000a830 0x0040a830 4   5    .rodata ascii 33fU
+123 0x0000a868 0x0040a868 4   5    .rodata ascii <<xD
+124 0x0000a8b0 0x0040a8b0 4   5    .rodata ascii 88pH
+125 0x0000a8d8 0x0040a8d8 4   5    .rodata ascii !!Bc
+126 0x0000a958 0x0040a958 4   5    .rodata ascii ==zG
+127 0x0000a9a0 0x0040a9a0 4   5    .rodata ascii ""Df
+128 0x0000a9a8 0x0040a9a8 4   5    .rodata ascii **T~
+129 0x0000aa08 0x0040aa08 4   5    .rodata ascii 22dV
+130 0x0000aa10 0x0040aa10 4   5    .rodata ascii ::tN
+131 0x0000aa30 0x0040aa30 4   5    .rodata ascii $$Hl
+132 0x0000aa90 0x0040aa90 4   5    .rodata ascii 77nY
+133 0x0000ab10 0x0040ab10 4   5    .rodata ascii %%Jo
+134 0x0000ab18 0x0040ab18 4   5    .rodata ascii ..\r
+135 0x0000ab88 0x0040ab88 4   5    .rodata ascii >>|B
+136 0x0000abc8 0x0040abc8 4   5    .rodata ascii 55j_
+137 0x0000ac70 0x0040ac70 4   5    .rodata ascii ((Px
+138 0x0000acd0 0x0040acd0 4   5    .rodata ascii --Zw
+139 0x0000ad40 0x0040ad40 4   5    .rodata ascii P00`
+140 0x0000ad58 0x0040ad58 4   5    .rodata ascii }++V
+141 0x0000ae18 0x0040ae18 4   5    .rodata ascii j&&L
+142 0x0000ae20 0x0040ae20 4   5    .rodata ascii Z66l
+143 0x0000ae28 0x0040ae28 4   5    .rodata ascii A??~
+144 0x0000ae40 0x0040ae40 4   5    .rodata ascii \44h
+145 0x0000ae70 0x0040ae70 4   5    .rodata ascii S11b
+146 0x0000ae90 0x0040ae90 4   5    .rodata ascii e##F
+147 0x0000aee8 0x0040aee8 4   5    .rodata ascii i''N
+148 0x0000af10 0x0040af10 4   5    .rodata ascii t,,X
+149 0x0000af20 0x0040af20 4   5    .rodata ascii -\e\e6
+150 0x0000af48 0x0040af48 4   5    .rodata ascii M;;v
+151 0x0000af60 0x0040af60 4   5    .rodata ascii {))R
+152 0x0000af70 0x0040af70 4   5    .rodata ascii q//^
+153 0x0000afa0 0x0040afa0 4   5    .rodata ascii `  @
+154 0x0000afd8 0x0040afd8 4   5    .rodata ascii K99r
+155 0x0000b030 0x0040b030 4   5    .rodata ascii U33f
+156 0x0000b068 0x0040b068 4   5    .rodata ascii D<<x
+157 0x0000b0b0 0x0040b0b0 4   5    .rodata ascii H88p
+158 0x0000b0d8 0x0040b0d8 4   5    .rodata ascii c!!B
+159 0x0000b158 0x0040b158 4   5    .rodata ascii G==z
+160 0x0000b1a0 0x0040b1a0 4   5    .rodata ascii f""D
+161 0x0000b1a8 0x0040b1a8 4   5    .rodata ascii ~**T
+162 0x0000b208 0x0040b208 4   5    .rodata ascii V22d
+163 0x0000b210 0x0040b210 4   5    .rodata ascii N::t
+164 0x0000b230 0x0040b230 4   5    .rodata ascii l$$H
+165 0x0000b290 0x0040b290 4   5    .rodata ascii Y77n
+166 0x0000b310 0x0040b310 4   5    .rodata ascii o%%J
+167 0x0000b318 0x0040b318 4   5    .rodata ascii r..\
+168 0x0000b388 0x0040b388 4   5    .rodata ascii B>>|
+169 0x0000b3c8 0x0040b3c8 4   5    .rodata ascii _55j
+170 0x0000b470 0x0040b470 4   5    .rodata ascii x((P
+171 0x0000b4d0 0x0040b4d0 4   5    .rodata ascii w--Z
+172 0x0000bd03 0x0040bd03 13  14   .rodata ascii 198.13.48.124
+arch     x86
+baddr    0x400000
+binsz    54513
+bintype  elf
+bits     64
+canary   false
+class    ELF64
+compiler GCC: (GNU) 8.3.1 20191121 (Red Hat 8.3.1-5)
+crypto   false
+endian   little
+havecode true
+intrp    /lib64/ld-linux-x86-64.so.2
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD x86-64 architecture
+nx       true
+os       linux
+pic      false
+relocs   false
+relro    partial
+rpath    NONE
+sanitize false
+static   false
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00400d30
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x0000d4f8
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       9
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       28
+0x0000003e  ShrStrndx   27
+[Linked libraries]
+libutil.so.1
+libc.so.6
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0060cfe0 0x0000cfe0 SET_64 _ITM_deregisterTMCloneTable
+0x0060cfe8 0x0000cfe8 SET_64 __libc_start_main
+0x0060cff0 0x0000cff0 SET_64 __gmon_start__
+0x0060cff8 0x0000cff8 SET_64 _ITM_registerTMCloneTable
+0x0060d018 0x0000d018 SET_64 recv
+0x0060d020 0x0000d020 SET_64 strncpy
+0x0060d028 0x0000d028 SET_64 write
+0x0060d030 0x0000d030 SET_64 getpid
+0x0060d038 0x0000d038 SET_64 shutdown
+0x0060d040 0x0000d040 SET_64 dup2
+0x0060d048 0x0000d048 SET_64 send
+0x0060d050 0x0000d050 SET_64 gettimeofday
+0x0060d058 0x0000d058 SET_64 memset
+0x0060d060 0x0000d060 SET_64 ioctl
+0x0060d068 0x0000d068 SET_64 alarm
+0x0060d070 0x0000d070 SET_64 close
+0x0060d078 0x0000d078 SET_64 setsid
+0x0060d080 0x0000d080 SET_64 read
+0x0060d088 0x0000d088 SET_64 memcmp
+0x0060d090 0x0000d090 SET_64 putenv
+0x0060d098 0x0000d098 SET_64 gethostbyname
+0x0060d0a0 0x0000d0a0 SET_64 memcpy
+0x0060d0a8 0x0000d0a8 SET_64 openpty
+0x0060d0b0 0x0000d0b0 SET_64 select
+0x0060d0b8 0x0000d0b8 SET_64 malloc
+0x0060d0c0 0x0000d0c0 SET_64 ttyname
+0x0060d0c8 0x0000d0c8 SET_64 waitpid
+0x0060d0d0 0x0000d0d0 SET_64 open
+0x0060d0d8 0x0000d0d8 SET_64 creat
+0x0060d0e0 0x0000d0e0 SET_64 connect
+0x0060d0e8 0x0000d0e8 SET_64 execl
+0x0060d0f0 0x0000d0f0 SET_64 sleep
+0x0060d0f8 0x0000d0f8 SET_64 fork
+0x0060d100 0x0000d100 SET_64 socket
+
+
+34 relocations
+54513
+Version symbols section '.gnu.version' contains 35 entries:
+ Addr: 0x0040075a  Offset: 0x0000075a  Link: 5 (.dynsym)
+  0x00000000: 0 (*local*)
+  0x00000001: 2 (GLIBC_2.2.5)
+  0x00000003: 0 (*local*)
+  0x00000004: 2 (GLIBC_2.2.5)
+  0x00000014: 0 (*local*)
+  0x00000015: 3 (GLIBC_2.14)
+  0x00000016: 4 (GLIBC_2.2.5)
+  0x00000017: 2 (GLIBC_2.2.5)
+  0x0000001e: 0 (*local*)
+  0x0000001f: 2 (GLIBC_2.2.5)
+
+
+Version need section '.gnu.version_r' contains 2 entries:
+ Addr: 0x004007a0  Offset: 0x000007a0  Link to section: 6 (.dynstr)
+  0x00000000: Version: 1  File: libutil.so.1  Cnt: 1
+  0x00000010:   Name: GLIBC_2.2.5  Flags: none Version: 4
+  0x00000020: Version: 1  File: libc.so.6  Cnt: 2
+  0x00000030:   Name: GLIBC_2.14  Flags: none Version: 3
+  0x00000040:   Name: GLIBC_2.2.5  Flags: none Version: 2
+Section to Segment mapping:
+Segment      Section
+--------------------
+PHDR         
+INTERP       .interp 
+LOAD0        .interp .note.ABI-tag .note.gnu.build-id .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_r .rela.dyn .rela.plt .init .plt .text .fini .rodata .eh_frame_hdr .eh_frame 
+LOAD1        .init_array .fini_array .dynamic .got .got.plt .data 
+DYNAMIC      .dynamic 
+NOTE         .note.ABI-tag .note.gnu.build-id 
+GNU_EH_FRAME .eh_frame_hdr 
+GNU_STACK    
+GNU_RELRO    .init_array .fini_array .dynamic .got 
+ehdr         
+
+

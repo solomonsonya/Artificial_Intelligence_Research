@@ -1,0 +1,934 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xf400 0x00401000  0x10000 -r-x .text
+1   0x0000f800  0x1000 0x00411000   0x1000 -r-x .itext
+2   0x00010800   0xe00 0x00412000   0x1000 -rw- .data
+3   0x00011600     0x0 0x00413000   0x6000 -rw- .bss
+4   0x00011600  0x1000 0x00419000   0x1000 -rw- .idata
+5   0x00012600     0x0 0x0041a000   0x1000 -rw- .tls
+6   0x00012600   0x200 0x0041b000   0x1000 -r-- .rdata
+7   0x00012800  0xc400 0x0041c000   0xd000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0041181c paddr=0x0001001c haddr=0x00000128 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00419304 NONE FUNC oleaut32.dll SysFreeString
+2   0x00419308 NONE FUNC oleaut32.dll SysReAllocStringLen
+3   0x0041930c NONE FUNC oleaut32.dll SysAllocStringLen
+1   0x00419314 NONE FUNC advapi32.dll RegQueryValueExW
+2   0x00419318 NONE FUNC advapi32.dll RegOpenKeyExW
+3   0x0041931c NONE FUNC advapi32.dll RegCloseKey
+1   0x00419324 NONE FUNC user32.dll   GetKeyboardType
+2   0x00419328 NONE FUNC user32.dll   LoadStringW
+3   0x0041932c NONE FUNC user32.dll   MessageBoxA
+4   0x00419330 NONE FUNC user32.dll   CharNextW
+1   0x00419338 NONE FUNC kernel32.dll GetACP
+2   0x0041933c NONE FUNC kernel32.dll Sleep
+3   0x00419340 NONE FUNC kernel32.dll VirtualFree
+4   0x00419344 NONE FUNC kernel32.dll VirtualAlloc
+5   0x00419348 NONE FUNC kernel32.dll GetSystemInfo
+6   0x0041934c NONE FUNC kernel32.dll GetTickCount
+7   0x00419350 NONE FUNC kernel32.dll QueryPerformanceCounter
+8   0x00419354 NONE FUNC kernel32.dll GetVersion
+9   0x00419358 NONE FUNC kernel32.dll GetCurrentThreadId
+10  0x0041935c NONE FUNC kernel32.dll VirtualQuery
+11  0x00419360 NONE FUNC kernel32.dll WideCharToMultiByte
+12  0x00419364 NONE FUNC kernel32.dll MultiByteToWideChar
+13  0x00419368 NONE FUNC kernel32.dll lstrlenW
+14  0x0041936c NONE FUNC kernel32.dll lstrcpynW
+15  0x00419370 NONE FUNC kernel32.dll LoadLibraryExW
+16  0x00419374 NONE FUNC kernel32.dll GetThreadLocale
+17  0x00419378 NONE FUNC kernel32.dll GetStartupInfoA
+18  0x0041937c NONE FUNC kernel32.dll GetProcAddress
+19  0x00419380 NONE FUNC kernel32.dll GetModuleHandleW
+20  0x00419384 NONE FUNC kernel32.dll GetModuleFileNameW
+21  0x00419388 NONE FUNC kernel32.dll GetLocaleInfoW
+22  0x0041938c NONE FUNC kernel32.dll GetCommandLineW
+23  0x00419390 NONE FUNC kernel32.dll FreeLibrary
+24  0x00419394 NONE FUNC kernel32.dll FindFirstFileW
+25  0x00419398 NONE FUNC kernel32.dll FindClose
+26  0x0041939c NONE FUNC kernel32.dll ExitProcess
+27  0x004193a0 NONE FUNC kernel32.dll WriteFile
+28  0x004193a4 NONE FUNC kernel32.dll UnhandledExceptionFilter
+29  0x004193a8 NONE FUNC kernel32.dll RtlUnwind
+30  0x004193ac NONE FUNC kernel32.dll RaiseException
+31  0x004193b0 NONE FUNC kernel32.dll GetStdHandle
+32  0x004193b4 NONE FUNC kernel32.dll CloseHandle
+1   0x004193bc NONE FUNC kernel32.dll TlsSetValue
+2   0x004193c0 NONE FUNC kernel32.dll TlsGetValue
+3   0x004193c4 NONE FUNC kernel32.dll LocalAlloc
+4   0x00419380 NONE FUNC kernel32.dll GetModuleHandleW
+1   0x004193d0 NONE FUNC user32.dll   CreateWindowExW
+2   0x004193d4 NONE FUNC user32.dll   TranslateMessage
+3   0x004193d8 NONE FUNC user32.dll   SetWindowLongW
+4   0x004193dc NONE FUNC user32.dll   PeekMessageW
+5   0x004193e0 NONE FUNC user32.dll   MsgWaitForMultipleObjects
+6   0x004193e4 NONE FUNC user32.dll   MessageBoxW
+7   0x00419328 NONE FUNC user32.dll   LoadStringW
+8   0x004193ec NONE FUNC user32.dll   GetSystemMetrics
+9   0x004193f0 NONE FUNC user32.dll   ExitWindowsEx
+10  0x004193f4 NONE FUNC user32.dll   DispatchMessageW
+11  0x004193f8 NONE FUNC user32.dll   DestroyWindow
+12  0x004193fc NONE FUNC user32.dll   CharUpperBuffW
+13  0x00419400 NONE FUNC user32.dll   CallWindowProcW
+1   0x004193a0 NONE FUNC kernel32.dll WriteFile
+2   0x00419360 NONE FUNC kernel32.dll WideCharToMultiByte
+3   0x00419410 NONE FUNC kernel32.dll WaitForSingleObject
+4   0x0041935c NONE FUNC kernel32.dll VirtualQuery
+5   0x00419418 NONE FUNC kernel32.dll VirtualProtect
+6   0x00419340 NONE FUNC kernel32.dll VirtualFree
+7   0x00419344 NONE FUNC kernel32.dll VirtualAlloc
+8   0x00419424 NONE FUNC kernel32.dll SizeofResource
+9   0x00419428 NONE FUNC kernel32.dll SignalObjectAndWait
+10  0x0041942c NONE FUNC kernel32.dll SetLastError
+11  0x00419430 NONE FUNC kernel32.dll SetFilePointer
+12  0x00419434 NONE FUNC kernel32.dll SetEvent
+13  0x00419438 NONE FUNC kernel32.dll SetErrorMode
+14  0x0041943c NONE FUNC kernel32.dll SetEndOfFile
+15  0x00419440 NONE FUNC kernel32.dll ResetEvent
+16  0x00419444 NONE FUNC kernel32.dll RemoveDirectoryW
+17  0x00419448 NONE FUNC kernel32.dll ReadFile
+18  0x00419364 NONE FUNC kernel32.dll MultiByteToWideChar
+19  0x00419450 NONE FUNC kernel32.dll LockResource
+20  0x00419454 NONE FUNC kernel32.dll LoadResource
+21  0x00419458 NONE FUNC kernel32.dll LoadLibraryW
+22  0x0041945c NONE FUNC kernel32.dll GetWindowsDirectoryW
+23  0x00419460 NONE FUNC kernel32.dll GetVersionExW
+24  0x00419354 NONE FUNC kernel32.dll GetVersion
+25  0x00419468 NONE FUNC kernel32.dll GetUserDefaultLangID
+26  0x00419374 NONE FUNC kernel32.dll GetThreadLocale
+27  0x00419348 NONE FUNC kernel32.dll GetSystemInfo
+28  0x00419474 NONE FUNC kernel32.dll GetSystemDirectoryW
+29  0x004193b0 NONE FUNC kernel32.dll GetStdHandle
+30  0x0041937c NONE FUNC kernel32.dll GetProcAddress
+31  0x00419380 NONE FUNC kernel32.dll GetModuleHandleW
+32  0x00419384 NONE FUNC kernel32.dll GetModuleFileNameW
+33  0x00419388 NONE FUNC kernel32.dll GetLocaleInfoW
+34  0x0041948c NONE FUNC kernel32.dll GetLastError
+35  0x00419490 NONE FUNC kernel32.dll GetFullPathNameW
+36  0x00419494 NONE FUNC kernel32.dll GetFileSize
+37  0x00419498 NONE FUNC kernel32.dll GetFileAttributesW
+38  0x0041949c NONE FUNC kernel32.dll GetExitCodeProcess
+39  0x004194a0 NONE FUNC kernel32.dll GetEnvironmentVariableW
+40  0x004194a4 NONE FUNC kernel32.dll GetDiskFreeSpaceW
+41  0x004194a8 NONE FUNC kernel32.dll GetCurrentProcess
+42  0x0041938c NONE FUNC kernel32.dll GetCommandLineW
+43  0x004194b0 NONE FUNC kernel32.dll GetCPInfo
+44  0x004194b4 NONE FUNC kernel32.dll InterlockedExchange
+45  0x004194b8 NONE FUNC kernel32.dll InterlockedCompareExchange
+46  0x00419390 NONE FUNC kernel32.dll FreeLibrary
+47  0x004194c0 NONE FUNC kernel32.dll FormatMessageW
+48  0x004194c4 NONE FUNC kernel32.dll FindResourceW
+49  0x004194c8 NONE FUNC kernel32.dll EnumCalendarInfoW
+50  0x004194cc NONE FUNC kernel32.dll DeleteFileW
+51  0x004194d0 NONE FUNC kernel32.dll CreateProcessW
+52  0x004194d4 NONE FUNC kernel32.dll CreateFileW
+53  0x004194d8 NONE FUNC kernel32.dll CreateEventW
+54  0x004194dc NONE FUNC kernel32.dll CreateDirectoryW
+55  0x004193b4 NONE FUNC kernel32.dll CloseHandle
+1   0x00419314 NONE FUNC advapi32.dll RegQueryValueExW
+2   0x00419318 NONE FUNC advapi32.dll RegOpenKeyExW
+3   0x0041931c NONE FUNC advapi32.dll RegCloseKey
+4   0x004194f4 NONE FUNC advapi32.dll OpenProcessToken
+5   0x004194f8 NONE FUNC advapi32.dll LookupPrivilegeValueW
+1   0x00419500 NONE FUNC comctl32.dll InitCommonControls
+1   0x0041933c NONE FUNC kernel32.dll Sleep
+1   0x00419510 NONE FUNC advapi32.dll AdjustTokenPrivileges
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00011904 0x00419304 NONE FUNC 0    oleaut32.dll imp.SysFreeString
+2   0x00011908 0x00419308 NONE FUNC 0    oleaut32.dll imp.SysReAllocStringLen
+3   0x0001190c 0x0041930c NONE FUNC 0    oleaut32.dll imp.SysAllocStringLen
+1   0x00011914 0x00419314 NONE FUNC 0    advapi32.dll imp.RegQueryValueExW
+2   0x00011918 0x00419318 NONE FUNC 0    advapi32.dll imp.RegOpenKeyExW
+3   0x0001191c 0x0041931c NONE FUNC 0    advapi32.dll imp.RegCloseKey
+1   0x00011924 0x00419324 NONE FUNC 0    user32.dll   imp.GetKeyboardType
+2   0x00011928 0x00419328 NONE FUNC 0    user32.dll   imp.LoadStringW
+3   0x0001192c 0x0041932c NONE FUNC 0    user32.dll   imp.MessageBoxA
+4   0x00011930 0x00419330 NONE FUNC 0    user32.dll   imp.CharNextW
+1   0x00011938 0x00419338 NONE FUNC 0    kernel32.dll imp.GetACP
+2   0x0001193c 0x0041933c NONE FUNC 0    kernel32.dll imp.Sleep
+3   0x00011940 0x00419340 NONE FUNC 0    kernel32.dll imp.VirtualFree
+4   0x00011944 0x00419344 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+5   0x00011948 0x00419348 NONE FUNC 0    kernel32.dll imp.GetSystemInfo
+6   0x0001194c 0x0041934c NONE FUNC 0    kernel32.dll imp.GetTickCount
+7   0x00011950 0x00419350 NONE FUNC 0    kernel32.dll imp.QueryPerformanceCounter
+8   0x00011954 0x00419354 NONE FUNC 0    kernel32.dll imp.GetVersion
+9   0x00011958 0x00419358 NONE FUNC 0    kernel32.dll imp.GetCurrentThreadId
+10  0x0001195c 0x0041935c NONE FUNC 0    kernel32.dll imp.VirtualQuery
+11  0x00011960 0x00419360 NONE FUNC 0    kernel32.dll imp.WideCharToMultiByte
+12  0x00011964 0x00419364 NONE FUNC 0    kernel32.dll imp.MultiByteToWideChar
+13  0x00011968 0x00419368 NONE FUNC 0    kernel32.dll imp.lstrlenW
+14  0x0001196c 0x0041936c NONE FUNC 0    kernel32.dll imp.lstrcpynW
+15  0x00011970 0x00419370 NONE FUNC 0    kernel32.dll imp.LoadLibraryExW
+16  0x00011974 0x00419374 NONE FUNC 0    kernel32.dll imp.GetThreadLocale
+17  0x00011978 0x00419378 NONE FUNC 0    kernel32.dll imp.GetStartupInfoA
+18  0x0001197c 0x0041937c NONE FUNC 0    kernel32.dll imp.GetProcAddress
+19  0x00011980 0x00419380 NONE FUNC 0    kernel32.dll imp.GetModuleHandleW
+20  0x00011984 0x00419384 NONE FUNC 0    kernel32.dll imp.GetModuleFileNameW
+21  0x00011988 0x00419388 NONE FUNC 0    kernel32.dll imp.GetLocaleInfoW
+22  0x0001198c 0x0041938c NONE FUNC 0    kernel32.dll imp.GetCommandLineW
+23  0x00011990 0x00419390 NONE FUNC 0    kernel32.dll imp.FreeLibrary
+24  0x00011994 0x00419394 NONE FUNC 0    kernel32.dll imp.FindFirstFileW
+25  0x00011998 0x00419398 NONE FUNC 0    kernel32.dll imp.FindClose
+26  0x0001199c 0x0041939c NONE FUNC 0    kernel32.dll imp.ExitProcess
+27  0x000119a0 0x004193a0 NONE FUNC 0    kernel32.dll imp.WriteFile
+28  0x000119a4 0x004193a4 NONE FUNC 0    kernel32.dll imp.UnhandledExceptionFilter
+29  0x000119a8 0x004193a8 NONE FUNC 0    kernel32.dll imp.RtlUnwind
+30  0x000119ac 0x004193ac NONE FUNC 0    kernel32.dll imp.RaiseException
+31  0x000119b0 0x004193b0 NONE FUNC 0    kernel32.dll imp.GetStdHandle
+32  0x000119b4 0x004193b4 NONE FUNC 0    kernel32.dll imp.CloseHandle
+1   0x000119bc 0x004193bc NONE FUNC 0    kernel32.dll imp.TlsSetValue
+2   0x000119c0 0x004193c0 NONE FUNC 0    kernel32.dll imp.TlsGetValue
+3   0x000119c4 0x004193c4 NONE FUNC 0    kernel32.dll imp.LocalAlloc
+4   0x000119c8 0x004193c8 NONE FUNC 0    kernel32.dll imp.GetModuleHandleW
+1   0x000119d0 0x004193d0 NONE FUNC 0    user32.dll   imp.CreateWindowExW
+2   0x000119d4 0x004193d4 NONE FUNC 0    user32.dll   imp.TranslateMessage
+3   0x000119d8 0x004193d8 NONE FUNC 0    user32.dll   imp.SetWindowLongW
+4   0x000119dc 0x004193dc NONE FUNC 0    user32.dll   imp.PeekMessageW
+5   0x000119e0 0x004193e0 NONE FUNC 0    user32.dll   imp.MsgWaitForMultipleObjects
+6   0x000119e4 0x004193e4 NONE FUNC 0    user32.dll   imp.MessageBoxW
+7   0x000119e8 0x004193e8 NONE FUNC 0    user32.dll   imp.LoadStringW
+8   0x000119ec 0x004193ec NONE FUNC 0    user32.dll   imp.GetSystemMetrics
+9   0x000119f0 0x004193f0 NONE FUNC 0    user32.dll   imp.ExitWindowsEx
+10  0x000119f4 0x004193f4 NONE FUNC 0    user32.dll   imp.DispatchMessageW
+11  0x000119f8 0x004193f8 NONE FUNC 0    user32.dll   imp.DestroyWindow
+12  0x000119fc 0x004193fc NONE FUNC 0    user32.dll   imp.CharUpperBuffW
+13  0x00011a00 0x00419400 NONE FUNC 0    user32.dll   imp.CallWindowProcW
+1   0x00011a08 0x00419408 NONE FUNC 0    kernel32.dll imp.WriteFile
+2   0x00011a0c 0x0041940c NONE FUNC 0    kernel32.dll imp.WideCharToMultiByte
+3   0x00011a10 0x00419410 NONE FUNC 0    kernel32.dll imp.WaitForSingleObject
+4   0x00011a14 0x00419414 NONE FUNC 0    kernel32.dll imp.VirtualQuery
+5   0x00011a18 0x00419418 NONE FUNC 0    kernel32.dll imp.VirtualProtect
+6   0x00011a1c 0x0041941c NONE FUNC 0    kernel32.dll imp.VirtualFree
+7   0x00011a20 0x00419420 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+8   0x00011a24 0x00419424 NONE FUNC 0    kernel32.dll imp.SizeofResource
+9   0x00011a28 0x00419428 NONE FUNC 0    kernel32.dll imp.SignalObjectAndWait
+10  0x00011a2c 0x0041942c NONE FUNC 0    kernel32.dll imp.SetLastError
+11  0x00011a30 0x00419430 NONE FUNC 0    kernel32.dll imp.SetFilePointer
+12  0x00011a34 0x00419434 NONE FUNC 0    kernel32.dll imp.SetEvent
+13  0x00011a38 0x00419438 NONE FUNC 0    kernel32.dll imp.SetErrorMode
+14  0x00011a3c 0x0041943c NONE FUNC 0    kernel32.dll imp.SetEndOfFile
+15  0x00011a40 0x00419440 NONE FUNC 0    kernel32.dll imp.ResetEvent
+16  0x00011a44 0x00419444 NONE FUNC 0    kernel32.dll imp.RemoveDirectoryW
+17  0x00011a48 0x00419448 NONE FUNC 0    kernel32.dll imp.ReadFile
+18  0x00011a4c 0x0041944c NONE FUNC 0    kernel32.dll imp.MultiByteToWideChar
+19  0x00011a50 0x00419450 NONE FUNC 0    kernel32.dll imp.LockResource
+20  0x00011a54 0x00419454 NONE FUNC 0    kernel32.dll imp.LoadResource
+21  0x00011a58 0x00419458 NONE FUNC 0    kernel32.dll imp.LoadLibraryW
+22  0x00011a5c 0x0041945c NONE FUNC 0    kernel32.dll imp.GetWindowsDirectoryW
+23  0x00011a60 0x00419460 NONE FUNC 0    kernel32.dll imp.GetVersionExW
+24  0x00011a64 0x00419464 NONE FUNC 0    kernel32.dll imp.GetVersion
+25  0x00011a68 0x00419468 NONE FUNC 0    kernel32.dll imp.GetUserDefaultLangID
+26  0x00011a6c 0x0041946c NONE FUNC 0    kernel32.dll imp.GetThreadLocale
+27  0x00011a70 0x00419470 NONE FUNC 0    kernel32.dll imp.GetSystemInfo
+28  0x00011a74 0x00419474 NONE FUNC 0    kernel32.dll imp.GetSystemDirectoryW
+29  0x00011a78 0x00419478 NONE FUNC 0    kernel32.dll imp.GetStdHandle
+30  0x00011a7c 0x0041947c NONE FUNC 0    kernel32.dll imp.GetProcAddress
+31  0x00011a80 0x00419480 NONE FUNC 0    kernel32.dll imp.GetModuleHandleW
+32  0x00011a84 0x00419484 NONE FUNC 0    kernel32.dll imp.GetModuleFileNameW
+33  0x00011a88 0x00419488 NONE FUNC 0    kernel32.dll imp.GetLocaleInfoW
+34  0x00011a8c 0x0041948c NONE FUNC 0    kernel32.dll imp.GetLastError
+35  0x00011a90 0x00419490 NONE FUNC 0    kernel32.dll imp.GetFullPathNameW
+36  0x00011a94 0x00419494 NONE FUNC 0    kernel32.dll imp.GetFileSize
+37  0x00011a98 0x00419498 NONE FUNC 0    kernel32.dll imp.GetFileAttributesW
+38  0x00011a9c 0x0041949c NONE FUNC 0    kernel32.dll imp.GetExitCodeProcess
+39  0x00011aa0 0x004194a0 NONE FUNC 0    kernel32.dll imp.GetEnvironmentVariableW
+40  0x00011aa4 0x004194a4 NONE FUNC 0    kernel32.dll imp.GetDiskFreeSpaceW
+41  0x00011aa8 0x004194a8 NONE FUNC 0    kernel32.dll imp.GetCurrentProcess
+42  0x00011aac 0x004194ac NONE FUNC 0    kernel32.dll imp.GetCommandLineW
+43  0x00011ab0 0x004194b0 NONE FUNC 0    kernel32.dll imp.GetCPInfo
+44  0x00011ab4 0x004194b4 NONE FUNC 0    kernel32.dll imp.InterlockedExchange
+45  0x00011ab8 0x004194b8 NONE FUNC 0    kernel32.dll imp.InterlockedCompareExchange
+46  0x00011abc 0x004194bc NONE FUNC 0    kernel32.dll imp.FreeLibrary
+47  0x00011ac0 0x004194c0 NONE FUNC 0    kernel32.dll imp.FormatMessageW
+48  0x00011ac4 0x004194c4 NONE FUNC 0    kernel32.dll imp.FindResourceW
+49  0x00011ac8 0x004194c8 NONE FUNC 0    kernel32.dll imp.EnumCalendarInfoW
+50  0x00011acc 0x004194cc NONE FUNC 0    kernel32.dll imp.DeleteFileW
+51  0x00011ad0 0x004194d0 NONE FUNC 0    kernel32.dll imp.CreateProcessW
+52  0x00011ad4 0x004194d4 NONE FUNC 0    kernel32.dll imp.CreateFileW
+53  0x00011ad8 0x004194d8 NONE FUNC 0    kernel32.dll imp.CreateEventW
+54  0x00011adc 0x004194dc NONE FUNC 0    kernel32.dll imp.CreateDirectoryW
+55  0x00011ae0 0x004194e0 NONE FUNC 0    kernel32.dll imp.CloseHandle
+1   0x00011ae8 0x004194e8 NONE FUNC 0    advapi32.dll imp.RegQueryValueExW
+2   0x00011aec 0x004194ec NONE FUNC 0    advapi32.dll imp.RegOpenKeyExW
+3   0x00011af0 0x004194f0 NONE FUNC 0    advapi32.dll imp.RegCloseKey
+4   0x00011af4 0x004194f4 NONE FUNC 0    advapi32.dll imp.OpenProcessToken
+5   0x00011af8 0x004194f8 NONE FUNC 0    advapi32.dll imp.LookupPrivilegeValueW
+1   0x00011b00 0x00419500 NONE FUNC 0    comctl32.dll imp.InitCommonControls
+1   0x00011b08 0x00419508 NONE FUNC 0    kernel32.dll imp.Sleep
+1   0x00011b10 0x00419510 NONE FUNC 0    advapi32.dll imp.AdjustTokenPrivileges
+[Strings]
+nth paddr      vaddr      len  size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00010f70 0x00412770 5    6    .data   ascii   Error
+1   0x00010f78 0x00412778 29   30   .data   ascii   Runtime error     at 00000000
+2   0x00011026 0x00412826 5    6    .data   ascii   @v:k\v
+3   0x0001120c 0x00412a0c 33   34   .data   ascii   Inno Setup Setup Data (5.5.7) (u)
+4   0x0001124c 0x00412a4c 31   32   .data   ascii   Inno Setup Messages (5.5.3) (u)
+5   0x0001129e 0x00412a9e 33   67   .data   utf16le @0123456789ABCDEFGHIJKLMNOPQRSTUV
+0   0x00012c30 0x0041c430 10   22   .rsrc   utf16le \tCHARTABLE
+1   0x00012c46 0x0041c446 28   58   .rsrc   utf16le DVCLAL\vPACKAGEINFO\bMAINICON(
+2   0x00012d27 0x0041c527 4    5    .rsrc   ascii   wwww
+3   0x00012d33 0x0041c533 9    10   .rsrc   ascii   p\awxr""/p
+4   0x00012d3f 0x0041c53f 5    6    .rsrc   ascii   r""/p
+5   0x00012d46 0x0041c546 6    7    .rsrc   ascii   wr""/p
+6   0x00012e4f 0x0041c64f 4    5    .rsrc   ascii   wwww
+7   0x00012e5b 0x0041c65b 9    10   .rsrc   ascii   p\awxr""/p
+8   0x00012e67 0x0041c667 5    6    .rsrc   ascii   r""/p
+9   0x00012e6e 0x0041c66e 6    7    .rsrc   ascii   wr""/p
+10  0x00012fe6 0x0041c7e6 5    12   .rsrc   utf16le 333f3
+11  0x00013072 0x0041c872 5    12   .rsrc   utf16le f3fff
+12  0x000130ee 0x0041c8ee 6    14   .rsrc   utf16le fÿÌÌÿ餀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs
+13  0x00013204 0x0041ca04 4    10   .rsrc   utf16le 3Ìfÿ blocks=Basic Latin,Latin-1 Supplement
+14  0x0001338b 0x0041cb8b 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+15  0x0001339b 0x0041cb9b 6    7    .rsrc   ascii   ozR1ML
+16  0x000133ad 0x0041cbad 4    5    .rsrc   ascii   zR1M
+17  0x000133db 0x0041cbdb 6    7    .rsrc   ascii   oLLLLL
+18  0x0001354e 0x0041cd4e 5    12   .rsrc   utf16le 333f3
+19  0x000135da 0x0041cdda 5    12   .rsrc   utf16le f3fff
+20  0x00013656 0x0041ce56 6    14   .rsrc   utf16le fÿÌÌÿ餀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs
+21  0x0001376c 0x0041cf6c 4    10   .rsrc   utf16le 3Ìfÿ blocks=Basic Latin,Latin-1 Supplement
+22  0x000138f3 0x0041d0f3 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+23  0x00013903 0x0041d103 6    7    .rsrc   ascii   ozR1ML
+24  0x00013915 0x0041d115 4    5    .rsrc   ascii   zR1M
+25  0x00013943 0x0041d143 6    7    .rsrc   ascii   oLLLLL
+26  0x00013a69 0x0041d269 5    6    .rsrc   ascii   xxxp\t
+27  0x00013b0a 0x0041d30a 10   11   .rsrc   ascii   \awwwwwwwxp
+28  0x00013b34 0x0041d334 5    6    .rsrc   ascii   wwwwp
+29  0x00013b46 0x0041d346 5    6    .rsrc   ascii   \aww\b\a
+30  0x00013b4c 0x0041d34c 6    7    .rsrc   ascii   """""/
+31  0x00013b57 0x0041d357 4    5    .rsrc   ascii   wwp\a
+32  0x00013bdc 0x0041d3dc 6    7    .rsrc   ascii   """""/
+33  0x00013bfb 0x0041d3fb 8    9    .rsrc   ascii   wwwwwwww
+34  0x00013d51 0x0041d551 5    6    .rsrc   ascii   xxxp\t
+35  0x00013df2 0x0041d5f2 10   11   .rsrc   ascii   \awwwwwwwxp
+36  0x00013e1c 0x0041d61c 5    6    .rsrc   ascii   wwwwp
+37  0x00013e2e 0x0041d62e 5    6    .rsrc   ascii   \aww\b\a
+38  0x00013e34 0x0041d634 6    7    .rsrc   ascii   """""/
+39  0x00013e3f 0x0041d63f 4    5    .rsrc   ascii   wwp\a
+40  0x00013ec4 0x0041d6c4 6    7    .rsrc   ascii   """""/
+41  0x00013ee3 0x0041d6e3 8    9    .rsrc   ascii   wwwwwwww
+42  0x00014086 0x0041d886 5    12   .rsrc   utf16le 333f3
+43  0x00014112 0x0041d912 5    12   .rsrc   utf16le f3fff
+44  0x0001418e 0x0041d98e 6    14   .rsrc   utf16le fÿÌÌÿ餀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs
+45  0x000142a4 0x0041daa4 4    10   .rsrc   utf16le 3Ìfÿ blocks=Basic Latin,Latin-1 Supplement
+46  0x000143c7 0x0041dbc7 4    5    .rsrc   ascii   X1CC
+47  0x000144e1 0x0041dce1 5    6    .rsrc   ascii   XXRss
+48  0x00014500 0x0041dd00 5    6    .rsrc   ascii   XXRsx
+49  0x00014520 0x0041dd20 4    5    .rsrc   ascii   XRRs
+50  0x0001452b 0x0041dd2b 7    8    .rsrc   ascii   \aC\a\a\a\a\a
+51  0x00014541 0x0041dd41 4    7    .rsrc   utf8    RsxẺ blocks=Basic Latin,Latin Extended Additional
+52  0x000145e2 0x0041dde2 15   16   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+53  0x00014645 0x0041de45 9    10   .rsrc   ascii   zz1111MMM
+54  0x00014665 0x0041de65 9    10   .rsrc   ascii   ^zz1111MM
+55  0x00014686 0x0041de86 8    9    .rsrc   ascii   ^zz1111M
+56  0x000146a7 0x0041dea7 7    8    .rsrc   ascii   ^zz1111
+57  0x000146c8 0x0041dec8 6    7    .rsrc   ascii   ^zz111
+58  0x000146e9 0x0041dee9 5    6    .rsrc   ascii   ^zz11
+59  0x0001470a 0x0041df0a 4    5    .rsrc   ascii   ^zz1
+60  0x00014724 0x0041df24 4    5    .rsrc   ascii   zzz^
+61  0x0001492e 0x0041e12e 5    12   .rsrc   utf16le 333f3
+62  0x000149ba 0x0041e1ba 5    12   .rsrc   utf16le f3fff
+63  0x00014a36 0x0041e236 6    14   .rsrc   utf16le fÿÌÌÿ餀 blocks=Basic Latin,Latin-1 Supplement,CJK Unified Ideographs
+64  0x00014b4c 0x0041e34c 4    10   .rsrc   utf16le 3Ìfÿ blocks=Basic Latin,Latin-1 Supplement
+65  0x00014c6f 0x0041e46f 4    5    .rsrc   ascii   X1CC
+66  0x00014d89 0x0041e589 5    6    .rsrc   ascii   XXRss
+67  0x00014da8 0x0041e5a8 5    6    .rsrc   ascii   XXRsx
+68  0x00014dc8 0x0041e5c8 4    5    .rsrc   ascii   XRRs
+69  0x00014dd3 0x0041e5d3 7    8    .rsrc   ascii   \aC\a\a\a\a\a
+70  0x00014de9 0x0041e5e9 4    7    .rsrc   utf8    RsxẺ blocks=Basic Latin,Latin Extended Additional
+71  0x00014e8a 0x0041e68a 15   16   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+72  0x00014eed 0x0041e6ed 9    10   .rsrc   ascii   zz1111MMM
+73  0x00014f0d 0x0041e70d 9    10   .rsrc   ascii   ^zz1111MM
+74  0x00014f2e 0x0041e72e 8    9    .rsrc   ascii   ^zz1111M
+75  0x00014f4f 0x0041e74f 7    8    .rsrc   ascii   ^zz1111
+76  0x00014f70 0x0041e770 6    7    .rsrc   ascii   ^zz111
+77  0x00014f91 0x0041e791 5    6    .rsrc   ascii   ^zz11
+78  0x00014fb2 0x0041e7b2 4    5    .rsrc   ascii   ^zz1
+79  0x00014fcc 0x0041e7cc 4    5    .rsrc   ascii   zzz^
+80  0x000150be 0x0041e8be 15   32   .rsrc   utf16le Friday\bSaturday
+81  0x000150de 0x0041e8de 22   46   .rsrc   utf16le Invalid file name - %s
+82  0x00015124 0x0041e924 36   74   .rsrc   utf16le \tSeptember\aOctober\bNovember\bDecember
+83  0x000151a6 0x0041e9a6 6    14   .rsrc   utf16le Sunday
+84  0x000151b4 0x0041e9b4 33   68   .rsrc   utf16le Monday\aTuesday\tWednesday\bThursday
+85  0x00015232 0x0041ea32 20   42   .rsrc   utf16le Dec\aJanuary\bFebruary
+86  0x0001525c 0x0041ea5c 5    12   .rsrc   utf16le March
+87  0x00015268 0x0041ea68 5    12   .rsrc   utf16le April
+88  0x0001527c 0x0041ea7c 4    10   .rsrc   utf16le June
+89  0x00015286 0x0041ea86 4    10   .rsrc   utf16le July
+90  0x00015290 0x0041ea90 6    14   .rsrc   utf16le August
+91  0x0001529e 0x0041ea9e 31   64   .rsrc   utf16le Invalid variant type conversion
+92  0x000152de 0x0041eade 25   52   .rsrc   utf16le Invalid variant operation
+93  0x00015312 0x0041eb12 16   34   .rsrc   utf16le Invalid argument
+94  0x00015334 0x0041eb34 21   44   .rsrc   utf16le External exception %x
+95  0x00015360 0x0041eb60 16   34   .rsrc   utf16le Assertion failed
+96  0x00015382 0x0041eb82 23   48   .rsrc   utf16le Interface not supported
+97  0x000153b2 0x0041ebb2 28   58   .rsrc   utf16le Exception in safecall method
+98  0x000153ec 0x0041ebec 62   126  .rsrc   utf16le Object lock not owned(Monitor support function not initialized
+99  0x0001546a 0x0041ec6a 16   34   .rsrc   utf16le %s (%s, line %d)
+100 0x0001548c 0x0041ec8c 78   158  .rsrc   utf16le Abstract Error?Access violation at address %p in module '%s'. %s of address %p
+101 0x0001554a 0x0041ed4a 71   144  .rsrc   utf16le Invalid class typecast0Access violation at address %p. %s of address %p
+102 0x000155da 0x0041edda 16   34   .rsrc   utf16le Access violation
+103 0x000155fc 0x0041edfc 28   58   .rsrc   utf16le Stack overflow\rControl-C hit
+104 0x00015636 0x0041ee36 22   46   .rsrc   utf16le Privileged instruction
+105 0x00015664 0x0041ee64 58   118  .rsrc   utf16le Operation aborted(Exception %s in module %s at %p.\r\n%s%s\r\n
+106 0x000156da 0x0041eeda 130  262  .rsrc   utf16le Application Error1Format '%s' invalid or incompatible with argument\eNo argument for format '%s'"Variant method calls not supported
+107 0x000157e0 0x0041efe0 4    10   .rsrc   utf16le Read
+108 0x000157ea 0x0041efea 84   170  .rsrc   utf16le Write$Error creating variant or safe array)Variant or safe array index out of bounds
+109 0x00015894 0x0041f094 27   56   .rsrc   utf16le \rOut of memory\fI/O error %d
+110 0x000158cc 0x0041f0cc 14   30   .rsrc   utf16le File not found
+111 0x000158ea 0x0041f0ea 19   40   .rsrc   utf16le Too many open files
+112 0x00015912 0x0041f112 18   38   .rsrc   utf16le File access denied
+113 0x00015938 0x0041f138 33   68   .rsrc   utf16le Read beyond end of file\tDisk full
+114 0x0001597c 0x0041f17c 21   44   .rsrc   utf16le Invalid numeric input
+115 0x000159a8 0x0041f1a8 16   34   .rsrc   utf16le Division by zero
+116 0x000159ca 0x0041f1ca 17   36   .rsrc   utf16le Range check error
+117 0x000159ee 0x0041f1ee 49   100  .rsrc   utf16le Integer overflow Invalid floating point operation
+118 0x00015a52 0x0041f252 31   64   .rsrc   utf16le Floating point division by zero
+119 0x00015a92 0x0041f292 23   48   .rsrc   utf16le Floating point overflow
+120 0x00015ac2 0x0041f2c2 24   50   .rsrc   utf16le Floating point underflow
+121 0x00015af4 0x0041f2f4 25   52   .rsrc   utf16le Invalid pointer operation
+122 0x00015b44 0x0041f344 6    14   .rsrc   utf16le  0@P`p
+123 0x00017d46 0x00421546 5    12   .rsrc   utf16le  0@P`
+124 0x00017d8a 0x0042158a 4    9    .rsrc   utf16le QQQQ
+125 0x00017dc0 0x004215c0 6    13   .rsrc   utf16le 111QQQ
+126 0x00017ef6 0x004216f6 7    8    .rsrc   ascii    \a0\a@\ad
+127 0x00017f06 0x00421706 4    5    .rsrc   ascii   `\ap\a
+128 0x00017f2e 0x0042172e 6    7    .rsrc   ascii   0\b@\bP\b
+129 0x00017f36 0x00421736 4    5    .rsrc   ascii   `\bp\b
+130 0x00017f97 0x00421797 5    6    .rsrc   ascii   \t0\t\e\a
+131 0x00017faa 0x004217aa 6    7    .rsrc   ascii   @\tP\t`\t
+132 0x00018036 0x00421836 10   11   .rsrc   ascii   0\n@\nP\n`\np\n
+133 0x000180a6 0x004218a6 4    5    .rsrc   ascii   @\vP\v
+134 0x000180ab 0x004218ab 6    7    .rsrc   ascii   \b`\vp\vd
+135 0x0001810d 0x0042190d 17   18   .rsrc   ascii   \v \f0\f0\f0\f@\fP\f`\fp\f
+136 0x00018131 0x00421931 8    9    .rsrc   ascii   \r \r0\r@\rd
+137 0x0001813a 0x0042193a 5    6    .rsrc   ascii   P\r`\rd
+138 0x000181ac 0x004219ac 6    7    .rsrc   ascii   Y\tY\tY\t
+139 0x00018502 0x00421d02 4    9    .rsrc   utf16le  0@P
+140 0x00018542 0x00421d42 6    7    .rsrc   ascii   Y\tY\ti\t
+141 0x00018800 0x00422000 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+142 0x00018811 0x00422011 26   27   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+143 0x00018870 0x00422070 7    8    .rsrc   ascii   \t\t\t\t\t\t\t
+144 0x00018878 0x00422078 7    8    .rsrc   ascii   \t\t\t\t\t\t\t
+145 0x000188ce 0x004220ce 4    5    .rsrc   ascii   \t\t\t\t
+146 0x00018900 0x00422100 6    7    .rsrc   ascii   \a\a\a\a\t\b
+147 0x00018933 0x00422133 4    5    .rsrc   ascii   \t\t\t\t
+148 0x000189a0 0x004221a0 16   17   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f
+149 0x000189d1 0x004221d1 17   18   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+150 0x000189e3 0x004221e3 9    10   .rsrc   ascii   \t\t\t\t\t\t\t\t\t
+151 0x00018a1d 0x0042221d 4    5    .rsrc   ascii   \t\t\t\t
+152 0x00018a23 0x00422223 4    5    .rsrc   ascii   \f\f\f\f
+153 0x00018a61 0x00422261 22   23   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+154 0x00018aa1 0x004222a1 29   30   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f
+155 0x00018ad0 0x004222d0 27   28   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+156 0x00018b10 0x00422310 6    7    .rsrc   ascii   \f\f\f\f\f\f
+157 0x00018b21 0x00422321 25   26   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r
+158 0x00018b3e 0x0042233e 22   23   .rsrc   ascii   \a\a\f\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+159 0x00018b55 0x00422355 8    9    .rsrc   ascii   \a\f\f\f\f\f\f\f
+160 0x00018b5e 0x0042235e 7    8    .rsrc   ascii   \v\f\f\f\f\f\f
+161 0x00018b6a 0x0042236a 19   20   .rsrc   ascii   \f\f\f\f\a\a\r\r\r\r\r\r\r\r\r\r\a\a\a
+162 0x00018b90 0x00422390 11   12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+163 0x00018b9d 0x0042239d 21   22   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\f\f\f\f\f\f\f\f\f\f\f\a
+164 0x00018bc0 0x004223c0 36   37   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\f\f\f\f\f\f\f\f\f
+165 0x00018bf1 0x004223f1 25   26   .rsrc   ascii   \f\f\n\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+166 0x00018c0c 0x0042240c 18   19   .rsrc   ascii   \f\a\n\n\n\f\f\f\f\f\f\f\f\n\n\n\n\f
+167 0x00018c20 0x00422420 5    6    .rsrc   ascii   \a\f\f\f\f
+168 0x00018c28 0x00422428 12   13   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\f\f
+169 0x00018c36 0x00422436 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+170 0x00018c4b 0x0042244b 5    6    .rsrc   ascii   \a\a\a\a\a
+171 0x00018c55 0x00422455 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+172 0x00018c63 0x00422463 22   23   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+173 0x00018c7a 0x0042247a 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+174 0x00018c86 0x00422486 4    5    .rsrc   ascii   \a\a\a\a
+175 0x00018c8c 0x0042248c 9    10   .rsrc   ascii   \f\a\n\n\n\f\f\f\f
+176 0x00018c9b 0x0042249b 4    5    .rsrc   ascii   \n\n\f\a
+177 0x00018caf 0x004224af 5    6    .rsrc   ascii   \a\a\a\f\f
+178 0x00018cb6 0x004224b6 12   13   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\a\a
+179 0x00018cd5 0x004224d5 6    7    .rsrc   ascii   \a\a\a\a\a\a
+180 0x00018cee 0x004224ee 5    6    .rsrc   ascii   \n\n\n\f\f
+181 0x00018d09 0x00422509 4    5    .rsrc   ascii   \a\a\a\a
+182 0x00018d10 0x00422510 5    6    .rsrc   ascii   \f\f\a\a\a
+183 0x00018d25 0x00422525 9    10   .rsrc   ascii   \a\a\a\a\a\a\a\a\a
+184 0x00018d33 0x00422533 14   15   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a
+185 0x00018d45 0x00422545 5    6    .rsrc   ascii   \a\a\a\a\a
+186 0x00018d4c 0x0042254c 10   11   .rsrc   ascii   \f\a\n\n\n\f\f\f\f\f
+187 0x00018d85 0x00422585 5    6    .rsrc   ascii   \a\a\a\a\a
+188 0x00018d8c 0x0042258c 8    9    .rsrc   ascii   \f\a\n\f\n\f\f\f
+189 0x00018db6 0x004225b6 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+190 0x00018dd5 0x004225d5 6    7    .rsrc   ascii   \a\a\a\a\a\a
+191 0x00018de2 0x004225e2 4    5    .rsrc   ascii   \a\a\a\a
+192 0x00018dfe 0x004225fe 12   13   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a
+193 0x00018e0e 0x0042260e 5    6    .rsrc   ascii   \n\n\f\n\n
+194 0x00018e1a 0x0042261a 4    5    .rsrc   ascii   \n\n\n\f
+195 0x00018e45 0x00422645 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+196 0x00018e4e 0x0042264e 6    7    .rsrc   ascii   \a\a\a\a\a\a
+197 0x00018e55 0x00422655 5    6    .rsrc   ascii   \a\a\a\a\a
+198 0x00018e5e 0x0042265e 7    8    .rsrc   ascii   \f\f\f\n\n\n\n
+199 0x00018e6a 0x0042266a 4    5    .rsrc   ascii   \f\f\f\f
+200 0x00018e85 0x00422685 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+201 0x00018e8e 0x0042268e 6    7    .rsrc   ascii   \a\a\a\a\a\a
+202 0x00018e95 0x00422695 5    6    .rsrc   ascii   \a\a\a\a\a
+203 0x00018e9c 0x0042269c 9    10   .rsrc   ascii   \f\a\n\f\n\n\n\n\n
+204 0x00018eaa 0x004226aa 4    5    .rsrc   ascii   \n\n\f\f
+205 0x00018ed0 0x004226d0 4    5    .rsrc   ascii   \n\f\f\f
+206 0x00018eda 0x004226da 4    5    .rsrc   ascii   \n\n\n\f
+207 0x00018ee5 0x004226e5 18   19   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+208 0x00018efa 0x004226fa 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+209 0x00018f03 0x00422703 9    10   .rsrc   ascii   \a\a\a\a\a\a\a\a\a
+210 0x00018f10 0x00422710 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+211 0x00018f1f 0x0042271f 6    7    .rsrc   ascii   \n\n\n\f\f\f
+212 0x00018f28 0x00422728 8    9    .rsrc   ascii   \n\n\n\n\n\n\n\n
+213 0x00018f40 0x00422740 11   12   .rsrc   ascii   \a\f\a\a\f\f\f\f\f\f\f
+214 0x00018f50 0x00422750 6    7    .rsrc   ascii   \a\a\a\a\a\a
+215 0x00018f57 0x00422757 8    9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+216 0x00018f60 0x00422760 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+217 0x00018f84 0x00422784 4    5    .rsrc   ascii   \a\a\a\a
+218 0x00018f89 0x00422789 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+219 0x00018f9d 0x0042279d 13   14   .rsrc   ascii   \a\a\a\a\f\a\a\f\f\f\f\f\f
+220 0x00018fb0 0x004227b0 5    6    .rsrc   ascii   \a\a\a\a\a
+221 0x00018fb8 0x004227b8 6    7    .rsrc   ascii   \f\f\f\f\f\f
+222 0x00018fc0 0x004227c0 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+223 0x00018ff0 0x004227f0 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+224 0x00019011 0x00422811 20   21   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f\n\f\f\f\f\f
+225 0x00019026 0x00422826 6    7    .rsrc   ascii   \f\f\a\a\a\a
+226 0x00019030 0x00422830 8    9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+227 0x00019039 0x00422839 20   21   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f
+228 0x00019073 0x00422873 5    6    .rsrc   ascii   \a\a\a\a\a
+229 0x0001907c 0x0042287c 7    8    .rsrc   ascii   \n\f\f\f\f\n\f
+230 0x00019086 0x00422886 4    5    .rsrc   ascii   \f\f\n\f
+231 0x00019090 0x00422890 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+232 0x000190a0 0x004228a0 10   11   .rsrc   ascii   \a\a\a\a\a\a\n\n\f\f
+233 0x000190b0 0x004228b0 6    7    .rsrc   ascii   \t\t\t\t\t\t
+234 0x000190c0 0x004228c0 11   12   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a
+235 0x000190d8 0x004228d8 18   19   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+236 0x000190f0 0x004228f0 9    10   .rsrc   ascii   \a\a\a\a\a\a\a\a\a
+237 0x000190fa 0x004228fa 4    5    .rsrc   ascii   \a\a\a\a
+238 0x00019100 0x00422900 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+239 0x0001910a 0x0042290a 4    5    .rsrc   ascii   \a\a\a\a
+240 0x00019112 0x00422912 4    5    .rsrc   ascii   \a\a\a\a
+241 0x00019118 0x00422918 19   20   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+242 0x00019160 0x00422960 5    6    .rsrc   ascii   \a\a\a\a\a
+243 0x00019170 0x00422970 13   14   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a
+244 0x0001917f 0x0042297f 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+245 0x00019191 0x00422991 26   27   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+246 0x000191b0 0x004229b0 11   12   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a
+247 0x000191d0 0x004229d0 5    6    .rsrc   ascii   \a\a\f\f\f
+248 0x000191e0 0x004229e0 5    6    .rsrc   ascii   \a\a\f\f\f
+249 0x000191f0 0x004229f0 4    5    .rsrc   ascii   \a\a\f\f
+250 0x00019210 0x00422a10 4    5    .rsrc   ascii   \a\a\a\a
+251 0x00019216 0x00422a16 30   31   .rsrc   ascii   \n\f\f\f\f\f\f\f\n\n\n\n\n\n\n\n\f\n\n\f\f\f\f\f\f\f\f\f\f\f
+252 0x00019240 0x00422a40 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+253 0x00019274 0x00422a74 22   23   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\f
+254 0x00019290 0x00422a90 12   13   .rsrc   ascii   \f\f\f\n\n\n\n\f\f\n\n\n
+255 0x000192a0 0x00422aa0 12   13   .rsrc   ascii   \n\n\f\n\n\n\n\n\n\f\f\f
+256 0x000192b6 0x00422ab6 36   37   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\a\a\a\a\a\a\a\n\n
+257 0x000192e0 0x00422ae0 10   11   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r
+258 0x00019300 0x00422b00 12   13   .rsrc   ascii   \a\a\a\a\a\a\a\f\f\n\n\n
+259 0x00019310 0x00422b10 44   45   .rsrc   ascii   \f\f\f\f\n\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\f\n\f\f\f\f\f\n\f\n\n\n\n\n\f\n\n\a\a\a\a\a\a\a
+260 0x0001934b 0x00422b4b 9    10   .rsrc   ascii   \f\f\f\f\f\f\f\f\f
+261 0x00019390 0x00422b90 11   12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+262 0x000193d8 0x00422bd8 8    9    .rsrc   ascii   \t\t\t\t\t\t\t\t
+263 0x000193e8 0x00422be8 6    7    .rsrc   ascii   \t\t\t\t\t\t
+264 0x00019418 0x00422c18 8    9    .rsrc   ascii   \b\b\b\b\b\b\b\b
+265 0x00019428 0x00422c28 5    6    .rsrc   ascii   \t\t\t\t\b
+266 0x00019438 0x00422c38 5    6    .rsrc   ascii   \t\t\t\t\b
+267 0x00019448 0x00422c48 4    5    .rsrc   ascii   \t\t\t\t
+268 0x00019458 0x00422c58 5    6    .rsrc   ascii   \t\t\t\t\t
+269 0x00019468 0x00422c68 5    6    .rsrc   ascii   \t\t\t\t\b
+270 0x00019530 0x00422d30 32   33   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\v\v\v\v\f\v\v\v\f\f\f\f\f\f\f\f\f\f\f
+271 0x00019569 0x00422d69 5    6    .rsrc   ascii   \t\t\t\t\t
+272 0x0001957a 0x00422d7a 4    5    .rsrc   ascii   \t\t\t\t
+273 0x00019580 0x00422d80 4    5    .rsrc   ascii   \t\t\t\t
+274 0x00019585 0x00422d85 4    5    .rsrc   ascii   \a\a\a\a
+275 0x00019820 0x00423020 6    7    .rsrc   ascii   \a\a\a\a\a\a
+276 0x0001988a 0x0042308a 6    7    .rsrc   ascii   \f\f\f\f\f\f
+277 0x000198a0 0x004230a0 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+278 0x000198b1 0x004230b1 26   27   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+279 0x000198f0 0x004230f0 6    7    .rsrc   ascii   \a\a\a\a\a\a
+280 0x00019900 0x00423100 5    6    .rsrc   ascii   \a\a\a\a\a
+281 0x00019906 0x00423106 10   11   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a
+282 0x00019930 0x00423130 24   25   .rsrc   ascii   \a\a\n\a\a\a\f\a\a\a\a\f\a\a\a\a\a\a\a\n\n\f\f\n
+283 0x00019950 0x00423150 4    5    .rsrc   ascii   \a\a\a\a
+284 0x00019960 0x00423160 4    5    .rsrc   ascii   \a\a\a\a
+285 0x000199ad 0x004231ad 12   13   .rsrc   ascii   \a\f\a\a\a\a\a\a\a\a\a\a
+286 0x000199ba 0x004231ba 13   14   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a
+287 0x000199c8 0x004231c8 5    6    .rsrc   ascii   \a\a\a\a\a
+288 0x000199d6 0x004231d6 12   13   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a
+289 0x000199f0 0x004231f0 12   13   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a
+290 0x00019a50 0x00423250 5    6    .rsrc   ascii   \a\a\a\a\a
+291 0x00019a56 0x00423256 23   24   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+292 0x00019a96 0x00423296 24   25   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+293 0x00019ab2 0x004232b2 6    7    .rsrc   ascii   \a\a\a\a\a\a
+294 0x00019aba 0x004232ba 6    7    .rsrc   ascii   \a\a\a\a\a\a
+295 0x00019ac2 0x004232c2 6    7    .rsrc   ascii   \a\a\a\a\a\a
+296 0x00019b32 0x00423332 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+297 0x00019b40 0x00423340 14   15   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a
+298 0x00019b50 0x00423350 4    5    .rsrc   ascii   \a\a\a\a
+299 0x00019b58 0x00423358 8    9    .rsrc   ascii   \a\a\a\a\a\a\a\a
+300 0x00019b70 0x00423370 6    7    .rsrc   ascii   \a\a\a\a\a\a
+301 0x00019b7a 0x0042337a 12   13   .rsrc   ascii   \a\a\a\a\a\a\a\a\a\a\a\a
+302 0x00019b8f 0x0042338f 7    8    .rsrc   ascii   \a\a\a\a\a\a\a
+303 0x00019ba0 0x004233a0 4    5    .rsrc   ascii   \a\f\f\f
+304 0x00019bac 0x004233ac 8    9    .rsrc   ascii   \f\f\f\f\a\a\a\a
+305 0x00019c05 0x00423405 5    6    .rsrc   ascii   \n\n\f\f\f
+306 0x00019c0d 0x0042340d 6    7    .rsrc   ascii   \n\n\n\n\n\n
+307 0x00019c1b 0x0042341b 8    9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+308 0x00019c25 0x00423425 7    8    .rsrc   ascii   \f\f\f\f\f\f\f
+309 0x00019c3a 0x0042343a 4    5    .rsrc   ascii   \f\f\f\f
+310 0x00019c70 0x00423470 10   11   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t
+311 0x00019c84 0x00423484 26   27   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+312 0x00019cc9 0x004234c9 4    5    .rsrc   ascii   \t\t\t\t
+313 0x00019cce 0x004234ce 8    9    .rsrc   ascii   \t\t\t\t\t\t\t\t
+314 0x00019ce7 0x004234e7 4    5    .rsrc   ascii   \t\t\t\t
+315 0x00019ced 0x004234ed 8    9    .rsrc   ascii   \t\t\t\t\t\t\t\t
+316 0x00019cf6 0x004234f6 7    8    .rsrc   ascii   \t\t\t\t\t\t\t
+317 0x00019d0b 0x0042350b 4    5    .rsrc   ascii   \t\t\t\t
+318 0x00019d10 0x00423510 5    6    .rsrc   ascii   \t\t\t\t\t
+319 0x00019d1a 0x0042351a 7    8    .rsrc   ascii   \t\t\t\t\t\t\t
+320 0x00019d3c 0x0042353c 4    5    .rsrc   ascii   \t\t\t\t
+321 0x00019d48 0x00423548 9    10   .rsrc   ascii   \t\t\t\t\t\t\t\t\t
+322 0x00019d70 0x00423570 11   12   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t\t
+323 0x00019d8c 0x0042358c 19   20   .rsrc   ascii   \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t
+324 0x00019dae 0x004235ae 18   19   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+325 0x00019e02 0x00423602 5    12   .rsrc   utf16le @P`Pp
+326 0x0001ca2f 0x0042622f 7    8    .rsrc   ascii   ?]QJ\bVU
+327 0x0001ca47 0x00426247 7    8    .rsrc   ascii   ?333333
+328 0x0001ca57 0x00426257 7    8    .rsrc   ascii   ?tE)!XU
+329 0x0001d5c7 0x00426dc7 7    8    .rsrc   ascii   ?]QJ\bVU
+330 0x0001dbdf 0x004273df 4    5    .rsrc   ascii   @F]k
+331 0x0001dbe7 0x004273e7 7    8    .rsrc   ascii   ?]QJ\bVU
+332 0x0001dbf7 0x004273f7 4    5    .rsrc   ascii   ?F]k
+333 0x0001dbff 0x004273ff 7    8    .rsrc   ascii   ?]QJ\bVU
+334 0x0001dc17 0x00427417 7    8    .rsrc   ascii   ?tE)!XU
+335 0x0001de0e 0x0042760e 6    8    .rsrc   utf8    \b@&=O8
+336 0x0001de2d 0x0042762d 9    10   .rsrc   ascii   \nSetupLdr
+337 0x0001de39 0x00427639 9    10   .rsrc   ascii   RedirFunc
+338 0x0001de44 0x00427644 9    10   .rsrc   ascii   7PathFunc
+339 0x0001de50 0x00427650 8    9    .rsrc   ascii   SysUtils
+340 0x0001de5a 0x0042765a 10   11   .rsrc   ascii   eCharacter
+341 0x0001de65 0x00427665 9    10   .rsrc   ascii   \fKWindows
+342 0x0001de70 0x00427670 6    7    .rsrc   ascii   UTypes
+343 0x0001de79 0x00427679 7    8    .rsrc   ascii   SysInit
+344 0x0001de83 0x00427683 6    7    .rsrc   ascii   System
+345 0x0001de8b 0x0042768b 10   11   .rsrc   ascii   "RTLConsts
+346 0x0001de98 0x00427698 4    5    .rsrc   ascii   Math
+347 0x0001de9f 0x0042769f 8    9    .rsrc   ascii   SysConst
+348 0x0001dea9 0x004276a9 9    10   .rsrc   ascii   YStrUtils
+349 0x0001deb5 0x004276b5 8    9    .rsrc   ascii   ImageHlp
+350 0x0001dec0 0x004276c0 8    9    .rsrc   ascii   CmnFunc2
+351 0x0001decb 0x004276cb 7    8    .rsrc   ascii   VerInfo
+352 0x0001ded4 0x004276d4 10   11   .rsrc   ascii   AFileClass
+353 0x0001dee1 0x004276e1 7    8    .rsrc   ascii   Int64Em
+354 0x0001deea 0x004276ea 9    10   .rsrc   ascii   cInstFunc
+355 0x0001def5 0x004276f5 7    8    .rsrc   ascii   6MsgIDs
+356 0x0001deff 0x004276ff 4    5    .rsrc   ascii   Msgs
+357 0x0001df06 0x00427706 8    9    .rsrc   ascii   Compress
+358 0x0001df11 0x00427711 6    7    .rsrc   ascii   Struct
+359 0x0001df1a 0x0042771a 4    5    .rsrc   ascii   SHA1
+360 0x0001df20 0x00427720 9    10   .rsrc   ascii   *ShellAPI
+361 0x0001df2a 0x0042772a 10   11   .rsrc   ascii   \f3Messages
+362 0x0001df36 0x00427736 4    5    .rsrc   ascii   WMD5
+363 0x0001df3d 0x0042773d 8    9    .rsrc   ascii   SetupEnt
+364 0x0001df47 0x00427747 16   17   .rsrc   ascii   JLZMADecompSmall
+365 0x0001df59 0x00427759 8    9    .rsrc   ascii   SXPTheme
+366 0x0001df64 0x00427764 11   12   .rsrc   ascii   SafeDLLPath
+367 0x0001df70 0x00427770 6    7    .rsrc   ascii   rDlPtS
+368 0x0001dfe2 0x004277e2 15   32   .rsrc   utf16le VS_VERSION_INFO
+369 0x0001e03e 0x0042783e 14   30   .rsrc   utf16le StringFileInfo
+370 0x0001e062 0x00427862 8    18   .rsrc   utf16le 000004b0
+371 0x0001e07a 0x0042787a 8    18   .rsrc   utf16le Comments
+372 0x0001e08c 0x0042788c 44   90   .rsrc   utf16le This installation was built with Inno Setup.
+373 0x0001e0ee 0x004278ee 11   24   .rsrc   utf16le CompanyName
+374 0x0001e108 0x00427908 60   122  .rsrc   utf16le                                                             
+375 0x0001e18a 0x0042798a 15   32   .rsrc   utf16le FileDescription
+376 0x0001e1ac 0x004279ac 60   122  .rsrc   utf16le CPUID CPU-Z Setup (r2009101442)                             
+377 0x0001e22e 0x00427a2e 11   24   .rsrc   utf16le FileVersion
+378 0x0001e248 0x00427a48 20   42   .rsrc   utf16le                     
+379 0x0001e27a 0x00427a7a 14   30   .rsrc   utf16le LegalCopyright
+380 0x0001e298 0x00427a98 100  202  .rsrc   utf16le                                                                                                     
+381 0x0001e36a 0x00427b6a 11   24   .rsrc   utf16le ProductName
+382 0x0001e384 0x00427b84 60   122  .rsrc   utf16le CPUID CPU-Z                                                 
+383 0x0001e406 0x00427c06 14   30   .rsrc   utf16le ProductVersion
+384 0x0001e424 0x00427c24 50   102  .rsrc   utf16le                                                   
+385 0x0001e494 0x00427c94 10   22   .rsrc   utf16le arFileInfo
+386 0x0001e4b2 0x00427cb2 11   24   .rsrc   utf16le Translation
+387 0x0001e4d0 0x00427cd0 1840 1840 .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n<assemblyIdentity\r\n    name="JR.Inno.Setup"\r\n    processorArchitecture="x86"\r\n    version="1.0.0.0"\r\n    type="win32"/>\r\n<description>Inno Setup</description>\r\n<dependency>\r\n    <dependentAssembly>\r\n        <assemblyIdentity\r\n            type="win32"\r\n            name="Microsoft.Windows.Common-Controls"\r\n            version="6.0.0.0"\r\n            processorArchitecture="x86"\r\n            publicKeyToken="6595b64144ccf1df"\r\n            language="*"\r\n        />\r\n    </dependentAssembly>\r\n</dependency>\r\n<trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n        <requestedPrivileges>\r\n            <requestedExecutionLevel level="asInvoker"            uiAccess="false"/>\r\n        </requestedPrivileges>\r\n    </security>\r\n</trustInfo>\r\n<application xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <windowsSettings>\r\n        <dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware>\r\n    </windowsSettings>\r\n</application>\r\n<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">\r\n    <application>\r\n        <supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"/>\r\n        <supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>\r\n        <supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"/>\r\n        <supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>\r\n        <supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}"/>\r\n    </application>\r\n</compatibility>\r\n</assembly>\r\nPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+arch     x86
+baddr    0x400000
+binsz    8782240
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x008627c2
+compiled Thu Jun 14 13:27:46 2018
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x008627c2
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   true
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x8
+  TimeDateStamp : 0x5b226d52
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x818f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x10400
+  SizeOfInitializedData : 0xe400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1181c
+  BaseOfCode : 0x1000
+  BaseOfData : 0x12000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x6
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x29000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x8627c2
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x4000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x19000
+  Size : 0xe04
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1c000
+  Size : 0xc2fc
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x85e2f0
+  Size : 0x1eb0
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x1b000
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x19304
+  Size : 0x214
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+oleaut32.dll
+advapi32.dll
+user32.dll
+kernel32.dll
+comctl32.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00019526 0x00011904 SET_32 oleaut32.dll_SysFreeString
+0x00019536 0x00011908 SET_32 oleaut32.dll_SysReAllocStringLen
+0x0001954c 0x0001190c SET_32 oleaut32.dll_SysAllocStringLen
+0x0001956e 0x00011914 SET_32 advapi32.dll_RegQueryValueExW
+0x00019582 0x00011918 SET_32 advapi32.dll_RegOpenKeyExW
+0x00019592 0x0001191c SET_32 advapi32.dll_RegCloseKey
+0x000195ac 0x00011924 SET_32 user32.dll_GetKeyboardType
+0x000195be 0x00011928 SET_32 user32.dll_LoadStringW
+0x000195cc 0x0001192c SET_32 user32.dll_MessageBoxA
+0x000195da 0x00011930 SET_32 user32.dll_CharNextW
+0x000195f4 0x00011938 SET_32 kernel32.dll_GetACP
+0x000195fe 0x0001193c SET_32 kernel32.dll_Sleep
+0x00019606 0x00011940 SET_32 kernel32.dll_VirtualFree
+0x00019614 0x00011944 SET_32 kernel32.dll_VirtualAlloc
+0x00019624 0x00011948 SET_32 kernel32.dll_GetSystemInfo
+0x00019634 0x0001194c SET_32 kernel32.dll_GetTickCount
+0x00019644 0x00011950 SET_32 kernel32.dll_QueryPerformanceCounter
+0x0001965e 0x00011954 SET_32 kernel32.dll_GetVersion
+0x0001966c 0x00011958 SET_32 kernel32.dll_GetCurrentThreadId
+0x00019682 0x0001195c SET_32 kernel32.dll_VirtualQuery
+0x00019692 0x00011960 SET_32 kernel32.dll_WideCharToMultiByte
+0x000196a8 0x00011964 SET_32 kernel32.dll_MultiByteToWideChar
+0x000196be 0x00011968 SET_32 kernel32.dll_lstrlenW
+0x000196ca 0x0001196c SET_32 kernel32.dll_lstrcpynW
+0x000196d6 0x00011970 SET_32 kernel32.dll_LoadLibraryExW
+0x000196e8 0x00011974 SET_32 kernel32.dll_GetThreadLocale
+0x000196fa 0x00011978 SET_32 kernel32.dll_GetStartupInfoA
+0x0001970c 0x0001197c SET_32 kernel32.dll_GetProcAddress
+0x0001971e 0x00011980 SET_32 kernel32.dll_GetModuleHandleW
+0x00019732 0x00011984 SET_32 kernel32.dll_GetModuleFileNameW
+0x00019748 0x00011988 SET_32 kernel32.dll_GetLocaleInfoW
+0x0001975a 0x0001198c SET_32 kernel32.dll_GetCommandLineW
+0x0001976c 0x00011990 SET_32 kernel32.dll_FreeLibrary
+0x0001977a 0x00011994 SET_32 kernel32.dll_FindFirstFileW
+0x0001978c 0x00011998 SET_32 kernel32.dll_FindClose
+0x00019798 0x0001199c SET_32 kernel32.dll_ExitProcess
+0x000197a6 0x000119a0 SET_32 kernel32.dll_WriteFile
+0x000197b2 0x000119a4 SET_32 kernel32.dll_UnhandledExceptionFilter
+0x000197ce 0x000119a8 SET_32 kernel32.dll_RtlUnwind
+0x000197da 0x000119ac SET_32 kernel32.dll_RaiseException
+0x000197ec 0x000119b0 SET_32 kernel32.dll_GetStdHandle
+0x000197fc 0x000119b4 SET_32 kernel32.dll_CloseHandle
+0x00019818 0x000119bc SET_32 kernel32.dll_TlsSetValue
+0x00019826 0x000119c0 SET_32 kernel32.dll_TlsGetValue
+0x00019834 0x000119c4 SET_32 kernel32.dll_LocalAlloc
+0x00019842 0x000119c8 SET_32 kernel32.dll_GetModuleHandleW
+0x00019862 0x000119d0 SET_32 user32.dll_CreateWindowExW
+0x00019874 0x000119d4 SET_32 user32.dll_TranslateMessage
+0x00019888 0x000119d8 SET_32 user32.dll_SetWindowLongW
+0x0001989a 0x000119dc SET_32 user32.dll_PeekMessageW
+0x000198aa 0x000119e0 SET_32 user32.dll_MsgWaitForMultipleObjects
+0x000198c6 0x000119e4 SET_32 user32.dll_MessageBoxW
+0x000198d4 0x000119e8 SET_32 user32.dll_LoadStringW
+0x000198e2 0x000119ec SET_32 user32.dll_GetSystemMetrics
+0x000198f6 0x000119f0 SET_32 user32.dll_ExitWindowsEx
+0x00019906 0x000119f4 SET_32 user32.dll_DispatchMessageW
+0x0001991a 0x000119f8 SET_32 user32.dll_DestroyWindow
+0x0001992a 0x000119fc SET_32 user32.dll_CharUpperBuffW
+0x0001993c 0x00011a00 SET_32 user32.dll_CallWindowProcW
+0x0001995c 0x00011a08 SET_32 kernel32.dll_WriteFile
+0x00019968 0x00011a0c SET_32 kernel32.dll_WideCharToMultiByte
+0x0001997e 0x00011a10 SET_32 kernel32.dll_WaitForSingleObject
+0x00019994 0x00011a14 SET_32 kernel32.dll_VirtualQuery
+0x000199a4 0x00011a18 SET_32 kernel32.dll_VirtualProtect
+0x000199b6 0x00011a1c SET_32 kernel32.dll_VirtualFree
+0x000199c4 0x00011a20 SET_32 kernel32.dll_VirtualAlloc
+0x000199d4 0x00011a24 SET_32 kernel32.dll_SizeofResource
+0x000199e6 0x00011a28 SET_32 kernel32.dll_SignalObjectAndWait
+0x000199fc 0x00011a2c SET_32 kernel32.dll_SetLastError
+0x00019a0c 0x00011a30 SET_32 kernel32.dll_SetFilePointer
+0x00019a1e 0x00011a34 SET_32 kernel32.dll_SetEvent
+0x00019a2a 0x00011a38 SET_32 kernel32.dll_SetErrorMode
+0x00019a3a 0x00011a3c SET_32 kernel32.dll_SetEndOfFile
+0x00019a4a 0x00011a40 SET_32 kernel32.dll_ResetEvent
+0x00019a58 0x00011a44 SET_32 kernel32.dll_RemoveDirectoryW
+0x00019a6c 0x00011a48 SET_32 kernel32.dll_ReadFile
+0x00019a78 0x00011a4c SET_32 kernel32.dll_MultiByteToWideChar
+0x00019a8e 0x00011a50 SET_32 kernel32.dll_LockResource
+0x00019a9e 0x00011a54 SET_32 kernel32.dll_LoadResource
+0x00019aae 0x00011a58 SET_32 kernel32.dll_LoadLibraryW
+0x00019abe 0x00011a5c SET_32 kernel32.dll_GetWindowsDirectoryW
+0x00019ad6 0x00011a60 SET_32 kernel32.dll_GetVersionExW
+0x00019ae6 0x00011a64 SET_32 kernel32.dll_GetVersion
+0x00019af4 0x00011a68 SET_32 kernel32.dll_GetUserDefaultLangID
+0x00019b0c 0x00011a6c SET_32 kernel32.dll_GetThreadLocale
+0x00019b1e 0x00011a70 SET_32 kernel32.dll_GetSystemInfo
+0x00019b2e 0x00011a74 SET_32 kernel32.dll_GetSystemDirectoryW
+0x00019b44 0x00011a78 SET_32 kernel32.dll_GetStdHandle
+0x00019b54 0x00011a7c SET_32 kernel32.dll_GetProcAddress
+0x00019b66 0x00011a80 SET_32 kernel32.dll_GetModuleHandleW
+0x00019b7a 0x00011a84 SET_32 kernel32.dll_GetModuleFileNameW
+0x00019b90 0x00011a88 SET_32 kernel32.dll_GetLocaleInfoW
+0x00019ba2 0x00011a8c SET_32 kernel32.dll_GetLastError
+0x00019bb2 0x00011a90 SET_32 kernel32.dll_GetFullPathNameW
+0x00019bc6 0x00011a94 SET_32 kernel32.dll_GetFileSize
+0x00019bd4 0x00011a98 SET_32 kernel32.dll_GetFileAttributesW
+0x00019bea 0x00011a9c SET_32 kernel32.dll_GetExitCodeProcess
+0x00019c00 0x00011aa0 SET_32 kernel32.dll_GetEnvironmentVariableW
+0x00019c1a 0x00011aa4 SET_32 kernel32.dll_GetDiskFreeSpaceW
+0x00019c2e 0x00011aa8 SET_32 kernel32.dll_GetCurrentProcess
+0x00019c42 0x00011aac SET_32 kernel32.dll_GetCommandLineW
+0x00019c54 0x00011ab0 SET_32 kernel32.dll_GetCPInfo
+0x00019c60 0x00011ab4 SET_32 kernel32.dll_InterlockedExchange
+0x00019c76 0x00011ab8 SET_32 kernel32.dll_InterlockedCompareExchange
+0x00019c94 0x00011abc SET_32 kernel32.dll_FreeLibrary
+0x00019ca2 0x00011ac0 SET_32 kernel32.dll_FormatMessageW
+0x00019cb4 0x00011ac4 SET_32 kernel32.dll_FindResourceW
+0x00019cc4 0x00011ac8 SET_32 kernel32.dll_EnumCalendarInfoW
+0x00019cd8 0x00011acc SET_32 kernel32.dll_DeleteFileW
+0x00019ce6 0x00011ad0 SET_32 kernel32.dll_CreateProcessW
+0x00019cf8 0x00011ad4 SET_32 kernel32.dll_CreateFileW
+0x00019d06 0x00011ad8 SET_32 kernel32.dll_CreateEventW
+0x00019d16 0x00011adc SET_32 kernel32.dll_CreateDirectoryW
+0x00019d2a 0x00011ae0 SET_32 kernel32.dll_CloseHandle
+0x00019d46 0x00011ae8 SET_32 advapi32.dll_RegQueryValueExW
+0x00019d5a 0x00011aec SET_32 advapi32.dll_RegOpenKeyExW
+0x00019d6a 0x00011af0 SET_32 advapi32.dll_RegCloseKey
+0x00019d78 0x00011af4 SET_32 advapi32.dll_OpenProcessToken
+0x00019d8c 0x00011af8 SET_32 advapi32.dll_LookupPrivilegeValueW
+0x00019db2 0x00011b00 SET_32 comctl32.dll_InitCommonControls
+0x00019dd6 0x00011b08 SET_32 kernel32.dll_Sleep
+0x00019dec 0x00011b10 SET_32 advapi32.dll_AdjustTokenPrivileges
+
+
+122 relocations
+8782240
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 0.0.0.0
+  ProductVersion: 0.0.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: This installation was built with Inno Setup.
+  CompanyName:                                                             
+  FileDescription: CPUID CPU-Z Setup (r2009101442)                             
+  FileVersion:                     
+  LegalCopyright:                                                                                                     
+  ProductName: CPUID CPU-Z                                                 
+  ProductVersion:                                                   
+Section to Segment mapping:
+Segment Section
+---------------
+
+

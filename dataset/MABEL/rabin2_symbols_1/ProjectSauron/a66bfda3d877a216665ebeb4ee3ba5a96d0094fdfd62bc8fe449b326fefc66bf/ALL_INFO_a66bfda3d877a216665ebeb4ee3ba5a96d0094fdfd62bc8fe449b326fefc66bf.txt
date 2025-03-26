@@ -1,0 +1,269 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400    0x600 0x00401000   0x1000 -r-x .text
+1   0x00000a00    0x400 0x00402000   0x1000 -r-- .rdata
+2   0x00000e00    0x200 0x00403000   0x1000 -rw- .data
+3   0x00001000  0x20000 0x00404000  0x20000 -r-- .bin
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004012a4 paddr=0x000006a4 haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401185 paddr=0x00000585
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00402000 NONE FUNC KERNEL32.dll VirtualAlloc
+2   0x00402004 NONE FUNC KERNEL32.dll GetProcAddress
+3   0x00402008 NONE FUNC KERNEL32.dll VirtualFree
+4   0x0040200c NONE FUNC KERNEL32.dll SetErrorMode
+5   0x00402010 NONE FUNC KERNEL32.dll LoadLibraryA
+6   0x00402014 NONE FUNC KERNEL32.dll GetStartupInfoA
+7   0x00402018 NONE FUNC KERNEL32.dll GetModuleHandleA
+8   0x0040201c NONE FUNC KERNEL32.dll GetCommandLineW
+1   0x00402070 NONE FUNC SHELL32.dll  CommandLineToArgvW
+1   0x00402024 NONE FUNC MSVCRT.dll   __p__commode
+2   0x00402028 NONE FUNC MSVCRT.dll   __set_app_type
+3   0x0040202c NONE FUNC MSVCRT.dll   _except_handler3
+4   0x00402030 NONE FUNC MSVCRT.dll   _controlfp
+5   0x00402034 NONE FUNC MSVCRT.dll   _adjust_fdiv
+6   0x00402038 NONE FUNC MSVCRT.dll   __setusermatherr
+7   0x0040203c NONE FUNC MSVCRT.dll   _initterm
+8   0x00402040 NONE FUNC MSVCRT.dll   __getmainargs
+9   0x00402044 NONE FUNC MSVCRT.dll   _acmdln
+10  0x00402048 NONE FUNC MSVCRT.dll   exit
+11  0x0040204c NONE FUNC MSVCRT.dll   _XcptFilter
+12  0x00402050 NONE FUNC MSVCRT.dll   _exit
+13  0x00402054 NONE FUNC MSVCRT.dll   strncmp
+14  0x00402058 NONE FUNC MSVCRT.dll   realloc
+15  0x0040205c NONE FUNC MSVCRT.dll   free
+16  0x00402060 NONE FUNC MSVCRT.dll   memcpy
+17  0x00402064 NONE FUNC MSVCRT.dll   __p__fmode
+18  0x00402068 NONE FUNC MSVCRT.dll   memset
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000a00 0x00402000 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+2   0x00000a04 0x00402004 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+3   0x00000a08 0x00402008 NONE FUNC 0    KERNEL32.dll imp.VirtualFree
+4   0x00000a0c 0x0040200c NONE FUNC 0    KERNEL32.dll imp.SetErrorMode
+5   0x00000a10 0x00402010 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+6   0x00000a14 0x00402014 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+7   0x00000a18 0x00402018 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+8   0x00000a1c 0x0040201c NONE FUNC 0    KERNEL32.dll imp.GetCommandLineW
+1   0x00000a70 0x00402070 NONE FUNC 0    SHELL32.dll  imp.CommandLineToArgvW
+1   0x00000a24 0x00402024 NONE FUNC 0    MSVCRT.dll   imp.__p__commode
+2   0x00000a28 0x00402028 NONE FUNC 0    MSVCRT.dll   imp.__set_app_type
+3   0x00000a2c 0x0040202c NONE FUNC 0    MSVCRT.dll   imp._except_handler3
+4   0x00000a30 0x00402030 NONE FUNC 0    MSVCRT.dll   imp._controlfp
+5   0x00000a34 0x00402034 NONE FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+6   0x00000a38 0x00402038 NONE FUNC 0    MSVCRT.dll   imp.__setusermatherr
+7   0x00000a3c 0x0040203c NONE FUNC 0    MSVCRT.dll   imp._initterm
+8   0x00000a40 0x00402040 NONE FUNC 0    MSVCRT.dll   imp.__getmainargs
+9   0x00000a44 0x00402044 NONE FUNC 0    MSVCRT.dll   imp._acmdln
+10  0x00000a48 0x00402048 NONE FUNC 0    MSVCRT.dll   imp.exit
+11  0x00000a4c 0x0040204c NONE FUNC 0    MSVCRT.dll   imp._XcptFilter
+12  0x00000a50 0x00402050 NONE FUNC 0    MSVCRT.dll   imp._exit
+13  0x00000a54 0x00402054 NONE FUNC 0    MSVCRT.dll   imp.strncmp
+14  0x00000a58 0x00402058 NONE FUNC 0    MSVCRT.dll   imp.realloc
+15  0x00000a5c 0x0040205c NONE FUNC 0    MSVCRT.dll   imp.free
+16  0x00000a60 0x00402060 NONE FUNC 0    MSVCRT.dll   imp.memcpy
+17  0x00000a64 0x00402064 NONE FUNC 0    MSVCRT.dll   imp.__p__fmode
+18  0x00000a68 0x00402068 NONE FUNC 0    MSVCRT.dll   imp.memset
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000a84 0x00402084 4   5    .rdata  ascii   .bin
+1   0x00000a8c 0x0040208c 10  22   .rdata  utf16le HKEY_USERS
+2   0x00000aac 0x004020ac 19  40   .rdata  utf16le HKEY_CURRENT_CONFIG
+3   0x00000ad4 0x004020d4 4   10   .rdata  utf16le HKCC
+4   0x00000ae0 0x004020e0 17  36   .rdata  utf16le HKEY_CURRENT_USER
+5   0x00000b04 0x00402104 4   10   .rdata  utf16le HKCU
+6   0x00000b10 0x00402110 17  36   .rdata  utf16le HKEY_CLASSES_ROOT
+7   0x00000b34 0x00402134 4   10   .rdata  utf16le HKCR
+8   0x00000b40 0x00402140 18  38   .rdata  utf16le HKEY_LOCAL_MACHINE
+9   0x00000b68 0x00402168 4   10   .rdata  utf16le HKLM
+10  0x00000c4e 0x0040224e 15  16   .rdata  ascii   GetCommandLineW
+11  0x00000c60 0x00402260 12  13   .rdata  ascii   SetErrorMode
+12  0x00000c70 0x00402270 11  12   .rdata  ascii   VirtualFree
+13  0x00000c7e 0x0040227e 14  15   .rdata  ascii   GetProcAddress
+14  0x00000c90 0x00402290 12  13   .rdata  ascii   VirtualAlloc
+15  0x00000ca0 0x004022a0 12  13   .rdata  ascii   LoadLibraryA
+16  0x00000cae 0x004022ae 12  13   .rdata  ascii   KERNEL32.dll
+17  0x00000cbe 0x004022be 18  19   .rdata  ascii   CommandLineToArgvW
+18  0x00000cd2 0x004022d2 11  12   .rdata  ascii   SHELL32.dll
+19  0x00000ce0 0x004022e0 4   5    .rdata  ascii   free
+20  0x00000ce8 0x004022e8 7   8    .rdata  ascii   realloc
+21  0x00000cf2 0x004022f2 7   8    .rdata  ascii   strncmp
+22  0x00000cfa 0x004022fa 10  11   .rdata  ascii   MSVCRT.dll
+23  0x00000d08 0x00402308 5   6    .rdata  ascii   _exit
+24  0x00000d10 0x00402310 11  12   .rdata  ascii   _XcptFilter
+25  0x00000d1e 0x0040231e 4   5    .rdata  ascii   exit
+26  0x00000d26 0x00402326 7   8    .rdata  ascii   _acmdln
+27  0x00000d30 0x00402330 13  14   .rdata  ascii   __getmainargs
+28  0x00000d40 0x00402340 9   10   .rdata  ascii   _initterm
+29  0x00000d4c 0x0040234c 16  17   .rdata  ascii   __setusermatherr
+30  0x00000d60 0x00402360 12  13   .rdata  ascii   _adjust_fdiv
+31  0x00000d70 0x00402370 12  13   .rdata  ascii   __p__commode
+32  0x00000d80 0x00402380 10  11   .rdata  ascii   __p__fmode
+33  0x00000d8e 0x0040238e 14  15   .rdata  ascii   __set_app_type
+34  0x00000da0 0x004023a0 16  17   .rdata  ascii   _except_handler3
+35  0x00000db4 0x004023b4 10  11   .rdata  ascii   _controlfp
+36  0x00000dc2 0x004023c2 16  17   .rdata  ascii   GetModuleHandleA
+37  0x00000dd6 0x004023d6 15  16   .rdata  ascii   GetStartupInfoA
+38  0x00000de8 0x004023e8 6   7    .rdata  ascii   memcpy
+39  0x00000df2 0x004023f2 6   7    .rdata  ascii   memset
+arch     x86
+baddr    0x400000
+binsz    135170
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0002f0a3
+compiled Fri Aug 10 12:10:28 2012
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5024fa34
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x600
+  SizeOfInitializedData : 0x600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x12a4
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x24000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8100
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 138 Name: Utc1500_LTCG_CPP Version: 30729 Times: 4
+  Product: 149 Name: Masm900 Version: 30729 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 51
+  Product: 123 Name: Implib800 Version: 50727 Times: 7
+  Product: 10 Name: Utc12_C Version: 8047 Times: 11
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 150 Name: AliasObj900 Version: 20413 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2184
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x78
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+shell32.dll
+msvcrt.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000224c 0x00000a1c SET_32 KERNEL32.dll_GetCommandLineW
+0x0000225e 0x00000a0c SET_32 KERNEL32.dll_SetErrorMode
+0x0000226e 0x00000a08 SET_32 KERNEL32.dll_VirtualFree
+0x0000227c 0x00000a04 SET_32 KERNEL32.dll_GetProcAddress
+0x0000228e 0x00000a00 SET_32 KERNEL32.dll_VirtualAlloc
+0x0000229e 0x00000a10 SET_32 KERNEL32.dll_LoadLibraryA
+0x000022bc 0x00000a70 SET_32 SHELL32.dll_CommandLineToArgvW
+0x000022de 0x00000a5c SET_32 MSVCRT.dll_free
+0x000022e6 0x00000a58 SET_32 MSVCRT.dll_realloc
+0x000022f0 0x00000a54 SET_32 MSVCRT.dll_strncmp
+0x00002306 0x00000a50 SET_32 MSVCRT.dll__exit
+0x0000230e 0x00000a4c SET_32 MSVCRT.dll__XcptFilter
+0x0000231c 0x00000a48 SET_32 MSVCRT.dll_exit
+0x00002324 0x00000a44 SET_32 MSVCRT.dll__acmdln
+0x0000232e 0x00000a40 SET_32 MSVCRT.dll___getmainargs
+0x0000233e 0x00000a3c SET_32 MSVCRT.dll__initterm
+0x0000234a 0x00000a38 SET_32 MSVCRT.dll___setusermatherr
+0x0000235e 0x00000a34 SET_32 MSVCRT.dll__adjust_fdiv
+0x0000236e 0x00000a24 SET_32 MSVCRT.dll___p__commode
+0x0000237e 0x00000a64 SET_32 MSVCRT.dll___p__fmode
+0x0000238c 0x00000a28 SET_32 MSVCRT.dll___set_app_type
+0x0000239e 0x00000a2c SET_32 MSVCRT.dll__except_handler3
+0x000023b2 0x00000a30 SET_32 MSVCRT.dll__controlfp
+0x000023c0 0x00000a18 SET_32 KERNEL32.dll_GetModuleHandleA
+0x000023d4 0x00000a14 SET_32 KERNEL32.dll_GetStartupInfoA
+0x000023e6 0x00000a60 SET_32 MSVCRT.dll_memcpy
+0x000023f0 0x00000a68 SET_32 MSVCRT.dll_memset
+
+
+27 relocations
+135170
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

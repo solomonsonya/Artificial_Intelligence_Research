@@ -1,0 +1,210 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000200     0x0 0x00401000  0xe000 -rwx UPX0
+1   0x00000200  0x8000 0x0040f000  0x8000 -rwx UPX1
+2   0x00008200   0x800 0x00417000  0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00416340 paddr=0x00007540 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004174f8 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x004174fc NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x00417500 NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x00417504 NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x00417508 NONE FUNC KERNEL32.DLL VirtualFree
+6   0x0041750c NONE FUNC KERNEL32.DLL ExitProcess
+1   0x00417514 NONE FUNC COMCTL32.DLL InitCommonControlsEx
+1   0x0041751c NONE FUNC GDI32.DLL    BitBlt
+1   0x00417524 NONE FUNC MSVCRT.dll   fabs
+1   0x0041752c NONE FUNC OLE32.DLL    CoInitialize
+1   0x00417534 NONE FUNC SHELL32.DLL  ShellExecuteExA
+1   0x0041753c NONE FUNC SHLWAPI.DLL  PathGetArgsA
+1   0x00417544 NONE FUNC USER32.DLL   GetDC
+1   0x0041754c NONE FUNC WINMM.DLL    timeBeginPeriod
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000086f8 0x004174f8 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x000086fc 0x004174fc NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x00008700 0x00417500 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+4   0x00008704 0x00417504 NONE FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+5   0x00008708 0x00417508 NONE FUNC 0    KERNEL32.DLL imp.VirtualFree
+6   0x0000870c 0x0041750c NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+1   0x00008714 0x00417514 NONE FUNC 0    COMCTL32.DLL imp.InitCommonControlsEx
+1   0x0000871c 0x0041751c NONE FUNC 0    GDI32.DLL    imp.BitBlt
+1   0x00008724 0x00417524 NONE FUNC 0    MSVCRT.dll   imp.fabs
+1   0x0000872c 0x0041752c NONE FUNC 0    OLE32.DLL    imp.CoInitialize
+1   0x00008734 0x00417534 NONE FUNC 0    SHELL32.DLL  imp.ShellExecuteExA
+1   0x0000873c 0x0041753c NONE FUNC 0    SHLWAPI.DLL  imp.PathGetArgsA
+1   0x00008744 0x00417544 NONE FUNC 0    USER32.DLL   imp.GetDC
+1   0x0000874c 0x0041754c NONE FUNC 0    WINMM.DLL    imp.timeBeginPeriod
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00008300 0x00417100 99  200  .rsrc   utf16le  05C4E10A37A59B2E4C5293B9595EFDE2 5D468D34D038B0CA827B9F13F0299F88 CB354E8BD722609DCCC601826C0CF6C1
+1   0x000083cc 0x004171cc 612 613  .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\n  <assemblyIdentity\n    version="1.0.0.0"\n    processorArchitecture="X86"\n    name="CompanyName.ProductName.YourApp"\n    type="win32" />\n  <description></description>\n  <dependency>\n    <dependentAssembly>\n      <assemblyIdentity\n        type="win32"\n        name="Microsoft.Windows.Common-Controls"\n        version="6.0.0.0"\n        processorArchitecture="X86"\n        publicKeyToken="6595b64144ccf1df"\n        language="*" />\n    </dependentAssembly>\n  </dependency>\n\n</assembly>P
+2   0x00008754 0x00417554 12  13   .rsrc   ascii   KERNEL32.DLL
+3   0x00008761 0x00417561 12  13   .rsrc   ascii   COMCTL32.DLL
+4   0x0000876e 0x0041756e 9   10   .rsrc   ascii   GDI32.DLL
+5   0x00008778 0x00417578 10  11   .rsrc   ascii   MSVCRT.dll
+6   0x00008783 0x00417583 9   10   .rsrc   ascii   OLE32.DLL
+7   0x0000878d 0x0041758d 11  12   .rsrc   ascii   SHELL32.DLL
+8   0x00008799 0x00417599 11  12   .rsrc   ascii   SHLWAPI.DLL
+9   0x000087a5 0x004175a5 10  11   .rsrc   ascii   USER32.DLL
+10  0x000087b0 0x004175b0 9   10   .rsrc   ascii   WINMM.DLL
+11  0x000087bc 0x004175bc 12  13   .rsrc   ascii   LoadLibraryA
+12  0x000087ca 0x004175ca 14  15   .rsrc   ascii   GetProcAddress
+13  0x000087da 0x004175da 14  15   .rsrc   ascii   VirtualProtect
+14  0x000087ea 0x004175ea 12  13   .rsrc   ascii   VirtualAlloc
+15  0x000087f8 0x004175f8 11  12   .rsrc   ascii   VirtualFree
+16  0x00008806 0x00417606 11  12   .rsrc   ascii   ExitProcess
+17  0x00008814 0x00417614 20  21   .rsrc   ascii   InitCommonControlsEx
+18  0x0000882a 0x0041762a 6   7    .rsrc   ascii   BitBlt
+19  0x00008832 0x00417632 4   5    .rsrc   ascii   fabs
+20  0x00008838 0x00417638 12  13   .rsrc   ascii   CoInitialize
+21  0x00008846 0x00417646 15  16   .rsrc   ascii   ShellExecuteExA
+22  0x00008858 0x00417658 12  13   .rsrc   ascii   PathGetArgsA
+23  0x00008866 0x00417666 5   6    .rsrc   ascii   GetDC
+24  0x0000886e 0x0041766e 15  16   .rsrc   ascii   timeBeginPeriod
+arch     x86
+baddr    0x400000
+binsz    35328
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000121ef
+compiled Fri May 27 14:05:04 2016
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x57485410
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x32
+  SizeOfCode : 0x8000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0xe000
+  AddressOfEntryPoint : 0x16340
+  BaseOfCode : 0xf000
+  BaseOfData : 0x17000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x18000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x17430
+  Size : 0x250
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x17000
+  Size : 0x430
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+comctl32.dll
+gdi32.dll
+msvcrt.dll
+ole32.dll
+shell32.dll
+shlwapi.dll
+user32.dll
+winmm.dll
+
+9 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000175ba 0x000086f8 SET_32 KERNEL32.DLL_LoadLibraryA
+0x000175c8 0x000086fc SET_32 KERNEL32.DLL_GetProcAddress
+0x000175d8 0x00008700 SET_32 KERNEL32.DLL_VirtualProtect
+0x000175e8 0x00008704 SET_32 KERNEL32.DLL_VirtualAlloc
+0x000175f6 0x00008708 SET_32 KERNEL32.DLL_VirtualFree
+0x00017604 0x0000870c SET_32 KERNEL32.DLL_ExitProcess
+0x00017612 0x00008714 SET_32 COMCTL32.DLL_InitCommonControlsEx
+0x00017628 0x0000871c SET_32 GDI32.DLL_BitBlt
+0x00017630 0x00008724 SET_32 MSVCRT.dll_fabs
+0x00017636 0x0000872c SET_32 OLE32.DLL_CoInitialize
+0x00017644 0x00008734 SET_32 SHELL32.DLL_ShellExecuteExA
+0x00017656 0x0000873c SET_32 SHLWAPI.DLL_PathGetArgsA
+0x00017664 0x00008744 SET_32 USER32.DLL_GetDC
+0x0001766c 0x0000874c SET_32 WINMM.DLL_timeBeginPeriod
+
+
+14 relocations
+35328
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

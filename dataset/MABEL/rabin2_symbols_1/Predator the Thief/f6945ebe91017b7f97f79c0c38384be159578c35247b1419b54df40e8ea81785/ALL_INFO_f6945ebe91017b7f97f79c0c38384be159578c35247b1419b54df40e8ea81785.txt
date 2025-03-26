@@ -1,0 +1,196 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr           size vaddr          vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000       0x0 0x00401000   0x80000 -r-x .text
+1   0x00000000       0x0 0x00481000   0x13000 -r-- .rdata
+2   0x00000000       0x0 0x00494000    0x3000 -rw- .data
+3   0x00000000       0x0 0x00497000   0xa3000 -rwx .vmp0
+4   0x00000400  0x19d000 0x0053a000  0x19d000 -rwx .vmp1
+5   0x0019d400     0x200 0x006d7000    0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0053ebc8 paddr=0x00004fc8 haddr=0x00000138 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0062e000 NONE FUNC KERNEL32.dll FreeEnvironmentStringsW
+1   0x0062e008 NONE FUNC WININET.dll  InternetOpenA
+1   0x0062e010 NONE FUNC gdiplus.dll  GdipCreateBitmapFromHBITMAP
+1   0x0062e018 NONE FUNC USER32.dll   MessageBoxW
+1   0x0062e020 NONE FUNC KERNEL32.dll GetModuleFileNameW
+1   0x0062e028 NONE FUNC KERNEL32.dll GetModuleHandleA
+2   0x0062e02c NONE FUNC KERNEL32.dll LoadLibraryA
+3   0x0062e030 NONE FUNC KERNEL32.dll LocalAlloc
+4   0x0062e034 NONE FUNC KERNEL32.dll LocalFree
+5   0x0062e038 NONE FUNC KERNEL32.dll GetModuleFileNameA
+6   0x0062e03c NONE FUNC KERNEL32.dll ExitProcess
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000f4400 0x0062e000 NONE FUNC 0    KERNEL32.dll imp.FreeEnvironmentStringsW
+1   0x000f4408 0x0062e008 NONE FUNC 0    WININET.dll  imp.InternetOpenA
+1   0x000f4410 0x0062e010 NONE FUNC 0    gdiplus.dll  imp.GdipCreateBitmapFromHBITMAP
+1   0x000f4418 0x0062e018 NONE FUNC 0    USER32.dll   imp.MessageBoxW
+1   0x000f4420 0x0062e020 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+1   0x000f4428 0x0062e028 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+2   0x000f442c 0x0062e02c NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+3   0x000f4430 0x0062e030 NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+4   0x000f4434 0x0062e034 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+5   0x000f4438 0x0062e038 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+6   0x000f443c 0x0062e03c NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0019d458 0x006d7058 381 382  .rsrc   ascii <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+arch     x86
+baddr    0x400000
+binsz    1693184
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0019dc20
+compiled Mon Aug 20 09:52:44 2018
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x5b7a8f6c
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0xe
+  SizeOfCode : 0x7fa00
+  SizeOfInitializedData : 0x15a00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x13ebc8
+  BaseOfCode : 0x1000
+  BaseOfData : 0x81000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x2d8000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8100
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 26433 Times: 1
+  Product: 255 Name: Cvtres1400 Version: 26433 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 26433 Times: 6
+  Product: 1 Name: Import0 Version: 0 Times: 160
+  Product: 257 Name: Implib1400 Version: 25203 Times: 7
+  Product: 260 Name: Utc1900_C Version: 26131 Times: 19
+  Product: 261 Name: Utc1900_CPP Version: 26131 Times: 41
+  Product: 259 Name: Masm1400 Version: 26131 Times: 25
+  Product: 263 Name: Utc1900_CVTCIL_CPP Version: 25203 Times: 1
+  Product: 260 Name: Utc1900_C Version: 25203 Times: 18
+  Product: 261 Name: Utc1900_CPP Version: 25203 Times: 164
+  Product: 259 Name: Masm1400 Version: 25203 Times: 11
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x13b55c
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x2d7000
+  Size : 0x1d5
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x2d6dac
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x24240c
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x22e000
+  Size : 0x44
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+wininet.dll
+gdiplus.dll
+user32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0013a208 0x000f443c SET_32 KERNEL32.dll_ExitProcess
+0x0013c66a 0x000f4428 SET_32 KERNEL32.dll_GetModuleHandleA
+0x0013f0ee 0x000f4430 SET_32 KERNEL32.dll_LocalAlloc
+0x001416f7 0x000f4418 SET_32 USER32.dll_MessageBoxW
+0x001439b7 0x000f442c SET_32 KERNEL32.dll_LoadLibraryA
+0x00197fc8 0x000f4400 SET_32 KERNEL32.dll_FreeEnvironmentStringsW
+0x0022f821 0x000f4420 SET_32 KERNEL32.dll_GetModuleFileNameW
+0x00230ab3 0x000f4408 SET_32 WININET.dll_InternetOpenA
+0x00232628 0x000f4410 SET_32 gdiplus.dll_GdipCreateBitmapFromHBITMAP
+0x00232941 0x000f4438 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x0023ec15 0x000f4434 SET_32 KERNEL32.dll_LocalFree
+
+
+11 relocations
+1693184
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

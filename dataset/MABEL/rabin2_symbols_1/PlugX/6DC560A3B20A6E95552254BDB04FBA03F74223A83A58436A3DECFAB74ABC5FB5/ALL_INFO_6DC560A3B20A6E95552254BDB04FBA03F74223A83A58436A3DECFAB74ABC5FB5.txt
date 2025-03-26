@@ -1,0 +1,398 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001000  0x5000 0x00401000  0x5000 -r-x .text
+1   0x00006000  0x1000 0x00406000  0x1000 -r-- .rdata
+2   0x00007000  0x3000 0x00407000  0x4000 -rw- .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401704 paddr=0x00001704 haddr=0x00000100 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401290 paddr=0x00001290
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00406000 NONE FUNC KERNEL32.dll GetVersionExA
+2   0x00406004 NONE FUNC KERNEL32.dll CloseHandle
+3   0x00406008 NONE FUNC KERNEL32.dll WriteFile
+4   0x0040600c NONE FUNC KERNEL32.dll ReadFile
+5   0x00406010 NONE FUNC KERNEL32.dll SetFilePointer
+6   0x00406014 NONE FUNC KERNEL32.dll CreateFileA
+7   0x00406018 NONE FUNC KERNEL32.dll lstrlenA
+8   0x0040601c NONE FUNC KERNEL32.dll lstrcatA
+9   0x00406020 NONE FUNC KERNEL32.dll GetProcAddress
+10  0x00406024 NONE FUNC KERNEL32.dll LoadLibraryA
+11  0x00406028 NONE FUNC KERNEL32.dll DeleteFileA
+12  0x0040602c NONE FUNC KERNEL32.dll Sleep
+13  0x00406030 NONE FUNC KERNEL32.dll GetModuleFileNameA
+14  0x00406034 NONE FUNC KERNEL32.dll GetCurrentDirectoryA
+15  0x00406038 NONE FUNC KERNEL32.dll LCMapStringW
+16  0x0040603c NONE FUNC KERNEL32.dll LCMapStringA
+17  0x00406040 NONE FUNC KERNEL32.dll GetModuleHandleA
+18  0x00406044 NONE FUNC KERNEL32.dll GetStartupInfoA
+19  0x00406048 NONE FUNC KERNEL32.dll GetCommandLineA
+20  0x0040604c NONE FUNC KERNEL32.dll GetVersion
+21  0x00406050 NONE FUNC KERNEL32.dll ExitProcess
+22  0x00406054 NONE FUNC KERNEL32.dll TerminateProcess
+23  0x00406058 NONE FUNC KERNEL32.dll GetCurrentProcess
+24  0x0040605c NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+25  0x00406060 NONE FUNC KERNEL32.dll FreeEnvironmentStringsA
+26  0x00406064 NONE FUNC KERNEL32.dll FreeEnvironmentStringsW
+27  0x00406068 NONE FUNC KERNEL32.dll WideCharToMultiByte
+28  0x0040606c NONE FUNC KERNEL32.dll GetEnvironmentStrings
+29  0x00406070 NONE FUNC KERNEL32.dll GetEnvironmentStringsW
+30  0x00406074 NONE FUNC KERNEL32.dll SetHandleCount
+31  0x00406078 NONE FUNC KERNEL32.dll GetStdHandle
+32  0x0040607c NONE FUNC KERNEL32.dll GetFileType
+33  0x00406080 NONE FUNC KERNEL32.dll GetEnvironmentVariableA
+34  0x00406084 NONE FUNC KERNEL32.dll HeapDestroy
+35  0x00406088 NONE FUNC KERNEL32.dll HeapCreate
+36  0x0040608c NONE FUNC KERNEL32.dll VirtualFree
+37  0x00406090 NONE FUNC KERNEL32.dll HeapFree
+38  0x00406094 NONE FUNC KERNEL32.dll RtlUnwind
+39  0x00406098 NONE FUNC KERNEL32.dll MultiByteToWideChar
+40  0x0040609c NONE FUNC KERNEL32.dll GetStringTypeA
+41  0x004060a0 NONE FUNC KERNEL32.dll GetStringTypeW
+42  0x004060a4 NONE FUNC KERNEL32.dll GetLastError
+43  0x004060a8 NONE FUNC KERNEL32.dll HeapAlloc
+44  0x004060ac NONE FUNC KERNEL32.dll GetCPInfo
+45  0x004060b0 NONE FUNC KERNEL32.dll GetACP
+46  0x004060b4 NONE FUNC KERNEL32.dll GetOEMCP
+47  0x004060b8 NONE FUNC KERNEL32.dll VirtualAlloc
+48  0x004060bc NONE FUNC KERNEL32.dll HeapReAlloc
+49  0x004060c0 NONE FUNC KERNEL32.dll SetStdHandle
+50  0x004060c4 NONE FUNC KERNEL32.dll FlushFileBuffers
+1   0x004060cc NONE FUNC SHELL32.dll  ShellExecuteA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00006000 0x00406000 NONE FUNC 0    KERNEL32.dll imp.GetVersionExA
+2   0x00006004 0x00406004 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+3   0x00006008 0x00406008 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+4   0x0000600c 0x0040600c NONE FUNC 0    KERNEL32.dll imp.ReadFile
+5   0x00006010 0x00406010 NONE FUNC 0    KERNEL32.dll imp.SetFilePointer
+6   0x00006014 0x00406014 NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+7   0x00006018 0x00406018 NONE FUNC 0    KERNEL32.dll imp.lstrlenA
+8   0x0000601c 0x0040601c NONE FUNC 0    KERNEL32.dll imp.lstrcatA
+9   0x00006020 0x00406020 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+10  0x00006024 0x00406024 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+11  0x00006028 0x00406028 NONE FUNC 0    KERNEL32.dll imp.DeleteFileA
+12  0x0000602c 0x0040602c NONE FUNC 0    KERNEL32.dll imp.Sleep
+13  0x00006030 0x00406030 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+14  0x00006034 0x00406034 NONE FUNC 0    KERNEL32.dll imp.GetCurrentDirectoryA
+15  0x00006038 0x00406038 NONE FUNC 0    KERNEL32.dll imp.LCMapStringW
+16  0x0000603c 0x0040603c NONE FUNC 0    KERNEL32.dll imp.LCMapStringA
+17  0x00006040 0x00406040 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+18  0x00006044 0x00406044 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+19  0x00006048 0x00406048 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineA
+20  0x0000604c 0x0040604c NONE FUNC 0    KERNEL32.dll imp.GetVersion
+21  0x00006050 0x00406050 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+22  0x00006054 0x00406054 NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+23  0x00006058 0x00406058 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+24  0x0000605c 0x0040605c NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+25  0x00006060 0x00406060 NONE FUNC 0    KERNEL32.dll imp.FreeEnvironmentStringsA
+26  0x00006064 0x00406064 NONE FUNC 0    KERNEL32.dll imp.FreeEnvironmentStringsW
+27  0x00006068 0x00406068 NONE FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+28  0x0000606c 0x0040606c NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentStrings
+29  0x00006070 0x00406070 NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentStringsW
+30  0x00006074 0x00406074 NONE FUNC 0    KERNEL32.dll imp.SetHandleCount
+31  0x00006078 0x00406078 NONE FUNC 0    KERNEL32.dll imp.GetStdHandle
+32  0x0000607c 0x0040607c NONE FUNC 0    KERNEL32.dll imp.GetFileType
+33  0x00006080 0x00406080 NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentVariableA
+34  0x00006084 0x00406084 NONE FUNC 0    KERNEL32.dll imp.HeapDestroy
+35  0x00006088 0x00406088 NONE FUNC 0    KERNEL32.dll imp.HeapCreate
+36  0x0000608c 0x0040608c NONE FUNC 0    KERNEL32.dll imp.VirtualFree
+37  0x00006090 0x00406090 NONE FUNC 0    KERNEL32.dll imp.HeapFree
+38  0x00006094 0x00406094 NONE FUNC 0    KERNEL32.dll imp.RtlUnwind
+39  0x00006098 0x00406098 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+40  0x0000609c 0x0040609c NONE FUNC 0    KERNEL32.dll imp.GetStringTypeA
+41  0x000060a0 0x004060a0 NONE FUNC 0    KERNEL32.dll imp.GetStringTypeW
+42  0x000060a4 0x004060a4 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+43  0x000060a8 0x004060a8 NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+44  0x000060ac 0x004060ac NONE FUNC 0    KERNEL32.dll imp.GetCPInfo
+45  0x000060b0 0x004060b0 NONE FUNC 0    KERNEL32.dll imp.GetACP
+46  0x000060b4 0x004060b4 NONE FUNC 0    KERNEL32.dll imp.GetOEMCP
+47  0x000060b8 0x004060b8 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+48  0x000060bc 0x004060bc NONE FUNC 0    KERNEL32.dll imp.HeapReAlloc
+49  0x000060c0 0x004060c0 NONE FUNC 0    KERNEL32.dll imp.SetStdHandle
+50  0x000060c4 0x004060c4 NONE FUNC 0    KERNEL32.dll imp.FlushFileBuffers
+1   0x000060cc 0x004060cc NONE FUNC 0    SHELL32.dll  imp.ShellExecuteA
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00006105 0x00406105 7   8    .rdata  ascii    (8PX\a\b
+1   0x0000610d 0x0040610d 6   7    .rdata  ascii   700WP\a
+2   0x0000611c 0x0040611c 7   8    .rdata  ascii   \b`h````
+3   0x00006125 0x00406125 9   10   .rdata  ascii   ppxxxx\b\a\b
+4   0x00006144 0x00406144 4   10   .rdata  utf16le ull)
+5   0x00006150 0x00406150 6   7    .rdata  ascii   (null)
+6   0x00006158 0x00406158 22  23   .rdata  ascii   __GLOBAL_HEAP_SELECTED
+7   0x00006170 0x00406170 20  21   .rdata  ascii   __MSVCRT_HEAP_SELECT
+8   0x00006188 0x00406188 14  15   .rdata  ascii   runtime error 
+9   0x0000619c 0x0040619c 13  14   .rdata  ascii   TLOSS error\r\n
+10  0x000061ac 0x004061ac 12  13   .rdata  ascii   SING error\r\n
+11  0x000061bc 0x004061bc 14  15   .rdata  ascii   DOMAIN error\r\n
+12  0x000061cc 0x004061cc 36  37   .rdata  ascii   R6028\r\n- unable to initialize heap\r\n
+13  0x000061f4 0x004061f4 52  53   .rdata  ascii   R6027\r\n- not enough space for lowio initialization\r\n
+14  0x0000622c 0x0040622c 52  53   .rdata  ascii   R6026\r\n- not enough space for stdio initialization\r\n
+15  0x00006264 0x00406264 37  38   .rdata  ascii   R6025\r\n- pure virtual function call\r\n
+16  0x0000628c 0x0040628c 52  53   .rdata  ascii   R6024\r\n- not enough space for _onexit/atexit table\r\n
+17  0x000062c4 0x004062c4 40  41   .rdata  ascii   R6019\r\n- unable to open console device\r\n
+18  0x000062f0 0x004062f0 32  33   .rdata  ascii   R6018\r\n- unexpected heap error\r\n
+19  0x00006314 0x00406314 44  45   .rdata  ascii   R6017\r\n- unexpected multithread lock error\r\n
+20  0x00006344 0x00406344 43  44   .rdata  ascii   R6016\r\n- not enough space for thread data\r\n
+21  0x00006370 0x00406370 32  33   .rdata  ascii   \r\nabnormal program termination\r\n
+22  0x00006394 0x00406394 43  44   .rdata  ascii   R6009\r\n- not enough space for environment\r\n
+23  0x000063c0 0x004063c0 41  42   .rdata  ascii   R6008\r\n- not enough space for arguments\r\n
+24  0x000063ec 0x004063ec 36  37   .rdata  ascii   R6002\r\n- floating point not loaded\r\n
+25  0x00006414 0x00406414 36  37   .rdata  ascii   Microsoft Visual C++ Runtime Library
+26  0x00006440 0x00406440 25  26   .rdata  ascii   Runtime Error!\n\nProgram: 
+27  0x00006460 0x00406460 22  23   .rdata  ascii   <program name unknown>
+28  0x0000648c 0x0040648c 18  19   .rdata  ascii   GetLastActivePopup
+29  0x000064a0 0x004064a0 15  16   .rdata  ascii   GetActiveWindow
+30  0x000064b0 0x004064b0 11  12   .rdata  ascii   MessageBoxA
+31  0x000064bc 0x004064bc 10  11   .rdata  ascii   user32.dll
+32  0x000065f2 0x004065f2 13  14   .rdata  ascii   GetVersionExA
+33  0x00006602 0x00406602 11  12   .rdata  ascii   CloseHandle
+34  0x00006610 0x00406610 9   10   .rdata  ascii   WriteFile
+35  0x0000661c 0x0040661c 8   9    .rdata  ascii   ReadFile
+36  0x00006628 0x00406628 14  15   .rdata  ascii   SetFilePointer
+37  0x0000663a 0x0040663a 11  12   .rdata  ascii   CreateFileA
+38  0x00006648 0x00406648 8   9    .rdata  ascii   lstrlenA
+39  0x00006654 0x00406654 8   9    .rdata  ascii   lstrcatA
+40  0x00006660 0x00406660 14  15   .rdata  ascii   GetProcAddress
+41  0x00006672 0x00406672 12  13   .rdata  ascii   LoadLibraryA
+42  0x00006682 0x00406682 11  12   .rdata  ascii   DeleteFileA
+43  0x00006690 0x00406690 5   6    .rdata  ascii   Sleep
+44  0x00006698 0x00406698 18  19   .rdata  ascii   GetModuleFileNameA
+45  0x000066ae 0x004066ae 20  21   .rdata  ascii   GetCurrentDirectoryA
+46  0x000066c4 0x004066c4 12  13   .rdata  ascii   KERNEL32.dll
+47  0x000066d4 0x004066d4 13  14   .rdata  ascii   ShellExecuteA
+48  0x000066e2 0x004066e2 11  12   .rdata  ascii   SHELL32.dll
+49  0x000066f0 0x004066f0 16  17   .rdata  ascii   GetModuleHandleA
+50  0x00006704 0x00406704 15  16   .rdata  ascii   GetStartupInfoA
+51  0x00006716 0x00406716 15  16   .rdata  ascii   GetCommandLineA
+52  0x00006728 0x00406728 10  11   .rdata  ascii   GetVersion
+53  0x00006736 0x00406736 11  12   .rdata  ascii   ExitProcess
+54  0x00006744 0x00406744 16  17   .rdata  ascii   TerminateProcess
+55  0x00006758 0x00406758 17  18   .rdata  ascii   GetCurrentProcess
+56  0x0000676c 0x0040676c 24  25   .rdata  ascii   UnhandledExceptionFilter
+57  0x00006788 0x00406788 23  24   .rdata  ascii   FreeEnvironmentStringsA
+58  0x000067a2 0x004067a2 23  24   .rdata  ascii   FreeEnvironmentStringsW
+59  0x000067bc 0x004067bc 19  20   .rdata  ascii   WideCharToMultiByte
+60  0x000067d2 0x004067d2 21  22   .rdata  ascii   GetEnvironmentStrings
+61  0x000067ea 0x004067ea 22  23   .rdata  ascii   GetEnvironmentStringsW
+62  0x00006804 0x00406804 14  15   .rdata  ascii   SetHandleCount
+63  0x00006816 0x00406816 12  13   .rdata  ascii   GetStdHandle
+64  0x00006826 0x00406826 11  12   .rdata  ascii   GetFileType
+65  0x00006834 0x00406834 23  24   .rdata  ascii   GetEnvironmentVariableA
+66  0x0000684e 0x0040684e 11  12   .rdata  ascii   HeapDestroy
+67  0x0000685c 0x0040685c 10  11   .rdata  ascii   HeapCreate
+68  0x0000686a 0x0040686a 11  12   .rdata  ascii   VirtualFree
+69  0x00006878 0x00406878 8   9    .rdata  ascii   HeapFree
+70  0x00006884 0x00406884 9   10   .rdata  ascii   RtlUnwind
+71  0x00006890 0x00406890 19  20   .rdata  ascii   MultiByteToWideChar
+72  0x000068a6 0x004068a6 14  15   .rdata  ascii   GetStringTypeA
+73  0x000068b8 0x004068b8 14  15   .rdata  ascii   GetStringTypeW
+74  0x000068ca 0x004068ca 12  13   .rdata  ascii   GetLastError
+75  0x000068da 0x004068da 9   10   .rdata  ascii   HeapAlloc
+76  0x000068e6 0x004068e6 9   10   .rdata  ascii   GetCPInfo
+77  0x000068f2 0x004068f2 6   7    .rdata  ascii   GetACP
+78  0x000068fc 0x004068fc 8   9    .rdata  ascii   GetOEMCP
+79  0x00006908 0x00406908 12  13   .rdata  ascii   VirtualAlloc
+80  0x00006918 0x00406918 11  12   .rdata  ascii   HeapReAlloc
+81  0x00006926 0x00406926 12  13   .rdata  ascii   SetStdHandle
+82  0x00006936 0x00406936 12  13   .rdata  ascii   LCMapStringA
+83  0x00006946 0x00406946 12  13   .rdata  ascii   LCMapStringW
+84  0x00006956 0x00406956 16  17   .rdata  ascii   FlushFileBuffers
+0   0x00007030 0x00407030 7   8    .data   ascii   WinExec
+1   0x00007038 0x00407038 9   10   .data   ascii    /c del "
+2   0x00007044 0x00407044 16  17   .data   ascii   GetModuleHandleA
+3   0x00007058 0x00407058 7   8    .data   ascii   ComSpec
+4   0x00007060 0x00407060 12  13   .data   ascii   kernel32.dll
+5   0x00007070 0x00407070 23  24   .data   ascii   GetEnvironmentVariableA
+6   0x00007088 0x00407088 10  11   .data   ascii   C:\sys.bat
+7   0x00007094 0x00407094 5   6    .data   ascii   57344
+8   0x000070a0 0x004070a0 6   7    .data   ascii   206336
+9   0x000070ac 0x004070ac 5   6    .data   ascii   %s\%s
+10  0x000070b4 0x004070b4 6   7    .data   ascii   0s.3xe
+11  0x000070bc 0x004070bc 8   9    .data   ascii   0e2p.e6e
+12  0x000070da 0x004070da 33  68   .data   utf16le          (((((                  H
+13  0x0000982c 0x0040982c 12  52   .data   utf32le \t\a\f\b\f\t\f\n\a\v\b\f
+14  0x000098b0 0x004098b0 5   24   .data   utf32le R\rS\rW
+15  0x000098c8 0x004098c8 7   32   .data   utf32le Y\vl\rm p
+16  0x0000993c 0x0040993c 4   20   .data   utf32le \v§\r· blocks=Basic Latin,Latin-1 Supplement
+arch     x86
+baddr    0x400000
+binsz    304640
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0004da48
+compiled Thu Aug 29 01:28:19 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x521ea3b3
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x5000
+  SizeOfInitializedData : 0x5000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1704
+  BaseOfCode : 0x1000
+  BaseOfData : 0x6000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x1000
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 22 Name: Utc12_CPP_Std Version: 9782 Times: 2
+  Product: 1 Name: Import0 Version: 0 Times: 52
+  Product: 19 Name: Linker512 Version: 8034 Times: 5
+  Product: 10 Name: Utc12_C Version: 9782 Times: 47
+  Product: 14 Name: Masm613 Version: 7299 Times: 15
+  Product: 11 Name: Utc12_CPP Version: 9782 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x64e0
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x6000
+  Size : 0xd4
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+shell32.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000065f0 0x00006000 SET_32 KERNEL32.dll_GetVersionExA
+0x00006600 0x00006004 SET_32 KERNEL32.dll_CloseHandle
+0x0000660e 0x00006008 SET_32 KERNEL32.dll_WriteFile
+0x0000661a 0x0000600c SET_32 KERNEL32.dll_ReadFile
+0x00006626 0x00006010 SET_32 KERNEL32.dll_SetFilePointer
+0x00006638 0x00006014 SET_32 KERNEL32.dll_CreateFileA
+0x00006646 0x00006018 SET_32 KERNEL32.dll_lstrlenA
+0x00006652 0x0000601c SET_32 KERNEL32.dll_lstrcatA
+0x0000665e 0x00006020 SET_32 KERNEL32.dll_GetProcAddress
+0x00006670 0x00006024 SET_32 KERNEL32.dll_LoadLibraryA
+0x00006680 0x00006028 SET_32 KERNEL32.dll_DeleteFileA
+0x0000668e 0x0000602c SET_32 KERNEL32.dll_Sleep
+0x00006696 0x00006030 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x000066ac 0x00006034 SET_32 KERNEL32.dll_GetCurrentDirectoryA
+0x000066d2 0x000060cc SET_32 SHELL32.dll_ShellExecuteA
+0x000066ee 0x00006040 SET_32 KERNEL32.dll_GetModuleHandleA
+0x00006702 0x00006044 SET_32 KERNEL32.dll_GetStartupInfoA
+0x00006714 0x00006048 SET_32 KERNEL32.dll_GetCommandLineA
+0x00006726 0x0000604c SET_32 KERNEL32.dll_GetVersion
+0x00006734 0x00006050 SET_32 KERNEL32.dll_ExitProcess
+0x00006742 0x00006054 SET_32 KERNEL32.dll_TerminateProcess
+0x00006756 0x00006058 SET_32 KERNEL32.dll_GetCurrentProcess
+0x0000676a 0x0000605c SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x00006786 0x00006060 SET_32 KERNEL32.dll_FreeEnvironmentStringsA
+0x000067a0 0x00006064 SET_32 KERNEL32.dll_FreeEnvironmentStringsW
+0x000067ba 0x00006068 SET_32 KERNEL32.dll_WideCharToMultiByte
+0x000067d0 0x0000606c SET_32 KERNEL32.dll_GetEnvironmentStrings
+0x000067e8 0x00006070 SET_32 KERNEL32.dll_GetEnvironmentStringsW
+0x00006802 0x00006074 SET_32 KERNEL32.dll_SetHandleCount
+0x00006814 0x00006078 SET_32 KERNEL32.dll_GetStdHandle
+0x00006824 0x0000607c SET_32 KERNEL32.dll_GetFileType
+0x00006832 0x00006080 SET_32 KERNEL32.dll_GetEnvironmentVariableA
+0x0000684c 0x00006084 SET_32 KERNEL32.dll_HeapDestroy
+0x0000685a 0x00006088 SET_32 KERNEL32.dll_HeapCreate
+0x00006868 0x0000608c SET_32 KERNEL32.dll_VirtualFree
+0x00006876 0x00006090 SET_32 KERNEL32.dll_HeapFree
+0x00006882 0x00006094 SET_32 KERNEL32.dll_RtlUnwind
+0x0000688e 0x00006098 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x000068a4 0x0000609c SET_32 KERNEL32.dll_GetStringTypeA
+0x000068b6 0x000060a0 SET_32 KERNEL32.dll_GetStringTypeW
+0x000068c8 0x000060a4 SET_32 KERNEL32.dll_GetLastError
+0x000068d8 0x000060a8 SET_32 KERNEL32.dll_HeapAlloc
+0x000068e4 0x000060ac SET_32 KERNEL32.dll_GetCPInfo
+0x000068f0 0x000060b0 SET_32 KERNEL32.dll_GetACP
+0x000068fa 0x000060b4 SET_32 KERNEL32.dll_GetOEMCP
+0x00006906 0x000060b8 SET_32 KERNEL32.dll_VirtualAlloc
+0x00006916 0x000060bc SET_32 KERNEL32.dll_HeapReAlloc
+0x00006924 0x000060c0 SET_32 KERNEL32.dll_SetStdHandle
+0x00006934 0x0000603c SET_32 KERNEL32.dll_LCMapStringA
+0x00006944 0x00006038 SET_32 KERNEL32.dll_LCMapStringW
+0x00006954 0x000060c4 SET_32 KERNEL32.dll_FlushFileBuffers
+
+
+51 relocations
+304640
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

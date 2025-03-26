@@ -1,0 +1,338 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xe00 0x10001000  0x1000 -r-x .text
+1   0x00001200  0x600 0x10002000  0x1000 -r-- .rdata
+2   0x00001800  0x400 0x10003000  0x1000 -rw- .data
+3   0x00001c00  0x200 0x10004000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10001bcd paddr=0x00000fcd haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10002028 NONE FUNC KERNEL32.dll CreateDirectoryA
+2   0x1000202c NONE FUNC KERNEL32.dll GetProcAddress
+3   0x10002030 NONE FUNC KERNEL32.dll CreateProcessA
+4   0x10002034 NONE FUNC KERNEL32.dll ExitProcess
+5   0x10002038 NONE FUNC KERNEL32.dll DeleteFileA
+6   0x1000203c NONE FUNC KERNEL32.dll Sleep
+7   0x10002040 NONE FUNC KERNEL32.dll CloseHandle
+8   0x10002044 NONE FUNC KERNEL32.dll GetLastError
+9   0x10002048 NONE FUNC KERNEL32.dll ExpandEnvironmentStringsA
+10  0x1000204c NONE FUNC KERNEL32.dll LoadLibraryA
+1   0x10002000 NONE FUNC ADVAPI32.dll RegCloseKey
+2   0x10002004 NONE FUNC ADVAPI32.dll RegOpenKeyExA
+3   0x10002008 NONE FUNC ADVAPI32.dll CryptAcquireContextA
+4   0x1000200c NONE FUNC ADVAPI32.dll CryptCreateHash
+5   0x10002010 NONE FUNC ADVAPI32.dll CryptHashData
+6   0x10002014 NONE FUNC ADVAPI32.dll CryptDeriveKey
+7   0x10002018 NONE FUNC ADVAPI32.dll CryptDestroyHash
+8   0x1000201c NONE FUNC ADVAPI32.dll CryptDecrypt
+9   0x10002020 NONE FUNC ADVAPI32.dll RegDeleteValueA
+1   0x10002064 NONE FUNC MSVCRT.dll   fread
+2   0x10002068 NONE FUNC MSVCRT.dll   malloc
+3   0x1000206c NONE FUNC MSVCRT.dll   fopen
+4   0x10002070 NONE FUNC MSVCRT.dll   memcpy
+5   0x10002074 NONE FUNC MSVCRT.dll   strlen
+6   0x10002078 NONE FUNC MSVCRT.dll   _beginthreadex
+7   0x1000207c NONE FUNC MSVCRT.dll   strstr
+8   0x10002080 NONE FUNC MSVCRT.dll   memset
+9   0x10002084 NONE FUNC MSVCRT.dll   ftell
+10  0x10002088 NONE FUNC MSVCRT.dll   fseek
+11  0x1000208c NONE FUNC MSVCRT.dll   strncmp
+12  0x10002090 NONE FUNC MSVCRT.dll   strncpy
+13  0x10002094 NONE FUNC MSVCRT.dll   strcpy
+14  0x10002098 NONE FUNC MSVCRT.dll   _initterm
+15  0x1000209c NONE FUNC MSVCRT.dll   _adjust_fdiv
+16  0x100020a0 NONE FUNC MSVCRT.dll   fwrite
+17  0x100020a4 NONE FUNC MSVCRT.dll   free
+18  0x100020a8 NONE FUNC MSVCRT.dll   strcat
+19  0x100020ac NONE FUNC MSVCRT.dll   fclose
+1   0x10002054 NONE FUNC LZ32.dll     LZOpenFileA
+2   0x10002058 NONE FUNC LZ32.dll     LZCopy
+3   0x1000205c NONE FUNC LZ32.dll     LZClose
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00001228 0x10002028 NONE FUNC 0    KERNEL32.dll imp.CreateDirectoryA
+2   0x0000122c 0x1000202c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+3   0x00001230 0x10002030 NONE FUNC 0    KERNEL32.dll imp.CreateProcessA
+4   0x00001234 0x10002034 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+5   0x00001238 0x10002038 NONE FUNC 0    KERNEL32.dll imp.DeleteFileA
+6   0x0000123c 0x1000203c NONE FUNC 0    KERNEL32.dll imp.Sleep
+7   0x00001240 0x10002040 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+8   0x00001244 0x10002044 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+9   0x00001248 0x10002048 NONE FUNC 0    KERNEL32.dll imp.ExpandEnvironmentStringsA
+10  0x0000124c 0x1000204c NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+1   0x00001200 0x10002000 NONE FUNC 0    ADVAPI32.dll imp.RegCloseKey
+2   0x00001204 0x10002004 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExA
+3   0x00001208 0x10002008 NONE FUNC 0    ADVAPI32.dll imp.CryptAcquireContextA
+4   0x0000120c 0x1000200c NONE FUNC 0    ADVAPI32.dll imp.CryptCreateHash
+5   0x00001210 0x10002010 NONE FUNC 0    ADVAPI32.dll imp.CryptHashData
+6   0x00001214 0x10002014 NONE FUNC 0    ADVAPI32.dll imp.CryptDeriveKey
+7   0x00001218 0x10002018 NONE FUNC 0    ADVAPI32.dll imp.CryptDestroyHash
+8   0x0000121c 0x1000201c NONE FUNC 0    ADVAPI32.dll imp.CryptDecrypt
+9   0x00001220 0x10002020 NONE FUNC 0    ADVAPI32.dll imp.RegDeleteValueA
+1   0x00001264 0x10002064 NONE FUNC 0    MSVCRT.dll   imp.fread
+2   0x00001268 0x10002068 NONE FUNC 0    MSVCRT.dll   imp.malloc
+3   0x0000126c 0x1000206c NONE FUNC 0    MSVCRT.dll   imp.fopen
+4   0x00001270 0x10002070 NONE FUNC 0    MSVCRT.dll   imp.memcpy
+5   0x00001274 0x10002074 NONE FUNC 0    MSVCRT.dll   imp.strlen
+6   0x00001278 0x10002078 NONE FUNC 0    MSVCRT.dll   imp._beginthreadex
+7   0x0000127c 0x1000207c NONE FUNC 0    MSVCRT.dll   imp.strstr
+8   0x00001280 0x10002080 NONE FUNC 0    MSVCRT.dll   imp.memset
+9   0x00001284 0x10002084 NONE FUNC 0    MSVCRT.dll   imp.ftell
+10  0x00001288 0x10002088 NONE FUNC 0    MSVCRT.dll   imp.fseek
+11  0x0000128c 0x1000208c NONE FUNC 0    MSVCRT.dll   imp.strncmp
+12  0x00001290 0x10002090 NONE FUNC 0    MSVCRT.dll   imp.strncpy
+13  0x00001294 0x10002094 NONE FUNC 0    MSVCRT.dll   imp.strcpy
+14  0x00001298 0x10002098 NONE FUNC 0    MSVCRT.dll   imp._initterm
+15  0x0000129c 0x1000209c NONE FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+16  0x000012a0 0x100020a0 NONE FUNC 0    MSVCRT.dll   imp.fwrite
+17  0x000012a4 0x100020a4 NONE FUNC 0    MSVCRT.dll   imp.free
+18  0x000012a8 0x100020a8 NONE FUNC 0    MSVCRT.dll   imp.strcat
+19  0x000012ac 0x100020ac NONE FUNC 0    MSVCRT.dll   imp.fclose
+1   0x00001254 0x10002054 NONE FUNC 0    LZ32.dll     imp.LZOpenFileA
+2   0x00001258 0x10002058 NONE FUNC 0    LZ32.dll     imp.LZCopy
+3   0x0000125c 0x1000205c NONE FUNC 0    LZ32.dll     imp.LZClose
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000013ce 0x100021ce 12  13   .rdata  ascii LoadLibraryA
+1   0x000013de 0x100021de 25  26   .rdata  ascii ExpandEnvironmentStringsA
+2   0x000013fa 0x100021fa 12  13   .rdata  ascii GetLastError
+3   0x0000140a 0x1000220a 11  12   .rdata  ascii CloseHandle
+4   0x00001418 0x10002218 5   6    .rdata  ascii Sleep
+5   0x00001420 0x10002220 11  12   .rdata  ascii DeleteFileA
+6   0x0000142e 0x1000222e 11  12   .rdata  ascii ExitProcess
+7   0x0000143c 0x1000223c 14  15   .rdata  ascii CreateProcessA
+8   0x0000144e 0x1000224e 14  15   .rdata  ascii GetProcAddress
+9   0x00001460 0x10002260 16  17   .rdata  ascii CreateDirectoryA
+10  0x00001472 0x10002272 12  13   .rdata  ascii KERNEL32.dll
+11  0x00001482 0x10002282 12  13   .rdata  ascii CryptDecrypt
+12  0x00001492 0x10002292 16  17   .rdata  ascii CryptDestroyHash
+13  0x000014a6 0x100022a6 14  15   .rdata  ascii CryptDeriveKey
+14  0x000014b8 0x100022b8 13  14   .rdata  ascii CryptHashData
+15  0x000014c8 0x100022c8 15  16   .rdata  ascii CryptCreateHash
+16  0x000014da 0x100022da 20  21   .rdata  ascii CryptAcquireContextA
+17  0x000014f2 0x100022f2 13  14   .rdata  ascii RegOpenKeyExA
+18  0x00001502 0x10002302 11  12   .rdata  ascii RegCloseKey
+19  0x00001510 0x10002310 15  16   .rdata  ascii RegDeleteValueA
+20  0x00001520 0x10002320 12  13   .rdata  ascii ADVAPI32.dll
+21  0x00001530 0x10002330 6   7    .rdata  ascii strcat
+22  0x0000153a 0x1000233a 4   5    .rdata  ascii free
+23  0x00001542 0x10002342 6   7    .rdata  ascii fclose
+24  0x0000154c 0x1000234c 6   7    .rdata  ascii fwrite
+25  0x00001556 0x10002356 5   6    .rdata  ascii fread
+26  0x0000155e 0x1000235e 6   7    .rdata  ascii malloc
+27  0x00001568 0x10002368 5   6    .rdata  ascii fopen
+28  0x00001570 0x10002370 6   7    .rdata  ascii memcpy
+29  0x0000157a 0x1000237a 6   7    .rdata  ascii strlen
+30  0x00001584 0x10002384 14  15   .rdata  ascii _beginthreadex
+31  0x00001596 0x10002396 6   7    .rdata  ascii strstr
+32  0x000015a0 0x100023a0 6   7    .rdata  ascii memset
+33  0x000015aa 0x100023aa 5   6    .rdata  ascii ftell
+34  0x000015b2 0x100023b2 5   6    .rdata  ascii fseek
+35  0x000015ba 0x100023ba 7   8    .rdata  ascii strncmp
+36  0x000015c4 0x100023c4 7   8    .rdata  ascii strncpy
+37  0x000015ce 0x100023ce 6   7    .rdata  ascii strcpy
+38  0x000015d6 0x100023d6 10  11   .rdata  ascii MSVCRT.dll
+39  0x000015e4 0x100023e4 9   10   .rdata  ascii _initterm
+40  0x000015f0 0x100023f0 12  13   .rdata  ascii _adjust_fdiv
+41  0x00001600 0x10002400 7   8    .rdata  ascii LZClose
+42  0x0000160a 0x1000240a 6   7    .rdata  ascii LZCopy
+43  0x00001614 0x10002414 11  12   .rdata  ascii LZOpenFileA
+44  0x00001620 0x10002420 8   9    .rdata  ascii LZ32.dll
+0   0x00001810 0x10003010 11  12   .data   ascii ntshrui.dll
+1   0x0000181c 0x1000301c 22  23   .data   ascii %SystemRoot%\System32\
+2   0x0000183c 0x1000303c 44  45   .data   ascii Microsoft DH SChannel Cryptographic Provider
+3   0x0000186c 0x1000306c 31  32   .data   ascii http://12.38.236.41/contact.htm
+4   0x00001970 0x10003170 13  14   .data   ascii  2010QBP//-->
+5   0x00001980 0x10003180 13  14   .data   ascii <!--<2010QBP 
+6   0x00001990 0x10003190 19  20   .data   ascii HKEY_CURRENT_CONFIG
+7   0x000019a4 0x100031a4 10  11   .data   ascii HKEY_USERS
+8   0x000019b0 0x100031b0 18  19   .data   ascii HKEY_LOCAL_MACHINE
+9   0x000019c4 0x100031c4 17  18   .data   ascii HKEY_CURRENT_USER
+10  0x000019d8 0x100031d8 17  18   .data   ascii HKEY_CLASSES_ROOT
+11  0x000019f0 0x100031f0 10  11   .data   ascii AutoUpdate
+12  0x000019fc 0x100031fc 63  64   .data   ascii HKEY_CURRENT_USER\AOFTWARE\Microsoft\Windows\CurrentVersion\run
+13  0x00001a3c 0x1000323c 4   5    .data   ascii .tmp
+14  0x00001a44 0x10003244 23  24   .data   ascii URLDownloadToCacheFileA
+15  0x00001a5c 0x1000325c 10  11   .data   ascii urlmon.dll
+16  0x00001a68 0x10003268 9   10   .data   ascii Hello@)!0
+17  0x00001a74 0x10003274 23  24   .data   ascii VRLDownloadToCacheFileA
+18  0x00001a8c 0x1000328c 21  22   .data   ascii DnsFlushResolverCache
+19  0x00001aa4 0x100032a4 10  11   .data   ascii dnsapi.dll
+20  0x00001ab0 0x100032b0 5   6    .data   ascii ~hf~\
+21  0x00001ab8 0x100032b8 5   6    .data   ascii Temp\
+22  0x00001ac0 0x100032c0 29  30   .data   ascii %USERPROFILE%\Local Settings\
+arch     x86
+baddr    0x10000000
+binsz    7680
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000c058
+compiled Tue Sep 28 07:14:02 2010
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x4ca195ba
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x210e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xe00
+  SizeOfInitializedData : 0xe00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1bcd
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x5000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 4
+  Product: 93 Name: Implib710 Version: 4035 Times: 7
+  Product: 1 Name: Import0 Version: 0 Times: 43
+  Product: 4 Name: Linker600 Version: 8168 Times: 2
+  Product: 10 Name: Utc12_C Version: 8168 Times: 4
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x20b4
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x4000
+  Size : 0x104
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0xb4
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+advapi32.dll
+msvcrt.dll
+lz32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000021cc 0x0000124c SET_32 KERNEL32.dll_LoadLibraryA
+0x000021dc 0x00001248 SET_32 KERNEL32.dll_ExpandEnvironmentStringsA
+0x000021f8 0x00001244 SET_32 KERNEL32.dll_GetLastError
+0x00002208 0x00001240 SET_32 KERNEL32.dll_CloseHandle
+0x00002216 0x0000123c SET_32 KERNEL32.dll_Sleep
+0x0000221e 0x00001238 SET_32 KERNEL32.dll_DeleteFileA
+0x0000222c 0x00001234 SET_32 KERNEL32.dll_ExitProcess
+0x0000223a 0x00001230 SET_32 KERNEL32.dll_CreateProcessA
+0x0000224c 0x0000122c SET_32 KERNEL32.dll_GetProcAddress
+0x0000225e 0x00001228 SET_32 KERNEL32.dll_CreateDirectoryA
+0x00002280 0x0000121c SET_32 ADVAPI32.dll_CryptDecrypt
+0x00002290 0x00001218 SET_32 ADVAPI32.dll_CryptDestroyHash
+0x000022a4 0x00001214 SET_32 ADVAPI32.dll_CryptDeriveKey
+0x000022b6 0x00001210 SET_32 ADVAPI32.dll_CryptHashData
+0x000022c6 0x0000120c SET_32 ADVAPI32.dll_CryptCreateHash
+0x000022d8 0x00001208 SET_32 ADVAPI32.dll_CryptAcquireContextA
+0x000022f0 0x00001204 SET_32 ADVAPI32.dll_RegOpenKeyExA
+0x00002300 0x00001200 SET_32 ADVAPI32.dll_RegCloseKey
+0x0000230e 0x00001220 SET_32 ADVAPI32.dll_RegDeleteValueA
+0x0000232e 0x000012a8 SET_32 MSVCRT.dll_strcat
+0x00002338 0x000012a4 SET_32 MSVCRT.dll_free
+0x00002340 0x000012ac SET_32 MSVCRT.dll_fclose
+0x0000234a 0x000012a0 SET_32 MSVCRT.dll_fwrite
+0x00002354 0x00001264 SET_32 MSVCRT.dll_fread
+0x0000235c 0x00001268 SET_32 MSVCRT.dll_malloc
+0x00002366 0x0000126c SET_32 MSVCRT.dll_fopen
+0x0000236e 0x00001270 SET_32 MSVCRT.dll_memcpy
+0x00002378 0x00001274 SET_32 MSVCRT.dll_strlen
+0x00002382 0x00001278 SET_32 MSVCRT.dll__beginthreadex
+0x00002394 0x0000127c SET_32 MSVCRT.dll_strstr
+0x0000239e 0x00001280 SET_32 MSVCRT.dll_memset
+0x000023a8 0x00001284 SET_32 MSVCRT.dll_ftell
+0x000023b0 0x00001288 SET_32 MSVCRT.dll_fseek
+0x000023b8 0x0000128c SET_32 MSVCRT.dll_strncmp
+0x000023c2 0x00001290 SET_32 MSVCRT.dll_strncpy
+0x000023cc 0x00001294 SET_32 MSVCRT.dll_strcpy
+0x000023e2 0x00001298 SET_32 MSVCRT.dll__initterm
+0x000023ee 0x0000129c SET_32 MSVCRT.dll__adjust_fdiv
+0x000023fe 0x0000125c SET_32 LZ32.dll_LZClose
+0x00002408 0x00001258 SET_32 LZ32.dll_LZCopy
+0x00002412 0x00001254 SET_32 LZ32.dll_LZOpenFileA
+
+
+41 relocations
+7680
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

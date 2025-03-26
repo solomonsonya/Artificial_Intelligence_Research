@@ -1,0 +1,287 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000030c0   0xd37 0x1000030c0   0xd37 -r-x 0.__TEXT.__text
+1   0x00003df8    0x84 0x100003df8    0x84 -r-x 1.__TEXT.__stubs
+2   0x00003e7c    0xec 0x100003e7c    0xec -r-x 2.__TEXT.__stub_helper
+3   0x00003f68    0x50 0x100003f68    0x50 -r-x 3.__TEXT.__cstring
+4   0x00003fb8    0x48 0x100003fb8    0x48 -r-x 4.__TEXT.__unwind_info
+5   0x00004000    0x20 0x100004000    0x20 -rw- 5.__DATA_CONST.__got
+6   0x00008000    0xb0 0x100008000    0xb0 -rw- 6.__DATA.__la_symbol_ptr
+7   0x000080b0  0x30fb 0x1000080b0  0x30fb -rw- 7.__DATA.__data
+8   0x00000000     0x0 0x10000b1b0   0x110 -rw- 8.__DATA.__bss
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x4000 0x100000000  0x4000 -r-x __TEXT
+1   0x00004000  0x4000 0x100004000  0x4000 -rw- __DATA_CONST
+2   0x00008000  0x4000 0x100008000  0x4000 -rw- __DATA
+3   0x0000c000   0x610 0x10000c000   0x610 -r-- __LINKEDIT
+
+[Entrypoints]
+vaddr=0x100003cf0 paddr=0x00003cf0 haddr=0x00000560 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x100003cf0 paddr=0x100003cf0
+[Imports]
+nth vaddr       bind type lib name
+――――――――――――――――――――――――――――――――――
+0   0x100003df8 NONE FUNC     __error
+1   0x100003dfe NONE FUNC     __memcpy_chk
+2   0x100003e04 NONE FUNC     __memset_chk
+3   0x100003e0a NONE FUNC     __sprintf_chk
+4   0x100003e10 NONE FUNC     __stack_chk_fail
+5   0x00000000  NONE FUNC     __stack_chk_guard
+6   0x00000000  NONE FUNC     __stderrp
+7   0x100003e16 NONE FUNC     atoll
+8   0x100003e1c NONE FUNC     calloc
+9   0x00000000  NONE FUNC     environ
+10  0x100003e22 NONE FUNC     execvp
+11  0x100003e28 NONE FUNC     exit
+12  0x100003e2e NONE FUNC     fprintf
+13  0x100003e34 NONE FUNC     getenv
+14  0x100003e3a NONE FUNC     getpid
+15  0x100003e40 NONE FUNC     malloc
+16  0x100003e46 NONE FUNC     memcmp
+17  0x100003e4c NONE FUNC     memset
+18  0x100003e52 NONE FUNC     putenv
+19  0x100003e58 NONE FUNC     sscanf
+20  0x100003e5e NONE FUNC     stat$INODE64
+21  0x100003e64 NONE FUNC     strdup
+22  0x100003e6a NONE FUNC     strerror
+23  0x100003e70 NONE FUNC     strlen
+24  0x100003e76 NONE FUNC     time
+25  0x00000000  NONE FUNC     dyld_stub_binder
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000 0x100000000 GLOBAL FUNC 0        __mh_execute_header
+1   0x05614542 0x05614542  LOCAL  FUNC 0        radr://5614542
+2   0x00003df8 0x100003df8 LOCAL  FUNC 0        imp.__error
+3   0x00003dfe 0x100003dfe LOCAL  FUNC 0        imp.__memcpy_chk
+4   0x00003e04 0x100003e04 LOCAL  FUNC 0        imp.__memset_chk
+5   0x00003e0a 0x100003e0a LOCAL  FUNC 0        imp.__sprintf_chk
+6   0x00003e10 0x100003e10 LOCAL  FUNC 0        imp.__stack_chk_fail
+7   0x00003e16 0x100003e16 LOCAL  FUNC 0        imp.atoll
+8   0x00003e1c 0x100003e1c LOCAL  FUNC 0        imp.calloc
+9   0x00003e22 0x100003e22 LOCAL  FUNC 0        imp.execvp
+10  0x00003e28 0x100003e28 LOCAL  FUNC 0        imp.exit
+11  0x00003e2e 0x100003e2e LOCAL  FUNC 0        imp.fprintf
+12  0x00003e34 0x100003e34 LOCAL  FUNC 0        imp.getenv
+13  0x00003e3a 0x100003e3a LOCAL  FUNC 0        imp.getpid
+14  0x00003e40 0x100003e40 LOCAL  FUNC 0        imp.malloc
+15  0x00003e46 0x100003e46 LOCAL  FUNC 0        imp.memcmp
+16  0x00003e4c 0x100003e4c LOCAL  FUNC 0        imp.memset
+17  0x00003e52 0x100003e52 LOCAL  FUNC 0        imp.putenv
+18  0x00003e58 0x100003e58 LOCAL  FUNC 0        imp.sscanf
+19  0x00003e5e 0x100003e5e LOCAL  FUNC 0        imp.stat$INODE64
+20  0x00003e64 0x100003e64 LOCAL  FUNC 0        imp.strdup
+21  0x00003e6a 0x100003e6a LOCAL  FUNC 0        imp.strerror
+22  0x00003e70 0x100003e70 LOCAL  FUNC 0        imp.strlen
+23  0x00003e76 0x100003e76 LOCAL  FUNC 0        imp.time
+24  0x000030c0 0x1000030c0 LOCAL  FUNC 0        func.1000030c0
+25  0x00003110 0x100003110 LOCAL  FUNC 0        func.100003110
+26  0x00003200 0x100003200 LOCAL  FUNC 0        func.100003200
+27  0x000032d0 0x1000032d0 LOCAL  FUNC 0        func.1000032d0
+28  0x00003400 0x100003400 LOCAL  FUNC 0        func.100003400
+29  0x000034c0 0x1000034c0 LOCAL  FUNC 0        func.1000034c0
+30  0x000036e0 0x1000036e0 LOCAL  FUNC 0        func.1000036e0
+31  0x000036f0 0x1000036f0 LOCAL  FUNC 0        func.1000036f0
+32  0x00003cf0 0x100003cf0 LOCAL  FUNC 0        func.100003cf0
+[Strings]
+nth paddr      vaddr       len size section            type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00003f68 0x100003f68 4   5    3.__TEXT.__cstring ascii x%lx
+1   0x00003f6d 0x100003f6d 7   8    3.__TEXT.__cstring ascii =%lu %d
+2   0x00003f75 0x100003f75 8   9    3.__TEXT.__cstring ascii %lu %d%c
+3   0x00003f80 0x100003f80 32  33   3.__TEXT.__cstring ascii E: neither argv[0] nor $_ works.
+4   0x00003fa1 0x100003fa1 11  12   3.__TEXT.__cstring ascii %s%s%s: %s\n
+5   0x00003fb1 0x100003fb1 6   7    3.__TEXT.__cstring ascii <null>
+arch     x86
+baddr    0x100000000
+binsz    50704
+bintype  mach0
+bits     64
+canary   true
+class    MACH064
+compiler clang
+crypto   false
+endian   little
+havecode true
+intrp    /usr/lib/dyld
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  x86 64 all
+nx       false
+os       darwin
+pic      true
+relocs   false
+sanitize false
+static   false
+stripped true
+subsys   darwin
+va       true
+pf.mach0_header @ 0x100000000
+0x100000000  Magic       0xfeedfacf
+0x100000004  CpuType     0x1000007
+0x100000008  CpuSubType  0x3
+0x10000000c  FileType    0x2
+0x100000010  nCmds       16
+0x100000014  sizeOfCmds  1448
+0x100000018  Flags       0x200085
+pf.mach0_segment64 @ 0x100000020
+0x100000020  cmd       0 0x19 LC_SEGMENT_64
+0x100000024  cmdsize     72
+0x100000028  name        __PAGEZERO
+pf.mach0_segment64 @ 0x100000068
+0x100000068  cmd       1 0x19 LC_SEGMENT_64
+0x10000006c  cmdsize     472
+0x100000070  name        __TEXT
+pf.mach0_section64 @ 0x1000000b0
+pf.mach0_section64 @ 0x100000100
+pf.mach0_section64 @ 0x100000150
+pf.mach0_section64 @ 0x1000001a0
+pf.mach0_section64 @ 0x1000001f0
+pf.mach0_segment64 @ 0x100000240
+0x100000240  cmd       2 0x19 LC_SEGMENT_64
+0x100000244  cmdsize     152
+0x100000248  name        __DATA_CONST
+pf.mach0_section64 @ 0x100000288
+pf.mach0_segment64 @ 0x1000002d8
+0x1000002d8  cmd       3 0x19 LC_SEGMENT_64
+0x1000002dc  cmdsize     312
+0x1000002e0  name        __DATA
+pf.mach0_section64 @ 0x100000320
+pf.mach0_section64 @ 0x100000370
+pf.mach0_section64 @ 0x1000003c0
+pf.mach0_segment64 @ 0x100000410
+0x100000410  cmd       4 0x19 LC_SEGMENT_64
+0x100000414  cmdsize     72
+0x100000418  name        __LINKEDIT
+pf.mach0_dyld_info_only_command @ 0x100000458
+0x100000458  cmd       5 0x80000022 LC_DYLD_INFO_ONLY
+0x10000045c  cmdsize     48
+pf.mach0_symtab_command @ 0x100000488
+0x100000488  cmd       6 0x2 LC_SYMTAB
+0x10000048c  cmdsize     24
+pf.mach0_dysymtab_command @ 0x1000004a0
+0x1000004a0  cmd       7 0xb LC_DYSYMTAB
+0x1000004a4  cmdsize     80
+pf.mach0_load_dylinker_command @ 0x1000004f0
+0x1000004f0  cmd       8 0xe LC_LOAD_DYLINKER
+0x1000004f4  cmdsize     32
+pf.mach0_uuid_command @ 0x100000510
+0x100000510  cmd       9 0x1b LC_UUID
+0x100000514  cmdsize     24
+0x100000518  uuid        b52cfbac69d539ac8f3fd5c7d0f9b5d8
+pf.mach0_build_version_command @ 0x100000528
+0x100000528  cmd      10 0x32 LC_BUILD_VERSION
+0x10000052c  cmdsize     32
+0x100000530  platform    macOS
+0x100000534  minos       11.0.0
+0x100000538  sdk         11.1.0
+0x10000053c  ntools      1
+pf.mach0_build_version_tool @ 0x100000540
+0x100000540  tool        ld
+0x100000544  version     609.8.0
+pf.mach0_source_version_command @ 0x100000548
+0x100000548  cmd      11 0x2a LC_SOURCE_VERSION
+0x10000054c  cmdsize     16
+pf.mach0_entry_point_command @ 0x100000558
+0x100000558  cmd      12 0x80000028 LC_MAIN
+0x10000055c  cmdsize     24
+0x100000560  entry0      0x3cf0
+0x100000568  stacksize   0x0
+pf.mach0_dylib_command @ 0x100000570
+0x100000570  cmd      13 0xc LC_LOAD_DYLIB
+0x100000574  cmdsize     56
+0x100000580  current     1292.60.1
+0x100000584  compat      1.0.0
+0x100000588  load_dylib  /usr/lib/libSystem.B.dylib
+pf.mach0_function_starts_command @ 0x1000005a8
+0x1000005a8  cmd      14 0x26 LC_FUNCTION_STARTS
+0x1000005ac  cmdsize     16
+pf.mach0_data_in_code_command @ 0x1000005b8
+0x1000005b8  cmd      15 0x29 LC_DATA_IN_CODE
+0x1000005bc  cmdsize     16
+[Linked libraries]
+/usr/lib/libSystem.B.dylib
+
+1 library
+[Relocations]
+
+vaddr       paddr      type   name
+――――――――――――――――――――――――――――――――――
+0x100004000 0x00004000 SET_64 __stack_chk_guard
+0x100004008 0x00004008 SET_64 __stderrp
+0x100004010 0x00004010 SET_64 environ
+0x100004018 0x00004018 SET_64 dyld_stub_binder
+0x100004020 0x00004020 SET_64 __error
+0x100004028 0x00004028 SET_64 __memcpy_chk
+0x100004030 0x00004030 SET_64 __memset_chk
+0x100004038 0x00004038 SET_64 __sprintf_chk
+0x100004040 0x00004040 SET_64 __stack_chk_fail
+0x100004048 0x00004048 SET_64 atoll
+0x100004050 0x00004050 SET_64 calloc
+0x100004058 0x00004058 SET_64 execvp
+0x100004060 0x00004060 SET_64 exit
+0x100004068 0x00004068 SET_64 fprintf
+0x100004070 0x00004070 SET_64 getenv
+0x100004078 0x00004078 SET_64 getpid
+0x100004080 0x00004080 SET_64 malloc
+0x100004088 0x00004088 SET_64 memcmp
+0x100004090 0x00004090 SET_64 memset
+0x100004098 0x00004098 SET_64 putenv
+0x1000040a0 0x000040a0 SET_64 sscanf
+0x1000040a8 0x000040a8 SET_64 stat$INODE64
+0x1000040b0 0x000040b0 SET_64 strdup
+0x1000040b8 0x000040b8 SET_64 strerror
+0x1000040c0 0x000040c0 SET_64 strlen
+0x1000040c8 0x000040c8 SET_64 time
+0x100008000 0x00008000 SET_64 __error
+0x100008008 0x00008008 SET_64 __memcpy_chk
+0x100008010 0x00008010 SET_64 __memset_chk
+0x100008018 0x00008018 SET_64 __sprintf_chk
+0x100008020 0x00008020 SET_64 __stack_chk_fail
+0x100008028 0x00008028 SET_64 atoll
+0x100008030 0x00008030 SET_64 calloc
+0x100008038 0x00008038 SET_64 execvp
+0x100008040 0x00008040 SET_64 exit
+0x100008048 0x00008048 SET_64 fprintf
+0x100008050 0x00008050 SET_64 getenv
+0x100008058 0x00008058 SET_64 getpid
+0x100008060 0x00008060 SET_64 malloc
+0x100008068 0x00008068 SET_64 memcmp
+0x100008070 0x00008070 SET_64 memset
+0x100008078 0x00008078 SET_64 putenv
+0x100008080 0x00008080 SET_64 sscanf
+0x100008088 0x00008088 SET_64 stat$INODE64
+0x100008090 0x00008090 SET_64 strdup
+0x100008098 0x00008098 SET_64 strerror
+0x1000080a0 0x000080a0 SET_64 strlen
+0x1000080a8 0x000080a8 SET_64 time
+
+
+48 relocations
+50704
+Section to Segment mapping:
+Segment      Section
+--------------------
+__TEXT       0.__TEXT.__text 1.__TEXT.__stubs 2.__TEXT.__stub_helper 3.__TEXT.__cstring 4.__TEXT.__unwind_info 
+__DATA_CONST 5.__DATA_CONST.__got 
+__DATA       6.__DATA.__la_symbol_ptr 7.__DATA.__data 8.__DATA.__bss 
+__LINKEDIT   
+
+

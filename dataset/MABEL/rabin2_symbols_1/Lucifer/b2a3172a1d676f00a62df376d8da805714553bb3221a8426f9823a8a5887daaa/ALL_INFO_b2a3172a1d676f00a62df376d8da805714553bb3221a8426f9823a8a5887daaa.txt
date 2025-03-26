@@ -1,0 +1,461 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x5600 0x10001000  0x6000 -r-x .text
+1   0x00005a00  0x1000 0x10007000  0x1000 -r-- .rdata
+2   0x00006a00   0x400 0x10008000  0x1000 -rw- .data
+3   0x00006e00   0x600 0x10009000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10006040 paddr=0x00005440 haddr=0x00000130 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10007000 NONE FUNC KERNEL32.dll GetVersion
+2   0x10007004 NONE FUNC KERNEL32.dll GetCurrentProcessId
+3   0x10007008 NONE FUNC KERNEL32.dll GetCurrentThreadId
+4   0x1000700c NONE FUNC KERNEL32.dll GetTickCount
+5   0x10007010 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+6   0x10007014 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+7   0x10007018 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+8   0x1000701c NONE FUNC KERNEL32.dll GetCurrentProcess
+9   0x10007020 NONE FUNC KERNEL32.dll TerminateProcess
+10  0x10007024 NONE FUNC KERNEL32.dll InterlockedCompareExchange
+11  0x10007028 NONE FUNC KERNEL32.dll Sleep
+12  0x1000702c NONE FUNC KERNEL32.dll InterlockedExchange
+13  0x10007030 NONE FUNC KERNEL32.dll RtlUnwind
+14  0x10007034 NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+1   0x100070c8 NONE FUNC posh-0.dll   POSH_SwapU32
+1   0x100070d0 NONE FUNC ucl.dll      ucl_crc32
+2   0x100070d4 NONE FUNC ucl.dll      ucl_nrv2d_99_compress
+3   0x100070d8 NONE FUNC ucl.dll      __ucl_init2
+4   0x100070dc NONE FUNC ucl.dll      ucl_nrv2d_decompress_8
+8   0x1000703c NONE FUNC WS2_32.dll   htonl
+1   0x10007044 NONE FUNC msvcrt.dll   _iob
+2   0x10007048 NONE FUNC msvcrt.dll   calloc
+3   0x1000704c NONE FUNC msvcrt.dll   memcpy
+4   0x10007050 NONE FUNC msvcrt.dll   memset
+5   0x10007054 NONE FUNC msvcrt.dll   tolower
+6   0x10007058 NONE FUNC msvcrt.dll   memmove
+7   0x1000705c NONE FUNC msvcrt.dll   pow
+8   0x10007060 NONE FUNC msvcrt.dll   free
+9   0x10007064 NONE FUNC msvcrt.dll   srand
+10  0x10007068 NONE FUNC msvcrt.dll   time
+11  0x1000706c NONE FUNC msvcrt.dll   fread
+12  0x10007070 NONE FUNC msvcrt.dll   ftell
+13  0x10007074 NONE FUNC msvcrt.dll   fclose
+14  0x10007078 NONE FUNC msvcrt.dll   fseek
+15  0x1000707c NONE FUNC msvcrt.dll   fwrite
+16  0x10007080 NONE FUNC msvcrt.dll   fgets
+17  0x10007084 NONE FUNC msvcrt.dll   _snprintf
+18  0x10007088 NONE FUNC msvcrt.dll   floor
+19  0x1000708c NONE FUNC msvcrt.dll   rand
+20  0x10007090 NONE FUNC msvcrt.dll   _ftime
+21  0x10007094 NONE FUNC msvcrt.dll   malloc
+22  0x10007098 NONE FUNC msvcrt.dll   sscanf
+23  0x1000709c NONE FUNC msvcrt.dll   strcspn
+24  0x100070a0 NONE FUNC msvcrt.dll   strcat
+25  0x100070a4 NONE FUNC msvcrt.dll   sprintf
+26  0x100070a8 NONE FUNC msvcrt.dll   strlen
+27  0x100070ac NONE FUNC msvcrt.dll   _XcptFilter
+28  0x100070b0 NONE FUNC msvcrt.dll   _initterm
+29  0x100070b4 NONE FUNC msvcrt.dll   _amsg_exit
+30  0x100070b8 NONE FUNC msvcrt.dll   _adjust_fdiv
+31  0x100070bc NONE FUNC msvcrt.dll   strncmp
+32  0x100070c0 NONE FUNC msvcrt.dll   fopen
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000042d 0x1000102d GLOBAL FUNC 0    trfo-2.dll   TfBase64Decode
+2   0x00000594 0x10001194 GLOBAL FUNC 0    trfo-2.dll   TfBase64Encode
+3   0x00000af7 0x100016f7 GLOBAL FUNC 0    trfo-2.dll   TfBuildPatternString
+4   0x00000b0b 0x1000170b GLOBAL FUNC 0    trfo-2.dll   TfBuildPatternUnicodeString
+5   0x00000b2a 0x1000172a GLOBAL FUNC 0    trfo-2.dll   TfBuildRandomString
+6   0x00000b40 0x10001740 GLOBAL FUNC 0    trfo-2.dll   TfBuildRandomUnicodeString
+7   0x00000b65 0x10001765 GLOBAL FUNC 0    trfo-2.dll   TfChecksumXor32
+8   0x00000bb7 0x100017b7 GLOBAL FUNC 0    trfo-2.dll   TfCrc32
+9   0x00002312 0x10002f12 GLOBAL FUNC 0    trfo-2.dll   TfDulEncoder
+10  0x000026d9 0x100032d9 GLOBAL FUNC 0    trfo-2.dll   TfEscapeJavaScriptBuffer
+11  0x0000067f 0x1000127f GLOBAL FUNC 0    trfo-2.dll   TfFillPattern
+12  0x00000702 0x10001302 GLOBAL FUNC 0    trfo-2.dll   TfFillRandom
+13  0x0000072e 0x1000132e GLOBAL FUNC 0    trfo-2.dll   TfFillRandomUnicode
+14  0x0000249f 0x1000309f GLOBAL FUNC 0    trfo-2.dll   TfFree
+15  0x000026ba 0x100032ba GLOBAL FUNC 0    trfo-2.dll   TfGetUserInput
+16  0x00000849 0x10001449 GLOBAL FUNC 0    trfo-2.dll   TfHasBadBytes
+17  0x00002581 0x10003181 GLOBAL FUNC 0    trfo-2.dll   TfHmacMd5Final
+18  0x000024c0 0x100030c0 GLOBAL FUNC 0    trfo-2.dll   TfHmacMd5Init
+19  0x0000257c 0x1000317c GLOBAL FUNC 0    trfo-2.dll   TfHmacMd5Update
+20  0x000029ba 0x100035ba GLOBAL FUNC 0    trfo-2.dll   TfLzCompress
+21  0x000027af 0x100033af GLOBAL FUNC 0    trfo-2.dll   TfLzDecompress
+22  0x000024a5 0x100030a5 GLOBAL FUNC 0    trfo-2.dll   TfMakeGfaHash
+23  0x00003205 0x10003e05 GLOBAL FUNC 0    trfo-2.dll   TfMd4
+24  0x00003e4b 0x10004a4b GLOBAL FUNC 0    trfo-2.dll   TfMd5Final
+25  0x0000338d 0x10003f8d GLOBAL FUNC 0    trfo-2.dll   TfMd5Init
+26  0x00003db0 0x100049b0 GLOBAL FUNC 0    trfo-2.dll   TfMd5Update
+27  0x00003f73 0x10004b73 GLOBAL FUNC 0    trfo-2.dll   TfNrvCalculateMaxExpansion
+28  0x00003ed3 0x10004ad3 GLOBAL FUNC 0    trfo-2.dll   TfNrvCompress
+29  0x00003f26 0x10004b26 GLOBAL FUNC 0    trfo-2.dll   TfNrvDecompress
+30  0x0000406f 0x10004c6f GLOBAL FUNC 0    trfo-2.dll   TfRandomAscii
+31  0x00004080 0x10004c80 GLOBAL FUNC 0    trfo-2.dll   TfRandomBase64
+32  0x000040bf 0x10004cbf GLOBAL FUNC 0    trfo-2.dll   TfRandomByte
+33  0x00003ffc 0x10004bfc GLOBAL FUNC 0    trfo-2.dll   TfRandomByteFromAlphabet
+34  0x00004039 0x10004c39 GLOBAL FUNC 0    trfo-2.dll   TfRandomByteFromRange
+35  0x00003f9a 0x10004b9a GLOBAL FUNC 0    trfo-2.dll   TfRandomInt
+36  0x0000087c 0x1000147c GLOBAL FUNC 0    trfo-2.dll   TfRandomizeBuffer
+37  0x0000412b 0x10004d2b GLOBAL FUNC 0    trfo-2.dll   TfRc4Encrypt
+38  0x000040d3 0x10004cd3 GLOBAL FUNC 0    trfo-2.dll   TfRc4Init
+39  0x000025c0 0x100031c0 GLOBAL FUNC 0    trfo-2.dll   TfReadFileIntoBuffer
+40  0x000042a9 0x10004ea9 GLOBAL FUNC 0    trfo-2.dll   TfRollingXorDecode
+41  0x0000422a 0x10004e2a GLOBAL FUNC 0    trfo-2.dll   TfRollingXorEncode
+42  0x00003f84 0x10004b84 GLOBAL FUNC 0    trfo-2.dll   TfSeedRandom
+43  0x00000b60 0x10001760 GLOBAL FUNC 0    trfo-2.dll   TfStrICmp
+44  0x00000896 0x10001496 GLOBAL FUNC 0    trfo-2.dll   TfStrcasecmp
+45  0x000008de 0x100014de GLOBAL FUNC 0    trfo-2.dll   TfStrncasecmp
+46  0x00004328 0x10004f28 GLOBAL FUNC 0    trfo-2.dll   TfUuDecode
+47  0x00004505 0x10005105 GLOBAL FUNC 0    trfo-2.dll   TfUuEncode
+48  0x00002671 0x10003271 GLOBAL FUNC 0    trfo-2.dll   TfWriteBufferIntoFile
+49  0x0000092f 0x1000152f GLOBAL FUNC 0    trfo-2.dll   TfXorBuffer
+50  0x00004965 0x10005565 GLOBAL FUNC 0    trfo-2.dll   TfXorw2Encoder
+51  0x0000470c 0x1000530c GLOBAL FUNC 0    trfo-2.dll   TfXorwEncoder
+1   0x00005a00 0x10007000 NONE   FUNC 0    KERNEL32.dll imp.GetVersion
+2   0x00005a04 0x10007004 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+3   0x00005a08 0x10007008 NONE   FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+4   0x00005a0c 0x1000700c NONE   FUNC 0    KERNEL32.dll imp.GetTickCount
+5   0x00005a10 0x10007010 NONE   FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+6   0x00005a14 0x10007014 NONE   FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+7   0x00005a18 0x10007018 NONE   FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+8   0x00005a1c 0x1000701c NONE   FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+9   0x00005a20 0x10007020 NONE   FUNC 0    KERNEL32.dll imp.TerminateProcess
+10  0x00005a24 0x10007024 NONE   FUNC 0    KERNEL32.dll imp.InterlockedCompareExchange
+11  0x00005a28 0x10007028 NONE   FUNC 0    KERNEL32.dll imp.Sleep
+12  0x00005a2c 0x1000702c NONE   FUNC 0    KERNEL32.dll imp.InterlockedExchange
+13  0x00005a30 0x10007030 NONE   FUNC 0    KERNEL32.dll imp.RtlUnwind
+14  0x00005a34 0x10007034 NONE   FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+1   0x00005ac8 0x100070c8 NONE   FUNC 0    posh-0.dll   imp.POSH_SwapU32
+1   0x00005ad0 0x100070d0 NONE   FUNC 0    ucl.dll      imp.ucl_crc32
+2   0x00005ad4 0x100070d4 NONE   FUNC 0    ucl.dll      imp.ucl_nrv2d_99_compress
+3   0x00005ad8 0x100070d8 NONE   FUNC 0    ucl.dll      imp.__ucl_init2
+4   0x00005adc 0x100070dc NONE   FUNC 0    ucl.dll      imp.ucl_nrv2d_decompress_8
+8   0x00005a3c 0x1000703c NONE   FUNC 0    WS2_32.dll   imp.htonl
+1   0x00005a44 0x10007044 NONE   FUNC 0    msvcrt.dll   imp._iob
+2   0x00005a48 0x10007048 NONE   FUNC 0    msvcrt.dll   imp.calloc
+3   0x00005a4c 0x1000704c NONE   FUNC 0    msvcrt.dll   imp.memcpy
+4   0x00005a50 0x10007050 NONE   FUNC 0    msvcrt.dll   imp.memset
+5   0x00005a54 0x10007054 NONE   FUNC 0    msvcrt.dll   imp.tolower
+6   0x00005a58 0x10007058 NONE   FUNC 0    msvcrt.dll   imp.memmove
+7   0x00005a5c 0x1000705c NONE   FUNC 0    msvcrt.dll   imp.pow
+8   0x00005a60 0x10007060 NONE   FUNC 0    msvcrt.dll   imp.free
+9   0x00005a64 0x10007064 NONE   FUNC 0    msvcrt.dll   imp.srand
+10  0x00005a68 0x10007068 NONE   FUNC 0    msvcrt.dll   imp.time
+11  0x00005a6c 0x1000706c NONE   FUNC 0    msvcrt.dll   imp.fread
+12  0x00005a70 0x10007070 NONE   FUNC 0    msvcrt.dll   imp.ftell
+13  0x00005a74 0x10007074 NONE   FUNC 0    msvcrt.dll   imp.fclose
+14  0x00005a78 0x10007078 NONE   FUNC 0    msvcrt.dll   imp.fseek
+15  0x00005a7c 0x1000707c NONE   FUNC 0    msvcrt.dll   imp.fwrite
+16  0x00005a80 0x10007080 NONE   FUNC 0    msvcrt.dll   imp.fgets
+17  0x00005a84 0x10007084 NONE   FUNC 0    msvcrt.dll   imp._snprintf
+18  0x00005a88 0x10007088 NONE   FUNC 0    msvcrt.dll   imp.floor
+19  0x00005a8c 0x1000708c NONE   FUNC 0    msvcrt.dll   imp.rand
+20  0x00005a90 0x10007090 NONE   FUNC 0    msvcrt.dll   imp._ftime
+21  0x00005a94 0x10007094 NONE   FUNC 0    msvcrt.dll   imp.malloc
+22  0x00005a98 0x10007098 NONE   FUNC 0    msvcrt.dll   imp.sscanf
+23  0x00005a9c 0x1000709c NONE   FUNC 0    msvcrt.dll   imp.strcspn
+24  0x00005aa0 0x100070a0 NONE   FUNC 0    msvcrt.dll   imp.strcat
+25  0x00005aa4 0x100070a4 NONE   FUNC 0    msvcrt.dll   imp.sprintf
+26  0x00005aa8 0x100070a8 NONE   FUNC 0    msvcrt.dll   imp.strlen
+27  0x00005aac 0x100070ac NONE   FUNC 0    msvcrt.dll   imp._XcptFilter
+28  0x00005ab0 0x100070b0 NONE   FUNC 0    msvcrt.dll   imp._initterm
+29  0x00005ab4 0x100070b4 NONE   FUNC 0    msvcrt.dll   imp._amsg_exit
+30  0x00005ab8 0x100070b8 NONE   FUNC 0    msvcrt.dll   imp._adjust_fdiv
+31  0x00005abc 0x100070bc NONE   FUNC 0    msvcrt.dll   imp.strncmp
+32  0x00005ac0 0x100070c0 NONE   FUNC 0    msvcrt.dll   imp.fopen
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00005b00 0x10007100 64  65   .rdata  ascii   ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+1   0x00005b48 0x10007148 80  81   .rdata  ascii   |$$$}rstuvwxyz{$$$$$$$>?@ABCDEFGHIJKLMNOPQRSTUVW$$$$$$XYZ[\]^_`abcdefghijklmnopq
+2   0x00005ba0 0x100071a0 10  11   .rdata  ascii   PQRSTUVWPY
+3   0x00005c8c 0x1000728c 12  52   .rdata  utf32le \b\t
+4   0x00005cc0 0x100072c0 39  40   .rdata  ascii   AHPQPj0j0Uj04A4CPa4t0D90kD93J0D10AKuzt0
+5   0x00005da6 0x100073a6 4   5    .rdata  ascii   7@rb
+6   0x00005db0 0x100073b0 20  21   .rdata  ascii   \u%02x%02x\u%02x%02x
+7   0x00005dcf 0x100073cf 65  66   .rdata  ascii   ?ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+8   0x00005e18 0x10007418 64  65   .rdata  ascii   `!"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_
+9   0x00005e60 0x10007460 14  15   .rdata  ascii   begin %o %[^\n]
+10  0x00005e70 0x10007470 5   6    .rdata  ascii   %s%s\n
+11  0x00005e78 0x10007478 10  11   .rdata  ascii   begin 644 
+12  0x00005e84 0x10007484 5   6    .rdata  ascii   \nend\n
+13  0x00005ebd 0x100074bd 5   6    .rdata  ascii   ('8PW
+14  0x00005ec6 0x100074c6 5   6    .rdata  ascii   700PP
+15  0x00005ed8 0x100074d8 17  18   .rdata  ascii   ```hhh\b\b\axppwpp\b\b
+16  0x00006162 0x10007762 10  11   .rdata  ascii   GetVersion
+17  0x0000616e 0x1000776e 12  13   .rdata  ascii   KERNEL32.dll
+18  0x0000617e 0x1000777e 12  13   .rdata  ascii   POSH_SwapU32
+19  0x0000618c 0x1000778c 10  11   .rdata  ascii   posh-0.dll
+20  0x0000619a 0x1000779a 9   10   .rdata  ascii   ucl_crc32
+21  0x000061a6 0x100077a6 21  22   .rdata  ascii   ucl_nrv2d_99_compress
+22  0x000061be 0x100077be 11  12   .rdata  ascii   __ucl_init2
+23  0x000061cc 0x100077cc 22  23   .rdata  ascii   ucl_nrv2d_decompress_8
+24  0x000061e4 0x100077e4 7   8    .rdata  ascii   ucl.dll
+25  0x000061ec 0x100077ec 10  11   .rdata  ascii   WS2_32.dll
+26  0x000061fa 0x100077fa 4   5    .rdata  ascii   _iob
+27  0x00006202 0x10007802 6   7    .rdata  ascii   calloc
+28  0x0000620c 0x1000780c 6   7    .rdata  ascii   memcpy
+29  0x00006216 0x10007816 6   7    .rdata  ascii   memset
+30  0x00006220 0x10007820 7   8    .rdata  ascii   tolower
+31  0x0000622a 0x1000782a 7   8    .rdata  ascii   memmove
+32  0x0000623a 0x1000783a 4   5    .rdata  ascii   free
+33  0x00006242 0x10007842 5   6    .rdata  ascii   srand
+34  0x0000624a 0x1000784a 4   5    .rdata  ascii   time
+35  0x00006252 0x10007852 5   6    .rdata  ascii   fread
+36  0x0000625a 0x1000785a 5   6    .rdata  ascii   ftell
+37  0x00006262 0x10007862 6   7    .rdata  ascii   fclose
+38  0x0000626c 0x1000786c 5   6    .rdata  ascii   fseek
+39  0x00006274 0x10007874 5   6    .rdata  ascii   fopen
+40  0x0000627c 0x1000787c 6   7    .rdata  ascii   fwrite
+41  0x00006286 0x10007886 5   6    .rdata  ascii   fgets
+42  0x0000628e 0x1000788e 9   10   .rdata  ascii   _snprintf
+43  0x0000629a 0x1000789a 5   6    .rdata  ascii   floor
+44  0x000062a2 0x100078a2 4   5    .rdata  ascii   rand
+45  0x000062aa 0x100078aa 6   7    .rdata  ascii   _ftime
+46  0x000062b4 0x100078b4 6   7    .rdata  ascii   malloc
+47  0x000062be 0x100078be 6   7    .rdata  ascii   sscanf
+48  0x000062c8 0x100078c8 7   8    .rdata  ascii   strcspn
+49  0x000062d2 0x100078d2 7   8    .rdata  ascii   strncmp
+50  0x000062dc 0x100078dc 6   7    .rdata  ascii   strcat
+51  0x000062e6 0x100078e6 7   8    .rdata  ascii   sprintf
+52  0x000062f0 0x100078f0 6   7    .rdata  ascii   strlen
+53  0x000062f8 0x100078f8 10  11   .rdata  ascii   msvcrt.dll
+54  0x00006306 0x10007906 11  12   .rdata  ascii   _XcptFilter
+55  0x00006314 0x10007914 9   10   .rdata  ascii   _initterm
+56  0x00006320 0x10007920 10  11   .rdata  ascii   _amsg_exit
+57  0x0000632e 0x1000792e 12  13   .rdata  ascii   _adjust_fdiv
+58  0x0000633e 0x1000793e 9   10   .rdata  ascii   RtlUnwind
+59  0x0000634a 0x1000794a 19  20   .rdata  ascii   InterlockedExchange
+60  0x00006360 0x10007960 5   6    .rdata  ascii   Sleep
+61  0x00006368 0x10007968 26  27   .rdata  ascii   InterlockedCompareExchange
+62  0x00006386 0x10007986 16  17   .rdata  ascii   TerminateProcess
+63  0x0000639a 0x1000799a 17  18   .rdata  ascii   GetCurrentProcess
+64  0x000063ae 0x100079ae 24  25   .rdata  ascii   UnhandledExceptionFilter
+65  0x000063ca 0x100079ca 27  28   .rdata  ascii   SetUnhandledExceptionFilter
+66  0x000063e8 0x100079e8 23  24   .rdata  ascii   QueryPerformanceCounter
+67  0x00006402 0x10007a02 12  13   .rdata  ascii   GetTickCount
+68  0x00006412 0x10007a12 18  19   .rdata  ascii   GetCurrentThreadId
+69  0x00006428 0x10007a28 19  20   .rdata  ascii   GetCurrentProcessId
+70  0x0000643e 0x10007a3e 23  24   .rdata  ascii   GetSystemTimeAsFileTime
+71  0x0000662e 0x10007c2e 7   16   .rdata  utf16le \a\b\t\n\v\f\r
+72  0x00006660 0x10007c60 419 840  .rdata  utf16le  !"#$%&'()*+,-./012牴潦㈭搮汬吀䉦獡㙥䐴捥摯e晔慂敳㐶湅潣敤吀䉦極摬慐瑴牥卮牴湩g晔畂汩偤瑡整湲湕捩摯卥牴湩g晔畂汩剤湡潤卭牴湩g晔畂汩剤湡潤啭楮潣敤瑓楲杮吀䍦敨正畳塭牯㈳吀䍦捲㈳吀䑦汵湅潣敤r晔獅慣数慊慶捓楲瑰畂晦牥吀䙦汩偬瑡整湲吀䙦汩剬湡潤m晔楆汬慒摮浯湕捩摯e晔牆敥吀䝦瑥獕牥湉異t晔慈䉳摡祂整s晔浈捡摍䘵湩污吀䡦慭䵣㕤湉瑩吀䡦慭䵣㕤灕慤整吀䱦䍺浯牰獥s晔穌敄潣灭敲獳吀䵦歡䝥慦慈桳吀䵦㑤吀䵦㕤楆慮l晔摍䤵楮t晔摍唵摰瑡e晔牎䍶污畣慬整慍䕸灸湡楳湯吀书癲潃灭敲獳吀书癲敄潣灭敲獳吀剦湡潤䅭捳楩吀剦湡潤䉭獡㙥4晔慒摮浯祂整吀剦湡潤䉭瑹䙥潲䅭灬慨敢t晔慒摮浯祂整牆浯慒杮e晔慒摮浯湉t晔慒摮浯穩䉥晵敦r晔捒䔴据祲瑰吀剦㑣湉瑩吀剦慥䙤汩䥥瑮䉯晵敦r晔潒汬湩塧牯敄潣敤吀剦汯楬杮潘䕲据摯e晔敓摥慒摮浯吀卦牴䍉灭吀卦牴慣敳浣p晔瑓湲慣敳浣p晔畕敄潣敤吀啦䕵据摯e晔牗瑩䉥晵敦䥲瑮䙯汩e晔潘䉲晵敦r晔潘睲䔲据摯牥吀塦牯䕷据摯牥 blocks=Basic Latin,CJK Unified Ideographs,Enclosed CJK Letters and Months,CJK Unified Ideographs Extension A
+0   0x00006a0a 0x1000800a 4   5    .data   ascii   GGGG
+1   0x00006a44 0x10008044 4   5    .data   ascii   GGGG
+2   0x00006ab0 0x100080b0 4   20   .data   utf32le 5\v@Ͽ blocks=Basic Latin,Greek and Coptic
+3   0x00006b9a 0x1000819a 4   5    .data   ascii   kU'9
+4   0x00006bea 0x100081ea 8   11   .data   utf8    HMXB䧓9;5 blocks=Basic Latin,CJK Unified Ideographs Extension A
+5   0x00006c24 0x10008224 5   8    .data   utf8    ]݀nLɛ blocks=Basic Latin,Syriac,IPA Extensions
+6   0x00006c43 0x10008243 9   12   .data   utf8    ?q=\nףp=\nף blocks=Basic Latin,Hebrew
+7   0x00006c4f 0x1000824f 4   5    .data   ascii   ?Zd;
+8   0x00006c97 0x10008297 4   5    .data   ascii   ?/L[
+9   0x00006ca6 0x100082a6 4   5    .data   ascii   S;uD
+10  0x00006cb9 0x100082b9 4   6    .data   utf8    ϔ?$# blocks=Greek and Coptic,Basic Latin
+11  0x00006cbf 0x100082bf 4   7    .data   utf8    ⼺;1a blocks=Kangxi Radicals,Basic Latin
+12  0x00006cc6 0x100082c6 5   6    .data   ascii   z?aUY
+13  0x00006cde 0x100082de 4   5    .data   ascii   D?$?
+14  0x00006cf6 0x100082f6 4   5    .data   ascii   U>c{
+15  0x00006d08 0x10008308 8   10   .data   utf8    zc%C1,<!
+16  0x00006d1b 0x1000831b 5   7    .data   utf8    ;܈X\b\e blocks=Basic Latin,Syriac
+17  0x00006d27 0x10008327 5   7    .data   utf8    ;ƄEB\a blocks=Basic Latin,Latin Extended-B
+18  0x00006d32 0x10008332 4   5    .data   ascii   .:3q
+19  0x00006d5b 0x1000835b 5   6    .data   ascii   -64OS
+20  0x00006d7c 0x1000837c 4   5    .data   ascii   NKeb
+arch     x86
+baddr    0x10000000
+binsz    29696
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000f802
+compiled Tue Feb 28 13:51:38 2012
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x4f4cdbea
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x5600
+  SizeOfInitializedData : 0x1e00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x6040
+  BaseOfCode : 0x1000
+  BaseOfData : 0x7000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x3
+  MinorImageVersion : 0x1
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xa000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x989680
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 146 Name: Export900 Version: 30729 Times: 1
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 19
+  Product: 126 Name: AliasObj800 Version: 50727 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 112
+  Product: 19 Name: Linker512 Version: 9049 Times: 5
+  Product: 147 Name: Implib900 Version: 30729 Times: 4
+  Product: 109 Name: Utc1400_C Version: 50727 Times: 64
+  Product: 110 Name: Utc1400_CPP Version: 50727 Times: 15
+  Product: 123 Name: Implib800 Version: 50727 Times: 2
+  Product: 125 Name: Masm800 Version: 50727 Times: 7
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x7a60
+  Size : 0x547
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x7604
+  Size : 0x78
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x9000
+  Size : 0x2a8
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x74f8
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x7000
+  Size : 0xe4
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+posh-0.dll
+ucl.dll
+ws2_32.dll
+msvcrt.dll
+
+5 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00007760 0x00005a00 SET_32 KERNEL32.dll_GetVersion
+0x0000777c 0x00005ac8 SET_32 posh-0.dll_POSH_SwapU32
+0x00007798 0x00005ad0 SET_32 ucl.dll_ucl_crc32
+0x000077a4 0x00005ad4 SET_32 ucl.dll_ucl_nrv2d_99_compress
+0x000077bc 0x00005ad8 SET_32 ucl.dll___ucl_init2
+0x000077ca 0x00005adc SET_32 ucl.dll_ucl_nrv2d_decompress_8
+0x000077f8 0x00005a44 SET_32 msvcrt.dll__iob
+0x00007800 0x00005a48 SET_32 msvcrt.dll_calloc
+0x0000780a 0x00005a4c SET_32 msvcrt.dll_memcpy
+0x00007814 0x00005a50 SET_32 msvcrt.dll_memset
+0x0000781e 0x00005a54 SET_32 msvcrt.dll_tolower
+0x00007828 0x00005a58 SET_32 msvcrt.dll_memmove
+0x00007832 0x00005a5c SET_32 msvcrt.dll_pow
+0x00007838 0x00005a60 SET_32 msvcrt.dll_free
+0x00007840 0x00005a64 SET_32 msvcrt.dll_srand
+0x00007848 0x00005a68 SET_32 msvcrt.dll_time
+0x00007850 0x00005a6c SET_32 msvcrt.dll_fread
+0x00007858 0x00005a70 SET_32 msvcrt.dll_ftell
+0x00007860 0x00005a74 SET_32 msvcrt.dll_fclose
+0x0000786a 0x00005a78 SET_32 msvcrt.dll_fseek
+0x00007872 0x00005ac0 SET_32 msvcrt.dll_fopen
+0x0000787a 0x00005a7c SET_32 msvcrt.dll_fwrite
+0x00007884 0x00005a80 SET_32 msvcrt.dll_fgets
+0x0000788c 0x00005a84 SET_32 msvcrt.dll__snprintf
+0x00007898 0x00005a88 SET_32 msvcrt.dll_floor
+0x000078a0 0x00005a8c SET_32 msvcrt.dll_rand
+0x000078a8 0x00005a90 SET_32 msvcrt.dll__ftime
+0x000078b2 0x00005a94 SET_32 msvcrt.dll_malloc
+0x000078bc 0x00005a98 SET_32 msvcrt.dll_sscanf
+0x000078c6 0x00005a9c SET_32 msvcrt.dll_strcspn
+0x000078d0 0x00005abc SET_32 msvcrt.dll_strncmp
+0x000078da 0x00005aa0 SET_32 msvcrt.dll_strcat
+0x000078e4 0x00005aa4 SET_32 msvcrt.dll_sprintf
+0x000078ee 0x00005aa8 SET_32 msvcrt.dll_strlen
+0x00007904 0x00005aac SET_32 msvcrt.dll__XcptFilter
+0x00007912 0x00005ab0 SET_32 msvcrt.dll__initterm
+0x0000791e 0x00005ab4 SET_32 msvcrt.dll__amsg_exit
+0x0000792c 0x00005ab8 SET_32 msvcrt.dll__adjust_fdiv
+0x0000793c 0x00005a30 SET_32 KERNEL32.dll_RtlUnwind
+0x00007948 0x00005a2c SET_32 KERNEL32.dll_InterlockedExchange
+0x0000795e 0x00005a28 SET_32 KERNEL32.dll_Sleep
+0x00007966 0x00005a24 SET_32 KERNEL32.dll_InterlockedCompareExchange
+0x00007984 0x00005a20 SET_32 KERNEL32.dll_TerminateProcess
+0x00007998 0x00005a1c SET_32 KERNEL32.dll_GetCurrentProcess
+0x000079ac 0x00005a18 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x000079c8 0x00005a14 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x000079e6 0x00005a10 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x00007a00 0x00005a0c SET_32 KERNEL32.dll_GetTickCount
+0x00007a10 0x00005a08 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x00007a26 0x00005a04 SET_32 KERNEL32.dll_GetCurrentProcessId
+0x00007a3c 0x00005a34 SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x80000008 0x00005a3c SET_32 WS2_32.dll_htonl
+
+
+52 relocations
+29696
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

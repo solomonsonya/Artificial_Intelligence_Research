@@ -1,0 +1,750 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2b400 0x00401000  0x2c000 -r-x CODE
+1   0x0002b800    0xc00 0x0042d000   0x1000 -rw- DATA
+2   0x0002c400      0x0 0x0042e000   0x1000 -rw- BSS
+3   0x0002c400   0x1000 0x0042f000   0x1000 -rw- .idata
+4   0x0002d400    0x400 0x00430000   0x1000 sr-- .edata
+5   0x0002d800   0x3000 0x00431000   0x3000 sr-- .reloc
+6   0x00030800   0x1800 0x00434000   0x2000 sr-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0042c2e4 paddr=0x0002b6e4 haddr=0x00000128 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0042f0f0 NONE FUNC kernel32.dll DeleteCriticalSection
+2   0x0042f0f4 NONE FUNC kernel32.dll LeaveCriticalSection
+3   0x0042f0f8 NONE FUNC kernel32.dll EnterCriticalSection
+4   0x0042f0fc NONE FUNC kernel32.dll InitializeCriticalSection
+5   0x0042f100 NONE FUNC kernel32.dll VirtualFree
+6   0x0042f104 NONE FUNC kernel32.dll VirtualAlloc
+7   0x0042f108 NONE FUNC kernel32.dll LocalFree
+8   0x0042f10c NONE FUNC kernel32.dll LocalAlloc
+9   0x0042f110 NONE FUNC kernel32.dll GetVersion
+10  0x0042f114 NONE FUNC kernel32.dll GetCurrentThreadId
+11  0x0042f118 NONE FUNC kernel32.dll InterlockedDecrement
+12  0x0042f11c NONE FUNC kernel32.dll InterlockedIncrement
+13  0x0042f120 NONE FUNC kernel32.dll VirtualQuery
+14  0x0042f124 NONE FUNC kernel32.dll WideCharToMultiByte
+15  0x0042f128 NONE FUNC kernel32.dll MultiByteToWideChar
+16  0x0042f12c NONE FUNC kernel32.dll lstrlenA
+17  0x0042f130 NONE FUNC kernel32.dll lstrcpynA
+18  0x0042f134 NONE FUNC kernel32.dll LoadLibraryExA
+19  0x0042f138 NONE FUNC kernel32.dll GetThreadLocale
+20  0x0042f13c NONE FUNC kernel32.dll GetStartupInfoA
+21  0x0042f140 NONE FUNC kernel32.dll GetProcAddress
+22  0x0042f144 NONE FUNC kernel32.dll GetModuleHandleA
+23  0x0042f148 NONE FUNC kernel32.dll GetModuleFileNameA
+24  0x0042f14c NONE FUNC kernel32.dll GetLocaleInfoA
+25  0x0042f150 NONE FUNC kernel32.dll GetCommandLineA
+26  0x0042f154 NONE FUNC kernel32.dll FreeLibrary
+27  0x0042f158 NONE FUNC kernel32.dll FindFirstFileA
+28  0x0042f15c NONE FUNC kernel32.dll FindClose
+29  0x0042f160 NONE FUNC kernel32.dll ExitProcess
+30  0x0042f164 NONE FUNC kernel32.dll ExitThread
+31  0x0042f168 NONE FUNC kernel32.dll CreateThread
+32  0x0042f16c NONE FUNC kernel32.dll WriteFile
+33  0x0042f170 NONE FUNC kernel32.dll UnhandledExceptionFilter
+34  0x0042f174 NONE FUNC kernel32.dll RtlUnwind
+35  0x0042f178 NONE FUNC kernel32.dll RaiseException
+36  0x0042f17c NONE FUNC kernel32.dll GetStdHandle
+1   0x0042f184 NONE FUNC user32.dll   GetKeyboardType
+2   0x0042f188 NONE FUNC user32.dll   LoadStringA
+3   0x0042f18c NONE FUNC user32.dll   MessageBoxA
+4   0x0042f190 NONE FUNC user32.dll   CharNextA
+1   0x0042f198 NONE FUNC advapi32.dll RegQueryValueExA
+2   0x0042f19c NONE FUNC advapi32.dll RegOpenKeyExA
+3   0x0042f1a0 NONE FUNC advapi32.dll RegCloseKey
+1   0x0042f1a8 NONE FUNC oleaut32.dll SysFreeString
+2   0x0042f1ac NONE FUNC oleaut32.dll SysReAllocStringLen
+3   0x0042f1b0 NONE FUNC oleaut32.dll SysAllocStringLen
+1   0x0042f1b8 NONE FUNC kernel32.dll TlsSetValue
+2   0x0042f1bc NONE FUNC kernel32.dll TlsGetValue
+3   0x0042f1c0 NONE FUNC kernel32.dll TlsFree
+4   0x0042f1c4 NONE FUNC kernel32.dll TlsAlloc
+5   0x0042f108 NONE FUNC kernel32.dll LocalFree
+6   0x0042f10c NONE FUNC kernel32.dll LocalAlloc
+1   0x0042f16c NONE FUNC kernel32.dll WriteFile
+2   0x0042f1d8 NONE FUNC kernel32.dll WaitForSingleObject
+3   0x0042f120 NONE FUNC kernel32.dll VirtualQuery
+4   0x0042f100 NONE FUNC kernel32.dll VirtualFree
+5   0x0042f104 NONE FUNC kernel32.dll VirtualAlloc
+6   0x0042f1e8 NONE FUNC kernel32.dll Sleep
+7   0x0042f1ec NONE FUNC kernel32.dll SetFilePointer
+8   0x0042f1f0 NONE FUNC kernel32.dll SetEvent
+9   0x0042f1f4 NONE FUNC kernel32.dll SetEndOfFile
+10  0x0042f1f8 NONE FUNC kernel32.dll ResumeThread
+11  0x0042f1fc NONE FUNC kernel32.dll ResetEvent
+12  0x0042f200 NONE FUNC kernel32.dll ReadFile
+13  0x0042f204 NONE FUNC kernel32.dll QueryPerformanceFrequency
+14  0x0042f208 NONE FUNC kernel32.dll QueryPerformanceCounter
+15  0x0042f20c NONE FUNC kernel32.dll OutputDebugStringA
+16  0x0042f210 NONE FUNC kernel32.dll LoadLibraryA
+17  0x0042f0f4 NONE FUNC kernel32.dll LeaveCriticalSection
+18  0x0042f0fc NONE FUNC kernel32.dll InitializeCriticalSection
+19  0x0042f21c NONE FUNC kernel32.dll GlobalUnlock
+20  0x0042f220 NONE FUNC kernel32.dll GlobalReAlloc
+21  0x0042f224 NONE FUNC kernel32.dll GlobalHandle
+22  0x0042f228 NONE FUNC kernel32.dll GlobalLock
+23  0x0042f22c NONE FUNC kernel32.dll GlobalFree
+24  0x0042f230 NONE FUNC kernel32.dll GlobalAlloc
+25  0x0042f234 NONE FUNC kernel32.dll GetVersionExA
+26  0x0042f238 NONE FUNC kernel32.dll GetTickCount
+27  0x0042f138 NONE FUNC kernel32.dll GetThreadLocale
+28  0x0042f240 NONE FUNC kernel32.dll GetStringTypeExA
+29  0x0042f17c NONE FUNC kernel32.dll GetStdHandle
+30  0x0042f140 NONE FUNC kernel32.dll GetProcAddress
+31  0x0042f144 NONE FUNC kernel32.dll GetModuleHandleA
+32  0x0042f148 NONE FUNC kernel32.dll GetModuleFileNameA
+33  0x0042f14c NONE FUNC kernel32.dll GetLocaleInfoA
+34  0x0042f258 NONE FUNC kernel32.dll GetLocalTime
+35  0x0042f25c NONE FUNC kernel32.dll GetLastError
+36  0x0042f260 NONE FUNC kernel32.dll GetFullPathNameA
+37  0x0042f264 NONE FUNC kernel32.dll GetExitCodeThread
+38  0x0042f268 NONE FUNC kernel32.dll GetDiskFreeSpaceA
+39  0x0042f26c NONE FUNC kernel32.dll GetDateFormatA
+40  0x0042f114 NONE FUNC kernel32.dll GetCurrentThreadId
+41  0x0042f274 NONE FUNC kernel32.dll GetCPInfo
+42  0x0042f278 NONE FUNC kernel32.dll GetACP
+43  0x0042f11c NONE FUNC kernel32.dll InterlockedIncrement
+44  0x0042f280 NONE FUNC kernel32.dll InterlockedExchange
+45  0x0042f118 NONE FUNC kernel32.dll InterlockedDecrement
+46  0x0042f154 NONE FUNC kernel32.dll FreeLibrary
+47  0x0042f28c NONE FUNC kernel32.dll FormatMessageA
+48  0x0042f158 NONE FUNC kernel32.dll FindFirstFileA
+49  0x0042f15c NONE FUNC kernel32.dll FindClose
+50  0x0042f298 NONE FUNC kernel32.dll FileTimeToLocalFileTime
+51  0x0042f29c NONE FUNC kernel32.dll FileTimeToDosDateTime
+52  0x0042f2a0 NONE FUNC kernel32.dll EnumCalendarInfoA
+53  0x0042f0f8 NONE FUNC kernel32.dll EnterCriticalSection
+54  0x0042f0f0 NONE FUNC kernel32.dll DeleteCriticalSection
+55  0x0042f2ac NONE FUNC kernel32.dll CreateFileA
+56  0x0042f2b0 NONE FUNC kernel32.dll CreateEventA
+57  0x0042f2b4 NONE FUNC kernel32.dll CompareStringA
+58  0x0042f2b8 NONE FUNC kernel32.dll CloseHandle
+1   0x0042f2c0 NONE FUNC gdi32.dll    TextOutA
+2   0x0042f2c4 NONE FUNC gdi32.dll    SetBkMode
+3   0x0042f2c8 NONE FUNC gdi32.dll    SelectObject
+4   0x0042f2cc NONE FUNC gdi32.dll    GetTextMetricsA
+5   0x0042f2d0 NONE FUNC gdi32.dll    GetTextExtentPoint32A
+6   0x0042f2d4 NONE FUNC gdi32.dll    DeleteObject
+7   0x0042f2d8 NONE FUNC gdi32.dll    CreateFontA
+1   0x0042f2e0 NONE FUNC user32.dll   CreateWindowExA
+2   0x0042f2e4 NONE FUNC user32.dll   UpdateWindow
+3   0x0042f2e8 NONE FUNC user32.dll   TranslateMessage
+4   0x0042f2ec NONE FUNC user32.dll   SetWindowTextA
+5   0x0042f2f0 NONE FUNC user32.dll   SetWindowPos
+6   0x0042f2f4 NONE FUNC user32.dll   SetWindowLongA
+7   0x0042f2f8 NONE FUNC user32.dll   SendMessageA
+8   0x0042f2fc NONE FUNC user32.dll   ScreenToClient
+9   0x0042f300 NONE FUNC user32.dll   ReleaseDC
+10  0x0042f304 NONE FUNC user32.dll   RegisterClassExA
+11  0x0042f308 NONE FUNC user32.dll   PostThreadMessageA
+12  0x0042f30c NONE FUNC user32.dll   PostQuitMessage
+13  0x0042f310 NONE FUNC user32.dll   PostMessageA
+14  0x0042f314 NONE FUNC user32.dll   PeekMessageA
+15  0x0042f318 NONE FUNC user32.dll   MsgWaitForMultipleObjects
+16  0x0042f18c NONE FUNC user32.dll   MessageBoxA
+17  0x0042f188 NONE FUNC user32.dll   LoadStringA
+18  0x0042f324 NONE FUNC user32.dll   InvalidateRect
+19  0x0042f328 NONE FUNC user32.dll   GetWindowRect
+20  0x0042f32c NONE FUNC user32.dll   GetWindowLongA
+21  0x0042f330 NONE FUNC user32.dll   GetSystemMetrics
+22  0x0042f334 NONE FUNC user32.dll   GetMessageA
+23  0x0042f338 NONE FUNC user32.dll   GetDC
+24  0x0042f33c NONE FUNC user32.dll   FillRect
+25  0x0042f340 NONE FUNC user32.dll   EndPaint
+26  0x0042f344 NONE FUNC user32.dll   DispatchMessageA
+27  0x0042f348 NONE FUNC user32.dll   DestroyWindow
+28  0x0042f34c NONE FUNC user32.dll   DefWindowProcA
+29  0x0042f350 NONE FUNC user32.dll   CallWindowProcA
+30  0x0042f354 NONE FUNC user32.dll   BeginPaint
+31  0x0042f190 NONE FUNC user32.dll   CharNextA
+32  0x0042f35c NONE FUNC user32.dll   CharUpperBuffA
+33  0x0042f360 NONE FUNC user32.dll   CharToOemA
+1   0x0042f1e8 NONE FUNC kernel32.dll Sleep
+1   0x0042f370 NONE FUNC oleaut32.dll SafeArrayPtrOfIndex
+2   0x0042f374 NONE FUNC oleaut32.dll SafeArrayGetUBound
+3   0x0042f378 NONE FUNC oleaut32.dll SafeArrayGetLBound
+4   0x0042f37c NONE FUNC oleaut32.dll SafeArrayCreate
+5   0x0042f380 NONE FUNC oleaut32.dll VariantChangeType
+6   0x0042f384 NONE FUNC oleaut32.dll VariantCopy
+7   0x0042f388 NONE FUNC oleaut32.dll VariantClear
+8   0x0042f38c NONE FUNC oleaut32.dll VariantInit
+1   0x0042f394 NONE FUNC wininet.dll  InternetQueryOptionA
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib                name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0002ad60 0x0042b960 GLOBAL FUNC 0    itdownload_wex.dll itd_downloadfile
+2   0x0002aee4 0x0042bae4 GLOBAL FUNC 0    itdownload_wex.dll itd_addfile
+3   0x0002af4c 0x0042bb4c GLOBAL FUNC 0    itdownload_wex.dll itd_addfilesize
+4   0x0002ae70 0x0042ba70 GLOBAL FUNC 0    itdownload_wex.dll itd_clearfiles
+5   0x0002ae10 0x0042ba10 GLOBAL FUNC 0    itdownload_wex.dll itd_downloadfiles
+6   0x0002afb8 0x0042bbb8 GLOBAL FUNC 0    itdownload_wex.dll itd_initui
+7   0x0002afcc 0x0042bbcc GLOBAL FUNC 0    itdownload_wex.dll itd_cancel
+8   0x0002afe4 0x0042bbe4 GLOBAL FUNC 0    itdownload_wex.dll itd_setoption
+9   0x0002b074 0x0042bc74 GLOBAL FUNC 0    itdownload_wex.dll itd_getoption
+10  0x0002afd8 0x0042bbd8 GLOBAL FUNC 0    itdownload_wex.dll itd_filecount
+11  0x0002b180 0x0042bd80 GLOBAL FUNC 0    itdownload_wex.dll itd_setstring
+12  0x0002b1d4 0x0042bdd4 GLOBAL FUNC 0    itdownload_wex.dll itd_getstring
+13  0x0002b0f4 0x0042bcf4 GLOBAL FUNC 0    itdownload_wex.dll itd_loadstrings
+14  0x0002ae7c 0x0042ba7c GLOBAL FUNC 0    itdownload_wex.dll itd_addmirror
+15  0x0002b23c 0x0042be3c GLOBAL FUNC 0    itdownload_wex.dll itd_postpage
+16  0x0002b3c4 0x0042bfc4 GLOBAL FUNC 0    itdownload_wex.dll itd_getresultstring
+17  0x0002b450 0x0042c050 GLOBAL FUNC 0    itdownload_wex.dll itd_getresultlen
+18  0x0002b3f4 0x0042bff4 GLOBAL FUNC 0    itdownload_wex.dll itd_getfilesize
+19  0x0002b45c 0x0042c05c GLOBAL FUNC 0    itdownload_wex.dll itd_getlasterror
+20  0x0002b2f4 0x0042bef4 GLOBAL FUNC 0    itdownload_wex.dll itd_post
+1   0x0002c4f0 0x0042f0f0 NONE   FUNC 0    kernel32.dll       imp.DeleteCriticalSection
+2   0x0002c4f4 0x0042f0f4 NONE   FUNC 0    kernel32.dll       imp.LeaveCriticalSection
+3   0x0002c4f8 0x0042f0f8 NONE   FUNC 0    kernel32.dll       imp.EnterCriticalSection
+4   0x0002c4fc 0x0042f0fc NONE   FUNC 0    kernel32.dll       imp.InitializeCriticalSection
+5   0x0002c500 0x0042f100 NONE   FUNC 0    kernel32.dll       imp.VirtualFree
+6   0x0002c504 0x0042f104 NONE   FUNC 0    kernel32.dll       imp.VirtualAlloc
+7   0x0002c508 0x0042f108 NONE   FUNC 0    kernel32.dll       imp.LocalFree
+8   0x0002c50c 0x0042f10c NONE   FUNC 0    kernel32.dll       imp.LocalAlloc
+9   0x0002c510 0x0042f110 NONE   FUNC 0    kernel32.dll       imp.GetVersion
+10  0x0002c514 0x0042f114 NONE   FUNC 0    kernel32.dll       imp.GetCurrentThreadId
+11  0x0002c518 0x0042f118 NONE   FUNC 0    kernel32.dll       imp.InterlockedDecrement
+12  0x0002c51c 0x0042f11c NONE   FUNC 0    kernel32.dll       imp.InterlockedIncrement
+13  0x0002c520 0x0042f120 NONE   FUNC 0    kernel32.dll       imp.VirtualQuery
+14  0x0002c524 0x0042f124 NONE   FUNC 0    kernel32.dll       imp.WideCharToMultiByte
+15  0x0002c528 0x0042f128 NONE   FUNC 0    kernel32.dll       imp.MultiByteToWideChar
+16  0x0002c52c 0x0042f12c NONE   FUNC 0    kernel32.dll       imp.lstrlenA
+17  0x0002c530 0x0042f130 NONE   FUNC 0    kernel32.dll       imp.lstrcpynA
+18  0x0002c534 0x0042f134 NONE   FUNC 0    kernel32.dll       imp.LoadLibraryExA
+19  0x0002c538 0x0042f138 NONE   FUNC 0    kernel32.dll       imp.GetThreadLocale
+20  0x0002c53c 0x0042f13c NONE   FUNC 0    kernel32.dll       imp.GetStartupInfoA
+21  0x0002c540 0x0042f140 NONE   FUNC 0    kernel32.dll       imp.GetProcAddress
+22  0x0002c544 0x0042f144 NONE   FUNC 0    kernel32.dll       imp.GetModuleHandleA
+23  0x0002c548 0x0042f148 NONE   FUNC 0    kernel32.dll       imp.GetModuleFileNameA
+24  0x0002c54c 0x0042f14c NONE   FUNC 0    kernel32.dll       imp.GetLocaleInfoA
+25  0x0002c550 0x0042f150 NONE   FUNC 0    kernel32.dll       imp.GetCommandLineA
+26  0x0002c554 0x0042f154 NONE   FUNC 0    kernel32.dll       imp.FreeLibrary
+27  0x0002c558 0x0042f158 NONE   FUNC 0    kernel32.dll       imp.FindFirstFileA
+28  0x0002c55c 0x0042f15c NONE   FUNC 0    kernel32.dll       imp.FindClose
+29  0x0002c560 0x0042f160 NONE   FUNC 0    kernel32.dll       imp.ExitProcess
+30  0x0002c564 0x0042f164 NONE   FUNC 0    kernel32.dll       imp.ExitThread
+31  0x0002c568 0x0042f168 NONE   FUNC 0    kernel32.dll       imp.CreateThread
+32  0x0002c56c 0x0042f16c NONE   FUNC 0    kernel32.dll       imp.WriteFile
+33  0x0002c570 0x0042f170 NONE   FUNC 0    kernel32.dll       imp.UnhandledExceptionFilter
+34  0x0002c574 0x0042f174 NONE   FUNC 0    kernel32.dll       imp.RtlUnwind
+35  0x0002c578 0x0042f178 NONE   FUNC 0    kernel32.dll       imp.RaiseException
+36  0x0002c57c 0x0042f17c NONE   FUNC 0    kernel32.dll       imp.GetStdHandle
+1   0x0002c584 0x0042f184 NONE   FUNC 0    user32.dll         imp.GetKeyboardType
+2   0x0002c588 0x0042f188 NONE   FUNC 0    user32.dll         imp.LoadStringA
+3   0x0002c58c 0x0042f18c NONE   FUNC 0    user32.dll         imp.MessageBoxA
+4   0x0002c590 0x0042f190 NONE   FUNC 0    user32.dll         imp.CharNextA
+1   0x0002c598 0x0042f198 NONE   FUNC 0    advapi32.dll       imp.RegQueryValueExA
+2   0x0002c59c 0x0042f19c NONE   FUNC 0    advapi32.dll       imp.RegOpenKeyExA
+3   0x0002c5a0 0x0042f1a0 NONE   FUNC 0    advapi32.dll       imp.RegCloseKey
+1   0x0002c5a8 0x0042f1a8 NONE   FUNC 0    oleaut32.dll       imp.SysFreeString
+2   0x0002c5ac 0x0042f1ac NONE   FUNC 0    oleaut32.dll       imp.SysReAllocStringLen
+3   0x0002c5b0 0x0042f1b0 NONE   FUNC 0    oleaut32.dll       imp.SysAllocStringLen
+1   0x0002c5b8 0x0042f1b8 NONE   FUNC 0    kernel32.dll       imp.TlsSetValue
+2   0x0002c5bc 0x0042f1bc NONE   FUNC 0    kernel32.dll       imp.TlsGetValue
+3   0x0002c5c0 0x0042f1c0 NONE   FUNC 0    kernel32.dll       imp.TlsFree
+4   0x0002c5c4 0x0042f1c4 NONE   FUNC 0    kernel32.dll       imp.TlsAlloc
+5   0x0002c5c8 0x0042f1c8 NONE   FUNC 0    kernel32.dll       imp.LocalFree
+6   0x0002c5cc 0x0042f1cc NONE   FUNC 0    kernel32.dll       imp.LocalAlloc
+1   0x0002c5d4 0x0042f1d4 NONE   FUNC 0    kernel32.dll       imp.WriteFile
+2   0x0002c5d8 0x0042f1d8 NONE   FUNC 0    kernel32.dll       imp.WaitForSingleObject
+3   0x0002c5dc 0x0042f1dc NONE   FUNC 0    kernel32.dll       imp.VirtualQuery
+4   0x0002c5e0 0x0042f1e0 NONE   FUNC 0    kernel32.dll       imp.VirtualFree
+5   0x0002c5e4 0x0042f1e4 NONE   FUNC 0    kernel32.dll       imp.VirtualAlloc
+6   0x0002c5e8 0x0042f1e8 NONE   FUNC 0    kernel32.dll       imp.Sleep
+7   0x0002c5ec 0x0042f1ec NONE   FUNC 0    kernel32.dll       imp.SetFilePointer
+8   0x0002c5f0 0x0042f1f0 NONE   FUNC 0    kernel32.dll       imp.SetEvent
+9   0x0002c5f4 0x0042f1f4 NONE   FUNC 0    kernel32.dll       imp.SetEndOfFile
+10  0x0002c5f8 0x0042f1f8 NONE   FUNC 0    kernel32.dll       imp.ResumeThread
+11  0x0002c5fc 0x0042f1fc NONE   FUNC 0    kernel32.dll       imp.ResetEvent
+12  0x0002c600 0x0042f200 NONE   FUNC 0    kernel32.dll       imp.ReadFile
+13  0x0002c604 0x0042f204 NONE   FUNC 0    kernel32.dll       imp.QueryPerformanceFrequency
+14  0x0002c608 0x0042f208 NONE   FUNC 0    kernel32.dll       imp.QueryPerformanceCounter
+15  0x0002c60c 0x0042f20c NONE   FUNC 0    kernel32.dll       imp.OutputDebugStringA
+16  0x0002c610 0x0042f210 NONE   FUNC 0    kernel32.dll       imp.LoadLibraryA
+17  0x0002c614 0x0042f214 NONE   FUNC 0    kernel32.dll       imp.LeaveCriticalSection
+18  0x0002c618 0x0042f218 NONE   FUNC 0    kernel32.dll       imp.InitializeCriticalSection
+19  0x0002c61c 0x0042f21c NONE   FUNC 0    kernel32.dll       imp.GlobalUnlock
+20  0x0002c620 0x0042f220 NONE   FUNC 0    kernel32.dll       imp.GlobalReAlloc
+21  0x0002c624 0x0042f224 NONE   FUNC 0    kernel32.dll       imp.GlobalHandle
+22  0x0002c628 0x0042f228 NONE   FUNC 0    kernel32.dll       imp.GlobalLock
+23  0x0002c62c 0x0042f22c NONE   FUNC 0    kernel32.dll       imp.GlobalFree
+24  0x0002c630 0x0042f230 NONE   FUNC 0    kernel32.dll       imp.GlobalAlloc
+25  0x0002c634 0x0042f234 NONE   FUNC 0    kernel32.dll       imp.GetVersionExA
+26  0x0002c638 0x0042f238 NONE   FUNC 0    kernel32.dll       imp.GetTickCount
+27  0x0002c63c 0x0042f23c NONE   FUNC 0    kernel32.dll       imp.GetThreadLocale
+28  0x0002c640 0x0042f240 NONE   FUNC 0    kernel32.dll       imp.GetStringTypeExA
+29  0x0002c644 0x0042f244 NONE   FUNC 0    kernel32.dll       imp.GetStdHandle
+30  0x0002c648 0x0042f248 NONE   FUNC 0    kernel32.dll       imp.GetProcAddress
+31  0x0002c64c 0x0042f24c NONE   FUNC 0    kernel32.dll       imp.GetModuleHandleA
+32  0x0002c650 0x0042f250 NONE   FUNC 0    kernel32.dll       imp.GetModuleFileNameA
+33  0x0002c654 0x0042f254 NONE   FUNC 0    kernel32.dll       imp.GetLocaleInfoA
+34  0x0002c658 0x0042f258 NONE   FUNC 0    kernel32.dll       imp.GetLocalTime
+35  0x0002c65c 0x0042f25c NONE   FUNC 0    kernel32.dll       imp.GetLastError
+36  0x0002c660 0x0042f260 NONE   FUNC 0    kernel32.dll       imp.GetFullPathNameA
+37  0x0002c664 0x0042f264 NONE   FUNC 0    kernel32.dll       imp.GetExitCodeThread
+38  0x0002c668 0x0042f268 NONE   FUNC 0    kernel32.dll       imp.GetDiskFreeSpaceA
+39  0x0002c66c 0x0042f26c NONE   FUNC 0    kernel32.dll       imp.GetDateFormatA
+40  0x0002c670 0x0042f270 NONE   FUNC 0    kernel32.dll       imp.GetCurrentThreadId
+41  0x0002c674 0x0042f274 NONE   FUNC 0    kernel32.dll       imp.GetCPInfo
+42  0x0002c678 0x0042f278 NONE   FUNC 0    kernel32.dll       imp.GetACP
+43  0x0002c67c 0x0042f27c NONE   FUNC 0    kernel32.dll       imp.InterlockedIncrement
+44  0x0002c680 0x0042f280 NONE   FUNC 0    kernel32.dll       imp.InterlockedExchange
+45  0x0002c684 0x0042f284 NONE   FUNC 0    kernel32.dll       imp.InterlockedDecrement
+46  0x0002c688 0x0042f288 NONE   FUNC 0    kernel32.dll       imp.FreeLibrary
+47  0x0002c68c 0x0042f28c NONE   FUNC 0    kernel32.dll       imp.FormatMessageA
+48  0x0002c690 0x0042f290 NONE   FUNC 0    kernel32.dll       imp.FindFirstFileA
+49  0x0002c694 0x0042f294 NONE   FUNC 0    kernel32.dll       imp.FindClose
+50  0x0002c698 0x0042f298 NONE   FUNC 0    kernel32.dll       imp.FileTimeToLocalFileTime
+51  0x0002c69c 0x0042f29c NONE   FUNC 0    kernel32.dll       imp.FileTimeToDosDateTime
+52  0x0002c6a0 0x0042f2a0 NONE   FUNC 0    kernel32.dll       imp.EnumCalendarInfoA
+53  0x0002c6a4 0x0042f2a4 NONE   FUNC 0    kernel32.dll       imp.EnterCriticalSection
+54  0x0002c6a8 0x0042f2a8 NONE   FUNC 0    kernel32.dll       imp.DeleteCriticalSection
+55  0x0002c6ac 0x0042f2ac NONE   FUNC 0    kernel32.dll       imp.CreateFileA
+56  0x0002c6b0 0x0042f2b0 NONE   FUNC 0    kernel32.dll       imp.CreateEventA
+57  0x0002c6b4 0x0042f2b4 NONE   FUNC 0    kernel32.dll       imp.CompareStringA
+58  0x0002c6b8 0x0042f2b8 NONE   FUNC 0    kernel32.dll       imp.CloseHandle
+1   0x0002c6c0 0x0042f2c0 NONE   FUNC 0    gdi32.dll          imp.TextOutA
+2   0x0002c6c4 0x0042f2c4 NONE   FUNC 0    gdi32.dll          imp.SetBkMode
+3   0x0002c6c8 0x0042f2c8 NONE   FUNC 0    gdi32.dll          imp.SelectObject
+4   0x0002c6cc 0x0042f2cc NONE   FUNC 0    gdi32.dll          imp.GetTextMetricsA
+5   0x0002c6d0 0x0042f2d0 NONE   FUNC 0    gdi32.dll          imp.GetTextExtentPoint32A
+6   0x0002c6d4 0x0042f2d4 NONE   FUNC 0    gdi32.dll          imp.DeleteObject
+7   0x0002c6d8 0x0042f2d8 NONE   FUNC 0    gdi32.dll          imp.CreateFontA
+1   0x0002c6e0 0x0042f2e0 NONE   FUNC 0    user32.dll         imp.CreateWindowExA
+2   0x0002c6e4 0x0042f2e4 NONE   FUNC 0    user32.dll         imp.UpdateWindow
+3   0x0002c6e8 0x0042f2e8 NONE   FUNC 0    user32.dll         imp.TranslateMessage
+4   0x0002c6ec 0x0042f2ec NONE   FUNC 0    user32.dll         imp.SetWindowTextA
+5   0x0002c6f0 0x0042f2f0 NONE   FUNC 0    user32.dll         imp.SetWindowPos
+6   0x0002c6f4 0x0042f2f4 NONE   FUNC 0    user32.dll         imp.SetWindowLongA
+7   0x0002c6f8 0x0042f2f8 NONE   FUNC 0    user32.dll         imp.SendMessageA
+8   0x0002c6fc 0x0042f2fc NONE   FUNC 0    user32.dll         imp.ScreenToClient
+9   0x0002c700 0x0042f300 NONE   FUNC 0    user32.dll         imp.ReleaseDC
+10  0x0002c704 0x0042f304 NONE   FUNC 0    user32.dll         imp.RegisterClassExA
+11  0x0002c708 0x0042f308 NONE   FUNC 0    user32.dll         imp.PostThreadMessageA
+12  0x0002c70c 0x0042f30c NONE   FUNC 0    user32.dll         imp.PostQuitMessage
+13  0x0002c710 0x0042f310 NONE   FUNC 0    user32.dll         imp.PostMessageA
+14  0x0002c714 0x0042f314 NONE   FUNC 0    user32.dll         imp.PeekMessageA
+15  0x0002c718 0x0042f318 NONE   FUNC 0    user32.dll         imp.MsgWaitForMultipleObjects
+16  0x0002c71c 0x0042f31c NONE   FUNC 0    user32.dll         imp.MessageBoxA
+17  0x0002c720 0x0042f320 NONE   FUNC 0    user32.dll         imp.LoadStringA
+18  0x0002c724 0x0042f324 NONE   FUNC 0    user32.dll         imp.InvalidateRect
+19  0x0002c728 0x0042f328 NONE   FUNC 0    user32.dll         imp.GetWindowRect
+20  0x0002c72c 0x0042f32c NONE   FUNC 0    user32.dll         imp.GetWindowLongA
+21  0x0002c730 0x0042f330 NONE   FUNC 0    user32.dll         imp.GetSystemMetrics
+22  0x0002c734 0x0042f334 NONE   FUNC 0    user32.dll         imp.GetMessageA
+23  0x0002c738 0x0042f338 NONE   FUNC 0    user32.dll         imp.GetDC
+24  0x0002c73c 0x0042f33c NONE   FUNC 0    user32.dll         imp.FillRect
+25  0x0002c740 0x0042f340 NONE   FUNC 0    user32.dll         imp.EndPaint
+26  0x0002c744 0x0042f344 NONE   FUNC 0    user32.dll         imp.DispatchMessageA
+27  0x0002c748 0x0042f348 NONE   FUNC 0    user32.dll         imp.DestroyWindow
+28  0x0002c74c 0x0042f34c NONE   FUNC 0    user32.dll         imp.DefWindowProcA
+29  0x0002c750 0x0042f350 NONE   FUNC 0    user32.dll         imp.CallWindowProcA
+30  0x0002c754 0x0042f354 NONE   FUNC 0    user32.dll         imp.BeginPaint
+31  0x0002c758 0x0042f358 NONE   FUNC 0    user32.dll         imp.CharNextA
+32  0x0002c75c 0x0042f35c NONE   FUNC 0    user32.dll         imp.CharUpperBuffA
+33  0x0002c760 0x0042f360 NONE   FUNC 0    user32.dll         imp.CharToOemA
+1   0x0002c768 0x0042f368 NONE   FUNC 0    kernel32.dll       imp.Sleep
+1   0x0002c770 0x0042f370 NONE   FUNC 0    oleaut32.dll       imp.SafeArrayPtrOfIndex
+2   0x0002c774 0x0042f374 NONE   FUNC 0    oleaut32.dll       imp.SafeArrayGetUBound
+3   0x0002c778 0x0042f378 NONE   FUNC 0    oleaut32.dll       imp.SafeArrayGetLBound
+4   0x0002c77c 0x0042f37c NONE   FUNC 0    oleaut32.dll       imp.SafeArrayCreate
+5   0x0002c780 0x0042f380 NONE   FUNC 0    oleaut32.dll       imp.VariantChangeType
+6   0x0002c784 0x0042f384 NONE   FUNC 0    oleaut32.dll       imp.VariantCopy
+7   0x0002c788 0x0042f388 NONE   FUNC 0    oleaut32.dll       imp.VariantClear
+8   0x0002c78c 0x0042f38c NONE   FUNC 0    oleaut32.dll       imp.VariantInit
+1   0x0002c794 0x0042f394 NONE   FUNC 0    wininet.dll        imp.InternetQueryOptionA
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00030a22 0x00434222 18  38   .rsrc   utf16le DVCLAL\vPACKAGEINFO
+1   0x00030a4a 0x0043424a 21  44   .rsrc   utf16le Thread Error: %s (%d)
+2   0x00030a94 0x00434294 9   20   .rsrc   utf16le \bSaturday
+3   0x00030aa8 0x004342a8 162 326  .rsrc   utf16le Cannot assign a %s to a %sECheckSynchronize called from thread $%x, which is NOT the main thread%String list does not allow duplicates\eCannot create file "%s". %s
+4   0x00030bee 0x004343ee 25  52   .rsrc   utf16le Cannot open file "%s". %s
+5   0x00030c22 0x00434422 55  112  .rsrc   utf16le Invalid property value List capacity out of bounds (%d)
+6   0x00030c92 0x00434492 29  60   .rsrc   utf16le List count out of bounds (%d)
+7   0x00030cce 0x004344ce 73  148  .rsrc   utf16le List index out of bounds (%d)+Out of memory while expanding memory stream
+8   0x00030d62 0x00434562 17  36   .rsrc   utf16le Stream read error
+9   0x00030d86 0x00434586 60  122  .rsrc   utf16le %s.Seek not implemented$Operation not allowed on sorted list
+10  0x00030e00 0x00434600 18  38   .rsrc   utf16le Stream write error
+11  0x00030e26 0x00434626 25  52   .rsrc   utf16le Thread creation error: %s
+12  0x00030e78 0x00434678 26  54   .rsrc   utf16le \aOctober\bNovember\bDecember
+13  0x00030ee6 0x004346e6 6   14   .rsrc   utf16le Sunday
+14  0x00030ef4 0x004346f4 33  68   .rsrc   utf16le Monday\aTuesday\tWednesday\bThursday
+15  0x00030f38 0x00434738 6   14   .rsrc   utf16le Friday
+16  0x00030f96 0x00434796 20  42   .rsrc   utf16le Dec\aJanuary\bFebruary
+17  0x00030fc0 0x004347c0 5   12   .rsrc   utf16le March
+18  0x00030fcc 0x004347cc 5   12   .rsrc   utf16le April
+19  0x00030fe0 0x004347e0 4   10   .rsrc   utf16le June
+20  0x00030fea 0x004347ea 4   10   .rsrc   utf16le July
+21  0x00030ff4 0x004347f4 16  34   .rsrc   utf16le August\tSeptember
+22  0x00031036 0x00434836 23  48   .rsrc   utf16le Operation not supported
+23  0x00031066 0x00434866 24  50   .rsrc   utf16le Unexpected variant error
+24  0x00031098 0x00434898 21  44   .rsrc   utf16le External exception %x
+25  0x000310c4 0x004348c4 16  34   .rsrc   utf16le Assertion failed
+26  0x000310e6 0x004348e6 23  48   .rsrc   utf16le Interface not supported
+27  0x00031116 0x00434916 28  58   .rsrc   utf16le Exception in safecall method
+28  0x00031150 0x00434950 16  34   .rsrc   utf16le %s (%s, line %d)
+29  0x00031172 0x00434972 78  158  .rsrc   utf16le Abstract Error?Access violation at address %p in module '%s'. %s of address %p
+30  0x00031210 0x00434a10 28  58   .rsrc   utf16le System Error.  Code: %d.\r\n%s
+31  0x0003124a 0x00434a4a 31  64   .rsrc   utf16le A call to an OS function failed
+32  0x000312d0 0x00434ad0 113 228  .rsrc   utf16le 1Format '%s' invalid or incompatible with argument\eNo argument for format '%s'"Variant method calls not supported
+33  0x000313b4 0x00434bb4 4   10   .rsrc   utf16le Read
+34  0x000313be 0x00434bbe 84  170  .rsrc   utf16le Write$Error creating variant or safe array)Variant or safe array index out of bounds
+35  0x00031468 0x00434c68 31  64   .rsrc   utf16le Variant or safe array is locked
+36  0x000314a8 0x00434ca8 31  64   .rsrc   utf16le Invalid variant type conversion
+37  0x000314e8 0x00434ce8 179 360  .rsrc   utf16le Invalid variant operation%Invalid variant operation (%s%.8x)\n%s5Could not convert variant of type (%s) into type (%s)=Overflow while converting variant of type (%s) into type (%s)
+38  0x00031650 0x00434e50 16  34   .rsrc   utf16le Variant overflow
+39  0x00031672 0x00434e72 16  34   .rsrc   utf16le Invalid argument
+40  0x00031694 0x00434e94 20  42   .rsrc   utf16le Invalid variant type
+41  0x000316de 0x00434ede 16  34   .rsrc   utf16le Division by zero
+42  0x00031700 0x00434f00 17  36   .rsrc   utf16le Range check error
+43  0x00031724 0x00434f24 49  100  .rsrc   utf16le Integer overflow Invalid floating point operation
+44  0x00031788 0x00434f88 31  64   .rsrc   utf16le Floating point division by zero
+45  0x000317c8 0x00434fc8 23  48   .rsrc   utf16le Floating point overflow
+46  0x000317f8 0x00434ff8 24  50   .rsrc   utf16le Floating point underflow
+47  0x0003182a 0x0043502a 25  52   .rsrc   utf16le Invalid pointer operation
+48  0x0003185e 0x0043505e 71  144  .rsrc   utf16le Invalid class typecast0Access violation at address %p. %s of address %p
+49  0x000318ee 0x004350ee 16  34   .rsrc   utf16le Access violation
+50  0x00031910 0x00435110 28  58   .rsrc   utf16le Stack overflow\rControl-C hit
+51  0x0003194a 0x0043514a 63  128  .rsrc   utf16le Privileged instruction(Exception %s in module %s at %p.\r\n%s%s\r\n
+52  0x000319ca 0x004351ca 17  36   .rsrc   utf16le Application Error
+53  0x00031a0c 0x0043520c 75  152  .rsrc   utf16le !'%s' is not a valid integer value('%s' is not a valid floating point value
+54  0x00031aa4 0x004352a4 24  50   .rsrc   utf16le '%s' is not a valid date
+55  0x00031ad6 0x004352d6 58  118  .rsrc   utf16le '%s' is not a valid time!'%s' is not a valid date and time
+56  0x00031b4c 0x0043534c 31  64   .rsrc   utf16le Invalid argument to time encode
+57  0x00031b8c 0x0043538c 58  118  .rsrc   utf16le Invalid argument to date encode\rOut of memory\fI/O error %d
+58  0x00031c02 0x00435402 14  30   .rsrc   utf16le File not found
+59  0x00031c20 0x00435420 16  34   .rsrc   utf16le Invalid filename
+60  0x00031c42 0x00435442 19  40   .rsrc   utf16le Too many open files
+61  0x00031c6a 0x0043546a 18  38   .rsrc   utf16le File access denied
+62  0x00031c90 0x00435490 33  68   .rsrc   utf16le Read beyond end of file\tDisk full
+63  0x00031cd4 0x004354d4 21  44   .rsrc   utf16le Invalid numeric input
+64  0x00031d20 0x00435520 4   6    .rsrc   utf8    &=O8
+65  0x00031d3e 0x0043553e 14  15   .rsrc   ascii   itdownload_wex
+66  0x00031d4f 0x0043554f 7   8    .rsrc   ascii   ftpsend
+67  0x00031d59 0x00435559 6   7    .rsrc   ascii   System
+68  0x00031d62 0x00435562 7   8    .rsrc   ascii   SysInit
+69  0x00031d6c 0x0043556c 8   9    .rsrc   ascii   SysUtils
+70  0x00031d76 0x00435576 8   9    .rsrc   ascii   KWindows
+71  0x00031d80 0x00435580 6   7    .rsrc   ascii   UTypes
+72  0x00031d89 0x00435589 8   9    .rsrc   ascii   SysConst
+73  0x00031d93 0x00435593 8   9    .rsrc   ascii   ^Classes
+74  0x00031d9d 0x0043559d 10  11   .rsrc   ascii   "RTLConsts
+75  0x00031da9 0x004355a9 9   10   .rsrc   ascii   3Messages
+76  0x00031db4 0x004355b4 9   10   .rsrc   ascii   CVariants
+77  0x00031dbf 0x004355bf 9   10   .rsrc   ascii   $VarUtils
+78  0x00031dca 0x004355ca 8   9    .rsrc   ascii   QTypInfo
+79  0x00031dd4 0x004355d4 8   9    .rsrc   ascii   sActiveX
+80  0x00031dde 0x004355de 9   10   .rsrc   ascii   Fblcksock
+81  0x00031de9 0x004355e9 8   9    .rsrc   ascii   &synafpc
+82  0x00031df3 0x004355f3 8   9    .rsrc   ascii   Tsynsock
+83  0x00031dfe 0x004355fe 8   9    .rsrc   ascii   SyncObjs
+84  0x00031e08 0x00435608 9   10   .rsrc   ascii   ssynautil
+85  0x00031e14 0x00435614 8   9    .rsrc   ascii   synacode
+86  0x00031e1e 0x0043561e 7   8    .rsrc   ascii   $synaip
+87  0x00031e27 0x00435627 9   10   .rsrc   ascii   uhttpsend
+88  0x00031e32 0x00435632 8   9    .rsrc   ascii   ?WinInet
+89  0x00031e3d 0x0043563d 8   9    .rsrc   ascii   IniFiles
+90  0x00031e48 0x00435648 8   9    .rsrc   ascii   CommCtrl
+91  0x00031e53 0x00435653 7   8    .rsrc   ascii   Contnrs
+92  0x00031e5d 0x0043565d 4   5    .rsrc   ascii   Math
+93  0x00031e63 0x00435663 11  12   .rsrc   ascii   bfinalcatch
+94  0x00031e71 0x00435671 17  18   .rsrc   ascii   ProcedureToMethod
+95  0x00031e85 0x00435685 9   10   .rsrc   ascii   itdengine
+96  0x00031e90 0x00435690 11  12   .rsrc   ascii   sformatting
+97  0x00031e9e 0x0043569e 10  11   .rsrc   ascii   itdstrings
+98  0x00031eab 0x004356ab 6   7    .rsrc   ascii   liteui
+99  0x00031eb4 0x004356b4 14  15   .rsrc   ascii   downloadengine
+arch     x86
+baddr    0x400000
+binsz    977404
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000f5839
+compiled Fri Jun 19 22:22:17 1992
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x2a425e19
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0xa18e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x2b400
+  SizeOfInitializedData : 0x6800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x2c2e4
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2d000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x36000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x1
+  SizeOfStackReserve : 0x0
+  SizeOfStackCommit : 0x0
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x30000
+  Size : 0x227
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2f000
+  Size : 0xefe
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x34000
+  Size : 0x1800
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x31000
+  Size : 0x3000
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+oleaut32.dll
+gdi32.dll
+wininet.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0002f3aa 0x0002c4f0 SET_32 kernel32.dll_DeleteCriticalSection
+0x0002f3c2 0x0002c4f4 SET_32 kernel32.dll_LeaveCriticalSection
+0x0002f3da 0x0002c4f8 SET_32 kernel32.dll_EnterCriticalSection
+0x0002f3f2 0x0002c4fc SET_32 kernel32.dll_InitializeCriticalSection
+0x0002f40e 0x0002c500 SET_32 kernel32.dll_VirtualFree
+0x0002f41c 0x0002c504 SET_32 kernel32.dll_VirtualAlloc
+0x0002f42c 0x0002c508 SET_32 kernel32.dll_LocalFree
+0x0002f438 0x0002c50c SET_32 kernel32.dll_LocalAlloc
+0x0002f446 0x0002c510 SET_32 kernel32.dll_GetVersion
+0x0002f454 0x0002c514 SET_32 kernel32.dll_GetCurrentThreadId
+0x0002f46a 0x0002c518 SET_32 kernel32.dll_InterlockedDecrement
+0x0002f482 0x0002c51c SET_32 kernel32.dll_InterlockedIncrement
+0x0002f49a 0x0002c520 SET_32 kernel32.dll_VirtualQuery
+0x0002f4aa 0x0002c524 SET_32 kernel32.dll_WideCharToMultiByte
+0x0002f4c0 0x0002c528 SET_32 kernel32.dll_MultiByteToWideChar
+0x0002f4d6 0x0002c52c SET_32 kernel32.dll_lstrlenA
+0x0002f4e2 0x0002c530 SET_32 kernel32.dll_lstrcpynA
+0x0002f4ee 0x0002c534 SET_32 kernel32.dll_LoadLibraryExA
+0x0002f500 0x0002c538 SET_32 kernel32.dll_GetThreadLocale
+0x0002f512 0x0002c53c SET_32 kernel32.dll_GetStartupInfoA
+0x0002f524 0x0002c540 SET_32 kernel32.dll_GetProcAddress
+0x0002f536 0x0002c544 SET_32 kernel32.dll_GetModuleHandleA
+0x0002f54a 0x0002c548 SET_32 kernel32.dll_GetModuleFileNameA
+0x0002f560 0x0002c54c SET_32 kernel32.dll_GetLocaleInfoA
+0x0002f572 0x0002c550 SET_32 kernel32.dll_GetCommandLineA
+0x0002f584 0x0002c554 SET_32 kernel32.dll_FreeLibrary
+0x0002f592 0x0002c558 SET_32 kernel32.dll_FindFirstFileA
+0x0002f5a4 0x0002c55c SET_32 kernel32.dll_FindClose
+0x0002f5b0 0x0002c560 SET_32 kernel32.dll_ExitProcess
+0x0002f5be 0x0002c564 SET_32 kernel32.dll_ExitThread
+0x0002f5cc 0x0002c568 SET_32 kernel32.dll_CreateThread
+0x0002f5dc 0x0002c56c SET_32 kernel32.dll_WriteFile
+0x0002f5e8 0x0002c570 SET_32 kernel32.dll_UnhandledExceptionFilter
+0x0002f604 0x0002c574 SET_32 kernel32.dll_RtlUnwind
+0x0002f610 0x0002c578 SET_32 kernel32.dll_RaiseException
+0x0002f622 0x0002c57c SET_32 kernel32.dll_GetStdHandle
+0x0002f63e 0x0002c584 SET_32 user32.dll_GetKeyboardType
+0x0002f650 0x0002c588 SET_32 user32.dll_LoadStringA
+0x0002f65e 0x0002c58c SET_32 user32.dll_MessageBoxA
+0x0002f66c 0x0002c590 SET_32 user32.dll_CharNextA
+0x0002f686 0x0002c598 SET_32 advapi32.dll_RegQueryValueExA
+0x0002f69a 0x0002c59c SET_32 advapi32.dll_RegOpenKeyExA
+0x0002f6aa 0x0002c5a0 SET_32 advapi32.dll_RegCloseKey
+0x0002f6c6 0x0002c5a8 SET_32 oleaut32.dll_SysFreeString
+0x0002f6d6 0x0002c5ac SET_32 oleaut32.dll_SysReAllocStringLen
+0x0002f6ec 0x0002c5b0 SET_32 oleaut32.dll_SysAllocStringLen
+0x0002f70e 0x0002c5b8 SET_32 kernel32.dll_TlsSetValue
+0x0002f71c 0x0002c5bc SET_32 kernel32.dll_TlsGetValue
+0x0002f72a 0x0002c5c0 SET_32 kernel32.dll_TlsFree
+0x0002f734 0x0002c5c4 SET_32 kernel32.dll_TlsAlloc
+0x0002f740 0x0002c5c8 SET_32 kernel32.dll_LocalFree
+0x0002f74c 0x0002c5cc SET_32 kernel32.dll_LocalAlloc
+0x0002f768 0x0002c5d4 SET_32 kernel32.dll_WriteFile
+0x0002f774 0x0002c5d8 SET_32 kernel32.dll_WaitForSingleObject
+0x0002f78a 0x0002c5dc SET_32 kernel32.dll_VirtualQuery
+0x0002f79a 0x0002c5e0 SET_32 kernel32.dll_VirtualFree
+0x0002f7a8 0x0002c5e4 SET_32 kernel32.dll_VirtualAlloc
+0x0002f7b8 0x0002c5e8 SET_32 kernel32.dll_Sleep
+0x0002f7c0 0x0002c5ec SET_32 kernel32.dll_SetFilePointer
+0x0002f7d2 0x0002c5f0 SET_32 kernel32.dll_SetEvent
+0x0002f7de 0x0002c5f4 SET_32 kernel32.dll_SetEndOfFile
+0x0002f7ee 0x0002c5f8 SET_32 kernel32.dll_ResumeThread
+0x0002f7fe 0x0002c5fc SET_32 kernel32.dll_ResetEvent
+0x0002f80c 0x0002c600 SET_32 kernel32.dll_ReadFile
+0x0002f818 0x0002c604 SET_32 kernel32.dll_QueryPerformanceFrequency
+0x0002f834 0x0002c608 SET_32 kernel32.dll_QueryPerformanceCounter
+0x0002f84e 0x0002c60c SET_32 kernel32.dll_OutputDebugStringA
+0x0002f864 0x0002c610 SET_32 kernel32.dll_LoadLibraryA
+0x0002f874 0x0002c614 SET_32 kernel32.dll_LeaveCriticalSection
+0x0002f88c 0x0002c618 SET_32 kernel32.dll_InitializeCriticalSection
+0x0002f8a8 0x0002c61c SET_32 kernel32.dll_GlobalUnlock
+0x0002f8b8 0x0002c620 SET_32 kernel32.dll_GlobalReAlloc
+0x0002f8c8 0x0002c624 SET_32 kernel32.dll_GlobalHandle
+0x0002f8d8 0x0002c628 SET_32 kernel32.dll_GlobalLock
+0x0002f8e6 0x0002c62c SET_32 kernel32.dll_GlobalFree
+0x0002f8f4 0x0002c630 SET_32 kernel32.dll_GlobalAlloc
+0x0002f902 0x0002c634 SET_32 kernel32.dll_GetVersionExA
+0x0002f912 0x0002c638 SET_32 kernel32.dll_GetTickCount
+0x0002f922 0x0002c63c SET_32 kernel32.dll_GetThreadLocale
+0x0002f934 0x0002c640 SET_32 kernel32.dll_GetStringTypeExA
+0x0002f948 0x0002c644 SET_32 kernel32.dll_GetStdHandle
+0x0002f958 0x0002c648 SET_32 kernel32.dll_GetProcAddress
+0x0002f96a 0x0002c64c SET_32 kernel32.dll_GetModuleHandleA
+0x0002f97e 0x0002c650 SET_32 kernel32.dll_GetModuleFileNameA
+0x0002f994 0x0002c654 SET_32 kernel32.dll_GetLocaleInfoA
+0x0002f9a6 0x0002c658 SET_32 kernel32.dll_GetLocalTime
+0x0002f9b6 0x0002c65c SET_32 kernel32.dll_GetLastError
+0x0002f9c6 0x0002c660 SET_32 kernel32.dll_GetFullPathNameA
+0x0002f9da 0x0002c664 SET_32 kernel32.dll_GetExitCodeThread
+0x0002f9ee 0x0002c668 SET_32 kernel32.dll_GetDiskFreeSpaceA
+0x0002fa02 0x0002c66c SET_32 kernel32.dll_GetDateFormatA
+0x0002fa14 0x0002c670 SET_32 kernel32.dll_GetCurrentThreadId
+0x0002fa2a 0x0002c674 SET_32 kernel32.dll_GetCPInfo
+0x0002fa36 0x0002c678 SET_32 kernel32.dll_GetACP
+0x0002fa40 0x0002c67c SET_32 kernel32.dll_InterlockedIncrement
+0x0002fa58 0x0002c680 SET_32 kernel32.dll_InterlockedExchange
+0x0002fa6e 0x0002c684 SET_32 kernel32.dll_InterlockedDecrement
+0x0002fa86 0x0002c688 SET_32 kernel32.dll_FreeLibrary
+0x0002fa94 0x0002c68c SET_32 kernel32.dll_FormatMessageA
+0x0002faa6 0x0002c690 SET_32 kernel32.dll_FindFirstFileA
+0x0002fab8 0x0002c694 SET_32 kernel32.dll_FindClose
+0x0002fac4 0x0002c698 SET_32 kernel32.dll_FileTimeToLocalFileTime
+0x0002fade 0x0002c69c SET_32 kernel32.dll_FileTimeToDosDateTime
+0x0002faf6 0x0002c6a0 SET_32 kernel32.dll_EnumCalendarInfoA
+0x0002fb0a 0x0002c6a4 SET_32 kernel32.dll_EnterCriticalSection
+0x0002fb22 0x0002c6a8 SET_32 kernel32.dll_DeleteCriticalSection
+0x0002fb3a 0x0002c6ac SET_32 kernel32.dll_CreateFileA
+0x0002fb48 0x0002c6b0 SET_32 kernel32.dll_CreateEventA
+0x0002fb58 0x0002c6b4 SET_32 kernel32.dll_CompareStringA
+0x0002fb6a 0x0002c6b8 SET_32 kernel32.dll_CloseHandle
+0x0002fb82 0x0002c6c0 SET_32 gdi32.dll_TextOutA
+0x0002fb8e 0x0002c6c4 SET_32 gdi32.dll_SetBkMode
+0x0002fb9a 0x0002c6c8 SET_32 gdi32.dll_SelectObject
+0x0002fbaa 0x0002c6cc SET_32 gdi32.dll_GetTextMetricsA
+0x0002fbbc 0x0002c6d0 SET_32 gdi32.dll_GetTextExtentPoint32A
+0x0002fbd4 0x0002c6d4 SET_32 gdi32.dll_DeleteObject
+0x0002fbe4 0x0002c6d8 SET_32 gdi32.dll_CreateFontA
+0x0002fbfe 0x0002c6e0 SET_32 user32.dll_CreateWindowExA
+0x0002fc10 0x0002c6e4 SET_32 user32.dll_UpdateWindow
+0x0002fc20 0x0002c6e8 SET_32 user32.dll_TranslateMessage
+0x0002fc34 0x0002c6ec SET_32 user32.dll_SetWindowTextA
+0x0002fc46 0x0002c6f0 SET_32 user32.dll_SetWindowPos
+0x0002fc56 0x0002c6f4 SET_32 user32.dll_SetWindowLongA
+0x0002fc68 0x0002c6f8 SET_32 user32.dll_SendMessageA
+0x0002fc78 0x0002c6fc SET_32 user32.dll_ScreenToClient
+0x0002fc8a 0x0002c700 SET_32 user32.dll_ReleaseDC
+0x0002fc96 0x0002c704 SET_32 user32.dll_RegisterClassExA
+0x0002fcaa 0x0002c708 SET_32 user32.dll_PostThreadMessageA
+0x0002fcc0 0x0002c70c SET_32 user32.dll_PostQuitMessage
+0x0002fcd2 0x0002c710 SET_32 user32.dll_PostMessageA
+0x0002fce2 0x0002c714 SET_32 user32.dll_PeekMessageA
+0x0002fcf2 0x0002c718 SET_32 user32.dll_MsgWaitForMultipleObjects
+0x0002fd0e 0x0002c71c SET_32 user32.dll_MessageBoxA
+0x0002fd1c 0x0002c720 SET_32 user32.dll_LoadStringA
+0x0002fd2a 0x0002c724 SET_32 user32.dll_InvalidateRect
+0x0002fd3c 0x0002c728 SET_32 user32.dll_GetWindowRect
+0x0002fd4c 0x0002c72c SET_32 user32.dll_GetWindowLongA
+0x0002fd5e 0x0002c730 SET_32 user32.dll_GetSystemMetrics
+0x0002fd72 0x0002c734 SET_32 user32.dll_GetMessageA
+0x0002fd80 0x0002c738 SET_32 user32.dll_GetDC
+0x0002fd88 0x0002c73c SET_32 user32.dll_FillRect
+0x0002fd94 0x0002c740 SET_32 user32.dll_EndPaint
+0x0002fda0 0x0002c744 SET_32 user32.dll_DispatchMessageA
+0x0002fdb4 0x0002c748 SET_32 user32.dll_DestroyWindow
+0x0002fdc4 0x0002c74c SET_32 user32.dll_DefWindowProcA
+0x0002fdd6 0x0002c750 SET_32 user32.dll_CallWindowProcA
+0x0002fde8 0x0002c754 SET_32 user32.dll_BeginPaint
+0x0002fdf6 0x0002c758 SET_32 user32.dll_CharNextA
+0x0002fe02 0x0002c75c SET_32 user32.dll_CharUpperBuffA
+0x0002fe14 0x0002c760 SET_32 user32.dll_CharToOemA
+0x0002fe30 0x0002c768 SET_32 kernel32.dll_Sleep
+0x0002fe46 0x0002c770 SET_32 oleaut32.dll_SafeArrayPtrOfIndex
+0x0002fe5c 0x0002c774 SET_32 oleaut32.dll_SafeArrayGetUBound
+0x0002fe72 0x0002c778 SET_32 oleaut32.dll_SafeArrayGetLBound
+0x0002fe88 0x0002c77c SET_32 oleaut32.dll_SafeArrayCreate
+0x0002fe9a 0x0002c780 SET_32 oleaut32.dll_VariantChangeType
+0x0002feae 0x0002c784 SET_32 oleaut32.dll_VariantCopy
+0x0002febc 0x0002c788 SET_32 oleaut32.dll_VariantClear
+0x0002fecc 0x0002c78c SET_32 oleaut32.dll_VariantInit
+0x0002fee6 0x0002c794 SET_32 wininet.dll_InternetQueryOptionA
+
+
+160 relocations
+977404
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

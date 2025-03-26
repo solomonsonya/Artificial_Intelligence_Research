@@ -1,0 +1,257 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000      0x0 0x180001000  0x28000 -r-x .text
+1   0x00000000      0x0 0x180029000   0xe000 -r-- .rdata
+2   0x00000000      0x0 0x180037000   0x6000 -rw- .data
+3   0x00000000      0x0 0x18003d000   0x3000 -r-- .pdata
+4   0x00000000      0x0 0x180040000  0x4d000 -r-x .upx0
+5   0x00000400  0x6c200 0x18008d000  0x6d000 -rwx .upx1
+6   0x0006c600    0x200 0x1800fa000   0x1000 -r-- .reloc
+7   0x0006c800    0x200 0x1800fb000   0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x1800eadaa paddr=0x0005e1aa haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――
+1   0x1800f1400 NONE FUNC KERNEL32.dll GetTempPathA
+1   0x1800f1410 NONE FUNC USER32.dll   CloseDesktop
+1   0x1800f1420 NONE FUNC GDI32.dll    DeleteObject
+1   0x1800f1430 NONE FUNC ADVAPI32.dll RegDeleteKeyA
+1   0x1800f1440 NONE FUNC SHELL32.dll  SHGetFileInfoA
+211 0x1800f1450 NONE FUNC ODBC32.dll   SQLExecDirectA
+15  0x1800f1460 NONE FUNC WS2_32.dll   ntohs
+1   0x1800f1470 NONE FUNC WINMM.dll    waveInPrepareHeader
+1   0x1800f1480 NONE FUNC SHLWAPI.dll  SHDeleteKeyA
+1   0x1800f1490 NONE FUNC PSAPI.DLL    GetModuleFileNameExA
+1   0x1800f14a0 NONE FUNC WTSAPI32.dll WTSEnumerateSessionsA
+1   0x1800f14b0 NONE FUNC WININET.dll  InternetReadFile
+1   0x1800f14c0 NONE FUNC AVICAP32.dll capGetDriverDescriptionA
+1   0x1800f14d0 NONE FUNC MSVFW32.dll  ICSeqCompressFrameEnd
+1   0x1800f14e0 NONE FUNC VERSION.dll  GetFileVersionInfoSizeA
+1   0x1800f14f0 NONE FUNC KERNEL32.dll GetModuleFileNameW
+1   0x1800f1500 NONE FUNC KERNEL32.dll GetModuleHandleA
+2   0x1800f1508 NONE FUNC KERNEL32.dll LoadLibraryA
+3   0x1800f1510 NONE FUNC KERNEL32.dll LocalAlloc
+4   0x1800f1518 NONE FUNC KERNEL32.dll LocalFree
+5   0x1800f1520 NONE FUNC KERNEL32.dll GetModuleFileNameA
+6   0x1800f1528 NONE FUNC KERNEL32.dll ExitProcess
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib          name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000bfe0 0x18000cfe0 GLOBAL FUNC 0    Wdmaud.dll   DllGetClassObject
+2   0x0000c0e0 0x18000d0e0 GLOBAL FUNC 0    Wdmaud.dll   DllRegisterServer
+3   0x0000c1b0 0x18000d1b0 GLOBAL FUNC 0    Wdmaud.dll   DllUnregisterServer
+4   0x0000c280 0x18000d280 GLOBAL FUNC 0    Wdmaud.dll   DriverProc
+5   0x0000e4d0 0x18000f4d0 GLOBAL FUNC 0    Wdmaud.dll   FUNC2
+6   0x0000d860 0x18000e860 GLOBAL FUNC 0    Wdmaud.dll   INIT
+7   0x0000c320 0x18000d320 GLOBAL FUNC 0    Wdmaud.dll   midMessage
+8   0x0000c3b0 0x18000d3b0 GLOBAL FUNC 0    Wdmaud.dll   modMessage
+9   0x0000c560 0x18000d560 GLOBAL FUNC 0    Wdmaud.dll   mxdMessage
+10  0x0000c440 0x18000d440 GLOBAL FUNC 0    Wdmaud.dll   widMessage
+11  0x0000c4d0 0x18000d4d0 GLOBAL FUNC 0    Wdmaud.dll   wodMessage
+12  0x0000bf10 0x18000cf10 GLOBAL FUNC 0    Wdmaud.dll   DllCanUnloadNow
+13  0x0000d8a0 0x18000e8a0 GLOBAL FUNC 0    Wdmaud.dll   ServiceMain
+1   0x00064800 0x1800f1400 NONE   FUNC 0    KERNEL32.dll imp.GetTempPathA
+1   0x00064810 0x1800f1410 NONE   FUNC 0    USER32.dll   imp.CloseDesktop
+1   0x00064820 0x1800f1420 NONE   FUNC 0    GDI32.dll    imp.DeleteObject
+1   0x00064830 0x1800f1430 NONE   FUNC 0    ADVAPI32.dll imp.RegDeleteKeyA
+1   0x00064840 0x1800f1440 NONE   FUNC 0    SHELL32.dll  imp.SHGetFileInfoA
+211 0x00064850 0x1800f1450 NONE   FUNC 0    ODBC32.dll   imp.SQLExecDirectA
+15  0x00064860 0x1800f1460 NONE   FUNC 0    WS2_32.dll   imp.ntohs
+1   0x00064870 0x1800f1470 NONE   FUNC 0    WINMM.dll    imp.waveInPrepareHeader
+1   0x00064880 0x1800f1480 NONE   FUNC 0    SHLWAPI.dll  imp.SHDeleteKeyA
+1   0x00064890 0x1800f1490 NONE   FUNC 0    PSAPI.DLL    imp.GetModuleFileNameExA
+1   0x000648a0 0x1800f14a0 NONE   FUNC 0    WTSAPI32.dll imp.WTSEnumerateSessionsA
+1   0x000648b0 0x1800f14b0 NONE   FUNC 0    WININET.dll  imp.InternetReadFile
+1   0x000648c0 0x1800f14c0 NONE   FUNC 0    AVICAP32.dll imp.capGetDriverDescriptionA
+1   0x000648d0 0x1800f14d0 NONE   FUNC 0    MSVFW32.dll  imp.ICSeqCompressFrameEnd
+1   0x000648e0 0x1800f14e0 NONE   FUNC 0    VERSION.dll  imp.GetFileVersionInfoSizeA
+1   0x000648f0 0x1800f14f0 NONE   FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+1   0x00064900 0x1800f1500 NONE   FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+2   0x00064908 0x1800f1508 NONE   FUNC 0    KERNEL32.dll imp.LoadLibraryA
+3   0x00064910 0x1800f1510 NONE   FUNC 0    KERNEL32.dll imp.LocalAlloc
+4   0x00064918 0x1800f1518 NONE   FUNC 0    KERNEL32.dll imp.LocalFree
+5   0x00064920 0x1800f1520 NONE   FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+6   0x00064928 0x1800f1528 NONE   FUNC 0    KERNEL32.dll imp.ExitProcess
+[Strings]
+nth paddr      vaddr       len size section type  string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0006c858 0x1800fb058 346 347  .rsrc   ascii <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>
+arch     x86
+baddr    0x180000000
+binsz    449800
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x0007961c
+compiled Sat Aug 27 09:47:07 2016
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0007961c
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  true
+cc       ms
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x8
+  TimeDateStamp : 0x57c1619b
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x2022
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x27400
+  SizeOfInitializedData : 0x13a00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0xeadaa
+  BaseOfCode : 0x1000
+  ImageBase : 0x180000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x2
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xfc000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x7961c
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 155 Name: Export1000 Version: 40219 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 40219 Times: 23
+  Product: 158 Name: Masm1000 Version: 40219 Times: 16
+  Product: 1 Name: Import0 Version: 0 Times: 331
+  Product: 147 Name: Implib900 Version: 30729 Times: 33
+  Product: 170 Name: Utc1600_C Version: 40219 Times: 121
+  Product: 171 Name: Utc1600_CPP Version: 40219 Times: 42
+  Product: 152 Name: AliasObj1000 Version: 20115 Times: 3
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0xed6a0
+  Size : 0x156
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xf2330
+  Size : 0x168
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xfb000
+  Size : 0x200
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x3d000
+  Size : 0x21e4
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x6ca00
+  Size : 0x1308
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0xfa000
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xf1400
+  Size : 0x138
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+gdi32.dll
+advapi32.dll
+shell32.dll
+odbc32.dll
+ws2_32.dll
+winmm.dll
+shlwapi.dll
+psapi.dll
+wtsapi32.dll
+wininet.dll
+avicap32.dll
+msvfw32.dll
+version.dll
+
+15 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000000f 0x00064860 SET_64 WS2_32.dll_ntohs
+0x000000d3 0x00064850 SET_64 ODBC32.dll_SQLExecDirectA
+0x000a3dcc 0x00064840 SET_64 SHELL32.dll_SHGetFileInfoA
+0x000a5368 0x000648e0 SET_64 VERSION.dll_GetFileVersionInfoSizeA
+0x000a5a1c 0x000648f0 SET_64 KERNEL32.dll_GetModuleFileNameW
+0x000a60e6 0x000648b0 SET_64 WININET.dll_InternetReadFile
+0x000a65d7 0x000648d0 SET_64 MSVFW32.dll_ICSeqCompressFrameEnd
+0x000a6cb0 0x00064820 SET_64 GDI32.dll_DeleteObject
+0x000a8330 0x00064900 SET_64 KERNEL32.dll_GetModuleHandleA
+0x000a8367 0x00064890 SET_64 PSAPI.DLL_GetModuleFileNameExA
+0x000aa15f 0x00064810 SET_64 USER32.dll_CloseDesktop
+0x000aa42c 0x00064800 SET_64 KERNEL32.dll_GetTempPathA
+0x000dce41 0x00064918 SET_64 KERNEL32.dll_LocalFree
+0x000e12ff 0x00064870 SET_64 WINMM.dll_waveInPrepareHeader
+0x000ea315 0x00064920 SET_64 KERNEL32.dll_GetModuleFileNameA
+0x000eb284 0x00064880 SET_64 SHLWAPI.dll_SHDeleteKeyA
+0x000f1873 0x000648a0 SET_64 WTSAPI32.dll_WTSEnumerateSessionsA
+0x000f3c8d 0x00064928 SET_64 KERNEL32.dll_ExitProcess
+0x000f3fc7 0x00064908 SET_64 KERNEL32.dll_LoadLibraryA
+0x000f44cf 0x00064830 SET_64 ADVAPI32.dll_RegDeleteKeyA
+0x000f4f87 0x00064910 SET_64 KERNEL32.dll_LocalAlloc
+0x000f5030 0x000648c0 SET_64 AVICAP32.dll_capGetDriverDescriptionA
+
+
+22 relocations
+449800
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

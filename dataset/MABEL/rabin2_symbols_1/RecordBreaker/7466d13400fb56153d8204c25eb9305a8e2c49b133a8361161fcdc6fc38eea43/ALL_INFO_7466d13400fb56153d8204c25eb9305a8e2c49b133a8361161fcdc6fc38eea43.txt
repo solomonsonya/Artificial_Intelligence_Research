@@ -1,0 +1,420 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x9e00 0x00401000  0xa000 -r-x .text
+1   0x0000a200  0x1800 0x0040b000  0x2000 -r-- .rdata
+2   0x00000000     0x0 0x0040d000  0x1000 -rw- .data
+3   0x0000ba00   0x200 0x0040e000  0x1000 -r-- .CRT
+4   0x0000bc00  0x1600 0x0040f000  0x2000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00406bea paddr=0x00005fea haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040b000 NONE FUNC KERNEL32.dll GetProcAddress
+2   0x0040b004 NONE FUNC KERNEL32.dll FreeLibrary
+3   0x0040b008 NONE FUNC KERNEL32.dll lstrcpynA
+4   0x0040b00c NONE FUNC KERNEL32.dll GetUserDefaultLCID
+5   0x0040b010 NONE FUNC KERNEL32.dll GetSystemInfo
+6   0x0040b014 NONE FUNC KERNEL32.dll LocalFree
+7   0x0040b018 NONE FUNC KERNEL32.dll LoadLibraryW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000a200 0x0040b000 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+2   0x0000a204 0x0040b004 NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+3   0x0000a208 0x0040b008 NONE FUNC 0    KERNEL32.dll imp.lstrcpynA
+4   0x0000a20c 0x0040b00c NONE FUNC 0    KERNEL32.dll imp.GetUserDefaultLCID
+5   0x0000a210 0x0040b010 NONE FUNC 0    KERNEL32.dll imp.GetSystemInfo
+6   0x0000a214 0x0040b014 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+7   0x0000a218 0x0040b018 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000a250 0x0040b050 12  26   .rdata  utf16le kernel32.dll
+1   0x0000a26c 0x0040b06c 12  13   .rdata  ascii   LoadLibraryW
+2   0x0000a27c 0x0040b07c 11  24   .rdata  utf16le Shlwapi.dll
+3   0x0000a294 0x0040b094 9   20   .rdata  utf16le Ole32.dll
+4   0x0000a2a8 0x0040b0a8 11  24   .rdata  utf16le WinInet.dll
+5   0x0000a2c0 0x0040b0c0 12  26   .rdata  utf16le Advapi32.dll
+6   0x0000a2dc 0x0040b0dc 10  22   .rdata  utf16le User32.dll
+7   0x0000a2f4 0x0040b0f4 11  24   .rdata  utf16le Crypt32.dll
+8   0x0000a30c 0x0040b10c 11  24   .rdata  utf16le Shell32.dll
+9   0x0000a324 0x0040b124 10  22   .rdata  utf16le Bcrypt.dll
+10  0x0000a33c 0x0040b13c 14  15   .rdata  ascii   GetProcAddress
+11  0x0000a34c 0x0040b14c 17  18   .rdata  ascii   GetCurrentProcess
+12  0x0000a360 0x0040b160 23  24   .rdata  ascii   GetEnvironmentVariableW
+13  0x0000a378 0x0040b178 11  12   .rdata  ascii   GetFileSize
+14  0x0000a384 0x0040b184 13  14   .rdata  ascii   GetDriveTypeW
+15  0x0000a394 0x0040b194 12  13   .rdata  ascii   GetLastError
+16  0x0000a3a4 0x0040b1a4 14  15   .rdata  ascii   GetLocaleInfoW
+17  0x0000a3b4 0x0040b1b4 23  24   .rdata  ascii   GetLogicalDriveStringsW
+18  0x0000a3cc 0x0040b1cc 18  19   .rdata  ascii   GetModuleFileNameW
+19  0x0000a3e0 0x0040b1e0 24  25   .rdata  ascii   GetSystemWow64DirectoryW
+20  0x0000a3fc 0x0040b1fc 24  25   .rdata  ascii   GetUserDefaultLocaleName
+21  0x0000a418 0x0040b218 22  23   .rdata  ascii   GetTimeZoneInformation
+22  0x0000a430 0x0040b230 11  12   .rdata  ascii   GlobalAlloc
+23  0x0000a43c 0x0040b23c 10  11   .rdata  ascii   GlobalFree
+24  0x0000a448 0x0040b248 20  21   .rdata  ascii   GlobalMemoryStatusEx
+25  0x0000a460 0x0040b260 11  12   .rdata  ascii   CloseHandle
+26  0x0000a46c 0x0040b26c 11  12   .rdata  ascii   CreateFileW
+27  0x0000a478 0x0040b278 12  13   .rdata  ascii   CreateMutexW
+28  0x0000a488 0x0040b288 9   10   .rdata  ascii   CopyFileW
+29  0x0000a494 0x0040b294 11  12   .rdata  ascii   DeleteFileW
+30  0x0000a4a0 0x0040b2a0 9   10   .rdata  ascii   FindClose
+31  0x0000a4ac 0x0040b2ac 14  15   .rdata  ascii   FindFirstFileW
+32  0x0000a4bc 0x0040b2bc 13  14   .rdata  ascii   FindNextFileW
+33  0x0000a4cc 0x0040b2cc 24  25   .rdata  ascii   CreateToolhelp32Snapshot
+34  0x0000a4e8 0x0040b2e8 8   9    .rdata  ascii   HeapFree
+35  0x0000a4f4 0x0040b2f4 11  12   .rdata  ascii   ExitProcess
+36  0x0000a500 0x0040b300 10  11   .rdata  ascii   OpenMutexW
+37  0x0000a50c 0x0040b30c 11  12   .rdata  ascii   OpenProcess
+38  0x0000a518 0x0040b318 9   10   .rdata  ascii   LocalFree
+39  0x0000a524 0x0040b324 10  11   .rdata  ascii   LocalAlloc
+40  0x0000a530 0x0040b330 19  20   .rdata  ascii   MultiByteToWideChar
+41  0x0000a544 0x0040b344 8   9    .rdata  ascii   ReadFile
+42  0x0000a550 0x0040b350 14  15   .rdata  ascii   Process32First
+43  0x0000a560 0x0040b360 13  14   .rdata  ascii   Process32Next
+44  0x0000a570 0x0040b370 20  21   .rdata  ascii   SetCurrentDirectoryW
+45  0x0000a588 0x0040b388 23  24   .rdata  ascii   SetEnvironmentVariableW
+46  0x0000a5a0 0x0040b3a0 5   6    .rdata  ascii   Sleep
+47  0x0000a5a8 0x0040b3a8 8   9    .rdata  ascii   lstrcpyA
+48  0x0000a5b4 0x0040b3b4 9   10   .rdata  ascii   lstrcmpiW
+49  0x0000a5c0 0x0040b3c0 8   9    .rdata  ascii   lstrcmpA
+50  0x0000a5cc 0x0040b3cc 8   9    .rdata  ascii   lstrcmpW
+51  0x0000a5d8 0x0040b3d8 8   9    .rdata  ascii   lstrlenA
+52  0x0000a5e4 0x0040b3e4 8   9    .rdata  ascii   lstrlenW
+53  0x0000a5f0 0x0040b3f0 9   10   .rdata  ascii   WriteFile
+54  0x0000a5fc 0x0040b3fc 19  20   .rdata  ascii   WideCharToMultiByte
+55  0x0000a610 0x0040b410 13  14   .rdata  ascii   ShellExecuteW
+56  0x0000a620 0x0040b420 16  17   .rdata  ascii   SHGetFolderPathW
+57  0x0000a634 0x0040b434 23  24   .rdata  ascii   SHGetSpecialFolderPathW
+58  0x0000a64c 0x0040b44c 14  15   .rdata  ascii   PathMatchSpecW
+59  0x0000a65c 0x0040b45c 12  13   .rdata  ascii   PathCombineW
+60  0x0000a66c 0x0040b46c 8   9    .rdata  ascii   StrRChrW
+61  0x0000a678 0x0040b478 7   8    .rdata  ascii   StrCpyW
+62  0x0000a680 0x0040b480 7   8    .rdata  ascii   StrStrA
+63  0x0000a688 0x0040b488 7   8    .rdata  ascii   StrStrW
+64  0x0000a690 0x0040b490 8   9    .rdata  ascii   StrStrIW
+65  0x0000a69c 0x0040b49c 9   10   .rdata  ascii   StrToIntA
+66  0x0000a6a8 0x0040b4a8 9   10   .rdata  ascii   StrToIntW
+67  0x0000a6b4 0x0040b4b4 13  14   .rdata  ascii   StrToInt64ExW
+68  0x0000a6c4 0x0040b4c4 22  23   .rdata  ascii   ConvertSidToStringSidW
+69  0x0000a6dc 0x0040b4dc 23  24   .rdata  ascii   CreateProcessWithTokenW
+70  0x0000a6f4 0x0040b4f4 16  17   .rdata  ascii   DuplicateTokenEx
+71  0x0000a708 0x0040b508 19  20   .rdata  ascii   GetTokenInformation
+72  0x0000a71c 0x0040b51c 12  13   .rdata  ascii   GetUserNameW
+73  0x0000a72c 0x0040b52c 16  17   .rdata  ascii   OpenProcessToken
+74  0x0000a740 0x0040b540 11  12   .rdata  ascii   RegCloseKey
+75  0x0000a74c 0x0040b54c 13  14   .rdata  ascii   RegEnumKeyExW
+76  0x0000a75c 0x0040b55c 13  14   .rdata  ascii   RegOpenKeyExW
+77  0x0000a76c 0x0040b56c 16  17   .rdata  ascii   RegQueryValueExW
+78  0x0000a780 0x0040b580 17  18   .rdata  ascii   SystemFunction036
+79  0x0000a794 0x0040b594 10  11   .rdata  ascii   CharUpperW
+80  0x0000a7a0 0x0040b5a0 19  20   .rdata  ascii   EnumDisplayDevicesW
+81  0x0000a7b4 0x0040b5b4 13  14   .rdata  ascii   GetClientRect
+82  0x0000a7c4 0x0040b5c4 5   6    .rdata  ascii   GetDC
+83  0x0000a7cc 0x0040b5cc 16  17   .rdata  ascii   GetDesktopWindow
+84  0x0000a7e0 0x0040b5e0 16  17   .rdata  ascii   GetSystemMetrics
+85  0x0000a7f4 0x0040b5f4 9   10   .rdata  ascii   ReleaseDC
+86  0x0000a800 0x0040b600 9   10   .rdata  ascii   wsprintfW
+87  0x0000a80c 0x0040b60c 12  13   .rdata  ascii   CoInitialize
+88  0x0000a81c 0x0040b61c 16  17   .rdata  ascii   CoCreateInstance
+89  0x0000a830 0x0040b630 20  21   .rdata  ascii   CryptStringToBinaryA
+90  0x0000a848 0x0040b648 20  21   .rdata  ascii   CryptStringToBinaryW
+91  0x0000a860 0x0040b660 20  21   .rdata  ascii   CryptBinaryToStringW
+92  0x0000a878 0x0040b678 18  19   .rdata  ascii   CryptUnprotectData
+93  0x0000a88c 0x0040b68c 16  17   .rdata  ascii   InternetConnectW
+94  0x0000a8a0 0x0040b6a0 13  14   .rdata  ascii   InternetOpenW
+95  0x0000a8b0 0x0040b6b0 18  19   .rdata  ascii   InternetSetOptionW
+96  0x0000a8c4 0x0040b6c4 16  17   .rdata  ascii   InternetOpenUrlA
+97  0x0000a8d8 0x0040b6d8 16  17   .rdata  ascii   InternetOpenUrlW
+98  0x0000a8ec 0x0040b6ec 19  20   .rdata  ascii   InternetReadFileExW
+99  0x0000a900 0x0040b700 16  17   .rdata  ascii   InternetReadFile
+100 0x0000a914 0x0040b714 19  20   .rdata  ascii   InternetCloseHandle
+101 0x0000a928 0x0040b728 16  17   .rdata  ascii   HttpOpenRequestW
+102 0x0000a93c 0x0040b73c 16  17   .rdata  ascii   HttpSendRequestW
+103 0x0000a950 0x0040b750 14  15   .rdata  ascii   HttpQueryInfoA
+104 0x0000a960 0x0040b760 14  15   .rdata  ascii   HttpQueryInfoW
+105 0x0000a970 0x0040b770 11  24   .rdata  utf16le Local State
+106 0x0000a988 0x0040b788 7   16   .rdata  utf16le Default
+107 0x0000a998 0x0040b798 10  22   .rdata  utf16le Profile %d
+108 0x0000a9b0 0x0040b7b0 10  22   .rdata  utf16le Login Data
+109 0x0000a9ca 0x0040b7ca 16  34   .rdata  utf16le 0Network\Cookies
+110 0x0000a9ec 0x0040b7ec 7   16   .rdata  utf16le Cookies
+111 0x0000aa0c 0x0040b80c 5   12   .rdata  utf16le FALSE
+112 0x0000aa18 0x0040b818 8   18   .rdata  utf16le Web Data
+113 0x0000aa34 0x0040b834 6   7    .rdata  ascii   tlgrm_
+114 0x0000aa3c 0x0040b83c 4   5    .rdata  ascii   ews_
+115 0x0000aa44 0x0040b844 5   6    .rdata  ascii   grbr_
+116 0x0000aa4c 0x0040b84c 23  24   .rdata  ascii   %s\tTRUE\t%s\t%s\t%s\t%s\t%s\n
+117 0x0000aa64 0x0040b864 22  23   .rdata  ascii   URL:%s\nUSR:%s\nPASS:%s\n
+118 0x0000aa7c 0x0040b87c 9   10   .rdata  ascii   \t\t%d) %s\n
+119 0x0000aa88 0x0040b888 14  15   .rdata  ascii   \t- Locale: %s\n
+120 0x0000aa98 0x0040b898 10  11   .rdata  ascii   \t- OS: %s\n
+121 0x0000aaa4 0x0040b8a4 14  15   .rdata  ascii   \t- RAM: %d MB\n
+122 0x0000aab4 0x0040b8b4 37  38   .rdata  ascii   \t- Time zone: %c%ld minutes from GMT\n
+123 0x0000aadc 0x0040b8dc 23  24   .rdata  ascii   \t- Display size: %dx%d\n
+124 0x0000aaf8 0x0040b8f8 21  22   .rdata  ascii   \t- Architecture: x%d\n
+125 0x0000ab10 0x0040b910 22  23   .rdata  ascii   \t- CPU: %s (%d cores)\n
+126 0x0000ab28 0x0040b928 23  24   .rdata  ascii   \t- Display Devices:\n%s\n
+127 0x0000ab40 0x0040b940 18  19   .rdata  ascii   formhistory.sqlite
+128 0x0000ab64 0x0040b964 6   28   .rdata  utf32le :%;_|⩜ blocks=Basic Latin,Supplemental Mathematical Operators
+129 0x0000ab80 0x0040b980 7   8    .rdata  ascii   ns.json
+130 0x0000ab88 0x0040b988 13  14   .rdata  ascii   \autofill.txt
+131 0x0000ab98 0x0040b998 12  13   .rdata  ascii   \cookies.txt
+132 0x0000aba8 0x0040b9a8 14  15   .rdata  ascii   \passwords.txt
+133 0x0000abc4 0x0040b9c4 62  63   .rdata  ascii   Content-Type: application/x-www-form-urlencoded; charset=utf-8
+134 0x0000ac04 0x0040ba04 44  45   .rdata  ascii   Content-Type: multipart/form-data; boundary=
+135 0x0000ac34 0x0040ba34 25  26   .rdata  ascii   Content-Type: text/plain;
+136 0x0000ac50 0x0040ba50 9   10   .rdata  ascii   User Data
+137 0x0000ac5c 0x0040ba5c 7   8    .rdata  ascii   wallets
+138 0x0000ac64 0x0040ba64 5   6    .rdata  ascii   wlts_
+139 0x0000ac6c 0x0040ba6c 4   5    .rdata  ascii   ldr_
+140 0x0000ac74 0x0040ba74 8   9    .rdata  ascii   scrnsht_
+141 0x0000ac80 0x0040ba80 8   9    .rdata  ascii   sstmnfo_
+142 0x0000ac8c 0x0040ba8c 6   7    .rdata  ascii   token:
+143 0x0000ac94 0x0040ba94 8   9    .rdata  ascii   nss3.dll
+144 0x0000aca0 0x0040baa0 11  12   .rdata  ascii   sqlite3.dll
+145 0x0000acac 0x0040baac 44  45   .rdata  ascii   SOFTWARE\Microsoft\Windows NT\CurrentVersion
+146 0x0000acdc 0x0040badc 4   5    .rdata  ascii   PATH
+147 0x0000ace4 0x0040bae4 11  12   .rdata  ascii   ProductName
+148 0x0000acf0 0x0040baf0 8   9    .rdata  ascii   Web Data
+149 0x0000acfc 0x0040bafc 18  19   .rdata  ascii   sqlite3_prepare_v2
+150 0x0000ad10 0x0040bb10 14  15   .rdata  ascii   sqlite3_open16
+151 0x0000ad20 0x0040bb20 13  14   .rdata  ascii   sqlite3_close
+152 0x0000ad30 0x0040bb30 12  13   .rdata  ascii   sqlite3_step
+153 0x0000ad40 0x0040bb40 16  17   .rdata  ascii   sqlite3_finalize
+154 0x0000ad54 0x0040bb54 21  22   .rdata  ascii   sqlite3_column_text16
+155 0x0000ad6c 0x0040bb6c 22  23   .rdata  ascii   sqlite3_column_bytes16
+156 0x0000ad84 0x0040bb84 19  20   .rdata  ascii   sqlite3_column_blob
+157 0x0000ad98 0x0040bb98 61  62   .rdata  ascii   SELECT origin_url, username_value, password_value FROM logins
+158 0x0000add8 0x0040bbd8 82  83   .rdata  ascii   SELECT host_key, path, is_secure , expires_utc, name, encrypted_value FROM cookies
+159 0x0000ae2c 0x0040bc2c 32  33   .rdata  ascii   SELECT name, value FROM autofill
+160 0x0000ae50 0x0040bc50 5   6    .rdata  ascii   pera 
+161 0x0000ae58 0x0040bc58 6   7    .rdata  ascii   Stable
+162 0x0000ae60 0x0040bc60 65  66   .rdata  ascii   SELECT host, path, isSecure, expiry, name, value FROM moz_cookies
+163 0x0000aea4 0x0040bca4 44  45   .rdata  ascii   SELECT fieldname, value FROM moz_formhistory
+164 0x0000aed4 0x0040bcd4 14  15   .rdata  ascii   cookies.sqlite
+165 0x0000aee4 0x0040bce4 10  11   .rdata  ascii   machineId=
+166 0x0000aef0 0x0040bcf0 10  11   .rdata  ascii   &configId=
+167 0x0000aefc 0x0040bcfc 17  18   .rdata  ascii   "encrypted_key":"
+168 0x0000af10 0x0040bd10 16  17   .rdata  ascii   stats_version":"
+169 0x0000af24 0x0040bd24 34  35   .rdata  ascii   Content-Type: application/x-object
+170 0x0000af48 0x0040bd48 55  56   .rdata  ascii   Content-Disposition: form-data; name="file"; filename="
+171 0x0000af84 0x0040bd84 4   5    .rdata  ascii   POST
+172 0x0000af90 0x0040bd90 11  12   .rdata  ascii   MachineGuid
+173 0x0000af9c 0x0040bd9c 10  11   .rdata  ascii   image/jpeg
+174 0x0000afa8 0x0040bda8 11  12   .rdata  ascii   GdiPlus.dll
+175 0x0000afb4 0x0040bdb4 9   10   .rdata  ascii   Gdi32.dll
+176 0x0000afc0 0x0040bdc0 14  15   .rdata  ascii   GdiplusStartup
+177 0x0000afd0 0x0040bdd0 16  17   .rdata  ascii   GdipDisposeImage
+178 0x0000afe4 0x0040bde4 20  21   .rdata  ascii   GdipGetImageEncoders
+179 0x0000affc 0x0040bdfc 24  25   .rdata  ascii   GdipGetImageEncodersSize
+180 0x0000b018 0x0040be18 27  28   .rdata  ascii   GdipCreateBitmapFromHBITMAP
+181 0x0000b034 0x0040be34 19  20   .rdata  ascii   GdipSaveImageToFile
+182 0x0000b048 0x0040be48 6   7    .rdata  ascii   BitBlt
+183 0x0000b050 0x0040be50 22  23   .rdata  ascii   CreateCompatibleBitmap
+184 0x0000b068 0x0040be68 18  19   .rdata  ascii   CreateCompatibleDC
+185 0x0000b07c 0x0040be7c 12  13   .rdata  ascii   DeleteObject
+186 0x0000b08c 0x0040be8c 10  11   .rdata  ascii   GetObjectW
+187 0x0000b098 0x0040be98 12  13   .rdata  ascii   SelectObject
+188 0x0000b0a8 0x0040bea8 17  18   .rdata  ascii   SetStretchBltMode
+189 0x0000b0bc 0x0040bebc 10  11   .rdata  ascii   StretchBlt
+190 0x0000b0c8 0x0040bec8 95  96   .rdata  ascii   SELECT name_on_card, card_number_encrypted, expiration_month, expiration_year FROM credit_cards
+191 0x0000b128 0x0040bf28 27  28   .rdata  ascii   NUM:%s\nHOLDER:%s\nEXP:%s/%s\n
+192 0x0000b144 0x0040bf44 7   8    .rdata  ascii   \CC.txt
+193 0x0000b14c 0x0040bf4c 8   9    .rdata  ascii   NSS_Init
+194 0x0000b158 0x0040bf58 12  13   .rdata  ascii   NSS_Shutdown
+195 0x0000b168 0x0040bf68 23  24   .rdata  ascii   PK11_GetInternalKeySlot
+196 0x0000b180 0x0040bf80 13  14   .rdata  ascii   PK11_FreeSlot
+197 0x0000b190 0x0040bf90 17  18   .rdata  ascii   PK11_Authenticate
+198 0x0000b1a4 0x0040bfa4 15  16   .rdata  ascii   PK11SDR_Decrypt
+199 0x0000b1b4 0x0040bfb4 16  17   .rdata  ascii   SECITEM_FreeItem
+200 0x0000b1c8 0x0040bfc8 11  12   .rdata  ascii   hostname":"
+201 0x0000b1d4 0x0040bfd4 14  15   .rdata  ascii   ","httpRealm":
+202 0x0000b1e4 0x0040bfe4 20  21   .rdata  ascii   encryptedUsername":"
+203 0x0000b1fc 0x0040bffc 23  24   .rdata  ascii   ","encryptedPassword":"
+204 0x0000b214 0x0040c014 9   10   .rdata  ascii   ","guid":
+205 0x0000b220 0x0040c020 8   9    .rdata  ascii   Profiles
+206 0x0000b234 0x0040c034 8   9    .rdata  ascii   S-1-5-18
+207 0x0000b240 0x0040c040 5   12   .rdata  utf16le *.lnk
+208 0x0000b258 0x0040c058 12  26   .rdata  utf16le fcookies.txt
+209 0x0000b284 0x0040c084 32  33   .rdata  ascii   7da6f19b2811b7222412ad5d018c08d4
+210 0x0000b2a8 0x0040c0a8 64  65   .rdata  ascii   p7BlzH7jpKtdDaZ3hEuZzgzNLDT5                                    
+211 0x0000b2f0 0x0040c0f0 64  65   .rdata  ascii                                                                   
+212 0x0000b338 0x0040c138 64  65   .rdata  ascii                                                                   
+213 0x0000b380 0x0040c180 64  65   .rdata  ascii                                                                   
+214 0x0000b3c8 0x0040c1c8 64  65   .rdata  ascii                                                                   
+215 0x0000b414 0x0040c214 11  24   .rdata  utf16le zzzzzzzzzzz
+216 0x0000b438 0x0040c238 10  22   .rdata  utf16le 2.0/client
+217 0x0000b450 0x0040c250 6   14   .rdata  utf16le record
+218 0x0000b468 0x0040c268 4   10   .rdata  utf16le \r\n\r\n
+219 0x0000b474 0x0040c274 4   10   .rdata  utf16le libs
+220 0x0000b480 0x0040c280 4   10   .rdata  utf16le .dll
+221 0x0000b48d 0x0040c28d 4   5    .rdata  ascii   f")@
+222 0x0000b4a0 0x0040c2a0 51  104  .rdata  utf16le SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall
+223 0x0000b508 0x0040c308 11  24   .rdata  utf16le DisplayName
+224 0x0000b520 0x0040c320 14  30   .rdata  utf16le DisplayVersion
+225 0x0000b540 0x0040c340 7   16   .rdata  utf16le \t%s %s\n
+226 0x0000b558 0x0040c358 18  38   .rdata  utf16le colossssss///ihaaa
+227 0x0000b588 0x0040c388 31  64   .rdata  utf16le SOFTWARE\Microsoft\Cryptography
+228 0x0000b5d0 0x0040c3d0 8   18   .rdata  utf16le llet.dat
+229 0x0000b660 0x0040c460 4   5    .rdata  ascii   GCTL
+230 0x0000b66c 0x0040c46c 8   9    .rdata  ascii   .text$di
+231 0x0000b680 0x0040c480 8   9    .rdata  ascii   .text$mn
+232 0x0000b694 0x0040c494 8   9    .rdata  ascii   .idata$5
+233 0x0000b6a8 0x0040c4a8 6   7    .rdata  ascii   .rdata
+234 0x0000b6b8 0x0040c4b8 13  14   .rdata  ascii   .rdata$voltmd
+235 0x0000b6d0 0x0040c4d0 13  14   .rdata  ascii   .rdata$zzzdbg
+236 0x0000b6e8 0x0040c4e8 8   9    .rdata  ascii   .idata$2
+237 0x0000b6fc 0x0040c4fc 8   9    .rdata  ascii   .idata$3
+238 0x0000b710 0x0040c510 8   9    .rdata  ascii   .idata$4
+239 0x0000b724 0x0040c524 8   9    .rdata  ascii   .idata$6
+240 0x0000b738 0x0040c538 4   5    .rdata  ascii   .bss
+241 0x0000b748 0x0040c548 8   9    .rdata  ascii   .CRT$XCU
+242 0x0000b79e 0x0040c59e 12  13   .rdata  ascii   LoadLibraryW
+243 0x0000b7ae 0x0040c5ae 14  15   .rdata  ascii   GetProcAddress
+244 0x0000b7c0 0x0040c5c0 11  12   .rdata  ascii   FreeLibrary
+245 0x0000b7ce 0x0040c5ce 9   10   .rdata  ascii   lstrcpynA
+246 0x0000b7da 0x0040c5da 18  19   .rdata  ascii   GetUserDefaultLCID
+247 0x0000b7f0 0x0040c5f0 13  14   .rdata  ascii   GetSystemInfo
+248 0x0000b800 0x0040c600 9   10   .rdata  ascii   LocalFree
+249 0x0000b80a 0x0040c60a 12  13   .rdata  ascii   KERNEL32.dll
+arch     x86
+baddr    0x400000
+binsz    53760
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001198c
+compiled Sun Jul 24 16:38:39 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x62dd758f
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x1d
+  SizeOfCode : 0x9e00
+  SizeOfInitializedData : 0x3e00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x6bea
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x11000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 30145 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 30145 Times: 17
+  Product: 1 Name: Import0 Version: 0 Times: 7
+  Product: 257 Name: Implib1400 Version: 27412 Times: 3
+  Product: 262 Name: Utc1900_CVTCIL_C Version: 27412 Times: 1
+  Product: 260 Name: Utc1900_C Version: 27412 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xc554
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0xf000
+  Size : 0x14ac
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0xc410
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb000
+  Size : 0x20
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000c59c 0x0000a218 SET_32 KERNEL32.dll_LoadLibraryW
+0x0000c5ac 0x0000a200 SET_32 KERNEL32.dll_GetProcAddress
+0x0000c5be 0x0000a204 SET_32 KERNEL32.dll_FreeLibrary
+0x0000c5cc 0x0000a208 SET_32 KERNEL32.dll_lstrcpynA
+0x0000c5d8 0x0000a20c SET_32 KERNEL32.dll_GetUserDefaultLCID
+0x0000c5ee 0x0000a210 SET_32 KERNEL32.dll_GetSystemInfo
+0x0000c5fe 0x0000a214 SET_32 KERNEL32.dll_LocalFree
+
+
+7 relocations
+53760
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

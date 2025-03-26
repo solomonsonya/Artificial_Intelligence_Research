@@ -1,0 +1,183 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x200 0x10001000  0x1000 -r-x .text
+1   0x00000600  0x200 0x10002000  0x1000 -r-- .rdata
+2   0x00000800  0x200 0x10003000  0x1000 -rw- .data
+3   0x00000a00  0x200 0x10004000  0x1000 -r-- .rsrc
+4   0x00000c00  0x200 0x10005000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x100011b6 paddr=0x000005b6 haddr=0x000000f0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10002000 NONE FUNC KERNEL32.dll ExitProcess
+2   0x10002004 NONE FUNC KERNEL32.dll CloseHandle
+3   0x10002008 NONE FUNC KERNEL32.dll ReadFile
+4   0x1000200c NONE FUNC KERNEL32.dll VirtualAlloc
+5   0x10002010 NONE FUNC KERNEL32.dll CreateFileA
+6   0x10002014 NONE FUNC KERNEL32.dll GetModuleFileNameA
+7   0x10002018 NONE FUNC KERNEL32.dll VirtualProtect
+8   0x1000201c NONE FUNC KERNEL32.dll GetModuleHandleA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000600 0x10002000 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+2   0x00000604 0x10002004 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+3   0x00000608 0x10002008 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+4   0x0000060c 0x1000200c NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+5   0x00000610 0x10002010 NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+6   0x00000614 0x10002014 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+7   0x00000618 0x10002018 NONE FUNC 0    KERNEL32.dll imp.VirtualProtect
+8   0x0000061c 0x1000201c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000624 0x10002024 4   5    .rdata  ascii .dat
+1   0x0000067a 0x1000207a 11  12   .rdata  ascii ExitProcess
+2   0x00000688 0x10002088 11  12   .rdata  ascii CloseHandle
+3   0x00000696 0x10002096 8   9    .rdata  ascii ReadFile
+4   0x000006a2 0x100020a2 12  13   .rdata  ascii VirtualAlloc
+5   0x000006b2 0x100020b2 11  12   .rdata  ascii CreateFileA
+6   0x000006c0 0x100020c0 18  19   .rdata  ascii GetModuleFileNameA
+7   0x000006d6 0x100020d6 14  15   .rdata  ascii VirtualProtect
+8   0x000006e8 0x100020e8 16  17   .rdata  ascii GetModuleHandleA
+9   0x000006fa 0x100020fa 12  13   .rdata  ascii KERNEL32.dll
+0   0x00000800 0x10003000 15  16   .data   ascii QWERTYUIOPLKJHG
+0   0x00000a58 0x10004058 424 424  .rsrc   ascii <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>PAPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPAD
+arch     x86
+baddr    0x10000000
+binsz    3584
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000ff04
+compiled Tue Jan 15 19:38:46 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0000c1db
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x50f5b046
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x200
+  SizeOfInitializedData : 0x800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x11b6
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x6000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xc1db
+  Subsystem : 0x2
+  DllCharacteristics : 0x540
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 132 Name: Utc1500_CPP Version: 21022 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 8
+  Product: 123 Name: Implib800 Version: 50727 Times: 3
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x202c
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x4000
+  Size : 0x1b4
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x5000
+  Size : 0x24
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x24
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00002078 0x00000600 SET_32 KERNEL32.dll_ExitProcess
+0x00002086 0x00000604 SET_32 KERNEL32.dll_CloseHandle
+0x00002094 0x00000608 SET_32 KERNEL32.dll_ReadFile
+0x000020a0 0x0000060c SET_32 KERNEL32.dll_VirtualAlloc
+0x000020b0 0x00000610 SET_32 KERNEL32.dll_CreateFileA
+0x000020be 0x00000614 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x000020d4 0x00000618 SET_32 KERNEL32.dll_VirtualProtect
+0x000020e6 0x0000061c SET_32 KERNEL32.dll_GetModuleHandleA
+
+
+8 relocations
+3584
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

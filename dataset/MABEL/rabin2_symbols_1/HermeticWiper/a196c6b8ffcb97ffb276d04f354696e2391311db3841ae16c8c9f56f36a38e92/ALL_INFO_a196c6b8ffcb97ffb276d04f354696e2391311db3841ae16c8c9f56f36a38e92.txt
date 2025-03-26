@@ -1,0 +1,385 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2e00 0x00401000  0x3000 -r-x .text
+1   0x00003200  0x2200 0x00404000  0x3000 -rw- .data
+2   0x00005400   0x400 0x00407000  0x1000 -r-- .rdata
+3   0x00005800   0xa00 0x00408000  0x1000 -r-- .eh_fram
+4   0x00000000     0x0 0x00409000  0x1000 -rw- .bss
+5   0x00006200   0x600 0x0040a000  0x1000 -rw- .idata
+6   0x00006800   0x200 0x0040b000  0x1000 -rw- .CRT
+7   0x00006a00   0x200 0x0040c000  0x1000 -rw- .tls
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401300 paddr=0x00000700 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x00401a00 paddr=0x00000e00 hpaddr=0x00006804 type=tls
+vaddr=0x004019b0 paddr=0x00000db0 hpaddr=0x00006808 type=tls
+
+2 entrypoints
+[Main]
+vaddr=0x00402010 paddr=0x00001410
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040a130 NONE FUNC KERNEL32.dll CloseHandle
+2   0x0040a134 NONE FUNC KERNEL32.dll CreateFileW
+3   0x0040a138 NONE FUNC KERNEL32.dll DeleteCriticalSection
+4   0x0040a13c NONE FUNC KERNEL32.dll EnterCriticalSection
+5   0x0040a140 NONE FUNC KERNEL32.dll ExitProcess
+6   0x0040a144 NONE FUNC KERNEL32.dll FindClose
+7   0x0040a148 NONE FUNC KERNEL32.dll FindFirstFileA
+8   0x0040a14c NONE FUNC KERNEL32.dll FindNextFileA
+9   0x0040a150 NONE FUNC KERNEL32.dll FreeLibrary
+10  0x0040a154 NONE FUNC KERNEL32.dll GetCommandLineA
+11  0x0040a158 NONE FUNC KERNEL32.dll GetLastError
+12  0x0040a15c NONE FUNC KERNEL32.dll GetModuleHandleA
+13  0x0040a160 NONE FUNC KERNEL32.dll GetProcAddress
+14  0x0040a164 NONE FUNC KERNEL32.dll InitializeCriticalSection
+15  0x0040a168 NONE FUNC KERNEL32.dll LeaveCriticalSection
+16  0x0040a16c NONE FUNC KERNEL32.dll LoadLibraryA
+17  0x0040a170 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+18  0x0040a174 NONE FUNC KERNEL32.dll TlsGetValue
+19  0x0040a178 NONE FUNC KERNEL32.dll VirtualProtect
+20  0x0040a17c NONE FUNC KERNEL32.dll VirtualQuery
+21  0x0040a180 NONE FUNC KERNEL32.dll WriteFile
+1   0x0040a188 NONE FUNC msvcrt.dll   _strdup
+2   0x0040a18c NONE FUNC msvcrt.dll   _stricoll
+1   0x0040a194 NONE FUNC msvcrt.dll   __getmainargs
+2   0x0040a198 NONE FUNC msvcrt.dll   __mb_cur_max
+3   0x0040a19c NONE FUNC msvcrt.dll   __p__environ
+4   0x0040a1a0 NONE FUNC msvcrt.dll   __p__fmode
+5   0x0040a1a4 NONE FUNC msvcrt.dll   __set_app_type
+6   0x0040a1a8 NONE FUNC msvcrt.dll   _cexit
+7   0x0040a1ac NONE FUNC msvcrt.dll   _errno
+8   0x0040a1b0 NONE FUNC msvcrt.dll   _fpreset
+9   0x0040a1b4 NONE FUNC msvcrt.dll   _fullpath
+10  0x0040a1b8 NONE FUNC msvcrt.dll   _iob
+11  0x0040a1bc NONE FUNC msvcrt.dll   _isctype
+12  0x0040a1c0 NONE FUNC msvcrt.dll   _onexit
+13  0x0040a1c4 NONE FUNC msvcrt.dll   _pctype
+14  0x0040a1c8 NONE FUNC msvcrt.dll   _setmode
+15  0x0040a1cc NONE FUNC msvcrt.dll   abort
+16  0x0040a1d0 NONE FUNC msvcrt.dll   atexit
+17  0x0040a1d4 NONE FUNC msvcrt.dll   calloc
+18  0x0040a1d8 NONE FUNC msvcrt.dll   free
+19  0x0040a1dc NONE FUNC msvcrt.dll   fwrite
+20  0x0040a1e0 NONE FUNC msvcrt.dll   malloc
+21  0x0040a1e4 NONE FUNC msvcrt.dll   mbstowcs
+22  0x0040a1e8 NONE FUNC msvcrt.dll   memcpy
+23  0x0040a1ec NONE FUNC msvcrt.dll   realloc
+24  0x0040a1f0 NONE FUNC msvcrt.dll   setlocale
+25  0x0040a1f4 NONE FUNC msvcrt.dll   signal
+26  0x0040a1f8 NONE FUNC msvcrt.dll   strcoll
+27  0x0040a1fc NONE FUNC msvcrt.dll   strlen
+28  0x0040a200 NONE FUNC msvcrt.dll   tolower
+29  0x0040a204 NONE FUNC msvcrt.dll   vfprintf
+30  0x0040a208 NONE FUNC msvcrt.dll   wcstombs
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00006330 0x0040a130 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+2   0x00006334 0x0040a134 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+3   0x00006338 0x0040a138 NONE FUNC 0    KERNEL32.dll imp.DeleteCriticalSection
+4   0x0000633c 0x0040a13c NONE FUNC 0    KERNEL32.dll imp.EnterCriticalSection
+5   0x00006340 0x0040a140 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+6   0x00006344 0x0040a144 NONE FUNC 0    KERNEL32.dll imp.FindClose
+7   0x00006348 0x0040a148 NONE FUNC 0    KERNEL32.dll imp.FindFirstFileA
+8   0x0000634c 0x0040a14c NONE FUNC 0    KERNEL32.dll imp.FindNextFileA
+9   0x00006350 0x0040a150 NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+10  0x00006354 0x0040a154 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineA
+11  0x00006358 0x0040a158 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+12  0x0000635c 0x0040a15c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+13  0x00006360 0x0040a160 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+14  0x00006364 0x0040a164 NONE FUNC 0    KERNEL32.dll imp.InitializeCriticalSection
+15  0x00006368 0x0040a168 NONE FUNC 0    KERNEL32.dll imp.LeaveCriticalSection
+16  0x0000636c 0x0040a16c NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+17  0x00006370 0x0040a170 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+18  0x00006374 0x0040a174 NONE FUNC 0    KERNEL32.dll imp.TlsGetValue
+19  0x00006378 0x0040a178 NONE FUNC 0    KERNEL32.dll imp.VirtualProtect
+20  0x0000637c 0x0040a17c NONE FUNC 0    KERNEL32.dll imp.VirtualQuery
+21  0x00006380 0x0040a180 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+1   0x00006388 0x0040a188 NONE FUNC 0    msvcrt.dll   imp._strdup
+2   0x0000638c 0x0040a18c NONE FUNC 0    msvcrt.dll   imp._stricoll
+1   0x00006394 0x0040a194 NONE FUNC 0    msvcrt.dll   imp.__getmainargs
+2   0x00006398 0x0040a198 NONE FUNC 0    msvcrt.dll   imp.__mb_cur_max
+3   0x0000639c 0x0040a19c NONE FUNC 0    msvcrt.dll   imp.__p__environ
+4   0x000063a0 0x0040a1a0 NONE FUNC 0    msvcrt.dll   imp.__p__fmode
+5   0x000063a4 0x0040a1a4 NONE FUNC 0    msvcrt.dll   imp.__set_app_type
+6   0x000063a8 0x0040a1a8 NONE FUNC 0    msvcrt.dll   imp._cexit
+7   0x000063ac 0x0040a1ac NONE FUNC 0    msvcrt.dll   imp._errno
+8   0x000063b0 0x0040a1b0 NONE FUNC 0    msvcrt.dll   imp._fpreset
+9   0x000063b4 0x0040a1b4 NONE FUNC 0    msvcrt.dll   imp._fullpath
+10  0x000063b8 0x0040a1b8 NONE FUNC 0    msvcrt.dll   imp._iob
+11  0x000063bc 0x0040a1bc NONE FUNC 0    msvcrt.dll   imp._isctype
+12  0x000063c0 0x0040a1c0 NONE FUNC 0    msvcrt.dll   imp._onexit
+13  0x000063c4 0x0040a1c4 NONE FUNC 0    msvcrt.dll   imp._pctype
+14  0x000063c8 0x0040a1c8 NONE FUNC 0    msvcrt.dll   imp._setmode
+15  0x000063cc 0x0040a1cc NONE FUNC 0    msvcrt.dll   imp.abort
+16  0x000063d0 0x0040a1d0 NONE FUNC 0    msvcrt.dll   imp.atexit
+17  0x000063d4 0x0040a1d4 NONE FUNC 0    msvcrt.dll   imp.calloc
+18  0x000063d8 0x0040a1d8 NONE FUNC 0    msvcrt.dll   imp.free
+19  0x000063dc 0x0040a1dc NONE FUNC 0    msvcrt.dll   imp.fwrite
+20  0x000063e0 0x0040a1e0 NONE FUNC 0    msvcrt.dll   imp.malloc
+21  0x000063e4 0x0040a1e4 NONE FUNC 0    msvcrt.dll   imp.mbstowcs
+22  0x000063e8 0x0040a1e8 NONE FUNC 0    msvcrt.dll   imp.memcpy
+23  0x000063ec 0x0040a1ec NONE FUNC 0    msvcrt.dll   imp.realloc
+24  0x000063f0 0x0040a1f0 NONE FUNC 0    msvcrt.dll   imp.setlocale
+25  0x000063f4 0x0040a1f4 NONE FUNC 0    msvcrt.dll   imp.signal
+26  0x000063f8 0x0040a1f8 NONE FUNC 0    msvcrt.dll   imp.strcoll
+27  0x000063fc 0x0040a1fc NONE FUNC 0    msvcrt.dll   imp.strlen
+28  0x00006400 0x0040a200 NONE FUNC 0    msvcrt.dll   imp.tolower
+29  0x00006404 0x0040a204 NONE FUNC 0    msvcrt.dll   imp.vfprintf
+30  0x00006408 0x0040a208 NONE FUNC 0    msvcrt.dll   imp.wcstombs
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00003240 0x00404040 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+1   0x000032a2 0x004040a2 5   6    .data   ascii   AAAAA
+2   0x000032a8 0x004040a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+3   0x00003440 0x00404240 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+4   0x000034a2 0x004042a2 5   6    .data   ascii   AAAAA
+5   0x000034a8 0x004042a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+6   0x00003640 0x00404440 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+7   0x000036a2 0x004044a2 5   6    .data   ascii   AAAAA
+8   0x000036a8 0x004044a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+9   0x00003840 0x00404640 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+10  0x000038a2 0x004046a2 5   6    .data   ascii   AAAAA
+11  0x000038a8 0x004046a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+12  0x00003a40 0x00404840 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+13  0x00003aa2 0x004048a2 5   6    .data   ascii   AAAAA
+14  0x00003aa8 0x004048a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+15  0x00003c40 0x00404a40 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+16  0x00003ca2 0x00404aa2 5   6    .data   ascii   AAAAA
+17  0x00003ca8 0x00404aa8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+18  0x00003e40 0x00404c40 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+19  0x00003ea2 0x00404ca2 5   6    .data   ascii   AAAAA
+20  0x00003ea8 0x00404ca8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+21  0x00004040 0x00404e40 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+22  0x000040a2 0x00404ea2 5   6    .data   ascii   AAAAA
+23  0x000040a8 0x00404ea8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+24  0x00004240 0x00405040 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+25  0x000042a2 0x004050a2 5   6    .data   ascii   AAAAA
+26  0x000042a8 0x004050a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+27  0x00004440 0x00405240 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+28  0x000044a2 0x004052a2 5   6    .data   ascii   AAAAA
+29  0x000044a8 0x004052a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+30  0x00004640 0x00405440 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+31  0x000046a2 0x004054a2 5   6    .data   ascii   AAAAA
+32  0x000046a8 0x004054a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+33  0x00004840 0x00405640 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+34  0x000048a2 0x004056a2 5   6    .data   ascii   AAAAA
+35  0x000048a8 0x004056a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+36  0x00004a40 0x00405840 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+37  0x00004aa2 0x004058a2 5   6    .data   ascii   AAAAA
+38  0x00004aa8 0x004058a8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+39  0x00004c40 0x00405a40 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+40  0x00004ca2 0x00405aa2 5   6    .data   ascii   AAAAA
+41  0x00004ca8 0x00405aa8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+42  0x00004e40 0x00405c40 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+43  0x00004ea2 0x00405ca2 5   6    .data   ascii   AAAAA
+44  0x00004ea8 0x00405ca8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+45  0x00005040 0x00405e40 6   10   .data   utf8    ÌȎأx|f blocks=Latin-1 Supplement,Latin Extended-B,Arabic,Basic Latin
+46  0x000050a2 0x00405ea2 5   6    .data   ascii   AAAAA
+47  0x000050a8 0x00405ea8 370 371  .data   ascii   Your hard drive has been corrupted.\r\nIn case you want to recover all hard drives\r\nof your organization,\r\nYou should pay us  $10k via bitcoin wallet\r\n1AVNM68gj6PGPFcJuftKATa4WLnzg8fpfv and send message via\r\ntox ID 8BEDC411012A33BA34F49130D0F186993C6A32DAD8976F6A5D82C1ED23054C057ECED5496F65\r\nwith your organization name.\r\nWe will contact you to give further instructions.
+0   0x00005400 0x00407000 18  19   .rdata  ascii   libgcc_s_dw2-1.dll
+1   0x00005413 0x00407013 21  22   .rdata  ascii   __register_frame_info
+2   0x00005429 0x00407029 23  24   .rdata  ascii   __deregister_frame_info
+3   0x00005441 0x00407041 13  14   .rdata  ascii   libgcj-16.dll
+4   0x0000544f 0x0040704f 19  20   .rdata  ascii   _Jv_RegisterClasses
+5   0x00005464 0x00407064 18  38   .rdata  utf16le \\.\PhysicalDrive0
+6   0x00005490 0x00407090 23  24   .rdata  ascii   Mingw runtime failure:\n
+7   0x000054a8 0x004070a8 48  49   .rdata  ascii     VirtualQuery failed for %d bytes at address %p
+8   0x000054dc 0x004070dc 49  50   .rdata  ascii     Unknown pseudo relocation protocol version %d.\n
+9   0x00005510 0x00407110 41  42   .rdata  ascii     Unknown pseudo relocation bit size %d.\n
+10  0x0000553e 0x0040713e 16  17   .rdata  ascii   glob-1.0-mingw32
+11  0x00005558 0x00407158 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+12  0x0000556c 0x0040716c 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+13  0x00005580 0x00407180 34  35   .rdata  ascii   GCC: (MinGW.org GCC-6.3.0-1) 6.3.0
+14  0x000055a4 0x004071a4 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+15  0x000055b8 0x004071b8 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+16  0x000055cc 0x004071cc 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+17  0x000055e0 0x004071e0 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+18  0x000055f4 0x004071f4 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+19  0x00005608 0x00407208 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+20  0x0000561c 0x0040721c 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+21  0x00005630 0x00407230 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+22  0x00005644 0x00407244 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+23  0x00005658 0x00407258 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+24  0x0000566c 0x0040726c 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+25  0x00005680 0x00407280 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+26  0x00005694 0x00407294 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+27  0x000056a8 0x004072a8 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+28  0x000056bc 0x004072bc 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+29  0x000056d0 0x004072d0 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+30  0x000056e4 0x004072e4 16  17   .rdata  ascii   GCC: (GNU) 6.3.0
+arch     x86
+baddr    0x400000
+binsz    27648
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000efa6
+compiled Mon Jan 10 10:37:18 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0000efa6
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped true
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x8
+  TimeDateStamp : 0x61dc0c5e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x30f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x1c
+  SizeOfCode : 0x2e00
+  SizeOfInitializedData : 0x6800
+  SizeOfUninitializedData : 0x200
+  AddressOfEntryPoint : 0x1300
+  BaseOfCode : 0x1000
+  BaseOfData : 0x4000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x1
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xd000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xefa6
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xa000
+  Size : 0x5f4
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0xc004
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xa130
+  Size : 0xe0
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000a210 0x00006330 SET_32 KERNEL32.dll_CloseHandle
+0x0000a21e 0x00006334 SET_32 KERNEL32.dll_CreateFileW
+0x0000a22c 0x00006338 SET_32 KERNEL32.dll_DeleteCriticalSection
+0x0000a244 0x0000633c SET_32 KERNEL32.dll_EnterCriticalSection
+0x0000a25c 0x00006340 SET_32 KERNEL32.dll_ExitProcess
+0x0000a26a 0x00006344 SET_32 KERNEL32.dll_FindClose
+0x0000a276 0x00006348 SET_32 KERNEL32.dll_FindFirstFileA
+0x0000a288 0x0000634c SET_32 KERNEL32.dll_FindNextFileA
+0x0000a298 0x00006350 SET_32 KERNEL32.dll_FreeLibrary
+0x0000a2a6 0x00006354 SET_32 KERNEL32.dll_GetCommandLineA
+0x0000a2b8 0x00006358 SET_32 KERNEL32.dll_GetLastError
+0x0000a2c8 0x0000635c SET_32 KERNEL32.dll_GetModuleHandleA
+0x0000a2dc 0x00006360 SET_32 KERNEL32.dll_GetProcAddress
+0x0000a2ee 0x00006364 SET_32 KERNEL32.dll_InitializeCriticalSection
+0x0000a30a 0x00006368 SET_32 KERNEL32.dll_LeaveCriticalSection
+0x0000a322 0x0000636c SET_32 KERNEL32.dll_LoadLibraryA
+0x0000a332 0x00006370 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x0000a350 0x00006374 SET_32 KERNEL32.dll_TlsGetValue
+0x0000a35e 0x00006378 SET_32 KERNEL32.dll_VirtualProtect
+0x0000a370 0x0000637c SET_32 KERNEL32.dll_VirtualQuery
+0x0000a380 0x00006380 SET_32 KERNEL32.dll_WriteFile
+0x0000a38c 0x00006388 SET_32 msvcrt.dll__strdup
+0x0000a396 0x0000638c SET_32 msvcrt.dll__stricoll
+0x0000a3a2 0x00006394 SET_32 msvcrt.dll___getmainargs
+0x0000a3b2 0x00006398 SET_32 msvcrt.dll___mb_cur_max
+0x0000a3c2 0x0000639c SET_32 msvcrt.dll___p__environ
+0x0000a3d2 0x000063a0 SET_32 msvcrt.dll___p__fmode
+0x0000a3e0 0x000063a4 SET_32 msvcrt.dll___set_app_type
+0x0000a3f2 0x000063a8 SET_32 msvcrt.dll__cexit
+0x0000a3fc 0x000063ac SET_32 msvcrt.dll__errno
+0x0000a406 0x000063b0 SET_32 msvcrt.dll__fpreset
+0x0000a412 0x000063b4 SET_32 msvcrt.dll__fullpath
+0x0000a41e 0x000063b8 SET_32 msvcrt.dll__iob
+0x0000a426 0x000063bc SET_32 msvcrt.dll__isctype
+0x0000a432 0x000063c0 SET_32 msvcrt.dll__onexit
+0x0000a43c 0x000063c4 SET_32 msvcrt.dll__pctype
+0x0000a446 0x000063c8 SET_32 msvcrt.dll__setmode
+0x0000a452 0x000063cc SET_32 msvcrt.dll_abort
+0x0000a45a 0x000063d0 SET_32 msvcrt.dll_atexit
+0x0000a464 0x000063d4 SET_32 msvcrt.dll_calloc
+0x0000a46e 0x000063d8 SET_32 msvcrt.dll_free
+0x0000a476 0x000063dc SET_32 msvcrt.dll_fwrite
+0x0000a480 0x000063e0 SET_32 msvcrt.dll_malloc
+0x0000a48a 0x000063e4 SET_32 msvcrt.dll_mbstowcs
+0x0000a496 0x000063e8 SET_32 msvcrt.dll_memcpy
+0x0000a4a0 0x000063ec SET_32 msvcrt.dll_realloc
+0x0000a4aa 0x000063f0 SET_32 msvcrt.dll_setlocale
+0x0000a4b6 0x000063f4 SET_32 msvcrt.dll_signal
+0x0000a4c0 0x000063f8 SET_32 msvcrt.dll_strcoll
+0x0000a4ca 0x000063fc SET_32 msvcrt.dll_strlen
+0x0000a4d4 0x00006400 SET_32 msvcrt.dll_tolower
+0x0000a4de 0x00006404 SET_32 msvcrt.dll_vfprintf
+0x0000a4ea 0x00006408 SET_32 msvcrt.dll_wcstombs
+
+
+53 relocations
+27648
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

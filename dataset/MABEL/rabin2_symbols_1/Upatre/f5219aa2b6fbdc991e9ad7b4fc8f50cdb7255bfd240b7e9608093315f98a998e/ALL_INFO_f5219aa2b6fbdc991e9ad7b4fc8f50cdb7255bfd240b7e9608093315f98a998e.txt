@@ -1,0 +1,195 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2a00 0x00501000  0x5000 -r-x sect_0
+1   0x00002e00  0x2c00 0x00506000  0x3000 -r-- .rsrc
+2   0x00000000     0x0 0x00509000  0x1000 -r-- .reloc
+3   0x00005a00   0x14e 0x0050a000  0x1000 -r-- petite
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x005037a0 paddr=0x00002ba0 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0050a0f8 NONE FUNC user32.dll   MessageBoxA
+2   0x0050a0fc NONE FUNC user32.dll   wsprintfA
+1   0x0050a104 NONE FUNC kernel32.dll ExitProcess
+2   0x0050a108 NONE FUNC kernel32.dll GetModuleHandleA
+3   0x0050a10c NONE FUNC kernel32.dll GetProcAddress
+4   0x0050a110 NONE FUNC kernel32.dll VirtualProtect
+5   0x0050a114 NONE FUNC kernel32.dll VirtualAlloc
+6   0x0050a118 NONE FUNC kernel32.dll VirtualFree
+7   0x0050a11c NONE FUNC kernel32.dll LoadLibraryA
+1   0x0050a124 NONE FUNC gdi32.dll    CreateFontIndirectA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00005af8 0x0050a0f8 NONE FUNC 0    user32.dll   imp.MessageBoxA
+2   0x00005afc 0x0050a0fc NONE FUNC 0    user32.dll   imp.wsprintfA
+1   0x00005b04 0x0050a104 NONE FUNC 0    kernel32.dll imp.ExitProcess
+2   0x00005b08 0x0050a108 NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+3   0x00005b0c 0x0050a10c NONE FUNC 0    kernel32.dll imp.GetProcAddress
+4   0x00005b10 0x0050a110 NONE FUNC 0    kernel32.dll imp.VirtualProtect
+5   0x00005b14 0x0050a114 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+6   0x00005b18 0x0050a118 NONE FUNC 0    kernel32.dll imp.VirtualFree
+7   0x00005b1c 0x0050a11c NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+1   0x00005b24 0x0050a124 NONE FUNC 0    gdi32.dll    imp.CreateFontIndirectA
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002f30 0x00506130 13  28   .rsrc   utf16le \fIDR_VERSION1
+1   0x00002f56 0x00506156 15  32   .rsrc   utf16le VS_VERSION_INFO
+2   0x00002fb2 0x005061b2 8   18   .rsrc   utf16le FileInfo
+3   0x00002fca 0x005061ca 8   18   .rsrc   utf16le FFFF04E3
+4   0x00002fe2 0x005061e2 11  24   .rsrc   utf16le FileVersion
+5   0x00002ffc 0x005061fc 7   16   .rsrc   utf16le 2.0.1.7
+6   0x00003012 0x00506212 14  30   .rsrc   utf16le ProductVersion
+7   0x00003030 0x00506230 7   16   .rsrc   utf16le 2.0.1.0
+8   0x00003046 0x00506246 11  24   .rsrc   utf16le CompanyName
+9   0x00003060 0x00506260 10  22   .rsrc   utf16le Sanny Ltd.
+10  0x0000307e 0x0050627e 11  24   .rsrc   utf16le ProductName
+11  0x00003098 0x00506298 7   16   .rsrc   utf16le LookFor
+12  0x000030b0 0x005062b0 8   18   .rsrc   utf16le FileInfo
+13  0x000030ca 0x005062ca 11  24   .rsrc   utf16le Translation
+14  0x000030e8 0x005062e8 346 347  .rsrc   ascii   <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>
+15  0x00003320 0x00506520 4   5    .rsrc   ascii   {=S\a
+arch     x86
+baddr    0x500000
+binsz    40688
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00019323
+compiled Wed Oct  2 12:54:25 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x524c1781
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x8
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x2a00
+  SizeOfInitializedData : 0x2d4e
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x37a0
+  BaseOfCode : 0x1000
+  BaseOfData : 0x4000
+  ImageBase : 0x500000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 90 Name: Linker710 Version: 6030 Times: 1
+  Product: 94 Name: Cvtres710 Version: 3052 Times: 1
+  Product: 96 Name: Utc1310_CPP Version: 6030 Times: 687
+  Product: 95 Name: Utc1310_C Version: 6030 Times: 11
+  Product: 15 Name: Masm710 Version: 6030 Times: 4
+  Product: 64 Name: Masm700 Version: 9466 Times: 4
+  Product: 0 Name: Unknown Version: 0 Times: 148
+  Product: 29 Name: Utc13_CPP Version: 9466 Times: 11
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xa0a8
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x6000
+  Size : 0x2ac8
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xa0f8
+  Size : 0x34
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+kernel32.dll
+gdi32.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000a004 0x00005af8 SET_32 user32.dll_MessageBoxA
+0x0000a012 0x00005afc SET_32 user32.dll_wsprintfA
+0x0000a01e 0x00005b04 SET_32 kernel32.dll_ExitProcess
+0x0000a02c 0x00005b08 SET_32 kernel32.dll_GetModuleHandleA
+0x0000a040 0x00005b0c SET_32 kernel32.dll_GetProcAddress
+0x0000a052 0x00005b10 SET_32 kernel32.dll_VirtualProtect
+0x0000a064 0x00005b14 SET_32 kernel32.dll_VirtualAlloc
+0x0000a074 0x00005b18 SET_32 kernel32.dll_VirtualFree
+0x0000a082 0x00005b1c SET_32 kernel32.dll_LoadLibraryA
+0x0000a092 0x00005b24 SET_32 gdi32.dll_CreateFontIndirectA
+
+
+10 relocations
+40688
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,173 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000200  0x59200 0x00401000  0x166000 -rwx .MPRESS1
+1   0x00059400    0xe00 0x00567000    0x1000 -rwx .MPRESS2
+2   0x0005a200    0x600 0x00568000    0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00567244 paddr=0x00059644 haddr=0x00000068 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00567118 NONE FUNC KERNEL32.DLL GetModuleHandleA
+2   0x0056711c NONE FUNC KERNEL32.DLL GetProcAddress
+1   0x00567124 NONE FUNC oleaut32.dll SysFreeString
+1   0x0056712c NONE FUNC advapi32.dll RegCloseKey
+1   0x00567134 NONE FUNC user32.dll   CharNextW
+1   0x0056713c NONE FUNC ole32.dll    IsEqualGUID
+1   0x00567144 NONE FUNC shell32.dll  ShellExecuteW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00059518 0x00567118 NONE FUNC 0    KERNEL32.DLL imp.GetModuleHandleA
+2   0x0005951c 0x0056711c NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+1   0x00059524 0x00567124 NONE FUNC 0    oleaut32.dll imp.SysFreeString
+1   0x0005952c 0x0056712c NONE FUNC 0    advapi32.dll imp.RegCloseKey
+1   0x00059534 0x00567134 NONE FUNC 0    user32.dll   imp.CharNextW
+1   0x0005953c 0x0056713c NONE FUNC 0    ole32.dll    imp.IsEqualGUID
+1   0x00059544 0x00567144 NONE FUNC 0    shell32.dll  imp.ShellExecuteW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0005a6a8 0x005684a8 10  22   .rsrc   utf16le \tCHARTABLE
+1   0x0005a6e6 0x005684e6 6   14   .rsrc   utf16le DVCLAL
+2   0x0005a71c 0x0056851c 12  26   .rsrc   utf16le \vPACKAGEINFO
+arch     x86
+baddr    0x400000
+binsz    374520
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0005dc87
+compiled Mon Mar  2 00:06:39 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0005dc87
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped true
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x54f3a98f
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x838e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x128200
+  SizeOfInitializedData : 0x31e00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x167244
+  BaseOfCode : 0x1000
+  BaseOfData : 0x12a000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x169000
+  SizeOfHeaders : 0x200
+  CheckSum : 0x5dc87
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0xd000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x167000
+  Size : 0x244
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x168000
+  Size : 0x55c
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x5a800
+  Size : 0xef8
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x167db0
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x167118
+  Size : 0x30
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+oleaut32.dll
+advapi32.dll
+user32.dll
+ole32.dll
+shell32.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00167190 0x00059518 SET_32 KERNEL32.DLL_GetModuleHandleA
+0x001671a3 0x0005951c SET_32 KERNEL32.DLL_GetProcAddress
+0x001671ce 0x00059524 SET_32 oleaut32.dll_SysFreeString
+0x001671eb 0x0005952c SET_32 advapi32.dll_RegCloseKey
+0x00167204 0x00059534 SET_32 user32.dll_CharNextW
+0x0016721a 0x0005953c SET_32 ole32.dll_IsEqualGUID
+0x00167234 0x00059544 SET_32 shell32.dll_ShellExecuteW
+
+
+7 relocations
+374520
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

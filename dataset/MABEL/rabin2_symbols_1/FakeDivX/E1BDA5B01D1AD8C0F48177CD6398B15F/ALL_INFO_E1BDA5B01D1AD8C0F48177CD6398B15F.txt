@@ -1,0 +1,440 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x4c00 0x00401000   0x5000 -r-x .text
+1   0x00005000   0x200 0x00406000   0x1000 -r-- .data2
+2   0x00005200   0x800 0x00407000   0x1000 -r-x .text2
+3   0x00005a00   0xc00 0x00408000   0x1000 -rw- .data
+4   0x00006600  0x4e00 0x00409000  0xfd000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401c40 paddr=0x00001040 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00408010 NONE FUNC KERNEL32.dll LocalAlloc
+2   0x00408014 NONE FUNC KERNEL32.dll AddAtomA
+3   0x00408018 NONE FUNC KERNEL32.dll CloseHandle
+4   0x0040801c NONE FUNC KERNEL32.dll CompareStringA
+5   0x00408020 NONE FUNC KERNEL32.dll CreateEventA
+6   0x00408024 NONE FUNC KERNEL32.dll CreateProcessA
+7   0x00408028 NONE FUNC KERNEL32.dll FormatMessageW
+8   0x0040802c NONE FUNC KERNEL32.dll FreeLibrary
+9   0x00408030 NONE FUNC KERNEL32.dll GetComputerNameA
+10  0x00408034 NONE FUNC KERNEL32.dll GetCurrentProcess
+11  0x00408038 NONE FUNC KERNEL32.dll GetCurrentProcessId
+12  0x0040803c NONE FUNC KERNEL32.dll GetCurrentThreadId
+13  0x00408040 NONE FUNC KERNEL32.dll GetLastError
+14  0x00408044 NONE FUNC KERNEL32.dll GetModuleFileNameA
+15  0x00408048 NONE FUNC KERNEL32.dll GetModuleFileNameW
+16  0x0040804c NONE FUNC KERNEL32.dll GetModuleHandleA
+17  0x00408050 NONE FUNC KERNEL32.dll GetProcAddress
+18  0x00408054 NONE FUNC KERNEL32.dll GetStartupInfoA
+19  0x00408058 NONE FUNC KERNEL32.dll GetSystemDirectoryA
+20  0x0040805c NONE FUNC KERNEL32.dll GetSystemTimeAsFileTime
+21  0x00408060 NONE FUNC KERNEL32.dll GetTickCount
+22  0x00408064 NONE FUNC KERNEL32.dll WriteFile
+23  0x00408068 NONE FUNC KERNEL32.dll GetVersionExA
+24  0x0040806c NONE FUNC KERNEL32.dll InterlockedDecrement
+25  0x00408070 NONE FUNC KERNEL32.dll InterlockedIncrement
+26  0x00408074 NONE FUNC KERNEL32.dll LoadLibraryExA
+27  0x00408078 NONE FUNC KERNEL32.dll MultiByteToWideChar
+28  0x0040807c NONE FUNC KERNEL32.dll OpenEventA
+29  0x00408080 NONE FUNC KERNEL32.dll OpenProcess
+30  0x00408084 NONE FUNC KERNEL32.dll QueryPerformanceCounter
+31  0x00408088 NONE FUNC KERNEL32.dll SetConsoleCtrlHandler
+32  0x0040808c NONE FUNC KERNEL32.dll SetCurrentDirectoryA
+33  0x00408090 NONE FUNC KERNEL32.dll SetEvent
+34  0x00408094 NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+35  0x00408098 NONE FUNC KERNEL32.dll Sleep
+36  0x0040809c NONE FUNC KERNEL32.dll TerminateProcess
+37  0x004080a0 NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+38  0x004080a4 NONE FUNC KERNEL32.dll WideCharToMultiByte
+39  0x004080a8 NONE FUNC KERNEL32.dll lstrcatA
+40  0x004080ac NONE FUNC KERNEL32.dll lstrcmpW
+41  0x004080b0 NONE FUNC KERNEL32.dll lstrcpyA
+42  0x004080b4 NONE FUNC KERNEL32.dll lstrcpynA
+43  0x004080b8 NONE FUNC KERNEL32.dll lstrlenA
+44  0x004080bc NONE FUNC KERNEL32.dll CreateFileA
+45  0x004080c0 NONE FUNC KERNEL32.dll GetCurrentThread
+46  0x004080c4 NONE FUNC KERNEL32.dll GetUserDefaultLangID
+47  0x004080c8 NONE FUNC KERNEL32.dll VirtualAlloc
+1   0x004080d0 NONE FUNC USER32.dll   LoadCursorA
+2   0x004080d4 NONE FUNC USER32.dll   ShowWindow
+1   0x00408008 NONE FUNC GDI32.dll    GetStockObject
+1   0x00408000 NONE FUNC ADVAPI32.dll RegOpenKeyExW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00005a10 0x00408010 NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+2   0x00005a14 0x00408014 NONE FUNC 0    KERNEL32.dll imp.AddAtomA
+3   0x00005a18 0x00408018 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+4   0x00005a1c 0x0040801c NONE FUNC 0    KERNEL32.dll imp.CompareStringA
+5   0x00005a20 0x00408020 NONE FUNC 0    KERNEL32.dll imp.CreateEventA
+6   0x00005a24 0x00408024 NONE FUNC 0    KERNEL32.dll imp.CreateProcessA
+7   0x00005a28 0x00408028 NONE FUNC 0    KERNEL32.dll imp.FormatMessageW
+8   0x00005a2c 0x0040802c NONE FUNC 0    KERNEL32.dll imp.FreeLibrary
+9   0x00005a30 0x00408030 NONE FUNC 0    KERNEL32.dll imp.GetComputerNameA
+10  0x00005a34 0x00408034 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+11  0x00005a38 0x00408038 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcessId
+12  0x00005a3c 0x0040803c NONE FUNC 0    KERNEL32.dll imp.GetCurrentThreadId
+13  0x00005a40 0x00408040 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+14  0x00005a44 0x00408044 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+15  0x00005a48 0x00408048 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+16  0x00005a4c 0x0040804c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+17  0x00005a50 0x00408050 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+18  0x00005a54 0x00408054 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+19  0x00005a58 0x00408058 NONE FUNC 0    KERNEL32.dll imp.GetSystemDirectoryA
+20  0x00005a5c 0x0040805c NONE FUNC 0    KERNEL32.dll imp.GetSystemTimeAsFileTime
+21  0x00005a60 0x00408060 NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+22  0x00005a64 0x00408064 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+23  0x00005a68 0x00408068 NONE FUNC 0    KERNEL32.dll imp.GetVersionExA
+24  0x00005a6c 0x0040806c NONE FUNC 0    KERNEL32.dll imp.InterlockedDecrement
+25  0x00005a70 0x00408070 NONE FUNC 0    KERNEL32.dll imp.InterlockedIncrement
+26  0x00005a74 0x00408074 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryExA
+27  0x00005a78 0x00408078 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+28  0x00005a7c 0x0040807c NONE FUNC 0    KERNEL32.dll imp.OpenEventA
+29  0x00005a80 0x00408080 NONE FUNC 0    KERNEL32.dll imp.OpenProcess
+30  0x00005a84 0x00408084 NONE FUNC 0    KERNEL32.dll imp.QueryPerformanceCounter
+31  0x00005a88 0x00408088 NONE FUNC 0    KERNEL32.dll imp.SetConsoleCtrlHandler
+32  0x00005a8c 0x0040808c NONE FUNC 0    KERNEL32.dll imp.SetCurrentDirectoryA
+33  0x00005a90 0x00408090 NONE FUNC 0    KERNEL32.dll imp.SetEvent
+34  0x00005a94 0x00408094 NONE FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+35  0x00005a98 0x00408098 NONE FUNC 0    KERNEL32.dll imp.Sleep
+36  0x00005a9c 0x0040809c NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+37  0x00005aa0 0x004080a0 NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+38  0x00005aa4 0x004080a4 NONE FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+39  0x00005aa8 0x004080a8 NONE FUNC 0    KERNEL32.dll imp.lstrcatA
+40  0x00005aac 0x004080ac NONE FUNC 0    KERNEL32.dll imp.lstrcmpW
+41  0x00005ab0 0x004080b0 NONE FUNC 0    KERNEL32.dll imp.lstrcpyA
+42  0x00005ab4 0x004080b4 NONE FUNC 0    KERNEL32.dll imp.lstrcpynA
+43  0x00005ab8 0x004080b8 NONE FUNC 0    KERNEL32.dll imp.lstrlenA
+44  0x00005abc 0x004080bc NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+45  0x00005ac0 0x004080c0 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThread
+46  0x00005ac4 0x004080c4 NONE FUNC 0    KERNEL32.dll imp.GetUserDefaultLangID
+47  0x00005ac8 0x004080c8 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+1   0x00005ad0 0x004080d0 NONE FUNC 0    USER32.dll   imp.LoadCursorA
+2   0x00005ad4 0x004080d4 NONE FUNC 0    USER32.dll   imp.ShowWindow
+1   0x00005a08 0x00408008 NONE FUNC 0    GDI32.dll    imp.GetStockObject
+1   0x00005a00 0x00408000 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00005aec 0x004080ec 4   5    .data   ascii   3333
+1   0x00005af8 0x004080f8 37  76   .data   utf16le piffile\shellex\propertysheethandlers
+2   0x00005b44 0x00408144 7   8    .data   ascii   klkljkl
+3   0x0000617a 0x0040877a 12  13   .data   ascii   VirtualAlloc
+4   0x0000618a 0x0040878a 16  17   .data   ascii   GetCurrentThread
+5   0x0000619e 0x0040879e 11  12   .data   ascii   CreateFileA
+6   0x000061ac 0x004087ac 9   10   .data   ascii   WriteFile
+7   0x000061b8 0x004087b8 10  11   .data   ascii   LocalAlloc
+8   0x000061c6 0x004087c6 8   9    .data   ascii   AddAtomA
+9   0x000061d2 0x004087d2 11  12   .data   ascii   CloseHandle
+10  0x000061e0 0x004087e0 14  15   .data   ascii   CompareStringA
+11  0x000061f2 0x004087f2 12  13   .data   ascii   CreateEventA
+12  0x00006202 0x00408802 14  15   .data   ascii   CreateProcessA
+13  0x00006214 0x00408814 14  15   .data   ascii   FormatMessageW
+14  0x00006226 0x00408826 11  12   .data   ascii   FreeLibrary
+15  0x00006234 0x00408834 16  17   .data   ascii   GetComputerNameA
+16  0x00006248 0x00408848 17  18   .data   ascii   GetCurrentProcess
+17  0x0000625c 0x0040885c 19  20   .data   ascii   GetCurrentProcessId
+18  0x00006272 0x00408872 18  19   .data   ascii   GetCurrentThreadId
+19  0x00006288 0x00408888 12  13   .data   ascii   GetLastError
+20  0x00006298 0x00408898 18  19   .data   ascii   GetModuleFileNameA
+21  0x000062ae 0x004088ae 18  19   .data   ascii   GetModuleFileNameW
+22  0x000062c4 0x004088c4 16  17   .data   ascii   GetModuleHandleA
+23  0x000062d8 0x004088d8 14  15   .data   ascii   GetProcAddress
+24  0x000062ea 0x004088ea 15  16   .data   ascii   GetStartupInfoA
+25  0x000062fc 0x004088fc 19  20   .data   ascii   GetSystemDirectoryA
+26  0x00006312 0x00408912 23  24   .data   ascii   GetSystemTimeAsFileTime
+27  0x0000632c 0x0040892c 12  13   .data   ascii   GetTickCount
+28  0x0000633c 0x0040893c 20  21   .data   ascii   GetUserDefaultLangID
+29  0x00006354 0x00408954 13  14   .data   ascii   GetVersionExA
+30  0x00006364 0x00408964 20  21   .data   ascii   InterlockedDecrement
+31  0x0000637c 0x0040897c 20  21   .data   ascii   InterlockedIncrement
+32  0x00006394 0x00408994 14  15   .data   ascii   LoadLibraryExA
+33  0x000063a6 0x004089a6 19  20   .data   ascii   MultiByteToWideChar
+34  0x000063bc 0x004089bc 10  11   .data   ascii   OpenEventA
+35  0x000063ca 0x004089ca 11  12   .data   ascii   OpenProcess
+36  0x000063d8 0x004089d8 23  24   .data   ascii   QueryPerformanceCounter
+37  0x000063f2 0x004089f2 21  22   .data   ascii   SetConsoleCtrlHandler
+38  0x0000640a 0x00408a0a 20  21   .data   ascii   SetCurrentDirectoryA
+39  0x00006422 0x00408a22 8   9    .data   ascii   SetEvent
+40  0x0000642e 0x00408a2e 27  28   .data   ascii   SetUnhandledExceptionFilter
+41  0x0000644c 0x00408a4c 5   6    .data   ascii   Sleep
+42  0x00006454 0x00408a54 16  17   .data   ascii   TerminateProcess
+43  0x00006468 0x00408a68 24  25   .data   ascii   UnhandledExceptionFilter
+44  0x00006484 0x00408a84 19  20   .data   ascii   WideCharToMultiByte
+45  0x0000649a 0x00408a9a 8   9    .data   ascii   lstrcatA
+46  0x000064a6 0x00408aa6 8   9    .data   ascii   lstrcmpW
+47  0x000064b2 0x00408ab2 8   9    .data   ascii   lstrcpyA
+48  0x000064be 0x00408abe 9   10   .data   ascii   lstrcpynA
+49  0x000064ca 0x00408aca 8   9    .data   ascii   lstrlenA
+50  0x000064d4 0x00408ad4 12  13   .data   ascii   KERNEL32.dll
+51  0x000064e4 0x00408ae4 11  12   .data   ascii   LoadCursorA
+52  0x000064f2 0x00408af2 10  11   .data   ascii   ShowWindow
+53  0x000064fe 0x00408afe 10  11   .data   ascii   USER32.dll
+54  0x0000650c 0x00408b0c 14  15   .data   ascii   GetStockObject
+55  0x0000651c 0x00408b1c 9   10   .data   ascii   GDI32.dll
+56  0x00006528 0x00408b28 13  14   .data   ascii   RegOpenKeyExW
+57  0x00006536 0x00408b36 12  13   .data   ascii   ADVAPI32.dll
+0   0x000068a6 0x004092a6 9   20   .rsrc   utf16le Tray Menu
+1   0x0000696c 0x0040936c 4   5    .rsrc   ascii   233 
+2   0x00006a2c 0x0040942c 20  21   .rsrc   ascii   )++L***+***,...+333\n
+3   0x00006afc 0x004094fc 4   5    .rsrc   ascii   1118
+4   0x00006bbc 0x004095bc 4   5    .rsrc   ascii   ---;
+5   0x00006c7c 0x0040967c 4   5    .rsrc   ascii   00,:
+6   0x00006d3c 0x0040973c 4   5    .rsrc   ascii   ,,.4
+7   0x00006dfc 0x004097fc 4   5    .rsrc   ascii   \v\nLZ
+8   0x0000724e 0x00409c4e 5   6    .rsrc   ascii   _Y555
+9   0x00007486 0x00409e86 6   7    .rsrc   ascii   tn\b\fnf
+10  0x0000748e 0x00409e8e 5   6    .rsrc   ascii   c%555
+11  0x0000757e 0x00409f7e 8   9    .rsrc   ascii   Jr\t\foP$+
+12  0x0000763c 0x0040a03c 4   5    .rsrc   ascii   --5\e
+13  0x000076d4 0x0040a0d4 24  25   .rsrc   ascii   ///-...,...,...,...,111*
+14  0x00008d3c 0x0040b73c 4   5    .rsrc   ascii   889V
+15  0x00008dbc 0x0040b7bc 4   5    .rsrc   ascii   OOL|
+16  0x00008de6 0x0040b7e6 4   5    .rsrc   ascii   ms\f$
+17  0x00008e3c 0x0040b83c 4   5    .rsrc   ascii   ONNn
+18  0x0000909c 0x0040ba9c 7   8    .rsrc   ascii   \n\ricCCC
+19  0x00009194 0x0040bb94 6   7    .rsrc   ascii   "0~n0N
+20  0x0000919e 0x0040bb9e 6   8    .rsrc   utf8    vhLLL˓ blocks=Basic Latin,Spacing Modifier Letters
+21  0x00009214 0x0040bc14 4   5    .rsrc   ascii   UR}\e
+22  0x0000923c 0x0040bc3c 4   5    .rsrc   ascii   ,+>V
+23  0x00009242 0x0040bc42 4   5    .rsrc   ascii   f\f/6
+24  0x0000924a 0x0040bc4a 4   5    .rsrc   ascii   rq//
+25  0x000092a0 0x0040bca0 19  20   .rsrc   ascii   222\e---#---"---$111
+26  0x00009c50 0x0040c650 7   8    .rsrc   ascii   ^__+?>@
+27  0x00009d2a 0x0040c72a 4   5    .rsrc   ascii   c@\f%
+28  0x00009d79 0x0040c779 4   5    .rsrc   ascii   \vgv\v
+29  0x00009e7e 0x0040c87e 5   6    .rsrc   ascii   u]MMM
+30  0x00009ee0 0x0040c8e0 4   6    .rsrc   utf8    YYYˋ blocks=Basic Latin,Spacing Modifier Letters
+31  0x00009f3f 0x0040c93f 4   6    .rsrc   utf8    QYYY
+32  0x00009fa0 0x0040c9a0 24  25   .rsrc   ascii   777;<<<N777MCCD6ssn"10C\f
+33  0x0000a574 0x0040cf74 7   8    .rsrc   ascii   Z\]UIG@
+34  0x0000a5c0 0x0040cfc0 4   5    .rsrc   ascii   CCU@
+35  0x0000a5cd 0x0040cfcd 4   5    .rsrc   ascii   \rk\n\a
+36  0x0000a60e 0x0040d00e 4   5    .rsrc   ascii   vh\e4
+37  0x0000a686 0x0040d086 5   6    .rsrc   ascii   p$SSS
+38  0x0000a6d0 0x0040d0d0 4   6    .rsrc   utf8    iiiӂ blocks=Basic Latin,Cyrillic
+39  0x0000a717 0x0040d117 4   5    .rsrc   ascii   ^XXX
+40  0x0000a728 0x0040d128 6   7    .rsrc   ascii   GIvSJN
+41  0x0000a760 0x0040d160 7   8    .rsrc   ascii   666\r222
+42  0x0000a768 0x0040d168 4   5    .rsrc   ascii   CCA\n
+43  0x0000aaac 0x0040d4ac 7   8    .rsrc   ascii   WXT=FB;
+44  0x0000aafa 0x0040d4fa 4   5    .rsrc   ascii   {$\n 
+45  0x0000ab59 0x0040d559 6   7    .rsrc   ascii   "yC\n\ng
+46  0x0000ab9f 0x0040d59f 4   5    .rsrc   ascii   |cdd
+47  0x0000abe4 0x0040d5e4 4   7    .rsrc   utf8    zzy蓒 blocks=Basic Latin,CJK Unified Ideographs
+48  0x0000ac20 0x0040d620 11  12   .rsrc   ascii   :::#999/bb\
+49  0x0000ac2c 0x0040d62c 4   5    .rsrc   ascii   ji|\n
+50  0x0000aef6 0x0040d8f6 15  32   .rsrc   utf16le VS_VERSION_INFO
+51  0x0000af52 0x0040d952 14  30   .rsrc   utf16le StringFileInfo
+52  0x0000af76 0x0040d976 8   18   .rsrc   utf16le 041904B0
+53  0x0000af8e 0x0040d98e 11  24   .rsrc   utf16le CompanyName
+54  0x0000afda 0x0040d9da 15  32   .rsrc   utf16le FileDescription
+55  0x0000b020 0x0040da20 12  26   .rsrc   utf16le  (Microsoft)
+56  0x0000b042 0x0040da42 11  24   .rsrc   utf16le FileVersion
+57  0x0000b05c 0x0040da5c 32  66   .rsrc   utf16le 5.1.2600.5512 (xpsp.080413-2108)
+58  0x0000b0a6 0x0040daa6 12  26   .rsrc   utf16le InternalName
+59  0x0000b0c0 0x0040dac0 11  24   .rsrc   utf16le RCIMLBY.EXE
+60  0x0000b0e0 0x0040dae0 10  22   .rsrc   utf16le arFileInfo
+61  0x0000b0fe 0x0040dafe 11  24   .rsrc   utf16le Translation
+arch     x86
+baddr    0x400000
+binsz    46080
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000b432
+compiled Thu Sep 12 14:01:46 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x5231c94a
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x5600
+  SizeOfInitializedData : 0x5a00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1c40
+  BaseOfCode : 0x1000
+  BaseOfData : 0x8000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x106000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 148 Name: Cvtres900 Version: 21022 Times: 1
+  Product: 0 Name: Unknown Version: 0 Times: 2
+  Product: 131 Name: Utc1500_C Version: 21022 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 51
+  Product: 123 Name: Implib800 Version: 50727 Times: 9
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x8638
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x9000
+  Size : 0x4c48
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x8000
+  Size : 0xdc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+gdi32.dll
+advapi32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00008778 0x00005ac8 SET_32 KERNEL32.dll_VirtualAlloc
+0x00008788 0x00005ac0 SET_32 KERNEL32.dll_GetCurrentThread
+0x0000879c 0x00005abc SET_32 KERNEL32.dll_CreateFileA
+0x000087aa 0x00005a64 SET_32 KERNEL32.dll_WriteFile
+0x000087b6 0x00005a10 SET_32 KERNEL32.dll_LocalAlloc
+0x000087c4 0x00005a14 SET_32 KERNEL32.dll_AddAtomA
+0x000087d0 0x00005a18 SET_32 KERNEL32.dll_CloseHandle
+0x000087de 0x00005a1c SET_32 KERNEL32.dll_CompareStringA
+0x000087f0 0x00005a20 SET_32 KERNEL32.dll_CreateEventA
+0x00008800 0x00005a24 SET_32 KERNEL32.dll_CreateProcessA
+0x00008812 0x00005a28 SET_32 KERNEL32.dll_FormatMessageW
+0x00008824 0x00005a2c SET_32 KERNEL32.dll_FreeLibrary
+0x00008832 0x00005a30 SET_32 KERNEL32.dll_GetComputerNameA
+0x00008846 0x00005a34 SET_32 KERNEL32.dll_GetCurrentProcess
+0x0000885a 0x00005a38 SET_32 KERNEL32.dll_GetCurrentProcessId
+0x00008870 0x00005a3c SET_32 KERNEL32.dll_GetCurrentThreadId
+0x00008886 0x00005a40 SET_32 KERNEL32.dll_GetLastError
+0x00008896 0x00005a44 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x000088ac 0x00005a48 SET_32 KERNEL32.dll_GetModuleFileNameW
+0x000088c2 0x00005a4c SET_32 KERNEL32.dll_GetModuleHandleA
+0x000088d6 0x00005a50 SET_32 KERNEL32.dll_GetProcAddress
+0x000088e8 0x00005a54 SET_32 KERNEL32.dll_GetStartupInfoA
+0x000088fa 0x00005a58 SET_32 KERNEL32.dll_GetSystemDirectoryA
+0x00008910 0x00005a5c SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+0x0000892a 0x00005a60 SET_32 KERNEL32.dll_GetTickCount
+0x0000893a 0x00005ac4 SET_32 KERNEL32.dll_GetUserDefaultLangID
+0x00008952 0x00005a68 SET_32 KERNEL32.dll_GetVersionExA
+0x00008962 0x00005a6c SET_32 KERNEL32.dll_InterlockedDecrement
+0x0000897a 0x00005a70 SET_32 KERNEL32.dll_InterlockedIncrement
+0x00008992 0x00005a74 SET_32 KERNEL32.dll_LoadLibraryExA
+0x000089a4 0x00005a78 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x000089ba 0x00005a7c SET_32 KERNEL32.dll_OpenEventA
+0x000089c8 0x00005a80 SET_32 KERNEL32.dll_OpenProcess
+0x000089d6 0x00005a84 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x000089f0 0x00005a88 SET_32 KERNEL32.dll_SetConsoleCtrlHandler
+0x00008a08 0x00005a8c SET_32 KERNEL32.dll_SetCurrentDirectoryA
+0x00008a20 0x00005a90 SET_32 KERNEL32.dll_SetEvent
+0x00008a2c 0x00005a94 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x00008a4a 0x00005a98 SET_32 KERNEL32.dll_Sleep
+0x00008a52 0x00005a9c SET_32 KERNEL32.dll_TerminateProcess
+0x00008a66 0x00005aa0 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x00008a82 0x00005aa4 SET_32 KERNEL32.dll_WideCharToMultiByte
+0x00008a98 0x00005aa8 SET_32 KERNEL32.dll_lstrcatA
+0x00008aa4 0x00005aac SET_32 KERNEL32.dll_lstrcmpW
+0x00008ab0 0x00005ab0 SET_32 KERNEL32.dll_lstrcpyA
+0x00008abc 0x00005ab4 SET_32 KERNEL32.dll_lstrcpynA
+0x00008ac8 0x00005ab8 SET_32 KERNEL32.dll_lstrlenA
+0x00008ae2 0x00005ad0 SET_32 USER32.dll_LoadCursorA
+0x00008af0 0x00005ad4 SET_32 USER32.dll_ShowWindow
+0x00008b0a 0x00005a08 SET_32 GDI32.dll_GetStockObject
+0x00008b26 0x00005a00 SET_32 ADVAPI32.dll_RegOpenKeyExW
+
+
+51 relocations
+46080
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 5.1.2600.5512
+  ProductVersion: 5.1.2600.5512
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Корпорация Майкрософт
+  FileDescription: Удаленный помощник (Microsoft)
+  FileVersion: 5.1.2600.5512 (xpsp.080413-2108)
+  InternalName: RCIMLBY.EXE
+Section to Segment mapping:
+Segment Section
+---------------
+
+

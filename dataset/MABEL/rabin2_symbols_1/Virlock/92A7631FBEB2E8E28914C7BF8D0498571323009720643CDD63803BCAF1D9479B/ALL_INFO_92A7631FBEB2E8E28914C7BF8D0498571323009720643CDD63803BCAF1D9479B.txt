@@ -1,0 +1,189 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb3600 0x00401000  0xb4000 -r-x .text
+1   0x000b3c00    0x400 0x004b5000   0x1000 -r-- .rdata
+2   0x000b4000    0x800 0x004b6000   0x1000 -rwx .data
+3   0x000b4800   0x1200 0x004b7000   0x2000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004010c0 paddr=0x000006c0 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b5000 NONE FUNC ntdll.dll    ZwOpenProcessToken
+2   0x004b5004 NONE FUNC ntdll.dll    RtlCreateSystemVolumeInformationFolder
+1   0x004b500c NONE FUNC kernel32.dll GetFileTime
+1   0x004b5014 NONE FUNC advapi32.dll LookupPrivilegeValueA
+1   0x004b501c NONE FUNC ws2_32.dll   select
+1   0x004b5024 NONE FUNC shell32.dll  Shell_MergeMenus
+1   0x004b502c NONE FUNC user32.dll   GetClipboardSequenceNumber
+2   0x004b5030 NONE FUNC user32.dll   GetMessageExtraInfo
+3   0x004b5034 NONE FUNC user32.dll   GetClipboardOwner
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b3c00 0x004b5000 NONE FUNC 0    ntdll.dll    imp.ZwOpenProcessToken
+2   0x000b3c04 0x004b5004 NONE FUNC 0    ntdll.dll    imp.RtlCreateSystemVolumeInformationFolder
+1   0x000b3c0c 0x004b500c NONE FUNC 0    kernel32.dll imp.GetFileTime
+1   0x000b3c14 0x004b5014 NONE FUNC 0    advapi32.dll imp.LookupPrivilegeValueA
+1   0x000b3c1c 0x004b501c NONE FUNC 0    ws2_32.dll   imp.select
+1   0x000b3c24 0x004b5024 NONE FUNC 0    shell32.dll  imp.Shell_MergeMenus
+1   0x000b3c2c 0x004b502c NONE FUNC 0    user32.dll   imp.GetClipboardSequenceNumber
+2   0x000b3c30 0x004b5030 NONE FUNC 0    user32.dll   imp.GetMessageExtraInfo
+3   0x000b3c34 0x004b5034 NONE FUNC 0    user32.dll   imp.GetClipboardOwner
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b3d06 0x004b5106 18  19   .rdata  ascii ZwOpenProcessToken
+1   0x000b3d1b 0x004b511b 38  39   .rdata  ascii RtlCreateSystemVolumeInformationFolder
+2   0x000b3d42 0x004b5142 9   10   .rdata  ascii ntdll.dll
+3   0x000b3d4e 0x004b514e 11  12   .rdata  ascii GetFileTime
+4   0x000b3d5a 0x004b515a 12  13   .rdata  ascii kernel32.dll
+5   0x000b3d69 0x004b5169 21  22   .rdata  ascii LookupPrivilegeValueA
+6   0x000b3d7f 0x004b517f 12  13   .rdata  ascii advapi32.dll
+7   0x000b3d8e 0x004b518e 6   7    .rdata  ascii select
+8   0x000b3d95 0x004b5195 10  11   .rdata  ascii ws2_32.dll
+9   0x000b3da2 0x004b51a2 16  17   .rdata  ascii Shell_MergeMenus
+10  0x000b3db3 0x004b51b3 11  12   .rdata  ascii shell32.dll
+11  0x000b3dc1 0x004b51c1 26  27   .rdata  ascii GetClipboardSequenceNumber
+12  0x000b3dde 0x004b51de 19  20   .rdata  ascii GetMessageExtraInfo
+13  0x000b3df4 0x004b51f4 17  18   .rdata  ascii GetClipboardOwner
+14  0x000b3e06 0x004b5206 10  11   .rdata  ascii user32.dll
+0   0x000b595c 0x004b815c 164 164  .rsrc   ascii PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+arch     x86
+baddr    0x400000
+binsz    743936
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000bd4fa
+compiled Sat Jun 20 04:37:31 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5584ee0b
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb3600
+  SizeOfInitializedData : 0x1600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x10c0
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb5000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb9000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb503c
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xb7000
+  Size : 0x115c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb5000
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntdll.dll
+kernel32.dll
+advapi32.dll
+ws2_32.dll
+shell32.dll
+user32.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b5104 0x000b3c00 SET_32 ntdll.dll_ZwOpenProcessToken
+0x000b5119 0x000b3c04 SET_32 ntdll.dll_RtlCreateSystemVolumeInformationFolder
+0x000b514c 0x000b3c0c SET_32 kernel32.dll_GetFileTime
+0x000b5167 0x000b3c14 SET_32 advapi32.dll_LookupPrivilegeValueA
+0x000b518c 0x000b3c1c SET_32 ws2_32.dll_select
+0x000b51a0 0x000b3c24 SET_32 shell32.dll_Shell_MergeMenus
+0x000b51bf 0x000b3c2c SET_32 user32.dll_GetClipboardSequenceNumber
+0x000b51dc 0x000b3c30 SET_32 user32.dll_GetMessageExtraInfo
+0x000b51f2 0x000b3c34 SET_32 user32.dll_GetClipboardOwner
+
+
+9 relocations
+743936
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,218 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x28400 0x00401000  0x58000 -rwx .text
+1   0x00028800   0x2400 0x00459000   0x3000 -rwx .rsrc
+2   0x0002ac00   0x2600 0x0045c000   0x3000 -r-x  0
+3   0x0002d200    0x200 0x0045f000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0041161c paddr=0x00010a1c haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0045a2b0 NONE FUNC kernel32.dll LoadLibraryA
+2   0x0045a2b4 NONE FUNC kernel32.dll GetProcAddress
+3   0x0045a2b8 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0045a2bc NONE FUNC kernel32.dll VirtualFree
+1   0x0045a2c4 NONE FUNC USER32.dll   DestroyMenu
+1   0x0045a2cc NONE FUNC ADVAPI32.dll RegOpenKeyExA
+1   0x0045a2d4 NONE FUNC SHLWAPI.dll  PathFileExistsA
+1   0x0045a2dc NONE FUNC GDI32.dll    SetViewportExtEx
+1   0x0045a2e4 NONE FUNC WINSPOOL.DRV OpenPrinterA
+17  0x0045a2ec NONE FUNC COMCTL32.dll InitCommonControls
+8   0x0045a2f4 NONE FUNC oledlg.dll   OleUIBusyA
+1   0x0045a2fc NONE FUNC ole32.dll    OleFlushClipboard
+82  0x0045a304 NONE FUNC OLEAUT32.dll VarR8FromDate
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00029ab0 0x0045a2b0 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x00029ab4 0x0045a2b4 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x00029ab8 0x0045a2b8 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x00029abc 0x0045a2bc NONE FUNC 0    kernel32.dll imp.VirtualFree
+1   0x00029ac4 0x0045a2c4 NONE FUNC 0    USER32.dll   imp.DestroyMenu
+1   0x00029acc 0x0045a2cc NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExA
+1   0x00029ad4 0x0045a2d4 NONE FUNC 0    SHLWAPI.dll  imp.PathFileExistsA
+1   0x00029adc 0x0045a2dc NONE FUNC 0    GDI32.dll    imp.SetViewportExtEx
+1   0x00029ae4 0x0045a2e4 NONE FUNC 0    WINSPOOL.DRV imp.OpenPrinterA
+17  0x00029aec 0x0045a2ec NONE FUNC 0    COMCTL32.dll imp.InitCommonControls
+8   0x00029af4 0x0045a2f4 NONE FUNC 0    oledlg.dll   imp.OleUIBusyA
+1   0x00029afc 0x0045a2fc NONE FUNC 0    ole32.dll    imp.OleFlushClipboard
+82  0x00029b04 0x0045a304 NONE FUNC 0    OLEAUT32.dll imp.VarR8FromDate
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    185344
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00035dae
+compiled Wed Mar  2 12:56:36 2016
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00035dae
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x56d6e304
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x22000
+  SizeOfInitializedData : 0x2b000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1161c
+  BaseOfCode : 0x1000
+  BaseOfData : 0x23000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x60000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x35dae
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 2
+  Product: 0 Name: Unknown Version: 0 Times: 1
+  Product: 11 Name: Utc12_CPP Version: 9782 Times: 129
+  Product: 1 Name: Import0 Version: 0 Times: 465
+  Product: 93 Name: Implib710 Version: 4035 Times: 27
+  Product: 10 Name: Utc12_C Version: 9782 Times: 156
+  Product: 14 Name: Masm613 Version: 7299 Times: 28
+  Product: 95 Name: Utc1310_C Version: 4035 Times: 6
+  Product: 12 Name: AliasObj60 Version: 7291 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x5a30c
+  Size : 0x279
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x59000
+  Size : 0x12a8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x5f000
+  Size : 0x20
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+shlwapi.dll
+gdi32.dll
+winspool.drv
+comctl32.dll
+oledlg.dll
+ole32.dll
+oleaut32.dll
+
+10 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0005a3f8 0x00029ab0 SET_32 kernel32.dll_LoadLibraryA
+0x0005a408 0x00029ab4 SET_32 kernel32.dll_GetProcAddress
+0x0005a41c 0x00029ab8 SET_32 kernel32.dll_VirtualAlloc
+0x0005a42c 0x00029abc SET_32 kernel32.dll_VirtualFree
+0x0005a448 0x00029ac4 SET_32 USER32.dll_DestroyMenu
+0x0005a468 0x00029acc SET_32 ADVAPI32.dll_RegOpenKeyExA
+0x0005a488 0x00029ad4 SET_32 SHLWAPI.dll_PathFileExistsA
+0x0005a4a8 0x00029adc SET_32 GDI32.dll_SetViewportExtEx
+0x0005a4cc 0x00029ae4 SET_32 WINSPOOL.DRV_OpenPrinterA
+0x0005a504 0x00029afc SET_32 ole32.dll_OleFlushClipboard
+0x80000008 0x00029af4 SET_32 oledlg.dll_OleUIBusyA
+0x80000011 0x00029aec SET_32 COMCTL32.dll_InitCommonControls
+0x80000052 0x00029b04 SET_32 OLEAUT32.dll_VarR8FromDate
+
+
+13 relocations
+185344
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 13.0.0.3352
+  ProductVersion: 13.0.0.3352
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Jiaeryuj Maisdufthz
+  FileDescription: 导轨上的人发货十多个手机导购 是国家哦让他给我四大发明
+  FileVersion: 13, 0, 0, 3352
+  InternalName: Jeruihnxr
+  LegalCopyright: (C) Jiaeryuj Maisdufthz All Rights Reserved.
+  OriginalFilename: Jeruihnxr.DLL
+  ProductName: 爱使股份多少个给你们双方的贵哦
+  ProductVersion: 13, 0, 0, 3352
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,460 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2200 0x00401000  0x3000 -r-x .text
+1   0x00002600   0xa00 0x00404000  0x1000 -r-- .rdata
+2   0x00003000   0x400 0x00405000  0x1000 -rw- .data
+3   0x00003400   0x200 0x00406000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000400 haddr=0x000000e0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004040b8 NONE FUNC user32.dll   SendMessageA
+2   0x004040bc NONE FUNC user32.dll   RegisterClassA
+3   0x004040c0 NONE FUNC user32.dll   LoadIconA
+4   0x004040c4 NONE FUNC user32.dll   LoadCursorA
+5   0x004040c8 NONE FUNC user32.dll   GetWindowThreadProcessId
+6   0x004040cc NONE FUNC user32.dll   ShowWindow
+7   0x004040d0 NONE FUNC user32.dll   GetMessageA
+8   0x004040d4 NONE FUNC user32.dll   TranslateMessage
+9   0x004040d8 NONE FUNC user32.dll   UpdateWindow
+10  0x004040dc NONE FUNC user32.dll   wsprintfA
+11  0x004040e0 NONE FUNC user32.dll   GetClassNameA
+12  0x004040e4 NONE FUNC user32.dll   EnumWindows
+13  0x004040e8 NONE FUNC user32.dll   CreateWindowExA
+14  0x004040ec NONE FUNC user32.dll   DispatchMessageA
+15  0x004040f0 NONE FUNC user32.dll   DefWindowProcA
+16  0x004040f4 NONE FUNC user32.dll   GetWindowTextA
+1   0x00404010 NONE FUNC kernel32.dll LocalAlloc
+2   0x00404014 NONE FUNC kernel32.dll OpenProcess
+3   0x00404018 NONE FUNC kernel32.dll SetEvent
+4   0x0040401c NONE FUNC kernel32.dll LocalFree
+5   0x00404020 NONE FUNC kernel32.dll OpenMutexA
+6   0x00404024 NONE FUNC kernel32.dll GetModuleHandleA
+7   0x00404028 NONE FUNC kernel32.dll WriteFile
+8   0x0040402c NONE FUNC kernel32.dll WaitForSingleObject
+9   0x00404030 NONE FUNC kernel32.dll VirtualFree
+10  0x00404034 NONE FUNC kernel32.dll VirtualAlloc
+11  0x00404038 NONE FUNC kernel32.dll SystemTimeToFileTime
+12  0x0040403c NONE FUNC kernel32.dll Sleep
+13  0x00404040 NONE FUNC kernel32.dll CloseHandle
+14  0x00404044 NONE FUNC kernel32.dll CreateEventA
+15  0x00404048 NONE FUNC kernel32.dll CreateFileA
+16  0x0040404c NONE FUNC kernel32.dll CreateMutexA
+17  0x00404050 NONE FUNC kernel32.dll CreateThread
+18  0x00404054 NONE FUNC kernel32.dll DeleteFileA
+19  0x00404058 NONE FUNC kernel32.dll ExitProcess
+20  0x0040405c NONE FUNC kernel32.dll FileTimeToSystemTime
+21  0x00404060 NONE FUNC kernel32.dll GetCommandLineA
+22  0x00404064 NONE FUNC kernel32.dll GetCommandLineW
+23  0x00404068 NONE FUNC kernel32.dll GetCurrentProcess
+24  0x0040406c NONE FUNC kernel32.dll GetCurrentProcessId
+25  0x00404070 NONE FUNC kernel32.dll GetLocalTime
+26  0x00404074 NONE FUNC kernel32.dll GetModuleFileNameA
+27  0x00404078 NONE FUNC kernel32.dll GetVolumeInformationA
+28  0x0040407c NONE FUNC kernel32.dll GetProcAddress
+29  0x00404080 NONE FUNC kernel32.dll GetTempPathA
+30  0x00404084 NONE FUNC kernel32.dll SetFilePointer
+1   0x00404000 NONE FUNC advapi32.dll GetSidSubAuthority
+2   0x00404004 NONE FUNC advapi32.dll OpenProcessToken
+3   0x00404008 NONE FUNC advapi32.dll GetTokenInformation
+1   0x0040410c NONE FUNC wsock32.dll  WSAStartup
+2   0x00404110 NONE FUNC wsock32.dll  closesocket
+3   0x00404114 NONE FUNC wsock32.dll  connect
+4   0x00404118 NONE FUNC wsock32.dll  htons
+5   0x0040411c NONE FUNC wsock32.dll  ioctlsocket
+6   0x00404120 NONE FUNC wsock32.dll  recv
+7   0x00404124 NONE FUNC wsock32.dll  select
+8   0x00404128 NONE FUNC wsock32.dll  send
+9   0x0040412c NONE FUNC wsock32.dll  setsockopt
+10  0x00404130 NONE FUNC wsock32.dll  shutdown
+11  0x00404134 NONE FUNC wsock32.dll  socket
+12  0x00404138 NONE FUNC wsock32.dll  WSACleanup
+1   0x004040b0 NONE FUNC shell32.dll  CommandLineToArgvW
+1   0x004040fc NONE FUNC ws2_32.dll   freeaddrinfo
+2   0x00404100 NONE FUNC ws2_32.dll   WSAIoctl
+3   0x00404104 NONE FUNC ws2_32.dll   getaddrinfo
+1   0x0040408c NONE FUNC ole32.dll    CoUninitialize
+2   0x00404090 NONE FUNC ole32.dll    CoInitialize
+3   0x00404094 NONE FUNC ole32.dll    CoCreateInstance
+1   0x004040a4 NONE FUNC secur32.dll  GetUserNameExA
+2   0x004040a8 NONE FUNC secur32.dll  GetUserNameExW
+1   0x0040409c NONE FUNC psapi.dll    GetModuleFileNameExA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000026b8 0x004040b8 NONE FUNC 0    user32.dll   imp.SendMessageA
+2   0x000026bc 0x004040bc NONE FUNC 0    user32.dll   imp.RegisterClassA
+3   0x000026c0 0x004040c0 NONE FUNC 0    user32.dll   imp.LoadIconA
+4   0x000026c4 0x004040c4 NONE FUNC 0    user32.dll   imp.LoadCursorA
+5   0x000026c8 0x004040c8 NONE FUNC 0    user32.dll   imp.GetWindowThreadProcessId
+6   0x000026cc 0x004040cc NONE FUNC 0    user32.dll   imp.ShowWindow
+7   0x000026d0 0x004040d0 NONE FUNC 0    user32.dll   imp.GetMessageA
+8   0x000026d4 0x004040d4 NONE FUNC 0    user32.dll   imp.TranslateMessage
+9   0x000026d8 0x004040d8 NONE FUNC 0    user32.dll   imp.UpdateWindow
+10  0x000026dc 0x004040dc NONE FUNC 0    user32.dll   imp.wsprintfA
+11  0x000026e0 0x004040e0 NONE FUNC 0    user32.dll   imp.GetClassNameA
+12  0x000026e4 0x004040e4 NONE FUNC 0    user32.dll   imp.EnumWindows
+13  0x000026e8 0x004040e8 NONE FUNC 0    user32.dll   imp.CreateWindowExA
+14  0x000026ec 0x004040ec NONE FUNC 0    user32.dll   imp.DispatchMessageA
+15  0x000026f0 0x004040f0 NONE FUNC 0    user32.dll   imp.DefWindowProcA
+16  0x000026f4 0x004040f4 NONE FUNC 0    user32.dll   imp.GetWindowTextA
+1   0x00002610 0x00404010 NONE FUNC 0    kernel32.dll imp.LocalAlloc
+2   0x00002614 0x00404014 NONE FUNC 0    kernel32.dll imp.OpenProcess
+3   0x00002618 0x00404018 NONE FUNC 0    kernel32.dll imp.SetEvent
+4   0x0000261c 0x0040401c NONE FUNC 0    kernel32.dll imp.LocalFree
+5   0x00002620 0x00404020 NONE FUNC 0    kernel32.dll imp.OpenMutexA
+6   0x00002624 0x00404024 NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+7   0x00002628 0x00404028 NONE FUNC 0    kernel32.dll imp.WriteFile
+8   0x0000262c 0x0040402c NONE FUNC 0    kernel32.dll imp.WaitForSingleObject
+9   0x00002630 0x00404030 NONE FUNC 0    kernel32.dll imp.VirtualFree
+10  0x00002634 0x00404034 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+11  0x00002638 0x00404038 NONE FUNC 0    kernel32.dll imp.SystemTimeToFileTime
+12  0x0000263c 0x0040403c NONE FUNC 0    kernel32.dll imp.Sleep
+13  0x00002640 0x00404040 NONE FUNC 0    kernel32.dll imp.CloseHandle
+14  0x00002644 0x00404044 NONE FUNC 0    kernel32.dll imp.CreateEventA
+15  0x00002648 0x00404048 NONE FUNC 0    kernel32.dll imp.CreateFileA
+16  0x0000264c 0x0040404c NONE FUNC 0    kernel32.dll imp.CreateMutexA
+17  0x00002650 0x00404050 NONE FUNC 0    kernel32.dll imp.CreateThread
+18  0x00002654 0x00404054 NONE FUNC 0    kernel32.dll imp.DeleteFileA
+19  0x00002658 0x00404058 NONE FUNC 0    kernel32.dll imp.ExitProcess
+20  0x0000265c 0x0040405c NONE FUNC 0    kernel32.dll imp.FileTimeToSystemTime
+21  0x00002660 0x00404060 NONE FUNC 0    kernel32.dll imp.GetCommandLineA
+22  0x00002664 0x00404064 NONE FUNC 0    kernel32.dll imp.GetCommandLineW
+23  0x00002668 0x00404068 NONE FUNC 0    kernel32.dll imp.GetCurrentProcess
+24  0x0000266c 0x0040406c NONE FUNC 0    kernel32.dll imp.GetCurrentProcessId
+25  0x00002670 0x00404070 NONE FUNC 0    kernel32.dll imp.GetLocalTime
+26  0x00002674 0x00404074 NONE FUNC 0    kernel32.dll imp.GetModuleFileNameA
+27  0x00002678 0x00404078 NONE FUNC 0    kernel32.dll imp.GetVolumeInformationA
+28  0x0000267c 0x0040407c NONE FUNC 0    kernel32.dll imp.GetProcAddress
+29  0x00002680 0x00404080 NONE FUNC 0    kernel32.dll imp.GetTempPathA
+30  0x00002684 0x00404084 NONE FUNC 0    kernel32.dll imp.SetFilePointer
+1   0x00002600 0x00404000 NONE FUNC 0    advapi32.dll imp.GetSidSubAuthority
+2   0x00002604 0x00404004 NONE FUNC 0    advapi32.dll imp.OpenProcessToken
+3   0x00002608 0x00404008 NONE FUNC 0    advapi32.dll imp.GetTokenInformation
+1   0x0000270c 0x0040410c NONE FUNC 0    wsock32.dll  imp.WSAStartup
+2   0x00002710 0x00404110 NONE FUNC 0    wsock32.dll  imp.closesocket
+3   0x00002714 0x00404114 NONE FUNC 0    wsock32.dll  imp.connect
+4   0x00002718 0x00404118 NONE FUNC 0    wsock32.dll  imp.htons
+5   0x0000271c 0x0040411c NONE FUNC 0    wsock32.dll  imp.ioctlsocket
+6   0x00002720 0x00404120 NONE FUNC 0    wsock32.dll  imp.recv
+7   0x00002724 0x00404124 NONE FUNC 0    wsock32.dll  imp.select
+8   0x00002728 0x00404128 NONE FUNC 0    wsock32.dll  imp.send
+9   0x0000272c 0x0040412c NONE FUNC 0    wsock32.dll  imp.setsockopt
+10  0x00002730 0x00404130 NONE FUNC 0    wsock32.dll  imp.shutdown
+11  0x00002734 0x00404134 NONE FUNC 0    wsock32.dll  imp.socket
+12  0x00002738 0x00404138 NONE FUNC 0    wsock32.dll  imp.WSACleanup
+1   0x000026b0 0x004040b0 NONE FUNC 0    shell32.dll  imp.CommandLineToArgvW
+1   0x000026fc 0x004040fc NONE FUNC 0    ws2_32.dll   imp.freeaddrinfo
+2   0x00002700 0x00404100 NONE FUNC 0    ws2_32.dll   imp.WSAIoctl
+3   0x00002704 0x00404104 NONE FUNC 0    ws2_32.dll   imp.getaddrinfo
+1   0x0000268c 0x0040408c NONE FUNC 0    ole32.dll    imp.CoUninitialize
+2   0x00002690 0x00404090 NONE FUNC 0    ole32.dll    imp.CoInitialize
+3   0x00002694 0x00404094 NONE FUNC 0    ole32.dll    imp.CoCreateInstance
+1   0x000026a4 0x004040a4 NONE FUNC 0    secur32.dll  imp.GetUserNameExA
+2   0x000026a8 0x004040a8 NONE FUNC 0    secur32.dll  imp.GetUserNameExW
+1   0x0000269c 0x0040409c NONE FUNC 0    psapi.dll    imp.GetModuleFileNameExA
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000294a 0x0040434a 15  16   .rdata  ascii CreateWindowExA
+1   0x0000295c 0x0040435c 14  15   .rdata  ascii DefWindowProcA
+2   0x0000296e 0x0040436e 16  17   .rdata  ascii DispatchMessageA
+3   0x00002982 0x00404382 11  12   .rdata  ascii EnumWindows
+4   0x00002990 0x00404390 13  14   .rdata  ascii GetClassNameA
+5   0x000029a0 0x004043a0 11  12   .rdata  ascii GetMessageA
+6   0x000029ae 0x004043ae 14  15   .rdata  ascii GetWindowTextA
+7   0x000029c0 0x004043c0 24  25   .rdata  ascii GetWindowThreadProcessId
+8   0x000029dc 0x004043dc 11  12   .rdata  ascii LoadCursorA
+9   0x000029ea 0x004043ea 9   10   .rdata  ascii LoadIconA
+10  0x000029f6 0x004043f6 14  15   .rdata  ascii RegisterClassA
+11  0x00002a08 0x00404408 12  13   .rdata  ascii SendMessageA
+12  0x00002a18 0x00404418 10  11   .rdata  ascii ShowWindow
+13  0x00002a26 0x00404426 16  17   .rdata  ascii TranslateMessage
+14  0x00002a3a 0x0040443a 12  13   .rdata  ascii UpdateWindow
+15  0x00002a4a 0x0040444a 9   10   .rdata  ascii wsprintfA
+16  0x00002a54 0x00404454 10  11   .rdata  ascii user32.dll
+17  0x00002a62 0x00404462 11  12   .rdata  ascii CloseHandle
+18  0x00002a70 0x00404470 12  13   .rdata  ascii CreateEventA
+19  0x00002a80 0x00404480 11  12   .rdata  ascii CreateFileA
+20  0x00002a8e 0x0040448e 12  13   .rdata  ascii CreateMutexA
+21  0x00002a9e 0x0040449e 12  13   .rdata  ascii CreateThread
+22  0x00002aae 0x004044ae 11  12   .rdata  ascii DeleteFileA
+23  0x00002abc 0x004044bc 11  12   .rdata  ascii ExitProcess
+24  0x00002aca 0x004044ca 20  21   .rdata  ascii FileTimeToSystemTime
+25  0x00002ae2 0x004044e2 15  16   .rdata  ascii GetCommandLineA
+26  0x00002af4 0x004044f4 15  16   .rdata  ascii GetCommandLineW
+27  0x00002b06 0x00404506 17  18   .rdata  ascii GetCurrentProcess
+28  0x00002b1a 0x0040451a 19  20   .rdata  ascii GetCurrentProcessId
+29  0x00002b30 0x00404530 12  13   .rdata  ascii GetLocalTime
+30  0x00002b40 0x00404540 18  19   .rdata  ascii GetModuleFileNameA
+31  0x00002b56 0x00404556 16  17   .rdata  ascii GetModuleHandleA
+32  0x00002b6a 0x0040456a 14  15   .rdata  ascii GetProcAddress
+33  0x00002b7c 0x0040457c 12  13   .rdata  ascii GetTempPathA
+34  0x00002b8c 0x0040458c 21  22   .rdata  ascii GetVolumeInformationA
+35  0x00002ba4 0x004045a4 10  11   .rdata  ascii LocalAlloc
+36  0x00002bb2 0x004045b2 9   10   .rdata  ascii LocalFree
+37  0x00002bbe 0x004045be 10  11   .rdata  ascii OpenMutexA
+38  0x00002bcc 0x004045cc 11  12   .rdata  ascii OpenProcess
+39  0x00002bda 0x004045da 8   9    .rdata  ascii SetEvent
+40  0x00002be6 0x004045e6 14  15   .rdata  ascii SetFilePointer
+41  0x00002bf8 0x004045f8 5   6    .rdata  ascii Sleep
+42  0x00002c00 0x00404600 20  21   .rdata  ascii SystemTimeToFileTime
+43  0x00002c18 0x00404618 12  13   .rdata  ascii VirtualAlloc
+44  0x00002c28 0x00404628 11  12   .rdata  ascii VirtualFree
+45  0x00002c36 0x00404636 19  20   .rdata  ascii WaitForSingleObject
+46  0x00002c4c 0x0040464c 9   10   .rdata  ascii WriteFile
+47  0x00002c56 0x00404656 12  13   .rdata  ascii kernel32.dll
+48  0x00002c66 0x00404666 18  19   .rdata  ascii GetSidSubAuthority
+49  0x00002c7c 0x0040467c 19  20   .rdata  ascii GetTokenInformation
+50  0x00002c92 0x00404692 16  17   .rdata  ascii OpenProcessToken
+51  0x00002ca4 0x004046a4 12  13   .rdata  ascii advapi32.dll
+52  0x00002cb4 0x004046b4 10  11   .rdata  ascii WSACleanup
+53  0x00002cc2 0x004046c2 10  11   .rdata  ascii WSAStartup
+54  0x00002cd0 0x004046d0 11  12   .rdata  ascii closesocket
+55  0x00002cde 0x004046de 7   8    .rdata  ascii connect
+56  0x00002ce8 0x004046e8 5   6    .rdata  ascii htons
+57  0x00002cf0 0x004046f0 11  12   .rdata  ascii ioctlsocket
+58  0x00002cfe 0x004046fe 4   5    .rdata  ascii recv
+59  0x00002d06 0x00404706 6   7    .rdata  ascii select
+60  0x00002d10 0x00404710 4   5    .rdata  ascii send
+61  0x00002d18 0x00404718 10  11   .rdata  ascii setsockopt
+62  0x00002d26 0x00404726 8   9    .rdata  ascii shutdown
+63  0x00002d32 0x00404732 6   7    .rdata  ascii socket
+64  0x00002d3a 0x0040473a 11  12   .rdata  ascii wsock32.dll
+65  0x00002d48 0x00404748 18  19   .rdata  ascii CommandLineToArgvW
+66  0x00002d5c 0x0040475c 11  12   .rdata  ascii shell32.dll
+67  0x00002d6a 0x0040476a 8   9    .rdata  ascii WSAIoctl
+68  0x00002d76 0x00404776 12  13   .rdata  ascii freeaddrinfo
+69  0x00002d86 0x00404786 11  12   .rdata  ascii getaddrinfo
+70  0x00002d92 0x00404792 10  11   .rdata  ascii ws2_32.dll
+71  0x00002da0 0x004047a0 16  17   .rdata  ascii CoCreateInstance
+72  0x00002db4 0x004047b4 12  13   .rdata  ascii CoInitialize
+73  0x00002dc4 0x004047c4 14  15   .rdata  ascii CoUninitialize
+74  0x00002dd4 0x004047d4 9   10   .rdata  ascii ole32.dll
+75  0x00002de0 0x004047e0 14  15   .rdata  ascii GetUserNameExA
+76  0x00002df2 0x004047f2 14  15   .rdata  ascii GetUserNameExW
+77  0x00002e02 0x00404802 11  12   .rdata  ascii secur32.dll
+78  0x00002e10 0x00404810 20  21   .rdata  ascii GetModuleFileNameExA
+79  0x00002e26 0x00404826 9   10   .rdata  ascii psapi.dll
+0   0x00003000 0x00405000 9   10   .data   ascii BEGINDATA
+1   0x0000300a 0x0040500a 18  19   .data   ascii HOST1:5.183.95.197
+2   0x0000303d 0x0040503d 19  20   .data   ascii HOST2:192.169.6.197
+3   0x00003070 0x00405070 10  11   .data   ascii PORT1:4210
+4   0x0000307c 0x0040507c 4   5    .data   ascii TOR:
+5   0x0000310a 0x0040510a 6   7    .data   ascii Fwow64
+6   0x00003111 0x00405111 5   6    .data   ascii start
+7   0x00003117 0x00405117 15  16   .data   ascii ALLUSERSPROFILE
+8   0x00003127 0x00405127 8   9    .data   ascii win32app
+9   0x00003130 0x00405130 9   10   .data   ascii Microsoft
+10  0x0000313a 0x0040513a 12  13   .data   ascii kernel32.dll
+11  0x00003147 0x00405147 14  15   .data   ascii IsWow64Process
+12  0x00003156 0x00405156 13  14   .data   ascii RtlGetVersion
+13  0x00003164 0x00405164 10  11   .data   ascii powershell
+14  0x0000316f 0x0040516f 38  39   .data   ascii -WindowStyle Hidden -ep bypass -file "
+15  0x00003196 0x00405196 9   10   .data   ascii ntdll.dll
+16  0x000031a0 0x004051a0 10  11   .data   ascii LdrLoadDll
+17  0x000031ab 0x004051ab 139 140  .data   ascii GET %s HTTP/1.0\r\nHost: %s\r\nUser-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:66.0) Gecko/20100101 Firefox/66.0\r\nConnection: close\r\n\r\n
+arch     x86
+baddr    0x400000
+binsz    13824
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00011a6e
+compiled Thu Mar 18 07:16:23 2021
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x6052fe47
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0x2200
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  BaseOfData : 0x4000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x7000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 126
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x4140
+  Size : 0xc8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x6000
+  Size : 0x124
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x4000
+  Size : 0x140
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+user32.dll
+kernel32.dll
+advapi32.dll
+wsock32.dll
+shell32.dll
+ws2_32.dll
+ole32.dll
+secur32.dll
+psapi.dll
+
+9 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00004348 0x000026e8 SET_32 user32.dll_CreateWindowExA
+0x0000435a 0x000026f0 SET_32 user32.dll_DefWindowProcA
+0x0000436c 0x000026ec SET_32 user32.dll_DispatchMessageA
+0x00004380 0x000026e4 SET_32 user32.dll_EnumWindows
+0x0000438e 0x000026e0 SET_32 user32.dll_GetClassNameA
+0x0000439e 0x000026d0 SET_32 user32.dll_GetMessageA
+0x000043ac 0x000026f4 SET_32 user32.dll_GetWindowTextA
+0x000043be 0x000026c8 SET_32 user32.dll_GetWindowThreadProcessId
+0x000043da 0x000026c4 SET_32 user32.dll_LoadCursorA
+0x000043e8 0x000026c0 SET_32 user32.dll_LoadIconA
+0x000043f4 0x000026bc SET_32 user32.dll_RegisterClassA
+0x00004406 0x000026b8 SET_32 user32.dll_SendMessageA
+0x00004416 0x000026cc SET_32 user32.dll_ShowWindow
+0x00004424 0x000026d4 SET_32 user32.dll_TranslateMessage
+0x00004438 0x000026d8 SET_32 user32.dll_UpdateWindow
+0x00004448 0x000026dc SET_32 user32.dll_wsprintfA
+0x00004460 0x00002640 SET_32 kernel32.dll_CloseHandle
+0x0000446e 0x00002644 SET_32 kernel32.dll_CreateEventA
+0x0000447e 0x00002648 SET_32 kernel32.dll_CreateFileA
+0x0000448c 0x0000264c SET_32 kernel32.dll_CreateMutexA
+0x0000449c 0x00002650 SET_32 kernel32.dll_CreateThread
+0x000044ac 0x00002654 SET_32 kernel32.dll_DeleteFileA
+0x000044ba 0x00002658 SET_32 kernel32.dll_ExitProcess
+0x000044c8 0x0000265c SET_32 kernel32.dll_FileTimeToSystemTime
+0x000044e0 0x00002660 SET_32 kernel32.dll_GetCommandLineA
+0x000044f2 0x00002664 SET_32 kernel32.dll_GetCommandLineW
+0x00004504 0x00002668 SET_32 kernel32.dll_GetCurrentProcess
+0x00004518 0x0000266c SET_32 kernel32.dll_GetCurrentProcessId
+0x0000452e 0x00002670 SET_32 kernel32.dll_GetLocalTime
+0x0000453e 0x00002674 SET_32 kernel32.dll_GetModuleFileNameA
+0x00004554 0x00002624 SET_32 kernel32.dll_GetModuleHandleA
+0x00004568 0x0000267c SET_32 kernel32.dll_GetProcAddress
+0x0000457a 0x00002680 SET_32 kernel32.dll_GetTempPathA
+0x0000458a 0x00002678 SET_32 kernel32.dll_GetVolumeInformationA
+0x000045a2 0x00002610 SET_32 kernel32.dll_LocalAlloc
+0x000045b0 0x0000261c SET_32 kernel32.dll_LocalFree
+0x000045bc 0x00002620 SET_32 kernel32.dll_OpenMutexA
+0x000045ca 0x00002614 SET_32 kernel32.dll_OpenProcess
+0x000045d8 0x00002618 SET_32 kernel32.dll_SetEvent
+0x000045e4 0x00002684 SET_32 kernel32.dll_SetFilePointer
+0x000045f6 0x0000263c SET_32 kernel32.dll_Sleep
+0x000045fe 0x00002638 SET_32 kernel32.dll_SystemTimeToFileTime
+0x00004616 0x00002634 SET_32 kernel32.dll_VirtualAlloc
+0x00004626 0x00002630 SET_32 kernel32.dll_VirtualFree
+0x00004634 0x0000262c SET_32 kernel32.dll_WaitForSingleObject
+0x0000464a 0x00002628 SET_32 kernel32.dll_WriteFile
+0x00004664 0x00002600 SET_32 advapi32.dll_GetSidSubAuthority
+0x0000467a 0x00002608 SET_32 advapi32.dll_GetTokenInformation
+0x00004690 0x00002604 SET_32 advapi32.dll_OpenProcessToken
+0x000046b2 0x00002738 SET_32 wsock32.dll_WSACleanup
+0x000046c0 0x0000270c SET_32 wsock32.dll_WSAStartup
+0x000046ce 0x00002710 SET_32 wsock32.dll_closesocket
+0x000046dc 0x00002714 SET_32 wsock32.dll_connect
+0x000046e6 0x00002718 SET_32 wsock32.dll_htons
+0x000046ee 0x0000271c SET_32 wsock32.dll_ioctlsocket
+0x000046fc 0x00002720 SET_32 wsock32.dll_recv
+0x00004704 0x00002724 SET_32 wsock32.dll_select
+0x0000470e 0x00002728 SET_32 wsock32.dll_send
+0x00004716 0x0000272c SET_32 wsock32.dll_setsockopt
+0x00004724 0x00002730 SET_32 wsock32.dll_shutdown
+0x00004730 0x00002734 SET_32 wsock32.dll_socket
+0x00004746 0x000026b0 SET_32 shell32.dll_CommandLineToArgvW
+0x00004768 0x00002700 SET_32 ws2_32.dll_WSAIoctl
+0x00004774 0x000026fc SET_32 ws2_32.dll_freeaddrinfo
+0x00004784 0x00002704 SET_32 ws2_32.dll_getaddrinfo
+0x0000479e 0x00002694 SET_32 ole32.dll_CoCreateInstance
+0x000047b2 0x00002690 SET_32 ole32.dll_CoInitialize
+0x000047c2 0x0000268c SET_32 ole32.dll_CoUninitialize
+0x000047de 0x000026a4 SET_32 secur32.dll_GetUserNameExA
+0x000047f0 0x000026a8 SET_32 secur32.dll_GetUserNameExW
+0x0000480e 0x0000269c SET_32 psapi.dll_GetModuleFileNameExA
+
+
+71 relocations
+13824
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

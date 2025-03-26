@@ -1,0 +1,328 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0xa00 0x00401000  0x1000 -r-x .text
+1   0x00000e00   0x200 0x00402000  0x1000 -rw- .data
+2   0x00001000  0x5600 0x00403000  0x6000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0040144c paddr=0x0000084c haddr=0x00000100 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401300 paddr=0x00000700
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00401000 NONE FUNC KERNEL32.dll GetTempPathA
+2   0x00401004 NONE FUNC KERNEL32.dll GetLastError
+3   0x00401008 NONE FUNC KERNEL32.dll GetEnvironmentVariableA
+4   0x0040100c NONE FUNC KERNEL32.dll lstrcatA
+5   0x00401010 NONE FUNC KERNEL32.dll lstrcpyA
+6   0x00401014 NONE FUNC KERNEL32.dll GetShortPathNameA
+7   0x00401018 NONE FUNC KERNEL32.dll GetModuleFileNameA
+8   0x0040101c NONE FUNC KERNEL32.dll GetModuleHandleA
+9   0x00401020 NONE FUNC KERNEL32.dll GetStartupInfoA
+1   0x00401084 NONE FUNC SHELL32.dll  ShellExecuteA
+1   0x00401028 NONE FUNC MSVCRT.dll   sym.imp.void __cdecl operator delete(void *)
+2   0x0040102c NONE FUNC MSVCRT.dll   fclose
+3   0x00401030 NONE FUNC MSVCRT.dll   fwrite
+4   0x00401034 NONE FUNC MSVCRT.dll   fopen
+5   0x00401038 NONE FUNC MSVCRT.dll   fread
+6   0x0040103c NONE FUNC MSVCRT.dll   sym.imp.void * __cdecl operator new(unsigned int)
+7   0x00401040 NONE FUNC MSVCRT.dll   fgets
+8   0x00401044 NONE FUNC MSVCRT.dll   ftell
+9   0x00401048 NONE FUNC MSVCRT.dll   _exit
+10  0x0040104c NONE FUNC MSVCRT.dll   _XcptFilter
+11  0x00401050 NONE FUNC MSVCRT.dll   exit
+12  0x00401054 NONE FUNC MSVCRT.dll   _acmdln
+13  0x00401058 NONE FUNC MSVCRT.dll   __getmainargs
+14  0x0040105c NONE FUNC MSVCRT.dll   _initterm
+15  0x00401060 NONE FUNC MSVCRT.dll   __setusermatherr
+16  0x00401064 NONE FUNC MSVCRT.dll   _adjust_fdiv
+17  0x00401068 NONE FUNC MSVCRT.dll   __p__commode
+18  0x0040106c NONE FUNC MSVCRT.dll   __p__fmode
+19  0x00401070 NONE FUNC MSVCRT.dll   __set_app_type
+20  0x00401074 NONE FUNC MSVCRT.dll   _except_handler3
+21  0x00401078 NONE FUNC MSVCRT.dll   _controlfp
+22  0x0040107c NONE FUNC MSVCRT.dll   fseek
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000400 0x00401000 NONE FUNC 0    KERNEL32.dll imp.GetTempPathA
+2   0x00000404 0x00401004 NONE FUNC 0    KERNEL32.dll imp.GetLastError
+3   0x00000408 0x00401008 NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentVariableA
+4   0x0000040c 0x0040100c NONE FUNC 0    KERNEL32.dll imp.lstrcatA
+5   0x00000410 0x00401010 NONE FUNC 0    KERNEL32.dll imp.lstrcpyA
+6   0x00000414 0x00401014 NONE FUNC 0    KERNEL32.dll imp.GetShortPathNameA
+7   0x00000418 0x00401018 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+8   0x0000041c 0x0040101c NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+9   0x00000420 0x00401020 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+1   0x00000484 0x00401084 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteA
+1   0x00000428 0x00401028 NONE FUNC 0    MSVCRT.dll   void __cdecl operator delete(void *)
+2   0x0000042c 0x0040102c NONE FUNC 0    MSVCRT.dll   imp.fclose
+3   0x00000430 0x00401030 NONE FUNC 0    MSVCRT.dll   imp.fwrite
+4   0x00000434 0x00401034 NONE FUNC 0    MSVCRT.dll   imp.fopen
+5   0x00000438 0x00401038 NONE FUNC 0    MSVCRT.dll   imp.fread
+6   0x0000043c 0x0040103c NONE FUNC 0    MSVCRT.dll   void * __cdecl operator new(unsigned int)
+7   0x00000440 0x00401040 NONE FUNC 0    MSVCRT.dll   imp.fgets
+8   0x00000444 0x00401044 NONE FUNC 0    MSVCRT.dll   imp.ftell
+9   0x00000448 0x00401048 NONE FUNC 0    MSVCRT.dll   imp._exit
+10  0x0000044c 0x0040104c NONE FUNC 0    MSVCRT.dll   imp._XcptFilter
+11  0x00000450 0x00401050 NONE FUNC 0    MSVCRT.dll   imp.exit
+12  0x00000454 0x00401054 NONE FUNC 0    MSVCRT.dll   imp._acmdln
+13  0x00000458 0x00401058 NONE FUNC 0    MSVCRT.dll   imp.__getmainargs
+14  0x0000045c 0x0040105c NONE FUNC 0    MSVCRT.dll   imp._initterm
+15  0x00000460 0x00401060 NONE FUNC 0    MSVCRT.dll   imp.__setusermatherr
+16  0x00000464 0x00401064 NONE FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+17  0x00000468 0x00401068 NONE FUNC 0    MSVCRT.dll   imp.__p__commode
+18  0x0000046c 0x0040106c NONE FUNC 0    MSVCRT.dll   imp.__p__fmode
+19  0x00000470 0x00401070 NONE FUNC 0    MSVCRT.dll   imp.__set_app_type
+20  0x00000474 0x00401074 NONE FUNC 0    MSVCRT.dll   imp._except_handler3
+21  0x00000478 0x00401078 NONE FUNC 0    MSVCRT.dll   imp._controlfp
+22  0x0000047c 0x0040107c NONE FUNC 0    MSVCRT.dll   imp.fseek
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000e10 0x00402010 4   5    .data   ascii open
+1   0x00000e1c 0x0040201c 11  12   .data   ascii conhost.exe
+2   0x00000e28 0x00402028 7   8    .data   ascii ComSpec
+3   0x00000e30 0x00402030 7   8    .data   ascii  >> NUL
+4   0x00000e38 0x00402038 7   8    .data   ascii /c del 
+0   0x000018d5 0x004038d5 11  13   .rsrc   utf8  ܵNMPO\]]]\s blocks=Syriac,Basic Latin
+1   0x00001bcf 0x00403bcf 4   6    .rsrc   utf8  ΩIge blocks=Greek and Coptic,Basic Latin
+2   0x00001c19 0x00403c19 30  31   .rsrc   ascii "$$%$%$%%%%%%%%%$%%%$$$$!!!!  
+3   0x00001c49 0x00403c49 9   10   .rsrc   ascii #(-*----`
+4   0x00001c53 0x00403c53 4   5    .rsrc   ascii .--2
+5   0x00001c5e 0x00403c5e 9   10   .rsrc   ascii ,(((%%%$$
+6   0x00001c79 0x00403c79 9   10   .rsrc   ascii &-;;;;;;f
+7   0x00001c83 0x00403c83 4   5    .rsrc   ascii =;;G
+8   0x00001c8e 0x00403c8e 12  14   .rsrc   utf8  2--***((% 6Φ blocks=Basic Latin,Greek and Coptic
+9   0x00001ca9 0x00403ca9 9   10   .rsrc   ascii ';BBBBBBt
+10  0x00001cb3 0x00403cb3 4   5    .rsrc   ascii dKBK
+11  0x00001cbe 0x00403cbe 12  14   .rsrc   utf8  G>//--**(!7Ο blocks=Basic Latin,Greek and Coptic
+12  0x00001cd9 0x00403cd9 9   10   .rsrc   ascii 3CEEEEEEx
+13  0x00001cf0 0x00403cf0 10  12   .rsrc   utf8  @;;//--$9͚ blocks=Basic Latin,Combining Diacritical Marks
+14  0x00001d09 0x00403d09 8   9    .rsrc   ascii 4JQQQQQQ
+15  0x00001d1e 0x00403d1e 11  12   .rsrc   ascii aK=<;;//-%9
+16  0x00001d39 0x00403d39 8   9    .rsrc   ascii 5SUUUUUU
+17  0x00001d4e 0x00403d4e 11  12   .rsrc   ascii uaC<<<;//(:
+18  0x00001d69 0x00403d69 8   9    .rsrc   ascii HV[]noo[
+19  0x00001d80 0x00403d80 9   10   .rsrc   ascii KB<;;;/(:
+20  0x00001d99 0x00403d99 32  33   .rsrc   ascii _nqqqonq[n[UUUUQQQEEECBBB<<///(:
+21  0x00001dc9 0x00403dc9 32  33   .rsrc   ascii _UUUUVVUTTTSKKJIIFFAA>A000++))%:
+22  0x000025b1 0x004045b1 6   8    .rsrc   utf8  ǜppvEh blocks=Latin Extended-B,Basic Latin
+23  0x00002745 0x00404745 10  11   .rsrc   ascii !U)!#a]('W
+24  0x00002761 0x00404761 5   6    .rsrc   ascii !0333
+25  0x00002781 0x00404781 5   6    .rsrc   ascii 2<<<<
+26  0x0000278d 0x0040478d 6   8    .rsrc   utf8  nҧ20!! blocks=Basic Latin,Cyrillic
+27  0x000027a1 0x004047a1 5   6    .rsrc   ascii @HIII
+28  0x000027af 0x004047af 6   7    .rsrc   ascii @330$$
+29  0x000027c1 0x004047c1 5   6    .rsrc   ascii KQQdQ
+30  0x000027d0 0x004047d0 5   6    .rsrc   ascii @330$
+31  0x000027e1 0x004047e1 20  21   .rsrc   ascii MdhdddMLJGF@?::52$$!
+32  0x0000280b 0x0040480b 11  12   .rsrc   ascii aaa^][Z--+*
+33  0x00002d20 0x00404d20 7   8    .rsrc   ascii F',,).I
+34  0x00002d30 0x00404d30 7   8    .rsrc   ascii ('$%#$)
+35  0x00002d52 0x00404d52 5   6    .rsrc   ascii _[CPL
+36  0x00002d5e 0x00404d5e 9   10   .rsrc   ascii ^<[A !BPN
+37  0x00002d6d 0x00404d6d 8   9    .rsrc   ascii ^^\<9[^^
+38  0x00002d7c 0x00404d7c 11  12   .rsrc   ascii ^^^^9A^^^^K
+39  0x00002d8c 0x00404d8c 11  12   .rsrc   ascii ^^^^7Q^^WWK
+40  0x00002d9c 0x00404d9c 11  12   .rsrc   ascii WWWW6XWWWTI
+41  0x00002dac 0x00404dac 11  12   .rsrc   ascii TTTT2OTTTN/
+42  0x00002dc3 0x00404dc3 4   5    .rsrc   ascii K/,)
+43  0x00002dcd 0x00404dcd 9   10   .rsrc   ascii 241\v\t\a/I.
+44  0x00002ddb 0x00404ddb 5   6    .rsrc   ascii >;>3=
+45  0x00002dfc 0x00404dfc 6   7    .rsrc   ascii FFFFF/
+46  0x000048a0 0x004068a0 7   8    .rsrc   ascii ;;;V%%%
+47  0x00004960 0x00406960 4   5    .rsrc   ascii &&&\t
+48  0x00004a1f 0x00406a1f 4   5    .rsrc   ascii \f222
+49  0x00004af2 0x00406af2 4   5    .rsrc   ascii 1\v\f\f
+50  0x00004c70 0x00406c70 4   5    .rsrc   ascii \b\b9\v
+51  0x00004d30 0x00406d30 6   7    .rsrc   ascii \v\v<\v%%
+52  0x00004df0 0x00406df0 6   7    .rsrc   ascii \f\f>\v,,
+53  0x00004eb2 0x00406eb2 4   5    .rsrc   ascii A\b,,
+54  0x00004f93 0x00406f93 9   10   .rsrc   ascii D\e\ezE\f\f8]
+55  0x00004ffc 0x00406ffc 7   8    .rsrc   ascii '''\rEEE
+56  0x000050b4 0x004070b4 8   9    .rsrc   ascii UUUe444\b
+57  0x00005118 0x00407118 11  12   .rsrc   ascii    \bYYYjppp
+58  0x00005170 0x00407170 7   8    .rsrc   ascii @@@,III
+59  0x0000556e 0x0040756e 6   7    .rsrc   ascii z|ynpl
+60  0x0000557d 0x0040757d 6   7    .rsrc   ascii vxumpl
+61  0x000055dd 0x004075dd 6   7    .rsrc   ascii tvrwyu
+62  0x000055e6 0x004075e6 9   10   .rsrc   ascii vxtnpmdfb
+63  0x00005640 0x00407640 6   7    .rsrc   ascii jmiwyv
+64  0x00005c96 0x00407c96 4   5    .rsrc   ascii j22{
+65  0x000060cf 0x004080cf 45  46   .rsrc   ascii $???p???p???p???p???p???p???p???p???p???p777d
+66  0x0000610c 0x0040810c 4   5    .rsrc   ascii ???S
+67  0x0000614c 0x0040814c 4   5    .rsrc   ascii ???S
+68  0x0000618c 0x0040818c 4   5    .rsrc   ascii ???S
+69  0x000061cc 0x004081cc 4   5    .rsrc   ascii >>>S
+70  0x0000620c 0x0040820c 4   5    .rsrc   ascii >>>S
+71  0x0000624c 0x0040824c 4   5    .rsrc   ascii >>>S
+72  0x0000628c 0x0040828c 4   5    .rsrc   ascii ===S
+73  0x000062cc 0x004082cc 4   5    .rsrc   ascii <<<S
+74  0x0000630c 0x0040830c 4   5    .rsrc   ascii <<<S
+75  0x0000634b 0x0040834b 5   6    .rsrc   ascii \f889[
+76  0x00006434 0x00408434 4   5    .rsrc   ascii 111\e
+77  0x0000648c 0x0040848c 4   5    .rsrc   ascii 005&
+78  0x000064a8 0x004084a8 8   9    .rsrc   ascii xxxv,,,\f
+arch     x86
+baddr    0x400000
+binsz    96163
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00022209
+compiled Thu Nov 20 09:24:45 2014
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     msvc
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x546db35d
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xa00
+  SizeOfInitializedData : 0x5800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x144c
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x9000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 6 Name: Cvtres500 Version: 1735 Times: 1
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 2
+  Product: 1 Name: Import0 Version: 0 Times: 34
+  Product: 93 Name: Implib710 Version: 4035 Times: 5
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+  Product: 10 Name: Utc12_C Version: 8047 Times: 11
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x15dc
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x3000
+  Size : 0x5560
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x1000
+  Size : 0x8c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+shell32.dll
+msvcrt.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000016b8 0x00000400 SET_32 KERNEL32.dll_GetTempPathA
+0x000016c8 0x00000404 SET_32 KERNEL32.dll_GetLastError
+0x000016d8 0x00000408 SET_32 KERNEL32.dll_GetEnvironmentVariableA
+0x000016f2 0x0000040c SET_32 KERNEL32.dll_lstrcatA
+0x000016fe 0x00000410 SET_32 KERNEL32.dll_lstrcpyA
+0x0000170a 0x00000414 SET_32 KERNEL32.dll_GetShortPathNameA
+0x0000171e 0x00000418 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x00001742 0x00000484 SET_32 SHELL32.dll_ShellExecuteA
+0x0000175e 0x00000428 SET_32 MSVCRT.dll_void __cdecl operator delete(void *)
+0x0000176e 0x0000042c SET_32 MSVCRT.dll_fclose
+0x00001778 0x00000430 SET_32 MSVCRT.dll_fwrite
+0x00001782 0x00000434 SET_32 MSVCRT.dll_fopen
+0x0000178a 0x00000438 SET_32 MSVCRT.dll_fread
+0x00001792 0x0000043c SET_32 MSVCRT.dll_void * __cdecl operator new(unsigned int)
+0x000017a2 0x00000440 SET_32 MSVCRT.dll_fgets
+0x000017aa 0x00000444 SET_32 MSVCRT.dll_ftell
+0x000017b2 0x0000047c SET_32 MSVCRT.dll_fseek
+0x000017c6 0x00000448 SET_32 MSVCRT.dll__exit
+0x000017ce 0x0000044c SET_32 MSVCRT.dll__XcptFilter
+0x000017dc 0x00000450 SET_32 MSVCRT.dll_exit
+0x000017e4 0x00000454 SET_32 MSVCRT.dll__acmdln
+0x000017ee 0x00000458 SET_32 MSVCRT.dll___getmainargs
+0x000017fe 0x0000045c SET_32 MSVCRT.dll__initterm
+0x0000180a 0x00000460 SET_32 MSVCRT.dll___setusermatherr
+0x0000181e 0x00000464 SET_32 MSVCRT.dll__adjust_fdiv
+0x0000182e 0x00000468 SET_32 MSVCRT.dll___p__commode
+0x0000183e 0x0000046c SET_32 MSVCRT.dll___p__fmode
+0x0000184c 0x00000470 SET_32 MSVCRT.dll___set_app_type
+0x0000185e 0x00000474 SET_32 MSVCRT.dll__except_handler3
+0x00001872 0x00000478 SET_32 MSVCRT.dll__controlfp
+0x00001880 0x0000041c SET_32 KERNEL32.dll_GetModuleHandleA
+0x00001894 0x00000420 SET_32 KERNEL32.dll_GetStartupInfoA
+
+
+32 relocations
+96163
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

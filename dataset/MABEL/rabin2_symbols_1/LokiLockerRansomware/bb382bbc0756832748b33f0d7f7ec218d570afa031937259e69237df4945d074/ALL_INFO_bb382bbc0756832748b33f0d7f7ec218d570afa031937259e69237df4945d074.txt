@@ -1,0 +1,216 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400      0x0 0x00401000  0x22000 -r-x sect_0
+1   0x00000400    0x200 0x00423000   0x1000 -rw- sect_1
+2   0x00000600    0x700 0x00424000   0x1000 -r-- .rsrc
+3   0x00000e00  0x17e10 0x00425000  0x18000 -rwx sect_3
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00425000 paddr=0x00000e00 haddr=0x00000128 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0042308c NONE FUNC kernel32.dll GetModuleHandleA
+1   0x0042309c NONE FUNC user32.dll   EndDialog
+1   0x004230ac NONE FUNC advapi32.dll RegQueryValueW
+1   0x004230bc NONE FUNC mscoree.dll  _CorExeMain
+1   0x004230cc NONE FUNC shell32.dll  PathMakeUniqueName
+1   0x004230dc NONE FUNC comctl32.dll DSA_Create
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000048c 0x0042308c NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+1   0x0000049c 0x0042309c NONE FUNC 0    user32.dll   imp.EndDialog
+1   0x000004ac 0x004230ac NONE FUNC 0    advapi32.dll imp.RegQueryValueW
+1   0x000004bc 0x004230bc NONE FUNC 0    mscoree.dll  imp._CorExeMain
+1   0x000004cc 0x004230cc NONE FUNC 0    shell32.dll  imp.PathMakeUniqueName
+1   0x000004dc 0x004230dc NONE FUNC 0    comctl32.dll imp.DSA_Create
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000066e 0x0042406e 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x000006cc 0x004240cc 10  22   .rsrc   utf16le arFileInfo
+2   0x000006ea 0x004240ea 11  24   .rsrc   utf16le Translation
+3   0x0000070e 0x0042410e 14  30   .rsrc   utf16le StringFileInfo
+4   0x00000732 0x00424132 8   18   .rsrc   utf16le 000004b0
+5   0x0000074a 0x0042414a 8   18   .rsrc   utf16le Comments
+6   0x00000766 0x00424166 11  24   .rsrc   utf16le CompanyName
+7   0x00000780 0x00424180 9   20   .rsrc   utf16le Microsoft
+8   0x0000079a 0x0042419a 15  32   .rsrc   utf16le FileDescription
+9   0x000007bc 0x004241bc 7   16   .rsrc   utf16le svchost
+10  0x000007d2 0x004241d2 11  24   .rsrc   utf16le FileVersion
+11  0x000007ec 0x004241ec 7   16   .rsrc   utf16le 1.0.0.0
+12  0x00000802 0x00424202 12  26   .rsrc   utf16le InternalName
+13  0x0000081c 0x0042421c 11  24   .rsrc   utf16le svchost.exe
+14  0x0000083a 0x0042423a 14  30   .rsrc   utf16le LegalCopyright
+15  0x00000858 0x00424258 10  21   .rsrc   utf16le Copyright 
+16  0x0000086e 0x0042426e 6   14   .rsrc   utf16le   2021
+17  0x00000882 0x00424282 15  32   .rsrc   utf16le LegalTrademarks
+18  0x000008ae 0x004242ae 16  34   .rsrc   utf16le OriginalFilename
+19  0x000008d0 0x004242d0 11  24   .rsrc   utf16le svchost.exe
+20  0x000008ee 0x004242ee 11  24   .rsrc   utf16le ProductName
+21  0x00000908 0x00424308 7   16   .rsrc   utf16le svchost
+22  0x0000091e 0x0042431e 14  30   .rsrc   utf16le ProductVersion
+23  0x0000093c 0x0042433c 7   16   .rsrc   utf16le 1.0.0.0
+24  0x00000952 0x00424352 16  34   .rsrc   utf16le Assembly Version
+25  0x00000974 0x00424374 7   16   .rsrc   utf16le 1.2.0.0
+26  0x000009c7 0x004243c7 487 488  .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <assemblyIdentity version="1.0.0.0" name="MyApplication.app"/>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">\r\n    <security>\r\n      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"/>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>
+27  0x00000c30 0x00424630 8   9    .rsrc   ascii   (RA\eWR1\n
+28  0x00000c39 0x00424639 4   7    .rsrc   utf8    톀ZB9 blocks=Hangul Syllables,Basic Latin
+29  0x00000c60 0x00424660 7   8    .rsrc   ascii   ~*R9)x@
+30  0x00000c9f 0x0042469f 4   5    .rsrc   ascii   ,%v=
+31  0x00000cb1 0x004246b1 7   8    .rsrc   ascii   *?(b\rb0
+arch     x86
+baddr    0x400000
+binsz    321488
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00059faa
+compiled Sun Aug 17 20:22:39 2104
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00059faa
+laddr    0x0
+lang     cil
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0xfd3a2b0f
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x122
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x30
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1ee00
+  SizeOfInitializedData : 0x800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x25000
+  BaseOfCode : 0x2000
+  BaseOfData : 0x22000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x3d000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x59faa
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x23000
+  Size : 0x1d8
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x24000
+  Size : 0x700
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+mscoree.dll
+shell32.dll
+comctl32.dll
+
+6 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000230fe 0x0000048c SET_32 kernel32.dll_GetModuleHandleA
+0x00023123 0x0000049c SET_32 user32.dll_EndDialog
+0x00023142 0x000004ac SET_32 advapi32.dll_RegQueryValueW
+0x00023165 0x000004bc SET_32 mscoree.dll__CorExeMain
+0x00023184 0x000004cc SET_32 shell32.dll_PathMakeUniqueName
+0x000231ad 0x000004dc SET_32 comctl32.dll_DSA_Create
+
+
+6 relocations
+321488
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.0.0
+  ProductVersion: 1.0.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: 
+  CompanyName: Microsoft
+  FileDescription: svchost
+  FileVersion: 1.0.0.0
+  InternalName: svchost.exe
+  LegalCopyright: Copyright ©  2021
+  LegalTrademarks: 
+  OriginalFilename: svchost.exe
+  ProductName: svchost
+  ProductVersion: 1.0.0.0
+  Assembly Version: 1.2.0.0
+Section to Segment mapping:
+Segment Section
+---------------
+
+

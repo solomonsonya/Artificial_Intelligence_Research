@@ -1,0 +1,399 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001000  0x1000 0x00401000  0x1000 -r-x .text
+1   0x00002000  0x1000 0x00402000  0x1000 -r-- .rdata
+2   0x00003000  0x1000 0x00403000  0x1000 -rw- .data
+3   0x00004000  0x1000 0x00404000  0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401b56 paddr=0x00001b56 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x004010b1 paddr=0x000010b1
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00402000 NONE FUNC KERNEL32.dll Sleep
+2   0x00402004 NONE FUNC KERNEL32.dll GetProcAddress
+3   0x00402008 NONE FUNC KERNEL32.dll LoadLibraryA
+4   0x0040200c NONE FUNC KERNEL32.dll CloseHandle
+5   0x00402010 NONE FUNC KERNEL32.dll WriteFile
+6   0x00402014 NONE FUNC KERNEL32.dll ReadFile
+7   0x00402018 NONE FUNC KERNEL32.dll CreateFileA
+8   0x0040201c NONE FUNC KERNEL32.dll HeapFree
+9   0x00402020 NONE FUNC KERNEL32.dll HeapAlloc
+10  0x00402024 NONE FUNC KERNEL32.dll GetProcessHeap
+11  0x00402028 NONE FUNC KERNEL32.dll GetModuleFileNameA
+12  0x0040202c NONE FUNC KERNEL32.dll SetFilePointer
+13  0x00402030 NONE FUNC KERNEL32.dll MultiByteToWideChar
+14  0x00402034 NONE FUNC KERNEL32.dll FindClose
+15  0x00402038 NONE FUNC KERNEL32.dll FindNextFileA
+16  0x0040203c NONE FUNC KERNEL32.dll FindFirstFileA
+17  0x00402040 NONE FUNC KERNEL32.dll GetModuleHandleA
+18  0x00402044 NONE FUNC KERNEL32.dll GetStartupInfoA
+1   0x004020e0 NONE FUNC SHELL32.dll  SHGetSpecialFolderLocation
+2   0x004020e4 NONE FUNC SHELL32.dll  SHGetPathFromIDListA
+1   0x0040204c NONE FUNC MSVCP60.dll  sym.imp.public: void __thiscall std::ios_base::Init::constructor(void)
+2   0x00402050 NONE FUNC MSVCP60.dll  sym.imp.public: void __thiscall std::ios_base::Init::~destructor(void)
+3   0x00402054 NONE FUNC MSVCP60.dll  sym.imp.public: void __thiscall std::_Winit::constructor(void)
+4   0x00402058 NONE FUNC MSVCP60.dll  sym.imp.public: void __thiscall std::_Winit::~destructor(void)
+5   0x0040205c NONE FUNC MSVCP60.dll  sym.imp.public: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> & __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::assign(char const *, unsigned int)
+6   0x00402060 NONE FUNC MSVCP60.dll  sym.imp.private: void __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::_Tidy(bool)
+7   0x00402064 NONE FUNC MSVCP60.dll  sym.imp.char const `private: static char const * __cdecl std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::_Nullstr(void)'::`2'::_C
+8   0x00402068 NONE FUNC MSVCP60.dll  sym.imp.class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> __cdecl std::operator+(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, char const *)
+9   0x0040206c NONE FUNC MSVCP60.dll  sym.imp.bool __cdecl std::operator!=(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, char const *)
+10  0x00402070 NONE FUNC MSVCP60.dll  sym.imp.public: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> & __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::assign(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, unsigned int, unsigned int)
+11  0x00402074 NONE FUNC MSVCP60.dll  sym.imp.unsigned int const std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::npos
+1   0x0040207c NONE FUNC MSVCRT.dll   _controlfp
+2   0x00402080 NONE FUNC MSVCRT.dll   __set_app_type
+3   0x00402084 NONE FUNC MSVCRT.dll   __p__fmode
+4   0x00402088 NONE FUNC MSVCRT.dll   __p__commode
+5   0x0040208c NONE FUNC MSVCRT.dll   _adjust_fdiv
+6   0x00402090 NONE FUNC MSVCRT.dll   __setusermatherr
+7   0x00402094 NONE FUNC MSVCRT.dll   _initterm
+8   0x00402098 NONE FUNC MSVCRT.dll   __getmainargs
+9   0x0040209c NONE FUNC MSVCRT.dll   _acmdln
+10  0x004020a0 NONE FUNC MSVCRT.dll   exit
+11  0x004020a4 NONE FUNC MSVCRT.dll   _XcptFilter
+12  0x004020a8 NONE FUNC MSVCRT.dll   _exit
+13  0x004020ac NONE FUNC MSVCRT.dll   _onexit
+14  0x004020b0 NONE FUNC MSVCRT.dll   strlen
+15  0x004020b4 NONE FUNC MSVCRT.dll   memset
+16  0x004020b8 NONE FUNC MSVCRT.dll   strcpy
+17  0x004020bc NONE FUNC MSVCRT.dll   _stricmp
+18  0x004020c0 NONE FUNC MSVCRT.dll   _except_handler3
+19  0x004020c4 NONE FUNC MSVCRT.dll   strstr
+20  0x004020c8 NONE FUNC MSVCRT.dll   strcat
+21  0x004020cc NONE FUNC MSVCRT.dll   sprintf
+22  0x004020d0 NONE FUNC MSVCRT.dll   atoi
+23  0x004020d4 NONE FUNC MSVCRT.dll   strcmp
+24  0x004020d8 NONE FUNC MSVCRT.dll   __dllonexit
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002000 0x00402000 NONE FUNC 0    KERNEL32.dll imp.Sleep
+2   0x00002004 0x00402004 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+3   0x00002008 0x00402008 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+4   0x0000200c 0x0040200c NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+5   0x00002010 0x00402010 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+6   0x00002014 0x00402014 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+7   0x00002018 0x00402018 NONE FUNC 0    KERNEL32.dll imp.CreateFileA
+8   0x0000201c 0x0040201c NONE FUNC 0    KERNEL32.dll imp.HeapFree
+9   0x00002020 0x00402020 NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+10  0x00002024 0x00402024 NONE FUNC 0    KERNEL32.dll imp.GetProcessHeap
+11  0x00002028 0x00402028 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+12  0x0000202c 0x0040202c NONE FUNC 0    KERNEL32.dll imp.SetFilePointer
+13  0x00002030 0x00402030 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+14  0x00002034 0x00402034 NONE FUNC 0    KERNEL32.dll imp.FindClose
+15  0x00002038 0x00402038 NONE FUNC 0    KERNEL32.dll imp.FindNextFileA
+16  0x0000203c 0x0040203c NONE FUNC 0    KERNEL32.dll imp.FindFirstFileA
+17  0x00002040 0x00402040 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+18  0x00002044 0x00402044 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+1   0x000020e0 0x004020e0 NONE FUNC 0    SHELL32.dll  imp.SHGetSpecialFolderLocation
+2   0x000020e4 0x004020e4 NONE FUNC 0    SHELL32.dll  imp.SHGetPathFromIDListA
+1   0x0000204c 0x0040204c NONE FUNC 0    MSVCP60.dll  public: void __thiscall std::ios_base::Init::constructor(void)
+2   0x00002050 0x00402050 NONE FUNC 0    MSVCP60.dll  public: void __thiscall std::ios_base::Init::~destructor(void)
+3   0x00002054 0x00402054 NONE FUNC 0    MSVCP60.dll  public: void __thiscall std::_Winit::constructor(void)
+4   0x00002058 0x00402058 NONE FUNC 0    MSVCP60.dll  public: void __thiscall std::_Winit::~destructor(void)
+5   0x0000205c 0x0040205c NONE FUNC 0    MSVCP60.dll  public: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> & __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::assign(char const *, unsigned int)
+6   0x00002060 0x00402060 NONE FUNC 0    MSVCP60.dll  private: void __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::_Tidy(bool)
+7   0x00002064 0x00402064 NONE FUNC 0    MSVCP60.dll  char const `private: static char const * __cdecl std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::_Nullstr(void)'::`2'::_C
+8   0x00002068 0x00402068 NONE FUNC 0    MSVCP60.dll  class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> __cdecl std::operator+(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, char const *)
+9   0x0000206c 0x0040206c NONE FUNC 0    MSVCP60.dll  bool __cdecl std::operator!=(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, char const *)
+10  0x00002070 0x00402070 NONE FUNC 0    MSVCP60.dll  public: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> & __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::assign(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, unsigned int, unsigned int)
+11  0x00002074 0x00402074 NONE FUNC 0    MSVCP60.dll  unsigned int const std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::npos
+1   0x0000207c 0x0040207c NONE FUNC 0    MSVCRT.dll   imp._controlfp
+2   0x00002080 0x00402080 NONE FUNC 0    MSVCRT.dll   imp.__set_app_type
+3   0x00002084 0x00402084 NONE FUNC 0    MSVCRT.dll   imp.__p__fmode
+4   0x00002088 0x00402088 NONE FUNC 0    MSVCRT.dll   imp.__p__commode
+5   0x0000208c 0x0040208c NONE FUNC 0    MSVCRT.dll   imp._adjust_fdiv
+6   0x00002090 0x00402090 NONE FUNC 0    MSVCRT.dll   imp.__setusermatherr
+7   0x00002094 0x00402094 NONE FUNC 0    MSVCRT.dll   imp._initterm
+8   0x00002098 0x00402098 NONE FUNC 0    MSVCRT.dll   imp.__getmainargs
+9   0x0000209c 0x0040209c NONE FUNC 0    MSVCRT.dll   imp._acmdln
+10  0x000020a0 0x004020a0 NONE FUNC 0    MSVCRT.dll   imp.exit
+11  0x000020a4 0x004020a4 NONE FUNC 0    MSVCRT.dll   imp._XcptFilter
+12  0x000020a8 0x004020a8 NONE FUNC 0    MSVCRT.dll   imp._exit
+13  0x000020ac 0x004020ac NONE FUNC 0    MSVCRT.dll   imp._onexit
+14  0x000020b0 0x004020b0 NONE FUNC 0    MSVCRT.dll   imp.strlen
+15  0x000020b4 0x004020b4 NONE FUNC 0    MSVCRT.dll   imp.memset
+16  0x000020b8 0x004020b8 NONE FUNC 0    MSVCRT.dll   imp.strcpy
+17  0x000020bc 0x004020bc NONE FUNC 0    MSVCRT.dll   imp._stricmp
+18  0x000020c0 0x004020c0 NONE FUNC 0    MSVCRT.dll   imp._except_handler3
+19  0x000020c4 0x004020c4 NONE FUNC 0    MSVCRT.dll   imp.strstr
+20  0x000020c8 0x004020c8 NONE FUNC 0    MSVCRT.dll   imp.strcat
+21  0x000020cc 0x004020cc NONE FUNC 0    MSVCRT.dll   imp.sprintf
+22  0x000020d0 0x004020d0 NONE FUNC 0    MSVCRT.dll   imp.atoi
+23  0x000020d4 0x004020d4 NONE FUNC 0    MSVCRT.dll   imp.strcmp
+24  0x000020d8 0x004020d8 NONE FUNC 0    MSVCRT.dll   imp.__dllonexit
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000227e 0x0040227e 5   6    .rdata  ascii Sleep
+1   0x00002286 0x00402286 14  15   .rdata  ascii GetProcAddress
+2   0x00002298 0x00402298 12  13   .rdata  ascii LoadLibraryA
+3   0x000022a8 0x004022a8 11  12   .rdata  ascii CloseHandle
+4   0x000022b6 0x004022b6 9   10   .rdata  ascii WriteFile
+5   0x000022c2 0x004022c2 8   9    .rdata  ascii ReadFile
+6   0x000022ce 0x004022ce 11  12   .rdata  ascii CreateFileA
+7   0x000022dc 0x004022dc 8   9    .rdata  ascii HeapFree
+8   0x000022e8 0x004022e8 9   10   .rdata  ascii HeapAlloc
+9   0x000022f4 0x004022f4 14  15   .rdata  ascii GetProcessHeap
+10  0x00002306 0x00402306 18  19   .rdata  ascii GetModuleFileNameA
+11  0x0000231c 0x0040231c 14  15   .rdata  ascii SetFilePointer
+12  0x0000232e 0x0040232e 19  20   .rdata  ascii MultiByteToWideChar
+13  0x00002344 0x00402344 9   10   .rdata  ascii FindClose
+14  0x00002350 0x00402350 13  14   .rdata  ascii FindNextFileA
+15  0x00002360 0x00402360 14  15   .rdata  ascii FindFirstFileA
+16  0x00002370 0x00402370 12  13   .rdata  ascii KERNEL32.dll
+17  0x00002380 0x00402380 20  21   .rdata  ascii SHGetPathFromIDListA
+18  0x00002398 0x00402398 26  27   .rdata  ascii SHGetSpecialFolderLocation
+19  0x000023b4 0x004023b4 11  12   .rdata  ascii SHELL32.dll
+20  0x000023c2 0x004023c2 28  29   .rdata  ascii ??0Init@ios_base@std@@QAE@XZ
+21  0x000023e2 0x004023e2 28  29   .rdata  ascii ??1Init@ios_base@std@@QAE@XZ
+22  0x00002402 0x00402402 21  22   .rdata  ascii ??0_Winit@std@@QAE@XZ
+23  0x0000241a 0x0040241a 21  22   .rdata  ascii ??1_Winit@std@@QAE@XZ
+24  0x00002432 0x00402432 84  85   .rdata  ascii ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@PBDI@Z
+25  0x0000248a 0x0040248a 76  77   .rdata  ascii ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAEX_N@Z
+26  0x000024da 0x004024da 89  90   .rdata  ascii ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB
+27  0x00002536 0x00402536 82  83   .rdata  ascii ??Hstd@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@PBD@Z
+28  0x0000258c 0x0040258c 78  79   .rdata  ascii ??9std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z
+29  0x000025de 0x004025de 88  89   .rdata  ascii ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAEAAV12@ABV12@II@Z
+30  0x0000263a 0x0040263a 70  71   .rdata  ascii ?npos@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@2IB
+31  0x00002682 0x00402682 11  12   .rdata  ascii MSVCP60.dll
+32  0x0000268e 0x0040268e 10  11   .rdata  ascii WS2_32.dll
+33  0x0000269c 0x0040269c 6   7    .rdata  ascii strlen
+34  0x000026a6 0x004026a6 6   7    .rdata  ascii memset
+35  0x000026b0 0x004026b0 6   7    .rdata  ascii strcpy
+36  0x000026ba 0x004026ba 8   9    .rdata  ascii _stricmp
+37  0x000026c6 0x004026c6 16  17   .rdata  ascii _except_handler3
+38  0x000026da 0x004026da 6   7    .rdata  ascii strstr
+39  0x000026e4 0x004026e4 6   7    .rdata  ascii strcat
+40  0x000026ee 0x004026ee 7   8    .rdata  ascii sprintf
+41  0x000026f8 0x004026f8 4   5    .rdata  ascii atoi
+42  0x00002700 0x00402700 6   7    .rdata  ascii strcmp
+43  0x0000270a 0x0040270a 11  12   .rdata  ascii __dllonexit
+44  0x00002718 0x00402718 7   8    .rdata  ascii _onexit
+45  0x00002720 0x00402720 10  11   .rdata  ascii MSVCRT.dll
+46  0x0000272e 0x0040272e 5   6    .rdata  ascii _exit
+47  0x00002736 0x00402736 11  12   .rdata  ascii _XcptFilter
+48  0x00002744 0x00402744 4   5    .rdata  ascii exit
+49  0x0000274c 0x0040274c 7   8    .rdata  ascii _acmdln
+50  0x00002756 0x00402756 13  14   .rdata  ascii __getmainargs
+51  0x00002766 0x00402766 9   10   .rdata  ascii _initterm
+52  0x00002772 0x00402772 16  17   .rdata  ascii __setusermatherr
+53  0x00002786 0x00402786 12  13   .rdata  ascii _adjust_fdiv
+54  0x00002796 0x00402796 12  13   .rdata  ascii __p__commode
+55  0x000027a6 0x004027a6 10  11   .rdata  ascii __p__fmode
+56  0x000027b4 0x004027b4 14  15   .rdata  ascii __set_app_type
+57  0x000027c6 0x004027c6 10  11   .rdata  ascii _controlfp
+58  0x000027d4 0x004027d4 16  17   .rdata  ascii GetModuleHandleA
+59  0x000027e8 0x004027e8 15  16   .rdata  ascii GetStartupInfoA
+0   0x00003020 0x00403020 12  13   .data   ascii kernel32.dll
+1   0x00003030 0x00403030 11  12   .data   ascii CloseHandle
+2   0x0000303c 0x0040303c 18  19   .data   ascii GetModuleFileNameA
+3   0x00003050 0x00403050 14  15   .data   ascii C,,a,e,ro,e,sA
+4   0x00003060 0x00403060 11  12   .data   ascii Trend Micro
+5   0x0000306c 0x0040306c 14  15   .data   ascii AVAST Software
+6   0x0000307c 0x0040307c 13  14   .data   ascii K.s.e.s.y .a.
+7   0x0000308c 0x0040308c 18  19   .data   ascii 0et3i5eA8tri.utesA
+8   0x000030a0 0x004030a0 11  12   .data   ascii xetxilexize
+9   0x000030ac 0x004030ac 9   10   .data   ascii pslog.txt
+10  0x000030b8 0x004030b8 10  11   .data   ascii winlog.dll
+11  0x000030c4 0x004030c4 10  11   .data   ascii winlog.exe
+12  0x000030d0 0x004030d0 4   5    .data   ascii %s%s
+13  0x000030d8 0x004030d8 10  11   .data   ascii winlog.lnk
+14  0x000030e8 0x004030e8 5   6    .data   ascii 50176
+15  0x000030ee 0x004030ee 10  11   .data   ascii EEEEEEEEEE
+16  0x000030fc 0x004030fc 17  18   .data   ascii 0et3hort8ath.ameA
+17  0x00003110 0x00403110 9   10   .data   ascii ole32.dll
+18  0x0000311c 0x0040311c 14  15   .data   ascii 0o2ni5iti9lize
+19  0x0000312c 0x0040312c 16  17   .data   ascii ,o,re,te,nstance
+20  0x00003140 0x00403140 9   10   .data   ascii 0l232.6ll
+21  0x0000314c 0x0040314c 12  13   .data   ascii ,o,niti,lize
+arch     x86
+baddr    0x400000
+binsz    70656
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001e3eb
+compiled Thu Jun  5 02:19:55 2014
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     msvc
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x538fd3cb
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1000
+  SizeOfInitializedData : 0x3000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1b56
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x1000
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x5000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 6 Name: Cvtres500 Version: 1720 Times: 1
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 2
+  Product: 1 Name: Import0 Version: 0 Times: 78
+  Product: 19 Name: Linker512 Version: 8034 Times: 7
+  Product: 0 Name: Unknown Version: 0 Times: 3
+  Product: 4 Name: Linker600 Version: 8168 Times: 4
+  Product: 10 Name: Utc12_C Version: 8168 Times: 11
+  Product: 14 Name: Masm613 Version: 7299 Times: 2
+  Product: 12 Name: AliasObj60 Version: 7291 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x212c
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x4000
+  Size : 0x10
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0xec
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+shell32.dll
+msvcp60.dll
+msvcrt.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0000227c 0x00002000 SET_32 KERNEL32.dll_Sleep
+0x00002284 0x00002004 SET_32 KERNEL32.dll_GetProcAddress
+0x00002296 0x00002008 SET_32 KERNEL32.dll_LoadLibraryA
+0x000022a6 0x0000200c SET_32 KERNEL32.dll_CloseHandle
+0x000022b4 0x00002010 SET_32 KERNEL32.dll_WriteFile
+0x000022c0 0x00002014 SET_32 KERNEL32.dll_ReadFile
+0x000022cc 0x00002018 SET_32 KERNEL32.dll_CreateFileA
+0x000022da 0x0000201c SET_32 KERNEL32.dll_HeapFree
+0x000022e6 0x00002020 SET_32 KERNEL32.dll_HeapAlloc
+0x000022f2 0x00002024 SET_32 KERNEL32.dll_GetProcessHeap
+0x00002304 0x00002028 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x0000231a 0x0000202c SET_32 KERNEL32.dll_SetFilePointer
+0x0000232c 0x00002030 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x00002342 0x00002034 SET_32 KERNEL32.dll_FindClose
+0x0000234e 0x00002038 SET_32 KERNEL32.dll_FindNextFileA
+0x0000235e 0x0000203c SET_32 KERNEL32.dll_FindFirstFileA
+0x0000237e 0x000020e4 SET_32 SHELL32.dll_SHGetPathFromIDListA
+0x00002396 0x000020e0 SET_32 SHELL32.dll_SHGetSpecialFolderLocation
+0x000023c0 0x0000204c SET_32 MSVCP60.dll_public: void __thiscall std::ios_base::Init::constructor(void)
+0x000023e0 0x00002050 SET_32 MSVCP60.dll_public: void __thiscall std::ios_base::Init::~destructor(void)
+0x00002400 0x00002054 SET_32 MSVCP60.dll_public: void __thiscall std::_Winit::constructor(void)
+0x00002418 0x00002058 SET_32 MSVCP60.dll_public: void __thiscall std::_Winit::~destructor(void)
+0x00002430 0x0000205c SET_32 MSVCP60.dll_public: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> & __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::assign(char const *, unsigned int)
+0x00002488 0x00002060 SET_32 MSVCP60.dll_private: void __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::_Tidy(bool)
+0x000024d8 0x00002064 SET_32 MSVCP60.dll_char const `private: static char const * __cdecl std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::_Nullstr(void)'::`2'::_C
+0x00002534 0x00002068 SET_32 MSVCP60.dll_class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> __cdecl std::operator+(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, char const *)
+0x0000258a 0x0000206c SET_32 MSVCP60.dll_bool __cdecl std::operator!=(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, char const *)
+0x000025dc 0x00002070 SET_32 MSVCP60.dll_public: class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> & __thiscall std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::assign(class std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>> const &, unsigned int, unsigned int)
+0x00002638 0x00002074 SET_32 MSVCP60.dll_unsigned int const std::basic_string<char, struct std::char_traits<char>, class std::allocator<char>>::npos
+0x0000269a 0x000020b0 SET_32 MSVCRT.dll_strlen
+0x000026a4 0x000020b4 SET_32 MSVCRT.dll_memset
+0x000026ae 0x000020b8 SET_32 MSVCRT.dll_strcpy
+0x000026b8 0x000020bc SET_32 MSVCRT.dll__stricmp
+0x000026c4 0x000020c0 SET_32 MSVCRT.dll__except_handler3
+0x000026d8 0x000020c4 SET_32 MSVCRT.dll_strstr
+0x000026e2 0x000020c8 SET_32 MSVCRT.dll_strcat
+0x000026ec 0x000020cc SET_32 MSVCRT.dll_sprintf
+0x000026f6 0x000020d0 SET_32 MSVCRT.dll_atoi
+0x000026fe 0x000020d4 SET_32 MSVCRT.dll_strcmp
+0x00002708 0x000020d8 SET_32 MSVCRT.dll___dllonexit
+0x00002716 0x000020ac SET_32 MSVCRT.dll__onexit
+0x0000272c 0x000020a8 SET_32 MSVCRT.dll__exit
+0x00002734 0x000020a4 SET_32 MSVCRT.dll__XcptFilter
+0x00002742 0x000020a0 SET_32 MSVCRT.dll_exit
+0x0000274a 0x0000209c SET_32 MSVCRT.dll__acmdln
+0x00002754 0x00002098 SET_32 MSVCRT.dll___getmainargs
+0x00002764 0x00002094 SET_32 MSVCRT.dll__initterm
+0x00002770 0x00002090 SET_32 MSVCRT.dll___setusermatherr
+0x00002784 0x0000208c SET_32 MSVCRT.dll__adjust_fdiv
+0x00002794 0x00002088 SET_32 MSVCRT.dll___p__commode
+0x000027a4 0x00002084 SET_32 MSVCRT.dll___p__fmode
+0x000027b2 0x00002080 SET_32 MSVCRT.dll___set_app_type
+0x000027c4 0x0000207c SET_32 MSVCRT.dll__controlfp
+0x000027d2 0x00002040 SET_32 KERNEL32.dll_GetModuleHandleA
+0x000027e6 0x00002044 SET_32 KERNEL32.dll_GetStartupInfoA
+
+
+55 relocations
+70656
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,2545 @@
+Missing bin header main
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0x38800 0x140001000  0x39000 -r-x .text
+1   0x00038e00    0x200 0x14003a000   0x1000 -rw- .data
+2   0x00039000   0x6a00 0x14003b000   0x7000 -r-- .rdata
+3   0x0003fa00    0x200 0x140042000   0x1000 -rw- .eh_frame
+4   0x0003fc00   0x2000 0x140043000   0x2000 -r-- .pdata
+5   0x00041c00   0x2000 0x140045000   0x2000 -r-- .xdata
+6   0x00000000      0x0 0x140047000  0x14000 -rw- .bss
+7   0x00043c00    0xc00 0x14005b000   0x1000 -rw- .idata
+8   0x00044800    0x200 0x14005c000   0x1000 -rw- .CRT
+9   0x00044a00    0x200 0x14005d000   0x1000 -rw- .tls
+10  0x00044c00    0x200 0x14005e000   0x1000 -r-- .reloc
+11  0x00044e00    0x200 0x14005f000   0x1000 -r-- .debug_aranges
+12  0x00045000    0xe00 0x140060000   0x1000 -r-- .debug_info
+13  0x00045e00    0x200 0x140061000   0x1000 -r-- .debug_abbrev
+14  0x00046000    0x200 0x140062000   0x1000 -r-- .debug_line
+15  0x00046200    0x200 0x140063000   0x1000 -r-- .debug_str
+16  0x00046400    0x200 0x140064000   0x1000 -r-- .debug_line_str
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x140001125 paddr=0x00000725 haddr=0x000000a8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr       bind type lib          name
+―――――――――――――――――――――――――――――――――――――――――――
+1   0x14005b2cc NONE FUNC KERNEL32.dll DeleteCriticalSection
+2   0x14005b2d4 NONE FUNC KERNEL32.dll EnterCriticalSection
+3   0x14005b2dc NONE FUNC KERNEL32.dll FreeLibrary
+4   0x14005b2e4 NONE FUNC KERNEL32.dll GetLastError
+5   0x14005b2ec NONE FUNC KERNEL32.dll GetModuleHandleA
+6   0x14005b2f4 NONE FUNC KERNEL32.dll GetProcAddress
+7   0x14005b2fc NONE FUNC KERNEL32.dll GetStartupInfoA
+8   0x14005b304 NONE FUNC KERNEL32.dll InitializeCriticalSection
+9   0x14005b30c NONE FUNC KERNEL32.dll IsDBCSLeadByteEx
+10  0x14005b314 NONE FUNC KERNEL32.dll LeaveCriticalSection
+11  0x14005b31c NONE FUNC KERNEL32.dll LoadLibraryA
+12  0x14005b324 NONE FUNC KERNEL32.dll MultiByteToWideChar
+13  0x14005b32c NONE FUNC KERNEL32.dll SetUnhandledExceptionFilter
+14  0x14005b334 NONE FUNC KERNEL32.dll Sleep
+15  0x14005b33c NONE FUNC KERNEL32.dll TlsGetValue
+16  0x14005b344 NONE FUNC KERNEL32.dll VirtualAlloc
+17  0x14005b34c NONE FUNC KERNEL32.dll VirtualFree
+18  0x14005b354 NONE FUNC KERNEL32.dll VirtualProtect
+19  0x14005b35c NONE FUNC KERNEL32.dll VirtualQuery
+20  0x14005b364 NONE FUNC KERNEL32.dll WideCharToMultiByte
+1   0x14005b374 NONE FUNC msvcrt.dll   __C_specific_handler
+2   0x14005b37c NONE FUNC msvcrt.dll   ___lc_codepage_func
+3   0x14005b384 NONE FUNC msvcrt.dll   ___mb_cur_max_func
+4   0x14005b38c NONE FUNC msvcrt.dll   __getmainargs
+5   0x14005b394 NONE FUNC msvcrt.dll   __initenv
+6   0x14005b39c NONE FUNC msvcrt.dll   __iob_func
+7   0x14005b3a4 NONE FUNC msvcrt.dll   __set_app_type
+8   0x14005b3ac NONE FUNC msvcrt.dll   __setusermatherr
+9   0x14005b3b4 NONE FUNC msvcrt.dll   _acmdln
+10  0x14005b3bc NONE FUNC msvcrt.dll   _amsg_exit
+11  0x14005b3c4 NONE FUNC msvcrt.dll   _cexit
+12  0x14005b3cc NONE FUNC msvcrt.dll   _commode
+13  0x14005b3d4 NONE FUNC msvcrt.dll   _errno
+14  0x14005b3dc NONE FUNC msvcrt.dll   _filelengthi64
+15  0x14005b3e4 NONE FUNC msvcrt.dll   _fileno
+16  0x14005b3ec NONE FUNC msvcrt.dll   _fmode
+17  0x14005b3f4 NONE FUNC msvcrt.dll   _get_osfhandle
+18  0x14005b3fc NONE FUNC msvcrt.dll   _initterm
+19  0x14005b404 NONE FUNC msvcrt.dll   _isatty
+20  0x14005b40c NONE FUNC msvcrt.dll   _lock
+21  0x14005b414 NONE FUNC msvcrt.dll   _onexit
+22  0x14005b41c NONE FUNC msvcrt.dll   _setjmp
+23  0x14005b424 NONE FUNC msvcrt.dll   _setmode
+24  0x14005b42c NONE FUNC msvcrt.dll   _unlock
+25  0x14005b434 NONE FUNC msvcrt.dll   _wfopen
+26  0x14005b43c NONE FUNC msvcrt.dll   abort
+27  0x14005b444 NONE FUNC msvcrt.dll   calloc
+28  0x14005b44c NONE FUNC msvcrt.dll   clearerr
+29  0x14005b454 NONE FUNC msvcrt.dll   exit
+30  0x14005b45c NONE FUNC msvcrt.dll   fclose
+31  0x14005b464 NONE FUNC msvcrt.dll   ferror
+32  0x14005b46c NONE FUNC msvcrt.dll   fflush
+33  0x14005b474 NONE FUNC msvcrt.dll   fgetc
+34  0x14005b47c NONE FUNC msvcrt.dll   fgetpos
+35  0x14005b484 NONE FUNC msvcrt.dll   fgets
+36  0x14005b48c NONE FUNC msvcrt.dll   fprintf
+37  0x14005b494 NONE FUNC msvcrt.dll   fputc
+38  0x14005b49c NONE FUNC msvcrt.dll   fread
+39  0x14005b4a4 NONE FUNC msvcrt.dll   free
+40  0x14005b4ac NONE FUNC msvcrt.dll   fsetpos
+41  0x14005b4b4 NONE FUNC msvcrt.dll   fwrite
+42  0x14005b4bc NONE FUNC msvcrt.dll   getenv
+43  0x14005b4c4 NONE FUNC msvcrt.dll   localeconv
+44  0x14005b4cc NONE FUNC msvcrt.dll   longjmp
+45  0x14005b4d4 NONE FUNC msvcrt.dll   malloc
+46  0x14005b4dc NONE FUNC msvcrt.dll   memchr
+47  0x14005b4e4 NONE FUNC msvcrt.dll   memcmp
+48  0x14005b4ec NONE FUNC msvcrt.dll   memcpy
+49  0x14005b4f4 NONE FUNC msvcrt.dll   memset
+50  0x14005b4fc NONE FUNC msvcrt.dll   setvbuf
+51  0x14005b504 NONE FUNC msvcrt.dll   signal
+52  0x14005b50c NONE FUNC msvcrt.dll   strcmp
+53  0x14005b514 NONE FUNC msvcrt.dll   strerror
+54  0x14005b51c NONE FUNC msvcrt.dll   strlen
+55  0x14005b524 NONE FUNC msvcrt.dll   strncmp
+56  0x14005b52c NONE FUNC msvcrt.dll   strstr
+57  0x14005b534 NONE FUNC msvcrt.dll   system
+58  0x14005b53c NONE FUNC msvcrt.dll   ungetc
+59  0x14005b544 NONE FUNC msvcrt.dll   vfprintf
+60  0x14005b54c NONE FUNC msvcrt.dll   wcslen
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib          name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600 0x140001000 GLOBAL FUNC 0                 __mingw_invalidParameterHandler
+1   0x00000617 0x140001017 GLOBAL FUNC 0                 pre_c_init
+2   0x0000069a 0x14000109a GLOBAL FUNC 0                 pre_cpp_init
+3   0x000006f6 0x1400010f6 GLOBAL FUNC 0                 WinMainCRTStartup
+4   0x00000725 0x140001125 GLOBAL FUNC 0                 mainCRTStartup
+5   0x00000754 0x140001154 GLOBAL FUNC 0                 __tmainCRTStartup
+6   0x00000a7f 0x14000147f GLOBAL FUNC 0                 check_managed_app
+7   0x00000b83 0x140001583 GLOBAL FUNC 0                 duplicate_ppstrings
+8   0x00000c8a 0x14000168a GLOBAL FUNC 0                 atexit
+9   0x00000ce0 0x1400016e0 GLOBAL FUNC 0                 __gcc_register_frame
+10  0x00000d90 0x140001790 GLOBAL FUNC 0                 __gcc_deregister_frame
+11  0x00000dd0 0x1400017d0 GLOBAL FUNC 0                 nimCopyMem
+12  0x00000e0e 0x14000180e GLOBAL FUNC 0                 copyMem__system_1727
+13  0x00000e40 0x140001840 GLOBAL FUNC 0                 nimFrame
+14  0x00000ebf 0x1400018bf GLOBAL FUNC 0                 popFrame
+15  0x00000edd 0x1400018dd GLOBAL FUNC 0                 addChars__stdZprivateZdigitsutils_100
+16  0x000010c0 0x140001ac0 GLOBAL FUNC 0                 addIntImpl__stdZprivateZdigitsutils_59
+17  0x000015a9 0x140001fa9 GLOBAL FUNC 0                 addInt__stdZprivateZdigitsutils_164
+18  0x00001618 0x140002018 GLOBAL FUNC 0                 addInt__stdZprivateZdigitsutils_167
+19  0x00001880 0x140002280 GLOBAL FUNC 0                 nimFrame
+20  0x000018ff 0x1400022ff GLOBAL FUNC 0                 popFrame
+21  0x0000191d 0x14000231d GLOBAL FUNC 0                 minuspercent___system_716
+22  0x000019a9 0x1400023a9 GLOBAL FUNC 0                 ltpercent___system_1005
+23  0x00001a33 0x140002433 GLOBAL FUNC 0                 rtlAddZCT__system_5397
+24  0x00001aa5 0x1400024a5 GLOBAL FUNC 0                 decRef__system_5399
+25  0x00001b73 0x140002573 GLOBAL FUNC 0                 usrToCell__system_5354
+26  0x00001bfe 0x1400025fe GLOBAL FUNC 0                 nimGCunrefNoCycle
+27  0x00001c7a 0x14000267a GLOBAL FUNC 0                 sysFatal__stdZassertions_34
+28  0x00001d74 0x140002774 GLOBAL FUNC 0                 raiseAssert__stdZassertions_32
+29  0x00001dcd 0x1400027cd GLOBAL FUNC 0                 failedAssertImpl__stdZassertions_56
+30  0x00001e30 0x140002830 GLOBAL FUNC 0                 nimFrame
+31  0x00001eaf 0x1400028af GLOBAL FUNC 0                 popFrame
+32  0x00001ecd 0x1400028cd GLOBAL FUNC 0                 dollar___systemZdollars_6
+33  0x00001f43 0x140002943 GLOBAL FUNC 0                 addInt__stdZprivateZdigitsutils_189
+34  0x00001fb2 0x1400029b2 GLOBAL FUNC 0                 dollar___systemZdollars_3
+35  0x00002030 0x140002a30 GLOBAL FUNC 0                 nimFrame
+36  0x000020af 0x140002aaf GLOBAL FUNC 0                 popFrame
+37  0x000020cd 0x140002acd GLOBAL FUNC 0                 ord__systemZwidestrs_8
+38  0x00002140 0x140002b40 GLOBAL FUNC 0                 dollar___systemZwidestrs_260
+39  0x00002a15 0x140003415 GLOBAL FUNC 0                 dollar___systemZwidestrs_324
+40  0x00002a93 0x140003493 GLOBAL FUNC 0                 Marker_tyRef__4HwedE75WPfqZSQ0Cq2OUg
+41  0x00002ab2 0x1400034b2 GLOBAL FUNC 0                 newWideCString__systemZwidestrs_231
+42  0x000037eb 0x1400041eb GLOBAL FUNC 0                 nimToCStringConv
+43  0x00003856 0x140004256 GLOBAL FUNC 0                 newWideCString__systemZwidestrs_257
+44  0x000038ed 0x1400042ed GLOBAL FUNC 0                 newWideCString__systemZwidestrs_206
+45  0x000039eb 0x1400043eb GLOBAL FUNC 0                 nimCStrLen
+46  0x00003a26 0x140004426 GLOBAL FUNC 0                 newWideCString__systemZwidestrs_254
+47  0x00003ad8 0x1400044d8 GLOBAL FUNC 0                 len__systemZwidestrs_11
+48  0x00003ba8 0x1400045a8 GLOBAL FUNC 0                 atmdotdotatslibatssystematswidestrsdotnim_DatInit000
+49  0x00003c20 0x140004620 GLOBAL FUNC 0                 fprintf
+50  0x00003c63 0x140004663 GLOBAL FUNC 0                 nimFrame
+51  0x00003ce2 0x1400046e2 GLOBAL FUNC 0                 popFrame
+52  0x00003d00 0x140004700 GLOBAL FUNC 0                 fopen__stdZsyncio_463
+53  0x00003dc5 0x1400047c5 GLOBAL FUNC 0                 nimToCStringConv
+54  0x00003e30 0x140004830 GLOBAL FUNC 0                 open__stdZsyncio_487
+55  0x0000402e 0x140004a2e GLOBAL FUNC 0                 pushSafePoint
+56  0x00004058 0x140004a58 GLOBAL FUNC 0                 minuspercent___system_716
+57  0x000040e4 0x140004ae4 GLOBAL FUNC 0                 ltpercent___system_1005
+58  0x0000416e 0x140004b6e GLOBAL FUNC 0                 rtlAddZCT__system_5397
+59  0x000041e0 0x140004be0 GLOBAL FUNC 0                 decRef__system_5399
+60  0x000042ae 0x140004cae GLOBAL FUNC 0                 usrToCell__system_5354
+61  0x00004339 0x140004d39 GLOBAL FUNC 0                 nimGCunrefNoCycle
+62  0x000043b5 0x140004db5 GLOBAL FUNC 0                 pluspercent___system_696
+63  0x00004441 0x140004e41 GLOBAL FUNC 0                 incRef__system_5392
+64  0x000044b7 0x140004eb7 GLOBAL FUNC 0                 asgnRef
+65  0x000045ab 0x140004fab GLOBAL FUNC 0                 raiseEIO__stdZsyncio_96
+66  0x000046ba 0x1400050ba GLOBAL FUNC 0                 writeWindows__stdZsyncio_205
+67  0x00004910 0x140005310 GLOBAL FUNC 0                 write__stdZsyncio_220
+68  0x0000493d 0x14000533d GLOBAL FUNC 0                 popSafePoint
+69  0x0000495b 0x14000535b GLOBAL FUNC 0                 getFrame
+70  0x00004983 0x140005383 GLOBAL FUNC 0                 setFrame
+71  0x0000499c 0x14000539c GLOBAL FUNC 0                 close__stdZsyncio_237
+72  0x00004a27 0x140005427 GLOBAL FUNC 0                 nimCopyMem
+73  0x00004a65 0x140005465 GLOBAL FUNC 0                 copyMem__system_1727
+74  0x00004a97 0x140005497 GLOBAL FUNC 0                 appendString
+75  0x00004b00 0x140005500 GLOBAL FUNC 0                 writeFile__stdZsyncio_567
+76  0x00004d88 0x140005788 GLOBAL FUNC 0                 echoBinSafe
+77  0x00004f63 0x140005963 GLOBAL FUNC 0                 getFileHandle__stdZsyncio_248
+78  0x00004fea 0x1400059ea GLOBAL FUNC 0                 isatty__stdZsyncio_301
+79  0x00005081 0x140005a81 GLOBAL FUNC 0                 getOsFileHandle__stdZsyncio_251
+80  0x0000514d 0x140005b4d GLOBAL FUNC 0                 eqeq___system_7825
+81  0x00005246 0x140005c46 GLOBAL FUNC 0                 checkErr__stdZsyncio_141
+82  0x0000540a 0x140005e0a GLOBAL FUNC 0                 readLine__stdZsyncio_276
+83  0x00006784 0x140007184 GLOBAL FUNC 0                 raiseEOF__stdZsyncio_117
+84  0x00006895 0x140007295 GLOBAL FUNC 0                 readLine__stdZsyncio_364
+85  0x0000693f 0x14000733f GLOBAL FUNC 0                 rawFileSize__stdZsyncio_426
+86  0x00006a46 0x140007446 GLOBAL FUNC 0                 readBuffer__stdZsyncio_144
+87  0x00006ab2 0x1400074b2 GLOBAL FUNC 0                 endOfFile__stdZsyncio_430
+88  0x00006b68 0x140007568 GLOBAL FUNC 0                 readAllBuffer__stdZsyncio_421
+89  0x00006d8c 0x14000778c GLOBAL FUNC 0                 readAllFile__stdZsyncio_434
+90  0x00006fae 0x1400079ae GLOBAL FUNC 0                 readAll__stdZsyncio_443
+91  0x000070a4 0x140007aa4 GLOBAL FUNC 0                 readFile__stdZsyncio_562
+92  0x00007333 0x140007d33 GLOBAL FUNC 0                 atmdotdotatslibatsstdatssynciodotnim_Init000
+93  0x000074ab 0x140007eab GLOBAL FUNC 0                 atmdotdotatslibatsstdatssynciodotnim_DatInit000
+94  0x000075d0 0x140007fd0 GLOBAL FUNC 0                 printf
+95  0x00007621 0x140008021 GLOBAL FUNC 0                 nimCopyMem
+96  0x0000765f 0x14000805f GLOBAL FUNC 0                 copyMem__system_1727
+97  0x00007691 0x140008091 GLOBAL FUNC 0                 appendString
+98  0x000076fa 0x1400080fa GLOBAL FUNC 0                 popFrame
+99  0x00007712 0x140008112 GLOBAL FUNC 0                 getOccupiedMem__system_4903
+100 0x00007787 0x140008187 GLOBAL FUNC 0                 minuspercent___system_716
+101 0x00007813 0x140008213 GLOBAL FUNC 0                 stackSize__system_5468
+102 0x000078e8 0x1400082e8 GLOBAL FUNC 0                 stackSize__system_5472
+103 0x000079ab 0x1400083ab GLOBAL FUNC 0                 lowGauge__system_4182
+104 0x00007a79 0x140008479 GLOBAL FUNC 0                 highGauge__system_4190
+105 0x00007b63 0x140008563 GLOBAL FUNC 0                 prepareForInteriorPointerChecking__system_4824
+106 0x00007c06 0x140008606 GLOBAL FUNC 0                 setPosition__system_5484
+107 0x00007c52 0x140008652 GLOBAL FUNC 0                 getActiveStack__system_5490
+108 0x00007cc0 0x1400086c0 GLOBAL FUNC 0                 isActiveStack__system_5493
+109 0x00007d26 0x140008726 GLOBAL FUNC 0                 pluspercent___system_696
+110 0x00007db2 0x1400087b2 GLOBAL FUNC 0                 ltpercent___system_1005
+111 0x00007e3c 0x14000883c GLOBAL FUNC 0                 intSetGet__system_4269
+112 0x00007f3b 0x14000893b GLOBAL FUNC 0                 contains__system_4308
+113 0x00008052 0x140008a52 GLOBAL FUNC 0                 pageIndex__system_4511
+114 0x000080c4 0x140008ac4 GLOBAL FUNC 0                 isAccessible__system_4545
+115 0x0000815c 0x140008b5c GLOBAL FUNC 0                 pageAddr__system_4518
+116 0x000081d0 0x140008bd0 GLOBAL FUNC 0                 chunkUnused__system_4435
+117 0x00008245 0x140008c45 GLOBAL FUNC 0                 isSmallChunk__system_4429
+118 0x000082bb 0x140008cbb GLOBAL FUNC 0                 percentpercent___system_776
+119 0x0000834f 0x140008d4f GLOBAL FUNC 0                 lteqpercent___system_985
+120 0x000083d9 0x140008dd9 GLOBAL FUNC 0                 inRange__system_4210
+121 0x0000851f 0x140008f1f GLOBAL FUNC 0                 interiorAllocatedPtr__system_4826
+122 0x00008ad7 0x1400094d7 GLOBAL FUNC 0                 incRef__system_5392
+123 0x00008b4d 0x14000954d GLOBAL FUNC 0                 roundup__system_3779
+124 0x00008bd4 0x1400095d4 GLOBAL FUNC 0                 msbit__system_3902
+125 0x00008ce0 0x1400096e0 GLOBAL FUNC 0                 mappingSearch__system_3927
+126 0x00008e9a 0x14000989a GLOBAL FUNC 0                 lsbit__system_3910
+127 0x00008f12 0x140009912 GLOBAL FUNC 0                 findSuitableBlock__system_3959
+128 0x00009121 0x140009b21 GLOBAL FUNC 0                 nimCStrLen
+129 0x0000915c 0x140009b5c GLOBAL FUNC 0                 rawWrite
+130 0x000091c5 0x140009bc5 GLOBAL FUNC 0                 raiseOutOfMem__system_3774
+131 0x00009279 0x140009c79 GLOBAL FUNC 0                 osAllocPages__system_3799
+132 0x00009326 0x140009d26 GLOBAL FUNC 0                 osTryAllocPages__system_3802
+133 0x000093b1 0x140009db1 GLOBAL FUNC 0                 incCurrMem__system_4042
+134 0x0000942d 0x140009e2d GLOBAL FUNC 0                 nimSetMem__systemZmemory_7
+135 0x00009468 0x140009e68 GLOBAL FUNC 0                 nimZeroMem
+136 0x00009494 0x140009e94 GLOBAL FUNC 0                 zeroMem__system_1724
+137 0x000094bb 0x140009ebb GLOBAL FUNC 0                 llAlloc__system_4059
+138 0x00009721 0x14000a121 GLOBAL FUNC 0                 addHeapLink__system_4126
+139 0x0000998d 0x14000a38d GLOBAL FUNC 0                 pageIndex__system_4504
+140 0x000099ff 0x14000a3ff GLOBAL FUNC 0                 requestOsChunks__system_4522
+141 0x0000a08d 0x14000aa8d GLOBAL FUNC 0                 updatePrevSize__system_4563
+142 0x0000a17b 0x14000ab7b GLOBAL FUNC 0                 intSetPut__system_4291
+143 0x0000a2c1 0x14000acc1 GLOBAL FUNC 0                 incl__system_4339
+144 0x0000a3be 0x14000adbe GLOBAL FUNC 0                 splitChunk2__system_4568
+145 0x0000a56b 0x14000af6b GLOBAL FUNC 0                 mappingInsert__system_3945
+146 0x0000a64d 0x14000b04d GLOBAL FUNC 0                 setBit__system_3913
+147 0x0000a6cf 0x14000b0cf GLOBAL FUNC 0                 addChunkToMatrix__system_4033
+148 0x0000a8c7 0x14000b2c7 GLOBAL FUNC 0                 splitChunk__system_4573
+149 0x0000a968 0x14000b368 GLOBAL FUNC 0                 clearBit__system_3920
+150 0x0000a9ec 0x14000b3ec GLOBAL FUNC 0                 removeChunkFromMatrix2__system_4024
+151 0x0000abde 0x14000b5de GLOBAL FUNC 0                 getBigChunk__system_4599
+152 0x0000af15 0x14000b915 GLOBAL FUNC 0                 getSmallChunk__system_4622
+153 0x0000afa8 0x14000b9a8 GLOBAL FUNC 0                 listAdd__system_4660
+154 0x0000b078 0x14000ba78 GLOBAL FUNC 0                 listRemove__system_4713
+155 0x0000b1d6 0x14000bbd6 GLOBAL FUNC 0                 getHugeChunk__system_4614
+156 0x0000b349 0x14000bd49 GLOBAL FUNC 0                 getBottom__system_4085
+157 0x0000b41c 0x14000be1c GLOBAL FUNC 0                 allocAvlNode__system_4101
+158 0x0000b5da 0x14000bfda GLOBAL FUNC 0                 skew__system_4222
+159 0x0000b6e3 0x14000c0e3 GLOBAL FUNC 0                 split__system_4225
+160 0x0000b81e 0x14000c21e GLOBAL FUNC 0                 add__system_4232
+161 0x0000b9fd 0x14000c3fd GLOBAL FUNC 0                 rawAlloc__system_4643
+162 0x0000bf39 0x14000c939 GLOBAL FUNC 0                 alloc__system_4859
+163 0x0000c012 0x14000ca12 GLOBAL FUNC 0                 allocImpl__system_1743
+164 0x0000c047 0x14000ca47 GLOBAL FUNC 0                 removeChunkFromMatrix__system_3994
+165 0x0000c2dc 0x14000ccdc GLOBAL FUNC 0                 excl__system_4361
+166 0x0000c405 0x14000ce05 GLOBAL FUNC 0                 freeBigChunk__system_4578
+167 0x0000ca36 0x14000d436 GLOBAL FUNC 0                 deallocAvlNode__system_4123
+168 0x0000cac9 0x14000d4c9 GLOBAL FUNC 0                 del__system_4241
+169 0x0000cf7f 0x14000d97f GLOBAL FUNC 0                 decCurrMem__system_4049
+170 0x0000d036 0x14000da36 GLOBAL FUNC 0                 osDeallocPages__system_3805
+171 0x0000d107 0x14000db07 GLOBAL FUNC 0                 freeHugeChunk__system_4618
+172 0x0000d1fa 0x14000dbfa GLOBAL FUNC 0                 rawDealloc__system_4772
+173 0x0000d605 0x14000e005 GLOBAL FUNC 0                 dealloc__system_4867
+174 0x0000d6ac 0x14000e0ac GLOBAL FUNC 0                 deallocImpl__system_1747
+175 0x0000d6d2 0x14000e0d2 GLOBAL FUNC 0                 dealloc
+176 0x0000d6ee 0x14000e0ee GLOBAL FUNC 0                 add__system_4943
+177 0x0000d8af 0x14000e2af GLOBAL FUNC 0                 gcMark__system_5852
+178 0x0000d946 0x14000e346 GLOBAL FUNC 0                 markStackAndRegisters__system_5861
+179 0x0000dbd8 0x14000e5d8 GLOBAL FUNC 0                 cellToUsr__system_5351
+180 0x0000dc63 0x14000e663 GLOBAL FUNC 0                 prepareDealloc__system_5514
+181 0x0000dd77 0x14000e777 GLOBAL FUNC 0                 usrToCell__system_5354
+182 0x0000de02 0x14000e802 GLOBAL FUNC 0                 addZCT__system_5348
+183 0x0000debe 0x14000e8be GLOBAL FUNC 0                 rtlAddZCT__system_5397
+184 0x0000df2c 0x14000e92c GLOBAL FUNC 0                 decRef__system_5399
+185 0x0000dffa 0x14000e9fa GLOBAL FUNC 0                 nextTry__system_5003
+186 0x0000e07e 0x14000ea7e GLOBAL FUNC 0                 alloc0__system_4863
+187 0x0000e11f 0x14000eb1f GLOBAL FUNC 0                 alloc0Impl__system_1745
+188 0x0000e154 0x14000eb54 GLOBAL FUNC 0                 cellSetRawInsert__system_5016
+189 0x0000e25a 0x14000ec5a GLOBAL FUNC 0                 cellSetEnlarge__system_5033
+190 0x0000e45a 0x14000ee5a GLOBAL FUNC 0                 cellSetPut__system_5046
+191 0x0000e77a 0x14000f17a GLOBAL FUNC 0                 incl__system_5100
+192 0x0000e88b 0x14000f28b GLOBAL FUNC 0                 cellSetGet__system_5007
+193 0x0000e9d7 0x14000f3d7 GLOBAL FUNC 0                 containsOrIncl__system_5146
+194 0x0000ebc4 0x14000f5c4 GLOBAL FUNC 0                 markS__system_5803
+195 0x0000ec7d 0x14000f67d GLOBAL FUNC 0                 doOperation__system_5385
+196 0x0000ed28 0x14000f728 GLOBAL FUNC 0                 getDiscriminant__system_3708
+197 0x0000eef3 0x14000f8f3 GLOBAL FUNC 0                 selectBranch__system_3728
+198 0x0000f02e 0x14000fa2e GLOBAL FUNC 0                 forAllSlotsAux__system_5619
+199 0x0000f282 0x14000fc82 GLOBAL FUNC 0                 starpercent___system_736
+200 0x0000f30f 0x14000fd0f GLOBAL FUNC 0                 forAllChildrenAux__system_5388
+201 0x0000f4a2 0x14000fea2 GLOBAL FUNC 0                 nimGCvisit
+202 0x0000f4cb 0x14000fecb GLOBAL FUNC 0                 Marker_tyRef__vU9aO9cTqOMn6CBzhV8rX7Sw
+203 0x0000f53a 0x14000ff3a GLOBAL FUNC 0                 Marker_tySequence__uB9b75OUPRENsBAu4AnoePA
+204 0x0000f561 0x14000ff61 GLOBAL FUNC 0                 Marker_tyRef__r8GBEWywN07B3Rat3azS4Q
+205 0x0000f5d0 0x14000ffd0 GLOBAL FUNC 0                 newObj
+206 0x0000f678 0x140010078 GLOBAL FUNC 0                 newObjRC1
+207 0x0000f7b5 0x1400101b5 GLOBAL FUNC 0                 copyStringRC1
+208 0x0000f8ab 0x1400102ab GLOBAL FUNC 0                 nimGCunrefNoCycle
+209 0x0000f927 0x140010327 GLOBAL FUNC 0                 newSeq
+210 0x0000fa8a 0x14001048a GLOBAL FUNC 0                 newSeq__system_2677
+211 0x0000fb07 0x140010507 GLOBAL FUNC 0                 isOnStack__system_5380
+212 0x0000fc6b 0x14001066b GLOBAL FUNC 0                 unsureAsgnRef
+213 0x0000fda9 0x1400107a9 GLOBAL FUNC 0                 resize__system_5979
+214 0x0000fe0f 0x14001080f GLOBAL FUNC 0                 dataPointer__system_5969
+215 0x0000fe72 0x140010872 GLOBAL FUNC 0                 dataPointer__system_5973
+216 0x0000ff15 0x140010915 GLOBAL FUNC 0                 extGetCellType
+217 0x0000ff9c 0x14001099c GLOBAL FUNC 0                 setLengthSeqV2
+218 0x000102ff 0x140010cff GLOBAL FUNC 0                 auxWriteStackTrace__system_2655
+219 0x0001048d 0x140010e8d GLOBAL FUNC 0                 rawWriteStackTrace__system_2854
+220 0x000104b3 0x140010eb3 GLOBAL FUNC 0                 incrSeqV3
+221 0x00010614 0x140011014 GLOBAL FUNC 0                 asgnRef
+222 0x00010708 0x140011108 GLOBAL FUNC 0                 pushCurrentException
+223 0x00010745 0x140011145 GLOBAL FUNC 0                 rawNewString
+224 0x000107c2 0x1400111c2 GLOBAL FUNC 0                 addChar
+225 0x000108e1 0x1400112e1 GLOBAL FUNC 0                 add__system_2308
+226 0x00010950 0x140011350 GLOBAL FUNC 0                 Marker_tyRef__dJLgQyYmAVYQWHiOSBBTyA
+227 0x000109bf 0x1400113bf GLOBAL FUNC 0                 sysFatal__system_3146
+228 0x00010ab9 0x1400114b9 GLOBAL FUNC 0                 raiseRangeErrorI
+229 0x00010be5 0x1400115e5 GLOBAL FUNC 0                 mnewString
+230 0x00010c1b 0x14001161b GLOBAL FUNC 0                 setLengthStr
+231 0x00010d6b 0x14001176b GLOBAL FUNC 0                 Marker_tyRef__RJnHOb9cQV3neNC9cDkRgMyw
+232 0x00010dda 0x1400117da GLOBAL FUNC 0                 sysFatal__system_3075
+233 0x00010ed4 0x1400118d4 GLOBAL FUNC 0                 copyString
+234 0x00010f5b 0x14001195b GLOBAL FUNC 0                 raiseIndexError2
+235 0x00011060 0x140011a60 GLOBAL FUNC 0                 raiseRangeErrorNoArgs
+236 0x00011078 0x140011a78 GLOBAL FUNC 0                 addInt__stdZprivateZdigitsutils_189
+237 0x000110e7 0x140011ae7 GLOBAL FUNC 0                 dollar___system_2726
+238 0x000113d8 0x140011dd8 GLOBAL FUNC 0                 eqdestroy___stdZassertions_23
+239 0x000113e3 0x140011de3 GLOBAL FUNC 0                 toNimStr
+240 0x0001143f 0x140011e3f GLOBAL FUNC 0                 cstrToNimstr
+241 0x00011496 0x140011e96 GLOBAL FUNC 0                 pushSafePoint
+242 0x000114ba 0x140011eba GLOBAL FUNC 0                 popSafePoint
+243 0x000114d2 0x140011ed2 GLOBAL FUNC 0                 getFrame
+244 0x000114f7 0x140011ef7 GLOBAL FUNC 0                 setFrame
+245 0x0001150d 0x140011f0d GLOBAL FUNC 0                 popCurrentException
+246 0x00011539 0x140011f39 GLOBAL FUNC 0                 Marker_tyRef__uG62cfJZ15c2siK3CKLmnQ
+247 0x000115a8 0x140011fa8 GLOBAL FUNC 0                 sysFatal__system_2936
+248 0x000116a2 0x1400120a2 GLOBAL FUNC 0                 reraiseException
+249 0x000116dc 0x1400120dc GLOBAL FUNC 0                 rawWriteString
+250 0x00011730 0x140012130 GLOBAL FUNC 0                 writeToStdErr__system_2533
+251 0x00011768 0x140012168 GLOBAL FUNC 0                 showErrorMessage__system_2538
+252 0x0001185f 0x14001225f GLOBAL FUNC 0                 nimToCStringConv
+253 0x000118ca 0x1400122ca GLOBAL FUNC 0                 showErrorMessage2__system_2546
+254 0x0001190a 0x14001230a GLOBAL FUNC 0                 reportUnhandledErrorAux__system_2865
+255 0x00011afe 0x1400124fe GLOBAL FUNC 0                 reportUnhandledError__system_2882
+256 0x00011b36 0x140012536 GLOBAL FUNC 0                 raiseExceptionAux__system_2893
+257 0x00011be4 0x1400125e4 GLOBAL FUNC 0                 raiseExceptionEx
+258 0x00011ddc 0x1400127dc GLOBAL FUNC 0                 sysFatal__system_3397
+259 0x00011ed6 0x1400128d6 GLOBAL FUNC 0                 raiseOverflow
+260 0x00011eee 0x1400128ee GLOBAL FUNC 0                 align__system_1624
+261 0x00012032 0x140012a32 GLOBAL FUNC 0                 forAllChildren__system_5382
+262 0x0001220e 0x140012c0e GLOBAL FUNC 0                 collectZCT__system_5842
+263 0x00012309 0x140012d09 GLOBAL FUNC 0                 deinit__system_4995
+264 0x00012464 0x140012e64 GLOBAL FUNC 0                 init__system_4975
+265 0x0001253d 0x140012f3d GLOBAL FUNC 0                 cellsetReset__system_5617
+266 0x000125bd 0x140012fbd GLOBAL FUNC 0                 markGlobals__system_5811
+267 0x0001270d 0x14001310d GLOBAL FUNC 0                 isCell__system_4492
+268 0x00012787 0x140013187 GLOBAL FUNC 0                 contains__system_5068
+269 0x000128c3 0x1400132c3 GLOBAL FUNC 0                 freeCyclicCell__system_5795
+270 0x000128fa 0x1400132fa GLOBAL FUNC 0                 sweep__system_5799
+271 0x00012c54 0x140013654 GLOBAL FUNC 0                 collectCycles__system_5844
+272 0x00012d1b 0x14001371b GLOBAL FUNC 0                 getOccupiedMem__system_1936
+273 0x00012d40 0x140013740 GLOBAL FUNC 0                 unmarkStackAndRegisters__system_5916
+274 0x00012dcb 0x1400137cb GLOBAL FUNC 0                 collectCTBody__system_5924
+275 0x00012f54 0x140013954 GLOBAL FUNC 0                 collectCT__system_5378
+276 0x00013050 0x140013a50 GLOBAL FUNC 0                 addNewObjToZCT__system_5716
+277 0x0001347d 0x140013e7d GLOBAL FUNC 0                 rawNewObj__system_5731
+278 0x00013512 0x140013f12 GLOBAL FUNC 0                 newObjNoInit
+279 0x00013597 0x140013f97 GLOBAL FUNC 0                 rawNewStringNoInit
+280 0x00013614 0x140014014 GLOBAL FUNC 0                 resizeString
+281 0x0001371f 0x14001411f GLOBAL FUNC 0                 auxWriteStackTrace__system_2750
+282 0x00013bfc 0x1400145fc GLOBAL FUNC 0                 rawWriteStackTrace__system_2848
+283 0x00013c9e 0x14001469e GLOBAL FUNC 0                 writeStackTrace__system_2161
+284 0x00013ccd 0x1400146cd GLOBAL FUNC 0                 callDepthLimitReached__system_2999
+285 0x00013d74 0x140014774 GLOBAL FUNC 0                 nimFrame
+286 0x00013de7 0x1400147e7 GLOBAL FUNC 0                 setPosition__system_5487
+287 0x00013e33 0x140014833 GLOBAL FUNC 0                 nimGC_setStackBottom
+288 0x00013eac 0x1400148ac GLOBAL FUNC 0                 initStackBottom
+289 0x00013ecf 0x1400148cf GLOBAL FUNC 0                 init__system_4969
+290 0x00013f93 0x140014993 GLOBAL FUNC 0                 atomicInc__system_2172
+291 0x00013ffe 0x1400149fe GLOBAL FUNC 0                 initGC__system_2398
+292 0x00014232 0x140014c32 GLOBAL FUNC 0                 TM__Q5wkpxktOdTGvlSRo9bzt9aw_36
+293 0x00014255 0x140014c55 GLOBAL FUNC 0                 nimRegisterThreadLocalMarker
+294 0x00014368 0x140014d68 GLOBAL FUNC 0                 GC_disable__system_2263
+295 0x00014381 0x140014d81 GLOBAL FUNC 0                 Marker_tyRef__S8DV6hfcgC9c0IiUsAoR29cQ
+296 0x000143f0 0x140014df0 GLOBAL FUNC 0                 GC_enable__system_2264
+297 0x000144de 0x140014ede GLOBAL FUNC 0                 signalHandler
+298 0x0001464b 0x14001504b GLOBAL FUNC 0                 registerSignalHandler__system_3019
+299 0x000146fa 0x1400150fa GLOBAL FUNC 0                 getRefcount
+300 0x00014784 0x140015184 GLOBAL FUNC 0                 nimLoadLibrary
+301 0x000147cb 0x1400151cb GLOBAL FUNC 0                 nimLoadLibraryError
+302 0x00014882 0x140015282 GLOBAL FUNC 0                 procAddrError
+303 0x000148f3 0x1400152f3 GLOBAL FUNC 0                 nimGetProcAddr
+304 0x00014b5a 0x14001555a GLOBAL FUNC 0                 Marker_tyRef__9clYsYwyjCqe2PFTuCI3Ubg
+305 0x00014bc9 0x1400155c9 GLOBAL FUNC 0                 substr__system_7845
+306 0x00014f34 0x140015934 GLOBAL FUNC 0                 substr__system_7857
+307 0x00014fd0 0x1400159d0 GLOBAL FUNC 0                 nimLeaveFinally
+308 0x0001501b 0x140015a1b GLOBAL FUNC 0                 isObj
+309 0x0001507e 0x140015a7e GLOBAL FUNC 0                 Marker_tyRef__HMIVdYjdZYWskTmTQVo5BQ
+310 0x000150ed 0x140015aed GLOBAL FUNC 0                 Marker_tyRef__Ie1m0dv1ZHg72IgPRr1cDw
+311 0x0001515c 0x140015b5c GLOBAL FUNC 0                 Marker_tyRef__aKAxoL0lF8g0PZNf9a2PBpQ
+312 0x000151cb 0x140015bcb GLOBAL FUNC 0                 sysFatal__system_3187
+313 0x000152c5 0x140015cc5 GLOBAL FUNC 0                 raiseObjectConversionError
+314 0x000152dd 0x140015cdd GLOBAL FUNC 0                 Marker_tyRef__LEclZrWX2FQAodlapxGITw
+315 0x0001534c 0x140015d4c GLOBAL FUNC 0                 atmdotdotatslibatssystemdotnim_Init000
+316 0x0001537f 0x140015d7f GLOBAL FUNC 0                 atmdotdotatslibatssystemdotnim_DatInit000
+317 0x00015e50 0x140016850 GLOBAL FUNC 0                 nimFrame
+318 0x00015ecf 0x1400168cf GLOBAL FUNC 0                 popFrame
+319 0x00015eed 0x1400168ed GLOBAL FUNC 0                 minuspercent___system_716
+320 0x00015f79 0x140016979 GLOBAL FUNC 0                 ltpercent___system_1005
+321 0x00016003 0x140016a03 GLOBAL FUNC 0                 rtlAddZCT__system_5397
+322 0x00016075 0x140016a75 GLOBAL FUNC 0                 decRef__system_5399
+323 0x00016143 0x140016b43 GLOBAL FUNC 0                 usrToCell__system_5354
+324 0x000161ce 0x140016bce GLOBAL FUNC 0                 nimGCunrefNoCycle
+325 0x0001624a 0x140016c4a GLOBAL FUNC 0                 pluspercent___system_696
+326 0x000162d6 0x140016cd6 GLOBAL FUNC 0                 incRef__system_5392
+327 0x0001634c 0x140016d4c GLOBAL FUNC 0                 asgnRef
+328 0x00016440 0x140016e40 GLOBAL FUNC 0                 integerOutOfRangeError__pureZparseutils_248
+329 0x00016551 0x140016f51 GLOBAL FUNC 0                 rawParseInt__pureZparseutils_268
+330 0x00016d99 0x140017799 GLOBAL FUNC 0                 npuParseBiggestInt
+331 0x00016e78 0x140017878 GLOBAL FUNC 0                 npuParseInt
+332 0x00016f60 0x140017960 GLOBAL FUNC 0                 nimFrame
+333 0x00016fdf 0x1400179df GLOBAL FUNC 0                 popFrame
+334 0x00016ffd 0x1400179fd GLOBAL FUNC 0                 fill__pureZstrutils_1466
+335 0x00017140 0x140017b40 GLOBAL FUNC 0                 nimFrame
+336 0x000171bf 0x140017bbf GLOBAL FUNC 0                 popFrame
+337 0x000171dd 0x140017bdd GLOBAL FUNC 0                 toLowerAscii__stdZprivateZstrimpl_1
+338 0x000172dc 0x140017cdc GLOBAL FUNC 0                 nsuCmpIgnoreCase
+339 0x000175cd 0x140017fcd GLOBAL FUNC 0                 minuspercent___system_716
+340 0x00017659 0x140018059 GLOBAL FUNC 0                 nimToCStringConv
+341 0x000176c4 0x1400180c4 GLOBAL FUNC 0                 nsuFindChar
+342 0x000178e3 0x1400182e3 GLOBAL FUNC 0                 nsuFindStrA
+343 0x00017d4a 0x14001874a GLOBAL FUNC 0                 nsuInitSkipTable
+344 0x00017fce 0x1400189ce GLOBAL FUNC 0                 nsuInitNewSkipTable
+345 0x0001803d 0x140018a3d GLOBAL FUNC 0                 nimSetMem__systemZmemory_7
+346 0x00018078 0x140018a78 GLOBAL FUNC 0                 nimZeroMem
+347 0x000180a4 0x140018aa4 GLOBAL FUNC 0                 nsuFindStr
+348 0x000184a2 0x140018ea2 GLOBAL FUNC 0                 contains__pureZstrutils_1696
+349 0x00018540 0x140018f40 GLOBAL FUNC 0                 nsuToLowerAsciiChar
+350 0x000185ed 0x140018fed GLOBAL FUNC 0                 nsuToLowerAsciiStr
+351 0x00018880 0x140019280 GLOBAL FUNC 0                 ltpercent___system_1005
+352 0x0001890a 0x14001930a GLOBAL FUNC 0                 rtlAddZCT__system_5397
+353 0x0001897c 0x14001937c GLOBAL FUNC 0                 decRef__system_5399
+354 0x00018a4a 0x14001944a GLOBAL FUNC 0                 usrToCell__system_5354
+355 0x00018ad5 0x1400194d5 GLOBAL FUNC 0                 nimGCunrefNoCycle
+356 0x00018b51 0x140019551 GLOBAL FUNC 0                 pluspercent___system_696
+357 0x00018bdd 0x1400195dd GLOBAL FUNC 0                 incRef__system_5392
+358 0x00018c53 0x140019653 GLOBAL FUNC 0                 asgnRef
+359 0x00018d47 0x140019747 GLOBAL FUNC 0                 invalidFormatString__pureZstrutils_2207
+360 0x00018e58 0x140019858 GLOBAL FUNC 0                 nimCopyMem
+361 0x00018e96 0x140019896 GLOBAL FUNC 0                 copyMem__system_1727
+362 0x00018ec8 0x1400198c8 GLOBAL FUNC 0                 appendString
+363 0x00018f31 0x140019931 GLOBAL FUNC 0                 nsuCmpIgnoreStyle
+364 0x00019131 0x140019b31 GLOBAL FUNC 0                 findNormalized__pureZstrutils_2195
+365 0x000192ae 0x140019cae GLOBAL FUNC 0                 nsuAddf
+366 0x0001ae92 0x14001b892 GLOBAL FUNC 0                 nsuFormatSingleElem
+367 0x0001afd3 0x14001b9d3 GLOBAL FUNC 0                 nsuFindCharSet
+368 0x0001b22b 0x14001bc2b GLOBAL FUNC 0                 contains__pureZstrutils_1700
+369 0x0001b2c9 0x14001bcc9 GLOBAL FUNC 0                 nsuNormalize
+370 0x0001b8b1 0x14001c2b1 GLOBAL FUNC 0                 nsuReplaceStr
+371 0x0001c122 0x14001cb22 GLOBAL FUNC 0                 nsuParseInt
+372 0x0001c320 0x14001cd20 GLOBAL FUNC 0                 nimSetMem__systemZmemory_7
+373 0x0001c35b 0x14001cd5b GLOBAL FUNC 0                 nimZeroMem
+374 0x0001c387 0x14001cd87 GLOBAL FUNC 0                 nimFrame
+375 0x0001c406 0x14001ce06 GLOBAL FUNC 0                 popFrame
+376 0x0001c424 0x14001ce24 GLOBAL FUNC 0                 hasNext__pureZpathnorm_6
+377 0x0001c4ae 0x14001ceae GLOBAL FUNC 0                 next__pureZpathnorm_10
+378 0x0001ccc4 0x14001d6c4 GLOBAL FUNC 0                 isSlash__pureZpathnorm_67
+379 0x0001cded 0x14001d7ed GLOBAL FUNC 0                 isDotDot__pureZpathnorm_63
+380 0x0001cfd5 0x14001d9d5 GLOBAL FUNC 0                 nimCopyMem
+381 0x0001d013 0x14001da13 GLOBAL FUNC 0                 copyMem__system_1727
+382 0x0001d045 0x14001da45 GLOBAL FUNC 0                 appendString
+383 0x0001d0ae 0x14001daae GLOBAL FUNC 0                 isDot__pureZpathnorm_59
+384 0x0001d1b3 0x14001dbb3 GLOBAL FUNC 0                 addNormalizePath__pureZpathnorm_75
+385 0x0001e090 0x14001ea90 GLOBAL FUNC 0                 nimToCStringConv
+386 0x0001e0fb 0x14001eafb GLOBAL FUNC 0                 nimFrame
+387 0x0001e17a 0x14001eb7a GLOBAL FUNC 0                 popFrame
+388 0x0001e198 0x14001eb98 GLOBAL FUNC 0                 loadLib__pureZdynlib_3
+389 0x0001e22c 0x14001ec2c GLOBAL FUNC 0                 symAddr__pureZdynlib_30
+390 0x0001e2c0 0x14001ecc0 GLOBAL FUNC 0                 nimFrame
+391 0x0001e33f 0x14001ed3f GLOBAL FUNC 0                 popFrame
+392 0x0001e35d 0x14001ed5d GLOBAL FUNC 0                 atmdotdotatslibatswindowsatswinleandotnim_Init000
+393 0x0001e431 0x14001ee31 GLOBAL FUNC 0                 atmdotdotatslibatswindowsatswinleandotnim_DatInit000
+394 0x0001e7a0 0x14001f1a0 GLOBAL FUNC 0                 Marker_tyRef__HsJiUUcO9cHBdUCi0HwkSTA
+395 0x0001e7bf 0x14001f1bf GLOBAL FUNC 0                 Marker_tyRef__9a5v4OQPlGqsA25ioN8hFYA
+396 0x0001e81a 0x14001f21a GLOBAL FUNC 0                 TM__6NbDwwj5FY059b1gz2AsAZQ_4
+397 0x0001e83d 0x14001f23d GLOBAL FUNC 0                 TM__6NbDwwj5FY059b1gz2AsAZQ_5
+398 0x0001e860 0x14001f260 GLOBAL FUNC 0                 atmdotdotatslibatspureatstimesdotnim_Init000
+399 0x0001e893 0x14001f293 GLOBAL FUNC 0                 atmdotdotatslibatspureatstimesdotnim_DatInit000
+400 0x0001eb70 0x14001f570 GLOBAL FUNC 0                 Marker_tySequence__sM4lkSb7zS6F7OVMvW9cffQ
+401 0x0001ebde 0x14001f5de GLOBAL FUNC 0                 TM__yu6cxgKBBXbNsTkT9cyMd4g_2
+402 0x0001ec01 0x14001f601 GLOBAL FUNC 0                 nimFrame
+403 0x0001ec80 0x14001f680 GLOBAL FUNC 0                 popFrame
+404 0x0001ec9e 0x14001f69e GLOBAL FUNC 0                 minuspercent___system_716
+405 0x0001ed2a 0x14001f72a GLOBAL FUNC 0                 ltpercent___system_1005
+406 0x0001edb4 0x14001f7b4 GLOBAL FUNC 0                 rtlAddZCT__system_5397
+407 0x0001ee26 0x14001f826 GLOBAL FUNC 0                 decRef__system_5399
+408 0x0001eef4 0x14001f8f4 GLOBAL FUNC 0                 usrToCell__system_5354
+409 0x0001ef7f 0x14001f97f GLOBAL FUNC 0                 nimGCunrefNoCycle
+410 0x0001effb 0x14001f9fb GLOBAL FUNC 0                 nosparseCmdLine
+411 0x0001fdc4 0x1400207c4 GLOBAL FUNC 0                 pluspercent___system_696
+412 0x0001fe50 0x140020850 GLOBAL FUNC 0                 incRef__system_5392
+413 0x0001fec6 0x1400208c6 GLOBAL FUNC 0                 asgnRef
+414 0x0001ffba 0x1400209ba GLOBAL FUNC 0                 nosparamCount
+415 0x0002010e 0x140020b0e GLOBAL FUNC 0                 nimCopyMem
+416 0x0002014c 0x140020b4c GLOBAL FUNC 0                 copyMem__system_1727
+417 0x0002017e 0x140020b7e GLOBAL FUNC 0                 appendString
+418 0x000201e7 0x140020be7 GLOBAL FUNC 0                 nosparamStr
+419 0x000206ad 0x1400210ad GLOBAL FUNC 0                 commandLineParams__pureZos_1639
+420 0x0002087e 0x14002127e GLOBAL FUNC 0                 osErrorMsg__pureZos_425
+421 0x000209f4 0x1400213f4 GLOBAL FUNC 0                 X5BX5D___system_7463
+422 0x00020b18 0x140021518 GLOBAL FUNC 0                 newOSError__pureZos_451
+423 0x00020e49 0x140021849 GLOBAL FUNC 0                 raiseOSError__pureZos_477
+424 0x00020eec 0x1400218ec GLOBAL FUNC 0                 osLastError__pureZos_480
+425 0x00020f20 0x140021920 GLOBAL FUNC 0                 nimSetMem__systemZmemory_7
+426 0x00020f5b 0x14002195b GLOBAL FUNC 0                 nimZeroMem
+427 0x00020f87 0x140021987 GLOBAL FUNC 0                 findFirstFile__pureZos_763
+428 0x00021022 0x140021a22 GLOBAL FUNC 0                 pushSafePoint
+429 0x0002104c 0x140021a4c GLOBAL FUNC 0                 searchExtPos__pureZos_323
+430 0x00021309 0x140021d09 GLOBAL FUNC 0                 skipFindData__pureZos_773
+431 0x0002140a 0x140021e0a GLOBAL FUNC 0                 X5BX5D___system_7430
+432 0x0002150c 0x140021f0c GLOBAL FUNC 0                 normalizePathEnd__pureZos_48
+433 0x00021a4e 0x14002244e GLOBAL FUNC 0                 joinPathImpl__pureZos_79
+434 0x00021cb8 0x1400226b8 GLOBAL FUNC 0                 nosjoinPath
+435 0x00021e14 0x140022814 GLOBAL FUNC 0                 slash___pureZos_118
+436 0x00021e92 0x140022892 GLOBAL FUNC 0                 nossplitFile
+437 0x00022749 0x140023149 GLOBAL FUNC 0                 nossplitPath
+438 0x00022b8a 0x14002358a GLOBAL FUNC 0                 nosextractFilename
+439 0x00022d55 0x140023755 GLOBAL FUNC 0                 popSafePoint
+440 0x00022d73 0x140023773 GLOBAL FUNC 0                 getFrame
+441 0x00022d9b 0x14002379b GLOBAL FUNC 0                 setFrame
+442 0x00022db4 0x1400237b4 GLOBAL FUNC 0                 nosfileExists
+443 0x00022e91 0x140023891 GLOBAL FUNC 0                 nosdirExists
+444 0x00022f6e 0x14002396e GLOBAL FUNC 0                 nosexpandFilename
+445 0x00023ade 0x1400244de GLOBAL FUNC 0                 nosgetCurrentDir
+446 0x00023cb2 0x1400246b2 GLOBAL FUNC 0                 nimToCStringConv
+447 0x00023d1d 0x14002471d GLOBAL FUNC 0                 eqeq___system_7825
+448 0x00023e16 0x140024816 GLOBAL FUNC 0                 getEnv__pureZos_489
+449 0x00023f01 0x140024901 GLOBAL FUNC 0                 nospquoteShellWindows
+450 0x00024597 0x140024f97 GLOBAL FUNC 0                 nospquoteShell
+451 0x0002460a 0x14002500a GLOBAL FUNC 0                 nostryRemoveFile
+452 0x0002485c 0x14002525c GLOBAL FUNC 0                 nosremoveFile
+453 0x00024900 0x140025300 GLOBAL FUNC 0                 appendChar
+454 0x00024949 0x140025349 GLOBAL FUNC 0                 normExt__pureZos_320
+455 0x00024ab1 0x1400254b1 GLOBAL FUNC 0                 noschangeFileExt
+456 0x00024cb5 0x1400256b5 GLOBAL FUNC 0                 nosaddFileExt
+457 0x00024dee 0x1400257ee GLOBAL FUNC 0                 findExe__pureZos_802
+458 0x000256ab 0x1400260ab GLOBAL FUNC 0                 exitStatusLikeShell__pureZos_1236
+459 0x00025714 0x140026114 GLOBAL FUNC 0                 nosexecShellCmd
+460 0x000257b2 0x1400261b2 GLOBAL FUNC 0                 nosisAbsolute
+461 0x00025a0c 0x14002640c GLOBAL FUNC 0                 absolutePath__pureZos_857
+462 0x00025c04 0x140026604 GLOBAL FUNC 0                 rawCreateDir__pureZos_1490
+463 0x00025d59 0x140026759 GLOBAL FUNC 0                 nosexistsOrCreateDir
+464 0x00025f3c 0x14002693c GLOBAL FUNC 0                 noscreateDir
+465 0x00026301 0x140026d01 GLOBAL FUNC 0                 atmdotdotatslibatspureatsosdotnim_Init000
+466 0x00026325 0x140026d25 GLOBAL FUNC 0                 atmdotdotatslibatspureatsosdotnim_DatInit000
+467 0x00026370 0x140026d70 GLOBAL FUNC 0                 Marker_tyRef__1G0jiQbe7KwD5ADza5AZaw
+468 0x0002638f 0x140026d8f GLOBAL FUNC 0                 nimFrame
+469 0x0002640e 0x140026e0e GLOBAL FUNC 0                 popFrame
+470 0x0002642c 0x140026e2c GLOBAL FUNC 0                 close__pureZstreams_57
+471 0x000264a5 0x140026ea5 GLOBAL FUNC 0                 atmdotdotatslibatspureatsstreamsdotnim_DatInit000
+472 0x00026920 0x140027320 GLOBAL FUNC 0                 nimSetMem__systemZmemory_7
+473 0x0002695b 0x14002735b GLOBAL FUNC 0                 nimZeroMem
+474 0x00026987 0x140027387 GLOBAL FUNC 0                 Marker_tyRef__lw7iqc9cC7bi1oOZOAlJkJA
+475 0x000269e2 0x1400273e2 GLOBAL FUNC 0                 nimFrame
+476 0x00026a61 0x140027461 GLOBAL FUNC 0                 popFrame
+477 0x00026a7f 0x14002747f GLOBAL FUNC 0                 createPipeHandles__pureZosproc_460
+478 0x00026ba7 0x1400275a7 GLOBAL FUNC 0                 nimCopyMem
+479 0x00026be5 0x1400275e5 GLOBAL FUNC 0                 copyMem__system_1727
+480 0x00026c17 0x140027617 GLOBAL FUNC 0                 appendString
+481 0x00026c80 0x140027680 GLOBAL FUNC 0                 myDup__pureZosproc_426
+482 0x00026db9 0x1400277b9 GLOBAL FUNC 0                 closeHandleCheck__pureZosproc_333
+483 0x00026e68 0x140027868 GLOBAL FUNC 0                 createAllPipeHandles__pureZosproc_431
+484 0x00027467 0x140027e67 GLOBAL FUNC 0                 nimToCStringConv
+485 0x000274d2 0x140027ed2 GLOBAL FUNC 0                 buildCommandLine__pureZosproc_385
+486 0x000276d3 0x1400280d3 GLOBAL FUNC 0                 buildEnv__pureZosproc_397
+487 0x00028114 0x140028b14 GLOBAL FUNC 0                 fileClose__pureZosproc_340
+488 0x000281bf 0x140028bbf GLOBAL FUNC 0                 eqeq___system_7825
+489 0x000282b8 0x140028cb8 GLOBAL FUNC 0                 fileClose__pureZosproc_604
+490 0x00028361 0x140028d61 GLOBAL FUNC 0                 closeThreadAndProcessHandle__pureZosproc_592
+491 0x00028473 0x140028e73 GLOBAL FUNC 0                 nospclose
+492 0x00028704 0x140029104 GLOBAL FUNC 0                 nospstartProcess
+493 0x000294a0 0x140029ea0 GLOBAL FUNC 0                 nosprunning
+494 0x0002957f 0x140029f7f GLOBAL FUNC 0                 nospterminate
+495 0x00029632 0x14002a032 GLOBAL FUNC 0                 nospwaitForExit
+496 0x0002985f 0x14002a25f GLOBAL FUNC 0                 atmdotdotatslibatspureatsosprocdotnim_DatInit000
+497 0x00029e30 0x14002a830 GLOBAL FUNC 0                 nimCopyMem
+498 0x00029e6e 0x14002a86e GLOBAL FUNC 0                 copyMem__system_1727
+499 0x00029ea0 0x14002a8a0 GLOBAL FUNC 0                 appendString
+500 0x00029f09 0x14002a909 GLOBAL FUNC 0                 nimFrame
+501 0x00029f88 0x14002a988 GLOBAL FUNC 0                 popFrame
+502 0x00029fa6 0x14002a9a6 GLOBAL FUNC 0                 prepare__pureZbrowsers_6
+503 0x0002a115 0x14002ab15 GLOBAL FUNC 0                 openDefaultBrowserImpl__pureZbrowsers_9
+504 0x0002a211 0x14002ac11 GLOBAL FUNC 0                 openDefaultBrowser__pureZbrowsers_13
+505 0x0002a2b0 0x14002acb0 GLOBAL FUNC 0                 nimFrame
+506 0x0002a32f 0x14002ad2f GLOBAL FUNC 0                 popFrame
+507 0x0002a34d 0x14002ad4d GLOBAL FUNC 0                 getUnicodeValue__windowsZregistry_30
+508 0x0002a882 0x14002b282 GLOBAL FUNC 0                 setUnicodeValue__windowsZregistry_60
+509 0x0002aac4 0x14002b4c4 GLOBAL FUNC 0                 atmdotdotatslibatswindowsatsregistrydotnim_DatInit000
+510 0x0002ab80 0x14002b580 GLOBAL FUNC 0                 nimCmpMem
+511 0x0002abbe 0x14002b5be GLOBAL FUNC 0                 equalMem__system_1735
+512 0x0002ac0b 0x14002b60b GLOBAL FUNC 0                 nimFrame
+513 0x0002ac8a 0x14002b68a GLOBAL FUNC 0                 popFrame
+514 0x0002aca8 0x14002b6a8 GLOBAL FUNC 0                 eqStrings
+515 0x0002adc9 0x14002b7c9 GLOBAL FUNC 0                 find__stdZenumutils_53
+516 0x0002afb8 0x14002b9b8 GLOBAL FUNC 0                 contains__stdZenumutils_48
+517 0x0002b054 0x14002ba54 GLOBAL FUNC 0                 pushSafePoint
+518 0x0002b07e 0x14002ba7e GLOBAL FUNC 0                 popSafePoint
+519 0x0002b09c 0x14002ba9c GLOBAL FUNC 0                 getFrame
+520 0x0002b0c4 0x14002bac4 GLOBAL FUNC 0                 setFrame
+521 0x0002b0dd 0x14002badd GLOBAL FUNC 0                 nimBorrowCurrentException
+522 0x0002b14d 0x14002bb4d GLOBAL FUNC 0                 pluspercent___system_696
+523 0x0002b1d9 0x14002bbd9 GLOBAL FUNC 0                 incRef__system_5392
+524 0x0002b24f 0x14002bc4f GLOBAL FUNC 0                 minuspercent___system_716
+525 0x0002b2db 0x14002bcdb GLOBAL FUNC 0                 usrToCell__system_5354
+526 0x0002b366 0x14002bd66 GLOBAL FUNC 0                 ltpercent___system_1005
+527 0x0002b3f0 0x14002bdf0 GLOBAL FUNC 0                 rtlAddZCT__system_5397
+528 0x0002b462 0x14002be62 GLOBAL FUNC 0                 decRef__system_5399
+529 0x0002b530 0x14002bf30 GLOBAL FUNC 0                 asgnRef
+530 0x0002b624 0x14002c024 GLOBAL FUNC 0                 popCurrentException
+531 0x0002b653 0x14002c053 GLOBAL FUNC 0                 expand__finish_21
+532 0x0002b7d2 0x14002c1d2 GLOBAL FUNC 0                 slash___pureZos_118
+533 0x0002b850 0x14002c250 GLOBAL FUNC 0                 tryGetUnicodeValue__finish_89
+534 0x0002b9aa 0x14002c3aa GLOBAL FUNC 0                 nimCopyMem
+535 0x0002b9e8 0x14002c3e8 GLOBAL FUNC 0                 copyMem__system_1727
+536 0x0002ba1a 0x14002c41a GLOBAL FUNC 0                 appendString
+537 0x0002ba83 0x14002c483 GLOBAL FUNC 0                 X5BX5D___system_7430
+538 0x0002bb85 0x14002c585 GLOBAL FUNC 0                 getCurrentException
+539 0x0002bbf5 0x14002c5f5 GLOBAL FUNC 0                 checkGccArch__finish_106
+540 0x0002befa 0x14002c8fa GLOBAL FUNC 0                 nimGCunrefNoCycle
+541 0x0002bf76 0x14002c976 GLOBAL FUNC 0                 writeLine__finish_53
+542 0x0002c0e0 0x14002cae0 GLOBAL FUNC 0                 askBool__finish_50
+543 0x0002c3e3 0x14002cde3 GLOBAL FUNC 0                 addToPathEnv__finish_94
+544 0x0002c56e 0x14002cf6e GLOBAL FUNC 0                 nimSetMem__systemZmemory_7
+545 0x0002c5a9 0x14002cfa9 GLOBAL FUNC 0                 nimZeroMem
+546 0x0002c5d5 0x14002cfd5 GLOBAL FUNC 0                 tryDirs__finish_134
+547 0x0002cbcf 0x14002d5cf GLOBAL FUNC 0                 skipFindData__pureZos_773
+548 0x0002ccd0 0x14002d6d0 GLOBAL FUNC 0                 probeDir__finish_114
+549 0x0002d2b0 0x14002dcb0 GLOBAL FUNC 0                 defaultMingwLocations__finish_112
+550 0x0002d48d 0x14002de8d GLOBAL FUNC 0                 unzip__finish_24
+551 0x0002d7aa 0x14002e1aa GLOBAL FUNC 0                 downloadMingw__finish_36
+552 0x0002dc0b 0x14002e60b GLOBAL FUNC 0                 patchConfig__finish_82
+553 0x0002deb8 0x14002e8b8 GLOBAL FUNC 0                 askNumber__finish_62
+554 0x0002e42f 0x14002ee2f GLOBAL FUNC 0                 createShortcut__finish_97
+555 0x0002e6b6 0x14002f0b6 GLOBAL FUNC 0                 createStartMenuEntry__finish_102
+556 0x0002eb59 0x14002f559 GLOBAL FUNC 0                 main__finish_153
+557 0x00030e35 0x140031835 GLOBAL FUNC 0                 initStackBottomWith
+558 0x00030e51 0x140031851 GLOBAL FUNC 0                 PreMainInner
+559 0x00030e74 0x140031874 GLOBAL FUNC 0                 PreMain
+560 0x00030ed2 0x1400318d2 GLOBAL FUNC 0                 NimMainInner
+561 0x00030ee6 0x1400318e6 GLOBAL FUNC 0                 NimMain
+562 0x00030f17 0x140031917 GLOBAL FUNC 0                 main
+563 0x00030f63 0x140031963 GLOBAL FUNC 0                 NimMainModule
+564 0x00031040 0x140031a40 GLOBAL FUNC 0                 __do_global_dtors
+565 0x0003107f 0x140031a7f GLOBAL FUNC 0                 __do_global_ctors
+566 0x000310f7 0x140031af7 GLOBAL FUNC 0                 __main
+567 0x00031120 0x140031b20 GLOBAL FUNC 0                 _setargv
+568 0x00031130 0x140031b30 GLOBAL FUNC 0                 __dyn_tls_init
+569 0x000311d2 0x140031bd2 GLOBAL FUNC 0                 __tlregdtor
+570 0x000311ef 0x140031bef GLOBAL FUNC 0                 __dyn_tls_dtor
+571 0x00031240 0x140031c40 GLOBAL FUNC 0                 _matherr
+572 0x00031360 0x140031d60 GLOBAL FUNC 0                 _fpreset
+573 0x00031360 0x140031d60 GLOBAL FUNC 0                 fpreset
+574 0x00031370 0x140031d70 GLOBAL FUNC 0                 __report_error
+575 0x000313dd 0x140031ddd GLOBAL FUNC 0                 mark_section_writable
+576 0x000316b6 0x1400320b6 GLOBAL FUNC 0                 restore_modified_sections
+577 0x00031784 0x140032184 GLOBAL FUNC 0                 __write_memory
+578 0x000317c8 0x1400321c8 GLOBAL FUNC 0                 do_pseudo_reloc
+579 0x00031b52 0x140032552 GLOBAL FUNC 0                 _pei386_runtime_relocator
+580 0x00031c00 0x140032600 GLOBAL FUNC 0                 __mingw_raise_matherr
+581 0x00031c6a 0x14003266a GLOBAL FUNC 0                 __mingw_setusermatherr
+582 0x00031ca0 0x1400326a0 GLOBAL FUNC 0                 _gnu_exception_handler
+583 0x00031ec0 0x1400328c0 GLOBAL FUNC 0                 ___w64_mingwthr_add_key_dtor
+584 0x00031f61 0x140032961 GLOBAL FUNC 0                 ___w64_mingwthr_remove_key_dtor
+585 0x00032022 0x140032a22 GLOBAL FUNC 0                 __mingwthr_run_key_dtors
+586 0x000320c1 0x140032ac1 GLOBAL FUNC 0                 __mingw_TLScallback
+587 0x000321c0 0x140032bc0 GLOBAL FUNC 0                 _ValidateImageBase
+588 0x0003223c 0x140032c3c GLOBAL FUNC 0                 _FindPESection
+589 0x000322d5 0x140032cd5 GLOBAL FUNC 0                 _FindPESectionByName
+590 0x00032398 0x140032d98 GLOBAL FUNC 0                 __mingw_GetSectionForAddress
+591 0x000323e8 0x140032de8 GLOBAL FUNC 0                 __mingw_GetSectionCount
+592 0x00032438 0x140032e38 GLOBAL FUNC 0                 _FindPESectionExec
+593 0x000324e4 0x140032ee4 GLOBAL FUNC 0                 _GetPEImageBase
+594 0x00032518 0x140032f18 GLOBAL FUNC 0                 _IsNonwritableInCurrentImage
+595 0x00032589 0x140032f89 GLOBAL FUNC 0                 __mingw_enum_import_library_names
+596 0x000326b0 0x1400330b0 GLOBAL FUNC 0                 __mingw_vfprintf
+597 0x00032710 0x140033110 GLOBAL FUNC 0                 __pformat_putc
+598 0x00032795 0x140033195 GLOBAL FUNC 0                 __pformat_putchars
+599 0x00032894 0x140033294 GLOBAL FUNC 0                 __pformat_puts
+600 0x0003290c 0x14003330c GLOBAL FUNC 0                 __pformat_wputchars
+601 0x00032a6b 0x14003346b GLOBAL FUNC 0                 __pformat_wcputs
+602 0x00032ae3 0x1400334e3 GLOBAL FUNC 0                 __pformat_int_bufsiz
+603 0x00032b74 0x140033574 GLOBAL FUNC 0                 __pformat_int
+604 0x00032eec 0x1400338ec GLOBAL FUNC 0                 __pformat_xint
+605 0x00033208 0x140033c08 GLOBAL FUNC 0                 init_fpreg_ldouble
+606 0x00033243 0x140033c43 GLOBAL FUNC 0                 __pformat_cvt
+607 0x00033379 0x140033d79 GLOBAL FUNC 0                 __pformat_ecvt
+608 0x000333cb 0x140033dcb GLOBAL FUNC 0                 __pformat_fcvt
+609 0x0003341d 0x140033e1d GLOBAL FUNC 0                 __pformat_emit_radix_point
+610 0x000335a1 0x140033fa1 GLOBAL FUNC 0                 __pformat_emit_numeric_value
+611 0x0003360f 0x14003400f GLOBAL FUNC 0                 __pformat_emit_inf_or_nan
+612 0x000336fa 0x1400340fa GLOBAL FUNC 0                 __pformat_emit_float
+613 0x00033ac5 0x1400344c5 GLOBAL FUNC 0                 __pformat_emit_efloat
+614 0x00033c10 0x140034610 GLOBAL FUNC 0                 __pformat_float
+615 0x00033ce0 0x1400346e0 GLOBAL FUNC 0                 __pformat_efloat
+616 0x00033d8b 0x14003478b GLOBAL FUNC 0                 __pformat_gfloat
+617 0x00033f60 0x140034960 GLOBAL FUNC 0                 __pformat_emit_xfloat
+618 0x00034431 0x140034e31 GLOBAL FUNC 0                 __pformat_xldouble
+619 0x0003454a 0x140034f4a GLOBAL FUNC 0                 __pformat_xdouble
+620 0x000346a1 0x1400350a1 GLOBAL FUNC 0                 __mingw_pformat
+621 0x00035080 0x140035a80 GLOBAL FUNC 0                 __rv_alloc_D2A
+622 0x000350d2 0x140035ad2 GLOBAL FUNC 0                 __nrv_alloc_D2A
+623 0x0003513f 0x140035b3f GLOBAL FUNC 0                 __freedtoa
+624 0x0003518e 0x140035b8e GLOBAL FUNC 0                 __quorem_D2A
+625 0x00035410 0x140035e10 GLOBAL FUNC 0                 __hi0bits_D2A
+626 0x00035420 0x140035e20 GLOBAL FUNC 0                 bitstob
+627 0x0003554a 0x140035f4a GLOBAL FUNC 0                 __gdtoa
+628 0x00036a80 0x140037480 GLOBAL FUNC 0                 __lo0bits_D2A
+629 0x00036ab5 0x1400374b5 GLOBAL FUNC 0                 __rshift_D2A
+630 0x00036c0e 0x14003760e GLOBAL FUNC 0                 __trailz_D2A
+631 0x00036ca0 0x1400376a0 GLOBAL FUNC 0                 dtoa_lock_cleanup
+632 0x00036d12 0x140037712 GLOBAL FUNC 0                 dtoa_lock
+633 0x00036e4a 0x14003784a GLOBAL FUNC 0                 dtoa_unlock
+634 0x00036e91 0x140037891 GLOBAL FUNC 0                 __lo0bits_D2A
+635 0x00036ec6 0x1400378c6 GLOBAL FUNC 0                 __hi0bits_D2A
+636 0x00036ed6 0x1400378d6 GLOBAL FUNC 0                 __Balloc_D2A
+637 0x00037018 0x140037a18 GLOBAL FUNC 0                 __Bfree_D2A
+638 0x000370a0 0x140037aa0 GLOBAL FUNC 0                 __multadd_D2A
+639 0x000371cb 0x140037bcb GLOBAL FUNC 0                 __i2b_D2A
+640 0x00037211 0x140037c11 GLOBAL FUNC 0                 __mult_D2A
+641 0x00037437 0x140037e37 GLOBAL FUNC 0                 __pow5mult_D2A
+642 0x000375f0 0x140037ff0 GLOBAL FUNC 0                 __lshift_D2A
+643 0x0003777a 0x14003817a GLOBAL FUNC 0                 __cmp_D2A
+644 0x0003784a 0x14003824a GLOBAL FUNC 0                 __diff_D2A
+645 0x00037a43 0x140038443 GLOBAL FUNC 0                 __b2d_D2A
+646 0x00037bcd 0x1400385cd GLOBAL FUNC 0                 __d2b_D2A
+647 0x00037d7d 0x14003877d GLOBAL FUNC 0                 __strcp_D2A
+648 0x00037dc0 0x1400387c0 GLOBAL FUNC 0                 __fpclassify
+649 0x00037e40 0x140038840 GLOBAL FUNC 0                 __fpclassifyl
+650 0x00037ed0 0x1400388d0 GLOBAL FUNC 0                 __isnan
+651 0x00037ed0 0x1400388d0 GLOBAL FUNC 0                 isnan
+652 0x00037f30 0x140038930 GLOBAL FUNC 0                 __isnanl
+653 0x00037f30 0x140038930 GLOBAL FUNC 0                 isnanl
+654 0x00037fa0 0x1400389a0 GLOBAL FUNC 0                 strnlen
+655 0x00037ff0 0x1400389f0 GLOBAL FUNC 0                 wcsnlen
+656 0x00038040 0x140038a40 GLOBAL FUNC 0                 __p__fmode
+657 0x00038050 0x140038a50 GLOBAL FUNC 0                 __p__commode
+658 0x00038060 0x140038a60 GLOBAL FUNC 0                 __p__acmdln
+659 0x00038070 0x140038a70 GLOBAL FUNC 0                 _lock_file
+660 0x00038100 0x140038b00 GLOBAL FUNC 0                 _unlock_file
+661 0x00038190 0x140038b90 GLOBAL FUNC 0                 _fseeki64
+662 0x0003823a 0x140038c3a GLOBAL FUNC 0                 _ftelli64
+663 0x00038270 0x140038c70 GLOBAL FUNC 0                 mingw_set_invalid_parameter_handler
+664 0x00038270 0x140038c70 GLOBAL FUNC 0                 _set_invalid_parameter_handler
+665 0x000382a3 0x140038ca3 GLOBAL FUNC 0                 mingw_get_invalid_parameter_handler
+666 0x000382a3 0x140038ca3 GLOBAL FUNC 0                 _get_invalid_parameter_handler
+667 0x000382b0 0x140038cb0 GLOBAL FUNC 0                 __acrt_iob_func
+668 0x000382e0 0x140038ce0 GLOBAL FUNC 0                 __wcrtomb_cp
+669 0x000383a0 0x140038da0 GLOBAL FUNC 0                 wcrtomb
+670 0x000383fb 0x140038dfb GLOBAL FUNC 0                 wcsrtombs
+671 0x00038560 0x140038f60 GLOBAL FUNC 0                 __mbrtowc_cp
+672 0x0003872e 0x14003912e GLOBAL FUNC 0                 mbrtowc
+673 0x000387b0 0x1400391b0 GLOBAL FUNC 0                 mbsrtowcs
+674 0x00038907 0x140039307 GLOBAL FUNC 0                 mbrlen
+675 0x00038bd0 0x1400395d0 GLOBAL FUNC 0                 register_frame_ctor
+676 0x00038b18 0x140039518 GLOBAL FUNC 0                 ungetc
+677 0x00038af0 0x1400394f0 GLOBAL FUNC 0                 strerror
+678 0x000389e8 0x1400393e8 GLOBAL FUNC 0                 _lock
+679 0x000389b0 0x1400393b0 GLOBAL FUNC 0                 _cexit
+680 0x00038a98 0x140039498 GLOBAL FUNC 0                 getenv
+681 0x00038b28 0x140039528 GLOBAL FUNC 0                 wcslen
+682 0x00038990 0x140039390 GLOBAL FUNC 0                 __iob_func
+683 0x00038a60 0x140039460 GLOBAL FUNC 0                 fgets
+684 0x00038ac8 0x1400394c8 GLOBAL FUNC 0                 memcpy
+685 0x00038ad8 0x1400394d8 GLOBAL FUNC 0                 setvbuf
+686 0x00038b10 0x140039510 GLOBAL FUNC 0                 system
+687 0x00038ab0 0x1400394b0 GLOBAL FUNC 0                 malloc
+688 0x000389c0 0x1400393c0 GLOBAL FUNC 0                 _filelengthi64
+689 0x00038980 0x140039380 GLOBAL FUNC 0                 ___mb_cur_max_func
+690 0x00038a48 0x140039448 GLOBAL FUNC 0                 fflush
+691 0x00038a18 0x140039418 GLOBAL FUNC 0                 abort
+692 0x00038a88 0x140039488 GLOBAL FUNC 0                 fsetpos
+693 0x00038a20 0x140039420 GLOBAL FUNC 0                 calloc
+694 0x00038a68 0x140039468 GLOBAL FUNC 0                 fprintf
+695 0x000389c8 0x1400393c8 GLOBAL FUNC 0                 _fileno
+696 0x00038ab8 0x1400394b8 GLOBAL FUNC 0                 memchr
+697 0x00038a40 0x140039440 GLOBAL FUNC 0                 ferror
+698 0x00038b08 0x140039508 GLOBAL FUNC 0                 strstr
+699 0x00038ae0 0x1400394e0 GLOBAL FUNC 0                 signal
+700 0x00038b00 0x140039500 GLOBAL FUNC 0                 strncmp
+701 0x00038ac0 0x1400394c0 GLOBAL FUNC 0                 memcmp
+702 0x00038a78 0x140039478 GLOBAL FUNC 0                 fread
+703 0x00038988 0x140039388 GLOBAL FUNC 0                 __getmainargs
+704 0x00038978 0x140039378 GLOBAL FUNC 0                 ___lc_codepage_func
+705 0x00038ad0 0x1400394d0 GLOBAL FUNC 0                 memset
+706 0x00038a28 0x140039428 GLOBAL FUNC 0                 clearerr
+707 0x00038a38 0x140039438 GLOBAL FUNC 0                 fclose
+708 0x00038a58 0x140039458 GLOBAL FUNC 0                 fgetpos
+709 0x00038ae8 0x1400394e8 GLOBAL FUNC 0                 strcmp
+710 0x00038998 0x140039398 GLOBAL FUNC 0                 __set_app_type
+711 0x00038a50 0x140039450 GLOBAL FUNC 0                 fgetc
+712 0x000389a8 0x1400393a8 GLOBAL FUNC 0                 _amsg_exit
+713 0x000389a0 0x1400393a0 GLOBAL FUNC 0                 __setusermatherr
+714 0x00038a70 0x140039470 GLOBAL FUNC 0                 fputc
+715 0x00038aa0 0x1400394a0 GLOBAL FUNC 0                 localeconv
+716 0x000389d8 0x1400393d8 GLOBAL FUNC 0                 _initterm
+717 0x00038a90 0x140039490 GLOBAL FUNC 0                 fwrite
+718 0x000389f0 0x1400393f0 GLOBAL FUNC 0                 _onexit
+719 0x00038a30 0x140039430 GLOBAL FUNC 0                 exit
+720 0x000389b8 0x1400393b8 GLOBAL FUNC 0                 _errno
+721 0x000389f8 0x1400393f8 GLOBAL FUNC 0                 _setjmp
+722 0x00038af8 0x1400394f8 GLOBAL FUNC 0                 strlen
+723 0x00038a08 0x140039408 GLOBAL FUNC 0                 _unlock
+724 0x00038b20 0x140039520 GLOBAL FUNC 0                 vfprintf
+725 0x00038a80 0x140039480 GLOBAL FUNC 0                 free
+1   0x00043ecc 0x14005b2cc NONE   FUNC 0    KERNEL32.dll imp.DeleteCriticalSection
+2   0x00043ed4 0x14005b2d4 NONE   FUNC 0    KERNEL32.dll imp.EnterCriticalSection
+3   0x00043edc 0x14005b2dc NONE   FUNC 0    KERNEL32.dll imp.FreeLibrary
+4   0x00043ee4 0x14005b2e4 NONE   FUNC 0    KERNEL32.dll imp.GetLastError
+5   0x00043eec 0x14005b2ec NONE   FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+6   0x00043ef4 0x14005b2f4 NONE   FUNC 0    KERNEL32.dll imp.GetProcAddress
+7   0x00043efc 0x14005b2fc NONE   FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+8   0x00043f04 0x14005b304 NONE   FUNC 0    KERNEL32.dll imp.InitializeCriticalSection
+9   0x00043f0c 0x14005b30c NONE   FUNC 0    KERNEL32.dll imp.IsDBCSLeadByteEx
+10  0x00043f14 0x14005b314 NONE   FUNC 0    KERNEL32.dll imp.LeaveCriticalSection
+11  0x00043f1c 0x14005b31c NONE   FUNC 0    KERNEL32.dll imp.LoadLibraryA
+12  0x00043f24 0x14005b324 NONE   FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+13  0x00043f2c 0x14005b32c NONE   FUNC 0    KERNEL32.dll imp.SetUnhandledExceptionFilter
+14  0x00043f34 0x14005b334 NONE   FUNC 0    KERNEL32.dll imp.Sleep
+15  0x00043f3c 0x14005b33c NONE   FUNC 0    KERNEL32.dll imp.TlsGetValue
+16  0x00043f44 0x14005b344 NONE   FUNC 0    KERNEL32.dll imp.VirtualAlloc
+17  0x00043f4c 0x14005b34c NONE   FUNC 0    KERNEL32.dll imp.VirtualFree
+18  0x00043f54 0x14005b354 NONE   FUNC 0    KERNEL32.dll imp.VirtualProtect
+19  0x00043f5c 0x14005b35c NONE   FUNC 0    KERNEL32.dll imp.VirtualQuery
+20  0x00043f64 0x14005b364 NONE   FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+1   0x00043f74 0x14005b374 NONE   FUNC 0    msvcrt.dll   imp.__C_specific_handler
+2   0x00043f7c 0x14005b37c NONE   FUNC 0    msvcrt.dll   imp.___lc_codepage_func
+3   0x00043f84 0x14005b384 NONE   FUNC 0    msvcrt.dll   imp.___mb_cur_max_func
+4   0x00043f8c 0x14005b38c NONE   FUNC 0    msvcrt.dll   imp.__getmainargs
+5   0x00043f94 0x14005b394 NONE   FUNC 0    msvcrt.dll   imp.__initenv
+6   0x00043f9c 0x14005b39c NONE   FUNC 0    msvcrt.dll   imp.__iob_func
+7   0x00043fa4 0x14005b3a4 NONE   FUNC 0    msvcrt.dll   imp.__set_app_type
+8   0x00043fac 0x14005b3ac NONE   FUNC 0    msvcrt.dll   imp.__setusermatherr
+9   0x00043fb4 0x14005b3b4 NONE   FUNC 0    msvcrt.dll   imp._acmdln
+10  0x00043fbc 0x14005b3bc NONE   FUNC 0    msvcrt.dll   imp._amsg_exit
+11  0x00043fc4 0x14005b3c4 NONE   FUNC 0    msvcrt.dll   imp._cexit
+12  0x00043fcc 0x14005b3cc NONE   FUNC 0    msvcrt.dll   imp._commode
+13  0x00043fd4 0x14005b3d4 NONE   FUNC 0    msvcrt.dll   imp._errno
+14  0x00043fdc 0x14005b3dc NONE   FUNC 0    msvcrt.dll   imp._filelengthi64
+15  0x00043fe4 0x14005b3e4 NONE   FUNC 0    msvcrt.dll   imp._fileno
+16  0x00043fec 0x14005b3ec NONE   FUNC 0    msvcrt.dll   imp._fmode
+17  0x00043ff4 0x14005b3f4 NONE   FUNC 0    msvcrt.dll   imp._get_osfhandle
+18  0x00043ffc 0x14005b3fc NONE   FUNC 0    msvcrt.dll   imp._initterm
+19  0x00044004 0x14005b404 NONE   FUNC 0    msvcrt.dll   imp._isatty
+20  0x0004400c 0x14005b40c NONE   FUNC 0    msvcrt.dll   imp._lock
+21  0x00044014 0x14005b414 NONE   FUNC 0    msvcrt.dll   imp._onexit
+22  0x0004401c 0x14005b41c NONE   FUNC 0    msvcrt.dll   imp._setjmp
+23  0x00044024 0x14005b424 NONE   FUNC 0    msvcrt.dll   imp._setmode
+24  0x0004402c 0x14005b42c NONE   FUNC 0    msvcrt.dll   imp._unlock
+25  0x00044034 0x14005b434 NONE   FUNC 0    msvcrt.dll   imp._wfopen
+26  0x0004403c 0x14005b43c NONE   FUNC 0    msvcrt.dll   imp.abort
+27  0x00044044 0x14005b444 NONE   FUNC 0    msvcrt.dll   imp.calloc
+28  0x0004404c 0x14005b44c NONE   FUNC 0    msvcrt.dll   imp.clearerr
+29  0x00044054 0x14005b454 NONE   FUNC 0    msvcrt.dll   imp.exit
+30  0x0004405c 0x14005b45c NONE   FUNC 0    msvcrt.dll   imp.fclose
+31  0x00044064 0x14005b464 NONE   FUNC 0    msvcrt.dll   imp.ferror
+32  0x0004406c 0x14005b46c NONE   FUNC 0    msvcrt.dll   imp.fflush
+33  0x00044074 0x14005b474 NONE   FUNC 0    msvcrt.dll   imp.fgetc
+34  0x0004407c 0x14005b47c NONE   FUNC 0    msvcrt.dll   imp.fgetpos
+35  0x00044084 0x14005b484 NONE   FUNC 0    msvcrt.dll   imp.fgets
+36  0x0004408c 0x14005b48c NONE   FUNC 0    msvcrt.dll   imp.fprintf
+37  0x00044094 0x14005b494 NONE   FUNC 0    msvcrt.dll   imp.fputc
+38  0x0004409c 0x14005b49c NONE   FUNC 0    msvcrt.dll   imp.fread
+39  0x000440a4 0x14005b4a4 NONE   FUNC 0    msvcrt.dll   imp.free
+40  0x000440ac 0x14005b4ac NONE   FUNC 0    msvcrt.dll   imp.fsetpos
+41  0x000440b4 0x14005b4b4 NONE   FUNC 0    msvcrt.dll   imp.fwrite
+42  0x000440bc 0x14005b4bc NONE   FUNC 0    msvcrt.dll   imp.getenv
+43  0x000440c4 0x14005b4c4 NONE   FUNC 0    msvcrt.dll   imp.localeconv
+44  0x000440cc 0x14005b4cc NONE   FUNC 0    msvcrt.dll   imp.longjmp
+45  0x000440d4 0x14005b4d4 NONE   FUNC 0    msvcrt.dll   imp.malloc
+46  0x000440dc 0x14005b4dc NONE   FUNC 0    msvcrt.dll   imp.memchr
+47  0x000440e4 0x14005b4e4 NONE   FUNC 0    msvcrt.dll   imp.memcmp
+48  0x000440ec 0x14005b4ec NONE   FUNC 0    msvcrt.dll   imp.memcpy
+49  0x000440f4 0x14005b4f4 NONE   FUNC 0    msvcrt.dll   imp.memset
+50  0x000440fc 0x14005b4fc NONE   FUNC 0    msvcrt.dll   imp.setvbuf
+51  0x00044104 0x14005b504 NONE   FUNC 0    msvcrt.dll   imp.signal
+52  0x0004410c 0x14005b50c NONE   FUNC 0    msvcrt.dll   imp.strcmp
+53  0x00044114 0x14005b514 NONE   FUNC 0    msvcrt.dll   imp.strerror
+54  0x0004411c 0x14005b51c NONE   FUNC 0    msvcrt.dll   imp.strlen
+55  0x00044124 0x14005b524 NONE   FUNC 0    msvcrt.dll   imp.strncmp
+56  0x0004412c 0x14005b52c NONE   FUNC 0    msvcrt.dll   imp.strstr
+57  0x00044134 0x14005b534 NONE   FUNC 0    msvcrt.dll   imp.system
+58  0x0004413c 0x14005b53c NONE   FUNC 0    msvcrt.dll   imp.ungetc
+59  0x00044144 0x14005b544 NONE   FUNC 0    msvcrt.dll   imp.vfprintf
+60  0x0004414c 0x14005b54c NONE   FUNC 0    msvcrt.dll   imp.wcslen
+[Strings]
+nth paddr      vaddr       len size section type    string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00039000 0x14003b000 18  19   .rdata  ascii   libgcc_s_dw2-1.dll
+1   0x00039013 0x14003b013 21  22   .rdata  ascii   __register_frame_info
+2   0x00039029 0x14003b029 23  24   .rdata  ascii   __deregister_frame_info
+3   0x00039060 0x14003b060 208 209  .rdata  ascii   00010203040506070809101112131415161718192021222324252627282930313233343536373839404142434445464748495051525354555657585960616263646566676869707172737475767778798081828384858687888990919293949596979899addChars
+4   0x00039138 0x14003b138 38  39   .rdata  ascii   D:\Nim\lib\std\private\digitsutils.nim
+5   0x0003915f 0x14003b15f 10  11   .rdata  ascii   addIntImpl
+6   0x0003916a 0x14003b16a 6   7    .rdata  ascii   addInt
+7   0x00039188 0x14003b188 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+8   0x000391b0 0x14003b1b0 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+9   0x000391d2 0x14003b1d2 9   10   .rdata  ascii   rtlAddZCT
+10  0x000391dc 0x14003b1dc 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+11  0x000391f5 0x14003b1f5 6   7    .rdata  ascii   decRef
+12  0x000391fc 0x14003b1fc 9   10   .rdata  ascii   usrToCell
+13  0x00039206 0x14003b206 17  18   .rdata  ascii   nimGCunrefNoCycle
+14  0x00039218 0x14003b218 8   9    .rdata  ascii   sysFatal
+15  0x00039221 0x14003b221 27  28   .rdata  ascii   D:\Nim\lib\system\fatal.nim
+16  0x0003923d 0x14003b23d 15  16   .rdata  ascii   AssertionDefect
+17  0x0003924d 0x14003b24d 11  12   .rdata  ascii   raiseAssert
+18  0x00039259 0x14003b259 29  30   .rdata  ascii   D:\Nim\lib\std\assertions.nim
+19  0x00039277 0x14003b277 16  17   .rdata  ascii   failedAssertImpl
+20  0x00039292 0x14003b292 29  30   .rdata  ascii   D:\Nim\lib\system\dollars.nim
+21  0x000392b0 0x14003b2b0 6   7    .rdata  ascii   addInt
+22  0x000392b8 0x14003b2b8 38  39   .rdata  ascii   D:\Nim\lib\std\private\digitsutils.nim
+23  0x000392e8 0x14003b2e8 30  31   .rdata  ascii   D:\Nim\lib\system\widestrs.nim
+24  0x00039309 0x14003b309 14  15   .rdata  ascii   newWideCString
+25  0x0003932f 0x14003b32f 9   10   .rdata  ascii   @kernel32
+26  0x0003934f 0x14003b34f 9   10   .rdata  ascii   @kernel32
+27  0x00039368 0x14003b368 4   5    .rdata  ascii   w+bN
+28  0x0003936d 0x14003b36d 4   5    .rdata  ascii   r+bN
+29  0x000393cf 0x14003b3cf 28  29   .rdata  ascii   @cannot write string to file
+30  0x0003940f 0x14003b40f 14  15   .rdata  ascii   @cannot open: 
+31  0x0003942f 0x14003b42f 8   9    .rdata  ascii   @error: 
+32  0x0003948f 0x14003b48f 8   9    .rdata  ascii   @errno: 
+33  0x000394af 0x14003b4af 12  13   .rdata  ascii   @EOF reached
+34  0x000394c0 0x14003b4c0 5   6    .rdata  ascii   fopen
+35  0x000394c6 0x14003b4c6 25  26   .rdata  ascii   D:\Nim\lib\std\syncio.nim
+36  0x000394e1 0x14003b4e1 4   5    .rdata  ascii   open
+37  0x000394f0 0x14003b4f0 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+38  0x00039518 0x14003b518 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+39  0x0003953a 0x14003b53a 9   10   .rdata  ascii   rtlAddZCT
+40  0x00039544 0x14003b544 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+41  0x0003955d 0x14003b55d 6   7    .rdata  ascii   decRef
+42  0x00039564 0x14003b564 9   10   .rdata  ascii   usrToCell
+43  0x0003956e 0x14003b56e 17  18   .rdata  ascii   nimGCunrefNoCycle
+44  0x00039583 0x14003b583 6   7    .rdata  ascii   incRef
+45  0x0003958a 0x14003b58a 7   8    .rdata  ascii   asgnRef
+46  0x00039592 0x14003b592 8   9    .rdata  ascii   raiseEIO
+47  0x0003959b 0x14003b59b 7   8    .rdata  ascii   IOError
+48  0x000395a6 0x14003b5a6 5   6    .rdata  ascii   close
+49  0x000395ac 0x14003b5ac 9   10   .rdata  ascii   writeFile
+50  0x000395b6 0x14003b5b6 11  12   .rdata  ascii   echoBinSafe
+51  0x000395c8 0x14003b5c8 31  32   .rdata  ascii   D:\Nim\lib\system\iterators.nim
+52  0x000395ea 0x14003b5ea 13  14   .rdata  ascii   getFileHandle
+53  0x000395f8 0x14003b5f8 6   7    .rdata  ascii   isatty
+54  0x000395ff 0x14003b5ff 15  16   .rdata  ascii   getOsFileHandle
+55  0x00039612 0x14003b612 21  22   .rdata  ascii   D:\Nim\lib\system.nim
+56  0x00039628 0x14003b628 8   9    .rdata  ascii   checkErr
+57  0x00039631 0x14003b631 8   9    .rdata  ascii   readLine
+58  0x00039640 0x14003b640 33  34   .rdata  ascii   D:\Nim\lib\system\iterators_1.nim
+59  0x00039662 0x14003b662 8   9    .rdata  ascii   raiseEOF
+60  0x0003966b 0x14003b66b 8   9    .rdata  ascii   EOFError
+61  0x00039674 0x14003b674 11  12   .rdata  ascii   rawFileSize
+62  0x00039680 0x14003b680 9   10   .rdata  ascii   endOfFile
+63  0x0003968a 0x14003b68a 13  14   .rdata  ascii   readAllBuffer
+64  0x00039698 0x14003b698 11  12   .rdata  ascii   readAllFile
+65  0x000396a4 0x14003b6a4 7   8    .rdata  ascii   readAll
+66  0x000396ac 0x14003b6ac 8   9    .rdata  ascii   readFile
+67  0x000396b5 0x14003b6b5 6   7    .rdata  ascii   syncio
+68  0x000396bc 0x14003b6bc 18  19   .rdata  ascii   SetConsoleOutputCP
+69  0x000396cf 0x14003b6cf 12  13   .rdata  ascii   SetConsoleCP
+70  0x000396dc 0x14003b6dc 12  13   .rdata  ascii   ReadConsoleW
+71  0x000396e9 0x14003b6e9 12  13   .rdata  ascii   GetLastError
+72  0x000396f6 0x14003b6f6 14  15   .rdata  ascii   FormatMessageW
+73  0x00039705 0x14003b705 9   10   .rdata  ascii   LocalFree
+74  0x0003972f 0x14003b72f 30  31   .rdata  ascii   @No stack traceback available\n
+75  0x000397e0 0x14003b7e0 128 129  .rdata  ascii   \a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a\a
+76  0x000398af 0x14003b8af 18  19   .rdata  ascii   @[[reraised from:\n
+77  0x000398df 0x14003b8df 4   5    .rdata  ascii   @]]\n
+78  0x0003992f 0x14003b92f 21  22   .rdata  ascii   @value out of range: 
+79  0x0003995f 0x14003b95f 8   9    .rdata  ascii   @ notin 
+80  0x0003997f 0x14003b97f 5   6    .rdata  ascii   @ .. 
+81  0x000399af 0x14003b9af 44  45   .rdata  ascii   @index out of bounds, the container is empty
+82  0x000399ef 0x14003b9ef 7   8    .rdata  ascii   @index 
+83  0x00039a0f 0x14003ba0f 14  15   .rdata  ascii   @ not in 0 .. 
+84  0x00039a2f 0x14003ba2f 19  20   .rdata  ascii   @value out of range
+85  0x00039acf 0x14003bacf 29  30   .rdata  ascii   @Error: unhandled exception: 
+86  0x00039b4f 0x14003bb4f 24  25   .rdata  ascii   @no exception to reraise
+87  0x00039b8f 0x14003bb8f 19  20   .rdata  ascii   @over- or underflow
+88  0x00039bcf 0x14003bbcf 35  36   .rdata  ascii   @Traceback (most recent call last)\n
+89  0x00039c0f 0x14003bc0f 21  22   .rdata  ascii   @ calls omitted) ...\n
+90  0x00039c4f 0x14003bc4f 51  52   .rdata  ascii   @Error: call depth limit reached in a debug build (
+91  0x00039caf 0x14003bcaf 118 119  .rdata  ascii   @ function calls). You can change it with -d:nimCallDepthLimit=<int> but really try to avoid deep recursions instead.\n
+92  0x00039d4f 0x14003bd4f 32  33   .rdata  ascii   @SIGINT: Interrupted by Ctrl-C.\n
+93  0x00039d8f 0x14003bd8f 62  63   .rdata  ascii   @SIGSEGV: Illegal storage access. (Attempt to read from nil?)\n
+94  0x00039def 0x14003bdef 32  33   .rdata  ascii   @SIGABRT: Abnormal termination.\n
+95  0x00039e2f 0x14003be2f 27  28   .rdata  ascii   @SIGFPE: Arithmetic error.\n
+96  0x00039e6f 0x14003be6f 28  29   .rdata  ascii   @SIGILL: Illegal operation.\n
+97  0x00039eaf 0x14003beaf 61  62   .rdata  ascii   @SIGBUS: Illegal storage access. (Attempt to read from nil?)\n
+98  0x00039f0f 0x14003bf0f 16  17   .rdata  ascii   @unknown signal\n
+99  0x00039f2f 0x14003bf2f 60  61   .rdata  ascii   @API usage error: GC_enable called but GC is already enabled
+100 0x00039f8f 0x14003bf8f 26  27   .rdata  ascii   @invalid object conversion
+101 0x00039fb0 0x14003bfb0 14  15   .rdata  ascii   getOccupiedMem
+102 0x00039fbf 0x14003bfbf 27  28   .rdata  ascii   D:\Nim\lib\system\alloc.nim
+103 0x00039fe0 0x14003bfe0 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+104 0x0003a002 0x14003c002 9   10   .rdata  ascii   stackSize
+105 0x0003a010 0x14003c010 31  32   .rdata  ascii   D:\Nim\lib\system\gc_common.nim
+106 0x0003a030 0x14003c030 8   9    .rdata  ascii   lowGauge
+107 0x0003a039 0x14003c039 29  30   .rdata  ascii   D:\Nim\lib\system\avltree.nim
+108 0x0003a057 0x14003c057 9   10   .rdata  ascii   highGauge
+109 0x0003a068 0x14003c068 33  34   .rdata  ascii   prepareForInteriorPointerChecking
+110 0x0003a08a 0x14003c08a 11  12   .rdata  ascii   setPosition
+111 0x0003a096 0x14003c096 14  15   .rdata  ascii   getActiveStack
+112 0x0003a0a5 0x14003c0a5 13  14   .rdata  ascii   isActiveStack
+113 0x0003a0c0 0x14003c0c0 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+114 0x0003a0e2 0x14003c0e2 9   10   .rdata  ascii   intSetGet
+115 0x0003a0ec 0x14003c0ec 8   9    .rdata  ascii   contains
+116 0x0003a0f5 0x14003c0f5 9   10   .rdata  ascii   pageIndex
+117 0x0003a0ff 0x14003c0ff 12  13   .rdata  ascii   isAccessible
+118 0x0003a10c 0x14003c10c 8   9    .rdata  ascii   pageAddr
+119 0x0003a115 0x14003c115 11  12   .rdata  ascii   chunkUnused
+120 0x0003a121 0x14003c121 12  13   .rdata  ascii   isSmallChunk
+121 0x0003a135 0x14003c135 7   8    .rdata  ascii   inRange
+122 0x0003a13d 0x14003c13d 20  21   .rdata  ascii   interiorAllocatedPtr
+123 0x0003a152 0x14003c152 6   7    .rdata  ascii   incRef
+124 0x0003a159 0x14003c159 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+125 0x0003a172 0x14003c172 7   8    .rdata  ascii   roundup
+126 0x0003a17a 0x14003c17a 29  30   .rdata  ascii   D:\Nim\lib\system\osalloc.nim
+127 0x0003a198 0x14003c198 5   6    .rdata  ascii   msbit
+128 0x0003a19e 0x14003c19e 13  14   .rdata  ascii   mappingSearch
+129 0x0003a1ac 0x14003c1ac 5   6    .rdata  ascii   lsbit
+130 0x0003a1b2 0x14003c1b2 17  18   .rdata  ascii   findSuitableBlock
+131 0x0003a1c4 0x14003c1c4 13  14   .rdata  ascii   raiseOutOfMem
+132 0x0003a1d2 0x14003c1d2 28  29   .rdata  ascii   D:\Nim\lib\system\mmdisp.nim
+133 0x0003a1ef 0x14003c1ef 14  15   .rdata  ascii   out of memory\n
+134 0x0003a1fe 0x14003c1fe 12  13   .rdata  ascii   osAllocPages
+135 0x0003a20b 0x14003c20b 15  16   .rdata  ascii   osTryAllocPages
+136 0x0003a21b 0x14003c21b 10  11   .rdata  ascii   incCurrMem
+137 0x0003a226 0x14003c226 7   8    .rdata  ascii   llAlloc
+138 0x0003a22e 0x14003c22e 11  12   .rdata  ascii   addHeapLink
+139 0x0003a23a 0x14003c23a 15  16   .rdata  ascii   requestOsChunks
+140 0x0003a24a 0x14003c24a 14  15   .rdata  ascii   updatePrevSize
+141 0x0003a259 0x14003c259 9   10   .rdata  ascii   intSetPut
+142 0x0003a263 0x14003c263 4   5    .rdata  ascii   incl
+143 0x0003a268 0x14003c268 11  12   .rdata  ascii   splitChunk2
+144 0x0003a274 0x14003c274 13  14   .rdata  ascii   mappingInsert
+145 0x0003a282 0x14003c282 6   7    .rdata  ascii   setBit
+146 0x0003a289 0x14003c289 16  17   .rdata  ascii   addChunkToMatrix
+147 0x0003a29a 0x14003c29a 10  11   .rdata  ascii   splitChunk
+148 0x0003a2a5 0x14003c2a5 8   9    .rdata  ascii   clearBit
+149 0x0003a2ae 0x14003c2ae 22  23   .rdata  ascii   removeChunkFromMatrix2
+150 0x0003a2c5 0x14003c2c5 11  12   .rdata  ascii   getBigChunk
+151 0x0003a2d1 0x14003c2d1 13  14   .rdata  ascii   getSmallChunk
+152 0x0003a2df 0x14003c2df 7   8    .rdata  ascii   listAdd
+153 0x0003a2e7 0x14003c2e7 10  11   .rdata  ascii   listRemove
+154 0x0003a2f2 0x14003c2f2 12  13   .rdata  ascii   getHugeChunk
+155 0x0003a2ff 0x14003c2ff 9   10   .rdata  ascii   getBottom
+156 0x0003a309 0x14003c309 12  13   .rdata  ascii   allocAvlNode
+157 0x0003a316 0x14003c316 4   5    .rdata  ascii   skew
+158 0x0003a31b 0x14003c31b 5   6    .rdata  ascii   split
+159 0x0003a325 0x14003c325 8   9    .rdata  ascii   rawAlloc
+160 0x0003a32e 0x14003c32e 5   6    .rdata  ascii   alloc
+161 0x0003a334 0x14003c334 21  22   .rdata  ascii   removeChunkFromMatrix
+162 0x0003a34a 0x14003c34a 4   5    .rdata  ascii   excl
+163 0x0003a34f 0x14003c34f 12  13   .rdata  ascii   freeBigChunk
+164 0x0003a35c 0x14003c35c 14  15   .rdata  ascii   deallocAvlNode
+165 0x0003a36f 0x14003c36f 10  11   .rdata  ascii   decCurrMem
+166 0x0003a37a 0x14003c37a 14  15   .rdata  ascii   osDeallocPages
+167 0x0003a389 0x14003c389 20  21   .rdata  ascii   virtualFree failing!
+168 0x0003a39e 0x14003c39e 13  14   .rdata  ascii   freeHugeChunk
+169 0x0003a3ac 0x14003c3ac 10  11   .rdata  ascii   rawDealloc
+170 0x0003a3b7 0x14003c3b7 7   8    .rdata  ascii   dealloc
+171 0x0003a3c0 0x14003c3c0 33  34   .rdata  ascii   D:\Nim\lib\system\cellseqs_v1.nim
+172 0x0003a3e2 0x14003c3e2 9   10   .rdata  ascii   cellToUsr
+173 0x0003a3ec 0x14003c3ec 14  15   .rdata  ascii   prepareDealloc
+174 0x0003a3fb 0x14003c3fb 9   10   .rdata  ascii   usrToCell
+175 0x0003a405 0x14003c405 6   7    .rdata  ascii   addZCT
+176 0x0003a40c 0x14003c40c 9   10   .rdata  ascii   rtlAddZCT
+177 0x0003a416 0x14003c416 6   7    .rdata  ascii   decRef
+178 0x0003a41d 0x14003c41d 7   8    .rdata  ascii   nextTry
+179 0x0003a428 0x14003c428 30  31   .rdata  ascii   D:\Nim\lib\system\cellsets.nim
+180 0x0003a447 0x14003c447 6   7    .rdata  ascii   alloc0
+181 0x0003a44e 0x14003c44e 16  17   .rdata  ascii   cellSetRawInsert
+182 0x0003a45f 0x14003c45f 14  15   .rdata  ascii   cellSetEnlarge
+183 0x0003a470 0x14003c470 33  34   .rdata  ascii   D:\Nim\lib\system\iterators_1.nim
+184 0x0003a492 0x14003c492 10  11   .rdata  ascii   cellSetPut
+185 0x0003a49d 0x14003c49d 10  11   .rdata  ascii   cellSetGet
+186 0x0003a4a8 0x14003c4a8 14  15   .rdata  ascii   containsOrIncl
+187 0x0003a4b7 0x14003c4b7 15  16   .rdata  ascii   getDiscriminant
+188 0x0003a4c7 0x14003c4c7 21  22   .rdata  ascii   D:\Nim\lib\system.nim
+189 0x0003a4dd 0x14003c4dd 12  13   .rdata  ascii   selectBranch
+190 0x0003a4ed 0x14003c4ed 6   7    .rdata  ascii   newObj
+191 0x0003a4f4 0x14003c4f4 9   10   .rdata  ascii   newObjRC1
+192 0x0003a4fe 0x14003c4fe 17  18   .rdata  ascii   nimGCunrefNoCycle
+193 0x0003a510 0x14003c510 6   7    .rdata  ascii   newSeq
+194 0x0003a517 0x14003c517 9   10   .rdata  ascii   isOnStack
+195 0x0003a521 0x14003c521 13  14   .rdata  ascii   unsureAsgnRef
+196 0x0003a52f 0x14003c52f 14  15   .rdata  ascii   extGetCellType
+197 0x0003a53e 0x14003c53e 7   8    .rdata  ascii   asgnRef
+198 0x0003a546 0x14003c546 8   9    .rdata  ascii   sysFatal
+199 0x0003a54f 0x14003c54f 27  28   .rdata  ascii   D:\Nim\lib\system\fatal.nim
+200 0x0003a56b 0x14003c56b 11  12   .rdata  ascii   RangeDefect
+201 0x0003a577 0x14003c577 11  12   .rdata  ascii   IndexDefect
+202 0x0003a583 0x14003c583 6   7    .rdata  ascii   addInt
+203 0x0003a590 0x14003c590 38  39   .rdata  ascii   D:\Nim\lib\std\private\digitsutils.nim
+204 0x0003a5b7 0x14003c5b7 13  14   .rdata  ascii   ReraiseDefect
+205 0x0003a5c6 0x14003c5c6 14  15   .rdata  ascii   OverflowDefect
+206 0x0003a5d5 0x14003c5d5 5   6    .rdata  ascii   align
+207 0x0003a5db 0x14003c5db 6   7    .rdata  ascii   deinit
+208 0x0003a5e2 0x14003c5e2 4   5    .rdata  ascii   init
+209 0x0003a5e7 0x14003c5e7 12  13   .rdata  ascii   cellsetReset
+210 0x0003a5f4 0x14003c5f4 6   7    .rdata  ascii   isCell
+211 0x0003a5fb 0x14003c5fb 12  13   .rdata  ascii   newObjNoInit
+212 0x0003a608 0x14003c608 6   7    .rdata  ascii   initGC
+213 0x0003a60f 0x14003c60f 28  29   .rdata  ascii   nimRegisterThreadLocalMarker
+214 0x0003a630 0x14003c630 75  76   .rdata  ascii   [GC] cannot register thread local variable; too many thread local variables
+215 0x0003a67c 0x14003c67c 15  16   .rdata  ascii   AssertionDefect
+216 0x0003a68c 0x14003c68c 9   10   .rdata  ascii   GC_enable
+217 0x0003a696 0x14003c696 14  15   .rdata  ascii   internRefcount
+218 0x0003a6a5 0x14003c6a5 16  17   .rdata  ascii   could not load: 
+219 0x0003a6b8 0x14003c6b8 48  49   .rdata  ascii   \n(bad format; library may be wrong architecture)
+220 0x0003a6eb 0x14003c6eb 18  19   .rdata  ascii   could not import: 
+221 0x0003a6fe 0x14003c6fe 6   7    .rdata  ascii   substr
+222 0x0003a705 0x14003c705 22  23   .rdata  ascii   ObjectConversionDefect
+223 0x0003a71c 0x14003c71c 6   7    .rdata  ascii   parent
+224 0x0003a723 0x14003c723 4   5    .rdata  ascii   name
+225 0x0003a72c 0x14003c72c 8   9    .rdata  ascii   procname
+226 0x0003a735 0x14003c735 4   5    .rdata  ascii   line
+227 0x0003a73a 0x14003c73a 8   9    .rdata  ascii   filename
+228 0x0003a743 0x14003c743 5   6    .rdata  ascii   trace
+229 0x0003a74c 0x14003c74c 9   10   .rdata  ascii   errorCode
+230 0x0003a76f 0x14003c76f 38  39   .rdata  ascii   @Parsed integer outside of valid range
+231 0x0003a7a0 0x14003c7a0 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+232 0x0003a7c8 0x14003c7c8 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+233 0x0003a7ea 0x14003c7ea 9   10   .rdata  ascii   rtlAddZCT
+234 0x0003a7f4 0x14003c7f4 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+235 0x0003a80d 0x14003c80d 6   7    .rdata  ascii   decRef
+236 0x0003a814 0x14003c814 9   10   .rdata  ascii   usrToCell
+237 0x0003a81e 0x14003c81e 17  18   .rdata  ascii   nimGCunrefNoCycle
+238 0x0003a833 0x14003c833 6   7    .rdata  ascii   incRef
+239 0x0003a83a 0x14003c83a 7   8    .rdata  ascii   asgnRef
+240 0x0003a842 0x14003c842 22  23   .rdata  ascii   integerOutOfRangeError
+241 0x0003a860 0x14003c860 30  31   .rdata  ascii   D:\Nim\lib\pure\parseutils.nim
+242 0x0003a87f 0x14003c87f 10  11   .rdata  ascii   ValueError
+243 0x0003a88a 0x14003c88a 11  12   .rdata  ascii   rawParseInt
+244 0x0003a896 0x14003c896 15  16   .rdata  ascii   parseBiggestInt
+245 0x0003a8a6 0x14003c8a6 8   9    .rdata  ascii   parseInt
+246 0x0003a8c0 0x14003c8c0 4   5    .rdata  ascii   fill
+247 0x0003a8c5 0x14003c8c5 29  30   .rdata  ascii   D:\Nim\lib\pure\algorithm.nim
+248 0x0003a90f 0x14003c90f 22  23   .rdata  ascii   @invalid format string
+249 0x0003a94f 0x14003c94f 18  19   .rdata  ascii   @invalid integer: 
+250 0x0003a968 0x14003c968 12  13   .rdata  ascii   toLowerAscii
+251 0x0003a978 0x14003c978 34  35   .rdata  ascii   D:\Nim\lib\std\private\strimpl.nim
+252 0x0003a99b 0x14003c99b 13  14   .rdata  ascii   cmpIgnoreCase
+253 0x0003a9a9 0x14003c9a9 28  29   .rdata  ascii   D:\Nim\lib\pure\strutils.nim
+254 0x0003a9d0 0x14003c9d0 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+255 0x0003a9f3 0x14003c9f3 4   5    .rdata  ascii   find
+256 0x0003a9f8 0x14003c9f8 13  14   .rdata  ascii   initSkipTable
+257 0x0003aa08 0x14003ca08 33  34   .rdata  ascii   D:\Nim\lib\system\iterators_1.nim
+258 0x0003aa2a 0x14003ca2a 8   9    .rdata  ascii   contains
+259 0x0003aa38 0x14003ca38 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+260 0x0003aa5a 0x14003ca5a 9   10   .rdata  ascii   rtlAddZCT
+261 0x0003aa64 0x14003ca64 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+262 0x0003aa7d 0x14003ca7d 6   7    .rdata  ascii   decRef
+263 0x0003aa84 0x14003ca84 9   10   .rdata  ascii   usrToCell
+264 0x0003aa8e 0x14003ca8e 17  18   .rdata  ascii   nimGCunrefNoCycle
+265 0x0003aaa3 0x14003caa3 6   7    .rdata  ascii   incRef
+266 0x0003aaaa 0x14003caaa 7   8    .rdata  ascii   asgnRef
+267 0x0003aab2 0x14003cab2 19  20   .rdata  ascii   invalidFormatString
+268 0x0003aac6 0x14003cac6 10  11   .rdata  ascii   ValueError
+269 0x0003aad1 0x14003cad1 14  15   .rdata  ascii   cmpIgnoreStyle
+270 0x0003aae0 0x14003cae0 14  15   .rdata  ascii   findNormalized
+271 0x0003aaef 0x14003caef 4   5    .rdata  ascii   addf
+272 0x0003abd6 0x14003cbd6 9   10   .rdata  ascii   normalize
+273 0x0003abe0 0x14003cbe0 7   8    .rdata  ascii   replace
+274 0x0003abe8 0x14003cbe8 8   9    .rdata  ascii   parseInt
+275 0x0003ac18 0x14003cc18 7   8    .rdata  ascii   hasNext
+276 0x0003ac20 0x14003cc20 28  29   .rdata  ascii   D:\Nim\lib\pure\pathnorm.nim
+277 0x0003ac3d 0x14003cc3d 4   5    .rdata  ascii   next
+278 0x0003ac42 0x14003cc42 7   8    .rdata  ascii   isSlash
+279 0x0003ac4a 0x14003cc4a 8   9    .rdata  ascii   isDotDot
+280 0x0003ac53 0x14003cc53 5   6    .rdata  ascii   isDot
+281 0x0003ac59 0x14003cc59 16  17   .rdata  ascii   addNormalizePath
+282 0x0003ac71 0x14003cc71 7   8    .rdata  ascii   loadLib
+283 0x0003ac79 0x14003cc79 26  27   .rdata  ascii   D:\Nim\lib\pure\dynlib.nim
+284 0x0003ac94 0x14003cc94 7   8    .rdata  ascii   symAddr
+285 0x0003acaf 0x14003ccaf 11  12   .rdata  ascii   @Ws2_32.dll
+286 0x0003accf 0x14003cccf 9   10   .rdata  ascii   @kernel32
+287 0x0003acef 0x14003ccef 9   10   .rdata  ascii   @kernel32
+288 0x0003ad0f 0x14003cd0f 12  13   .rdata  ascii   @shell32.dll
+289 0x0003ad2f 0x14003cd2f 12  13   .rdata  ascii   @shell32.dll
+290 0x0003ad40 0x14003cd40 7   8    .rdata  ascii   winlean
+291 0x0003ad48 0x14003cd48 30  31   .rdata  ascii   D:\Nim\lib\windows\winlean.nim
+292 0x0003ad67 0x14003cd67 9   10   .rdata  ascii   inet_ntop
+293 0x0003ad71 0x14003cd71 15  16   .rdata  ascii   GetCommandLineW
+294 0x0003ad81 0x14003cd81 16  17   .rdata  ascii   GetFullPathNameW
+295 0x0003ad92 0x14003cd92 14  15   .rdata  ascii   FormatMessageW
+296 0x0003ada1 0x14003cda1 9   10   .rdata  ascii   LocalFree
+297 0x0003adab 0x14003cdab 12  13   .rdata  ascii   GetLastError
+298 0x0003adb8 0x14003cdb8 14  15   .rdata  ascii   FindFirstFileW
+299 0x0003adc7 0x14003cdc7 13  14   .rdata  ascii   FindNextFileW
+300 0x0003add5 0x14003cdd5 9   10   .rdata  ascii   FindClose
+301 0x0003addf 0x14003cddf 18  19   .rdata  ascii   GetFileAttributesW
+302 0x0003adf2 0x14003cdf2 20  21   .rdata  ascii   GetCurrentDirectoryW
+303 0x0003ae07 0x14003ce07 10  11   .rdata  ascii   CreatePipe
+304 0x0003ae12 0x14003ce12 20  21   .rdata  ascii   SetHandleInformation
+305 0x0003ae27 0x14003ce27 16  17   .rdata  ascii   CreateNamedPipeW
+306 0x0003ae38 0x14003ce38 11  12   .rdata  ascii   CreateFileW
+307 0x0003ae44 0x14003ce44 17  18   .rdata  ascii   GetCurrentProcess
+308 0x0003ae56 0x14003ce56 15  16   .rdata  ascii   DuplicateHandle
+309 0x0003ae66 0x14003ce66 11  12   .rdata  ascii   CloseHandle
+310 0x0003ae72 0x14003ce72 12  13   .rdata  ascii   GetStdHandle
+311 0x0003ae7f 0x14003ce7f 14  15   .rdata  ascii   CreateProcessW
+312 0x0003ae8e 0x14003ce8e 19  20   .rdata  ascii   WaitForSingleObject
+313 0x0003aea2 0x14003cea2 16  17   .rdata  ascii   TerminateProcess
+314 0x0003aeb3 0x14003ceb3 18  19   .rdata  ascii   GetExitCodeProcess
+315 0x0003aec6 0x14003cec6 11  12   .rdata  ascii   DeleteFileW
+316 0x0003aed2 0x14003ced2 18  19   .rdata  ascii   SetFileAttributesW
+317 0x0003aee5 0x14003cee5 13  14   .rdata  ascii   ShellExecuteW
+318 0x0003aef3 0x14003cef3 16  17   .rdata  ascii   CreateDirectoryW
+319 0x0003af20 0x14003cf20 6   7    .rdata  ascii   Field0
+320 0x0003af27 0x14003cf27 6   7    .rdata  ascii   Field1
+321 0x0003af2e 0x14003cf2e 21  22   .rdata  ascii   zonedTimeFromTimeImpl
+322 0x0003af44 0x14003cf44 24  25   .rdata  ascii   zonedTimeFromAdjTimeImpl
+323 0x0003af5d 0x14003cf5d 4   5    .rdata  ascii   name
+324 0x0003af8f 0x14003cf8f 44  45   .rdata  ascii   @index out of bounds, the container is empty
+325 0x0003afcf 0x14003cfcf 7   8    .rdata  ascii   @index 
+326 0x0003afef 0x14003cfef 14  15   .rdata  ascii   @ not in 0 .. 
+327 0x0003b00f 0x14003d00f 18  19   .rdata  ascii   @Additional info: 
+328 0x0003b04f 0x14003d04f 17  18   .rdata  ascii   @unknown OS error
+329 0x0003b09f 0x14003d09f 7   8    .rdata  ascii   @file '
+330 0x0003b0cf 0x14003d0cf 17  18   .rdata  ascii   @' does not exist
+331 0x0003b16f 0x14003d16f 112 113  .rdata  ascii   @D:\Nim\lib\system\iterators.nim(261, 11) `len(a) == L` the length of the string changed while iterating over it
+332 0x0003b1ef 0x14003d1ef 5   6    .rdata  ascii   @PATH
+333 0x0003b20f 0x14003d20f 4   5    .rdata  ascii   @exe
+334 0x0003b22f 0x14003d22f 4   5    .rdata  ascii   @cmd
+335 0x0003b24f 0x14003d24f 4   5    .rdata  ascii   @bat
+336 0x0003b28f 0x14003d28f 37  38   .rdata  ascii   @The specified root is not absolute: 
+337 0x0003b2cf 0x14003d2cf 19  20   .rdata  ascii   @Failed to create '
+338 0x0003b310 0x14003d310 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+339 0x0003b338 0x14003d338 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+340 0x0003b35a 0x14003d35a 9   10   .rdata  ascii   rtlAddZCT
+341 0x0003b364 0x14003d364 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+342 0x0003b37d 0x14003d37d 6   7    .rdata  ascii   decRef
+343 0x0003b384 0x14003d384 9   10   .rdata  ascii   usrToCell
+344 0x0003b38e 0x14003d38e 17  18   .rdata  ascii   nimGCunrefNoCycle
+345 0x0003b3a0 0x14003d3a0 12  13   .rdata  ascii   parseCmdLine
+346 0x0003b3ad 0x14003d3ad 22  23   .rdata  ascii   D:\Nim\lib\pure\os.nim
+347 0x0003b3c8 0x14003d3c8 33  34   .rdata  ascii   D:\Nim\lib\system\iterators_1.nim
+348 0x0003b3ed 0x14003d3ed 6   7    .rdata  ascii   incRef
+349 0x0003b3f4 0x14003d3f4 7   8    .rdata  ascii   asgnRef
+350 0x0003b3fc 0x14003d3fc 10  11   .rdata  ascii   paramCount
+351 0x0003b407 0x14003d407 8   9    .rdata  ascii   paramStr
+352 0x0003b410 0x14003d410 11  12   .rdata  ascii   IndexDefect
+353 0x0003b420 0x14003d420 33  34   .rdata  ascii   D:\Nim\lib\system\indexerrors.nim
+354 0x0003b442 0x14003d442 17  18   .rdata  ascii   commandLineParams
+355 0x0003b454 0x14003d454 10  11   .rdata  ascii   osErrorMsg
+356 0x0003b460 0x14003d460 34  35   .rdata  ascii   D:\Nim\lib\pure\includes\oserr.nim
+357 0x0003b486 0x14003d486 21  22   .rdata  ascii   D:\Nim\lib\system.nim
+358 0x0003b49c 0x14003d49c 10  11   .rdata  ascii   newOSError
+359 0x0003b4a7 0x14003d4a7 7   8    .rdata  ascii   OSError
+360 0x0003b4af 0x14003d4af 12  13   .rdata  ascii   raiseOSError
+361 0x0003b4bc 0x14003d4bc 13  14   .rdata  ascii   findFirstFile
+362 0x0003b4ca 0x14003d4ca 12  13   .rdata  ascii   searchExtPos
+363 0x0003b4d7 0x14003d4d7 12  13   .rdata  ascii   skipFindData
+364 0x0003b4e4 0x14003d4e4 16  17   .rdata  ascii   normalizePathEnd
+365 0x0003b4f5 0x14003d4f5 12  13   .rdata  ascii   joinPathImpl
+366 0x0003b502 0x14003d502 8   9    .rdata  ascii   joinPath
+367 0x0003b50d 0x14003d50d 9   10   .rdata  ascii   splitFile
+368 0x0003b517 0x14003d517 9   10   .rdata  ascii   splitPath
+369 0x0003b521 0x14003d521 15  16   .rdata  ascii   extractFilename
+370 0x0003b531 0x14003d531 10  11   .rdata  ascii   fileExists
+371 0x0003b53c 0x14003d53c 9   10   .rdata  ascii   dirExists
+372 0x0003b546 0x14003d546 14  15   .rdata  ascii   expandFilename
+373 0x0003b556 0x14003d556 13  14   .rdata  ascii   getCurrentDir
+374 0x0003b567 0x14003d567 6   7    .rdata  ascii   getEnv
+375 0x0003b570 0x14003d570 34  35   .rdata  ascii   D:\Nim\lib\pure\includes\osenv.nim
+376 0x0003b593 0x14003d593 17  18   .rdata  ascii   quoteShellWindows
+377 0x0003b5a8 0x14003d5a8 31  32   .rdata  ascii   D:\Nim\lib\system\iterators.nim
+378 0x0003b5c8 0x14003d5c8 10  11   .rdata  ascii   quoteShell
+379 0x0003b5d3 0x14003d5d3 13  14   .rdata  ascii   tryRemoveFile
+380 0x0003b5e1 0x14003d5e1 10  11   .rdata  ascii   removeFile
+381 0x0003b5ec 0x14003d5ec 7   8    .rdata  ascii   normExt
+382 0x0003b5f4 0x14003d5f4 13  14   .rdata  ascii   changeFileExt
+383 0x0003b602 0x14003d602 10  11   .rdata  ascii   addFileExt
+384 0x0003b60d 0x14003d60d 7   8    .rdata  ascii   findExe
+385 0x0003b615 0x14003d615 28  29   .rdata  ascii   D:\Nim\lib\pure\strutils.nim
+386 0x0003b632 0x14003d632 19  20   .rdata  ascii   exitStatusLikeShell
+387 0x0003b646 0x14003d646 12  13   .rdata  ascii   execShellCmd
+388 0x0003b653 0x14003d653 10  11   .rdata  ascii   isAbsolute
+389 0x0003b65e 0x14003d65e 12  13   .rdata  ascii   absolutePath
+390 0x0003b66b 0x14003d66b 10  11   .rdata  ascii   ValueError
+391 0x0003b676 0x14003d676 12  13   .rdata  ascii   rawCreateDir
+392 0x0003b683 0x14003d683 17  18   .rdata  ascii   existsOrCreateDir
+393 0x0003b695 0x14003d695 7   8    .rdata  ascii   IOError
+394 0x0003b69d 0x14003d69d 9   10   .rdata  ascii   createDir
+395 0x0003b6c0 0x14003d6c0 5   6    .rdata  ascii   close
+396 0x0003b6c6 0x14003d6c6 27  28   .rdata  ascii   D:\Nim\lib\pure\streams.nim
+397 0x0003b6e2 0x14003d6e2 9   10   .rdata  ascii   closeImpl
+398 0x0003b6ec 0x14003d6ec 9   10   .rdata  ascii   atEndImpl
+399 0x0003b6f6 0x14003d6f6 15  16   .rdata  ascii   setPositionImpl
+400 0x0003b706 0x14003d706 15  16   .rdata  ascii   getPositionImpl
+401 0x0003b716 0x14003d716 15  16   .rdata  ascii   readDataStrImpl
+402 0x0003b726 0x14003d726 12  13   .rdata  ascii   readLineImpl
+403 0x0003b733 0x14003d733 12  13   .rdata  ascii   readDataImpl
+404 0x0003b740 0x14003d740 12  13   .rdata  ascii   peekDataImpl
+405 0x0003b74d 0x14003d74d 13  14   .rdata  ascii   writeDataImpl
+406 0x0003b75b 0x14003d75b 9   10   .rdata  ascii   flushImpl
+407 0x0003b78f 0x14003d78f 16  17   .rdata  ascii   @\\.\pipe\stdout
+408 0x0003b7af 0x14003d7af 15  16   .rdata  ascii   @\\.\pipe\stdin
+409 0x0003b7cf 0x14003d7cf 53  54   .rdata  ascii   @D:\Nim\lib\pure\osproc.nim(708, 14) `args.len == 0` 
+410 0x0003b84f 0x14003d84f 126 127  .rdata  ascii   @D:\Nim\lib\pure\osproc.nim(774, 14) `p.outStream == nil or\n    FileHandleStream(p.outStream).handle != INVALID_HANDLE_VALUE` 
+411 0x0003b8ef 0x14003d8ef 126 127  .rdata  ascii   @D:\Nim\lib\pure\osproc.nim(775, 14) `p.errStream == nil or\n    FileHandleStream(p.errStream).handle != INVALID_HANDLE_VALUE` 
+412 0x0003b98f 0x14003d98f 45  46   .rdata  ascii   @Requested command not found: '$1'. OS error:
+413 0x0003b9c0 0x14003d9c0 17  18   .rdata  ascii   createPipeHandles
+414 0x0003b9d2 0x14003d9d2 26  27   .rdata  ascii   D:\Nim\lib\pure\osproc.nim
+415 0x0003b9ed 0x14003d9ed 5   6    .rdata  ascii   myDup
+416 0x0003b9f3 0x14003d9f3 16  17   .rdata  ascii   closeHandleCheck
+417 0x0003ba04 0x14003da04 20  21   .rdata  ascii   createAllPipeHandles
+418 0x0003ba1a 0x14003da1a 16  17   .rdata  ascii   buildCommandLine
+419 0x0003ba30 0x14003da30 33  34   .rdata  ascii   D:\Nim\lib\system\iterators_1.nim
+420 0x0003ba52 0x14003da52 8   9    .rdata  ascii   buildEnv
+421 0x0003ba5b 0x14003da5b 27  28   .rdata  ascii   D:\Nim\lib\pure\strtabs.nim
+422 0x0003ba77 0x14003da77 9   10   .rdata  ascii   fileClose
+423 0x0003ba84 0x14003da84 21  22   .rdata  ascii   D:\Nim\lib\system.nim
+424 0x0003ba9a 0x14003da9a 27  28   .rdata  ascii   closeThreadAndProcessHandle
+425 0x0003bab6 0x14003dab6 5   6    .rdata  ascii   close
+426 0x0003babc 0x14003dabc 12  13   .rdata  ascii   startProcess
+427 0x0003bac9 0x14003dac9 7   8    .rdata  ascii   running
+428 0x0003bad1 0x14003dad1 9   10   .rdata  ascii   terminate
+429 0x0003badb 0x14003dadb 11  12   .rdata  ascii   waitForExit
+430 0x0003bae7 0x14003dae7 14  15   .rdata  ascii   fProcessHandle
+431 0x0003baf6 0x14003daf6 13  14   .rdata  ascii   fThreadHandle
+432 0x0003bb04 0x14003db04 8   9    .rdata  ascii   inHandle
+433 0x0003bb0d 0x14003db0d 9   10   .rdata  ascii   outHandle
+434 0x0003bb17 0x14003db17 9   10   .rdata  ascii   errHandle
+435 0x0003bb24 0x14003db24 8   9    .rdata  ascii   inStream
+436 0x0003bb2d 0x14003db2d 9   10   .rdata  ascii   outStream
+437 0x0003bb37 0x14003db37 9   10   .rdata  ascii   errStream
+438 0x0003bb41 0x14003db41 10  11   .rdata  ascii   exitStatus
+439 0x0003bb4c 0x14003db4c 8   9    .rdata  ascii   exitFlag
+440 0x0003bb55 0x14003db55 7   8    .rdata  ascii   options
+441 0x0003bb5d 0x14003db5d 6   7    .rdata  ascii   handle
+442 0x0003bb64 0x14003db64 8   9    .rdata  ascii   atTheEnd
+443 0x0003bb6d 0x14003db6d 9   10   .rdata  ascii   poEchoCmd
+444 0x0003bb77 0x14003db77 9   10   .rdata  ascii   poUsePath
+445 0x0003bb81 0x14003db81 13  14   .rdata  ascii   poEvalCommand
+446 0x0003bb8f 0x14003db8f 16  17   .rdata  ascii   poStdErrToStdOut
+447 0x0003bba0 0x14003dba0 15  16   .rdata  ascii   poParentStreams
+448 0x0003bbb0 0x14003dbb0 13  14   .rdata  ascii   poInteractive
+449 0x0003bbbe 0x14003dbbe 8   9    .rdata  ascii   poDaemon
+450 0x0003bc2f 0x14003dc2f 80  81   .rdata  ascii   @D:\Nim\lib\pure\browsers.nim(72, 12) `url.len > 0` URL must not be empty string
+451 0x0003bc8f 0x14003dc8f 5   6    .rdata  ascii   @open
+452 0x0003bcaf 0x14003dcaf 4   5    .rdata  ascii   @://
+453 0x0003bccf 0x14003dccf 8   9    .rdata  ascii   @file://
+454 0x0003bcd8 0x14003dcd8 7   8    .rdata  ascii   prepare
+455 0x0003bce0 0x14003dce0 28  29   .rdata  ascii   D:\Nim\lib\pure\browsers.nim
+456 0x0003bcfd 0x14003dcfd 22  23   .rdata  ascii   D:\Nim\lib\pure\os.nim
+457 0x0003bd14 0x14003dd14 22  23   .rdata  ascii   openDefaultBrowserImpl
+458 0x0003bd2b 0x14003dd2b 18  19   .rdata  ascii   openDefaultBrowser
+459 0x0003bd4f 0x14003dd4f 13  14   .rdata  ascii   @Advapi32.dll
+460 0x0003bd6f 0x14003dd6f 13  14   .rdata  ascii   @Advapi32.dll
+461 0x0003bd8f 0x14003dd8f 68  69   .rdata  ascii   @regOpenKeyEx(handle, hh, 0, KEY_READ or KEY_WOW64_64KEY, newHandle)
+462 0x0003bdef 0x14003ddef 63  64   .rdata  ascii   @regGetValue(newHandle, nil, kk, flags, nil, nil, addr bufSize)
+463 0x0003be4f 0x14003de4f 71  72   .rdata  ascii   @regGetValue(newHandle, nil, kk, flags, nil, addr res[0], addr bufSize)
+464 0x0003beaf 0x14003deaf 23  24   .rdata  ascii   @regCloseKey(newHandle)
+465 0x0003beef 0x14003deef 67  68   .rdata  ascii   @regGetValue(handle, hh, kk, flags, nil, addr res[0], addr bufSize)
+466 0x0003bf4f 0x14003df4f 64  65   .rdata  ascii   @regSetValue(handle, hh, kk, REG_SZ, vv, (vv.len.int32 + 1) * 2)
+467 0x0003bf90 0x14003df90 15  16   .rdata  ascii   getUnicodeValue
+468 0x0003bfa0 0x14003dfa0 31  32   .rdata  ascii   D:\Nim\lib\windows\registry.nim
+469 0x0003bfc0 0x14003dfc0 15  16   .rdata  ascii   setUnicodeValue
+470 0x0003bfd0 0x14003dfd0 12  13   .rdata  ascii   RegGetValueW
+471 0x0003bfdd 0x14003dfdd 13  14   .rdata  ascii   RegOpenKeyExW
+472 0x0003bfeb 0x14003dfeb 11  12   .rdata  ascii   RegCloseKey
+473 0x0003bff7 0x14003dff7 15  16   .rdata  ascii   RegSetKeyValueW
+474 0x0003c04f 0x14003e04f 4   5    .rdata  ascii   @bin
+475 0x0003c06f 0x14003e06f 12  13   .rdata  ascii   @USERPROFILE
+476 0x0003c08f 0x14003e08f 8   9    .rdata  ascii   @.nimble
+477 0x0003c0af 0x14003e0af 12  13   .rdata  ascii   @Environment
+478 0x0003c0cf 0x14003e0cf 5   6    .rdata  ascii   @Path
+479 0x0003c10f 0x14003e10f 61  62   .rdata  ascii   @System\CurrentControlSet\Control\Session Manager\Environment
+480 0x0003c15f 0x14003e15f 6   7    .rdata  ascii   @mingw
+481 0x0003c17f 0x14003e17f 8   9    .rdata  ascii   @gcc.exe
+482 0x0003c1af 0x14003e1af 13  14   .rdata  ascii   @nim_compat.c
+483 0x0003c1cf 0x14003e1cf 120 121  .rdata  ascii   @typedef int\n        Nim_and_C_compiler_disagree_on_target_architecture[\n          $# == sizeof(void*) ? 1 : -1];\n      
+484 0x0003c2cf 0x14003e2cf 47  48   .rdata  ascii   @bin\nim.exe is already in your PATH [Skipping]
+485 0x0003c34f 0x14003e34f 25  26   .rdata  ascii   @y (non-interactive mode)
+486 0x0003c3af 0x14003e3af 4   5    .rdata  ascii   @yes
+487 0x0003c40f 0x14003e40f 23  24   .rdata  ascii   @Please type 'y' or 'n'
+488 0x0003c44f 0x14003e44f 89  90   .rdata  ascii   @nim.exe is not in your PATH environment variable.\nShould it be added permanently? (y/n) 
+489 0x0003c4cf 0x14003e4cf 36  37   .rdata  ascii   @ is already in your PATH [Skipping]
+490 0x0003c50f 0x14003e50f 82  83   .rdata  ascii   @ is not in your PATH environment variable.\nShould it be added permanently? (y/n) 
+491 0x0003c5af 0x14003e5af 11  12   .rdata  ascii   @dist/mingw
+492 0x0003c5cf 0x14003e5cf 9   10   .rdata  ascii   @../mingw
+493 0x0003c5ef 0x14003e5ef 9   10   .rdata  ascii   @C:\mingw
+494 0x0003c60f 0x14003e60f 18  19   .rdata  ascii   @programfiles(x86)
+495 0x0003c64f 0x14003e64f 13  14   .rdata  ascii   @programfiles
+496 0x0003c68f 0x14003e68f 6   7    .rdata  ascii   @posix
+497 0x0003c6af 0x14003e6af 55  56   .rdata  ascii   @The following *incompatible* MingW installations exist
+498 0x0003c70f 0x14003e70f 109 110  .rdata  ascii   @D:\Nim\lib\system\iterators.nim(243, 11) `len(a) == L` the length of the seq changed while iterating over it
+499 0x0003c78f 0x14003e78f 68  69   .rdata  ascii   @*incompatible* means Nim and GCC disagree on the size of a pointer.
+500 0x0003c7ef 0x14003e7ef 71  72   .rdata  ascii   @No compatible MingW candidates found in the standard locations [Error]
+501 0x0003c84f 0x14003e84f 57  58   .rdata  ascii   @Do you want to download MingW from Nim's website? (y/n) 
+502 0x0003c89f 0x14003e89f 5   6    .rdata  ascii   @dist
+503 0x0003c8bf 0x14003e8bf 5   6    .rdata  ascii   @curl
+504 0x0003c8ef 0x14003e8ef 11  12   .rdata  ascii   @ --output 
+505 0x0003c90f 0x14003e90f 11  12   .rdata  ascii   @mingw64.7z
+506 0x0003c92f 0x14003e92f 42  43   .rdata  ascii   @ https://nim-lang.org/download/mingw64.7z
+507 0x0003c96f 0x14003e96f 16  17   .rdata  ascii   @bin/nimgrab.exe
+508 0x0003c98f 0x14003e98f 57  58   .rdata  ascii   @bin\nimgrab.exe https://nim-lang.org/download/mingw64.7z
+509 0x0003c9df 0x14003e9df 6   7    .rdata  ascii   @ dist
+510 0x0003ca0f 0x14003ea0f 18  19   .rdata  ascii   @download failed! 
+511 0x0003ca4f 0x14003ea4f 41  42   .rdata  ascii   @https://nim-lang.org/download/mingw64.7z
+512 0x0003ca8f 0x14003ea8f 16  17   .rdata  ascii   @Could not find 
+513 0x0003caaf 0x14003eaaf 12  13   .rdata  ascii   @bin\7zG.exe
+514 0x0003cacf 0x14003eacf 5   6    .rdata  ascii   @dist
+515 0x0003cb2f 0x14003eb2f 29  30   .rdata  ascii   @Unpacking failed: mingw64.7z
+516 0x0003cb6f 0x14003eb6f 29  30   .rdata  ascii   @After download, move it to: 
+517 0x0003cbaf 0x14003ebaf 28  29   .rdata  ascii   @Download successful? (y/n) 
+518 0x0003cbef 0x14003ebef 17  18   .rdata  ascii   @could not find: 
+519 0x0003cc2f 0x14003ec2f 18  19   .rdata  ascii   @Try again? (y/n) 
+520 0x0003cc6f 0x14003ec6f 77  78   .rdata  ascii   @Still no compatible MingW candidates found in the standard locations [Error]
+521 0x0003ccef 0x14003ecef 30  31   .rdata  ascii   @Patching Nim's config to use:
+522 0x0003cd2f 0x14003ed2f 15  16   .rdata  ascii   @config/nim.cfg
+523 0x0003cd4f 0x14003ed4f 35  36   .rdata  ascii   @#gcc.path = r"$nim\dist\mingw\bin"
+524 0x0003cd8f 0x14003ed8f 17  18   .rdata  ascii   @gcc.path = r"$1"
+525 0x0003cdcf 0x14003edcf 41  42   .rdata  ascii   @Could not patch 'config/nim.cfg' [Error]
+526 0x0003ce2f 0x14003ee2f 35  36   .rdata  ascii   @Reason: patch substring not found:
+527 0x0003ce6f 0x14003ee6f 35  36   .rdata  ascii   @#gcc.path = r"$nim\dist\mingw\bin"
+528 0x0003ceaf 0x14003eeaf 42  43   .rdata  ascii   @Could not access 'config/nim.cfg' [Error]
+529 0x0003cf0f 0x14003ef0f 51  52   .rdata  ascii   @Found a MingW directory that is not in your PATH.\n
+530 0x0003cf6f 0x14003ef6f 53  54   .rdata  ascii   @\nShould it be added to your PATH permanently? (y/n) 
+531 0x0003cfcf 0x14003efcf 54  55   .rdata  ascii   @Do you want to patch Nim's config to use this? (y/n) 
+532 0x0003d02f 0x14003f02f 29  30   .rdata  ascii   @MingW installation found at 
+533 0x0003d06f 0x14003f06f 95  96   .rdata  ascii   @\nDo you want to patch Nim's config to use this?\n(Not required since it's in your PATH!) (y/n) 
+534 0x0003d0ef 0x14003f0ef 37  38   .rdata  ascii   @Multiple MingW installations found: 
+535 0x0003d16f 0x14003f16f 62  63   .rdata  ascii   @Do you want to patch Nim's config to use one of these? (y/n) 
+536 0x0003d20f 0x14003f20f 24  25   .rdata  ascii   @ (non-interactive mode)
+537 0x0003d24f 0x14003f24f 20  21   .rdata  ascii   @number out of range
+538 0x0003d28f 0x14003f28f 33  34   .rdata  ascii   @Please type in a number between 
+539 0x0003d2cf 0x14003f2cf 6   7    .rdata  ascii   @ and 
+540 0x0003d2ef 0x14003f2ef 39  40   .rdata  ascii   @Which one do you want to use for Nim? 
+541 0x0003d32f 0x14003f32f 8   9    .rdata  ascii   @APPDATA
+542 0x0003d34f 0x14003f34f 49  50   .rdata  ascii   @\Microsoft\Windows\Start Menu\Programs\Nim-1.7.1
+543 0x0003d3af 0x14003f3af 55  56   .rdata  ascii   @Would like to add Nim-1.7.1 to your start menu? (y/n) 
+544 0x0003d40f 0x14003f40f 19  20   .rdata  ascii   @bin\makelink.exe "
+545 0x0003d43f 0x14003f43f 7   8    .rdata  ascii   @" "" "
+546 0x0003d46f 0x14003f46f 13  14   .rdata  ascii   @.lnk" "" 1 "
+547 0x0003d4cf 0x14003f4cf 4   5    .rdata  ascii   @" 0
+548 0x0003d4ef 0x14003f4ef 6   7    .rdata  ascii   @tools
+549 0x0003d50f 0x14003f50f 10  11   .rdata  ascii   @start.bat
+550 0x0003d52f 0x14003f52f 4   5    .rdata  ascii   @Nim
+551 0x0003d54f 0x14003f54f 14  15   .rdata  ascii   @icons\nim.ico
+552 0x0003d56f 0x14003f56f 18  19   .rdata  ascii   @doc/overview.html
+553 0x0003d59f 0x14003f59f 4   5    .rdata  ascii   @doc
+554 0x0003d5bf 0x14003f5bf 5   6    .rdata  ascii   @html
+555 0x0003d5ef 0x14003f5ef 14  15   .rdata  ascii   @overview.html
+556 0x0003d60f 0x14003f60f 9   10   .rdata  ascii   @Overview
+557 0x0003d62f 0x14003f62f 18  19   .rdata  ascii   @dist\aporia-0.4.0
+558 0x0003d66f 0x14003f66f 33  34   .rdata  ascii   @dist\aporia-0.4.0\bin\aporia.exe
+559 0x0003d6af 0x14003f6af 7   8    .rdata  ascii   @Aporia
+560 0x0003d6b8 0x14003f6b8 9   10   .rdata  ascii   eqStrings
+561 0x0003d6c8 0x14003f6c8 31  32   .rdata  ascii   D:\Nim\lib\system\strmantle.nim
+562 0x0003d6e8 0x14003f6e8 4   5    .rdata  ascii   find
+563 0x0003d6ed 0x14003f6ed 21  22   .rdata  ascii   D:\Nim\lib\system.nim
+564 0x0003d708 0x14003f708 31  32   .rdata  ascii   D:\Nim\lib\system\iterators.nim
+565 0x0003d728 0x14003f728 8   9    .rdata  ascii   contains
+566 0x0003d731 0x14003f731 25  26   .rdata  ascii   nimBorrowCurrentException
+567 0x0003d750 0x14003f750 33  34   .rdata  ascii   D:\Nim\lib\system\arithmetics.nim
+568 0x0003d772 0x14003f772 6   7    .rdata  ascii   incRef
+569 0x0003d779 0x14003f779 24  25   .rdata  ascii   D:\Nim\lib\system\gc.nim
+570 0x0003d795 0x14003f795 9   10   .rdata  ascii   usrToCell
+571 0x0003d7a8 0x14003f7a8 33  34   .rdata  ascii   D:\Nim\lib\system\comparisons.nim
+572 0x0003d7ca 0x14003f7ca 9   10   .rdata  ascii   rtlAddZCT
+573 0x0003d7d4 0x14003f7d4 6   7    .rdata  ascii   decRef
+574 0x0003d7db 0x14003f7db 7   8    .rdata  ascii   asgnRef
+575 0x0003d7e3 0x14003f7e3 6   7    .rdata  ascii   expand
+576 0x0003d7ea 0x14003f7ea 23  24   .rdata  ascii   D:\Nim\tools\finish.nim
+577 0x0003d804 0x14003f804 22  23   .rdata  ascii   D:\Nim\lib\pure\os.nim
+578 0x0003d81b 0x14003f81b 18  19   .rdata  ascii   tryGetUnicodeValue
+579 0x0003d831 0x14003f831 19  20   .rdata  ascii   getCurrentException
+580 0x0003d845 0x14003f845 12  13   .rdata  ascii   checkGccArch
+581 0x0003d852 0x14003f852 17  18   .rdata  ascii   nimGCunrefNoCycle
+582 0x0003d864 0x14003f864 9   10   .rdata  ascii   writeLine
+583 0x0003d86e 0x14003f86e 25  26   .rdata  ascii   D:\Nim\lib\std\syncio.nim
+584 0x0003d888 0x14003f888 7   8    .rdata  ascii   askBool
+585 0x0003d890 0x14003f890 12  13   .rdata  ascii   addToPathEnv
+586 0x0003d89d 0x14003f89d 7   8    .rdata  ascii   tryDirs
+587 0x0003d8a5 0x14003f8a5 12  13   .rdata  ascii   skipFindData
+588 0x0003d8b2 0x14003f8b2 8   9    .rdata  ascii   probeDir
+589 0x0003d8bb 0x14003f8bb 21  22   .rdata  ascii   defaultMingwLocations
+590 0x0003d8d1 0x14003f8d1 5   6    .rdata  ascii   unzip
+591 0x0003d8d7 0x14003f8d7 13  14   .rdata  ascii   downloadMingw
+592 0x0003d8e5 0x14003f8e5 11  12   .rdata  ascii   patchConfig
+593 0x0003d8f1 0x14003f8f1 9   10   .rdata  ascii   askNumber
+594 0x0003d8fb 0x14003f8fb 10  11   .rdata  ascii   ValueError
+595 0x0003d906 0x14003f906 14  15   .rdata  ascii   createShortcut
+596 0x0003d915 0x14003f915 20  21   .rdata  ascii   createStartMenuEntry
+597 0x0003d92a 0x14003f92a 4   5    .rdata  ascii   main
+598 0x0003d92f 0x14003f92f 28  29   .rdata  ascii   D:\Nim\lib\pure\strutils.nim
+599 0x0003d950 0x14003f950 33  34   .rdata  ascii   D:\Nim\lib\system\iterators_1.nim
+600 0x0003d972 0x14003f972 6   7    .rdata  ascii   finish
+601 0x0003d9c0 0x14003f9c0 30  31   .rdata  ascii   Argument domain error (DOMAIN)
+602 0x0003d9df 0x14003f9df 27  28   .rdata  ascii   Argument singularity (SIGN)
+603 0x0003da00 0x14003fa00 31  32   .rdata  ascii   Overflow range error (OVERFLOW)
+604 0x0003da20 0x14003fa20 36  37   .rdata  ascii   Partial loss of significance (PLOSS)
+605 0x0003da48 0x14003fa48 34  35   .rdata  ascii   Total loss of significance (TLOSS)
+606 0x0003da70 0x14003fa70 53  54   .rdata  ascii   The result is too small to be represented (UNDERFLOW)
+607 0x0003daa6 0x14003faa6 13  14   .rdata  ascii   Unknown error
+608 0x0003dab8 0x14003fab8 42  43   .rdata  ascii   _matherr(): %s in %s(%g, %g)  (retval=%g)\n
+609 0x0003db00 0x14003fb00 27  28   .rdata  ascii   Mingw-w64 runtime failure:\n
+610 0x0003db20 0x14003fb20 31  32   .rdata  ascii   Address %p has no image-section
+611 0x0003db40 0x14003fb40 48  49   .rdata  ascii     VirtualQuery failed for %d bytes at address %p
+612 0x0003db78 0x14003fb78 38  39   .rdata  ascii     VirtualProtect failed with code 0x%x
+613 0x0003dba0 0x14003fba0 49  50   .rdata  ascii     Unknown pseudo relocation protocol version %d.\n
+614 0x0003dbd8 0x14003fbd8 41  42   .rdata  ascii     Unknown pseudo relocation bit size %d.\n
+615 0x0003dc08 0x14003fc08 82  83   .rdata  ascii   %d bit pseudo relocation at %p out of range, targeting %p, yielding the value %p.\n
+616 0x0003dc90 0x14003fc90 6   7    .rdata  ascii   (null)
+617 0x0003dc98 0x14003fc98 6   14   .rdata  utf16le (null)
+618 0x0003de20 0x14003fe20 8   9    .rdata  ascii   Infinity
+619 0x0003de4f 0x14003fe4f 5   6    .rdata  ascii   ?aCoc
+620 0x0003de6f 0x14003fe6f 5   6    .rdata  ascii   <2ZGU
+621 0x0003ded5 0x14003fed5 4   5    .rdata  ascii   O8M2
+622 0x0003df1e 0x14003ff1e 4   5    .rdata  ascii   [%Co
+623 0x0003df9c 0x14003ff9c 4   5    .rdata  ascii   vH7B
+624 0x0003dfcc 0x14003ffcc 4   5    .rdata  ascii   W4vC
+625 0x0003dfd2 0x14003ffd2 5   7    .rdata  utf8    NgmkC
+626 0x0003e550 0x140040550 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+627 0x0003e5a0 0x1400405a0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+628 0x0003e5f0 0x1400405f0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+629 0x0003e640 0x140040640 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+630 0x0003e690 0x140040690 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+631 0x0003e6e0 0x1400406e0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+632 0x0003e730 0x140040730 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+633 0x0003e780 0x140040780 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+634 0x0003e7d0 0x1400407d0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+635 0x0003e820 0x140040820 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+636 0x0003e870 0x140040870 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+637 0x0003e8c0 0x1400408c0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+638 0x0003e910 0x140040910 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+639 0x0003e960 0x140040960 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+640 0x0003e9b0 0x1400409b0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+641 0x0003ea00 0x140040a00 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+642 0x0003ea50 0x140040a50 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+643 0x0003eaa0 0x140040aa0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+644 0x0003eaf0 0x140040af0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+645 0x0003eb40 0x140040b40 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+646 0x0003eb90 0x140040b90 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+647 0x0003ebe0 0x140040be0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+648 0x0003ec30 0x140040c30 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+649 0x0003ec80 0x140040c80 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+650 0x0003ecd0 0x140040cd0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+651 0x0003ed20 0x140040d20 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+652 0x0003ed70 0x140040d70 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+653 0x0003edc0 0x140040dc0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+654 0x0003ee10 0x140040e10 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+655 0x0003ee60 0x140040e60 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+656 0x0003eeb0 0x140040eb0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+657 0x0003ef00 0x140040f00 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+658 0x0003ef50 0x140040f50 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+659 0x0003efa0 0x140040fa0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+660 0x0003eff0 0x140040ff0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+661 0x0003f040 0x140041040 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+662 0x0003f090 0x140041090 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+663 0x0003f0e0 0x1400410e0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+664 0x0003f130 0x140041130 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+665 0x0003f180 0x140041180 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+666 0x0003f1d0 0x1400411d0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+667 0x0003f220 0x140041220 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+668 0x0003f270 0x140041270 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+669 0x0003f2c0 0x1400412c0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+670 0x0003f310 0x140041310 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+671 0x0003f360 0x140041360 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+672 0x0003f3b0 0x1400413b0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+673 0x0003f400 0x140041400 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+674 0x0003f450 0x140041450 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+675 0x0003f4a0 0x1400414a0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+676 0x0003f4f0 0x1400414f0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+677 0x0003f540 0x140041540 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+678 0x0003f590 0x140041590 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+679 0x0003f5e0 0x1400415e0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+680 0x0003f630 0x140041630 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+681 0x0003f680 0x140041680 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+682 0x0003f6d0 0x1400416d0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+683 0x0003f720 0x140041720 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+684 0x0003f770 0x140041770 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+685 0x0003f7c0 0x1400417c0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+686 0x0003f810 0x140041810 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+687 0x0003f860 0x140041860 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+688 0x0003f8b0 0x1400418b0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+689 0x0003f900 0x140041900 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+690 0x0003f950 0x140041950 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+691 0x0003f9a0 0x1400419a0 65  66   .rdata  ascii   GCC: (MinGW-W64 x86_64-posix-seh, built by Brecht Sanders) 11.3.0
+arch     x86
+baddr    0x140000000
+binsz    380641
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x0005d4fe
+compiled Sun Jun 12 23:18:31 2022
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0005d4fe
+laddr    0x0
+lang     c
+linenum  true
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  true
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x11
+  TimeDateStamp : 0x62a67447
+  PointerToSymbolTable : 0x46600
+  NumberOfSymbols : 0xcb3
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x26
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x26
+  SizeOfCode : 0x38800
+  SizeOfInitializedData : 0x44800
+  SizeOfUninitializedData : 0x13800
+  AddressOfEntryPoint : 0x1125
+  BaseOfCode : 0x1000
+  ImageBase : 0x140000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x2
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x65000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x5d4fe
+  Subsystem : 0x3
+  DllCharacteristics : 0x160
+  SizeOfStackReserve : 0x200000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x5b000
+  Size : 0xae8
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x43000
+  Size : 0x1f8c
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x5e000
+  Size : 0x160
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x3f980
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x5b2cc
+  Size : 0x290
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0005b55c 0x00043ecc SET_64 KERNEL32.dll_DeleteCriticalSection
+0x0005b574 0x00043ed4 SET_64 KERNEL32.dll_EnterCriticalSection
+0x0005b58c 0x00043edc SET_64 KERNEL32.dll_FreeLibrary
+0x0005b59a 0x00043ee4 SET_64 KERNEL32.dll_GetLastError
+0x0005b5aa 0x00043eec SET_64 KERNEL32.dll_GetModuleHandleA
+0x0005b5be 0x00043ef4 SET_64 KERNEL32.dll_GetProcAddress
+0x0005b5d0 0x00043efc SET_64 KERNEL32.dll_GetStartupInfoA
+0x0005b5e2 0x00043f04 SET_64 KERNEL32.dll_InitializeCriticalSection
+0x0005b5fe 0x00043f0c SET_64 KERNEL32.dll_IsDBCSLeadByteEx
+0x0005b612 0x00043f14 SET_64 KERNEL32.dll_LeaveCriticalSection
+0x0005b62a 0x00043f1c SET_64 KERNEL32.dll_LoadLibraryA
+0x0005b63a 0x00043f24 SET_64 KERNEL32.dll_MultiByteToWideChar
+0x0005b650 0x00043f2c SET_64 KERNEL32.dll_SetUnhandledExceptionFilter
+0x0005b66e 0x00043f34 SET_64 KERNEL32.dll_Sleep
+0x0005b676 0x00043f3c SET_64 KERNEL32.dll_TlsGetValue
+0x0005b684 0x00043f44 SET_64 KERNEL32.dll_VirtualAlloc
+0x0005b694 0x00043f4c SET_64 KERNEL32.dll_VirtualFree
+0x0005b6a2 0x00043f54 SET_64 KERNEL32.dll_VirtualProtect
+0x0005b6b4 0x00043f5c SET_64 KERNEL32.dll_VirtualQuery
+0x0005b6c4 0x00043f64 SET_64 KERNEL32.dll_WideCharToMultiByte
+0x0005b6da 0x00043f74 SET_64 msvcrt.dll___C_specific_handler
+0x0005b6f2 0x00043f7c SET_64 msvcrt.dll____lc_codepage_func
+0x0005b708 0x00043f84 SET_64 msvcrt.dll____mb_cur_max_func
+0x0005b71e 0x00043f8c SET_64 msvcrt.dll___getmainargs
+0x0005b72e 0x00043f94 SET_64 msvcrt.dll___initenv
+0x0005b73a 0x00043f9c SET_64 msvcrt.dll___iob_func
+0x0005b748 0x00043fa4 SET_64 msvcrt.dll___set_app_type
+0x0005b75a 0x00043fac SET_64 msvcrt.dll___setusermatherr
+0x0005b76e 0x00043fb4 SET_64 msvcrt.dll__acmdln
+0x0005b778 0x00043fbc SET_64 msvcrt.dll__amsg_exit
+0x0005b786 0x00043fc4 SET_64 msvcrt.dll__cexit
+0x0005b790 0x00043fcc SET_64 msvcrt.dll__commode
+0x0005b79c 0x00043fd4 SET_64 msvcrt.dll__errno
+0x0005b7a6 0x00043fdc SET_64 msvcrt.dll__filelengthi64
+0x0005b7b8 0x00043fe4 SET_64 msvcrt.dll__fileno
+0x0005b7c2 0x00043fec SET_64 msvcrt.dll__fmode
+0x0005b7cc 0x00043ff4 SET_64 msvcrt.dll__get_osfhandle
+0x0005b7de 0x00043ffc SET_64 msvcrt.dll__initterm
+0x0005b7ea 0x00044004 SET_64 msvcrt.dll__isatty
+0x0005b7f4 0x0004400c SET_64 msvcrt.dll__lock
+0x0005b7fc 0x00044014 SET_64 msvcrt.dll__onexit
+0x0005b806 0x0004401c SET_64 msvcrt.dll__setjmp
+0x0005b810 0x00044024 SET_64 msvcrt.dll__setmode
+0x0005b81c 0x0004402c SET_64 msvcrt.dll__unlock
+0x0005b826 0x00044034 SET_64 msvcrt.dll__wfopen
+0x0005b830 0x0004403c SET_64 msvcrt.dll_abort
+0x0005b838 0x00044044 SET_64 msvcrt.dll_calloc
+0x0005b842 0x0004404c SET_64 msvcrt.dll_clearerr
+0x0005b84e 0x00044054 SET_64 msvcrt.dll_exit
+0x0005b856 0x0004405c SET_64 msvcrt.dll_fclose
+0x0005b860 0x00044064 SET_64 msvcrt.dll_ferror
+0x0005b86a 0x0004406c SET_64 msvcrt.dll_fflush
+0x0005b874 0x00044074 SET_64 msvcrt.dll_fgetc
+0x0005b87c 0x0004407c SET_64 msvcrt.dll_fgetpos
+0x0005b886 0x00044084 SET_64 msvcrt.dll_fgets
+0x0005b88e 0x0004408c SET_64 msvcrt.dll_fprintf
+0x0005b898 0x00044094 SET_64 msvcrt.dll_fputc
+0x0005b8a0 0x0004409c SET_64 msvcrt.dll_fread
+0x0005b8a8 0x000440a4 SET_64 msvcrt.dll_free
+0x0005b8b0 0x000440ac SET_64 msvcrt.dll_fsetpos
+0x0005b8ba 0x000440b4 SET_64 msvcrt.dll_fwrite
+0x0005b8c4 0x000440bc SET_64 msvcrt.dll_getenv
+0x0005b8ce 0x000440c4 SET_64 msvcrt.dll_localeconv
+0x0005b8dc 0x000440cc SET_64 msvcrt.dll_longjmp
+0x0005b8e6 0x000440d4 SET_64 msvcrt.dll_malloc
+0x0005b8f0 0x000440dc SET_64 msvcrt.dll_memchr
+0x0005b8fa 0x000440e4 SET_64 msvcrt.dll_memcmp
+0x0005b904 0x000440ec SET_64 msvcrt.dll_memcpy
+0x0005b90e 0x000440f4 SET_64 msvcrt.dll_memset
+0x0005b918 0x000440fc SET_64 msvcrt.dll_setvbuf
+0x0005b922 0x00044104 SET_64 msvcrt.dll_signal
+0x0005b92c 0x0004410c SET_64 msvcrt.dll_strcmp
+0x0005b936 0x00044114 SET_64 msvcrt.dll_strerror
+0x0005b942 0x0004411c SET_64 msvcrt.dll_strlen
+0x0005b94c 0x00044124 SET_64 msvcrt.dll_strncmp
+0x0005b956 0x0004412c SET_64 msvcrt.dll_strstr
+0x0005b960 0x00044134 SET_64 msvcrt.dll_system
+0x0005b96a 0x0004413c SET_64 msvcrt.dll_ungetc
+0x0005b974 0x00044144 SET_64 msvcrt.dll_vfprintf
+0x0005b980 0x0004414c SET_64 msvcrt.dll_wcslen
+
+
+80 relocations
+   1      DW_TAG_compile_unit       [no children] (0x0)
+    DW_AT_stmt_list                DW_FORM_sec_offset            
+    DW_AT_low_pc                   DW_FORM_addr                  
+    DW_AT_high_pc                  DW_FORM_udata                 
+    DW_AT_name                     DW_FORM_strp                  
+    DW_AT_comp_dir                 DW_FORM_strp                  
+    DW_AT_producer                 DW_FORM_strp                  
+    DW_AT_language                 DW_FORM_data2                 
+   1      DW_TAG_enumerator         [no children] (0x14)
+    DW_AT_name                     DW_FORM_string                
+    DW_AT_const_value              DW_FORM_data1                 
+   2      DW_TAG_base_type          [no children] (0x1d)
+    DW_AT_byte_size                DW_FORM_data1                 
+    DW_AT_encoding                 DW_FORM_data1                 
+    DW_AT_name                     DW_FORM_string                
+   3      DW_TAG_enumeration_type   [has children] (0x28)
+    DW_AT_name                     DW_FORM_string                
+    DW_AT_encoding                 DW_FORM_implicit_const        
+    DW_AT_byte_size                DW_FORM_implicit_const        
+    DW_AT_type                     DW_FORM_ref4                  
+    DW_AT_decl_file                DW_FORM_implicit_const        
+    DW_AT_decl_line                DW_FORM_data2                 
+    DW_AT_decl_column              DW_FORM_implicit_const        
+    DW_AT_siblings                 DW_FORM_ref4                  
+   4      DW_TAG_array_type         [has children] (0x41)
+    DW_AT_type                     DW_FORM_ref4                  
+    DW_AT_siblings                 DW_FORM_ref4                  
+   5      DW_TAG_variable           [no children] (0x4a)
+    DW_AT_name                     DW_FORM_string                
+    DW_AT_decl_file                DW_FORM_implicit_const        
+    DW_AT_decl_line                DW_FORM_data1                 
+    DW_AT_decl_column              DW_FORM_implicit_const        
+    DW_AT_type                     DW_FORM_ref4                  
+    DW_AT_external                 DW_FORM_flag_present          
+    DW_AT_declaration              DW_FORM_flag_present          
+   6      DW_TAG_variable           [no children] (0x5f)
+    DW_AT_specification            DW_FORM_ref4                  
+    DW_AT_decl_file                DW_FORM_implicit_const        
+    DW_AT_decl_line                DW_FORM_data2                 
+    DW_AT_decl_column              DW_FORM_implicit_const        
+    DW_AT_type                     DW_FORM_ref4                  
+    DW_AT_location                 DW_FORM_exprloc               
+   7      DW_TAG_compile_unit       [has children] (0x72)
+    DW_AT_producer                 DW_FORM_string                
+    DW_AT_language                 DW_FORM_data1                 
+    DW_AT_name                     DW_FORM_line_ptr              
+    DW_AT_comp_dir                 DW_FORM_line_ptr              
+    DW_AT_stmt_list                DW_FORM_sec_offset            
+   8      DW_TAG_pointer_type       [no children] (0x81)
+    DW_AT_byte_size                DW_FORM_data1                 
+    DW_AT_type                     DW_FORM_ref4                  
+   9      DW_TAG_subroutine_type    [no children] (0x8a)
+    DW_AT_prototyped               DW_FORM_flag_present          
+   10     DW_TAG_typedef            [no children] (0x91)
+    DW_AT_name                     DW_FORM_string                
+    DW_AT_decl_file                DW_FORM_data1                 
+    DW_AT_decl_line                DW_FORM_data1                 
+    DW_AT_decl_column              DW_FORM_data1                 
+    DW_AT_type                     DW_FORM_ref4                  
+   11     DW_TAG_subrange_type      [no children] (0xa0)
+   12     DW_TAG_subrange_type      [no children] (0xa5)
+    DW_AT_type                     DW_FORM_ref4                  
+    DW_AT_upper_bound              DW_FORM_data1                 
+
+  Compilation Unit @ offset 0x0:
+   Length:        0x24
+   Version:       5
+   Abbrev Offset: 0x0
+   Pointer Size:  8
+   Unit Type:     DW_UT_compile
+
+<0xc>: Abbrev Number: 1    (DW_TAG_compile_unit)
+     DW_AT_stmt_list           : <0x0>
+     DW_AT_low_pc              : 0x140033070
+     DW_AT_high_pc             : 50
+     DW_AT_name                : (indirect string, offset: 0x0): ../../../libgcc/config/i386/cygwin.S
+     DW_AT_comp_dir            : (indirect string, offset: 0x25): R:\winlibs64_stage\23788.gcc\gcc-11.3.0\build_mingw\x86_64-w64-mingw32\libgcc
+     DW_AT_producer            : (indirect string, offset: 0x73): GNU AS 2.38
+     DW_AT_language            : 0   (unknown language)
+
+  Compilation Unit @ offset 0x28:
+   Length:        0xd8e
+   Version:       5
+   Abbrev Offset: 0x14
+   Pointer Size:  8
+   Unit Type:     DW_UT_compile
+
+<0x34>: Abbrev Number: 7    (DW_TAG_compile_unit)
+     DW_AT_producer            : GNU C17 11.3.0 -mtune=generic -march=x86-64 -g -g -g -O2 -O2 -O2 -fPIC -fbuilding-libgcc -fno-stack-protector
+     DW_AT_language            : 29   (C11)
+     DW_AT_name                : (indirect string, offset: 0xca): (null)
+     DW_AT_comp_dir            : (indirect string, offset: 0x7c): (null)
+     DW_AT_stmt_list           : <0x5c>
+<0xb0>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 1
+     DW_AT_encoding            : 6
+     DW_AT_name                : char
+<0xb8>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 8
+     DW_AT_encoding            : 7
+     DW_AT_name                : long long unsigned int
+<0xd2>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 8
+     DW_AT_encoding            : 5
+     DW_AT_name                : long long int
+<0xe3>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 2
+     DW_AT_encoding            : 7
+     DW_AT_name                : short unsigned int
+<0xf9>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 4
+     DW_AT_encoding            : 5
+     DW_AT_name                : int
+<0x100>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 4
+     DW_AT_encoding            : 5
+     DW_AT_name                : long int
+<0x10c>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 4
+     DW_AT_encoding            : 7
+     DW_AT_name                : unsigned int
+<0x11c>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 4
+     DW_AT_encoding            : 7
+     DW_AT_name                : long unsigned int
+<0x131>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 1
+     DW_AT_encoding            : 8
+     DW_AT_name                : unsigned char
+<0x142>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 16
+     DW_AT_encoding            : 4
+     DW_AT_name                : long double
+<0x151>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 8
+     DW_AT_encoding            : 4
+     DW_AT_name                : double
+<0x15b>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 4
+     DW_AT_encoding            : 4
+     DW_AT_name                : float
+<0x164>: Abbrev Number: 8    (DW_TAG_pointer_type)
+     DW_AT_byte_size           : 8
+     DW_AT_type                : <0x16a>
+<0x16a>: Abbrev Number: 9    (DW_TAG_subroutine_type)
+     DW_AT_prototyped          : 1
+<0x16b>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 2
+     DW_AT_encoding            : 5
+     DW_AT_name                : short int
+<0x178>: Abbrev Number: 3    (DW_TAG_enumeration_type)
+     DW_AT_name                : ix86_tune_indices
+     DW_AT_encoding            : 0x7
+     DW_AT_byte_size           : 0x4
+     DW_AT_type                : <0x10c>
+     DW_AT_decl_file           : 0x1
+     DW_AT_decl_line           : 503
+     DW_AT_decl_column         : 0x6
+     DW_AT_siblings            : <0xc28>
+<0x195>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SCHEDULE
+     DW_AT_const_value         : 0
+<0x1a9>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PARTIAL_REG_DEPENDENCY
+     DW_AT_const_value         : 1
+<0x1cb>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_PARTIAL_REG_DEPENDENCY
+     DW_AT_const_value         : 2
+<0x1f1>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_SPLIT_REGS
+     DW_AT_const_value         : 3
+<0x20b>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PARTIAL_FLAG_REG_STALL
+     DW_AT_const_value         : 4
+<0x22d>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_MOVX
+     DW_AT_const_value         : 5
+<0x23d>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_MEMORY_MISMATCH_STALL
+     DW_AT_const_value         : 6
+<0x25e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_FUSE_CMP_AND_BRANCH_32
+     DW_AT_const_value         : 7
+<0x280>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_FUSE_CMP_AND_BRANCH_64
+     DW_AT_const_value         : 8
+<0x2a2>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_FUSE_CMP_AND_BRANCH_SOFLAGS
+     DW_AT_const_value         : 9
+<0x2c9>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_FUSE_ALU_AND_BRANCH
+     DW_AT_const_value         : 10
+<0x2e8>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_ACCUMULATE_OUTGOING_ARGS
+     DW_AT_const_value         : 11
+<0x30c>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PROLOGUE_USING_MOVE
+     DW_AT_const_value         : 12
+<0x32b>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_EPILOGUE_USING_MOVE
+     DW_AT_const_value         : 13
+<0x34a>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_LEAVE
+     DW_AT_const_value         : 14
+<0x35f>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PUSH_MEMORY
+     DW_AT_const_value         : 15
+<0x376>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SINGLE_PUSH
+     DW_AT_const_value         : 16
+<0x38d>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_DOUBLE_PUSH
+     DW_AT_const_value         : 17
+<0x3a4>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SINGLE_POP
+     DW_AT_const_value         : 18
+<0x3ba>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_DOUBLE_POP
+     DW_AT_const_value         : 19
+<0x3d0>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PAD_SHORT_FUNCTION
+     DW_AT_const_value         : 20
+<0x3ee>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PAD_RETURNS
+     DW_AT_const_value         : 21
+<0x405>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_FOUR_JUMP_LIMIT
+     DW_AT_const_value         : 22
+<0x420>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SOFTWARE_PREFETCHING_BENEFICIAL
+     DW_AT_const_value         : 23
+<0x44b>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_LCP_STALL
+     DW_AT_const_value         : 24
+<0x460>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_READ_MODIFY
+     DW_AT_const_value         : 25
+<0x477>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_INCDEC
+     DW_AT_const_value         : 26
+<0x48d>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_INTEGER_DFMODE_MOVES
+     DW_AT_const_value         : 27
+<0x4ad>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_OPT_AGU
+     DW_AT_const_value         : 28
+<0x4c0>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_LEA_FOR_ADDR
+     DW_AT_const_value         : 29
+<0x4de>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SLOW_IMUL_IMM32_MEM
+     DW_AT_const_value         : 30
+<0x4fd>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SLOW_IMUL_IMM8
+     DW_AT_const_value         : 31
+<0x517>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_MEM_OPND_FOR_CMOVE
+     DW_AT_const_value         : 32
+<0x53b>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SINGLE_STRINGOP
+     DW_AT_const_value         : 33
+<0x556>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PREFER_KNOWN_REP_MOVSB_STOSB
+     DW_AT_const_value         : 34
+<0x57e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_MISALIGNED_MOVE_STRING_PRO_EPILOGUES
+     DW_AT_const_value         : 35
+<0x5ae>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_SAHF
+     DW_AT_const_value         : 36
+<0x5c2>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_CLTD
+     DW_AT_const_value         : 37
+<0x5d6>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_BT
+     DW_AT_const_value         : 38
+<0x5e8>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_FALSE_DEP_FOR_BMI
+     DW_AT_const_value         : 39
+<0x60b>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_ADJUST_UNROLL
+     DW_AT_const_value         : 40
+<0x624>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_ONE_IF_CONV_INSN
+     DW_AT_const_value         : 41
+<0x640>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_MFENCE
+     DW_AT_const_value         : 42
+<0x658>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_EXPAND_ABS
+     DW_AT_const_value         : 43
+<0x66e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_HIMODE_FIOP
+     DW_AT_const_value         : 44
+<0x689>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_SIMODE_FIOP
+     DW_AT_const_value         : 45
+<0x6a4>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_FFREEP
+     DW_AT_const_value         : 46
+<0x6ba>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_EXT_80387_CONSTANTS
+     DW_AT_const_value         : 47
+<0x6d9>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_GENERAL_REGS_SSE_SPILL
+     DW_AT_const_value         : 48
+<0x6fb>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_UNALIGNED_LOAD_OPTIMAL
+     DW_AT_const_value         : 49
+<0x721>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_UNALIGNED_STORE_OPTIMAL
+     DW_AT_const_value         : 50
+<0x748>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_PACKED_SINGLE_INSN_OPTIMAL
+     DW_AT_const_value         : 51
+<0x772>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_TYPELESS_STORES
+     DW_AT_const_value         : 52
+<0x791>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SSE_LOAD0_BY_PXOR
+     DW_AT_const_value         : 53
+<0x7ae>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_INTER_UNIT_MOVES_TO_VEC
+     DW_AT_const_value         : 54
+<0x7d1>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_INTER_UNIT_MOVES_FROM_VEC
+     DW_AT_const_value         : 55
+<0x7f6>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_INTER_UNIT_CONVERSIONS
+     DW_AT_const_value         : 56
+<0x818>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SPLIT_MEM_OPND_FOR_FP_CONVERTS
+     DW_AT_const_value         : 57
+<0x842>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_VECTOR_FP_CONVERTS
+     DW_AT_const_value         : 58
+<0x864>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_VECTOR_CONVERTS
+     DW_AT_const_value         : 59
+<0x883>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SLOW_PSHUFB
+     DW_AT_const_value         : 60
+<0x89a>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_4BYTE_PREFIXES
+     DW_AT_const_value         : 61
+<0x8ba>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_GATHER
+     DW_AT_const_value         : 62
+<0x8d0>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_128FMA_CHAINS
+     DW_AT_const_value         : 63
+<0x8ef>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_256FMA_CHAINS
+     DW_AT_const_value         : 64
+<0x90e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVX256_UNALIGNED_LOAD_OPTIMAL
+     DW_AT_const_value         : 65
+<0x937>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVX256_UNALIGNED_STORE_OPTIMAL
+     DW_AT_const_value         : 66
+<0x961>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVX256_SPLIT_REGS
+     DW_AT_const_value         : 67
+<0x97e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVX128_OPTIMAL
+     DW_AT_const_value         : 68
+<0x998>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVX256_OPTIMAL
+     DW_AT_const_value         : 69
+<0x9b2>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_DOUBLE_WITH_ADD
+     DW_AT_const_value         : 70
+<0x9cd>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_ALWAYS_FANCY_MATH_387
+     DW_AT_const_value         : 71
+<0x9ee>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_UNROLL_STRLEN
+     DW_AT_const_value         : 72
+<0xa07>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SHIFT1
+     DW_AT_const_value         : 73
+<0xa19>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_ZERO_EXTEND_WITH_AND
+     DW_AT_const_value         : 74
+<0xa39>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PROMOTE_HIMODE_IMUL
+     DW_AT_const_value         : 75
+<0xa58>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_FAST_PREFIX
+     DW_AT_const_value         : 76
+<0xa6f>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_READ_MODIFY_WRITE
+     DW_AT_const_value         : 77
+<0xa8c>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_MOVE_M1_VIA_OR
+     DW_AT_const_value         : 78
+<0xaa6>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_NOT_UNPAIRABLE
+     DW_AT_const_value         : 79
+<0xac0>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PARTIAL_REG_STALL
+     DW_AT_const_value         : 80
+<0xadd>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PROMOTE_QIMODE
+     DW_AT_const_value         : 81
+<0xaf7>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PROMOTE_HI_REGS
+     DW_AT_const_value         : 82
+<0xb12>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_HIMODE_MATH
+     DW_AT_const_value         : 83
+<0xb29>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_SPLIT_LONG_MOVES
+     DW_AT_const_value         : 84
+<0xb45>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_XCHGB
+     DW_AT_const_value         : 85
+<0xb5a>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_USE_MOV0
+     DW_AT_const_value         : 86
+<0xb6e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_NOT_VECTORMODE
+     DW_AT_const_value         : 87
+<0xb88>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_AVOID_VECTOR_DECODE
+     DW_AT_const_value         : 88
+<0xba7>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_BRANCH_PREDICTION_HINTS
+     DW_AT_const_value         : 89
+<0xbca>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_QIMODE_MATH
+     DW_AT_const_value         : 90
+<0xbe1>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_PROMOTE_QI_REGS
+     DW_AT_const_value         : 91
+<0xbfc>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_EMIT_VZEROUPPER
+     DW_AT_const_value         : 92
+<0xc17>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_TUNE_LAST
+     DW_AT_const_value         : 93
+<0xc27>: Abbrev Number: 0    (DW_TAG_null_entry)
+<0xc28>: Abbrev Number: 3    (DW_TAG_enumeration_type)
+     DW_AT_name                : ix86_arch_indices
+     DW_AT_encoding            : 0x7
+     DW_AT_byte_size           : 0x4
+     DW_AT_type                : <0x10c>
+     DW_AT_decl_file           : 0x1
+     DW_AT_decl_line           : 647
+     DW_AT_decl_column         : 0x6
+     DW_AT_siblings            : <0xcaf>
+<0xc45>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_ARCH_CMOV
+     DW_AT_const_value         : 0
+<0xc55>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_ARCH_CMPXCHG
+     DW_AT_const_value         : 1
+<0xc68>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_ARCH_CMPXCHG8B
+     DW_AT_const_value         : 2
+<0xc7d>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_ARCH_XADD
+     DW_AT_const_value         : 3
+<0xc8d>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_ARCH_BSWAP
+     DW_AT_const_value         : 4
+<0xc9e>: Abbrev Number: 1    (DW_TAG_enumerator)
+     DW_AT_name                : X86_ARCH_LAST
+     DW_AT_const_value         : 5
+<0xcae>: Abbrev Number: 0    (DW_TAG_null_entry)
+<0xcaf>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 1
+     DW_AT_encoding            : 6
+     DW_AT_name                : signed char
+<0xcbe>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 16
+     DW_AT_encoding            : 5
+     DW_AT_name                : __int128
+<0xcca>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 16
+     DW_AT_encoding            : 7
+     DW_AT_name                : __int128 unsigned
+<0xcdf>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 8
+     DW_AT_encoding            : 3
+     DW_AT_name                : complex float
+<0xcf0>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 16
+     DW_AT_encoding            : 3
+     DW_AT_name                : complex double
+<0xd02>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 32
+     DW_AT_encoding            : 3
+     DW_AT_name                : complex long double
+<0xd19>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 16
+     DW_AT_encoding            : 4
+     DW_AT_name                : _Float128
+<0xd26>: Abbrev Number: 2    (DW_TAG_base_type)
+     DW_AT_byte_size           : 32
+     DW_AT_encoding            : 3
+     DW_AT_name                : complex _Float128
+<0xd3b>: Abbrev Number: 10   (DW_TAG_typedef)
+     DW_AT_name                : func_ptr
+     DW_AT_decl_file           : 2
+     DW_AT_decl_line           : 42
+     DW_AT_decl_column         : 16
+     DW_AT_type                : <0x164>
+<0xd4c>: Abbrev Number: 4    (DW_TAG_array_type)
+     DW_AT_type                : <0xd3b>
+     DW_AT_siblings            : <0xd57>
+<0xd55>: Abbrev Number: 11   (DW_TAG_subrange_type)
+<0xd56>: Abbrev Number: 0    (DW_TAG_null_entry)
+<0xd57>: Abbrev Number: 5    (DW_TAG_variable)
+     DW_AT_name                : __CTOR_LIST__
+     DW_AT_decl_file           : 0x2
+     DW_AT_decl_line           : 47
+     DW_AT_decl_column         : 0x17
+     DW_AT_type                : <0xd4c>
+     DW_AT_external            : 1
+     DW_AT_declaration         : 1
+<0xd6b>: Abbrev Number: 5    (DW_TAG_variable)
+     DW_AT_name                : __DTOR_LIST__
+     DW_AT_decl_file           : 0x2
+     DW_AT_decl_line           : 48
+     DW_AT_decl_column         : 0x17
+     DW_AT_type                : <0xd4c>
+     DW_AT_external            : 1
+     DW_AT_declaration         : 1
+<0xd7f>: Abbrev Number: 4    (DW_TAG_array_type)
+     DW_AT_type                : <0xd3b>
+     DW_AT_siblings            : <0xd8f>
+<0xd88>: Abbrev Number: 12   (DW_TAG_subrange_type)
+     DW_AT_type                : <0xb8>
+     DW_AT_upper_bound         : 1
+<0xd8e>: Abbrev Number: 0    (DW_TAG_null_entry)
+<0xd8f>: Abbrev Number: 6    (DW_TAG_variable)
+     DW_AT_specification       : <0xd57>
+     DW_AT_decl_file           : 0x3
+     DW_AT_decl_line           : 2316
+     DW_AT_decl_column         : 0x10
+     DW_AT_type                : <0xd7f>
+     DW_AT_location            : 9 byte block: 0x03 0x60 0x9c 0x05 0x40 0x01 0x00 0x00 0x00
+<0xda4>: Abbrev Number: 6    (DW_TAG_variable)
+     DW_AT_specification       : <0xd6b>
+     DW_AT_decl_file           : 0x3
+     DW_AT_decl_line           : 2317
+     DW_AT_decl_column         : 0x10
+     DW_AT_type                : <0xd7f>
+     DW_AT_location            : 9 byte block: 0x03 0x50 0x9c 0x05 0x40 0x01 0x00 0x00 0x00
+<0xdb9>: Abbrev Number: 0    (DW_TAG_null_entry)
+
+  Compilation Unit @ offset 0xdba:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+
+  Compilation Unit @ offset 0xdc5:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+
+  Compilation Unit @ offset 0xdd0:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+
+  Compilation Unit @ offset 0xddb:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+
+  Compilation Unit @ offset 0xde6:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+
+  Compilation Unit @ offset 0xdf1:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+
+  Compilation Unit @ offset 0xdfc:
+   Length:        0x0
+   Version:       0
+   Abbrev Offset: 0x0
+   Pointer Size:  0
+
+parse_aranges
+length 0x2c
+Version 2
+Debug info offset 0
+address size 8
+segment size 0
+length 0x32 address 0x140033070
+length 0x0 address 0x0
+length 0x80000 address 0x2800020000001c
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+length 0x0 address 0x0
+Raw dump of debug contents of section .debug_line:
+
+ Header information:
+  Length:                             88
+  DWARF Version:                      5
+  Header Length:                      46
+  Minimum Instruction Length:         1
+  Maximum Operations per Instruction: 1
+  Initial value of 'is_stmt':         1
+  Line Base:                          -5
+  Line Range:                         14
+  Opcode Base:                        13
+
+ Opcodes:
+  Opcode 1 has 0 arg
+  Opcode 2 has 1 arg
+  Opcode 3 has 1 arg
+  Opcode 4 has 1 arg
+  Opcode 5 has 1 arg
+  Opcode 6 has 0 arg
+  Opcode 7 has 0 arg
+  Opcode 8 has 0 arg
+  Opcode 9 has 1 arg
+  Opcode 10 has 0 arg
+  Opcode 11 has 0 arg
+  Opcode 12 has 1 arg
+
+ Line Number Statements:
+  Extended opcode 2: set Address to 0x140033070
+  Advance line by 116, to 117
+  Copy
+  Special opcode 21: advance Address by 1 to 0x140033071 and Line by 2 to 119
+  Special opcode 21: advance Address by 1 to 0x140033072 and Line by 2 to 121
+  Special opcode 90: advance Address by 6 to 0x140033078 and Line by 1 to 122
+  Special opcode 76: advance Address by 5 to 0x14003307d and Line by 1 to 123
+  Special opcode 35: advance Address by 2 to 0x14003307f and Line by 2 to 125
+  Special opcode 104: advance Address by 7 to 0x140033086 and Line by 1 to 126
+  Special opcode 62: advance Address by 4 to 0x14003308a and Line by 1 to 127
+  Special opcode 90: advance Address by 6 to 0x140033090 and Line by 1 to 128
+  Special opcode 90: advance Address by 6 to 0x140033096 and Line by 1 to 129
+  Special opcode 35: advance Address by 2 to 0x140033098 and Line by 2 to 131
+  Special opcode 48: advance Address by 3 to 0x14003309b and Line by 1 to 132
+  Special opcode 63: advance Address by 4 to 0x14003309f and Line by 2 to 134
+  Special opcode 21: advance Address by 1 to 0x1400330a0 and Line by 2 to 136
+  Special opcode 21: advance Address by 1 to 0x1400330a1 and Line by 2 to 138
+  Advance PC by 1 to 0x1400330a2
+  Extended opcode 1: End of Sequence
+
+ Header information:
+  Length:                             68
+  DWARF Version:                      5
+  Header Length:                      60
+  Minimum Instruction Length:         1
+  Maximum Operations per Instruction: 1
+  Initial value of 'is_stmt':         1
+  Line Base:                          -5
+  Line Range:                         14
+  Opcode Base:                        13
+
+ Opcodes:
+  Opcode 1 has 0 arg
+  Opcode 2 has 1 arg
+  Opcode 3 has 1 arg
+  Opcode 4 has 1 arg
+  Opcode 5 has 1 arg
+  Opcode 6 has 0 arg
+  Opcode 7 has 0 arg
+  Opcode 8 has 0 arg
+  Opcode 9 has 1 arg
+  Opcode 10 has 0 arg
+  Opcode 11 has 0 arg
+  Opcode 12 has 1 arg
+
+ Line Number Statements:
+ Line table is present, but no lines present
+ Header information:
+  Length:                             0
+  DWARF Version:                      0
+  Header Length:                      0
+  Minimum Instruction Length:         0
+  Maximum Operations per Instruction: 1
+  Initial value of 'is_stmt':         0
+  Line Base:                          0
+  Line Range:                         0
+  Opcode Base:                        0
+
+ The Directory Table:
+
+ The File Name Table:
+  Entry Dir     Time      Size       Name
+
+ Line Number Statements:
+  Extended opcode 0: Unexpected ext opcode 0
+
+380641
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

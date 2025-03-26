@@ -1,0 +1,154 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000200   0x200 0x00401000  0xf000 -r-x .Themida
+1   0x00000400  0x7f06 0x00410000  0xc000 -rwx .Themida_1
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000200 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00416070 NONE FUNC kernel32.dll LoadLibraryA
+2   0x00416074 NONE FUNC kernel32.dll GetProcAddress
+3   0x00416078 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0041607c NONE FUNC kernel32.dll VirtualProtect
+5   0x00416080 NONE FUNC kernel32.dll VirtualFree
+6   0x00416084 NONE FUNC kernel32.dll GetModuleHandleA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00006470 0x00416070 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x00006474 0x00416074 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x00006478 0x00416078 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x0000647c 0x0041607c NONE FUNC 0    kernel32.dll imp.VirtualProtect
+5   0x00006480 0x00416080 NONE FUNC 0    kernel32.dll imp.VirtualFree
+6   0x00006484 0x00416084 NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    33542
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000126f8
+compiled Mon Sep 25 11:30:52 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x59c8e8ec
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0x0
+  SizeOfInitializedData : 0x0
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  BaseOfData : 0x10000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x1b3be
+  SizeOfHeaders : 0x200
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 8
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x1603b
+  Size : 0x28
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x10000
+  Size : 0x60
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0001608c 0x00006484 SET_32 kernel32.dll_GetModuleHandleA
+0x0001609e 0x00006470 SET_32 kernel32.dll_LoadLibraryA
+0x000160ac 0x00006474 SET_32 kernel32.dll_GetProcAddress
+0x000160bc 0x00006478 SET_32 kernel32.dll_VirtualAlloc
+0x000160ca 0x0000647c SET_32 kernel32.dll_VirtualProtect
+0x000160da 0x00006480 SET_32 kernel32.dll_VirtualFree
+
+
+6 relocations
+33542
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,235 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xc00 0x10001000  0x1000 -r-x .text
+1   0x00001000  0x400 0x10002000  0x1000 -r-- .rdata
+2   0x00001400  0x200 0x10003000  0x1000 -rw- .data
+3   0x00001600  0x200 0x10004000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10001a07 paddr=0x00000e07 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10002000 NONE FUNC KERNEL32.dll Sleep
+2   0x10002004 NONE FUNC KERNEL32.dll ReadFile
+3   0x10002008 NONE FUNC KERNEL32.dll VirtualProtect
+4   0x1000200c NONE FUNC KERNEL32.dll HeapAlloc
+5   0x10002010 NONE FUNC KERNEL32.dll GetProcessHeap
+6   0x10002014 NONE FUNC KERNEL32.dll GetFileSize
+7   0x10002018 NONE FUNC KERNEL32.dll GetLastError
+8   0x1000201c NONE FUNC KERNEL32.dll CreateFileW
+9   0x10002020 NONE FUNC KERNEL32.dll GetProcAddress
+10  0x10002024 NONE FUNC KERNEL32.dll LoadLibraryA
+11  0x10002028 NONE FUNC KERNEL32.dll OutputDebugStringA
+12  0x1000202c NONE FUNC KERNEL32.dll GetLocalTime
+13  0x10002030 NONE FUNC KERNEL32.dll ExitProcess
+14  0x10002034 NONE FUNC KERNEL32.dll GetModuleFileNameA
+1   0x1000203c NONE FUNC MSVCRT.dll   sprintf
+2   0x10002040 NONE FUNC MSVCRT.dll   strrchr
+3   0x10002044 NONE FUNC MSVCRT.dll   free
+4   0x10002048 NONE FUNC MSVCRT.dll   _initterm
+5   0x1000204c NONE FUNC MSVCRT.dll   malloc
+6   0x10002050 NONE FUNC MSVCRT.dll   _adjust_fdiv
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib            name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000a2a 0x1000162a GLOBAL FUNC 0    DLLshenhai.dll ServiceMain
+1   0x00001000 0x10002000 NONE   FUNC 0    KERNEL32.dll   imp.Sleep
+2   0x00001004 0x10002004 NONE   FUNC 0    KERNEL32.dll   imp.ReadFile
+3   0x00001008 0x10002008 NONE   FUNC 0    KERNEL32.dll   imp.VirtualProtect
+4   0x0000100c 0x1000200c NONE   FUNC 0    KERNEL32.dll   imp.HeapAlloc
+5   0x00001010 0x10002010 NONE   FUNC 0    KERNEL32.dll   imp.GetProcessHeap
+6   0x00001014 0x10002014 NONE   FUNC 0    KERNEL32.dll   imp.GetFileSize
+7   0x00001018 0x10002018 NONE   FUNC 0    KERNEL32.dll   imp.GetLastError
+8   0x0000101c 0x1000201c NONE   FUNC 0    KERNEL32.dll   imp.CreateFileW
+9   0x00001020 0x10002020 NONE   FUNC 0    KERNEL32.dll   imp.GetProcAddress
+10  0x00001024 0x10002024 NONE   FUNC 0    KERNEL32.dll   imp.LoadLibraryA
+11  0x00001028 0x10002028 NONE   FUNC 0    KERNEL32.dll   imp.OutputDebugStringA
+12  0x0000102c 0x1000202c NONE   FUNC 0    KERNEL32.dll   imp.GetLocalTime
+13  0x00001030 0x10002030 NONE   FUNC 0    KERNEL32.dll   imp.ExitProcess
+14  0x00001034 0x10002034 NONE   FUNC 0    KERNEL32.dll   imp.GetModuleFileNameA
+1   0x0000103c 0x1000203c NONE   FUNC 0    MSVCRT.dll     imp.sprintf
+2   0x00001040 0x10002040 NONE   FUNC 0    MSVCRT.dll     imp.strrchr
+3   0x00001044 0x10002044 NONE   FUNC 0    MSVCRT.dll     imp.free
+4   0x00001048 0x10002048 NONE   FUNC 0    MSVCRT.dll     imp._initterm
+5   0x0000104c 0x1000204c NONE   FUNC 0    MSVCRT.dll     imp.malloc
+6   0x00001050 0x10002050 NONE   FUNC 0    MSVCRT.dll     imp._adjust_fdiv
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000010ee 0x100020ee 5   6    .rdata  ascii Sleep
+1   0x000010f6 0x100020f6 8   9    .rdata  ascii ReadFile
+2   0x00001102 0x10002102 14  15   .rdata  ascii VirtualProtect
+3   0x00001114 0x10002114 9   10   .rdata  ascii HeapAlloc
+4   0x00001120 0x10002120 14  15   .rdata  ascii GetProcessHeap
+5   0x00001132 0x10002132 11  12   .rdata  ascii GetFileSize
+6   0x00001140 0x10002140 12  13   .rdata  ascii GetLastError
+7   0x00001150 0x10002150 11  12   .rdata  ascii CreateFileW
+8   0x0000115e 0x1000215e 14  15   .rdata  ascii GetProcAddress
+9   0x00001170 0x10002170 12  13   .rdata  ascii LoadLibraryA
+10  0x00001180 0x10002180 18  19   .rdata  ascii OutputDebugStringA
+11  0x00001196 0x10002196 12  13   .rdata  ascii GetLocalTime
+12  0x000011a6 0x100021a6 11  12   .rdata  ascii ExitProcess
+13  0x000011b4 0x100021b4 18  19   .rdata  ascii GetModuleFileNameA
+14  0x000011c8 0x100021c8 12  13   .rdata  ascii KERNEL32.dll
+15  0x000011d8 0x100021d8 7   8    .rdata  ascii sprintf
+16  0x000011e2 0x100021e2 7   8    .rdata  ascii strrchr
+17  0x000011ea 0x100021ea 10  11   .rdata  ascii MSVCRT.dll
+18  0x000011f8 0x100021f8 4   5    .rdata  ascii free
+19  0x00001200 0x10002200 9   10   .rdata  ascii _initterm
+20  0x0000120c 0x1000220c 6   7    .rdata  ascii malloc
+21  0x00001216 0x10002216 12  13   .rdata  ascii _adjust_fdiv
+22  0x00001234 0x10002234 4   5    .rdata  ascii 5?MW
+23  0x00001262 0x10002262 14  15   .rdata  ascii DLLshenhai.dll
+24  0x00001271 0x10002271 11  12   .rdata  ascii ServiceMain
+arch     x86
+baddr    0x10000000
+binsz    6320
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000070c8
+compiled Tue May 31 07:37:25 2016
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x574d3f35
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x210e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xc00
+  SizeOfInitializedData : 0x800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1a07
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x5000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 4 Name: Linker600 Version: 8168 Times: 1
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 2
+  Product: 93 Name: Implib710 Version: 4035 Times: 3
+  Product: 1 Name: Import0 Version: 0 Times: 22
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 10 Name: Utc12_C Version: 8047 Times: 4
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x2230
+  Size : 0x4d
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2058
+  Size : 0x3c
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x4000
+  Size : 0x84
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x2000
+  Size : 0x58
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+msvcrt.dll
+
+2 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000020ec 0x00001000 SET_32 KERNEL32.dll_Sleep
+0x000020f4 0x00001004 SET_32 KERNEL32.dll_ReadFile
+0x00002100 0x00001008 SET_32 KERNEL32.dll_VirtualProtect
+0x00002112 0x0000100c SET_32 KERNEL32.dll_HeapAlloc
+0x0000211e 0x00001010 SET_32 KERNEL32.dll_GetProcessHeap
+0x00002130 0x00001014 SET_32 KERNEL32.dll_GetFileSize
+0x0000213e 0x00001018 SET_32 KERNEL32.dll_GetLastError
+0x0000214e 0x0000101c SET_32 KERNEL32.dll_CreateFileW
+0x0000215c 0x00001020 SET_32 KERNEL32.dll_GetProcAddress
+0x0000216e 0x00001024 SET_32 KERNEL32.dll_LoadLibraryA
+0x0000217e 0x00001028 SET_32 KERNEL32.dll_OutputDebugStringA
+0x00002194 0x0000102c SET_32 KERNEL32.dll_GetLocalTime
+0x000021a4 0x00001030 SET_32 KERNEL32.dll_ExitProcess
+0x000021b2 0x00001034 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x000021d6 0x0000103c SET_32 MSVCRT.dll_sprintf
+0x000021e0 0x00001040 SET_32 MSVCRT.dll_strrchr
+0x000021f6 0x00001044 SET_32 MSVCRT.dll_free
+0x000021fe 0x00001048 SET_32 MSVCRT.dll__initterm
+0x0000220a 0x0000104c SET_32 MSVCRT.dll_malloc
+0x00002214 0x00001050 SET_32 MSVCRT.dll__adjust_fdiv
+
+
+20 relocations
+6320
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

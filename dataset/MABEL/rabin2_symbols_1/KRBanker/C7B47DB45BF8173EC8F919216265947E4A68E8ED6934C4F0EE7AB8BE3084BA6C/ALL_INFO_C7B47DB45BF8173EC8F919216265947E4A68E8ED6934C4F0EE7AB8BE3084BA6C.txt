@@ -1,0 +1,164 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000      0x0 0x00401000  0x6a000 -rw- _4198400
+1   0x00000200  0x3fb59 0x0046b000  0x40000 -rw- _4632576_1
+2   0x00000154  0x3fc05 0x00400154  0x3fc05 -rwx blob
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00400154 paddr=0x00000154 haddr=0x00000034 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004aab30 NONE FUNC KERNEL32.dll LoadLibraryA
+2   0x004aab34 NONE FUNC KERNEL32.dll GetProcAddress
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0003fd30 0x004aab30 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+2   0x0003fd34 0x004aab34 NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    261465
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0004d465
+compiled Fri Sep 11 01:35:02 1987
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x21475346
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x0
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x22000
+  SizeOfInitializedData : 0x2e000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x154
+  BaseOfCode : 0x1000
+  BaseOfData : 0xc
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xab000
+  SizeOfHeaders : 0x200
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xaaad8
+  Size : 0x84
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x6b000
+  Size : 0x19dc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000aab3a 0x0003fd30 SET_32 KERNEL32.dll_LoadLibraryA
+0x000aab48 0x0003fd34 SET_32 KERNEL32.dll_GetProcAddress
+
+
+2 relocations
+261465
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 2.0.0.0
+  ProductVersion: 2.0.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Google, inc
+  FileDescription: Android ADB API (WinUsb)
+  FileVersion: 2.0.0.0
+  LegalCopyright: Copyright (C) 2006 The Android Open Source Project
+  InternalName: AdbWinUsbApi.dll
+  OriginalFilename: AdbWinUsbApi.dll
+  ProductName: Android SDK
+  ProductVersion: 2.0.0.0
+  OLESelfRegister: 
+Section to Segment mapping:
+Segment Section
+---------------
+
+

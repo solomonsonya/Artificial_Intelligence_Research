@@ -1,0 +1,187 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0xe00 0x00401000  0x6000 -rwx .text
+1   0x00001200  0x3600 0x00407000  0x4000 -rwx .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401d59 paddr=0x00001159 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00409b70 NONE FUNC kernel32.dll LoadLibraryA
+2   0x00409b74 NONE FUNC kernel32.dll GetProcAddress
+3   0x00409b78 NONE FUNC kernel32.dll VirtualAlloc
+4   0x00409b7c NONE FUNC kernel32.dll VirtualFree
+1   0x00409b84 NONE FUNC mscoree.dll  CorBindToRuntimeEx
+1   0x00409b8c NONE FUNC USER32.dll   MessageBoxA
+22  0x00409b94 NONE FUNC OLEAUT32.dll SafeArrayAccessData
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00003d70 0x00409b70 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x00003d74 0x00409b74 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x00003d78 0x00409b78 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x00003d7c 0x00409b7c NONE FUNC 0    kernel32.dll imp.VirtualFree
+1   0x00003d84 0x00409b84 NONE FUNC 0    mscoree.dll  imp.CorBindToRuntimeEx
+1   0x00003d8c 0x00409b8c NONE FUNC 0    USER32.dll   imp.MessageBoxA
+22  0x00003d94 0x00409b94 NONE FUNC 0    OLEAUT32.dll imp.SafeArrayAccessData
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    1858190
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x001c6b25
+compiled Thu May  6 15:29:04 2010
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0000d447
+laddr    0x0
+lang     cil
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x4be2e040
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1000
+  SizeOfInitializedData : 0x800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1d59
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xd447
+  Subsystem : 0x2
+  DllCharacteristics : 0x8000
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 138 Name: Utc1500_LTCG_CPP Version: 30729 Times: 3
+  Product: 1 Name: Import0 Version: 0 Times: 25
+  Product: 123 Name: Implib800 Version: 50727 Times: 9
+  Product: 95 Name: Utc1310_C Version: 3052 Times: 7
+  Product: 64 Name: Masm700 Version: 9466 Times: 2
+  Product: 96 Name: Utc1310_CPP Version: 3052 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x9b9c
+  Size : 0x131
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x7000
+  Size : 0x2b6a
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+mscoree.dll
+user32.dll
+oleaut32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00009c10 0x00003d70 SET_32 kernel32.dll_LoadLibraryA
+0x00009c20 0x00003d74 SET_32 kernel32.dll_GetProcAddress
+0x00009c34 0x00003d78 SET_32 kernel32.dll_VirtualAlloc
+0x00009c44 0x00003d7c SET_32 kernel32.dll_VirtualFree
+0x00009c60 0x00003d84 SET_32 mscoree.dll_CorBindToRuntimeEx
+0x00009c84 0x00003d8c SET_32 USER32.dll_MessageBoxA
+0x80000016 0x00003d94 SET_32 OLEAUT32.dll_SafeArrayAccessData
+
+
+7 relocations
+1858190
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.0.0
+  ProductVersion: 1.0.0.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  FileDescription: clien
+  FileVersion: 1.0.0.0
+  InternalName: clien.exe
+  LegalCopyright: Copyright ©  2017
+  OriginalFilename: clien.exe
+  ProductName: clien
+  ProductVersion: 1.0.0.0
+  Assembly Version: 1.0.0.0
+Section to Segment mapping:
+Segment Section
+---------------
+
+

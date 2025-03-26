@@ -1,0 +1,350 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr        size vaddr        vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000fe0  0xaf8 0x100000fe0  0xaf8 -r-x 0.__TEXT.__text
+1   0x00001ad8   0x90 0x100001ad8   0x90 -r-x 1.__TEXT.__stubs
+2   0x00001b68  0x100 0x100001b68  0x100 -r-x 2.__TEXT.__stub_helper
+3   0x00001c68    0x4 0x100001c68    0x4 -r-x 3.__TEXT.__const
+4   0x00001c6c   0xec 0x100001c6c   0xec -r-x 4.__TEXT.__cstring
+5   0x00001d58   0xc8 0x100001d58   0xc8 -r-x 5.__TEXT.__objc_methname
+6   0x00001e20   0x5c 0x100001e20   0x5c -r-x 6.__TEXT.__unwind_info
+7   0x00001e80  0x180 0x100001e80  0x180 -r-x 7.__TEXT.__eh_frame
+8   0x00002000   0x28 0x100002000   0x28 -rw- 8.__DATA.__program_vars
+9   0x00002028   0x10 0x100002028   0x10 -rw- 9.__DATA.__nl_symbol_ptr
+10  0x00002038   0x18 0x100002038   0x18 -rw- 10.__DATA.__got
+11  0x00002050   0xc0 0x100002050   0xc0 -rw- 11.__DATA.__la_symbol_ptr
+12  0x00002110   0xa0 0x100002110   0xa0 -rw- 12.__DATA.__cfstring
+13  0x000021b0    0x8 0x1000021b0    0x8 -rw- 13.__DATA.__objc_imageinfo
+14  0x000021b8   0x70 0x1000021b8   0x70 -rw- 14.__DATA.__objc_selrefs
+15  0x00002228   0x18 0x100002228   0x18 -rw- 15.__DATA.__objc_classrefs
+16  0x00000000    0x0 0x100002240   0x20 -rw- 16.__DATA.__common
+17  0x00000000    0x0 0x100002260    0x8 -rw- 17.__DATA.__bss
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x2000 0x100000000  0x2000 -r-x __TEXT
+1   0x00002000  0x1000 0x100002000  0x1000 -rw- __DATA
+2   0x00003000  0x1000 0x100003000  0x1000 -r-- __LINKEDIT
+
+[Entrypoints]
+vaddr=0x100000fe0 paddr=0x00000fe0 haddr=0x00000850 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x100001020 paddr=0x100001020
+[Imports]
+nth vaddr       bind type       lib name
+――――――――――――――――――――――――――――――――――――――――
+0   0x100001b62 NONE FUNC           CFRelease
+1   0x100001ae4 NONE FUNC           IOObjectRelease
+2   0x100001aea NONE FUNC           IORegistryEntryCreateCFProperty
+3   0x100001af0 NONE FUNC           IOServiceGetMatchingService
+4   0x100001af6 NONE FUNC           IOServiceMatching
+5   0x100001ad8 NONE FUNC           NSSearchPathForDirectoriesInDomains
+6   0x100001ade NONE FUNC           NSUserName
+7   0x00000000  NONE OBJC_CLASS     NSMutableData
+8   0x00000000  NONE OBJC_CLASS     NSProcessInfo
+9   0x00000000  NONE OBJC_CLASS     NSString
+10  0x00000000  NONE FUNC           __CFConstantStringClassReference
+11  0x100001afc NONE FUNC           __stack_chk_fail
+12  0x00000000  NONE FUNC           __stack_chk_guard
+13  0x100001b02 NONE FUNC           exit
+14  0x100001b08 NONE FUNC           freeifaddrs
+15  0x100001b0e NONE FUNC           getifaddrs
+16  0x100001b14 NONE FUNC           host_page_size
+17  0x100001b1a NONE FUNC           host_statistics64
+18  0x100001b20 NONE FUNC           if_nametoindex
+19  0x100001b26 NONE FUNC           inet_ntoa
+20  0x00000000  NONE FUNC           kCFAllocatorDefault
+21  0x00000000  NONE FUNC           kIOMasterPortDefault
+22  0x100001b2c NONE FUNC           mach_host_self
+23  0x100001b32 NONE FUNC           malloc
+24  0x100001b50 NONE FUNC           objc_autoreleasePoolPop
+25  0x100001b56 NONE FUNC           objc_autoreleasePoolPush
+26  0x100001b5c NONE FUNC           objc_msgSend
+27  0x100001b38 NONE FUNC           printf
+28  0x100001b3e NONE FUNC           statfs$INODE64
+29  0x100001b44 NONE FUNC           sysctl
+30  0x100001b4a NONE FUNC           sysctlbyname
+31  0x00000000  NONE FUNC           dyld_stub_binder
+
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002240 0x100002240 GLOBAL FUNC 0        _NXArgc
+1   0x00002248 0x100002248 GLOBAL FUNC 0        _NXArgv
+2   0x00002258 0x100002258 GLOBAL FUNC 0        ___progname
+3   0x00000000 0x100000000 GLOBAL FUNC 0        __mh_execute_header
+4   0x00001a10 0x100001a10 GLOBAL FUNC 0        _cpuInfo
+5   0x00002250 0x100002250 GLOBAL FUNC 0        _environ
+6   0x00001740 0x100001740 GLOBAL FUNC 0        _getAvailableMemory
+7   0x00001220 0x100001220 GLOBAL FUNC 0        _getCpuInfoAndModel
+8   0x00001840 0x100001840 GLOBAL FUNC 0        _getDiskFreeSpace
+9   0x000010a0 0x1000010a0 GLOBAL FUNC 0        _getHardwareUUID
+10  0x00001310 0x100001310 GLOBAL FUNC 0        _getIPAddress
+11  0x000014b0 0x1000014b0 GLOBAL FUNC 0        _getMacaddress
+12  0x00001180 0x100001180 GLOBAL FUNC 0        _getSystemVersion
+13  0x00001020 0x100001020 GLOBAL FUNC 0        _main
+14  0x00000fe0 0x100000fe0 GLOBAL FUNC 0        start
+15  0x00002000 0x100002000 LOCAL  FUNC 0        _pvars
+16  0x00002260 0x100002260 LOCAL  FUNC 0        _getMacaddress.macAddress
+17  0x00001b62 0x100001b62 LOCAL  FUNC 0        imp.CFRelease
+18  0x00001ae4 0x100001ae4 LOCAL  FUNC 0        imp.IOObjectRelease
+19  0x00001aea 0x100001aea LOCAL  FUNC 0        imp.IORegistryEntryCreateCFProperty
+20  0x00001af0 0x100001af0 LOCAL  FUNC 0        imp.IOServiceGetMatchingService
+21  0x00001af6 0x100001af6 LOCAL  FUNC 0        imp.IOServiceMatching
+22  0x00001ad8 0x100001ad8 LOCAL  FUNC 0        imp.NSSearchPathForDirectoriesInDomains
+23  0x00001ade 0x100001ade LOCAL  FUNC 0        imp.NSUserName
+24  0x00001afc 0x100001afc LOCAL  FUNC 0        imp.__stack_chk_fail
+25  0x00001b02 0x100001b02 LOCAL  FUNC 0        imp.exit
+26  0x00001b08 0x100001b08 LOCAL  FUNC 0        imp.freeifaddrs
+27  0x00001b0e 0x100001b0e LOCAL  FUNC 0        imp.getifaddrs
+28  0x00001b14 0x100001b14 LOCAL  FUNC 0        imp.host_page_size
+29  0x00001b1a 0x100001b1a LOCAL  FUNC 0        imp.host_statistics64
+30  0x00001b20 0x100001b20 LOCAL  FUNC 0        imp.if_nametoindex
+31  0x00001b26 0x100001b26 LOCAL  FUNC 0        imp.inet_ntoa
+32  0x00001b2c 0x100001b2c LOCAL  FUNC 0        imp.mach_host_self
+33  0x00001b32 0x100001b32 LOCAL  FUNC 0        imp.malloc
+34  0x00001b50 0x100001b50 LOCAL  FUNC 0        imp.objc_autoreleasePoolPop
+35  0x00001b56 0x100001b56 LOCAL  FUNC 0        imp.objc_autoreleasePoolPush
+36  0x00001b5c 0x100001b5c LOCAL  FUNC 0        imp.objc_msgSend
+37  0x00001b38 0x100001b38 LOCAL  FUNC 0        imp.printf
+38  0x00001b3e 0x100001b3e LOCAL  FUNC 0        imp.statfs$INODE64
+39  0x00001b44 0x100001b44 LOCAL  FUNC 0        imp.sysctl
+40  0x00001b4a 0x100001b4a LOCAL  FUNC 0        imp.sysctlbyname
+41  0x00000fe0 0x100000fe0 LOCAL  FUNC 0        func.100000fe0
+42  0x00001020 0x100001020 LOCAL  FUNC 0        func.100001020
+43  0x000010a0 0x1000010a0 LOCAL  FUNC 0        func.1000010a0
+44  0x00001180 0x100001180 LOCAL  FUNC 0        func.100001180
+45  0x00001220 0x100001220 LOCAL  FUNC 0        func.100001220
+46  0x00001310 0x100001310 LOCAL  FUNC 0        func.100001310
+47  0x000014b0 0x1000014b0 LOCAL  FUNC 0        func.1000014b0
+48  0x00001740 0x100001740 LOCAL  FUNC 0        func.100001740
+49  0x00001840 0x100001840 LOCAL  FUNC 0        func.100001840
+50  0x00001a10 0x100001a10 LOCAL  FUNC 0        func.100001a10
+[Strings]
+nth paddr       vaddr       len size section                  type  string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001c6c  0x100001c6c 22  23   4.__TEXT.__cstring       ascii IOPlatformExpertDevice
+1   0x00001c83  0x100001c83 14  15   4.__TEXT.__cstring       ascii IOPlatformUUID
+2   0x00001c92  0x100001c92 8   9    4.__TEXT.__cstring       ascii uuid=%s\n
+3   0x00001c9b  0x100001c9b 12  13   4.__TEXT.__cstring       ascii userName=%s\n
+4   0x00001ca8  0x100001ca8 11  12   4.__TEXT.__cstring       ascii version=%s\n
+5   0x00001cb4  0x100001cb4 17  18   4.__TEXT.__cstring       ascii equipmentType=%s\n
+6   0x00001cd8  0x100001cd8 29  30   4.__TEXT.__cstring       ascii %02x:%02x:%02x:%02x:%02x:%02x
+7   0x00001cf6  0x100001cf6 7   8    4.__TEXT.__cstring       ascii mac=%s\n
+8   0x00001cfe  0x100001cfe 24  25   4.__TEXT.__cstring       ascii availableMemory=%lu/%lu\n
+9   0x00001d19  0x100001d19 24  25   4.__TEXT.__cstring       ascii diskFreeSpace=%llu/%llu\n
+10  0x00001d32  0x100001d32 24  25   4.__TEXT.__cstring       ascii machdep.cpu.brand_string
+11  0x00001d4b  0x100001d4b 12  13   4.__TEXT.__cstring       ascii cpu_info=%s\n
+0   0x00001d58  0x100001d58 4   5    5.__TEXT.__objc_methname ascii copy
+1   0x00001d5d  0x100001d5d 10  11   5.__TEXT.__objc_methname ascii UTF8String
+2   0x00001d68  0x100001d68 11  12   5.__TEXT.__objc_methname ascii processInfo
+3   0x00001d74  0x100001d74 28  29   5.__TEXT.__objc_methname ascii operatingSystemVersionString
+4   0x00001d91  0x100001d91 21  22   5.__TEXT.__objc_methname ascii stringWithUTF8String:
+5   0x00001da7  0x100001da7 10  11   5.__TEXT.__objc_methname ascii hasPrefix:
+6   0x00001db2  0x100001db2 24  25   5.__TEXT.__objc_methname ascii stringByAppendingString:
+7   0x00001dcb  0x100001dcb 15  16   5.__TEXT.__objc_methname ascii dataWithLength:
+8   0x00001ddb  0x100001ddb 12  13   5.__TEXT.__objc_methname ascii mutableBytes
+9   0x00001de8  0x100001de8 5   6    5.__TEXT.__objc_methname ascii alloc
+10  0x00001dee  0x100001dee 15  16   5.__TEXT.__objc_methname ascii initWithFormat:
+11  0x00001dfe  0x100001dfe 14  15   5.__TEXT.__objc_methname ascii physicalMemory
+12  0x00001e0d  0x100001e0d 10  11   5.__TEXT.__objc_methname ascii lastObject
+13  0x00001e18  0x100001e18 7   8    5.__TEXT.__objc_methname ascii cString
+1   0x100002110 0x100002110 14  15                            ascii cstr.IOPlatformUUID
+6   0x100002190 0x100002190 29  30                            ascii cstr.%02x:%02x:%02x:%02x:%02x:%02x
+arch     x86
+baddr    0x100000000
+binsz    15292
+bintype  mach0
+bits     64
+canary   true
+class    MACH064
+compiler clang
+crypto   false
+endian   little
+havecode true
+intrp    /usr/lib/dyld
+laddr    0x0
+lang     objc
+linenum  false
+lsyms    false
+machine  x86 64 all
+nx       false
+os       macos
+pic      true
+relocs   false
+sanitize false
+static   false
+stripped false
+subsys   darwin
+va       true
+pf.mach0_header @ 0x100000000
+0x100000000  Magic       0xfeedfacf
+0x100000004  CpuType     0x1000007
+0x100000008  CpuSubType  0x80000003
+0x10000000c  FileType    0x2
+0x100000010  nCmds       18
+0x100000014  sizeOfCmds  2568
+0x100000018  Flags       0x200085
+pf.mach0_segment64 @ 0x100000020
+0x100000020  cmd       0 0x19 LC_SEGMENT_64
+0x100000024  cmdsize     72
+0x100000028  name        __PAGEZERO
+pf.mach0_segment64 @ 0x100000068
+0x100000068  cmd       1 0x19 LC_SEGMENT_64
+0x10000006c  cmdsize     712
+0x100000070  name        __TEXT
+pf.mach0_section64 @ 0x1000000b0
+pf.mach0_section64 @ 0x100000100
+pf.mach0_section64 @ 0x100000150
+pf.mach0_section64 @ 0x1000001a0
+pf.mach0_section64 @ 0x1000001f0
+pf.mach0_section64 @ 0x100000240
+pf.mach0_section64 @ 0x100000290
+pf.mach0_section64 @ 0x1000002e0
+pf.mach0_segment64 @ 0x100000330
+0x100000330  cmd       2 0x19 LC_SEGMENT_64
+0x100000334  cmdsize     872
+0x100000338  name        __DATA
+pf.mach0_section64 @ 0x100000378
+pf.mach0_section64 @ 0x1000003c8
+pf.mach0_section64 @ 0x100000418
+pf.mach0_section64 @ 0x100000468
+pf.mach0_section64 @ 0x1000004b8
+pf.mach0_section64 @ 0x100000508
+pf.mach0_section64 @ 0x100000558
+pf.mach0_section64 @ 0x1000005a8
+pf.mach0_section64 @ 0x1000005f8
+pf.mach0_section64 @ 0x100000648
+pf.mach0_segment64 @ 0x100000698
+0x100000698  cmd       3 0x19 LC_SEGMENT_64
+0x10000069c  cmdsize     72
+0x1000006a0  name        __LINKEDIT
+pf.mach0_dyld_info_only_command @ 0x1000006e0
+0x1000006e0  cmd       4 0x80000022 LC_DYLD_INFO_ONLY
+0x1000006e4  cmdsize     48
+pf.mach0_symtab_command @ 0x100000710
+0x100000710  cmd       5 0x2 LC_SYMTAB
+0x100000714  cmdsize     24
+pf.mach0_dysymtab_command @ 0x100000728
+0x100000728  cmd       6 0xb LC_DYSYMTAB
+0x10000072c  cmdsize     80
+pf.mach0_load_dylinker_command @ 0x100000778
+0x100000778  cmd       7 0xe LC_LOAD_DYLINKER
+0x10000077c  cmdsize     32
+pf.mach0_uuid_command @ 0x100000798
+0x100000798  cmd       8 0x1b LC_UUID
+0x10000079c  cmdsize     24
+0x1000007a0  uuid        a71ae401f02b3849a24624e6ed0358d1
+pf.mach0_version_min_command @ 0x1000007b0
+0x1000007b0  cmd       9 0x24 LC_VERSION_MIN_MACOSX
+0x1000007b4  cmdsize     16
+pf.mach0_unixthread_command @ 0x1000007c0
+0x1000007c0  cmd      10 0x5 LC_UNIXTHREAD
+0x1000007c4  cmdsize     184
+pf.mach0_dylib_command @ 0x100000878
+0x100000878  cmd      11 0xc LC_LOAD_DYLIB
+0x10000087c  cmdsize     96
+0x100000888  current     1349.0.0
+0x10000088c  compat      300.0.0
+0x100000890  load_dylib  /System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+pf.mach0_dylib_command @ 0x1000008d8
+0x1000008d8  cmd      12 0xc LC_LOAD_DYLIB
+0x1000008dc  cmdsize     88
+0x1000008e8  current     275.0.0
+0x1000008ec  compat      1.0.0
+0x1000008f0  load_dylib  /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+pf.mach0_dylib_command @ 0x100000930
+0x100000930  cmd      13 0xc LC_LOAD_DYLIB
+0x100000934  cmdsize     56
+0x100000940  current     1238.0.0
+0x100000944  compat      1.0.0
+0x100000948  load_dylib  /usr/lib/libSystem.B.dylib
+pf.mach0_dylib_command @ 0x100000968
+0x100000968  cmd      14 0xc LC_LOAD_DYLIB
+0x10000096c  cmdsize     104
+0x100000978  current     1348.1.0
+0x10000097c  compat      150.0.0
+0x100000980  load_dylib  /System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+pf.mach0_dylib_command @ 0x1000009d0
+0x1000009d0  cmd      15 0xc LC_LOAD_DYLIB
+0x1000009d4  cmdsize     56
+0x1000009e0  current     228.0.0
+0x1000009e4  compat      1.0.0
+0x1000009e8  load_dylib  /usr/lib/libobjc.A.dylib
+pf.mach0_function_starts_command @ 0x100000a08
+0x100000a08  cmd      16 0x26 LC_FUNCTION_STARTS
+0x100000a0c  cmdsize     16
+pf.mach0_data_in_code_command @ 0x100000a18
+0x100000a18  cmd      17 0x29 LC_DATA_IN_CODE
+0x100000a1c  cmdsize     16
+[Linked libraries]
+/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+/usr/lib/libSystem.B.dylib
+/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+/usr/lib/libobjc.A.dylib
+
+5 libraries
+[Relocations]
+
+vaddr       paddr      type   name
+――――――――――――――――――――――――――――――――――
+0x00000000  0x00000000 SET_64 NSMutableData
+0x100002028 0x00002028 SET_64 dyld_stub_binder
+0x100002038 0x00002038 SET_64 __stack_chk_guard
+0x100002040 0x00002040 SET_64 kCFAllocatorDefault
+0x100002048 0x00002048 SET_64 kIOMasterPortDefault
+0x100002050 0x00002050 SET_64 NSSearchPathForDirectoriesInDomains
+0x100002058 0x00002058 SET_64 NSUserName
+0x100002060 0x00002060 SET_64 IOObjectRelease
+0x100002068 0x00002068 SET_64 IORegistryEntryCreateCFProperty
+0x100002070 0x00002070 SET_64 IOServiceGetMatchingService
+0x100002078 0x00002078 SET_64 IOServiceMatching
+0x100002080 0x00002080 SET_64 __stack_chk_fail
+0x100002088 0x00002088 SET_64 exit
+0x100002090 0x00002090 SET_64 freeifaddrs
+0x100002098 0x00002098 SET_64 getifaddrs
+0x1000020a0 0x000020a0 SET_64 host_page_size
+0x1000020a8 0x000020a8 SET_64 host_statistics64
+0x1000020b0 0x000020b0 SET_64 if_nametoindex
+0x1000020b8 0x000020b8 SET_64 inet_ntoa
+0x1000020c0 0x000020c0 SET_64 mach_host_self
+0x1000020c8 0x000020c8 SET_64 malloc
+0x1000020d0 0x000020d0 SET_64 printf
+0x1000020d8 0x000020d8 SET_64 statfs$INODE64
+0x1000020e0 0x000020e0 SET_64 sysctl
+0x1000020e8 0x000020e8 SET_64 sysctlbyname
+0x1000020f0 0x000020f0 SET_64 objc_autoreleasePoolPop
+0x1000020f8 0x000020f8 SET_64 objc_autoreleasePoolPush
+0x100002100 0x00002100 SET_64 objc_msgSend
+0x100002108 0x00002108 SET_64 CFRelease
+0x100002110 0x00002110 SET_64 __CFConstantStringClassReference
+0x100002130 0x00002130 SET_64 __CFConstantStringClassReference
+0x100002150 0x00002150 SET_64 __CFConstantStringClassReference
+0x100002170 0x00002170 SET_64 __CFConstantStringClassReference
+0x100002190 0x00002190 SET_64 __CFConstantStringClassReference
+0x100002228 0x00002228 SET_64 NSProcessInfo
+0x100002230 0x00002230 SET_64 NSString
+0x100002238 0x00002238 SET_64 NSMutableData
+
+
+37 relocations
+15292
+Section to Segment mapping:
+Segment    Section
+------------------
+__TEXT     0.__TEXT.__text 1.__TEXT.__stubs 2.__TEXT.__stub_helper 3.__TEXT.__const 4.__TEXT.__cstring 5.__TEXT.__objc_methname 6.__TEXT.__unwind_info 7.__TEXT.__eh_frame 
+__DATA     8.__DATA.__program_vars 9.__DATA.__nl_symbol_ptr 10.__DATA.__got 11.__DATA.__la_symbol_ptr 12.__DATA.__cfstring 13.__DATA.__objc_imageinfo 14.__DATA.__objc_selrefs 15.__DATA.__objc_classrefs 16.__DATA.__common 17.__DATA.__bss 
+__LINKEDIT 
+
+

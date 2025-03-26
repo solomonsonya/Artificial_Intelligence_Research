@@ -1,0 +1,752 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0xbe00 0x00401000  0xc000 -r-x .text
+1   0x0000c200  0x4200 0x0040d000  0x5000 -r-- .rdata
+2   0x00010400  0x1200 0x00412000  0x4000 -rw- .data
+3   0x00011600   0xa00 0x00416000  0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00408fc8 paddr=0x000083c8 haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401b50 paddr=0x00000f50
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0040d020 NONE FUNC KERNEL32.dll WaitForSingleObject
+2   0x0040d024 NONE FUNC KERNEL32.dll CreateThread
+3   0x0040d028 NONE FUNC KERNEL32.dll CreateFileW
+4   0x0040d02c NONE FUNC KERNEL32.dll CloseHandle
+5   0x0040d030 NONE FUNC KERNEL32.dll Process32NextW
+6   0x0040d034 NONE FUNC KERNEL32.dll OpenProcess
+7   0x0040d038 NONE FUNC KERNEL32.dll Process32FirstW
+8   0x0040d03c NONE FUNC KERNEL32.dll CreateToolhelp32Snapshot
+9   0x0040d040 NONE FUNC KERNEL32.dll TerminateProcess
+10  0x0040d044 NONE FUNC KERNEL32.dll WriteFile
+11  0x0040d048 NONE FUNC KERNEL32.dll Sleep
+12  0x0040d04c NONE FUNC KERNEL32.dll WideCharToMultiByte
+13  0x0040d050 NONE FUNC KERNEL32.dll ReadFile
+14  0x0040d054 NONE FUNC KERNEL32.dll CreateProcessW
+15  0x0040d058 NONE FUNC KERNEL32.dll GetSystemDirectoryW
+16  0x0040d05c NONE FUNC KERNEL32.dll GetStartupInfoW
+17  0x0040d060 NONE FUNC KERNEL32.dll GetStringTypeW
+18  0x0040d064 NONE FUNC KERNEL32.dll GetStringTypeA
+19  0x0040d068 NONE FUNC KERNEL32.dll GetComputerNameW
+20  0x0040d06c NONE FUNC KERNEL32.dll GetVersionExW
+21  0x0040d070 NONE FUNC KERNEL32.dll GetOEMCP
+22  0x0040d074 NONE FUNC KERNEL32.dll GetTickCount
+23  0x0040d078 NONE FUNC KERNEL32.dll GetCurrentThread
+24  0x0040d07c NONE FUNC KERNEL32.dll GetLastError
+25  0x0040d080 NONE FUNC KERNEL32.dll GetCurrentProcess
+26  0x0040d084 NONE FUNC KERNEL32.dll CreatePipe
+27  0x0040d088 NONE FUNC KERNEL32.dll MultiByteToWideChar
+28  0x0040d08c NONE FUNC KERNEL32.dll LCMapStringW
+29  0x0040d090 NONE FUNC KERNEL32.dll LCMapStringA
+30  0x0040d094 NONE FUNC KERNEL32.dll SetStdHandle
+31  0x0040d098 NONE FUNC KERNEL32.dll LoadLibraryA
+32  0x0040d09c NONE FUNC KERNEL32.dll GetProcAddress
+33  0x0040d0a0 NONE FUNC KERNEL32.dll GetACP
+34  0x0040d0a4 NONE FUNC KERNEL32.dll GetCPInfo
+35  0x0040d0a8 NONE FUNC KERNEL32.dll SetFilePointer
+36  0x0040d0ac NONE FUNC KERNEL32.dll FlushFileBuffers
+37  0x0040d0b0 NONE FUNC KERNEL32.dll VirtualAlloc
+38  0x0040d0b4 NONE FUNC KERNEL32.dll RtlUnwind
+39  0x0040d0b8 NONE FUNC KERNEL32.dll VirtualFree
+40  0x0040d0bc NONE FUNC KERNEL32.dll HeapCreate
+41  0x0040d0c0 NONE FUNC KERNEL32.dll HeapDestroy
+42  0x0040d0c4 NONE FUNC KERNEL32.dll GetFileType
+43  0x0040d0c8 NONE FUNC KERNEL32.dll GetStdHandle
+44  0x0040d0cc NONE FUNC KERNEL32.dll SetHandleCount
+45  0x0040d0d0 NONE FUNC KERNEL32.dll GetEnvironmentStringsW
+46  0x0040d0d4 NONE FUNC KERNEL32.dll GetEnvironmentStrings
+47  0x0040d0d8 NONE FUNC KERNEL32.dll ExitProcess
+48  0x0040d0dc NONE FUNC KERNEL32.dll GetModuleHandleA
+49  0x0040d0e0 NONE FUNC KERNEL32.dll GetStartupInfoA
+50  0x0040d0e4 NONE FUNC KERNEL32.dll GetCommandLineA
+51  0x0040d0e8 NONE FUNC KERNEL32.dll GetVersion
+52  0x0040d0ec NONE FUNC KERNEL32.dll HeapReAlloc
+53  0x0040d0f0 NONE FUNC KERNEL32.dll HeapAlloc
+54  0x0040d0f4 NONE FUNC KERNEL32.dll HeapSize
+55  0x0040d0f8 NONE FUNC KERNEL32.dll HeapFree
+56  0x0040d0fc NONE FUNC KERNEL32.dll UnhandledExceptionFilter
+57  0x0040d100 NONE FUNC KERNEL32.dll GetModuleFileNameA
+58  0x0040d104 NONE FUNC KERNEL32.dll FreeEnvironmentStringsA
+59  0x0040d108 NONE FUNC KERNEL32.dll FreeEnvironmentStringsW
+1   0x0040d124 NONE FUNC USER32.dll   wsprintfW
+1   0x0040d000 NONE FUNC ADVAPI32.dll OpenThreadToken
+2   0x0040d004 NONE FUNC ADVAPI32.dll OpenProcessToken
+3   0x0040d008 NONE FUNC ADVAPI32.dll GetTokenInformation
+4   0x0040d00c NONE FUNC ADVAPI32.dll LookupAccountSidA
+5   0x0040d010 NONE FUNC ADVAPI32.dll RegOpenKeyExA
+6   0x0040d014 NONE FUNC ADVAPI32.dll RegCloseKey
+7   0x0040d018 NONE FUNC ADVAPI32.dll RegQueryValueExA
+1   0x0040d11c NONE FUNC SHELL32.dll  ShellExecuteW
+115 0x0040d14c NONE FUNC WS2_32.dll   WSAStartup
+12  0x0040d150 NONE FUNC WS2_32.dll   inet_ntoa
+52  0x0040d154 NONE FUNC WS2_32.dll   gethostbyname
+57  0x0040d158 NONE FUNC WS2_32.dll   gethostname
+11  0x0040d15c NONE FUNC WS2_32.dll   inet_addr
+116 0x0040d160 NONE FUNC WS2_32.dll   WSACleanup
+1   0x0040d12c NONE FUNC WININET.dll  InternetConnectA
+2   0x0040d130 NONE FUNC WININET.dll  HttpOpenRequestA
+3   0x0040d134 NONE FUNC WININET.dll  HttpSendRequestA
+4   0x0040d138 NONE FUNC WININET.dll  InternetCloseHandle
+5   0x0040d13c NONE FUNC WININET.dll  InternetOpenW
+6   0x0040d140 NONE FUNC WININET.dll  InternetSetOptionW
+7   0x0040d144 NONE FUNC WININET.dll  InternetReadFile
+1   0x0040d110 NONE FUNC PSAPI.DLL    EnumProcessModules
+2   0x0040d114 NONE FUNC PSAPI.DLL    GetModuleFileNameExW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000c220 0x0040d020 NONE FUNC 0    KERNEL32.dll imp.WaitForSingleObject
+2   0x0000c224 0x0040d024 NONE FUNC 0    KERNEL32.dll imp.CreateThread
+3   0x0000c228 0x0040d028 NONE FUNC 0    KERNEL32.dll imp.CreateFileW
+4   0x0000c22c 0x0040d02c NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+5   0x0000c230 0x0040d030 NONE FUNC 0    KERNEL32.dll imp.Process32NextW
+6   0x0000c234 0x0040d034 NONE FUNC 0    KERNEL32.dll imp.OpenProcess
+7   0x0000c238 0x0040d038 NONE FUNC 0    KERNEL32.dll imp.Process32FirstW
+8   0x0000c23c 0x0040d03c NONE FUNC 0    KERNEL32.dll imp.CreateToolhelp32Snapshot
+9   0x0000c240 0x0040d040 NONE FUNC 0    KERNEL32.dll imp.TerminateProcess
+10  0x0000c244 0x0040d044 NONE FUNC 0    KERNEL32.dll imp.WriteFile
+11  0x0000c248 0x0040d048 NONE FUNC 0    KERNEL32.dll imp.Sleep
+12  0x0000c24c 0x0040d04c NONE FUNC 0    KERNEL32.dll imp.WideCharToMultiByte
+13  0x0000c250 0x0040d050 NONE FUNC 0    KERNEL32.dll imp.ReadFile
+14  0x0000c254 0x0040d054 NONE FUNC 0    KERNEL32.dll imp.CreateProcessW
+15  0x0000c258 0x0040d058 NONE FUNC 0    KERNEL32.dll imp.GetSystemDirectoryW
+16  0x0000c25c 0x0040d05c NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoW
+17  0x0000c260 0x0040d060 NONE FUNC 0    KERNEL32.dll imp.GetStringTypeW
+18  0x0000c264 0x0040d064 NONE FUNC 0    KERNEL32.dll imp.GetStringTypeA
+19  0x0000c268 0x0040d068 NONE FUNC 0    KERNEL32.dll imp.GetComputerNameW
+20  0x0000c26c 0x0040d06c NONE FUNC 0    KERNEL32.dll imp.GetVersionExW
+21  0x0000c270 0x0040d070 NONE FUNC 0    KERNEL32.dll imp.GetOEMCP
+22  0x0000c274 0x0040d074 NONE FUNC 0    KERNEL32.dll imp.GetTickCount
+23  0x0000c278 0x0040d078 NONE FUNC 0    KERNEL32.dll imp.GetCurrentThread
+24  0x0000c27c 0x0040d07c NONE FUNC 0    KERNEL32.dll imp.GetLastError
+25  0x0000c280 0x0040d080 NONE FUNC 0    KERNEL32.dll imp.GetCurrentProcess
+26  0x0000c284 0x0040d084 NONE FUNC 0    KERNEL32.dll imp.CreatePipe
+27  0x0000c288 0x0040d088 NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+28  0x0000c28c 0x0040d08c NONE FUNC 0    KERNEL32.dll imp.LCMapStringW
+29  0x0000c290 0x0040d090 NONE FUNC 0    KERNEL32.dll imp.LCMapStringA
+30  0x0000c294 0x0040d094 NONE FUNC 0    KERNEL32.dll imp.SetStdHandle
+31  0x0000c298 0x0040d098 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+32  0x0000c29c 0x0040d09c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+33  0x0000c2a0 0x0040d0a0 NONE FUNC 0    KERNEL32.dll imp.GetACP
+34  0x0000c2a4 0x0040d0a4 NONE FUNC 0    KERNEL32.dll imp.GetCPInfo
+35  0x0000c2a8 0x0040d0a8 NONE FUNC 0    KERNEL32.dll imp.SetFilePointer
+36  0x0000c2ac 0x0040d0ac NONE FUNC 0    KERNEL32.dll imp.FlushFileBuffers
+37  0x0000c2b0 0x0040d0b0 NONE FUNC 0    KERNEL32.dll imp.VirtualAlloc
+38  0x0000c2b4 0x0040d0b4 NONE FUNC 0    KERNEL32.dll imp.RtlUnwind
+39  0x0000c2b8 0x0040d0b8 NONE FUNC 0    KERNEL32.dll imp.VirtualFree
+40  0x0000c2bc 0x0040d0bc NONE FUNC 0    KERNEL32.dll imp.HeapCreate
+41  0x0000c2c0 0x0040d0c0 NONE FUNC 0    KERNEL32.dll imp.HeapDestroy
+42  0x0000c2c4 0x0040d0c4 NONE FUNC 0    KERNEL32.dll imp.GetFileType
+43  0x0000c2c8 0x0040d0c8 NONE FUNC 0    KERNEL32.dll imp.GetStdHandle
+44  0x0000c2cc 0x0040d0cc NONE FUNC 0    KERNEL32.dll imp.SetHandleCount
+45  0x0000c2d0 0x0040d0d0 NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentStringsW
+46  0x0000c2d4 0x0040d0d4 NONE FUNC 0    KERNEL32.dll imp.GetEnvironmentStrings
+47  0x0000c2d8 0x0040d0d8 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+48  0x0000c2dc 0x0040d0dc NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+49  0x0000c2e0 0x0040d0e0 NONE FUNC 0    KERNEL32.dll imp.GetStartupInfoA
+50  0x0000c2e4 0x0040d0e4 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineA
+51  0x0000c2e8 0x0040d0e8 NONE FUNC 0    KERNEL32.dll imp.GetVersion
+52  0x0000c2ec 0x0040d0ec NONE FUNC 0    KERNEL32.dll imp.HeapReAlloc
+53  0x0000c2f0 0x0040d0f0 NONE FUNC 0    KERNEL32.dll imp.HeapAlloc
+54  0x0000c2f4 0x0040d0f4 NONE FUNC 0    KERNEL32.dll imp.HeapSize
+55  0x0000c2f8 0x0040d0f8 NONE FUNC 0    KERNEL32.dll imp.HeapFree
+56  0x0000c2fc 0x0040d0fc NONE FUNC 0    KERNEL32.dll imp.UnhandledExceptionFilter
+57  0x0000c300 0x0040d100 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+58  0x0000c304 0x0040d104 NONE FUNC 0    KERNEL32.dll imp.FreeEnvironmentStringsA
+59  0x0000c308 0x0040d108 NONE FUNC 0    KERNEL32.dll imp.FreeEnvironmentStringsW
+1   0x0000c324 0x0040d124 NONE FUNC 0    USER32.dll   imp.wsprintfW
+1   0x0000c200 0x0040d000 NONE FUNC 0    ADVAPI32.dll imp.OpenThreadToken
+2   0x0000c204 0x0040d004 NONE FUNC 0    ADVAPI32.dll imp.OpenProcessToken
+3   0x0000c208 0x0040d008 NONE FUNC 0    ADVAPI32.dll imp.GetTokenInformation
+4   0x0000c20c 0x0040d00c NONE FUNC 0    ADVAPI32.dll imp.LookupAccountSidA
+5   0x0000c210 0x0040d010 NONE FUNC 0    ADVAPI32.dll imp.RegOpenKeyExA
+6   0x0000c214 0x0040d014 NONE FUNC 0    ADVAPI32.dll imp.RegCloseKey
+7   0x0000c218 0x0040d018 NONE FUNC 0    ADVAPI32.dll imp.RegQueryValueExA
+1   0x0000c31c 0x0040d11c NONE FUNC 0    SHELL32.dll  imp.ShellExecuteW
+115 0x0000c34c 0x0040d14c NONE FUNC 0    WS2_32.dll   imp.WSAStartup
+12  0x0000c350 0x0040d150 NONE FUNC 0    WS2_32.dll   imp.inet_ntoa
+52  0x0000c354 0x0040d154 NONE FUNC 0    WS2_32.dll   imp.gethostbyname
+57  0x0000c358 0x0040d158 NONE FUNC 0    WS2_32.dll   imp.gethostname
+11  0x0000c35c 0x0040d15c NONE FUNC 0    WS2_32.dll   imp.inet_addr
+116 0x0000c360 0x0040d160 NONE FUNC 0    WS2_32.dll   imp.WSACleanup
+1   0x0000c32c 0x0040d12c NONE FUNC 0    WININET.dll  imp.InternetConnectA
+2   0x0000c330 0x0040d130 NONE FUNC 0    WININET.dll  imp.HttpOpenRequestA
+3   0x0000c334 0x0040d134 NONE FUNC 0    WININET.dll  imp.HttpSendRequestA
+4   0x0000c338 0x0040d138 NONE FUNC 0    WININET.dll  imp.InternetCloseHandle
+5   0x0000c33c 0x0040d13c NONE FUNC 0    WININET.dll  imp.InternetOpenW
+6   0x0000c340 0x0040d140 NONE FUNC 0    WININET.dll  imp.InternetSetOptionW
+7   0x0000c344 0x0040d144 NONE FUNC 0    WININET.dll  imp.InternetReadFile
+1   0x0000c310 0x0040d110 NONE FUNC 0    PSAPI.DLL    imp.EnumProcessModules
+2   0x0000c314 0x0040d114 NONE FUNC 0    PSAPI.DLL    imp.GetModuleFileNameExW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000c368 0x0040d168 52  53   .rdata  ascii    deflate 1.2.3 Copyright 1995-2005 Jean-loup Gailly 
+1   0x0000c418 0x0040d218 5   6    .rdata  ascii   1.2.3
+2   0x0000cda4 0x0040dba4 14  60   .rdata  utf32le \a\a\b\b\t\t\n\n\v\v\f\f\r\r
+3   0x0000d23e 0x0040e03e 7   16   .rdata  utf16le \a@\a \a`\a
+4   0x0000d24e 0x0040e04e 15  32   .rdata  utf16le \aP\a0\ap\a\b\aH\a(\ah\a
+5   0x0000d26e 0x0040e06e 7   16   .rdata  utf16le \aX\a8\ax\a
+6   0x0000d27e 0x0040e07e 7   16   .rdata  utf16le \aD\a$\ad\a
+7   0x0000d28e 0x0040e08e 7   16   .rdata  utf16le \aT\a4\at\a
+8   0x0000d340 0x0040e140 116 117  .rdata  ascii   \a\a\a\a\b\b\b\b\b\b\b\b\t\t\t\t\t\t\t\t\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+9   0x0000d494 0x0040e294 32  33   .rdata  ascii   \e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e
+10  0x0000d53b 0x0040e33b 17  18   .rdata  ascii   \a\b\b\t\t\n\n\v\v\f\f\f\f\r\r\r\r
+11  0x0000d614 0x0040e414 31  32   .rdata  ascii   \e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e\e
+12  0x0000d650 0x0040e450 4   20   .rdata  utf32le \a\b\n\f
+13  0x0000d674 0x0040e474 8   36   .rdata  utf32le  (08@P`p
+14  0x0000d6d0 0x0040e4d0 4   20   .rdata  utf32le  0@`
+15  0x0000d725 0x0040e525 5   6    .rdata  ascii   0\aw,a
+16  0x0000d784 0x0040e584 4   6    .rdata  utf8    (kdz
+17  0x0000d7a1 0x0040e5a1 4   5    .rdata  ascii    n;^
+18  0x0000d7f3 0x0040e5f3 4   6    .rdata  utf8    !#ĳV blocks=Basic Latin,Latin Extended-A
+19  0x0000d854 0x0040e654 4   5    .rdata  ascii   -=m\b
+20  0x0000d861 0x0040e661 6   7    .rdata  ascii   Qkkbal
+21  0x0000d899 0x0040e699 4   6    .rdata  utf8    |ӌeL blocks=Basic Latin,Cyrillic
+22  0x0000d8d7 0x0040e6d7 4   5    .rdata  ascii   3_L\n
+23  0x0000d92d 0x0040e72d 4   6    .rdata  utf8    ұt9G blocks=Cyrillic,Basic Latin
+24  0x0000d948 0x0040e748 4   5    .rdata  ascii   >jm\r
+25  0x0000d94d 0x0040e74d 4   5    .rdata  ascii   Zjz\v
+26  0x0000d96f 0x0040e76f 4   5    .rdata  ascii   i]Wb
+27  0x0000d97e 0x0040e77e 4   5    .rdata  ascii   knv\e
+28  0x0000d985 0x0040e785 4   6    .rdata  utf8    +ӉZz blocks=Basic Latin,Cyrillic
+29  0x0000da26 0x0040e826 5   8    .rdata  utf8    c윣ju\n blocks=Basic Latin,Hangul Syllables
+30  0x0000daaf 0x0040e8af 4   5    .rdata  ascii   9a&g
+31  0x0000dab8 0x0040e8b8 4   5    .rdata  ascii   MGiI
+32  0x0000dabd 0x0040e8bd 6   8    .rdata  utf8    wn>JjѮ blocks=Basic Latin,Cyrillic
+33  0x0000daff 0x0040e8ff 4   5    .rdata  ascii   #.zf
+34  0x0000db0d 0x0040e90d 4   5    .rdata  ascii   +o*7
+35  0x0000db3a 0x0040e93a 6   8    .rdata  utf8    ZVǖAO\b blocks=Basic Latin,Latin Extended-B
+36  0x0000dbd5 0x0040e9d5 9   10   .rdata  ascii   Z* ,\t\a\vm8
+37  0x0000dbe1 0x0040e9e1 5   7    .rdata  utf8    6F߲\a] blocks=Basic Latin,NKo
+38  0x0000dc08 0x0040ea08 4   6    .rdata  utf8    yީ%8 blocks=Basic Latin,Thaana
+39  0x0000dc40 0x0040ea40 4   6    .rdata  utf8    \rŠ8L blocks=Basic Latin,Latin Extended-A
+40  0x0000dcb8 0x0040eab8 4   6    .rdata  utf8    !̧3` blocks=Basic Latin,Combining Diacritical Marks
+41  0x0000dce5 0x0040eae5 6   7    .rdata  ascii   H$6t\e\t
+42  0x0000dd49 0x0040eb49 5   7    .rdata  utf8    pl@Aw
+43  0x0000dd74 0x0040eb74 4   5    .rdata  ascii   _~6\f
+44  0x0000ddb1 0x0040ebb1 5   7    .rdata  utf8    ykʬHp blocks=Basic Latin,IPA Extensions
+45  0x0000de06 0x0040ec06 5   6    .rdata  ascii   \a52F*
+46  0x0000de0c 0x0040ec0c 4   5    .rdata  ascii   sw1\a
+47  0x0000deb5 0x0040ecb5 10  11   .rdata  ascii   \a\t#jT$\b+e?
+48  0x0000df5b 0x0040ed5b 6   7    .rdata  ascii   \n=G\\vp
+49  0x0000dfc2 0x0040edc2 4   5    .rdata  ascii   ^6o}
+50  0x0000dfed 0x0040eded 9   10   .rdata  ascii   [-&LMb#{'
+51  0x0000e00b 0x0040ee0b 5   6    .rdata  ascii   )q\n>(
+52  0x0000e033 0x0040ee33 6   7    .rdata  ascii   w+OQvr
+53  0x0000e03f 0x0040ee3f 5   7    .rdata  utf8    ux܉~O blocks=Basic Latin,Syriac
+54  0x0000e049 0x0040ee49 5   6    .rdata  ascii   \b\r}!b
+55  0x0000e079 0x0040ee79 5   6    .rdata  ascii   R1h58
+56  0x0000e0aa 0x0040eeaa 4   5    .rdata  ascii   SKyu
+57  0x0000e0ea 0x0040eeea 5   7    .rdata  utf8    uW\tַV blocks=Basic Latin,Hebrew
+58  0x0000e116 0x0040ef16 8   9    .rdata  ascii   )\ZEo^m/
+59  0x0000e343 0x0040f143 5   7    .rdata  utf8    ŊO\b}d blocks=Latin Extended-A,Basic Latin
+60  0x0000e377 0x0040f177 7   8    .rdata  ascii   gC\bru&o
+61  0x0000e39d 0x0040f19d 4   5    .rdata  ascii   Gz\b>
+62  0x0000e3b0 0x0040f1b0 6   7    .rdata  ascii   i8P/\f_
+63  0x0000e3cc 0x0040f1cc 4   5    .rdata  ascii   ?(3w
+64  0x0000e3d5 0x0040f1d5 4   5    .rdata  ascii   wXR\r
+65  0x0000e3e7 0x0040f1e7 7   8    .rdata  ascii   H*0"ZOW
+66  0x0000e3ff 0x0040f1ff 5   7    .rdata  utf8    mNП5+ blocks=Basic Latin,Cyrillic
+67  0x0000e45b 0x0040f25b 5   7    .rdata  utf8    {kHwâ blocks=Basic Latin,Latin-1 Supplement
+68  0x0000e4af 0x0040f2af 4   5    .rdata  ascii   )T`D
+69  0x0000e513 0x0040f313 4   5    .rdata  ascii   !AxU
+70  0x0000e51c 0x0040f31c 4   6    .rdata  utf8    ʰ\3; blocks=Spacing Modifier Letters,Basic Latin
+71  0x0000e530 0x0040f330 6   7    .rdata  ascii   l!;b\tF
+72  0x0000e54c 0x0040f34c 4   5    .rdata  ascii   :1X:
+73  0x0000e558 0x0040f358 4   6    .rdata  utf8    \bF\rm
+74  0x0000e58b 0x0040f38b 4   6    .rdata  utf8    ҥfAj blocks=Cyrillic,Basic Latin
+75  0x0000e594 0x0040f394 4   5    .rdata  ascii   y9*O
+76  0x0000e5a2 0x0040f3a2 4   5    .rdata  ascii   kM`~
+77  0x0000e5c5 0x0040f3c5 4   5    .rdata  ascii   Vc0a
+78  0x0000e62f 0x0040f42f 4   5    .rdata  ascii   dQy/
+79  0x0000e637 0x0040f437 4   6    .rdata  utf8    Aڱ&S blocks=Basic Latin,Arabic
+80  0x0000e693 0x0040f493 4   6    .rdata  utf8    lDa>
+81  0x0000e69c 0x0040f49c 5   7    .rdata  utf8    ϩ7~8A blocks=Greek and Coptic,Basic Latin
+82  0x0000e6f5 0x0040f4f5 4   7    .rdata  utf8    渱{I\r blocks=CJK Unified Ideographs,Basic Latin
+83  0x0000e703 0x0040f503 4   5    .rdata  ascii   C-Yn
+84  0x0000e741 0x0040f541 4   7    .rdata  utf8    ۈ2yܸ blocks=Arabic,Basic Latin,Syriac
+85  0x0000e7ad 0x0040f5ad 4   5    .rdata  ascii   gqr<
+86  0x0000e80f 0x0040f60f 4   5    .rdata  ascii   $/o|
+87  0x0000e81d 0x0040f61d 4   5    .rdata  ascii   f-=v
+88  0x0000e83f 0x0040f63f 4   6    .rdata  utf8    3x\aɢ blocks=Basic Latin,IPA Extensions
+89  0x0000e854 0x0040f654 4   5    .rdata  ascii   \bm=-
+90  0x0000e8b0 0x0040f6b0 6   10   .rdata  utf8    JߥA=ؕפ blocks=Basic Latin,NKo,Arabic,Hebrew
+91  0x0000e91a 0x0040f71a 4   6    .rdata  utf8    \;:l
+92  0x0000e948 0x0040f748 7   8    .rdata  ascii   \rmj>zjZ
+93  0x0000e979 0x0040f779 5   6    .rdata  ascii   l6qnk
+94  0x0000e9c1 0x0040f7c1 7   9    .rdata  utf8    \r+گ\n\eL6 blocks=Basic Latin,Arabic
+95  0x0000e9e8 0x0040f7e8 5   7    .rdata  utf8    %oҠRh blocks=Basic Latin,Cyrillic
+96  0x0000e9fe 0x0040f7fe 4   6    .rdata  utf8    &/ź; blocks=Basic Latin,Latin Extended-A
+97  0x0000ea36 0x0040f836 5   6    .rdata  ascii   6?r\ag
+98  0x0000eaaf 0x0040f8af 4   6    .rdata  utf8    §g&a blocks=Latin-1 Supplement,Basic Latin
+99  0x0000eab8 0x0040f8b8 8   10   .rdata  utf8    IiGM>nwۮ blocks=Basic Latin,Arabic
+100 0x0000eb25 0x0040f925 6   7    .rdata  ascii   \e1A26b
+101 0x0000ebbd 0x0040f9bd 4   6    .rdata  utf8    Ųe]] blocks=Latin Extended-A,Basic Latin
+102 0x0000ebcf 0x0040f9cf 4   5    .rdata  ascii   i91k
+103 0x0000ebd8 0x0040f9d8 4   5    .rdata  ascii   \v\a\t,
+104 0x0000ecdd 0x0040fadd 6   7    .rdata  ascii   ewh/?y
+105 0x0000ecee 0x0040faee 4   5    .rdata  ascii   *5KS
+106 0x0000ed74 0x0040fb74 7   8    .rdata  ascii   \f6~_'\e-
+107 0x0000edbd 0x0040fbbd 4   5    .rdata  ascii   F*.f
+108 0x0000ee09 0x0040fc09 9   10   .rdata  ascii   *F2\a1wsHp
+109 0x0000ee45 0x0040fc45 4   5    .rdata  ascii   8l\a1
+110 0x0000eea4 0x0040fca4 5   7    .rdata  utf8    Ge­lH blocks=Basic Latin,Latin-1 Supplement
+111 0x0000eeb8 0x0040fcb8 4   5    .rdata  ascii   \b$Tj
+112 0x0000ef53 0x0040fd53 5   7    .rdata  utf8    d\bؓS\n blocks=Basic Latin,Arabic
+113 0x0000ef5a 0x0040fd5a 6   7    .rdata  ascii   -\n\v\G=
+114 0x0000ef6f 0x0040fd6f 4   5    .rdata  ascii   )\e/\v
+115 0x0000ef9f 0x0040fd9f 4   5    .rdata  ascii   M8MF
+116 0x0000efbe 0x0040fdbe 4   5    .rdata  ascii   Pe6^
+117 0x0000eff0 0x0040fdf0 5   6    .rdata  ascii   #bML"
+118 0x0000f00a 0x0040fe0a 8   9    .rdata  ascii   `F(>\nq-q
+119 0x0000f034 0x0040fe34 5   6    .rdata  ascii   vQO+t
+120 0x0000f03b 0x0040fe3b 5   7    .rdata  utf8    ru՛E~ blocks=Basic Latin,Armenian
+121 0x0000f047 0x0040fe47 4   5    .rdata  ascii   O}\r\b
+122 0x0000f077 0x0040fe77 4   5    .rdata  ascii   [h1R
+123 0x0000f0d6 0x0040fed6 4   5    .rdata  ascii   XsBI
+124 0x0000f0e2 0x0040fee2 4   5    .rdata  ascii   hPU3
+125 0x0000f118 0x0040ff18 5   6    .rdata  ascii   ^oEZ_
+126 0x0000f1a1 0x0040ffa1 6   8    .rdata  utf8    x]`غ7W blocks=Basic Latin,Arabic
+127 0x0000f211 0x00410011 6   8    .rdata  utf8    D\at͆mC blocks=Basic Latin,Combining Diacritical Marks
+128 0x0000f2d2 0x004100d2 4   6    .rdata  utf8    )ġ:C blocks=Basic Latin,Latin Extended-A
+129 0x0000f316 0x00410116 4   8    .rdata  utf8    ÿZ^ھ blocks=Latin-1 Supplement,Basic Latin,Arabic
+130 0x0000f337 0x00410137 5   7    .rdata  utf8    2%k_ܝ blocks=Basic Latin,Syriac
+131 0x0000f35a 0x0041015a 4   5    .rdata  ascii   w3Xc
+132 0x0000f378 0x00410178 4   5    .rdata  ascii   ur\bC
+133 0x0000f39c 0x0041019c 5   7    .rdata  utf8    \bzGɠ2 blocks=Basic Latin,IPA Extensions
+134 0x0000f3a7 0x004101a7 4   5    .rdata  ascii   [\n;g
+135 0x0000f3b0 0x004101b0 4   5    .rdata  ascii   /P8i
+136 0x0000f3c8 0x004101c8 7   9    .rdata  utf8    ϏOZw3(? blocks=Greek and Coptic,Basic Latin
+137 0x0000f3e8 0x004101e8 4   5    .rdata  ascii   Z"0*
+138 0x0000f479 0x00410279 4   5    .rdata  ascii   fP~V
+139 0x0000f4b1 0x004102b1 4   5    .rdata  ascii   D`T\f
+140 0x0000f527 0x00410327 4   5    .rdata  ascii   ^GP~
+141 0x0000f530 0x00410330 7   9    .rdata  utf8    b;!lڇF\t blocks=Basic Latin,Arabic
+142 0x0000f54a 0x0041034a 6   7    .rdata  ascii   V_:X1:
+143 0x0000f56e 0x0041036e 5   6    .rdata  ascii   NJ2"v
+144 0x0000f594 0x00410394 5   6    .rdata  ascii   O*9y]
+145 0x0000f602 0x00410402 4   5    .rdata  ascii   fu`z
+146 0x0000f631 0x00410431 4   5    .rdata  ascii   /yQA
+147 0x0000f64d 0x0041044d 4   5    .rdata  ascii   Li\a<
+148 0x0000f695 0x00410495 7   10   .rdata  utf8    >aDƋΪ~7 blocks=Basic Latin,Latin Extended-B,Greek and Coptic
+149 0x0000f6a6 0x004104a6 4   5    .rdata  ascii   &]|v
+150 0x0000f6f6 0x004104f6 5   8    .rdata  utf8    散\rI{\e blocks=CJK Unified Ideographs,Basic Latin
+151 0x0000f720 0x00410520 46  47   .rdata  ascii    inflate 1.2.3 Copyright 1995-2005 Mark Adler 
+152 0x0000f758 0x00410558 6   14   .rdata  utf16le \a\b\t\n\v\r
+153 0x0000f770 0x00410570 8   18   .rdata  utf16le #+3;CScs
+154 0x0000f7e4 0x004105e4 4   10   .rdata  utf16le !1Aa
+155 0x0000f87d 0x0041067d 7   8    .rdata  ascii    (8PX\a\b
+156 0x0000f885 0x00410685 6   7    .rdata  ascii   700WP\a
+157 0x0000f894 0x00410694 7   8    .rdata  ascii   \b`h````
+158 0x0000f89d 0x0041069d 9   10   .rdata  ascii   ppxxxx\b\a\b
+159 0x0000f8bc 0x004106bc 4   10   .rdata  utf16le ull)
+160 0x0000f8c8 0x004106c8 6   7    .rdata  ascii   (null)
+161 0x0000f8d0 0x004106d0 14  15   .rdata  ascii   runtime error 
+162 0x0000f8e4 0x004106e4 13  14   .rdata  ascii   TLOSS error\r\n
+163 0x0000f8f4 0x004106f4 12  13   .rdata  ascii   SING error\r\n
+164 0x0000f904 0x00410704 14  15   .rdata  ascii   DOMAIN error\r\n
+165 0x0000f914 0x00410714 36  37   .rdata  ascii   R6028\r\n- unable to initialize heap\r\n
+166 0x0000f93c 0x0041073c 52  53   .rdata  ascii   R6027\r\n- not enough space for lowio initialization\r\n
+167 0x0000f974 0x00410774 52  53   .rdata  ascii   R6026\r\n- not enough space for stdio initialization\r\n
+168 0x0000f9ac 0x004107ac 37  38   .rdata  ascii   R6025\r\n- pure virtual function call\r\n
+169 0x0000f9d4 0x004107d4 52  53   .rdata  ascii   R6024\r\n- not enough space for _onexit/atexit table\r\n
+170 0x0000fa0c 0x0041080c 40  41   .rdata  ascii   R6019\r\n- unable to open console device\r\n
+171 0x0000fa38 0x00410838 32  33   .rdata  ascii   R6018\r\n- unexpected heap error\r\n
+172 0x0000fa5c 0x0041085c 44  45   .rdata  ascii   R6017\r\n- unexpected multithread lock error\r\n
+173 0x0000fa8c 0x0041088c 43  44   .rdata  ascii   R6016\r\n- not enough space for thread data\r\n
+174 0x0000fab8 0x004108b8 32  33   .rdata  ascii   \r\nabnormal program termination\r\n
+175 0x0000fadc 0x004108dc 43  44   .rdata  ascii   R6009\r\n- not enough space for environment\r\n
+176 0x0000fb08 0x00410908 41  42   .rdata  ascii   R6008\r\n- not enough space for arguments\r\n
+177 0x0000fb34 0x00410934 36  37   .rdata  ascii   R6002\r\n- floating point not loaded\r\n
+178 0x0000fb5c 0x0041095c 36  37   .rdata  ascii   Microsoft Visual C++ Runtime Library
+179 0x0000fb88 0x00410988 25  26   .rdata  ascii   Runtime Error!\n\nProgram: 
+180 0x0000fba8 0x004109a8 22  23   .rdata  ascii   <program name unknown>
+181 0x0000fbc0 0x004109c0 18  19   .rdata  ascii   GetLastActivePopup
+182 0x0000fbd4 0x004109d4 15  16   .rdata  ascii   GetActiveWindow
+183 0x0000fbe4 0x004109e4 11  12   .rdata  ascii   MessageBoxA
+184 0x0000fbf0 0x004109f0 10  11   .rdata  ascii   user32.dll
+185 0x0000fe3e 0x00410c3e 19  20   .rdata  ascii   MultiByteToWideChar
+186 0x0000fe54 0x00410c54 17  18   .rdata  ascii   GetCurrentProcess
+187 0x0000fe68 0x00410c68 12  13   .rdata  ascii   GetLastError
+188 0x0000fe78 0x00410c78 16  17   .rdata  ascii   GetCurrentThread
+189 0x0000fe8c 0x00410c8c 12  13   .rdata  ascii   GetTickCount
+190 0x0000fe9c 0x00410c9c 8   9    .rdata  ascii   GetOEMCP
+191 0x0000fea8 0x00410ca8 13  14   .rdata  ascii   GetVersionExW
+192 0x0000feb8 0x00410cb8 16  17   .rdata  ascii   GetComputerNameW
+193 0x0000fecc 0x00410ccc 5   6    .rdata  ascii   Sleep
+194 0x0000fed4 0x00410cd4 19  20   .rdata  ascii   WaitForSingleObject
+195 0x0000feea 0x00410cea 12  13   .rdata  ascii   CreateThread
+196 0x0000fefa 0x00410cfa 11  12   .rdata  ascii   CreateFileW
+197 0x0000ff08 0x00410d08 11  12   .rdata  ascii   CloseHandle
+198 0x0000ff16 0x00410d16 14  15   .rdata  ascii   Process32NextW
+199 0x0000ff28 0x00410d28 11  12   .rdata  ascii   OpenProcess
+200 0x0000ff36 0x00410d36 15  16   .rdata  ascii   Process32FirstW
+201 0x0000ff48 0x00410d48 24  25   .rdata  ascii   CreateToolhelp32Snapshot
+202 0x0000ff64 0x00410d64 16  17   .rdata  ascii   TerminateProcess
+203 0x0000ff78 0x00410d78 9   10   .rdata  ascii   WriteFile
+204 0x0000ff84 0x00410d84 10  11   .rdata  ascii   CreatePipe
+205 0x0000ff92 0x00410d92 19  20   .rdata  ascii   WideCharToMultiByte
+206 0x0000ffa8 0x00410da8 8   9    .rdata  ascii   ReadFile
+207 0x0000ffb4 0x00410db4 14  15   .rdata  ascii   CreateProcessW
+208 0x0000ffc6 0x00410dc6 19  20   .rdata  ascii   GetSystemDirectoryW
+209 0x0000ffdc 0x00410ddc 15  16   .rdata  ascii   GetStartupInfoW
+210 0x0000ffec 0x00410dec 12  13   .rdata  ascii   KERNEL32.dll
+211 0x0000fffc 0x00410dfc 9   10   .rdata  ascii   wsprintfW
+212 0x00010006 0x00410e06 10  11   .rdata  ascii   USER32.dll
+213 0x00010014 0x00410e14 16  17   .rdata  ascii   RegQueryValueExA
+214 0x00010028 0x00410e28 11  12   .rdata  ascii   RegCloseKey
+215 0x00010036 0x00410e36 13  14   .rdata  ascii   RegOpenKeyExA
+216 0x00010046 0x00410e46 17  18   .rdata  ascii   LookupAccountSidA
+217 0x0001005a 0x00410e5a 19  20   .rdata  ascii   GetTokenInformation
+218 0x00010070 0x00410e70 16  17   .rdata  ascii   OpenProcessToken
+219 0x00010084 0x00410e84 15  16   .rdata  ascii   OpenThreadToken
+220 0x00010094 0x00410e94 12  13   .rdata  ascii   ADVAPI32.dll
+221 0x000100a4 0x00410ea4 13  14   .rdata  ascii   ShellExecuteW
+222 0x000100b2 0x00410eb2 11  12   .rdata  ascii   SHELL32.dll
+223 0x000100be 0x00410ebe 10  11   .rdata  ascii   WS2_32.dll
+224 0x000100cc 0x00410ecc 16  17   .rdata  ascii   InternetReadFile
+225 0x000100e0 0x00410ee0 16  17   .rdata  ascii   HttpSendRequestA
+226 0x000100f4 0x00410ef4 16  17   .rdata  ascii   HttpOpenRequestA
+227 0x00010108 0x00410f08 16  17   .rdata  ascii   InternetConnectA
+228 0x0001011c 0x00410f1c 19  20   .rdata  ascii   InternetCloseHandle
+229 0x00010132 0x00410f32 18  19   .rdata  ascii   InternetSetOptionW
+230 0x00010148 0x00410f48 13  14   .rdata  ascii   InternetOpenW
+231 0x00010156 0x00410f56 11  12   .rdata  ascii   WININET.dll
+232 0x00010164 0x00410f64 20  21   .rdata  ascii   GetModuleFileNameExW
+233 0x0001017c 0x00410f7c 18  19   .rdata  ascii   EnumProcessModules
+234 0x00010190 0x00410f90 9   10   .rdata  ascii   PSAPI.DLL
+235 0x0001019c 0x00410f9c 11  12   .rdata  ascii   ExitProcess
+236 0x000101aa 0x00410faa 16  17   .rdata  ascii   GetModuleHandleA
+237 0x000101be 0x00410fbe 15  16   .rdata  ascii   GetStartupInfoA
+238 0x000101d0 0x00410fd0 15  16   .rdata  ascii   GetCommandLineA
+239 0x000101e2 0x00410fe2 10  11   .rdata  ascii   GetVersion
+240 0x000101f0 0x00410ff0 11  12   .rdata  ascii   HeapReAlloc
+241 0x000101fe 0x00410ffe 9   10   .rdata  ascii   HeapAlloc
+242 0x0001020a 0x0041100a 8   9    .rdata  ascii   HeapSize
+243 0x00010216 0x00411016 8   9    .rdata  ascii   HeapFree
+244 0x00010222 0x00411022 24  25   .rdata  ascii   UnhandledExceptionFilter
+245 0x0001023e 0x0041103e 18  19   .rdata  ascii   GetModuleFileNameA
+246 0x00010254 0x00411054 23  24   .rdata  ascii   FreeEnvironmentStringsA
+247 0x0001026e 0x0041106e 23  24   .rdata  ascii   FreeEnvironmentStringsW
+248 0x00010288 0x00411088 21  22   .rdata  ascii   GetEnvironmentStrings
+249 0x000102a0 0x004110a0 22  23   .rdata  ascii   GetEnvironmentStringsW
+250 0x000102ba 0x004110ba 14  15   .rdata  ascii   SetHandleCount
+251 0x000102cc 0x004110cc 12  13   .rdata  ascii   GetStdHandle
+252 0x000102dc 0x004110dc 11  12   .rdata  ascii   GetFileType
+253 0x000102ea 0x004110ea 11  12   .rdata  ascii   HeapDestroy
+254 0x000102f8 0x004110f8 10  11   .rdata  ascii   HeapCreate
+255 0x00010306 0x00411106 11  12   .rdata  ascii   VirtualFree
+256 0x00010314 0x00411114 9   10   .rdata  ascii   RtlUnwind
+257 0x00010320 0x00411120 12  13   .rdata  ascii   VirtualAlloc
+258 0x00010330 0x00411130 14  15   .rdata  ascii   SetFilePointer
+259 0x00010342 0x00411142 9   10   .rdata  ascii   GetCPInfo
+260 0x0001034e 0x0041114e 6   7    .rdata  ascii   GetACP
+261 0x00010358 0x00411158 14  15   .rdata  ascii   GetProcAddress
+262 0x0001036a 0x0041116a 12  13   .rdata  ascii   LoadLibraryA
+263 0x0001037a 0x0041117a 12  13   .rdata  ascii   SetStdHandle
+264 0x0001038a 0x0041118a 12  13   .rdata  ascii   LCMapStringA
+265 0x0001039a 0x0041119a 12  13   .rdata  ascii   LCMapStringW
+266 0x000103aa 0x004111aa 14  15   .rdata  ascii   GetStringTypeA
+267 0x000103bc 0x004111bc 14  15   .rdata  ascii   GetStringTypeW
+268 0x000103ce 0x004111ce 16  17   .rdata  ascii   FlushFileBuffers
+0   0x00010444 0x00412044 8   9    .data   ascii   *+,-CIIU
+1   0x00010454 0x00412054 10  11   .data   ascii   BWAWBEGUFM
+2   0x0001047c 0x0041207c 36  37   .data   ascii   ELDLJFDRILGOEYFZGMCXDIHYGEDKAJIAFTFE
+3   0x00010544 0x00412144 44  45   .data   ascii   DUAKHLHYANAACUDWHOHYDYAOIWJCERCOFEIPCYBSEJCJ
+4   0x000105ac 0x004121ac 4   5    .data   ascii   ::On
+5   0x000105b4 0x004121b4 5   6    .data   ascii   ::Off
+6   0x000105bc 0x004121bc 11  12   .data   ascii   ProxyEnable
+7   0x000105c8 0x004121c8 11  12   .data   ascii   ProxyServer
+8   0x000105d4 0x004121d4 59  60   .data   ascii   Software\Microsoft\Windows\CurrentVersion\Internet Settings
+9   0x00010614 0x00412214 10  11   .data   ascii   /index.asp
+10  0x00010620 0x00412220 8   9    .data   ascii   HTTP/1.0
+11  0x0001062c 0x0041222c 7   8    .data   ascii   success
+12  0x00010634 0x00412234 4   5    .data   ascii   POST
+13  0x0001063c 0x0041223c 4   5    .data   ascii   |%s|
+14  0x0001064c 0x0041224c 29  60   .data   utf16le \windows\system32\browser.dll
+15  0x00010688 0x00412288 55  56   .data   ascii   Cookie: MC1=V=3&GUID=57ee8df6bd36496e8f36f103d8261984\r\n
+16  0x000106c0 0x004122c0 24  25   .data   ascii   Accept-Language: en-us\r\n
+17  0x000106dc 0x004122dc 32  33   .data   ascii   Accept-Encoding: gzip, deflate\r\n
+18  0x00010700 0x00412300 97  98   .data   ascii   User-Agent: Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 6.1; Trident/4.0; .NET4.0C; .NET4.0E)\r\n
+19  0x00010764 0x00412364 24  25   .data   ascii   Connection: Keep-Alive\r\n
+20  0x00010780 0x00412380 22  23   .data   ascii   Host: www.google.com\r\n
+21  0x00010798 0x00412398 102 103  .data   ascii   Accept: application/x-shockwave-flash, image/gif, image/jpeg, image/pjpeg, application/xaml+xml, */*\r\n
+22  0x0001080c 0x0041240c 21  44   .data   utf16le load file successful.
+23  0x00010838 0x00412438 30  62   .data   utf16le Excute file error,return is %d
+24  0x00010878 0x00412478 23  48   .data   utf16le Excute file successful.
+25  0x000108a8 0x004124a8 4   10   .data   utf16le open
+26  0x000108bc 0x004124bc 17  36   .data   utf16le eateFile error:%d
+27  0x000108e0 0x004124e0 24  25   .data   ascii   Host: gmail.google.com\r\n
+28  0x000108fc 0x004124fc 6   7    .data   ascii   exit\r\n
+29  0x0001090c 0x0041250c 6   14   .data   utf16le md.exe
+30  0x0001091c 0x0041251c 5   6    .data   ascii   1.2.3
+31  0x00010924 0x00412524 22  23   .data   ascii   incorrect length check
+32  0x0001093c 0x0041253c 20  21   .data   ascii   incorrect data check
+33  0x00010954 0x00412554 29  30   .data   ascii   invalid distance too far back
+34  0x00010974 0x00412574 21  22   .data   ascii   invalid distance code
+35  0x0001098c 0x0041258c 27  28   .data   ascii   invalid literal/length code
+36  0x000109a8 0x004125a8 21  22   .data   ascii   invalid distances set
+37  0x000109c0 0x004125c0 27  28   .data   ascii   invalid literal/lengths set
+38  0x000109dc 0x004125dc 25  26   .data   ascii   invalid bit length repeat
+39  0x000109f8 0x004125f8 35  36   .data   ascii   too many length or distance symbols
+40  0x00010a1c 0x0041261c 24  25   .data   ascii   invalid code lengths set
+41  0x00010a38 0x00412638 28  29   .data   ascii   invalid stored block lengths
+42  0x00010a58 0x00412658 18  19   .data   ascii   invalid block type
+43  0x00010a6c 0x0041266c 19  20   .data   ascii   header crc mismatch
+44  0x00010a80 0x00412680 24  25   .data   ascii   unknown header flags set
+45  0x00010a9c 0x0041269c 22  23   .data   ascii   incorrect header check
+46  0x00010ab4 0x004126b4 19  20   .data   ascii   invalid window size
+47  0x00010ac8 0x004126c8 26  27   .data   ascii   unknown compression method
+48  0x00010ae4 0x004126e4 20  21   .data   ascii   incompatible version
+49  0x00010afc 0x004126fc 12  13   .data   ascii   buffer error
+50  0x00010b0c 0x0041270c 19  20   .data   ascii   insufficient memory
+51  0x00010b20 0x00412720 10  11   .data   ascii   data error
+52  0x00010b2c 0x0041272c 12  13   .data   ascii   stream error
+53  0x00010b3c 0x0041273c 10  11   .data   ascii   file error
+54  0x00010b48 0x00412748 10  11   .data   ascii   stream end
+55  0x00010b54 0x00412754 15  16   .data   ascii   need dictionary
+56  0x00010fa2 0x00412ba2 33  68   .data   utf16le          (((((                  H
+57  0x000112dc 0x00412edc 12  52   .data   utf32le \t\a\f\b\f\t\f\n\a\v\b\f
+58  0x00011360 0x00412f60 5   24   .data   utf32le R\rS\rW
+59  0x00011378 0x00412f78 7   32   .data   utf32le Y\vl\rm p
+60  0x000113ec 0x00412fec 4   20   .data   utf32le \v§\r· blocks=Basic Latin,Latin-1 Supplement
+0   0x00011aea 0x004164ea 28  29   .rsrc   ascii   `__________________________c
+1   0x00011bf6 0x004165f6 5   6    .rsrc   ascii   --&#T
+2   0x00011c16 0x00416616 6   7    .rsrc   ascii   --;7#k
+3   0x00011c36 0x00416636 6   7    .rsrc   ascii   ---77"
+4   0x00011c58 0x00416658 5   6    .rsrc   ascii   ---7#
+5   0x00011c79 0x00416679 5   6    .rsrc   ascii   ---#=
+6   0x00011c9a 0x0041669a 5   6    .rsrc   ascii   --7#J
+7   0x00011ccf 0x004166cf 5   6    .rsrc   ascii   mVVJD
+8   0x00011cdb 0x004166db 5   6    .rsrc   ascii   /@@F;
+9   0x00011d14 0x00416714 6   7    .rsrc   ascii   JD5/-(
+10  0x00011d34 0x00416734 8   9    .rsrc   ascii   DDD@55(t
+11  0x00011d54 0x00416754 8   9    .rsrc   ascii   PJDD@5,t
+12  0x00011d74 0x00416774 8   9    .rsrc   ascii   PGDDD5/r
+13  0x00011d94 0x00416794 8   9    .rsrc   ascii   PPPDD=/r
+14  0x00011db4 0x004167b4 8   9    .rsrc   ascii   UPPGDD/s
+15  0x00011dd4 0x004167d4 8   9    .rsrc   ascii   UPPGFD&s
+16  0x00011df4 0x004167f4 7   8    .rsrc   ascii   nURRGGP
+17  0x00011e69 0x00416869 29  30   .rsrc   ascii   w\n\n\n\n\f\f\f\f\f\f\f\f\f\f\n\n\n\n\n\n\b\b\b\b\b\b\n\f
+18  0x00011e8a 0x0041688a 28  29   .rsrc   ascii   eeeeeegeeeeeeeeeeeeeeeeeeeew
+arch     x86
+baddr    0x400000
+binsz    73728
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00017cbe
+compiled Thu Apr 16 00:22:10 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x552f00b2
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xbe00
+  SizeOfInitializedData : 0x8200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x8fc8
+  BaseOfCode : 0x1000
+  BaseOfData : 0xd000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x17000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 6 Name: Cvtres500 Version: 1720 Times: 1
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 5
+  Product: 1 Name: Import0 Version: 0 Times: 80
+  Product: 19 Name: Linker512 Version: 8034 Times: 11
+  Product: 10 Name: Utc12_C Version: 8168 Times: 58
+  Product: 0 Name: Unknown Version: 0 Times: 9
+  Product: 93 Name: Implib710 Version: 4035 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 12
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x10a34
+  Size : 0xa0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x16000
+  Size : 0x960
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xd000
+  Size : 0x168
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+shell32.dll
+ws2_32.dll
+wininet.dll
+psapi.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00010c3c 0x0000c288 SET_32 KERNEL32.dll_MultiByteToWideChar
+0x00010c52 0x0000c280 SET_32 KERNEL32.dll_GetCurrentProcess
+0x00010c66 0x0000c27c SET_32 KERNEL32.dll_GetLastError
+0x00010c76 0x0000c278 SET_32 KERNEL32.dll_GetCurrentThread
+0x00010c8a 0x0000c274 SET_32 KERNEL32.dll_GetTickCount
+0x00010c9a 0x0000c270 SET_32 KERNEL32.dll_GetOEMCP
+0x00010ca6 0x0000c26c SET_32 KERNEL32.dll_GetVersionExW
+0x00010cb6 0x0000c268 SET_32 KERNEL32.dll_GetComputerNameW
+0x00010cca 0x0000c248 SET_32 KERNEL32.dll_Sleep
+0x00010cd2 0x0000c220 SET_32 KERNEL32.dll_WaitForSingleObject
+0x00010ce8 0x0000c224 SET_32 KERNEL32.dll_CreateThread
+0x00010cf8 0x0000c228 SET_32 KERNEL32.dll_CreateFileW
+0x00010d06 0x0000c22c SET_32 KERNEL32.dll_CloseHandle
+0x00010d14 0x0000c230 SET_32 KERNEL32.dll_Process32NextW
+0x00010d26 0x0000c234 SET_32 KERNEL32.dll_OpenProcess
+0x00010d34 0x0000c238 SET_32 KERNEL32.dll_Process32FirstW
+0x00010d46 0x0000c23c SET_32 KERNEL32.dll_CreateToolhelp32Snapshot
+0x00010d62 0x0000c240 SET_32 KERNEL32.dll_TerminateProcess
+0x00010d76 0x0000c244 SET_32 KERNEL32.dll_WriteFile
+0x00010d82 0x0000c284 SET_32 KERNEL32.dll_CreatePipe
+0x00010d90 0x0000c24c SET_32 KERNEL32.dll_WideCharToMultiByte
+0x00010da6 0x0000c250 SET_32 KERNEL32.dll_ReadFile
+0x00010db2 0x0000c254 SET_32 KERNEL32.dll_CreateProcessW
+0x00010dc4 0x0000c258 SET_32 KERNEL32.dll_GetSystemDirectoryW
+0x00010dda 0x0000c25c SET_32 KERNEL32.dll_GetStartupInfoW
+0x00010dfa 0x0000c324 SET_32 USER32.dll_wsprintfW
+0x00010e12 0x0000c218 SET_32 ADVAPI32.dll_RegQueryValueExA
+0x00010e26 0x0000c214 SET_32 ADVAPI32.dll_RegCloseKey
+0x00010e34 0x0000c210 SET_32 ADVAPI32.dll_RegOpenKeyExA
+0x00010e44 0x0000c20c SET_32 ADVAPI32.dll_LookupAccountSidA
+0x00010e58 0x0000c208 SET_32 ADVAPI32.dll_GetTokenInformation
+0x00010e6e 0x0000c204 SET_32 ADVAPI32.dll_OpenProcessToken
+0x00010e82 0x0000c200 SET_32 ADVAPI32.dll_OpenThreadToken
+0x00010ea2 0x0000c31c SET_32 SHELL32.dll_ShellExecuteW
+0x00010eca 0x0000c344 SET_32 WININET.dll_InternetReadFile
+0x00010ede 0x0000c334 SET_32 WININET.dll_HttpSendRequestA
+0x00010ef2 0x0000c330 SET_32 WININET.dll_HttpOpenRequestA
+0x00010f06 0x0000c32c SET_32 WININET.dll_InternetConnectA
+0x00010f1a 0x0000c338 SET_32 WININET.dll_InternetCloseHandle
+0x00010f30 0x0000c340 SET_32 WININET.dll_InternetSetOptionW
+0x00010f46 0x0000c33c SET_32 WININET.dll_InternetOpenW
+0x00010f62 0x0000c314 SET_32 PSAPI.DLL_GetModuleFileNameExW
+0x00010f7a 0x0000c310 SET_32 PSAPI.DLL_EnumProcessModules
+0x00010f9a 0x0000c2d8 SET_32 KERNEL32.dll_ExitProcess
+0x00010fa8 0x0000c2dc SET_32 KERNEL32.dll_GetModuleHandleA
+0x00010fbc 0x0000c2e0 SET_32 KERNEL32.dll_GetStartupInfoA
+0x00010fce 0x0000c2e4 SET_32 KERNEL32.dll_GetCommandLineA
+0x00010fe0 0x0000c2e8 SET_32 KERNEL32.dll_GetVersion
+0x00010fee 0x0000c2ec SET_32 KERNEL32.dll_HeapReAlloc
+0x00010ffc 0x0000c2f0 SET_32 KERNEL32.dll_HeapAlloc
+0x00011008 0x0000c2f4 SET_32 KERNEL32.dll_HeapSize
+0x00011014 0x0000c2f8 SET_32 KERNEL32.dll_HeapFree
+0x00011020 0x0000c2fc SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x0001103c 0x0000c300 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x00011052 0x0000c304 SET_32 KERNEL32.dll_FreeEnvironmentStringsA
+0x0001106c 0x0000c308 SET_32 KERNEL32.dll_FreeEnvironmentStringsW
+0x00011086 0x0000c2d4 SET_32 KERNEL32.dll_GetEnvironmentStrings
+0x0001109e 0x0000c2d0 SET_32 KERNEL32.dll_GetEnvironmentStringsW
+0x000110b8 0x0000c2cc SET_32 KERNEL32.dll_SetHandleCount
+0x000110ca 0x0000c2c8 SET_32 KERNEL32.dll_GetStdHandle
+0x000110da 0x0000c2c4 SET_32 KERNEL32.dll_GetFileType
+0x000110e8 0x0000c2c0 SET_32 KERNEL32.dll_HeapDestroy
+0x000110f6 0x0000c2bc SET_32 KERNEL32.dll_HeapCreate
+0x00011104 0x0000c2b8 SET_32 KERNEL32.dll_VirtualFree
+0x00011112 0x0000c2b4 SET_32 KERNEL32.dll_RtlUnwind
+0x0001111e 0x0000c2b0 SET_32 KERNEL32.dll_VirtualAlloc
+0x0001112e 0x0000c2a8 SET_32 KERNEL32.dll_SetFilePointer
+0x00011140 0x0000c2a4 SET_32 KERNEL32.dll_GetCPInfo
+0x0001114c 0x0000c2a0 SET_32 KERNEL32.dll_GetACP
+0x00011156 0x0000c29c SET_32 KERNEL32.dll_GetProcAddress
+0x00011168 0x0000c298 SET_32 KERNEL32.dll_LoadLibraryA
+0x00011178 0x0000c294 SET_32 KERNEL32.dll_SetStdHandle
+0x00011188 0x0000c290 SET_32 KERNEL32.dll_LCMapStringA
+0x00011198 0x0000c28c SET_32 KERNEL32.dll_LCMapStringW
+0x000111a8 0x0000c264 SET_32 KERNEL32.dll_GetStringTypeA
+0x000111ba 0x0000c260 SET_32 KERNEL32.dll_GetStringTypeW
+0x000111cc 0x0000c2ac SET_32 KERNEL32.dll_FlushFileBuffers
+0x8000000b 0x0000c35c SET_32 WS2_32.dll_inet_addr
+0x8000000c 0x0000c350 SET_32 WS2_32.dll_inet_ntoa
+0x80000034 0x0000c354 SET_32 WS2_32.dll_gethostbyname
+0x80000039 0x0000c358 SET_32 WS2_32.dll_gethostname
+0x80000073 0x0000c34c SET_32 WS2_32.dll_WSAStartup
+0x80000074 0x0000c360 SET_32 WS2_32.dll_WSACleanup
+
+
+83 relocations
+73728
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

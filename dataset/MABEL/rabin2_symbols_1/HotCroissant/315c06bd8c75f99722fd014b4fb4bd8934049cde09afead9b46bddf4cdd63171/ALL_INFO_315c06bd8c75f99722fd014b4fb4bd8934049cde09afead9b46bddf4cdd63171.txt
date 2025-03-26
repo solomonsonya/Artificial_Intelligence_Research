@@ -1,0 +1,182 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400      0x0 0x00401000  0x3a000 -rwx UPX0
+1   0x00000400  0x10600 0x0043b000  0x11000 -rwx UPX1
+2   0x00010a00    0x200 0x0044c000   0x1000 -rw- UPX2
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0044b3f0 paddr=0x000107f0 haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0044c0a0 NONE FUNC ADVAPI32.dll EqualSid
+1   0x0044c0a8 NONE FUNC GDI32.dll    BitBlt
+1   0x0044c0b0 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x0044c0b4 NONE FUNC KERNEL32.DLL ExitProcess
+3   0x0044c0b8 NONE FUNC KERNEL32.DLL GetProcAddress
+4   0x0044c0bc NONE FUNC KERNEL32.DLL VirtualProtect
+1   0x0044c0c4 NONE FUNC PSAPI.DLL    EnumProcessModules
+1   0x0044c0cc NONE FUNC SHLWAPI.dll  PathAppendA
+1   0x0044c0d4 NONE FUNC USER32.dll   GetDC
+19  0x0044c0dc NONE FUNC WS2_32.dll   send
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00010aa0 0x0044c0a0 NONE FUNC 0    ADVAPI32.dll imp.EqualSid
+1   0x00010aa8 0x0044c0a8 NONE FUNC 0    GDI32.dll    imp.BitBlt
+1   0x00010ab0 0x0044c0b0 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x00010ab4 0x0044c0b4 NONE FUNC 0    KERNEL32.DLL imp.ExitProcess
+3   0x00010ab8 0x0044c0b8 NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+4   0x00010abc 0x0044c0bc NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+1   0x00010ac4 0x0044c0c4 NONE FUNC 0    PSAPI.DLL    imp.EnumProcessModules
+1   0x00010acc 0x0044c0cc NONE FUNC 0    SHLWAPI.dll  imp.PathAppendA
+1   0x00010ad4 0x0044c0d4 NONE FUNC 0    USER32.dll   imp.GetDC
+19  0x00010adc 0x0044c0dc NONE FUNC 0    WS2_32.dll   imp.send
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    75232
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000131dd
+compiled Mon Jul 29 07:08:01 2019
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000131dd
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x5d3e9b51
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x11000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x3a000
+  AddressOfEntryPoint : 0x4b3f0
+  BaseOfCode : 0x3b000
+  BaseOfData : 0x4c000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x4d000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x131dd
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 30319 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 30319 Times: 7
+  Product: 1 Name: Import0 Version: 0 Times: 152
+  Product: 147 Name: Implib900 Version: 30729 Times: 15
+  Product: 10 Name: Utc12_C Version: 8168 Times: 12
+  Product: 170 Name: Utc1600_C Version: 30319 Times: 128
+  Product: 158 Name: Masm1000 Version: 30319 Times: 23
+  Product: 171 Name: Utc1600_CPP Version: 30319 Times: 42
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x4c000
+  Size : 0x1ac
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x10c00
+  Size : 0x19e0
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x4c1ac
+  Size : 0xc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+gdi32.dll
+kernel32.dll
+psapi.dll
+shlwapi.dll
+user32.dll
+ws2_32.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0004c134 0x00010aa0 SET_32 ADVAPI32.dll_EqualSid
+0x0004c13e 0x00010aa8 SET_32 GDI32.dll_BitBlt
+0x0004c146 0x00010ab4 SET_32 KERNEL32.DLL_ExitProcess
+0x0004c154 0x00010ab8 SET_32 KERNEL32.DLL_GetProcAddress
+0x0004c164 0x00010ab0 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0004c172 0x00010abc SET_32 KERNEL32.DLL_VirtualProtect
+0x0004c182 0x00010ac4 SET_32 PSAPI.DLL_EnumProcessModules
+0x0004c196 0x00010acc SET_32 SHLWAPI.dll_PathAppendA
+0x0004c1a4 0x00010ad4 SET_32 USER32.dll_GetDC
+0x80000013 0x00010adc SET_32 WS2_32.dll_send
+
+
+10 relocations
+75232
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

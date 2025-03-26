@@ -1,0 +1,218 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x4d600 0x00401000   0x66000 -rwx sect_0
+1   0x0004da00   0xd600 0x00467000   0x15000 -rwx sect_1
+2   0x0005b000   0x1200 0x0047c000   0x19000 -rwx sect_2
+3   0x0005c200  0x2e200 0x00495000   0x3b000 -rwx sect_3
+4   0x0008a400    0x400 0x004d0000    0x1000 -rwx .rsrc
+5   0x0008a800      0x0 0x004d1000  0x2b8000 -rwx sect_5
+6   0x0008a800  0x96000 0x00789000   0x96000 -rwx .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0040486c paddr=0x00003c6c haddr=0x00000110 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x007890b4 NONE FUNC kernel32.dll VirtualAlloc
+2   0x007890b8 NONE FUNC kernel32.dll VirtualFree
+3   0x007890bc NONE FUNC kernel32.dll GetModuleHandleA
+4   0x007890c0 NONE FUNC kernel32.dll GetProcAddress
+5   0x007890c4 NONE FUNC kernel32.dll ExitProcess
+6   0x007890c8 NONE FUNC kernel32.dll LoadLibraryA
+1   0x007890d0 NONE FUNC user32.dll   MessageBoxA
+1   0x007890d8 NONE FUNC advapi32.dll RegCloseKey
+1   0x007890e0 NONE FUNC oleaut32.dll SysFreeString
+1   0x007890e8 NONE FUNC gdi32.dll    CreateFontA
+1   0x007890f0 NONE FUNC shell32.dll  ShellExecuteA
+1   0x007890f8 NONE FUNC version.dll  GetFileVersionInfoA
+1   0x00789100 NONE FUNC ole32.dll    OleInitialize
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0008a8b4 0x007890b4 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+2   0x0008a8b8 0x007890b8 NONE FUNC 0    kernel32.dll imp.VirtualFree
+3   0x0008a8bc 0x007890bc NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+4   0x0008a8c0 0x007890c0 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+5   0x0008a8c4 0x007890c4 NONE FUNC 0    kernel32.dll imp.ExitProcess
+6   0x0008a8c8 0x007890c8 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+1   0x0008a8d0 0x007890d0 NONE FUNC 0    user32.dll   imp.MessageBoxA
+1   0x0008a8d8 0x007890d8 NONE FUNC 0    advapi32.dll imp.RegCloseKey
+1   0x0008a8e0 0x007890e0 NONE FUNC 0    oleaut32.dll imp.SysFreeString
+1   0x0008a8e8 0x007890e8 NONE FUNC 0    gdi32.dll    imp.CreateFontA
+1   0x0008a8f0 0x007890f0 NONE FUNC 0    shell32.dll  imp.ShellExecuteA
+1   0x0008a8f8 0x007890f8 NONE FUNC 0    version.dll  imp.GetFileVersionInfoA
+1   0x0008a900 0x00789100 NONE FUNC 0    ole32.dll    imp.OleInitialize
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    1181696
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0012758a
+compiled Mon Oct 14 10:17:38 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x525bc4c2
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x65400
+  SizeOfInitializedData : 0x68200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x486c
+  BaseOfCode : 0x1000
+  BaseOfData : 0x67000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x41f000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 120 Name: Linker800 Version: 50727 Times: 1
+  Product: 124 Name: Cvtres800 Version: 50727 Times: 1
+  Product: 114 Name: Utc1400_LTCG_CPP Version: 50727 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 108
+  Product: 93 Name: Implib710 Version: 4035 Times: 5
+  Product: 109 Name: Utc1400_C Version: 50727 Times: 163
+  Product: 110 Name: Utc1400_CPP Version: 50727 Times: 55
+  Product: 125 Name: Masm800 Version: 50727 Times: 22
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x389000
+  Size : 0x234
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xd0000
+  Size : 0x3c4
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x671f0
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+oleaut32.dll
+gdi32.dll
+shell32.dll
+version.dll
+ole32.dll
+
+8 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00389166 0x0008a8b4 SET_32 kernel32.dll_VirtualAlloc
+0x00389175 0x0008a8b8 SET_32 kernel32.dll_VirtualFree
+0x00389183 0x0008a8bc SET_32 kernel32.dll_GetModuleHandleA
+0x00389196 0x0008a8c0 SET_32 kernel32.dll_GetProcAddress
+0x003891a7 0x0008a8c4 SET_32 kernel32.dll_ExitProcess
+0x003891b5 0x0008a8c8 SET_32 kernel32.dll_LoadLibraryA
+0x003891c4 0x0008a8d0 SET_32 user32.dll_MessageBoxA
+0x003891d2 0x0008a8d8 SET_32 advapi32.dll_RegCloseKey
+0x003891e0 0x0008a8e0 SET_32 oleaut32.dll_SysFreeString
+0x003891f0 0x0008a8e8 SET_32 gdi32.dll_CreateFontA
+0x003891fe 0x0008a8f0 SET_32 shell32.dll_ShellExecuteA
+0x0038920e 0x0008a8f8 SET_32 version.dll_GetFileVersionInfoA
+0x00389224 0x0008a900 SET_32 ole32.dll_OleInitialize
+
+
+13 relocations
+1181696
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 7.5.473.345
+  ProductVersion: 7.5.473.345
+  FileFlagsMask: 0x0
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Hudl
+  FileDescription: Hudl Vary
+  FileVersion: 7.5.473.345
+  InternalName: camehillsend.exe
+  LegalTrademarks: Copyright (C) 2009 Hudl Corporation. All rights reserved.
+  OriginalFilename: camehillsend.exe
+  ProductName: Hudl Vary
+  ProductVersion: 7.5.473.345
+Section to Segment mapping:
+Segment Section
+---------------
+
+

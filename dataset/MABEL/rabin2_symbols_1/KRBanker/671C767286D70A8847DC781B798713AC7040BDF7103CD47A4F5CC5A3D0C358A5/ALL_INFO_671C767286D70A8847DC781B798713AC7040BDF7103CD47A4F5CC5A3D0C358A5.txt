@@ -1,0 +1,214 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x3be00 0x00401000  0x72000 -rwx .text
+1   0x0003c200   0x3400 0x00473000   0x4000 -rwx .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000400 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00475260 NONE FUNC kernel32.dll LoadLibraryA
+2   0x00475264 NONE FUNC kernel32.dll GetProcAddress
+3   0x00475268 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0047526c NONE FUNC kernel32.dll VirtualFree
+1   0x00475274 NONE FUNC USER32.dll   SetTimer
+1   0x0047527c NONE FUNC ADVAPI32.dll LookupAccountNameA
+1   0x00475284 NONE FUNC ole32.dll    CLSIDFromProgID
+5   0x0047528c NONE FUNC WS2_32.dll   getpeername
+1   0x00475294 NONE FUNC SHLWAPI.dll  PathFileExistsA
+1   0x0047529c NONE FUNC DNSAPI.dll   DnsQuery_A
+1   0x004752a4 NONE FUNC SHELL32.dll  SHGetSpecialFolderPathA
+1   0x004752ac NONE FUNC MSVCRT.dll   _strnicmp
+163 0x004752b4 NONE FUNC OLEAUT32.dll QueryPathOfRegTypeLib
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0003e460 0x00475260 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x0003e464 0x00475264 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x0003e468 0x00475268 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x0003e46c 0x0047526c NONE FUNC 0    kernel32.dll imp.VirtualFree
+1   0x0003e474 0x00475274 NONE FUNC 0    USER32.dll   imp.SetTimer
+1   0x0003e47c 0x0047527c NONE FUNC 0    ADVAPI32.dll imp.LookupAccountNameA
+1   0x0003e484 0x00475284 NONE FUNC 0    ole32.dll    imp.CLSIDFromProgID
+5   0x0003e48c 0x0047528c NONE FUNC 0    WS2_32.dll   imp.getpeername
+1   0x0003e494 0x00475294 NONE FUNC 0    SHLWAPI.dll  imp.PathFileExistsA
+1   0x0003e49c 0x0047529c NONE FUNC 0    DNSAPI.dll   imp.DnsQuery_A
+1   0x0003e4a4 0x004752a4 NONE FUNC 0    SHELL32.dll  imp.SHGetSpecialFolderPathA
+1   0x0003e4ac 0x004752ac NONE FUNC 0    MSVCRT.dll   imp._strnicmp
+163 0x0003e4b4 0x004752b4 NONE FUNC 0    OLEAUT32.dll imp.QueryPathOfRegTypeLib
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    259604
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00048d76
+compiled Fri Apr 22 14:23:38 2016
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0004f438
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x2
+  TimeDateStamp : 0x571a33ea
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x21200
+  SizeOfInitializedData : 0x1c200
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1000
+  BaseOfCode : 0x1000
+  BaseOfData : 0x23000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x77000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x4f438
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 66
+  Product: 0 Name: Unknown Version: 0 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 137
+  Product: 93 Name: Implib710 Version: 4035 Times: 21
+  Product: 10 Name: Utc12_C Version: 9782 Times: 2
+  Product: 11 Name: Utc12_CPP Version: 9782 Times: 1
+  Product: 4 Name: Linker600 Version: 8047 Times: 2
+  Product: 14 Name: Masm613 Version: 7299 Times: 1
+  Product: 95 Name: Utc1310_C Version: 4035 Times: 4
+  Product: 12 Name: AliasObj60 Version: 7291 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x752bc
+  Size : 0x285
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x73000
+  Size : 0x2235
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+ole32.dll
+ws2_32.dll
+shlwapi.dll
+dnsapi.dll
+shell32.dll
+msvcrt.dll
+oleaut32.dll
+
+10 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000753a8 0x0003e460 SET_32 kernel32.dll_LoadLibraryA
+0x000753b8 0x0003e464 SET_32 kernel32.dll_GetProcAddress
+0x000753cc 0x0003e468 SET_32 kernel32.dll_VirtualAlloc
+0x000753dc 0x0003e46c SET_32 kernel32.dll_VirtualFree
+0x000753f8 0x0003e474 SET_32 USER32.dll_SetTimer
+0x00075414 0x0003e47c SET_32 ADVAPI32.dll_LookupAccountNameA
+0x00075438 0x0003e484 SET_32 ole32.dll_CLSIDFromProgID
+0x00075464 0x0003e494 SET_32 SHLWAPI.dll_PathFileExistsA
+0x00075484 0x0003e49c SET_32 DNSAPI.dll_DnsQuery_A
+0x000754a0 0x0003e4a4 SET_32 SHELL32.dll_SHGetSpecialFolderPathA
+0x000754c8 0x0003e4ac SET_32 MSVCRT.dll__strnicmp
+0x80000005 0x0003e48c SET_32 WS2_32.dll_getpeername
+0x800000a3 0x0003e4b4 SET_32 OLEAUT32.dll_QueryPathOfRegTypeLib
+
+
+13 relocations
+259604
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 3.3.2.1024
+  ProductVersion: 3.3.2.1024
+  FileFlagsMask: 0x17
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Baidu, Inc.
+  FileDescription: Baidu Pinyin MicroKernel Library
+  FileVersion: 3.3.2.1024
+  InternalName: MicroKernel
+  LegalCopyright: Copyright (c) 2010 - 2015 Baidu, Inc. All Rights Reserved.
+  OriginalFilename: microkernel.dll
+  ProductName: 百度中文输入法
+  ProductVersion: 3.3.2.1024
+Section to Segment mapping:
+Segment Section
+---------------
+
+

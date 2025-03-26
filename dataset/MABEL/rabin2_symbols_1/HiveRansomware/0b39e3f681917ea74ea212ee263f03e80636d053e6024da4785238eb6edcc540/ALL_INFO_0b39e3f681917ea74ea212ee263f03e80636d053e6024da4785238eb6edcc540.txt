@@ -1,0 +1,622 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x2000 0x140001000  0x2000 -r-x .text
+1   0x00002400  0x1e00 0x140003000  0x2000 -r-- .rdata
+2   0x00004200   0x200 0x140005000  0x1000 -rw- .data
+3   0x00004400   0x200 0x140006000  0x1000 -r-- .pdata
+4   0x00004600   0x200 0x140007000  0x1000 -r-- .rsrc
+5   0x00004800   0x200 0x140008000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x140002360 paddr=0x00001760 haddr=0x00000130 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x140001070 paddr=0x00000470
+[Imports]
+nth vaddr       bind type lib                               name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x140003198 NONE FUNC ntdll.dll                         RtlIpv4StringToAddressA
+1   0x140003080 NONE FUNC VCRUNTIME140.dll                  __C_specific_handler
+2   0x140003088 NONE FUNC VCRUNTIME140.dll                  __current_exception
+3   0x140003090 NONE FUNC VCRUNTIME140.dll                  __current_exception_context
+4   0x140003098 NONE FUNC VCRUNTIME140.dll                  memset
+1   0x140003170 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll   __p__commode
+2   0x140003178 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll   _set_fmode
+3   0x140003180 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll   __stdio_common_vfprintf
+4   0x140003188 NONE FUNC api-ms-win-crt-stdio-l1-1-0.dll   __acrt_iob_func
+1   0x1400030d8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initialize_onexit_table
+2   0x1400030e0 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initialize_wide_environment
+3   0x1400030e8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _c_exit
+4   0x1400030f0 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _crt_atexit
+5   0x1400030f8 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll terminate
+6   0x140003100 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _configure_wide_argv
+7   0x140003108 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _register_thread_local_exe_atexit_callback
+8   0x140003110 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _register_onexit_function
+9   0x140003118 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _get_initial_wide_environment
+10  0x140003120 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _cexit
+11  0x140003128 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _set_app_type
+12  0x140003130 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _seh_filter_exe
+13  0x140003138 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll __p___wargv
+14  0x140003140 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll __p___argc
+15  0x140003148 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initterm
+16  0x140003150 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _exit
+17  0x140003158 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll exit
+18  0x140003160 NONE FUNC api-ms-win-crt-runtime-l1-1-0.dll _initterm_e
+1   0x1400030c8 NONE FUNC api-ms-win-crt-math-l1-1-0.dll    __setusermatherr
+1   0x1400030b8 NONE FUNC api-ms-win-crt-locale-l1-1-0.dll  _configthreadlocale
+1   0x1400030a8 NONE FUNC api-ms-win-crt-heap-l1-1-0.dll    _set_new_mode
+1   0x140003000 NONE FUNC KERNEL32.dll                      QueryPerformanceCounter
+2   0x140003008 NONE FUNC KERNEL32.dll                      GetModuleHandleW
+3   0x140003010 NONE FUNC KERNEL32.dll                      IsProcessorFeaturePresent
+4   0x140003018 NONE FUNC KERNEL32.dll                      TerminateProcess
+5   0x140003020 NONE FUNC KERNEL32.dll                      GetCurrentProcess
+6   0x140003028 NONE FUNC KERNEL32.dll                      SetUnhandledExceptionFilter
+7   0x140003030 NONE FUNC KERNEL32.dll                      UnhandledExceptionFilter
+8   0x140003038 NONE FUNC KERNEL32.dll                      RtlVirtualUnwind
+9   0x140003040 NONE FUNC KERNEL32.dll                      IsDebuggerPresent
+10  0x140003048 NONE FUNC KERNEL32.dll                      RtlLookupFunctionEntry
+11  0x140003050 NONE FUNC KERNEL32.dll                      RtlCaptureContext
+12  0x140003058 NONE FUNC KERNEL32.dll                      GetCurrentProcessId
+13  0x140003060 NONE FUNC KERNEL32.dll                      GetCurrentThreadId
+14  0x140003068 NONE FUNC KERNEL32.dll                      GetSystemTimeAsFileTime
+15  0x140003070 NONE FUNC KERNEL32.dll                      InitializeSListHead
+
+[Symbols]
+
+nth paddr      vaddr       bind type size lib                               name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002598 0x140003198 NONE FUNC 0    ntdll.dll                         imp.RtlIpv4StringToAddressA
+1   0x00002480 0x140003080 NONE FUNC 0    VCRUNTIME140.dll                  imp.__C_specific_handler
+2   0x00002488 0x140003088 NONE FUNC 0    VCRUNTIME140.dll                  imp.__current_exception
+3   0x00002490 0x140003090 NONE FUNC 0    VCRUNTIME140.dll                  imp.__current_exception_context
+4   0x00002498 0x140003098 NONE FUNC 0    VCRUNTIME140.dll                  imp.memset
+1   0x00002570 0x140003170 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll   imp.__p__commode
+2   0x00002578 0x140003178 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll   imp._set_fmode
+3   0x00002580 0x140003180 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll   imp.__stdio_common_vfprintf
+4   0x00002588 0x140003188 NONE FUNC 0    api-ms-win-crt-stdio-l1-1-0.dll   imp.__acrt_iob_func
+1   0x000024d8 0x1400030d8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initialize_onexit_table
+2   0x000024e0 0x1400030e0 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initialize_wide_environment
+3   0x000024e8 0x1400030e8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._c_exit
+4   0x000024f0 0x1400030f0 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._crt_atexit
+5   0x000024f8 0x1400030f8 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp.terminate
+6   0x00002500 0x140003100 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._configure_wide_argv
+7   0x00002508 0x140003108 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._register_thread_local_exe_atexit_callback
+8   0x00002510 0x140003110 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._register_onexit_function
+9   0x00002518 0x140003118 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._get_initial_wide_environment
+10  0x00002520 0x140003120 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._cexit
+11  0x00002528 0x140003128 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._set_app_type
+12  0x00002530 0x140003130 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._seh_filter_exe
+13  0x00002538 0x140003138 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp.__p___wargv
+14  0x00002540 0x140003140 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp.__p___argc
+15  0x00002548 0x140003148 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initterm
+16  0x00002550 0x140003150 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._exit
+17  0x00002558 0x140003158 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp.exit
+18  0x00002560 0x140003160 NONE FUNC 0    api-ms-win-crt-runtime-l1-1-0.dll imp._initterm_e
+1   0x000024c8 0x1400030c8 NONE FUNC 0    api-ms-win-crt-math-l1-1-0.dll    imp.__setusermatherr
+1   0x000024b8 0x1400030b8 NONE FUNC 0    api-ms-win-crt-locale-l1-1-0.dll  imp._configthreadlocale
+1   0x000024a8 0x1400030a8 NONE FUNC 0    api-ms-win-crt-heap-l1-1-0.dll    imp._set_new_mode
+1   0x00002400 0x140003000 NONE FUNC 0    KERNEL32.dll                      imp.QueryPerformanceCounter
+2   0x00002408 0x140003008 NONE FUNC 0    KERNEL32.dll                      imp.GetModuleHandleW
+3   0x00002410 0x140003010 NONE FUNC 0    KERNEL32.dll                      imp.IsProcessorFeaturePresent
+4   0x00002418 0x140003018 NONE FUNC 0    KERNEL32.dll                      imp.TerminateProcess
+5   0x00002420 0x140003020 NONE FUNC 0    KERNEL32.dll                      imp.GetCurrentProcess
+6   0x00002428 0x140003028 NONE FUNC 0    KERNEL32.dll                      imp.SetUnhandledExceptionFilter
+7   0x00002430 0x140003030 NONE FUNC 0    KERNEL32.dll                      imp.UnhandledExceptionFilter
+8   0x00002438 0x140003038 NONE FUNC 0    KERNEL32.dll                      imp.RtlVirtualUnwind
+9   0x00002440 0x140003040 NONE FUNC 0    KERNEL32.dll                      imp.IsDebuggerPresent
+10  0x00002448 0x140003048 NONE FUNC 0    KERNEL32.dll                      imp.RtlLookupFunctionEntry
+11  0x00002450 0x140003050 NONE FUNC 0    KERNEL32.dll                      imp.RtlCaptureContext
+12  0x00002458 0x140003058 NONE FUNC 0    KERNEL32.dll                      imp.GetCurrentProcessId
+13  0x00002460 0x140003060 NONE FUNC 0    KERNEL32.dll                      imp.GetCurrentThreadId
+14  0x00002468 0x140003068 NONE FUNC 0    KERNEL32.dll                      imp.GetSystemTimeAsFileTime
+15  0x00002470 0x140003070 NONE FUNC 0    KERNEL32.dll                      imp.InitializeSListHead
+[Strings]
+nth paddr      vaddr       len size section type  string
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00002658 0x140003258 14  15   .rdata  ascii 252.72.131.228
+1   0x00002668 0x140003268 13  14   .rdata  ascii 240.232.200.0
+2   0x00002678 0x140003278 9   10   .rdata  ascii 0.0.65.81
+3   0x00002688 0x140003288 11  12   .rdata  ascii 65.80.82.81
+4   0x00002698 0x140003298 12  13   .rdata  ascii 86.72.49.210
+5   0x000026a8 0x1400032a8 13  14   .rdata  ascii 101.72.139.82
+6   0x000026b8 0x1400032b8 12  13   .rdata  ascii 96.72.139.82
+7   0x000026c8 0x1400032c8 12  13   .rdata  ascii 24.72.139.82
+8   0x000026d8 0x1400032d8 13  14   .rdata  ascii 32.72.139.114
+9   0x000026e8 0x1400032e8 12  13   .rdata  ascii 80.72.15.183
+10  0x000026f8 0x1400032f8 11  12   .rdata  ascii 74.74.77.49
+11  0x00002708 0x140003308 13  14   .rdata  ascii 201.72.49.192
+12  0x00002718 0x140003318 13  14   .rdata  ascii 172.60.97.124
+13  0x00002728 0x140003328 10  11   .rdata  ascii 2.44.32.65
+14  0x00002738 0x140003338 13  14   .rdata  ascii 193.201.13.65
+15  0x00002748 0x140003348 13  14   .rdata  ascii 1.193.226.237
+16  0x00002758 0x140003358 11  12   .rdata  ascii 82.65.81.72
+17  0x00002768 0x140003368 13  14   .rdata  ascii 139.82.32.139
+18  0x00002778 0x140003378 10  11   .rdata  ascii 66.60.72.1
+19  0x00002788 0x140003388 15  16   .rdata  ascii 208.102.129.120
+20  0x00002798 0x140003398 11  12   .rdata  ascii 24.11.2.117
+21  0x000027a8 0x1400033a8 15  16   .rdata  ascii 114.139.128.136
+22  0x000027b8 0x1400033b8 8   9    .rdata  ascii 0.0.0.72
+23  0x000027c8 0x1400033c8 15  16   .rdata  ascii 133.192.116.103
+24  0x000027d8 0x1400033d8 11  12   .rdata  ascii 72.1.208.80
+25  0x000027e8 0x1400033e8 12  13   .rdata  ascii 139.72.24.68
+26  0x000027f8 0x1400033f8 12  13   .rdata  ascii 139.64.32.73
+27  0x00002808 0x140003408 12  13   .rdata  ascii 1.208.227.86
+28  0x00002818 0x140003418 13  14   .rdata  ascii 72.255.201.65
+29  0x00002828 0x140003428 13  14   .rdata  ascii 139.52.136.72
+30  0x00002838 0x140003438 11  12   .rdata  ascii 1.214.77.49
+31  0x00002848 0x140003448 14  15   .rdata  ascii 172.65.193.201
+32  0x00002858 0x140003458 11  12   .rdata  ascii 13.65.1.193
+33  0x00002868 0x140003468 14  15   .rdata  ascii 56.224.117.241
+34  0x00002878 0x140003478 10  11   .rdata  ascii 76.3.76.36
+35  0x00002888 0x140003488 11  12   .rdata  ascii 8.69.57.209
+36  0x00002898 0x140003498 13  14   .rdata  ascii 117.216.88.68
+37  0x000028a8 0x1400034a8 12  13   .rdata  ascii 139.64.36.73
+38  0x000028b8 0x1400034b8 12  13   .rdata  ascii 1.208.102.65
+39  0x000028c8 0x1400034c8 12  13   .rdata  ascii 139.12.72.68
+40  0x000028d8 0x1400034d8 12  13   .rdata  ascii 139.64.28.73
+41  0x000028e8 0x1400034e8 12  13   .rdata  ascii 1.208.65.139
+42  0x000028f8 0x1400034f8 10  11   .rdata  ascii 4.136.72.1
+43  0x00002908 0x140003508 12  13   .rdata  ascii 208.65.88.65
+44  0x00002918 0x140003518 11  12   .rdata  ascii 88.94.89.90
+45  0x00002928 0x140003528 11  12   .rdata  ascii 65.88.65.89
+46  0x00002938 0x140003538 12  13   .rdata  ascii 65.90.72.131
+47  0x00002948 0x140003548 12  13   .rdata  ascii 236.32.65.82
+48  0x00002958 0x140003558 13  14   .rdata  ascii 255.224.88.65
+49  0x00002968 0x140003568 12  13   .rdata  ascii 89.90.72.139
+50  0x00002978 0x140003578 13  14   .rdata  ascii 18.233.79.255
+51  0x00002988 0x140003588 14  15   .rdata  ascii 255.255.93.106
+52  0x00002998 0x140003598 12  13   .rdata  ascii 0.73.190.119
+53  0x000029a8 0x1400035a8 15  16   .rdata  ascii 105.110.105.110
+54  0x000029b8 0x1400035b8 12  13   .rdata  ascii 101.116.0.65
+55  0x000029c8 0x1400035c8 13  14   .rdata  ascii 86.73.137.230
+56  0x000029d8 0x1400035d8 13  14   .rdata  ascii 76.137.241.65
+57  0x000029e8 0x1400035e8 13  14   .rdata  ascii 186.76.119.38
+58  0x000029f8 0x1400035f8 12  13   .rdata  ascii 7.255.213.72
+59  0x00002a08 0x140003608 12  13   .rdata  ascii 49.201.72.49
+60  0x00002a18 0x140003618 13  14   .rdata  ascii 210.77.49.192
+61  0x00002a28 0x140003628 12  13   .rdata  ascii 77.49.201.65
+62  0x00002a38 0x140003638 11  12   .rdata  ascii 80.65.80.65
+63  0x00002a48 0x140003648 13  14   .rdata  ascii 186.58.86.121
+64  0x00002a58 0x140003658 15  16   .rdata  ascii 167.255.213.235
+65  0x00002a68 0x140003668 13  14   .rdata  ascii 115.90.72.137
+66  0x00002a78 0x140003678 13  14   .rdata  ascii 193.65.184.65
+67  0x00002a88 0x140003688 9   10   .rdata  ascii 31.0.0.77
+68  0x00002a98 0x140003698 12  13   .rdata  ascii 49.201.65.81
+69  0x00002aa8 0x1400036a8 11  12   .rdata  ascii 65.81.106.3
+70  0x00002ab8 0x1400036b8 12  13   .rdata  ascii 65.81.65.186
+71  0x00002ac8 0x1400036c8 14  15   .rdata  ascii 87.137.159.198
+72  0x00002ad8 0x1400036d8 14  15   .rdata  ascii 255.213.235.89
+73  0x00002ae8 0x1400036e8 13  14   .rdata  ascii 91.72.137.193
+74  0x00002af8 0x1400036f8 12  13   .rdata  ascii 72.49.210.73
+75  0x00002b08 0x140003708 13  14   .rdata  ascii 137.216.77.49
+76  0x00002b18 0x140003718 12  13   .rdata  ascii 201.82.104.0
+77  0x00002b28 0x140003728 11  12   .rdata  ascii 2.64.132.82
+78  0x00002b38 0x140003738 13  14   .rdata  ascii 82.65.186.235
+79  0x00002b48 0x140003748 12  13   .rdata  ascii 85.46.59.255
+80  0x00002b58 0x140003758 14  15   .rdata  ascii 213.72.137.198
+81  0x00002b68 0x140003768 13  14   .rdata  ascii 72.131.195.80
+82  0x00002b78 0x140003778 12  13   .rdata  ascii 106.10.95.72
+83  0x00002b88 0x140003788 14  15   .rdata  ascii 137.241.72.137
+84  0x00002b98 0x140003798 14  15   .rdata  ascii 218.73.199.192
+85  0x00002ba8 0x1400037a8 15  16   .rdata  ascii 255.255.255.255
+86  0x00002bb8 0x1400037b8 12  13   .rdata  ascii 77.49.201.82
+87  0x00002bc8 0x1400037c8 12  13   .rdata  ascii 82.65.186.45
+88  0x00002bd8 0x1400037d8 12  13   .rdata  ascii 6.24.123.255
+89  0x00002be8 0x1400037e8 14  15   .rdata  ascii 213.133.192.15
+90  0x00002bf8 0x1400037f8 11  12   .rdata  ascii 133.157.1.0
+91  0x00002c08 0x140003808 12  13   .rdata  ascii 0.72.255.207
+92  0x00002c18 0x140003818 12  13   .rdata  ascii 15.132.140.1
+93  0x00002c28 0x140003828 11  12   .rdata  ascii 0.0.235.211
+94  0x00002c38 0x140003838 11  12   .rdata  ascii 233.228.1.0
+95  0x00002c48 0x140003848 13  14   .rdata  ascii 0.232.162.255
+96  0x00002c58 0x140003858 13  14   .rdata  ascii 255.255.47.97
+97  0x00002c68 0x140003868 14  15   .rdata  ascii 112.105.47.118
+98  0x00002c78 0x140003878 13  14   .rdata  ascii 49.47.118.101
+99  0x00002c88 0x140003888 15  16   .rdata  ascii 114.115.105.111
+100 0x00002c98 0x140003898 12  13   .rdata  ascii 110.0.252.23
+101 0x00002ca8 0x1400038a8 15  16   .rdata  ascii 204.238.157.167
+102 0x00002cb8 0x1400038b8 12  13   .rdata  ascii 87.140.26.56
+103 0x00002cc8 0x1400038c8 14  15   .rdata  ascii 184.151.16.235
+104 0x00002cd8 0x1400038d8 13  14   .rdata  ascii 67.52.118.231
+105 0x00002ce8 0x1400038e8 15  16   .rdata  ascii 160.233.240.223
+106 0x00002cf8 0x1400038f8 14  15   .rdata  ascii 250.173.245.36
+107 0x00002d08 0x140003908 14  15   .rdata  ascii 134.240.66.216
+108 0x00002d18 0x140003918 14  15   .rdata  ascii 242.241.131.24
+109 0x00002d28 0x140003928 13  14   .rdata  ascii 5.138.152.215
+110 0x00002d38 0x140003938 11  12   .rdata  ascii 58.10.32.58
+111 0x00002d48 0x140003948 13  14   .rdata  ascii 181.126.53.74
+112 0x00002d58 0x140003958 15  16   .rdata  ascii 247.110.102.144
+113 0x00002d68 0x140003968 13  14   .rdata  ascii 15.66.138.140
+114 0x00002d78 0x140003978 13  14   .rdata  ascii 45.121.95.218
+115 0x00002d88 0x140003988 11  12   .rdata  ascii 5.21.43.146
+116 0x00002d98 0x140003998 12  13   .rdata  ascii 210.0.72.111
+117 0x00002da8 0x1400039a8 13  14   .rdata  ascii 115.116.58.32
+118 0x00002db8 0x1400039b8 14  15   .rdata  ascii 105.109.97.103
+119 0x00002dc8 0x1400039c8 14  15   .rdata  ascii 101.46.105.109
+120 0x00002dd8 0x1400039d8 14  15   .rdata  ascii 97.103.101.112
+121 0x00002de8 0x1400039e8 14  15   .rdata  ascii 97.112.101.114
+122 0x00002df8 0x1400039f8 13  14   .rdata  ascii 46.116.107.13
+123 0x00002e08 0x140003a08 13  14   .rdata  ascii 10.67.111.110
+124 0x00002e18 0x140003a18 14  15   .rdata  ascii 110.101.99.116
+125 0x00002e28 0x140003a28 14  15   .rdata  ascii 105.111.110.58
+126 0x00002e38 0x140003a38 13  14   .rdata  ascii 32.75.101.101
+127 0x00002e48 0x140003a48 13  14   .rdata  ascii 112.45.65.108
+128 0x00002e58 0x140003a58 14  15   .rdata  ascii 105.118.101.13
+129 0x00002e68 0x140003a68 13  14   .rdata  ascii 10.85.115.101
+130 0x00002e78 0x140003a78 13  14   .rdata  ascii 114.45.65.103
+131 0x00002e88 0x140003a88 14  15   .rdata  ascii 101.110.116.58
+132 0x00002e98 0x140003a98 13  14   .rdata  ascii 32.77.111.122
+133 0x00002ea8 0x140003aa8 14  15   .rdata  ascii 105.108.108.97
+134 0x00002eb8 0x140003ab8 11  12   .rdata  ascii 47.53.46.48
+135 0x00002ec8 0x140003ac8 12  13   .rdata  ascii 32.40.87.105
+136 0x00002ed8 0x140003ad8 15  16   .rdata  ascii 110.100.111.119
+137 0x00002ee8 0x140003ae8 12  13   .rdata  ascii 115.32.78.84
+138 0x00002ef8 0x140003af8 11  12   .rdata  ascii 32.49.48.46
+139 0x00002f08 0x140003b08 11  12   .rdata  ascii 48.59.32.87
+140 0x00002f18 0x140003b18 13  14   .rdata  ascii 105.110.54.52
+141 0x00002f28 0x140003b28 12  13   .rdata  ascii 59.32.120.54
+142 0x00002f38 0x140003b38 11  12   .rdata  ascii 52.41.32.65
+143 0x00002f48 0x140003b48 15  16   .rdata  ascii 112.112.108.101
+144 0x00002f58 0x140003b58 12  13   .rdata  ascii 87.101.98.75
+145 0x00002f68 0x140003b68 13  14   .rdata  ascii 105.116.47.53
+146 0x00002f78 0x140003b78 11  12   .rdata  ascii 51.55.46.51
+147 0x00002f88 0x140003b88 11  12   .rdata  ascii 54.32.40.75
+148 0x00002f98 0x140003b98 11  12   .rdata  ascii 72.84.77.76
+149 0x00002fa8 0x140003ba8 13  14   .rdata  ascii 44.32.108.105
+150 0x00002fb8 0x140003bb8 13  14   .rdata  ascii 107.101.32.71
+151 0x00002fc8 0x140003bc8 14  15   .rdata  ascii 101.99.107.111
+152 0x00002fd8 0x140003bd8 12  13   .rdata  ascii 41.32.67.104
+153 0x00002fe8 0x140003be8 15  16   .rdata  ascii 114.111.109.101
+154 0x00002ff8 0x140003bf8 11  12   .rdata  ascii 47.57.56.46
+155 0x00003008 0x140003c08 11  12   .rdata  ascii 48.46.52.55
+156 0x00003018 0x140003c18 11  12   .rdata  ascii 53.56.46.56
+157 0x00003028 0x140003c28 11  12   .rdata  ascii 50.32.83.97
+158 0x00003038 0x140003c38 14  15   .rdata  ascii 102.97.114.105
+159 0x00003048 0x140003c48 11  12   .rdata  ascii 47.53.51.55
+160 0x00003058 0x140003c58 11  12   .rdata  ascii 46.51.54.13
+161 0x00003068 0x140003c68 11  12   .rdata  ascii 10.0.54.184
+162 0x00003078 0x140003c78 14  15   .rdata  ascii 176.241.145.38
+163 0x00003088 0x140003c88 12  13   .rdata  ascii 34.85.169.35
+164 0x00003098 0x140003c98 14  15   .rdata  ascii 157.163.10.250
+165 0x000030a8 0x140003ca8 13  14   .rdata  ascii 54.108.64.178
+166 0x000030b8 0x140003cb8 12  13   .rdata  ascii 50.74.10.105
+167 0x000030c8 0x140003cc8 13  14   .rdata  ascii 70.212.147.45
+168 0x000030d8 0x140003cd8 13  14   .rdata  ascii 99.34.158.141
+169 0x000030e8 0x140003ce8 15  16   .rdata  ascii 193.228.167.199
+170 0x000030f8 0x140003cf8 12  13   .rdata  ascii 58.26.220.93
+171 0x00003108 0x140003d08 15  16   .rdata  ascii 172.192.165.198
+172 0x00003118 0x140003d18 12  13   .rdata  ascii 0.81.228.220
+173 0x00003128 0x140003d28 14  15   .rdata  ascii 164.180.27.102
+174 0x00003138 0x140003d38 14  15   .rdata  ascii 61.223.250.134
+175 0x00003148 0x140003d48 14  15   .rdata  ascii 188.199.106.41
+176 0x00003158 0x140003d58 15  16   .rdata  ascii 108.243.232.150
+177 0x00003168 0x140003d68 13  14   .rdata  ascii 113.100.42.98
+178 0x00003178 0x140003d78 14  15   .rdata  ascii 124.158.17.175
+179 0x00003188 0x140003d88 14  15   .rdata  ascii 213.12.196.208
+180 0x00003198 0x140003d98 15  16   .rdata  ascii 115.197.212.195
+181 0x000031a8 0x140003da8 13  14   .rdata  ascii 135.14.29.188
+182 0x000031b8 0x140003db8 14  15   .rdata  ascii 160.251.143.51
+183 0x000031c8 0x140003dc8 13  14   .rdata  ascii 56.19.126.145
+184 0x000031d8 0x140003dd8 14  15   .rdata  ascii 33.213.221.183
+185 0x000031e8 0x140003de8 12  13   .rdata  ascii 51.194.3.190
+186 0x000031f8 0x140003df8 12  13   .rdata  ascii 141.58.66.79
+187 0x00003208 0x140003e08 12  13   .rdata  ascii 18.156.57.74
+188 0x00003218 0x140003e18 14  15   .rdata  ascii 155.70.143.161
+189 0x00003228 0x140003e28 10  11   .rdata  ascii 83.89.86.1
+190 0x00003238 0x140003e38 10  11   .rdata  ascii 7.62.19.59
+191 0x00003248 0x140003e48 14  15   .rdata  ascii 104.135.160.18
+192 0x00003258 0x140003e58 12  13   .rdata  ascii 147.0.65.190
+193 0x00003268 0x140003e68 14  15   .rdata  ascii 240.181.162.86
+194 0x00003278 0x140003e78 13  14   .rdata  ascii 255.213.72.49
+195 0x00003288 0x140003e88 11  12   .rdata  ascii 201.186.0.0
+196 0x00003298 0x140003e98 11  12   .rdata  ascii 64.0.65.184
+197 0x000032a8 0x140003ea8 8   9    .rdata  ascii 0.16.0.0
+198 0x000032b8 0x140003eb8 11  12   .rdata  ascii 65.185.64.0
+199 0x000032c8 0x140003ec8 10  11   .rdata  ascii 0.0.65.186
+200 0x000032d8 0x140003ed8 13  14   .rdata  ascii 88.164.83.229
+201 0x000032e8 0x140003ee8 14  15   .rdata  ascii 255.213.72.147
+202 0x000032f8 0x140003ef8 12  13   .rdata  ascii 83.83.72.137
+203 0x00003308 0x140003f08 14  15   .rdata  ascii 231.72.137.241
+204 0x00003318 0x140003f18 13  14   .rdata  ascii 72.137.218.65
+205 0x00003328 0x140003f28 10  11   .rdata  ascii 184.0.32.0
+206 0x00003338 0x140003f38 12  13   .rdata  ascii 0.73.137.249
+207 0x00003348 0x140003f48 13  14   .rdata  ascii 65.186.18.150
+208 0x00003358 0x140003f58 15  16   .rdata  ascii 137.226.255.213
+209 0x00003368 0x140003f68 13  14   .rdata  ascii 72.131.196.32
+210 0x00003378 0x140003f78 15  16   .rdata  ascii 133.192.116.182
+211 0x00003388 0x140003f88 12  13   .rdata  ascii 102.139.7.72
+212 0x00003398 0x140003f98 13  14   .rdata  ascii 1.195.133.192
+213 0x000033a8 0x140003fa8 13  14   .rdata  ascii 117.215.88.88
+214 0x000033b8 0x140003fb8 9   10   .rdata  ascii 88.72.5.0
+215 0x000033c8 0x140003fc8 8   9    .rdata  ascii 0.0.0.80
+216 0x000033d8 0x140003fd8 15  16   .rdata  ascii 195.232.159.253
+217 0x000033e8 0x140003fe8 13  14   .rdata  ascii 255.255.49.55
+218 0x000033f8 0x140003ff8 11  12   .rdata  ascii 50.46.50.57
+219 0x00003408 0x140004008 11  12   .rdata  ascii 46.50.53.46
+220 0x00003418 0x140004018 9   10   .rdata  ascii 50.55.0.0
+221 0x00003428 0x140004028 7   8    .rdata  ascii 0.0.1.0
+222 0x00003430 0x140004030 6   7    .rdata  ascii ERROR!
+223 0x00003618 0x140004218 4   5    .rdata  ascii RSDS
+224 0x00003630 0x140004230 70  71   .rdata  ascii E:\Users\PC\source\repos\HellsGate+ipv4\x64\Release\HellsGate+ipv4.pdb
+225 0x0000368c 0x14000428c 4   5    .rdata  ascii GCTL
+226 0x00003698 0x140004298 8   9    .rdata  ascii .text$mn
+227 0x000036ac 0x1400042ac 11  12   .rdata  ascii .text$mn$00
+228 0x000036c0 0x1400042c0 7   8    .rdata  ascii .text$x
+229 0x000036d0 0x1400042d0 8   9    .rdata  ascii .idata$5
+230 0x000036e4 0x1400042e4 6   7    .rdata  ascii .00cfg
+231 0x000036f4 0x1400042f4 8   9    .rdata  ascii .CRT$XCA
+232 0x00003708 0x140004308 9   10   .rdata  ascii .CRT$XCAA
+233 0x0000371c 0x14000431c 8   9    .rdata  ascii .CRT$XCZ
+234 0x00003730 0x140004330 8   9    .rdata  ascii .CRT$XIA
+235 0x00003744 0x140004344 9   10   .rdata  ascii .CRT$XIAA
+236 0x00003758 0x140004358 9   10   .rdata  ascii .CRT$XIAC
+237 0x0000376c 0x14000436c 8   9    .rdata  ascii .CRT$XIZ
+238 0x00003780 0x140004380 8   9    .rdata  ascii .CRT$XPA
+239 0x00003794 0x140004394 8   9    .rdata  ascii .CRT$XPZ
+240 0x000037a8 0x1400043a8 8   9    .rdata  ascii .CRT$XTA
+241 0x000037bc 0x1400043bc 8   9    .rdata  ascii .CRT$XTZ
+242 0x000037d0 0x1400043d0 6   7    .rdata  ascii .rdata
+243 0x000037e0 0x1400043e0 13  14   .rdata  ascii .rdata$voltmd
+244 0x000037f8 0x1400043f8 13  14   .rdata  ascii .rdata$zzzdbg
+245 0x00003810 0x140004410 8   9    .rdata  ascii .rtc$IAA
+246 0x00003824 0x140004424 8   9    .rdata  ascii .rtc$IZZ
+247 0x00003838 0x140004438 8   9    .rdata  ascii .rtc$TAA
+248 0x0000384c 0x14000444c 8   9    .rdata  ascii .rtc$TZZ
+249 0x00003860 0x140004460 6   7    .rdata  ascii .xdata
+250 0x00003870 0x140004470 8   9    .rdata  ascii .idata$2
+251 0x00003884 0x140004484 8   9    .rdata  ascii .idata$3
+252 0x00003898 0x140004498 8   9    .rdata  ascii .idata$4
+253 0x000038ac 0x1400044ac 8   9    .rdata  ascii .idata$6
+254 0x000038c0 0x1400044c0 5   6    .rdata  ascii .data
+255 0x000038d0 0x1400044d0 4   5    .rdata  ascii .bss
+256 0x000038e0 0x1400044e0 6   7    .rdata  ascii .pdata
+257 0x000038f0 0x1400044f0 8   9    .rdata  ascii .rsrc$01
+258 0x00003904 0x140004504 8   9    .rdata  ascii .rsrc$02
+259 0x00003976 0x140004576 4   5    .rdata  ascii \fp\vP
+260 0x00003cc2 0x1400048c2 23  24   .rdata  ascii RtlIpv4StringToAddressA
+261 0x00003cda 0x1400048da 9   10   .rdata  ascii ntdll.dll
+262 0x00003ce6 0x1400048e6 20  21   .rdata  ascii __C_specific_handler
+263 0x00003cfe 0x1400048fe 19  20   .rdata  ascii __current_exception
+264 0x00003d14 0x140004914 27  28   .rdata  ascii __current_exception_context
+265 0x00003d32 0x140004932 6   7    .rdata  ascii memset
+266 0x00003d3a 0x14000493a 16  17   .rdata  ascii VCRUNTIME140.dll
+267 0x00003d4e 0x14000494e 15  16   .rdata  ascii __acrt_iob_func
+268 0x00003d60 0x140004960 23  24   .rdata  ascii __stdio_common_vfprintf
+269 0x00003d7a 0x14000497a 15  16   .rdata  ascii _seh_filter_exe
+270 0x00003d8c 0x14000498c 13  14   .rdata  ascii _set_app_type
+271 0x00003d9c 0x14000499c 16  17   .rdata  ascii __setusermatherr
+272 0x00003db0 0x1400049b0 20  21   .rdata  ascii _configure_wide_argv
+273 0x00003dc8 0x1400049c8 28  29   .rdata  ascii _initialize_wide_environment
+274 0x00003de8 0x1400049e8 29  30   .rdata  ascii _get_initial_wide_environment
+275 0x00003e08 0x140004a08 9   10   .rdata  ascii _initterm
+276 0x00003e14 0x140004a14 11  12   .rdata  ascii _initterm_e
+277 0x00003e22 0x140004a22 4   5    .rdata  ascii exit
+278 0x00003e2a 0x140004a2a 5   6    .rdata  ascii _exit
+279 0x00003e32 0x140004a32 10  11   .rdata  ascii _set_fmode
+280 0x00003e40 0x140004a40 10  11   .rdata  ascii __p___argc
+281 0x00003e4e 0x140004a4e 11  12   .rdata  ascii __p___wargv
+282 0x00003e5c 0x140004a5c 6   7    .rdata  ascii _cexit
+283 0x00003e66 0x140004a66 7   8    .rdata  ascii _c_exit
+284 0x00003e70 0x140004a70 42  43   .rdata  ascii _register_thread_local_exe_atexit_callback
+285 0x00003e9e 0x140004a9e 19  20   .rdata  ascii _configthreadlocale
+286 0x00003eb4 0x140004ab4 13  14   .rdata  ascii _set_new_mode
+287 0x00003ec4 0x140004ac4 12  13   .rdata  ascii __p__commode
+288 0x00003ed4 0x140004ad4 24  25   .rdata  ascii _initialize_onexit_table
+289 0x00003ef0 0x140004af0 25  26   .rdata  ascii _register_onexit_function
+290 0x00003f0c 0x140004b0c 11  12   .rdata  ascii _crt_atexit
+291 0x00003f1a 0x140004b1a 9   10   .rdata  ascii terminate
+292 0x00003f24 0x140004b24 31  32   .rdata  ascii api-ms-win-crt-stdio-l1-1-0.dll
+293 0x00003f44 0x140004b44 33  34   .rdata  ascii api-ms-win-crt-runtime-l1-1-0.dll
+294 0x00003f66 0x140004b66 30  31   .rdata  ascii api-ms-win-crt-math-l1-1-0.dll
+295 0x00003f86 0x140004b86 32  33   .rdata  ascii api-ms-win-crt-locale-l1-1-0.dll
+296 0x00003fa8 0x140004ba8 30  31   .rdata  ascii api-ms-win-crt-heap-l1-1-0.dll
+297 0x00003fca 0x140004bca 17  18   .rdata  ascii RtlCaptureContext
+298 0x00003fde 0x140004bde 22  23   .rdata  ascii RtlLookupFunctionEntry
+299 0x00003ff8 0x140004bf8 16  17   .rdata  ascii RtlVirtualUnwind
+300 0x0000400c 0x140004c0c 24  25   .rdata  ascii UnhandledExceptionFilter
+301 0x00004028 0x140004c28 27  28   .rdata  ascii SetUnhandledExceptionFilter
+302 0x00004046 0x140004c46 17  18   .rdata  ascii GetCurrentProcess
+303 0x0000405a 0x140004c5a 16  17   .rdata  ascii TerminateProcess
+304 0x0000406e 0x140004c6e 25  26   .rdata  ascii IsProcessorFeaturePresent
+305 0x0000408a 0x140004c8a 23  24   .rdata  ascii QueryPerformanceCounter
+306 0x000040a4 0x140004ca4 19  20   .rdata  ascii GetCurrentProcessId
+307 0x000040ba 0x140004cba 18  19   .rdata  ascii GetCurrentThreadId
+308 0x000040d0 0x140004cd0 23  24   .rdata  ascii GetSystemTimeAsFileTime
+309 0x000040ea 0x140004cea 19  20   .rdata  ascii InitializeSListHead
+310 0x00004100 0x140004d00 17  18   .rdata  ascii IsDebuggerPresent
+311 0x00004114 0x140004d14 16  17   .rdata  ascii GetModuleHandleW
+312 0x00004126 0x140004d26 12  13   .rdata  ascii KERNEL32.dll
+0   0x00004660 0x140007060 381 382  .rsrc   ascii <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+arch     x86
+baddr    0x140000000
+binsz    18944
+bintype  pe
+bits     64
+canary   true
+retguard false
+class    PE32+
+cmp.csum 0x00013d93
+compiled Thu Mar 10 06:38:07 2022
+crypto   false
+dbg_file E:\Users\PC\source\repos\HellsGate+ipv4\x64\Release\HellsGate+ipv4.pdb
+endian   little
+havecode true
+hdr.csum 0x00000000
+guid     212F19CAC1C0418988909C6BB6298C701
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  AMD 64
+nx       true
+os       windows
+overlay  false
+cc       ms
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x8664
+  NumberOfSections : 0x6
+  TimeDateStamp : 0x62299ccf
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xf0
+  Characteristics : 0x22
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x20b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x1d
+  SizeOfCode : 0x2000
+  SizeOfInitializedData : 0x2c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x2360
+  BaseOfCode : 0x1000
+  ImageBase : 0x140000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x9000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x8160
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 30136 Times: 1
+  Product: 255 Name: Cvtres1400 Version: 30136 Times: 1
+  Product: 259 Name: Masm1400 Version: 30136 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 30136 Times: 1
+  Product: 1 Name: Import0 Version: 0 Times: 52
+  Product: 257 Name: Implib1400 Version: 27412 Times: 5
+  Product: 259 Name: Masm1400 Version: 30034 Times: 3
+  Product: 260 Name: Utc1900_C Version: 30034 Times: 10
+  Product: 261 Name: Utc1900_CPP Version: 30034 Times: 18
+  Product: 257 Name: Implib1400 Version: 30034 Times: 2
+  Product: 147 Name: Implib900 Version: 30729 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x4664
+  Size : 0xb4
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x7000
+  Size : 0x1e0
+IMAGE_DIRECTORY_ENTRY_EXCEPTION
+  VirtualAddress : 0x6000
+  Size : 0x1a4
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x8000
+  Size : 0x34
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x4038
+  Size : 0x70
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x40b0
+  Size : 0x138
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x3000
+  Size : 0x1a8
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+ntdll.dll
+vcruntime140.dll
+api-ms-win-crt-stdio-l1-1-0.dll
+api-ms-win-crt-runtime-l1-1-0.dll
+api-ms-win-crt-math-l1-1-0.dll
+api-ms-win-crt-locale-l1-1-0.dll
+api-ms-win-crt-heap-l1-1-0.dll
+kernel32.dll
+
+8 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000048c0 0x00002598 SET_64 ntdll.dll_RtlIpv4StringToAddressA
+0x000048e4 0x00002480 SET_64 VCRUNTIME140.dll___C_specific_handler
+0x000048fc 0x00002488 SET_64 VCRUNTIME140.dll___current_exception
+0x00004912 0x00002490 SET_64 VCRUNTIME140.dll___current_exception_context
+0x00004930 0x00002498 SET_64 VCRUNTIME140.dll_memset
+0x0000494c 0x00002588 SET_64 api-ms-win-crt-stdio-l1-1-0.dll___acrt_iob_func
+0x0000495e 0x00002580 SET_64 api-ms-win-crt-stdio-l1-1-0.dll___stdio_common_vfprintf
+0x00004978 0x00002530 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__seh_filter_exe
+0x0000498a 0x00002528 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__set_app_type
+0x0000499a 0x000024c8 SET_64 api-ms-win-crt-math-l1-1-0.dll___setusermatherr
+0x000049ae 0x00002500 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__configure_wide_argv
+0x000049c6 0x000024e0 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initialize_wide_environment
+0x000049e6 0x00002518 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__get_initial_wide_environment
+0x00004a06 0x00002548 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initterm
+0x00004a12 0x00002560 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initterm_e
+0x00004a20 0x00002558 SET_64 api-ms-win-crt-runtime-l1-1-0.dll_exit
+0x00004a28 0x00002550 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__exit
+0x00004a30 0x00002578 SET_64 api-ms-win-crt-stdio-l1-1-0.dll__set_fmode
+0x00004a3e 0x00002540 SET_64 api-ms-win-crt-runtime-l1-1-0.dll___p___argc
+0x00004a4c 0x00002538 SET_64 api-ms-win-crt-runtime-l1-1-0.dll___p___wargv
+0x00004a5a 0x00002520 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__cexit
+0x00004a64 0x000024e8 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__c_exit
+0x00004a6e 0x00002508 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__register_thread_local_exe_atexit_callback
+0x00004a9c 0x000024b8 SET_64 api-ms-win-crt-locale-l1-1-0.dll__configthreadlocale
+0x00004ab2 0x000024a8 SET_64 api-ms-win-crt-heap-l1-1-0.dll__set_new_mode
+0x00004ac2 0x00002570 SET_64 api-ms-win-crt-stdio-l1-1-0.dll___p__commode
+0x00004ad2 0x000024d8 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__initialize_onexit_table
+0x00004aee 0x00002510 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__register_onexit_function
+0x00004b0a 0x000024f0 SET_64 api-ms-win-crt-runtime-l1-1-0.dll__crt_atexit
+0x00004b18 0x000024f8 SET_64 api-ms-win-crt-runtime-l1-1-0.dll_terminate
+0x00004bc8 0x00002450 SET_64 KERNEL32.dll_RtlCaptureContext
+0x00004bdc 0x00002448 SET_64 KERNEL32.dll_RtlLookupFunctionEntry
+0x00004bf6 0x00002438 SET_64 KERNEL32.dll_RtlVirtualUnwind
+0x00004c0a 0x00002430 SET_64 KERNEL32.dll_UnhandledExceptionFilter
+0x00004c26 0x00002428 SET_64 KERNEL32.dll_SetUnhandledExceptionFilter
+0x00004c44 0x00002420 SET_64 KERNEL32.dll_GetCurrentProcess
+0x00004c58 0x00002418 SET_64 KERNEL32.dll_TerminateProcess
+0x00004c6c 0x00002410 SET_64 KERNEL32.dll_IsProcessorFeaturePresent
+0x00004c88 0x00002400 SET_64 KERNEL32.dll_QueryPerformanceCounter
+0x00004ca2 0x00002458 SET_64 KERNEL32.dll_GetCurrentProcessId
+0x00004cb8 0x00002460 SET_64 KERNEL32.dll_GetCurrentThreadId
+0x00004cce 0x00002468 SET_64 KERNEL32.dll_GetSystemTimeAsFileTime
+0x00004ce8 0x00002470 SET_64 KERNEL32.dll_InitializeSListHead
+0x00004cfe 0x00002440 SET_64 KERNEL32.dll_IsDebuggerPresent
+0x00004d12 0x00002408 SET_64 KERNEL32.dll_GetModuleHandleW
+
+
+45 relocations
+18944
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

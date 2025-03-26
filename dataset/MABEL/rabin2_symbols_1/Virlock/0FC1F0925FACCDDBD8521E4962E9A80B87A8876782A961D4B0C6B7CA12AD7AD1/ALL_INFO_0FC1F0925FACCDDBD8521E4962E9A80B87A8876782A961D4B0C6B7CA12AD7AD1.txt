@@ -1,0 +1,181 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000600  0xb3600 0x00401000  0xb4000 -r-x .text
+1   0x000b3c00    0x200 0x004b5000   0x1000 -r-- .rdata
+2   0x000b3e00    0x800 0x004b6000   0x1000 -rwx .data
+3   0x000b4600   0x1200 0x004b7000   0x2000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401020 paddr=0x00000620 haddr=0x000000d8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x004b5000 NONE FUNC advapi32.dll LsaCreateSecret
+2   0x004b5004 NONE FUNC advapi32.dll AddAuditAccessAceEx
+1   0x004b500c NONE FUNC ole32.dll    HMENU_UserUnmarshal
+1   0x004b5014 NONE FUNC user32.dll   CloseClipboard
+2   0x004b5018 NONE FUNC user32.dll   PackDDElParam
+3   0x004b501c NONE FUNC user32.dll   GetCaretBlinkTime
+4   0x004b5020 NONE FUNC user32.dll   GetForegroundWindow
+1   0x004b5028 NONE FUNC kernel32.dll GetUserDefaultLCID
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b3c00 0x004b5000 NONE FUNC 0    advapi32.dll imp.LsaCreateSecret
+2   0x000b3c04 0x004b5004 NONE FUNC 0    advapi32.dll imp.AddAuditAccessAceEx
+1   0x000b3c0c 0x004b500c NONE FUNC 0    ole32.dll    imp.HMENU_UserUnmarshal
+1   0x000b3c14 0x004b5014 NONE FUNC 0    user32.dll   imp.CloseClipboard
+2   0x000b3c18 0x004b5018 NONE FUNC 0    user32.dll   imp.PackDDElParam
+3   0x000b3c1c 0x004b501c NONE FUNC 0    user32.dll   imp.GetCaretBlinkTime
+4   0x000b3c20 0x004b5020 NONE FUNC 0    user32.dll   imp.GetForegroundWindow
+1   0x000b3c28 0x004b5028 NONE FUNC 0    kernel32.dll imp.GetUserDefaultLCID
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000b3cc6 0x004b50c6 15  16   .rdata  ascii LsaCreateSecret
+1   0x000b3cd8 0x004b50d8 19  20   .rdata  ascii AddAuditAccessAceEx
+2   0x000b3cec 0x004b50ec 12  13   .rdata  ascii advapi32.dll
+3   0x000b3cfb 0x004b50fb 19  20   .rdata  ascii HMENU_UserUnmarshal
+4   0x000b3d0f 0x004b510f 9   10   .rdata  ascii ole32.dll
+5   0x000b3d1b 0x004b511b 14  15   .rdata  ascii CloseClipboard
+6   0x000b3d2c 0x004b512c 13  14   .rdata  ascii PackDDElParam
+7   0x000b3d3c 0x004b513c 17  18   .rdata  ascii GetCaretBlinkTime
+8   0x000b3d50 0x004b5150 19  20   .rdata  ascii GetForegroundWindow
+9   0x000b3d64 0x004b5164 10  11   .rdata  ascii user32.dll
+10  0x000b3d71 0x004b5171 18  19   .rdata  ascii GetUserDefaultLCID
+11  0x000b3d84 0x004b5184 12  13   .rdata  ascii kernel32.dll
+0   0x000b575c 0x004b815c 164 164  .rsrc   ascii PADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADD
+arch     x86
+baddr    0x400000
+binsz    743424
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000b95be
+compiled Sat Jun 20 18:48:04 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5585b564
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10f
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x5
+  MinorLinkerVersion : 0xc
+  SizeOfCode : 0xb3600
+  SizeOfInitializedData : 0x1400
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x1020
+  BaseOfCode : 0x1000
+  BaseOfData : 0xb5000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xb9000
+  SizeOfHeaders : 0x600
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 18 Name: Masm614 Version: 8444 Times: 1
+  Product: 19 Name: Linker512 Version: 8078 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xb5030
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xb7000
+  Size : 0x115c
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0xb5000
+  Size : 0x30
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+ole32.dll
+user32.dll
+kernel32.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000b50c4 0x000b3c00 SET_32 advapi32.dll_LsaCreateSecret
+0x000b50d6 0x000b3c04 SET_32 advapi32.dll_AddAuditAccessAceEx
+0x000b50f9 0x000b3c0c SET_32 ole32.dll_HMENU_UserUnmarshal
+0x000b5119 0x000b3c14 SET_32 user32.dll_CloseClipboard
+0x000b512a 0x000b3c18 SET_32 user32.dll_PackDDElParam
+0x000b513a 0x000b3c1c SET_32 user32.dll_GetCaretBlinkTime
+0x000b514e 0x000b3c20 SET_32 user32.dll_GetForegroundWindow
+0x000b516f 0x000b3c28 SET_32 kernel32.dll_GetUserDefaultLCID
+
+
+8 relocations
+743424
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,267 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400     0x0 0x10001000  0x1a000 -rwx UPX0
+1   0x00000400  0xe600 0x1001b000   0xf000 -rwx UPX1
+2   0x0000ea00   0x800 0x1002a000   0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x10029340 paddr=0x0000e740 haddr=0x00000138 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x1002a5e8 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x1002a5ec NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x1002a5f0 NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x1002a5f4 NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x1002a5f8 NONE FUNC KERNEL32.DLL VirtualFree
+1   0x1002a600 NONE FUNC ADVAPI32.dll RegCloseKey
+1   0x1002a608 NONE FUNC GDI32.dll    BitBlt
+1   0x1002a610 NONE FUNC gdiplus.dll  GdipFree
+1   0x1002a618 NONE FUNC SHELL32.dll  SHGetFolderPathA
+1   0x1002a620 NONE FUNC SHLWAPI.dll  PathFileExistsA
+1   0x1002a628 NONE FUNC USER32.dll   GetDC
+1   0x1002a630 NONE FUNC WININET.dll  FtpGetFileA
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000600 0x10001200 GLOBAL FUNC 0    Engine.dll   insrchmdl
+1   0x0000efe8 0x1002a5e8 NONE   FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x0000efec 0x1002a5ec NONE   FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x0000eff0 0x1002a5f0 NONE   FUNC 0    KERNEL32.DLL imp.VirtualProtect
+4   0x0000eff4 0x1002a5f4 NONE   FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+5   0x0000eff8 0x1002a5f8 NONE   FUNC 0    KERNEL32.DLL imp.VirtualFree
+1   0x0000f000 0x1002a600 NONE   FUNC 0    ADVAPI32.dll imp.RegCloseKey
+1   0x0000f008 0x1002a608 NONE   FUNC 0    GDI32.dll    imp.BitBlt
+1   0x0000f010 0x1002a610 NONE   FUNC 0    gdiplus.dll  imp.GdipFree
+1   0x0000f018 0x1002a618 NONE   FUNC 0    SHELL32.dll  imp.SHGetFolderPathA
+1   0x0000f020 0x1002a620 NONE   FUNC 0    SHLWAPI.dll  imp.PathFileExistsA
+1   0x0000f028 0x1002a628 NONE   FUNC 0    USER32.dll   imp.GetDC
+1   0x0000f030 0x1002a630 NONE   FUNC 0    WININET.dll  imp.FtpGetFileA
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000eaaa 0x1002a0aa 15  32   .rsrc   utf16le VS_VERSION_INFO
+1   0x0000eb06 0x1002a106 14  30   .rsrc   utf16le StringFileInfo
+2   0x0000eb2a 0x1002a12a 8   18   .rsrc   utf16le 041204b0
+3   0x0000eb42 0x1002a142 11  24   .rsrc   utf16le CompanyName
+4   0x0000eb5c 0x1002a15c 16  34   .rsrc   utf16le Hancom Inc(HNC).
+5   0x0000eb86 0x1002a186 15  32   .rsrc   utf16le FileDescription
+6   0x0000eba8 0x1002a1a8 13  28   .rsrc   utf16le Hancom Update
+7   0x0000ebca 0x1002a1ca 11  24   .rsrc   utf16le FileVersion
+8   0x0000ebe4 0x1002a1e4 11  24   .rsrc   utf16le 8. 5. 8. 66
+9   0x0000ec02 0x1002a202 12  26   .rsrc   utf16le InternalName
+10  0x0000ec1c 0x1002a21c 13  28   .rsrc   utf16le Hancom Update
+11  0x0000ec3e 0x1002a23e 14  30   .rsrc   utf16le LegalCopyright
+12  0x0000ec5c 0x1002a25c 40  82   .rsrc   utf16le Copyright (c) 1989-2012 Hancom Inc(HNC).
+13  0x0000ecb6 0x1002a2b6 16  34   .rsrc   utf16le OriginalFilename
+14  0x0000ecd8 0x1002a2d8 13  28   .rsrc   utf16le HncUpdate.dat
+15  0x0000ecfa 0x1002a2fa 11  24   .rsrc   utf16le ProductName
+16  0x0000ed14 0x1002a314 13  28   .rsrc   utf16le Hancom Update
+17  0x0000ed36 0x1002a336 14  30   .rsrc   utf16le ProductVersion
+18  0x0000ed54 0x1002a354 11  24   .rsrc   utf16le 8. 5. 8. 66
+19  0x0000ed74 0x1002a374 10  22   .rsrc   utf16le arFileInfo
+20  0x0000ed92 0x1002a392 11  24   .rsrc   utf16le Translation
+21  0x0000edb4 0x1002a3b4 381 382  .rsrc   ascii   <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+22  0x0000f038 0x1002a638 12  13   .rsrc   ascii   KERNEL32.DLL
+23  0x0000f045 0x1002a645 12  13   .rsrc   ascii   ADVAPI32.dll
+24  0x0000f052 0x1002a652 9   10   .rsrc   ascii   GDI32.dll
+25  0x0000f05c 0x1002a65c 11  12   .rsrc   ascii   gdiplus.dll
+26  0x0000f068 0x1002a668 11  12   .rsrc   ascii   SHELL32.dll
+27  0x0000f074 0x1002a674 11  12   .rsrc   ascii   SHLWAPI.dll
+28  0x0000f080 0x1002a680 10  11   .rsrc   ascii   USER32.dll
+29  0x0000f08b 0x1002a68b 11  12   .rsrc   ascii   WININET.dll
+30  0x0000f098 0x1002a698 12  13   .rsrc   ascii   LoadLibraryA
+31  0x0000f0a6 0x1002a6a6 14  15   .rsrc   ascii   GetProcAddress
+32  0x0000f0b6 0x1002a6b6 14  15   .rsrc   ascii   VirtualProtect
+33  0x0000f0c6 0x1002a6c6 12  13   .rsrc   ascii   VirtualAlloc
+34  0x0000f0d4 0x1002a6d4 11  12   .rsrc   ascii   VirtualFree
+35  0x0000f0e2 0x1002a6e2 11  12   .rsrc   ascii   RegCloseKey
+36  0x0000f0f0 0x1002a6f0 6   7    .rsrc   ascii   BitBlt
+37  0x0000f0f8 0x1002a6f8 8   9    .rsrc   ascii   GdipFree
+38  0x0000f102 0x1002a702 16  17   .rsrc   ascii   SHGetFolderPathA
+39  0x0000f114 0x1002a714 15  16   .rsrc   ascii   PathFileExistsA
+40  0x0000f126 0x1002a726 5   6    .rsrc   ascii   GetDC
+41  0x0000f12e 0x1002a72e 11  12   .rsrc   ascii   FtpGetFileA
+42  0x0000f16e 0x1002a76e 10  11   .rsrc   ascii   Engine.dll
+43  0x0000f179 0x1002a779 9   10   .rsrc   ascii   insrchmdl
+44  0x0000f18c 0x1002a78c 6   7    .rsrc   ascii   M3H5L5
+arch     x86
+baddr    0x10000000
+binsz    61952
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00011af9
+compiled Wed May 22 06:01:59 2019
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x5ce4e5d7
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xb
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0xf000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x1a000
+  AddressOfEntryPoint : 0x29340
+  BaseOfCode : 0x1b000
+  BaseOfData : 0x2a000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x2b000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 204 Name: Linker1100 Version: 50727 Times: 1
+  Product: 151 Name: Resource900 Version: 0 Times: 1
+  Product: 201 Name: Cvtres1100 Version: 50727 Times: 1
+  Product: 202 Name: Export1100 Version: 50727 Times: 1
+  Product: 211 Name: Utc1700_LTCG_CPP Version: 50727 Times: 9
+  Product: 185 Name: Implib1010 Version: 30716 Times: 17
+  Product: 1 Name: Import0 Version: 0 Times: 177
+  Product: 191 Name: Unknown Version: 30716 Times: 1
+  Product: 206 Name: Utc1700_C Version: 50628 Times: 127
+  Product: 205 Name: Masm1100 Version: 50628 Times: 19
+  Product: 207 Name: Utc1700_CPP Version: 50628 Times: 50
+  Product: 199 Name: AliasObj1100 Version: 41118 Times: 4
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x2a73c
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2a534
+  Size : 0x208
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x2a000
+  Size : 0x534
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x2a784
+  Size : 0x10
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x2950c
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+advapi32.dll
+gdi32.dll
+gdiplus.dll
+shell32.dll
+shlwapi.dll
+user32.dll
+wininet.dll
+
+8 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0002a696 0x0000efe8 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0002a6a4 0x0000efec SET_32 KERNEL32.DLL_GetProcAddress
+0x0002a6b4 0x0000eff0 SET_32 KERNEL32.DLL_VirtualProtect
+0x0002a6c4 0x0000eff4 SET_32 KERNEL32.DLL_VirtualAlloc
+0x0002a6d2 0x0000eff8 SET_32 KERNEL32.DLL_VirtualFree
+0x0002a6e0 0x0000f000 SET_32 ADVAPI32.dll_RegCloseKey
+0x0002a6ee 0x0000f008 SET_32 GDI32.dll_BitBlt
+0x0002a6f6 0x0000f010 SET_32 gdiplus.dll_GdipFree
+0x0002a700 0x0000f018 SET_32 SHELL32.dll_SHGetFolderPathA
+0x0002a712 0x0000f020 SET_32 SHLWAPI.dll_PathFileExistsA
+0x0002a724 0x0000f028 SET_32 USER32.dll_GetDC
+0x0002a72c 0x0000f030 SET_32 WININET.dll_FtpGetFileA
+
+
+12 relocations
+61952
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 6.1.7601.17514
+  ProductVersion: 6.1.7601.17514
+  FileFlagsMask: 0x17
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Hancom Inc(HNC).
+  FileDescription: Hancom Update
+  FileVersion: 8. 5. 8. 66
+  InternalName: Hancom Update
+  LegalCopyright: Copyright (c) 1989-2012 Hancom Inc(HNC).
+  OriginalFilename: HncUpdate.dat
+  ProductName: Hancom Update
+  ProductVersion: 8. 5. 8. 66
+Section to Segment mapping:
+Segment Section
+---------------
+
+

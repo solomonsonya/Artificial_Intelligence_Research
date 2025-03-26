@@ -1,0 +1,864 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00004310  0x348b 0x100004310  0x348b -r-x 0.__TEXT.__text
+1   0x0000779c    0xfc 0x10000779c    0xfc -r-x 1.__TEXT.__stubs
+2   0x00007898   0x11e 0x100007898   0x11e -r-x 2.__TEXT.__stub_helper
+3   0x000079b8   0x318 0x1000079b8   0x318 -r-x 3.__TEXT.__gcc_except_tab
+4   0x00007cd0   0x1db 0x100007cd0   0x1db -r-x 4.__TEXT.__cstring
+5   0x00007eac   0x150 0x100007eac   0x150 -r-x 5.__TEXT.__unwind_info
+6   0x00008000    0x40 0x100008000    0x40 -rw- 6.__DATA_CONST.__got
+7   0x00008040     0x8 0x100008040     0x8 -rw- 7.__DATA_CONST.__mod_init_func
+8   0x0000c000   0x150 0x10000c000   0x150 -rw- 8.__DATA.__la_symbol_ptr
+9   0x0000c150     0x8 0x10000c150     0x8 -rw- 9.__DATA.__data
+10  0x00000000     0x0 0x10000c158    0x18 -rw- 10.__DATA.__common
+
+[Segments]
+
+nth paddr         size vaddr         vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000  0x8000 0x100000000  0x8000 -r-x __TEXT
+1   0x00008000  0x4000 0x100008000  0x4000 -rw- __DATA_CONST
+2   0x0000c000  0x4000 0x10000c000  0x4000 -rw- __DATA
+3   0x00010000  0x8000 0x100010000  0x8000 -r-- __LINKEDIT
+
+[Entrypoints]
+vaddr=0x100005310 paddr=0x00005310 haddr=0x00000600 type=program
+
+1 entrypoints
+[Constructors]
+vaddr=0x100007790 paddr=0x100007790 hpaddr=0x00008040 type=init
+
+1 entrypoints
+[Main]
+vaddr=0x100005310 paddr=0x100005310
+[Imports]
+nth vaddr       bind type lib name
+――――――――――――――――――――――――――――――――――
+0   0x00000000  NONE FUNC     _DefaultRuneLocale
+1   0x10000779c NONE FUNC     _Unwind_Resume
+2   0x1000077b4 NONE FUNC     sym.imp.std::__1::__vector_base_common<true>::__throw_length_error() const
+3   0x1000077c0 NONE FUNC     sym.imp.std::logic_error::logic_error(char const*)
+4   0x00000000  NONE FUNC     sym.imp.std::length_error::~length_error()
+5   0x1000077de NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::erase(unsigned long, unsigned long)
+6   0x1000077e4 NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(char const*, unsigned long)
+7   0x1000077ea NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(unsigned long, char)
+8   0x1000077f0 NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)
+9   0x1000077f6 NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::replace(unsigned long, unsigned long, char const*, unsigned long)
+10  0x1000077fc NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)
+11  0x100007802 NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+12  0x100007808 NONE FUNC     sym.imp.std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()
+13  0x10000782c NONE FUNC     sym.imp.std::terminate()
+14  0x00000000  NONE FUNC     sym.imp.typeinfo for std::length_error
+15  0x00000000  NONE FUNC     sym.imp.vtable for std::length_error
+16  0x100007832 NONE FUNC     sym.imp.operator delete(void*)
+17  0x100007838 NONE FUNC     sym.imp.operator new(unsigned long)
+18  0x10000783e NONE FUNC     __cxa_allocate_exception
+19  0x100007844 NONE FUNC     __cxa_atexit
+20  0x10000784a NONE FUNC     __cxa_begin_catch
+21  0x100007850 NONE FUNC     __cxa_call_unexpected
+22  0x100007856 NONE FUNC     __cxa_free_exception
+23  0x10000785c NONE FUNC     __cxa_throw
+24  0x00000000  NONE FUNC     __gxx_personality_v0
+25  0x100007862 NONE FUNC     __maskrune
+26  0x100007868 NONE FUNC     __stack_chk_fail
+27  0x00000000  NONE FUNC     __stack_chk_guard
+28  0x10000786e NONE FUNC     feof
+29  0x100007874 NONE FUNC     fgets
+30  0x10000787a NONE FUNC     memchr
+31  0x100007880 NONE FUNC     memcmp
+32  0x100007886 NONE FUNC     pclose
+33  0x10000788c NONE FUNC     popen
+34  0x100007892 NONE FUNC     strlen
+35  0x00000000  NONE FUNC     dyld_stub_binder
+
+0x00000000 [0x00000000 - 0x00000000]      0 class 0 std::__1::vector<int, std::__1::allocator<int> >
+0x00000000 method 0      max_size() const
+0x00000000 method 1      __vallocate(unsigned long)
+0x00000000 method 2      vector(unsigned long, int const&)
+0x00000000 method 3      operator[](unsigned long)
+0x00000000 method 4      ~vector()
+0x00000000 method 5      __construct_at_end(unsigned long, int const&)
+0x00000000 method 6      __annotate_new(unsigned long) const
+0x00000000 method 7      __annotate_contiguous_container(void const*, void const*, void const*, void const*) const
+0x00000000 method 8      data() const
+0x00000000 method 9      capacity() const
+0x00000000 method 10      __annotate_delete() const
+0x00000000 method 11      size() const
+0x00000000 [0x00000000 - 0x00000000]      0 class 1 std::__1::char_traits<char>
+0x00000000 method 0      to_int_type(char)
+0x00000000 method 1      find(char const*, unsigned long, char const&)
+0x00000000 method 2      length(char const*)
+0x00000000 method 3      compare(char const*, char const*, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 2 std::__1::_DeallocateCaller
+0x00000000 method 0      __do_deallocate_handle_size(void*, unsigned long)
+0x00000000 method 1      __do_call(void*)
+0x00000000 method 2      __do_deallocate_handle_size_align(void*, unsigned long, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 3 char const* std::__1::__search_substring<char, std::__1
+0x00000000 method 0      char_traits<char> >(char const*, char const*, char const*, char const*)
+0x00000000 [0x00000000 - 0x00000000]      0 class 4 std::__1::__wrap_iter<char*> std::__1::remove<std::__1
+0x00000000 method 0      __wrap_iter<char*>, char>(std::__1::__wrap_iter<char*>, std::__1::__wrap_iter<char*>, char const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 5 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string<std::__1
+0x00000000 method 0      nullptr_t>(char const*)
+0x00000000 method 1      nullptr_t>(char const*)
+0x00000000 [0x1000077de - 0x100007808]     42 class 6 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >
+0x00000000 method 0      size() const
+0x00000000 method 1      operator[](unsigned long)
+0x00000000 method 2      basic_string(unsigned long, char)
+0x00000000 method 3      basic_string()
+0x00000000 method 4      c_str() const
+0x00000000 method 5      find(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long) const
+0x00000000 method 6      replace(unsigned long, unsigned long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+0x00000000 method 7      length() const
+0x00000000 method 8      erase(std::__1::__wrap_iter<char const*>, std::__1::__wrap_iter<char const*>)
+0x00000000 method 9      begin()
+0x00000000 method 10      end()
+0x00000000 method 11      operator[](unsigned long) const
+0x00000000 method 12      data() const
+0x00000000 method 13      __get_pointer() const
+0x00000000 method 14      __is_long() const
+0x00000000 method 15      __get_long_pointer() const
+0x00000000 method 16      __get_short_pointer() const
+0x00000000 method 17      __zero()
+0x00000000 method 18      __get_long_size() const
+0x00000000 method 19      __get_short_size() const
+0x00000000 method 20      __get_pointer()
+0x00000000 method 21      __get_long_pointer()
+0x00000000 method 22      __get_short_pointer()
+0x1000077de method 23      erase(unsigned long, unsigned long)
+0x1000077e4 method 24      __init(char const*, unsigned long)
+0x1000077ea method 25      __init(unsigned long, char)
+0x1000077f0 method 26      append(char const*)
+0x1000077f6 method 27      replace(unsigned long, unsigned long, char const*, unsigned long)
+0x1000077fc method 28      push_back(char)
+0x100007802 method 29      basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+0x100007808 method 30      ~basic_string()
+0x00000000 [0x00000000 - 0x00000000]      0 class 7 char const* std::__1
+0x00000000 method 0      __to_address<char const>(char const*)
+0x00000000 method 1      addressof<char const>(char const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 8 std::__1::__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >
+0x00000000 method 0      first() const
+0x00000000 method 1      first()
+0x00000000 [0x00000000 - 0x00000000]      0 class 9 std::__1::__compressed_pair_elem<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, 0, false>
+0x00000000 method 0      __get() const
+0x00000000 method 1      __compressed_pair_elem(std::__1::__default_init_tag)
+0x00000000 method 2      __get()
+0x00000000 [0x00000000 - 0x00000000]      0 class 10 std::__1::pointer_traits<char const*>
+0x00000000 method 0      pointer_to(char const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 11 std::__1::__vector_base<int, std::__1::allocator<int> >
+0x00000000 method 0      __vector_base()
+0x00000000 method 1      ~__vector_base()
+0x00000000 method 2      __alloc()
+0x00000000 method 3      __end_cap()
+0x00000000 method 4      __alloc() const
+0x00000000 method 5      capacity() const
+0x00000000 method 6      __end_cap() const
+0x00000000 method 7      clear()
+0x00000000 method 8      __destruct_at_end(int*)
+0x00000000 [0x1000077b4 - 0x1000077b4]      0 class 12 std::__1::__vector_base_common<true>
+0x00000000 method 0      __vector_base_common()
+0x1000077b4 method 1      __throw_length_error() const
+0x00000000 [0x00000000 - 0x00000000]      0 class 13 std::__1
+0x00000000 method 0      __get_nullptr_t()
+0x00000000 method 1      __throw_length_error(char const*)
+0x00000000 method 2      __libcpp_allocate(unsigned long, unsigned long)
+0x00000000 method 3      __libcpp_deallocate(void*, unsigned long, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 14 std::__1::nullptr_t
+0x00000000 method 0      operator int*<int>() const
+0x00000000 method 1      nullptr_t(int std::__1::nullptr_t::__nat::*)
+0x00000000 method 2      operator char const*<char const>() const
+0x00000000 [0x00000000 - 0x00000000]      0 class 15 std::__1::__compressed_pair<int*, std::__1::allocator<int> >::__compressed_pair<std::__1::nullptr_t, std::__1
+0x00000000 method 0      __default_init_tag>(std::__1::nullptr_t&&, std::__1::__default_init_tag&&)
+0x00000000 method 1      __default_init_tag>(std::__1::nullptr_t&&, std::__1::__default_init_tag&&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 16 std::__1::nullptr_t&& std::__1::forward<std::__1
+0x00000000 method 0      nullptr_t>(std::__1::remove_reference<std::__1::nullptr_t>::type&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 17 std::__1::__compressed_pair_elem<int*, 0, false>::__compressed_pair_elem<std::__1
+0x00000000 method 0      nullptr_t, void>(std::__1::nullptr_t&&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 18 std::__1::__default_init_tag&& std::__1::forward<std::__1
+0x00000000 method 0      __default_init_tag>(std::__1::remove_reference<std::__1::__default_init_tag>::type&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 19 std::__1::__compressed_pair_elem<std::__1::allocator<int>, 1, true>
+0x00000000 method 0      __compressed_pair_elem(std::__1::__default_init_tag)
+0x00000000 method 1      __get() const
+0x00000000 method 2      __get()
+0x00000000 [0x00000000 - 0x00000000]      0 class 20 std::__1::allocator<int>
+0x00000000 method 0      allocator()
+0x00000000 method 1      max_size() const
+0x00000000 method 2      allocate(unsigned long, void const*)
+0x00000000 method 3      destroy(int*)
+0x00000000 method 4      deallocate(int*, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 21 std::__1::allocator_traits<std::__1::allocator<int> >
+0x00000000 method 0      allocate(std::__1::allocator<int>&, unsigned long)
+0x00000000 method 1      max_size(std::__1::allocator<int> const&)
+0x00000000 method 2      __max_size(std::__1::integral_constant<bool, true>, std::__1::allocator<int> const&)
+0x00000000 method 3      deallocate(std::__1::allocator<int>&, int*, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 22 unsigned long const& std::__1
+0x00000000 method 0      min<unsigned long>(unsigned long const&, unsigned long const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 23 std::__1::numeric_limits<long>
+0x00000000 method 0      max()
+0x00000000 [0x00000000 - 0x00000000]      0 class 24 unsigned long const& std::__1::min<unsigned long, std::__1
+0x00000000 method 0      __less<unsigned long, unsigned long> >(unsigned long const&, unsigned long const&, std::__1::__less<unsigned long, unsigned long>)
+0x00000000 [0x00000000 - 0x00000000]      0 class 25 std::__1::__less<unsigned long, unsigned long>
+0x00000000 method 0      operator()(unsigned long const&, unsigned long const&) const
+0x00000000 [0x00000000 - 0x00000000]      0 class 26 std::__1::__compressed_pair<int*, std::__1::allocator<int> >
+0x00000000 method 0      second() const
+0x00000000 method 1      second()
+0x00000000 method 2      first()
+0x00000000 method 3      first() const
+0x00000000 [0x00000000 - 0x00000000]      0 class 27 std::__1::__libcpp_numeric_limits<long, true>
+0x00000000 method 0      max()
+0x00000000 [0x00000000 - 0x00000000]      0 class 28 std::length_error
+0x00000000 method 0      length_error(char const*)
+0x00000000 method 1      ~length_error()
+0x00000000 [0x00000000 - 0x00000000]      0 class 29 std::__1::__compressed_pair_elem<int*, 0, false>
+0x00000000 method 0      __get()
+0x00000000 method 1      __get() const
+0x00000000 [0x00000000 - 0x00000000]      0 class 30 int* std::__1
+0x00000000 method 0      __to_address<int>(int*)
+0x00000000 [0x00000000 - 0x00000000]      0 class 31 std::__1::vector<int, std::__1::allocator<int> >::_ConstructTransaction
+0x00000000 method 0      _ConstructTransaction(std::__1::vector<int, std::__1::allocator<int> >&, unsigned long)
+0x00000000 method 1      ~_ConstructTransaction()
+0x00000000 method 2      _ConstructTransaction(std::__1::vector<int, std::__1::allocator<int> >&, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 32 void std::__1::allocator_traits<std::__1::allocator<int> >
+0x00000000 method 0      construct<int, int>(std::__1::allocator<int>&, int*, int const&)
+0x00000000 method 1      __construct<int, int>(std::__1::integral_constant<bool, true>, std::__1::allocator<int>&, int*, int const&)
+0x00000000 method 2      destroy<int>(std::__1::allocator<int>&, int*)
+0x00000000 method 3      __destroy<int>(std::__1::integral_constant<bool, true>, std::__1::allocator<int>&, int*)
+0x00000000 [0x00000000 - 0x00000000]      0 class 33 void std::__1::allocator<int>
+0x00000000 method 0      construct<int>(int*, int const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 34 std::__1::__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >::__compressed_pair<std::__1::__default_init_tag, std::__1
+0x00000000 method 0      __default_init_tag>(std::__1::__default_init_tag&&, std::__1::__default_init_tag&&)
+0x00000000 method 1      __default_init_tag>(std::__1::__default_init_tag&&, std::__1::__default_init_tag&&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 35 std::__1::__compressed_pair_elem<std::__1::allocator<char>, 1, true>
+0x00000000 method 0      __compressed_pair_elem(std::__1::__default_init_tag)
+0x00000000 [0x00000000 - 0x00000000]      0 class 36 std::__1::allocator<char>
+0x00000000 method 0      allocator()
+0x00000000 [0x00000000 - 0x00000000]      0 class 37 std::__1::pointer_traits<char*>
+0x00000000 method 0      pointer_to(char&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 38 char* std::__1
+0x00000000 method 0      addressof<char>(char&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 39 unsigned long std::__1::__str_find<char, unsigned long, std::__1
+0x00000000 method 0      char_traits<char>, 18446744073709551615ul>(char const*, unsigned long, char const*, unsigned long, unsigned long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 40 std::__1::__wrap_iter<char*>
+0x00000000 method 0      __wrap_iter(char*)
+0x00000000 method 1      operator++()
+0x00000000 method 2      operator*() const
+0x00000000 method 3      base() const
+0x00000000 method 4      operator+(long) const
+0x00000000 method 5      operator+=(long)
+0x00000000 [0x00000000 - 0x00000000]      0 class 41 std::__1::__wrap_iter<char*> std::__1::find<std::__1
+0x00000000 method 0      __wrap_iter<char*>, char>(std::__1::__wrap_iter<char*>, std::__1::__wrap_iter<char*>, char const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 42 bool std::__1
+0x00000000 method 0      operator!=<char*>(std::__1::__wrap_iter<char*> const&, std::__1::__wrap_iter<char*> const&)
+0x00000000 method 1      operator==<char*, char*>(std::__1::__wrap_iter<char*> const&, std::__1::__wrap_iter<char*> const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 43 std::__1::remove_reference<char&>::type&& std::__1
+0x00000000 method 0      move<char&>(char&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 44 std::__1::__wrap_iter<char const*>::difference_type std::__1
+0x00000000 method 0      operator-<char const*, char*>(std::__1::__wrap_iter<char const*> const&, std::__1::__wrap_iter<char*> const&)
+0x00000000 method 1      operator-<char const*, char const*>(std::__1::__wrap_iter<char const*> const&, std::__1::__wrap_iter<char const*> const&)
+0x00000000 [0x00000000 - 0x00000000]      0 class 45 std::__1::__wrap_iter<char const*>
+0x00000000 method 0      base() const
+0x00000000 [0x1000077c0 - 0x1000077c0]      0 class 46 std::logic_error
+0x1000077c0 method 0      logic_error(char const*)
+0x00000000 [0x10000782c - 0x10000782c]      0 class 47 std
+0x10000782c method 0      terminate()
+[Symbols]
+
+nth paddr      vaddr       bind   type size lib name
+――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0000c158 0x10000c158 GLOBAL FUNC 0        _AVAILABLE_CHARS
+1   0x00004460 0x100004460 GLOBAL FUNC 0        extend_key(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&)
+2   0x00005150 0x100005150 GLOBAL FUNC 0        replaceAll(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+3   0x000047f0 0x1000047f0 GLOBAL FUNC 0        decrypt_vigenere(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&)
+4   0x00004580 0x100004580 GLOBAL FUNC 0        encrypt_vigenere(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&)
+5   0x00004f30 0x100004f30 GLOBAL FUNC 0        getStdoutFromCommand(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >)
+6   0x00004340 0x100004340 GLOBAL FUNC 0        index(char)
+7   0x00004c40 0x100004c40 GLOBAL FUNC 0        decrypt(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&)
+8   0x000049e0 0x1000049e0 GLOBAL FUNC 0        encrypt(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >&)
+9   0x000047c0 0x1000047c0 GLOBAL FUNC 0        isalnum(int)
+10  0x00005ba0 0x100005ba0 GLOBAL FUNC 0        isascii(int)
+11  0x00005b20 0x100005b20 GLOBAL FUNC 0        __istype(int, unsigned long)
+12  0x000062b0 0x1000062b0 GLOBAL FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::max_size() const
+13  0x00007420 0x100007420 GLOBAL FUNC 0        std::__1::char_traits<char>::to_int_type(char)
+14  0x000072c0 0x1000072c0 GLOBAL FUNC 0        std::__1::char_traits<char>::find(char const*, unsigned long, char const&)
+15  0x00006f60 0x100006f60 GLOBAL FUNC 0        std::__1::char_traits<char>::length(char const*)
+16  0x00007370 0x100007370 GLOBAL FUNC 0        std::__1::char_traits<char>::compare(char const*, char const*, unsigned long)
+17  0x00006be0 0x100006be0 GLOBAL FUNC 0        std::__1::_DeallocateCaller::__do_deallocate_handle_size(void*, unsigned long)
+18  0x00006c00 0x100006c00 GLOBAL FUNC 0        std::__1::_DeallocateCaller::__do_call(void*)
+19  0x000071a0 0x1000071a0 GLOBAL FUNC 0        char const* std::__1::__search_substring<char, std::__1::char_traits<char> >(char const*, char const*, char const*, char const*)
+20  0x00005980 0x100005980 GLOBAL FUNC 0        std::__1::__wrap_iter<char*> std::__1::remove<std::__1::__wrap_iter<char*>, char>(std::__1::__wrap_iter<char*>, std::__1::__wrap_iter<char*>, char const&)
+21  0x00005f10 0x100005f10 GLOBAL FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::__vallocate(unsigned long)
+22  0x00000000 0x100000000 GLOBAL FUNC 0        __mh_execute_header
+23  0x00005310 0x100005310 GLOBAL FUNC 0        _main
+24  0x00004310 0x100004310 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string<std::__1::nullptr_t>(char const*)
+25  0x000043d0 0x1000043d0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::size() const
+26  0x00004430 0x100004430 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::operator[](unsigned long)
+27  0x00004550 0x100004550 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(unsigned long, char)
+28  0x000047e0 0x1000047e0 LOCAL  FUNC 0        ___clang_call_terminate
+29  0x00004aa0 0x100004aa0 LOCAL  FUNC 0        base64_encode(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+30  0x00004d40 0x100004d40 LOCAL  FUNC 0        base64_decode(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+31  0x00005110 0x100005110 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string()
+32  0x00005130 0x100005130 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::c_str() const
+33  0x00005200 0x100005200 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::find(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, unsigned long) const
+34  0x00005280 0x100005280 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::replace(unsigned long, unsigned long, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+35  0x000052f0 0x1000052f0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::length() const
+36  0x00005900 0x100005900 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::erase(std::__1::__wrap_iter<char const*>, std::__1::__wrap_iter<char const*>)
+37  0x00005a70 0x100005a70 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::begin()
+38  0x00005aa0 0x100005aa0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::end()
+39  0x00005af0 0x100005af0 LOCAL  FUNC 0        __ZNSt3__111__wrap_iterIPKcEC1IPcEERKNS0_IT_EEPNS_9enable_ifIXsr14is_convertibleIS6_S2_EE5valueEvE4typeE
+40  0x00005bc0 0x100005bc0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::operator[](unsigned long) const
+41  0x00005bf0 0x100005bf0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::data() const
+42  0x00005c20 0x100005c20 LOCAL  FUNC 0        char const* std::__1::__to_address<char const>(char const*)
+43  0x00005c30 0x100005c30 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_pointer() const
+44  0x00005c90 0x100005c90 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__is_long() const
+45  0x00005cd0 0x100005cd0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_long_pointer() const
+46  0x00005cf0 0x100005cf0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_short_pointer() const
+47  0x00005d20 0x100005d20 LOCAL  FUNC 0        std::__1::__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >::first() const
+48  0x00005d40 0x100005d40 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, 0, false>::__get() const
+49  0x00005d50 0x100005d50 LOCAL  FUNC 0        std::__1::pointer_traits<char const*>::pointer_to(char const&)
+50  0x00005d70 0x100005d70 LOCAL  FUNC 0        char const* std::__1::addressof<char const>(char const&)
+51  0x00005d80 0x100005d80 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::vector(unsigned long, int const&)
+52  0x00005db0 0x100005db0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::operator[](unsigned long)
+53  0x00005dd0 0x100005dd0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::~vector()
+54  0x00005df0 0x100005df0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::vector(unsigned long, int const&)
+55  0x00005e90 0x100005e90 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::__vector_base()
+56  0x00005fb0 0x100005fb0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::__construct_at_end(unsigned long, int const&)
+57  0x00006070 0x100006070 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::~__vector_base()
+58  0x000060f0 0x1000060f0 LOCAL  FUNC 0        std::__1::__vector_base_common<true>::__vector_base_common()
+59  0x00006100 0x100006100 LOCAL  FUNC 0        std::__1::__get_nullptr_t()
+60  0x00006130 0x100006130 LOCAL  FUNC 0        std::__1::nullptr_t::operator int*<int>() const
+61  0x00006140 0x100006140 LOCAL  FUNC 0        std::__1::__compressed_pair<int*, std::__1::allocator<int> >::__compressed_pair<std::__1::nullptr_t, std::__1::__default_init_tag>(std::__1::nullptr_t&&, std::__1::__default_init_tag&&)
+62  0x00006170 0x100006170 LOCAL  FUNC 0        std::__1::nullptr_t::nullptr_t(int std::__1::nullptr_t::__nat::*)
+63  0x000061a0 0x1000061a0 LOCAL  FUNC 0        std::__1::nullptr_t::nullptr_t(int std::__1::nullptr_t::__nat::*)
+64  0x000061c0 0x1000061c0 LOCAL  FUNC 0        std::__1::__compressed_pair<int*, std::__1::allocator<int> >::__compressed_pair<std::__1::nullptr_t, std::__1::__default_init_tag>(std::__1::nullptr_t&&, std::__1::__default_init_tag&&)
+65  0x00006220 0x100006220 LOCAL  FUNC 0        std::__1::nullptr_t&& std::__1::forward<std::__1::nullptr_t>(std::__1::remove_reference<std::__1::nullptr_t>::type&)
+66  0x00006230 0x100006230 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<int*, 0, false>::__compressed_pair_elem<std::__1::nullptr_t, void>(std::__1::nullptr_t&&)
+67  0x00006270 0x100006270 LOCAL  FUNC 0        std::__1::__default_init_tag&& std::__1::forward<std::__1::__default_init_tag>(std::__1::remove_reference<std::__1::__default_init_tag>::type&)
+68  0x00006280 0x100006280 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::allocator<int>, 1, true>::__compressed_pair_elem(std::__1::__default_init_tag)
+69  0x000062a0 0x1000062a0 LOCAL  FUNC 0        std::__1::allocator<int>::allocator()
+70  0x00006310 0x100006310 LOCAL  FUNC 0        std::__1::allocator_traits<std::__1::allocator<int> >::allocate(std::__1::allocator<int>&, unsigned long)
+71  0x00006340 0x100006340 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::__alloc()
+72  0x00006370 0x100006370 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::__end_cap()
+73  0x000063a0 0x1000063a0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::__annotate_new(unsigned long) const
+74  0x00006440 0x100006440 LOCAL  FUNC 0        unsigned long const& std::__1::min<unsigned long>(unsigned long const&, unsigned long const&)
+75  0x00006470 0x100006470 LOCAL  FUNC 0        std::__1::allocator_traits<std::__1::allocator<int> >::max_size(std::__1::allocator<int> const&)
+76  0x00006490 0x100006490 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::__alloc() const
+77  0x000064c0 0x1000064c0 LOCAL  FUNC 0        std::__1::numeric_limits<long>::max()
+78  0x000064d0 0x1000064d0 LOCAL  FUNC 0        unsigned long const& std::__1::min<unsigned long, std::__1::__less<unsigned long, unsigned long> >(unsigned long const&, unsigned long const&, std::__1::__less<unsigned long, unsigned long>)
+79  0x00006520 0x100006520 LOCAL  FUNC 0        std::__1::__less<unsigned long, unsigned long>::operator()(unsigned long const&, unsigned long const&) const
+80  0x00006550 0x100006550 LOCAL  FUNC 0        std::__1::allocator_traits<std::__1::allocator<int> >::__max_size(std::__1::integral_constant<bool, true>, std::__1::allocator<int> const&)
+81  0x00006570 0x100006570 LOCAL  FUNC 0        std::__1::allocator<int>::max_size() const
+82  0x00006590 0x100006590 LOCAL  FUNC 0        std::__1::__compressed_pair<int*, std::__1::allocator<int> >::second() const
+83  0x000065b0 0x1000065b0 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::allocator<int>, 1, true>::__get() const
+84  0x000065c0 0x1000065c0 LOCAL  FUNC 0        std::__1::__libcpp_numeric_limits<long, true>::max()
+85  0x000065d0 0x1000065d0 LOCAL  FUNC 0        std::__1::allocator<int>::allocate(unsigned long, void const*)
+86  0x00006630 0x100006630 LOCAL  FUNC 0        std::__1::__throw_length_error(char const*)
+87  0x00006690 0x100006690 LOCAL  FUNC 0        std::__1::__libcpp_allocate(unsigned long, unsigned long)
+88  0x000066b0 0x1000066b0 LOCAL  FUNC 0        std::length_error::length_error(char const*)
+89  0x000066e0 0x1000066e0 LOCAL  FUNC 0        std::length_error::length_error(char const*)
+90  0x00006730 0x100006730 LOCAL  FUNC 0        std::__1::__compressed_pair<int*, std::__1::allocator<int> >::second()
+91  0x00006750 0x100006750 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::allocator<int>, 1, true>::__get()
+92  0x00006760 0x100006760 LOCAL  FUNC 0        std::__1::__compressed_pair<int*, std::__1::allocator<int> >::first()
+93  0x00006780 0x100006780 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<int*, 0, false>::__get()
+94  0x00006790 0x100006790 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::__annotate_contiguous_container(void const*, void const*, void const*, void const*) const
+95  0x000067b0 0x1000067b0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::data() const
+96  0x000067d0 0x1000067d0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::capacity() const
+97  0x000067f0 0x1000067f0 LOCAL  FUNC 0        int* std::__1::__to_address<int>(int*)
+98  0x00006800 0x100006800 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::capacity() const
+99  0x00006840 0x100006840 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::__end_cap() const
+100 0x00006870 0x100006870 LOCAL  FUNC 0        std::__1::__compressed_pair<int*, std::__1::allocator<int> >::first() const
+101 0x00006890 0x100006890 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<int*, 0, false>::__get() const
+102 0x000068a0 0x1000068a0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::_ConstructTransaction::_ConstructTransaction(std::__1::vector<int, std::__1::allocator<int> >&, unsigned long)
+103 0x000068d0 0x1000068d0 LOCAL  FUNC 0        void std::__1::allocator_traits<std::__1::allocator<int> >::construct<int, int>(std::__1::allocator<int>&, int*, int const&)
+104 0x00006900 0x100006900 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::_ConstructTransaction::~_ConstructTransaction()
+105 0x00006920 0x100006920 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::_ConstructTransaction::_ConstructTransaction(std::__1::vector<int, std::__1::allocator<int> >&, unsigned long)
+106 0x00006960 0x100006960 LOCAL  FUNC 0        void std::__1::allocator_traits<std::__1::allocator<int> >::__construct<int, int>(std::__1::integral_constant<bool, true>, std::__1::allocator<int>&, int*, int const&)
+107 0x00006990 0x100006990 LOCAL  FUNC 0        void std::__1::allocator<int>::construct<int>(int*, int const&)
+108 0x000069b0 0x1000069b0 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::_ConstructTransaction::~_ConstructTransaction()
+109 0x000069d0 0x1000069d0 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::clear()
+110 0x00006a00 0x100006a00 LOCAL  FUNC 0        std::__1::allocator_traits<std::__1::allocator<int> >::deallocate(std::__1::allocator<int>&, int*, unsigned long)
+111 0x00006a30 0x100006a30 LOCAL  FUNC 0        std::__1::__vector_base<int, std::__1::allocator<int> >::__destruct_at_end(int*)
+112 0x00006ac0 0x100006ac0 LOCAL  FUNC 0        void std::__1::allocator_traits<std::__1::allocator<int> >::destroy<int>(std::__1::allocator<int>&, int*)
+113 0x00006af0 0x100006af0 LOCAL  FUNC 0        void std::__1::allocator_traits<std::__1::allocator<int> >::__destroy<int>(std::__1::integral_constant<bool, true>, std::__1::allocator<int>&, int*)
+114 0x00006b20 0x100006b20 LOCAL  FUNC 0        std::__1::allocator<int>::destroy(int*)
+115 0x00006b30 0x100006b30 LOCAL  FUNC 0        std::__1::allocator<int>::deallocate(int*, unsigned long)
+116 0x00006b80 0x100006b80 LOCAL  FUNC 0        std::__1::__libcpp_deallocate(void*, unsigned long, unsigned long)
+117 0x00006bb0 0x100006bb0 LOCAL  FUNC 0        std::__1::_DeallocateCaller::__do_deallocate_handle_size_align(void*, unsigned long, unsigned long)
+118 0x00006c20 0x100006c20 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::~vector()
+119 0x00006c50 0x100006c50 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::__annotate_delete() const
+120 0x00006d10 0x100006d10 LOCAL  FUNC 0        std::__1::vector<int, std::__1::allocator<int> >::size() const
+121 0x00006d30 0x100006d30 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string()
+122 0x00006d70 0x100006d70 LOCAL  FUNC 0        std::__1::__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >::__compressed_pair<std::__1::__default_init_tag, std::__1::__default_init_tag>(std::__1::__default_init_tag&&, std::__1::__default_init_tag&&)
+123 0x00006da0 0x100006da0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__zero()
+124 0x00006df0 0x100006df0 LOCAL  FUNC 0        std::__1::__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >::__compressed_pair<std::__1::__default_init_tag, std::__1::__default_init_tag>(std::__1::__default_init_tag&&, std::__1::__default_init_tag&&)
+125 0x00006e50 0x100006e50 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, 0, false>::__compressed_pair_elem(std::__1::__default_init_tag)
+126 0x00006e60 0x100006e60 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::allocator<char>, 1, true>::__compressed_pair_elem(std::__1::__default_init_tag)
+127 0x00006e80 0x100006e80 LOCAL  FUNC 0        std::__1::allocator<char>::allocator()
+128 0x00006e90 0x100006e90 LOCAL  FUNC 0        std::__1::__compressed_pair<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, std::__1::allocator<char> >::first()
+129 0x00006eb0 0x100006eb0 LOCAL  FUNC 0        std::__1::__compressed_pair_elem<std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__rep, 0, false>::__get()
+130 0x00006ec0 0x100006ec0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_long_size() const
+131 0x00006ee0 0x100006ee0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_short_size() const
+132 0x00006f10 0x100006f10 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string<std::__1::nullptr_t>(char const*)
+133 0x00006f80 0x100006f80 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_pointer()
+134 0x00006fe0 0x100006fe0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_long_pointer()
+135 0x00007000 0x100007000 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__get_short_pointer()
+136 0x00007030 0x100007030 LOCAL  FUNC 0        std::__1::pointer_traits<char*>::pointer_to(char&)
+137 0x00007050 0x100007050 LOCAL  FUNC 0        char* std::__1::addressof<char>(char&)
+138 0x00007060 0x100007060 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(unsigned long, char)
+139 0x000070b0 0x1000070b0 LOCAL  FUNC 0        unsigned long std::__1::__str_find<char, unsigned long, std::__1::char_traits<char>, 18446744073709551615ul>(char const*, unsigned long, char const*, unsigned long, unsigned long)
+140 0x000073e0 0x1000073e0 LOCAL  FUNC 0        std::__1::nullptr_t::operator char const*<char const>() const
+141 0x000073f0 0x1000073f0 LOCAL  FUNC 0        __ZL6memchrUa9enable_ifIXLb1EEEPKvim
+142 0x00007430 0x100007430 LOCAL  FUNC 0        __libcpp_memchr(void const*, int, unsigned long)
+143 0x00007460 0x100007460 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::__wrap_iter(char*)
+144 0x00007490 0x100007490 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::__wrap_iter(char*)
+145 0x000074b0 0x1000074b0 LOCAL  FUNC 0        std::__1::__wrap_iter<char*> std::__1::find<std::__1::__wrap_iter<char*>, char>(std::__1::__wrap_iter<char*>, std::__1::__wrap_iter<char*>, char const&)
+146 0x00007530 0x100007530 LOCAL  FUNC 0        bool std::__1::operator!=<char*>(std::__1::__wrap_iter<char*> const&, std::__1::__wrap_iter<char*> const&)
+147 0x00007560 0x100007560 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::operator++()
+148 0x00007580 0x100007580 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::operator*() const
+149 0x000075a0 0x1000075a0 LOCAL  FUNC 0        std::__1::remove_reference<char&>::type&& std::__1::move<char&>(char&)
+150 0x000075b0 0x1000075b0 LOCAL  FUNC 0        bool std::__1::operator==<char*, char*>(std::__1::__wrap_iter<char*> const&, std::__1::__wrap_iter<char*> const&)
+151 0x000075f0 0x1000075f0 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::base() const
+152 0x00007610 0x100007610 LOCAL  FUNC 0        std::__1::__wrap_iter<char const*>::difference_type std::__1::operator-<char const*, char*>(std::__1::__wrap_iter<char const*> const&, std::__1::__wrap_iter<char*> const&)
+153 0x00007650 0x100007650 LOCAL  FUNC 0        std::__1::__wrap_iter<char const*>::difference_type std::__1::operator-<char const*, char const*>(std::__1::__wrap_iter<char const*> const&, std::__1::__wrap_iter<char const*> const&)
+154 0x00007690 0x100007690 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::operator+(long) const
+155 0x000076d0 0x1000076d0 LOCAL  FUNC 0        std::__1::__wrap_iter<char const*>::base() const
+156 0x000076f0 0x1000076f0 LOCAL  FUNC 0        std::__1::__wrap_iter<char*>::operator+=(long)
+157 0x00007710 0x100007710 LOCAL  FUNC 0        __ZNSt3__111__wrap_iterIPKcEC2IPcEERKNS0_IT_EEPNS_9enable_ifIXsr14is_convertibleIS6_S2_EE5valueEvE4typeE
+158 0x00007750 0x100007750 LOCAL  FUNC 0        ___cxx_global_var_init
+159 0x00007790 0x100007790 LOCAL  FUNC 0        __GLOBAL__sub_I_main.cpp
+160 0x000079b8 0x1000079b8 LOCAL  FUNC 0        GCC_except_table7
+161 0x000079f0 0x1000079f0 LOCAL  FUNC 0        GCC_except_table10
+162 0x00007a10 0x100007a10 LOCAL  FUNC 0        GCC_except_table11
+163 0x00007a30 0x100007a30 LOCAL  FUNC 0        GCC_except_table12
+164 0x00007a58 0x100007a58 LOCAL  FUNC 0        GCC_except_table13
+165 0x00007a94 0x100007a94 LOCAL  FUNC 0        GCC_except_table14
+166 0x00007acc 0x100007acc LOCAL  FUNC 0        GCC_except_table15
+167 0x00007af4 0x100007af4 LOCAL  FUNC 0        GCC_except_table22
+168 0x00007c04 0x100007c04 LOCAL  FUNC 0        GCC_except_table44
+169 0x00007c20 0x100007c20 LOCAL  FUNC 0        GCC_except_table47
+170 0x00007c40 0x100007c40 LOCAL  FUNC 0        GCC_except_table61
+171 0x00007c54 0x100007c54 LOCAL  FUNC 0        GCC_except_table78
+172 0x00007c64 0x100007c64 LOCAL  FUNC 0        GCC_except_table103
+173 0x00007c78 0x100007c78 LOCAL  FUNC 0        GCC_except_table107
+174 0x00007c8c 0x100007c8c LOCAL  FUNC 0        GCC_except_table134
+175 0x00007ca4 0x100007ca4 LOCAL  FUNC 0        GCC_except_table136
+176 0x00007cbc 0x100007cbc LOCAL  FUNC 0        GCC_except_table137
+177 0x0000c150 0x10000c150 LOCAL  FUNC 0        __dyld_private
+178 0x0000779c 0x10000779c LOCAL  FUNC 0        imp._Unwind_Resume
+179 0x000077b4 0x1000077b4 LOCAL  FUNC 0        std::__1::__vector_base_common<true>::__throw_length_error() const
+180 0x000077c0 0x1000077c0 LOCAL  FUNC 0        std::logic_error::logic_error(char const*)
+181 0x000077de 0x1000077de LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::erase(unsigned long, unsigned long)
+182 0x000077e4 0x1000077e4 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(char const*, unsigned long)
+183 0x000077ea 0x1000077ea LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(unsigned long, char)
+184 0x000077f0 0x1000077f0 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)
+185 0x000077f6 0x1000077f6 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::replace(unsigned long, unsigned long, char const*, unsigned long)
+186 0x000077fc 0x1000077fc LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)
+187 0x00007802 0x100007802 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+188 0x00007808 0x100007808 LOCAL  FUNC 0        std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()
+189 0x0000782c 0x10000782c LOCAL  FUNC 0        std::terminate()
+190 0x00007832 0x100007832 LOCAL  FUNC 0        operator delete(void*)
+191 0x00007838 0x100007838 LOCAL  FUNC 0        operator new(unsigned long)
+192 0x0000783e 0x10000783e LOCAL  FUNC 0        imp.__cxa_allocate_exception
+193 0x00007844 0x100007844 LOCAL  FUNC 0        imp.__cxa_atexit
+194 0x0000784a 0x10000784a LOCAL  FUNC 0        imp.__cxa_begin_catch
+195 0x00007850 0x100007850 LOCAL  FUNC 0        imp.__cxa_call_unexpected
+196 0x00007856 0x100007856 LOCAL  FUNC 0        imp.__cxa_free_exception
+197 0x0000785c 0x10000785c LOCAL  FUNC 0        imp.__cxa_throw
+198 0x00007862 0x100007862 LOCAL  FUNC 0        imp.__maskrune
+199 0x00007868 0x100007868 LOCAL  FUNC 0        imp.__stack_chk_fail
+200 0x0000786e 0x10000786e LOCAL  FUNC 0        imp.feof
+201 0x00007874 0x100007874 LOCAL  FUNC 0        imp.fgets
+202 0x0000787a 0x10000787a LOCAL  FUNC 0        imp.memchr
+203 0x00007880 0x100007880 LOCAL  FUNC 0        imp.memcmp
+204 0x00007886 0x100007886 LOCAL  FUNC 0        imp.pclose
+205 0x0000788c 0x10000788c LOCAL  FUNC 0        imp.popen
+206 0x00007892 0x100007892 LOCAL  FUNC 0        imp.strlen
+207 0x00004310 0x100004310 LOCAL  FUNC 0        func.100004310
+208 0x00004340 0x100004340 LOCAL  FUNC 0        func.100004340
+209 0x000043d0 0x1000043d0 LOCAL  FUNC 0        func.1000043d0
+210 0x00004430 0x100004430 LOCAL  FUNC 0        func.100004430
+211 0x00004460 0x100004460 LOCAL  FUNC 0        func.100004460
+212 0x00004550 0x100004550 LOCAL  FUNC 0        func.100004550
+213 0x00004580 0x100004580 LOCAL  FUNC 0        func.100004580
+214 0x000047c0 0x1000047c0 LOCAL  FUNC 0        func.1000047c0
+215 0x000047e0 0x1000047e0 LOCAL  FUNC 0        func.1000047e0
+216 0x000047f0 0x1000047f0 LOCAL  FUNC 0        func.1000047f0
+217 0x000049e0 0x1000049e0 LOCAL  FUNC 0        func.1000049e0
+218 0x00004aa0 0x100004aa0 LOCAL  FUNC 0        func.100004aa0
+219 0x00004c40 0x100004c40 LOCAL  FUNC 0        func.100004c40
+220 0x00004d40 0x100004d40 LOCAL  FUNC 0        func.100004d40
+221 0x00004f30 0x100004f30 LOCAL  FUNC 0        func.100004f30
+222 0x00005110 0x100005110 LOCAL  FUNC 0        func.100005110
+223 0x00005130 0x100005130 LOCAL  FUNC 0        func.100005130
+224 0x00005150 0x100005150 LOCAL  FUNC 0        func.100005150
+225 0x00005200 0x100005200 LOCAL  FUNC 0        func.100005200
+226 0x00005280 0x100005280 LOCAL  FUNC 0        func.100005280
+227 0x000052f0 0x1000052f0 LOCAL  FUNC 0        func.1000052f0
+228 0x00005310 0x100005310 LOCAL  FUNC 0        func.100005310
+229 0x00005900 0x100005900 LOCAL  FUNC 0        func.100005900
+230 0x00005980 0x100005980 LOCAL  FUNC 0        func.100005980
+231 0x00005a70 0x100005a70 LOCAL  FUNC 0        func.100005a70
+232 0x00005aa0 0x100005aa0 LOCAL  FUNC 0        func.100005aa0
+233 0x00005af0 0x100005af0 LOCAL  FUNC 0        func.100005af0
+234 0x00005b20 0x100005b20 LOCAL  FUNC 0        func.100005b20
+235 0x00005ba0 0x100005ba0 LOCAL  FUNC 0        func.100005ba0
+236 0x00005bc0 0x100005bc0 LOCAL  FUNC 0        func.100005bc0
+237 0x00005bf0 0x100005bf0 LOCAL  FUNC 0        func.100005bf0
+238 0x00005c20 0x100005c20 LOCAL  FUNC 0        func.100005c20
+239 0x00005c30 0x100005c30 LOCAL  FUNC 0        func.100005c30
+240 0x00005c90 0x100005c90 LOCAL  FUNC 0        func.100005c90
+241 0x00005cd0 0x100005cd0 LOCAL  FUNC 0        func.100005cd0
+242 0x00005cf0 0x100005cf0 LOCAL  FUNC 0        func.100005cf0
+243 0x00005d20 0x100005d20 LOCAL  FUNC 0        func.100005d20
+244 0x00005d40 0x100005d40 LOCAL  FUNC 0        func.100005d40
+245 0x00005d50 0x100005d50 LOCAL  FUNC 0        func.100005d50
+246 0x00005d70 0x100005d70 LOCAL  FUNC 0        func.100005d70
+247 0x00005d80 0x100005d80 LOCAL  FUNC 0        func.100005d80
+248 0x00005db0 0x100005db0 LOCAL  FUNC 0        func.100005db0
+249 0x00005dd0 0x100005dd0 LOCAL  FUNC 0        func.100005dd0
+250 0x00005df0 0x100005df0 LOCAL  FUNC 0        func.100005df0
+251 0x00005e90 0x100005e90 LOCAL  FUNC 0        func.100005e90
+252 0x00005f10 0x100005f10 LOCAL  FUNC 0        func.100005f10
+253 0x00005fb0 0x100005fb0 LOCAL  FUNC 0        func.100005fb0
+254 0x00006070 0x100006070 LOCAL  FUNC 0        func.100006070
+255 0x000060f0 0x1000060f0 LOCAL  FUNC 0        func.1000060f0
+256 0x00006100 0x100006100 LOCAL  FUNC 0        func.100006100
+257 0x00006130 0x100006130 LOCAL  FUNC 0        func.100006130
+258 0x00006140 0x100006140 LOCAL  FUNC 0        func.100006140
+259 0x00006170 0x100006170 LOCAL  FUNC 0        func.100006170
+260 0x000061a0 0x1000061a0 LOCAL  FUNC 0        func.1000061a0
+261 0x000061c0 0x1000061c0 LOCAL  FUNC 0        func.1000061c0
+262 0x00006220 0x100006220 LOCAL  FUNC 0        func.100006220
+263 0x00006230 0x100006230 LOCAL  FUNC 0        func.100006230
+264 0x00006270 0x100006270 LOCAL  FUNC 0        func.100006270
+265 0x00006280 0x100006280 LOCAL  FUNC 0        func.100006280
+266 0x000062a0 0x1000062a0 LOCAL  FUNC 0        func.1000062a0
+267 0x000062b0 0x1000062b0 LOCAL  FUNC 0        func.1000062b0
+268 0x00006310 0x100006310 LOCAL  FUNC 0        func.100006310
+269 0x00006340 0x100006340 LOCAL  FUNC 0        func.100006340
+270 0x00006370 0x100006370 LOCAL  FUNC 0        func.100006370
+271 0x000063a0 0x1000063a0 LOCAL  FUNC 0        func.1000063a0
+272 0x00006440 0x100006440 LOCAL  FUNC 0        func.100006440
+273 0x00006470 0x100006470 LOCAL  FUNC 0        func.100006470
+274 0x00006490 0x100006490 LOCAL  FUNC 0        func.100006490
+275 0x000064c0 0x1000064c0 LOCAL  FUNC 0        func.1000064c0
+276 0x000064d0 0x1000064d0 LOCAL  FUNC 0        func.1000064d0
+277 0x00006520 0x100006520 LOCAL  FUNC 0        func.100006520
+278 0x00006550 0x100006550 LOCAL  FUNC 0        func.100006550
+279 0x00006570 0x100006570 LOCAL  FUNC 0        func.100006570
+280 0x00006590 0x100006590 LOCAL  FUNC 0        func.100006590
+281 0x000065b0 0x1000065b0 LOCAL  FUNC 0        func.1000065b0
+282 0x000065c0 0x1000065c0 LOCAL  FUNC 0        func.1000065c0
+283 0x000065d0 0x1000065d0 LOCAL  FUNC 0        func.1000065d0
+284 0x00006630 0x100006630 LOCAL  FUNC 0        func.100006630
+285 0x00006690 0x100006690 LOCAL  FUNC 0        func.100006690
+286 0x000066b0 0x1000066b0 LOCAL  FUNC 0        func.1000066b0
+287 0x000066e0 0x1000066e0 LOCAL  FUNC 0        func.1000066e0
+288 0x00006730 0x100006730 LOCAL  FUNC 0        func.100006730
+289 0x00006750 0x100006750 LOCAL  FUNC 0        func.100006750
+290 0x00006760 0x100006760 LOCAL  FUNC 0        func.100006760
+291 0x00006780 0x100006780 LOCAL  FUNC 0        func.100006780
+292 0x00006790 0x100006790 LOCAL  FUNC 0        func.100006790
+293 0x000067b0 0x1000067b0 LOCAL  FUNC 0        func.1000067b0
+294 0x000067d0 0x1000067d0 LOCAL  FUNC 0        func.1000067d0
+295 0x000067f0 0x1000067f0 LOCAL  FUNC 0        func.1000067f0
+296 0x00006800 0x100006800 LOCAL  FUNC 0        func.100006800
+297 0x00006840 0x100006840 LOCAL  FUNC 0        func.100006840
+298 0x00006870 0x100006870 LOCAL  FUNC 0        func.100006870
+299 0x00006890 0x100006890 LOCAL  FUNC 0        func.100006890
+300 0x000068a0 0x1000068a0 LOCAL  FUNC 0        func.1000068a0
+301 0x000068d0 0x1000068d0 LOCAL  FUNC 0        func.1000068d0
+302 0x00006900 0x100006900 LOCAL  FUNC 0        func.100006900
+303 0x00006920 0x100006920 LOCAL  FUNC 0        func.100006920
+304 0x00006960 0x100006960 LOCAL  FUNC 0        func.100006960
+305 0x00006990 0x100006990 LOCAL  FUNC 0        func.100006990
+306 0x000069b0 0x1000069b0 LOCAL  FUNC 0        func.1000069b0
+307 0x000069d0 0x1000069d0 LOCAL  FUNC 0        func.1000069d0
+308 0x00006a00 0x100006a00 LOCAL  FUNC 0        func.100006a00
+309 0x00006a30 0x100006a30 LOCAL  FUNC 0        func.100006a30
+310 0x00006ac0 0x100006ac0 LOCAL  FUNC 0        func.100006ac0
+311 0x00006af0 0x100006af0 LOCAL  FUNC 0        func.100006af0
+312 0x00006b20 0x100006b20 LOCAL  FUNC 0        func.100006b20
+313 0x00006b30 0x100006b30 LOCAL  FUNC 0        func.100006b30
+314 0x00006b80 0x100006b80 LOCAL  FUNC 0        func.100006b80
+315 0x00006bb0 0x100006bb0 LOCAL  FUNC 0        func.100006bb0
+316 0x00006be0 0x100006be0 LOCAL  FUNC 0        func.100006be0
+317 0x00006c00 0x100006c00 LOCAL  FUNC 0        func.100006c00
+318 0x00006c20 0x100006c20 LOCAL  FUNC 0        func.100006c20
+319 0x00006c50 0x100006c50 LOCAL  FUNC 0        func.100006c50
+320 0x00006d10 0x100006d10 LOCAL  FUNC 0        func.100006d10
+321 0x00006d30 0x100006d30 LOCAL  FUNC 0        func.100006d30
+322 0x00006d70 0x100006d70 LOCAL  FUNC 0        func.100006d70
+323 0x00006da0 0x100006da0 LOCAL  FUNC 0        func.100006da0
+324 0x00006df0 0x100006df0 LOCAL  FUNC 0        func.100006df0
+325 0x00006e50 0x100006e50 LOCAL  FUNC 0        func.100006e50
+326 0x00006e60 0x100006e60 LOCAL  FUNC 0        func.100006e60
+327 0x00006e80 0x100006e80 LOCAL  FUNC 0        func.100006e80
+328 0x00006e90 0x100006e90 LOCAL  FUNC 0        func.100006e90
+329 0x00006eb0 0x100006eb0 LOCAL  FUNC 0        func.100006eb0
+330 0x00006ec0 0x100006ec0 LOCAL  FUNC 0        func.100006ec0
+331 0x00006ee0 0x100006ee0 LOCAL  FUNC 0        func.100006ee0
+332 0x00006f10 0x100006f10 LOCAL  FUNC 0        func.100006f10
+333 0x00006f60 0x100006f60 LOCAL  FUNC 0        func.100006f60
+334 0x00006f80 0x100006f80 LOCAL  FUNC 0        func.100006f80
+335 0x00006fe0 0x100006fe0 LOCAL  FUNC 0        func.100006fe0
+336 0x00007000 0x100007000 LOCAL  FUNC 0        func.100007000
+337 0x00007030 0x100007030 LOCAL  FUNC 0        func.100007030
+338 0x00007050 0x100007050 LOCAL  FUNC 0        func.100007050
+339 0x00007060 0x100007060 LOCAL  FUNC 0        func.100007060
+340 0x000070b0 0x1000070b0 LOCAL  FUNC 0        func.1000070b0
+341 0x000071a0 0x1000071a0 LOCAL  FUNC 0        func.1000071a0
+342 0x000072c0 0x1000072c0 LOCAL  FUNC 0        func.1000072c0
+343 0x00007370 0x100007370 LOCAL  FUNC 0        func.100007370
+344 0x000073e0 0x1000073e0 LOCAL  FUNC 0        func.1000073e0
+345 0x000073f0 0x1000073f0 LOCAL  FUNC 0        func.1000073f0
+346 0x00007420 0x100007420 LOCAL  FUNC 0        func.100007420
+347 0x00007430 0x100007430 LOCAL  FUNC 0        func.100007430
+348 0x00007460 0x100007460 LOCAL  FUNC 0        func.100007460
+349 0x00007490 0x100007490 LOCAL  FUNC 0        func.100007490
+350 0x000074b0 0x1000074b0 LOCAL  FUNC 0        func.1000074b0
+351 0x00007530 0x100007530 LOCAL  FUNC 0        func.100007530
+352 0x00007560 0x100007560 LOCAL  FUNC 0        func.100007560
+353 0x00007580 0x100007580 LOCAL  FUNC 0        func.100007580
+354 0x000075a0 0x1000075a0 LOCAL  FUNC 0        func.1000075a0
+355 0x000075b0 0x1000075b0 LOCAL  FUNC 0        func.1000075b0
+356 0x000075f0 0x1000075f0 LOCAL  FUNC 0        func.1000075f0
+357 0x00007610 0x100007610 LOCAL  FUNC 0        func.100007610
+358 0x00007650 0x100007650 LOCAL  FUNC 0        func.100007650
+359 0x00007690 0x100007690 LOCAL  FUNC 0        func.100007690
+360 0x000076d0 0x1000076d0 LOCAL  FUNC 0        func.1000076d0
+361 0x000076f0 0x1000076f0 LOCAL  FUNC 0        func.1000076f0
+362 0x00007710 0x100007710 LOCAL  FUNC 0        func.100007710
+363 0x00007750 0x100007750 LOCAL  FUNC 0        func.100007750
+364 0x00007790 0x100007790 LOCAL  FUNC 0        func.100007790
+[Strings]
+nth paddr      vaddr       len size section            type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00007cd0 0x100007cd0 62  63   4.__TEXT.__cstring ascii abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+1   0x00007d0f 0x100007d0f 5   6    4.__TEXT.__cstring ascii  2>&1
+2   0x00007d17 0x100007d17 20  21   4.__TEXT.__cstring ascii EVTKFKIRYBYERARYGWHT
+3   0x00007d2c 0x100007d2c 84  85   4.__TEXT.__cstring ascii GO49IgtaLup2SsGdHsshcqwqngdfN81LTMCsuJo0ps46us9Pw7txRYhbhNsEmFz5dh0Xw8p2RmMOeonicsJX
+4   0x00007d81 0x100007d81 68  69   4.__TEXT.__cstring ascii EsAAHhkNzZXLT61iuOGcGIEVHDpZMowYFsQhhPSJG3S6GDo/ZntNR628lJ0zppEiKq==
+5   0x00007dc6 0x100007dc6 6   7    4.__TEXT.__cstring ascii {PTEH}
+6   0x00007dcd 0x100007dcd 80  81   4.__TEXT.__cstring ascii pqszkso5MuJ2S2hhhIkeF7OVtDoa179XGmQPJo7OgojQgu4XwOhgyrytq9x1eEcVIWd9w3wOC5qNe2==
+7   0x00007e1e 0x100007e1e 7   8    4.__TEXT.__cstring ascii {LGTER}
+8   0x00007e26 0x100007e26 64  65   4.__TEXT.__cstring ascii ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+9   0x00007e67 0x100007e67 67  68   4.__TEXT.__cstring ascii allocator<T>::allocate(size_t n) 'n' exceeds maximum supported size
+arch     x86
+baddr    0x100000000
+binsz    83944
+bintype  mach0
+bits     64
+canary   true
+class    MACH064
+compiler clang
+crypto   false
+endian   little
+havecode true
+intrp    /usr/lib/dyld
+laddr    0x0
+lang     c++
+linenum  false
+lsyms    false
+machine  x86 64 all
+nx       false
+os       darwin
+pic      true
+relocs   false
+sanitize false
+static   false
+stripped false
+subsys   darwin
+va       true
+pf.mach0_header @ 0x100000000
+0x100000000  Magic       0xfeedfacf
+0x100000004  CpuType     0x1000007
+0x100000008  CpuSubType  0x3
+0x10000000c  FileType    0x2
+0x100000010  nCmds       17
+0x100000014  sizeOfCmds  1656
+0x100000018  Flags       0x218085
+pf.mach0_segment64 @ 0x100000020
+0x100000020  cmd       0 0x19 LC_SEGMENT_64
+0x100000024  cmdsize     72
+0x100000028  name        __PAGEZERO
+pf.mach0_segment64 @ 0x100000068
+0x100000068  cmd       1 0x19 LC_SEGMENT_64
+0x10000006c  cmdsize     552
+0x100000070  name        __TEXT
+pf.mach0_section64 @ 0x1000000b0
+pf.mach0_section64 @ 0x100000100
+pf.mach0_section64 @ 0x100000150
+pf.mach0_section64 @ 0x1000001a0
+pf.mach0_section64 @ 0x1000001f0
+pf.mach0_section64 @ 0x100000240
+pf.mach0_segment64 @ 0x100000290
+0x100000290  cmd       2 0x19 LC_SEGMENT_64
+0x100000294  cmdsize     232
+0x100000298  name        __DATA_CONST
+pf.mach0_section64 @ 0x1000002d8
+pf.mach0_section64 @ 0x100000328
+pf.mach0_segment64 @ 0x100000378
+0x100000378  cmd       3 0x19 LC_SEGMENT_64
+0x10000037c  cmdsize     312
+0x100000380  name        __DATA
+pf.mach0_section64 @ 0x1000003c0
+pf.mach0_section64 @ 0x100000410
+pf.mach0_section64 @ 0x100000460
+pf.mach0_segment64 @ 0x1000004b0
+0x1000004b0  cmd       4 0x19 LC_SEGMENT_64
+0x1000004b4  cmdsize     72
+0x1000004b8  name        __LINKEDIT
+pf.mach0_dyld_info_only_command @ 0x1000004f8
+0x1000004f8  cmd       5 0x80000022 LC_DYLD_INFO_ONLY
+0x1000004fc  cmdsize     48
+pf.mach0_symtab_command @ 0x100000528
+0x100000528  cmd       6 0x2 LC_SYMTAB
+0x10000052c  cmdsize     24
+pf.mach0_dysymtab_command @ 0x100000540
+0x100000540  cmd       7 0xb LC_DYSYMTAB
+0x100000544  cmdsize     80
+pf.mach0_load_dylinker_command @ 0x100000590
+0x100000590  cmd       8 0xe LC_LOAD_DYLINKER
+0x100000594  cmdsize     32
+pf.mach0_uuid_command @ 0x1000005b0
+0x1000005b0  cmd       9 0x1b LC_UUID
+0x1000005b4  cmdsize     24
+0x1000005b8  uuid        126d781504493f5d984488df75d75b62
+pf.mach0_build_version_command @ 0x1000005c8
+0x1000005c8  cmd      10 0x32 LC_BUILD_VERSION
+0x1000005cc  cmdsize     32
+0x1000005d0  platform    macOS
+0x1000005d4  minos       10.15.0
+0x1000005d8  sdk         10.15.6
+0x1000005dc  ntools      1
+pf.mach0_build_version_tool @ 0x1000005e0
+0x1000005e0  tool        ld
+0x1000005e4  version     609.8.0
+pf.mach0_source_version_command @ 0x1000005e8
+0x1000005e8  cmd      11 0x2a LC_SOURCE_VERSION
+0x1000005ec  cmdsize     16
+pf.mach0_entry_point_command @ 0x1000005f8
+0x1000005f8  cmd      12 0x80000028 LC_MAIN
+0x1000005fc  cmdsize     24
+0x100000600  entry0      0x5310
+0x100000608  stacksize   0x0
+pf.mach0_dylib_command @ 0x100000610
+0x100000610  cmd      13 0xc LC_LOAD_DYLIB
+0x100000614  cmdsize     48
+0x100000620  current     902.1.0
+0x100000624  compat      1.0.0
+0x100000628  load_dylib  /usr/lib/libc++.1.dylib
+pf.mach0_dylib_command @ 0x100000640
+0x100000640  cmd      14 0xc LC_LOAD_DYLIB
+0x100000644  cmdsize     56
+0x100000650  current     1281.100.1
+0x100000654  compat      1.0.0
+0x100000658  load_dylib  /usr/lib/libSystem.B.dylib
+pf.mach0_function_starts_command @ 0x100000678
+0x100000678  cmd      15 0x26 LC_FUNCTION_STARTS
+0x10000067c  cmdsize     16
+pf.mach0_data_in_code_command @ 0x100000688
+0x100000688  cmd      16 0x29 LC_DATA_IN_CODE
+0x10000068c  cmdsize     16
+[Linked libraries]
+/usr/lib/libc++.1.dylib
+/usr/lib/libSystem.B.dylib
+
+2 libraries
+[Relocations]
+
+vaddr       paddr      type   name
+――――――――――――――――――――――――――――――――――
+0x100008000 0x00008000 SET_64 _DefaultRuneLocale
+0x100008008 0x00008008 SET_64 std::length_error::~length_error()
+0x100008010 0x00008010 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()
+0x100008018 0x00008018 SET_64 typeinfo for std::length_error
+0x100008020 0x00008020 SET_64 vtable for std::length_error
+0x100008028 0x00008028 SET_64 __gxx_personality_v0
+0x100008030 0x00008030 SET_64 __stack_chk_guard
+0x100008038 0x00008038 SET_64 dyld_stub_binder
+0x100008040 0x00008040 SET_64 _Unwind_Resume
+0x100008060 0x00008060 SET_64 std::__1::__vector_base_common<true>::__throw_length_error() const
+0x100008070 0x00008070 SET_64 std::logic_error::logic_error(char const*)
+0x100008098 0x00008098 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::erase(unsigned long, unsigned long)
+0x1000080a0 0x000080a0 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(char const*, unsigned long)
+0x1000080a8 0x000080a8 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(unsigned long, char)
+0x1000080b0 0x000080b0 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)
+0x1000080b8 0x000080b8 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::replace(unsigned long, unsigned long, char const*, unsigned long)
+0x1000080c0 0x000080c0 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)
+0x1000080c8 0x000080c8 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+0x100008100 0x00008100 SET_64 std::terminate()
+0x100008108 0x00008108 SET_64 operator delete(void*)
+0x100008110 0x00008110 SET_64 operator new(unsigned long)
+0x100008118 0x00008118 SET_64 __cxa_allocate_exception
+0x100008120 0x00008120 SET_64 __cxa_atexit
+0x100008128 0x00008128 SET_64 __cxa_begin_catch
+0x100008130 0x00008130 SET_64 __cxa_call_unexpected
+0x100008138 0x00008138 SET_64 __cxa_free_exception
+0x100008140 0x00008140 SET_64 __cxa_throw
+0x100008148 0x00008148 SET_64 __maskrune
+0x100008150 0x00008150 SET_64 __stack_chk_fail
+0x100008158 0x00008158 SET_64 feof
+0x100008160 0x00008160 SET_64 fgets
+0x100008168 0x00008168 SET_64 memchr
+0x100008170 0x00008170 SET_64 memcmp
+0x100008178 0x00008178 SET_64 pclose
+0x100008180 0x00008180 SET_64 popen
+0x100008188 0x00008188 SET_64 strlen
+0x10000c000 0x0000c000 SET_64 _Unwind_Resume
+0x10000c008 0x0000c008 SET_64 isalnum(int)
+0x10000c010 0x0000c010 SET_64 isascii(int)
+0x10000c018 0x0000c018 SET_64 __istype(int, unsigned long)
+0x10000c020 0x0000c020 SET_64 std::__1::__vector_base_common<true>::__throw_length_error() const
+0x10000c028 0x0000c028 SET_64 std::__1::vector<int, std::__1::allocator<int> >::max_size() const
+0x10000c030 0x0000c030 SET_64 std::logic_error::logic_error(char const*)
+0x10000c038 0x0000c038 SET_64 std::__1::char_traits<char>::to_int_type(char)
+0x10000c040 0x0000c040 SET_64 std::__1::char_traits<char>::find(char const*, unsigned long, char const&)
+0x10000c048 0x0000c048 SET_64 std::__1::char_traits<char>::length(char const*)
+0x10000c050 0x0000c050 SET_64 std::__1::char_traits<char>::compare(char const*, char const*, unsigned long)
+0x10000c058 0x0000c058 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::erase(unsigned long, unsigned long)
+0x10000c060 0x0000c060 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(char const*, unsigned long)
+0x10000c068 0x0000c068 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::__init(unsigned long, char)
+0x10000c070 0x0000c070 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::append(char const*)
+0x10000c078 0x0000c078 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::replace(unsigned long, unsigned long, char const*, unsigned long)
+0x10000c080 0x0000c080 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::push_back(char)
+0x10000c088 0x0000c088 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::basic_string(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)
+0x10000c090 0x0000c090 SET_64 std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> >::~basic_string()
+0x10000c098 0x0000c098 SET_64 std::__1::_DeallocateCaller::__do_deallocate_handle_size(void*, unsigned long)
+0x10000c0a0 0x0000c0a0 SET_64 std::__1::_DeallocateCaller::__do_call(void*)
+0x10000c0a8 0x0000c0a8 SET_64 char const* std::__1::__search_substring<char, std::__1::char_traits<char> >(char const*, char const*, char const*, char const*)
+0x10000c0b0 0x0000c0b0 SET_64 std::__1::__wrap_iter<char*> std::__1::remove<std::__1::__wrap_iter<char*>, char>(std::__1::__wrap_iter<char*>, std::__1::__wrap_iter<char*>, char const&)
+0x10000c0b8 0x0000c0b8 SET_64 std::__1::vector<int, std::__1::allocator<int> >::__vallocate(unsigned long)
+0x10000c0c0 0x0000c0c0 SET_64 std::terminate()
+0x10000c0c8 0x0000c0c8 SET_64 operator delete(void*)
+0x10000c0d0 0x0000c0d0 SET_64 operator new(unsigned long)
+0x10000c0d8 0x0000c0d8 SET_64 __cxa_allocate_exception
+0x10000c0e0 0x0000c0e0 SET_64 __cxa_atexit
+0x10000c0e8 0x0000c0e8 SET_64 __cxa_begin_catch
+0x10000c0f0 0x0000c0f0 SET_64 __cxa_call_unexpected
+0x10000c0f8 0x0000c0f8 SET_64 __cxa_free_exception
+0x10000c100 0x0000c100 SET_64 __cxa_throw
+0x10000c108 0x0000c108 SET_64 __maskrune
+0x10000c110 0x0000c110 SET_64 __stack_chk_fail
+0x10000c118 0x0000c118 SET_64 feof
+0x10000c120 0x0000c120 SET_64 fgets
+0x10000c128 0x0000c128 SET_64 memchr
+0x10000c130 0x0000c130 SET_64 memcmp
+0x10000c138 0x0000c138 SET_64 pclose
+0x10000c140 0x0000c140 SET_64 popen
+0x10000c148 0x0000c148 SET_64 strlen
+
+
+78 relocations
+83944
+Section to Segment mapping:
+Segment      Section
+--------------------
+__TEXT       0.__TEXT.__text 1.__TEXT.__stubs 2.__TEXT.__stub_helper 3.__TEXT.__gcc_except_tab 4.__TEXT.__cstring 5.__TEXT.__unwind_info 
+__DATA_CONST 6.__DATA_CONST.__got 7.__DATA_CONST.__mod_init_func 
+__DATA       8.__DATA.__la_symbol_ptr 9.__DATA.__data 10.__DATA.__common 
+__LINKEDIT   
+
+

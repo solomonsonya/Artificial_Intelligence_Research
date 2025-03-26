@@ -1,0 +1,173 @@
+Error parsing resource directory
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400      0x0 0x00401000  0x3d7000 -rwx UPX0
+1   0x00000400  0x7fe00 0x007d8000   0x80000 -rwx UPX1
+2   0x00080200    0x400 0x00858000    0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00857a90 paddr=0x00056e90 haddr=0x00000140 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr bind type lib name
+――――――――――――――――――――――――――――
+
+[Symbols]
+
+nth paddr vaddr bind type size lib name
+―――――――――――――――――――――――――――――――――――――――
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0008025c 0x0085805c 388 389  .rsrc   ascii <?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='highestAvailable' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\n
+1   0x00080494 0x00858294 12  13   .rsrc   ascii KERNEL32.DLL
+2   0x000804a1 0x008582a1 12  13   .rsrc   ascii ADVAPI32.dll
+3   0x000804ae 0x008582ae 11  12   .rsrc   ascii SHELL32.dll
+4   0x000804ba 0x008582ba 10  11   .rsrc   ascii USER32.dll
+5   0x000804c5 0x008582c5 10  11   .rsrc   ascii WS2_32.dll
+6   0x000804d2 0x008582d2 12  13   .rsrc   ascii LoadLibraryA
+7   0x000804e0 0x008582e0 14  15   .rsrc   ascii GetProcAddress
+8   0x000804f0 0x008582f0 14  15   .rsrc   ascii VirtualProtect
+9   0x00080500 0x00858300 12  13   .rsrc   ascii VirtualAlloc
+10  0x0008050e 0x0085830e 11  12   .rsrc   ascii VirtualFree
+11  0x0008051c 0x0085831c 11  12   .rsrc   ascii ExitProcess
+12  0x0008052a 0x0085832a 8   9    .rsrc   ascii LsaClose
+13  0x00080534 0x00858334 23  24   .rsrc   ascii SHGetSpecialFolderPathA
+14  0x0008054e 0x0085834e 10  11   .rsrc   ascii ShowWindow
+arch     x86
+baddr    0x400000
+binsz    525824
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00088c15
+compiled Sat Feb  1 09:23:21 2020
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   true
+stripped false
+subsys   Windows CUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x5e354389
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x80000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x3d7000
+  AddressOfEntryPoint : 0x457a90
+  BaseOfCode : 0x3d8000
+  BaseOfData : 0x458000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x459000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x3
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 24215 Times: 1
+  Product: 151 Name: Resource900 Version: 0 Times: 1
+  Product: 255 Name: Cvtres1400 Version: 24210 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 24215 Times: 132
+  Product: 147 Name: Implib900 Version: 30729 Times: 17
+  Product: 1 Name: Import0 Version: 0 Times: 290
+  Product: 260 Name: Utc1900_C Version: 24215 Times: 16
+  Product: 260 Name: Utc1900_C Version: 24123 Times: 38
+  Product: 261 Name: Utc1900_CPP Version: 24123 Times: 118
+  Product: 259 Name: Masm1400 Version: 24123 Times: 27
+  Product: 199 Name: AliasObj1100 Version: 41118 Times: 4
+  Product: 242 Name: Utc1810_C Version: 40116 Times: 32
+  Product: 243 Name: Utc1810_CPP Version: 40116 Times: 179
+  Product: 241 Name: Masm1210 Version: 40116 Times: 20
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x4581e0
+  Size : 0x17c
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x458000
+  Size : 0x1e0
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x45835c
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_TLS
+  VirtualAddress : 0x457c7c
+  Size : 0x18
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x457c9c
+  Size : 0x5c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+
+0 library
+[Relocations]
+
+vaddr paddr type name
+―――――――――――――――――――――
+
+
+0 relocations
+525824
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

@@ -1,0 +1,582 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000      0x0 0x00401000  0x15000 -r-x .text
+1   0x00000000      0x0 0x00416000   0x6000 -r-- .rdata
+2   0x00000000      0x0 0x0041c000   0x6000 -rw- .data
+3   0x00000000      0x0 0x00422000  0xb6000 -rwx .vmp0
+4   0x00000400  0xd2a00 0x004d8000  0xd3000 -rwx .vmp1
+5   0x000d2e00    0x200 0x005ab000   0x1000 -r-- .reloc
+6   0x000d3000  0x28c00 0x005ac000  0x29000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0058f46b paddr=0x000b786b haddr=0x00000120 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00591000 NONE FUNC urlmon.dll   URLDownloadToFileA
+23  0x00591008 NONE FUNC WS2_32.dll   socket
+1   0x00591010 NONE FUNC USER32.dll   MessageBoxW
+1   0x00591018 NONE FUNC ADVAPI32.dll OpenProcessToken
+1   0x00591020 NONE FUNC WININET.dll  InternetOpenUrlW
+1   0x00591028 NONE FUNC WTSAPI32.dll WTSEnumerateProcessesW
+1   0x00591030 NONE FUNC IPHLPAPI.DLL GetNetworkParams
+1   0x00591038 NONE FUNC SHELL32.dll  ShellExecuteA
+1   0x00591040 NONE FUNC KERNEL32.dll GetVersionExW
+2   0x00591044 NONE FUNC KERNEL32.dll GetOEMCP
+1   0x0059104c NONE FUNC KERNEL32.dll GetModuleFileNameW
+1   0x00591054 NONE FUNC KERNEL32.dll GetModuleHandleA
+2   0x00591058 NONE FUNC KERNEL32.dll LoadLibraryA
+3   0x0059105c NONE FUNC KERNEL32.dll LocalAlloc
+4   0x00591060 NONE FUNC KERNEL32.dll LocalFree
+5   0x00591064 NONE FUNC KERNEL32.dll GetModuleFileNameA
+6   0x00591068 NONE FUNC KERNEL32.dll ExitProcess
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000b9400 0x00591000 NONE FUNC 0    urlmon.dll   imp.URLDownloadToFileA
+23  0x000b9408 0x00591008 NONE FUNC 0    WS2_32.dll   imp.socket
+1   0x000b9410 0x00591010 NONE FUNC 0    USER32.dll   imp.MessageBoxW
+1   0x000b9418 0x00591018 NONE FUNC 0    ADVAPI32.dll imp.OpenProcessToken
+1   0x000b9420 0x00591020 NONE FUNC 0    WININET.dll  imp.InternetOpenUrlW
+1   0x000b9428 0x00591028 NONE FUNC 0    WTSAPI32.dll imp.WTSEnumerateProcessesW
+1   0x000b9430 0x00591030 NONE FUNC 0    IPHLPAPI.DLL imp.GetNetworkParams
+1   0x000b9438 0x00591038 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteA
+1   0x000b9440 0x00591040 NONE FUNC 0    KERNEL32.dll imp.GetVersionExW
+2   0x000b9444 0x00591044 NONE FUNC 0    KERNEL32.dll imp.GetOEMCP
+1   0x000b944c 0x0059104c NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameW
+1   0x000b9454 0x00591054 NONE FUNC 0    KERNEL32.dll imp.GetModuleHandleA
+2   0x000b9458 0x00591058 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+3   0x000b945c 0x0059105c NONE FUNC 0    KERNEL32.dll imp.LocalAlloc
+4   0x000b9460 0x00591060 NONE FUNC 0    KERNEL32.dll imp.LocalFree
+5   0x000b9464 0x00591064 NONE FUNC 0    KERNEL32.dll imp.GetModuleFileNameA
+6   0x000b9468 0x00591068 NONE FUNC 0    KERNEL32.dll imp.ExitProcess
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000d35c1 0x005ac5c1 6   7    .rsrc   ascii   \brbbbb
+1   0x000d35d1 0x005ac5d1 6   7    .rsrc   ascii   &&&&&&
+2   0x000d35e1 0x005ac5e1 6   7    .rsrc   ascii   bbbbbb
+3   0x000d35f1 0x005ac5f1 6   7    .rsrc   ascii   &&&&&&
+4   0x000d3681 0x005ac681 6   7    .rsrc   ascii   bbbbbb
+5   0x000d3691 0x005ac691 6   7    .rsrc   ascii   &&&&&&
+6   0x000d36a1 0x005ac6a1 6   7    .rsrc   ascii   bbbbbb
+7   0x000d36b1 0x005ac6b1 6   7    .rsrc   ascii   \bv&&&&
+8   0x000d3870 0x005ac870 4   5    .rsrc   ascii   &&&/
+9   0x000d3878 0x005ac878 4   5    .rsrc   ascii   bbbo
+10  0x000d3890 0x005ac890 4   5    .rsrc   ascii   &/&/
+11  0x000d38a8 0x005ac8a8 4   5    .rsrc   ascii   bbbo
+12  0x000d38b0 0x005ac8b0 4   5    .rsrc   ascii   &&&/
+13  0x000d42aa 0x005ad2aa 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+14  0x000d42ba 0x005ad2ba 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+15  0x000d430a 0x005ad30a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+16  0x000d431a 0x005ad31a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+17  0x000d436a 0x005ad36a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+18  0x000d437a 0x005ad37a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+19  0x000d43ca 0x005ad3ca 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+20  0x000d43da 0x005ad3da 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+21  0x000d442a 0x005ad42a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+22  0x000d443a 0x005ad43a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+23  0x000d448a 0x005ad48a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+24  0x000d449a 0x005ad49a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+25  0x000d44ea 0x005ad4ea 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+26  0x000d44fa 0x005ad4fa 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+27  0x000d466a 0x005ad66a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+28  0x000d467a 0x005ad67a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+29  0x000d46ca 0x005ad6ca 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+30  0x000d46da 0x005ad6da 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+31  0x000d472a 0x005ad72a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+32  0x000d473a 0x005ad73a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+33  0x000d478a 0x005ad78a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+34  0x000d479a 0x005ad79a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+35  0x000d47ea 0x005ad7ea 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+36  0x000d47fa 0x005ad7fa 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+37  0x000d483b 0x005ad83b 4   5    .rsrc   ascii   \a\a\a\a
+38  0x000d484a 0x005ad84a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+39  0x000d485a 0x005ad85a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+40  0x000d48aa 0x005ad8aa 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+41  0x000d48ba 0x005ad8ba 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+42  0x000d4a2a 0x005ada2a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+43  0x000d4a3a 0x005ada3a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+44  0x000d4a8a 0x005ada8a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+45  0x000d4a9a 0x005ada9a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+46  0x000d4aea 0x005adaea 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+47  0x000d4afa 0x005adafa 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+48  0x000d4b4a 0x005adb4a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+49  0x000d4b5a 0x005adb5a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+50  0x000d4baa 0x005adbaa 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+51  0x000d4bba 0x005adbba 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+52  0x000d4c0a 0x005adc0a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+53  0x000d4c1a 0x005adc1a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+54  0x000d4c6a 0x005adc6a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+55  0x000d4c7a 0x005adc7a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+56  0x000d4dea 0x005addea 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+57  0x000d4dfa 0x005addfa 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+58  0x000d4e4a 0x005ade4a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+59  0x000d4e5a 0x005ade5a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+60  0x000d4eaa 0x005adeaa 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+61  0x000d4eba 0x005adeba 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+62  0x000d4f0a 0x005adf0a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+63  0x000d4f1a 0x005adf1a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+64  0x000d4f6a 0x005adf6a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+65  0x000d4f7a 0x005adf7a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+66  0x000d4fca 0x005adfca 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+67  0x000d4fda 0x005adfda 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+68  0x000d502a 0x005ae02a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+69  0x000d503a 0x005ae03a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+70  0x000d51aa 0x005ae1aa 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+71  0x000d51ba 0x005ae1ba 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+72  0x000d520a 0x005ae20a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+73  0x000d521a 0x005ae21a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+74  0x000d526a 0x005ae26a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+75  0x000d527a 0x005ae27a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+76  0x000d52ca 0x005ae2ca 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+77  0x000d52da 0x005ae2da 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+78  0x000d532a 0x005ae32a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+79  0x000d533a 0x005ae33a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+80  0x000d538a 0x005ae38a 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+81  0x000d539a 0x005ae39a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+82  0x000d53ea 0x005ae3ea 13  14   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r
+83  0x000d53fa 0x005ae3fa 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+84  0x000d5558 0x005ae558 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+85  0x000d5569 0x005ae569 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+86  0x000d557a 0x005ae57a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+87  0x000d55b8 0x005ae5b8 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+88  0x000d55c9 0x005ae5c9 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+89  0x000d55da 0x005ae5da 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+90  0x000d5618 0x005ae618 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+91  0x000d5629 0x005ae629 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+92  0x000d563a 0x005ae63a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+93  0x000d5678 0x005ae678 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+94  0x000d5689 0x005ae689 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+95  0x000d569a 0x005ae69a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+96  0x000d56d8 0x005ae6d8 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+97  0x000d56e9 0x005ae6e9 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+98  0x000d56fa 0x005ae6fa 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+99  0x000d5738 0x005ae738 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+100 0x000d5749 0x005ae749 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+101 0x000d575a 0x005ae75a 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+102 0x000d5798 0x005ae798 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+103 0x000d57a9 0x005ae7a9 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+104 0x000d57ba 0x005ae7ba 14  15   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r
+105 0x000d5918 0x005ae918 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+106 0x000d5929 0x005ae929 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+107 0x000d5978 0x005ae978 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+108 0x000d5989 0x005ae989 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+109 0x000d59d8 0x005ae9d8 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+110 0x000d59e9 0x005ae9e9 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+111 0x000d5a38 0x005aea38 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+112 0x000d5a49 0x005aea49 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+113 0x000d5a98 0x005aea98 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+114 0x000d5aa9 0x005aeaa9 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+115 0x000d5af8 0x005aeaf8 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+116 0x000d5b09 0x005aeb09 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+117 0x000d5b58 0x005aeb58 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+118 0x000d5b69 0x005aeb69 14  15   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f\f\f\f
+119 0x000d6fe5 0x005affe5 4   5    .rsrc   ascii   \t\n\n\t
+120 0x000d7415 0x005b0415 4   5    .rsrc   ascii   \a\n\n\n
+121 0x000d741d 0x005b041d 4   5    .rsrc   ascii   \t\n\n\a
+122 0x000d90be 0x005b20be 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+123 0x000d90fe 0x005b20fe 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+124 0x000d913e 0x005b213e 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+125 0x000d917e 0x005b217e 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+126 0x000d923e 0x005b223e 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+127 0x000d924b 0x005b224b 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+128 0x000d927e 0x005b227e 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+129 0x000d928b 0x005b228b 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+130 0x000d92be 0x005b22be 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+131 0x000d92cb 0x005b22cb 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+132 0x000d92fe 0x005b22fe 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+133 0x000d930b 0x005b230b 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+134 0x000d933e 0x005b233e 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+135 0x000d934b 0x005b234b 11  12   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f\f
+136 0x000da582 0x005b3582 5   6    .rsrc   ascii   \f\f\f\f\f
+137 0x000da5be 0x005b35be 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+138 0x000da672 0x005b3672 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+139 0x000da67e 0x005b367e 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+140 0x000da6ae 0x005b36ae 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+141 0x000da6ba 0x005b36ba 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+142 0x000da6ea 0x005b36ea 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+143 0x000da6f6 0x005b36f6 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+144 0x000da726 0x005b3726 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+145 0x000da732 0x005b3732 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+146 0x000da762 0x005b3762 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+147 0x000da76e 0x005b376e 10  11   .rsrc   ascii   \f\f\f\f\f\f\f\f\f\f
+148 0x000db65c 0x005b465c 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+149 0x000db6bc 0x005b46bc 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+150 0x000db6c5 0x005b46c5 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+151 0x000db6ec 0x005b46ec 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+152 0x000db6f5 0x005b46f5 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+153 0x000db71c 0x005b471c 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+154 0x000db725 0x005b4725 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+155 0x000db74c 0x005b474c 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+156 0x000db755 0x005b4755 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+157 0x000db77c 0x005b477c 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+158 0x000db785 0x005b4785 8   9    .rsrc   ascii   \f\f\f\f\f\f\f\f
+159 0x000dbf73 0x005b4f73 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+160 0x000dbf7b 0x005b4f7b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+161 0x000dbf9b 0x005b4f9b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+162 0x000dbfa3 0x005b4fa3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+163 0x000dbfc3 0x005b4fc3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+164 0x000dbfcb 0x005b4fcb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+165 0x000dbfeb 0x005b4feb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+166 0x000dbff3 0x005b4ff3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+167 0x000dc03b 0x005b503b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+168 0x000dc043 0x005b5043 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+169 0x000dc063 0x005b5063 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+170 0x000dc06b 0x005b506b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+171 0x000dc08b 0x005b508b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+172 0x000dc093 0x005b5093 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+173 0x000dc0b3 0x005b50b3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+174 0x000dc0bb 0x005b50bb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+175 0x000dc103 0x005b5103 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+176 0x000dc10b 0x005b510b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+177 0x000dc12b 0x005b512b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+178 0x000dc133 0x005b5133 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+179 0x000dc153 0x005b5153 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+180 0x000dc15b 0x005b515b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+181 0x000dc17b 0x005b517b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+182 0x000dc183 0x005b5183 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+183 0x000dc1cb 0x005b51cb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+184 0x000dc1d3 0x005b51d3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+185 0x000dc1f3 0x005b51f3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+186 0x000dc1fb 0x005b51fb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+187 0x000dc21b 0x005b521b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+188 0x000dc223 0x005b5223 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+189 0x000dc243 0x005b5243 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+190 0x000dc24b 0x005b524b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+191 0x000dc293 0x005b5293 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+192 0x000dc29b 0x005b529b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+193 0x000dc2bb 0x005b52bb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+194 0x000dc2c3 0x005b52c3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+195 0x000dc2e3 0x005b52e3 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+196 0x000dc2eb 0x005b52eb 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+197 0x000dc30b 0x005b530b 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+198 0x000dc313 0x005b5313 7   8    .rsrc   ascii   \f\f\f\f\f\f\f
+199 0x000dc353 0x005b5353 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+200 0x000dc35b 0x005b535b 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+201 0x000dc37b 0x005b537b 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+202 0x000dc383 0x005b5383 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+203 0x000dc3a3 0x005b53a3 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+204 0x000dc3ab 0x005b53ab 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+205 0x000dc3cb 0x005b53cb 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+206 0x000dc3d3 0x005b53d3 7   8    .rsrc   ascii   \v\v\v\v\v\v\v
+207 0x000dc4e4 0x005b54e4 60  244  .rsrc   utf32le \a
+208 0x000dcacf 0x005b5acf 4   5    .rsrc   ascii   \r\r\r\r
+209 0x000dcad4 0x005b5ad4 5   6    .rsrc   ascii   \r\r\r\r\r
+210 0x000dcaef 0x005b5aef 4   5    .rsrc   ascii   \r\r\r\r
+211 0x000dcaf4 0x005b5af4 5   6    .rsrc   ascii   \r\r\r\r\r
+212 0x000dcb0f 0x005b5b0f 4   5    .rsrc   ascii   \r\r\r\r
+213 0x000dcb14 0x005b5b14 5   6    .rsrc   ascii   \r\r\r\r\r
+214 0x000dcb4f 0x005b5b4f 4   5    .rsrc   ascii   \r\r\r\r
+215 0x000dcb54 0x005b5b54 5   6    .rsrc   ascii   \r\r\r\r\r
+216 0x000dcb6f 0x005b5b6f 4   5    .rsrc   ascii   \r\r\r\r
+217 0x000dcb74 0x005b5b74 5   6    .rsrc   ascii   \r\r\r\r\r
+218 0x000dcb8f 0x005b5b8f 4   5    .rsrc   ascii   \r\r\r\r
+219 0x000dcb94 0x005b5b94 5   6    .rsrc   ascii   \r\r\r\r\r
+220 0x000dcbcf 0x005b5bcf 4   5    .rsrc   ascii   \r\r\r\r
+221 0x000dcbd4 0x005b5bd4 5   6    .rsrc   ascii   \r\r\r\r\r
+222 0x000dcbef 0x005b5bef 4   5    .rsrc   ascii   \r\r\r\r
+223 0x000dcbf4 0x005b5bf4 5   6    .rsrc   ascii   \r\r\r\r\r
+224 0x000dcc0f 0x005b5c0f 4   5    .rsrc   ascii   \r\r\r\r
+225 0x000dcc14 0x005b5c14 5   6    .rsrc   ascii   \r\r\r\r\r
+226 0x000dcc4f 0x005b5c4f 4   5    .rsrc   ascii   \r\r\r\r
+227 0x000dcc54 0x005b5c54 5   6    .rsrc   ascii   \r\r\r\r\r
+228 0x000dcc6f 0x005b5c6f 4   5    .rsrc   ascii   \r\r\r\r
+229 0x000dcc74 0x005b5c74 5   6    .rsrc   ascii   \r\r\r\r\r
+230 0x000dcc8f 0x005b5c8f 4   5    .rsrc   ascii   \r\r\r\r
+231 0x000dcc94 0x005b5c94 5   6    .rsrc   ascii   \r\r\r\r\r
+232 0x000dcccf 0x005b5ccf 4   5    .rsrc   ascii   \r\r\r\r
+233 0x000dccd4 0x005b5cd4 5   6    .rsrc   ascii   \r\r\r\r\r
+234 0x000dccef 0x005b5cef 4   5    .rsrc   ascii   \r\r\r\r
+235 0x000dccf4 0x005b5cf4 5   6    .rsrc   ascii   \r\r\r\r\r
+236 0x000dcd0f 0x005b5d0f 4   5    .rsrc   ascii   \r\r\r\r
+237 0x000dcd14 0x005b5d14 5   6    .rsrc   ascii   \r\r\r\r\r
+238 0x000dcd48 0x005b5d48 5   6    .rsrc   ascii   \f\f\f\f\f
+239 0x000dcd4e 0x005b5d4e 5   6    .rsrc   ascii   \f\f\f\f\f
+240 0x000dcd68 0x005b5d68 5   6    .rsrc   ascii   \f\f\f\f\f
+241 0x000dcd6e 0x005b5d6e 5   6    .rsrc   ascii   \f\f\f\f\f
+242 0x000dcd88 0x005b5d88 5   6    .rsrc   ascii   \f\f\f\f\f
+243 0x000dcd8e 0x005b5d8e 5   6    .rsrc   ascii   \f\f\f\f\f
+244 0x000dd305 0x005b6305 18  19   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r
+245 0x000dd354 0x005b6354 4   5    .rsrc   ascii   \t\t\t\t
+246 0x000dd359 0x005b6359 4   5    .rsrc   ascii   \t\t\t\t
+247 0x000dd36c 0x005b636c 4   5    .rsrc   ascii   \t\t\t\t
+248 0x000dd371 0x005b6371 4   5    .rsrc   ascii   \t\t\t\t
+249 0x000dd39c 0x005b639c 4   5    .rsrc   ascii   \t\t\t\t
+250 0x000dd3a1 0x005b63a1 4   5    .rsrc   ascii   \t\t\t\t
+251 0x000dd3b4 0x005b63b4 4   5    .rsrc   ascii   \t\t\t\t
+252 0x000dd3b9 0x005b63b9 4   5    .rsrc   ascii   \t\t\t\t
+253 0x000dd3e4 0x005b63e4 4   5    .rsrc   ascii   \t\t\t\t
+254 0x000dd3e9 0x005b63e9 4   5    .rsrc   ascii   \t\t\t\t
+255 0x000dd3fc 0x005b63fc 4   5    .rsrc   ascii   \t\t\t\t
+256 0x000dd401 0x005b6401 4   5    .rsrc   ascii   \t\t\t\t
+257 0x000dd42c 0x005b642c 4   5    .rsrc   ascii   \t\t\t\t
+258 0x000dd431 0x005b6431 4   5    .rsrc   ascii   \t\t\t\t
+259 0x000dd444 0x005b6444 4   5    .rsrc   ascii   \t\t\t\t
+260 0x000dd449 0x005b6449 4   5    .rsrc   ascii   \t\t\t\t
+261 0x000dd474 0x005b6474 5   6    .rsrc   ascii   \b\b\b\b\r
+262 0x000dd48c 0x005b648c 5   6    .rsrc   ascii   \b\b\b\b\r
+263 0x000dd4fd 0x005b64fd 12  13   .rsrc   ascii   \r\r\r\r\r\r\r\r\r\r\r\r
+264 0x000ddb86 0x005b6b86 6   14   .rsrc   utf16le 0ðpðð( blocks=Basic Latin,Latin-1 Supplement
+265 0x000de0f9 0x005b70f9 5   6    .rsrc   ascii   PNG\r\n
+266 0x000de103 0x005b7103 5   6    .rsrc   ascii   \rIHDR
+267 0x000de11c 0x005b711c 5   6    .rsrc   ascii   \tpHYs
+268 0x000de132 0x005b7132 5   6    .rsrc   ascii   IDATx
+269 0x000de14b 0x005b714b 4   5    .rsrc   ascii   -6bU
+270 0x000de17d 0x005b717d 8   12   .rsrc   utf8    G𡱥:NHU\eS blocks=Basic Latin,CJK Unified Ideographs Extension B
+271 0x000de198 0x005b7198 4   5    .rsrc   ascii   .l`w
+272 0x000de1d9 0x005b71d9 4   5    .rsrc   ascii   |4|o
+273 0x000de20d 0x005b720d 4   5    .rsrc   ascii   K&?|
+274 0x000de235 0x005b7235 4   5    .rsrc   ascii   VEee
+275 0x000de23f 0x005b723f 4   6    .rsrc   utf8    Ո@~\b blocks=Armenian,Basic Latin
+276 0x000de320 0x005b7320 4   5    .rsrc   ascii   AX"@
+277 0x000de35b 0x005b735b 4   7    .rsrc   utf8    YHD䣠 blocks=Basic Latin,CJK Unified Ideographs Extension A
+278 0x000de3c3 0x005b73c3 4   5    .rsrc   ascii   W.^<
+279 0x000de3d5 0x005b73d5 4   5    .rsrc   ascii   ETU]
+280 0x000de43f 0x005b743f 8   9    .rsrc   ascii   \rA,6=7#C
+281 0x000de449 0x005b7449 5   6    .rsrc   ascii   297-C
+282 0x000de458 0x005b7458 6   7    .rsrc   ascii   ""w;z}
+283 0x000de487 0x005b7487 4   7    .rsrc   utf8    Hⳤ$& blocks=Basic Latin,Coptic
+284 0x000de4c1 0x005b74c1 4   6    .rsrc   utf8    ͘mcu blocks=Combining Diacritical Marks,Basic Latin
+285 0x000de55a 0x005b755a 4   7    .rsrc   utf8    ٲq̶a blocks=Arabic,Basic Latin,Combining Diacritical Marks
+286 0x000de582 0x005b7582 6   7    .rsrc   ascii   |GMT*K
+287 0x000de5eb 0x005b75eb 4   5    .rsrc   ascii   w>#W
+288 0x000de5f6 0x005b75f6 6   8    .rsrc   utf8    Z[7Uɾh blocks=Basic Latin,IPA Extensions
+289 0x000de663 0x005b7663 4   5    .rsrc   ascii   ;r3>
+290 0x000de6af 0x005b76af 5   6    .rsrc   ascii   M-+~f
+291 0x000de6f2 0x005b76f2 4   5    .rsrc   ascii   \--;
+292 0x000de76f 0x005b776f 5   6    .rsrc   ascii   iaP.7
+293 0x000de790 0x005b7790 4   6    .rsrc   utf8    ɆK~m blocks=Latin Extended-B,Basic Latin
+294 0x000de7b0 0x005b77b0 7   8    .rsrc   ascii   d1=7#].
+295 0x000de7d6 0x005b77d6 4   5    .rsrc   ascii    \v7;
+296 0x000de7f4 0x005b77f4 6   8    .rsrc   utf8    Lņ2i_e blocks=Basic Latin,Latin Extended-A
+297 0x000de83b 0x005b783b 4   5    .rsrc   ascii   } /^
+298 0x000de872 0x005b7872 4   5    .rsrc   ascii   p h\b
+299 0x000de8f2 0x005b78f2 9   10   .rsrc   ascii   znFz\ao8^5
+300 0x000de949 0x005b7949 6   7    .rsrc   ascii   !Ws{o7
+301 0x000de951 0x005b7951 4   5    .rsrc   ascii   2\v@P
+302 0x000dea73 0x005b7a73 4   6    .rsrc   utf8    j#{ץ blocks=Basic Latin,Hebrew
+303 0x000dea83 0x005b7a83 4   5    .rsrc   ascii   Ib<)
+304 0x000deac6 0x005b7ac6 7   8    .rsrc   ascii   \v3_=^x(
+305 0x000dead6 0x005b7ad6 4   7    .rsrc   utf8    c%\e屒 blocks=Basic Latin,CJK Unified Ideographs
+306 0x000deae6 0x005b7ae6 4   5    .rsrc   ascii   _,Hr
+307 0x000deaf7 0x005b7af7 4   5    .rsrc   ascii   %9?Y
+308 0x000deb48 0x005b7b48 4   5    .rsrc   ascii   b @1
+309 0x000debe7 0x005b7be7 4   5    .rsrc   ascii   IEND
+310 0x000edf6f 0x005c6f6f 4   5    .rsrc   ascii   ?;Z 
+311 0x000efe6f 0x005c8e6f 4   5    .rsrc   ascii   o;Z 
+312 0x000f051c 0x005c951c 4   5    .rsrc   ascii   >>Ai
+313 0x000f0618 0x005c9618 4   5    .rsrc   ascii   >>Ai
+314 0x000f0714 0x005c9714 4   5    .rsrc   ascii   >>Ai
+315 0x000f0810 0x005c9810 4   5    .rsrc   ascii   >>Ai
+316 0x000f090c 0x005c990c 4   5    .rsrc   ascii   >>Ai
+317 0x000f0a08 0x005c9a08 4   5    .rsrc   ascii   >>Ai
+318 0x000f0b04 0x005c9b04 4   5    .rsrc   ascii   >>Ai
+319 0x000f0c00 0x005c9c00 4   5    .rsrc   ascii   >>Ai
+320 0x000f0cfc 0x005c9cfc 4   5    .rsrc   ascii   >>Ai
+321 0x000f0df8 0x005c9df8 4   5    .rsrc   ascii   >>Ai
+322 0x000f0ef4 0x005c9ef4 4   5    .rsrc   ascii   >>Ai
+323 0x000f0ff0 0x005c9ff0 4   5    .rsrc   ascii   >>Ai
+324 0x000f10ec 0x005ca0ec 4   5    .rsrc   ascii   >>Ai
+325 0x000f5717 0x005ce717 4   5    .rsrc   ascii   ?4J 
+326 0x000f6917 0x005cf917 4   5    .rsrc   ascii   ?4J 
+327 0x000f89a0 0x005d19a0 4   5    .rsrc   ascii   =<?o
+328 0x000f906c 0x005d206c 60  244  .rsrc   utf32le \a
+329 0x000f9e30 0x005d2e30 4   5    .rsrc   ascii   =<?o
+330 0x000f9eac 0x005d2eac 4   5    .rsrc   ascii   =<?o
+331 0x000f9f28 0x005d2f28 4   5    .rsrc   ascii   =<?o
+332 0x000f9fa4 0x005d2fa4 4   5    .rsrc   ascii   =<?o
+333 0x000fa020 0x005d3020 4   5    .rsrc   ascii   =<?o
+334 0x000fa09c 0x005d309c 4   5    .rsrc   ascii   =<?o
+335 0x000fa3a3 0x005d33a3 4   5    .rsrc   ascii   ?6P 
+336 0x000fa943 0x005d3943 4   5    .rsrc   ascii   ?6P 
+337 0x000faca7 0x005d3ca7 4   5    .rsrc   ascii   ?6P 
+338 0x000face6 0x005d3ce6 4   5    .rsrc   ascii   "fFr
+339 0x000fad36 0x005d3d36 4   5    .rsrc   ascii   "fFr
+340 0x000fad86 0x005d3d86 4   5    .rsrc   ascii   "fFr
+341 0x000fadd6 0x005d3dd6 4   5    .rsrc   ascii   "fFr
+342 0x000fae26 0x005d3e26 4   5    .rsrc   ascii   "fFr
+343 0x000fae76 0x005d3e76 4   5    .rsrc   ascii   "fFr
+344 0x000faec6 0x005d3ec6 4   5    .rsrc   ascii   "fFr
+345 0x000faf16 0x005d3f16 4   5    .rsrc   ascii   "fFr
+346 0x000faf66 0x005d3f66 4   5    .rsrc   ascii   "fFr
+347 0x000fafb6 0x005d3fb6 4   5    .rsrc   ascii   "fFr
+348 0x000fb006 0x005d4006 4   5    .rsrc   ascii   "fFr
+349 0x000fb056 0x005d4056 4   5    .rsrc   ascii   "fFr
+350 0x000fb0a6 0x005d40a6 4   5    .rsrc   ascii   "`Fr
+351 0x000fb107 0x005d4107 4   5    .rsrc   ascii   /1D!
+352 0x000fb27e 0x005d427e 6   14   .rsrc   utf16le 0ðpðð( blocks=Basic Latin,Latin-1 Supplement
+353 0x000fb32e 0x005d432e 4   5    .rsrc   ascii   "fFr
+354 0x000fb36e 0x005d436e 4   5    .rsrc   ascii   "fFr
+355 0x000fb3ae 0x005d43ae 4   5    .rsrc   ascii   "fFr
+356 0x000fb3ee 0x005d43ee 4   5    .rsrc   ascii   "fFr
+357 0x000fb42e 0x005d442e 4   5    .rsrc   ascii   "fFr
+358 0x000fb46e 0x005d446e 4   5    .rsrc   ascii   "fFr
+359 0x000fb4ae 0x005d44ae 4   5    .rsrc   ascii   "fFr
+360 0x000fb4ee 0x005d44ee 4   5    .rsrc   ascii   "fFr
+361 0x000fb52e 0x005d452e 4   5    .rsrc   ascii   "fFr
+362 0x000fb56e 0x005d456e 4   5    .rsrc   ascii   "fFr
+363 0x000fb5ae 0x005d45ae 4   5    .rsrc   ascii   "`Fr
+364 0x000fb83b 0x005d483b 545 546  .rsrc   ascii   <?xml version="1.0" encoding="UTF-8" standalone="yes"?>\r\n<assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0"><trustInfo xmlns="urn:schemas-microsoft-com:asm.v3"><security><requestedPrivileges><requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel></requestedPrivileges></security></trustInfo><application xmlns="urn:schemas-microsoft-com:asm.v3"><windowsSettings><dpiAware xmlns="http://schemas.microsoft.com/SMI/2005/WindowsSettings">true</dpiAware></windowsSettings></application></assembly>
+arch     x86
+baddr    0x400000
+binsz    1031168
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0010744b
+compiled Thu Jun 29 00:41:48 2017
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  false
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x59544ccc
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xb
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x14800
+  SizeOfInitializedData : 0x39c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x18f46b
+  BaseOfCode : 0x1000
+  BaseOfData : 0x16000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x1d5000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 204 Name: Linker1100 Version: 50727 Times: 1
+  Product: 151 Name: Resource900 Version: 0 Times: 1
+  Product: 201 Name: Cvtres1100 Version: 50727 Times: 1
+  Product: 211 Name: Utc1700_LTCG_CPP Version: 50727 Times: 2
+  Product: 207 Name: Utc1700_CPP Version: 50628 Times: 44
+  Product: 185 Name: Implib1010 Version: 30716 Times: 19
+  Product: 1 Name: Import0 Version: 0 Times: 143
+  Product: 206 Name: Utc1700_C Version: 50628 Times: 132
+  Product: 205 Name: Masm1100 Version: 50628 Times: 23
+  Product: 199 Name: AliasObj1100 Version: 41118 Times: 2
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x18d808
+  Size : 0xf0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1ac000
+  Size : 0x28a5c
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x1ab000
+  Size : 0xc8
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x1aa938
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x191000
+  Size : 0x70
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+urlmon.dll
+ws2_32.dll
+user32.dll
+advapi32.dll
+wininet.dll
+wtsapi32.dll
+iphlpapi.dll
+shell32.dll
+kernel32.dll
+
+9 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000d949f 0x000b945c SET_32 KERNEL32.dll_LocalAlloc
+0x000de4d4 0x000b9440 SET_32 KERNEL32.dll_GetVersionExW
+0x000dede5 0x000b9464 SET_32 KERNEL32.dll_GetModuleFileNameA
+0x000df1e2 0x000b9438 SET_32 SHELL32.dll_ShellExecuteA
+0x000e0794 0x000b9454 SET_32 KERNEL32.dll_GetModuleHandleA
+0x000e352c 0x000b9418 SET_32 ADVAPI32.dll_OpenProcessToken
+0x0018d8f8 0x000b9400 SET_32 urlmon.dll_URLDownloadToFileA
+0x0018ec33 0x000b9460 SET_32 KERNEL32.dll_LocalFree
+0x0018f12a 0x000b9420 SET_32 WININET.dll_InternetOpenUrlW
+0x001924c8 0x000b9410 SET_32 USER32.dll_MessageBoxW
+0x0019e65f 0x000b9430 SET_32 IPHLPAPI.DLL_GetNetworkParams
+0x0019eab7 0x000b944c SET_32 KERNEL32.dll_GetModuleFileNameW
+0x0019efc1 0x000b9444 SET_32 KERNEL32.dll_GetOEMCP
+0x0019f568 0x000b9428 SET_32 WTSAPI32.dll_WTSEnumerateProcessesW
+0x001a3149 0x000b9468 SET_32 KERNEL32.dll_ExitProcess
+0x001a37da 0x000b9458 SET_32 KERNEL32.dll_LoadLibraryA
+0x80000017 0x000b9408 SET_32 WS2_32.dll_socket
+
+
+17 relocations
+1031168
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

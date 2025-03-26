@@ -1,0 +1,216 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400      0x0 0x10001000  0x87000 -rwx UPX0
+1   0x00000400  0x5ce00 0x10088000  0x5d000 -rwx UPX1
+2   0x0005d200    0x800 0x100e5000   0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x100e4b70 paddr=0x0005cf70 haddr=0x00000128 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x100e55f8 NONE FUNC ADVAPI32.dll RegEnumValueA
+1   0x100e5600 NONE FUNC GDI32.dll    Escape
+1   0x100e5608 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x100e560c NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x100e5610 NONE FUNC KERNEL32.DLL VirtualProtect
+1   0x100e5618 NONE FUNC ole32.dll    CoTaskMemFree
+1   0x100e5620 NONE FUNC OLEACC.dll   LresultFromObject
+8   0x100e5628 NONE FUNC OLEAUT32.dll VariantClear
+1   0x100e5630 NONE FUNC USER32.dll   GetDC
+1   0x100e5638 NONE FUNC WININET.dll  FindCloseUrlCache
+1   0x100e5640 NONE FUNC WINSPOOL.DRV ClosePrinter
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0005d7f8 0x100e55f8 NONE FUNC 0    ADVAPI32.dll imp.RegEnumValueA
+1   0x0005d800 0x100e5600 NONE FUNC 0    GDI32.dll    imp.Escape
+1   0x0005d808 0x100e5608 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x0005d80c 0x100e560c NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x0005d810 0x100e5610 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+1   0x0005d818 0x100e5618 NONE FUNC 0    ole32.dll    imp.CoTaskMemFree
+1   0x0005d820 0x100e5620 NONE FUNC 0    OLEACC.dll   imp.LresultFromObject
+8   0x0005d828 0x100e5628 NONE FUNC 0    OLEAUT32.dll imp.VariantClear
+1   0x0005d830 0x100e5630 NONE FUNC 0    USER32.dll   imp.GetDC
+1   0x0005d838 0x100e5638 NONE FUNC 0    WININET.dll  imp.FindCloseUrlCache
+1   0x0005d840 0x100e5640 NONE FUNC 0    WINSPOOL.DRV imp.ClosePrinter
+[Strings]
+nth paddr      vaddr      len size section type  string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0005d5d4 0x100e53d4 348 349  .rsrc   ascii <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>PA
+1   0x0005d848 0x100e5648 12  13   .rsrc   ascii ADVAPI32.dll
+2   0x0005d855 0x100e5655 9   10   .rsrc   ascii GDI32.dll
+3   0x0005d85f 0x100e565f 12  13   .rsrc   ascii KERNEL32.DLL
+4   0x0005d86c 0x100e566c 9   10   .rsrc   ascii ole32.dll
+5   0x0005d876 0x100e5676 10  11   .rsrc   ascii OLEACC.dll
+6   0x0005d881 0x100e5681 12  13   .rsrc   ascii OLEAUT32.dll
+7   0x0005d88e 0x100e568e 10  11   .rsrc   ascii USER32.dll
+8   0x0005d899 0x100e5699 11  12   .rsrc   ascii WININET.dll
+9   0x0005d8a5 0x100e56a5 12  13   .rsrc   ascii WINSPOOL.DRV
+10  0x0005d8b4 0x100e56b4 13  14   .rsrc   ascii RegEnumValueA
+11  0x0005d8c4 0x100e56c4 6   7    .rsrc   ascii Escape
+12  0x0005d8cc 0x100e56cc 14  15   .rsrc   ascii GetProcAddress
+13  0x0005d8dc 0x100e56dc 12  13   .rsrc   ascii LoadLibraryA
+14  0x0005d8ea 0x100e56ea 14  15   .rsrc   ascii VirtualProtect
+15  0x0005d8fa 0x100e56fa 13  14   .rsrc   ascii CoTaskMemFree
+16  0x0005d90a 0x100e570a 17  18   .rsrc   ascii LresultFromObject
+17  0x0005d91e 0x100e571e 5   6    .rsrc   ascii GetDC
+18  0x0005d926 0x100e5726 17  18   .rsrc   ascii FindCloseUrlCache
+19  0x0005d93a 0x100e573a 12  13   .rsrc   ascii ClosePrinter
+20  0x0005d970 0x100e5770 7   8    .rsrc   ascii dwm.dll
+arch     x86
+baddr    0x10000000
+binsz    383488
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00063406
+compiled Tue Oct 30 15:48:06 2018
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x5bd87d36
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x5d000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x87000
+  AddressOfEntryPoint : 0xe4b70
+  BaseOfCode : 0x88000
+  BaseOfData : 0xe5000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0xe6000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 21022 Times: 1
+  Product: 148 Name: Cvtres900 Version: 21022 Times: 1
+  Product: 146 Name: Export900 Version: 21022 Times: 1
+  Product: 132 Name: Utc1500_CPP Version: 21022 Times: 166
+  Product: 131 Name: Utc1500_C Version: 21022 Times: 179
+  Product: 1 Name: Import0 Version: 0 Times: 549
+  Product: 123 Name: Implib800 Version: 50727 Times: 25
+  Product: 109 Name: Utc1400_C Version: 50727 Times: 7
+  Product: 149 Name: Masm900 Version: 21022 Times: 31
+  Product: 150 Name: AliasObj900 Version: 20413 Times: 5
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0xe5748
+  Size : 0x30
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0xe5530
+  Size : 0x218
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xe5000
+  Size : 0x530
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0xe5778
+  Size : 0x10
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0xe4d64
+  Size : 0x48
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+advapi32.dll
+gdi32.dll
+kernel32.dll
+ole32.dll
+oleacc.dll
+oleaut32.dll
+user32.dll
+wininet.dll
+winspool.drv
+
+9 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000e56b2 0x0005d7f8 SET_32 ADVAPI32.dll_RegEnumValueA
+0x000e56c2 0x0005d800 SET_32 GDI32.dll_Escape
+0x000e56ca 0x0005d80c SET_32 KERNEL32.DLL_GetProcAddress
+0x000e56da 0x0005d808 SET_32 KERNEL32.DLL_LoadLibraryA
+0x000e56e8 0x0005d810 SET_32 KERNEL32.DLL_VirtualProtect
+0x000e56f8 0x0005d818 SET_32 ole32.dll_CoTaskMemFree
+0x000e5708 0x0005d820 SET_32 OLEACC.dll_LresultFromObject
+0x000e571c 0x0005d830 SET_32 USER32.dll_GetDC
+0x000e5724 0x0005d838 SET_32 WININET.dll_FindCloseUrlCache
+0x000e5738 0x0005d840 SET_32 WINSPOOL.DRV_ClosePrinter
+0x80000008 0x0005d828 SET_32 OLEAUT32.dll_VariantClear
+
+
+11 relocations
+383488
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

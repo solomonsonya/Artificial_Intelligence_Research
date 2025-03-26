@@ -1,0 +1,181 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x25400 0x00401000  0x55000 -rwx .text
+1   0x00025800   0x5c00 0x00456000   0x6000 -rwx .rsrc
+2   0x0002b400   0x2200 0x0045c000   0x3000 -r-x  0
+3   0x0002d600    0x200 0x0045f000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x0040e112 paddr=0x0000d512 haddr=0x00000118 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x0045ac80 NONE FUNC kernel32.dll LoadLibraryA
+2   0x0045ac84 NONE FUNC kernel32.dll GetProcAddress
+3   0x0045ac88 NONE FUNC kernel32.dll VirtualAlloc
+4   0x0045ac8c NONE FUNC kernel32.dll VirtualFree
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0002a480 0x0045ac80 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+2   0x0002a484 0x0045ac84 NONE FUNC 0    kernel32.dll imp.GetProcAddress
+3   0x0002a488 0x0045ac88 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+4   0x0002a48c 0x0045ac8c NONE FUNC 0    kernel32.dll imp.VirtualFree
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    186368
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00031208
+compiled Tue Mar  1 07:41:29 2016
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0003cb70
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x56d547a9
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x10e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x6
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1d000
+  SizeOfInitializedData : 0x2e000
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0xe112
+  BaseOfCode : 0x1000
+  BaseOfData : 0x1e000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x4
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x60000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x3cb70
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 11 Name: Utc12_CPP Version: 8168 Times: 2
+  Product: 0 Name: Unknown Version: 0 Times: 1
+  Product: 11 Name: Utc12_CPP Version: 9782 Times: 92
+  Product: 1 Name: Import0 Version: 0 Times: 376
+  Product: 93 Name: Implib710 Version: 4035 Times: 21
+  Product: 10 Name: Utc12_C Version: 9782 Times: 116
+  Product: 14 Name: Masm613 Version: 7299 Times: 26
+  Product: 95 Name: Utc1310_C Version: 4035 Times: 3
+  Product: 12 Name: AliasObj60 Version: 7291 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x5ac94
+  Size : 0x8f
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x56000
+  Size : 0x4c74
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x5f000
+  Size : 0x20
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0005accc 0x0002a480 SET_32 kernel32.dll_LoadLibraryA
+0x0005acdc 0x0002a484 SET_32 kernel32.dll_GetProcAddress
+0x0005acf0 0x0002a488 SET_32 kernel32.dll_VirtualAlloc
+0x0005ad00 0x0002a48c SET_32 kernel32.dll_VirtualFree
+
+
+4 relocations
+186368
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.0.0.1
+  ProductVersion: 1.0.0.1
+  FileFlagsMask: 0x17
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  FileDescription: tier0_s Dynamic Link Library
+  FileVersion: 1, 0, 0, 1
+  InternalName: tier0_s
+  LegalCopyright: Copyright (C) 2005
+  OriginalFilename: tier0_s.dll
+  ProductName:  tier0_s Dynamic Link Library
+  ProductVersion: 1, 0, 0, 1
+Section to Segment mapping:
+Segment Section
+---------------
+
+

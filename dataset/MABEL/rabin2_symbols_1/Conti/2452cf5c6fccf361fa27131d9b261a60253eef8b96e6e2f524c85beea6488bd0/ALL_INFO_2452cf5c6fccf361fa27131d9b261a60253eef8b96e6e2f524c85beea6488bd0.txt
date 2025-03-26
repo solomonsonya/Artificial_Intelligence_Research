@@ -1,0 +1,224 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x17200 0x00401000  0x18000 -r-x .text
+1   0x00017600    0x400 0x00419000   0x1000 -r-- .rdata
+2   0x00017a00   0x1200 0x0041a000   0x2000 -rw- .data
+3   0x00018c00    0x400 0x0041c000   0x1000 -r-- .rsrc
+4   0x00019000    0x400 0x0041d000   0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00405350 paddr=0x00004750 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00419030 NONE FUNC SHLWAPI.dll  StrStrIA
+1   0x00419000 NONE FUNC KERNEL32.dll GetCommandLineW
+2   0x00419004 NONE FUNC KERNEL32.dll lstrcpyA
+3   0x00419008 NONE FUNC KERNEL32.dll LoadLibraryA
+4   0x0041900c NONE FUNC KERNEL32.dll GetProcAddress
+5   0x00419010 NONE FUNC KERNEL32.dll lstrcmpiW
+6   0x00419014 NONE FUNC KERNEL32.dll CreateMutexA
+7   0x00419018 NONE FUNC KERNEL32.dll ReleaseMutex
+8   0x0041901c NONE FUNC KERNEL32.dll MultiByteToWideChar
+9   0x00419020 NONE FUNC KERNEL32.dll CloseHandle
+1   0x00419028 NONE FUNC SHELL32.dll  CommandLineToArgvW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00017630 0x00419030 NONE FUNC 0    SHLWAPI.dll  imp.StrStrIA
+1   0x00017600 0x00419000 NONE FUNC 0    KERNEL32.dll imp.GetCommandLineW
+2   0x00017604 0x00419004 NONE FUNC 0    KERNEL32.dll imp.lstrcpyA
+3   0x00017608 0x00419008 NONE FUNC 0    KERNEL32.dll imp.LoadLibraryA
+4   0x0001760c 0x0041900c NONE FUNC 0    KERNEL32.dll imp.GetProcAddress
+5   0x00017610 0x00419010 NONE FUNC 0    KERNEL32.dll imp.lstrcmpiW
+6   0x00017614 0x00419014 NONE FUNC 0    KERNEL32.dll imp.CreateMutexA
+7   0x00017618 0x00419018 NONE FUNC 0    KERNEL32.dll imp.ReleaseMutex
+8   0x0001761c 0x0041901c NONE FUNC 0    KERNEL32.dll imp.MultiByteToWideChar
+9   0x00017620 0x00419020 NONE FUNC 0    KERNEL32.dll imp.CloseHandle
+1   0x00017628 0x00419028 NONE FUNC 0    SHELL32.dll  imp.CommandLineToArgvW
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00017640 0x00419040 4   10   .rdata  utf16le null
+1   0x00017688 0x00419088 4   5    .rdata  ascii   GCTL
+2   0x00017694 0x00419094 8   9    .rdata  ascii   .text$mn
+3   0x000176a8 0x004190a8 8   9    .rdata  ascii   .idata$5
+4   0x000176bc 0x004190bc 6   7    .rdata  ascii   .rdata
+5   0x000176cc 0x004190cc 13  14   .rdata  ascii   .rdata$zzzdbg
+6   0x000176e4 0x004190e4 8   9    .rdata  ascii   .idata$2
+7   0x000176f8 0x004190f8 8   9    .rdata  ascii   .idata$3
+8   0x0001770c 0x0041910c 8   9    .rdata  ascii   .idata$4
+9   0x00017720 0x00419120 8   9    .rdata  ascii   .idata$6
+10  0x00017734 0x00419134 5   6    .rdata  ascii   .data
+11  0x00017744 0x00419144 4   5    .rdata  ascii   .bss
+12  0x00017754 0x00419154 8   9    .rdata  ascii   .rsrc$01
+13  0x00017768 0x00419168 8   9    .rdata  ascii   .rsrc$02
+14  0x000177fe 0x004191fe 8   9    .rdata  ascii   StrStrIA
+15  0x00017808 0x00419208 11  12   .rdata  ascii   SHLWAPI.dll
+16  0x00017816 0x00419216 12  13   .rdata  ascii   LoadLibraryA
+17  0x00017826 0x00419226 14  15   .rdata  ascii   GetProcAddress
+18  0x00017838 0x00419238 15  16   .rdata  ascii   GetCommandLineW
+19  0x0001784a 0x0041924a 12  13   .rdata  ascii   CreateMutexA
+20  0x0001785a 0x0041925a 12  13   .rdata  ascii   ReleaseMutex
+21  0x0001786a 0x0041926a 19  20   .rdata  ascii   MultiByteToWideChar
+22  0x00017880 0x00419280 11  12   .rdata  ascii   CloseHandle
+23  0x0001788e 0x0041928e 9   10   .rdata  ascii   lstrcmpiW
+24  0x0001789a 0x0041929a 8   9    .rdata  ascii   lstrcpyA
+25  0x000178a4 0x004192a4 12  13   .rdata  ascii   KERNEL32.dll
+26  0x000178b4 0x004192b4 18  19   .rdata  ascii   CommandLineToArgvW
+27  0x000178c8 0x004192c8 11  12   .rdata  ascii   SHELL32.dll
+0   0x00017a10 0x0041a010 4   5    .data   ascii   RSA1
+1   0x00017abd 0x0041a0bd 6   7    .data   ascii   ve5>*N
+2   0x00017b02 0x0041a102 4   7    .data   utf8    ꪺ2O\t blocks=Tai Viet,Basic Latin
+3   0x00017b35 0x0041a135 5   11   .data   utf8    nk0Y blocks=Basic Latin,Private Use Area
+4   0x00017bba 0x0041a1ba 4   5    .data   ascii   >_9Y
+5   0x00017bc7 0x0041a1c7 5   6    .data   ascii   [1@\t#
+6   0x00017bd4 0x0041a1d4 6   7    .data   ascii   [LPx7N
+7   0x00017be2 0x0041a1e2 5   6    .data   ascii   Ins\nE
+0   0x00018d00 0x0041c100 768 768  .rsrc   ascii   The network is LOCKED. Do not try to use other software. For decryption KEY write HERE:\r\n\r\nflapalinta1950@protonmail.com\r\nxersami@protonmail.comHOW_TO_DECRYPTPAnullnull<?xml version='1.0' encoding='UTF-8' standalone='yes'?>\r\n<assembly xmlns='urn:schemas-microsoft-com:asm.v1' manifestVersion='1.0'>\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level='asInvoker' uiAccess='false' />\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>\r\nPADPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGX
+arch     x86
+baddr    0x400000
+binsz    103436
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001aaa9
+compiled Thu Jun  4 00:02:10 2020
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x5ed83a02
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xe
+  MinorLinkerVersion : 0x18
+  SizeOfCode : 0x17200
+  SizeOfInitializedData : 0x1e00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x5350
+  BaseOfCode : 0x1000
+  BaseOfData : 0x19000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x6
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x6
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x1e000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8540
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 258 Name: Linker1400 Version: 28316 Times: 1
+  Product: 151 Name: Resource900 Version: 0 Times: 1
+  Product: 255 Name: Cvtres1400 Version: 28316 Times: 1
+  Product: 265 Name: Utc1900_LTCG_CPP Version: 28316 Times: 10
+  Product: 1 Name: Import0 Version: 0 Times: 17
+  Product: 257 Name: Implib1400 Version: 26715 Times: 7
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x19174
+  Size : 0x50
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x1c000
+  Size : 0x328
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x1d000
+  Size : 0x320
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x19050
+  Size : 0x38
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x19000
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+shlwapi.dll
+kernel32.dll
+shell32.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000191fc 0x00017630 SET_32 SHLWAPI.dll_StrStrIA
+0x00019214 0x00017608 SET_32 KERNEL32.dll_LoadLibraryA
+0x00019224 0x0001760c SET_32 KERNEL32.dll_GetProcAddress
+0x00019236 0x00017600 SET_32 KERNEL32.dll_GetCommandLineW
+0x00019248 0x00017614 SET_32 KERNEL32.dll_CreateMutexA
+0x00019258 0x00017618 SET_32 KERNEL32.dll_ReleaseMutex
+0x00019268 0x0001761c SET_32 KERNEL32.dll_MultiByteToWideChar
+0x0001927e 0x00017620 SET_32 KERNEL32.dll_CloseHandle
+0x0001928c 0x00017610 SET_32 KERNEL32.dll_lstrcmpiW
+0x00019298 0x00017604 SET_32 KERNEL32.dll_lstrcpyA
+0x000192b2 0x00017628 SET_32 SHELL32.dll_CommandLineToArgvW
+
+
+11 relocations
+103436
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

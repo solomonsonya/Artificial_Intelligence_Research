@@ -1,0 +1,270 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr         vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000000      0x0 0x10001000  0x15000 -r-x .text
+1   0x00000000      0x0 0x10016000   0x5000 -r-- .rdata
+2   0x00000000      0x0 0x1001b000   0x4000 -rw- .data
+3   0x00000000      0x0 0x1001f000  0x20000 -rwx .vmp0
+4   0x00000400  0x3ac00 0x1003f000  0x3b000 -rwx .vmp1
+5   0x0003b000    0x200 0x1007a000   0x1000 -r-- .reloc
+6   0x0003b200    0xc00 0x1007b000   0x1000 -r-- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x1005d56d paddr=0x0001e96d haddr=0x00000120 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x10061000 NONE FUNC KERNEL32.dll CloseHandle
+1   0x10061008 NONE FUNC USER32.dll   SetProcessWindowStation
+1   0x10061010 NONE FUNC ADVAPI32.dll ControlService
+1   0x10061018 NONE FUNC SHELL32.dll  SHGetFolderPathA
+1   0x10061020 NONE FUNC WINHTTP.dll  WinHttpConnect
+1   0x10061028 NONE FUNC SHLWAPI.dll  PathFileExistsA
+1   0x10061030 NONE FUNC imagehlp.dll MakeSureDirectoryPathExists
+1   0x10061038 NONE FUNC KERNEL32.dll GetModuleFileNameW
+1   0x10061040 NONE FUNC KERNEL32.dll GetModuleHandleA
+2   0x10061044 NONE FUNC KERNEL32.dll LoadLibraryA
+3   0x10061048 NONE FUNC KERNEL32.dll LocalAlloc
+4   0x1006104c NONE FUNC KERNEL32.dll LocalFree
+5   0x10061050 NONE FUNC KERNEL32.dll GetModuleFileNameA
+6   0x10061054 NONE FUNC KERNEL32.dll ExitProcess
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib           name
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00003310 0x10004310 GLOBAL FUNC 0    ServerDLL.dat Install
+2   0x00003720 0x10004720 GLOBAL FUNC 0    ServerDLL.dat ServiceMain2
+3   0x00002ba0 0x10003ba0 GLOBAL FUNC 0    ServerDLL.dat ServiceMain
+1   0x00022400 0x10061000 NONE   FUNC 0    KERNEL32.dll  imp.CloseHandle
+1   0x00022408 0x10061008 NONE   FUNC 0    USER32.dll    imp.SetProcessWindowStation
+1   0x00022410 0x10061010 NONE   FUNC 0    ADVAPI32.dll  imp.ControlService
+1   0x00022418 0x10061018 NONE   FUNC 0    SHELL32.dll   imp.SHGetFolderPathA
+1   0x00022420 0x10061020 NONE   FUNC 0    WINHTTP.dll   imp.WinHttpConnect
+1   0x00022428 0x10061028 NONE   FUNC 0    SHLWAPI.dll   imp.PathFileExistsA
+1   0x00022430 0x10061030 NONE   FUNC 0    imagehlp.dll  imp.MakeSureDirectoryPathExists
+1   0x00022438 0x10061038 NONE   FUNC 0    KERNEL32.dll  imp.GetModuleFileNameW
+1   0x00022440 0x10061040 NONE   FUNC 0    KERNEL32.dll  imp.GetModuleHandleA
+2   0x00022444 0x10061044 NONE   FUNC 0    KERNEL32.dll  imp.LoadLibraryA
+3   0x00022448 0x10061048 NONE   FUNC 0    KERNEL32.dll  imp.LocalAlloc
+4   0x0002244c 0x1006104c NONE   FUNC 0    KERNEL32.dll  imp.LocalFree
+5   0x00022450 0x10061050 NONE   FUNC 0    KERNEL32.dll  imp.GetModuleFileNameA
+6   0x00022454 0x10061054 NONE   FUNC 0    KERNEL32.dll  imp.ExitProcess
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x0003b489 0x1007b289 5   6    .rsrc   ascii   wwwww
+1   0x0003b5bb 0x1007b3bb 9   10   .rsrc   ascii   xxxxxxxxx
+2   0x0003b5db 0x1007b3db 9   10   .rsrc   ascii   xxxxxxxxx
+3   0x0003b5fb 0x1007b3fb 9   10   .rsrc   ascii   xxxxxxxxx
+4   0x0003b61b 0x1007b41b 9   10   .rsrc   ascii   xxxxxxxxx
+5   0x0003b63b 0x1007b43b 9   10   .rsrc   ascii   xxxxxxxxx
+6   0x0003b65b 0x1007b45b 9   10   .rsrc   ascii   xxxxxxxxx
+7   0x0003b67b 0x1007b47b 9   10   .rsrc   ascii   xxxxxxxxx
+8   0x0003b69b 0x1007b49b 9   10   .rsrc   ascii   xxxxxxxxx
+9   0x0003b6bb 0x1007b4bb 9   10   .rsrc   ascii   xxxxxxxxx
+10  0x0003b729 0x1007b529 11  12   .rsrc   ascii   \awwwwwwwwwp
+11  0x0003b7e2 0x1007b5e2 15  32   .rsrc   utf16le VS_VERSION_INFO
+12  0x0003b83e 0x1007b63e 14  30   .rsrc   utf16le StringFileInfo
+13  0x0003b862 0x1007b662 8   18   .rsrc   utf16le 040904b0
+14  0x0003b87a 0x1007b67a 11  24   .rsrc   utf16le CompanyName
+15  0x0003b894 0x1007b694 21  44   .rsrc   utf16le Microsoft Corporation
+16  0x0003b8c6 0x1007b6c6 15  32   .rsrc   utf16le FileDescription
+17  0x0003b8e8 0x1007b6e8 33  68   .rsrc   utf16le .NET Runtime Optimization Service
+18  0x0003b932 0x1007b732 11  24   .rsrc   utf16le FileVersion
+19  0x0003b94c 0x1007b74c 11  24   .rsrc   utf16le 4.0.20219.1
+20  0x0003b96a 0x1007b76a 12  26   .rsrc   utf16le InternalName
+21  0x0003b984 0x1007b784 12  26   .rsrc   utf16le mscorsvc.dll
+22  0x0003b9a6 0x1007b7a6 14  30   .rsrc   utf16le LegalCopyright
+23  0x0003b9c4 0x1007b7c4 45  92   .rsrc   utf16le ? Microsoft Corporation. All rights reserved.
+24  0x0003ba26 0x1007b826 16  34   .rsrc   utf16le OriginalFilename
+25  0x0003ba48 0x1007b848 12  26   .rsrc   utf16le mscorsvc.dll
+26  0x0003ba6a 0x1007b86a 11  24   .rsrc   utf16le ProductName
+27  0x0003ba84 0x1007b884 36  74   .rsrc   utf16le Microsoft? Windows? Operating System
+28  0x0003bad6 0x1007b8d6 14  30   .rsrc   utf16le ProductVersion
+29  0x0003baf4 0x1007b8f4 11  24   .rsrc   utf16le 4.0.20219.1
+30  0x0003bb14 0x1007b914 10  22   .rsrc   utf16le arFileInfo
+31  0x0003bb32 0x1007b932 11  24   .rsrc   utf16le Translation
+32  0x0003bb50 0x1007b950 346 347  .rsrc   ascii   <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n</assembly>
+arch     x86
+baddr    0x10000000
+binsz    252872
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0004c566
+compiled Fri Dec 11 02:59:04 2015
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x0004c566
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x7
+  TimeDateStamp : 0x566a3bf8
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x14e00
+  SizeOfInitializedData : 0x8c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x5d56d
+  BaseOfCode : 0x1000
+  BaseOfData : 0x16000
+  ImageBase : 0x10000000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x7c000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x4c566
+  Subsystem : 0x2
+  DllCharacteristics : 0x140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 154 Name: Cvtres1000 Version: 40219 Times: 1
+  Product: 155 Name: Export1000 Version: 40219 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 40219 Times: 6
+  Product: 1 Name: Import0 Version: 0 Times: 138
+  Product: 147 Name: Implib900 Version: 30729 Times: 15
+  Product: 170 Name: Utc1600_C Version: 40219 Times: 121
+  Product: 158 Name: Masm1000 Version: 40219 Times: 21
+  Product: 171 Name: Utc1600_CPP Version: 40219 Times: 49
+  Product: 152 Name: AliasObj1000 Version: 20115 Times: 1
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x445a4
+  Size : 0x75
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x66b04
+  Size : 0xc8
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x7b000
+  Size : 0xb40
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x3be00
+  Size : 0x1dc8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x7a000
+  Size : 0xa8
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x7994c
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x61000
+  Size : 0x5c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+shell32.dll
+winhttp.dll
+shlwapi.dll
+imagehlp.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0003f100 0x00022410 SET_32 ADVAPI32.dll_ControlService
+0x00040f84 0x00022448 SET_32 KERNEL32.dll_LocalAlloc
+0x000411ff 0x00022400 SET_32 KERNEL32.dll_CloseHandle
+0x00041ea9 0x00022444 SET_32 KERNEL32.dll_LoadLibraryA
+0x00044a45 0x00022408 SET_32 USER32.dll_SetProcessWindowStation
+0x0005cd17 0x00022418 SET_32 SHELL32.dll_SHGetFolderPathA
+0x0005d09b 0x00022454 SET_32 KERNEL32.dll_ExitProcess
+0x00060ac6 0x00022438 SET_32 KERNEL32.dll_GetModuleFileNameW
+0x00062f60 0x0002244c SET_32 KERNEL32.dll_LocalFree
+0x00064702 0x00022420 SET_32 WINHTTP.dll_WinHttpConnect
+0x000649d5 0x00022440 SET_32 KERNEL32.dll_GetModuleHandleA
+0x00068347 0x00022428 SET_32 SHLWAPI.dll_PathFileExistsA
+0x0006929b 0x00022430 SET_32 imagehlp.dll_MakeSureDirectoryPathExists
+0x0006ab06 0x00022450 SET_32 KERNEL32.dll_GetModuleFileNameA
+
+
+14 relocations
+252872
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 4.0.20219.1
+  ProductVersion: 4.0.20219.1
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x40004
+  FileType: 0x2
+  FileSubType: 0x0
+
+# StringTable
+
+  CompanyName: Microsoft Corporation
+  FileDescription: .NET Runtime Optimization Service
+  FileVersion: 4.0.20219.1
+  InternalName: mscorsvc.dll
+  LegalCopyright: ? Microsoft Corporation. All rights reserved.
+  OriginalFilename: mscorsvc.dll
+  ProductName: Microsoft? Windows? Operating System
+  ProductVersion: 4.0.20219.1
+Section to Segment mapping:
+Segment Section
+---------------
+
+

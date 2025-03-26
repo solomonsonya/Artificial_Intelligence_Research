@@ -1,0 +1,172 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400     0x0 0x00401000  0xe000 -rwx UPX0
+1   0x00000400  0x4600 0x0040f000  0x5000 -rwx UPX1
+2   0x00004a00   0x200 0x00414000  0x1000 -rw- .rsrc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00413290 paddr=0x00004690 haddr=0x00000128 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00414100 NONE FUNC KERNEL32.DLL LoadLibraryA
+2   0x00414104 NONE FUNC KERNEL32.DLL GetProcAddress
+3   0x00414108 NONE FUNC KERNEL32.DLL VirtualProtect
+4   0x0041410c NONE FUNC KERNEL32.DLL VirtualAlloc
+5   0x00414110 NONE FUNC KERNEL32.DLL VirtualFree
+1   0x00414118 NONE FUNC oleaut32.dll SysFreeString
+1   0x00414120 NONE FUNC user32.dll   MessageBoxA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00004b00 0x00414100 NONE FUNC 0    KERNEL32.DLL imp.LoadLibraryA
+2   0x00004b04 0x00414104 NONE FUNC 0    KERNEL32.DLL imp.GetProcAddress
+3   0x00004b08 0x00414108 NONE FUNC 0    KERNEL32.DLL imp.VirtualProtect
+4   0x00004b0c 0x0041410c NONE FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+5   0x00004b10 0x00414110 NONE FUNC 0    KERNEL32.DLL imp.VirtualFree
+1   0x00004b18 0x00414118 NONE FUNC 0    oleaut32.dll imp.SysFreeString
+1   0x00004b20 0x00414120 NONE FUNC 0    user32.dll   imp.MessageBoxA
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00004a8a 0x0041408a 18  38   .rsrc   utf16le DVCLAL\vPACKAGEINFO
+1   0x00004b28 0x00414128 12  13   .rsrc   ascii   KERNEL32.DLL
+2   0x00004b35 0x00414135 12  13   .rsrc   ascii   oleaut32.dll
+3   0x00004b42 0x00414142 10  11   .rsrc   ascii   user32.dll
+4   0x00004b4e 0x0041414e 12  13   .rsrc   ascii   LoadLibraryA
+5   0x00004b5c 0x0041415c 14  15   .rsrc   ascii   GetProcAddress
+6   0x00004b6c 0x0041416c 14  15   .rsrc   ascii   VirtualProtect
+7   0x00004b7c 0x0041417c 12  13   .rsrc   ascii   VirtualAlloc
+8   0x00004b8a 0x0041418a 11  12   .rsrc   ascii   VirtualFree
+9   0x00004b98 0x00414198 13  14   .rsrc   ascii   SysFreeString
+10  0x00004ba8 0x004141a8 11  12   .rsrc   ascii   MessageBoxA
+arch     x86
+baddr    0x400000
+binsz    19456
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00013435
+compiled Sat Jan 25 01:32:17 2014
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  true
+lsyms    true
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x3
+  TimeDateStamp : 0x52e31421
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0xa18e
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x5000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0xe000
+  AddressOfEntryPoint : 0x13290
+  BaseOfCode : 0xf000
+  BaseOfData : 0x14000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x15000
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x0
+  SizeOfStackReserve : 0x0
+  SizeOfStackCommit : 0x0
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x140b0
+  Size : 0x104
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x14000
+  Size : 0xb0
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x141b4
+  Size : 0xc
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+oleaut32.dll
+user32.dll
+
+3 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x0001414c 0x00004b00 SET_32 KERNEL32.DLL_LoadLibraryA
+0x0001415a 0x00004b04 SET_32 KERNEL32.DLL_GetProcAddress
+0x0001416a 0x00004b08 SET_32 KERNEL32.DLL_VirtualProtect
+0x0001417a 0x00004b0c SET_32 KERNEL32.DLL_VirtualAlloc
+0x00014188 0x00004b10 SET_32 KERNEL32.DLL_VirtualFree
+0x00014196 0x00004b18 SET_32 oleaut32.dll_SysFreeString
+0x000141a6 0x00004b20 SET_32 user32.dll_MessageBoxA
+
+
+7 relocations
+19456
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

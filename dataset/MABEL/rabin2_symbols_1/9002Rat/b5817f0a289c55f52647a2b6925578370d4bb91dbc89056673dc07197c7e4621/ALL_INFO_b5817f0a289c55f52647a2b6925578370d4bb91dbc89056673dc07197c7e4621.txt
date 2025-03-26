@@ -1,0 +1,499 @@
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400  0x1c00 0x00401000  0x2000 -r-x .text
+1   0x00002000  0x1200 0x00403000  0x2000 -r-- .rdata
+2   0x00003200   0x200 0x00405000  0x1000 -rw- .data
+3   0x00003400   0x400 0x00406000  0x1000 -r-- .rsrc
+4   0x00003800   0x400 0x00407000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00402394 paddr=0x00001794 haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Main]
+vaddr=0x00401e70 paddr=0x00001270
+[Imports]
+nth vaddr      bind type lib              name
+――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0040313c NONE FUNC XLBugHandler.dll _XL_SetBugReportRootDir@4
+2   0x00403140 NONE FUNC XLBugHandler.dll _XL_InitBugHandler@20
+3   0x00403144 NONE FUNC XLBugHandler.dll _XL_SetReportShowMode@4
+1   0x00403134 NONE FUNC SHLWAPI.dll      PathAppendW
+1   0x00403014 NONE FUNC KERNEL32.dll     IsDebuggerPresent
+2   0x00403018 NONE FUNC KERNEL32.dll     InitializeCriticalSection
+3   0x0040301c NONE FUNC KERNEL32.dll     LeaveCriticalSection
+4   0x00403020 NONE FUNC KERNEL32.dll     EnterCriticalSection
+5   0x00403024 NONE FUNC KERNEL32.dll     CloseHandle
+6   0x00403028 NONE FUNC KERNEL32.dll     WaitForSingleObject
+7   0x0040302c NONE FUNC KERNEL32.dll     DeleteCriticalSection
+8   0x00403030 NONE FUNC KERNEL32.dll     Sleep
+9   0x00403034 NONE FUNC KERNEL32.dll     GetLastError
+10  0x00403038 NONE FUNC KERNEL32.dll     QueryPerformanceCounter
+11  0x0040303c NONE FUNC KERNEL32.dll     OpenMutexW
+12  0x00403040 NONE FUNC KERNEL32.dll     UnmapViewOfFile
+13  0x00403044 NONE FUNC KERNEL32.dll     MapViewOfFile
+14  0x00403048 NONE FUNC KERNEL32.dll     CreateFileMappingW
+15  0x0040304c NONE FUNC KERNEL32.dll     OpenFileMappingW
+16  0x00403050 NONE FUNC KERNEL32.dll     ReleaseMutex
+17  0x00403054 NONE FUNC KERNEL32.dll     GetTempPathW
+18  0x00403058 NONE FUNC KERNEL32.dll     GetCommandLineW
+19  0x0040305c NONE FUNC KERNEL32.dll     GetTickCount
+20  0x00403060 NONE FUNC KERNEL32.dll     GetCurrentThreadId
+21  0x00403064 NONE FUNC KERNEL32.dll     GetCurrentProcessId
+22  0x00403068 NONE FUNC KERNEL32.dll     CreateMutexW
+23  0x0040306c NONE FUNC KERNEL32.dll     GetSystemTimeAsFileTime
+24  0x00403070 NONE FUNC KERNEL32.dll     SetUnhandledExceptionFilter
+25  0x00403074 NONE FUNC KERNEL32.dll     UnhandledExceptionFilter
+26  0x00403078 NONE FUNC KERNEL32.dll     TerminateProcess
+27  0x0040307c NONE FUNC KERNEL32.dll     GetStartupInfoW
+28  0x00403080 NONE FUNC KERNEL32.dll     InterlockedCompareExchange
+29  0x00403084 NONE FUNC KERNEL32.dll     InterlockedExchange
+30  0x00403088 NONE FUNC KERNEL32.dll     GetCurrentProcess
+1   0x00403000 NONE FUNC ADVAPI32.dll     OpenTraceW
+2   0x00403004 NONE FUNC ADVAPI32.dll     CloseTrace
+3   0x00403008 NONE FUNC ADVAPI32.dll     StartTraceW
+4   0x0040300c NONE FUNC ADVAPI32.dll     ProcessTrace
+1   0x0040312c NONE FUNC SHELL32.dll      CommandLineToArgvW
+1   0x00403090 NONE FUNC MSVCP90.dll      sym.imp.public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::constructor(wchar_t const *)
+2   0x00403094 NONE FUNC MSVCP90.dll      sym.imp.public: wchar_t const * __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::c_str(void)const
+3   0x00403098 NONE FUNC MSVCP90.dll      sym.imp.class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> __cdecl std::operator+<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>(class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> const &, wchar_t const *)
+4   0x0040309c NONE FUNC MSVCP90.dll      sym.imp.public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::constructor(class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> const &)
+5   0x004030a0 NONE FUNC MSVCP90.dll      sym.imp.public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::~destructor(void)
+1   0x004030a8 NONE FUNC MSVCR90.dll      _unlock
+2   0x004030ac NONE FUNC MSVCR90.dll      __dllonexit
+3   0x004030b0 NONE FUNC MSVCR90.dll      _encode_pointer
+4   0x004030b4 NONE FUNC MSVCR90.dll      _lock
+5   0x004030b8 NONE FUNC MSVCR90.dll      _onexit
+6   0x004030bc NONE FUNC MSVCR90.dll      _decode_pointer
+7   0x004030c0 NONE FUNC MSVCR90.dll      _amsg_exit
+8   0x004030c4 NONE FUNC MSVCR90.dll      __wgetmainargs
+9   0x004030c8 NONE FUNC MSVCR90.dll      _cexit
+10  0x004030cc NONE FUNC MSVCR90.dll      _exit
+11  0x004030d0 NONE FUNC MSVCR90.dll      _XcptFilter
+12  0x004030d4 NONE FUNC MSVCR90.dll      exit
+13  0x004030d8 NONE FUNC MSVCR90.dll      _wcmdln
+14  0x004030dc NONE FUNC MSVCR90.dll      sym.imp.void * __cdecl operator new(unsigned int)
+15  0x004030e0 NONE FUNC MSVCR90.dll      _initterm_e
+16  0x004030e4 NONE FUNC MSVCR90.dll      _configthreadlocale
+17  0x004030e8 NONE FUNC MSVCR90.dll      __setusermatherr
+18  0x004030ec NONE FUNC MSVCR90.dll      _adjust_fdiv
+19  0x004030f0 NONE FUNC MSVCR90.dll      __p__commode
+20  0x004030f4 NONE FUNC MSVCR90.dll      __p__fmode
+21  0x004030f8 NONE FUNC MSVCR90.dll      __set_app_type
+22  0x004030fc NONE FUNC MSVCR90.dll      sym.imp.void __cdecl terminate(void)
+23  0x00403100 NONE FUNC MSVCR90.dll      sym.imp.public: void __thiscall type_info::_type_info_dtor_internal_method(void)
+24  0x00403104 NONE FUNC MSVCR90.dll      _except_handler4_common
+25  0x00403108 NONE FUNC MSVCR90.dll      _crt_debugger_hook
+26  0x0040310c NONE FUNC MSVCR90.dll      _invoke_watson
+27  0x00403110 NONE FUNC MSVCR90.dll      _controlfp_s
+28  0x00403114 NONE FUNC MSVCR90.dll      __CxxFrameHandler3
+29  0x00403118 NONE FUNC MSVCR90.dll      _beginthreadex
+30  0x0040311c NONE FUNC MSVCR90.dll      sym.imp.void __cdecl operator delete(void *)
+31  0x00403120 NONE FUNC MSVCR90.dll      _initterm
+32  0x00403124 NONE FUNC MSVCR90.dll      memset
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib              name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x0000213c 0x0040313c NONE FUNC 0    XLBugHandler.dll imp._XL_SetBugReportRootDir@4
+2   0x00002140 0x00403140 NONE FUNC 0    XLBugHandler.dll imp._XL_InitBugHandler@20
+3   0x00002144 0x00403144 NONE FUNC 0    XLBugHandler.dll imp._XL_SetReportShowMode@4
+1   0x00002134 0x00403134 NONE FUNC 0    SHLWAPI.dll      imp.PathAppendW
+1   0x00002014 0x00403014 NONE FUNC 0    KERNEL32.dll     imp.IsDebuggerPresent
+2   0x00002018 0x00403018 NONE FUNC 0    KERNEL32.dll     imp.InitializeCriticalSection
+3   0x0000201c 0x0040301c NONE FUNC 0    KERNEL32.dll     imp.LeaveCriticalSection
+4   0x00002020 0x00403020 NONE FUNC 0    KERNEL32.dll     imp.EnterCriticalSection
+5   0x00002024 0x00403024 NONE FUNC 0    KERNEL32.dll     imp.CloseHandle
+6   0x00002028 0x00403028 NONE FUNC 0    KERNEL32.dll     imp.WaitForSingleObject
+7   0x0000202c 0x0040302c NONE FUNC 0    KERNEL32.dll     imp.DeleteCriticalSection
+8   0x00002030 0x00403030 NONE FUNC 0    KERNEL32.dll     imp.Sleep
+9   0x00002034 0x00403034 NONE FUNC 0    KERNEL32.dll     imp.GetLastError
+10  0x00002038 0x00403038 NONE FUNC 0    KERNEL32.dll     imp.QueryPerformanceCounter
+11  0x0000203c 0x0040303c NONE FUNC 0    KERNEL32.dll     imp.OpenMutexW
+12  0x00002040 0x00403040 NONE FUNC 0    KERNEL32.dll     imp.UnmapViewOfFile
+13  0x00002044 0x00403044 NONE FUNC 0    KERNEL32.dll     imp.MapViewOfFile
+14  0x00002048 0x00403048 NONE FUNC 0    KERNEL32.dll     imp.CreateFileMappingW
+15  0x0000204c 0x0040304c NONE FUNC 0    KERNEL32.dll     imp.OpenFileMappingW
+16  0x00002050 0x00403050 NONE FUNC 0    KERNEL32.dll     imp.ReleaseMutex
+17  0x00002054 0x00403054 NONE FUNC 0    KERNEL32.dll     imp.GetTempPathW
+18  0x00002058 0x00403058 NONE FUNC 0    KERNEL32.dll     imp.GetCommandLineW
+19  0x0000205c 0x0040305c NONE FUNC 0    KERNEL32.dll     imp.GetTickCount
+20  0x00002060 0x00403060 NONE FUNC 0    KERNEL32.dll     imp.GetCurrentThreadId
+21  0x00002064 0x00403064 NONE FUNC 0    KERNEL32.dll     imp.GetCurrentProcessId
+22  0x00002068 0x00403068 NONE FUNC 0    KERNEL32.dll     imp.CreateMutexW
+23  0x0000206c 0x0040306c NONE FUNC 0    KERNEL32.dll     imp.GetSystemTimeAsFileTime
+24  0x00002070 0x00403070 NONE FUNC 0    KERNEL32.dll     imp.SetUnhandledExceptionFilter
+25  0x00002074 0x00403074 NONE FUNC 0    KERNEL32.dll     imp.UnhandledExceptionFilter
+26  0x00002078 0x00403078 NONE FUNC 0    KERNEL32.dll     imp.TerminateProcess
+27  0x0000207c 0x0040307c NONE FUNC 0    KERNEL32.dll     imp.GetStartupInfoW
+28  0x00002080 0x00403080 NONE FUNC 0    KERNEL32.dll     imp.InterlockedCompareExchange
+29  0x00002084 0x00403084 NONE FUNC 0    KERNEL32.dll     imp.InterlockedExchange
+30  0x00002088 0x00403088 NONE FUNC 0    KERNEL32.dll     imp.GetCurrentProcess
+1   0x00002000 0x00403000 NONE FUNC 0    ADVAPI32.dll     imp.OpenTraceW
+2   0x00002004 0x00403004 NONE FUNC 0    ADVAPI32.dll     imp.CloseTrace
+3   0x00002008 0x00403008 NONE FUNC 0    ADVAPI32.dll     imp.StartTraceW
+4   0x0000200c 0x0040300c NONE FUNC 0    ADVAPI32.dll     imp.ProcessTrace
+1   0x0000212c 0x0040312c NONE FUNC 0    SHELL32.dll      imp.CommandLineToArgvW
+1   0x00002090 0x00403090 NONE FUNC 0    MSVCP90.dll      public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::constructor(wchar_t const *)
+2   0x00002094 0x00403094 NONE FUNC 0    MSVCP90.dll      public: wchar_t const * __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::c_str(void)const
+3   0x00002098 0x00403098 NONE FUNC 0    MSVCP90.dll      class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> __cdecl std::operator+<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>(class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> const &, wchar_t const *)
+4   0x0000209c 0x0040309c NONE FUNC 0    MSVCP90.dll      public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::constructor(class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> const &)
+5   0x000020a0 0x004030a0 NONE FUNC 0    MSVCP90.dll      public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::~destructor(void)
+1   0x000020a8 0x004030a8 NONE FUNC 0    MSVCR90.dll      imp._unlock
+2   0x000020ac 0x004030ac NONE FUNC 0    MSVCR90.dll      imp.__dllonexit
+3   0x000020b0 0x004030b0 NONE FUNC 0    MSVCR90.dll      imp._encode_pointer
+4   0x000020b4 0x004030b4 NONE FUNC 0    MSVCR90.dll      imp._lock
+5   0x000020b8 0x004030b8 NONE FUNC 0    MSVCR90.dll      imp._onexit
+6   0x000020bc 0x004030bc NONE FUNC 0    MSVCR90.dll      imp._decode_pointer
+7   0x000020c0 0x004030c0 NONE FUNC 0    MSVCR90.dll      imp._amsg_exit
+8   0x000020c4 0x004030c4 NONE FUNC 0    MSVCR90.dll      imp.__wgetmainargs
+9   0x000020c8 0x004030c8 NONE FUNC 0    MSVCR90.dll      imp._cexit
+10  0x000020cc 0x004030cc NONE FUNC 0    MSVCR90.dll      imp._exit
+11  0x000020d0 0x004030d0 NONE FUNC 0    MSVCR90.dll      imp._XcptFilter
+12  0x000020d4 0x004030d4 NONE FUNC 0    MSVCR90.dll      imp.exit
+13  0x000020d8 0x004030d8 NONE FUNC 0    MSVCR90.dll      imp._wcmdln
+14  0x000020dc 0x004030dc NONE FUNC 0    MSVCR90.dll      void * __cdecl operator new(unsigned int)
+15  0x000020e0 0x004030e0 NONE FUNC 0    MSVCR90.dll      imp._initterm_e
+16  0x000020e4 0x004030e4 NONE FUNC 0    MSVCR90.dll      imp._configthreadlocale
+17  0x000020e8 0x004030e8 NONE FUNC 0    MSVCR90.dll      imp.__setusermatherr
+18  0x000020ec 0x004030ec NONE FUNC 0    MSVCR90.dll      imp._adjust_fdiv
+19  0x000020f0 0x004030f0 NONE FUNC 0    MSVCR90.dll      imp.__p__commode
+20  0x000020f4 0x004030f4 NONE FUNC 0    MSVCR90.dll      imp.__p__fmode
+21  0x000020f8 0x004030f8 NONE FUNC 0    MSVCR90.dll      imp.__set_app_type
+22  0x000020fc 0x004030fc NONE FUNC 0    MSVCR90.dll      void __cdecl terminate(void)
+23  0x00002100 0x00403100 NONE FUNC 0    MSVCR90.dll      public: void __thiscall type_info::_type_info_dtor_internal_method(void)
+24  0x00002104 0x00403104 NONE FUNC 0    MSVCR90.dll      imp._except_handler4_common
+25  0x00002108 0x00403108 NONE FUNC 0    MSVCR90.dll      imp._crt_debugger_hook
+26  0x0000210c 0x0040310c NONE FUNC 0    MSVCR90.dll      imp._invoke_watson
+27  0x00002110 0x00403110 NONE FUNC 0    MSVCR90.dll      imp._controlfp_s
+28  0x00002114 0x00403114 NONE FUNC 0    MSVCR90.dll      imp.__CxxFrameHandler3
+29  0x00002118 0x00403118 NONE FUNC 0    MSVCR90.dll      imp._beginthreadex
+30  0x0000211c 0x0040311c NONE FUNC 0    MSVCR90.dll      void __cdecl operator delete(void *)
+31  0x00002120 0x00403120 NONE FUNC 0    MSVCR90.dll      imp._initterm
+32  0x00002124 0x00403124 NONE FUNC 0    MSVCR90.dll      imp.memset
+[Strings]
+nth paddr      vaddr      len size section type    string
+―――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x000021b2 0x004031b2 17  36   .rdata  utf16le @NT Kernel Logger
+1   0x000021d8 0x004031d8 5   12   .rdata  utf16le Mutex
+2   0x000021ea 0x004031ea 12  26   .rdata  utf16le @FileMapping
+3   0x00002212 0x00403212 26  54   .rdata  utf16le @Xunlei.CPerformanceServer
+4   0x00002248 0x00403248 37  76   .rdata  utf16le Xunlei.CPerformanceServer.Exist.Mutex
+5   0x00002298 0x00403298 37  76   .rdata  utf16le Xunlei.CPerformanceClient.Exist.Mutex
+6   0x000022f0 0x004032f0 17  36   .rdata  utf16le PerformanceServer
+7   0x00002314 0x00403314 7   16   .rdata  utf16le 7.9.1.1
+8   0x00002324 0x00403324 20  42   .rdata  utf16le Thunder Network\xl8\
+9   0x00002350 0x00403350 38  78   .rdata  utf16le {326301E1-1AFE-40be-A38A-6BBE86DF92C0}
+10  0x000023a0 0x004033a0 14  15   .rdata  ascii   bad allocation
+11  0x00002408 0x00403408 5   6    .rdata  ascii   RSDSR
+12  0x00002420 0x00403420 95  96   .rdata  ascii   C:\Users\Administrator\Desktop\ThunderPack\trunk\build\pdb\ProductRelease\PerformanceServer.pdb
+13  0x000029d2 0x004039d2 23  24   .rdata  ascii   _XL_SetReportShowMode@4
+14  0x000029ec 0x004039ec 21  22   .rdata  ascii   _XL_InitBugHandler@20
+15  0x00002a04 0x00403a04 25  26   .rdata  ascii   _XL_SetBugReportRootDir@4
+16  0x00002a1e 0x00403a1e 16  17   .rdata  ascii   XLBugHandler.dll
+17  0x00002a32 0x00403a32 11  12   .rdata  ascii   PathAppendW
+18  0x00002a3e 0x00403a3e 11  12   .rdata  ascii   SHLWAPI.dll
+19  0x00002a4c 0x00403a4c 25  26   .rdata  ascii   InitializeCriticalSection
+20  0x00002a68 0x00403a68 20  21   .rdata  ascii   LeaveCriticalSection
+21  0x00002a80 0x00403a80 20  21   .rdata  ascii   EnterCriticalSection
+22  0x00002a98 0x00403a98 11  12   .rdata  ascii   CloseHandle
+23  0x00002aa6 0x00403aa6 19  20   .rdata  ascii   WaitForSingleObject
+24  0x00002abc 0x00403abc 21  22   .rdata  ascii   DeleteCriticalSection
+25  0x00002ad4 0x00403ad4 5   6    .rdata  ascii   Sleep
+26  0x00002adc 0x00403adc 12  13   .rdata  ascii   GetLastError
+27  0x00002aec 0x00403aec 12  13   .rdata  ascii   CreateMutexW
+28  0x00002afc 0x00403afc 10  11   .rdata  ascii   OpenMutexW
+29  0x00002b0a 0x00403b0a 15  16   .rdata  ascii   UnmapViewOfFile
+30  0x00002b1c 0x00403b1c 13  14   .rdata  ascii   MapViewOfFile
+31  0x00002b2c 0x00403b2c 18  19   .rdata  ascii   CreateFileMappingW
+32  0x00002b42 0x00403b42 16  17   .rdata  ascii   OpenFileMappingW
+33  0x00002b56 0x00403b56 12  13   .rdata  ascii   ReleaseMutex
+34  0x00002b66 0x00403b66 12  13   .rdata  ascii   GetTempPathW
+35  0x00002b76 0x00403b76 15  16   .rdata  ascii   GetCommandLineW
+36  0x00002b86 0x00403b86 12  13   .rdata  ascii   KERNEL32.dll
+37  0x00002b96 0x00403b96 11  12   .rdata  ascii   StartTraceW
+38  0x00002ba4 0x00403ba4 10  11   .rdata  ascii   CloseTrace
+39  0x00002bb2 0x00403bb2 10  11   .rdata  ascii   OpenTraceW
+40  0x00002bc0 0x00403bc0 12  13   .rdata  ascii   ProcessTrace
+41  0x00002bce 0x00403bce 12  13   .rdata  ascii   ADVAPI32.dll
+42  0x00002bde 0x00403bde 18  19   .rdata  ascii   CommandLineToArgvW
+43  0x00002bf2 0x00403bf2 11  12   .rdata  ascii   SHELL32.dll
+44  0x00002c00 0x00403c00 73  74   .rdata  ascii   ??1?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QAE@XZ
+45  0x00002c4c 0x00403c4c 80  81   .rdata  ascii   ?c_str@?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QBEPB_WXZ
+46  0x00002ca0 0x00403ca0 132 133  .rdata  ascii   ??$?H_WU?$char_traits@_W@std@@V?$allocator@_W@1@@std@@YA?AV?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@0@ABV10@PB_W@Z
+47  0x00002d28 0x00403d28 79  80   .rdata  ascii   ??0?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QAE@ABV01@@Z
+48  0x00002d7a 0x00403d7a 77  78   .rdata  ascii   ??0?$basic_string@_WU?$char_traits@_W@std@@V?$allocator@_W@2@@std@@QAE@PB_W@Z
+49  0x00002dc8 0x00403dc8 11  12   .rdata  ascii   MSVCP90.dll
+50  0x00002dd6 0x00403dd6 6   7    .rdata  ascii   memset
+51  0x00002de0 0x00403de0 12  13   .rdata  ascii   ??3@YAXPAX@Z
+52  0x00002df0 0x00403df0 14  15   .rdata  ascii   _beginthreadex
+53  0x00002e02 0x00403e02 18  19   .rdata  ascii   __CxxFrameHandler3
+54  0x00002e18 0x00403e18 12  13   .rdata  ascii   ??2@YAPAXI@Z
+55  0x00002e26 0x00403e26 11  12   .rdata  ascii   MSVCR90.dll
+56  0x00002e34 0x00403e34 7   8    .rdata  ascii   _unlock
+57  0x00002e3e 0x00403e3e 11  12   .rdata  ascii   __dllonexit
+58  0x00002e4c 0x00403e4c 15  16   .rdata  ascii   _encode_pointer
+59  0x00002e5e 0x00403e5e 5   6    .rdata  ascii   _lock
+60  0x00002e66 0x00403e66 7   8    .rdata  ascii   _onexit
+61  0x00002e70 0x00403e70 15  16   .rdata  ascii   _decode_pointer
+62  0x00002e82 0x00403e82 10  11   .rdata  ascii   _amsg_exit
+63  0x00002e90 0x00403e90 14  15   .rdata  ascii   __wgetmainargs
+64  0x00002ea2 0x00403ea2 6   7    .rdata  ascii   _cexit
+65  0x00002eac 0x00403eac 5   6    .rdata  ascii   _exit
+66  0x00002eb4 0x00403eb4 11  12   .rdata  ascii   _XcptFilter
+67  0x00002ec2 0x00403ec2 4   5    .rdata  ascii   exit
+68  0x00002eca 0x00403eca 7   8    .rdata  ascii   _wcmdln
+69  0x00002ed4 0x00403ed4 9   10   .rdata  ascii   _initterm
+70  0x00002ee0 0x00403ee0 11  12   .rdata  ascii   _initterm_e
+71  0x00002eee 0x00403eee 19  20   .rdata  ascii   _configthreadlocale
+72  0x00002f04 0x00403f04 16  17   .rdata  ascii   __setusermatherr
+73  0x00002f18 0x00403f18 12  13   .rdata  ascii   _adjust_fdiv
+74  0x00002f28 0x00403f28 12  13   .rdata  ascii   __p__commode
+75  0x00002f38 0x00403f38 10  11   .rdata  ascii   __p__fmode
+76  0x00002f46 0x00403f46 14  15   .rdata  ascii   __set_app_type
+77  0x00002f58 0x00403f58 17  18   .rdata  ascii   ?terminate@@YAXXZ
+78  0x00002f6c 0x00403f6c 50  51   .rdata  ascii   ?_type_info_dtor_internal_method@type_info@@QAEXXZ
+79  0x00002fa2 0x00403fa2 23  24   .rdata  ascii   _except_handler4_common
+80  0x00002fbc 0x00403fbc 18  19   .rdata  ascii   _crt_debugger_hook
+81  0x00002fd2 0x00403fd2 14  15   .rdata  ascii   _invoke_watson
+82  0x00002fe4 0x00403fe4 12  13   .rdata  ascii   _controlfp_s
+83  0x00002ff4 0x00403ff4 19  20   .rdata  ascii   InterlockedExchange
+84  0x0000300a 0x0040400a 26  27   .rdata  ascii   InterlockedCompareExchange
+85  0x00003028 0x00404028 15  16   .rdata  ascii   GetStartupInfoW
+86  0x0000303a 0x0040403a 16  17   .rdata  ascii   TerminateProcess
+87  0x0000304e 0x0040404e 17  18   .rdata  ascii   GetCurrentProcess
+88  0x00003062 0x00404062 24  25   .rdata  ascii   UnhandledExceptionFilter
+89  0x0000307e 0x0040407e 27  28   .rdata  ascii   SetUnhandledExceptionFilter
+90  0x0000309c 0x0040409c 17  18   .rdata  ascii   IsDebuggerPresent
+91  0x000030b0 0x004040b0 23  24   .rdata  ascii   QueryPerformanceCounter
+92  0x000030ca 0x004040ca 12  13   .rdata  ascii   GetTickCount
+93  0x000030da 0x004040da 18  19   .rdata  ascii   GetCurrentThreadId
+94  0x000030f0 0x004040f0 19  20   .rdata  ascii   GetCurrentProcessId
+95  0x00003106 0x00404106 23  24   .rdata  ascii   GetSystemTimeAsFileTime
+0   0x00003208 0x00405008 19  20   .data   ascii   .?AVCDiskIoTracer@@
+1   0x00003224 0x00405024 18  19   .data   ascii   .?AVCShareMemory@@
+2   0x00003240 0x00405040 24  25   .data   ascii   .?AVCPerformanceMemory@@
+3   0x00003264 0x00405064 24  25   .data   ascii   .?AVCPerformanceServer@@
+4   0x00003290 0x00405090 15  16   .data   ascii   .?AVtype_info@@
+0   0x00003458 0x00406058 936 936  .rsrc   ascii   <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">\r\n  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v3">\r\n    <security>\r\n      <requestedPrivileges>\r\n        <requestedExecutionLevel level="asInvoker" uiAccess="false"></requestedExecutionLevel>\r\n      </requestedPrivileges>\r\n    </security>\r\n  </trustInfo>\r\n  <dependency>\r\n    <dependentAssembly>\r\n      <assemblyIdentity type="win32" name="Microsoft.VC90.CRT" version="9.0.21022.8" processorArchitecture="x86" publicKeyToken="1fc8b3b9a1e18e3b"></assemblyIdentity>\r\n    </dependentAssembly>\r\n  </dependency>\r\n</assembly>PAPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDINGPADDINGXXPADDING
+arch     x86
+baddr    0x400000
+binsz    24576
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x00015c21
+compiled Thu Jul 16 09:35:01 2015
+crypto   false
+dbg_file C:\Users\Administrator\Desktop\ThunderPack\trunk\build\pdb\ProductRelease\PerformanceServer.pdb
+endian   little
+havecode true
+hdr.csum 0x00015191
+guid     7E36D152528D47EAB04A0FDFF05002DE1
+laddr    0x0
+lang     msvc
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x55a77ac5
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x9
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1c00
+  SizeOfInitializedData : 0x1c00
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x2394
+  BaseOfCode : 0x1000
+  BaseOfData : 0x3000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x0
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x8000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x15191
+  Subsystem : 0x2
+  DllCharacteristics : 0x8140
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 145 Name: Linker900 Version: 30729 Times: 1
+  Product: 132 Name: Utc1500_CPP Version: 30729 Times: 9
+  Product: 1 Name: Import0 Version: 0 Times: 76
+  Product: 147 Name: Implib900 Version: 30729 Times: 7
+  Product: 123 Name: Implib800 Version: 50727 Times: 8
+  Product: 131 Name: Utc1500_C Version: 30729 Times: 21
+  Product: 149 Name: Masm900 Version: 30729 Times: 1
+  Product: 150 Name: AliasObj900 Version: 20413 Times: 1
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x37e4
+  Size : 0xa0
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x6000
+  Size : 0x2b0
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0x3c00
+  Size : 0x1970
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x7000
+  Size : 0x32c
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x3170
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_LOAD_CONFIG
+  VirtualAddress : 0x33c0
+  Size : 0x40
+IMAGE_DIRECTORY_ENTRY_IAT
+  VirtualAddress : 0x3000
+  Size : 0x14c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+xlbughandler.dll
+shlwapi.dll
+kernel32.dll
+advapi32.dll
+shell32.dll
+msvcp90.dll
+msvcr90.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x000039d0 0x00002144 SET_32 XLBugHandler.dll__XL_SetReportShowMode@4
+0x000039ea 0x00002140 SET_32 XLBugHandler.dll__XL_InitBugHandler@20
+0x00003a02 0x0000213c SET_32 XLBugHandler.dll__XL_SetBugReportRootDir@4
+0x00003a30 0x00002134 SET_32 SHLWAPI.dll_PathAppendW
+0x00003a4a 0x00002018 SET_32 KERNEL32.dll_InitializeCriticalSection
+0x00003a66 0x0000201c SET_32 KERNEL32.dll_LeaveCriticalSection
+0x00003a7e 0x00002020 SET_32 KERNEL32.dll_EnterCriticalSection
+0x00003a96 0x00002024 SET_32 KERNEL32.dll_CloseHandle
+0x00003aa4 0x00002028 SET_32 KERNEL32.dll_WaitForSingleObject
+0x00003aba 0x0000202c SET_32 KERNEL32.dll_DeleteCriticalSection
+0x00003ad2 0x00002030 SET_32 KERNEL32.dll_Sleep
+0x00003ada 0x00002034 SET_32 KERNEL32.dll_GetLastError
+0x00003aea 0x00002068 SET_32 KERNEL32.dll_CreateMutexW
+0x00003afa 0x0000203c SET_32 KERNEL32.dll_OpenMutexW
+0x00003b08 0x00002040 SET_32 KERNEL32.dll_UnmapViewOfFile
+0x00003b1a 0x00002044 SET_32 KERNEL32.dll_MapViewOfFile
+0x00003b2a 0x00002048 SET_32 KERNEL32.dll_CreateFileMappingW
+0x00003b40 0x0000204c SET_32 KERNEL32.dll_OpenFileMappingW
+0x00003b54 0x00002050 SET_32 KERNEL32.dll_ReleaseMutex
+0x00003b64 0x00002054 SET_32 KERNEL32.dll_GetTempPathW
+0x00003b74 0x00002058 SET_32 KERNEL32.dll_GetCommandLineW
+0x00003b94 0x00002008 SET_32 ADVAPI32.dll_StartTraceW
+0x00003ba2 0x00002004 SET_32 ADVAPI32.dll_CloseTrace
+0x00003bb0 0x00002000 SET_32 ADVAPI32.dll_OpenTraceW
+0x00003bbe 0x0000200c SET_32 ADVAPI32.dll_ProcessTrace
+0x00003bdc 0x0000212c SET_32 SHELL32.dll_CommandLineToArgvW
+0x00003bfe 0x000020a0 SET_32 MSVCP90.dll_public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::~destructor(void)
+0x00003c4a 0x00002094 SET_32 MSVCP90.dll_public: wchar_t const * __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::c_str(void)const
+0x00003c9e 0x00002098 SET_32 MSVCP90.dll_class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> __cdecl std::operator+<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>(class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> const &, wchar_t const *)
+0x00003d26 0x0000209c SET_32 MSVCP90.dll_public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::constructor(class std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>> const &)
+0x00003d78 0x00002090 SET_32 MSVCP90.dll_public: void __thiscall std::basic_string<wchar_t, struct std::char_traits<wchar_t>, class std::allocator<wchar_t>>::constructor(wchar_t const *)
+0x00003dd4 0x00002124 SET_32 MSVCR90.dll_memset
+0x00003dde 0x0000211c SET_32 MSVCR90.dll_void __cdecl operator delete(void *)
+0x00003dee 0x00002118 SET_32 MSVCR90.dll__beginthreadex
+0x00003e00 0x00002114 SET_32 MSVCR90.dll___CxxFrameHandler3
+0x00003e16 0x000020dc SET_32 MSVCR90.dll_void * __cdecl operator new(unsigned int)
+0x00003e32 0x000020a8 SET_32 MSVCR90.dll__unlock
+0x00003e3c 0x000020ac SET_32 MSVCR90.dll___dllonexit
+0x00003e4a 0x000020b0 SET_32 MSVCR90.dll__encode_pointer
+0x00003e5c 0x000020b4 SET_32 MSVCR90.dll__lock
+0x00003e64 0x000020b8 SET_32 MSVCR90.dll__onexit
+0x00003e6e 0x000020bc SET_32 MSVCR90.dll__decode_pointer
+0x00003e80 0x000020c0 SET_32 MSVCR90.dll__amsg_exit
+0x00003e8e 0x000020c4 SET_32 MSVCR90.dll___wgetmainargs
+0x00003ea0 0x000020c8 SET_32 MSVCR90.dll__cexit
+0x00003eaa 0x000020cc SET_32 MSVCR90.dll__exit
+0x00003eb2 0x000020d0 SET_32 MSVCR90.dll__XcptFilter
+0x00003ec0 0x000020d4 SET_32 MSVCR90.dll_exit
+0x00003ec8 0x000020d8 SET_32 MSVCR90.dll__wcmdln
+0x00003ed2 0x00002120 SET_32 MSVCR90.dll__initterm
+0x00003ede 0x000020e0 SET_32 MSVCR90.dll__initterm_e
+0x00003eec 0x000020e4 SET_32 MSVCR90.dll__configthreadlocale
+0x00003f02 0x000020e8 SET_32 MSVCR90.dll___setusermatherr
+0x00003f16 0x000020ec SET_32 MSVCR90.dll__adjust_fdiv
+0x00003f26 0x000020f0 SET_32 MSVCR90.dll___p__commode
+0x00003f36 0x000020f4 SET_32 MSVCR90.dll___p__fmode
+0x00003f44 0x000020f8 SET_32 MSVCR90.dll___set_app_type
+0x00003f56 0x000020fc SET_32 MSVCR90.dll_void __cdecl terminate(void)
+0x00003f6a 0x00002100 SET_32 MSVCR90.dll_public: void __thiscall type_info::_type_info_dtor_internal_method(void)
+0x00003fa0 0x00002104 SET_32 MSVCR90.dll__except_handler4_common
+0x00003fba 0x00002108 SET_32 MSVCR90.dll__crt_debugger_hook
+0x00003fd0 0x0000210c SET_32 MSVCR90.dll__invoke_watson
+0x00003fe2 0x00002110 SET_32 MSVCR90.dll__controlfp_s
+0x00003ff2 0x00002084 SET_32 KERNEL32.dll_InterlockedExchange
+0x00004008 0x00002080 SET_32 KERNEL32.dll_InterlockedCompareExchange
+0x00004026 0x0000207c SET_32 KERNEL32.dll_GetStartupInfoW
+0x00004038 0x00002078 SET_32 KERNEL32.dll_TerminateProcess
+0x0000404c 0x00002088 SET_32 KERNEL32.dll_GetCurrentProcess
+0x00004060 0x00002074 SET_32 KERNEL32.dll_UnhandledExceptionFilter
+0x0000407c 0x00002070 SET_32 KERNEL32.dll_SetUnhandledExceptionFilter
+0x0000409a 0x00002014 SET_32 KERNEL32.dll_IsDebuggerPresent
+0x000040ae 0x00002038 SET_32 KERNEL32.dll_QueryPerformanceCounter
+0x000040c8 0x0000205c SET_32 KERNEL32.dll_GetTickCount
+0x000040d8 0x00002060 SET_32 KERNEL32.dll_GetCurrentThreadId
+0x000040ee 0x00002064 SET_32 KERNEL32.dll_GetCurrentProcessId
+0x00004104 0x0000206c SET_32 KERNEL32.dll_GetSystemTimeAsFileTime
+
+
+76 relocations
+24576
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

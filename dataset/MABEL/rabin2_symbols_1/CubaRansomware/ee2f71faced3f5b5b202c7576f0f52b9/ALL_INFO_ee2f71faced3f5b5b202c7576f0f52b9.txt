@@ -1,0 +1,145 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x200 0x00401000  0x1000 -r-x AUTO
+1   0x00000600  0x1400 0x00402000  0x2000 -rw- AUTO_1
+2   0x00001a00   0x200 0x00404000  0x1000 -rw- .idata
+3   0x00001c00   0x200 0x00405000  0x1000 -r-- .edata
+4   0x00001e00   0x200 0x00406000  0x1000 -r-- .reloc
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401000 paddr=0x00000400 haddr=0x000000b0 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00404030 NONE FUNC KERNEL32.DLL VirtualAlloc
+
+[Symbols]
+
+nth paddr      vaddr      bind   type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00000400 0x00401000 GLOBAL FUNC 0    TstDll.dll   AserSec
+2   0x00000403 0x00401003 GLOBAL FUNC 0    TstDll.dll   ClearMyTracksByProcess
+1   0x00001a30 0x00404030 NONE   FUNC 0    KERNEL32.DLL imp.VirtualAlloc
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    8192
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0000d3f3
+compiled Sun Aug  8 17:23:42 2021
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  false
+cc       cdecl
+pic      false
+relocs   false
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x5
+  TimeDateStamp : 0x6110131e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x2182
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x12
+  SizeOfCode : 0x200
+  SizeOfInitializedData : 0x1600
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x0
+  BaseOfCode : 0x1000
+  BaseOfData : 0x2000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x1
+  MinorOperatingSystemVersion : 0xb
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x4
+  MinorSubsystemVersion : 0x0
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x7000
+  SizeOfHeaders : 0x400
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x3
+  SizeOfStackReserve : 0x0
+  SizeOfStackCommit : 0x0
+  SizeOfHeapReserve : 0x2000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+IMAGE_DIRECTORY_ENTRY_EXPORT
+  VirtualAddress : 0x5000
+  Size : 0x67
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x4000
+  Size : 0x55
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x6000
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+
+1 library
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00004046 0x00001a30 SET_32 KERNEL32.DLL_VirtualAlloc
+
+
+1 relocations
+8192
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

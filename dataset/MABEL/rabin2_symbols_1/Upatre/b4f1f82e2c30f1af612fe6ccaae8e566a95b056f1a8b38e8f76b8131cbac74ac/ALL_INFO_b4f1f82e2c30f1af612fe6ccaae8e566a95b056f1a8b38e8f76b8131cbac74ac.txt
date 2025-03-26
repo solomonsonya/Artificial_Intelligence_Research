@@ -1,0 +1,218 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr         size vaddr        vsize perm name
+―――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00001000  0x5400 0x00401000  0x6000 -rwx UPX0
+1   0x00006400   0x800 0x00407000  0x1000 -rwx UPX1
+2   0x00006c00   0x400 0x00408000  0x1000 -rwx .rsrc
+3   0x00007000   0x400 0x00409000  0x1000 -rwx .ap0x
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x00401020 paddr=0x00001020 haddr=0x000000f8 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x00402000 NONE FUNC kernel32.dll GetTempPathW
+2   0x00402004 NONE FUNC kernel32.dll GetFileSize
+3   0x00402008 NONE FUNC kernel32.dll GetCurrentDirectoryW
+4   0x0040200c NONE FUNC kernel32.dll DeleteFileW
+5   0x00402010 NONE FUNC kernel32.dll CloseHandle
+6   0x00402014 NONE FUNC kernel32.dll WriteFile
+7   0x00402018 NONE FUNC kernel32.dll lstrcmpW
+8   0x0040201c NONE FUNC kernel32.dll ReadFile
+9   0x00402020 NONE FUNC kernel32.dll GetModuleHandleW
+10  0x00402024 NONE FUNC kernel32.dll ExitProcess
+11  0x00402028 NONE FUNC kernel32.dll HeapCreate
+12  0x0040202c NONE FUNC kernel32.dll HeapAlloc
+13  0x00402030 NONE FUNC kernel32.dll GetModuleFileNameW
+14  0x00402034 NONE FUNC kernel32.dll CreateFileW
+15  0x00402038 NONE FUNC kernel32.dll lstrlenW
+1   0x00402040 NONE FUNC SHELL32.dll  ShellExecuteW
+1   0x00402048 NONE FUNC USER32.dll   wsprintfW
+1   0x00402050 NONE FUNC WININET.dll  HttpSendRequestW
+2   0x00402054 NONE FUNC WININET.dll  InternetSetOptionW
+3   0x00402058 NONE FUNC WININET.dll  InternetQueryOptionW
+4   0x0040205c NONE FUNC WININET.dll  HttpOpenRequestW
+5   0x00402060 NONE FUNC WININET.dll  HttpQueryInfoW
+6   0x00402064 NONE FUNC WININET.dll  InternetReadFile
+7   0x00402068 NONE FUNC WININET.dll  InternetConnectW
+8   0x0040206c NONE FUNC WININET.dll  InternetOpenW
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x00002000 0x00402000 NONE FUNC 0    kernel32.dll imp.GetTempPathW
+2   0x00002004 0x00402004 NONE FUNC 0    kernel32.dll imp.GetFileSize
+3   0x00002008 0x00402008 NONE FUNC 0    kernel32.dll imp.GetCurrentDirectoryW
+4   0x0000200c 0x0040200c NONE FUNC 0    kernel32.dll imp.DeleteFileW
+5   0x00002010 0x00402010 NONE FUNC 0    kernel32.dll imp.CloseHandle
+6   0x00002014 0x00402014 NONE FUNC 0    kernel32.dll imp.WriteFile
+7   0x00002018 0x00402018 NONE FUNC 0    kernel32.dll imp.lstrcmpW
+8   0x0000201c 0x0040201c NONE FUNC 0    kernel32.dll imp.ReadFile
+9   0x00002020 0x00402020 NONE FUNC 0    kernel32.dll imp.GetModuleHandleW
+10  0x00002024 0x00402024 NONE FUNC 0    kernel32.dll imp.ExitProcess
+11  0x00002028 0x00402028 NONE FUNC 0    kernel32.dll imp.HeapCreate
+12  0x0000202c 0x0040202c NONE FUNC 0    kernel32.dll imp.HeapAlloc
+13  0x00002030 0x00402030 NONE FUNC 0    kernel32.dll imp.GetModuleFileNameW
+14  0x00002034 0x00402034 NONE FUNC 0    kernel32.dll imp.CreateFileW
+15  0x00002038 0x00402038 NONE FUNC 0    kernel32.dll imp.lstrlenW
+1   0x00002040 0x00402040 NONE FUNC 0    SHELL32.dll  imp.ShellExecuteW
+1   0x00002048 0x00402048 NONE FUNC 0    USER32.dll   imp.wsprintfW
+1   0x00002050 0x00402050 NONE FUNC 0    WININET.dll  imp.HttpSendRequestW
+2   0x00002054 0x00402054 NONE FUNC 0    WININET.dll  imp.InternetSetOptionW
+3   0x00002058 0x00402058 NONE FUNC 0    WININET.dll  imp.InternetQueryOptionW
+4   0x0000205c 0x0040205c NONE FUNC 0    WININET.dll  imp.HttpOpenRequestW
+5   0x00002060 0x00402060 NONE FUNC 0    WININET.dll  imp.HttpQueryInfoW
+6   0x00002064 0x00402064 NONE FUNC 0    WININET.dll  imp.InternetReadFile
+7   0x00002068 0x00402068 NONE FUNC 0    WININET.dll  imp.InternetConnectW
+8   0x0000206c 0x0040206c NONE FUNC 0    WININET.dll  imp.InternetOpenW
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    56842
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x0001dddc
+compiled Tue Nov  5 10:07:10 2013
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x00000000
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       true
+os       windows
+overlay  true
+cc       cdecl
+pic      false
+relocs   true
+signed   false
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x4
+  TimeDateStamp : 0x5278c34e
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x103
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0xa
+  MinorLinkerVersion : 0x0
+  SizeOfCode : 0x1000
+  SizeOfInitializedData : 0x1000
+  SizeOfUninitializedData : 0x6000
+  AddressOfEntryPoint : 0x1020
+  BaseOfCode : 0x7000
+  BaseOfData : 0x8000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x92e7
+  SizeOfHeaders : 0x1000
+  CheckSum : 0x0
+  Subsystem : 0x2
+  DllCharacteristics : 0x8700
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 40219 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 40219 Times: 2
+  Product: 1 Name: Import0 Version: 0 Times: 25
+  Product: 147 Name: Implib900 Version: 30729 Times: 9
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x9000
+  Size : 0x64
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0x8000
+  Size : 0x1c4
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+shell32.dll
+user32.dll
+wininet.dll
+
+4 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x00009095 0x00002000 SET_32 kernel32.dll_GetTempPathW
+0x000090a4 0x00002004 SET_32 kernel32.dll_GetFileSize
+0x000090b2 0x00002008 SET_32 kernel32.dll_GetCurrentDirectoryW
+0x000090c9 0x0000200c SET_32 kernel32.dll_DeleteFileW
+0x000090d7 0x00002010 SET_32 kernel32.dll_CloseHandle
+0x000090e5 0x00002014 SET_32 kernel32.dll_WriteFile
+0x000090f1 0x00002018 SET_32 kernel32.dll_lstrcmpW
+0x000090fc 0x0000201c SET_32 kernel32.dll_ReadFile
+0x00009107 0x00002020 SET_32 kernel32.dll_GetModuleHandleW
+0x0000911a 0x00002024 SET_32 kernel32.dll_ExitProcess
+0x00009128 0x00002028 SET_32 kernel32.dll_HeapCreate
+0x00009135 0x0000202c SET_32 kernel32.dll_HeapAlloc
+0x00009141 0x00002030 SET_32 kernel32.dll_GetModuleFileNameW
+0x00009156 0x00002034 SET_32 kernel32.dll_CreateFileW
+0x00009164 0x00002038 SET_32 kernel32.dll_lstrlenW
+0x0000916f 0x00002040 SET_32 SHELL32.dll_ShellExecuteW
+0x0000917f 0x00002048 SET_32 USER32.dll_wsprintfW
+0x0000918b 0x00002050 SET_32 WININET.dll_HttpSendRequestW
+0x0000919e 0x00002054 SET_32 WININET.dll_InternetSetOptionW
+0x000091b3 0x00002058 SET_32 WININET.dll_InternetQueryOptionW
+0x000091ca 0x0000205c SET_32 WININET.dll_HttpOpenRequestW
+0x000091dd 0x00002060 SET_32 WININET.dll_HttpQueryInfoW
+0x000091ee 0x00002064 SET_32 WININET.dll_InternetReadFile
+0x00009201 0x00002068 SET_32 WININET.dll_InternetConnectW
+0x00009214 0x0000206c SET_32 WININET.dll_InternetOpenW
+
+
+25 relocations
+56842
+=== VS_VERSIONINFO ===
+
+Section to Segment mapping:
+Segment Section
+---------------
+
+

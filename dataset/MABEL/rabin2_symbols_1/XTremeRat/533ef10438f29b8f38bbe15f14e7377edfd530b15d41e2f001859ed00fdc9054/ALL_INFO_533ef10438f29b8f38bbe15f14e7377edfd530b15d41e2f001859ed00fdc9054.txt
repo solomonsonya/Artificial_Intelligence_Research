@@ -1,0 +1,225 @@
+Missing bin header main
+Missing bin header dwarf
+[Sections]
+
+nth paddr          size vaddr          vsize perm name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――
+0   0x00000400   0x3200 0x00401000    0x5000 -rwx sect_0
+1   0x00003600    0x800 0x00406000    0x2000 -rwx sect_1
+2   0x00003e00    0x400 0x00408000    0x2000 -rwx sect_2
+3   0x00004200    0x200 0x0040a000    0x2000 -rwx sect_3
+4   0x00004400      0x0 0x0040c000    0x1000 -rwx sect_4
+5   0x00004400   0x1400 0x0040d000    0x2000 -rwx .rsrc
+6   0x00005800      0x0 0x0040f000  0x2bc000 -rwx sect_6
+7   0x00005800  0x98400 0x006cb000   0x99000 -rwx .data
+
+[Segments]
+
+nth paddr  size vaddr  vsize perm name
+――――――――――――――――――――――――――――――――――――――
+
+[Entrypoints]
+vaddr=0x004037ee paddr=0x00002bee haddr=0x00000108 type=program
+
+1 entrypoints
+[Constructors]
+
+0 entrypoints
+[Imports]
+nth vaddr      bind type lib          name
+――――――――――――――――――――――――――――――――――――――――――
+1   0x006cb0b0 NONE FUNC kernel32.dll VirtualAlloc
+2   0x006cb0b4 NONE FUNC kernel32.dll VirtualFree
+3   0x006cb0b8 NONE FUNC kernel32.dll GetModuleHandleA
+4   0x006cb0bc NONE FUNC kernel32.dll GetProcAddress
+5   0x006cb0c0 NONE FUNC kernel32.dll ExitProcess
+6   0x006cb0c4 NONE FUNC kernel32.dll LoadLibraryA
+1   0x006cb0cc NONE FUNC user32.dll   MessageBoxA
+1   0x006cb0d4 NONE FUNC advapi32.dll RegCloseKey
+1   0x006cb0dc NONE FUNC oleaut32.dll SysFreeString
+1   0x006cb0e4 NONE FUNC gdi32.dll    CreateFontA
+1   0x006cb0ec NONE FUNC shell32.dll  ShellExecuteA
+1   0x006cb0f4 NONE FUNC version.dll  GetFileVersionInfoA
+
+[Symbols]
+
+nth paddr      vaddr      bind type size lib          name
+――――――――――――――――――――――――――――――――――――――――――――――――――――――――――
+1   0x000058b0 0x006cb0b0 NONE FUNC 0    kernel32.dll imp.VirtualAlloc
+2   0x000058b4 0x006cb0b4 NONE FUNC 0    kernel32.dll imp.VirtualFree
+3   0x000058b8 0x006cb0b8 NONE FUNC 0    kernel32.dll imp.GetModuleHandleA
+4   0x000058bc 0x006cb0bc NONE FUNC 0    kernel32.dll imp.GetProcAddress
+5   0x000058c0 0x006cb0c0 NONE FUNC 0    kernel32.dll imp.ExitProcess
+6   0x000058c4 0x006cb0c4 NONE FUNC 0    kernel32.dll imp.LoadLibraryA
+1   0x000058cc 0x006cb0cc NONE FUNC 0    user32.dll   imp.MessageBoxA
+1   0x000058d4 0x006cb0d4 NONE FUNC 0    advapi32.dll imp.RegCloseKey
+1   0x000058dc 0x006cb0dc NONE FUNC 0    oleaut32.dll imp.SysFreeString
+1   0x000058e4 0x006cb0e4 NONE FUNC 0    gdi32.dll    imp.CreateFontA
+1   0x000058ec 0x006cb0ec NONE FUNC 0    shell32.dll  imp.ShellExecuteA
+1   0x000058f4 0x006cb0f4 NONE FUNC 0    version.dll  imp.GetFileVersionInfoA
+[Strings]
+nth paddr vaddr len size section type string
+――――――――――――――――――――――――――――――――――――――――――――
+arch     x86
+baddr    0x400000
+binsz    717552
+bintype  pe
+bits     32
+canary   true
+retguard false
+class    PE32
+cmp.csum 0x000b7baf
+compiled Sat Jul 16 18:41:14 2011
+crypto   false
+endian   little
+havecode true
+hdr.csum 0x000b7baf
+laddr    0x0
+lang     c
+linenum  false
+lsyms    false
+machine  i386
+nx       false
+os       windows
+overlay  true
+cc       cdecl
+pic      true
+relocs   false
+signed   true
+sanitize false
+static   false
+stripped false
+subsys   Windows GUI
+va       true
+PE file header:
+IMAGE_NT_HEADERS
+  Signature : 0x4550
+IMAGE_FILE_HEADERS
+  Machine : 0x14c
+  NumberOfSections : 0x8
+  TimeDateStamp : 0x4e21db4a
+  PointerToSymbolTable : 0x0
+  NumberOfSymbols : 0x0
+  SizeOfOptionalHeader : 0xe0
+  Characteristics : 0x102
+IMAGE_OPTIONAL_HEADERS
+  Magic : 0x10b
+  MajorLinkerVersion : 0x2
+  MinorLinkerVersion : 0x19
+  SizeOfCode : 0x4e00
+  SizeOfInitializedData : 0x4800
+  SizeOfUninitializedData : 0x0
+  AddressOfEntryPoint : 0x37ee
+  BaseOfCode : 0x1000
+  BaseOfData : 0x6000
+  ImageBase : 0x400000
+  SectionAlignment : 0x1000
+  FileAlignment : 0x200
+  MajorOperatingSystemVersion : 0x5
+  MinorOperatingSystemVersion : 0x1
+  MajorImageVersion : 0x0
+  MinorImageVersion : 0x0
+  MajorSubsystemVersion : 0x5
+  MinorSubsystemVersion : 0x1
+  Win32VersionValue : 0x0
+  SizeOfImage : 0x364000
+  SizeOfHeaders : 0x400
+  CheckSum : 0xb7baf
+  Subsystem : 0x2
+  DllCharacteristics : 0x8040
+  SizeOfStackReserve : 0x100000
+  SizeOfStackCommit : 0x1000
+  SizeOfHeapReserve : 0x100000
+  SizeOfHeapCommit : 0x1000
+  LoaderFlags : 0x0
+  NumberOfRvaAndSizes : 0x10
+RICH_FIELDS
+  Product: 157 Name: Linker1000 Version: 30319 Times: 1
+  Product: 154 Name: Cvtres1000 Version: 30319 Times: 1
+  Product: 175 Name: Utc1600_LTCG_CPP Version: 30319 Times: 3
+  Product: 1 Name: Import0 Version: 0 Times: 64
+  Product: 147 Name: Implib900 Version: 30729 Times: 3
+  Product: 170 Name: Utc1600_C Version: 30319 Times: 56
+  Product: 158 Name: Masm1000 Version: 30319 Times: 8
+  Product: 171 Name: Utc1600_CPP Version: 30319 Times: 10
+IMAGE_DIRECTORY_ENTRY_IMPORT
+  VirtualAddress : 0x2cb010
+  Size : 0x200
+IMAGE_DIRECTORY_ENTRY_RESOURCE
+  VirtualAddress : 0xd000
+  Size : 0x1378
+IMAGE_DIRECTORY_ENTRY_SECURITY
+  VirtualAddress : 0xae208
+  Size : 0x10e8
+IMAGE_DIRECTORY_ENTRY_BASERELOC
+  VirtualAddress : 0x2cb000
+  Size : 0xc
+IMAGE_DIRECTORY_ENTRY_DEBUG
+  VirtualAddress : 0x6120
+  Size : 0x1c
+IMAGE_DIRECTORY_ENTRY_DELAY_IMPORT
+  VirtualAddress : 0x0
+  Size : 0xffff
+[Linked libraries]
+kernel32.dll
+user32.dll
+advapi32.dll
+oleaut32.dll
+gdi32.dll
+shell32.dll
+version.dll
+
+7 libraries
+[Relocations]
+
+vaddr      paddr      type   name
+―――――――――――――――――――――――――――――――――
+0x002cb150 0x000058b0 SET_32 kernel32.dll_VirtualAlloc
+0x002cb15f 0x000058b4 SET_32 kernel32.dll_VirtualFree
+0x002cb16d 0x000058b8 SET_32 kernel32.dll_GetModuleHandleA
+0x002cb180 0x000058bc SET_32 kernel32.dll_GetProcAddress
+0x002cb191 0x000058c0 SET_32 kernel32.dll_ExitProcess
+0x002cb19f 0x000058c4 SET_32 kernel32.dll_LoadLibraryA
+0x002cb1ae 0x000058cc SET_32 user32.dll_MessageBoxA
+0x002cb1bc 0x000058d4 SET_32 advapi32.dll_RegCloseKey
+0x002cb1ca 0x000058dc SET_32 oleaut32.dll_SysFreeString
+0x002cb1da 0x000058e4 SET_32 gdi32.dll_CreateFontA
+0x002cb1e8 0x000058ec SET_32 shell32.dll_ShellExecuteA
+0x002cb1f8 0x000058f4 SET_32 version.dll_GetFileVersionInfoA
+
+
+12 relocations
+717552
+=== VS_VERSIONINFO ===
+
+# VS_FIXEDFILEINFO
+
+  Signature: 0xfeef04bd
+  StrucVersion: 0x10000
+  FileVersion: 1.49.160.0
+  ProductVersion: 1.49.160.0
+  FileFlagsMask: 0x3f
+  FileFlags: 0x0
+  FileOS: 0x4
+  FileType: 0x1
+  FileSubType: 0x0
+
+# StringTable
+
+  Comments: 
+  CompanyName: F-Secure Corporation
+  FileDescription: F-Secure Service Enabler GUI Launcher
+  FileVersion: 1.49.160.0
+  InternalName: trigger
+  LegalCopyright: Copyright (C) 2008-2011 F-Secure Corporation
+  LegalTrademarks: 
+  OriginalFilename: trigger.exe
+  PrivateBuild: 
+  ProductName: F-Secure Service Enabler
+  ProductVersion: 1.49.160.0
+  SpecialBuild: 
+Section to Segment mapping:
+Segment Section
+---------------
+
+
